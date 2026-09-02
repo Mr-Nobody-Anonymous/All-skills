@@ -1,0 +1,580 @@
+{
+  "registry": "https://clawhub.ai",
+  "queried_at": "2026-09-01",
+  "skills": [
+    {
+      "requested_slug": "git-workflow",
+      "status": "ambiguous",
+      "matches": [
+        {
+          "owner": "broommonk",
+          "slug": "git-workflow",
+          "canonical_url": "/broommonk/skills/git-workflow",
+          "summary": "OpenClaw Git 工作流技能。 当用户提及以下任务时使用： - 提交代码或文档 - 推送到远程仓库 - 管理多个 Git 仓库 - 查看 Git 状态 核心能力: - 自动检测文件变更 - 自动生成提交信息 - 自动推送到远程仓库 - 多仓库管理",
+          "downloads": 2878,
+          "installability": "installable",
+          "visibility": "public",
+          "source_identity": {
+            "host": null,
+            "id": "kd7aypwcmp2n5k1nrf3ywrs0mn82239n",
+            "lifetimeInstalls": null,
+            "owner": "broommonk",
+            "repo": null
+          }
+        },
+        {
+          "owner": "wlykan",
+          "slug": "git-workflow",
+          "canonical_url": "/wlykan/skills/git-workflow",
+          "summary": "项目定制的轻量 Git 工作流助手。仅在用户明确要求写入或同步 README 工作流、创建 feature 分支、查看工作流状态、检查 feature 完成状态时激活。只允许更新 README 托管区块和经确认后创建本地 feature 分支；不执行 commit、stash、rebase、merge、push、tag、发布、分支删除或历史重写。",
+          "downloads": 87,
+          "installability": "installable",
+          "visibility": "public",
+          "source_identity": {
+            "host": null,
+            "id": "kd718v4fthg6eaxrq9bgzekqrd8bz682",
+            "lifetimeInstalls": null,
+            "owner": "wlykan",
+            "repo": null
+          }
+        }
+      ]
+    },
+    {
+      "requested_slug": "summarize-repo",
+      "status": "missing",
+      "matches": []
+    },
+    {
+      "requested_slug": "npm-auditor",
+      "status": "missing",
+      "matches": []
+    },
+    {
+      "requested_slug": "docker-manager",
+      "status": "unique",
+      "matches": [
+        {
+          "owner": "sxliuyu",
+          "slug": "docker-manager",
+          "canonical_url": "/sxliuyu/skills/docker-manager",
+          "summary": "Docker 容器管理。查看、启动、停止、删除容器，监控资源使用，查看日志。适合运维和开发。",
+          "downloads": 2732,
+          "installability": "installable",
+          "visibility": "public",
+          "source_identity": {
+            "host": null,
+            "id": "kd75bdk9hccj0c6qhaandwhs35830rfp",
+            "lifetimeInstalls": null,
+            "owner": "sxliuyu",
+            "repo": null
+          }
+        }
+      ]
+    },
+    {
+      "requested_slug": "adhd-task-breakdown",
+      "status": "missing",
+      "matches": []
+    },
+    {
+      "requested_slug": "obsidian-sync",
+      "status": "unique",
+      "matches": [
+        {
+          "owner": "andybold",
+          "slug": "obsidian-sync",
+          "canonical_url": "/andybold/skills/obsidian-sync",
+          "summary": "Sync files between Clawdbot workspace and Obsidian. Run the sync server to enable two-way file synchronization with the OpenClaw Obsidian plugin.",
+          "downloads": 4701,
+          "installability": "installable",
+          "visibility": "public",
+          "source_identity": {
+            "host": null,
+            "id": "kd73s7w94b037g0rn3wm8zam4980asts",
+            "lifetimeInstalls": null,
+            "owner": "andybold",
+            "repo": null
+          }
+        }
+      ]
+    },
+    {
+      "requested_slug": "context-summarize",
+      "status": "missing",
+      "matches": []
+    },
+    {
+      "requested_slug": "time-blocking",
+      "status": "missing",
+      "matches": []
+    },
+    {
+      "requested_slug": "daily-journal",
+      "status": "unique",
+      "matches": [
+        {
+          "owner": "ckchzh",
+          "slug": "daily-journal",
+          "canonical_url": "/ckchzh/skills/daily-journal",
+          "summary": "Daily Journal — Daily Journal — write, reflect, remember. Personal daily-use tool for tracking and organizing your life. Use when you need Daily Journal capa...",
+          "downloads": 1270,
+          "installability": "installable",
+          "visibility": "public",
+          "source_identity": {
+            "host": null,
+            "id": "kd7d5dh0fc2chqkgfwpspk9hw582tjeb",
+            "lifetimeInstalls": null,
+            "owner": "ckchzh",
+            "repo": null
+          }
+        }
+      ]
+    },
+    {
+      "requested_slug": "focus-guard",
+      "status": "unique",
+      "matches": [
+        {
+          "owner": "jiajiaoy",
+          "slug": "focus-guard",
+          "canonical_url": "/jiajiaoy/skills/focus-guard",
+          "summary": "Session coherence protocol for Claude — track decisions, resist scope creep, flag drift. Keeps long AI sessions on track without losing what was already deci...",
+          "downloads": 591,
+          "installability": "installable",
+          "visibility": "public",
+          "source_identity": {
+            "host": null,
+            "id": "kd716xzkfccymgs1qcdhxxpqcs85r6v8",
+            "lifetimeInstalls": null,
+            "owner": "jiajiaoy",
+            "repo": null
+          }
+        }
+      ]
+    },
+    {
+      "requested_slug": "voice-to-action",
+      "status": "missing",
+      "matches": []
+    },
+    {
+      "requested_slug": "web-scraper",
+      "status": "unique",
+      "matches": [
+        {
+          "owner": "guifav",
+          "slug": "web-scraper",
+          "canonical_url": "/guifav/skills/web-scraper",
+          "summary": "Web scraping and content comprehension agent — multi-strategy extraction with cascade fallback, news detection, boilerplate removal, structured metadata, and...",
+          "downloads": 10695,
+          "installability": "installable",
+          "visibility": "public",
+          "source_identity": {
+            "host": null,
+            "id": "kd7a4vxawntzyz62eaq7v1xpbs81qqjd",
+            "lifetimeInstalls": null,
+            "owner": "guifav",
+            "repo": null
+          }
+        }
+      ]
+    },
+    {
+      "requested_slug": "form-filler",
+      "status": "missing",
+      "matches": []
+    },
+    {
+      "requested_slug": "search-synthesizer",
+      "status": "missing",
+      "matches": []
+    },
+    {
+      "requested_slug": "media-downloader",
+      "status": "missing",
+      "matches": []
+    },
+    {
+      "requested_slug": "telegram-actions",
+      "status": "missing",
+      "matches": []
+    },
+    {
+      "requested_slug": "whatsapp-router",
+      "status": "missing",
+      "matches": []
+    },
+    {
+      "requested_slug": "email-inbox-zero",
+      "status": "missing",
+      "matches": []
+    },
+    {
+      "requested_slug": "slack-synthesizer",
+      "status": "missing",
+      "matches": []
+    },
+    {
+      "requested_slug": "calendar-assistant",
+      "status": "missing",
+      "matches": []
+    },
+    {
+      "requested_slug": "meeting-action-extractor",
+      "status": "missing",
+      "matches": []
+    },
+    {
+      "requested_slug": "image-gen",
+      "status": "missing",
+      "matches": []
+    },
+    {
+      "requested_slug": "audio-transcribe",
+      "status": "unique",
+      "matches": [
+        {
+          "owner": "aktheknight",
+          "slug": "audio-transcribe",
+          "canonical_url": "/aktheknight/skills/audio-transcribe",
+          "summary": "Auto-transcribe voice messages locally using faster-whisper with selectable Whisper models, no API key required.",
+          "downloads": 3689,
+          "installability": "installable",
+          "visibility": "public",
+          "source_identity": {
+            "host": null,
+            "id": "kd75b4skxpzckv3q981bdm67w9819eqe",
+            "lifetimeInstalls": null,
+            "owner": "aktheknight",
+            "repo": null
+          }
+        }
+      ]
+    },
+    {
+      "requested_slug": "avatar-creator",
+      "status": "missing",
+      "matches": []
+    },
+    {
+      "requested_slug": "system-monitor",
+      "status": "missing",
+      "matches": []
+    },
+    {
+      "requested_slug": "cmd-safety-check",
+      "status": "missing",
+      "matches": []
+    },
+    {
+      "requested_slug": "cf-worker-deploy",
+      "status": "missing",
+      "matches": []
+    },
+    {
+      "requested_slug": "db-inspector",
+      "status": "missing",
+      "matches": []
+    },
+    {
+      "requested_slug": "api-mock-generator",
+      "status": "unique",
+      "matches": [
+        {
+          "owner": "charlie-morrison",
+          "slug": "api-mock-generator",
+          "canonical_url": "/charlie-morrison/skills/api-mock-generator",
+          "summary": "Generate mock API servers from OpenAPI 3.x and Swagger 2.0 specs. Use when creating mock/stub APIs for frontend development, testing, demos, or CI. Generates...",
+          "downloads": 756,
+          "installability": "installable",
+          "visibility": "public",
+          "source_identity": {
+            "host": null,
+            "id": "kd797k805vhbdwwjcp9mh1m3s184mfvg",
+            "lifetimeInstalls": null,
+            "owner": "charlie-morrison",
+            "repo": null
+          }
+        }
+      ]
+    },
+    {
+      "requested_slug": "weather-now",
+      "status": "missing",
+      "matches": []
+    },
+    {
+      "requested_slug": "sonos-cli",
+      "status": "missing",
+      "matches": []
+    },
+    {
+      "requested_slug": "expense-parser",
+      "status": "missing",
+      "matches": []
+    },
+    {
+      "requested_slug": "unit-converter",
+      "status": "unique",
+      "matches": [
+        {
+          "owner": "tonyhuya",
+          "slug": "unit-converter",
+          "canonical_url": "/tonyhuya/skills/unit-converter",
+          "summary": "常用单位换算：长度/重量/温度/速度/存储/面积/体积，支持中英文单位名。纯本地计算，无网络依赖。",
+          "downloads": 161,
+          "installability": "installable",
+          "visibility": "public",
+          "source_identity": {
+            "host": null,
+            "id": "kd794b8gadkfh2b4bxnb8g44z98csbfw",
+            "lifetimeInstalls": null,
+            "owner": "tonyhuya",
+            "repo": null
+          }
+        }
+      ]
+    },
+    {
+      "requested_slug": "security-scanner",
+      "status": "unique",
+      "matches": [
+        {
+          "owner": "dmx64",
+          "slug": "security-scanner",
+          "canonical_url": "/dmx64/skills/security-scanner",
+          "summary": "Automated security scanning and vulnerability detection for web applications, APIs, and infrastructure. Use when you need to scan targets for vulnerabilities, check SSL certificates, find open ports, detect misconfigurations, or perform security audits. Integrates with nmap, nuclei, and other security tools.",
+          "downloads": 12136,
+          "installability": "installable",
+          "visibility": "public",
+          "source_identity": {
+            "host": null,
+            "id": "kd75t6zayx5j11d92cjwjkw6s980vp6p",
+            "lifetimeInstalls": null,
+            "owner": "dmx64",
+            "repo": null
+          }
+        }
+      ]
+    },
+    {
+      "requested_slug": "coding-agent",
+      "status": "ambiguous",
+      "matches": [
+        {
+          "owner": "zhaoxinghua09-cell",
+          "slug": "coding-agent",
+          "canonical_url": "/zhaoxinghua09-cell/skills/coding-agent",
+          "summary": "将编码工作委托给 Codex、Claude Code 或 OpenCode 作为后台工作进程执行，用于回答「大重构能不能丢给后台跑」「PR 能不能自动审」这类问题",
+          "downloads": 13,
+          "installability": "installable",
+          "visibility": "public",
+          "source_identity": {
+            "host": null,
+            "id": "kd7e473wjndxvk0q7bdk8majy18dg5z5",
+            "lifetimeInstalls": null,
+            "owner": "zhaoxinghua09-cell",
+            "repo": null
+          }
+        },
+        {
+          "owner": "seanford",
+          "slug": "coding-agent",
+          "canonical_url": "/seanford/skills/coding-agent",
+          "summary": "Delegate coding tasks to Codex, Claude Code, or Pi agents via acpx (ACP protocol). Use when: (1) building/creating new features or apps, (2) reviewing PRs (s...",
+          "downloads": 483,
+          "installability": "installable",
+          "visibility": "public",
+          "source_identity": {
+            "host": null,
+            "id": "kd76agxc239t5rzsng0vassjk98985vm",
+            "lifetimeInstalls": null,
+            "owner": "seanford",
+            "repo": null
+          }
+        }
+      ]
+    },
+    {
+      "requested_slug": "cursor-agent",
+      "status": "unique",
+      "matches": [
+        {
+          "owner": "swiftlysingh",
+          "slug": "cursor-agent",
+          "canonical_url": "/swiftlysingh/skills/cursor-agent",
+          "summary": "A comprehensive skill for using the Cursor CLI agent for various software engineering tasks (updated for 2026 features, includes tmux automation guide).",
+          "downloads": 12683,
+          "installability": "installable",
+          "visibility": "public",
+          "source_identity": {
+            "host": null,
+            "id": "kd70hd6rynz6q401jr06v0enrd7z4jbv",
+            "lifetimeInstalls": null,
+            "owner": "swiftlysingh",
+            "repo": null
+          }
+        }
+      ]
+    },
+    {
+      "requested_slug": "github-cli",
+      "status": "unique",
+      "matches": [
+        {
+          "owner": "tag-assistant",
+          "slug": "github-cli",
+          "canonical_url": "/tag-assistant/skills/github-cli",
+          "summary": "Comprehensive GitHub CLI (gh) reference. Covers repos, issues, PRs, Actions, releases, gists, search, projects v2, API, secrets/variables, labels, codespaces...",
+          "downloads": 11600,
+          "installability": "installable",
+          "visibility": "public",
+          "source_identity": {
+            "host": null,
+            "id": "kd7czgq10thac13jddvnzf020s8171se",
+            "lifetimeInstalls": null,
+            "owner": "tag-assistant",
+            "repo": null
+          }
+        }
+      ]
+    },
+    {
+      "requested_slug": "dokploy",
+      "status": "unique",
+      "matches": [
+        {
+          "owner": "joshuarileydev",
+          "slug": "dokploy",
+          "canonical_url": "/joshuarileydev/skills/dokploy",
+          "summary": "Manage Dokploy deployments, projects, applications, and domains via the Dokploy API.",
+          "downloads": 3730,
+          "installability": "installable",
+          "visibility": "public",
+          "source_identity": {
+            "host": null,
+            "id": "kd76xhs6x6gty9hqjhmck7fats7zcgfz",
+            "lifetimeInstalls": null,
+            "owner": "joshuarileydev",
+            "repo": null
+          }
+        }
+      ]
+    },
+    {
+      "requested_slug": "remotion-best-practices",
+      "status": "unique",
+      "matches": [
+        {
+          "owner": "am-will",
+          "slug": "remotion-best-practices",
+          "canonical_url": "/am-will/skills/remotion-best-practices",
+          "summary": "Best practices for Remotion - Video creation in React",
+          "downloads": 30939,
+          "installability": "installable",
+          "visibility": "public",
+          "source_identity": {
+            "host": null,
+            "id": "kd7009j8c09cv81sxp382wajf57znt4y",
+            "lifetimeInstalls": null,
+            "owner": "am-will",
+            "repo": null
+          }
+        }
+      ]
+    },
+    {
+      "requested_slug": "agent-browser",
+      "status": "ambiguous",
+      "matches": [
+        {
+          "owner": "rez0",
+          "slug": "agent-browser",
+          "canonical_url": "/rez0/skills/agent-browser",
+          "summary": "Browser automation CLI for AI agents. Use when the user needs to interact with websites, including navigating pages, filling forms, clicking buttons, taking...",
+          "downloads": 2411,
+          "installability": "installable",
+          "visibility": "public",
+          "source_identity": {
+            "host": null,
+            "id": "kd70whsxv9k7t4pd7mxvd50d8s88y2vq",
+            "lifetimeInstalls": null,
+            "owner": "rez0",
+            "repo": null
+          }
+        },
+        {
+          "owner": "shifengwang333-ai",
+          "slug": "agent-browser",
+          "canonical_url": "/shifengwang333-ai/skills/agent-browser",
+          "summary": "A fast Rust-based headless browser automation CLI with Node.js fallback that enables AI agents to navigate, click, type, and snapshot pages via structured co...",
+          "downloads": 415,
+          "installability": "installable",
+          "visibility": "public",
+          "source_identity": {
+            "host": null,
+            "id": "kd79nxymqnpvxy6e0e1nxhc0nh899dc4",
+            "lifetimeInstalls": null,
+            "owner": "shifengwang333-ai",
+            "repo": null
+          }
+        },
+        {
+          "owner": "cindypapa",
+          "slug": "agent-browser",
+          "canonical_url": "/cindypapa/skills/agent-browser",
+          "summary": "A fast Rust-based headless browser automation CLI with Node.js fallback that enables AI agents to navigate, click, type, and snapshot pages via structured co...",
+          "downloads": 415,
+          "installability": "installable",
+          "visibility": "public",
+          "source_identity": {
+            "host": null,
+            "id": "kd7aj6mw3qbgyytrb1evc5vsy58ap1ee",
+            "lifetimeInstalls": null,
+            "owner": "cindypapa",
+            "repo": null
+          }
+        },
+        {
+          "owner": "unfall103-debug",
+          "slug": "agent-browser",
+          "canonical_url": "/unfall103-debug/skills/agent-browser",
+          "summary": "Headless browser automation CLI optimized for AI agents with accessibility tree snapshots and ref-based element selection",
+          "downloads": 37,
+          "installability": "installable",
+          "visibility": "public",
+          "source_identity": {
+            "host": null,
+            "id": "kd797kjn0ndq9dfa0mkx9tay5s8d9azx",
+            "lifetimeInstalls": null,
+            "owner": "unfall103-debug",
+            "repo": null
+          }
+        }
+      ]
+    },
+    {
+      "requested_slug": "veo-video-generator",
+      "status": "unique",
+      "matches": [
+        {
+          "owner": "kghamilton89",
+          "slug": "veo-video-generator",
+          "canonical_url": "/kghamilton89/skills/veo-video-generator",
+          "summary": "Generates high-fidelity 1080p videos with synced audio using Google Veo 3.1. Use for creating cinematic clips from text descriptions.",
+          "downloads": 1199,
+          "installability": "installable",
+          "visibility": "public",
+          "source_identity": {
+            "host": null,
+            "id": "kd71extzgaf1dkjty9nfrfr9fn81ddy3",
+            "lifetimeInstalls": null,
+            "owner": "kghamilton89",
+            "repo": null
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,730 @@
+{
+  "registry": "https://clawhub.ai",
+  "verified_at": "2026-09-01",
+  "skills": [
+    {
+      "slug": "docker-manager",
+      "owner": "sxliuyu",
+      "ok": false,
+      "decision": "fail",
+      "version": "1.0.2",
+      "reasons": [
+        "security.status_not_clean"
+      ],
+      "security_status": "suspicious",
+      "security_summary": "This is a legitimate Docker management skill, but it gives an agent broad Docker control, including deletion, forced cleanup, and in-container command execution, without enough safety scoping or warnings.",
+      "provenance": {
+        "source": "unavailable",
+        "reason": "No server-resolved GitHub import provenance is stored for this version."
+      },
+      "artifact": {
+        "sourceFingerprint": "1188f78e6dbe39a4b2527d0fa5f420610d61db22085d7bb1939a79f8e6cdb432",
+        "bundleFingerprints": [
+          "10e27f6aadebe5b37eb33f9cdadf90e5312a8d4d61daff8322a24d387a8b09fc"
+        ],
+        "files": [
+          {
+            "path": "SKILL.md",
+            "size": 2238,
+            "sha256": "085bde8672c46437baa6e9bb954ed834c16d4b25f3b4042921c3f5b22bcbd811",
+            "contentType": "text/markdown"
+          },
+          {
+            "path": "_meta.json",
+            "size": 111,
+            "sha256": "b2d1687a59a62a68c365352b11f415e96100c9d7d1baec480e4cfe9bfeda6f3a",
+            "contentType": "application/json"
+          },
+          {
+            "path": "scripts/docker_mgr.py",
+            "size": 9498,
+            "sha256": "edc7e4ddf6f3a5d4bfeed41c15959f8d23eb8ec732090b91bd5de702d39a53e2",
+            "contentType": "text/plain"
+          }
+        ]
+      },
+      "page_url": "https://clawhub.ai/sxliuyu/skills/docker-manager"
+    },
+    {
+      "slug": "obsidian-sync",
+      "owner": "andybold",
+      "ok": true,
+      "decision": "pass",
+      "version": "1.0.0",
+      "reasons": [],
+      "security_status": "clean",
+      "security_summary": "This skill is a disclosed Obsidian sync server that can read and write configured workspace files, so it appears safe when installed intentionally and configured carefully.",
+      "provenance": {
+        "source": "unavailable",
+        "reason": "No server-resolved GitHub import provenance is stored for this version."
+      },
+      "artifact": {
+        "sourceFingerprint": "01477b05e6fccaf87f229af3cd950976c3739b63d5df37b9c18327c359b5c83b",
+        "bundleFingerprints": [
+          "39edcf7be319dc0a426d6600b71e05051bec0b2bad5b33c7a03a2bb8061bf08e",
+          "ca022a13e12047bb05b033e226fbe9ef653048fb0f681abab7331ceb33517f2a"
+        ],
+        "files": [
+          {
+            "path": "SKILL.md",
+            "size": 2959,
+            "sha256": "c2e0b1679c170217b5e6f13285245aa23192fd7f47ef8fe4807d3d0273cb1e59",
+            "contentType": "text/markdown"
+          },
+          {
+            "path": "scripts/sync-server.mjs",
+            "size": 9879,
+            "sha256": "8866ee494efd0fe12a5a2fdfa99359fbace5c523fa9fde7646f7eee3f68957ed",
+            "contentType": "text/javascript"
+          }
+        ]
+      },
+      "page_url": "https://clawhub.ai/andybold/skills/obsidian-sync"
+    },
+    {
+      "slug": "daily-journal",
+      "owner": "ckchzh",
+      "ok": true,
+      "decision": "pass",
+      "version": "1.0.0",
+      "reasons": [],
+      "security_status": "clean",
+      "security_summary": "This is a local journaling helper that stores personal entries on the user's machine and does not show evidence of network exfiltration or hidden behavior.",
+      "provenance": {
+        "source": "unavailable",
+        "reason": "No server-resolved GitHub import provenance is stored for this version."
+      },
+      "artifact": {
+        "sourceFingerprint": "addca322c5489a8951455105e57903ffaf520cf246b6bcfc918a690810ae6a9e",
+        "bundleFingerprints": [
+          "4afb473ed4aa2549f43ffd8c7d70ad4c0faa877ceb45f348fce1899d81e7c8cf"
+        ],
+        "files": [
+          {
+            "path": "SKILL.md",
+            "size": 1325,
+            "sha256": "dd26c080a6ce62c8a0ac7d2987c95e65256841b27dca59b29d757b7783a16b9e",
+            "contentType": "text/markdown"
+          },
+          {
+            "path": "scripts/daily_journal.sh",
+            "size": 5750,
+            "sha256": "cc7b2f7d82f7732a76522e217a8e165e1ca3659cda54156a6cd17f431b6b161d",
+            "contentType": "application/x-sh"
+          },
+          {
+            "path": "tips.md",
+            "size": 373,
+            "sha256": "acbe24422f96d95f06a08b6da90c36aa803d098aad85f42025e178cce495f34f",
+            "contentType": "text/markdown"
+          }
+        ]
+      },
+      "page_url": "https://clawhub.ai/ckchzh/skills/daily-journal"
+    },
+    {
+      "slug": "focus-guard",
+      "owner": "jiajiaoy",
+      "ok": true,
+      "decision": "pass",
+      "version": "1.0.0",
+      "reasons": [],
+      "security_status": "clean",
+      "security_summary": "Focus Guard is a low-risk instruction-only skill for keeping long AI sessions on scope and does not request code execution, credentials, files, or network access.",
+      "provenance": {
+        "source": "unavailable",
+        "reason": "No server-resolved GitHub import provenance is stored for this version."
+      },
+      "artifact": {
+        "sourceFingerprint": "9f1df82e369742ec55f05d9ce22aa84f5bdbfd479e6af888b43bb2b82d5e6bd7",
+        "bundleFingerprints": [
+          "aff28496ce0e91cced2f7a1a1b77cc335f50edb08d89125bc8bcc0f4aac86a44"
+        ],
+        "files": [
+          {
+            "path": "SKILL.md",
+            "size": 4834,
+            "sha256": "ff149e15f9a9c5b1e17260f726e6ecced39c61d50705de94595716fdfc7f6a00",
+            "contentType": "text/markdown"
+          }
+        ]
+      },
+      "page_url": "https://clawhub.ai/jiajiaoy/skills/focus-guard"
+    },
+    {
+      "slug": "web-scraper",
+      "owner": "guifav",
+      "ok": false,
+      "decision": "fail",
+      "version": "0.1.1",
+      "reasons": [
+        "security.status_not_clean"
+      ],
+      "security_status": "suspicious",
+      "security_summary": "This is mostly a coherent web-scraping skill, but it needs review because it instructs agents to reveal soft-paywalled content hidden in the page.",
+      "provenance": {
+        "source": "unavailable",
+        "reason": "No server-resolved GitHub import provenance is stored for this version."
+      },
+      "artifact": {
+        "sourceFingerprint": "f89315a994e36f1f13df5c2e136b9f1af65d06d749defca9d3713c24f108be94",
+        "bundleFingerprints": [
+          "179c41ab33aab14494365cb13261877a19138ac185e8924131755de97c65ff2e"
+        ],
+        "files": [
+          {
+            "path": "CHANGELOG.md",
+            "size": 568,
+            "sha256": "094b004af018eb4349590bf80f373abec5c085f0513c1794ce55dccb675ed2dc",
+            "contentType": "text/plain"
+          },
+          {
+            "path": "SKILL.md",
+            "size": 30696,
+            "sha256": "8d43b93f5f77bd0ef40a31f3d33d503ba3bee10710a580ac4651eb75d25abcff",
+            "contentType": "text/plain"
+          },
+          {
+            "path": "claw.json",
+            "size": 857,
+            "sha256": "878ed183288c38e61ab51de8ef4348b9be4f3314e54087aac15e1c1396f68847",
+            "contentType": "text/plain"
+          }
+        ]
+      },
+      "page_url": "https://clawhub.ai/guifav/skills/web-scraper"
+    },
+    {
+      "slug": "audio-transcribe",
+      "owner": "aktheknight",
+      "ok": true,
+      "decision": "pass",
+      "version": "1.0.0",
+      "reasons": [],
+      "security_status": "clean",
+      "security_summary": "This skill appears to locally transcribe audio as advertised, with the main caution that enabled voice messages may become readable text.",
+      "provenance": {
+        "source": "unavailable",
+        "reason": "No server-resolved GitHub import provenance is stored for this version."
+      },
+      "artifact": {
+        "sourceFingerprint": "b3c02b41b6a757b9108db82cbba8326e37ccc334ff91f9c5931361bb5701bab2",
+        "bundleFingerprints": [
+          "1123172e2c90fb9cc6f4340767cd4e0c4a820943a4da3ad7545bbb7bf11efa60"
+        ],
+        "files": [
+          {
+            "path": "SKILL.md",
+            "size": 1111,
+            "sha256": "7e56ac6b9cbf8fdaf15f17e6c7b224cd32569d520e8050fc647e4f5024e6292d",
+            "contentType": "text/markdown"
+          },
+          {
+            "path": "scripts/transcribe.py",
+            "size": 2160,
+            "sha256": "0e15b12d8b54354907b9c6bdb3b3dbc84c01165f5aef36a51aff0ae0bbfdbd03",
+            "contentType": "text/plain"
+          }
+        ]
+      },
+      "page_url": "https://clawhub.ai/aktheknight/skills/audio-transcribe"
+    },
+    {
+      "slug": "api-mock-generator",
+      "owner": "charlie-morrison",
+      "ok": true,
+      "decision": "pass",
+      "version": "1.0.1",
+      "reasons": [],
+      "security_status": "clean",
+      "security_summary": "This skill is a disclosed local developer tool for generating API mock data and does not show hidden or unrelated behavior.",
+      "provenance": {
+        "source": "unavailable",
+        "reason": "No server-resolved GitHub import provenance is stored for this version."
+      },
+      "artifact": {
+        "sourceFingerprint": "492338ad0424f0b51be57101ac8fe62df470c6ac659fb6a95366f1cf3961d8ca",
+        "bundleFingerprints": [
+          "1cd3a450807d4cbf0ad80d8c69daacc51c0a95ce0a07c080bc533ead0faa1aa5"
+        ],
+        "files": [
+          {
+            "path": "SKILL.md",
+            "size": 2848,
+            "sha256": "ba397976490d7b94e9235a9fee40079a407b38133624cec564f4006c78d92e12",
+            "contentType": "text/markdown"
+          },
+          {
+            "path": "scripts/generate_mock.py",
+            "size": 20947,
+            "sha256": "ad10a67aa18dd409fc3bbd28ecae3419bad4b833b4a13b7090e946addbe6109e",
+            "contentType": "text/plain"
+          }
+        ]
+      },
+      "page_url": "https://clawhub.ai/charlie-morrison/skills/api-mock-generator"
+    },
+    {
+      "slug": "unit-converter",
+      "owner": "tonyhuya",
+      "ok": true,
+      "decision": "pass",
+      "version": "1.0.1",
+      "reasons": [],
+      "security_status": "clean",
+      "security_summary": "This skill is a simple local unit-conversion helper with no evidence of network access, credential use, persistence, or hidden behavior.",
+      "provenance": {
+        "source": "unavailable",
+        "reason": "No server-resolved GitHub import provenance is stored for this version."
+      },
+      "artifact": {
+        "sourceFingerprint": "025a35165bd6f3ef2d96e4bc681203f82acd616a2a4e0426a273e427b25c36ce",
+        "bundleFingerprints": [
+          "30bee8f9a71709764a401fca56eac6382a370340cb732927e049568c20e9d55a"
+        ],
+        "files": [
+          {
+            "path": "SKILL.md",
+            "size": 1623,
+            "sha256": "8e4ac3f3918df5edddc78fa03278c1c74658c2a21ad30a86e59039cc463f0154",
+            "contentType": "text/markdown"
+          },
+          {
+            "path": "scripts/unit-converter.sh",
+            "size": 3250,
+            "sha256": "fafd321b5de92f6a41fbb8168663f8e09701108435c0d4ddfff413dcd16916f9",
+            "contentType": "application/x-sh"
+          }
+        ]
+      },
+      "page_url": "https://clawhub.ai/tonyhuya/skills/unit-converter"
+    },
+    {
+      "slug": "security-scanner",
+      "owner": "dmx64",
+      "ok": true,
+      "decision": "pass",
+      "version": "1.0.0",
+      "reasons": [],
+      "security_status": "clean",
+      "security_summary": "This appears to be a legitimate security-scanning skill, but users must only run its active scans against systems they own or are explicitly authorized to test.",
+      "provenance": {
+        "source": "unavailable",
+        "reason": "No server-resolved GitHub import provenance is stored for this version."
+      },
+      "artifact": {
+        "sourceFingerprint": "375b7d14266cceb23649b0137cfe393a3f4676357cf5ca463bcf2fc5ec6fb5f4",
+        "bundleFingerprints": [
+          "d93f51c369cb62665bd02bc1c52c5f60cfb224fbdbebe5d80aa25e019a9134b8"
+        ],
+        "files": [
+          {
+            "path": "SKILL.md",
+            "size": 1509,
+            "sha256": "2fec659361f60494e6b4695efb7d8f2ff582981f1719b3c7266f10fd6b534cd0",
+            "contentType": "text/markdown"
+          }
+        ]
+      },
+      "page_url": "https://clawhub.ai/dmx64/skills/security-scanner"
+    },
+    {
+      "slug": "cursor-agent",
+      "owner": "swiftlysingh",
+      "ok": false,
+      "decision": "fail",
+      "version": "2.1.0",
+      "reasons": [
+        "security.status_not_clean"
+      ],
+      "security_status": "suspicious",
+      "security_summary": "This is a coherent Cursor CLI guide, but it includes risky automation that installs remote code and automatically approves a workspace trust prompt.",
+      "provenance": {
+        "source": "unavailable",
+        "reason": "No server-resolved GitHub import provenance is stored for this version."
+      },
+      "artifact": {
+        "sourceFingerprint": "147e4a7646a3f8c649f5066e143f07f370ada57d26b2e7bd4bed5eb329585789",
+        "bundleFingerprints": [
+          "86a33a3028f32a10d77570a9c7e15207b3a34f68c31bbc0af6d905c7124b1705",
+          "092d2ff156eb24ae7f8bb41d5defe31842cd416483cc0d1041e64b791dab493b"
+        ],
+        "files": [
+          {
+            "path": "README.md",
+            "size": 1992,
+            "sha256": "e7166646fbd5483ae75ba36dfe07689ddb16c43574e8b04f7c593b160097722d",
+            "contentType": "text/markdown"
+          },
+          {
+            "path": "SKILL.md",
+            "size": 6672,
+            "sha256": "1d695760ce27e42cb27a5a989b2b1496136ae6be534766aa89673ec44b6aa93e",
+            "contentType": "text/markdown"
+          }
+        ]
+      },
+      "page_url": "https://clawhub.ai/swiftlysingh/skills/cursor-agent"
+    },
+    {
+      "slug": "github-cli",
+      "owner": "tag-assistant",
+      "ok": true,
+      "decision": "pass",
+      "version": "1.0.0",
+      "reasons": [],
+      "security_status": "clean",
+      "security_summary": "This is a documentation-only GitHub CLI reference whose powerful examples are expected for the tool but require care with tokens, secrets, extensions, and destructive commands.",
+      "provenance": {
+        "source": "unavailable",
+        "reason": "No server-resolved GitHub import provenance is stored for this version."
+      },
+      "artifact": {
+        "sourceFingerprint": "7553853f8c667a0876e0724b1d7c9b3ead4bfb744cc09b6a03bbb8b538f88488",
+        "bundleFingerprints": [
+          "7ae8478dca0246b6f2174b43a0103f813976f5e74e380baa5dcb01d086eaaeec"
+        ],
+        "files": [
+          {
+            "path": "SKILL.md",
+            "size": 44890,
+            "sha256": "45b9172dd0c8d5a200599daafe32bd3abe2bda0c5e3e5733fbb6020b4fb3cda4",
+            "contentType": "text/markdown"
+          }
+        ]
+      },
+      "page_url": "https://clawhub.ai/tag-assistant/skills/github-cli"
+    },
+    {
+      "slug": "dokploy",
+      "owner": "joshuarileydev",
+      "ok": false,
+      "decision": "fail",
+      "version": "1.0.0",
+      "reasons": [
+        "security.status_not_clean"
+      ],
+      "security_status": "suspicious",
+      "security_summary": "This Dokploy skill matches its deployment-management purpose, but it needs review because it can store and reveal powerful credentials and raw application secrets.",
+      "provenance": {
+        "source": "unavailable",
+        "reason": "No server-resolved GitHub import provenance is stored for this version."
+      },
+      "artifact": {
+        "sourceFingerprint": "5bb01e2e4c605995c490d385e754f6c6db52718bd2328321d233de9994595e40",
+        "bundleFingerprints": [
+          "96dd490a733c50fdf02bc3d2be1c86768c40ae926b5fd6b1e9bf32fccebe277e",
+          "4ce68d6904d2778dc52b26928d32c3c957ff80b6aa07fc70dd18d18ac9919816"
+        ],
+        "files": [
+          {
+            "path": "SKILL.md",
+            "size": 4335,
+            "sha256": "9adbcb966f7465569743a06991452a18b843e54a6a75f199a8200dd5a9479ddf",
+            "contentType": "text/markdown"
+          },
+          {
+            "path": ".clawdhub/package.json",
+            "size": 702,
+            "sha256": "47603922a047992620dc7c8434a9a82908b772b8b0ffba4f84b32b22f05b03a0",
+            "contentType": "application/json"
+          },
+          {
+            "path": "scripts/dokploy-project.sh",
+            "size": 4903,
+            "sha256": "45fd1b98aa71eb1ce9b5fa2bcb2e69ff075ddea8f1da3d43b5dfbb5c96f1a0d7",
+            "contentType": "text/x-sh"
+          },
+          {
+            "path": "scripts/dokploy-domain.sh",
+            "size": 7774,
+            "sha256": "3f04d04ad0d55e5177359b4a5d9f4c58c5b6aea6ca0a116f02a57eb5921f2ecb",
+            "contentType": "text/x-sh"
+          },
+          {
+            "path": "scripts/dokploy-config.sh",
+            "size": 1668,
+            "sha256": "ef449bf1df022bae18a1de6e1a3ae7293cc163dd73a5e8330a0ec513c466ac91",
+            "contentType": "text/x-sh"
+          },
+          {
+            "path": "scripts/dokploy.sh",
+            "size": 3856,
+            "sha256": "0e5cb3b191f639da23d74c0d801f812654370115e270d998313178c6d0013bd7",
+            "contentType": "text/x-sh"
+          },
+          {
+            "path": "scripts/dokploy-app.sh",
+            "size": 13562,
+            "sha256": "8c495f7c1ed5ffbea4cbc6480e6e0d98c40f10631bcd9653950880a0ce87f9f7",
+            "contentType": "text/x-sh"
+          }
+        ]
+      },
+      "page_url": "https://clawhub.ai/joshuarileydev/skills/dokploy"
+    },
+    {
+      "slug": "remotion-best-practices",
+      "owner": "am-will",
+      "ok": true,
+      "decision": "pass",
+      "version": "1.0.0",
+      "reasons": [],
+      "security_status": "clean",
+      "security_summary": "This is a Remotion documentation skill with relevant examples and no evidence of hidden, destructive, credential-stealing, or persistent behavior.",
+      "provenance": {
+        "source": "unavailable",
+        "reason": "No server-resolved GitHub import provenance is stored for this version."
+      },
+      "artifact": {
+        "sourceFingerprint": "ad6c4e9be073c2abb607ca32a44b31d44da1bcc4057a9e431370a11b7da5ab5a",
+        "bundleFingerprints": [
+          "320ccfe34cbb189352b590cb27b5462b749bdc4546f5dc6e9b7e10777125cfa7",
+          "919c7954ee44c395350a6e4d04b51233ae3b604871ebeccf3e5263e857754165"
+        ],
+        "files": [
+          {
+            "path": "SKILL.md",
+            "size": 3421,
+            "sha256": "94c893d93051dff9b856c4ab713ddb8065cde2070b1e7b735f190db3a060ac22",
+            "contentType": "text/markdown"
+          },
+          {
+            "path": "rules/3d.md",
+            "size": 2290,
+            "sha256": "2a5b1a72de35168bba08c7e78153fccd408ec7882fdd1778f2751162e1661378",
+            "contentType": "text/markdown"
+          },
+          {
+            "path": "rules/animations.md",
+            "size": 790,
+            "sha256": "99a6377d64061af5f7fcd1a179c0c8f6d7bcd0a515060a46db117a757ac3387a",
+            "contentType": "text/markdown"
+          },
+          {
+            "path": "rules/assets/charts-bar-chart.tsx",
+            "size": 3429,
+            "sha256": "6e5e219c596c8515336570a5bc89c233e32e695d5816dec88eb929e798eeea61",
+            "contentType": "text/plain"
+          },
+          {
+            "path": "rules/assets/text-animations-typewriter.tsx",
+            "size": 2183,
+            "sha256": "92b5f47d6d18387a0aa008ce9dceefd30f673ae5879e16892bd4b4ea97f5dddb",
+            "contentType": "text/plain"
+          },
+          {
+            "path": "rules/assets/text-animations-word-highlight.tsx",
+            "size": 2387,
+            "sha256": "5dbba688b875baaa62555c7a243f54739e81edbf34148c87048594a210c3ec2c",
+            "contentType": "text/plain"
+          },
+          {
+            "path": "rules/assets.md",
+            "size": 1590,
+            "sha256": "664160a48fe6ef76c9b25ea51b3796d39d371cb3632f380b014492412902ad42",
+            "contentType": "text/markdown"
+          },
+          {
+            "path": "rules/audio.md",
+            "size": 3822,
+            "sha256": "06d859b2f463d0e0e823655548e314b59a1d6321377857fca52a09c629170b12",
+            "contentType": "text/markdown"
+          },
+          {
+            "path": "rules/calculate-metadata.md",
+            "size": 2920,
+            "sha256": "b258c788fb3337187245c814f2fd4ddf10f7330ec97cb8117202a0145d4d27a6",
+            "contentType": "text/markdown"
+          },
+          {
+            "path": "rules/can-decode.md",
+            "size": 1587,
+            "sha256": "fb3f9933e45103d72530915b72a844b3454c6acc03289db5efe8f4541b088fad",
+            "contentType": "text/markdown"
+          },
+          {
+            "path": "rules/charts.md",
+            "size": 1751,
+            "sha256": "2430705a627c468e0922e2f78ca1a2379537d378b5fe76292b69f44659a5d66e",
+            "contentType": "text/markdown"
+          },
+          {
+            "path": "rules/compositions.md",
+            "size": 3445,
+            "sha256": "58d92350fecc1cb57567615fd5e65f35df3e2893ea58e82768050d051e6e692d",
+            "contentType": "text/markdown"
+          },
+          {
+            "path": "rules/display-captions.md",
+            "size": 3698,
+            "sha256": "96abde72e0bcb88cdc5871b80b5d6eb0c6aedf0ea9611e6c5157cb0ee980ba99",
+            "contentType": "text/markdown"
+          },
+          {
+            "path": "rules/extract-frames.md",
+            "size": 5496,
+            "sha256": "b7a63f6509a1a33d624f36d3f6772abbc364b0c883520803f3701c26541e7cd7",
+            "contentType": "text/markdown"
+          },
+          {
+            "path": "rules/fonts.md",
+            "size": 3484,
+            "sha256": "1749e4cf82e8b157d4b0a26f46721152d3ef9e5e9a1686753b8bb6a1be83ddbc",
+            "contentType": "text/markdown"
+          },
+          {
+            "path": "rules/get-audio-duration.md",
+            "size": 1354,
+            "sha256": "d5098e8d20b227464e3519c761cba1e03396c77da636d1893c7be3061a0a8e40",
+            "contentType": "text/markdown"
+          },
+          {
+            "path": "rules/get-video-dimensions.md",
+            "size": 1627,
+            "sha256": "839867aa115e09a719096a902a6ad5e304135f2053cce9928776fb4fcb5bf3e1",
+            "contentType": "text/markdown"
+          },
+          {
+            "path": "rules/get-video-duration.md",
+            "size": 1341,
+            "sha256": "7b31fab3cbf9b0771bae41e2c41c9abed2b59d495ffac7160e562fdf86848726",
+            "contentType": "text/markdown"
+          },
+          {
+            "path": "rules/gifs.md",
+            "size": 3868,
+            "sha256": "53d9d658e3093dba4a798945d5c1b7004688ed96a09521cfb22b4cec418a8ae7",
+            "contentType": "text/markdown"
+          },
+          {
+            "path": "rules/images.md",
+            "size": 2783,
+            "sha256": "91d32f6e528b1f1cddc9a0cf70d0faa74491e3a2fe4a32933da0e21010e9aa74",
+            "contentType": "text/markdown"
+          },
+          {
+            "path": "rules/import-srt-captions.md",
+            "size": 2113,
+            "sha256": "38d33be5439714a2ddb577d8c8a6b7bf09bd10f66c0540415fb70536d4374e87",
+            "contentType": "text/markdown"
+          },
+          {
+            "path": "rules/lottie.md",
+            "size": 1779,
+            "sha256": "6c0cb4babcff94e35ecc22ac63a44d2131db26e7e30b53bbae0a1eb0828c74a0",
+            "contentType": "text/markdown"
+          },
+          {
+            "path": "rules/measuring-dom-nodes.md",
+            "size": 974,
+            "sha256": "5270db465cb9eed1942b9970de101211f954b7802dfd92e957bdc7e3eebe6c5c",
+            "contentType": "text/markdown"
+          },
+          {
+            "path": "rules/measuring-text.md",
+            "size": 3000,
+            "sha256": "88905cbd701e247306645c19f18e01aebe27c4eb0178a4e5d0377687f5ac1478",
+            "contentType": "text/markdown"
+          },
+          {
+            "path": "rules/sequencing.md",
+            "size": 2389,
+            "sha256": "ecb74589c87da53d15230ffc669ca8de197c9748de2be7720acd54c1f777950c",
+            "contentType": "text/markdown"
+          },
+          {
+            "path": "rules/tailwind.md",
+            "size": 422,
+            "sha256": "bdd5162400cd20c6faebdc9d6d2ff9380f4f213f791b38eeb536c5231be34586",
+            "contentType": "text/markdown"
+          },
+          {
+            "path": "rules/text-animations.md",
+            "size": 700,
+            "sha256": "40ac6b1bccf1c57d9edd46c74e847ec6e86fe775d3ef4fd14e1338f4a2606171",
+            "contentType": "text/markdown"
+          },
+          {
+            "path": "rules/timing.md",
+            "size": 3939,
+            "sha256": "f639ed8452767a7458a480c7d33b7126b57c70c3b5e061aeaaba382420fd8ad2",
+            "contentType": "text/markdown"
+          },
+          {
+            "path": "rules/transcribe-captions.md",
+            "size": 850,
+            "sha256": "e7d3edf667e3b1f3c3ed93431cc7caf5e28786c7d1e547f33ee926480a01c0d0",
+            "contentType": "text/markdown"
+          },
+          {
+            "path": "rules/transitions.md",
+            "size": 3730,
+            "sha256": "a42100803a1e5e679617ae7fb72e91431be2a0ca53e15437fa10bdd651921bfa",
+            "contentType": "text/markdown"
+          },
+          {
+            "path": "rules/trimming.md",
+            "size": 1210,
+            "sha256": "40727aefd5939a42925f1ee1fcdfaf733f7fc098c26d7676f7fb69b418913375",
+            "contentType": "text/markdown"
+          },
+          {
+            "path": "rules/videos.md",
+            "size": 3509,
+            "sha256": "d9d3032a57f92c759daf0bd60b3282f6810ecc9958e9093a6b828de623b05328",
+            "contentType": "text/markdown"
+          }
+        ]
+      },
+      "page_url": "https://clawhub.ai/am-will/skills/remotion-best-practices"
+    },
+    {
+      "slug": "veo-video-generator",
+      "owner": "kghamilton89",
+      "ok": true,
+      "decision": "pass",
+      "version": "1.2.2",
+      "reasons": [],
+      "security_status": "clean",
+      "security_summary": "This skill coherently generates Google Veo videos from user prompts and does not show hidden file access, persistence, or unrelated behavior.",
+      "provenance": {
+        "source": "unavailable",
+        "reason": "No server-resolved GitHub import provenance is stored for this version."
+      },
+      "artifact": {
+        "sourceFingerprint": "5c2755f25a5ed599b34fcad44c06afe7f1ee7b4be7e2a06f8bba5670d72d1e26",
+        "bundleFingerprints": [
+          "ac06a698b207f0d939168e3b5276f4f81a38b64069b1957c24d6fbc2e764dc68"
+        ],
+        "files": [
+          {
+            "path": "generate.js",
+            "size": 2168,
+            "sha256": "7cce96cd961646693f85d1bae18969747b0b2c1b2d2083a2113bf99a7371abb0",
+            "contentType": "text/javascript"
+          },
+          {
+            "path": "package-lock.json",
+            "size": 22487,
+            "sha256": "80436e16dd59c01f8798556dfd71d7679da6a64d8e3c98d4bd33972b9beb2028",
+            "contentType": "application/json"
+          },
+          {
+            "path": "package.json",
+            "size": 313,
+            "sha256": "28f8dd24ac705a8f3dc35f8f8849f268d4ee2582d67df65674ce08eb4cfca4d7",
+            "contentType": "application/json"
+          },
+          {
+            "path": "SKILL.md",
+            "size": 1965,
+            "sha256": "8c5c3408d534ca89fa6a34e2719d4bf3ff0550bb38d259b8a76697ec4ebb5d47",
+            "contentType": "text/markdown"
+          }
+        ]
+      },
+      "page_url": "https://clawhub.ai/kghamilton89/skills/veo-video-generator"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+name	category	description	required_tools
+autoreview	development	Run an explicitly requested structured second-model code review and verify findings before changes.	optional:codex-or-claude-cli
+behavior-validator	development	Validate user-visible behavior against a written contract without inspecting implementation source.	
+agent-transcript	utilities	Create a redacted, consent-gated agent transcript for a pull request or issue.	optional:node,optional:gh
+crabbox	development	Coordinate isolated remote or clean-machine validation while preserving trust and credential boundaries.	optional:crabbox
+handoff	utilities	Prepare a portable context-rich handoff prompt for another coding agent.	optional:clipboard-tool
+readme-standard	utilities	Write and review concise, progressive READMEs with executable examples and verified links.	
+beam	utilities	Publish a locally redacted coding-session snapshot only when explicitly requested.	optional:node,optional:BEAM_ACCESS_TOKEN
+coding-agent	development	Delegate bounded coding work to an installed coding-agent CLI with explicit scope and verification.	optional:codex-or-claude-cli
+cursor-agent	development	Use Cursor Agent safely for bounded software tasks without unattended destructive actions.	optional:cursor-agent
+github-cli	development	Use GitHub CLI for issues, pull requests, Actions, and API queries with confirmation for writes.	optional:gh
+dokploy	development	Inspect and manage Dokploy deployments through its API with explicit confirmation for mutations.	optional:DOKPLOY_API_KEY
+remotion-best-practices	design	Design and implement maintainable Remotion video compositions with deterministic rendering.	optional:node,optional:remotion
+git-workflow	development	Guide safe commits, branches, pushes, and pull requests while preserving uncommitted work.	git
+summarize-repo	development	Produce an evidence-based codebase map covering architecture, entry points, dependencies, and risks.	
+npm-auditor	security	Audit npm dependencies for vulnerabilities, staleness, licenses, and supply-chain risk.	optional:npm
+docker-manager	development	Inspect and manage Docker resources with read-only defaults and confirmation for mutations.	optional:docker
+adhd-task-breakdown	productivity	Turn overwhelming work into ADHD-friendly, visible, short, immediately actionable steps.	
+obsidian-sync	productivity	Plan and verify safe synchronization between an Obsidian vault and a working directory.	optional:obsidian
+context-summarize	productivity	Compress active context into decisions, facts, open questions, and next actions.	
+time-blocking	productivity	Build realistic deep-work time blocks around energy, priorities, breaks, and constraints.	
+daily-journal	productivity	Create a concise daily journal with events, reflection, lessons, and tomorrow's priorities.	
+focus-guard	productivity	Protect a focus session by defining one outcome, blocking distractions, and handling interruptions.	
+voice-to-action	productivity	Convert rough voice-note text into clarified tasks, owners, dates, and follow-ups.	optional:transcript
+agent-browser	web	Operate an agent-browser CLI for auditable navigation, extraction, screenshots, and UI checks.	optional:agent-browser
+web-scraper	web	Extract permitted public web data with rate limits, provenance, and robots/terms awareness.	optional:http-client
+form-filler	web	Fill web forms from user-approved data while requiring confirmation before submission.	optional:browser-automation
+search-synthesizer	research	Search the web, compare credible sources, and synthesize a cited answer with uncertainty.	optional:web-search
+media-downloader	web	Download user-authorized public media while respecting rights, terms, and safe filenames.	optional:media-downloader
+telegram-actions	utilities	Draft and perform user-approved Telegram actions without exposing bot credentials.	optional:TELEGRAM_BOT_TOKEN
+whatsapp-router	utilities	Classify and route WhatsApp messages with consent, privacy, and escalation boundaries.	optional:whatsapp-api
+email-inbox-zero	productivity	Triage email into reply, action, defer, archive, or escalate queues without silent sending.	optional:email-access
+slack-synthesizer	utilities	Summarize Slack threads into decisions, evidence, disagreements, and action items.	optional:slack-access
+calendar-assistant	productivity	Plan and modify calendar events with timezone checks, conflict detection, and confirmation.	optional:calendar-access
+meeting-action-extractor	productivity	Extract decisions, action items, owners, dates, and unresolved questions from meetings.	
+veo-video-generator	design	Plan and generate Google Veo videos from approved prompts, assets, and output constraints.	optional:GOOGLE_API_KEY
+image-gen	design	Create precise, safe image-generation prompts and iterate against visual requirements.	optional:image-generator
+audio-transcribe	utilities	Transcribe audio into timestamped text and optionally extract speakers and actions.	optional:transcription-engine
+avatar-creator	design	Design consistent avatar and asset specifications across required formats and sizes.	optional:image-generator
+system-monitor	utilities	Inspect system telemetry and summarize CPU, memory, disk, process, and network anomalies.	optional:system-tools
+cmd-safety-check	security	Classify terminal commands by impact and require safeguards before risky execution.	
+cf-worker-deploy	development	Validate and deploy Cloudflare Workers with preview, secret, and rollback safeguards.	optional:wrangler
+db-inspector	development	Inspect database schemas and queries read-only by default and explain performance or safety risks.	optional:database-client
+api-mock-generator	development	Derive API mocks and contract tests from schemas or observed interfaces without inventing behavior.	optional:test-framework
+weather-now	utilities	Retrieve current weather and local conditions with location, timestamp, and source clarity.	optional:weather-api
+sonos-cli	utilities	Inspect and control Sonos playback with room validation and confirmation for disruptive actions.	optional:sonos-cli
+expense-parser	documents	Extract normalized vendor, date, currency, tax, line-item, and total data from receipts or invoices.	optional:ocr
+unit-converter	utilities	Convert units and currencies while showing assumptions, precision, and exchange-rate timestamps.	optional:exchange-rate-source
+security-scanner	security	Gate releases with defensive static, dependency, secret, and configuration security checks.	optional:security-scanners
+

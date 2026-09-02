@@ -1,0 +1,967 @@
+{
+  "version": 1,
+  "generated_at": "2026-09-02T04:38:48+00:00",
+  "note": "Imported skills are pinned to reviewed upstream commits. Custom skills are maintained locally. Third-party executables are not run during import.",
+  "skills": [
+    {
+      "skill": "design.branding",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "design.frontend-design",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "design.presentations",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "design.ui-ux",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "development.architecture",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "development.backend",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "development.brainstorming",
+      "repository": "obra/superpowers",
+      "source_path": "skills/brainstorming",
+      "commit": "b36e0829c6d0140e93cfef2ca599b1b07d4a7797",
+      "imported_at": "2026-09-01",
+      "license": "MIT",
+      "original_author": "Jesse Vincent",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "obra/superpowers",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "development.code-review",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "development.coding",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "development.databases",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "development.debugging",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "development.devops",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "development.frontend",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "development.git",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "development.git-worktrees",
+      "repository": "obra/superpowers",
+      "source_path": "skills/using-git-worktrees",
+      "commit": "b36e0829c6d0140e93cfef2ca599b1b07d4a7797",
+      "imported_at": "2026-09-01",
+      "license": "MIT",
+      "original_author": "Jesse Vincent",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "obra/superpowers",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "development.github",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "development.mcp-builder",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.1.0",
+      "source": "anthropics/skills",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "development.mcp-server-development",
+      "repository": "anthropics/skills",
+      "source_path": "skills/mcp-builder",
+      "commit": "53048666b05b4799081517d00e09e0a2dd688678",
+      "imported_at": "2026-09-01",
+      "license": "Apache-2.0",
+      "original_author": "Anthropic, PBC",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "anthropics/skills",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "development.performance-optimization",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "development.receiving-code-review",
+      "repository": "obra/superpowers",
+      "source_path": "skills/receiving-code-review",
+      "commit": "b36e0829c6d0140e93cfef2ca599b1b07d4a7797",
+      "imported_at": "2026-09-01",
+      "license": "MIT",
+      "original_author": "Jesse Vincent",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "obra/superpowers",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "development.refactoring",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "development.requesting-code-review",
+      "repository": "obra/superpowers",
+      "source_path": "skills/requesting-code-review",
+      "commit": "b36e0829c6d0140e93cfef2ca599b1b07d4a7797",
+      "imported_at": "2026-09-01",
+      "license": "MIT",
+      "original_author": "Jesse Vincent",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "obra/superpowers",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "development.tdd",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "development.testing",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "development.verification-before-completion",
+      "repository": "obra/superpowers",
+      "source_path": "skills/verification-before-completion",
+      "commit": "b36e0829c6d0140e93cfef2ca599b1b07d4a7797",
+      "imported_at": "2026-09-01",
+      "license": "MIT",
+      "original_author": "Jesse Vincent",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "obra/superpowers",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "documents.csv",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "documents.docx",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "documents.markdown",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "documents.pdf",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "documents.pptx",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "documents.xlsx",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "productivity.adhd",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "productivity.brainstorming",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "obra/superpowers",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "productivity.focus",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "productivity.planning",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "productivity.prioritization",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "productivity.task-decomposition",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "productivity.time-management",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "productivity.unlazy",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "research.academic-research",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "research.competitive-analysis",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "research.data-analysis",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "research.deep-research",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "research.fact-checking",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "research.source-verification",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "research.web-research",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "security.dependency-audit",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "security.prompt-injection-defense",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "security.secret-detection",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "security.secure-coding",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "utilities.automation",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "utilities.documentation",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "utilities.file-management",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "utilities.image",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "utilities.parallel-agents",
+      "repository": "obra/superpowers",
+      "source_path": "skills/dispatching-parallel-agents",
+      "commit": "b36e0829c6d0140e93cfef2ca599b1b07d4a7797",
+      "imported_at": "2026-09-01",
+      "license": "MIT",
+      "original_author": "Jesse Vincent",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "obra/superpowers",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "utilities.summarization",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "utilities.text-processing",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "utilities.writing",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "web.accessibility",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "web.browser-automation",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "web.seo",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "web.web-extraction",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "web.web-scraping",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "web.website-testing",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    }
+  ]
+}

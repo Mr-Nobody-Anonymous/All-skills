@@ -1,0 +1,2215 @@
+{
+  "version": 1,
+  "skills": [
+    {
+      "id": "design.branding",
+      "name": "branding",
+      "category": "design",
+      "description": "Brand identity work \u2014 voice, naming, visual language, and consistency.",
+      "path": "design/branding",
+      "aliases": [
+        "brand",
+        "identity",
+        "voice",
+        "naming"
+      ],
+      "triggers": [
+        "brand this",
+        "help with brand voice",
+        "naming ideas",
+        "visual identity"
+      ],
+      "keywords": [
+        "brand",
+        "voice",
+        "identity",
+        "naming",
+        "logo",
+        "visual",
+        "language"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    },
+    {
+      "id": "design.frontend-design",
+      "name": "frontend-design",
+      "category": "design",
+      "description": "Design and implement frontend interfaces \u2014 HTML, CSS, layouts, and visual design for the web.",
+      "path": "design/frontend-design",
+      "aliases": [
+        "html-css",
+        "web-design",
+        "landing-page"
+      ],
+      "triggers": [
+        "design this landing page",
+        "style this page",
+        "frontend design",
+        "layout this",
+        "CSS for this"
+      ],
+      "keywords": [
+        "frontend",
+        "html",
+        "css",
+        "layout",
+        "design",
+        "landing",
+        "page",
+        "style"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    },
+    {
+      "id": "design.presentations",
+      "name": "presentations",
+      "category": "design",
+      "description": "Design and structure presentations \u2014 narrative arc, slide content, visual hierarchy, and delivery notes.",
+      "path": "design/presentations",
+      "aliases": [
+        "slides",
+        "deck-design",
+        "presentation-design"
+      ],
+      "triggers": [
+        "design a presentation",
+        "structure my talk",
+        "slides for",
+        "presentation outline"
+      ],
+      "keywords": [
+        "presentation",
+        "slides",
+        "deck",
+        "talk",
+        "narrative",
+        "arc",
+        "visual"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    },
+    {
+      "id": "design.ui-ux",
+      "name": "ui-ux",
+      "category": "design",
+      "description": "Design UI / UX \u2014 flows, screens, components, and interaction patterns. Produce wireframes-in-prose and design feedback.",
+      "path": "design/ui-ux",
+      "aliases": [
+        "ux",
+        "ui",
+        "interaction-design",
+        "wireframe"
+      ],
+      "triggers": [
+        "design this UI",
+        "UX feedback",
+        "how should this screen work",
+        "wireframe this"
+      ],
+      "keywords": [
+        "ui",
+        "ux",
+        "design",
+        "screen",
+        "flow",
+        "wireframe",
+        "component",
+        "interaction"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    },
+    {
+      "id": "development.architecture",
+      "name": "architecture",
+      "category": "development",
+      "description": "Design and review software architecture \u2014 modules, boundaries, data flow, dependencies, and trade-offs.",
+      "path": "development/architecture",
+      "aliases": [
+        "system-design",
+        "design",
+        "architect",
+        "modular"
+      ],
+      "triggers": [
+        "how should I structure this",
+        "design the architecture",
+        "system design",
+        "architect this",
+        "pick a tech stack",
+        "module boundaries"
+      ],
+      "keywords": [
+        "architecture",
+        "design",
+        "module",
+        "boundary",
+        "layer",
+        "dependency",
+        "stack",
+        "trade-off"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    },
+    {
+      "id": "development.backend",
+      "name": "backend",
+      "category": "development",
+      "description": "Build backend services \u2014 APIs, server logic, persistence, queues, and integration with other systems.",
+      "path": "development/backend",
+      "aliases": [
+        "server",
+        "api-server",
+        "backend-dev"
+      ],
+      "triggers": [
+        "build a backend",
+        "backend dev",
+        "write an API",
+        "server side"
+      ],
+      "keywords": [
+        "backend",
+        "server",
+        "api",
+        "rest",
+        "graphql",
+        "persistence",
+        "queue"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    },
+    {
+      "id": "development.code-review",
+      "name": "code-review",
+      "category": "development",
+      "description": "Review code for correctness, readability, design, tests, security, and style. Produce actionable, kind, prioritized feedback.",
+      "path": "development/code-review",
+      "aliases": [
+        "review",
+        "pr-review",
+        "peer-review"
+      ],
+      "triggers": [
+        "review this code",
+        "review my PR",
+        "code review",
+        "look at this diff",
+        "is this code good"
+      ],
+      "keywords": [
+        "review",
+        "pr",
+        "diff",
+        "feedback",
+        "critique",
+        "comment",
+        "approve"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    },
+    {
+      "id": "development.coding",
+      "name": "coding",
+      "category": "development",
+      "description": "General-purpose software engineering assistant: implement features, write functions, scaffold projects, and produce idiomatic code in many languages.",
+      "path": "development/coding",
+      "aliases": [
+        "programming",
+        "software-engineering",
+        "implement",
+        "write-code",
+        "build-feature"
+      ],
+      "triggers": [
+        "write this code",
+        "implement this",
+        "code this up",
+        "help me code",
+        "build a function",
+        "write a script",
+        "implement this feature"
+      ],
+      "keywords": [
+        "code",
+        "function",
+        "implement",
+        "build",
+        "script",
+        "feature",
+        "programming",
+        "software",
+        "develop"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    },
+    {
+      "id": "development.databases",
+      "name": "databases",
+      "category": "development",
+      "description": "Work with databases \u2014 schema design, queries, indexing, migrations, and selecting the right store.",
+      "path": "development/databases",
+      "aliases": [
+        "sql",
+        "nosql",
+        "schema",
+        "migrations"
+      ],
+      "triggers": [
+        "design a database schema",
+        "write a migration",
+        "optimize this query",
+        "pick a database"
+      ],
+      "keywords": [
+        "database",
+        "sql",
+        "postgres",
+        "mysql",
+        "mongodb",
+        "schema",
+        "migration",
+        "index",
+        "query"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "medium",
+      "version": "1.0.0"
+    },
+    {
+      "id": "development.debugging",
+      "name": "debugging",
+      "category": "development",
+      "description": "Systematically diagnose and fix bugs using reproduction, isolation, root-cause analysis, and verification.",
+      "path": "development/debugging",
+      "aliases": [
+        "debug",
+        "fix-bug",
+        "troubleshoot",
+        "diagnose"
+      ],
+      "triggers": [
+        "this isn't working",
+        "help me debug",
+        "find the bug",
+        "why is this failing",
+        "I have a bug",
+        "something is broken",
+        "trace this error"
+      ],
+      "keywords": [
+        "debug",
+        "bug",
+        "error",
+        "fail",
+        "fix",
+        "trace",
+        "exception",
+        "stack",
+        "traceback"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    },
+    {
+      "id": "development.devops",
+      "name": "devops",
+      "category": "development",
+      "description": "DevOps practices \u2014 CI/CD, infrastructure, deployment, observability, and incident response.",
+      "path": "development/devops",
+      "aliases": [
+        "ci-cd",
+        "deploy",
+        "sre",
+        "ops"
+      ],
+      "triggers": [
+        "set up CI",
+        "deploy this",
+        "infrastructure help",
+        "CI/CD",
+        "devops"
+      ],
+      "keywords": [
+        "devops",
+        "ci",
+        "cd",
+        "deploy",
+        "pipeline",
+        "observability",
+        "incident",
+        "sre"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "medium",
+      "version": "1.0.0"
+    },
+    {
+      "id": "development.frontend",
+      "name": "frontend",
+      "category": "development",
+      "description": "Build frontend applications \u2014 frameworks, state management, routing, data fetching, and integration with APIs.",
+      "path": "development/frontend",
+      "aliases": [
+        "frontend-dev",
+        "web-app",
+        "react-vue-svelte"
+      ],
+      "triggers": [
+        "build a frontend",
+        "frontend dev",
+        "build a web app",
+        "help with react"
+      ],
+      "keywords": [
+        "frontend",
+        "react",
+        "vue",
+        "svelte",
+        "web",
+        "app",
+        "spa",
+        "ssr",
+        "state"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    },
+    {
+      "id": "development.git",
+      "name": "git",
+      "category": "development",
+      "description": "Use git effectively \u2014 commits, branches, rebases, merges, conflict resolution, history surgery, and common workflows.",
+      "path": "development/git",
+      "aliases": [
+        "version-control",
+        "source-control",
+        "vcs"
+      ],
+      "triggers": [
+        "git help",
+        "how do I use git",
+        "help me commit",
+        "resolve this merge conflict",
+        "git rebase",
+        "git workflow",
+        "undo this commit"
+      ],
+      "keywords": [
+        "git",
+        "commit",
+        "branch",
+        "merge",
+        "rebase",
+        "conflict",
+        "stash",
+        "log",
+        "diff"
+      ],
+      "dependencies": [
+        "git"
+      ],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "medium",
+      "version": "1.0.0"
+    },
+    {
+      "id": "development.github",
+      "name": "github",
+      "category": "development",
+      "description": "Work with GitHub \u2014 pull requests, issues, Actions, code review, project boards, releases.",
+      "path": "development/github",
+      "aliases": [
+        "pr",
+        "pull-request",
+        "issue",
+        "gh",
+        "github-actions"
+      ],
+      "triggers": [
+        "open a PR",
+        "create an issue",
+        "github actions",
+        "help with GitHub",
+        "review a PR"
+      ],
+      "keywords": [
+        "github",
+        "pr",
+        "pull-request",
+        "issue",
+        "action",
+        "workflow",
+        "release"
+      ],
+      "dependencies": [
+        "git",
+        "gh-cli-optional"
+      ],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "medium",
+      "version": "1.0.0"
+    },
+    {
+      "id": "development.performance-optimization",
+      "name": "performance-optimization",
+      "category": "development",
+      "description": "Find and fix performance bottlenecks \u2014 profiling, measurement, and targeted optimization.",
+      "path": "development/performance-optimization",
+      "aliases": [
+        "perf",
+        "profiling",
+        "bottleneck",
+        "speed-up"
+      ],
+      "triggers": [
+        "this is slow",
+        "profile this",
+        "find the bottleneck",
+        "speed this up",
+        "performance optimization"
+      ],
+      "keywords": [
+        "performance",
+        "slow",
+        "profile",
+        "bottleneck",
+        "latency",
+        "throughput",
+        "optimize"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    },
+    {
+      "id": "development.refactoring",
+      "name": "refactoring",
+      "category": "development",
+      "description": "Improve the internal structure of existing code without changing external behavior \u2014 naming, decomposition, clarity, duplication removal.",
+      "path": "development/refactoring",
+      "aliases": [
+        "refactor",
+        "clean-up",
+        "simplify",
+        "restructure"
+      ],
+      "triggers": [
+        "refactor this",
+        "clean up this code",
+        "simplify this",
+        "rename this",
+        "extract a function",
+        "make this clearer"
+      ],
+      "keywords": [
+        "refactor",
+        "clean",
+        "simplify",
+        "rename",
+        "extract",
+        "structure",
+        "readability"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    },
+    {
+      "id": "development.tdd",
+      "name": "tdd",
+      "category": "development",
+      "description": "Test-Driven Development discipline \u2014 red/green/refactor cycles for designing code from tests outward.",
+      "path": "development/tdd",
+      "aliases": [
+        "test-driven",
+        "red-green-refactor"
+      ],
+      "triggers": [
+        "let's do TDD",
+        "test first",
+        "red green refactor",
+        "write the test first"
+      ],
+      "keywords": [
+        "tdd",
+        "test-driven",
+        "red",
+        "green",
+        "refactor",
+        "cycle"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    },
+    {
+      "id": "development.testing",
+      "name": "testing",
+      "category": "development",
+      "description": "Design and write automated tests (unit, integration, end-to-end) using TDD where appropriate.",
+      "path": "development/testing",
+      "aliases": [
+        "tdd",
+        "unit-test",
+        "integration-test",
+        "write-tests",
+        "test-coverage"
+      ],
+      "triggers": [
+        "write tests for this",
+        "add tests",
+        "how do I test this",
+        "TDD",
+        "test coverage",
+        "unit test this"
+      ],
+      "keywords": [
+        "test",
+        "tdd",
+        "unit",
+        "integration",
+        "coverage",
+        "assert",
+        "fixture",
+        "mock"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    },
+    {
+      "id": "documents.csv",
+      "name": "csv",
+      "category": "documents",
+      "description": "Read, parse, write, and clean CSV files \u2014 dialect handling, type inference, and validation.",
+      "path": "documents/csv",
+      "aliases": [
+        "csv-reading",
+        "csv-cleaning",
+        "csv-generation"
+      ],
+      "triggers": [
+        "read this CSV",
+        "parse CSV",
+        "clean this CSV",
+        "generate a CSV"
+      ],
+      "keywords": [
+        "csv",
+        "comma-separated",
+        "parse",
+        "dialect",
+        "quote",
+        "field"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    },
+    {
+      "id": "documents.docx",
+      "name": "docx",
+      "category": "documents",
+      "description": "Read, edit, and generate Microsoft Word .docx files \u2014 extract text, modify structure, and produce documents programmatically.",
+      "path": "documents/docx",
+      "aliases": [
+        "word",
+        "docx-reading",
+        "docx-generation"
+      ],
+      "triggers": [
+        "read this Word doc",
+        "extract from docx",
+        "generate a Word document",
+        "edit this docx"
+      ],
+      "keywords": [
+        "docx",
+        "word",
+        "document",
+        ".docx",
+        "openxml"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    },
+    {
+      "id": "documents.markdown",
+      "name": "markdown",
+      "category": "documents",
+      "description": "Read, write, lint, and transform Markdown \u2014 headings, links, code fences, tables, and common dialects.",
+      "path": "documents/markdown",
+      "aliases": [
+        "md",
+        "markdown-lint",
+        "gfm"
+      ],
+      "triggers": [
+        "format this markdown",
+        "lint markdown",
+        "convert markdown to",
+        "markdown style"
+      ],
+      "keywords": [
+        "markdown",
+        "md",
+        "gfm",
+        "headings",
+        "links",
+        "code",
+        "fence"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    },
+    {
+      "id": "documents.pdf",
+      "name": "pdf",
+      "category": "documents",
+      "description": "Read, extract text, summarize, and produce PDF files. Parse structured content where possible.",
+      "path": "documents/pdf",
+      "aliases": [
+        "pdf-reading",
+        "pdf-generation",
+        "pdf-extraction"
+      ],
+      "triggers": [
+        "read this PDF",
+        "extract text from PDF",
+        "summarize this PDF",
+        "generate a PDF",
+        "make a PDF"
+      ],
+      "keywords": [
+        "pdf",
+        "document",
+        "extract",
+        "summarize",
+        "generate",
+        "read"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    },
+    {
+      "id": "documents.pptx",
+      "name": "pptx",
+      "category": "documents",
+      "description": "Read, edit, and generate PowerPoint .pptx files \u2014 extract slides, build decks from outlines.",
+      "path": "documents/pptx",
+      "aliases": [
+        "powerpoint",
+        "slides",
+        "deck",
+        "presentation-generation"
+      ],
+      "triggers": [
+        "read this PowerPoint",
+        "generate a slide deck",
+        "make a presentation",
+        "extract slides from"
+      ],
+      "keywords": [
+        "pptx",
+        "powerpoint",
+        "slides",
+        "deck",
+        "presentation"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    },
+    {
+      "id": "documents.xlsx",
+      "name": "xlsx",
+      "category": "documents",
+      "description": "Read, edit, and generate Excel .xlsx files \u2014 read sheets, compute, and produce workbooks programmatically.",
+      "path": "documents/xlsx",
+      "aliases": [
+        "excel",
+        "spreadsheet",
+        "xlsx-reading"
+      ],
+      "triggers": [
+        "read this spreadsheet",
+        "extract from xlsx",
+        "generate an Excel file",
+        "edit this spreadsheet"
+      ],
+      "keywords": [
+        "xlsx",
+        "excel",
+        "spreadsheet",
+        "sheet",
+        "workbook",
+        ".xlsx"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    },
+    {
+      "id": "productivity.adhd",
+      "name": "adhd",
+      "category": "productivity",
+      "description": "Support ADHD-style working memory, initiation, and attention patterns with external scaffolding and task design.",
+      "path": "productivity/adhd",
+      "aliases": [
+        "adhd-assistant",
+        "attention",
+        "working-memory",
+        "executive-function"
+      ],
+      "triggers": [
+        "ADHD",
+        "I have ADHD",
+        "I just remembered",
+        "I started something else",
+        "I can't remember what I was doing",
+        "I have 100 tabs open",
+        "executive function",
+        "I keep losing track"
+      ],
+      "keywords": [
+        "adhd",
+        "attention",
+        "working",
+        "memory",
+        "hyperfocus",
+        "executive",
+        "function",
+        "distract",
+        "initiat"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    },
+    {
+      "id": "productivity.focus",
+      "name": "focus",
+      "category": "productivity",
+      "description": "Help the user enter and sustain focused work via session design, distraction blocking, and break structure.",
+      "path": "productivity/focus",
+      "aliases": [
+        "deep-work",
+        "concentration",
+        "pomodoro",
+        "focus-session",
+        "get-in-the-zone"
+      ],
+      "triggers": [
+        "help me focus",
+        "I can't concentrate",
+        "I keep getting distracted",
+        "deep work",
+        "pomodoro",
+        "let's do a focus session",
+        "25 minutes of focus",
+        "I need to concentrate"
+      ],
+      "keywords": [
+        "focus",
+        "concentrate",
+        "distract",
+        "attention",
+        "deep",
+        "work",
+        "pomodoro",
+        "session",
+        "flow"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    },
+    {
+      "id": "productivity.planning",
+      "name": "planning",
+      "category": "productivity",
+      "description": "Turn a vague goal, idea, or situation into a clear, scoped plan with objectives, scope, and first moves.",
+      "path": "productivity/planning",
+      "aliases": [
+        "plan",
+        "strategic-planning",
+        "goal-planning",
+        "daily-planning"
+      ],
+      "triggers": [
+        "help me plan",
+        "I want to plan",
+        "let's plan this",
+        "daily plan",
+        "weekly plan",
+        "I need a plan",
+        "goal planning"
+      ],
+      "keywords": [
+        "plan",
+        "planning",
+        "goal",
+        "objective",
+        "scope",
+        "schedule",
+        "strategy"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    },
+    {
+      "id": "productivity.prioritization",
+      "name": "prioritization",
+      "category": "productivity",
+      "description": "Help the user decide what to do first, what to defer, and what to drop when everything feels important.",
+      "path": "productivity/prioritization",
+      "aliases": [
+        "prioritize",
+        "triage",
+        "eisenhower",
+        "what-should-i-do-first"
+      ],
+      "triggers": [
+        "what should I do first",
+        "prioritize this",
+        "I have too many things",
+        "what's most important",
+        "triage",
+        "help me decide what to do"
+      ],
+      "keywords": [
+        "priority",
+        "prioritize",
+        "important",
+        "urgent",
+        "decide",
+        "first",
+        "drop",
+        "defer"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    },
+    {
+      "id": "productivity.task-decomposition",
+      "name": "task-decomposition",
+      "category": "productivity",
+      "description": "Break a large project or vague goal into concrete, ordered, completable subtasks with dependencies and estimates.",
+      "path": "productivity/task-decomposition",
+      "aliases": [
+        "break-down",
+        "subtasks",
+        "wbs",
+        "work-breakdown",
+        "project-decompose"
+      ],
+      "triggers": [
+        "break this into smaller tasks",
+        "decompose this",
+        "how do I start this project",
+        "break down this project",
+        "what are the steps",
+        "subtasks",
+        "work breakdown"
+      ],
+      "keywords": [
+        "break",
+        "decompose",
+        "subtasks",
+        "steps",
+        "project",
+        "plan",
+        "split",
+        "chunk",
+        "smaller"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    },
+    {
+      "id": "productivity.time-management",
+      "name": "time-management",
+      "category": "productivity",
+      "description": "Design calendars, schedules, and time allocations that match the user's energy, priorities, and constraints.",
+      "path": "productivity/time-management",
+      "aliases": [
+        "schedule",
+        "calendar",
+        "time-block",
+        "timebox",
+        "weekly-planning"
+      ],
+      "triggers": [
+        "help me schedule",
+        "time management",
+        "weekly schedule",
+        "calendar planning",
+        "when should I do this"
+      ],
+      "keywords": [
+        "schedule",
+        "time",
+        "calendar",
+        "block",
+        "plan",
+        "weekly",
+        "day"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    },
+    {
+      "id": "productivity.unlazy",
+      "name": "unlazy",
+      "category": "productivity",
+      "description": "Activate the user out of procrastination, avoidance, or \"I don't want to start\" states using tiny first steps and momentum framing.",
+      "path": "productivity/unlazy",
+      "aliases": [
+        "anti-procrastination",
+        "motivation",
+        "get-started",
+        "just-start",
+        "overcome-procrastination"
+      ],
+      "triggers": [
+        "I'm procrastinating",
+        "I don't want to work",
+        "I keep avoiding this",
+        "I can't get started",
+        "help me start",
+        "I'm being lazy",
+        "I don't feel like it",
+        "I should be working but I'm not",
+        "motivation"
+      ],
+      "keywords": [
+        "procrastinate",
+        "avoid",
+        "lazy",
+        "stuck",
+        "start",
+        "begin",
+        "momentum",
+        "motivation",
+        "avoidant"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    },
+    {
+      "id": "research.academic-research",
+      "name": "academic-research",
+      "category": "research",
+      "description": "Find and use scholarly articles, preprints, and academic sources for research.",
+      "path": "research/academic-research",
+      "aliases": [
+        "scholarly-research",
+        "literature-review",
+        "papers"
+      ],
+      "triggers": [
+        "find papers on",
+        "academic sources",
+        "scholarly research",
+        "literature review",
+        "find me research on"
+      ],
+      "keywords": [
+        "academic",
+        "scholarly",
+        "paper",
+        "preprint",
+        "journal",
+        "literature",
+        "study",
+        "research"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    },
+    {
+      "id": "research.competitive-analysis",
+      "name": "competitive-analysis",
+      "category": "research",
+      "description": "Analyze competitors \u2014 features, positioning, pricing, strengths, weaknesses \u2014 to inform product strategy.",
+      "path": "research/competitive-analysis",
+      "aliases": [
+        "competitors",
+        "market-scan",
+        "competitor-research"
+      ],
+      "triggers": [
+        "analyze competitors",
+        "competitive landscape",
+        "what are competitors doing",
+        "market scan"
+      ],
+      "keywords": [
+        "competitor",
+        "competitive",
+        "market",
+        "landscape",
+        "comparison",
+        "positioning"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    },
+    {
+      "id": "research.data-analysis",
+      "name": "data-analysis",
+      "category": "research",
+      "description": "Analyze data files (CSV, JSON, tabular) \u2014 load, profile, transform, summarize, and visualize.",
+      "path": "research/data-analysis",
+      "aliases": [
+        "analyze-data",
+        "csv-analysis",
+        "statistics",
+        "explore-data"
+      ],
+      "triggers": [
+        "analyze this data",
+        "what's in this CSV",
+        "explore this dataset",
+        "data analysis",
+        "statistics on this"
+      ],
+      "keywords": [
+        "data",
+        "analysis",
+        "csv",
+        "pandas",
+        "dataframe",
+        "statistics",
+        "explore",
+        "profile"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    },
+    {
+      "id": "research.deep-research",
+      "name": "deep-research",
+      "category": "research",
+      "description": "Conduct long-horizon, multi-source deep research with synthesis, contradiction handling, and a final report.",
+      "path": "research/deep-research",
+      "aliases": [
+        "deep-dive",
+        "long-research",
+        "exhaustive-research"
+      ],
+      "triggers": [
+        "deep research",
+        "do a deep dive",
+        "exhaustive research",
+        "comprehensive analysis",
+        "research everything about"
+      ],
+      "keywords": [
+        "deep",
+        "dive",
+        "exhaustive",
+        "comprehensive",
+        "research",
+        "multi-source",
+        "report"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    },
+    {
+      "id": "research.fact-checking",
+      "name": "fact-checking",
+      "category": "research",
+      "description": "Verify a claim by checking primary sources, looking for authoritative confirmation, and rating confidence.",
+      "path": "research/fact-checking",
+      "aliases": [
+        "verify",
+        "fact-check",
+        "claim-verification"
+      ],
+      "triggers": [
+        "is this true",
+        "verify this",
+        "fact check",
+        "check this claim",
+        "is this accurate"
+      ],
+      "keywords": [
+        "fact",
+        "check",
+        "verify",
+        "true",
+        "claim",
+        "accuracy",
+        "source"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    },
+    {
+      "id": "research.source-verification",
+      "name": "source-verification",
+      "category": "research",
+      "description": "Evaluate a source's credibility, bias, recency, and relevance before relying on it.",
+      "path": "research/source-verification",
+      "aliases": [
+        "evaluate-source",
+        "source-credibility",
+        "source-quality"
+      ],
+      "triggers": [
+        "is this source reliable",
+        "evaluate this source",
+        "check this citation",
+        "source quality"
+      ],
+      "keywords": [
+        "source",
+        "credibility",
+        "bias",
+        "reliable",
+        "citation",
+        "evaluate"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    },
+    {
+      "id": "research.web-research",
+      "name": "web-research",
+      "category": "research",
+      "description": "Conduct structured web research \u2014 query formulation, source diversification, synthesis, and source tracking.",
+      "path": "research/web-research",
+      "aliases": [
+        "research",
+        "internet-research",
+        "search"
+      ],
+      "triggers": [
+        "research this",
+        "look this up",
+        "find information about",
+        "what does the internet say",
+        "search for"
+      ],
+      "keywords": [
+        "research",
+        "search",
+        "web",
+        "lookup",
+        "find",
+        "information",
+        "query"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    },
+    {
+      "id": "security.dependency-audit",
+      "name": "dependency-audit",
+      "category": "security",
+      "description": "Audit project dependencies for known vulnerabilities (CVEs), outdated packages, and supply-chain risks.",
+      "path": "security/dependency-audit",
+      "aliases": [
+        "supply-chain",
+        "npm-audit",
+        "pip-audit",
+        "cve"
+      ],
+      "triggers": [
+        "audit my dependencies",
+        "check for vulnerable packages",
+        "are my dependencies safe",
+        "CVE check",
+        "npm audit",
+        "pip audit"
+      ],
+      "keywords": [
+        "dependency",
+        "audit",
+        "cve",
+        "vulnerability",
+        "supply-chain",
+        "npm",
+        "pip",
+        "maven"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    },
+    {
+      "id": "security.prompt-injection-defense",
+      "name": "prompt-injection-defense",
+      "category": "security",
+      "description": "Detect and defend against prompt-injection attempts in untrusted text, tool outputs, and web pages.",
+      "path": "security/prompt-injection-defense",
+      "aliases": [
+        "injection-defense",
+        "llm-security",
+        "prompt-security"
+      ],
+      "triggers": [
+        "check for prompt injection",
+        "is this safe to summarize",
+        "untrusted text handling",
+        "LLM security"
+      ],
+      "keywords": [
+        "prompt",
+        "injection",
+        "llm",
+        "security",
+        "jailbreak",
+        "defense",
+        "untrusted"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "medium",
+      "version": "1.0.0"
+    },
+    {
+      "id": "security.secret-detection",
+      "name": "secret-detection",
+      "category": "security",
+      "description": "Detect accidentally committed secrets (API keys, tokens, passwords) in code and history.",
+      "path": "security/secret-detection",
+      "aliases": [
+        "secret-scanning",
+        "leak-detection",
+        "credentials"
+      ],
+      "triggers": [
+        "find secrets in this code",
+        "check for API keys",
+        "secret scan",
+        "did I commit a secret"
+      ],
+      "keywords": [
+        "secret",
+        "leak",
+        "api",
+        "key",
+        "token",
+        "credential",
+        "scan",
+        "detect"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "medium",
+      "version": "1.0.0"
+    },
+    {
+      "id": "security.secure-coding",
+      "name": "secure-coding",
+      "category": "security",
+      "description": "Defensive security guidance for code \u2014 input validation, secrets handling, auth, common vulnerability classes (OWASP Top 10).",
+      "path": "security/secure-coding",
+      "aliases": [
+        "security-coding",
+        "appsec",
+        "owasp",
+        "vulnerability"
+      ],
+      "triggers": [
+        "is this code secure",
+        "security review",
+        "secure coding",
+        "OWASP",
+        "check for vulnerabilities",
+        "prevent SQL injection",
+        "prevent XSS"
+      ],
+      "keywords": [
+        "security",
+        "secure",
+        "owasp",
+        "xss",
+        "sql",
+        "injection",
+        "vulnerability",
+        "validate",
+        "sanitize",
+        "auth"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "medium",
+      "version": "1.0.0"
+    },
+    {
+      "id": "utilities.automation",
+      "name": "automation",
+      "category": "utilities",
+      "description": "Automate repetitive workflows \u2014 scripts, scheduled jobs, glue code, and \"do this every time\" tasks.",
+      "path": "utilities/automation",
+      "aliases": [
+        "script",
+        "workflow-automation",
+        "glue"
+      ],
+      "triggers": [
+        "automate this",
+        "run this every day",
+        "write a script for",
+        "glue this together"
+      ],
+      "keywords": [
+        "automation",
+        "script",
+        "schedule",
+        "cron",
+        "glue",
+        "workflow"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "medium",
+      "version": "1.0.0"
+    },
+    {
+      "id": "utilities.documentation",
+      "name": "documentation",
+      "category": "utilities",
+      "description": "Write and structure documentation \u2014 READMEs, API docs, guides, and reference material.",
+      "path": "utilities/documentation",
+      "aliases": [
+        "docs",
+        "readme",
+        "api-docs"
+      ],
+      "triggers": [
+        "write docs for this",
+        "document this API",
+        "write a README",
+        "help me document"
+      ],
+      "keywords": [
+        "document",
+        "docs",
+        "readme",
+        "api",
+        "reference",
+        "guide"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    },
+    {
+      "id": "utilities.file-management",
+      "name": "file-management",
+      "category": "utilities",
+      "description": "Safely and predictably manage files and directories \u2014 read, write, copy, move, rename, organize.",
+      "path": "utilities/file-management",
+      "aliases": [
+        "fs",
+        "filesystem",
+        "file-ops"
+      ],
+      "triggers": [
+        "organize my files",
+        "rename these files",
+        "move files",
+        "clean up the folder"
+      ],
+      "keywords": [
+        "file",
+        "folder",
+        "directory",
+        "organize",
+        "rename",
+        "move",
+        "copy",
+        "fs"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "medium",
+      "version": "1.0.0"
+    },
+    {
+      "id": "utilities.image",
+      "name": "image",
+      "category": "utilities",
+      "description": "Work with images \u2014 read, resize, convert, OCR, and inspect metadata.",
+      "path": "utilities/image",
+      "aliases": [
+        "images",
+        "ocr",
+        "image-processing"
+      ],
+      "triggers": [
+        "read this image",
+        "OCR this",
+        "resize image",
+        "convert image format"
+      ],
+      "keywords": [
+        "image",
+        "ocr",
+        "resize",
+        "convert",
+        "jpg",
+        "png",
+        "metadata"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    },
+    {
+      "id": "utilities.summarization",
+      "name": "summarization",
+      "category": "utilities",
+      "description": "Summarize long content \u2014 articles, documents, transcripts \u2014 at various lengths and for various audiences.",
+      "path": "utilities/summarization",
+      "aliases": [
+        "summary",
+        "tldr",
+        "abstract"
+      ],
+      "triggers": [
+        "summarize this",
+        "tldr",
+        "give me the summary",
+        "shorten this"
+      ],
+      "keywords": [
+        "summarize",
+        "summary",
+        "tldr",
+        "abstract",
+        "shorten",
+        "condense"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    },
+    {
+      "id": "utilities.text-processing",
+      "name": "text-processing",
+      "category": "utilities",
+      "description": "Process text \u2014 search, replace, transform, dedupe, slice, and convert between common formats.",
+      "path": "utilities/text-processing",
+      "aliases": [
+        "text-utils",
+        "string-manipulation"
+      ],
+      "triggers": [
+        "process this text",
+        "find and replace",
+        "clean this text",
+        "transform this"
+      ],
+      "keywords": [
+        "text",
+        "string",
+        "search",
+        "replace",
+        "transform",
+        "slice",
+        "dedupe"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    },
+    {
+      "id": "utilities.writing",
+      "name": "writing",
+      "category": "utilities",
+      "description": "Help the user write clearly \u2014 drafts, edits, tone, structure. Apply principles of clear writing.",
+      "path": "utilities/writing",
+      "aliases": [
+        "draft",
+        "edit",
+        "copywriting"
+      ],
+      "triggers": [
+        "help me write",
+        "edit this",
+        "draft an email",
+        "make this clearer"
+      ],
+      "keywords": [
+        "write",
+        "draft",
+        "edit",
+        "copy",
+        "prose",
+        "tone",
+        "clarity"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    },
+    {
+      "id": "web.accessibility",
+      "name": "accessibility",
+      "category": "web",
+      "description": "Accessibility (a11y) testing \u2014 WCAG checks, keyboard navigation, screen-reader semantics, color contrast.",
+      "path": "web/accessibility",
+      "aliases": [
+        "a11y",
+        "wcag",
+        "accessibility-testing"
+      ],
+      "triggers": [
+        "accessibility check",
+        "a11y audit",
+        "WCAG",
+        "is this accessible",
+        "keyboard navigation"
+      ],
+      "keywords": [
+        "accessibility",
+        "a11y",
+        "wcag",
+        "keyboard",
+        "screen",
+        "reader",
+        "contrast",
+        "aria"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    },
+    {
+      "id": "web.browser-automation",
+      "name": "browser-automation",
+      "category": "web",
+      "description": "Drive a headless browser to interact with web pages \u2014 fill forms, click, screenshot, scrape, test, and verify UI behavior.",
+      "path": "web/browser-automation",
+      "aliases": [
+        "playwright",
+        "puppeteer",
+        "headless-browser",
+        "browser-driver"
+      ],
+      "triggers": [
+        "automate this website",
+        "drive the browser",
+        "browser automation",
+        "click this button",
+        "fill this form",
+        "take a screenshot"
+      ],
+      "keywords": [
+        "browser",
+        "automation",
+        "playwright",
+        "puppeteer",
+        "headless",
+        "click",
+        "screenshot",
+        "scrape"
+      ],
+      "dependencies": [
+        "optional:playwright-or-similar"
+      ],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "medium",
+      "version": "1.0.0"
+    },
+    {
+      "id": "web.seo",
+      "name": "seo",
+      "category": "web",
+      "description": "Search engine optimization audits \u2014 on-page, technical, content, and link analysis with prioritized recommendations.",
+      "path": "web/seo",
+      "aliases": [
+        "search-engine-optimization",
+        "site-audit"
+      ],
+      "triggers": [
+        "SEO audit",
+        "check this page for SEO",
+        "improve SEO",
+        "meta tags",
+        "search rankings"
+      ],
+      "keywords": [
+        "seo",
+        "search",
+        "ranking",
+        "meta",
+        "keyword",
+        "on-page",
+        "technical",
+        "audit"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    },
+    {
+      "id": "web.web-extraction",
+      "name": "web-extraction",
+      "category": "web",
+      "description": "Extract specific information from a URL \u2014 main content, article text, structured fields \u2014 without full scraping infrastructure.",
+      "path": "web/web-extraction",
+      "aliases": [
+        "extract-from-url",
+        "article-extraction",
+        "main-content"
+      ],
+      "triggers": [
+        "extract the main content from this page",
+        "pull the article text",
+        "get the text from this URL"
+      ],
+      "keywords": [
+        "extract",
+        "article",
+        "main",
+        "content",
+        "page",
+        "readability"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    },
+    {
+      "id": "web.web-scraping",
+      "name": "web-scraping",
+      "category": "web",
+      "description": "Extract structured data from websites \u2014 list pages, parse DOM, normalize records, and write to CSV / JSON.",
+      "path": "web/web-scraping",
+      "aliases": [
+        "scrape",
+        "extraction",
+        "data-extraction"
+      ],
+      "triggers": [
+        "scrape this site",
+        "extract data from",
+        "pull all the X from this website",
+        "get me a list of"
+      ],
+      "keywords": [
+        "scrape",
+        "extract",
+        "parse",
+        "dom",
+        "html",
+        "data",
+        "web",
+        "crawl"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "medium",
+      "version": "1.0.0"
+    },
+    {
+      "id": "web.website-testing",
+      "name": "website-testing",
+      "category": "web",
+      "description": "End-to-end testing of websites \u2014 happy paths, edge cases, browser matrix, and visual regressions.",
+      "path": "web/website-testing",
+      "aliases": [
+        "e2e-testing",
+        "end-to-end",
+        "visual-regression"
+      ],
+      "triggers": [
+        "test this website",
+        "e2e tests",
+        "end-to-end test",
+        "visual regression"
+      ],
+      "keywords": [
+        "test",
+        "e2e",
+        "end-to-end",
+        "regression",
+        "browser",
+        "matrix",
+        "automation"
+      ],
+      "dependencies": [
+        "optional:playwright-or-cypress"
+      ],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    },
+    {
+      "id": "development.brainstorming",
+      "name": "brainstorming",
+      "category": "development",
+      "description": "Clarify intent and turn software ideas into approved designs before implementation.",
+      "path": "development/brainstorming",
+      "aliases": [
+        "design-first",
+        "requirements-discovery",
+        "ideation"
+      ],
+      "triggers": [
+        "brainstorm this feature",
+        "help design this change"
+      ],
+      "keywords": [
+        "design",
+        "requirements",
+        "brainstorm",
+        "intent"
+      ],
+      "dependencies": [],
+      "composes_with": [
+        "productivity.task-decomposition",
+        "development.architecture"
+      ],
+      "suggests_after": [],
+      "source": "obra/superpowers",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    },
+    {
+      "id": "development.git-worktrees",
+      "name": "git-worktrees",
+      "category": "development",
+      "description": "Create isolated Git workspaces safely while preserving current work and verifying a clean baseline.",
+      "path": "development/git-worktrees",
+      "aliases": [
+        "worktree",
+        "isolated-branch",
+        "parallel-branch"
+      ],
+      "triggers": [
+        "create a git worktree",
+        "work in an isolated branch"
+      ],
+      "keywords": [
+        "git",
+        "worktree",
+        "branch",
+        "isolate"
+      ],
+      "dependencies": [
+        "git"
+      ],
+      "composes_with": [
+        "development.git",
+        "development.testing"
+      ],
+      "suggests_after": [],
+      "source": "obra/superpowers",
+      "enabled": true,
+      "risk": "medium",
+      "version": "1.0.0"
+    },
+    {
+      "id": "development.mcp-server-development",
+      "name": "mcp-server-development",
+      "category": "development",
+      "description": "Design and implement discoverable, safe Model Context Protocol servers and evaluations.",
+      "path": "development/mcp-server-development",
+      "aliases": [
+        "mcp-builder",
+        "model-context-protocol",
+        "mcp-server"
+      ],
+      "triggers": [
+        "build an MCP server",
+        "create MCP tools for this API"
+      ],
+      "keywords": [
+        "mcp",
+        "server",
+        "tools",
+        "resources",
+        "protocol"
+      ],
+      "dependencies": [],
+      "composes_with": [
+        "development.backend",
+        "development.testing"
+      ],
+      "suggests_after": [],
+      "source": "anthropics/skills",
+      "enabled": true,
+      "risk": "medium",
+      "version": "1.0.0"
+    },
+    {
+      "id": "development.receiving-code-review",
+      "name": "receiving-code-review",
+      "category": "development",
+      "description": "Evaluate code-review feedback technically before accepting, rejecting, or implementing it.",
+      "path": "development/receiving-code-review",
+      "aliases": [
+        "review-feedback",
+        "address-review",
+        "respond-to-review"
+      ],
+      "triggers": [
+        "address this review feedback",
+        "is this reviewer correct"
+      ],
+      "keywords": [
+        "review",
+        "feedback",
+        "verify",
+        "pushback"
+      ],
+      "dependencies": [],
+      "composes_with": [
+        "development.testing"
+      ],
+      "suggests_after": [],
+      "source": "obra/superpowers",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    },
+    {
+      "id": "development.requesting-code-review",
+      "name": "requesting-code-review",
+      "category": "development",
+      "description": "Prepare a focused, evidence-based request for code review before integration.",
+      "path": "development/requesting-code-review",
+      "aliases": [
+        "request-review",
+        "pre-merge-review",
+        "review-request"
+      ],
+      "triggers": [
+        "request a code review",
+        "prepare this for review"
+      ],
+      "keywords": [
+        "request",
+        "review",
+        "diff",
+        "requirements"
+      ],
+      "dependencies": [],
+      "composes_with": [
+        "development.code-review",
+        "development.verification-before-completion"
+      ],
+      "suggests_after": [],
+      "source": "obra/superpowers",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    },
+    {
+      "id": "development.verification-before-completion",
+      "name": "verification-before-completion",
+      "category": "development",
+      "description": "Require fresh evidence before claiming that implementation work is complete or correct.",
+      "path": "development/verification-before-completion",
+      "aliases": [
+        "verify-completion",
+        "evidence-before-claims",
+        "done-check"
+      ],
+      "triggers": [
+        "verify this is done",
+        "can I call this complete"
+      ],
+      "keywords": [
+        "verify",
+        "complete",
+        "evidence",
+        "tests",
+        "build"
+      ],
+      "dependencies": [],
+      "composes_with": [
+        "development.testing",
+        "development.code-review"
+      ],
+      "suggests_after": [],
+      "source": "obra/superpowers",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    },
+    {
+      "id": "utilities.parallel-agents",
+      "name": "parallel-agents",
+      "category": "utilities",
+      "description": "Split independent work into isolated agent tasks and coordinate them concurrently.",
+      "path": "utilities/parallel-agents",
+      "aliases": [
+        "parallel-work",
+        "delegate-agents",
+        "multi-agent"
+      ],
+      "triggers": [
+        "run these independent tasks in parallel",
+        "delegate this work"
+      ],
+      "keywords": [
+        "parallel",
+        "agents",
+        "delegate",
+        "independent"
+      ],
+      "dependencies": [],
+      "composes_with": [
+        "development.verification-before-completion"
+      ],
+      "suggests_after": [],
+      "source": "obra/superpowers",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0"
+    }
+  ]
+}
