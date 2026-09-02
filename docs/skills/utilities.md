@@ -1,6 +1,6 @@
 # Utilities Skills
 
-_Generated: 2026-09-02T04:38:48+00:00_
+_Generated: 2026-09-02T13:11:07+00:00_
 
 General-purpose skills for working with files, text, images, and writing. Includes summarization, documentation generation, automation, and file management.
 

@@ -1,6 +1,6 @@
 # Productivity Skills
 
-_Generated: 2026-09-02T04:38:48+00:00_
+_Generated: 2026-09-02T13:11:07+00:00_
 
 Skills that help the user start, focus, plan, and finish — including ADHD-aware assistance, anti-procrastination, task decomposition, prioritization, and time management. The library intentionally leans on external, well-reviewed material (Cal Newport, James Clear, the Pomodoro technique, etc.) rather than inventing productivity philosophy from scratch.
 

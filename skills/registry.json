@@ -34,7 +34,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "design.branding",
+        "documentation": 7.8,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 3.5,
+        "overall_score": 6.4
+      },
+      "quality_score": 6.4
     },
     {
       "id": "design.frontend-design",
@@ -70,7 +87,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "design.frontend-design",
+        "documentation": 8.3,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 3.6,
+        "overall_score": 6.6
+      },
+      "quality_score": 6.6
     },
     {
       "id": "design.presentations",
@@ -104,7 +138,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "design.presentations",
+        "documentation": 8.6,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 3.2,
+        "overall_score": 6.6
+      },
+      "quality_score": 6.6
     },
     {
       "id": "design.ui-ux",
@@ -140,7 +191,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "design.ui-ux",
+        "documentation": 9.0,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 3.7,
+        "overall_score": 6.7
+      },
+      "quality_score": 6.7
     },
     {
       "id": "development.architecture",
@@ -178,7 +246,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "development.architecture",
+        "documentation": 8.6,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 4.1,
+        "overall_score": 6.7
+      },
+      "quality_score": 6.7
     },
     {
       "id": "development.backend",
@@ -212,7 +297,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "development.backend",
+        "documentation": 8.5,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 3.2,
+        "overall_score": 6.5
+      },
+      "quality_score": 6.5
     },
     {
       "id": "development.code-review",
@@ -247,7 +349,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "development.code-review",
+        "documentation": 9.0,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 3.4,
+        "overall_score": 6.7
+      },
+      "quality_score": 6.7
     },
     {
       "id": "development.coding",
@@ -288,7 +407,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "development.coding",
+        "documentation": 9.0,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 4.9,
+        "overall_score": 6.9
+      },
+      "quality_score": 6.9
     },
     {
       "id": "development.databases",
@@ -325,7 +461,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "medium",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "development.databases",
+        "documentation": 8.4,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 6.0,
+        "compatibility": 4.0,
+        "usefulness": 3.9,
+        "overall_score": 6.0
+      },
+      "quality_score": 6.0
     },
     {
       "id": "development.debugging",
@@ -365,7 +518,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "development.debugging",
+        "documentation": 8.7,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 4.5,
+        "overall_score": 6.8
+      },
+      "quality_score": 6.8
     },
     {
       "id": "development.devops",
@@ -402,7 +572,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "medium",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "development.devops",
+        "documentation": 8.3,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 6.0,
+        "compatibility": 4.0,
+        "usefulness": 3.9,
+        "overall_score": 6.0
+      },
+      "quality_score": 6.0
     },
     {
       "id": "development.frontend",
@@ -438,7 +625,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "development.frontend",
+        "documentation": 8.8,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 3.6,
+        "overall_score": 6.7
+      },
+      "quality_score": 6.7
     },
     {
       "id": "development.git",
@@ -479,7 +683,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "medium",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "development.git",
+        "documentation": 8.9,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 6.0,
+        "compatibility": 4.0,
+        "usefulness": 4.2,
+        "overall_score": 6.2
+      },
+      "quality_score": 6.2
     },
     {
       "id": "development.github",
@@ -519,7 +740,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "medium",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "development.github",
+        "documentation": 8.2,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 6.0,
+        "compatibility": 4.0,
+        "usefulness": 4.1,
+        "overall_score": 6.0
+      },
+      "quality_score": 6.0
     },
     {
       "id": "development.performance-optimization",
@@ -555,7 +793,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "development.performance-optimization",
+        "documentation": 8.2,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 3.7,
+        "overall_score": 6.5
+      },
+      "quality_score": 6.5
     },
     {
       "id": "development.refactoring",
@@ -592,7 +847,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "development.refactoring",
+        "documentation": 9.0,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 3.9,
+        "overall_score": 6.7
+      },
+      "quality_score": 6.7
     },
     {
       "id": "development.tdd",
@@ -624,7 +896,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "development.tdd",
+        "documentation": 8.5,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 2.7,
+        "overall_score": 6.5
+      },
+      "quality_score": 6.5
     },
     {
       "id": "development.testing",
@@ -663,7 +952,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "development.testing",
+        "documentation": 8.3,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 4.5,
+        "overall_score": 6.7
+      },
+      "quality_score": 6.7
     },
     {
       "id": "documents.csv",
@@ -696,7 +1002,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "documents.csv",
+        "documentation": 8.3,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 3.0,
+        "overall_score": 6.5
+      },
+      "quality_score": 6.5
     },
     {
       "id": "documents.docx",
@@ -728,7 +1051,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "documents.docx",
+        "documentation": 9.0,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 2.8,
+        "overall_score": 6.6
+      },
+      "quality_score": 6.6
     },
     {
       "id": "documents.markdown",
@@ -762,7 +1102,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "documents.markdown",
+        "documentation": 8.6,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 3.2,
+        "overall_score": 6.6
+      },
+      "quality_score": 6.6
     },
     {
       "id": "documents.pdf",
@@ -796,7 +1153,48 @@
       "source": "custom",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "pdf-reading",
+        "extract-text",
+        "extract-tables",
+        "summarize",
+        "generate-pdf"
+      ],
+      "inputs": [
+        "pdf_file"
+      ],
+      "outputs": [
+        "text",
+        "markdown",
+        "tables"
+      ],
+      "permissions": {
+        "filesystem": "read-write",
+        "network": "none",
+        "shell": "none",
+        "secrets": "none"
+      },
+      "compatibility": {
+        "generic": "true",
+        "claude_code": "true",
+        "codex": "true",
+        "cursor": "true",
+        "cline": "true",
+        "opencode": "true"
+      },
+      "quality": {
+        "skill_id": "documents.pdf",
+        "documentation": 8.3,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 10.0,
+        "usefulness": 4.2,
+        "overall_score": 7.2
+      },
+      "quality_score": 7.2
     },
     {
       "id": "documents.pptx",
@@ -829,7 +1227,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "documents.pptx",
+        "documentation": 8.3,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 3.1,
+        "overall_score": 6.5
+      },
+      "quality_score": 6.5
     },
     {
       "id": "documents.xlsx",
@@ -862,7 +1277,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "documents.xlsx",
+        "documentation": 8.7,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 3.0,
+        "overall_score": 6.5
+      },
+      "quality_score": 6.5
     },
     {
       "id": "productivity.adhd",
@@ -903,7 +1335,50 @@
       "source": "custom",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "scaffolding",
+        "working-memory",
+        "task-design",
+        "attention",
+        "reminder",
+        "external-structure"
+      ],
+      "inputs": [
+        "task",
+        "attention-state",
+        "context"
+      ],
+      "outputs": [
+        "scaffold-plan",
+        "reminder"
+      ],
+      "permissions": {
+        "filesystem": "read",
+        "network": "none",
+        "shell": "none",
+        "secrets": "none"
+      },
+      "compatibility": {
+        "generic": "true",
+        "claude_code": "true",
+        "codex": "true",
+        "cursor": "true",
+        "cline": "true",
+        "opencode": "true"
+      },
+      "quality": {
+        "skill_id": "productivity.adhd",
+        "documentation": 8.8,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.5,
+        "compatibility": 10.0,
+        "usefulness": 5.9,
+        "overall_score": 7.7
+      },
+      "quality_score": 7.7
     },
     {
       "id": "productivity.focus",
@@ -945,7 +1420,47 @@
       "source": "custom",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "focus-session",
+        "deep-work",
+        "distraction-blocking",
+        "pomodoro",
+        "break-structure"
+      ],
+      "inputs": [
+        "duration",
+        "distraction-source"
+      ],
+      "outputs": [
+        "focus-session-plan"
+      ],
+      "permissions": {
+        "filesystem": "read",
+        "network": "none",
+        "shell": "none",
+        "secrets": "none"
+      },
+      "compatibility": {
+        "generic": "true",
+        "claude_code": "true",
+        "codex": "true",
+        "cursor": "true",
+        "cline": "true",
+        "opencode": "true"
+      },
+      "quality": {
+        "skill_id": "productivity.focus",
+        "documentation": 8.7,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.5,
+        "compatibility": 10.0,
+        "usefulness": 6.1,
+        "overall_score": 7.7
+      },
+      "quality_score": 7.7
     },
     {
       "id": "productivity.planning",
@@ -983,7 +1498,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "productivity.planning",
+        "documentation": 8.6,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 4.1,
+        "overall_score": 6.7
+      },
+      "quality_score": 6.7
     },
     {
       "id": "productivity.prioritization",
@@ -1021,7 +1553,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "productivity.prioritization",
+        "documentation": 8.6,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 4.1,
+        "overall_score": 6.7
+      },
+      "quality_score": 6.7
     },
     {
       "id": "productivity.task-decomposition",
@@ -1062,7 +1611,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "productivity.task-decomposition",
+        "documentation": 8.8,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 4.9,
+        "overall_score": 6.8
+      },
+      "quality_score": 6.8
     },
     {
       "id": "productivity.time-management",
@@ -1099,7 +1665,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "productivity.time-management",
+        "documentation": 8.7,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 4.1,
+        "overall_score": 6.7
+      },
+      "quality_score": 6.7
     },
     {
       "id": "productivity.unlazy",
@@ -1142,7 +1725,50 @@
       "source": "custom",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "start-task",
+        "momentum",
+        "next-action",
+        "two-minute-rule",
+        "anti-procrastination",
+        "body-doubling"
+      ],
+      "inputs": [
+        "task",
+        "stuck-duration",
+        "attempts"
+      ],
+      "outputs": [
+        "next-action"
+      ],
+      "permissions": {
+        "filesystem": "read",
+        "network": "none",
+        "shell": "none",
+        "secrets": "none"
+      },
+      "compatibility": {
+        "generic": "true",
+        "claude_code": "true",
+        "codex": "true",
+        "cursor": "true",
+        "cline": "true",
+        "opencode": "true",
+        "gemini_cli": "true"
+      },
+      "quality": {
+        "skill_id": "productivity.unlazy",
+        "documentation": 9.0,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.5,
+        "compatibility": 10.0,
+        "usefulness": 6.5,
+        "overall_score": 7.8
+      },
+      "quality_score": 7.8
     },
     {
       "id": "research.academic-research",
@@ -1178,7 +1804,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "research.academic-research",
+        "documentation": 8.0,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 3.6,
+        "overall_score": 6.5
+      },
+      "quality_score": 6.5
     },
     {
       "id": "research.competitive-analysis",
@@ -1211,7 +1854,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "research.competitive-analysis",
+        "documentation": 8.6,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 3.0,
+        "overall_score": 6.5
+      },
+      "quality_score": 6.5
     },
     {
       "id": "research.data-analysis",
@@ -1248,7 +1908,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "research.data-analysis",
+        "documentation": 8.3,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 3.9,
+        "overall_score": 6.6
+      },
+      "quality_score": 6.6
     },
     {
       "id": "research.deep-research",
@@ -1283,7 +1960,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "research.deep-research",
+        "documentation": 8.7,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 3.4,
+        "overall_score": 6.6
+      },
+      "quality_score": 6.6
     },
     {
       "id": "research.fact-checking",
@@ -1318,7 +2012,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "research.fact-checking",
+        "documentation": 8.7,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 3.4,
+        "overall_score": 6.6
+      },
+      "quality_score": 6.6
     },
     {
       "id": "research.source-verification",
@@ -1351,7 +2062,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "research.source-verification",
+        "documentation": 8.1,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 3.0,
+        "overall_score": 6.4
+      },
+      "quality_score": 6.4
     },
     {
       "id": "research.web-research",
@@ -1386,7 +2114,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "research.web-research",
+        "documentation": 8.7,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 3.4,
+        "overall_score": 6.6
+      },
+      "quality_score": 6.6
     },
     {
       "id": "security.dependency-audit",
@@ -1424,7 +2169,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "security.dependency-audit",
+        "documentation": 8.6,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 4.1,
+        "overall_score": 6.7
+      },
+      "quality_score": 6.7
     },
     {
       "id": "security.prompt-injection-defense",
@@ -1458,7 +2220,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "medium",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "security.prompt-injection-defense",
+        "documentation": 8.5,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 6.0,
+        "compatibility": 4.0,
+        "usefulness": 3.2,
+        "overall_score": 5.9
+      },
+      "quality_score": 5.9
     },
     {
       "id": "security.secret-detection",
@@ -1493,7 +2272,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "medium",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "security.secret-detection",
+        "documentation": 8.2,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 6.0,
+        "compatibility": 4.0,
+        "usefulness": 3.4,
+        "overall_score": 5.9
+      },
+      "quality_score": 5.9
     },
     {
       "id": "security.secure-coding",
@@ -1534,7 +2330,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "medium",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "security.secure-coding",
+        "documentation": 9.0,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 6.0,
+        "compatibility": 4.0,
+        "usefulness": 4.7,
+        "overall_score": 6.3
+      },
+      "quality_score": 6.3
     },
     {
       "id": "utilities.automation",
@@ -1567,7 +2380,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "medium",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "utilities.automation",
+        "documentation": 8.5,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 6.0,
+        "compatibility": 4.0,
+        "usefulness": 3.0,
+        "overall_score": 5.9
+      },
+      "quality_score": 5.9
     },
     {
       "id": "utilities.documentation",
@@ -1600,7 +2430,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "utilities.documentation",
+        "documentation": 8.2,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 3.0,
+        "overall_score": 6.4
+      },
+      "quality_score": 6.4
     },
     {
       "id": "utilities.file-management",
@@ -1635,7 +2482,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "medium",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "utilities.file-management",
+        "documentation": 8.4,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 6.0,
+        "compatibility": 4.0,
+        "usefulness": 3.4,
+        "overall_score": 5.9
+      },
+      "quality_score": 5.9
     },
     {
       "id": "utilities.image",
@@ -1669,7 +2533,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "utilities.image",
+        "documentation": 7.7,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 3.2,
+        "overall_score": 6.4
+      },
+      "quality_score": 6.4
     },
     {
       "id": "utilities.summarization",
@@ -1702,7 +2583,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "utilities.summarization",
+        "documentation": 8.6,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 3.0,
+        "overall_score": 6.5
+      },
+      "quality_score": 6.5
     },
     {
       "id": "utilities.text-processing",
@@ -1735,7 +2633,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "utilities.text-processing",
+        "documentation": 8.3,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 2.9,
+        "overall_score": 6.4
+      },
+      "quality_score": 6.4
     },
     {
       "id": "utilities.writing",
@@ -1769,7 +2684,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "utilities.writing",
+        "documentation": 8.4,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 3.2,
+        "overall_score": 6.5
+      },
+      "quality_score": 6.5
     },
     {
       "id": "web.accessibility",
@@ -1805,7 +2737,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "web.accessibility",
+        "documentation": 8.6,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 3.6,
+        "overall_score": 6.6
+      },
+      "quality_score": 6.6
     },
     {
       "id": "web.browser-automation",
@@ -1845,7 +2794,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "medium",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "web.browser-automation",
+        "documentation": 9.0,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 6.0,
+        "compatibility": 4.0,
+        "usefulness": 4.1,
+        "overall_score": 6.2
+      },
+      "quality_score": 6.2
     },
     {
       "id": "web.seo",
@@ -1880,7 +2846,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "web.seo",
+        "documentation": 8.9,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 3.3,
+        "overall_score": 6.6
+      },
+      "quality_score": 6.6
     },
     {
       "id": "web.web-extraction",
@@ -1912,7 +2895,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "web.web-extraction",
+        "documentation": 9.0,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 2.8,
+        "overall_score": 6.6
+      },
+      "quality_score": 6.6
     },
     {
       "id": "web.web-scraping",
@@ -1947,7 +2947,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "medium",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "web.web-scraping",
+        "documentation": 8.7,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 6.0,
+        "compatibility": 4.0,
+        "usefulness": 3.4,
+        "overall_score": 6.0
+      },
+      "quality_score": 6.0
     },
     {
       "id": "web.website-testing",
@@ -1983,7 +3000,24 @@
       "source": "custom",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "web.website-testing",
+        "documentation": 8.4,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 3.2,
+        "overall_score": 6.5
+      },
+      "quality_score": 6.5
     },
     {
       "id": "development.brainstorming",
@@ -2015,7 +3049,24 @@
       "source": "obra/superpowers",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "development.brainstorming",
+        "documentation": 8.1,
+        "maintenance": 10.0,
+        "reliability": 8.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 2.2,
+        "overall_score": 7.3
+      },
+      "quality_score": 7.3
     },
     {
       "id": "development.git-worktrees",
@@ -2049,7 +3100,24 @@
       "source": "obra/superpowers",
       "enabled": true,
       "risk": "medium",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "development.git-worktrees",
+        "documentation": 8.5,
+        "maintenance": 10.0,
+        "reliability": 8.0,
+        "security": 6.0,
+        "compatibility": 4.0,
+        "usefulness": 2.2,
+        "overall_score": 6.7
+      },
+      "quality_score": 6.7
     },
     {
       "id": "development.mcp-server-development",
@@ -2082,7 +3150,24 @@
       "source": "anthropics/skills",
       "enabled": true,
       "risk": "medium",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "development.mcp-server-development",
+        "documentation": 8.2,
+        "maintenance": 10.0,
+        "reliability": 8.0,
+        "security": 6.0,
+        "compatibility": 4.0,
+        "usefulness": 2.4,
+        "overall_score": 6.7
+      },
+      "quality_score": 6.7
     },
     {
       "id": "development.receiving-code-review",
@@ -2113,7 +3198,24 @@
       "source": "obra/superpowers",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "development.receiving-code-review",
+        "documentation": 8.2,
+        "maintenance": 10.0,
+        "reliability": 8.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 2.2,
+        "overall_score": 7.3
+      },
+      "quality_score": 7.3
     },
     {
       "id": "development.requesting-code-review",
@@ -2145,7 +3247,24 @@
       "source": "obra/superpowers",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "development.requesting-code-review",
+        "documentation": 7.9,
+        "maintenance": 10.0,
+        "reliability": 8.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 2.2,
+        "overall_score": 7.2
+      },
+      "quality_score": 7.2
     },
     {
       "id": "development.verification-before-completion",
@@ -2178,7 +3297,24 @@
       "source": "obra/superpowers",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "development.verification-before-completion",
+        "documentation": 8.2,
+        "maintenance": 10.0,
+        "reliability": 8.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 2.4,
+        "overall_score": 7.3
+      },
+      "quality_score": 7.3
     },
     {
       "id": "utilities.parallel-agents",
@@ -2209,7 +3345,142 @@
       "source": "obra/superpowers",
       "enabled": true,
       "risk": "low",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "utilities.parallel-agents",
+        "documentation": 8.1,
+        "maintenance": 10.0,
+        "reliability": 8.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 2.2,
+        "overall_score": 7.3
+      },
+      "quality_score": 7.3
+    },
+    {
+      "id": "development.mcp-builder",
+      "name": "mcp-builder",
+      "category": "development",
+      "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK).",
+      "path": "development/mcp-builder",
+      "aliases": [
+        "mcp",
+        "model-context-protocol",
+        "mcp-server"
+      ],
+      "triggers": [
+        "build an MCP server",
+        "create MCP tools",
+        "integrate an API as MCP",
+        "MCP server",
+        "model context protocol"
+      ],
+      "keywords": [
+        "mcp",
+        "model",
+        "context",
+        "protocol",
+        "server",
+        "tool",
+        "sdk",
+        "fastmcp"
+      ],
+      "dependencies": [
+        "python-or-node"
+      ],
+      "composes_with": [
+        "development.coding",
+        "development.backend",
+        "development.testing"
+      ],
+      "suggests_after": [
+        "development.architecture"
+      ],
+      "source": "anthropics/skills",
+      "enabled": true,
+      "risk": "medium",
+      "version": "1.1.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "development.mcp-builder",
+        "documentation": 9.0,
+        "maintenance": 10.0,
+        "reliability": 8.0,
+        "security": 6.0,
+        "compatibility": 4.0,
+        "usefulness": 3.6,
+        "overall_score": 7.0
+      },
+      "quality_score": 7.0
+    },
+    {
+      "id": "productivity.brainstorming",
+      "name": "brainstorming",
+      "category": "productivity",
+      "description": "Explore user intent, requirements, and design before implementation. Use when starting creative work, new feature design, or when encountering ambiguity.",
+      "path": "productivity/brainstorming",
+      "aliases": [
+        "ideation",
+        "design-brainstorm",
+        "concept-development"
+      ],
+      "triggers": [
+        "let's brainstorm",
+        "I have an idea",
+        "help me design this",
+        "what are some ideas for",
+        "brainstorm"
+      ],
+      "keywords": [
+        "brainstorm",
+        "idea",
+        "concept",
+        "design",
+        "creative",
+        "requirement",
+        "ideation"
+      ],
+      "dependencies": [],
+      "composes_with": [
+        "productivity.task-decomposition",
+        "development.architecture"
+      ],
+      "suggests_after": [
+        "productivity.planning"
+      ],
+      "source": "obra/superpowers",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "productivity.brainstorming",
+        "documentation": 9.0,
+        "maintenance": 10.0,
+        "reliability": 8.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 3.4,
+        "overall_score": 7.6
+      },
+      "quality_score": 7.6
     }
   ]
 }

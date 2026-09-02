@@ -18,6 +18,22 @@ risk: low
 version: 1.0.0
 source: custom
 enabled: true
+capabilities: [focus-session, deep-work, distraction-blocking, pomodoro, break-structure]
+inputs: [duration, distraction-source]
+outputs: [focus-session-plan]
+permissions:
+  filesystem: read
+  network: none
+  shell: none
+  secrets: none
+compatibility:
+  generic: true
+  claude_code: true
+  codex: true
+  cursor: true
+  cline: true
+  opencode: true
+lifecycle: enabled
 ---
 
 # Focus

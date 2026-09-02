@@ -38,3 +38,7 @@ Thumbs.db
 tmp/
 temp/
 .cache/
+
+# Nested worktree clone of this repository (kept in the workspace as a backup).
+# It has its own .git and must never be added to the parent repository.
+reference-all-skills/

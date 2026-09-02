@@ -15,6 +15,22 @@ risk: low
 version: 1.0.0
 source: custom
 enabled: true
+capabilities: [pdf-reading, extract-text, extract-tables, summarize, generate-pdf]
+inputs: [pdf_file]
+outputs: [text, markdown, tables]
+permissions:
+  filesystem: read-write
+  network: none
+  shell: none
+  secrets: none
+compatibility:
+  generic: true
+  claude_code: true
+  codex: true
+  cursor: true
+  cline: true
+  opencode: true
+lifecycle: enabled
 ---
 
 # PDF

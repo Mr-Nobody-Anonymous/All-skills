@@ -1,0 +1,612 @@
+{
+  "version": 1,
+  "skills": {
+    "design.branding": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "design.frontend-design": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "design.presentations": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "design.ui-ux": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "development.architecture": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "development.backend": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "development.code-review": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "development.coding": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "development.databases": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "development.debugging": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "development.devops": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "development.frontend": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "development.git": {
+      "required": [
+        "git"
+      ],
+      "optional": [],
+      "system": [
+        "git"
+      ],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "development.github": {
+      "required": [
+        "git"
+      ],
+      "optional": [
+        "gh-cli"
+      ],
+      "system": [
+        "git",
+        "gh-cli"
+      ],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "development.performance-optimization": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "development.refactoring": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "development.tdd": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "development.testing": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "documents.csv": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "documents.docx": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "documents.markdown": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "documents.pdf": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "documents.pptx": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "documents.xlsx": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "productivity.adhd": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "productivity.focus": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "productivity.planning": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "productivity.prioritization": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "productivity.task-decomposition": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "productivity.time-management": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "productivity.unlazy": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "research.academic-research": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "research.competitive-analysis": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "research.data-analysis": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "research.deep-research": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "research.fact-checking": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "research.source-verification": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "research.web-research": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "security.dependency-audit": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "security.prompt-injection-defense": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "security.secret-detection": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "security.secure-coding": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "utilities.automation": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "utilities.documentation": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "utilities.file-management": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "utilities.image": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "utilities.summarization": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "utilities.text-processing": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "utilities.writing": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "web.accessibility": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "web.browser-automation": {
+      "required": [],
+      "optional": [
+        "playwright"
+      ],
+      "system": [],
+      "python": [],
+      "api": [
+        "playwright"
+      ],
+      "missing_required": [],
+      "missing_optional": [
+        "playwright"
+      ]
+    },
+    "web.seo": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "web.web-extraction": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "web.web-scraping": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "web.website-testing": {
+      "required": [],
+      "optional": [
+        "playwright"
+      ],
+      "system": [],
+      "python": [],
+      "api": [
+        "playwright"
+      ],
+      "missing_required": [],
+      "missing_optional": [
+        "playwright"
+      ]
+    },
+    "development.brainstorming": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "development.git-worktrees": {
+      "required": [
+        "git"
+      ],
+      "optional": [],
+      "system": [
+        "git"
+      ],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "development.mcp-server-development": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "development.receiving-code-review": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "development.requesting-code-review": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "development.verification-before-completion": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "utilities.parallel-agents": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "development.mcp-builder": {
+      "required": [
+        "python"
+      ],
+      "optional": [],
+      "system": [
+        "python"
+      ],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "productivity.brainstorming": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    }
+  }
+}

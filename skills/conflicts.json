@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "note": "Declared pairwise conflicts. Severity: info (advisory), warn (default-off recommendation), error (cannot both be enabled). The priority names the skill that should win when both match.",
+  "conflicts": [
+    {
+      "skills": ["productivity.focus", "productivity.brainstorming"],
+      "reason": "focus guards a single deep-work session while brainstorming deliberately opens divergent exploration; running both simultaneously dilutes both outcomes. Chaining (brainstorm first, then focus) is allowed.",
+      "severity": "warn",
+      "priority": "focus"
+    },
+    {
+      "skills": ["productivity.unlazy", "productivity.brainstorming"],
+      "reason": "unlazy forces a single smallest next action whereas brainstorming expands into many ideas; simultaneity conflicts, chaining does not.",
+      "severity": "info",
+      "priority": "unlazy"
+    }
+  ]
+}

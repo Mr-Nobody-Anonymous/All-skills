@@ -1,0 +1,22 @@
+name: skill-integrity
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  doctor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+      - name: Doctor (lifecycle, quality, conflicts, deps)
+        run: python scripts/skills/skills.py doctor
+      - name: Resolve named chains
+        run: |
+          python scripts/skills/skills.py chain deep-research | grep -q "Steps:"
+          python scripts/skills/skills.py chain anti-procrastination | grep -q "Steps:"
+          python scripts/skills/skills.py chain code-review-flow | grep -q "Steps:"

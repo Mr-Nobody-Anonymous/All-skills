@@ -5,7 +5,7 @@ import json
 import os
 from dataclasses import dataclass, field, asdict as dc_asdict
 from pathlib import Path
-from typing import Dict, Iterable, List, Optional
+from typing import Any, Dict, Iterable, List, Optional
 
 
 def _as_bool(value: object, default: bool = True) -> bool:
@@ -40,9 +40,27 @@ class SkillEntry:
     enabled: bool = True
     risk: str = "low"  # low | medium | high
     version: str = "1.0.0"
+    # Lifecycle: discovered | imported | validated | security_scanned | ready |
+    # enabled | disabled | quarantined | deprecated
+    lifecycle: str = "enabled"
+    capabilities: List[str] = field(default_factory=list)
+    inputs: List[str] = field(default_factory=list)
+    outputs: List[str] = field(default_factory=list)
+    permissions: Optional[Dict[str, str]] = None
+    compatibility: Optional[Dict[str, Any]] = None
+    quality: Optional[Dict[str, float]] = None
+    quality_score: float = 0.0
 
     def to_dict(self) -> dict:
-        return dc_asdict(self)
+        d = dc_asdict(self)
+        for key in ("permissions", "compatibility", "quality"):
+            if d.get(key) is None:
+                d[key] = {}
+        if not d.get("quality"):
+            d["quality"] = {}
+        if d.get("quality_score") is None:
+            d["quality_score"] = 0.0
+        return d
 
     @classmethod
     def from_dict(cls, d: dict) -> "SkillEntry":
@@ -65,6 +83,14 @@ class SkillEntry:
         clean["enabled"] = _as_bool(clean.get("enabled"), True)
         clean.setdefault("risk", "low")
         clean.setdefault("version", "1.0.0")
+        clean.setdefault("lifecycle", "enabled")
+        clean.setdefault("capabilities", [])
+        clean.setdefault("inputs", [])
+        clean.setdefault("outputs", [])
+        clean.setdefault("permissions", None)
+        clean.setdefault("compatibility", None)
+        clean.setdefault("quality", None)
+        clean.setdefault("quality_score", 0.0)
         return cls(**clean)
 
 
@@ -120,6 +146,14 @@ class Registry:
                 enabled=_as_bool(meta.get("enabled"), True),
                 risk=meta.get("risk", "low"),
                 version=meta.get("version", "1.0.0"),
+                lifecycle=meta.get("lifecycle", "enabled"),
+                capabilities=meta.get("capabilities", []) or [],
+                inputs=meta.get("inputs", []) or [],
+                outputs=meta.get("outputs", []) or [],
+                permissions=meta.get("permissions"),
+                compatibility=meta.get("compatibility"),
+                quality=meta.get("quality"),
+                quality_score=float(meta.get("quality_score", 0.0) or 0.0),
             )
             reg.entries.append(entry)
             existing_ids.add(entry.id)

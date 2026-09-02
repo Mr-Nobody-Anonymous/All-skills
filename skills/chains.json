@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "note": "Named, deterministic skill chains. The scoring router suggests ad-hoc chains; these are canonical workflows an agent can invoke by name.",
+  "chains": [
+    {
+      "name": "deep-research",
+      "description": "Research a topic on the web, verify sources, fact-check, summarize, and produce a Markdown report.",
+      "steps": [
+        "research.web-research",
+        "research.source-verification",
+        "research.fact-checking",
+        "utilities.summarization",
+        "documents.markdown"
+      ],
+      "inputs": ["topic"],
+      "outputs": ["research_report.md"],
+      "rationale": "web-first collection -> verification -> synthesis -> document output"
+    },
+    {
+      "name": "anti-procrastination",
+      "description": "Un-stick the user, decompose the task, prioritize, then protect focused work.",
+      "steps": [
+        "productivity.unlazy",
+        "productivity.task-decomposition",
+        "productivity.prioritization",
+        "productivity.focus"
+      ],
+      "inputs": ["task"],
+      "outputs": ["next_action", "task_plan", "focus_session_plan"],
+      "rationale": "momentum first, then structure, then a defended focus session"
+    },
+    {
+      "name": "code-review-flow",
+      "description": "Request a structured review, receive feedback, and verify before completion.",
+      "steps": [
+        "development.requesting-code-review",
+        "development.receiving-code-review",
+        "development.verification-before-completion"
+      ],
+      "inputs": ["code_change"],
+      "outputs": ["review_feedback", "verification_report"],
+      "rationale": "ask -> absorb -> verify before calling work done"
+    },
+    {
+      "name": "document-processing",
+      "description": "Load, summarize, and re-export a document into Markdown.",
+      "steps": [
+        "documents.pdf",
+        "utilities.summarization",
+        "documents.markdown"
+      ],
+      "inputs": ["pdf_file"],
+      "outputs": ["markdown"],
+      "rationale": "native parse -> summarize -> portable output"
+    }
+  ]
+}

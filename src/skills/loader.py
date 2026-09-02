@@ -71,6 +71,14 @@ def _load_skill_file(skill_id: str, skill_md: Path, skill_dir: Path) -> Optional
         enabled=str(meta.get("enabled", "true")).lower() not in {"false", "no", "0", "off"},
         risk=meta.get("risk", "low"),
         version=meta.get("version", "1.0.0"),
+        lifecycle=meta.get("lifecycle", "enabled"),
+        capabilities=meta.get("capabilities", []) or [],
+        inputs=meta.get("inputs", []) or [],
+        outputs=meta.get("outputs", []) or [],
+        permissions=meta.get("permissions"),
+        compatibility=meta.get("compatibility"),
+        quality=meta.get("quality"),
+        quality_score=float(meta.get("quality_score", 0.0) or 0.0),
     )
     files = sorted([p.name for p in skill_dir.rglob("*") if p.is_file()])
     return LoadedSkill(entry=entry, skill_md_path=skill_md, body=body, files=files)

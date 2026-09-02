@@ -21,22 +21,48 @@ The realistic attack vectors are therefore:
 The validator at `src/skills/validator.py` exists to flag these patterns before
 a skill is enabled.
 
-## What the validator checks
+## What the validator and scanner check
 
-Each `SKILL.md` and every readable file under a registered skill directory is scanned for:
+Each `SKILL.md` and every readable file under a registered skill directory is
+statically scanned (`src/skills/security.py` — nothing is ever executed):
 
-| Pattern | Risk |
-|---|---|
-| `curl ... | sh` or `curl ... | bash` | Pipe-to-shell — classic RCE pattern. |
-| `eval(...)` in shell/Python/JavaScript | Dynamic code execution. |
-| `base64 -d` / `atob(...)` / `Buffer.from(..., 'base64')` | Obfuscated payload decode. |
-| References to `~/.ssh/id_rsa`, `~/.aws/credentials`, `~/.npmrc`, `~/.netrc`, `~/.env` | Credential file access. |
-| `rm -rf /` | Destructive root deletion. |
-| `powershell -EncodedCommand ...` | Encoded PowerShell execution. |
+| Pattern | Risk | Severity |
+|---|---|---|
+| `curl ... \| sh/bash` or `wget ... \| sh/bash` | Pipe-to-shell RCE | high |
+| `rm -rf /` | Destructive root deletion | high |
+| `powershell -EncodedCommand ...` | Encoded PowerShell execution | high |
+| Embedded `PRIVATE KEY` header / `AKIA…` AWS key | Credential exposure | high |
+| `eval(...)` / `exec(...)` / `os.system(...)` | Dynamic code execution | warn |
+| `subprocess(..., shell=True)` | Shell-injection surface | warn |
+| References to `~/.ssh/id_rsa`, `~/.aws/credentials`, `.npmrc`, `.netrc`, `.env` | Credential file access | warn |
+| `base64 -d` / `atob(...)` / `Buffer.from(..., 'base64')` | Obfuscated payload decode | warn |
+| Webhook URLs in scripts | Network exfiltration surface | warn |
 
-Match results are returned as **warnings** in `ValidationResult.warnings` — they
-do not block skill loading by themselves, but are surfaced by
-`scripts/skills/skills.py doctor` and `validate`.
+High-severity findings are reported as validation **errors**; everything else
+is a **warning**. The dedicated CI gate is:
+
+```bash
+python scripts/skills/skills.py scan            # fails on high-severity findings
+python scripts/skills/skills.py scan --strict   # also fails on warnings
+```
+
+## Import pipeline (third-party skills)
+
+Third-party repositories are never `git clone && execute`. Every import follows
+the same gate:
+
+1. Clone into an OS temporary directory — never into the skills tree.
+2. **Static inspection**: full-text scan for the patterns above
+   (`python scripts/skills/skills.py scan`). Scripts are read as text only.
+3. **SKILL.md validation**: frontmatter (`name`, `description`, `category`,
+   `version`), all standard body sections, `README.md`.
+4. **Suspicious-command + secret detection** (the scanner above).
+5. **License check** and provenance recording (`SOURCES.json`: repository,
+   commit, source path, original author).
+6. **Approval**, then copy into `skills/<category>/<name>/` preserving
+   `references/upstream-SKILL.md` and marking `modified: true`.
+7. `python scripts/refresh_registry.py` regenerates `registry.json` and
+   `dependencies.json`, and `doctor`/`validate` confirm the result.
 
 ## Required frontmatter
 
@@ -51,7 +77,10 @@ Suspicious or unaudited skills are moved to `skills/_quarantine/` with a
 - Cannot be invoked via the router.
 - Are still visible in `skills/_quarantine/` so a reviewer can inspect them.
 
-The current library has zero quarantined skills. It includes 55 locally maintained skills and 7 pinned adaptations from vetted upstream repositories. Imported executable scripts were intentionally excluded.
+The current library has zero quarantined skills. It includes 55 locally maintained
+skills and 9 pinned adaptations (7 from `obra/superpowers`, 2 from
+`anthropics/skills`). Imported executable scripts were intentionally excluded;
+only the workflow content is adapted.
 
 ## Permissions model
 

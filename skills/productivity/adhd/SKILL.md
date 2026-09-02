@@ -18,6 +18,22 @@ risk: low
 version: 1.0.0
 source: custom
 enabled: true
+capabilities: [scaffolding, working-memory, task-design, attention, reminder, external-structure]
+inputs: [task, attention-state, context]
+outputs: [scaffold-plan, reminder]
+permissions:
+  filesystem: read
+  network: none
+  shell: none
+  secrets: none
+compatibility:
+  generic: true
+  claude_code: true
+  codex: true
+  cursor: true
+  cline: true
+  opencode: true
+lifecycle: enabled
 ---
 
 # ADHD

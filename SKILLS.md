@@ -1,6 +1,6 @@
 # Agent Skills Library
 
-A clean, organized, scalable library of **62** independently discoverable skills across eight categories, following the open Agent Skills standard. The library contains 55 local skills and 7 vetted, pinned adaptations from two upstream repositories.
+A clean, organized, scalable library of **64** independently discoverable skills across eight categories, following the open Agent Skills standard. The library contains 55 local skills and 9 vetted, pinned adaptations (7 from `obra/superpowers`, 2 from `anthropics/skills`).
 
 ## Quick Start
 
@@ -17,9 +17,21 @@ python scripts/skills/skills.py info productivity.unlazy
 # Route and include compatible follow-on skills
 python scripts/skills/skills.py route --chain --top-k 6 "I am procrastinating on a large project"
 
-# Enable or disable a skill
+# Enable, disable, or move a skill through its lifecycle
 python scripts/skills/skills.py disable productivity.unlazy
 python scripts/skills/skills.py enable productivity.unlazy
+python scripts/skills/skills.py lifecycle productivity.unlazy disabled
+
+# Explain why a request matched (per-signal breakdown)
+python scripts/skills/skills.py explain "I'm procrastinating"
+
+# Named deterministic workflows
+python scripts/skills/skills.py chain deep-research --dry-run
+
+# Quality, conflicts, and static security scan
+python scripts/skills/skills.py quality
+python scripts/skills/skills.py conflicts
+python scripts/skills/skills.py scan
 
 # Check pinned upstream commits without changing files
 python scripts/skills/skills.py update
@@ -47,13 +59,16 @@ The skill router understands natural language. Examples:
 
 ## Library Stats
 
-- **Total skills:** 62
+- **Total skills:** 64
 - **Categories:** 8
 - **Custom skills:** 55
-- **Imported skills:** 7 from 2 pinned repositories
+- **Imported skills:** 9 (7 `obra/superpowers`, 2 `anthropics/skills`)
 - **Format:** Agent Skills standard (`SKILL.md` + frontmatter)
-- **Discovery:** exact IDs, aliases, categories, triggers, keywords, and token matching
-- **Composition:** `composes_with` / `suggests_after`, exposed by `route --chain`
+- **Discovery:** exact IDs, aliases, categories, triggers, keywords, capability vocabulary, and token matching
+- **Composition:** `composes_with` / `suggests_after`, exposed by `route --chain`; named workflows in `skills/chains.json`
+- **Quality:** deterministic 6-axis scoring stored in `registry.json`
+- **Lifecycle:** explicit states from `discovered` to `enabled | disabled | quarantined | deprecated`
+- **Security:** static-only `scan` with severity-graded patterns
 
 ## Categories
 
@@ -68,23 +83,31 @@ The skill router understands natural language. Examples:
 
 ## Architecture
 
-```
-                    ┌──────────────────┐
-                    │      AGENT       │
-                    └────────┬─────────┘
-                             │
-                             ▼
-                    ┌──────────────────┐
-                    │  SKILL ROUTER    │
-                    └────────┬─────────┘
-                             │
-              ┌──────────────┼──────────────┐
-              ▼              ▼              ▼
-        Productivity     Development     Research
-              │              │              │
-              ▼              ▼              ▼
-           Skills         Skills         Skills
-```
+The model is never handed all 64 skills. Discovery -> routing -> best match ->
+**load-on-demand** keeps context small:
+
+`
+                     AGENT
+                       |
+                       v
+                SKILL DISCOVERY
+                       |
+                       v
+                 SKILL ROUTER
+                       |
+        +--------------+--------------+
+        v              v              v
+   candidates     candidate chains  chains.json
+        +--------------+--------------+
+                       v
+                 BEST MATCH
+      (quality + permissions + deps + safety)
+                       |
+                       v
+          LOAD SKILL (one body on demand)
+`
+
+See docs/skills/ARCHITECTURE.md for the full layered-scoring explanation.
 
 ## Directory Structure
 
@@ -99,10 +122,13 @@ skills/
 ├── security/          # secure coding, auditing
 ├── utilities/         # general utilities
 ├── _quarantine/       # suspicious skills held for review
-├── registry.json      # skill index
+├── registry.json      # skill index (includes lifecycle + quality)
 ├── registry.md        # human-readable registry
 ├── SOURCES.json       # source attribution
-└── DEPENDENCIES.md    # dependency tracking
+├── DEPENDENCIES.md    # human-readable dependency tracking
+├── dependencies.json  # machine-readable dependency tracking
+├── chains.json        # named deterministic workflows
+└── conflicts.json     # declared pairwise conflicts
 ```
 
 ## Adding a New Skill
@@ -110,9 +136,11 @@ skills/
 1. Create `skills/<category>/<skill-name>/` with `SKILL.md` and `README.md`.
 2. Include `name`, `description`, `category`, and `version`, plus all standard body sections.
 3. Add aliases, triggers, keywords, dependencies, composition targets, and risk metadata.
-4. For imports, preserve `LICENSE`, `references/upstream-SKILL.md`, repository, source path, commit, author, and modification status.
-5. Export and regenerate docs: `python scripts/skills/skills.py export`, then run both `scripts/generate_*.py` files.
-6. Run `python scripts/skills/skills.py validate`, `test`, and `doctor`.
+4. Optionally declare `capabilities`, `inputs`, `outputs`, `permissions:`, `compatibility:`, and `lifecycle:` in frontmatter.
+5. For imports, preserve `LICENSE`, `references/upstream-SKILL.md`, repository, source path, commit, author, and modification status.
+6. Backfill the registry + quality scores: `python scripts/refresh_registry.py`.
+7. Export and regenerate docs: `python scripts/skills/skills.py export`, then run both `scripts/generate_*.py` files.
+8. Run `python scripts/skills/skills.py validate`, `test`, `scan`, and `doctor`.
 
 ## Security Policy
 

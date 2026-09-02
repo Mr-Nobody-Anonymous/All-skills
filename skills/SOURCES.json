@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-09-02T04:38:48+00:00",
+  "generated_at": "2026-09-02T13:11:07+00:00",
   "note": "Imported skills are pinned to reviewed upstream commits. Custom skills are maintained locally. Third-party executables are not run during import.",
   "skills": [
     {
@@ -249,7 +249,7 @@
       "source_path": null,
       "commit": null,
       "imported_at": null,
-      "license": null,
+      "license": "MIT",
       "original_author": "this-project",
       "modified": true,
       "version": "1.1.0",
@@ -489,7 +489,7 @@
       "source_path": null,
       "commit": null,
       "imported_at": null,
-      "license": null,
+      "license": "MIT",
       "original_author": "this-project",
       "modified": true,
       "version": "1.0.0",

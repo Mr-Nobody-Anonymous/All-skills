@@ -19,6 +19,23 @@ risk: low
 version: 1.0.0
 source: custom
 enabled: true
+capabilities: [start-task, momentum, next-action, two-minute-rule, anti-procrastination, body-doubling]
+inputs: [task, stuck-duration, attempts]
+outputs: [next-action]
+permissions:
+  filesystem: read
+  network: none
+  shell: none
+  secrets: none
+compatibility:
+  generic: true
+  claude_code: true
+  codex: true
+  cursor: true
+  cline: true
+  opencode: true
+  gemini_cli: true
+lifecycle: enabled
 ---
 
 # Unlazy

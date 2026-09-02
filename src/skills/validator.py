@@ -1,12 +1,14 @@
-"""Skill validation — checks SKILL.md, paths, conflicts, and basic safety."""
+"""Skill validation â€” checks SKILL.md, paths, conflicts, and basic safety."""
 from __future__ import annotations
 
 import re
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import List, Set
+from typing import Dict, List, Set
 
+from .lifecycle import is_valid as lifecycle_valid
 from .registry import Registry, SkillEntry
+from .security import scan_skill
 
 
 @dataclass
@@ -32,14 +34,6 @@ REQUIRED_SECTIONS = {
     "Purpose", "When to Use", "When NOT to Use", "Capabilities", "Inputs",
     "Workflow", "Tools", "Examples", "Safety", "Source", "Notes",
 }
-SUSPICIOUS_PATTERNS = [
-    (re.compile(r"curl\s+.*\|\s*(sh|bash)", re.IGNORECASE), "pipe-to-shell pattern"),
-    (re.compile(r"eval\s*\(", re.IGNORECASE), "eval() call"),
-    (re.compile(r"base64\s+-d|atob\(|Buffer\.from\([^)]+, ?['\"]base64", re.IGNORECASE), "base64 decode"),
-    (re.compile(r"(?:^|[\\/])(?:\.ssh[\\/]id_rsa|\.aws[\\/]credentials|\.npmrc|\.netrc|\.env)(?:\b|$)", re.IGNORECASE | re.MULTILINE), "credential file reference"),
-    (re.compile(r"\brm\s+-rf\s+/", re.IGNORECASE), "destructive rm -rf /"),
-    (re.compile(r"powershell\s+-e(ncodedcommand)?\s+", re.IGNORECASE), "powershell encoded command"),
-]
 
 
 class Validator:
@@ -50,12 +44,85 @@ class Validator:
     def validate_all(self) -> ValidationResult:
         result = ValidationResult(ok=True)
         ids_seen: Set[str] = set()
+        alias_map: Dict[str, List[str]] = {}
         for entry in self.registry.entries:
             self._validate_entry(entry, result)
             if entry.id in ids_seen:
                 result.add_error(f"duplicate skill id: {entry.id}")
             ids_seen.add(entry.id)
+            for alias in entry.aliases or []:
+                alias_key = str(alias).strip().lower()
+                if alias_key:
+                    alias_map.setdefault(alias_key, []).append(entry.id)
+        # Duplicate aliases across different skills confuse the router.
+        for alias, ids in sorted(alias_map.items()):
+            if len(set(ids)) > 1:
+                result.add_warning(f"duplicate alias {alias!r} shared by: {', '.join(sorted(set(ids)))}")
+        # Orphaned on-disk skills that are not registered.
+        registered_paths = {entry.path.replace("/", "/") for entry in self.registry.entries}
+        for skill_md in self.skills_root.rglob("SKILL.md"):
+            if "_quarantine" in skill_md.parts:
+                continue
+            rel_dir = skill_md.relative_to(self.skills_root).parent.as_posix()
+            if rel_dir not in registered_paths:
+                result.add_warning(f"orphaned skill dir not in registry: {rel_dir}")
+        # Circular composition chains (e.g. A -> B -> A).
+        for cycle in self.detect_circular_chains():
+            result.add_error(f"circular skill chain: {cycle}")
+        # Declared conflicts (skills/conflicts.json).
+        self._check_conflicts(result)
         return result
+
+    def detect_circular_chains(self) -> List[str]:
+        """Detect cycles formed by composes_with / suggests_after edges."""
+        graph: Dict[str, List[str]] = {}
+        for entry in self.registry.entries:
+            targets = [
+                t for t in entry.composes_with + entry.suggests_after
+                if self.registry.get(t) is not None
+            ]
+            graph[entry.id] = targets
+        cycles: List[str] = []
+        visited: Set[str] = set()
+        stack: List[str] = []
+
+        def dfs(node: str) -> None:
+            if node in stack:
+                start = stack.index(node)
+                cycles.append(" -> ".join(stack[start:] + [node]))
+                return
+            if node in visited:
+                return
+            stack.append(node)
+            visited.add(node)
+            for child in graph.get(node, []):
+                dfs(child)
+            stack.pop()
+
+        for node in list(graph.keys()):
+            dfs(node)
+        return cycles
+
+    def _check_conflicts(self, result: ValidationResult) -> None:
+        from .conflicts import load_conflicts
+
+        conflicts = load_conflicts(self.skills_root.parent)
+        for conflict in conflicts.all():
+            missing = [s for s in conflict.skills if self.registry.get(s) is None]
+            if missing:
+                result.add_error(
+                    f"conflict references unknown skill(s): {', '.join(missing)}"
+                )
+                continue
+            entries = [self.registry.get(s) for s in conflict.skills]
+            if entries and all(e is not None and e.enabled for e in entries):
+                msg = f"active conflict: {' + '.join(conflict.skills)} â€” {conflict.reason}"
+                if conflict.severity == "error":
+                    result.add_error(msg)
+                elif conflict.severity == "warn":
+                    result.add_warning(msg)
+                else:
+                    result.add_info(msg)
 
     def validate_one(self, skill_id: str) -> ValidationResult:
         result = ValidationResult(ok=True)
@@ -106,17 +173,42 @@ class Validator:
         for target in entry.composes_with + entry.suggests_after:
             if not self.registry.get(target):
                 result.add_error(f"[{entry.id}] composition target not found: {target}")
-        # Scan every readable skill file. Third-party scripts are never executed.
-        for f in skill_dir.rglob("*"):
-            if not f.is_file() or f.stat().st_size > 2_000_000:
-                continue
-            try:
-                content = f.read_text(encoding="utf-8", errors="ignore")
-            except Exception:
-                continue
-            for pattern, label in SUSPICIOUS_PATTERNS:
-                if pattern.search(content):
-                    result.add_warning(f"[{entry.id}] {f.relative_to(skill_dir)} contains suspicious pattern: {label}")
+        # Lifecycle sanity.
+        lifecycle = (entry.lifecycle or "enabled").strip().lower()
+        if not lifecycle_valid(lifecycle):
+            result.add_error(f"[{entry.id}] invalid lifecycle state: {lifecycle!r}")
+        elif lifecycle in {"disabled", "quarantined", "deprecated"} and entry.enabled:
+            result.add_warning(f"[{entry.id}] lifecycle is {lifecycle!r} but registry enabled=true")
+        elif lifecycle == "enabled" and not entry.enabled:
+            result.add_warning(f"[{entry.id}] lifecycle is 'enabled' but registry enabled=false")
+        # Oversized SKILL.md hurts context loading.
+        try:
+            size = skill_md.stat().st_size
+        except OSError:
+            size = 0
+        if size >= 200_000:
+            result.add_error(f"[{entry.id}] SKILL.md too large: {size} bytes")
+        elif size >= 100_000:
+            result.add_warning(f"[{entry.id}] SKILL.md is large: {size} bytes")
+        # Invalid routing rules (blank aliases/triggers/keywords).
+        for field_name in ("aliases", "triggers", "keywords"):
+            for value in getattr(entry, field_name, []) or []:
+                if not str(value).strip():
+                    result.add_error(f"[{entry.id}] empty {field_name} entry")
+        # Duplicate alias within a single skill.
+        seen_aliases: Set[str] = set()
+        for alias in entry.aliases or []:
+            a = str(alias).strip().lower()
+            if a and a in seen_aliases:
+                result.add_warning(f"[{entry.id}] duplicate alias within skill: {alias!r}")
+            seen_aliases.add(a)
+        # Static inspection only â€” third-party scripts are never executed.
+        for finding in scan_skill(entry, skill_dir):
+            message = f"[{entry.id}] {finding.path} contains suspicious pattern: {finding.label}"
+            if finding.severity == "high":
+                result.add_error(message)
+            else:
+                result.add_warning(message)
         if not (skill_dir / "README.md").exists():
             result.add_error(f"[{entry.id}] README.md missing")
         source_repository = meta.get("source_repository") if text.startswith("---") else None
