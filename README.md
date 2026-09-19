@@ -1,7 +1,7 @@
 # ⚡ Agent Skills Library
 
 <p align="center">
-  <img src="https://img.shields.io/badge/skills-112%20Active-7c3aed?style=for-the-badge&logo=codewars&logoColor=white" alt="112 Skills" />
+  <img src="https://img.shields.io/badge/skills-116%20Active-7c3aed?style=for-the-badge&logo=codewars&logoColor=white" alt="116 Skills" />
   <img src="https://img.shields.io/badge/tests-86%2F86%20Passing-10b981?style=for-the-badge&logo=pytest&logoColor=white" alt="86 Tests Passing" />
   <img src="https://img.shields.io/badge/dependencies-Zero%20External-0ea5e9?style=for-the-badge&logo=python&logoColor=white" alt="Zero External Dependencies" />
   <img src="https://img.shields.io/badge/python-3.10+-3776ab?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.10+" />
@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <strong>A high-performance, dependency-light Agent Skills engine, natural-language router, quality scorer, lifecycle manager, and deterministic workflow platform for 112 modular skills.</strong>
+  <strong>A high-performance, dependency-light Agent Skills engine, natural-language router, quality scorer, lifecycle manager, and deterministic workflow platform for 116 modular skills.</strong>
 </p>
 
 ---
@@ -20,7 +20,7 @@
 When AI coding assistants and autonomous agents are loaded with dozens of full skill prompts upfront, context windows bloat, instruction adherence collapses, and token costs explode.
 
 **Agent Skills Library** solves this with a **load-on-demand architecture**:
-- 🧠 **Context-Efficient ($O(1)$)**: The LLM is never given all 112 skills at once. Discovery, routing, and scoring select the optimal skill before reading a single line of skill body.
+- 🧠 **Context-Efficient ($O(1)$)**: The LLM is never given all 116 skills at once. Discovery, routing, and scoring select the optimal skill before reading a single line of skill body.
 - 🎯 **9-Signal Layered Router**: Sub-millisecond natural-language routing with deterministic scoring (Exact ID → Alias → Category → Trigger Phrase → Keyword Overlap → Capabilities/IO Vocabulary → Token Overlap → Dependency Availability → Quality Boost).
 - ⛓️ **Deterministic Chaining**: Compose complex multi-step workflows like `deep-research`, `anti-procrastination`, and `code-review-flow` with dry-run telemetry.
 - 🛡️ **Defensive Security & Quarantine**: AST-free static inspection against prompt injections, credential leaks, and pipe-to-shell payloads with a hardened quarantine boundary (`skills/_quarantine/`).
@@ -83,7 +83,7 @@ python scripts/skills/skills.py test
 
 #### 1. Discovery & Search
 ```bash
-# List all 112 skills grouped by category
+# List all 116 skills grouped by category
 python scripts/skills/skills.py list
 
 # Search skills by query or keyword
@@ -203,14 +203,14 @@ $ python scripts/skills/skills.py doctor
 
 == Skill Library Diagnostics ==
 
-Total skills: 112
-Enabled:      112
+Total skills: 116
+Enabled:      116
 Disabled:     0
 Categories:   8
   - design: 8
   - development: 34
   - documents: 7
-  - productivity: 18
+  - productivity: 22
   - research: 8
   - security: 7
   - utilities: 20
@@ -223,7 +223,7 @@ Quarantined: 0
 Dependencies checked: 48
 Missing required:      0
 Lifecycle:
-  - enabled: 112
+  - enabled: 116
 Quality: average 6.5
 ```
 </details>
@@ -232,13 +232,13 @@ Quality: average 6.5
 
 ## 📚 Skill Catalog by Category
 
-The library organizes **112 production-ready skills** across 8 core domains:
+The library organizes **116 production-ready skills** across 8 core domains:
 
 | Category | Skills | Highlights & Core Capabilities | Reference |
 |---|:---:|---|---|
 | **💻 Development** | **34** | Architecture, coding, debugging, refactoring, code review, git worktrees, Docker, MCP server builder, Dokploy, GitHub CLI, API mock generator, behavior validation. | [development.md](docs/skills/development.md) |
+| **🚀 Productivity** | **22** | Anti-procrastination (`unlazy`), ADHD task breakdown, focus guard, calendar assistant, inbox zero, Obsidian sync, time blocking, ADHD output style, divergent brainstorming, first principles reasoning, executive summary. | [productivity.md](docs/skills/productivity.md) |
 | **🛠️ Utilities** | **20** | Parallel agent dispatching, audio transcription, system monitor, Sonos CLI, Telegram/WhatsApp routers, Slack synthesizer, text processing, automation. | [utilities.md](docs/skills/utilities.md) |
-| **🚀 Productivity** | **18** | Anti-procrastination (`unlazy`), ADHD task breakdown, focus guard, calendar assistant, inbox zero, Obsidian sync, time blocking, meeting action extractor. | [productivity.md](docs/skills/productivity.md) |
 | **🌐 Web** | **10** | Agent browser automation, web scraper, form filler, media downloader, SEO audit, accessibility, web extraction. | [web.md](docs/skills/web.md) |
 | **🔬 Research** | **8** | Web research, search synthesizer, fact-checking, deep research, competitive analysis, data analysis, source verification. | [research.md](docs/skills/research.md) |
 | **🎨 Design** | **8** | UI/UX design, frontend design, slide presentations, Remotion video, avatar creator, image generation, Google Veo video generation. | [design.md](docs/skills/design.md) |
@@ -306,11 +306,11 @@ Each `SKILL.md` body strictly implements the **11 mandatory structural sections*
 
 ```
 .
-├── skills/                     # 112 Canonical Skill Implementations
+├── skills/                     # 116 Canonical Skill Implementations
 │   ├── design/                 # Avatar creator, Remotion, Veo, UI/UX (8 skills)
 │   ├── development/            # Coding, debugging, MCP builder, Docker (34 skills)
 │   ├── documents/              # PDF, DOCX, XLSX, PPTX, Expense Parser (7 skills)
-│   ├── productivity/           # Unlazy, Focus, ADHD, Inbox Zero (18 skills)
+│   ├── productivity/           # Unlazy, Focus, ADHD, Inbox Zero, Executive (22 skills)
 │   ├── research/               # Web research, search synthesizer (8 skills)
 │   ├── security/               # Secure coding, scanner, npm audit (7 skills)
 │   ├── utilities/              # Parallel agents, system monitor, beam (20 skills)

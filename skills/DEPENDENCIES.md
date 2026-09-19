@@ -1,10 +1,10 @@
 # Skill Dependencies
 
-_Generated: 2026-09-19T16:52:53+00:00_
+_Generated: 2026-09-19T17:23:17+00:00_
 
-**Total skills:** 112
+**Total skills:** 116
 **Skills with declared dependencies:** 44
-**Skills with no dependencies:** 68
+**Skills with no dependencies:** 72
 
 ## Policy
 
@@ -118,12 +118,16 @@ Built-in capabilities (no install required):
 | `documents.pptx` | — | built-in | — | all | available |
 | `documents.xlsx` | — | built-in | — | all | available |
 | `productivity.adhd` | — | built-in | — | all | available |
+| `productivity.adhd-divergent-brainstorm` | — | built-in | — | all | available |
+| `productivity.adhd-output-style` | — | built-in | — | all | available |
 | `productivity.adhd-task-breakdown` | — | built-in | — | all | available |
 | `productivity.brainstorming` | — | built-in | — | all | available |
 | `productivity.calendar-assistant` | `optional:calendar-access` | optional | Install `calendar-access` per vendor documentation | all | missing |
 | `productivity.context-summarize` | — | built-in | — | all | available |
 | `productivity.daily-journal` | — | built-in | — | all | available |
 | `productivity.email-inbox-zero` | `optional:email-access` | optional | Install `email-access` per vendor documentation | all | missing |
+| `productivity.executive-summary` | — | built-in | — | all | available |
+| `productivity.first-principles-reasoning` | — | built-in | — | all | available |
 | `productivity.focus` | — | built-in | — | all | available |
 | `productivity.focus-guard` | — | built-in | — | all | available |
 | `productivity.meeting-action-extractor` | — | built-in | — | all | available |

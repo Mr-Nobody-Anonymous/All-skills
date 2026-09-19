@@ -1265,6 +1265,42 @@
       "missing_optional": [
         "http-client"
       ]
+    },
+    "productivity.adhd-divergent-brainstorm": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "productivity.adhd-output-style": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "productivity.executive-summary": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "productivity.first-principles-reasoning": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
     }
   }
 }

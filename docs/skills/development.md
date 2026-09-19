@@ -1,6 +1,6 @@
 # Development Skills
 
-_Generated: 2026-09-19T16:52:53+00:00_
+_Generated: 2026-09-19T17:23:18+00:00_
 
 Skills for software engineering work — coding, debugging, refactoring, code review, testing, TDD, architecture, frontend, backend, databases, Git, GitHub, performance optimization, and DevOps. These skills produce structured output (checklists, prompts, plans) rather than execute code.
 

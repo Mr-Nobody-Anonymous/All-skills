@@ -1,6 +1,6 @@
 # Agent Skills Library
 
-A clean, organized, scalable library of **112** independently discoverable skills across eight categories, following the open Agent Skills standard. The library contains 103 local skills and 9 vetted, pinned adaptations (7 from `obra/superpowers`, 2 from `anthropics/skills`).
+A clean, organized, scalable library of **116** independently discoverable skills across eight categories, following the open Agent Skills standard. The library contains 107 local skills and 9 vetted, pinned adaptations (7 from `obra/superpowers`, 2 from `anthropics/skills`).
 
 ## Quick Start
 
@@ -59,9 +59,9 @@ The skill router understands natural language. Examples:
 
 ## Library Stats
 
-- **Total skills:** 112
+- **Total skills:** 116
 - **Categories:** 8
-- **Custom skills:** 103
+- **Custom skills:** 107
 - **Imported skills:** 9 (7 `obra/superpowers`, 2 `anthropics/skills`)
 - **Format:** Agent Skills standard (`SKILL.md` + frontmatter)
 - **Discovery:** exact IDs, aliases, categories, triggers, keywords, capability vocabulary, and token matching
@@ -83,7 +83,7 @@ The skill router understands natural language. Examples:
 
 ## Architecture
 
-The model is never handed all 112 skills. Discovery -> routing -> best match ->
+The model is never handed all 116 skills. Discovery -> routing -> best match ->
 **load-on-demand** keeps context small:
 
 `

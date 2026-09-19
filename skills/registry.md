@@ -1,15 +1,15 @@
 # Skill Registry
 
-_Generated: 2026-09-19T16:52:53+00:00_
+_Generated: 2026-09-19T17:23:17+00:00_
 
-**Total skills:** 112
+**Total skills:** 116
 
 | Category | Count |
 |---|---:|
 | design | 8 |
 | development | 34 |
 | documents | 7 |
-| productivity | 18 |
+| productivity | 22 |
 | research | 8 |
 | security | 7 |
 | utilities | 20 |
@@ -84,12 +84,16 @@ _Generated: 2026-09-19T16:52:53+00:00_
 | ID | Risk | Description |
 |---|---|---|
 | `productivity.adhd` | low | Support ADHD-style working memory, initiation, and attention patterns with external scaffolding and task design. |
+| `productivity.adhd-divergent-brainstorm` | low | Spawn isolated parallel cognitive frames to prevent linear anchoring, bypass mental blocks, and prune low-value ideas. |
+| `productivity.adhd-output-style` | low | Format agent responses to be ADHD-friendly (concise, scannable, bottom-line upfront, zero fluff, heavy visual chunking). |
 | `productivity.adhd-task-breakdown` | low | Turn overwhelming work into ADHD-friendly, visible, short, immediately actionable steps. |
 | `productivity.brainstorming` | low | Explore user intent, requirements, and design before implementation. Use when starting creative work, new feature design, or when encountering ambiguity. |
 | `productivity.calendar-assistant` | medium | Plan and modify calendar events with timezone checks, conflict detection, and confirmation. |
 | `productivity.context-summarize` | low | Compress active context into decisions, facts, open questions, and next actions. |
 | `productivity.daily-journal` | low | Create a concise daily journal with events, reflection, lessons, and tomorrow's priorities. |
 | `productivity.email-inbox-zero` | medium | Triage email into reply, action, defer, archive, or escalate queues without silent sending. |
+| `productivity.executive-summary` | low | Synthesize complex projects into Amazon Working Backwards PR-FAQs, 6-page memos, and McKinsey MECE Pyramid structures. |
+| `productivity.first-principles-reasoning` | low | Deconstruct complex problems into fundamental axioms and apply 5-Whys root cause analysis to eliminate cognitive overwhelm. |
 | `productivity.focus` | low | Help the user enter and sustain focused work via session design, distraction blocking, and break structure. |
 | `productivity.focus-guard` | medium | Protect a focus session by defining one outcome, blocking distractions, and handling interruptions. |
 | `productivity.meeting-action-extractor` | low | Extract decisions, action items, owners, dates, and unresolved questions from meetings. |

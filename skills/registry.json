@@ -6473,6 +6473,289 @@
         "overall_score": 6.6
       },
       "quality_score": 6.6
+    },
+    {
+      "id": "productivity.adhd-divergent-brainstorm",
+      "name": "adhd-divergent-brainstorm",
+      "category": "productivity",
+      "description": "Spawn isolated parallel cognitive frames to prevent linear anchoring, bypass mental blocks, and prune low-value ideas.",
+      "path": "productivity/adhd-divergent-brainstorm",
+      "aliases": [
+        "divergent-thinking",
+        "tree-of-thought",
+        "non-linear-brainstorm",
+        "parallel-ideation"
+      ],
+      "triggers": [
+        "divergent brainstorm",
+        "tree of thought ideation",
+        "bypass my mental block",
+        "explore non-linear ideas",
+        "ADHD brainstorming session"
+      ],
+      "keywords": [
+        "divergent",
+        "brainstorm",
+        "adhd",
+        "tree-of-thought",
+        "cognitive",
+        "ideation",
+        "mental-block",
+        "parallel"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "divergent-brainstorming",
+        "tree-of-thought-exploration",
+        "block-bypassing"
+      ],
+      "inputs": [
+        "problem",
+        "domain",
+        "constraints"
+      ],
+      "outputs": [
+        "divergent_branches",
+        "pruned_options",
+        "high_leverage_ideas"
+      ],
+      "permissions": {
+        "filesystem": "none",
+        "network": "none",
+        "shell": "none",
+        "secrets": "none"
+      },
+      "compatibility": {},
+      "quality": {
+        "skill_id": "productivity.adhd-divergent-brainstorm",
+        "documentation": 8.9,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.5,
+        "compatibility": 4.0,
+        "usefulness": 4.5,
+        "overall_score": 6.9
+      },
+      "quality_score": 6.9
+    },
+    {
+      "id": "productivity.adhd-output-style",
+      "name": "adhd-output-style",
+      "category": "productivity",
+      "description": "Format agent responses to be ADHD-friendly (concise, scannable, bottom-line upfront, zero fluff, heavy visual chunking).",
+      "path": "productivity/adhd-output-style",
+      "aliases": [
+        "bluf",
+        "adhd-format",
+        "chunked-output",
+        "concise-format"
+      ],
+      "triggers": [
+        "format for ADHD",
+        "give me the bottom line first",
+        "BLUF format",
+        "make this scannable",
+        "ADHD output style"
+      ],
+      "keywords": [
+        "adhd",
+        "bluf",
+        "format",
+        "concise",
+        "chunking",
+        "scannable",
+        "brevity",
+        "bullet"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "adhd-formatting",
+        "visual-chunking",
+        "bluf-synthesis"
+      ],
+      "inputs": [
+        "text",
+        "task",
+        "response"
+      ],
+      "outputs": [
+        "scannable_response",
+        "action_checklist"
+      ],
+      "permissions": {
+        "filesystem": "none",
+        "network": "none",
+        "shell": "none",
+        "secrets": "none"
+      },
+      "compatibility": {},
+      "quality": {
+        "skill_id": "productivity.adhd-output-style",
+        "documentation": 9.0,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.5,
+        "compatibility": 4.0,
+        "usefulness": 4.5,
+        "overall_score": 6.9
+      },
+      "quality_score": 6.9
+    },
+    {
+      "id": "productivity.executive-summary",
+      "name": "executive-summary",
+      "category": "productivity",
+      "description": "Synthesize complex projects into Amazon Working Backwards PR-FAQs, 6-page memos, and McKinsey MECE Pyramid structures.",
+      "path": "productivity/executive-summary",
+      "aliases": [
+        "working-backwards",
+        "pr-faq",
+        "pyramid-principle",
+        "mece",
+        "6-page-memo"
+      ],
+      "triggers": [
+        "write an executive summary",
+        "Amazon working backwards",
+        "create a PR-FAQ",
+        "McKinsey pyramid principle",
+        "format as an executive memo"
+      ],
+      "keywords": [
+        "executive",
+        "summary",
+        "working-backwards",
+        "pr-faq",
+        "mece",
+        "pyramid",
+        "memo",
+        "leadership"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "executive-summarization",
+        "working-backwards-framework",
+        "mece-structuring"
+      ],
+      "inputs": [
+        "project_details",
+        "proposal",
+        "target_audience"
+      ],
+      "outputs": [
+        "executive_memo",
+        "pr_faq_document",
+        "leadership_decision_brief"
+      ],
+      "permissions": {
+        "filesystem": "none",
+        "network": "none",
+        "shell": "none",
+        "secrets": "none"
+      },
+      "compatibility": {},
+      "quality": {
+        "skill_id": "productivity.executive-summary",
+        "documentation": 8.9,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.5,
+        "compatibility": 4.0,
+        "usefulness": 4.9,
+        "overall_score": 7.0
+      },
+      "quality_score": 7.0
+    },
+    {
+      "id": "productivity.first-principles-reasoning",
+      "name": "first-principles-reasoning",
+      "category": "productivity",
+      "description": "Deconstruct complex problems into fundamental axioms and apply 5-Whys root cause analysis to eliminate cognitive overwhelm.",
+      "path": "productivity/first-principles-reasoning",
+      "aliases": [
+        "5-whys",
+        "root-cause-analysis",
+        "first-principles",
+        "axiomatic-thinking"
+      ],
+      "triggers": [
+        "first principles analysis",
+        "5 whys root cause",
+        "break this down to first principles",
+        "find the root cause of this",
+        "deconstruct this problem"
+      ],
+      "keywords": [
+        "first-principles",
+        "5-whys",
+        "root-cause",
+        "axioms",
+        "deconstruct",
+        "diagnostic",
+        "reasoning"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "first-principles-deconstruction",
+        "5-whys-root-cause",
+        "assumption-testing"
+      ],
+      "inputs": [
+        "problem",
+        "assumptions",
+        "symptoms"
+      ],
+      "outputs": [
+        "core_axioms",
+        "root_causes",
+        "fundamental_solutions"
+      ],
+      "permissions": {
+        "filesystem": "none",
+        "network": "none",
+        "shell": "none",
+        "secrets": "none"
+      },
+      "compatibility": {},
+      "quality": {
+        "skill_id": "productivity.first-principles-reasoning",
+        "documentation": 9.0,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.5,
+        "compatibility": 4.0,
+        "usefulness": 4.3,
+        "overall_score": 6.9
+      },
+      "quality_score": 6.9
     }
   ]
 }

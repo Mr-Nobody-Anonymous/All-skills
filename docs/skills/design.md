@@ -1,6 +1,6 @@
 # Design Skills
 
-_Generated: 2026-09-19T16:52:53+00:00_
+_Generated: 2026-09-19T17:23:18+00:00_
 
 Skills for design work — UI/UX, frontend design, presentations, and branding. These produce prose wireframes, design feedback, narrative arcs for talks, and naming/voice guidance.
 

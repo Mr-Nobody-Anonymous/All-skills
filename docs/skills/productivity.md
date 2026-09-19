@@ -1,10 +1,10 @@
 # Productivity Skills
 
-_Generated: 2026-09-19T16:52:53+00:00_
+_Generated: 2026-09-19T17:23:18+00:00_
 
 Skills that help the user start, focus, plan, and finish — including ADHD-aware assistance, anti-procrastination, task decomposition, prioritization, and time management. The library intentionally leans on external, well-reviewed material (Cal Newport, James Clear, the Pomodoro technique, etc.) rather than inventing productivity philosophy from scratch.
 
-**18 skills in this category.**
+**22 skills in this category.**
 
 ## Skills
 
@@ -28,6 +28,42 @@ Support ADHD-style working memory, initiation, and attention patterns with exter
 - **Version:** 1.0.0
 
 Provide practical, kind, non-medical scaffolding for users with ADHD-style attention and initiation patterns. The skill externalizes working memory, breaks initiation barriers, and designs tasks that fit attention shape.
+
+### `productivity.adhd-divergent-brainstorm`
+
+Spawn isolated parallel cognitive frames to prevent linear anchoring, bypass mental blocks, and prune low-value ideas.
+
+- **Risk:** low
+- **Path:** `productivity/adhd-divergent-brainstorm`
+- **Aliases:** `divergent-thinking`, `tree-of-thought`, `non-linear-brainstorm`, `parallel-ideation`
+- **Triggers:**
+  - divergent brainstorm
+  - tree of thought ideation
+  - bypass my mental block
+  - explore non-linear ideas
+  - ADHD brainstorming session
+- **Source:** custom
+- **Version:** 1.0.0
+
+Fosters divergent thinking and Tree-of-Thought exploration by spawning multiple isolated, parallel cognitive frames. Bypasses linear anchoring and cognitive fixation while systematically pruning low-value branches.
+
+### `productivity.adhd-output-style`
+
+Format agent responses to be ADHD-friendly (concise, scannable, bottom-line upfront, zero fluff, heavy visual chunking).
+
+- **Risk:** low
+- **Path:** `productivity/adhd-output-style`
+- **Aliases:** `bluf`, `adhd-format`, `chunked-output`, `concise-format`
+- **Triggers:**
+  - format for ADHD
+  - give me the bottom line first
+  - BLUF format
+  - make this scannable
+  - ADHD output style
+- **Source:** custom
+- **Version:** 1.0.0
+
+Formats all agent communication to match ADHD cognitive workflows by enforcing concise, scannable, zero-fluff responses with the bottom-line upfront and high-visibility visual chunking.
 
 ### `productivity.adhd-task-breakdown`
 
@@ -136,6 +172,42 @@ Triage email into reply, action, defer, archive, or escalate queues without sile
 - **Version:** 1.0.0
 
 Help users achieve and maintain inbox zero by intelligently triaging emails into appropriate queues: reply, action, defer, archive, or escalate. The skill never sends emails without explicit user approval.
+
+### `productivity.executive-summary`
+
+Synthesize complex projects into Amazon Working Backwards PR-FAQs, 6-page memos, and McKinsey MECE Pyramid structures.
+
+- **Risk:** low
+- **Path:** `productivity/executive-summary`
+- **Aliases:** `working-backwards`, `pr-faq`, `pyramid-principle`, `mece`, `6-page-memo`
+- **Triggers:**
+  - write an executive summary
+  - Amazon working backwards
+  - create a PR-FAQ
+  - McKinsey pyramid principle
+  - format as an executive memo
+- **Source:** custom
+- **Version:** 1.0.0
+
+Synthesizes extensive technical, operational, or strategic initiatives into rigorous executive communication frameworks, specifically Amazon's Working Backwards (PR-FAQ / 6-page memo) and McKinsey's MECE Pyramid Principle.
+
+### `productivity.first-principles-reasoning`
+
+Deconstruct complex problems into fundamental axioms and apply 5-Whys root cause analysis to eliminate cognitive overwhelm.
+
+- **Risk:** low
+- **Path:** `productivity/first-principles-reasoning`
+- **Aliases:** `5-whys`, `root-cause-analysis`, `first-principles`, `axiomatic-thinking`
+- **Triggers:**
+  - first principles analysis
+  - 5 whys root cause
+  - break this down to first principles
+  - find the root cause of this
+  - deconstruct this problem
+- **Source:** custom
+- **Version:** 1.0.0
+
+Deconstructs complex, overwhelming challenges down to their foundational truths and axioms, applying iterative 5-Whys diagnostic analysis to isolate true root causes and discard baggage assumptions.
 
 ### `productivity.focus`
 
