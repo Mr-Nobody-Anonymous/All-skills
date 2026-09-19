@@ -1,10 +1,10 @@
 # Skill Dependencies
 
-_Generated: 2026-09-19T17:23:17+00:00_
+_Generated: 2026-09-19T17:27:27+00:00_
 
-**Total skills:** 116
+**Total skills:** 122
 **Skills with declared dependencies:** 44
-**Skills with no dependencies:** 72
+**Skills with no dependencies:** 78
 
 ## Policy
 
@@ -82,6 +82,7 @@ Built-in capabilities (no install required):
 | `development.behavior-validator` | — | built-in | — | all | available |
 | `development.brainstorming` | — | built-in | — | all | available |
 | `development.cf-worker-deploy` | `optional:wrangler` | optional | Install `wrangler` per vendor documentation | all | missing |
+| `development.ci-cd-pipeline` | — | built-in | — | all | available |
 | `development.code-review` | — | built-in | — | all | available |
 | `development.coding` | — | built-in | — | all | available |
 | `development.coding-agent` | `optional:codex-or-claude-cli` | optional | Install `codex` per vendor documentation or Install `claude-cli` per vendor documentation | all | missing |
@@ -100,11 +101,14 @@ Built-in capabilities (no install required):
 | `development.github` | `git` | required | Install Git from https://git-scm.com/downloads | all | available |
 | `development.github` | `gh-cli-optional` | optional | Install GitHub CLI from https://cli.github.com/ | all | available |
 | `development.github-cli` | `optional:gh` | optional | Install `gh` per vendor documentation | all | available |
+| `development.issue-triage` | — | built-in | — | all | available |
 | `development.mcp-builder` | `python-or-node` | required | Install `python` per vendor documentation or Install `node` per vendor documentation | all | available |
 | `development.mcp-server-development` | — | built-in | — | all | available |
 | `development.performance-optimization` | — | built-in | — | all | available |
+| `development.pr-splitter` | — | built-in | — | all | available |
 | `development.receiving-code-review` | — | built-in | — | all | available |
 | `development.refactoring` | — | built-in | — | all | available |
+| `development.release-management` | — | built-in | — | all | available |
 | `development.requesting-code-review` | — | built-in | — | all | available |
 | `development.summarize-repo` | — | built-in | — | all | available |
 | `development.tdd` | — | built-in | — | all | available |
@@ -130,10 +134,12 @@ Built-in capabilities (no install required):
 | `productivity.first-principles-reasoning` | — | built-in | — | all | available |
 | `productivity.focus` | — | built-in | — | all | available |
 | `productivity.focus-guard` | — | built-in | — | all | available |
+| `productivity.kaizen-continuous-improvement` | — | built-in | — | all | available |
 | `productivity.meeting-action-extractor` | — | built-in | — | all | available |
 | `productivity.obsidian-sync` | `optional:obsidian` | optional | Install `obsidian` per vendor documentation | all | missing |
 | `productivity.planning` | — | built-in | — | all | available |
 | `productivity.prioritization` | — | built-in | — | all | available |
+| `productivity.session-analytics` | — | built-in | — | all | available |
 | `productivity.task-decomposition` | — | built-in | — | all | available |
 | `productivity.time-blocking` | — | built-in | — | all | available |
 | `productivity.time-management` | — | built-in | — | all | available |

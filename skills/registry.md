@@ -1,15 +1,15 @@
 # Skill Registry
 
-_Generated: 2026-09-19T17:23:17+00:00_
+_Generated: 2026-09-19T17:27:27+00:00_
 
-**Total skills:** 116
+**Total skills:** 122
 
 | Category | Count |
 |---|---:|
 | design | 8 |
-| development | 34 |
+| development | 38 |
 | documents | 7 |
-| productivity | 22 |
+| productivity | 24 |
 | research | 8 |
 | security | 7 |
 | utilities | 20 |
@@ -39,6 +39,7 @@ _Generated: 2026-09-19T17:23:17+00:00_
 | `development.behavior-validator` | low | Validate user-visible behavior against a written contract without inspecting implementation source. |
 | `development.brainstorming` | low | Clarify intent and turn software ideas into approved designs before implementation. |
 | `development.cf-worker-deploy` | high | Validate and deploy Cloudflare Workers with preview, secret, and rollback safeguards. |
+| `development.ci-cd-pipeline` | low | Design, audit, and optimize CI/CD pipelines with build caching, test parallelism, secret boundaries, and automated gates. |
 | `development.code-review` | low | Review code for correctness, readability, design, tests, security, and style. Produce actionable, kind, prioritized feedback. |
 | `development.coding` | low | General-purpose software engineering assistant: implement features, write functions, scaffold projects, and produce idiomatic code in many languages. |
 | `development.coding-agent` | medium | Delegate bounded coding work to an installed coding-agent CLI with explicit scope and verification. |
@@ -56,11 +57,14 @@ _Generated: 2026-09-19T17:23:17+00:00_
 | `development.git-worktrees` | medium | Create isolated Git workspaces safely while preserving current work and verifying a clean baseline. |
 | `development.github` | medium | Work with GitHub — pull requests, issues, Actions, code review, project boards, releases. |
 | `development.github-cli` | medium | Use GitHub CLI for issues, pull requests, Actions, and API queries with confirmation for writes. |
+| `development.issue-triage` | low | Classify, deduplicate, label, and prioritize incoming issues with reproduction checklists and routing rules. |
 | `development.mcp-builder` | medium | Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK). |
 | `development.mcp-server-development` | medium | Design and implement discoverable, safe Model Context Protocol servers and evaluations. |
 | `development.performance-optimization` | low | Find and fix performance bottlenecks — profiling, measurement, and targeted optimization. |
+| `development.pr-splitter` | low | Decompose large, complex pull requests into atomic, logically isolated, reviewable PR branches. |
 | `development.receiving-code-review` | low | Evaluate code-review feedback technically before accepting, rejecting, or implementing it. |
 | `development.refactoring` | low | Improve the internal structure of existing code without changing external behavior — naming, decomposition, clarity, duplication removal. |
+| `development.release-management` | low | Coordinate end-to-end software releases with semantic versioning, automated changelogs, tag verification, and rollbacks. |
 | `development.requesting-code-review` | low | Prepare a focused, evidence-based request for code review before integration. |
 | `development.summarize-repo` | low | Produce an evidence-based codebase map covering architecture, entry points, dependencies, and risks. |
 | `development.tdd` | low | Test-Driven Development discipline — red/green/refactor cycles for designing code from tests outward. |
@@ -96,10 +100,12 @@ _Generated: 2026-09-19T17:23:17+00:00_
 | `productivity.first-principles-reasoning` | low | Deconstruct complex problems into fundamental axioms and apply 5-Whys root cause analysis to eliminate cognitive overwhelm. |
 | `productivity.focus` | low | Help the user enter and sustain focused work via session design, distraction blocking, and break structure. |
 | `productivity.focus-guard` | medium | Protect a focus session by defining one outcome, blocking distractions, and handling interruptions. |
+| `productivity.kaizen-continuous-improvement` | low | Apply Toyota Kaizen principles and Plan-Do-Check-Act (PDCA) cycles to systematically eliminate waste (Muda) in daily workflows. |
 | `productivity.meeting-action-extractor` | low | Extract decisions, action items, owners, dates, and unresolved questions from meetings. |
 | `productivity.obsidian-sync` | medium | Plan and verify safe synchronization between an Obsidian vault and a working directory. |
 | `productivity.planning` | low | Turn a vague goal, idea, or situation into a clear, scoped plan with objectives, scope, and first moves. |
 | `productivity.prioritization` | low | Help the user decide what to do first, what to defer, and what to drop when everything feels important. |
+| `productivity.session-analytics` | low | Parse developer and agent session traces into productivity telemetry, decision trails, time allocation, and cognitive bottleneck metrics. |
 | `productivity.task-decomposition` | low | Break a large project or vague goal into concrete, ordered, completable subtasks with dependencies and estimates. |
 | `productivity.time-blocking` | low | Build realistic deep-work time blocks around energy, priorities, breaks, and constraints. |
 | `productivity.time-management` | low | Design calendars, schedules, and time allocations that match the user's energy, priorities, and constraints. |

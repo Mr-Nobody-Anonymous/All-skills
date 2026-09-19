@@ -1,7 +1,7 @@
 # Architecture — load-on-demand skill platform
 
 This document describes how the library routes, selects, and loads skills so
-that the **model never receives all 116 skills at once**. Only the chosen skill
+that the **model never receives all 122 skills at once**. Only the chosen skill
 (and its declared references/scripts) is loaded.
 
 ```

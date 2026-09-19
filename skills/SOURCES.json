@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-09-19T17:23:17+00:00",
+  "generated_at": "2026-09-19T17:27:27+00:00",
   "note": "Imported skills are pinned to reviewed upstream commits. Custom skills are maintained locally. Third-party executables are not run during import.",
   "skills": [
     {
@@ -215,6 +215,21 @@
     },
     {
       "skill": "development.cf-worker-deploy",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "development.ci-cd-pipeline",
       "repository": null,
       "source_path": null,
       "commit": null,
@@ -484,6 +499,21 @@
       ]
     },
     {
+      "skill": "development.issue-triage",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
       "skill": "development.mcp-builder",
       "repository": null,
       "source_path": null,
@@ -529,6 +559,21 @@
       ]
     },
     {
+      "skill": "development.pr-splitter",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
       "skill": "development.receiving-code-review",
       "repository": "obra/superpowers",
       "source_path": "skills/receiving-code-review",
@@ -545,6 +590,21 @@
     },
     {
       "skill": "development.refactoring",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "development.release-management",
       "repository": null,
       "source_path": null,
       "commit": null,
@@ -934,6 +994,21 @@
       ]
     },
     {
+      "skill": "productivity.kaizen-continuous-improvement",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
       "skill": "productivity.meeting-action-extractor",
       "repository": null,
       "source_path": null,
@@ -980,6 +1055,21 @@
     },
     {
       "skill": "productivity.prioritization",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "productivity.session-analytics",
       "repository": null,
       "source_path": null,
       "commit": null,

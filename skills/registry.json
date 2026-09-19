@@ -6756,6 +6756,439 @@
         "overall_score": 6.9
       },
       "quality_score": 6.9
+    },
+    {
+      "id": "development.ci-cd-pipeline",
+      "name": "ci-cd-pipeline",
+      "category": "development",
+      "description": "Design, audit, and optimize CI/CD pipelines with build caching, test parallelism, secret boundaries, and automated gates.",
+      "path": "development/ci-cd-pipeline",
+      "aliases": [
+        "github-actions-pipeline",
+        "ci-cd-workflow",
+        "continuous-integration",
+        "pipeline-builder"
+      ],
+      "triggers": [
+        "build a CI/CD pipeline",
+        "create GitHub Actions workflow",
+        "optimize build pipeline caching",
+        "audit CI security and test stages",
+        "automate deployment pipeline"
+      ],
+      "keywords": [
+        "ci",
+        "cd",
+        "github-actions",
+        "workflow",
+        "pipeline",
+        "build",
+        "test",
+        "cache",
+        "deploy"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "pipeline-authoring",
+        "cache-optimization",
+        "matrix-testing",
+        "secret-isolation"
+      ],
+      "inputs": [
+        "project_tech_stack",
+        "test_commands",
+        "deploy_target"
+      ],
+      "outputs": [
+        "workflow_yaml",
+        "security_review",
+        "cache_strategy"
+      ],
+      "permissions": {
+        "filesystem": "none",
+        "network": "none",
+        "shell": "none",
+        "secrets": "none"
+      },
+      "compatibility": {},
+      "quality": {
+        "skill_id": "development.ci-cd-pipeline",
+        "documentation": 9.0,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.5,
+        "compatibility": 4.0,
+        "usefulness": 4.9,
+        "overall_score": 7.0
+      },
+      "quality_score": 7.0
+    },
+    {
+      "id": "development.issue-triage",
+      "name": "issue-triage",
+      "category": "development",
+      "description": "Classify, deduplicate, label, and prioritize incoming issues with reproduction checklists and routing rules.",
+      "path": "development/issue-triage",
+      "aliases": [
+        "triage-issues",
+        "bug-triage",
+        "issue-classifier",
+        "issue-routing"
+      ],
+      "triggers": [
+        "triage incoming issues",
+        "classify this bug report",
+        "prioritize GitHub issues",
+        "label and route this issue",
+        "check issue for reproduction steps"
+      ],
+      "keywords": [
+        "issue",
+        "triage",
+        "github",
+        "bug",
+        "label",
+        "priority",
+        "reproduce",
+        "classify"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "issue-classification",
+        "reproduction-verification",
+        "priority-routing"
+      ],
+      "inputs": [
+        "issue_body",
+        "labels",
+        "repository_context"
+      ],
+      "outputs": [
+        "triaged_issue",
+        "severity_rating",
+        "recommended_assignee",
+        "reproduction_checklist"
+      ],
+      "permissions": {
+        "filesystem": "none",
+        "network": "none",
+        "shell": "none",
+        "secrets": "none"
+      },
+      "compatibility": {},
+      "quality": {
+        "skill_id": "development.issue-triage",
+        "documentation": 8.7,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.5,
+        "compatibility": 4.0,
+        "usefulness": 4.5,
+        "overall_score": 6.9
+      },
+      "quality_score": 6.9
+    },
+    {
+      "id": "development.pr-splitter",
+      "name": "pr-splitter",
+      "category": "development",
+      "description": "Decompose large, complex pull requests into atomic, logically isolated, reviewable PR branches.",
+      "path": "development/pr-splitter",
+      "aliases": [
+        "split-pr",
+        "atomic-pr",
+        "decompose-pr",
+        "pr-slice"
+      ],
+      "triggers": [
+        "split this PR",
+        "break down large pull request",
+        "decompose PR into smaller chunks",
+        "make this PR reviewable",
+        "slice this diff"
+      ],
+      "keywords": [
+        "pr",
+        "pull-request",
+        "split",
+        "atomic",
+        "diff",
+        "review",
+        "branch",
+        "git"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "pr-splitting",
+        "diff-decomposition",
+        "atomic-branching"
+      ],
+      "inputs": [
+        "git_diff",
+        "branch",
+        "target_branch"
+      ],
+      "outputs": [
+        "split_plan",
+        "branch_sequence",
+        "dependency_graph"
+      ],
+      "permissions": {
+        "filesystem": "none",
+        "network": "none",
+        "shell": "none",
+        "secrets": "none"
+      },
+      "compatibility": {},
+      "quality": {
+        "skill_id": "development.pr-splitter",
+        "documentation": 8.4,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.5,
+        "compatibility": 4.0,
+        "usefulness": 4.5,
+        "overall_score": 6.8
+      },
+      "quality_score": 6.8
+    },
+    {
+      "id": "development.release-management",
+      "name": "release-management",
+      "category": "development",
+      "description": "Coordinate end-to-end software releases with semantic versioning, automated changelogs, tag verification, and rollbacks.",
+      "path": "development/release-management",
+      "aliases": [
+        "release-workflow",
+        "release-coordinator",
+        "semantic-release",
+        "cut-release"
+      ],
+      "triggers": [
+        "cut a new release",
+        "manage release workflow",
+        "generate release notes and tag",
+        "prepare semantic version bump",
+        "coordinate production release"
+      ],
+      "keywords": [
+        "release",
+        "semver",
+        "version",
+        "tag",
+        "changelog",
+        "publish",
+        "rollout",
+        "rollback"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "semantic-versioning",
+        "changelog-generation",
+        "release-orchestration",
+        "rollback-readiness"
+      ],
+      "inputs": [
+        "commits",
+        "current_version",
+        "release_type"
+      ],
+      "outputs": [
+        "new_version",
+        "changelog_entry",
+        "git_tag_command",
+        "release_checklist"
+      ],
+      "permissions": {
+        "filesystem": "none",
+        "network": "none",
+        "shell": "none",
+        "secrets": "none"
+      },
+      "compatibility": {},
+      "quality": {
+        "skill_id": "development.release-management",
+        "documentation": 9.0,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.5,
+        "compatibility": 4.0,
+        "usefulness": 4.7,
+        "overall_score": 7.0
+      },
+      "quality_score": 7.0
+    },
+    {
+      "id": "productivity.kaizen-continuous-improvement",
+      "name": "kaizen-continuous-improvement",
+      "category": "productivity",
+      "description": "Apply Toyota Kaizen principles and Plan-Do-Check-Act (PDCA) cycles to systematically eliminate waste (Muda) in daily workflows.",
+      "path": "productivity/kaizen-continuous-improvement",
+      "aliases": [
+        "kaizen",
+        "continuous-improvement",
+        "pdca-cycle",
+        "muda-elimination"
+      ],
+      "triggers": [
+        "apply Kaizen to my workflow",
+        "continuous improvement PDCA",
+        "eliminate waste in development process",
+        "run a Kaizen workflow review",
+        "identify Muda in my routine"
+      ],
+      "keywords": [
+        "kaizen",
+        "pdca",
+        "continuous-improvement",
+        "toyota",
+        "muda",
+        "waste",
+        "efficiency",
+        "workflow"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "waste-elimination",
+        "pdca-cycle-execution",
+        "workflow-streamlining"
+      ],
+      "inputs": [
+        "workflow_description",
+        "recurring_friction",
+        "cycle_time"
+      ],
+      "outputs": [
+        "kaizen_event_plan",
+        "muda_audit",
+        "standard_work_update"
+      ],
+      "permissions": {
+        "filesystem": "none",
+        "network": "none",
+        "shell": "none",
+        "secrets": "none"
+      },
+      "compatibility": {},
+      "quality": {
+        "skill_id": "productivity.kaizen-continuous-improvement",
+        "documentation": 9.0,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.5,
+        "compatibility": 4.0,
+        "usefulness": 4.5,
+        "overall_score": 6.9
+      },
+      "quality_score": 6.9
+    },
+    {
+      "id": "productivity.session-analytics",
+      "name": "session-analytics",
+      "category": "productivity",
+      "description": "Parse developer and agent session traces into productivity telemetry, decision trails, time allocation, and cognitive bottleneck metrics.",
+      "path": "productivity/session-analytics",
+      "aliases": [
+        "developer-telemetry",
+        "productivity-analytics",
+        "session-metrics",
+        "work-log-parser"
+      ],
+      "triggers": [
+        "parse session analytics",
+        "analyze my productivity session",
+        "extract decision trail from working session",
+        "summarize developer time allocation",
+        "identify cognitive bottlenecks in work log"
+      ],
+      "keywords": [
+        "analytics",
+        "session",
+        "metrics",
+        "telemetry",
+        "time",
+        "productivity",
+        "bottlenecks",
+        "decisions"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "session-trace-parsing",
+        "decision-extraction",
+        "bottleneck-detection",
+        "time-auditing"
+      ],
+      "inputs": [
+        "session_log",
+        "command_history",
+        "agent_transcript"
+      ],
+      "outputs": [
+        "productivity_report",
+        "time_breakdown",
+        "decision_log",
+        "bottleneck_recommendations"
+      ],
+      "permissions": {
+        "filesystem": "none",
+        "network": "none",
+        "shell": "none",
+        "secrets": "none"
+      },
+      "compatibility": {},
+      "quality": {
+        "skill_id": "productivity.session-analytics",
+        "documentation": 9.0,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.5,
+        "compatibility": 4.0,
+        "usefulness": 4.7,
+        "overall_score": 7.0
+      },
+      "quality_score": 7.0
     }
   ]
 }

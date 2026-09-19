@@ -1,10 +1,10 @@
 # Development Skills
 
-_Generated: 2026-09-19T17:23:18+00:00_
+_Generated: 2026-09-19T17:27:28+00:00_
 
 Skills for software engineering work — coding, debugging, refactoring, code review, testing, TDD, architecture, frontend, backend, databases, Git, GitHub, performance optimization, and DevOps. These skills produce structured output (checklists, prompts, plans) rather than execute code.
 
-**34 skills in this category.**
+**38 skills in this category.**
 
 ## Skills
 
@@ -122,6 +122,24 @@ Validate and deploy Cloudflare Workers with preview, secret, and rollback safegu
 - **Version:** 1.0.0
 
 Validate and deploy Cloudflare Workers with proper preview testing, secret management, and rollback capabilities. The skill ensures safe deployments with minimal disruption.
+
+### `development.ci-cd-pipeline`
+
+Design, audit, and optimize CI/CD pipelines with build caching, test parallelism, secret boundaries, and automated gates.
+
+- **Risk:** low
+- **Path:** `development/ci-cd-pipeline`
+- **Aliases:** `github-actions-pipeline`, `ci-cd-workflow`, `continuous-integration`, `pipeline-builder`
+- **Triggers:**
+  - build a CI/CD pipeline
+  - create GitHub Actions workflow
+  - optimize build pipeline caching
+  - audit CI security and test stages
+  - automate deployment pipeline
+- **Source:** custom
+- **Version:** 1.0.0
+
+Designs, implements, audits, and accelerates Continuous Integration and Continuous Deployment (CI/CD) pipelines. Maximizes test parallelism and build caching while strictly preserving secret isolation and deployment gates.
 
 ### `development.code-review`
 
@@ -425,6 +443,24 @@ Use GitHub CLI for issues, pull requests, Actions, and API queries with confirma
 
 Run common GitHub operations through the `gh` CLI in a way that is safe, scriptable, and ergonomic for an agent. The skill wraps `gh issue`, `gh pr`, `gh run`, `gh release`, and `gh api` into named, audited operations.
 
+### `development.issue-triage`
+
+Classify, deduplicate, label, and prioritize incoming issues with reproduction checklists and routing rules.
+
+- **Risk:** low
+- **Path:** `development/issue-triage`
+- **Aliases:** `triage-issues`, `bug-triage`, `issue-classifier`, `issue-routing`
+- **Triggers:**
+  - triage incoming issues
+  - classify this bug report
+  - prioritize GitHub issues
+  - label and route this issue
+  - check issue for reproduction steps
+- **Source:** custom
+- **Version:** 1.0.0
+
+Systematically triages, validates, categorizes, and routes incoming GitHub issues and bug reports. Ensures reproducible bugs are fast-tracked, duplicates are consolidated, and missing environment details are immediately requested.
+
 ### `development.mcp-builder`
 
 Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK).
@@ -476,6 +512,24 @@ Find and fix performance bottlenecks — profiling, measurement, and targeted op
 
 Identify performance bottlenecks via measurement and fix them with targeted changes.
 
+### `development.pr-splitter`
+
+Decompose large, complex pull requests into atomic, logically isolated, reviewable PR branches.
+
+- **Risk:** low
+- **Path:** `development/pr-splitter`
+- **Aliases:** `split-pr`, `atomic-pr`, `decompose-pr`, `pr-slice`
+- **Triggers:**
+  - split this PR
+  - break down large pull request
+  - decompose PR into smaller chunks
+  - make this PR reviewable
+  - slice this diff
+- **Source:** custom
+- **Version:** 1.0.0
+
+Decomposes large, monolithic diffs and pull requests into small, atomic, reviewable PR branches. This accelerates code review velocity, reduces merge conflicts, and isolates regression risks.
+
 ### `development.receiving-code-review`
 
 Evaluate code-review feedback technically before accepting, rejecting, or implementing it.
@@ -509,6 +563,24 @@ Improve the internal structure of existing code without changing external behavi
 - **Version:** 1.0.0
 
 Improve code structure without changing behavior. Extract functions, rename for clarity, remove duplication, and reorganize for the next reader.
+
+### `development.release-management`
+
+Coordinate end-to-end software releases with semantic versioning, automated changelogs, tag verification, and rollbacks.
+
+- **Risk:** low
+- **Path:** `development/release-management`
+- **Aliases:** `release-workflow`, `release-coordinator`, `semantic-release`, `cut-release`
+- **Triggers:**
+  - cut a new release
+  - manage release workflow
+  - generate release notes and tag
+  - prepare semantic version bump
+  - coordinate production release
+- **Source:** custom
+- **Version:** 1.0.0
+
+Orchestrates disciplined, repeatable software release lifecycles. Automates semantic version calculation, changelog generation, release tagging, artifact verification, and deployment rollback checklists.
 
 ### `development.requesting-code-review`
 

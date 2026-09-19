@@ -1,6 +1,6 @@
 # Web Skills
 
-_Generated: 2026-09-19T17:23:18+00:00_
+_Generated: 2026-09-19T17:27:28+00:00_
 
 Skills that interact with the live web: browser automation, web scraping, web extraction, SEO audits, accessibility testing, and end-to-end website testing. These skills are wrappers around concrete tools (Playwright, Lighthouse-style checks, a11y linters) but the library itself is tooling-light — the skills describe the workflow.
 

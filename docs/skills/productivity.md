@@ -1,10 +1,10 @@
 # Productivity Skills
 
-_Generated: 2026-09-19T17:23:18+00:00_
+_Generated: 2026-09-19T17:27:28+00:00_
 
 Skills that help the user start, focus, plan, and finish — including ADHD-aware assistance, anti-procrastination, task decomposition, prioritization, and time management. The library intentionally leans on external, well-reviewed material (Cal Newport, James Clear, the Pomodoro technique, etc.) rather than inventing productivity philosophy from scratch.
 
-**22 skills in this category.**
+**24 skills in this category.**
 
 ## Skills
 
@@ -248,6 +248,24 @@ Protect a focus session by defining one outcome, blocking distractions, and hand
 
 Eliminate the digital distractions that break a deep-work session, using one reversible command. The skill is intentionally idempotent: it does not change *what* the user is working on, only what is competing for attention.
 
+### `productivity.kaizen-continuous-improvement`
+
+Apply Toyota Kaizen principles and Plan-Do-Check-Act (PDCA) cycles to systematically eliminate waste (Muda) in daily workflows.
+
+- **Risk:** low
+- **Path:** `productivity/kaizen-continuous-improvement`
+- **Aliases:** `kaizen`, `continuous-improvement`, `pdca-cycle`, `muda-elimination`
+- **Triggers:**
+  - apply Kaizen to my workflow
+  - continuous improvement PDCA
+  - eliminate waste in development process
+  - run a Kaizen workflow review
+  - identify Muda in my routine
+- **Source:** custom
+- **Version:** 1.0.0
+
+Applies Toyota Production System Kaizen methodologies and Plan-Do-Check-Act (PDCA) cycles to technical workflows. Systematically identifies and eliminates the 8 types of waste (Muda) to achieve compound micro-improvements.
+
 ### `productivity.meeting-action-extractor`
 
 Extract decisions, action items, owners, dates, and unresolved questions from meetings.
@@ -321,6 +339,24 @@ Help the user decide what to do first, what to defer, and what to drop when ever
 - **Version:** 1.0.0
 
 Help the user make a defensible decision about what to work on, what to defer, and what to drop — when there is more to do than time to do it.
+
+### `productivity.session-analytics`
+
+Parse developer and agent session traces into productivity telemetry, decision trails, time allocation, and cognitive bottleneck metrics.
+
+- **Risk:** low
+- **Path:** `productivity/session-analytics`
+- **Aliases:** `developer-telemetry`, `productivity-analytics`, `session-metrics`, `work-log-parser`
+- **Triggers:**
+  - parse session analytics
+  - analyze my productivity session
+  - extract decision trail from working session
+  - summarize developer time allocation
+  - identify cognitive bottlenecks in work log
+- **Source:** custom
+- **Version:** 1.0.0
+
+Parses developer command logs, shell histories, and agent interaction transcripts into actionable productivity analytics. Extracts decision trails, quantifies focus vs. context-switching intervals, and pinpoints cognitive friction points.
 
 ### `productivity.task-decomposition`
 
