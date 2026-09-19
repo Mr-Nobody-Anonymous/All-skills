@@ -113,7 +113,7 @@
       "description": "Design and structure presentations \u2014 narrative arc, slide content, visual hierarchy, and delivery notes.",
       "path": "design/presentations",
       "aliases": [
-        "slides",
+        "slide-design",
         "deck-design",
         "presentation-design"
       ],
@@ -2093,6 +2093,7 @@
         "search"
       ],
       "triggers": [
+        "research this topic",
         "research this",
         "look this up",
         "find information about",
@@ -2128,7 +2129,7 @@
         "reliability": 7.0,
         "security": 9.0,
         "compatibility": 4.0,
-        "usefulness": 3.4,
+        "usefulness": 3.6,
         "overall_score": 6.6
       },
       "quality_score": 6.6
@@ -2304,6 +2305,9 @@
         "vulnerability"
       ],
       "triggers": [
+        "check this code for security issues",
+        "check code for security",
+        "security check",
         "is this code secure",
         "security review",
         "secure coding",
@@ -2344,7 +2348,7 @@
         "reliability": 7.0,
         "security": 6.0,
         "compatibility": 4.0,
-        "usefulness": 4.7,
+        "usefulness": 5.3,
         "overall_score": 6.3
       },
       "quality_score": 6.3
@@ -3028,7 +3032,7 @@
       "aliases": [
         "design-first",
         "requirements-discovery",
-        "ideation"
+        "software-ideation"
       ],
       "triggers": [
         "brainstorm this feature",
@@ -3371,9 +3375,9 @@
       "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK).",
       "path": "development/mcp-builder",
       "aliases": [
-        "mcp",
-        "model-context-protocol",
-        "mcp-server"
+        "mcp-scaffold",
+        "mcp-sdk",
+        "custom-mcp"
       ],
       "triggers": [
         "build an MCP server",
@@ -3481,6 +3485,2994 @@
         "overall_score": 7.6
       },
       "quality_score": 7.6
+    },
+    {
+      "id": "design.avatar-creator",
+      "name": "avatar-creator",
+      "category": "design",
+      "description": "Design consistent avatar and asset specifications across required formats and sizes.",
+      "path": "design/avatar-creator",
+      "aliases": [
+        "avatar",
+        "profile-image",
+        "icon",
+        "character-design"
+      ],
+      "triggers": [
+        "Create an avatar",
+        "Design a profile image",
+        "Generate character art",
+        "Make an icon"
+      ],
+      "keywords": [
+        "avatar",
+        "profile",
+        "image",
+        "icon",
+        "character",
+        "design",
+        "art"
+      ],
+      "dependencies": [
+        "optional:image-generator"
+      ],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "avatar-creator",
+        "design"
+      ],
+      "inputs": [
+        "task",
+        "context"
+      ],
+      "outputs": [
+        "result",
+        "report"
+      ],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "design.avatar-creator",
+        "documentation": 8.1,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 3.9,
+        "overall_score": 6.6
+      },
+      "quality_score": 6.6
+    },
+    {
+      "id": "design.image-gen",
+      "name": "image-gen",
+      "category": "design",
+      "description": "Create precise, safe image-generation prompts and iterate against visual requirements.",
+      "path": "design/image-gen",
+      "aliases": [
+        "dalle",
+        "midjourney",
+        "stable-diffusion",
+        "art"
+      ],
+      "triggers": [
+        "Generate an image",
+        "Create artwork",
+        "Make a picture",
+        "AI art",
+        "Image generation"
+      ],
+      "keywords": [
+        "image",
+        "generation",
+        "ai",
+        "art",
+        "dalle",
+        "midjourney",
+        "illustration"
+      ],
+      "dependencies": [
+        "optional:image-generator"
+      ],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "image-gen",
+        "design"
+      ],
+      "inputs": [
+        "task",
+        "context"
+      ],
+      "outputs": [
+        "result",
+        "report"
+      ],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "design.image-gen",
+        "documentation": 8.2,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 4.1,
+        "overall_score": 6.6
+      },
+      "quality_score": 6.6
+    },
+    {
+      "id": "design.remotion-best-practices",
+      "name": "remotion-best-practices",
+      "category": "design",
+      "description": "Design and implement maintainable Remotion video compositions with deterministic rendering.",
+      "path": "design/remotion-best-practices",
+      "aliases": [
+        "remotion",
+        "video",
+        "react-video",
+        "motion"
+      ],
+      "triggers": [
+        "Make a video with Remotion",
+        "Render a Remotion project",
+        "Remotion composition",
+        "Programmatic video"
+      ],
+      "keywords": [
+        "remotion",
+        "video",
+        "react",
+        "composition",
+        "render",
+        "motion",
+        "ffmpeg",
+        "programmatic"
+      ],
+      "dependencies": [
+        "optional:node",
+        "optional:remotion"
+      ],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "remotion-best-practices",
+        "design"
+      ],
+      "inputs": [
+        "task",
+        "context"
+      ],
+      "outputs": [
+        "result",
+        "report"
+      ],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "design.remotion-best-practices",
+        "documentation": 8.3,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 4.1,
+        "overall_score": 6.6
+      },
+      "quality_score": 6.6
+    },
+    {
+      "id": "design.veo-video-generator",
+      "name": "veo-video-generator",
+      "category": "design",
+      "description": "Plan and generate Google Veo videos from approved prompts, assets, and output constraints.",
+      "path": "design/veo-video-generator",
+      "aliases": [
+        "generation",
+        "veo",
+        "google-veo",
+        "ai-video"
+      ],
+      "triggers": [
+        "Generate a video",
+        "Create a video from this prompt",
+        "Make an AI video",
+        "Veo video"
+      ],
+      "keywords": [
+        "video",
+        "generation",
+        "ai",
+        "veo",
+        "google",
+        "animation"
+      ],
+      "dependencies": [
+        "optional:GOOGLE_API_KEY"
+      ],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "medium",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "veo-video-generator",
+        "design"
+      ],
+      "inputs": [
+        "task",
+        "context"
+      ],
+      "outputs": [
+        "result",
+        "report"
+      ],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "design.veo-video-generator",
+        "documentation": 8.2,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 6.0,
+        "compatibility": 4.0,
+        "usefulness": 3.7,
+        "overall_score": 5.9
+      },
+      "quality_score": 5.9
+    },
+    {
+      "id": "development.api-mock-generator",
+      "name": "api-mock-generator",
+      "category": "development",
+      "description": "Derive API mocks and contract tests from schemas or observed interfaces without inventing behavior.",
+      "path": "development/api-mock-generator",
+      "aliases": [
+        "api",
+        "mock",
+        "test",
+        "contract",
+        "openapi",
+        "swagger"
+      ],
+      "triggers": [
+        "Generate API mocks",
+        "Create mock API",
+        "API testing",
+        "Mock endpoints"
+      ],
+      "keywords": [
+        "api",
+        "mock",
+        "test",
+        "openapi",
+        "swagger",
+        "rest",
+        "contract"
+      ],
+      "dependencies": [
+        "optional:test-framework"
+      ],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "api-mock-generator",
+        "development"
+      ],
+      "inputs": [
+        "task",
+        "context"
+      ],
+      "outputs": [
+        "result",
+        "report"
+      ],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "development.api-mock-generator",
+        "documentation": 8.5,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 4.6,
+        "overall_score": 6.7
+      },
+      "quality_score": 6.7
+    },
+    {
+      "id": "development.autoreview",
+      "name": "autoreview",
+      "category": "development",
+      "description": "Run an explicitly requested structured second-model code review and verify findings before changes.",
+      "path": "development/autoreview",
+      "aliases": [],
+      "triggers": [
+        "use autoreview",
+        "run autoreview"
+      ],
+      "keywords": [
+        "autoreview",
+        "development",
+        "explicitly",
+        "requested",
+        "structured",
+        "second",
+        "model"
+      ],
+      "dependencies": [
+        "optional:codex-or-claude-cli"
+      ],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "autoreview",
+        "development"
+      ],
+      "inputs": [
+        "task",
+        "context"
+      ],
+      "outputs": [
+        "result",
+        "report"
+      ],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "development.autoreview",
+        "documentation": 8.5,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 2.2,
+        "overall_score": 6.4
+      },
+      "quality_score": 6.4
+    },
+    {
+      "id": "development.behavior-validator",
+      "name": "behavior-validator",
+      "category": "development",
+      "description": "Validate user-visible behavior against a written contract without inspecting implementation source.",
+      "path": "development/behavior-validator",
+      "aliases": [],
+      "triggers": [
+        "use behavior-validator",
+        "run behavior-validator"
+      ],
+      "keywords": [
+        "behavior-validator",
+        "development",
+        "validate",
+        "user",
+        "visible",
+        "behavior",
+        "against"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "behavior-validator",
+        "development"
+      ],
+      "inputs": [
+        "task",
+        "context"
+      ],
+      "outputs": [
+        "result",
+        "report"
+      ],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "development.behavior-validator",
+        "documentation": 8.5,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 2.2,
+        "overall_score": 6.4
+      },
+      "quality_score": 6.4
+    },
+    {
+      "id": "development.cf-worker-deploy",
+      "name": "cf-worker-deploy",
+      "category": "development",
+      "description": "Validate and deploy Cloudflare Workers with preview, secret, and rollback safeguards.",
+      "path": "development/cf-worker-deploy",
+      "aliases": [
+        "cloudflare",
+        "worker",
+        "cf",
+        "edge"
+      ],
+      "triggers": [
+        "Deploy to Cloudflare Workers",
+        "Publish worker",
+        "Cloudflare deployment",
+        "Update worker"
+      ],
+      "keywords": [
+        "cloudflare",
+        "worker",
+        "deploy",
+        "edge",
+        "serverless",
+        "wrangler"
+      ],
+      "dependencies": [
+        "optional:wrangler"
+      ],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "high",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "cf-worker-deploy",
+        "development"
+      ],
+      "inputs": [
+        "task",
+        "context"
+      ],
+      "outputs": [
+        "result",
+        "report"
+      ],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "development.cf-worker-deploy",
+        "documentation": 8.1,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 3.0,
+        "compatibility": 4.0,
+        "usefulness": 3.7,
+        "overall_score": 5.3
+      },
+      "quality_score": 5.3
+    },
+    {
+      "id": "development.coding-agent",
+      "name": "coding-agent",
+      "category": "development",
+      "description": "Delegate bounded coding work to an installed coding-agent CLI with explicit scope and verification.",
+      "path": "development/coding-agent",
+      "aliases": [
+        "codex",
+        "claude-code",
+        "headless-agent",
+        "ai-coding",
+        "autopilot"
+      ],
+      "triggers": [
+        "Run the coding agent",
+        "Use Codex",
+        "Use Claude Code",
+        "Spin up an agent to fix this",
+        "Hand this off to an agent"
+      ],
+      "keywords": [
+        "codex",
+        "claude",
+        "code",
+        "agent",
+        "headless",
+        "cli",
+        "autonomous",
+        "coding",
+        "ai"
+      ],
+      "dependencies": [
+        "optional:codex-or-claude-cli"
+      ],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "medium",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "coding-agent",
+        "development"
+      ],
+      "inputs": [
+        "task",
+        "context"
+      ],
+      "outputs": [
+        "result",
+        "report"
+      ],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "development.coding-agent",
+        "documentation": 8.5,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 6.0,
+        "compatibility": 4.0,
+        "usefulness": 4.9,
+        "overall_score": 6.2
+      },
+      "quality_score": 6.2
+    },
+    {
+      "id": "development.crabbox",
+      "name": "crabbox",
+      "category": "development",
+      "description": "Coordinate isolated remote or clean-machine validation while preserving trust and credential boundaries.",
+      "path": "development/crabbox",
+      "aliases": [],
+      "triggers": [
+        "use crabbox",
+        "run crabbox"
+      ],
+      "keywords": [
+        "crabbox",
+        "development",
+        "coordinate",
+        "isolated",
+        "remote",
+        "clean",
+        "machine"
+      ],
+      "dependencies": [
+        "optional:crabbox"
+      ],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "crabbox",
+        "development"
+      ],
+      "inputs": [
+        "task",
+        "context"
+      ],
+      "outputs": [
+        "result",
+        "report"
+      ],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "development.crabbox",
+        "documentation": 8.6,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 2.2,
+        "overall_score": 6.4
+      },
+      "quality_score": 6.4
+    },
+    {
+      "id": "development.cursor-agent",
+      "name": "cursor-agent",
+      "category": "development",
+      "description": "Use Cursor Agent safely for bounded software tasks without unattended destructive actions.",
+      "path": "development/cursor-agent",
+      "aliases": [
+        "cursor",
+        "cursor-cli",
+        "ai-ide",
+        "agent"
+      ],
+      "triggers": [
+        "Use Cursor",
+        "Run the Cursor agent",
+        "Hand this to Cursor",
+        "Cursor CLI"
+      ],
+      "keywords": [
+        "cursor",
+        "cli",
+        "agent",
+        "ide",
+        "tmux",
+        "code",
+        "ai",
+        "automation"
+      ],
+      "dependencies": [
+        "optional:cursor-agent"
+      ],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "medium",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "cursor-agent",
+        "development"
+      ],
+      "inputs": [
+        "task",
+        "context"
+      ],
+      "outputs": [
+        "result",
+        "report"
+      ],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "development.cursor-agent",
+        "documentation": 8.2,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 6.0,
+        "compatibility": 4.0,
+        "usefulness": 4.1,
+        "overall_score": 6.0
+      },
+      "quality_score": 6.0
+    },
+    {
+      "id": "development.db-inspector",
+      "name": "db-inspector",
+      "category": "development",
+      "description": "Inspect database schemas and queries read-only by default and explain performance or safety risks.",
+      "path": "development/db-inspector",
+      "aliases": [
+        "database",
+        "db",
+        "query",
+        "inspect",
+        "mysql",
+        "postgres"
+      ],
+      "triggers": [
+        "Check database schema",
+        "Inspect this database",
+        "Run a query",
+        "Database structure",
+        "Explain this query"
+      ],
+      "keywords": [
+        "database",
+        "sql",
+        "schema",
+        "query",
+        "inspect",
+        "mysql",
+        "postgres",
+        "mongodb"
+      ],
+      "dependencies": [
+        "optional:database-client"
+      ],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "medium",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "db-inspector",
+        "development"
+      ],
+      "inputs": [
+        "task",
+        "context"
+      ],
+      "outputs": [
+        "result",
+        "report"
+      ],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "development.db-inspector",
+        "documentation": 8.4,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 6.0,
+        "compatibility": 4.0,
+        "usefulness": 5.0,
+        "overall_score": 6.2
+      },
+      "quality_score": 6.2
+    },
+    {
+      "id": "development.docker-manager",
+      "name": "docker-manager",
+      "category": "development",
+      "description": "Inspect and manage Docker resources with read-only defaults and confirmation for mutations.",
+      "path": "development/docker-manager",
+      "aliases": [
+        "docker",
+        "container",
+        "image",
+        "compose",
+        "podman"
+      ],
+      "triggers": [
+        "List docker containers",
+        "Tail container logs",
+        "Restart this container",
+        "Prune docker",
+        "Build this image"
+      ],
+      "keywords": [
+        "docker",
+        "container",
+        "image",
+        "compose",
+        "podman",
+        "volume",
+        "network",
+        "prune",
+        "build"
+      ],
+      "dependencies": [
+        "optional:docker"
+      ],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "high",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "docker-manager",
+        "development"
+      ],
+      "inputs": [
+        "task",
+        "context"
+      ],
+      "outputs": [
+        "result",
+        "report"
+      ],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "development.docker-manager",
+        "documentation": 8.3,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 3.0,
+        "compatibility": 4.0,
+        "usefulness": 4.9,
+        "overall_score": 5.5
+      },
+      "quality_score": 5.5
+    },
+    {
+      "id": "development.dokploy",
+      "name": "dokploy",
+      "category": "development",
+      "description": "Inspect and manage Dokploy deployments through its API with explicit confirmation for mutations.",
+      "path": "development/dokploy",
+      "aliases": [
+        "hosting",
+        "self-host"
+      ],
+      "triggers": [
+        "Deploy to Dokploy",
+        "Restart the app on Dokploy",
+        "Add a domain",
+        "List projects on Dokploy"
+      ],
+      "keywords": [
+        "dokploy",
+        "deploy",
+        "hosting",
+        "project",
+        "application",
+        "domain",
+        "server",
+        "docker"
+      ],
+      "dependencies": [
+        "optional:DOKPLOY_API_KEY"
+      ],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "high",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "dokploy",
+        "development"
+      ],
+      "inputs": [
+        "task",
+        "context"
+      ],
+      "outputs": [
+        "result",
+        "report"
+      ],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "development.dokploy",
+        "documentation": 8.4,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 3.0,
+        "compatibility": 4.0,
+        "usefulness": 3.5,
+        "overall_score": 5.4
+      },
+      "quality_score": 5.4
+    },
+    {
+      "id": "development.git-workflow",
+      "name": "git-workflow",
+      "category": "development",
+      "description": "Guide safe commits, branches, pushes, and pull requests while preserving uncommitted work.",
+      "path": "development/git-workflow",
+      "aliases": [
+        "git",
+        "commit",
+        "conventional-commits",
+        "push"
+      ],
+      "triggers": [
+        "Commit this",
+        "Open a PR",
+        "Push my branch",
+        "Use a conventional commit message",
+        "Sign my commits"
+      ],
+      "keywords": [
+        "git",
+        "commit",
+        "pr",
+        "push",
+        "branch",
+        "conventional",
+        "signed",
+        "hook",
+        "changelog"
+      ],
+      "dependencies": [
+        "git"
+      ],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "medium",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "git-workflow",
+        "development"
+      ],
+      "inputs": [
+        "task",
+        "context"
+      ],
+      "outputs": [
+        "result",
+        "report"
+      ],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "development.git-workflow",
+        "documentation": 8.2,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 6.0,
+        "compatibility": 4.0,
+        "usefulness": 4.5,
+        "overall_score": 6.1
+      },
+      "quality_score": 6.1
+    },
+    {
+      "id": "development.github-cli",
+      "name": "github-cli",
+      "category": "development",
+      "description": "Use GitHub CLI for issues, pull requests, Actions, and API queries with confirmation for writes.",
+      "path": "development/github-cli",
+      "aliases": [
+        "github",
+        "gh-cli"
+      ],
+      "triggers": [
+        "Open a PR",
+        "List my issues",
+        "Check the CI run",
+        "Create a release",
+        "Use the GitHub API"
+      ],
+      "keywords": [
+        "github",
+        "gh",
+        "pr",
+        "pull",
+        "request",
+        "issue",
+        "ci",
+        "workflow",
+        "release",
+        "api"
+      ],
+      "dependencies": [
+        "optional:gh"
+      ],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "medium",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "github-cli",
+        "development"
+      ],
+      "inputs": [
+        "task",
+        "context"
+      ],
+      "outputs": [
+        "result",
+        "report"
+      ],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "development.github-cli",
+        "documentation": 8.4,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 6.0,
+        "compatibility": 4.0,
+        "usefulness": 4.1,
+        "overall_score": 6.0
+      },
+      "quality_score": 6.0
+    },
+    {
+      "id": "development.summarize-repo",
+      "name": "summarize-repo",
+      "category": "development",
+      "description": "Produce an evidence-based codebase map covering architecture, entry points, dependencies, and risks.",
+      "path": "development/summarize-repo",
+      "aliases": [
+        "summarize",
+        "repo-overview",
+        "codebase-summary",
+        "on boarding"
+      ],
+      "triggers": [
+        "Summarize this repo",
+        "What is this project",
+        "Give me an overview",
+        "Onboard me to this codebase"
+      ],
+      "keywords": [
+        "summarize",
+        "repo",
+        "codebase",
+        "overview",
+        "tour",
+        "onboarding",
+        "readme",
+        "architecture"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "summarize-repo",
+        "development"
+      ],
+      "inputs": [
+        "task",
+        "context"
+      ],
+      "outputs": [
+        "result",
+        "report"
+      ],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "development.summarize-repo",
+        "documentation": 8.5,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 4.1,
+        "overall_score": 6.7
+      },
+      "quality_score": 6.7
+    },
+    {
+      "id": "documents.expense-parser",
+      "name": "expense-parser",
+      "category": "documents",
+      "description": "Extract normalized vendor, date, currency, tax, line-item, and total data from receipts or invoices.",
+      "path": "documents/expense-parser",
+      "aliases": [
+        "expense",
+        "receipt",
+        "invoice",
+        "parse",
+        "finance"
+      ],
+      "triggers": [
+        "Parse this receipt",
+        "Extract expense data",
+        "Scan invoice",
+        "Process expense"
+      ],
+      "keywords": [
+        "expense",
+        "receipt",
+        "invoice",
+        "ocr",
+        "parse",
+        "finance",
+        "accounting"
+      ],
+      "dependencies": [
+        "optional:ocr"
+      ],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "expense-parser",
+        "documents"
+      ],
+      "inputs": [
+        "task",
+        "context"
+      ],
+      "outputs": [
+        "result",
+        "report"
+      ],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "documents.expense-parser",
+        "documentation": 8.5,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 4.3,
+        "overall_score": 6.7
+      },
+      "quality_score": 6.7
+    },
+    {
+      "id": "productivity.adhd-task-breakdown",
+      "name": "adhd-task-breakdown",
+      "category": "productivity",
+      "description": "Turn overwhelming work into ADHD-friendly, visible, short, immediately actionable steps.",
+      "path": "productivity/adhd-task-breakdown",
+      "aliases": [
+        "adhd",
+        "task-decomposition",
+        "breakdown",
+        "chunk-down"
+      ],
+      "triggers": [
+        "Break this down",
+        "I don't know where to start",
+        "This feels too big",
+        "ADHD task",
+        "Help me start this project",
+        "Too overwhelming"
+      ],
+      "keywords": [
+        "adhd",
+        "overwhelm",
+        "task",
+        "chunk",
+        "decompose",
+        "planning",
+        "executive",
+        "function",
+        "friction"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "adhd-task-breakdown",
+        "productivity"
+      ],
+      "inputs": [
+        "task",
+        "context"
+      ],
+      "outputs": [
+        "result",
+        "report"
+      ],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "productivity.adhd-task-breakdown",
+        "documentation": 8.2,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 4.7,
+        "overall_score": 6.7
+      },
+      "quality_score": 6.7
+    },
+    {
+      "id": "productivity.calendar-assistant",
+      "name": "calendar-assistant",
+      "category": "productivity",
+      "description": "Plan and modify calendar events with timezone checks, conflict detection, and confirmation.",
+      "path": "productivity/calendar-assistant",
+      "aliases": [
+        "event",
+        "google-calendar",
+        "outlook"
+      ],
+      "triggers": [
+        "Schedule this meeting",
+        "Add to my calendar",
+        "What's on my calendar",
+        "Find a time for",
+        "Check for conflicts"
+      ],
+      "keywords": [
+        "calendar",
+        "schedule",
+        "meeting",
+        "event",
+        "time",
+        "timezone"
+      ],
+      "dependencies": [
+        "optional:calendar-access"
+      ],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "medium",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "calendar-assistant",
+        "productivity"
+      ],
+      "inputs": [
+        "task",
+        "context"
+      ],
+      "outputs": [
+        "result",
+        "report"
+      ],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "productivity.calendar-assistant",
+        "documentation": 8.3,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 6.0,
+        "compatibility": 4.0,
+        "usefulness": 3.6,
+        "overall_score": 6.0
+      },
+      "quality_score": 6.0
+    },
+    {
+      "id": "productivity.context-summarize",
+      "name": "context-summarize",
+      "category": "productivity",
+      "description": "Compress active context into decisions, facts, open questions, and next actions.",
+      "path": "productivity/context-summarize",
+      "aliases": [
+        "context",
+        "meeting-summary"
+      ],
+      "triggers": [
+        "Summarize this",
+        "TL;DR",
+        "Extract the action items",
+        "What are the key points",
+        "Compress this transcript"
+      ],
+      "keywords": [
+        "summarize",
+        "tldr",
+        "context",
+        "notes",
+        "transcript",
+        "meeting",
+        "action",
+        "items",
+        "decisions"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "context-summarize",
+        "productivity"
+      ],
+      "inputs": [
+        "task",
+        "context"
+      ],
+      "outputs": [
+        "result",
+        "report"
+      ],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "productivity.context-summarize",
+        "documentation": 8.0,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 3.9,
+        "overall_score": 6.5
+      },
+      "quality_score": 6.5
+    },
+    {
+      "id": "productivity.daily-journal",
+      "name": "daily-journal",
+      "category": "productivity",
+      "description": "Create a concise daily journal with events, reflection, lessons, and tomorrow's priorities.",
+      "path": "productivity/daily-journal",
+      "aliases": [
+        "journal",
+        "daily",
+        "reflection",
+        "gratitude",
+        "intention",
+        "mood"
+      ],
+      "triggers": [
+        "Daily journal",
+        "Reflect on today",
+        "What did I do today",
+        "Morning prompt",
+        "Evening wrap"
+      ],
+      "keywords": [
+        "journal",
+        "daily",
+        "reflection",
+        "gratitude",
+        "mood",
+        "intention",
+        "win",
+        "lesson",
+        "log"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "daily-journal",
+        "productivity"
+      ],
+      "inputs": [
+        "task",
+        "context"
+      ],
+      "outputs": [
+        "result",
+        "report"
+      ],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "productivity.daily-journal",
+        "documentation": 8.3,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 5.2,
+        "overall_score": 6.8
+      },
+      "quality_score": 6.8
+    },
+    {
+      "id": "productivity.email-inbox-zero",
+      "name": "email-inbox-zero",
+      "category": "productivity",
+      "description": "Triage email into reply, action, defer, archive, or escalate queues without silent sending.",
+      "path": "productivity/email-inbox-zero",
+      "aliases": [
+        "email",
+        "inbox",
+        "gmail",
+        "mail"
+      ],
+      "triggers": [
+        "Triage my emails",
+        "Process my inbox",
+        "Clean up my email",
+        "Inbox zero"
+      ],
+      "keywords": [
+        "email",
+        "inbox",
+        "triage",
+        "archive",
+        "reply",
+        "action",
+        "organize"
+      ],
+      "dependencies": [
+        "optional:email-access"
+      ],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "medium",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "email-inbox-zero",
+        "productivity"
+      ],
+      "inputs": [
+        "task",
+        "context"
+      ],
+      "outputs": [
+        "result",
+        "report"
+      ],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "productivity.email-inbox-zero",
+        "documentation": 8.3,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 6.0,
+        "compatibility": 4.0,
+        "usefulness": 3.9,
+        "overall_score": 6.0
+      },
+      "quality_score": 6.0
+    },
+    {
+      "id": "productivity.focus-guard",
+      "name": "focus-guard",
+      "category": "productivity",
+      "description": "Protect a focus session by defining one outcome, blocking distractions, and handling interruptions.",
+      "path": "productivity/focus-guard",
+      "aliases": [
+        "do-not-disturb",
+        "dnd",
+        "focus-mode",
+        "distraction-shield",
+        "quiet"
+      ],
+      "triggers": [
+        "I need to focus",
+        "Turn off notifications",
+        "Stop the distractions",
+        "Focus mode",
+        "I'm getting pulled away"
+      ],
+      "keywords": [
+        "focus",
+        "distraction",
+        "notification",
+        "dnd",
+        "quiet",
+        "interrupt",
+        "shield",
+        "block"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "medium",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "focus-guard",
+        "productivity"
+      ],
+      "inputs": [
+        "task",
+        "context"
+      ],
+      "outputs": [
+        "result",
+        "report"
+      ],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "productivity.focus-guard",
+        "documentation": 8.5,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 6.0,
+        "compatibility": 4.0,
+        "usefulness": 4.7,
+        "overall_score": 6.2
+      },
+      "quality_score": 6.2
+    },
+    {
+      "id": "productivity.meeting-action-extractor",
+      "name": "meeting-action-extractor",
+      "category": "productivity",
+      "description": "Extract decisions, action items, owners, dates, and unresolved questions from meetings.",
+      "path": "productivity/meeting-action-extractor",
+      "aliases": [
+        "meeting",
+        "action-items",
+        "decisions"
+      ],
+      "triggers": [
+        "Extract action items from this meeting",
+        "What were the decisions",
+        "Meeting summary",
+        "Parse meeting notes",
+        "Extract follow-ups"
+      ],
+      "keywords": [
+        "meeting",
+        "action-items",
+        "decisions",
+        "summary",
+        "follow-up",
+        "owner"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "meeting-action-extractor",
+        "productivity"
+      ],
+      "inputs": [
+        "task",
+        "context"
+      ],
+      "outputs": [
+        "result",
+        "report"
+      ],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "productivity.meeting-action-extractor",
+        "documentation": 8.2,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 3.6,
+        "overall_score": 6.5
+      },
+      "quality_score": 6.5
+    },
+    {
+      "id": "productivity.obsidian-sync",
+      "name": "obsidian-sync",
+      "category": "productivity",
+      "description": "Plan and verify safe synchronization between an Obsidian vault and a working directory.",
+      "path": "productivity/obsidian-sync",
+      "aliases": [
+        "obsidian",
+        "vault",
+        "notes",
+        "sync",
+        "markdown-sync"
+      ],
+      "triggers": [
+        "Sync my Obsidian",
+        "Mirror notes to Obsidian",
+        "Update my vault",
+        "Copy today's journal to Obsidian"
+      ],
+      "keywords": [
+        "obsidian",
+        "vault",
+        "notes",
+        "sync",
+        "markdown",
+        "daily",
+        "journal",
+        "knowledge",
+        "base"
+      ],
+      "dependencies": [
+        "optional:obsidian"
+      ],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "medium",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "obsidian-sync",
+        "productivity"
+      ],
+      "inputs": [
+        "task",
+        "context"
+      ],
+      "outputs": [
+        "result",
+        "report"
+      ],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "productivity.obsidian-sync",
+        "documentation": 8.2,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 6.0,
+        "compatibility": 4.0,
+        "usefulness": 4.7,
+        "overall_score": 6.1
+      },
+      "quality_score": 6.1
+    },
+    {
+      "id": "productivity.time-blocking",
+      "name": "time-blocking",
+      "category": "productivity",
+      "description": "Build realistic deep-work time blocks around energy, priorities, breaks, and constraints.",
+      "path": "productivity/time-blocking",
+      "aliases": [
+        "calendar-block"
+      ],
+      "triggers": [
+        "Schedule deep work",
+        "Block time for",
+        "When should I do this",
+        "I keep getting interrupted",
+        "Help me plan my week"
+      ],
+      "keywords": [
+        "time",
+        "block",
+        "schedule",
+        "deep",
+        "work",
+        "calendar",
+        "pomodoro",
+        "focus",
+        "planning"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "time-blocking",
+        "productivity"
+      ],
+      "inputs": [
+        "task",
+        "context"
+      ],
+      "outputs": [
+        "result",
+        "report"
+      ],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "productivity.time-blocking",
+        "documentation": 8.2,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 3.5,
+        "overall_score": 6.5
+      },
+      "quality_score": 6.5
+    },
+    {
+      "id": "productivity.voice-to-action",
+      "name": "voice-to-action",
+      "category": "productivity",
+      "description": "Convert rough voice-note text into clarified tasks, owners, dates, and follow-ups.",
+      "path": "productivity/voice-to-action",
+      "aliases": [
+        "dictation",
+        "memo",
+        "transcribe",
+        "action"
+      ],
+      "triggers": [
+        "From my voice memo",
+        "Transcribe this audio",
+        "What did I just say",
+        "Convert this to a task"
+      ],
+      "keywords": [
+        "voice",
+        "audio",
+        "transcribe",
+        "dictation",
+        "memo",
+        "action",
+        "task",
+        "whisper"
+      ],
+      "dependencies": [
+        "optional:transcript"
+      ],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "voice-to-action",
+        "productivity"
+      ],
+      "inputs": [
+        "task",
+        "context"
+      ],
+      "outputs": [
+        "result",
+        "report"
+      ],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "productivity.voice-to-action",
+        "documentation": 8.1,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 4.1,
+        "overall_score": 6.6
+      },
+      "quality_score": 6.6
+    },
+    {
+      "id": "research.search-synthesizer",
+      "name": "search-synthesizer",
+      "category": "research",
+      "description": "Search the web, compare credible sources, and synthesize a cited answer with uncertainty.",
+      "path": "research/search-synthesizer",
+      "aliases": [
+        "web-search",
+        "synthesize"
+      ],
+      "triggers": [
+        "Search for this",
+        "Synthesize research on a topic",
+        "What does the web say about",
+        "Find information on",
+        "Compare sources on"
+      ],
+      "keywords": [
+        "search",
+        "research",
+        "web",
+        "synthesize",
+        "sources",
+        "compare",
+        "facts"
+      ],
+      "dependencies": [
+        "optional:web-search"
+      ],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "search-synthesizer",
+        "research"
+      ],
+      "inputs": [
+        "task",
+        "context"
+      ],
+      "outputs": [
+        "result",
+        "report"
+      ],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "research.search-synthesizer",
+        "documentation": 8.2,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 3.5,
+        "overall_score": 6.5
+      },
+      "quality_score": 6.5
+    },
+    {
+      "id": "security.cmd-safety-check",
+      "name": "cmd-safety-check",
+      "category": "security",
+      "description": "Classify terminal commands by impact and require safeguards before risky execution.",
+      "path": "security/cmd-safety-check",
+      "aliases": [
+        "command",
+        "safety",
+        "terminal",
+        "security",
+        "risk",
+        "execute"
+      ],
+      "triggers": [
+        "Is this command safe",
+        "Check this command",
+        "Should I run this",
+        "Command safety",
+        "Risk assessment"
+      ],
+      "keywords": [
+        "command",
+        "terminal",
+        "safety",
+        "risk",
+        "execute",
+        "shell",
+        "bash"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "medium",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "cmd-safety-check",
+        "security"
+      ],
+      "inputs": [
+        "task",
+        "context"
+      ],
+      "outputs": [
+        "result",
+        "report"
+      ],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "security.cmd-safety-check",
+        "documentation": 8.1,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 6.0,
+        "compatibility": 4.0,
+        "usefulness": 4.8,
+        "overall_score": 6.1
+      },
+      "quality_score": 6.1
+    },
+    {
+      "id": "security.npm-auditor",
+      "name": "npm-auditor",
+      "category": "security",
+      "description": "Audit npm dependencies for vulnerabilities, staleness, licenses, and supply-chain risk.",
+      "path": "security/npm-auditor",
+      "aliases": [
+        "npm",
+        "audit",
+        "pnpm",
+        "yarn",
+        "dependency",
+        "vulnerabilities"
+      ],
+      "triggers": [
+        "Audit my dependencies",
+        "Run npm audit",
+        "Check for CVEs",
+        "Are my packages up to date",
+        "License check"
+      ],
+      "keywords": [
+        "npm",
+        "pnpm",
+        "yarn",
+        "audit",
+        "dependency",
+        "vulnerability",
+        "cve",
+        "license",
+        "supply",
+        "chain"
+      ],
+      "dependencies": [
+        "optional:npm"
+      ],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "medium",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "npm-auditor",
+        "security"
+      ],
+      "inputs": [
+        "task",
+        "context"
+      ],
+      "outputs": [
+        "result",
+        "report"
+      ],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "security.npm-auditor",
+        "documentation": 8.2,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 6.0,
+        "compatibility": 4.0,
+        "usefulness": 5.4,
+        "overall_score": 6.2
+      },
+      "quality_score": 6.2
+    },
+    {
+      "id": "security.security-scanner",
+      "name": "security-scanner",
+      "category": "security",
+      "description": "Gate releases with defensive static, dependency, secret, and configuration security checks.",
+      "path": "security/security-scanner",
+      "aliases": [
+        "scan",
+        "secret"
+      ],
+      "triggers": [
+        "Security scan",
+        "Check for vulnerabilities",
+        "Scan for secrets",
+        "Security audit",
+        "Vulnerability check"
+      ],
+      "keywords": [
+        "security",
+        "scan",
+        "vulnerability",
+        "secret",
+        "audit",
+        "cve",
+        "sast"
+      ],
+      "dependencies": [
+        "optional:security-scanners"
+      ],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "medium",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "security-scanner",
+        "security"
+      ],
+      "inputs": [
+        "task",
+        "context"
+      ],
+      "outputs": [
+        "result",
+        "report"
+      ],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "security.security-scanner",
+        "documentation": 8.3,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 6.0,
+        "compatibility": 4.0,
+        "usefulness": 3.5,
+        "overall_score": 5.9
+      },
+      "quality_score": 5.9
+    },
+    {
+      "id": "utilities.agent-transcript",
+      "name": "agent-transcript",
+      "category": "utilities",
+      "description": "Create a redacted, consent-gated agent transcript for a pull request or issue.",
+      "path": "utilities/agent-transcript",
+      "aliases": [],
+      "triggers": [
+        "use agent-transcript",
+        "run agent-transcript"
+      ],
+      "keywords": [
+        "agent-transcript",
+        "utilities",
+        "create",
+        "redacted",
+        "consent",
+        "gated",
+        "agent"
+      ],
+      "dependencies": [
+        "optional:node",
+        "optional:gh"
+      ],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "agent-transcript",
+        "utilities"
+      ],
+      "inputs": [
+        "task",
+        "context"
+      ],
+      "outputs": [
+        "result",
+        "report"
+      ],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "utilities.agent-transcript",
+        "documentation": 8.0,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 2.2,
+        "overall_score": 6.3
+      },
+      "quality_score": 6.3
+    },
+    {
+      "id": "utilities.audio-transcribe",
+      "name": "audio-transcribe",
+      "category": "utilities",
+      "description": "Transcribe audio into timestamped text and optionally extract speakers and actions.",
+      "path": "utilities/audio-transcribe",
+      "aliases": [
+        "speech-to-text",
+        "transcription"
+      ],
+      "triggers": [
+        "Transcribe this audio",
+        "Convert speech to text",
+        "Get a transcript",
+        "Speech recognition"
+      ],
+      "keywords": [
+        "audio",
+        "transcription",
+        "speech",
+        "voice",
+        "text",
+        "whisper"
+      ],
+      "dependencies": [
+        "optional:transcription-engine"
+      ],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "audio-transcribe",
+        "utilities"
+      ],
+      "inputs": [
+        "task",
+        "context"
+      ],
+      "outputs": [
+        "result",
+        "report"
+      ],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "utilities.audio-transcribe",
+        "documentation": 8.1,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 3.1,
+        "overall_score": 6.4
+      },
+      "quality_score": 6.4
+    },
+    {
+      "id": "utilities.beam",
+      "name": "beam",
+      "category": "utilities",
+      "description": "Publish a locally redacted coding-session snapshot only when explicitly requested.",
+      "path": "utilities/beam",
+      "aliases": [],
+      "triggers": [
+        "use beam",
+        "run beam"
+      ],
+      "keywords": [
+        "beam",
+        "utilities",
+        "publish",
+        "locally",
+        "redacted",
+        "coding",
+        "session"
+      ],
+      "dependencies": [
+        "optional:node",
+        "optional:BEAM_ACCESS_TOKEN"
+      ],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "beam",
+        "utilities"
+      ],
+      "inputs": [
+        "task",
+        "context"
+      ],
+      "outputs": [
+        "result",
+        "report"
+      ],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "utilities.beam",
+        "documentation": 8.1,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 2.2,
+        "overall_score": 6.3
+      },
+      "quality_score": 6.3
+    },
+    {
+      "id": "utilities.handoff",
+      "name": "handoff",
+      "category": "utilities",
+      "description": "Prepare a portable context-rich handoff prompt for another coding agent.",
+      "path": "utilities/handoff",
+      "aliases": [],
+      "triggers": [
+        "use handoff",
+        "run handoff"
+      ],
+      "keywords": [
+        "handoff",
+        "utilities",
+        "prepare",
+        "portable",
+        "context",
+        "rich",
+        "handoff"
+      ],
+      "dependencies": [
+        "optional:clipboard-tool"
+      ],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "handoff",
+        "utilities"
+      ],
+      "inputs": [
+        "task",
+        "context"
+      ],
+      "outputs": [
+        "result",
+        "report"
+      ],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "utilities.handoff",
+        "documentation": 7.8,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 2.2,
+        "overall_score": 6.2
+      },
+      "quality_score": 6.2
+    },
+    {
+      "id": "utilities.readme-standard",
+      "name": "readme-standard",
+      "category": "utilities",
+      "description": "Write and review concise, progressive READMEs with executable examples and verified links.",
+      "path": "utilities/readme-standard",
+      "aliases": [],
+      "triggers": [
+        "use readme-standard",
+        "run readme-standard"
+      ],
+      "keywords": [
+        "readme-standard",
+        "utilities",
+        "write",
+        "review",
+        "concise",
+        "progressive",
+        "readmes"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "readme-standard",
+        "utilities"
+      ],
+      "inputs": [
+        "task",
+        "context"
+      ],
+      "outputs": [
+        "result",
+        "report"
+      ],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "utilities.readme-standard",
+        "documentation": 8.2,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 2.2,
+        "overall_score": 6.3
+      },
+      "quality_score": 6.3
+    },
+    {
+      "id": "utilities.slack-synthesizer",
+      "name": "slack-synthesizer",
+      "category": "utilities",
+      "description": "Summarize Slack threads into decisions, evidence, disagreements, and action items.",
+      "path": "utilities/slack-synthesizer",
+      "aliases": [
+        "slack",
+        "thread"
+      ],
+      "triggers": [
+        "Summarize this Slack thread",
+        "What was decided in this channel",
+        "Extract action items from Slack",
+        "Slack summary"
+      ],
+      "keywords": [
+        "slack",
+        "summary",
+        "thread",
+        "decision",
+        "action-items",
+        "channel"
+      ],
+      "dependencies": [
+        "optional:slack-access"
+      ],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "slack-synthesizer",
+        "utilities"
+      ],
+      "inputs": [
+        "task",
+        "context"
+      ],
+      "outputs": [
+        "result",
+        "report"
+      ],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "utilities.slack-synthesizer",
+        "documentation": 8.1,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 3.1,
+        "overall_score": 6.4
+      },
+      "quality_score": 6.4
+    },
+    {
+      "id": "utilities.sonos-cli",
+      "name": "sonos-cli",
+      "category": "utilities",
+      "description": "Inspect and control Sonos playback with room validation and confirmation for disruptive actions.",
+      "path": "utilities/sonos-cli",
+      "aliases": [
+        "sonos",
+        "music",
+        "speaker",
+        "playback"
+      ],
+      "triggers": [
+        "Control Sonos",
+        "Play music on Sonos",
+        "Sonos speaker",
+        "Pause Sonos"
+      ],
+      "keywords": [
+        "sonos",
+        "music",
+        "speaker",
+        "playback",
+        "audio",
+        "streaming"
+      ],
+      "dependencies": [
+        "optional:sonos-cli"
+      ],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "sonos-cli",
+        "utilities"
+      ],
+      "inputs": [
+        "task",
+        "context"
+      ],
+      "outputs": [
+        "result",
+        "report"
+      ],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "utilities.sonos-cli",
+        "documentation": 8.4,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 3.7,
+        "overall_score": 6.6
+      },
+      "quality_score": 6.6
+    },
+    {
+      "id": "utilities.system-monitor",
+      "name": "system-monitor",
+      "category": "utilities",
+      "description": "Inspect system telemetry and summarize CPU, memory, disk, process, and network anomalies.",
+      "path": "utilities/system-monitor",
+      "aliases": [
+        "system",
+        "monitor",
+        "telemetry",
+        "metrics",
+        "performance"
+      ],
+      "triggers": [
+        "Check system status",
+        "System health",
+        "Server metrics",
+        "CPU usage",
+        "Memory check"
+      ],
+      "keywords": [
+        "system",
+        "monitor",
+        "cpu",
+        "memory",
+        "disk",
+        "network",
+        "metrics",
+        "telemetry"
+      ],
+      "dependencies": [
+        "optional:system-tools"
+      ],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "system-monitor",
+        "utilities"
+      ],
+      "inputs": [
+        "task",
+        "context"
+      ],
+      "outputs": [
+        "result",
+        "report"
+      ],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "utilities.system-monitor",
+        "documentation": 8.2,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 4.7,
+        "overall_score": 6.7
+      },
+      "quality_score": 6.7
+    },
+    {
+      "id": "utilities.telegram-actions",
+      "name": "telegram-actions",
+      "category": "utilities",
+      "description": "Draft and perform user-approved Telegram actions without exposing bot credentials.",
+      "path": "utilities/telegram-actions",
+      "aliases": [
+        "telegram",
+        "bot",
+        "message",
+        "telegram-bot"
+      ],
+      "triggers": [
+        "Send a Telegram message",
+        "Post to Telegram",
+        "Telegram notification",
+        "Message via Telegram"
+      ],
+      "keywords": [
+        "telegram",
+        "bot",
+        "message",
+        "notify",
+        "channel",
+        "chat"
+      ],
+      "dependencies": [
+        "optional:TELEGRAM_BOT_TOKEN"
+      ],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "medium",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "telegram-actions",
+        "utilities"
+      ],
+      "inputs": [
+        "task",
+        "context"
+      ],
+      "outputs": [
+        "result",
+        "report"
+      ],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "utilities.telegram-actions",
+        "documentation": 8.1,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 6.0,
+        "compatibility": 4.0,
+        "usefulness": 3.7,
+        "overall_score": 5.9
+      },
+      "quality_score": 5.9
+    },
+    {
+      "id": "utilities.unit-converter",
+      "name": "unit-converter",
+      "category": "utilities",
+      "description": "Convert units and currencies while showing assumptions, precision, and exchange-rate timestamps.",
+      "path": "utilities/unit-converter",
+      "aliases": [
+        "convert",
+        "units",
+        "currency",
+        "conversion",
+        "calculator"
+      ],
+      "triggers": [
+        "Convert units",
+        "Currency conversion",
+        "How many miles in a km",
+        "Convert this measurement"
+      ],
+      "keywords": [
+        "convert",
+        "units",
+        "currency",
+        "measurement",
+        "exchange",
+        "rate"
+      ],
+      "dependencies": [
+        "optional:exchange-rate-source"
+      ],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "unit-converter",
+        "utilities"
+      ],
+      "inputs": [
+        "task",
+        "context"
+      ],
+      "outputs": [
+        "result",
+        "report"
+      ],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "utilities.unit-converter",
+        "documentation": 8.4,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 4.1,
+        "overall_score": 6.6
+      },
+      "quality_score": 6.6
+    },
+    {
+      "id": "utilities.weather-now",
+      "name": "weather-now",
+      "category": "utilities",
+      "description": "Retrieve current weather and local conditions with location, timestamp, and source clarity.",
+      "path": "utilities/weather-now",
+      "aliases": [
+        "weather",
+        "forecast",
+        "temperature",
+        "conditions"
+      ],
+      "triggers": [
+        "What's the weather",
+        "Weather forecast",
+        "Current conditions",
+        "Temperature"
+      ],
+      "keywords": [
+        "weather",
+        "forecast",
+        "temperature",
+        "conditions",
+        "location"
+      ],
+      "dependencies": [
+        "optional:weather-api"
+      ],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "weather-now",
+        "utilities"
+      ],
+      "inputs": [
+        "task",
+        "context"
+      ],
+      "outputs": [
+        "result",
+        "report"
+      ],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "utilities.weather-now",
+        "documentation": 8.3,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 3.5,
+        "overall_score": 6.5
+      },
+      "quality_score": 6.5
+    },
+    {
+      "id": "utilities.whatsapp-router",
+      "name": "whatsapp-router",
+      "category": "utilities",
+      "description": "Classify and route WhatsApp messages with consent, privacy, and escalation boundaries.",
+      "path": "utilities/whatsapp-router",
+      "aliases": [
+        "whatsapp",
+        "route",
+        "classify"
+      ],
+      "triggers": [
+        "Route this WhatsApp message",
+        "Categorize WhatsApp message",
+        "Process WhatsApp input"
+      ],
+      "keywords": [
+        "whatsapp",
+        "message",
+        "route",
+        "classify",
+        "triage"
+      ],
+      "dependencies": [
+        "optional:whatsapp-api"
+      ],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "high",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "whatsapp-router",
+        "utilities"
+      ],
+      "inputs": [
+        "task",
+        "context"
+      ],
+      "outputs": [
+        "result",
+        "report"
+      ],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "utilities.whatsapp-router",
+        "documentation": 8.2,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 3.0,
+        "compatibility": 4.0,
+        "usefulness": 3.0,
+        "overall_score": 5.2
+      },
+      "quality_score": 5.2
+    },
+    {
+      "id": "web.agent-browser",
+      "name": "agent-browser",
+      "category": "web",
+      "description": "Operate an agent-browser CLI for auditable navigation, extraction, screenshots, and UI checks.",
+      "path": "web/agent-browser",
+      "aliases": [
+        "browser"
+      ],
+      "triggers": [
+        "Navigate to this URL",
+        "Take a screenshot",
+        "Extract data from a webpage",
+        "Fill out a web form",
+        "Click a button on a page"
+      ],
+      "keywords": [
+        "browser",
+        "automation",
+        "navigation",
+        "scrape",
+        "screenshot",
+        "click",
+        "type",
+        "extract"
+      ],
+      "dependencies": [
+        "optional:agent-browser"
+      ],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "medium",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "agent-browser",
+        "web"
+      ],
+      "inputs": [
+        "task",
+        "context"
+      ],
+      "outputs": [
+        "result",
+        "report"
+      ],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "web.agent-browser",
+        "documentation": 8.3,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 6.0,
+        "compatibility": 4.0,
+        "usefulness": 3.3,
+        "overall_score": 5.9
+      },
+      "quality_score": 5.9
+    },
+    {
+      "id": "web.form-filler",
+      "name": "form-filler",
+      "category": "web",
+      "description": "Fill web forms from user-approved data while requiring confirmation before submission.",
+      "path": "web/form-filler",
+      "aliases": [
+        "form",
+        "autofill",
+        "webform",
+        "submit"
+      ],
+      "triggers": [
+        "Fill out this form",
+        "Submit this application",
+        "Auto-fill the form",
+        "Complete this registration"
+      ],
+      "keywords": [
+        "form",
+        "fill",
+        "submit",
+        "autofill",
+        "webform",
+        "input"
+      ],
+      "dependencies": [
+        "optional:browser-automation"
+      ],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "high",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "form-filler",
+        "web"
+      ],
+      "inputs": [
+        "task",
+        "context"
+      ],
+      "outputs": [
+        "result",
+        "report"
+      ],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "web.form-filler",
+        "documentation": 8.2,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 3.0,
+        "compatibility": 4.0,
+        "usefulness": 3.7,
+        "overall_score": 5.3
+      },
+      "quality_score": 5.3
+    },
+    {
+      "id": "web.media-downloader",
+      "name": "media-downloader",
+      "category": "web",
+      "description": "Download user-authorized public media while respecting rights, terms, and safe filenames.",
+      "path": "web/media-downloader",
+      "aliases": [
+        "download",
+        "media",
+        "youtube",
+        "audio"
+      ],
+      "triggers": [
+        "Download this video",
+        "Save this audio",
+        "Download the image",
+        "Get this media file"
+      ],
+      "keywords": [
+        "download",
+        "media",
+        "video",
+        "audio",
+        "image",
+        "youtube",
+        "mp3"
+      ],
+      "dependencies": [
+        "optional:media-downloader"
+      ],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "medium",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "media-downloader",
+        "web"
+      ],
+      "inputs": [
+        "task",
+        "context"
+      ],
+      "outputs": [
+        "result",
+        "report"
+      ],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "web.media-downloader",
+        "documentation": 8.2,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 6.0,
+        "compatibility": 4.0,
+        "usefulness": 3.9,
+        "overall_score": 6.0
+      },
+      "quality_score": 6.0
+    },
+    {
+      "id": "web.web-scraper",
+      "name": "web-scraper",
+      "category": "web",
+      "description": "Extract permitted public web data with rate limits, provenance, and robots/terms awareness.",
+      "path": "web/web-scraper",
+      "aliases": [
+        "scraper",
+        "crawl",
+        "extract",
+        "web-data"
+      ],
+      "triggers": [
+        "Scrape this webpage",
+        "Extract data from a website",
+        "Pull information from this URL",
+        "Parse web content"
+      ],
+      "keywords": [
+        "scraping",
+        "extraction",
+        "crawl",
+        "data",
+        "parse",
+        "html",
+        "json"
+      ],
+      "dependencies": [
+        "optional:http-client"
+      ],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": "custom",
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [
+        "web-scraper",
+        "web"
+      ],
+      "inputs": [
+        "task",
+        "context"
+      ],
+      "outputs": [
+        "result",
+        "report"
+      ],
+      "permissions": {},
+      "compatibility": {},
+      "quality": {
+        "skill_id": "web.web-scraper",
+        "documentation": 8.3,
+        "maintenance": 5.0,
+        "reliability": 7.0,
+        "security": 9.0,
+        "compatibility": 4.0,
+        "usefulness": 3.9,
+        "overall_score": 6.6
+      },
+      "quality_score": 6.6
     }
   ]
 }

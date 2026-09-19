@@ -1,8 +1,23 @@
 {
   "version": 1,
-  "generated_at": "2026-09-02T13:11:07+00:00",
+  "generated_at": "2026-09-19T16:52:53+00:00",
   "note": "Imported skills are pinned to reviewed upstream commits. Custom skills are maintained locally. Third-party executables are not run during import.",
   "skills": [
+    {
+      "skill": "design.avatar-creator",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
     {
       "skill": "design.branding",
       "repository": null,
@@ -34,7 +49,37 @@
       ]
     },
     {
+      "skill": "design.image-gen",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
       "skill": "design.presentations",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "design.remotion-best-practices",
       "repository": null,
       "source_path": null,
       "commit": null,
@@ -64,7 +109,52 @@
       ]
     },
     {
+      "skill": "design.veo-video-generator",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "development.api-mock-generator",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
       "skill": "development.architecture",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "development.autoreview",
       "repository": null,
       "source_path": null,
       "commit": null,
@@ -94,6 +184,21 @@
       ]
     },
     {
+      "skill": "development.behavior-validator",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
       "skill": "development.brainstorming",
       "repository": "obra/superpowers",
       "source_path": "skills/brainstorming",
@@ -104,6 +209,21 @@
       "modified": true,
       "version": "1.0.0",
       "source": "obra/superpowers",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "development.cf-worker-deploy",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
       "convention_referenced_from": [
         "agentskills/agentskills"
       ]
@@ -139,7 +259,67 @@
       ]
     },
     {
+      "skill": "development.coding-agent",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "development.crabbox",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "development.cursor-agent",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
       "skill": "development.databases",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "development.db-inspector",
       "repository": null,
       "source_path": null,
       "commit": null,
@@ -184,6 +364,36 @@
       ]
     },
     {
+      "skill": "development.docker-manager",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "development.dokploy",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
       "skill": "development.frontend",
       "repository": null,
       "source_path": null,
@@ -214,6 +424,21 @@
       ]
     },
     {
+      "skill": "development.git-workflow",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
       "skill": "development.git-worktrees",
       "repository": "obra/superpowers",
       "source_path": "skills/using-git-worktrees",
@@ -230,6 +455,21 @@
     },
     {
       "skill": "development.github",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "development.github-cli",
       "repository": null,
       "source_path": null,
       "commit": null,
@@ -334,6 +574,21 @@
       ]
     },
     {
+      "skill": "development.summarize-repo",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
       "skill": "development.tdd",
       "repository": null,
       "source_path": null,
@@ -395,6 +650,21 @@
     },
     {
       "skill": "documents.docx",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "documents.expense-parser",
       "repository": null,
       "source_path": null,
       "commit": null,
@@ -484,6 +754,21 @@
       ]
     },
     {
+      "skill": "productivity.adhd-task-breakdown",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
       "skill": "productivity.brainstorming",
       "repository": null,
       "source_path": null,
@@ -499,7 +784,112 @@
       ]
     },
     {
+      "skill": "productivity.calendar-assistant",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "productivity.context-summarize",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "productivity.daily-journal",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "productivity.email-inbox-zero",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
       "skill": "productivity.focus",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "productivity.focus-guard",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "productivity.meeting-action-extractor",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "productivity.obsidian-sync",
       "repository": null,
       "source_path": null,
       "commit": null,
@@ -559,6 +949,21 @@
       ]
     },
     {
+      "skill": "productivity.time-blocking",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
       "skill": "productivity.time-management",
       "repository": null,
       "source_path": null,
@@ -575,6 +980,21 @@
     },
     {
       "skill": "productivity.unlazy",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "productivity.voice-to-action",
       "repository": null,
       "source_path": null,
       "commit": null,
@@ -664,6 +1084,21 @@
       ]
     },
     {
+      "skill": "research.search-synthesizer",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
       "skill": "research.source-verification",
       "repository": null,
       "source_path": null,
@@ -694,7 +1129,37 @@
       ]
     },
     {
+      "skill": "security.cmd-safety-check",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
       "skill": "security.dependency-audit",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "security.npm-auditor",
       "repository": null,
       "source_path": null,
       "commit": null,
@@ -754,7 +1219,67 @@
       ]
     },
     {
+      "skill": "security.security-scanner",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "utilities.agent-transcript",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "utilities.audio-transcribe",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
       "skill": "utilities.automation",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "utilities.beam",
       "repository": null,
       "source_path": null,
       "commit": null,
@@ -799,6 +1324,21 @@
       ]
     },
     {
+      "skill": "utilities.handoff",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
       "skill": "utilities.image",
       "repository": null,
       "source_path": null,
@@ -829,6 +1369,51 @@
       ]
     },
     {
+      "skill": "utilities.readme-standard",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "utilities.slack-synthesizer",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "utilities.sonos-cli",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
       "skill": "utilities.summarization",
       "repository": null,
       "source_path": null,
@@ -844,7 +1429,82 @@
       ]
     },
     {
+      "skill": "utilities.system-monitor",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "utilities.telegram-actions",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
       "skill": "utilities.text-processing",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "utilities.unit-converter",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "utilities.weather-now",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "utilities.whatsapp-router",
       "repository": null,
       "source_path": null,
       "commit": null,
@@ -889,7 +1549,52 @@
       ]
     },
     {
+      "skill": "web.agent-browser",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
       "skill": "web.browser-automation",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "web.form-filler",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "web.media-downloader",
       "repository": null,
       "source_path": null,
       "commit": null,
@@ -920,6 +1625,21 @@
     },
     {
       "skill": "web.web-extraction",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "web.web-scraper",
       "repository": null,
       "source_path": null,
       "commit": null,

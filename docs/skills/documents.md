@@ -1,10 +1,10 @@
 # Documents Skills
 
-_Generated: 2026-09-02T13:11:07+00:00_
+_Generated: 2026-09-19T16:52:53+00:00_
 
 Skills for working with common document formats: PDF, DOCX, XLSX, PPTX, Markdown, and CSV. They focus on reliable extraction, structured generation, and content-aware summarization rather than format-perfect output.
 
-**6 skills in this category.**
+**7 skills in this category.**
 
 ## Skills
 
@@ -41,6 +41,23 @@ Read, edit, and generate Microsoft Word .docx files — extract text, modify str
 - **Version:** 1.0.0
 
 Work with .docx files: read content, edit structure, generate documents from templates.
+
+### `documents.expense-parser`
+
+Extract normalized vendor, date, currency, tax, line-item, and total data from receipts or invoices.
+
+- **Risk:** low
+- **Path:** `documents/expense-parser`
+- **Aliases:** `expense`, `receipt`, `invoice`, `parse`, `finance`
+- **Triggers:**
+  - Parse this receipt
+  - Extract expense data
+  - Scan invoice
+  - Process expense
+- **Source:** custom
+- **Version:** 1.0.0
+
+Extract structured expense data from receipts and invoices including vendor name, date, currency, tax amounts, line items, and totals. The skill normalizes data for easy import into expense tracking systems.
 
 ### `documents.markdown`
 

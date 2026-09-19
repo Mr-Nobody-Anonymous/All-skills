@@ -26,6 +26,12 @@ from skills.dependencies import generate_dependencies_json  # noqa: E402
 
 # Frontmatter fields that should flow from SKILL.md into the registry entry.
 MERGE_FIELDS = (
+    "description",
+    "aliases",
+    "triggers",
+    "keywords",
+    "dependencies",
+    "source",
     "lifecycle",
     "capabilities",
     "inputs",

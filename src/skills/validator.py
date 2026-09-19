@@ -1,4 +1,4 @@
-"""Skill validation â€” checks SKILL.md, paths, conflicts, and basic safety."""
+"""Skill validation — checks SKILL.md, paths, conflicts, and basic safety."""
 from __future__ import annotations
 
 import re
@@ -116,7 +116,7 @@ class Validator:
                 continue
             entries = [self.registry.get(s) for s in conflict.skills]
             if entries and all(e is not None and e.enabled for e in entries):
-                msg = f"active conflict: {' + '.join(conflict.skills)} â€” {conflict.reason}"
+                msg = f"active conflict: {' + '.join(conflict.skills)} — {conflict.reason}"
                 if conflict.severity == "error":
                     result.add_error(msg)
                 elif conflict.severity == "warn":
@@ -202,7 +202,7 @@ class Validator:
             if a and a in seen_aliases:
                 result.add_warning(f"[{entry.id}] duplicate alias within skill: {alias!r}")
             seen_aliases.add(a)
-        # Static inspection only â€” third-party scripts are never executed.
+        # Static inspection only — third-party scripts are never executed.
         for finding in scan_skill(entry, skill_dir):
             message = f"[{entry.id}] {finding.path} contains suspicious pattern: {finding.label}"
             if finding.severity == "high":

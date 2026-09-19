@@ -8,18 +8,20 @@ Third-party repositories were cloned into the operating-system temporary directo
 
 | Repository | Pinned commit | License | Imported adaptations | Rationale |
 |---|---|---|---:|---|
-| `obra/superpowers` | `b36e0829c6d0140e93cfef2ca599b1b07d4a7797` | MIT | 6 | Mature, modular engineering workflows that add design, verification, review-feedback, worktree, and parallel-agent behavior without replacing local coding/TDD/debugging skills. |
-| `anthropics/skills` | `53048666b05b4799081517d00e09e0a2dd688678` | Apache-2.0 for selected skill | 1 | `mcp-builder` adds a missing MCP-server workflow and carries its own Apache-2.0 license. |
+| `obra/superpowers` | `b36e0829c6d0140e93cfef2ca599b1b07d4a7797` | MIT | 7 | Mature, modular engineering workflows that add design, verification, review-feedback, worktree, brainstorming, and parallel-agent behavior. |
+| `anthropics/skills` | `53048666b05b4799081517d00e09e0a2dd688678` | Apache-2.0 for selected skill | 2 | `mcp-builder` and `mcp-server-development` provide comprehensive MCP-server workflows and evaluation references. |
 
 ## Imported skills
 
 - `development.brainstorming`
-- `development.verification-before-completion`
+- `development.git-worktrees`
+- `development.mcp-builder`
+- `development.mcp-server-development`
 - `development.receiving-code-review`
 - `development.requesting-code-review`
-- `development.git-worktrees`
+- `development.verification-before-completion`
+- `productivity.brainstorming`
 - `utilities.parallel-agents`
-- `development.mcp-server-development`
 
 Each imported skill preserves the upstream `SKILL.md` under `references/upstream-SKILL.md`, includes the applicable license, records repository/path/commit/author metadata, and is marked modified because local frontmatter and safety guidance were added. Upstream executable scripts were excluded.
 

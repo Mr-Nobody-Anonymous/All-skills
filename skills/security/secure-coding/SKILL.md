@@ -4,6 +4,9 @@ description: Defensive security guidance for code — input validation, secrets 
 category: security
 aliases: [security-coding, appsec, owasp, vulnerability]
 triggers:
+  - check this code for security issues
+  - check code for security
+  - security check
   - is this code secure
   - security review
   - secure coding

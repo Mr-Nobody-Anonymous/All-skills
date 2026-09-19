@@ -2,7 +2,7 @@
 name: presentations
 description: Design and structure presentations — narrative arc, slide content, visual hierarchy, and delivery notes.
 category: design
-aliases: [slides, deck-design, presentation-design]
+aliases: [slide-design, deck-design, presentation-design]
 triggers:
   - design a presentation
   - structure my talk

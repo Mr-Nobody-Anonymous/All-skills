@@ -3,7 +3,7 @@ name: brainstorming
 description: Clarify intent and turn software ideas into approved designs before implementation.
 category: development
 version: 1.0.0
-aliases: [design-first, requirements-discovery, ideation]
+aliases: [design-first, requirements-discovery, software-ideation]
 triggers: [brainstorm this feature, help design this change]
 keywords: [design, requirements, brainstorm, intent]
 dependencies: []

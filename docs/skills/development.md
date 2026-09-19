@@ -1,12 +1,29 @@
 # Development Skills
 
-_Generated: 2026-09-02T13:11:07+00:00_
+_Generated: 2026-09-19T16:52:53+00:00_
 
 Skills for software engineering work — coding, debugging, refactoring, code review, testing, TDD, architecture, frontend, backend, databases, Git, GitHub, performance optimization, and DevOps. These skills produce structured output (checklists, prompts, plans) rather than execute code.
 
-**21 skills in this category.**
+**34 skills in this category.**
 
 ## Skills
+
+### `development.api-mock-generator`
+
+Derive API mocks and contract tests from schemas or observed interfaces without inventing behavior.
+
+- **Risk:** low
+- **Path:** `development/api-mock-generator`
+- **Aliases:** `api`, `mock`, `test`, `contract`, `openapi`, `swagger`
+- **Triggers:**
+  - Generate API mocks
+  - Create mock API
+  - API testing
+  - Mock endpoints
+- **Source:** custom
+- **Version:** 1.0.0
+
+Generate API mocks and contract tests from OpenAPI schemas or observed interfaces. The skill ensures mocks accurately reflect the API contract without inventing behavior beyond the specification.
 
 ### `development.architecture`
 
@@ -27,6 +44,21 @@ Design and review software architecture — modules, boundaries, data flow, depe
 
 Help the user make structural decisions about software: module boundaries, data flow, dependency choices, and trade-offs. Produce diagrams-in-prose and concrete recommendations.
 
+### `development.autoreview`
+
+Run an explicitly requested structured second-model code review and verify findings before changes.
+
+- **Risk:** low
+- **Path:** `development/autoreview`
+- **Aliases:** —
+- **Triggers:**
+  - use autoreview
+  - run autoreview
+- **Source:** custom
+- **Version:** 1.0.0
+
+Run an explicitly requested structured second-model code review and verify findings before changes.
+
 ### `development.backend`
 
 Build backend services — APIs, server logic, persistence, queues, and integration with other systems.
@@ -44,13 +76,28 @@ Build backend services — APIs, server logic, persistence, queues, and integrat
 
 Build and reason about backend services: HTTP APIs, persistence, async work, authentication, and integration with other systems.
 
+### `development.behavior-validator`
+
+Validate user-visible behavior against a written contract without inspecting implementation source.
+
+- **Risk:** low
+- **Path:** `development/behavior-validator`
+- **Aliases:** —
+- **Triggers:**
+  - use behavior-validator
+  - run behavior-validator
+- **Source:** custom
+- **Version:** 1.0.0
+
+Validate user-visible behavior against a written contract without inspecting implementation source.
+
 ### `development.brainstorming`
 
 Clarify intent and turn software ideas into approved designs before implementation.
 
 - **Risk:** low
 - **Path:** `development/brainstorming`
-- **Aliases:** `design-first`, `requirements-discovery`, `ideation`
+- **Aliases:** `design-first`, `requirements-discovery`, `software-ideation`
 - **Triggers:**
   - brainstorm this feature
   - help design this change
@@ -58,6 +105,23 @@ Clarify intent and turn software ideas into approved designs before implementati
 - **Version:** 1.0.0
 
 Clarify intent and turn software ideas into approved designs before implementation. The reviewed upstream workflow is preserved in `references/upstream-SKILL.md`.
+
+### `development.cf-worker-deploy`
+
+Validate and deploy Cloudflare Workers with preview, secret, and rollback safeguards.
+
+- **Risk:** high
+- **Path:** `development/cf-worker-deploy`
+- **Aliases:** `cloudflare`, `worker`, `cf`, `edge`
+- **Triggers:**
+  - Deploy to Cloudflare Workers
+  - Publish worker
+  - Cloudflare deployment
+  - Update worker
+- **Source:** custom
+- **Version:** 1.0.0
+
+Validate and deploy Cloudflare Workers with proper preview testing, secret management, and rollback capabilities. The skill ensures safe deployments with minimal disruption.
 
 ### `development.code-review`
 
@@ -97,6 +161,56 @@ General-purpose software engineering assistant: implement features, write functi
 
 Help the user write, modify, and reason about code in any language. Focus on idiomatic, testable, readable code with clear interfaces.
 
+### `development.coding-agent`
+
+Delegate bounded coding work to an installed coding-agent CLI with explicit scope and verification.
+
+- **Risk:** medium
+- **Path:** `development/coding-agent`
+- **Aliases:** `codex`, `claude-code`, `headless-agent`, `ai-coding`, `autopilot`
+- **Triggers:**
+  - Run the coding agent
+  - Use Codex
+  - Use Claude Code
+  - Spin up an agent to fix this
+  - Hand this off to an agent
+- **Source:** custom
+- **Version:** 1.0.0
+
+Launch, monitor, and inspect a headless coding agent (Codex CLI, Claude Code, OpenCode, or Pi) as a managed background process. The skill turns "do this fix in another process" into a single call with deterministic start, streaming output, and clean shutdown.
+
+### `development.crabbox`
+
+Coordinate isolated remote or clean-machine validation while preserving trust and credential boundaries.
+
+- **Risk:** low
+- **Path:** `development/crabbox`
+- **Aliases:** —
+- **Triggers:**
+  - use crabbox
+  - run crabbox
+- **Source:** custom
+- **Version:** 1.0.0
+
+Coordinate isolated remote or clean-machine validation while preserving trust and credential boundaries.
+
+### `development.cursor-agent`
+
+Use Cursor Agent safely for bounded software tasks without unattended destructive actions.
+
+- **Risk:** medium
+- **Path:** `development/cursor-agent`
+- **Aliases:** `cursor`, `cursor-cli`, `ai-ide`, `agent`
+- **Triggers:**
+  - Use Cursor
+  - Run the Cursor agent
+  - Hand this to Cursor
+  - Cursor CLI
+- **Source:** custom
+- **Version:** 1.0.0
+
+Drive the **Cursor CLI agent** (`agent`, formerly `cursor-agent`) from a non-interactive shell, using tmux so the same session can be inspected, taken over, or detached. The skill wraps prompt construction, model selection, and result capture in a single operation that any other skill or tool can call.
+
 ### `development.databases`
 
 Work with databases — schema design, queries, indexing, migrations, and selecting the right store.
@@ -113,6 +227,24 @@ Work with databases — schema design, queries, indexing, migrations, and select
 - **Version:** 1.0.0
 
 Help the user with databases: design schemas, write queries, plan migrations, optimize performance, and choose the right store for the workload.
+
+### `development.db-inspector`
+
+Inspect database schemas and queries read-only by default and explain performance or safety risks.
+
+- **Risk:** medium
+- **Path:** `development/db-inspector`
+- **Aliases:** `database`, `db`, `query`, `inspect`, `mysql`, `postgres`
+- **Triggers:**
+  - Check database schema
+  - Inspect this database
+  - Run a query
+  - Database structure
+  - Explain this query
+- **Source:** custom
+- **Version:** 1.0.0
+
+Inspect database schemas, run queries, and explain execution plans with read-only defaults and clear risk indicators. The skill helps developers understand database structure and optimize queries while preventing accidental modifications.
 
 ### `development.debugging`
 
@@ -152,6 +284,41 @@ DevOps practices — CI/CD, infrastructure, deployment, observability, and incid
 
 Help the user with DevOps: CI/CD pipelines, infrastructure-as-code, deployments, observability, and incident response.
 
+### `development.docker-manager`
+
+Inspect and manage Docker resources with read-only defaults and confirmation for mutations.
+
+- **Risk:** high
+- **Path:** `development/docker-manager`
+- **Aliases:** `docker`, `container`, `image`, `compose`, `podman`
+- **Triggers:**
+  - List docker containers
+  - Tail container logs
+  - Restart this container
+  - Prune docker
+  - Build this image
+- **Source:** custom
+- **Version:** 1.0.0
+
+Make common Docker operations safe and scriptable for an agent: list, inspect, run, build, prune, and (with explicit confirmation) destroy. The skill defaults to **read or report** mode; any state change is gated by an `--apply` flag.
+
+### `development.dokploy`
+
+Inspect and manage Dokploy deployments through its API with explicit confirmation for mutations.
+
+- **Risk:** high
+- **Path:** `development/dokploy`
+- **Aliases:** `hosting`, `self-host`
+- **Triggers:**
+  - Deploy to Dokploy
+  - Restart the app on Dokploy
+  - Add a domain
+  - List projects on Dokploy
+- **Source:** custom
+- **Version:** 1.0.0
+
+Drive a **Dokploy** instance (self-hosted PaaS) through its REST API: list, create, update, deploy, and roll back projects, applications, and domains. The skill is careful to surface every destructive operation and never assume a default environment.
+
 ### `development.frontend`
 
 Build frontend applications — frameworks, state management, routing, data fetching, and integration with APIs.
@@ -189,6 +356,24 @@ Use git effectively — commits, branches, rebases, merges, conflict resolution,
 
 Help the user with git: commits, branching strategies, history, conflict resolution, and recovery from mistakes.
 
+### `development.git-workflow`
+
+Guide safe commits, branches, pushes, and pull requests while preserving uncommitted work.
+
+- **Risk:** medium
+- **Path:** `development/git-workflow`
+- **Aliases:** `git`, `commit`, `conventional-commits`, `push`
+- **Triggers:**
+  - Commit this
+  - Open a PR
+  - Push my branch
+  - Use a conventional commit message
+  - Sign my commits
+- **Source:** custom
+- **Version:** 1.0.0
+
+Wrap the local Git cycle (stage â†’ commit â†’ push â†’ PR) into a single, opinionated operation. The skill enforces **conventional commits**, optional GPG/SSH signing, and assembles a useful PR body from the commit log and any issue context.
+
 ### `development.git-worktrees`
 
 Create isolated Git workspaces safely while preserving current work and verifying a clean baseline.
@@ -222,13 +407,31 @@ Work with GitHub — pull requests, issues, Actions, code review, project boards
 
 Operate on GitHub: pull requests, issues, Actions workflows, releases, project boards, and code review etiquette.
 
+### `development.github-cli`
+
+Use GitHub CLI for issues, pull requests, Actions, and API queries with confirmation for writes.
+
+- **Risk:** medium
+- **Path:** `development/github-cli`
+- **Aliases:** `github`, `gh-cli`
+- **Triggers:**
+  - Open a PR
+  - List my issues
+  - Check the CI run
+  - Create a release
+  - Use the GitHub API
+- **Source:** custom
+- **Version:** 1.0.0
+
+Run common GitHub operations through the `gh` CLI in a way that is safe, scriptable, and ergonomic for an agent. The skill wraps `gh issue`, `gh pr`, `gh run`, `gh release`, and `gh api` into named, audited operations.
+
 ### `development.mcp-builder`
 
 Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK).
 
 - **Risk:** medium
 - **Path:** `development/mcp-builder`
-- **Aliases:** `mcp`, `model-context-protocol`, `mcp-server`
+- **Aliases:** `mcp-scaffold`, `mcp-sdk`, `custom-mcp`
 - **Triggers:**
   - build an MCP server
   - create MCP tools
@@ -321,6 +524,23 @@ Prepare a focused, evidence-based request for code review before integration.
 - **Version:** 1.0.0
 
 Prepare a focused, evidence-based request for code review before integration. The reviewed upstream workflow is preserved in `references/upstream-SKILL.md`.
+
+### `development.summarize-repo`
+
+Produce an evidence-based codebase map covering architecture, entry points, dependencies, and risks.
+
+- **Risk:** low
+- **Path:** `development/summarize-repo`
+- **Aliases:** `summarize`, `repo-overview`, `codebase-summary`, `on boarding`
+- **Triggers:**
+  - Summarize this repo
+  - What is this project
+  - Give me an overview
+  - Onboard me to this codebase
+- **Source:** custom
+- **Version:** 1.0.0
+
+Read a repository and produce a **single, scannable summary** that answers: *what is this, what stack, where is the entry point, where is the work done, and how do I run it*. The output is shaped to onboard a new contributor in five minutes.
 
 ### `development.tdd`
 

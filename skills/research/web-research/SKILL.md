@@ -4,6 +4,7 @@ description: Conduct structured web research — query formulation, source diver
 category: research
 aliases: [research, internet-research, search]
 triggers:
+  - research this topic
   - research this
   - look this up
   - find information about
