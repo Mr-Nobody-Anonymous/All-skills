@@ -31,8 +31,8 @@ When AI coding assistants are front-loaded with thousands of prompt instructions
 │          (skills/)            │        (awesome_skills/)        │     (.agents/ / .claude/ /    │
 │                               │                                 │     .cursor/ / .codex/)       │
 ├───────────────────────────────┼─────────────────────────────────┼───────────────────────────────┤
-│  • 122 Curated & Tested Skills│  • 2,041 Categorized Skills     │  • 70 Staff Engineer Skills   │
-│  • 9-Signal Layered Scoring   │  • 100 Functional Domain Dirs   │  • Pre-Loaded in Workspace    │
+│  • 122 Curated & Tested Skills│  • 7,154 Categorized Skills     │  • 70 Staff Engineer Skills   │
+│  • 9-Signal Layered Scoring   │  • 181 Functional Domain Dirs   │  • Pre-Loaded in Workspace    │
 │  • Deterministic Workflows    │  • Machine-Readable Index       │  • Native Multi-Tool Synced   │
 │  • 8-State Formal Lifecycle   │  • Complete CATALOG.md Reference│  • $O(1)$ Load-on-Demand      │
 │  • 86/86 Passing Unit Tests   │  • Dynamic Manager CLI          │  • Zero Prompt Bloat          │
@@ -374,7 +374,7 @@ All skills/
 │
 ├── awesome_skills/              # 🚀 2,041+ Categorized Skills Library
 │   ├── CATALOG.md               # Complete searchable markdown catalog
-│   ├── skills_index.json        # 2,141-item metadata database
+│   ├── skills_index.json        # 7,154-item metadata database
 │   ├── development/             # 187 skills (Coding, Git, Refactoring)
 │   ├── cloud/                   # 146 skills (AWS, GCP, Azure, Terraform)
 │   ├── ai-ml/                   # 129 skills (Prompting, RAG, Evals)
