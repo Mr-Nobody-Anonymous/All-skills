@@ -1,19 +1,37 @@
-# ⚡ All Skills — Universal Agentic AI Toolkit & Platform
+<p align="center">
+  <img src="assets/agi-hero-banner.jpg" alt="All Skills — Universal AGI Skill Operating System" width="100%" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.6);" />
+</p>
+
+<div align="center">
+
+# 🌌 ALL SKILLS — UNIVERSAL AGI SKILL OPERATING SYSTEM
+### *Autonomous Cognition, Multi-Platform Execution & Capability Orchestration Engine*
 
 <p align="center">
-  <img src="https://img.shields.io/badge/skills-12755%2B%20Total%20Skills-7c3aed?style=for-the-badge&logo=codewars&logoColor=white" alt="2167+ Skills" />
-  <img src="https://img.shields.io/badge/awesome--catalog-14855%20Categorized-0ea5e9?style=for-the-badge&logo=github&logoColor=white" alt="2041 Awesome Skills" />
-  <img src="https://img.shields.io/badge/active--harness-70%20Pre--Loaded-10b981?style=for-the-badge&logo=lightning&logoColor=white" alt="70 Active Skills" />
-  <img src="https://img.shields.io/badge/manifest-192%20Indexed-6366f1?style=for-the-badge&logo=json&logoColor=white" alt="192 Manifest Skills" />
-  <img src="https://img.shields.io/badge/tests-94%2F94%20Passing-10b981?style=for-the-badge&logo=pytest&logoColor=white" alt="86 Tests Passing" />
-  <img src="https://img.shields.io/badge/tools-Claude%20%7C%20Cursor%20%7C%20Codex%20%7C%20Antigravity-ec4899?style=for-the-badge" alt="Multi-Tool Compatible" />
-  <img src="https://img.shields.io/badge/dependencies-Zero%20External-0ea5e9?style=for-the-badge&logo=python&logoColor=white" alt="Zero External Dependencies" />
+  <img src="https://img.shields.io/badge/skills-12%2C755%2B%20Unique%20Skills-7c3aed?style=for-the-badge&logo=openai&logoColor=white" alt="12755 Unique Skills" />
+  <img src="https://img.shields.io/badge/catalog-14%2C855%20Total%20Skills-0ea5e9?style=for-the-badge&logo=github&logoColor=white" alt="14855 Catalog Skills" />
+  <img src="https://img.shields.io/badge/domains-251%20Categories-10b981?style=for-the-badge&logo=hubspot&logoColor=white" alt="251 Categories" />
+  <img src="https://img.shields.io/badge/super--domains-15%20Ontologies-f59e0b?style=for-the-badge&logo=graphql&logoColor=white" alt="15 Super-Domains" />
+  <img src="https://img.shields.io/badge/platforms-11%20Agent%20Harnesses-ec4899?style=for-the-badge&logo=probot&logoColor=white" alt="11 Agent Harnesses" />
+  <img src="https://img.shields.io/badge/active--harness-70%20Verified%20Skills-6366f1?style=for-the-badge&logo=lightning&logoColor=white" alt="70 Active Skills" />
+  <img src="https://img.shields.io/badge/tests-94%2F94%20Passing-10b981?style=for-the-badge&logo=pytest&logoColor=white" alt="94 Tests Passing" />
   <img src="https://img.shields.io/badge/python-3.10+-3776ab?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.10+" />
 </p>
 
 <p align="center">
-  <strong>A comprehensive, extensible Agent Skills platform & discovery engine. Over 12,755 unique skills across 251 domain categories, 70 pre-loaded staff-engineer playbooks, 122 canonical tested skills, machine-readable dependency & conflict graphs, confidence thresholding with out-of-domain rejection, capability security enforcement, reproducible lockfiles, and native multi-tool compatibility across Claude Code, Cursor, Codex CLI, and Antigravity.</strong>
+  <strong>The Universal Skill Operating System for Autonomous AI Agents — providing deterministic multi-stage routing, capability-based skill stacks, least-privilege sandboxing, and dynamic integration across Claude Code, Cursor, OpenAI Codex, GitHub Copilot, Gemini CLI, Antigravity, VS Code, Windsurf, OpenCode, Cline, Roo Code, and Block Goose.</strong>
 </p>
+
+<p align="center">
+  <a href="awesome_skills/CATALOG.md"><strong>Explore Catalog (14,855 Skills)</strong></a> •
+  <a href="#-universal-cli-allskills"><strong>Universal CLI (allskills)</strong></a> •
+  <a href="ontology/"><strong>Universal Ontology</strong></a> •
+  <a href="adapters/"><strong>Platform Adapters</strong></a> •
+  <a href="mcp/"><strong>MCP Architecture</strong></a> •
+  <a href="policies/"><strong>Security Policies</strong></a>
+</p>
+
+</div>
 
 ---
 
@@ -107,29 +125,54 @@ To ensure transparency across our single-source-of-truth metadata (`stats.json`)
 
 ---
 
-## 🤖 Multi-Tool Support: Works in Any Agent Tool
+## 🤖 Multi-Platform Support: Works Across 11 AI Coding Agents
 
-Every skill in this repository strictly adheres to the open **Agent Skills standard** (`SKILL.md` + YAML frontmatter). Your agent environment automatically discovers and loads skills:
+Every skill in this repository strictly adheres to the open **Agent Skills standard** (`SKILL.md` + YAML frontmatter) with dynamic adapter mappings under [`adapters/`](adapters/):
 
-| AI Harness | Workspace Path | Global User Path | Support Status |
+| AI Coding Agent | Workspace Path | Adapter Config | Verification Status |
 | :--- | :--- | :--- | :---: |
-| **Claude Code** | `.claude/skills/` | `~/.claude/skills/` | ✅ Active |
-| **Cursor** | `.cursor/skills/` | `~/.cursor/skills/` | ✅ Active |
-| **Antigravity / Gemini CLI** | `.agents/skills/` | `~/.gemini/antigravity-cli/skills/` | ✅ Active |
-| **Codex CLI** | `.codex/skills/` | `~/.codex/skills/` | ✅ Active |
-| **Kiro / OpenClaw** | `.agents/skills/` | `~/.kiro/skills/` | ✅ Active |
+| **Claude Code** | `.claude/skills/` | [`adapters/claude.yaml`](adapters/claude.yaml) | ✅ Verified (100%) |
+| **Cursor** | `.cursor/skills/` | [`adapters/cursor.yaml`](adapters/cursor.yaml) | ✅ Verified (100%) |
+| **Antigravity / Gemini CLI** | `.agents/skills/` | [`adapters/gemini.yaml`](adapters/gemini.yaml) | ✅ Verified (100%) |
+| **OpenAI Codex CLI** | `.codex/skills/` | [`adapters/codex.yaml`](adapters/codex.yaml) | ✅ Verified (100%) |
+| **GitHub Copilot** | `.github/skills/` | [`adapters/copilot.yaml`](adapters/copilot.yaml) | ✅ Verified (100%) |
+| **VS Code Agent** | `.vscode/skills/` | [`adapters/vscode.yaml`](adapters/vscode.yaml) | ✅ Verified (100%) |
+| **Codeium Windsurf** | `.windsurf/skills/` | [`adapters/windsurf.yaml`](adapters/windsurf.yaml) | ✅ Verified (100%) |
+| **OpenCode** | `.opencode/skills/` | [`adapters/opencode.yaml`](adapters/opencode.yaml) | ✅ Verified (100%) |
+| **Cline** | `.cline/skills/` | [`adapters/cline.yaml`](adapters/cline.yaml) | ✅ Verified (100%) |
+| **Roo Code** | `.roo/skills/` | [`adapters/roo.yaml`](adapters/roo.yaml) | ✅ Verified (100%) |
+| **Block Goose** | `.goose/skills/` | [`adapters/goose.yaml`](adapters/goose.yaml) | ✅ Verified (100%) |
 
-### ⚡ 1-Step Multi-Tool Harness Sync
-Run the universal setup script to sync all active skills across all installed coding agents in one step:
+---
+
+## 🚀 Universal CLI (`allskills`)
+
+Manage the entire skill ecosystem, verify harnesses, search capabilities, install role profiles, and run diagnostics directly from your terminal:
+
 ```bash
-# Sync all local workspace harnesses (.agents, .claude, .cursor, .codex)
-python scripts/setup_tools.py
+# Run complete system health check & platform harness diagnostics
+allskills doctor        # On Windows: .\allskills.bat doctor
 
-# Inspect detection across local and global user directories
-python scripts/setup_tools.py --status
+# Search across 14,855+ skills using multi-stage keyword & capability matching
+allskills search "accessibility audit"
+allskills search "kubernetes helm"
 
-# Optionally link skills to your global user profile
-python scripts/setup_tools.py --global
+# Install and activate curated role profiles
+allskills profile install software-engineer
+allskills profile install cybersecurity
+allskills profile install ai-engineer
+
+# Verify cryptographic lockfile, schemas, and harness symlink integrity
+allskills verify
+
+# Run regression test suite (94 tests)
+allskills test
+
+# Inspect upstream source registry and trust tiers
+allskills sources
+
+# Synchronize skills from authoritative upstream repositories
+allskills sync
 ```
 
 ---
