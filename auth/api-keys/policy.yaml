@@ -1,0 +1,5 @@
+subsystem: auth/api-keys
+version: "2.0.0"
+plaintext_credentials_allowed: false
+audit_logging: true
+mask_in_traces: true

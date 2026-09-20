@@ -1,0 +1,6 @@
+tool_id: package-manager-maven
+version: "2.0.0"
+ecosystem: "maven"
+capabilities: ["package:install", "package:audit"]
+risk_level: "medium"
+confirmation_gate: "required_for_install"

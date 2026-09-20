@@ -1,0 +1,5 @@
+tool_id: container-kubernetes
+version: "2.0.0"
+engine: "kubernetes"
+capabilities: ["container:list", "container:inspect", "container:run"]
+risk_level: "high"

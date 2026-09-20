@@ -1,0 +1,11 @@
+tool_id: git
+version: "2.0.0"
+description: "Version control operations and worktree management"
+capabilities: [git:read, git:write]
+permissions:
+  mode: "local-repo"
+risk_level: "low"
+platforms: ["linux", "windows", "macos"]
+healthcheck:
+  command: "echo healthcheck"
+  timeout_sec: 5

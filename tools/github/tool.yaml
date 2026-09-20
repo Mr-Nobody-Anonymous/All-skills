@@ -1,0 +1,11 @@
+tool_id: github
+version: "2.0.0"
+description: "GitHub API integration for PRs, issues, and workflow runs"
+capabilities: [github:read, github:write]
+permissions:
+  mode: "token-scoped"
+risk_level: "medium"
+platforms: ["linux", "windows", "macos"]
+healthcheck:
+  command: "echo healthcheck"
+  timeout_sec: 5

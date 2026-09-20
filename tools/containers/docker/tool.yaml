@@ -1,0 +1,5 @@
+tool_id: container-docker
+version: "2.0.0"
+engine: "docker"
+capabilities: ["container:list", "container:inspect", "container:run"]
+risk_level: "high"

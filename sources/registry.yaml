@@ -27,22 +27,131 @@ sources:
       behavior_tested: true
 
   - id: openai-skills
-    name: OpenAI Codex Skills Catalog
+    name: OpenAI Codex Skills Catalog (Legacy / Migration)
     repo: openai/skills
     url: https://github.com/openai/skills
     branch: main
-    class: official
+    class: legacy-migration
     vendor: openai
     license: Apache-2.0
-    description: "Codex skill structure, installer, and foundational prompt engineering patterns."
+    description: "Codex skill structure, installer, and foundational prompt engineering patterns. Note: Upstream is deprecated in favor of plugin-based architecture."
+    skill_paths:
+      - skills
+    update_schedule: monthly
+    trust_tier: Tier-3-Legacy
+    verification:
+      security_scan: required
+      license_policy: allow-apache
+      behavior_tested: true
+
+  - id: vercel-agent-skills
+    name: Vercel Labs Agent Skills
+    repo: vercel-labs/agent-skills
+    url: https://github.com/vercel-labs/agent-skills
+    branch: main
+    class: ecosystem
+    vendor: vercel
+    license: MIT
+    description: "Skills CLI ecosystem supporting 75+ AI agents, web engineering, Next.js, and deployment primitives."
+    skill_paths:
+      - skills
+    update_schedule: daily
+    trust_tier: Tier-1-Vendor
+    verification:
+      security_scan: required
+      license_policy: allow-mit
+      behavior_tested: true
+
+  - id: microsoft-learn-skills
+    name: Microsoft Learn Agent Skills
+    repo: MicrosoftDocs/Agent-Skills
+    url: https://github.com/MicrosoftDocs/Agent-Skills
+    branch: main
+    class: official
+    vendor: microsoft
+    license: MIT
+    description: "Microsoft Learn and Azure grounded skills covering AI Foundry, enterprise cloud, and cognitive architectures."
     skill_paths:
       - skills
     update_schedule: weekly
     trust_tier: Tier-1-Vendor
     verification:
       security_scan: required
-      license_policy: allow-apache
+      license_policy: allow-mit
       behavior_tested: true
+
+  - id: supabase-skills
+    name: Supabase Agent Skills
+    repo: supabase/agent-skills
+    url: https://github.com/supabase/agent-skills
+    branch: main
+    class: official
+    vendor: supabase
+    license: MIT
+    description: "PostgreSQL, pgvector, auth, storage, edge functions, realtime, and RLS policies for autonomous agents."
+    skill_paths:
+      - skills
+    update_schedule: weekly
+    trust_tier: Tier-1-Vendor
+    verification:
+      security_scan: required
+      license_policy: allow-mit
+      behavior_tested: true
+
+  - id: cloudflare-skills
+    name: Cloudflare Agent Skills
+    repo: cloudflare/skills
+    url: https://github.com/cloudflare/skills
+    branch: main
+    class: official
+    vendor: cloudflare
+    license: MIT
+    description: "Cloudflare Workers, Agents SDK, Durable Objects, D1, R2, and edge compute serverless workflows."
+    skill_paths:
+      - skills
+    update_schedule: weekly
+    trust_tier: Tier-1-Vendor
+    verification:
+      security_scan: required
+      license_policy: allow-mit
+      behavior_tested: true
+
+  - id: expo-skills
+    name: Expo Mobile Agent Skills
+    repo: expo/skills
+    url: https://github.com/expo/skills
+    branch: main
+    class: official
+    vendor: expo
+    license: MIT
+    description: "React Native, Expo router, EAS builds, Android/iOS native mobile development, and mobile deployment."
+    skill_paths:
+      - skills
+    update_schedule: weekly
+    trust_tier: Tier-1-Vendor
+    verification:
+      security_scan: required
+      license_policy: allow-mit
+      behavior_tested: true
+
+  - id: superpowers
+    name: Obra Superpowers Engineering Workflows
+    repo: obra/superpowers
+    url: https://github.com/obra/superpowers
+    branch: main
+    class: engineering-workflows
+    vendor: obra
+    license: MIT
+    description: "Disciplined engineering playbooks: brainstorming, git worktrees, systematic debugging, and verification."
+    skill_paths:
+      - skills
+    update_schedule: weekly
+    trust_tier: Tier-2-HighValue
+    verification:
+      security_scan: required
+      license_policy: allow-mit
+      behavior_tested: true
+
 
   - id: github-awesome-copilot
     name: GitHub Awesome Copilot

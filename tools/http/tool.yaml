@@ -1,0 +1,11 @@
+tool_id: http
+version: "2.0.0"
+description: "Stateless HTTP request client with timeout bounds"
+capabilities: [http:get, http:post]
+permissions:
+  mode: "allowlist-hosts"
+risk_level: "medium"
+platforms: ["linux", "windows", "macos"]
+healthcheck:
+  command: "echo healthcheck"
+  timeout_sec: 5

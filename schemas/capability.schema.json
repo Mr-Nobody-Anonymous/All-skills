@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SkillCapabilitySchema",
+  "type": "object",
+  "required": [
+    "capability_id",
+    "domain",
+    "task",
+    "modality",
+    "execution"
+  ],
+  "properties": {
+    "capability_id": {
+      "type": "string"
+    },
+    "domain": {
+      "type": "string"
+    },
+    "task": {
+      "type": "string"
+    },
+    "modality": {
+      "type": "string"
+    },
+    "execution": {
+      "type": "string",
+      "enum": [
+        "read-only",
+        "filesystem",
+        "terminal",
+        "browser",
+        "network",
+        "api",
+        "database",
+        "cloud",
+        "container",
+        "gpu"
+      ]
+    },
+    "output": {
+      "type": "string"
+    }
+  }
+}

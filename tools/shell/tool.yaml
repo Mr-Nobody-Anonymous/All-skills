@@ -1,0 +1,11 @@
+tool_id: shell
+version: "2.0.0"
+description: "Wrapped shell subprocess execution with stream capture"
+capabilities: [shell:execute]
+permissions:
+  mode: "interactive-gate"
+risk_level: "high"
+platforms: ["linux", "windows", "macos"]
+healthcheck:
+  command: "echo healthcheck"
+  timeout_sec: 5

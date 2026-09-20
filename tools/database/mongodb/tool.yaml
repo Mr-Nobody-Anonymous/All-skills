@@ -1,0 +1,8 @@
+tool_id: database-mongodb
+version: "2.0.0"
+engine: "mongodb"
+capabilities: ["database:query", "database:schema"]
+permissions:
+  default: "read-only"
+  mutation_requires_confirmation: true
+risk_level: "high"

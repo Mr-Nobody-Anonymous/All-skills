@@ -1,0 +1,11 @@
+tool_id: browser
+version: "2.0.0"
+description: "Web browsing and DOM text extraction"
+capabilities: [browser:read]
+permissions:
+  mode: "http-allowlist"
+risk_level: "low"
+platforms: ["linux", "windows", "macos"]
+healthcheck:
+  command: "echo healthcheck"
+  timeout_sec: 5

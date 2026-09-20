@@ -8,7 +8,8 @@
   "categories": 251,
   "canonical_categories": 8,
   "tests": 94,
-  "workflows": 6,
+  "workflows": 5,
+  "named_chains": 4,
   "curated_packs": 7,
   "last_generated": "2026-09-20"
 }

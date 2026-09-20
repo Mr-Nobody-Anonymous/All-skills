@@ -66,8 +66,14 @@ def compute_platform_stats(repo_root: Path | None = None) -> dict:
     workflows_dir = repo_root / "workflows"
     workflows = [
         w for w in os.listdir(workflows_dir)
-        if (workflows_dir / w).is_file() and w.endswith(".md")
+        if (workflows_dir / w).is_file() and w.endswith(".md") and w.lower() != "readme.md"
     ] if workflows_dir.exists() else []
+
+    chains_file = repo_root / "skills" / "chains.json"
+    chains_count = 0
+    if chains_file.exists():
+        with open(chains_file, "r", encoding="utf-8") as f:
+            chains_count = len(json.load(f).get("chains", []))
 
     packs_file = repo_root / "packs" / "packs.json"
     packs_count = 0
@@ -103,6 +109,7 @@ def compute_platform_stats(repo_root: Path | None = None) -> dict:
         "canonical_categories": len(canonical_categories),
         "tests": test_count,
         "workflows": len(workflows),
+        "named_chains": chains_count,
         "curated_packs": packs_count,
         "last_generated": datetime.date.today().isoformat()
     }

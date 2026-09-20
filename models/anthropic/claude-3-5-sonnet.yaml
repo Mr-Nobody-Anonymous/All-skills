@@ -1,0 +1,9 @@
+provider: "anthropic"
+model_id: "claude-3-5-sonnet"
+context_window: 200000
+capabilities:
+  vision: true
+  tool_use: true
+  structured_output: true
+reasoning_class: "frontier"
+cost_class: "low-latency"

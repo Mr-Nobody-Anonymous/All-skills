@@ -1,0 +1,9 @@
+provider: "google"
+model_id: "gemini-1-5-pro"
+context_window: 2000000
+capabilities:
+  vision: true
+  tool_use: true
+  structured_output: true
+reasoning_class: "frontier-long-context"
+cost_class: "medium-latency"

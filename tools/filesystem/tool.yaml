@@ -1,0 +1,11 @@
+tool_id: filesystem
+version: "2.0.0"
+description: "Local workspace file system access"
+capabilities: [filesystem:read, filesystem:write]
+permissions:
+  mode: "workspace-only"
+risk_level: "low"
+platforms: ["linux", "windows", "macos"]
+healthcheck:
+  command: "echo healthcheck"
+  timeout_sec: 5

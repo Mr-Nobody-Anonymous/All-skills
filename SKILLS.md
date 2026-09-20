@@ -363,6 +363,21 @@ Unambiguous single-source-of-truth counts:
 - **Manifest Skills**: `192` tool-mapped skills in `manifest.json`.
 - **Unique Skills**: `12,755` distinct skill capabilities across the platform.
 - **Catalog Skills**: `14,855` categorized implementations across 251 domains in `awesome_skills/`.
+- **Workflows**: `5` multi-step execution playbooks in `workflows/`.
+- **Named Chains**: `4` deterministic DAG chains in `skills/chains.json`.
+- **Passing Tests**: `94/94` unit tests passing.
+
+### 15. Universal Tool Registry, Authentication & Federated Ingestion Pipeline
+To establish an enterprise-grade agent operating system, All-skills provides eight unified infrastructure layers:
+1. **Universal Tool Registry (`tools/`)**: Tool manifests across 14 capability domains (`filesystem`, `terminal`, `shell`, `browser`, `browser-playwright`, `http`, `git`, `github`, `database`, `cloud`, `containers`, `packages`, `documents`, `search`).
+2. **Zero-Secret Authentication Subsystem (`auth/`)**: Enterprise credential adapters and strict zero-secret SKILL.md policy (`oauth/`, `api-keys/`, `ssh/`, `cloud-iam/`, `github/`, `secrets/`, `credentials/`, `approval/`).
+3. **Attribution & Provenance Layer (`provenance/`, `THIRD_PARTY_NOTICES.md`)**: SHA-256 cryptographic hashes, upstream commit SHAs, license audits, and third-party notices.
+4. **Provider & Model Capabilities (`models/`)**: Structured capability profiles for Anthropic Claude 3.5 Sonnet, OpenAI GPT-4o / Codex, Google Gemini 1.5 Pro, Meta Llama 3.3, and Local/Ollama.
+5. **Epistemic State Management (`state/`)**: Hierarchical memory management across session, task, workflow, episodic, and semantic layers.
+6. **Telemetry & Observability (`observability/`)**: Real-time routing precision, execution latency, token efficiency, and fallback metrics.
+7. **Dynamic Multi-Agent Adapters (`adapters/agents.yaml`)**: Extensible adapter specifications for 75+ AI agent environments (Claude Code, Cursor, Codex, Gemini CLI, OpenCode, Cline, Windsurf, Roo Code, Goose, etc.).
+8. **7-Stage Ingestion Pipeline (`scratch_priority_import/`)**: Strict staging pipeline (`00_incoming` through `07_evaluated`) ensuring zero third-party code execution before security quarantine and AST audit.
+
 
 ---
 
@@ -379,4 +394,4 @@ The All-skills architecture synthesizes foundational patterns from the top 10 re
 7. **`obra/superpowers`**: Autonomous agent orchestration, structured execution, and subagent collaboration workflows.
 8. **`mattpocock/skills`**: Modern TypeScript, testing standards, Git worktrees, and engineering workflows.
 9. **`gptnius/skills-library`**: Curated library governance, upstream provenance tracking, and executable sandboxing.
-10. **`agentoperations/agent-registry`**: Agent registry governance, Software Bill of Materials (SBOM), trust promotion lifecycles, and evaluation harnesses.
+10. **`agentoperations/agent-registry`**: Agent registry governance, Software Bill of Materials (SBOM), trust promotion lifecycles, and evaluation harnesses.

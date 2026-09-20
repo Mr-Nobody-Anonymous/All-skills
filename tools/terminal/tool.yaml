@@ -1,0 +1,11 @@
+tool_id: terminal
+version: "2.0.0"
+description: "Bounded command execution and output capture"
+capabilities: [terminal:run]
+permissions:
+  mode: "allowlist-only"
+risk_level: "medium"
+platforms: ["linux", "windows", "macos"]
+healthcheck:
+  command: "echo healthcheck"
+  timeout_sec: 5

@@ -465,10 +465,20 @@ All skills/
 │   ├── registry.json            # 6-axis quality scores & lifecycle states
 │   └── chains.json              # Named deterministic multi-skill workflows
 │
+├── tools/                       # 🧰 Universal Tool Registry (14 capability domains)
+├── auth/                        # 🔐 Zero-Secret Authentication Subsystem (OAuth, API keys, IAM)
+├── provenance/                  # 📜 Provenance Tracking, Attributions & THIRD_PARTY_NOTICES.md
+├── models/                      # 🧠 Provider & Model Capability Profiles (Claude, GPT, Gemini, Llama)
+├── state/                       # 💾 Hierarchical Agent Memory (Session, Task, Episodic, Semantic)
+├── observability/               # 📊 Telemetry, Routing Precision, and Latency Tracking
+├── adapters/                    # 🔌 Dynamic Multi-Agent Adapters (75+ agents supported)
+├── scratch_priority_import/     # 📥 7-Stage Federated Ingestion Pipeline (00_incoming to 07_evaluated)
+├── schemas/                     # 📐 Extended JSON Schemas (Capability, Tool, Policy)
 ├── scripts/                     # 🛠️ Platform & Harness Tooling
 │   ├── setup_tools.py           # Universal multi-tool harness synchronizer
 │   ├── manage_awesome_skills.py # Awesome skills search, inspection & installer
 │   ├── refresh_registry.py      # Backfill registry metadata & quality scores
+│   ├── compute_stats.py         # Single-source-of-truth platform metrics synchronizer
 │   └── skills/skills.py         # 9-signal router & CLI engine
 │
 ├── docs/skills/                 # 📚 Architecture, Security & Category Documentation

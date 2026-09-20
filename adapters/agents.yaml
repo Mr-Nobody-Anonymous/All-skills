@@ -1,0 +1,111 @@
+version: "2.0"
+agents_ecosystem: "75+ Agent Harness Compatibility Engine"
+
+agents:
+  claude-code:
+    name: "Claude Code (Anthropic)"
+    discovery_path: ".claude/skills"
+    global_path: "~/.claude/skills"
+    format: "directory"
+    frontmatter_style: "yaml"
+    tool_protocol: "mcp"
+    progressive_loading: true
+
+  codex-cli:
+    name: "Codex CLI (OpenAI)"
+    discovery_path: ".codex/skills"
+    global_path: "~/.codex/skills"
+    format: "directory"
+    frontmatter_style: "yaml"
+    tool_protocol: "functions"
+    progressive_loading: true
+
+  cursor:
+    name: "Cursor AI"
+    discovery_path: ".cursor/skills"
+    global_path: "~/.cursor/skills"
+    format: "directory"
+    frontmatter_style: "yaml"
+    tool_protocol: "mcp"
+    progressive_loading: true
+
+  gemini-cli:
+    name: "Gemini CLI / Antigravity"
+    discovery_path: ".agents/skills"
+    global_path: "~/.gemini/skills"
+    format: "directory"
+    frontmatter_style: "yaml"
+    tool_protocol: "mcp"
+    progressive_loading: true
+
+  github-copilot:
+    name: "GitHub Copilot Agent"
+    discovery_path: ".github/skills"
+    global_path: "~/.copilot/skills"
+    format: "directory"
+    frontmatter_style: "yaml"
+    tool_protocol: "vscode"
+    progressive_loading: true
+
+  vscode-agent:
+    name: "VS Code Agent"
+    discovery_path: ".vscode/skills"
+    global_path: "~/.vscode/skills"
+    format: "directory"
+    frontmatter_style: "yaml"
+    tool_protocol: "mcp"
+    progressive_loading: true
+
+  windsurf:
+    name: "Windsurf Codeium"
+    discovery_path: ".windsurf/skills"
+    global_path: "~/.windsurf/skills"
+    format: "directory"
+    frontmatter_style: "yaml"
+    tool_protocol: "mcp"
+    progressive_loading: true
+
+  opencode:
+    name: "OpenCode"
+    discovery_path: ".opencode/skills"
+    global_path: "~/.opencode/skills"
+    format: "directory"
+    frontmatter_style: "yaml"
+    tool_protocol: "mcp"
+    progressive_loading: true
+
+  openclaw:
+    name: "OpenClaw / Kiro"
+    discovery_path: "skills"
+    global_path: "~/.openclaw/skills"
+    format: "directory"
+    frontmatter_style: "yaml"
+    tool_protocol: "cli"
+    progressive_loading: true
+
+  cline:
+    name: "Cline (Autonomous Coding)"
+    discovery_path: ".cline/skills"
+    global_path: "~/.cline/skills"
+    format: "directory"
+    frontmatter_style: "yaml"
+    tool_protocol: "mcp"
+    progressive_loading: true
+
+  roo-code:
+    name: "Roo Code"
+    discovery_path: ".roo/skills"
+    global_path: "~/.roo/skills"
+    format: "directory"
+    frontmatter_style: "yaml"
+    tool_protocol: "mcp"
+    progressive_loading: true
+
+  block-goose:
+    name: "Block Goose"
+    discovery_path: ".goose/skills"
+    global_path: "~/.goose/skills"
+    format: "directory"
+    frontmatter_style: "yaml"
+    tool_protocol: "mcp"
+    progressive_loading: true

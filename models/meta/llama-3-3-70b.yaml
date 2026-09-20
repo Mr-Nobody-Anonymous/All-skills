@@ -1,0 +1,9 @@
+provider: "meta"
+model_id: "llama-3-3-70b"
+context_window: 128000
+capabilities:
+  vision: false
+  tool_use: true
+  structured_output: true
+reasoning_class: "high-performance-oss"
+cost_class: "low-latency"

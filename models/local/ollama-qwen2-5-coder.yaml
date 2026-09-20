@@ -1,0 +1,9 @@
+provider: "local"
+model_id: "ollama-qwen2-5-coder"
+context_window: 32000
+capabilities:
+  vision: false
+  tool_use: true
+  structured_output: true
+reasoning_class: "local-sovereign"
+cost_class: "zero-cost"

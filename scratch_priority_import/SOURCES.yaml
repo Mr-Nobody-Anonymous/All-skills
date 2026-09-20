@@ -1,0 +1,47 @@
+version: "2.0"
+sources:
+  - id: anthropics-skills
+    repo: anthropics/skills
+    tier: Tier-0-Reference
+    priority: 100
+    enabled: true
+  - id: github-awesome-copilot
+    repo: github/awesome-copilot
+    tier: Tier-0-Reference
+    priority: 95
+    enabled: true
+  - id: vercel-agent-skills
+    repo: vercel-labs/agent-skills
+    tier: Tier-0-Ecosystem
+    priority: 95
+    enabled: true
+  - id: microsoft-skills
+    repo: microsoft/skills
+    tier: Tier-1-Vendor
+    priority: 95
+    enabled: true
+  - id: microsoftdocs-agent-skills
+    repo: MicrosoftDocs/Agent-Skills
+    tier: Tier-1-Vendor
+    priority: 95
+    enabled: true
+  - id: supabase-agent-skills
+    repo: supabase/agent-skills
+    tier: Tier-1-Vendor
+    priority: 90
+    enabled: true
+  - id: cloudflare-skills
+    repo: cloudflare/skills
+    tier: Tier-1-Vendor
+    priority: 90
+    enabled: true
+  - id: expo-skills
+    repo: expo/skills
+    tier: Tier-1-Vendor
+    priority: 90
+    enabled: true
+  - id: obra-superpowers
+    repo: obra/superpowers
+    tier: Tier-2-Specialized
+    priority: 85
+    enabled: true

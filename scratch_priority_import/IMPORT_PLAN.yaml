@@ -1,0 +1,24 @@
+version: "2.0"
+pipeline: federated-ingestion
+execution_policy: zero-execution-scan
+concurrency: 4
+stages:
+  - id: fetch
+    target: 00_incoming
+    timeout_sec: 180
+  - id: extract_and_normalize
+    source: 00_incoming
+    target: 02_normalized
+  - id: static_security_scan
+    source: 02_normalized
+    quarantine: 05_quarantine
+    reject: 06_rejected
+  - id: deduplication
+    source: 02_normalized
+    duplicates: 03_duplicates
+  - id: evaluation_and_certify
+    source: 02_normalized
+    target: 07_evaluated
+  - id: publish_promotion
+    source: 07_evaluated
+    destination: skills
