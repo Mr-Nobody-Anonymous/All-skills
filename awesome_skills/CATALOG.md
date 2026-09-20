@@ -1,6 +1,6 @@
 # 📚 Awesome Skills Catalog
 
-Complete categorized index of **14,690 Agent Skills** across **243 domain categories**.
+Complete categorized index of **14,722 Agent Skills** across **245 domain categories**.
 
 Every skill contains a standardized, load-on-demand `SKILL.md` instruction playbook with YAML frontmatter, compatible across Claude Code, Cursor, Codex CLI, Antigravity, and Gemini CLI.
 
@@ -55,6 +55,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 - [Code Quality](#code-quality) (18 skills)
 - [Communications](#communications) (9 skills)
 - [Compliance](#compliance) (55 skills)
+- [Computer Science](#computer-science) (14 skills)
 - [Construction](#construction) (58 skills)
 - [Consulting](#consulting) (113 skills)
 - [Content Creation](#content-creation) (247 skills)
@@ -232,6 +233,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 - [Supply Chain](#supply-chain) (29 skills)
 - [Sustainability](#sustainability) (33 skills)
 - [Systems Engineering](#systems-engineering) (13 skills)
+- [Systems Networking](#systems-networking) (18 skills)
 - [Tax](#tax) (13 skills)
 - [Telecom](#telecom) (46 skills)
 - [Test Automation](#test-automation) (9 skills)
@@ -250,7 +252,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 - [Wellness](#wellness) (100 skills)
 - [Writing](#writing) (19 skills)
 
-*Total skills indexed: 14,690 across 243 categories*
+*Total skills indexed: 14,722 across 245 categories*
 
 ---
 
@@ -3808,6 +3810,27 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [us-state-privacy-laws](compliance/us-state-privacy-laws/SKILL.md) | `us-state-privacy-laws` | `low` | Implements comprehensive US state comprehensive privacy law assessments—Virginia VCDPA (Va. Code §59.1-575), Colorado CPA (C.R.... |
 | [using-compliance-agent-skills](compliance/using-compliance-agent-skills/SKILL.md) | `using-compliance-agent-skills` | `low` | Meta entry skill for the USA compliance agent repository. Routes tasks to HIPAA, HITECH, PCI-DSS, SOC 2, ISO 27001, NIST CSF 2.... |
 | [vendor-third-party-risk](compliance/vendor-third-party-risk/SKILL.md) | `vendor-third-party-risk` | `low` | Performs third-party and vendor risk assessments for compliance programs—security questionnaires, SOC 2 report review, control ... |
+
+---
+
+## <a id="computer-science"></a>📁 Computer Science (14 skills)
+
+| Skill ID | Name | Risk | Description |
+| :--- | :--- | :---: | :--- |
+| [algorithm-analysis](computer-science/algorithm-analysis/SKILL.md) | `algorithm-analysis` | `low` | "Asymptotic Analysis & Amortized Complexity: Big-$O$, Big-$\Omega$, Big-$\Theta$ notations, master theorem for recurrences, amo... |
+| [algorithms](computer-science/algorithms/SKILL.md) | `algorithms` | `low` | "Fundamental & Advanced Algorithmic Paradigms: Divide and conquer, dynamic programming (memoization/tabulation), greedy approac... |
+| [automata-theory](computer-science/automata-theory/SKILL.md) | `automata-theory` | `low` | "Formal Languages, Grammars & Computability: Deterministic and non-deterministic finite automata (DFA/NFA), regular expressions... |
+| [competitive-programming](computer-science/competitive-programming/SKILL.md) | `competitive-programming` | `low` | "High-Performance Competitive Problem Solving: Sub-second optimization, bitmask DP, segment trees with lazy propagation, Fenwic... |
+| [compilers](computer-science/compilers/SKILL.md) | `compilers` | `low` | "Compiler Architecture & Intermediate Representation: Lexical analysis (lex/flex), LL(k) and LR(k) parsing (Yacc/Bison), Abstra... |
+| [computational-complexity](computer-science/computational-complexity/SKILL.md) | `computational-complexity` | `low` | "Complexity Classes & Reductions: P, NP, NP-complete, NP-hard, co-NP, PSPACE, polynomial-time reductions, Karp's 21 NP-complete... |
+| [computer-architecture](computer-science/computer-architecture/SKILL.md) | `computer-architecture` | `low` | "Instruction Set Architecture & Microarchitecture: Von Neumann vs Harvard architectures, RISC vs CISC (x86_64, ARM64, RISC-V), ... |
+| [concurrency](computer-science/concurrency/SKILL.md) | `concurrency` | `low` | "Concurrent Programming & Memory Models: Threads, fibers, mutexes, condition variables, lock-free data structures (CAS loops), ... |
+| [data-structures](computer-science/data-structures/SKILL.md) | `data-structures` | `low` | "Advanced Abstract Data Types & Memory Layouts: Cache-conscious arrays, balanced search trees (AVL, Red-Black, B-Trees), skip l... |
+| [discrete-mathematics](computer-science/discrete-mathematics/SKILL.md) | `discrete-mathematics` | `low` | "Combinatorics, Graph Theory & Discrete Proofs: Propositional and predicate logic, mathematical induction, pigeonhole principle... |
+| [distributed-systems](computer-science/distributed-systems/SKILL.md) | `distributed-systems` | `low` | "Distributed Consensus & Fault Tolerance: CAP theorem, PACELC, distributed transactions (2PC, 3PC), Paxos, Raft consensus proto... |
+| [parallel-computing](computer-science/parallel-computing/SKILL.md) | `parallel-computing` | `low` | "Parallel Architectures & SIMD Acceleration: Amdahl's law, Gustafson's law, shared memory vs distributed memory, OpenMP threadi... |
+| [programming-language-theory](computer-science/programming-language-theory/SKILL.md) | `programming-language-theory` | `low` | "Formal Operational & Denotational Semantics: Small-step and big-step operational semantics, lambda calculus (untyped, typed), ... |
+| [type-systems](computer-science/type-systems/SKILL.md) | `type-systems` | `low` | "Type Theory, Inference & Soundness Proofs: Hindley-Milner type inference (Algorithm W), subtyping, parametric polymorphism, al... |
 
 ---
 
@@ -15858,6 +15881,31 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [systems-optimization](systems-engineering/systems-optimization/SKILL.md) | `systems-optimization` | `low` | "System Multi-Objective Parameter Optimization: Pareto frontier analysis, design of experiments (DOE), multidisciplinary design... |
 | [trade-studies](systems-engineering/trade-studies/SKILL.md) | `trade-studies` | `low` | "Multi-Criteria Decision Making & Trade Studies: Weighting criteria matrices, TOPSIS and Pugh matrix evaluations, cost vs perfo... |
 | [verification-validation](systems-engineering/verification-validation/SKILL.md) | `verification-validation` | `low` | "System Verification & Validation (V&V): Verification cross-reference matrix (VCRM), test/inspection/analysis/demonstration met... |
+
+---
+
+## <a id="systems-networking"></a>📁 Systems Networking (18 skills)
+
+| Skill ID | Name | Risk | Description |
+| :--- | :--- | :---: | :--- |
+| [containers-cgroups](systems-networking/containers-cgroups/SKILL.md) | `containers-cgroups` | `low` | "Linux Containers, cgroups v2 & Namespaces: Mount, PID, Network, IPC, User, UTS namespaces, control groups v2 resource limiting... |
+| [dns-architecture](systems-networking/dns-architecture/SKILL.md) | `dns-architecture` | `low` | "Domain Name System (DNS) Protocol & Resolution: Recursive vs authoritative name servers, root hint zones, DNS record types (A,... |
+| [firewalls-packet-filtering](systems-networking/firewalls-packet-filtering/SKILL.md) | `firewalls-packet-filtering` | `low` | "Stateful Inspection & Packet Filtering Engines: Stateful connection tracking, iptables/nftables packet flow, eBPF/XDP fast-pat... |
+| [http-protocols](systems-networking/http-protocols/SKILL.md) | `http-protocols` | `low` | "HTTP/1.1, HTTP/2 & HTTP/3 Protocol Mechanics: HTTP request/response headers, persistent connections, multiplexed binary frames... |
+| [linux-internals](systems-networking/linux-internals/SKILL.md) | `linux-internals` | `low` | "Linux Kernel Subsystems & Core Mechanics: Task structs, process scheduler (CFS - Completely Fair Scheduler), virtual memory ma... |
+| [macos-internals](systems-networking/macos-internals/SKILL.md) | `macos-internals` | `low` | "macOS XNU Kernel, Mach & BSD Layers: Mach microkernel primitives (ports, tasks, threads), BSD POSIX subsystem, I/O Kit object-... |
+| [network-programming](systems-networking/network-programming/SKILL.md) | `network-programming` | `low` | "Socket Programming & Non-Blocking I/O: Berkeley sockets API (socket, bind, listen, accept), non-blocking I/O multiplexing (epo... |
+| [networking-fundamentals](systems-networking/networking-fundamentals/SKILL.md) | `networking-fundamentals` | `low` | "OSI 7-Layer & TCP/IP Reference Architectures: Physical, Data Link, Network, Transport, Session, Presentation, Application laye... |
+| [operating-systems](systems-networking/operating-systems/SKILL.md) | `operating-systems` | `low` | "OS Kernel Architectures & Subsystems: Monolithic vs microkernels, user vs supervisor mode transitions, interrupt service routi... |
+| [routing-protocols](systems-networking/routing-protocols/SKILL.md) | `routing-protocols` | `low` | "Dynamic IP Routing & Interior/Exterior Gateways: Border Gateway Protocol (BGP-4), Open Shortest Path First (OSPF v2/v3), IS-IS... |
+| [switching-vlans](systems-networking/switching-vlans/SKILL.md) | `switching-vlans` | `low` | "Ethernet Switching & Virtual LAN Architecture: CAM tables, Spanning Tree Protocol (STP / RSTP 802.1w), 802.1Q VLAN tagging, tr... |
+| [system-administration](systems-networking/system-administration/SKILL.md) | `system-administration` | `low` | "Production Linux/Unix System Administration: systemd unit management, journald logging, PAM authentication modules, SSH harden... |
+| [tcp-ip](systems-networking/tcp-ip/SKILL.md) | `tcp-ip` | `low` | "TCP/IP Protocol Stack & Flow Control: TCP 3-way handshake, 4-way teardown, sliding window flow control, congestion control alg... |
+| [tls-cryptography](systems-networking/tls-cryptography/SKILL.md) | `tls-cryptography` | `low` | "Transport Layer Security (TLS 1.3) Handshake: Diffie-Hellman ephemeral key exchange (ECDHE), X.509 certificate chains, ALPN ne... |
+| [virtualization-hypervisors](systems-networking/virtualization-hypervisors/SKILL.md) | `virtualization-hypervisors` | `low` | "Type-1/Type-2 Hypervisors & Hardware Virtualization: Intel VT-x / AMD-V hardware virtualization extensions, Extended Page Tabl... |
+| [vpn-technologies](systems-networking/vpn-technologies/SKILL.md) | `vpn-technologies` | `low` | "Virtual Private Networks & Secure Tunnels: IPsec (IKEv2, ESP/AH tunnels), WireGuard protocol (Noise protocol framework), OpenV... |
+| [windows-internals](systems-networking/windows-internals/SKILL.md) | `windows-internals` | `low` | "Windows NT Kernel & Driver Architecture: NT Executive, HAL (Hardware Abstraction Layer), I/O Request Packets (IRP), Object Man... |
+| [wireless-networking](systems-networking/wireless-networking/SKILL.md) | `wireless-networking` | `low` | "Wi-Fi 802.11 Protocols & RF Engineering: 802.11ax (Wi-Fi 6) / 802.11be (Wi-Fi 7), OFDMA, MU-MIMO, beamforming, channel bonding... |
 
 ---
 

@@ -1,0 +1,36 @@
+react:
+- reactjs
+- react.js
+- react-native
+- react-dom
+python:
+- py
+- python3
+- cpython
+- pypy
+typescript:
+- ts
+- tsc
+javascript:
+- js
+- ecmascript
+- node
+- nodejs
+docker:
+- container
+- containers
+- dockerfile
+- compose
+kubernetes:
+- k8s
+- kubectl
+- kube
+aws:
+- amazon-web-services
+- ec2
+- s3
+- lambda
+postgres:
+- postgresql
+- psql
+- pg

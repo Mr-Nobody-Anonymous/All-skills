@@ -1,0 +1,51 @@
+tasks:
+- task: build
+  description: Construct new components, services, or architecture.
+- task: debug
+  description: Diagnose errors, isolate root causes, and repair anomalies.
+- task: refactor
+  description: Improve code architecture, reduce technical debt, and enforce clean
+    patterns.
+- task: test
+  description: Author automated unit, integration, and E2E verification suites.
+- task: secure
+  description: Harden defenses, audit vulnerabilities, verify secrets, and perform
+    red/blue team analysis.
+- task: deploy
+  description: Provision infrastructure, automate CI/CD pipelines, and release to
+    production.
+- task: migrate
+  description: Execute database, framework, or cloud environment transitions without
+    downtime.
+- task: optimize
+  description: Profile performance, lower compute latency, reduce memory footprint,
+    and optimize cost.
+- task: document
+  description: Generate comprehensive OpenAPI specs, architectural ADRs, and technical
+    guides.
+- task: research
+  description: Conduct deep technical exploration, literature synthesis, and state-of-the-art
+    audits.
+- task: analyze
+  description: Compute statistical models, extract data insights, and evaluate system
+    metrics.
+- task: automate
+  description: Implement autonomous workflows, background jobs, and agent orchestration
+    loops.
+- task: monitor
+  description: Track telemetry, instrument observability metrics, and manage incident
+    alerts.
+- task: design
+  description: Create UI systems, geometric optical layouts, or functional architectures.
+- task: benchmark
+  description: Empirically evaluate latency, throughput, model precision, or retrieval
+    recall.
+- task: reverse-engineer
+  description: Disassemble binaries, decode protocol packets, and inspect firmware
+    logic.
+- task: investigate
+  description: Examine security intrusions, medical pathology, or industrial failure
+    cases.
+- task: teach
+  description: Structure pedagogical curricula, learning objectives, and skill mastery
+    milestones.

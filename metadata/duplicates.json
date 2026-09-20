@@ -1,9 +1,9 @@
 {
   "analysis_date": "2026-09-20",
-  "total_catalog_records": 14684,
-  "total_unique_skills": 12389,
-  "non_unique_records_count": 2295,
-  "duplicate_groups_count": 2229,
+  "total_catalog_records": 14716,
+  "total_unique_skills": 12420,
+  "non_unique_records_count": 2296,
+  "duplicate_groups_count": 2230,
   "groups": {
     "3d-web-experience": {
       "canonical_skill": "3d/3d-web-experience",
@@ -10794,6 +10794,13 @@
       "canonical_skill": "development/vercel-react-native-skills",
       "variants": [
         "languages/vercel-react-native-skills"
+      ],
+      "count": 2
+    },
+    "dns-architecture": {
+      "canonical_skill": "devops/dns-architecture",
+      "variants": [
+        "systems-networking/dns-architecture"
       ],
       "count": 2
     },

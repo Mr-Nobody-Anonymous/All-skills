@@ -1,8 +1,8 @@
 # ⚡ All Skills — Universal Agentic AI Toolkit & Platform
 
 <p align="center">
-  <img src="https://img.shields.io/badge/skills-12591%2B%20Total%20Skills-7c3aed?style=for-the-badge&logo=codewars&logoColor=white" alt="2167+ Skills" />
-  <img src="https://img.shields.io/badge/awesome--catalog-14690%20Categorized-0ea5e9?style=for-the-badge&logo=github&logoColor=white" alt="2041 Awesome Skills" />
+  <img src="https://img.shields.io/badge/skills-12622%2B%20Total%20Skills-7c3aed?style=for-the-badge&logo=codewars&logoColor=white" alt="2167+ Skills" />
+  <img src="https://img.shields.io/badge/awesome--catalog-14722%20Categorized-0ea5e9?style=for-the-badge&logo=github&logoColor=white" alt="2041 Awesome Skills" />
   <img src="https://img.shields.io/badge/active--harness-70%20Pre--Loaded-10b981?style=for-the-badge&logo=lightning&logoColor=white" alt="70 Active Skills" />
   <img src="https://img.shields.io/badge/manifest-192%20Indexed-6366f1?style=for-the-badge&logo=json&logoColor=white" alt="192 Manifest Skills" />
   <img src="https://img.shields.io/badge/tests-94%2F94%20Passing-10b981?style=for-the-badge&logo=pytest&logoColor=white" alt="86 Tests Passing" />
@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <strong>A comprehensive, extensible Agent Skills platform & discovery engine. Over 12,591 unique skills across 243 domain categories, 70 pre-loaded staff-engineer playbooks, 122 canonical tested skills, machine-readable dependency & conflict graphs, confidence thresholding with out-of-domain rejection, capability security enforcement, reproducible lockfiles, and native multi-tool compatibility across Claude Code, Cursor, Codex CLI, and Antigravity.</strong>
+  <strong>A comprehensive, extensible Agent Skills platform & discovery engine. Over 12,622 unique skills across 245 domain categories, 70 pre-loaded staff-engineer playbooks, 122 canonical tested skills, machine-readable dependency & conflict graphs, confidence thresholding with out-of-domain rejection, capability security enforcement, reproducible lockfiles, and native multi-tool compatibility across Claude Code, Cursor, Codex CLI, and Antigravity.</strong>
 </p>
 
 ---
@@ -31,8 +31,8 @@ When AI coding assistants are front-loaded with thousands of prompt instructions
 │          (skills/)            │        (awesome_skills/)        │     (.agents/ / .claude/ /    │
 │                               │                                 │     .cursor/ / .codex/)       │
 ├───────────────────────────────┼─────────────────────────────────┼───────────────────────────────┤
-│  • 122 Curated & Tested Skills│  • 14,690 Categorized Skills     │  • 70 Staff Engineer Skills   │
-│  • 9-Signal Layered Scoring   │  • 243 Functional Domain Dirs   │  • Pre-Loaded in Workspace    │
+│  • 122 Curated & Tested Skills│  • 14,722 Categorized Skills     │  • 70 Staff Engineer Skills   │
+│  • 9-Signal Layered Scoring   │  • 245 Functional Domain Dirs   │  • Pre-Loaded in Workspace    │
 │  • Deterministic Workflows    │  • Machine-Readable Index       │  • Native Multi-Tool Synced   │
 │  • 8-State Formal Lifecycle   │  • Complete CATALOG.md Reference│  • $O(1)$ Load-on-Demand      │
 │  • 94/94 Passing Unit Tests   │  • Dynamic Manager CLI          │  • Zero Prompt Bloat          │
@@ -43,44 +43,67 @@ When AI coding assistants are front-loaded with thousands of prompt instructions
 - 🎯 **9-Signal Layered Router**: Sub-millisecond natural-language routing with deterministic scoring (Exact ID → Alias → Category → Trigger Phrase → Keyword Overlap → Capabilities/IO Vocabulary → Token Overlap → Dependency Availability → Quality Boost).
 - ⛓️ **Deterministic Chaining**: Compose complex multi-step workflows like `deep-research`, `anti-procrastination`, and `code-review-flow` with dry-run telemetry.
 - 🛡️ **Defensive Security & Quarantine**: AST-free static inspection against prompt injections, credential leaks, and pipe-to-shell payloads with a hardened quarantine boundary (`skills/_quarantine/`).
-- 🤖 **Universal Multi-Tool Harness**: Pre-configured support for Claude Code, Cursor, Codex CLI, Antigravity, and Gemini CLI.
-
----
-
-## 🏛️ Platform Architecture
+## 🏛️ Platform Architecture & Routing Pipeline
 
 ```
-                               ┌────────────────────────┐
-                               │   User Prompt / Goal   │
-                               └───────────┬────────────┘
-                                           │
-                                           ▼
-┌─────────────────────────────────────────────────────────────────────────────────────────┐
-│                              ⚡ 9-SIGNAL SCORING ROUTER                                 │
-│  Exact ID (100) → Alias (90) → Category (80) → Triggers (+100) → Keywords (+40)         │
-│  → Capability/IO (+15) → Tokens (+25) → Dep Penalty (-) → Quality Boost (+4)            │
-└────────────────────────────┬──────────────────────────────────────────┬─────────────────┘
-                             │                                          │
-                             ▼                                          ▼
-                 ┌───────────────────────┐                  ┌───────────────────────┐
-                 │    Candidate Match    │                  │    Candidate Chain    │
-                 │  (Single Best Skill)  │                  │   (Multi-Step Plan)   │
-                 └───────────┬───────────┘                  └───────────┬───────────┘
-                             │                                          │
-                             └────────────────────┬─────────────────────┘
-                                                  │
-                                                  ▼
-                                 ┌─────────────────────────────────┐
-                                 │     Load-on-Demand Runtime      │
-                                 │    Reads 1 SKILL.md on Demand   │
-                                 └────────────────┬────────────────┘
-                                                  │
-                                                  ▼
-                                 ┌─────────────────────────────────┐
-                                 │        Active AI Agent          │
-                                 │ (Claude / Cursor / Antigravity) │
-                                 └─────────────────────────────────┘
+                              ┌────────────────────────┐
+                              │      USER REQUEST      │
+                              └───────────┬────────────┘
+                                          │
+                                          ▼
+                              ┌────────────────────────┐
+                              │     Intent Parser      │
+                              └───────────┬────────────┘
+                                          ▼
+                              ┌────────────────────────┐
+                              │  9-Signal Domain Router│
+                              └───────────┬────────────┘
+                                          ▼
+                              ┌────────────────────────┐
+                              │    Capability Match    │
+                              │ (Inputs/Outputs/Tools) │
+                              └───────────┬────────────┘
+                                          ▼
+                              ┌────────────────────────┐
+                              │  Candidate Skill Set   │
+                              └───────────┬────────────┘
+                                          ▼
+                              ┌────────────────────────┐
+                              │ Dependency / Conflict  │
+                              │       Resolution       │
+                              └───────────┬────────────┘
+                                          ▼
+                              ┌────────────────────────┐
+                              │ Security & Permission  │
+                              │  Check (AST & Policy)  │
+                              └───────────┬────────────┘
+                                          ▼
+                              ┌────────────────────────┐
+                              │    Skill Execution     │
+                              │ (Load 1 SKILL.md O(1)) │
+                              └───────────┬────────────┘
+                                          ▼
+                              ┌────────────────────────┐
+                              │   Validation / Tests   │
+                              │ (Post-Execution Hooks) │
+                              └───────────┬────────────┘
+                                          ▼
+                              ┌────────────────────────┐
+                              │      FINAL RESULT      │
+                              └────────────────────────┘
 ```
+
+### 📊 Platform Metrics & Tier Definitions
+
+To ensure transparency across our single-source-of-truth metadata (`stats.json`):
+- **Unique Skill Identities**: Distinct, deduplicated capabilities across all categories.
+- **Indexed Catalog Records**: Physical skill packages cataloged in `awesome_skills/` and searchable via `awesome_skills/CATALOG.md`.
+- **Canonical Routed Skills**: Curated, tested foundational skills residing in `skills/` with formal lifecycle states.
+- **Active Harness Skills**: Preloaded skills in `.agents/skills/` available directly to active agents.
+- **Manifest Skills**: Formally declared tool and permission contracts indexed in `manifest.json`.
+- **Virtual Organization Layer**: The `catalog/` hierarchy maps all skills into 15 high-level super-domains, tasks, maturity tiers, and agent compatibility views without moving or deleting physical files.
+- **Repository Architecture Map**: Detailed breakdown of every top-level directory in [`docs/REPOSITORY_MAP.md`](docs/REPOSITORY_MAP.md).
+
 
 ---
 
@@ -135,7 +158,7 @@ Beyond instruction text files, **All Skills** provides a complete execution, val
 
 ### 📋 Key Infrastructure Components:
 1. **Formal Frontmatter Schema**: [`schemas/skill-frontmatter.schema.json`](schemas/skill-frontmatter.schema.json) validates required properties (`name`, `description`, `category`, `disable-model-invocation`), triggers, aliases, and tool permissions via `python scripts/validate_schema.py`.
-2. **Master Intent Router (`which-skill`)**: [`.agents/skills/which-skill/SKILL.md`](.agents/skills/which-skill/SKILL.md) provides instant decision matrix mapping and CLI routing (`python scripts/skills/skills.py route`) across all 14,690+ skills.
+2. **Master Intent Router (`which-skill`)**: [`.agents/skills/which-skill/SKILL.md`](.agents/skills/which-skill/SKILL.md) provides instant decision matrix mapping and CLI routing (`python scripts/skills/skills.py route`) across all 14,722+ skills.
 3. **Multi-Step Execution Playbooks (`workflows/`)**: Complete chained workflows in [`workflows/`](workflows/) (`feature-development.md`, `bug-investigation-and-fix.md`, `fullstack-saas-launch.md`, etc.) for autonomous multi-step execution.
 4. **State Tracking & Stack Manifests (`aas-stack.json`)**: Structured sidecar schema ([`schemas/aas-stack.schema.json`](schemas/aas-stack.schema.json)) and CLI ([`scripts/manage_state.py`](scripts/manage_state.py)) for tracking phase progress, variables, and architectural decisions (ADRs) with auto-synced [`CONTEXT.md`](CONTEXT.md).
 5. **Central Tool-to-Skill Manifest**: [`manifest.json`](manifest.json) indexes all 192+ platform skills, mapping them to required tool permissions (`bash`, `file_edit`, `ast_grep`, `browser`), MCP servers (`filesystem`, `git`, `fetch`, `memory`), and lifecycle hooks.
@@ -172,7 +195,7 @@ Your workspace comes pre-loaded with **70 staff-engineer and AI architect playbo
 <summary><strong>📋 View Pre-Loaded Skill Suites</strong></summary>
 
 ### 1. 🎯 Core Planning & Workflow Architecture
-- `which-skill` — Master agent intent router across all 14,690+ skills and workflows
+- `which-skill` — Master agent intent router across all 14,722+ skills and workflows
 - `brainstorming` — Socratic design refinement before implementation
 - `context-budget-and-pruning` — Token budget management, scratchpad offloading, and state distillation
 - `executing-plans` — Batch plan execution with verification checkpoints
@@ -266,17 +289,17 @@ Your workspace comes pre-loaded with **70 staff-engineer and AI architect playbo
 The repository includes two powerful CLI suites running on pure standard library with **zero external dependencies**:
 
 ### 1. Awesome Skills Manager (`scripts/manage_awesome_skills.py`)
-Interact with all 14,690+ categorized skills in [`awesome_skills/`](awesome_skills/):
+Interact with all 14,722+ categorized skills in [`awesome_skills/`](awesome_skills/):
 
 ```bash
-# List all 243 domain categories with skill counts
+# List all 245 domain categories with skill counts
 python scripts/manage_awesome_skills.py list
 
 # List all skills inside a specific category
 python scripts/manage_awesome_skills.py list --category ai-agents
 python scripts/manage_awesome_skills.py list --category security
 
-# Fuzzy search across all 14,690+ skills by keyword
+# Fuzzy search across all 14,722+ skills by keyword
 python scripts/manage_awesome_skills.py search "rag"
 python scripts/manage_awesome_skills.py search "prompt"
 python scripts/manage_awesome_skills.py search "kubernetes"
@@ -374,7 +397,7 @@ All skills/
 │
 ├── awesome_skills/              # 🚀 2,041+ Categorized Skills Library
 │   ├── CATALOG.md               # Complete searchable markdown catalog
-│   ├── skills_index.json        # 14,690-item metadata database
+│   ├── skills_index.json        # 14,722-item metadata database
 │   ├── development/             # 187 skills (Coding, Git, Refactoring)
 │   ├── cloud/                   # 146 skills (AWS, GCP, Azure, Terraform)
 │   ├── ai-ml/                   # 129 skills (Prompting, RAG, Evals)

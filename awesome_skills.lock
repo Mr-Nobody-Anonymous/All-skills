@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "generated_at": "2026-09-20",
-  "total_skills": 14684,
+  "total_skills": 14716,
   "skills": [
     {
       "skill_id": "3d/3d-blender-python-procedural-modeling",
@@ -28916,6 +28916,132 @@
       "category": "compliance",
       "name": "vendor-third-party-risk",
       "sha256": "ebb7a86f215a866620881069f1a9d3b5f140001590e84772c3b3a37d8fd2fbef",
+      "risk": "low",
+      "license": "MIT",
+      "status": "active"
+    },
+    {
+      "skill_id": "computer-science/algorithm-analysis",
+      "category": "computer-science",
+      "name": "algorithm-analysis",
+      "sha256": "75f30a36da312e6d7a71856829ac07f953da17063ca4fe052d9f98bf10387429",
+      "risk": "low",
+      "license": "MIT",
+      "status": "active"
+    },
+    {
+      "skill_id": "computer-science/algorithms",
+      "category": "computer-science",
+      "name": "algorithms",
+      "sha256": "070446a1e09e04ee815e3fbba1997d1a27a954c2e35157792192d412d48ddc3f",
+      "risk": "low",
+      "license": "MIT",
+      "status": "active"
+    },
+    {
+      "skill_id": "computer-science/automata-theory",
+      "category": "computer-science",
+      "name": "automata-theory",
+      "sha256": "0deed9e8ad80e390a6600e74ab165da3168308c03a578d9fb38d64f2012061cd",
+      "risk": "low",
+      "license": "MIT",
+      "status": "active"
+    },
+    {
+      "skill_id": "computer-science/competitive-programming",
+      "category": "computer-science",
+      "name": "competitive-programming",
+      "sha256": "e31184f6eea1d9ded2fa79531b1ef7bf7064851309b5a984ac655034f6873209",
+      "risk": "low",
+      "license": "MIT",
+      "status": "active"
+    },
+    {
+      "skill_id": "computer-science/compilers",
+      "category": "computer-science",
+      "name": "compilers",
+      "sha256": "48399a594f7b4c2282283e827db9c2b9cdcaaeeb7da7244de71d7727467e75ad",
+      "risk": "low",
+      "license": "MIT",
+      "status": "active"
+    },
+    {
+      "skill_id": "computer-science/computational-complexity",
+      "category": "computer-science",
+      "name": "computational-complexity",
+      "sha256": "09a2d60da8269f45ef5fc5f1c26b4e1bff59e3640d04a24c0181c984e600ecd5",
+      "risk": "low",
+      "license": "MIT",
+      "status": "active"
+    },
+    {
+      "skill_id": "computer-science/computer-architecture",
+      "category": "computer-science",
+      "name": "computer-architecture",
+      "sha256": "b1392e6a2bc6aa9427059920f64ea1baf362392c6fc07c73aefe24a7e954b5e2",
+      "risk": "low",
+      "license": "MIT",
+      "status": "active"
+    },
+    {
+      "skill_id": "computer-science/concurrency",
+      "category": "computer-science",
+      "name": "concurrency",
+      "sha256": "24ba217b4fff7af72bd246889e3ea3846b592f36b1dd20df33621c8aac756b20",
+      "risk": "low",
+      "license": "MIT",
+      "status": "active"
+    },
+    {
+      "skill_id": "computer-science/data-structures",
+      "category": "computer-science",
+      "name": "data-structures",
+      "sha256": "a469ecdbce529c53117a89a7623a649708a7f14e832335434e88cefc4f558189",
+      "risk": "low",
+      "license": "MIT",
+      "status": "active"
+    },
+    {
+      "skill_id": "computer-science/discrete-mathematics",
+      "category": "computer-science",
+      "name": "discrete-mathematics",
+      "sha256": "837596a80ade56ba240626613878600196fd7a855b5c16116f4f9ed230cd119c",
+      "risk": "low",
+      "license": "MIT",
+      "status": "active"
+    },
+    {
+      "skill_id": "computer-science/distributed-systems",
+      "category": "computer-science",
+      "name": "distributed-systems",
+      "sha256": "d26e71c18fef2ee5fee591212508b8f73d5370cfaf136a66d76dc68104b168fb",
+      "risk": "low",
+      "license": "MIT",
+      "status": "active"
+    },
+    {
+      "skill_id": "computer-science/parallel-computing",
+      "category": "computer-science",
+      "name": "parallel-computing",
+      "sha256": "a9f21735568a8a0b272eeb47e8d05c14544a615b29b2b0acced35d936c40f1d0",
+      "risk": "low",
+      "license": "MIT",
+      "status": "active"
+    },
+    {
+      "skill_id": "computer-science/programming-language-theory",
+      "category": "computer-science",
+      "name": "programming-language-theory",
+      "sha256": "aa36be31aee7051f98011b86c39d90231cbedd08d16630a97b51e0baaf6944c5",
+      "risk": "low",
+      "license": "MIT",
+      "status": "active"
+    },
+    {
+      "skill_id": "computer-science/type-systems",
+      "category": "computer-science",
+      "name": "type-systems",
+      "sha256": "9473de2102e2d58bbb917eedf4017080c803b9fbbd91188e534b9bf5f2c88dd7",
       "risk": "low",
       "license": "MIT",
       "status": "active"
@@ -126170,6 +126296,168 @@
       "category": "systems-engineering",
       "name": "verification-validation",
       "sha256": "119ca71bd5ebb9bfc1c3ada143445f76df871b7dffaa9097b4d5b7cd1a56b974",
+      "risk": "low",
+      "license": "MIT",
+      "status": "active"
+    },
+    {
+      "skill_id": "systems-networking/containers-cgroups",
+      "category": "systems-networking",
+      "name": "containers-cgroups",
+      "sha256": "dd39a901227f1b121e6591b619c96d3427459542ff0ea5bedf8b1256ccf16965",
+      "risk": "low",
+      "license": "MIT",
+      "status": "active"
+    },
+    {
+      "skill_id": "systems-networking/dns-architecture",
+      "category": "systems-networking",
+      "name": "dns-architecture",
+      "sha256": "cdb6441713007fc5004a8ec27180576899d57ce9079eac15bce9a4ba1eebc0fd",
+      "risk": "low",
+      "license": "MIT",
+      "status": "active"
+    },
+    {
+      "skill_id": "systems-networking/firewalls-packet-filtering",
+      "category": "systems-networking",
+      "name": "firewalls-packet-filtering",
+      "sha256": "aa09320c5d79c49c7b3d152adc7443f604e3845c85ce2e6c10c6a80cd9d17d8b",
+      "risk": "low",
+      "license": "MIT",
+      "status": "active"
+    },
+    {
+      "skill_id": "systems-networking/http-protocols",
+      "category": "systems-networking",
+      "name": "http-protocols",
+      "sha256": "a875dff58973aad492382ea7ec187810f084c673fb4c6e87bd091d919789c787",
+      "risk": "low",
+      "license": "MIT",
+      "status": "active"
+    },
+    {
+      "skill_id": "systems-networking/linux-internals",
+      "category": "systems-networking",
+      "name": "linux-internals",
+      "sha256": "1ddc895d9f9cbee39adcce50b85dbbc74d3cfdbf125e8849fd3fcbdab396d9cb",
+      "risk": "low",
+      "license": "MIT",
+      "status": "active"
+    },
+    {
+      "skill_id": "systems-networking/macos-internals",
+      "category": "systems-networking",
+      "name": "macos-internals",
+      "sha256": "47cd7b25bb8efa53ad11514c1b3744fdf3d03838e384437fb1136ddd5f8e8b2b",
+      "risk": "low",
+      "license": "MIT",
+      "status": "active"
+    },
+    {
+      "skill_id": "systems-networking/network-programming",
+      "category": "systems-networking",
+      "name": "network-programming",
+      "sha256": "1466db7e2309463f998cd2004fdbba7e81f367fa1e7076ab3cae607c3eb84903",
+      "risk": "low",
+      "license": "MIT",
+      "status": "active"
+    },
+    {
+      "skill_id": "systems-networking/networking-fundamentals",
+      "category": "systems-networking",
+      "name": "networking-fundamentals",
+      "sha256": "e40f93a90615ba844c52d2eedfef3a39d74b28f6dfd836d90a9466d8b1b9ac74",
+      "risk": "low",
+      "license": "MIT",
+      "status": "active"
+    },
+    {
+      "skill_id": "systems-networking/operating-systems",
+      "category": "systems-networking",
+      "name": "operating-systems",
+      "sha256": "a1b5dc27e8b3c2cb789ff3ee4c880138e67049f8dc82b37983d736870cf6a9fd",
+      "risk": "low",
+      "license": "MIT",
+      "status": "active"
+    },
+    {
+      "skill_id": "systems-networking/routing-protocols",
+      "category": "systems-networking",
+      "name": "routing-protocols",
+      "sha256": "966c6964da74f8ec40dcec45f78fd2d1aeefbfebe7168481a009dc204f49df9e",
+      "risk": "low",
+      "license": "MIT",
+      "status": "active"
+    },
+    {
+      "skill_id": "systems-networking/switching-vlans",
+      "category": "systems-networking",
+      "name": "switching-vlans",
+      "sha256": "d875eff7a520b886b5b478298ef2da251ff90baeb1ff161b28cf8df2f4d6e4cc",
+      "risk": "low",
+      "license": "MIT",
+      "status": "active"
+    },
+    {
+      "skill_id": "systems-networking/system-administration",
+      "category": "systems-networking",
+      "name": "system-administration",
+      "sha256": "192e625b06cc2fff742ceac07e1bbbde800858e339b0aed112afdc7a5f463fab",
+      "risk": "low",
+      "license": "MIT",
+      "status": "active"
+    },
+    {
+      "skill_id": "systems-networking/tcp-ip",
+      "category": "systems-networking",
+      "name": "tcp-ip",
+      "sha256": "a2697b9db8ed09b956baf1bacd775f97ac10dd1c1c13ed7567881bf43b0a3f8e",
+      "risk": "low",
+      "license": "MIT",
+      "status": "active"
+    },
+    {
+      "skill_id": "systems-networking/tls-cryptography",
+      "category": "systems-networking",
+      "name": "tls-cryptography",
+      "sha256": "f80597214b0e2752d71bbd921f8320956d571ad0a668c8a6bb49caa16bdd1231",
+      "risk": "low",
+      "license": "MIT",
+      "status": "active"
+    },
+    {
+      "skill_id": "systems-networking/virtualization-hypervisors",
+      "category": "systems-networking",
+      "name": "virtualization-hypervisors",
+      "sha256": "dfa0da2a13cfdd5476a662153a7dff26d3915db2d272853fa564e5f1bf152c47",
+      "risk": "low",
+      "license": "MIT",
+      "status": "active"
+    },
+    {
+      "skill_id": "systems-networking/vpn-technologies",
+      "category": "systems-networking",
+      "name": "vpn-technologies",
+      "sha256": "f3fa637a46041f0c15ad62a29c15deb24dabad236ea3b2ec4318683f9beb677d",
+      "risk": "low",
+      "license": "MIT",
+      "status": "active"
+    },
+    {
+      "skill_id": "systems-networking/windows-internals",
+      "category": "systems-networking",
+      "name": "windows-internals",
+      "sha256": "3b9500004b5b90e478f885053e895ebbf437e2b505859445f3f5079b8e583ff5",
+      "risk": "low",
+      "license": "MIT",
+      "status": "active"
+    },
+    {
+      "skill_id": "systems-networking/wireless-networking",
+      "category": "systems-networking",
+      "name": "wireless-networking",
+      "sha256": "991a6edcee8a84a6b087849c71c942f729641268dcff572250a4689c0db7c8b2",
       "risk": "low",
       "license": "MIT",
       "status": "active"
