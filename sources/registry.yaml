@@ -519,3 +519,277 @@ sources:
       license_policy: allow-mit
       behavior_tested: true
 
+  # ==========================================
+  # Mega Reference & Knowledge Repositories
+  # ==========================================
+  - id: sindresorhus-awesome
+    name: Sindre Sorhus Awesome Master List
+    repo: sindresorhus/awesome
+    url: https://github.com/sindresorhus/awesome
+    branch: main
+    class: mega-reference
+    vendor: community
+    license: CC0-1.0
+    description: "The authoritative master list of curated awesome topics, languages, frameworks, and tools."
+    skill_paths:
+      - readme
+    update_schedule: weekly
+    trust_tier: Tier-2-Specialized
+    verification:
+      security_scan: required
+      license_policy: allow-cc0
+      behavior_tested: true
+
+  - id: ossu-computer-science
+    name: Open Source Society University Computer Science
+    repo: ossu/computer-science
+    url: https://github.com/ossu/computer-science
+    branch: master
+    class: mega-reference
+    vendor: ossu
+    license: MIT
+    description: "Complete, world-class curriculum for self-taught computer science education."
+    skill_paths:
+      - curriculum
+    update_schedule: monthly
+    trust_tier: Tier-2-Specialized
+    verification:
+      security_scan: required
+      license_policy: allow-mit
+      behavior_tested: true
+
+  - id: coding-interview-university
+    name: Coding Interview University
+    repo: jwasham/coding-interview-university
+    url: https://github.com/jwasham/coding-interview-university
+    branch: main
+    class: mega-reference
+    vendor: jwasham
+    license: CC-BY-SA-4.0
+    description: "A complete multi-month study plan for mastering data structures, algorithms, and systems engineering."
+    skill_paths:
+      - study-plan
+    update_schedule: monthly
+    trust_tier: Tier-2-Specialized
+    verification:
+      security_scan: required
+      license_policy: allow-cc-by-sa
+      behavior_tested: true
+
+  - id: system-design-primer
+    name: System Design Primer
+    repo: donnemartin/system-design-primer
+    url: https://github.com/donnemartin/system-design-primer
+    branch: master
+    class: mega-reference
+    vendor: donnemartin
+    license: MIT
+    description: "Learn how to design large-scale systems, distributed architectures, and prepare for system design interviews."
+    skill_paths:
+      - solutions
+    update_schedule: monthly
+    trust_tier: Tier-2-Specialized
+    verification:
+      security_scan: required
+      license_policy: allow-mit
+      behavior_tested: true
+
+  - id: developer-roadmap
+    name: Developer Roadmaps
+    repo: kamranahmedse/developer-roadmap
+    url: https://github.com/kamranahmedse/developer-roadmap
+    branch: master
+    class: mega-reference
+    vendor: roadmap.sh
+    license: CC-BY-NC-SA-4.0
+    description: "Interactive roadmaps, guides, and study paths for software developers and engineering roles."
+    skill_paths:
+      - roadmaps
+    update_schedule: monthly
+    trust_tier: Tier-2-Specialized
+    verification:
+      security_scan: required
+      license_policy: allow-cc-by-nc-sa
+      behavior_tested: true
+
+  - id: build-your-own-x
+    name: Build Your Own X
+    repo: codecrafters-io/build-your-own-x
+    url: https://github.com/codecrafters-io/build-your-own-x
+    branch: master
+    class: mega-reference
+    vendor: codecrafters
+    license: CC0-1.0
+    description: "Master programming by recreating technology from scratch: OS, compilers, databases, git, and networks."
+    skill_paths:
+      - guides
+    update_schedule: monthly
+    trust_tier: Tier-2-Specialized
+    verification:
+      security_scan: required
+      license_policy: allow-cc0
+      behavior_tested: true
+
+  - id: free-programming-books
+    name: Free Programming Books
+    repo: EbookFoundation/free-programming-books
+    url: https://github.com/EbookFoundation/free-programming-books
+    branch: main
+    class: mega-reference
+    vendor: ebookfoundation
+    license: CC-BY-4.0
+    description: "Freely available programming books, courses, interactive tutorials, and podcasts in all languages."
+    skill_paths:
+      - books
+    update_schedule: weekly
+    trust_tier: Tier-2-Specialized
+    verification:
+      security_scan: required
+      license_policy: allow-cc-by
+      behavior_tested: true
+
+  - id: project-based-learning
+    name: Project-Based Learning
+    repo: practical-tutorials/project-based-learning
+    url: https://github.com/practical-tutorials/project-based-learning
+    branch: master
+    class: mega-reference
+    vendor: practical-tutorials
+    license: MIT
+    description: "Curated list of project-based tutorials where developers learn by building real applications."
+    skill_paths:
+      - tutorials
+    update_schedule: monthly
+    trust_tier: Tier-2-Specialized
+    verification:
+      security_scan: required
+      license_policy: allow-mit
+      behavior_tested: true
+
+  - id: public-apis
+    name: Public APIs Directory
+    repo: public-apis/public-apis
+    url: https://github.com/public-apis/public-apis
+    branch: master
+    class: mega-reference
+    vendor: community
+    license: MIT
+    description: "Collective list of free APIs for use in software and web development."
+    skill_paths:
+      - apis
+    update_schedule: weekly
+    trust_tier: Tier-2-Specialized
+    verification:
+      security_scan: required
+      license_policy: allow-mit
+      behavior_tested: true
+
+  - id: awesome-design-patterns
+    name: Awesome Software Design Patterns
+    repo: DovAmir/awesome-design-patterns
+    url: https://github.com/DovAmir/awesome-design-patterns
+    branch: master
+    class: mega-reference
+    vendor: dovamir
+    license: CC-BY-4.0
+    description: "A curated list of software and architecture related design patterns."
+    skill_paths:
+      - patterns
+    update_schedule: monthly
+    trust_tier: Tier-2-Specialized
+    verification:
+      security_scan: required
+      license_policy: allow-cc-by
+      behavior_tested: true
+
+  - id: awesome-selfhosted
+    name: Awesome Self-Hosted
+    repo: awesome-selfhosted/awesome-selfhosted
+    url: https://github.com/awesome-selfhosted/awesome-selfhosted
+    branch: master
+    class: mega-reference
+    vendor: awesome-selfhosted
+    license: CC-BY-SA-3.0
+    description: "Locally hosted network services and web applications for sovereign infrastructure."
+    skill_paths:
+      - services
+    update_schedule: weekly
+    trust_tier: Tier-2-Specialized
+    verification:
+      security_scan: required
+      license_policy: allow-cc-by-sa
+      behavior_tested: true
+
+  - id: devops-exercises
+    name: DevOps Exercises
+    repo: bregman-arie/devops-exercises
+    url: https://github.com/bregman-arie/devops-exercises
+    branch: master
+    class: mega-reference
+    vendor: bregman-arie
+    license: MIT
+    description: "Comprehensive technical questions, practical exercises, and interview topics for DevOps and SRE."
+    skill_paths:
+      - exercises
+    update_schedule: weekly
+    trust_tier: Tier-2-Specialized
+    verification:
+      security_scan: required
+      license_policy: allow-mit
+      behavior_tested: true
+
+  - id: book-of-secret-knowledge
+    name: The Book of Secret Knowledge
+    repo: trimstray/the-book-of-secret-knowledge
+    url: https://github.com/trimstray/the-book-of-secret-knowledge
+    branch: master
+    class: mega-reference
+    vendor: trimstray
+    license: GPL-3.0
+    description: "A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, and one-liners for sysadmins and security engineers."
+    skill_paths:
+      - cheatsheets
+    update_schedule: weekly
+    trust_tier: Tier-2-Specialized
+    verification:
+      security_scan: required
+      license_policy: allow-gpl
+      behavior_tested: true
+
+  - id: awesome-machine-learning
+    name: Awesome Machine Learning
+    repo: josephmisiti/awesome-machine-learning
+    url: https://github.com/josephmisiti/awesome-machine-learning
+    branch: master
+    class: mega-reference
+    vendor: josephmisiti
+    license: CC-BY-4.0
+    description: "Curated list of awesome machine learning frameworks, libraries, and software categorized by language."
+    skill_paths:
+      - frameworks
+    update_schedule: monthly
+    trust_tier: Tier-2-Specialized
+    verification:
+      security_scan: required
+      license_policy: allow-cc-by
+      behavior_tested: true
+
+  - id: awesome-llm
+    name: Awesome Large Language Models
+    repo: Hannibal046/Awesome-LLM
+    url: https://github.com/Hannibal046/Awesome-LLM
+    branch: main
+    class: mega-reference
+    vendor: hannibal046
+    license: Apache-2.0
+    description: "Curated list of foundational papers, models, courses, and resources for Large Language Models."
+    skill_paths:
+      - papers
+    update_schedule: weekly
+    trust_tier: Tier-2-Specialized
+    verification:
+      security_scan: required
+      license_policy: allow-apache
+      behavior_tested: true
+
+

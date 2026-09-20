@@ -53,6 +53,14 @@ All-skills/
 - **5 Autonomy Levels (L0–L4)**: Informational (`L0`), Read-Only (`L1`), Local Modification (`L2`), External Side Effects (`L3`), and Production-Impacting (`L4`).
 - **Top 10 Reference Ecosystem Repositories**: Synthesizes architecture from `NVIDIA/SkillEvaluator`, `zhengyanzhao1997/SkillRouter`, `oneal2000/SR-Agents`, `SkillLens-AI/skilllens`, `Aakash2512git/skillregistry`, `nikships/skills-registry`, `anthropics/skills`, `darkrishabh/agent-skills-eval`, `simota/agent-skills`, and `open-agent-craft/awesome-agent-skills`.
 
+### 6. 🌐 25 Major Categories & Structural Directories
+- **25 Major Categories Directory**: [**`categories/`**](categories/README.md) organizing exhaustive skill domains with structured READMEs.
+- **Learning Resources**: [**`resources/`**](resources/README.md) with books, video courses, certifications, channels, podcasts, blogs, communities, and tools.
+- **Career & Skill Roadmaps**: [**`roadmaps/`**](roadmaps/README.md) with visual Mermaid roadmaps for AI, Fullstack, DevOps, Security, Data, and Architecture.
+- **Hands-On Projects**: [**`projects/`**](projects/README.md) tiered into Beginner, Intermediate, and Advanced challenges.
+- **High-Yield Cheatsheets**: [**`cheatsheets/`**](cheatsheets/README.md) covering Git, Docker, Linux, System Design, and OWASP.
+- **Canonical Skill Template**: [**`templates/SKILL_ENTRY.template.md`**](templates/SKILL_ENTRY.template.md) standardizing 8-part skill specifications.
+
 ---
 
 ## 🧭 Multi-Tool Compatibility & Harness Setup

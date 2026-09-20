@@ -23,13 +23,15 @@
 </p>
 
 <p align="center">
-  <a href="awesome_skills/CATALOG.md"><strong>Explore Catalog (14,855 Skills)</strong></a> •
+  <a href="awesome_skills/CATALOG.md"><strong>Catalog (14,855)</strong></a> •
+  <a href="categories/"><strong>25 Major Categories</strong></a> •
+  <a href="roadmaps/"><strong>Roadmaps</strong></a> •
+  <a href="projects/"><strong>Projects</strong></a> •
+  <a href="resources/"><strong>Resources</strong></a> •
+  <a href="cheatsheets/"><strong>Cheatsheets</strong></a> •
   <a href="docs/spec/V2_RUNTIME_MASTER_PLAN.md"><strong>v2 Master Plan</strong></a> •
   <a href="docs/spec/AGENT_RUNTIME_SPECIFICATION.md"><strong>Runtime Spec</strong></a> •
-  <a href="#-universal-cli-allskills"><strong>Universal CLI (allskills)</strong></a> •
-  <a href="ontology/"><strong>Universal Ontology</strong></a> •
-  <a href="adapters/"><strong>Platform Adapters</strong></a> •
-  <a href="mcp/"><strong>MCP Architecture</strong></a> •
+  <a href="#-universal-cli-allskills"><strong>Universal CLI</strong></a> •
   <a href="policies/"><strong>Security Policies</strong></a>
 </p>
 
@@ -553,6 +555,69 @@ All-skills v2 actively builds upon architectural patterns established by the pre
 8. **`darkrishabh/agent-skills-eval`** — Empirical A/B evaluation measuring delta performance with-vs-without skills.
 9. **`simota/agent-skills`** — Nexus multi-agent orchestrator, agent personas, and cross-agent recipes.
 10. **`open-agent-craft/awesome-agent-skills`** — Broad domain categorization index and community skill curation ecosystem.
+
+---
+
+## 🌐 Complete 25-Category Universal Taxonomy & Structural Layers
+
+To provide exhaustive, universal coverage across all technical and real-world domains, All-skills provides five dedicated structural layers:
+
+```
+All-skills/
+├── categories/         # 25 Major Categories with dedicated deep-dive directories & READMEs
+├── resources/          # Books, courses, certifications, podcasts, blogs, communities, tools
+├── roadmaps/           # Visual and progressive career roadmaps (AI, Fullstack, DevOps, Security)
+├── projects/           # Hands-on portfolio project collections (Beginner, Intermediate, Advanced)
+└── cheatsheets/        # High-density operational reference sheets (Git, Docker, Linux, OWASP)
+```
+
+### 📂 The 25 Major Categories (`categories/`)
+1. [**AI & Machine Learning**](categories/01-artificial-intelligence-and-machine-learning/README.md) (Deep Learning, Classical ML, NLP, Vision, RL, MLOps, Generative AI)
+2. [**Programming Languages**](categories/02-programming-languages/README.md) (Systems, General-Purpose, Scripting, Functional, Low-Level, Emerging)
+3. [**Web Development**](categories/03-web-development/README.md) (Frontend, CSS Frameworks, State Management, Build Tools, Server Frameworks, APIs)
+4. [**Mobile Development**](categories/04-mobile-development/README.md) (Cross-Platform, Native Android/iOS, Mobile DevOps, Mobile Patterns)
+5. [**DevOps & Infrastructure**](categories/05-devops-and-infrastructure/README.md) (Docker, Kubernetes, CI/CD, Terraform, Multi-Cloud, Observability, SRE)
+6. [**Databases & Data Engineering**](categories/06-databases-and-data-engineering/README.md) (Relational, NoSQL, Vector DBs, Kafka, Spark, dbt, Warehouses)
+7. [**Cybersecurity**](categories/07-cybersecurity/README.md) (OWASP Pentesting, Red Teaming, Blue Teaming, DevSecOps, Applied Cryptography)
+8. [**Data Science & Analytics**](categories/08-data-science-and-analytics/README.md) (Statistics, Exploratory Analysis, Pandas/Polars, Visualization, BI)
+9. [**Blockchain & Web3**](categories/09-blockchain-and-web3/README.md) (Smart Contracts, Solidity, Anchor, DeFi, Zero-Knowledge Proofs)
+10. [**Game Development**](categories/10-game-development/README.md) (Unreal, Unity, Godot, Graphics/Shaders, ECS, Netcode, Physics)
+11. [**Embedded Systems & IoT**](categories/11-embedded-systems-and-iot/README.md) (Microcontrollers, Bare-Metal, RTOS, Protocols, Hardware Design, Robotics)
+12. [**Software Architecture & Design**](categories/12-software-architecture-and-design/README.md) (Design Patterns, DDD, Clean Architecture, Distributed Systems)
+13. [**Computer Science Fundamentals**](categories/13-computer-science-fundamentals/README.md) (Data Structures, Algorithms, OS Internals, Networking, Compilers)
+14. [**Desktop Application Development**](categories/14-desktop-application-development/README.md) (Electron, Tauri, Qt, WinUI, Avalonia, macOS Native)
+15. [**Testing & Quality Assurance**](categories/15-testing-and-quality-assurance/README.md) (TDD, BDD, Playwright, pytest, Vitest, Load Testing, Mutation Testing)
+16. [**Version Control & Collaboration**](categories/16-version-control-and-collaboration/README.md) (Git Internals, Rebase, Bisect, Monorepo Tools, SemVer)
+17. [**Operating Systems Development**](categories/17-operating-systems-development/README.md) (Bootloaders, Monolithic/Microkernels, Virtual Memory, Drivers)
+18. [**Creative & Design Skills**](categories/18-creative-and-design-skills/README.md) (UI/UX, Design Systems, Figma, Blender 3D, Motion, Audio Production)
+19. [**Project Management & Methodologies**](categories/19-project-management-and-methodologies/README.md) (Scrum, Kanban, Shape Up, DORA Metrics, Engineering Leadership)
+20. [**Developer Tools & Productivity**](categories/20-developer-tools-and-productivity/README.md) (Terminal Multiplexers, Modern CLI Tools, AI Coding Workflows)
+21. [**Soft Skills & Career Growth**](categories/21-soft-skills-and-career/README.md) (Technical Communication, RFCs, Code Reviews, Interview Prep)
+22. [**Scientific Computing & Simulation**](categories/22-scientific-computing-and-simulation/README.md) (Numerical Methods, FEA, CFD, Bioinformatics, Geospatial GIS, HPC)
+23. [**Legal, Compliance & Open Source**](categories/23-legal-compliance-and-open-source/README.md) (Open Source Licensing, SBOM, GDPR/CCPA, Accessibility WCAG)
+24. [**Emerging Technologies**](categories/24-emerging-technologies/README.md) (Quantum Computing, Spatial Computing, Edge AI, Autonomous Vehicles)
+25. [**Non-Technical & Real-World Skills**](categories/25-non-technical-and-real-world-skills/README.md) (Personal Finance, Cognitive Productivity, Trades, Practical Sciences)
+
+### 🎯 Standard Skill Format (`templates/SKILL_ENTRY.template.md`)
+All capabilities adhere to a canonical 8-part specification:
+`Name` • `Description` • `Prerequisites` • `Learning Path (Beginner → Expert)` • `Resources (Books, Courses, Certifications)` • `Tools` • `Related Skills` • `Industry Demand` • `Practice Projects`
+
+### 🔗 Integrated Mega Reference Repositories
+- [**sindresorhus/awesome**](https://github.com/sindresorhus/awesome) (Curated Master List)
+- [**ossu/computer-science**](https://github.com/ossu/computer-science) (Self-Taught CS Curriculum)
+- [**jwasham/coding-interview-university**](https://github.com/jwasham/coding-interview-university) (Study Plan for Software Engineering)
+- [**donnemartin/system-design-primer**](https://github.com/donnemartin/system-design-primer) (Distributed System Design)
+- [**kamranahmedse/developer-roadmap**](https://github.com/kamranahmedse/developer-roadmap) (Visual Engineering Roadmaps)
+- [**codecrafters-io/build-your-own-x**](https://github.com/codecrafters-io/build-your-own-x) (Recreate Technology from Scratch)
+- [**EbookFoundation/free-programming-books**](https://github.com/EbookFoundation/free-programming-books) (Open Programming Books)
+- [**practical-tutorials/project-based-learning**](https://github.com/practical-tutorials/project-based-learning) (Hands-On Coding Tutorials)
+- [**public-apis/public-apis**](https://github.com/public-apis/public-apis) (Collective Free API Directory)
+- [**DovAmir/awesome-design-patterns**](https://github.com/DovAmir/awesome-design-patterns) (Software Design Patterns)
+- [**awesome-selfhosted/awesome-selfhosted**](https://github.com/awesome-selfhosted/awesome-selfhosted) (Self-Hosted Sovereign Services)
+- [**bregman-arie/devops-exercises**](https://github.com/bregman-arie/devops-exercises) (DevOps & SRE Questions/Exercises)
+- [**trimstray/the-book-of-secret-knowledge**](https://github.com/trimstray/the-book-of-secret-knowledge) (Tools, Cheatsheets & Manuals)
+- [**josephmisiti/awesome-machine-learning**](https://github.com/josephmisiti/awesome-machine-learning) (ML Frameworks & Toolkits)
+- [**Hannibal046/Awesome-LLM**](https://github.com/Hannibal046/Awesome-LLM) (Foundational Large Language Model Resources)
 
 ---
 
