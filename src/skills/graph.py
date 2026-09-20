@@ -256,6 +256,27 @@ class SkillGraph:
             except Exception:
                 pass
 
+        # 5. Add catalog library skills from awesome_skills/skills_index.json
+        index_file = self.workspace_root / "awesome_skills" / "skills_index.json"
+        if index_file.exists():
+            try:
+                with open(index_file, "r", encoding="utf-8") as f:
+                    idata = json.load(f)
+                for item in idata:
+                    sid = item.get("id")
+                    if sid and sid not in self.nodes:
+                        self.nodes[sid] = SkillNode(
+                            id=sid,
+                            name=item.get("name", sid),
+                            category=item.get("category", "awesome"),
+                            description=item.get("description", ""),
+                            dependencies=item.get("dependencies", []),
+                            conflicts=[],
+                            tags=item.get("tags", [])
+                        )
+            except Exception:
+                pass
+
         # Record explicit conflict edges from CORE_SKILL_RELATIONSHIPS
         for node_id, data in CORE_SKILL_RELATIONSHIPS.items():
             for conflict_id in data.get("conflicts", []):

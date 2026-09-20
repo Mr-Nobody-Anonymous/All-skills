@@ -68,44 +68,8 @@ def create_link(source: Path, target: Path) -> bool:
 
 
 def run_setup(include_global: bool = False, verify: bool = True) -> int:
-    print("=" * 65)
-    print("🚀 ALL SKILLS — AGENT HARNESS INITIALIZER & LINKER")
-    print("=" * 65)
-
-    if not CANONICAL_SOURCE.exists():
-        print(f"Error: Source skills directory not found at {CANONICAL_SOURCE}", file=sys.stderr)
-        return 1
-
-    skill_count = len([d for d in CANONICAL_SOURCE.iterdir() if d.is_dir() and (d / "SKILL.md").exists()])
-    print(f"Found canonical active skills source: {CANONICAL_SOURCE} ({skill_count} skills)\n")
-
-    # Local workspace harnesses
-    local_targets = [
-        ("Claude Code", REPO_ROOT / ".claude" / "skills"),
-        ("Cursor", REPO_ROOT / ".cursor" / "skills"),
-        ("Codex CLI", REPO_ROOT / ".codex" / "skills"),
-    ]
-
-    print("📁 Configuring Local Workspace Targets:")
-    for name, target in local_targets:
-        success = create_link(CANONICAL_SOURCE, target)
-        status_str = "✅ Linked" if success else "⚠️  Failed or already configured"
-        print(f"  • {name:<18} -> {target.relative_to(REPO_ROOT)} : {status_str}")
-
-    # Global user profile harnesses
-    if include_global:
-        home = Path.home()
-        global_targets = [
-            ("Claude Code (User)", home / ".claude" / "skills"),
-            ("Cursor (User)", home / ".cursor" / "skills"),
-            ("Codex CLI (User)", home / ".codex" / "skills"),
-            ("Agents (User)", home / ".agents" / "skills"),
-        ]
-        print("\n🌐 Configuring Global User Profile Targets:")
-        for name, target in global_targets:
-            success = create_link(CANONICAL_SOURCE, target)
-            status_str = "✅ Linked" if success else "⚠️  Failed"
-            print(f"  • {name:<20} -> {target} : {status_str}")
+    from setup_tools import cmd_setup, cmd_verify
+    cmd_setup(include_global=include_global, force=False)
 
     if verify:
         print("\n🔍 Running Verification Checks:")
@@ -129,15 +93,18 @@ def run_setup(include_global: bool = False, verify: bool = True) -> int:
         if route_check.returncode == 0:
             print("  ✅ Canonical Engine: 122 routed skills clean (0 errors).")
 
+        # 4. Platform harness verification
+        cmd_verify()
+
     print("\n" + "=" * 65)
-    print("🎉 Workspace successfully configured for all AI coding agents!")
+    print("🎉 Workspace successfully configured for all 11 AI coding agents!")
     print("=" * 65)
     return 0
 
 
 def check_status() -> None:
-    from setup_tools import print_status
-    print_status()
+    from setup_tools import cmd_status
+    cmd_status()
 
 
 def main() -> int:

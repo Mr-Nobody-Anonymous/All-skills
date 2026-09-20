@@ -1,21 +1,27 @@
 # ⚡ Agent Skills Specification & Platform Overview
 
-A unified, high-performance universal operating system of **12,740+ unique specialized Agent Skills** (**14,855 cataloged instances** across **251 domain categories** and **15 universal super-domains**) designed for modern AI coding assistants (Claude Code, Cursor, Codex CLI, GitHub Copilot, VS Code Agent, Antigravity, Gemini CLI, Windsurf, OpenCode, Cline, Roo Code, and Block Goose).
+A unified, high-performance universal operating system of **12,755+ unique specialized Agent Skills** (**14,855 cataloged instances** across **251 domain categories** and **15 universal super-domains**) designed for modern AI coding assistants (Claude Code, Cursor, Codex CLI, GitHub Copilot, VS Code Agent, Antigravity, Gemini CLI, Windsurf, OpenCode, Cline, Roo Code, and Block Goose).
 
 ---
 
 ## 🏛️ Platform Architecture
 
-The repository is organized into a modular four-layer architecture:
+The repository is organized into a modular architecture:
 
 ```
 All-skills/
+├── registry/              # Single Source of Truth (skills.json, categories.json, ontologies.json, etc.)
 ├── sources/               # Upstream Source Registry (16 verified vendor & community sources) & Policies
 ├── ontology/              # Universal Multi-Dimensional Ontology (Domains, Capabilities, Tasks, Stacks)
+├── policies/              # Security & High-Risk Human Approval Gates (READ, MODIFY, DELETE, PRODUCTION)
+├── mcp/                   # Scalable MCP Connector Architecture (12 Servers, 9 Role Profiles, Policies)
 ├── adapters/              # Platform Adapter Contracts (Claude, Cursor, Codex, Copilot, Gemini, etc.)
 ├── platforms/             # Dynamic Platform Discovery Registry (platforms.yaml)
+├── profiles/              # Role-Based Skill Collections (Software Engineer, Cybersecurity, AI, DevOps, etc.)
+├── evals/                 # Evaluation Benchmarks (Routing, Security, Behavioral, Compatibility)
 ├── skills/                # Canonical Engine (122 core routed skills, 8 core categories)
-├── awesome_skills/        # Awesome Skills Library (14,840 skills across 250 domain categories)
+├── awesome_skills/        # Awesome Skills Library (14,855 skills across 251 domain categories)
+│   └── execution/         # Dedicated 15-Skill Autonomous Execution Layer
 └── .agents/skills/        # Universal Active Agent Harness (70 pre-loaded staff engineer skills)
 ```
 
