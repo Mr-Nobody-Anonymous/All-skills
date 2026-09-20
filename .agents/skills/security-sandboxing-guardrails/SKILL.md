@@ -67,7 +67,8 @@ The following commands and patterns are classified as **Destructive High-Risk** 
 1. **System Obliteration / Disk Destruction**:
    - `rm -rf /`, `rm -rf *`, `del /s /q C:\*`, `format *`, `dd if=... of=/dev/...`, `mkfs.*`
 2. **Untrusted Remote Execution**:
-   - `curl ... | bash`, `wget -O- ... | sh`, `powershell -Command "Invoke-WebRequest ... | iex"`
+   - Piping untrusted remote downloads to shells: executing curl or wget scripts directly into bash/sh
+   - Insecure remote script invocation via powershell DownloadString or iex
 3. **Destructive Source Control**:
    - `git push --force` or `git push -f` (without explicit, confirmed user override)
    - `git reset --hard` on uncommitted or untracked changes without prior state backup

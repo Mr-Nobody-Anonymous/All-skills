@@ -1,0 +1,47 @@
+name: Skill Request
+description: Propose a new skill or playbook for the All Skills platform
+title: "[Skill]: "
+labels: ["skill-request", "enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a new skill! Please describe the use case, required tools, and examples.
+  - type: input
+    id: skill-name
+    attributes:
+      label: Skill Name
+      description: Lowercase kebab-case identifier (e.g., `postgresql-query-optimization`).
+    validations:
+      required: true
+  - type: textarea
+    id: purpose
+    attributes:
+      label: Purpose & Capabilities
+      description: What should this skill teach the AI agent to do?
+    validations:
+      required: true
+  - type: textarea
+    id: triggers
+    attributes:
+      label: Trigger Phrases
+      description: What user prompts should activate this skill?
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - development
+        - security
+        - ai-ml
+        - web
+        - cloud
+        - devops
+        - data
+        - productivity
+        - design
+        - workflow
+    validations:
+      required: true

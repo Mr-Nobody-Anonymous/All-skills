@@ -977,11 +977,81 @@ def cmd_load(args, _parser):
     print(f"\nBody ({len(loaded.body)} chars):\n")
 
     print(loaded.body[: args.max_chars] + ("..." if len(loaded.body) > args.max_chars else ""))
-
     return 0
 
 
+def cmd_recommend(args, _parser):
+    root = _workspace_root()
+    reg = load_registry(root)
+    router = Router(reg)
+    query = args.query
 
+    print("=" * 65)
+    print(f"🎯 RECOMMENDED SKILL PIPELINE FOR: '{query}'")
+    print("=" * 65)
+
+    matches = router.route_chain(query, top_k=args.top_k)
+
+    active_skills_dir = root / ".agents" / "skills"
+    active_matches = []
+    if active_skills_dir.exists():
+        q_low = query.lower()
+        for skill_dir in sorted(active_skills_dir.iterdir()):
+            if skill_dir.is_dir() and (skill_dir / "SKILL.md").exists():
+                name = skill_dir.name
+                if any(w in name for w in q_low.split()) or any(w in q_low for w in name.split("-")):
+                    active_matches.append(name)
+
+    q_low = query.lower()
+    workflow = "workflows/feature-development.md"
+    if any(k in q_low for k in ["bug", "fix", "error", "crash", "investigate", "trace"]):
+        workflow = "workflows/bug-investigation-and-fix.md"
+    elif any(k in q_low for k in ["saas", "launch", "mvp", "product", "stripe", "billing"]):
+        workflow = "workflows/fullstack-saas-launch.md"
+    elif any(k in q_low for k in ["security", "audit", "sast", "vulnerability", "auth"]):
+        workflow = "workflows/security-hardening-audit.md"
+    elif any(k in q_low for k in ["rag", "agent", "mcp", "llm", "pipeline", "eval"]):
+        workflow = "workflows/ai-rag-agent-pipeline.md"
+
+    print("\nRecommended Skills Sequence:")
+    seen = set()
+    idx = 1
+    for m in matches:
+        if m.skill.id not in seen:
+            seen.add(m.skill.id)
+            print(f"  {idx}. {m.skill.id:<32} ({m.skill.category}) — {m.skill.description[:55]}...")
+            idx += 1
+            for comp in m.skill.composes_with:
+                if comp not in seen and reg.get(comp):
+                    seen.add(comp)
+                    entry = reg.get(comp)
+                    print(f"     ↳ {entry.id:<30} (composed) — {entry.description[:50]}...")
+
+    if active_matches:
+        print("\nRelevant Active Playbooks:")
+        for am in active_matches[:6]:
+            print(f"  • active.{am}")
+
+    print(f"\nRecommended Execution Playbook:\n  -> {workflow}")
+    print(f"\nQuickstart State Initialization:\n  python scripts/manage_state.py init {Path(workflow).stem}")
+    print("=" * 65)
+    return 0
+
+
+def cmd_pack(args, _parser):
+    root = _workspace_root()
+    manage_packs_py = root / "scripts" / "manage_packs.py"
+    if not manage_packs_py.exists():
+        print(f"Error: {manage_packs_py} not found.", file=sys.stderr)
+        return 1
+    import subprocess
+    cmd = [sys.executable, str(manage_packs_py)]
+    if getattr(args, "pack_action", None):
+        cmd.append(args.pack_action)
+    if getattr(args, "pack_name", None):
+        cmd.append(args.pack_name)
+    res = subprocess.run(cmd, cwd=str(root))
+    return res.returncode
 
 
 def main():
@@ -1029,10 +1099,18 @@ def main():
     s.add_argument("--top-k", type=int, default=3, help="Number of matches")
 
     s.add_argument("--chain", action="store_true", help="Include compatible follow-on skills")
-
     s.add_argument("--dry-run", action="store_true", help="Print the plan without side effects")
-
     s.set_defaults(func=cmd_route)
+
+    s = sub.add_parser("recommend", help="Recommend skill pipeline and workflow for a goal")
+    s.add_argument("query", help="Goal or user objective (e.g. 'build a SaaS with Next.js and PostgreSQL')")
+    s.add_argument("--top-k", type=int, default=5, help="Number of skill matches")
+    s.set_defaults(func=cmd_recommend)
+
+    s = sub.add_parser("pack", help="Manage curated skill packs (bundles)")
+    s.add_argument("pack_action", nargs="?", default="list", choices=["list", "info", "install"], help="Action to perform")
+    s.add_argument("pack_name", nargs="?", default="", help="Pack name (e.g. ai-engineer-pack)")
+    s.set_defaults(func=cmd_pack)
 
 
 

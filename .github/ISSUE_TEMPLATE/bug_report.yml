@@ -1,0 +1,42 @@
+name: Bug Report
+description: Report a broken skill, routing error, or harness incompatibility
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please report issues with skill instructions, CLI commands, or multi-tool junctions.
+  - type: input
+    id: skill-or-tool
+    attributes:
+      label: Affected Skill or Script
+      description: e.g. `tdd`, `scripts/manage_state.py`, or `.claude/skills`
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the Bug
+      description: What unexpected behavior or failure did you encounter?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: Exact CLI command or agent prompt.
+    validations:
+      required: true
+  - type: dropdown
+    id: harness
+    attributes:
+      label: Agent Harness Used
+      options:
+        - Claude Code
+        - Cursor
+        - Codex CLI
+        - Antigravity / Gemini CLI
+        - Other
+    validations:
+      required: true

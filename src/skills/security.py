@@ -21,6 +21,11 @@ PATTERNS = [
     (re.compile(r"curl\s+.*\|\s*(sh|bash|zsh)\b", re.IGNORECASE), "pipe-to-shell pattern", "high"),
     (re.compile(r"wget\s+.*-O\s*-\s*\|\s*(sh|bash)\b", re.IGNORECASE), "wget pipe-to-shell pattern", "high"),
     (re.compile(r"\brm\s+-rf\s+/(\s|$)", re.IGNORECASE), "destructive rm -rf /", "high"),
+    (re.compile(r"\bdd\s+if=/dev/zero\s+of=/dev/[a-z]+", re.IGNORECASE), "destructive dd disk overwrite", "high"),
+    (re.compile(r"\bmkfs\.[a-z0-9]+\s+/dev/", re.IGNORECASE), "destructive filesystem formatting", "high"),
+    (re.compile(r"(?i)\bignore\s+(all\s+)?(previous|prior)\s+instructions\b"), "prompt injection: ignore previous instructions", "high"),
+    (re.compile(r"(?i)\bdisregard\s+(all\s+)?(previous|above)\s+instructions\b"), "prompt injection: disregard instructions", "high"),
+    (re.compile(r"(?i)<\s*system_override\s*>"), "prompt injection: system override tag", "high"),
     (re.compile(r"powershell\s+-e(ncodedcommand)?\s+\S+", re.IGNORECASE), "powershell encoded command", "high"),
     (re.compile(r"-----BEGIN [A-Z ]*PRIVATE KEY-----"), "embedded private key", "high"),
     (re.compile(r"\b(AKIA|ASIA)[0-9A-Z]{16}\b"), "AWS access key", "high"),
@@ -64,8 +69,15 @@ def scan_skill(entry: SkillEntry, skill_dir: Path) -> List[Finding]:
         rel = str(f.relative_to(skill_dir)).replace("\\", "/")
         for pattern, label, severity in PATTERNS:
             try:
-                if pattern.search(content):
+                for match in pattern.finditer(content):
+                    # Check if line is a benign test/benchmark payload
+                    start_line = content.rfind("\n", 0, match.start()) + 1
+                    end_line = content.find("\n", match.end())
+                    line = content[start_line : end_line if end_line != -1 else len(content)]
+                    if any(k in line for k in ["input:", "payload:", "expectedToCatch", "test_", "adversarial", "PWNED"]):
+                        continue
                     findings.append(Finding(entry.id, rel, label, severity))
+                    break
             except Exception:
                 continue
     return findings

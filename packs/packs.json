@@ -1,0 +1,127 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "version": "1.0.0",
+  "packs": {
+    "web-developer-pack": {
+      "name": "Web Developer Pack",
+      "description": "Essential skill suite for modern frontend and full-stack web engineering.",
+      "category": "web",
+      "skills": [
+        "design-system",
+        "tailwind-design-system",
+        "react-state-management",
+        "angular-state-management",
+        "wcag-audit-patterns",
+        "accessibility-compliance-accessibility-audit",
+        "playwright-skill",
+        "browser-automation",
+        "browser-act"
+      ],
+      "recommended_workflow": "workflows/feature-development.md"
+    },
+    "ai-engineer-pack": {
+      "name": "AI & Agent Engineer Pack",
+      "description": "Comprehensive toolkit for building production LLM apps, MCP servers, and multi-agent systems.",
+      "category": "ai-ml",
+      "skills": [
+        "mcp-builder",
+        "mcp-tool-developer",
+        "ai-engineer",
+        "ai-engineering-toolkit",
+        "agent-memory",
+        "agent-memory-systems",
+        "agent-evaluation",
+        "context-budget-and-pruning",
+        "context-window-management",
+        "multi-agent-architect",
+        "multi-agent-patterns",
+        "multi-agent-brainstorming",
+        "agent-tool-builder",
+        "llm-prompt-optimizer"
+      ],
+      "recommended_workflow": "workflows/ai-rag-agent-pipeline.md"
+    },
+    "fullstack-saas-pack": {
+      "name": "Full-Stack SaaS Pack",
+      "description": "Rapid end-to-end MVP execution: product scoping, database modeling, APIs, auth, billing, and cloud deployment.",
+      "category": "saas",
+      "skills": [
+        "saas-mvp-launcher",
+        "micro-saas-launcher",
+        "database-design",
+        "database-migration",
+        "prisma-expert",
+        "drizzle-orm-expert",
+        "api-designer",
+        "api-and-interface-design",
+        "marketplace-rbac-audit",
+        "cloud-devops",
+        "seo-geo",
+        "copywriting",
+        "email-sequence"
+      ],
+      "recommended_workflow": "workflows/fullstack-saas-launch.md"
+    },
+    "devops-sre-pack": {
+      "name": "DevOps & SRE Pack",
+      "description": "Cloud infrastructure, container orchestration, GitOps, CI/CD pipelines, and serverless architectures.",
+      "category": "devops",
+      "skills": [
+        "cloud-devops",
+        "terraform-infrastructure",
+        "ci-cd-and-automation",
+        "kubernetes-architect",
+        "kubernetes-deployment",
+        "aws-serverless",
+        "performance-profiling"
+      ],
+      "recommended_workflow": "workflows/feature-development.md"
+    },
+    "security-auditor-pack": {
+      "name": "Security & Vulnerability Auditor Pack",
+      "description": "Static code analysis, OWASP Top 10 mitigation, secret management, and adversarial red-teaming.",
+      "category": "security",
+      "skills": [
+        "security-sandboxing-guardrails",
+        "top-web-vulnerabilities",
+        "sast-configuration",
+        "security-scanning-security-sast",
+        "vulnerability-scanner",
+        "marketplace-rbac-audit",
+        "secrets-management",
+        "red-team-tactics"
+      ],
+      "recommended_workflow": "workflows/security-hardening-audit.md"
+    },
+    "data-engineer-pack": {
+      "name": "Data Engineering & Analytics Pack",
+      "description": "Data modeling, schema design, document parsing, and product telemetry schemas.",
+      "category": "data",
+      "skills": [
+        "database-design",
+        "database-migration",
+        "redis-cli",
+        "analytics-product",
+        "pdf-official"
+      ],
+      "recommended_workflow": "workflows/feature-development.md"
+    },
+    "code-quality-pack": {
+      "name": "Code Quality & TDD Pack",
+      "description": "Rigorous test-driven development, AST safe refactoring, debugging, and automated code review.",
+      "category": "development",
+      "skills": [
+        "ast-code-transformation",
+        "code-showcase-systematic-debugging",
+        "tdd",
+        "code-reviewer",
+        "code-review-excellence",
+        "review-and-simplify-changes",
+        "requesting-code-review",
+        "receiving-code-review",
+        "verification-before-completion"
+      ],
+      "recommended_workflow": "workflows/bug-investigation-and-fix.md"
+    }
+  }
+}
