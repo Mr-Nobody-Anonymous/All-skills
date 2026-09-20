@@ -1,0 +1,100 @@
+cff-version: 1.2.0
+message: "If you use this skill in your research or writing, please cite it as below."
+type: software
+title: "Humanities Writing Companion: An Agent Skill for Voice-Preserving Humanities Academic Writing"
+version: 5.0.2
+date-released: 2026-07-13
+authors:
+  - family-names: Shen
+    given-names: Cong
+    alias: tizzy916
+    affiliation: "Tianyu Vision (TIANYU VISION); MA, History of Science, Tsinghua University"
+    website: "https://tianyu.art/"
+abstract: >
+  An end-to-end agent skill, in the open Agent Skills (SKILL.md) format, for humanities
+  scholars (history, philosophy, literature, cultural studies, art history,
+  religious studies, classics, intellectual history, science studies, and
+  adjacent fields) whose primary deliverable is a long-form argumentative
+  text. Twelve work modes (A-L) cover the full writing lifecycle:
+  research-question sharpening (Mode H Socratic), literature mapping
+  (Mode I), plan-only outlining (Mode J), conception and drafting (Mode C),
+  paragraph dialogue (Mode A), chapter review (Mode B four-layer critique),
+  devil's advocate with 1-5 calibration and methodology-focus sub-mode
+  (Mode D), writing-bottleneck assistance (Mode E), draft revision with
+  revision-coach sub-mode (Mode F), blind reading (Mode G), AI-use
+  disclosure for humanities journals (Mode K), and defense/external-review
+  comment integration via a revision-dossier workflow (Mode L). Deep-voice
+  preservation ("my hand writes my voice"), discipline-specific critique
+  routing on a three-layer architecture (6 L1 main disciplines with
+  subfield inheritance, 9 L3 cross-disciplinary fields, 2 humanities-
+  adjacent fields), ADHD-friendly interaction design, multi-agent parallel
+  review fan-out in agent-capable environments, and engineering-grade
+  infrastructure (version control, systematic validation, and a five-script
+  zero-dependency toolchain: AI-trace scanning, pending-marker aggregation,
+  citation-consistency checking, citation format conversion, and Crossref
+  citation verification). Bilingual: SKILL.md, README, and references in
+  English and Chinese.
+keywords:
+  - agent-skill
+  - claude-code
+  - humanities
+  - academic-writing
+  - voice-preservation
+  - human-ai-collaboration
+  - reflexive-writing
+  - devil-advocate
+  - argument-critique
+  - history
+  - philosophy
+  - literary-criticism
+  - cultural-studies
+  - prompt-engineering
+  - bilingual
+license: CC-BY-NC-4.0
+repository-code: "https://github.com/tizzy916/humanities-writing-companion"
+url: "https://github.com/tizzy916/humanities-writing-companion"
+
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.20280772
+    description: "Zenodo archive (Concept DOI; resolves to latest release)"
+
+references:
+  - type: software
+    authors:
+      - family-names: Wu
+        given-names: Cheng-I
+    title: "Academic Research Skills for Claude Code"
+    url: "https://github.com/Imbad0202/academic-research-skills"
+    license: "CC-BY-NC-4.0"
+    year: 2025
+    notes: >
+      Acknowledged design influence on early versions. The Concession
+      Threshold pattern in ARS's reviewer module inspired Mode D's anti-
+      sycophancy mechanism. This skill is an independent project with
+      different scope (end-to-end humanities writing assistance vs.
+      empirical-research pipeline) and entirely independently authored
+      content.
+  - type: article
+    authors:
+      - family-names: Christou
+        given-names: Prokopis A.
+    title: "Reconfiguring Reflexivity in the Era of AI: From 'Turning Back' to 'Looking Forward' Through Constructivist and Posthumanist Lenses"
+    journal: "Qualitative Inquiry"
+    year: 2026
+    doi: "10.1177/10778004261445052"
+  - type: article
+    authors:
+      - family-names: Wiles
+        given-names: Fenix
+    title: "Recursive Cognition in Practice: How AI Dialogue Generated and Analyzed Its Own Methodology"
+    journal: "International Journal of Qualitative Methods"
+    year: 2025
+    doi: "10.1177/16094069251381709"
+  - type: article
+    authors:
+      - family-names: Panke
+        given-names: Stefanie
+    title: "How Can (A)I Research This? An Autoethnographic Exploration of Generative AI in Research, Teaching and Instructional Design"
+    year: 2025
+    doi: "10.1177/00224871251325065"

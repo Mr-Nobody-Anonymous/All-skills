@@ -1,0 +1,45 @@
+{
+  "evals": [
+    {
+      "name": "safety-standards-application",
+      "prompt": "You are developing flight software for a high-power rocket. Describe how you would implement the NASA Power of 10 rules, MISRA-C essentials, and BARR-C guidelines in your C codebase.",
+      "assertions": [
+        "Should mention all 3 NASA Power of 10 rules: no goto, no unbounded recursion, loops with static bounds",
+        "Should mention MISRA-C rules about signedness conversions, initialization, and macro usage",
+        "Should mention BARR-C guidelines about global variables and return code checking",
+        "Should provide specific examples of how to implement each rule"
+      ]
+    },
+    {
+      "name": "state-machine-design",
+      "prompt": "Design a flight state machine for a two-stage rocket with boost, coast, apogee, descent, and recovery phases. Include entry/exit actions and guarded transitions.",
+      "assertions": [
+        "Should define states: pre-flight, boost, coast, apogee, descent, recovery, landed",
+        "Should include transition conditions (e.g., burnout detection for boost->coast)",
+        "Should include entry/exit actions for at least two states",
+        "Should mention guarded transitions with safety checks"
+      ]
+    },
+    {
+      "name": "telemetry-specification",
+      "prompt": "Specify a LoRa-based telemetry system for a rocket that needs to transmit GPS coordinates, altitude, velocity, and sensor data at 1Hz during flight.",
+      "assertions": [
+        "Should specify LoRa packet structure (preamble, sync word, header, payload, CRC)",
+        "Should mention frequency band selection based on launch location (ISM bands)",
+        "Should include FEC (Forward Error Correction) implementation",
+        "Should specify SD card data logging with timestamped files and buffered writes"
+      ]
+    },
+    {
+      "name": "testing-strategy",
+      "prompt": "Define a comprehensive testing strategy for flight software including unit, integration, hardware-in-the-loop (HIL), and flight simulation tests.",
+      "assertions": [
+        "Should require unit tests with mock hardware abstractions",
+        "Should require integration testing for component interfaces",
+        "Should require HIL testing with simulated inputs",
+        "Should require flight simulation end-to-end tests",
+        "Should mention specific frameworks like Unity, CMock, or Ceedling"
+      ]
+    }
+  ]
+}

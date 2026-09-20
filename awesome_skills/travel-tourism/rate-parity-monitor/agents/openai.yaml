@@ -1,0 +1,3 @@
+interface:
+  display_name: "Rate Parity Monitor"
+  short_description: "Price one named hotel and the same dates from several countries via proxy_country, sampling each country a few times so only a gap that holds across the samples is reported."
