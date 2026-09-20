@@ -1,6 +1,7 @@
 ---
 name: context-budget-and-pruning
 description: Instructions and operational protocols for autonomous agents to monitor token utilization, offload history to persistent scratchpads, distill state, and avoid context window rot.
+disable-model-invocation: false
 category: workflow
 version: 1.0.0
 author: Antigravity Agent Engineering

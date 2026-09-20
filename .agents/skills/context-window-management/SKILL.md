@@ -1,6 +1,7 @@
 ---
 name: context-window-management
 description: Strategies for managing LLM context windows including
+disable-model-invocation: false
   summarization, trimming, routing, and avoiding context rot
 risk: critical
 source: vibeship-spawner-skills (Apache 2.0)

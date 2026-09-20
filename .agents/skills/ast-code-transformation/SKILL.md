@@ -1,6 +1,7 @@
 ---
 name: ast-code-transformation
 description: Operational guidelines for performing safe, structural AST-based code modifications and preventing syntax corruption caused by fragile regex replacements.
+disable-model-invocation: false
 category: development
 version: 1.0.0
 author: Antigravity Agent Engineering

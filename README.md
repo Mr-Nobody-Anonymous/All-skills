@@ -1,10 +1,10 @@
 # ⚡ All Skills — Universal Agentic AI Toolkit & Platform
 
 <p align="center">
-  <img src="https://img.shields.io/badge/skills-2%2C166%2B%20Total%20Skills-7c3aed?style=for-the-badge&logo=codewars&logoColor=white" alt="2166+ Skills" />
+  <img src="https://img.shields.io/badge/skills-2%2C167%2B%20Total%20Skills-7c3aed?style=for-the-badge&logo=codewars&logoColor=white" alt="2167+ Skills" />
   <img src="https://img.shields.io/badge/awesome--catalog-2%2C041%20Categorized-0ea5e9?style=for-the-badge&logo=github&logoColor=white" alt="2041 Awesome Skills" />
-  <img src="https://img.shields.io/badge/active--harness-69%20Pre--Loaded-10b981?style=for-the-badge&logo=lightning&logoColor=white" alt="69 Active Skills" />
-  <img src="https://img.shields.io/badge/manifest-191%20Indexed-6366f1?style=for-the-badge&logo=json&logoColor=white" alt="191 Manifest Skills" />
+  <img src="https://img.shields.io/badge/active--harness-70%20Pre--Loaded-10b981?style=for-the-badge&logo=lightning&logoColor=white" alt="70 Active Skills" />
+  <img src="https://img.shields.io/badge/manifest-192%20Indexed-6366f1?style=for-the-badge&logo=json&logoColor=white" alt="192 Manifest Skills" />
   <img src="https://img.shields.io/badge/tests-86%2F86%20Passing-10b981?style=for-the-badge&logo=pytest&logoColor=white" alt="86 Tests Passing" />
   <img src="https://img.shields.io/badge/tools-Claude%20%7C%20Cursor%20%7C%20Codex%20%7C%20Antigravity-ec4899?style=for-the-badge" alt="Multi-Tool Compatible" />
   <img src="https://img.shields.io/badge/dependencies-Zero%20External-0ea5e9?style=for-the-badge&logo=python&logoColor=white" alt="Zero External Dependencies" />
@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <strong>The complete, load-on-demand Agent Skills operating system. Over 2,160+ modular skills, 69 pre-loaded staff-engineer playbooks, Model Context Protocol (MCP) manifest, lifecycle hooks, AST-safe code transformations, and native multi-tool compatibility across Claude Code, Cursor, Codex CLI, and Antigravity.</strong>
+  <strong>The complete, load-on-demand Agent Skills operating system. Over 2,160+ modular skills, 70 pre-loaded staff-engineer playbooks, AAS-compliant stack manifests, lifecycle hooks, multi-step workflows, AST-safe code transformations, and native multi-tool compatibility across Claude Code, Cursor, Codex CLI, and Antigravity.</strong>
 </p>
 
 ---
@@ -134,10 +134,13 @@ Beyond instruction text files, **All Skills** provides a complete execution, val
 ```
 
 ### 📋 Key Infrastructure Components:
-1. **Formal Frontmatter Schema**: [`schemas/skill-frontmatter.schema.json`](schemas/skill-frontmatter.schema.json) validates required properties (`name`, `description`, `category`), triggers, aliases, and tool permissions via `python scripts/validate_schema.py`.
-2. **Central Tool-to-Skill Manifest**: [`manifest.json`](manifest.json) indexes all 191+ platform skills, mapping them to required tool permissions (`bash`, `file_edit`, `ast_grep`, `browser`), MCP servers (`filesystem`, `git`, `fetch`, `memory`), and lifecycle hooks.
-3. **Model Context Protocol (MCP)**: Native [`mcp_config.json`](mcp_config.json) configuring local MCP servers for Claude Code, Cursor, and Antigravity.
-4. **Lifecycle Hooks Engine**: Execute automated gates before and after skills run via [`scripts/run_hook.py`](scripts/run_hook.py):
+1. **Formal Frontmatter Schema**: [`schemas/skill-frontmatter.schema.json`](schemas/skill-frontmatter.schema.json) validates required properties (`name`, `description`, `category`, `disable-model-invocation`), triggers, aliases, and tool permissions via `python scripts/validate_schema.py`.
+2. **Master Intent Router (`which-skill`)**: [`.agents/skills/which-skill/SKILL.md`](.agents/skills/which-skill/SKILL.md) provides instant decision matrix mapping and CLI routing (`python scripts/skills/skills.py route`) across all 2,160+ skills.
+3. **Multi-Step Execution Playbooks (`workflows/`)**: Complete chained workflows in [`workflows/`](workflows/) (`feature-development.md`, `bug-investigation-and-fix.md`, `fullstack-saas-launch.md`, etc.) for autonomous multi-step execution.
+4. **State Tracking & Stack Manifests (`aas-stack.json`)**: Structured sidecar schema ([`schemas/aas-stack.schema.json`](schemas/aas-stack.schema.json)) and CLI ([`scripts/manage_state.py`](scripts/manage_state.py)) for tracking phase progress, variables, and architectural decisions (ADRs) with auto-synced [`CONTEXT.md`](CONTEXT.md).
+5. **Central Tool-to-Skill Manifest**: [`manifest.json`](manifest.json) indexes all 192+ platform skills, mapping them to required tool permissions (`bash`, `file_edit`, `ast_grep`, `browser`), MCP servers (`filesystem`, `git`, `fetch`, `memory`), and lifecycle hooks.
+6. **Model Context Protocol (MCP)**: Native [`mcp_config.json`](mcp_config.json) configuring local MCP servers for Claude Code, Cursor, and Antigravity.
+7. **Lifecycle Hooks Engine**: Execute automated gates before and after skills run via [`scripts/run_hook.py`](scripts/run_hook.py):
    ```bash
    # Pre-execution: check env, snapshot Git baseline, verify tool permissions
    python scripts/run_hook.py pre active.context-budget-and-pruning
@@ -148,23 +151,28 @@ Beyond instruction text files, **All Skills** provides a complete execution, val
    # Inspect all configured hooks
    python scripts/run_hook.py list
    ```
-5. **Deterministic Fallback & Loop Prevention**: [`docs/spec/FALLBACK_AND_RECOVERY.md`](docs/spec/FALLBACK_AND_RECOVERY.md) specifies the 4-tier recovery tree with SHA-256 error fingerprinting to immediately break infinite retry loops.
-6. **Universal Native Directives**: Pre-configured root instruction files that agents automatically ingest:
-   - [`AGENTS.md`](AGENTS.md) — For Antigravity, OpenAI Codex, and multi-agent harnesses
-   - [`CLAUDE.md`](CLAUDE.md) — For Anthropic Claude Code
-   - [`.cursorrules`](.cursorrules) — For Cursor IDE
-   - [`rules/`](rules/) — Modular rules for context pruning, AST edits, and security guardrails
+8. **Automated Setup Scripts (`/setup-skills`)**: One-command initialization for any environment:
+   - Linux / macOS: `./setup.sh`
+   - Windows: `.\setup.bat`
+   - Universal Python CLI: `python scripts/setup_skills.py`
+9. **Deterministic Fallback & Loop Prevention**: [`docs/spec/FALLBACK_AND_RECOVERY.md`](docs/spec/FALLBACK_AND_RECOVERY.md) specifies the 4-tier recovery tree with SHA-256 error fingerprinting to immediately break infinite retry loops.
+10. **Universal Native Directives**: Pre-configured root instruction files that agents automatically ingest:
+    - [`AGENTS.md`](AGENTS.md) — For Antigravity, OpenAI Codex, and multi-agent harnesses
+    - [`CLAUDE.md`](CLAUDE.md) — For Anthropic Claude Code
+    - [`.cursorrules`](.cursorrules) — For Cursor IDE
+    - [`rules/`](rules/) — Modular rules for context pruning, AST edits, and security guardrails
 
 ---
 
-## 🚀 Pre-Loaded Active Harness Skills (69 Skills)
+## 🚀 Pre-Loaded Active Harness Skills (70 Skills)
 
-Your workspace comes pre-loaded with **69 staff-engineer and AI architect playbooks** in [`.agents/skills/`](.agents/skills/) (synced to `.claude/skills/`, `.cursor/skills/`, and `.codex/skills/`):
+Your workspace comes pre-loaded with **70 staff-engineer and AI architect playbooks** in [`.agents/skills/`](.agents/skills/) (synced to `.claude/skills/`, `.cursor/skills/`, and `.codex/skills/`):
 
 <details open>
 <summary><strong>📋 View Pre-Loaded Skill Suites</strong></summary>
 
 ### 1. 🎯 Core Planning & Workflow Architecture
+- `which-skill` — Master agent intent router across all 2,160+ skills and workflows
 - `brainstorming` — Socratic design refinement before implementation
 - `context-budget-and-pruning` — Token budget management, scratchpad offloading, and state distillation
 - `executing-plans` — Batch plan execution with verification checkpoints

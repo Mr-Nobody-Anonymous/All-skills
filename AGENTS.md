@@ -37,3 +37,19 @@ Run lifecycle checks when executing autonomous workflows:
 - **On-failure**: `python scripts/run_hook.py failure <skill_id> --error "details"`
 - **Test Suite**: `python scripts/skills/skills.py test`
 - **Frontmatter Validator**: `python scripts/validate_schema.py`
+
+---
+
+## 4. Workflows & State Tracking
+
+- **Master Intent Router**: Use `which-skill` to locate appropriate skill files across the platform.
+- **Multi-Step Workflows**: Chained execution playbooks live under `workflows/` (`feature-development.md`, `bug-investigation-and-fix.md`, `fullstack-saas-launch.md`, etc.).
+- **State Tracking (`aas-stack.json`)**: Use `python scripts/manage_state.py` to initialize, step through, and synchronize session context to `CONTEXT.md`.
+
+---
+
+## 5. Harness Setup & Commands
+
+- **One-Step Initializer**: Run `./setup.sh` (Linux/macOS) or `.\setup.bat` (Windows).
+- **Setup Command**: Use `/setup-skills` or `python scripts/setup_skills.py`.
+

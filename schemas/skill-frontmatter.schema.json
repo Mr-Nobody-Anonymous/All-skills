@@ -18,6 +18,11 @@
       "minLength": 10,
       "description": "Detailed explanation of what the skill does and exact criteria for when the agent should load it."
     },
+    "disable-model-invocation": {
+      "type": "boolean",
+      "default": false,
+      "description": "Set to true if this skill is strictly user-invoked and should not be loaded autonomously by the model."
+    },
     "category": {
       "type": "string",
       "description": "Functional domain category (e.g. development, security, workflow, ai-ml, design)."

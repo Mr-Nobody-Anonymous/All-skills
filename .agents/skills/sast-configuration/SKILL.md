@@ -1,6 +1,7 @@
 ---
 name: sast-configuration
 description: "Static Application Security Testing (SAST) tool setup, configuration, and custom rule creation for comprehensive security scanning across multiple programming languages."
+disable-model-invocation: false
 risk: critical
 source: community
 date_added: "2026-02-27"

@@ -1,6 +1,7 @@
 ---
 name: receiving-code-review
 description: "Code review requires technical evaluation, not emotional performance."
+disable-model-invocation: false
 risk: critical
 source: community
 date_added: "2026-02-27"

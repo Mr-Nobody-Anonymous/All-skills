@@ -1,6 +1,7 @@
 ---
 name: mcp-tool-developer
 description: "Build Model Context Protocol (MCP) servers and tools from scratch. Full-stack MCP development with TypeScript/Python, testing, deployment, and registry publishing."
+disable-model-invocation: false
 category: developer-tools
 risk: safe
 source: community

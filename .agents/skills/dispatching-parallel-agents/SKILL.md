@@ -1,6 +1,7 @@
 ---
 name: dispatching-parallel-agents
 description: "Use when facing 2+ independent tasks that can be worked on without shared state or sequential dependencies"
+disable-model-invocation: false
 risk: critical
 source: community
 date_added: "2026-02-27"

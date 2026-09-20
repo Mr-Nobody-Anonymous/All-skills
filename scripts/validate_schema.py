@@ -51,6 +51,11 @@ def validate_frontmatter_dict(meta: Dict[str, Any], file_path: Path) -> List[str
     elif len(desc.strip()) < 10:
         errors.append(f"{file_path}: description too short (< 10 chars)")
 
+    # disable-model-invocation validation
+    dmi = meta.get("disable-model-invocation")
+    if dmi is not None and not isinstance(dmi, bool) and str(dmi).lower() not in ("true", "false"):
+        errors.append(f"{file_path}: 'disable-model-invocation' must be a boolean (true/false)")
+
     # tools validation
     tools = meta.get("tools")
     if tools is not None:

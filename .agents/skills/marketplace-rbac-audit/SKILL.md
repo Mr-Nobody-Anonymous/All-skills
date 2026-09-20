@@ -1,6 +1,7 @@
 ---
 name: marketplace-rbac-audit
 description: "Audit multi-role marketplace authorization across roles, resource ownership, tenant boundaries, and order-state transitions; use when access rules need evidence, not UI assumptions."
+disable-model-invocation: false
 category: security
 risk: safe
 source: self

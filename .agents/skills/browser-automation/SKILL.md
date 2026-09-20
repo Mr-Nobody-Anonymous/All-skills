@@ -1,6 +1,7 @@
 ---
 name: browser-automation
 description: Build reliable browser checks using observed UI state, semantic locators, bounded waits, isolated test data and explicit outcome verification.
+disable-model-invocation: false
 risk: critical
 source: vibeship-spawner-skills (Apache 2.0)
 date_added: 2026-02-27

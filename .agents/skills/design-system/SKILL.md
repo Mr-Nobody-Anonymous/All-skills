@@ -1,6 +1,7 @@
 ---
 name: design-system
 description: "Mechanical implementation invariants for frontend design: token architecture, typography hierarchy, loading order, FOUT prevention, chrome stability, motion timing, color semantics. Use with design when building components, pages, or design systems."
+disable-model-invocation: false
 risk: critical
 source: https://github.com/connerkward/ckw-design-skill/tree/main/design-system
 source_repo: connerkward/ckw-design-skill

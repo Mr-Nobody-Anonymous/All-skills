@@ -1,6 +1,7 @@
 ---
 name: security-scanning-security-sast
 description: 'Static Application Security Testing (SAST) for code vulnerability
+disable-model-invocation: false
 
   analysis across multiple languages and frameworks
 

@@ -1,6 +1,7 @@
 ---
 name: api-designer
 description: "Generates complete, production-ready REST API endpoint specifications for any system or domain the user describes."
+disable-model-invocation: false
 risk: safe
 source: https://github.com/LambdaTest/agent-skills/tree/main/api-skill/api-designer
 source_repo: LambdaTest/agent-skills

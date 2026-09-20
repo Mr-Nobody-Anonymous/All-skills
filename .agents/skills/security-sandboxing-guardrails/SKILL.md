@@ -1,6 +1,7 @@
 ---
 name: security-sandboxing-guardrails
 description: Ironclad security boundaries, sandboxing directives, forbidden file targets, and forbidden shell commands for autonomous AI agents.
+disable-model-invocation: false
 category: security
 version: 1.0.0
 author: Antigravity Agent Engineering
