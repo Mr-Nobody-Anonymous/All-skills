@@ -1,16 +1,27 @@
 ---
 name: simulation-gazebo-isaac
-description: "'Use when setting up robot simulation in Gazebo, Isaac Sim, Webots, PyBullet, or MuJoCo with ROS 2 — URDF/SDF physics tuning, sensor noise modeling, sim-to-real transfer, domain randomization, or headless CI simulation. Provides exact physics parameters that match reality (friction, inertia, contact"
+description: "Use when setting up robot simulation in Gazebo, Isaac Sim, Webots, PyBullet, or MuJoCo with ROS 2 — URDF/SDF physics tuning, sensor noise modeling, sim-to-real transfer, domain randomization, or headless CI simulation. Provides exact physics parameters that match reality (friction, inertia, contact params), validated sensor noise values, simulator selection criteria, and working launch/spawn/bridge code for Gazebo Harmonic + ROS 2 Jazzy/Humble."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/ros2/simulation-gazebo-isaac/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # Robot Simulation: Gazebo, Isaac Sim, and the Sim-to-Real Gap
 
 ## 0. Naming disambiguation (gets everyone)

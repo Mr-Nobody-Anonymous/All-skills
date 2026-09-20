@@ -1,16 +1,27 @@
 ---
 name: functional-safety-standards
-description: "'Use when designing, coding, or reviewing any robot that operates near humans — cobots, mobile robots, personal care robots, automotive/AGV systems — and you need force/pressure limits, risk assessment methodology, SIL/PL/ASIL targets, or the safety-vs-functional requirements split. Provides ISO 102"
+description: "Use when designing, coding, or reviewing any robot that operates near humans — cobots, mobile robots, personal care robots, automotive/AGV systems — and you need force/pressure limits, risk assessment methodology, SIL/PL/ASIL targets, or the safety-vs-functional requirements split. Provides ISO 10218-1/-2 and ISO/TS 15066 cobot body-region force/pressure limit tables, ISO 13482 personal care robot categories and hazards, ISO 26262 ASIL determination, IEC 61508 SIL and ISO 13849 PL mapping, risk = severity x exposure x avoidance scoring, safety-rated software patterns (dual-channel, watchdogs, safe-torque-off), and the design mistakes that fail certification audits."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/safety/functional-safety-standards/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # Functional Safety Standards for Robotics
 
 Expert reference for building robots that pass safety assessment and do not hurt people.

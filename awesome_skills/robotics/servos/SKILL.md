@@ -1,16 +1,27 @@
 ---
 name: servos
-description: "Use when controlling hobby servos (SG90, MG90S, MG996R, DS3218) or continuous-rotation servos from Arduino, ESP32, Pico, or any MCU. Covers 50Hz PWM timing, real pulse ranges (500-2400µs, not 1000-2000), power architecture that prevents jitter and brownouts, current spike handling, detach strategies"
+description: "Use when controlling hobby servos (SG90, MG90S, MG996R, DS3218) or continuous-rotation servos from Arduino, ESP32, Pico, or any MCU. Covers 50Hz PWM timing, real pulse ranges (500-2400µs, not 1000-2000), power architecture that prevents jitter and brownouts, current spike handling, detach strategies, and multi-servo control."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/actuators/servos/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # Hobby Servo Control (SG90 / MG90S / MG996R class)
 
 Expert knowledge for generating correct servo code and wiring on the first try. The two failure modes that account for ~90% of servo problems in the field are (1) powering the servo from the MCU board's 5V pin and (2) assuming the pulse range is 1000–2000µs. Both are addressed below with numbers.

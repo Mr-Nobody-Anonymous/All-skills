@@ -1,16 +1,27 @@
 ---
 name: led-matrix-lcd
-description: "Use when wiring or coding MAX7219 LED matrix chains, WS2812B/NeoPixel addressable strips, or 16x2/20x4 character LCDs with PCF8574 I2C backpacks on Arduino, ESP32, Raspberry Pi Pico, or Raspberry Pi. Provides exact wiring tables, voltage/level-shifting rules, current budgets, timing constraints, wor"
+description: "Use when wiring or coding MAX7219 LED matrix chains, WS2812B/NeoPixel addressable strips, or 16x2/20x4 character LCDs with PCF8574 I2C backpacks on Arduino, ESP32, Raspberry Pi Pico, or Raspberry Pi. Provides exact wiring tables, voltage/level-shifting rules, current budgets, timing constraints, working MicroPython/Arduino/Python code patterns, and debugging checklists for displays that show nothing, garbage, or wrong colors."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/displays/led-matrix-lcd/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # LED Matrix, Addressable Pixels & Character LCD — Expert Reference
 
 Three display families, three completely different electrical contracts:

@@ -1,16 +1,27 @@
 ---
 name: ros2-fundamentals
-description: "Use when designing, writing, or debugging ROS2 systems — choosing between topics/services/actions, configuring QoS profiles, fixing 'no messages received' failures, DDS discovery on WiFi, executor deadlocks, node composition, parameters, and Python launch files. Provides production-grade ROS2 archit"
+description: "Use when designing, writing, or debugging ROS2 systems — choosing between topics/services/actions, configuring QoS profiles, fixing "no messages received" failures, DDS discovery on WiFi, executor deadlocks, node composition, parameters, and Python launch files. Provides production-grade ROS2 architecture knowledge for code that works on real robots the first time."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/ros2/ros2-fundamentals/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # ROS2 Fundamentals
 
 This skill covers the ROS2 knowledge that separates working demos from production robots:

@@ -1,16 +1,27 @@
 ---
 name: urdf-robot-description
-description: "'Use when writing or debugging URDF/Xacro robot descriptions for ROS 2 — link/joint trees, inertia tensors, collision geometry, xacro macros, ros2_control tags, Gazebo/Ignition spawning. Provides exact inertia formulas, working xacro patterns, mimic joint rules, mesh simplification strategy, and fix"
+description: "Use when writing or debugging URDF/Xacro robot descriptions for ROS 2 — link/joint trees, inertia tensors, collision geometry, xacro macros, ros2_control tags, Gazebo/Ignition spawning. Provides exact inertia formulas, working xacro patterns, mimic joint rules, mesh simplification strategy, and fixes for the classic 'robot explodes in simulation' and 'no transform from base_link' failures."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/ros2/urdf-robot-description/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # URDF / Xacro Robot Description — Expert Knowledge
 
 ## 0. Mental Model (read this first)

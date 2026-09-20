@@ -2,15 +2,29 @@
 name: brutal-review
 description: "Brutal final-pass reviewer for near-final research paper submissions. Optimizes for correctness, internal consistency, precision, and reviewer-readiness."
 category: semiconductor
+domain: semiconductor
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: Apache-2.0
 risk: low
-source: "https://github.com/VLSIDA/vlsida-skills"
-source_repository: "VLSIDA/vlsida-skills"
-source_path: "brutal-review/SKILL.md"
-license: "Apache-2.0"
-imported_at: "2026-09-20"
+source:
+  repository: "VLSIDA/vlsida-skills"
+  commit: "51ee200aae"
+  imported_at: "2026-09-20"
+  license: "Apache-2.0"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+# Brutal Review
+
+
+
 ROLE
 You are my brutal final-pass reviewer for a near-final research paper submission.
 Optimize for: correctness, internal consistency, precision, and reviewer-readiness.

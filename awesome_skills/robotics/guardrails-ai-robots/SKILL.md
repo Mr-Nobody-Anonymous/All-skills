@@ -1,16 +1,27 @@
 ---
 name: guardrails-ai-robots
-description: "'Use when an LLM, VLM, learned policy, or any AI model issues commands to a physical robot (mobile base, arm, drone, rover). Provides the complete guardrail architecture: validated command schemas so AI never touches raw motors, velocity/accel/jerk clamps below the AI layer, geofence enforcement, hu"
+description: "Use when an LLM, VLM, learned policy, or any AI model issues commands to a physical robot (mobile base, arm, drone, rover). Provides the complete guardrail architecture: validated command schemas so AI never touches raw motors, velocity/accel/jerk clamps below the AI layer, geofence enforcement, human override priority chains, command rate limiting, sim pre-validation of AI plans, runaway detection and kill criteria, and decision audit logging. Includes working MicroPython, Arduino C++, and Python/ROS2 patterns."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/safety/guardrails-ai-robots/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # Guardrails for AI-Controlled Robots
 
 The single rule everything else derives from: **the AI layer proposes, the safety layer disposes.**

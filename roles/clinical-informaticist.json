@@ -1,0 +1,25 @@
+{
+  "role": "Clinical Informatics Specialist",
+  "domain": "clinical-informatics",
+  "description": "Architects healthcare interoperability, EHR/EMR workflows, FHIR/HL7 interfaces, and clinical decision support systems.",
+  "primary_skills": [
+    "fhir",
+    "hl7",
+    "ehr",
+    "clinical-decision-support",
+    "snomed-ct"
+  ],
+  "tools": [
+    "terminal",
+    "bash",
+    "file_read",
+    "file_write",
+    "mcp_call"
+  ],
+  "platforms": [
+    "claude-code",
+    "cursor",
+    "codex",
+    "gemini"
+  ]
+}

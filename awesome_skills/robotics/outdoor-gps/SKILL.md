@@ -1,16 +1,27 @@
 ---
 name: outdoor-gps
-description: "Use when building outdoor robot navigation with GPS/GNSS — choosing receivers, setting up RTK/NTRIP corrections, fusing GPS with IMU and wheel odometry, handling dropouts, implementing geofences, or debugging heading/position errors. Provides accuracy budgets, UTM vs lat/lon code patterns, robot_loc"
+description: "Use when building outdoor robot navigation with GPS/GNSS — choosing receivers, setting up RTK/NTRIP corrections, fusing GPS with IMU and wheel odometry, handling dropouts, implementing geofences, or debugging heading/position errors. Provides accuracy budgets, UTM vs lat/lon code patterns, robot_localization configuration, point-in-polygon geofencing with hysteresis, and compass calibration procedures near motors."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/navigation/outdoor-gps/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # Outdoor GPS/GNSS Navigation
 
 Expert knowledge for GPS-based outdoor robot navigation: what accuracy you actually get, how to get centimeter accuracy with RTK, how to survive GPS dropout, and how to not let coordinate-frame bugs drive your robot into a fence.

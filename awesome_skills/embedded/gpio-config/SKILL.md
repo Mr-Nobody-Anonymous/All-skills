@@ -1,16 +1,27 @@
 ---
 name: gpio-config
-description: "Assigns, validates, and generates code for GPIO pin configurations on Raspberry Pi and ESP32 embedded projects. Activates for queries about GPIO pins, wiring, pin mapping, pin conflicts, I2C, SPI, UART, PWM, 1-Wire, CAN, ADC configuration, device tree overlays, config.txt, sdkconfig, strapping pins,"
+description: "Assigns, validates, and generates code for GPIO pin configurations on Raspberry Pi and ESP32 embedded projects. Activates for queries about GPIO pins, wiring, pin mapping, pin conflicts, I2C, SPI, UART, PWM, 1-Wire, CAN, ADC configuration, device tree overlays, config.txt, sdkconfig, strapping pins, boot pins, flash voltage, or connecting sensors, displays, and modules such as BME280, SSD1306, DHT22, LoRa, GPS, MCP2515, and NeoPixels. Covers Pi 3, Pi 4, Pi 5, Zero 2W, ESP32, ESP32-S2, ESP32-S3, ESP32-C3, and ESP32-C6. Produces platform-specific config files and initialization code for Python gpiozero, RPi.GPIO, Arduino, and ESP-IDF frameworks. Also activates when a device and board are named without mentioning GPIO, e.g. 'BME280 on a Pi 4' or 'connect a GPS to my ESP32', or when pin selection or pin safety questions arise."
 category: embedded
+domain: embedded
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/claudius-ars/embedded-agent-skills"
-source_repository: "claudius-ars/embedded-agent-skills"
-source_path: "embedded-agent-skills/gpio-config/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "claudius-ars/embedded-agent-skills"
+  commit: "51039fe640"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 ## 1 · Platform Detection
 
 ### Explicit Detection

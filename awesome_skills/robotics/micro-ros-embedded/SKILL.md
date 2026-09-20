@@ -1,16 +1,27 @@
 ---
 name: micro-ros-embedded
-description: "'Use when integrating ESP32, Raspberry Pi Pico, or STM32 microcontrollers with ROS 2 via micro-ROS — agent/client setup, serial vs UDP transports, colcon.meta memory tuning, FreeRTOS executor patterns, custom messages, or deciding when a plain serial bridge is the better choice. Provides exact trans"
+description: "Use when integrating ESP32, Raspberry Pi Pico, or STM32 microcontrollers with ROS 2 via micro-ROS — agent/client setup, serial vs UDP transports, colcon.meta memory tuning, FreeRTOS executor patterns, custom messages, or deciding when a plain serial bridge is the better choice. Provides exact transport configs, memory budgets, working rclc code, reconnection patterns, and debugging checklists for the failure modes that consume days (agent handshake loops, middleware memory exhaustion, QoS mismatches, time-sync drift)."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/ros2/micro-ros-embedded/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # micro-ROS on Embedded Targets (ESP32 / Pico / STM32)
 
 micro-ROS puts a real ROS 2 node (rclc + Micro XRCE-DDS client) on a microcontroller.

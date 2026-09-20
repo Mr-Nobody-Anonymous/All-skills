@@ -1,16 +1,27 @@
 ---
 name: pid-control
-description: "Use when implementing or tuning PID control loops on robots — motor speed control, line followers, balance bots, heading hold, position control. Provides exact tuning procedures (P-only first, oscillate-then-halve), anti-windup integral clamping, derivative-on-measurement to eliminate setpoint kick,"
+description: "Use when implementing or tuning PID control loops on robots — motor speed control, line followers, balance bots, heading hold, position control. Provides exact tuning procedures (P-only first, oscillate-then-halve), anti-windup integral clamping, derivative-on-measurement to eliminate setpoint kick, weighted-sensor line-follower PID, fixed sample-time enforcement, and integer-math PID for 8-bit AVR. Working code in MicroPython, Arduino C++, and Python/ROS2."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/algorithms/pid-control/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # PID Control for Robots
 
 PID is one equation and a hundred ways to get it wrong. This skill encodes the correct

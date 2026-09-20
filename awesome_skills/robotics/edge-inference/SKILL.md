@@ -1,16 +1,27 @@
 ---
 name: edge-inference
-description: "Use when deploying ML inference on embedded robotics hardware — Jetson Orin Nano, Google Coral, or Raspberry Pi with accelerators. Provides platform selection criteria, TensorRT ONNX→engine conversion with FP16/INT8 calibration, quantization accuracy tradeoffs, latency vs batching math, thermal thro"
+description: "Use when deploying ML inference on embedded robotics hardware — Jetson Orin Nano, Google Coral, or Raspberry Pi with accelerators. Provides platform selection criteria, TensorRT ONNX→engine conversion with FP16/INT8 calibration, quantization accuracy tradeoffs, latency vs batching math, thermal throttling mitigation, and inference watchdog patterns for production robots."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/ai-ml/edge-inference/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # Edge Inference for Robotics
 
 Expert knowledge for running neural network inference on robot-mounted compute. Covers platform selection, TensorRT workflows, quantization, thermal management, and production reliability patterns.

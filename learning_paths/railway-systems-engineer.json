@@ -1,0 +1,44 @@
+{
+  "path_id": "railway-systems-engineer",
+  "title": "Railway Systems Engineering Path",
+  "domain": "railway",
+  "stages": [
+    {
+      "stage": 1,
+      "name": "Permanent Way",
+      "skills": [
+        "railway-engineering",
+        "railway-track",
+        "railway-infrastructure"
+      ]
+    },
+    {
+      "stage": 2,
+      "name": "Traction & Signaling",
+      "skills": [
+        "railway-electrification",
+        "rail-signaling",
+        "railway-control"
+      ]
+    },
+    {
+      "stage": 3,
+      "name": "Rolling Stock & Dynamics",
+      "skills": [
+        "railway-rolling-stock",
+        "high-speed-rail",
+        "metro-systems"
+      ]
+    },
+    {
+      "stage": 4,
+      "name": "Operations & RAMS",
+      "skills": [
+        "railway-operations",
+        "railway-scheduling",
+        "railway-safety",
+        "railway-maintenance"
+      ]
+    }
+  ]
+}

@@ -1,16 +1,27 @@
 ---
 name: motion-control
-description: "Use when implementing or tuning local motion control for mobile robots - DWA/TEB local planners, pure pursuit path tracking, trajectory scoring, recovery behaviors, velocity smoothing, or collision checking. Provides parameter-level tuning knowledge, the math behind each controller, and the failure"
+description: "Use when implementing or tuning local motion control for mobile robots - DWA/TEB local planners, pure pursuit path tracking, trajectory scoring, recovery behaviors, velocity smoothing, or collision checking. Provides parameter-level tuning knowledge, the math behind each controller, and the failure modes that cause robots to oscillate, stall, or collide in production."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/navigation/motion-control/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # Local Motion Control: DWA, TEB, Pure Pursuit, Recovery, and Collision Checking
 
 Local motion control is the layer that converts a global path into velocity commands at 10-20 Hz

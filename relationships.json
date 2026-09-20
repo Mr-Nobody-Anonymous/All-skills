@@ -171,6 +171,206 @@
         "compliance-management"
       ],
       "domain": "governance"
+    },
+    {
+      "skill": "railway-engineering",
+      "prerequisites": [
+        "civil-engineering",
+        "transportation"
+      ],
+      "complements": [
+        "railway-track",
+        "rail-signaling",
+        "railway-electrification",
+        "railway-safety"
+      ],
+      "alternatives": [
+        "highway-engineering"
+      ],
+      "domain": "railway"
+    },
+    {
+      "skill": "optical-design",
+      "prerequisites": [
+        "physics",
+        "mathematics"
+      ],
+      "complements": [
+        "lens-design",
+        "imaging-systems",
+        "laser-systems",
+        "interferometry"
+      ],
+      "alternatives": [
+        "optoelectronics"
+      ],
+      "domain": "optical-engineering"
+    },
+    {
+      "skill": "hazard-analysis",
+      "prerequisites": [
+        "risk-analysis"
+      ],
+      "complements": [
+        "functional-safety",
+        "fmea",
+        "fta",
+        "hazop",
+        "safety-case"
+      ],
+      "alternatives": [
+        "safety-audit"
+      ],
+      "domain": "safety-engineering"
+    },
+    {
+      "skill": "reactor-physics",
+      "prerequisites": [
+        "physics",
+        "mathematics"
+      ],
+      "complements": [
+        "reactor-design",
+        "thermal-hydraulics",
+        "reactor-safety",
+        "radiation-protection"
+      ],
+      "alternatives": [
+        "particle-physics"
+      ],
+      "domain": "nuclear-engineering"
+    },
+    {
+      "skill": "reservoir-engineering",
+      "prerequisites": [
+        "petrophysics",
+        "earth-science"
+      ],
+      "complements": [
+        "drilling-engineering",
+        "production-engineering",
+        "reservoir-simulation"
+      ],
+      "alternatives": [
+        "geophysics"
+      ],
+      "domain": "petroleum-engineering"
+    },
+    {
+      "skill": "requirements-engineering",
+      "prerequisites": [
+        "api-and-interface-design"
+      ],
+      "complements": [
+        "system-architecture",
+        "mbse",
+        "sysml",
+        "verification-validation"
+      ],
+      "alternatives": [
+        "business-analysis"
+      ],
+      "domain": "systems-engineering"
+    },
+    {
+      "skill": "eye-examination",
+      "prerequisites": [
+        "visual-acuity"
+      ],
+      "complements": [
+        "refraction",
+        "contact-lenses",
+        "glaucoma-screening",
+        "retinal-assessment"
+      ],
+      "alternatives": [
+        "ophthalmology"
+      ],
+      "domain": "optometry"
+    },
+    {
+      "skill": "hearing-assessment",
+      "prerequisites": [
+        "audiometry"
+      ],
+      "complements": [
+        "hearing-aids",
+        "cochlear-implants",
+        "vestibular-assessment"
+      ],
+      "alternatives": [
+        "ent-examination"
+      ],
+      "domain": "audiology"
+    },
+    {
+      "skill": "speech-assessment",
+      "prerequisites": [
+        "linguistics"
+      ],
+      "complements": [
+        "articulation",
+        "language-assessment",
+        "swallowing",
+        "augmentative-communication"
+      ],
+      "alternatives": [
+        "voice-coaching"
+      ],
+      "domain": "speech-language-pathology"
+    },
+    {
+      "skill": "clinical-informatics",
+      "prerequisites": [
+        "database-design",
+        "healthcare"
+      ],
+      "complements": [
+        "fhir",
+        "hl7",
+        "ehr",
+        "clinical-decision-support",
+        "snomed-ct"
+      ],
+      "alternatives": [
+        "health-information-management"
+      ],
+      "domain": "clinical-informatics"
+    },
+    {
+      "skill": "high-performance-computing",
+      "prerequisites": [
+        "c-plus-plus",
+        "parallel-algorithms"
+      ],
+      "complements": [
+        "mpi",
+        "cuda",
+        "gpu-computing",
+        "distributed-computing",
+        "slurm"
+      ],
+      "alternatives": [
+        "cloud-computing"
+      ],
+      "domain": "high-performance-computing"
+    },
+    {
+      "skill": "quantum-algorithms",
+      "prerequisites": [
+        "linear-algebra",
+        "complex-analysis"
+      ],
+      "complements": [
+        "quantum-circuits",
+        "quantum-error-correction",
+        "qiskit",
+        "cirq"
+      ],
+      "alternatives": [
+        "classical-algorithms"
+      ],
+      "domain": "quantum"
     }
   ]
 }

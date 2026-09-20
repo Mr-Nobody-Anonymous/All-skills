@@ -1,16 +1,27 @@
 ---
 name: sdc-sta
-description: "Reference for OpenSTA and SDC timing commands. Use when writing .sdc constraint files, debugging timing with report_checks, setting up multi-corner/multi-mode analysis, or looking up the exact options for commands like create_clock, set_input_delay, set_false_path, set_multicycle_path, report_checks"
+description: "Reference for OpenSTA and SDC timing commands. Use when writing .sdc constraint files, debugging timing with report_checks, setting up multi-corner/multi-mode analysis, or looking up the exact options for commands like create_clock, set_input_delay, set_false_path, set_multicycle_path, report_checks, set_timing_derate, etc."
 category: semiconductor
+domain: semiconductor
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: Apache-2.0
 risk: low
-source: "https://github.com/VLSIDA/vlsida-skills"
-source_repository: "VLSIDA/vlsida-skills"
-source_path: "sdc-sta/SKILL.md"
-license: "Apache-2.0"
-imported_at: "2026-09-20"
+source:
+  repository: "VLSIDA/vlsida-skills"
+  commit: "51ee200aae"
+  imported_at: "2026-09-20"
+  license: "Apache-2.0"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # OpenSTA / SDC Command Reference
 
 This skill fills the STA/SDC gap noted in `openroad-tcl`: OpenROAD itself does not ship structured markdown for SDC commands because those come from OpenSTA. The canonical reference is the OpenSTA user guide PDF, mirrored locally under `refs/`.

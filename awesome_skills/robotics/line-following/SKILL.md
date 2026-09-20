@@ -1,16 +1,27 @@
 ---
 name: line-following
-description: "Use when writing code for line-following robots using reflectance sensors (TCRT5000, QRE1113, or arrays like QTR-8A/8RC, 5-channel TCRT5000 boards). Provides analog vs digital mode selection, startup calibration sweep, weighted-average position algorithm, sensor mounting geometry, ambient light reje"
+description: "Use when writing code for line-following robots using reflectance sensors (TCRT5000, QRE1113, or arrays like QTR-8A/8RC, 5-channel TCRT5000 boards). Provides analog vs digital mode selection, startup calibration sweep, weighted-average position algorithm, sensor mounting geometry, ambient light rejection, and the PID line-follow loop that actually works."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/sensors/line-following/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # Line Following with Reflectance Sensors (TCRT5000 / QRE1113 / QTR arrays)
 
 ## How these sensors actually work

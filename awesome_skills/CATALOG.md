@@ -1,21 +1,22 @@
 # 📚 Awesome Skills Catalog
 
-Complete categorized index of **14,174 Agent Skills** across **218 domain categories**.
+Complete categorized index of **14,690 Agent Skills** across **243 domain categories**.
 
 Every skill contains a standardized, load-on-demand `SKILL.md` instruction playbook with YAML frontmatter, compatible across Claude Code, Cursor, Codex CLI, Antigravity, and Gemini CLI.
 
 ## 🧭 Categories Index
 
 - [3D](#3d) (7 skills)
-- [Accessibility](#accessibility) (17 skills)
+- [Accessibility](#accessibility) (18 skills)
 - [Accounting](#accounting) (64 skills)
 - [Actuarial](#actuarial) (16 skills)
 - [Advertising](#advertising) (83 skills)
 - [Aerospace](#aerospace) (32 skills)
 - [Agency](#agency) (20 skills)
 - [Agent Behavior](#agent-behavior) (5 skills)
-- [Agent Evaluation](#agent-evaluation) (2 skills)
+- [Agent Evaluation](#agent-evaluation) (3 skills)
 - [Agent Orchestration](#agent-orchestration) (27 skills)
+- [Agent Standards](#agent-standards) (1 skills)
 - [Agriculture](#agriculture) (70 skills)
 - [Ai Automation](#ai-automation) (307 skills)
 - [Ai Evaluation](#ai-evaluation) (162 skills)
@@ -27,6 +28,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 - [Archiving](#archiving) (12 skills)
 - [Arts Crafts](#arts-crafts) (10 skills)
 - [Arts Culture](#arts-culture) (5 skills)
+- [Audiology](#audiology) (8 skills)
 - [Automation](#automation) (142 skills)
 - [Automotive](#automotive) (166 skills)
 - [Aviation](#aviation) (30 skills)
@@ -36,7 +38,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 - [Biology](#biology) (537 skills)
 - [Biotech](#biotech) (52 skills)
 - [Blockchain](#blockchain) (7 skills)
-- [Browser Automation](#browser-automation) (3 skills)
+- [Browser Automation](#browser-automation) (21 skills)
 - [Business](#business) (74 skills)
 - [Business Intelligence](#business-intelligence) (4 skills)
 - [Business Strategy](#business-strategy) (50 skills)
@@ -47,6 +49,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 - [Civil Engineering](#civil-engineering) (20 skills)
 - [Cleaning](#cleaning) (20 skills)
 - [Climate Tech](#climate-tech) (20 skills)
+- [Clinical Informatics](#clinical-informatics) (14 skills)
 - [Cloud](#cloud) (155 skills)
 - [Coaching](#coaching) (19 skills)
 - [Code Quality](#code-quality) (18 skills)
@@ -56,6 +59,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 - [Consulting](#consulting) (113 skills)
 - [Content Creation](#content-creation) (247 skills)
 - [Content Writing](#content-writing) (345 skills)
+- [Corporate Communications](#corporate-communications) (10 skills)
 - [Coworking](#coworking) (10 skills)
 - [Creative](#creative) (3 skills)
 - [Creator Economy](#creator-economy) (20 skills)
@@ -71,10 +75,10 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 - [Database](#database) (24 skills)
 - [Dental](#dental) (20 skills)
 - [Design](#design) (225 skills)
-- [Developer Tools](#developer-tools) (8 skills)
+- [Developer Tools](#developer-tools) (14 skills)
 - [Development](#development) (504 skills)
 - [Devops](#devops) (68 skills)
-- [Devsecops](#devsecops) (1 skills)
+- [Devsecops](#devsecops) (125 skills)
 - [Document Processing](#document-processing) (3 skills)
 - [Document Verification](#document-verification) (7 skills)
 - [Documentation](#documentation) (221 skills)
@@ -99,9 +103,12 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 - [Fashion Retail](#fashion-retail) (29 skills)
 - [Film Tv](#film-tv) (2 skills)
 - [Finance](#finance) (735 skills)
+- [Fire Protection](#fire-protection) (10 skills)
 - [Fitness Nutrition](#fitness-nutrition) (19 skills)
 - [Food Beverage](#food-beverage) (60 skills)
+- [Formal Methods](#formal-methods) (11 skills)
 - [Framework](#framework) (13 skills)
+- [Franchise Management](#franchise-management) (23 skills)
 - [Freelance](#freelance) (40 skills)
 - [Frontend](#frontend) (47 skills)
 - [Game Development](#game-development) (64 skills)
@@ -114,6 +121,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 - [Graphics Processing](#graphics-processing) (4 skills)
 - [Growth](#growth) (3 skills)
 - [Healthcare](#healthcare) (329 skills)
+- [High Performance Computing](#high-performance-computing) (22 skills)
 - [Home Diy](#home-diy) (20 skills)
 - [Home Garden](#home-garden) (5 skills)
 - [Hospitality](#hospitality) (50 skills)
@@ -142,18 +150,25 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 - [Mechanical Engineering](#mechanical-engineering) (27 skills)
 - [Media](#media) (73 skills)
 - [Media Journalism](#media-journalism) (34 skills)
+- [Medical Laboratory](#medical-laboratory) (11 skills)
 - [Memory](#memory) (6 skills)
 - [Mental Models](#mental-models) (10 skills)
 - [Meta](#meta) (34 skills)
+- [Metrology](#metrology) (10 skills)
 - [Migration](#migration) (42 skills)
 - [Mining](#mining) (13 skills)
 - [Mlops](#mlops) (20 skills)
 - [Mobile](#mobile) (30 skills)
+- [Museum Studies](#museum-studies) (2 skills)
 - [Music Audio](#music-audio) (56 skills)
 - [Music Industry](#music-industry) (30 skills)
 - [Nonprofit](#nonprofit) (70 skills)
+- [Nuclear Engineering](#nuclear-engineering) (13 skills)
+- [Occupational Therapy](#occupational-therapy) (10 skills)
 - [Offline](#offline) (1 skills)
 - [Operations](#operations) (156 skills)
+- [Optical Engineering](#optical-engineering) (17 skills)
+- [Optometry](#optometry) (11 skills)
 - [Outdoor Adventure](#outdoor-adventure) (15 skills)
 - [Parenting](#parenting) (57 skills)
 - [Personal Development](#personal-development) (78 skills)
@@ -162,10 +177,12 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 - [Pet Care](#pet-care) (8 skills)
 - [Pet Industry](#pet-industry) (15 skills)
 - [Pet Veterinary](#pet-veterinary) (20 skills)
+- [Petroleum Engineering](#petroleum-engineering) (13 skills)
 - [Pharmacy](#pharmacy) (20 skills)
 - [Philanthropy](#philanthropy) (2 skills)
 - [Philosophy](#philosophy) (3 skills)
 - [Photography](#photography) (49 skills)
+- [Physical Therapy](#physical-therapy) (12 skills)
 - [Physics](#physics) (18 skills)
 - [Planning](#planning) (7 skills)
 - [Podcast](#podcast) (8 skills)
@@ -178,28 +195,35 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 - [Professional Services](#professional-services) (20 skills)
 - [Project Management](#project-management) (29 skills)
 - [Psychology](#psychology) (17 skills)
+- [Public Health](#public-health) (12 skills)
 - [Public Relations](#public-relations) (11 skills)
 - [Publishing](#publishing) (9 skills)
 - [Quality](#quality) (2 skills)
+- [Quantum](#quantum) (11 skills)
 - [Quantum Computing](#quantum-computing) (5 skills)
+- [Railway](#railway) (14 skills)
 - [Real Estate](#real-estate) (93 skills)
 - [Reliability](#reliability) (14 skills)
+- [Religious Studies](#religious-studies) (4 skills)
 - [Research](#research) (14 skills)
 - [Resilience](#resilience) (1 skills)
 - [Robotics](#robotics) (74 skills)
 - [Saas](#saas) (28 skills)
+- [Safety Engineering](#safety-engineering) (16 skills)
 - [Sales](#sales) (366 skills)
 - [Science Research](#science-research) (27 skills)
-- [Search](#search) (1 skills)
+- [Search](#search) (14 skills)
 - [Security](#security) (215 skills)
 - [Semiconductor](#semiconductor) (21 skills)
 - [Senior Care](#senior-care) (20 skills)
 - [Seo](#seo) (4 skills)
 - [Skill Authoring](#skill-authoring) (2 skills)
+- [Skill Governance](#skill-governance) (62 skills)
 - [Skilled Trades](#skilled-trades) (29 skills)
 - [Social Impact](#social-impact) (21 skills)
 - [Social Science](#social-science) (14 skills)
 - [Space](#space) (10 skills)
+- [Speech Language Pathology](#speech-language-pathology) (11 skills)
 - [Sports](#sports) (72 skills)
 - [Sports Business](#sports-business) (10 skills)
 - [Sports Fitness](#sports-fitness) (44 skills)
@@ -207,6 +231,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 - [Startup](#startup) (47 skills)
 - [Supply Chain](#supply-chain) (29 skills)
 - [Sustainability](#sustainability) (33 skills)
+- [Systems Engineering](#systems-engineering) (13 skills)
 - [Tax](#tax) (13 skills)
 - [Telecom](#telecom) (46 skills)
 - [Test Automation](#test-automation) (9 skills)
@@ -219,13 +244,13 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 - [Utilities](#utilities) (1 skills)
 - [Ux Design](#ux-design) (48 skills)
 - [Veterinary](#veterinary) (77 skills)
-- [Voice Agents](#voice-agents) (5 skills)
+- [Voice Agents](#voice-agents) (17 skills)
 - [Web Development](#web-development) (66 skills)
 - [Web3](#web3) (20 skills)
 - [Wellness](#wellness) (100 skills)
 - [Writing](#writing) (19 skills)
 
-*Total skills indexed: 14,174 across 218 categories*
+*Total skills indexed: 14,690 across 243 categories*
 
 ---
 
@@ -243,15 +268,16 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
-## <a id="accessibility"></a>📁 Accessibility (17 skills)
+## <a id="accessibility"></a>📁 Accessibility (18 skills)
 
 | Skill ID | Name | Risk | Description |
 | :--- | :--- | :---: | :--- |
-| [accessibility-diff](accessibility/accessibility-diff/SKILL.md) | `accessibility-diff` | `low` | "'Regression check — diff a live page's web accessibility (a11y) violations against a baseline. By default it compares your unc... |
-| [accessibility-fix](accessibility/accessibility-fix/SKILL.md) | `accessibility-fix` | `low` | "'Remediation only — repair web accessibility (a11y) violations against WCAG 2.2 with a baseline, edit, and verify loop. Takes ... |
-| [accessibility-inspect](accessibility/accessibility-inspect/SKILL.md) | `accessibility-inspect` | `low` | "'One page, hands-on manual tier — drive a live page through the web accessibility (a11y) checks a rule engine can't decide: ke... |
+| [accessibility-audit](accessibility/accessibility-audit/SKILL.md) | `accessibility-audit` | `low` | "Whole site or product — a full web accessibility (a11y) audit against WCAG 2.2, following the WCAG-EM methodology. Defines sco... |
+| [accessibility-diff](accessibility/accessibility-diff/SKILL.md) | `accessibility-diff` | `low` | "Regression check — diff a live page's web accessibility (a11y) violations against a baseline. By default it compares your unco... |
+| [accessibility-fix](accessibility/accessibility-fix/SKILL.md) | `accessibility-fix` | `low` | "Remediation only — repair web accessibility (a11y) violations against WCAG 2.2 with a baseline, edit, and verify loop. Takes a... |
+| [accessibility-inspect](accessibility/accessibility-inspect/SKILL.md) | `accessibility-inspect` | `low` | "One page, hands-on manual tier — drive a live page through the web accessibility (a11y) checks a rule engine can't decide: key... |
 | [accessibility-policy-writer](accessibility/accessibility-policy-writer/SKILL.md) | `accessibility-policy-writer` | `low` | "Write accessibility policies. TRIGGERS - Use when user needs help with accessibility-policy-writer related tasks." |
-| [accessibility-scan](accessibility/accessibility-scan/SKILL.md) | `accessibility-scan` | `low` | "'One page, automated tier — run the web accessibility (a11y) rule engine against a live page and locate every violation it can... |
+| [accessibility-scan](accessibility/accessibility-scan/SKILL.md) | `accessibility-scan` | `low` | "One page, automated tier — run the web accessibility (a11y) rule engine against a live page and locate every violation it can ... |
 | [accessibility-testing-plan](accessibility/accessibility-testing-plan/SKILL.md) | `accessibility-testing-plan` | `low` | "Plan accessibility testing. TRIGGERS - Use when user needs help with accessibility-testing-plan related tasks." |
 | [accessibility-training-program](accessibility/accessibility-training-program/SKILL.md) | `accessibility-training-program` | `low` | "Design accessibility training. TRIGGERS - Use when user needs help with accessibility-training-program related tasks." |
 | [accessible-app-design](accessibility/accessible-app-design/SKILL.md) | `accessible-app-design` | `low` | "Design accessible apps. TRIGGERS - Use when user needs help with accessible-app-design related tasks." |
@@ -529,12 +555,13 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
-## <a id="agent-evaluation"></a>📁 Agent Evaluation (2 skills)
+## <a id="agent-evaluation"></a>📁 Agent Evaluation (3 skills)
 
 | Skill ID | Name | Risk | Description |
 | :--- | :--- | :---: | :--- |
 | [agent-evaluation-reporting](agent-evaluation/agent-evaluation-reporting/SKILL.md) | `agent-evaluation-reporting` | `none` | "Use when summarizing agent evaluations where autonomous, assisted, failed, timed-out, or invalid outcomes must remain distinct... |
 | [run-deep-swe](agent-evaluation/run-deep-swe/SKILL.md) | `run-deep-swe` | `critical` | "Run reproducible DeepSWE coding-agent benchmark evaluations through OpenRouter and mini-swe-agent." |
+| [temp_clone_p4](agent-evaluation/temp_clone_p4/SKILL.md) | `evolve-skill` | `low` | "Evolve Skill: measurement-first skill optimizer. Evaluates SKILL.md files against an anchored 9-dimension rubric, validates th... |
 
 ---
 
@@ -569,6 +596,14 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [vibe-delegate](agent-orchestration/vibe-delegate/SKILL.md) | `vibe-delegate` | `critical` | Delegate coding tasks to the Mistral Vibe CLI (`vibe`) only when the user explicitly requests it, while the orchestrator retain... |
 | [warp-delegate](agent-orchestration/warp-delegate/SKILL.md) | `warp-delegate` | `critical` | Delegate coding tasks to the Warp Agent CLI (`oz`) only when the user explicitly requests it, while the orchestrator retains re... |
 | [zcode-delegate](agent-orchestration/zcode-delegate/SKILL.md) | `zcode-delegate` | `critical` | Delegate coding tasks to the Z.AI ZCode CLI only when the user explicitly requests it, while the orchestrator retains review an... |
+
+---
+
+## <a id="agent-standards"></a>📁 Agent Standards (1 skills)
+
+| Skill ID | Name | Risk | Description |
+| :--- | :--- | :---: | :--- |
+| [skill-md](agent-standards/skill-md/SKILL.md) | `skill-md` | `low` | "Authoritative specification for Agent Skills." |
 
 ---
 
@@ -1851,6 +1886,21 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
+## <a id="audiology"></a>📁 Audiology (8 skills)
+
+| Skill ID | Name | Risk | Description |
+| :--- | :--- | :---: | :--- |
+| [audiometry](audiology/audiometry/SKILL.md) | `audiometry` | `low` | "Pure-Tone Air & Bone Conduction Audiometry: ANSI S3.6 calibration standards, Hughson-Westlake threshold search, bone conductio... |
+| [auditory-rehabilitation](audiology/auditory-rehabilitation/SKILL.md) | `auditory-rehabilitation` | `low` | "Aural Rehabilitation & Assistive Listening Devices: Auditory training curricula, communication strategy counseling, FM/Roger a... |
+| [cochlear-implants](audiology/cochlear-implants/SKILL.md) | `cochlear-implants` | `low` | "Cochlear Implant Candidacy & Mapping: Pre-implant audiometric candidacy criteria, speech perception in noise testing, electrod... |
+| [hearing-aids](audiology/hearing-aids/SKILL.md) | `hearing-aids` | `low` | "Hearing Aid Selection, Verification & Dispensing: Real-ear measurement (REM) per ANSI/ASA S3.46, speech mapping, NAL-NL2 and D... |
+| [hearing-assessment](audiology/hearing-assessment/SKILL.md) | `hearing-assessment` | `low` | "Comprehensive Diagnostic Audiologic Evaluation: Case history, otoscopy, pure-tone audiometry, speech audiometry, acoustic immi... |
+| [pediatric-audiology](audiology/pediatric-audiology/SKILL.md) | `pediatric-audiology` | `low` | "Pediatric Hearing Screening & Diagnostics: Auditory Brainstem Response (ABR) threshold testing, Distortion Product Otoacoustic... |
+| [tinnitus](audiology/tinnitus/SKILL.md) | `tinnitus` | `low` | "Tinnitus Evaluation & Management Protocols: Tinnitus pitch and loudness matching, minimum masking level (MML), residual inhibi... |
+| [vestibular-assessment](audiology/vestibular-assessment/SKILL.md) | `vestibular-assessment` | `low` | "Vestibular Function & Balance Diagnostic Testing: Videonystagmography (VNG), caloric irrigation testing, video head impulse te... |
+
+---
+
 ## <a id="automation"></a>📁 Automation (142 skills)
 
 | Skill ID | Name | Risk | Description |
@@ -3031,13 +3081,31 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
-## <a id="browser-automation"></a>📁 Browser Automation (3 skills)
+## <a id="browser-automation"></a>📁 Browser Automation (21 skills)
 
 | Skill ID | Name | Risk | Description |
 | :--- | :--- | :---: | :--- |
+| [add-webmcp](browser-automation/add-webmcp/SKILL.md) | `add-webmcp` | `low` | "Analyze an existing web application, identify safe user-visible capabilities across routes, forms, server actions, handlers, a... |
+| [agent-experience](browser-automation/agent-experience/SKILL.md) | `agent-experience` | `low` | "Audit the developer experience of a product, SDK, docs site, or SKILL.md by dropping multiple Claude subagents at it with only... |
+| [autobrowse](browser-automation/autobrowse/SKILL.md) | `autobrowse` | `low` | "Self-improving browser automation via the auto-research loop. Iteratively runs a browsing task, reads the trace, and improves ... |
+| [browser](browser-automation/browser/SKILL.md) | `browser` | `low` | "Automate web browser interactions using natural language via CLI commands. Use when the user asks to browse websites, navigate... |
 | [browser-act](browser-automation/browser-act/SKILL.md) | `browser-act` | `critical` | "Use BrowserAct for authenticated browser automation, JS-rendered extraction, screenshots, parallel sessions, verification hand... |
 | [browser-harness](browser-automation/browser-harness/SKILL.md) | `browser-harness` | `critical` | "Drive an existing browser through CDP for authenticated, visual, or interactive web automation." |
+| [browser-to-api](browser-automation/browser-to-api/SKILL.md) | `browser-to-api` | `low` | "Turn a website's observable HTTP traffic into a best-effort OpenAPI 3.1 spec by analyzing a `browser-trace` capture. Use when ... |
+| [browser-trace](browser-automation/browser-trace/SKILL.md) | `browser-trace` | `low` | "Capture a full DevTools-protocol trace of any browser automation — CDP firehose, screenshots, and DOM dumps — then bisect the ... |
+| [browser-use-to-stagehand](browser-automation/browser-use-to-stagehand/SKILL.md) | `browser-use-to-stagehand` | `low` | "Migrate browser-use (Python) browser-automation scripts to Stagehand v3 (TypeScript) on Browserbase. Use when the user wants t... |
+| [company-research](browser-automation/company-research/SKILL.md) | `company-research` | `low` | Specialized instructions for company research. |
+| [competitor-analysis](browser-automation/competitor-analysis/SKILL.md) | `competitor-analysis` | `low` | Specialized instructions for competitor analysis. |
+| [cookie-sync](browser-automation/cookie-sync/SKILL.md) | `cookie-sync` | `low` | "Sync cookies from local Chrome to a Browserbase persistent context so the browse CLI can access authenticated sites. Use when ... |
+| [event-prospecting](browser-automation/event-prospecting/SKILL.md) | `event-prospecting` | `low` | Specialized instructions for event prospecting. |
+| [fetch](browser-automation/fetch/SKILL.md) | `fetch` | `low` | "Use this skill when the user wants to retrieve a URL without a full browser session: fetch HTML or JSON from static pages, ins... |
+| [functions](browser-automation/functions/SKILL.md) | `functions` | `low` | "Deploy serverless browser automation as cloud functions using Browserbase. Use when the user wants to deploy browser automatio... |
+| [optimize-agent-prompt](browser-automation/optimize-agent-prompt/SKILL.md) | `optimize-agent-prompt` | `low` | "Builds and improves Browserbase Agent API demos through an Autobrowse-style outer loop: run a fixed task, collect Agent messag... |
+| [safe-browser](browser-automation/safe-browser/SKILL.md) | `safe-browser` | `low` | "Build local constrained-browser agents with a safe_browser tool that owns CDP, enforces a domain allowlist with Fetch intercep... |
+| [search](browser-automation/search/SKILL.md) | `search` | `low` | "Use this skill when the user wants to search the web without a full browser session: find URLs, titles, and metadata for a que... |
 | [skyvern-browser-automation](browser-automation/skyvern-browser-automation/SKILL.md) | `skyvern-browser-automation` | `safe` | "AI-powered browser automation — navigate sites, fill forms, extract structured data, log in with stored credentials, and build... |
+| [ui-test](browser-automation/ui-test/SKILL.md) | `ui-test` | `low` | "AI-powered adversarial UI testing via the browse CLI. Analyzes git diffs to test only what changed, or explores the full app t... |
+| [webmcp-gen](browser-automation/webmcp-gen/SKILL.md) | `webmcp-gen` | `low` | "Create, compile, and validate site-specific WebMCP init scripts from a target URL and desired tool capability. Use when the us... |
 
 ---
 
@@ -3428,6 +3496,27 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [sustainable-mobility-tech](climate-tech/sustainable-mobility-tech/SKILL.md) | `sustainable-mobility-tech` | `low` | Design sustainable mobility technology. TRIGGERS - Use when user needs help with sustainable-mobility-tech related tasks. |
 | [waste-technology-plan](climate-tech/waste-technology-plan/SKILL.md) | `waste-technology-plan` | `low` | Design waste technology solutions. TRIGGERS - Use when user needs help with waste-technology-plan related tasks. |
 | [water-technology-plan](climate-tech/water-technology-plan/SKILL.md) | `water-technology-plan` | `low` | Design water technology solutions. TRIGGERS - Use when user needs help with water-technology-plan related tasks. |
+
+---
+
+## <a id="clinical-informatics"></a>📁 Clinical Informatics (14 skills)
+
+| Skill ID | Name | Risk | Description |
+| :--- | :--- | :---: | :--- |
+| [clinical-analytics](clinical-informatics/clinical-analytics/SKILL.md) | `clinical-analytics` | `low` | "Clinical Quality Measures & Population Health Analytics: eCQM (electronic clinical quality measures), HEDIS quality metric com... |
+| [clinical-data-modeling](clinical-informatics/clinical-data-modeling/SKILL.md) | `clinical-data-modeling` | `low` | "Secondary Clinical Data Models & Common Data Formats: OMOP Common Data Model (OHDSI), i2b2 data structures, PCORnet common dat... |
+| [clinical-decision-support](clinical-informatics/clinical-decision-support/SKILL.md) | `clinical-decision-support` | `low` | "Clinical Decision Support Systems (CDSS) & CDS Hooks: Clinical rule engines, CDS Hooks specification (order-select, patient-vi... |
+| [clinical-workflows](clinical-informatics/clinical-workflows/SKILL.md) | `clinical-workflows` | `low` | "Clinical Process Modeling & Workflow Optimization: BPMN 2.0 clinical workflow modeling, nurse and physician cognitive load ana... |
+| [ehr](clinical-informatics/ehr/SKILL.md) | `ehr` | `low` | "Electronic Health Record (EHR) Architecture & Governance: EHR data models, clinical document architecture (CDA), audit logging... |
+| [emr](clinical-informatics/emr/SKILL.md) | `emr` | `low` | "Electronic Medical Record (EMR) Clinical Workflow Design: Ambulatory and inpatient physician documentation workflows, problem ... |
+| [fhir](clinical-informatics/fhir/SKILL.md) | `fhir` | `low` | "HL7 FHIR RESTful Interoperability & Resource Modeling: FHIR Core resources (Patient, Observation, Condition, Encounter, Diagno... |
+| [health-information-exchange](clinical-informatics/health-information-exchange/SKILL.md) | `health-information-exchange` | `low` | "Regional Health Information Exchange (HIE) Systems: Master Patient Index (MPI) probabilistic matching algorithms, record locat... |
+| [hl7](clinical-informatics/hl7/SKILL.md) | `hl7` | `low` | "HL7 Version 2 & Version 3 Messaging Protocols: HL7 v2 message structure (MSH, PID, PV1, OBR, OBX segments), delimiter parsing,... |
+| [icd](clinical-informatics/icd/SKILL.md) | `icd` | `low` | "ICD-10-CM / ICD-11 Diagnostic Classification Coding: Morbidity coding rules, chapter-specific coding guidelines, combination c... |
+| [interoperability](clinical-informatics/interoperability/SKILL.md) | `interoperability` | `low` | "Health Information Interoperability Standards (TEFCA): C-CDA exchange, Qualified Health Information Networks (QHIN), cross-ent... |
+| [loinc](clinical-informatics/loinc/SKILL.md) | `loinc` | `low` | "LOINC Laboratory & Clinical Observation Coding: LOINC 6-part naming model (Component, Property, Time, System, Scale, Method), ... |
+| [medical-terminology](clinical-informatics/medical-terminology/SKILL.md) | `medical-terminology` | `low` | "Clinical Controlled Vocabularies & Ontology Mapping: Medical concept mapping, cross-walk algorithms, unified medical language ... |
+| [snomed-ct](clinical-informatics/snomed-ct/SKILL.md) | `snomed-ct` | `low` | "SNOMED CT Concept Modeling & Clinical Expressions: SNOMED CT concept identifiers, description logic relationships, post-coordi... |
 
 ---
 
@@ -4513,6 +4602,23 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
+## <a id="corporate-communications"></a>📁 Corporate Communications (10 skills)
+
+| Skill ID | Name | Risk | Description |
+| :--- | :--- | :---: | :--- |
+| [annual-report-communications](corporate-communications/annual-report-communications/SKILL.md) | `annual-report-communications` | `low` | "Corporate Annual Report Narrative & Shareholder Letters: Year-in-review narrative themes, MD&A strategic summary framing, exec... |
+| [change-communications](corporate-communications/change-communications/SKILL.md) | `change-communications` | `low` | "Organizational Transformation & Change Management Messaging: ADKAR model communication alignment, restructuring announcements,... |
+| [corporate-messaging](corporate-communications/corporate-messaging/SKILL.md) | `corporate-messaging` | `low` | "Corporate Brand Narrative & Message Architecture: Core value propositions, corporate narrative pillars, boilerplates, elevator... |
+| [crisis-communications](corporate-communications/crisis-communications/SKILL.md) | `crisis-communications` | `low` | "Corporate Crisis Communication & Rapid Response: Crisis escalation protocols, holding statement templates, 15-minute response ... |
+| [employee-communications](corporate-communications/employee-communications/SKILL.md) | `employee-communications` | `low` | "Organizational Change & Employee Information Flow: Merger and acquisition (M&A) internal communication playbooks, employee ben... |
+| [executive-communications](corporate-communications/executive-communications/SKILL.md) | `executive-communications` | `low` | "C-Suite Thought Leadership & Executive Messaging: CEO keynote scripting, quarterly earnings call executive remarks, executive ... |
+| [internal-communications](corporate-communications/internal-communications/SKILL.md) | `internal-communications` | `low` | "Internal Corporate Communications & Employee Engagement: Executive town hall production, cascading manager communication toolk... |
+| [investor-communications](corporate-communications/investor-communications/SKILL.md) | `investor-communications` | `low` | "Investor Relations Messaging & Earnings Release Strategy: Earnings release press releases, analyst Q&A preparation documents, ... |
+| [organizational-communications](corporate-communications/organizational-communications/SKILL.md) | `organizational-communications` | `low` | "Corporate Policy Dissemination & Cross-Functional Alignment: Code of conduct rollout campaigns, whistleblower policy awareness... |
+| [stakeholder-communications](corporate-communications/stakeholder-communications/SKILL.md) | `stakeholder-communications` | `low` | "Multi-Stakeholder Corporate Engagement Strategies: Stakeholder mapping matrices, shareholder letters, community relations brie... |
+
+---
+
 ## <a id="coworking"></a>📁 Coworking (10 skills)
 
 | Skill ID | Name | Risk | Description |
@@ -5460,18 +5566,24 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
-## <a id="developer-tools"></a>📁 Developer Tools (8 skills)
+## <a id="developer-tools"></a>📁 Developer Tools (14 skills)
 
 | Skill ID | Name | Risk | Description |
 | :--- | :--- | :---: | :--- |
 | [agents-generator](developer-tools/agents-generator/SKILL.md) | `agents-generator` | `critical` | "Generate project-specific AGENTS.md and companion rules by analyzing a codebase. Supports full, minimal, update, and dry-run m... |
 | [android-cli](developer-tools/android-cli/SKILL.md) | `android-cli` | `critical` | Orchestrates Android development tasks including project creation, deployment, SDK management, and environment diagnostics usin... |
+| [blocknote](developer-tools/blocknote/SKILL.md) | `blocknote` | `low` | "Work with BlockNote, a block-based rich text editor for React. Use when the user mentions "blocknote", "BlockNote editor", "bl... |
 | [clarvia-aeo-check](developer-tools/clarvia-aeo-check/SKILL.md) | `clarvia-aeo-check` | `safe` | "Score any MCP server, API, or CLI for agent-readiness using Clarvia AEO (Agent Experience Optimization). Search 15,400+ indexe... |
 | [gh-attach](developer-tools/gh-attach/SKILL.md) | `gh-attach` | `critical` | "Upload and download GitHub user-attachments (screenshots, PDFs, zips, videos) from the terminal; use when asked to attach or e... |
 | [gh-image](developer-tools/gh-image/SKILL.md) | `gh-image` | `critical` | "Upload local images to GitHub and get canonical user-attachments embed URLs; use when asked to attach a screenshot to a PR, is... |
+| [heavy-planner](developer-tools/heavy-planner/SKILL.md) | `heavy-planner` | `low` | "Creates high-clarity product and technical specifications by interrogating requirements before planning. Use when the user ask... |
 | [mcp-tool-developer](developer-tools/mcp-tool-developer/SKILL.md) | `mcp-tool-developer` | `safe` | "Build Model Context Protocol (MCP) servers and tools from scratch. Full-stack MCP development with TypeScript/Python, testing,... |
+| [namecheap-domains](developer-tools/namecheap-domains/SKILL.md) | `namecheap-domains` | `low` | "Manage domains through the Namecheap API — register, renew, transfer, configure DNS, and manage nameservers. Use when the user... |
+| [sharp](developer-tools/sharp/SKILL.md) | `sharp` | `low` | "Process images with the Sharp library for Node.js — resize, convert formats, composite, apply effects, and manage metadata. Us... |
+| [skill-builder](developer-tools/skill-builder/SKILL.md) | `skill-builder` | `low` | "Interactive guide for creating new agent skills from scratch. Use this skill when the user wants to create a skill, write a SK... |
 | [skill-porter](developer-tools/skill-porter/SKILL.md) | `skill-porter` | `critical` | "Preview conservative tool-name translations and copy complete local skill bundles for manual adaptation to Google Antigravity." |
 | [tokenwise](developer-tools/tokenwise/SKILL.md) | `tokenwise` | `critical` | "Measurement-driven model router for Claude Code. Routes Haiku/Sonnet/Opus per task class, logs every routed task with real $ n... |
+| [workflow-orchestration](developer-tools/workflow-orchestration/SKILL.md) | `workflow-orchestration` | `low` | "Orchestrates structured task execution with planning, progress tracking, self-improvement, and verification gates. Use at the ... |
 
 ---
 
@@ -6061,11 +6173,135 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
-## <a id="devsecops"></a>📁 Devsecops (1 skills)
+## <a id="devsecops"></a>📁 Devsecops (125 skills)
 
 | Skill ID | Name | Risk | Description |
 | :--- | :--- | :---: | :--- |
+| [accord](devsecops/accord/SKILL.md) | `accord` | `low` | "Authoring unified specification packages across Business/Development/Design teams via staged elaboration (L0 Vision, L1 Requir... |
+| [agent-skills-stage](devsecops/agent-skills-stage/SKILL.md) | `stage` | `low` | "Generating slides via Marp, reveal.js, or Slidev, designing narrative arcs, and optimizing conference talks with WPM-calibrate... |
+| [anvil](devsecops/anvil/SKILL.md) | `anvil` | `low` | "Building CLI/TUI tools and configuring personal developer environments. Use for terminal interfaces, dotfiles, shell/editor/te... |
+| [architect](devsecops/architect/SKILL.md) | `architect` | `low` | "Designing new skill agents via gap analysis, overlap detection, SKILL.md + reference generation, and Nexus integration. Not fo... |
+| [artisan](devsecops/artisan/SKILL.md) | `artisan` | `low` | "Implementing production frontend code for React/Vue/Svelte: hooks design, state management, Server Components, form handling, ... |
+| [atelier](devsecops/atelier/SKILL.md) | `atelier` | `low` | "Orchestrating design-to-implementation pipelines (code to visual to code closed loop), persisting a project design system acro... |
+| [atlas](devsecops/atlas/SKILL.md) | `atlas` | `low` | "Analyzing dependencies, circular references, and God Classes; authoring ADRs/RFCs. Use for architecture improvement, module de... |
+| [attest](devsecops/attest/SKILL.md) | `attest` | `low` | "Verifying spec compliance: extracts ACs from specs, adversarially checks conformance, generates BDD scenarios and traceability... |
+| [bazaar](devsecops/bazaar/SKILL.md) | `bazaar` | `low` | "Orchestrating super-premium landing-page pipelines (Discover to Launch) across 6 craft axes with rubrics and quality gates. No... |
+| [beacon](devsecops/beacon/SKILL.md) | `beacon` | `low` | "Engineering observability and reliability: SLO/SLI design, distributed tracing, alerting, dashboards, capacity planning, toil ... |
+| [bolt](devsecops/bolt/SKILL.md) | `bolt` | `low` | "Optimizing frontend (re-render, memoization, lazy loading) and backend (N+1, indexing, caching, async) performance, plus conti... |
+| [bond](devsecops/bond/SKILL.md) | `bond` | `low` | "Designing retention strategy, re-engagement, and churn prevention: retention analysis frameworks, re-engagement triggers, gami... |
+| [breach](devsecops/breach/SKILL.md) | `breach` | `low` | "Designing red team attack scenarios, threat models, MITRE ATT&CK/OWASP application, Purple Team exercises, and AI/LLM red team... |
+| [builder](devsecops/builder/SKILL.md) | `builder` | `low` | "Implementing robust business logic, API integrations, data models, and reproducible AI image-generation code with type safety.... |
+| [canon](devsecops/canon/SKILL.md) | `canon` | `low` | "Assessing standards, regulatory controls, and legal-document coverage with cited evidence and proposed wording. Use for OWASP/... |
+| [canvas](devsecops/canvas/SKILL.md) | `canvas` | `low` | "Visualizing code, specs, or context as Mermaid, ASCII, or draw.io diagrams: flowcharts, sequence/state/class/ER, Journey Maps,... |
+| [cast](devsecops/cast/SKILL.md) | `cast` | `low` | "Casting personas: rapid generation from diverse inputs, registry-based persistence and lifecycle, data-driven evolution, inter... |
+| [chain](devsecops/chain/SKILL.md) | `chain` | `low` | "Auditing skill/plugin/MCP supply chains and live package compromise: manifests, hidden injection, IoC scans, persistence-first... |
+| [chisel](devsecops/chisel/SKILL.md) | `chisel` | `low` | "Converting a supplied prompt into an executable specification: detects vague quality/quantity/explanation/style/design/technic... |
+| [clause](devsecops/clause/SKILL.md) | `clause` | `low` | "Reviewing legal documents for Terms of Service, Privacy Policy, and Tokushoho compliance. Detects clause gaps and flags risks.... |
+| [cloak](devsecops/cloak/SKILL.md) | `cloak` | `low` | "Engineering privacy and data governance: PII detection, data flow mapping, consent patterns, GDPR/CCPA-compliant implementatio... |
+| [compass](devsecops/compass/SKILL.md) | `compass` | `low` | "Navigating the skill ecosystem and guiding onboarding. Lists agents, recommends best fit for tasks. Don't use for task executi... |
+| [compete](devsecops/compete/SKILL.md) | `compete` | `low` | "Triggers when researching competitive or professional positioning: market intelligence, engineer brands, profiles, and content... |
+| [crest](devsecops/crest/SKILL.md) | `crest` | `low` | "Building engineer self-branding by turning technical contributions into a professional brand. Use for GitHub/LinkedIn/blog/con... |
+| [crypt](devsecops/crypt/SKILL.md) | `crypt` | `low` | "Designing cryptographic architecture: algorithm selection, key management, E2EE, KMS integration, signature verification, TLS.... |
+| [cue](devsecops/cue/SKILL.md) | `cue` | `low` | "Writing and producing product videos: scripts, storyboards, narration, and reproducible Playwright demo recordings. Use for ex... |
+| [cull](devsecops/cull/SKILL.md) | `cull` | `low` | "Scanning and eradicating supply-chain malware (Shai-Hulud/S1ngularity npm/PyPI worms): IoC scan, OS/IDE persistence, safe cred... |
+| [darwin](devsecops/darwin/SKILL.md) | `darwin` | `low` | "Orchestrating ecosystem self-evolution: lifecycle-phase detection, agent relevance, cross-agent knowledge synthesis, evolution... |
 | [devsecops-supply-chain](devsecops/devsecops-supply-chain/SKILL.md) | `devsecops-supply-chain` | `low` | Generate SBOM (CycloneDX/SPDX), verify SLSA provenance, audit dependency chains, and detect supply chain attack patterns. |
+| [director](devsecops/director/SKILL.md) | `director` | `low` | "Producing automated feature demo videos via Playwright E2E tests: scenario design, recording config, implementation patterns, ... |
+| [echo](devsecops/echo/SKILL.md) | `echo` | `low` | "Simulating users to evaluate existing flows and generate synthetic demand: cognitive walkthroughs, feature requests, unmet nee... |
+| [experiment](devsecops/experiment/SKILL.md) | `experiment` | `low` | "Designing A/B tests: hypothesis docs, sample size, feature flags, significance analysis, CUPED, SRM detection, switchback expe... |
+| [field](devsecops/field/SKILL.md) | `field` | `low` | "Conducting user research: interview guides, usability test plans, qualitative analysis, persona creation, journey mapping. Use... |
+| [flow](devsecops/flow/SKILL.md) | `flow` | `low` | "Implementing CSS/JS animations for hover effects, loading states, modal transitions, and gesture interactions. Use for meaning... |
+| [flux](devsecops/flux/SKILL.md) | `flux` | `low` | "Refracting thinking by challenging assumptions, combining cross-domain knowledge, and shifting perspectives to reframe problem... |
+| [forge](devsecops/forge/SKILL.md) | `forge` | `low` | "Building rapid prototypes for frontend (UI components/pages) and backend (API mocks, simple servers). Use to validate new feat... |
+| [frame](devsecops/frame/SKILL.md) | `frame` | `low` | "Extracting and structuring design context from Figma via MCP Server for downstream implementation agents. Use for Figma-to-cod... |
+| [funnel](devsecops/funnel/SKILL.md) | `funnel` | `low` | "Constructing landing pages from a focused section to a premium multi-stage studio pipeline: structure, copy, conversion, respo... |
+| [gateway](devsecops/gateway/SKILL.md) | `gateway` | `low` | "Designing and reviewing APIs: OpenAPI spec generation, versioning strategy, breaking change detection, REST/GraphQL best pract... |
+| [gauge](devsecops/gauge/SKILL.md) | `gauge` | `low` | "Auditing SKILL.md normalization and compliance: scans the 21-item checklist, classifies violations, produces fix snippets. Use... |
+| [gear](devsecops/gear/SKILL.md) | `gear` | `low` | "Managing dependencies, CI/CD, advanced GitHub Actions workflows, containers, secrets, and operational config. Use for build, w... |
+| [grok](devsecops/grok/SKILL.md) | `grok` | `low` | "Designing regex, parsers, and DSLs for grammar authoring and ReDoS-safe regex. Not for REST APIs (Gateway) or DB schemas (Sche... |
+| [grove](devsecops/grove/SKILL.md) | `grove` | `low` | "Designing and auditing repository structure for humans and LLM agents: layouts, monorepos, docs/tests/scripts, progressive dis... |
+| [growth](devsecops/growth/SKILL.md) | `growth` | `low` | "Optimizing SEO (meta/OGP/JSON-LD/headings), SMO (social sharing), CRO (CTA/form/exit-intent), and GEO (AI citation optimizatio... |
+| [guardian](devsecops/guardian/SKILL.md) | `guardian` | `low` | "Gatekeeping Git/PR by classifying change essence and recommending granularity, naming, and strategy. Use when PR preparation o... |
+| [harvest](devsecops/harvest/SKILL.md) | `harvest` | `low` | "Collecting GitHub PR data and generating work reports. Retrieves PR info via gh commands to auto-generate weekly/monthly repor... |
+| [hearth](devsecops/hearth/SKILL.md) | `hearth` | `low` | "Generating and auditing personal dev environment configs (zsh/tmux/neovim/ghostty) and automating the macOS desktop via AppleS... |
+| [helm](devsecops/helm/SKILL.md) | `helm` | `low` | "Simulating business strategy via short/mid/long-term scenario planning from financial, market, and competitive data. Applies S... |
+| [hone](devsecops/hone/SKILL.md) | `hone` | `low` | "Auditing AI CLI configs and designing, configuring, or debugging Claude Code hooks. Use for Codex/agy/Claude Code config revie... |
+| [ink](devsecops/ink/SKILL.md) | `ink` | `low` | "Generating SVG icons/illustrations, designing icon systems, and constructing sprite symbols. Use when vector assets are needed." |
+| [judge](devsecops/judge/SKILL.md) | `judge` | `low` | "Reviewing code via multi-engine orchestration (Claude + Codex) on three axes — secure, correct, and lean — shipping only findi... |
+| [latch](devsecops/latch/SKILL.md) | `latch` | `low` | "Proposing, configuring, debugging, and maintaining Claude Code hooks (PreToolUse/PostToolUse/Stop and other lifecycle events).... |
+| [launch](devsecops/launch/SKILL.md) | `launch` | `low` | "Planning releases and reporting delivery work from GitHub PR history. Use when versioning, CHANGELOGs, rollout or rollback pla... |
+| [ledger](devsecops/ledger/SKILL.md) | `ledger` | `low` | "Optimizing FinOps and cloud cost: IaC-based estimation, right-sizing, RI/SP recommendations, anomaly detection, budget alerts,... |
+| [lens](devsecops/lens/SKILL.md) | `lens` | `low` | "Comprehending and investigating codebases: structure mapping, feature discovery, data flow tracing for 'does X exist?' or 'how... |
+| [loom](devsecops/loom/SKILL.md) | `loom` | `low` | "Designing a repository's operating layer — which project-local skills, recipes, and orchestration workflows it needs, as one s... |
+| [lore](devsecops/lore/SKILL.md) | `lore` | `low` | "Curating cross-agent knowledge and institutional memory: extracts patterns from agent journals into METAPATTERNS.md, detects k... |
+| [magi](devsecops/magi/SKILL.md) | `magi` | `low` | "Deliberating decisions and founder priorities through multi-perspective, named-expert, and YC-style advisory lenses. Use for v... |
+| [matrix](devsecops/matrix/SKILL.md) | `matrix` | `low` | "Controlling combinatorial explosion across multi-dimensional axes: minimum coverage sets, execution plans, test/deploy/UX/risk... |
+| [mend](devsecops/mend/SKILL.md) | `mend` | `low` | "Remediating known failure patterns automatically from Triage diagnoses and Beacon alerts: runbooks with safety-tier classifica... |
+| [mint](devsecops/mint/SKILL.md) | `mint` | `low` | "Generating test data and fixtures. Use when factory pattern design, boundary value data generation, synthetic data generation,... |
+| [morph](devsecops/morph/SKILL.md) | `morph` | `low` | "Converting document formats (Markdown/Word/Excel/PDF/HTML) and generating reusable conversion scripts. Use for distributable s... |
+| [muse](devsecops/muse/SKILL.md) | `muse` | `low` | "Defining and managing design tokens, applying token systems to existing codebases, building design system foundations. Use for... |
+| [native](devsecops/native/SKILL.md) | `native` | `low` | "Implementing production iOS/Android/macOS native features (SwiftUI, Compose) and iterating a screen against a reference design... |
+| [nest](devsecops/nest/SKILL.md) | `nest` | `low` | "Designing LLM-optimized folder structures: audits and restructures directories for context efficiency, progressive disclosure,... |
+| [nexus](devsecops/nexus/SKILL.md) | `nexus` | `low` | "Orchestrating multi-specialist task chains and scope-adaptive product delivery: classifies intent, selects and executes the mi... |
+| [oath](devsecops/oath/SKILL.md) | `oath` | `low` | "Auditing regulatory compliance (SOC2/PCI-DSS/HIPAA/ISO 27001): maps requirements, checks controls, designs audit trails, imple... |
+| [omen](devsecops/omen/SKILL.md) | `omen` | `low` | "Enumerating failure modes via pre-mortem analysis. Systematically identifies failure scenarios for plans, designs, and feature... |
+| [oracle](devsecops/oracle/SKILL.md) | `oracle` | `low` | "Designing and evaluating AI/ML systems: prompt engineering, RAG design, LLM application patterns, AI safety, evaluation framew... |
+| [orbit](devsecops/orbit/SKILL.md) | `orbit` | `low` | "Running autonomous loops for nexus-autoloop. Generates script sets from goals, designs operation contracts, audits live loops,... |
+| [palette](devsecops/palette/SKILL.md) | `palette` | `low` | "Improving usability, interaction quality, cognitive load reduction, feedback design, and a11y compliance. Use when improving U... |
+| [pdm](devsecops/pdm/SKILL.md) | `pdm` | `low` | "Navigating delivery status read-only: reconciles planned scope (specs/roadmap/PRD) against implemented code for what's built v... |
+| [pipe](devsecops/pipe/SKILL.md) | `pipe` | `low` | "Designing GitHub Actions workflows in depth: trigger strategy, security hardening, performance optimization, PR automation, an... |
+| [pixel](devsecops/pixel/SKILL.md) | `pixel` | `low` | "Generating pixel-accurate HTML/CSS code from image mockups (PNG/JPG/screenshots) and performing visual verification for faithf... |
+| [plea](devsecops/plea/SKILL.md) | `plea` | `low` | "Role-playing as end users to generate authentic feature requests, surface unmet needs, and challenge team assumptions. Not for... |
+| [polyglot](devsecops/polyglot/SKILL.md) | `polyglot` | `low` | "Implementing i18n and l10n: extracts hardcoded strings to t() functions, integrates Intl API for date/currency/number formatti... |
+| [port](devsecops/port/SKILL.md) | `port` | `low` | "Designing web-to-iOS/Android porting strategy: feature parity matrices, native architecture maps, phased Strangler-Fig roadmap... |
+| [probe](devsecops/probe/SKILL.md) | `probe` | `low` | "Integrating OWASP ZAP/Burp Suite/Nuclei, planning penetration tests, executing DAST, and scanning for vulnerabilities. For run... |
+| [prose](devsecops/prose/SKILL.md) | `prose` | `low` | "Writing user-facing UX text including microcopy, error messages, voice and tone design, onboarding copy, and accessibility tex... |
+| [prune](devsecops/prune/SKILL.md) | `prune` | `low` | "Cleaning up the skill ecosystem: auditing the agent roster for overlap and inactivity, proposing merges and sunset plans. Prop... |
+| [pulse](devsecops/pulse/SKILL.md) | `pulse` | `low` | "Defining KPIs, tracking events, and dashboards: North Star Metric, funnel and cohort analysis, test-intelligence views. GA4/Am... |
+| [quill](devsecops/quill/SKILL.md) | `quill` | `low` | "Adding JSDoc/TSDoc, updating READMEs, replacing any types with proper definitions, and adding high-value comments to complex l... |
+| [radar](devsecops/radar/SKILL.md) | `radar` | `low` | "Adding edge-case tests, repairing flaky tests, and improving coverage. Use when test gaps need filling or regressions need gua... |
+| [rally](devsecops/rally/SKILL.md) | `rally` | `low` | "Orchestrating multi-session parallel execution via Claude Code Agent Teams API and Codex CLI Subagents — launch, manage, coord... |
+| [rank](devsecops/rank/SKILL.md) | `rank` | `low` | "Quantifying priority by scoring competing items with ICE/RICE/WSJF/MoSCoW/Cost of Delay/Kano. No code. Use to prioritize featu... |
+| [relay](devsecops/relay/SKILL.md) | `relay` | `low` | "Integrating messaging platforms and bots: channel adapters, webhook handlers, WebSocket servers, event-driven architecture, bo... |
+| [riff](devsecops/riff/SKILL.md) | `riff` | `low` | "Brainstorming interactively to deepen ideas via four modes (Expand/Propose/Evaluate/Subtract). Does not write code. Not for de... |
+| [ripple](devsecops/ripple/SKILL.md) | `ripple` | `low` | "Analyzing pre-change impact across vertical (dependency chains, files) and horizontal (pattern consistency, naming) dimensions... |
+| [saga](devsecops/saga/SKILL.md) | `saga` | `low` | "Designing narratives that tell product and feature use cases as customer-centric stories. Use when customer experience storyte... |
+| [sage](devsecops/sage/SKILL.md) | `sage` | `low` | "Advising founders YC-style — socratic probing to surface the #1 bottleneck, anti-pattern detection, and 1-2 week action items.... |
+| [scaffold](devsecops/scaffold/SKILL.md) | `scaffold` | `low` | "Provisioning infrastructure via cloud IaC (Terraform/OpenTofu/CloudFormation/Pulumi) and local dev environments (Docker Compos... |
+| [schema](devsecops/schema/SKILL.md) | `schema` | `low` | "Designing database schemas, migrations, and multi-tenant architecture: RLS, tenant routing, provisioning, quotas, and isolatio... |
+| [scout](devsecops/scout/SKILL.md) | `scout` | `low` | "Investigating bugs via root cause analysis, reproduction steps, and impact assessment. Investigation-only — finds why bugs occ... |
+| [scribe](devsecops/scribe/SKILL.md) | `scribe` | `low` | "Authoring standalone and cross-team specifications: PRD/SRS/HLD/LLD, staged L0-L4 unified packages, BDD acceptance criteria, a... |
+| [seek](devsecops/seek/SKILL.md) | `seek` | `low` | "Designing search engines and vector DBs for full-text, vector, and hybrid retrieval, including permission-aware retrieval for ... |
+| [sentinel](devsecops/sentinel/SKILL.md) | `sentinel` | `low` | "Analyzing code statically for security flaws: hardcoded secrets, SQL injection, input validation, security headers, dependency... |
+| [shard](devsecops/shard/SKILL.md) | `shard` | `low` | "Designing multi-tenant architectures with tenant isolation strategies, RLS, routing, and scale design for SaaS. Use when desig... |
+| [sherpa](devsecops/sherpa/SKILL.md) | `sherpa` | `low` | "Guiding workflows by decomposing complex tasks (Epics) into Atomic Steps under 15 minutes each, with progress tracking and dri... |
+| [shift](devsecops/shift/SKILL.md) | `shift` | `low` | "Orchestrating migrations, upgrades, and modernization across frameworks, libraries, APIs, databases, and dependencies. Generat... |
+| [siege](devsecops/siege/SKILL.md) | `siege` | `low` | "Verifying system resilience via load testing, contract testing, chaos engineering, and mutation testing. Use for limit verific... |
+| [sigil](devsecops/sigil/SKILL.md) | `sigil` | `low` | "Designing a repository's project-local operating layer and generating its skills, recipes, workflows, and routing map. Not for... |
+| [sketch](devsecops/sketch/SKILL.md) | `sketch` | `low` | "Generating AI image-generation code using the Gemini API. Handles text-to-image generation, image editing, and prompt optimiza... |
+| [snap](devsecops/snap/SKILL.md) | `snap` | `low` | "Automating iOS UI via XCUITest and fastlane snapshot pipelines for App Store screenshots. Not for cross-platform E2E (Voyager)... |
+| [spark](devsecops/spark/SKILL.md) | `spark` | `low` | "Proposing new features leveraging existing data/logic as Markdown specifications. Use when brainstorming new features, product... |
+| [stream](devsecops/stream/SKILL.md) | `stream` | `low` | "Designing ETL/ELT pipelines, visualizing data flows, selecting batch/streaming approaches, and architecting Kafka/Airflow/dbt ... |
+| [summon](devsecops/summon/SKILL.md) | `summon` | `low` | "Channeling the documented thinking of named notable figures (an 'itako' medium) — their mental models, heuristics, and decisio... |
+| [sweep](devsecops/sweep/SKILL.md) | `sweep` | `low` | "Detecting unnecessary files, unused code, and orphaned files, and proposing safe deletion. Not for removal execution (Builder)... |
+| [tempo](devsecops/tempo/SKILL.md) | `tempo` | `low` | "Designing scheduling and time-aware logic for cron, timezone/DST, retry/backoff, and business-calendar systems. Use when sched... |
+| [titan](devsecops/titan/SKILL.md) | `titan` | `low` | "Delivering working code fastest via build-first product delivery through minimum agent chains; S/M scopes skip planning and bu... |
+| [tome](devsecops/tome/SKILL.md) | `tome` | `low` | "Converting technical knowledge into durable learning documents and publishable articles. Use for diff-based teaching, decision... |
+| [trace](devsecops/trace/SKILL.md) | `trace` | `low` | "Analyzing session replays, extracting persona-based behavioral patterns, and storytelling UX issues. Reads the 'why' from real... |
+| [trail](devsecops/trail/SKILL.md) | `trail` | `low` | "Investigating git history, analyzing regression root causes, and performing code archaeology. Time-travels through commits to ... |
+| [trawl](devsecops/trawl/SKILL.md) | `trawl` | `low` | "Architecting crawl and scraping systems: distributed crawler topology, URL frontier, politeness, compliance. Architecture-only... |
+| [triage](devsecops/triage/SKILL.md) | `triage` | `low` | "Responding to incidents: identifies impact scope, formulates recovery procedures, creates postmortems. Use when incident respo... |
+| [tuner](devsecops/tuner/SKILL.md) | `tuner` | `low` | "Tuning database queries via EXPLAIN ANALYZE, query plan optimization, index recommendations, and slow query detection. Not for... |
+| [vector](devsecops/vector/SKILL.md) | `vector` | `low` | "Automating browsers via Playwright and Chrome DevTools for data collection, form interaction, screenshot capture, and network ... |
+| [vigil](devsecops/vigil/SKILL.md) | `vigil` | `low` | "Engineering detection rules (Sigma/YARA), detection coverage mapping, threat hunting hypotheses, Purple Team Blue side, Detect... |
+| [vision](devsecops/vision/SKILL.md) | `vision` | `low` | "Directing UI/UX creative work — redesigns, new designs, trend application, Design System construction, Muse/Palette/Flow/Forge... |
+| [vitrine](devsecops/vitrine/SKILL.md) | `vitrine` | `low` | "Authoring Storybook stories, component catalogs, and Visual Regression integration (CSF 3.0/Factories, Storybook 10 ESM-only, ... |
+| [voice](devsecops/voice/SKILL.md) | `voice` | `low` | "Collecting user feedback via NPS surveys, review analysis, sentiment analysis, feedback classification, and insight extraction... |
+| [void](devsecops/void/SKILL.md) | `void` | `low` | "Verifying YAGNI, cutting scope, and proposing complexity reductions. A 'subtraction' agent questioning the justification for e... |
+| [voyager](devsecops/voyager/SKILL.md) | `voyager` | `low` | "Authoring web and native E2E tests, including Playwright, Appium, XCUITest, device farms, visual regression, and App Store scr... |
+| [weave](devsecops/weave/SKILL.md) | `weave` | `low` | "Designing workflows and state machines. Use when state transition design, invalid transition detection, Saga patterns, or appr... |
+| [zen](devsecops/zen/SKILL.md) | `zen` | `low` | "Refactoring code: variable naming, function extraction, magic number constants, dead code removal. Does not change behavior. N... |
+| [zine](devsecops/zine/SKILL.md) | `zine` | `low` | "Authoring tech blog/article series for note/Zenn/Qiita/dev.to. Not for specs (Scribe) or microcopy (Prose)." |
 
 ---
 
@@ -8369,6 +8605,23 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
+## <a id="fire-protection"></a>📁 Fire Protection (10 skills)
+
+| Skill ID | Name | Risk | Description |
+| :--- | :--- | :---: | :--- |
+| [emergency-lighting](fire-protection/emergency-lighting/SKILL.md) | `emergency-lighting` | `low` | "Emergency Lighting & Exit Signage Photometrics: Illuminance level calculations (1.0 foot-candle average), 90-minute battery ba... |
+| [evacuation](fire-protection/evacuation/SKILL.md) | `evacuation` | `low` | "Emergency Egress Modeling & Evacuation Dynamics: Required Safe Egress Time (RSET) vs Available Safe Egress Time (ASET), occupa... |
+| [fire-alarm](fire-protection/fire-alarm/SKILL.md) | `fire-alarm` | `low` | "Fire Detection & Signaling System Design: NFPA 72 requirements, smoke and heat detector placement, notification appliance circ... |
+| [fire-code-compliance](fire-protection/fire-code-compliance/SKILL.md) | `fire-code-compliance` | `low` | "Building Fire Code Compliance & Plan Review: International Building Code (IBC) Chapter 9, NFPA 1/101 audit checklists, hazardo... |
+| [fire-compartmentation](fire-protection/fire-compartmentation/SKILL.md) | `fire-compartmentation` | `low` | "Passive Fire Protection & Fire Resistance Ratings: Fire walls, smoke barriers, penetration firestopping systems (ASTM E814), f... |
+| [fire-modeling](fire-protection/fire-modeling/SKILL.md) | `fire-modeling` | `low` | "Computational Fire Dynamics & CFD Simulation: NIST Fire Dynamics Simulator (FDS), heat release rate (HRR) curves, soot yield p... |
+| [fire-protection-engineering](fire-protection/fire-protection-engineering/SKILL.md) | `fire-protection-engineering` | `low` | "Industrial Fire Protection & Special Hazards: Clean agent suppression systems (FM-200, Novec 1230 per NFPA 2001), deluge foam-... |
+| [fire-risk-assessment](fire-protection/fire-risk-assessment/SKILL.md) | `fire-risk-assessment` | `low` | "Comprehensive Fire Hazard & Risk Assessment: Life safety assessments per NFPA 101, fuel load density calculations, egress widt... |
+| [smoke-control](fire-protection/smoke-control/SKILL.md) | `smoke-control` | `low` | "Smoke Management & Mechanical Smoke Control: Atrium smoke exhaust calculations (NFPA 92), stairwell pressurization systems, sm... |
+| [sprinkler-systems](fire-protection/sprinkler-systems/SKILL.md) | `sprinkler-systems` | `low` | "Automatic Water Sprinkler System Hydraulics: NFPA 13 calculations, Hazen-Williams friction loss formula, density/area design c... |
+
+---
+
 ## <a id="fitness-nutrition"></a>📁 Fitness Nutrition (19 skills)
 
 | Skill ID | Name | Risk | Description |
@@ -8462,6 +8715,24 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
+## <a id="formal-methods"></a>📁 Formal Methods (11 skills)
+
+| Skill ID | Name | Risk | Description |
+| :--- | :--- | :---: | :--- |
+| [dependent-types](formal-methods/dependent-types/SKILL.md) | `dependent-types` | `low` | "Dependently Typed Programming & Proofs: Types indexed by values, length-indexed vectors, verified compiler backends, and proof... |
+| [formal-specification](formal-methods/formal-specification/SKILL.md) | `formal-specification` | `low` | "Formal Specification Languages & TLA+: TLA+ / PlusCal system specification, Temporal Logic of Actions, state transition invari... |
+| [formal-verification](formal-methods/formal-verification/SKILL.md) | `formal-verification` | `low` | "Formal Hardware & Microcode Verification: Equivalence checking, property checking (SystemVerilog Assertions), invariant synthe... |
+| [model-based-testing](formal-methods/model-based-testing/SKILL.md) | `model-based-testing` | `low` | "Model-Based Test Case Generation: Generating test suites from finite state machines (FSM), transition tour coverage, and state... |
+| [model-checking](formal-methods/model-checking/SKILL.md) | `model-checking` | `low` | "Automated Model Checking & State Exploration: Explicit-state and symbolic model checking (NuSMV, SPIN, TLC), state space reduc... |
+| [program-verification](formal-methods/program-verification/SKILL.md) | `program-verification` | `low` | "Deductive Program Verification & Hoare Logic: Preconditions, postconditions, loop invariants, weakest precondition calculus, a... |
+| [sat](formal-methods/sat/SKILL.md) | `sat` | `low` | "Boolean Satisfiability (SAT) Solvers: DPLL and CDCL (Conflict-Driven Clause Learning) algorithms, two-watched-literals scheme,... |
+| [smt](formal-methods/smt/SKILL.md) | `smt` | `low` | "Satisfiability Modulo Theories (SMT) Solving: Z3, CVC5, and bit-vector/linear-arithmetic/array theory combination via Nelson-O... |
+| [temporal-logic](formal-methods/temporal-logic/SKILL.md) | `temporal-logic` | `low` | "Linear Temporal Logic (LTL) & Computation Tree Logic (CTL): Path operators (Globally, Future, Next, Until), branching time sem... |
+| [theorem-proving](formal-methods/theorem-proving/SKILL.md) | `theorem-proving` | `low` | "Interactive Theorem Proving & Proof Assistants: Coq, Lean 4, and Isabelle/HOL workflows, constructive type theory proofs, indu... |
+| [type-theory](formal-methods/type-theory/SKILL.md) | `type-theory` | `low` | "Type Systems & Lambda Calculus Foundations: Simply-typed lambda calculus, Curry-Howard isomorphism, polymorphic System F, depe... |
+
+---
+
 ## <a id="framework"></a>📁 Framework (13 skills)
 
 | Skill ID | Name | Risk | Description |
@@ -8479,6 +8750,36 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [trpc-fullstack](framework/trpc-fullstack/SKILL.md) | `trpc-fullstack` | `none` | "Build end-to-end type-safe APIs with tRPC — routers, procedures, middleware, subscriptions, and Next.js/React integration patt... |
 | [typescript-expert](framework/typescript-expert/SKILL.md) | `typescript-expert` | `critical` | TypeScript and JavaScript expert with deep knowledge of type-level programming, performance optimization, monorepo management, ... |
 | [zod-validation-expert](framework/zod-validation-expert/SKILL.md) | `zod-validation-expert` | `safe` | "Expert in Zod — TypeScript-first schema validation. Covers parsing, custom errors, refinements, type inference, and integratio... |
+
+---
+
+## <a id="franchise-management"></a>📁 Franchise Management (23 skills)
+
+| Skill ID | Name | Risk | Description |
+| :--- | :--- | :---: | :--- |
+| [dealer-aeo-audit](franchise-management/dealer-aeo-audit/SKILL.md) | `dealer-aeo-audit` | `low` | "Run the Dealer AEO (Answer Engine Optimization) and GEO (Generative Engine Optimization) Audit on a franchise or independent c... |
+| [dealer-aeo-content-brief](franchise-management/dealer-aeo-content-brief/SKILL.md) | `dealer-aeo-content-brief` | `low` | "Generate an Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO) content brief for a car dealership page ... |
+| [dealer-ai-readiness-audit](franchise-management/dealer-ai-readiness-audit/SKILL.md) | `dealer-ai-readiness-audit` | `low` | "Run the 75-point Dealer AI Readiness Audit on a franchise or independent car dealership. Use when the user asks to "audit deal... |
+| [dealer-ai-referral-analytics](franchise-management/dealer-ai-referral-analytics/SKILL.md) | `dealer-ai-referral-analytics` | `low` | "Audit a car dealership's AI-referrer traffic across GA4, Google Search Console, and server logs. Use when the user asks to "au... |
+| [dealer-ai-sentiment-monitor](franchise-management/dealer-ai-sentiment-monitor/SKILL.md) | `dealer-ai-sentiment-monitor` | `low` | "Audit how AI search engines (ChatGPT, Perplexity, Gemini, Claude, Google AI Mode, Copilot) describe and characterize a car dea... |
+| [dealer-ai-visibility](franchise-management/dealer-ai-visibility/SKILL.md) | `dealer-ai-visibility` | `low` | "Monitor what AI engines (ChatGPT, Perplexity, Gemini, Claude, Google AI Mode) are actually saying about a car dealership, trac... |
+| [dealer-bilingual-seo](franchise-management/dealer-bilingual-seo/SKILL.md) | `dealer-bilingual-seo` | `low` | "Build, audit, or remediate a Spanish-language SEO presence for a US car dealership targeting Hispanic buyers. Use when the use... |
+| [dealer-call-tracking-audit](franchise-management/dealer-call-tracking-audit/SKILL.md) | `dealer-call-tracking-audit` | `low` | "Audit a car dealership's call tracking platform configuration (CallRail, Invoca, Marchex) for attribution accuracy, conversati... |
+| [dealer-call-transcript-classifier](franchise-management/dealer-call-transcript-classifier/SKILL.md) | `dealer-call-transcript-classifier` | `low` | "Classify car dealership call transcripts into five categories with strict honesty rules. Use when the user asks to "classify c... |
+| [dealer-comparison-page-builder](franchise-management/dealer-comparison-page-builder/SKILL.md) | `dealer-comparison-page-builder` | `low` | "Build one in-depth comparison page between a car dealership and a single named competitor for SEO, AEO, GEO, and sales enablem... |
+| [dealer-cta-audit](franchise-management/dealer-cta-audit/SKILL.md) | `dealer-cta-audit` | `low` | "Audit calls-to-action (CTAs) on car dealership website pages for conversion effectiveness. Use when the user asks to "audit my... |
+| [dealer-customer-sentiment-analyzer](franchise-management/dealer-customer-sentiment-analyzer/SKILL.md) | `dealer-customer-sentiment-analyzer` | `low` | "Analyze car dealership customer reviews across multiple dimensions and surface honest patterns, themes, and named-staff mentio... |
+| [dealer-email-flows](franchise-management/dealer-email-flows/SKILL.md) | `dealer-email-flows` | `low` | "Build comprehensive lifecycle email flows for a car dealership covering the full customer relationship from purchase through y... |
+| [dealer-equity-mining-campaign-builder](franchise-management/dealer-equity-mining-campaign-builder/SKILL.md) | `dealer-equity-mining-campaign-builder` | `low` | "Build a complete equity mining campaign for a car dealership. Use when the user asks to "build an equity mining campaign", "de... |
+| [dealer-ga4-tracking-audit](franchise-management/dealer-ga4-tracking-audit/SKILL.md) | `dealer-ga4-tracking-audit` | `low` | "Audit a car dealership's GA4 and Google Ads conversion tracking stack end-to-end. Use when the user asks to "audit my GA4," "a... |
+| [dealer-gbp-audit](franchise-management/dealer-gbp-audit/SKILL.md) | `dealer-gbp-audit` | `low` | "Audit a car dealership's Google Business Profile (GBP) for local SEO and local pack performance. Use when the user asks to "au... |
+| [dealer-llms-txt-generator](franchise-management/dealer-llms-txt-generator/SKILL.md) | `dealer-llms-txt-generator` | `low` | "Generate a curated llms.txt file for a car dealership website to improve AEO (Answer Engine Optimization), GEO (Generative Eng... |
+| [dealer-new-customer-onboarding](franchise-management/dealer-new-customer-onboarding/SKILL.md) | `dealer-new-customer-onboarding` | `low` | "Design a comprehensive 90-day post-sale customer onboarding program for a car dealership. Use when the user asks to "build a n... |
+| [dealer-search-strategy](franchise-management/dealer-search-strategy/SKILL.md) | `dealer-search-strategy` | `low` | "Generate a comprehensive search strategy document for a car dealership covering SEO (Search Engine Optimization), AEO (Answer ... |
+| [dealer-seo-audit](franchise-management/dealer-seo-audit/SKILL.md) | `dealer-seo-audit` | `low` | "Run a comprehensive traditional Google SEO audit on a car dealership website. Use when the user asks to "audit my dealer SEO",... |
+| [dealer-site-score](franchise-management/dealer-site-score/SKILL.md) | `dealer-site-score` | `low` | "Run Dealer Site Score, the dealer website grader, on a franchise or independent car dealership site. Use when the user asks to... |
+| [dealer-store-positioning](franchise-management/dealer-store-positioning/SKILL.md) | `dealer-store-positioning` | `low` | "Generate a comprehensive positioning and brand content kit for a car dealership. Use when the user asks to "position my dealer... |
+| [dealer-vdp-merchandising-review](franchise-management/dealer-vdp-merchandising-review/SKILL.md) | `dealer-vdp-merchandising-review` | `low` | "Review a sample of Vehicle Detail Pages (VDPs) on a car dealership website for merchandising quality. Use when the user asks t... |
 
 ---
 
@@ -9434,6 +9735,35 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [writing-discharge-instructions-surgical](healthcare/writing-discharge-instructions-surgical/SKILL.md) | `writing-discharge-instructions-surgical` | `low` | Creates procedure-specific discharge instructions with activity restrictions, wound care, and return precautions. Use when writ... |
 | [writing-surgical-consultation-notes](healthcare/writing-surgical-consultation-notes/SKILL.md) | `writing-surgical-consultation-notes` | `low` | Creates structured surgical consultation responses with assessment and surgical candidacy determination. Use when responding to... |
 | [your-skill-name](healthcare/your-skill-name/SKILL.md) | `your-skill-name` | `low` | Healthcare-focused skill for <replace-this>. Use when an agent needs support with <replace-this>, especially in healthcare soft... |
+
+---
+
+## <a id="high-performance-computing"></a>📁 High Performance Computing (22 skills)
+
+| Skill ID | Name | Risk | Description |
+| :--- | :--- | :---: | :--- |
+| [hpc-calculix](high-performance-computing/hpc-calculix/SKILL.md) | `hpc-calculix` | `low` | "Build, review, debug, and automate CalculiX finite-element workflows. Use when working with CalculiX `.inp` decks, Abaqus-styl... |
+| [hpc-elmerfem](high-performance-computing/hpc-elmerfem/SKILL.md) | `hpc-elmerfem` | `low` | "Build, review, debug, and automate ElmerFEM workflows. Use when working with Elmer `.sif` solver input files, mesh directories... |
+| [hpc-fenics](high-performance-computing/hpc-fenics/SKILL.md) | `hpc-fenics` | `low` | "Build, review, and debug FEniCS or DOLFINx PDE scripts for finite-element workflows. Use when translating PDEs into UFL, selec... |
+| [hpc-foundations](high-performance-computing/hpc-foundations/SKILL.md) | `hpc-foundations` | `low` | "Navigate foundational HPC knowledge across concepts, architectures, schedulers, Linux usage, storage and RDMA, containers, clo... |
+| [hpc-gaussian](high-performance-computing/hpc-gaussian/SKILL.md) | `hpc-gaussian` | `low` | "Build, review, debug, and automate Gaussian quantum chemistry workflows. Use when working with Gaussian input files, Link 0 di... |
+| [hpc-gmsh](high-performance-computing/hpc-gmsh/SKILL.md) | `hpc-gmsh` | `low` | "Build, review, debug, and automate Gmsh geometry and meshing workflows. Use when working with `.geo` scripts, the Gmsh Python ... |
+| [hpc-gpu-stack](high-performance-computing/hpc-gpu-stack/SKILL.md) | `hpc-gpu-stack` | `low` | "Build, review, debug, and launch CUDA- and GPU-accelerated HPC workflows. Use when working with `nvcc`, host-compiler compatib... |
+| [hpc-gromacs](high-performance-computing/hpc-gromacs/SKILL.md) | `hpc-gromacs` | `low` | "Build, review, debug, and automate GROMACS molecular simulation workflows. Use when working with GROMACS preprocessing, topolo... |
+| [hpc-hypre](high-performance-computing/hpc-hypre/SKILL.md) | `hpc-hypre` | `low` | "Build, review, debug, and tune hypre-based sparse solver workflows. Use when working with hypre `IJ`, `Struct`, or `SStruct` i... |
+| [hpc-lammps](high-performance-computing/hpc-lammps/SKILL.md) | `hpc-lammps` | `low` | "Generate, review, debug, and recover LAMMPS molecular dynamics input scripts. Use when working with LAMMPS command ordering, d... |
+| [hpc-ls-dyna](high-performance-computing/hpc-ls-dyna/SKILL.md) | `hpc-ls-dyna` | `low` | "Create, review, debug, and recover LS-DYNA keyword decks and simulation workflows. Use when working with LS-DYNA `*.k` or `*.k... |
+| [hpc-mpi](high-performance-computing/hpc-mpi/SKILL.md) | `hpc-mpi` | `low` | "Build, review, debug, and launch MPI-based applications across Open MPI, MPICH-family, Intel MPI, MVAPICH2, and scheduler-inte... |
+| [hpc-openfoam](high-performance-computing/hpc-openfoam/SKILL.md) | `hpc-openfoam` | `low` | "Generate, review, debug, and recover OpenFOAM case files for CFD workflows. Use when working with OpenFOAM dictionaries, case ... |
+| [hpc-orchestration](high-performance-computing/hpc-orchestration/SKILL.md) | `hpc-orchestration` | `low` | "Coordinate end-to-end HPC execution workflows across scheduler submission, job monitoring, log tracking, self-healing, and pos... |
+| [hpc-paraview](high-performance-computing/hpc-paraview/SKILL.md) | `hpc-paraview` | `low` | "Build, review, debug, and automate ParaView post-processing and visualization workflows. Use when working with ParaView reader... |
+| [hpc-petsc](high-performance-computing/hpc-petsc/SKILL.md) | `hpc-petsc` | `low` | "Build, review, debug, and tune PETSc-based solver workflows. Use when working with PETSc `Vec`, `Mat`, `KSP`, `PC`, `SNES`, `T... |
+| [hpc-quantum-espresso](high-performance-computing/hpc-quantum-espresso/SKILL.md) | `hpc-quantum-espresso` | `low` | "Build, review, debug, and automate Quantum ESPRESSO workflows. Use when working with `pw.x` input files, pseudopotentials, k-p... |
+| [hpc-spack](high-performance-computing/hpc-spack/SKILL.md) | `hpc-spack` | `low` | "Build, review, debug, and stabilize Spack-based HPC software stacks. Use when working with Spack specs, variants, compilers, e... |
+| [hpc-su2](high-performance-computing/hpc-su2/SKILL.md) | `hpc-su2` | `low` | "Build, review, debug, and automate SU2 CFD workflows. Use when working with SU2 configuration files, mesh and marker definitio... |
+| [hpc-toolchains](high-performance-computing/hpc-toolchains/SKILL.md) | `hpc-toolchains` | `low` | "Build, review, debug, and stabilize HPC compiler and build-toolchain workflows. Use when choosing compiler families such as GC... |
+| [hpc-trilinos](high-performance-computing/hpc-trilinos/SKILL.md) | `hpc-trilinos` | `low` | "Build, review, debug, and tune Trilinos-based solver workflows. Use when working with Trilinos packages such as `Tpetra`, `Epe... |
+| [hpc-vasp](high-performance-computing/hpc-vasp/SKILL.md) | `hpc-vasp` | `low` | "Build, review, debug, and automate VASP first-principles workflows. Use when working with VASP input sets such as INCAR, POSCA... |
 
 ---
 
@@ -12475,6 +12805,24 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
+## <a id="medical-laboratory"></a>📁 Medical Laboratory (11 skills)
+
+| Skill ID | Name | Risk | Description |
+| :--- | :--- | :---: | :--- |
+| [clinical-chemistry](medical-laboratory/clinical-chemistry/SKILL.md) | `clinical-chemistry` | `low` | "Automated Clinical Chemistry & Toxicological Testing: Comprehensive metabolic panels (CMP), automated spectrophotometry, ion-s... |
+| [cytology](medical-laboratory/cytology/SKILL.md) | `cytology` | `low` | "Diagnostic Cytopathology & Fluid Examination: Gynecological Pap smear screening (Bethesda system), fine-needle aspiration (FNA... |
+| [hematology](medical-laboratory/hematology/SKILL.md) | `hematology` | `low` | "Diagnostic Clinical Hematology & Hemostasis: Complete blood count (CBC) with differential, peripheral blood smear morphology, ... |
+| [histopathology](medical-laboratory/histopathology/SKILL.md) | `histopathology` | `low` | "Tissue Processing, Microtomy & Histochemical Staining: Surgical tissue gross examination, formalin fixation and paraffin embed... |
+| [immunology](medical-laboratory/immunology/SKILL.md) | `immunology` | `low` | "Clinical Serology & Immunodiagnostic Assays: Enzyme-linked immunosorbent assay (ELISA), chemiluminescent immunoassay (CLIA), a... |
+| [laboratory-information-systems](medical-laboratory/laboratory-information-systems/SKILL.md) | `laboratory-information-systems` | `low` | "Laboratory Information System (LIS) Workflows: HL7 interface message formats (ORM orders, ORU results), barcoded specimen trac... |
+| [laboratory-quality](medical-laboratory/laboratory-quality/SKILL.md) | `laboratory-quality` | `low` | "Laboratory Quality Management & CLIA/CAP Compliance: Westgard multirule quality control evaluation ($1_{2s}, 1_{3s}, 2_{2s}, R... |
+| [microbiology](medical-laboratory/microbiology/SKILL.md) | `microbiology` | `low` | "Diagnostic Medical Microbiology & Antimicrobial Testing: Bacterial culture and isolation, Gram stain morphology, MALDI-TOF mas... |
+| [molecular-diagnostics](medical-laboratory/molecular-diagnostics/SKILL.md) | `molecular-diagnostics` | `low` | "Clinical Molecular Diagnostics & Real-Time PCR: Nucleic acid extraction purity verification ($A_{260}/A_{280}$), qualitative a... |
+| [specimen-management](medical-laboratory/specimen-management/SKILL.md) | `specimen-management` | `low` | "Clinical Pre-Analytical Specimen Integrity: Phlebotomy order of draw (CLSI H3-A6), anticoagulant ratios, sample centrifugation... |
+| [transfusion-medicine](medical-laboratory/transfusion-medicine/SKILL.md) | `transfusion-medicine` | `low` | "Blood Banking & Transfusion Medicine Testing: ABO/Rh blood typing, forward and reverse grouping, antibody identification panel... |
+
+---
+
 ## <a id="memory"></a>📁 Memory (6 skills)
 
 | Skill ID | Name | Risk | Description |
@@ -12543,6 +12891,23 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [using-superpowers](meta/using-superpowers/SKILL.md) | `using-superpowers` | `critical` | "Use when starting any conversation - establishes how to find and use skills, requiring Skill tool invocation before ANY respon... |
 | [wgm](meta/wgm/SKILL.md) | `wgm` | `safe` | "Turns a rough request into working software via a governed build loop: align first, plan, then iterate one task at a time with... |
 | [writing-skills](meta/writing-skills/SKILL.md) | `writing-skills` | `critical` | "Use when creating, updating, or improving agent skills." |
+
+---
+
+## <a id="metrology"></a>📁 Metrology (10 skills)
+
+| Skill ID | Name | Risk | Description |
+| :--- | :--- | :---: | :--- |
+| [calibration](metrology/calibration/SKILL.md) | `calibration` | `low` | "Instrument Calibration & Standards Traceability: Calibration certificates, adjustment procedures, drift tracking, recalibratio... |
+| [coordinate-measuring](metrology/coordinate-measuring/SKILL.md) | `coordinate-measuring` | `low` | "Coordinate Measuring Machines (CMM) Inspection: Touch trigger and scanning probes, part alignment (3-2-1 principle), point clo... |
+| [dimensional-metrology](metrology/dimensional-metrology/SKILL.md) | `dimensional-metrology` | `low` | "Precision Dimensional & Geometric Tolerancing: GD&T per ASME Y14.5 / ISO 1101, micrometers, dial indicators, gauge blocks, Abb... |
+| [electrical-measurement](metrology/electrical-measurement/SKILL.md) | `electrical-measurement` | `low` | "Precision Electrical Metrology & Resistance Standards: Quantum Hall effect resistance standards, Josephson voltage standards, ... |
+| [measurement-uncertainty](metrology/measurement-uncertainty/SKILL.md) | `measurement-uncertainty` | `low` | "GUM Measurement Uncertainty Evaluation: Guide to the Expression of Uncertainty in Measurement (GUM), Type A and Type B evaluat... |
+| [optical-measurement](metrology/optical-measurement/SKILL.md) | `optical-measurement` | `low` | "Non-Contact Optical Metrology & Profilometry: White light interferometry, confocal laser scanning microscopy, laser triangulat... |
+| [pressure-measurement](metrology/pressure-measurement/SKILL.md) | `pressure-measurement` | `low` | "Pressure Metrology & Deadweight Testers: Piston gauges (deadweight testers), effective area calculations, capacitive diaphragm... |
+| [quality-metrology](metrology/quality-metrology/SKILL.md) | `quality-metrology` | `low` | "Measurement System Analysis (MSA) & Gauge R&R: Repeatability and reproducibility studies, ANOVA method for Gauge R&R, percenta... |
+| [temperature-measurement](metrology/temperature-measurement/SKILL.md) | `temperature-measurement` | `low` | "Thermometry & Temperature Standards (ITS-90): Standard Platinum Resistance Thermometers (SPRT), fixed-point cells (triple poin... |
+| [traceability](metrology/traceability/SKILL.md) | `traceability` | `low` | "Metrological Traceability Chains & Primary Standards: Unbroken chain of comparisons to SI base units (NIST, BIPM, PTB), transf... |
 
 ---
 
@@ -12676,6 +13041,15 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [swiftui-ui-patterns](mobile/swiftui-ui-patterns/SKILL.md) | `swiftui-ui-patterns` | `safe` | Apply proven SwiftUI UI patterns for navigation, sheets, async state, and reusable screens. |
 | [swiftui-view-refactor](mobile/swiftui-view-refactor/SKILL.md) | `swiftui-view-refactor` | `safe` | Refactor SwiftUI views into smaller components with stable, explicit data flow. |
 | [upgrading-expo](mobile/upgrading-expo/SKILL.md) | `upgrading-expo` | `critical` | Guidelines for upgrading Expo SDK versions and fixing dependency issues |
+
+---
+
+## <a id="museum-studies"></a>📁 Museum Studies (2 skills)
+
+| Skill ID | Name | Risk | Description |
+| :--- | :--- | :---: | :--- |
+| [canoa-api](museum-studies/canoa-api/SKILL.md) | `canoa-api` | `low` | "Use when researching ancient coins via the CANOA API." |
+| [canoa-hoard-analysis](museum-studies/canoa-hoard-analysis/SKILL.md) | `canoa-hoard-analysis` | `low` | "Use when analyzing coin hoards of a region, charts and PDF." |
 
 ---
 
@@ -12856,6 +13230,43 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
+## <a id="nuclear-engineering"></a>📁 Nuclear Engineering (13 skills)
+
+| Skill ID | Name | Risk | Description |
+| :--- | :--- | :---: | :--- |
+| [decommissioning](nuclear-engineering/decommissioning/SKILL.md) | `decommissioning` | `low` | "Nuclear Facility Decommissioning & Dismantling: Radionuclide inventory characterization, segmented vessel cutting, decontamina... |
+| [nuclear-fuel](nuclear-engineering/nuclear-fuel/SKILL.md) | `nuclear-fuel` | `low` | "Uranium/Plutonium Fuel Cycle & Burnup: Enrichment cascades ($UF_6$), ceramic $UO_2$ pellet-cladding interaction (PCI), isotopi... |
+| [nuclear-fusion](nuclear-engineering/nuclear-fusion/SKILL.md) | `nuclear-fusion` | `low` | "Magnetic & Inertial Confinement Fusion: Lawson criterion ($n T \tau_E$), tokamak magnetic field equilibrium (Grad-Shafranov), ... |
+| [nuclear-instrumentation](nuclear-engineering/nuclear-instrumentation/SKILL.md) | `nuclear-instrumentation` | `low` | "Ex-Core & In-Core Nuclear Sensors: Fission chambers, self-powered neutron detectors (SPND), source/intermediate/power range mo... |
+| [nuclear-materials](nuclear-engineering/nuclear-materials/SKILL.md) | `nuclear-materials` | `low` | "Irradiation Effects in Structural Materials: Neutron embrittlement of RPV steels, zirconium alloy cladding oxidation/hydriding... |
+| [nuclear-regulation](nuclear-engineering/nuclear-regulation/SKILL.md) | `nuclear-regulation` | `low` | "Nuclear Licensing & Regulatory Compliance: NRC 10 CFR 50/52 regulatory requirements, Final Safety Analysis Reports (FSAR), tec... |
+| [nuclear-waste](nuclear-engineering/nuclear-waste/SKILL.md) | `nuclear-waste` | `low` | "Spent Fuel Storage & Geologic Disposal: Wet spent fuel pools, dry storage casks, vitrification of high-level waste (HLW), deep... |
+| [radiation-protection](nuclear-engineering/radiation-protection/SKILL.md) | `radiation-protection` | `low` | "Health Physics & Radiological Shielding: ALARA principles, linear no-threshold (LNT) models, point-kernel gamma/neutron attenu... |
+| [reactor-control](nuclear-engineering/reactor-control/SKILL.md) | `reactor-control` | `low` | "Reactivity Control & Xenon Oscillation Dynamics: Control rod worth curves, chemical shim (soluble boron), xenon-135/samarium-1... |
+| [reactor-design](nuclear-engineering/reactor-design/SKILL.md) | `reactor-design` | `low` | "Nuclear Core & Pressure Vessel Thermal Design: Fuel assembly geometric lattices, control rod cluster positioning, pressure ves... |
+| [reactor-physics](nuclear-engineering/reactor-physics/SKILL.md) | `reactor-physics` | `low` | "Nuclear Reactor Physics & Core Neutronics: Multi-group neutron diffusion equation, four-factor formula ($k_\infty = \epsilon p... |
+| [reactor-safety](nuclear-engineering/reactor-safety/SKILL.md) | `reactor-safety` | `low` | "Defense-in-Depth & Emergency Core Cooling: Loss-of-Coolant Accident (LOCA) mitigation, ECCS passive injection, containment iso... |
+| [thermal-hydraulics](nuclear-engineering/thermal-hydraulics/SKILL.md) | `thermal-hydraulics` | `low` | "Nuclear Heat Transfer & Two-Phase Flow: Critical Heat Flux (CHF) and Departure from Nucleate Boiling Ratio (DNBR), RELAP5/TRAC... |
+
+---
+
+## <a id="occupational-therapy"></a>📁 Occupational Therapy (10 skills)
+
+| Skill ID | Name | Risk | Description |
+| :--- | :--- | :---: | :--- |
+| [adaptive-equipment](occupational-therapy/adaptive-equipment/SKILL.md) | `adaptive-equipment` | `low` | "Assistive Technology & Adaptive Equipment Prescription: Durable medical equipment (DME), wheelchair seating and positioning as... |
+| [adl-assessment](occupational-therapy/adl-assessment/SKILL.md) | `adl-assessment` | `low` | "Activities of Daily Living (ADL/IADL) Assessment: Functional Independence Measure (FIM), Barthel Index, Lawton IADL scale, and... |
+| [cognitive-rehabilitation](occupational-therapy/cognitive-rehabilitation/SKILL.md) | `cognitive-rehabilitation` | `low` | "Cognitive Retraining & Executive Function Rehabilitation: Executive function performance test (EFPT), compensatory cognitive m... |
+| [functional-assessment](occupational-therapy/functional-assessment/SKILL.md) | `functional-assessment` | `low` | "Functional Capacity & Occupational Profile Analysis: Occupational therapy practice framework (OTPF-4), Canadian Occupational P... |
+| [hand-therapy](occupational-therapy/hand-therapy/SKILL.md) | `hand-therapy` | `low` | "Hand Therapy & Orthotic Splint Fabrication: Custom thermoplastic static/dynamic splint fabrication, tendon glide exercises, ed... |
+| [neurorehabilitation](occupational-therapy/neurorehabilitation/SKILL.md) | `neurorehabilitation` | `low` | "Neurological Rehabilitation & Constraint-Induced Therapy: Post-stroke hemiparesis management, Constraint-Induced Movement Ther... |
+| [pediatric-ot](occupational-therapy/pediatric-ot/SKILL.md) | `pediatric-ot` | `low` | "Pediatric Occupational Therapy & Milestone Tracking: Peabody Developmental Motor Scales (PDMS-2), fine motor coordination, gra... |
+| [rehabilitation](occupational-therapy/rehabilitation/SKILL.md) | `rehabilitation` | `low` | "Restorative & Compensatory Occupational Rehabilitation: Task-oriented motor recovery, neuroplasticity-based upper extremity re... |
+| [sensory-integration](occupational-therapy/sensory-integration/SKILL.md) | `sensory-integration` | `low` | "Sensory Processing Evaluation & Sensory Diet Design: Sensory Profile 2, sensory integration clinical observations (Ayres Senso... |
+| [workplace-rehabilitation](occupational-therapy/workplace-rehabilitation/SKILL.md) | `workplace-rehabilitation` | `low` | "Ergonomic Assessment & Work Hardening Programs: Workstation ergonomic evaluations (RULA/REBA methods), functional capacity eva... |
+
+---
+
 ## <a id="offline"></a>📁 Offline (1 skills)
 
 | Skill ID | Name | Risk | Description |
@@ -13024,6 +13435,48 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [wiki-architecture](operations/wiki-architecture/SKILL.md) | `wiki-architecture` | `low` | "Design internal wiki architectures. TRIGGERS - Use when user needs help with wiki-architecture related tasks." |
 | [workload-balancer](operations/workload-balancer/SKILL.md) | `workload-balancer` | `low` | "Balance workloads across team members fairly. TRIGGERS - Use when user needs help with workload-balancer related tasks." |
 | [workload-balancing](operations/workload-balancing/SKILL.md) | `workload-balancing` | `low` | "Balance workloads across teams. TRIGGERS - Use when user needs help with workload-balancing related tasks." |
+
+---
+
+## <a id="optical-engineering"></a>📁 Optical Engineering (17 skills)
+
+| Skill ID | Name | Risk | Description |
+| :--- | :--- | :---: | :--- |
+| [detectors](optical-engineering/detectors/SKILL.md) | `detectors` | `low` | "Photodetector Engineering & Sensitivity: PIN and avalanche photodiodes (APD), dark current noise, responsivity ($R$), noise eq... |
+| [fiber-optics](optical-engineering/fiber-optics/SKILL.md) | `fiber-optics` | `low` | "Fiber Optic Transmission & Waveguides: Single-mode and multimode propagation, numerical aperture (NA), attenuation spectra, ch... |
+| [imaging-systems](optical-engineering/imaging-systems/SKILL.md) | `imaging-systems` | `low` | "Digital Imaging & Sensor Integration: CMOS/CCD quantum efficiency, spatial resolution (Nyquist criterion), pixel crosstalk, le... |
+| [interferometry](optical-engineering/interferometry/SKILL.md) | `interferometry` | `low` | "Precision Optical Interferometry: Michelson, Mach-Zehnder, and Fabry-Pérot configurations, fringe analysis, phase-shifting int... |
+| [ja](optical-engineering/ja/SKILL.md) | `thorlabs-blender-optical-path-ja` | `low` | "測定要件、2D 光路図、出所を記録した CAD から新しい測定光路を設計し、Blender 光学システムを再構築・監査・改訂します。高精細 optics-only モデル、Thorlabs 互換光機部品、光路 topology、全系検証、証拠範囲を明示... |
+| [laser-systems](optical-engineering/laser-systems/SKILL.md) | `laser-systems` | `low` | "Laser Cavity Design & Beam Propagation: Gaussian beam waist propagation ($M^2$ parameter), laser diode drivers, resonator stab... |
+| [lens-design](optical-engineering/lens-design/SKILL.md) | `lens-design` | `low` | "Lens Prescription & Optimization: Doublet/triplet design, telephoto lenses, aspheric surface coefficients, glass map selection... |
+| [lidar](optical-engineering/lidar/SKILL.md) | `lidar` | `low` | "LiDAR System Architecture & Point Cloud Sensing: Time-of-flight (ToF) and FMCW ranging equations, laser safety (IEC 60825-1 Cl... |
+| [optical-coatings](optical-engineering/optical-coatings/SKILL.md) | `optical-coatings` | `low` | "Thin-Film Optical Coatings & Filters: Multilayer dielectric interference coatings, anti-reflective (AR) coatings, high-reflect... |
+| [optical-communications](optical-engineering/optical-communications/SKILL.md) | `optical-communications` | `low` | "Coherent Optical Telecommunication: WDM/DWDM multiplexing, QPSK/16-QAM modulation, erbium-doped fiber amplifiers (EDFA), and o... |
+| [optical-design](optical-engineering/optical-design/SKILL.md) | `optical-design` | `low` | "Geometric & Physical Optical System Design: Ray tracing algorithms, aberration theory (Seidel/Zernike), modulation transfer fu... |
+| [optical-testing](optical-engineering/optical-testing/SKILL.md) | `optical-testing` | `low` | "Optical Metrology & Surface Characterization: Wavefront sensing (Shack-Hartmann), interferometric surface profiling, ISO 10110... |
+| [optomechanics](optical-engineering/optomechanics/SKILL.md) | `optomechanics` | `low` | "Precision Optomechanical Mounting: Kinematic mount constraints, thermal expansion matching (CTE), adhesive bonding of optics, ... |
+| [photonics](optical-engineering/photonics/SKILL.md) | `photonics` | `low` | "Integrated Photonic Circuits & Nanophotonics: Silicon photonics waveguides, Mach-Zehnder modulators, ring resonators, grating ... |
+| [spectroscopy](optical-engineering/spectroscopy/SKILL.md) | `spectroscopy` | `low` | "Optical Spectroscopy & Spectral Analysis: Diffraction grating equation, Fourier transform infrared (FTIR), Raman scattering, m... |
+| [thorlabs-blender-optical-path](optical-engineering/thorlabs-blender-optical-path/SKILL.md) | `thorlabs-blender-optical-path` | `low` | "Design new measurement paths or reconstruct, audit, and revise Blender optical-table systems from measurement requirements, 2D... |
+| [zh-cn](optical-engineering/zh-cn/SKILL.md) | `thorlabs-blender-optical-path-zh` | `low` | "从测量需求、二维光路图和有来源记录的 CAD 设计新测量光路，或重建、审核、修订 Blender 光学平台。适用于高精度 optics-only 模型、Thorlabs 兼容光机件、光路拓扑、整机验证及具有明确物理证据范围的发表级渲染。" |
+
+---
+
+## <a id="optometry"></a>📁 Optometry (11 skills)
+
+| Skill ID | Name | Risk | Description |
+| :--- | :--- | :---: | :--- |
+| [binocular-vision](optometry/binocular-vision/SKILL.md) | `binocular-vision` | `low` | "Binocular Vision & Ocular Motility Evaluation: Cover-uncover and alternating cover tests, prism bar dissociation, near point o... |
+| [contact-lenses](optometry/contact-lenses/SKILL.md) | `contact-lenses` | `low` | "Contact Lens Fitting & Corneal Assessment: Keratometry/topography, base curve and diameter selection, soft vs rigid gas permea... |
+| [eye-examination](optometry/eye-examination/SKILL.md) | `eye-examination` | `low` | "Comprehensive Clinical Eye Examination: Systematic ophthalmic workup: patient history, visual acuity, slit-lamp biomicroscopy,... |
+| [glaucoma-screening](optometry/glaucoma-screening/SKILL.md) | `glaucoma-screening` | `low` | "Glaucoma Diagnostic Evaluation & Staging: Goldmann applanation tonometry (GAT), pachymetry corneal thickness correction, gonio... |
+| [low-vision](optometry/low-vision/SKILL.md) | `low-vision` | `low` | "Low Vision Rehabilitation & Assistive Optics: Magnification power calculations ($M = F/4$), optical low vision aids (telescope... |
+| [ocular-disease](optometry/ocular-disease/SKILL.md) | `ocular-disease` | `low` | "Anterior & Posterior Segment Pathology Diagnosis: Blepharitis, keratoconjunctivitis, cataract grading (LOCS III), diabetic ret... |
+| [optical-dispensing](optometry/optical-dispensing/SKILL.md) | `optical-dispensing` | `low` | "Ophthalmic Lens Dispensing & Frame Styling: Pupillary distance (PD) measurement, seg height alignment for progressives, lens m... |
+| [pediatric-optometry](optometry/pediatric-optometry/SKILL.md) | `pediatric-optometry` | `low` | "Pediatric Visual Development & Amblyopia: Preferential looking tests (Teller acuity cards), cycloplegic refraction, strabismus... |
+| [refraction](optometry/refraction/SKILL.md) | `refraction` | `low` | "Objective & Subjective Clinical Refraction: Retinoscopy, automated refractometry, Jackson cross-cylinder astigmatism refinemen... |
+| [retinal-assessment](optometry/retinal-assessment/SKILL.md) | `retinal-assessment` | `low` | "Retinal Imaging & Fundus Biomicroscopy: Non-mydriatic fundus photography, OCT retinal thickness maps, fluorescein angiography ... |
+| [visual-acuity](optometry/visual-acuity/SKILL.md) | `visual-acuity` | `low` | "Standardized Visual Acuity Assessment: Snellen, LogMAR, and ETDRS visual acuity charts, pinhole visual acuity testing, contras... |
 
 ---
 
@@ -13309,6 +13762,26 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
+## <a id="petroleum-engineering"></a>📁 Petroleum Engineering (13 skills)
+
+| Skill ID | Name | Risk | Description |
+| :--- | :--- | :---: | :--- |
+| [completion-engineering](petroleum-engineering/completion-engineering/SKILL.md) | `completion-engineering` | `low` | "Well Completion & Hydraulic Fracturing: Casing design, perforation spacing, multistage plug-and-perf fracturing, proppant tran... |
+| [drilling-engineering](petroleum-engineering/drilling-engineering/SKILL.md) | `drilling-engineering` | `low` | "Well Drilling Mechanics & Hydraulics: BHA (Bottom Hole Assembly) design, directional drilling/MWD, drill bit hydraulics ($HSI$... |
+| [enhanced-oil-recovery](petroleum-engineering/enhanced-oil-recovery/SKILL.md) | `enhanced-oil-recovery` | `low` | "Tertiary Recovery (EOR) Mechanisms: Miscible gas injection ($CO_2$/hydrocarbon), polymer/surfactant flooding, steam-assisted g... |
+| [lng](petroleum-engineering/lng/SKILL.md) | `lng` | `low` | "Liquefied Natural Gas Processing & Cryogenics: Acid gas removal (MDEA), propane precooled mixed refrigerant (C3MR) cycle, LNG ... |
+| [offshore-oil](petroleum-engineering/offshore-oil/SKILL.md) | `offshore-oil` | `low` | "Subsea & Floating Offshore Production Systems: FPSO and TLP mooring dynamics, subsea trees, subsea tiebacks, riser slugging co... |
+| [petroleum-economics](petroleum-engineering/petroleum-economics/SKILL.md) | `petroleum-economics` | `low` | "Upstream Asset Valuation & Fiscal Regimes: Discounted cash flow (DCF), net present value (NPV), IRR, production sharing contra... |
+| [petrophysics](petroleum-engineering/petrophysics/SKILL.md) | `petrophysics` | `low` | "Core Analysis & Rock-Fluid Properties: Capillary pressure curves, relative permeability ($k_{ro}, k_{rw}$), wettability indice... |
+| [production-engineering](petroleum-engineering/production-engineering/SKILL.md) | `production-engineering` | `low` | "Well Inflow & Artificial Lift Optimization: Inflow Performance Relationship (IPR) vs Outflow (VLP), electrical submersible pum... |
+| [production-optimization](petroleum-engineering/production-optimization/SKILL.md) | `production-optimization` | `low` | "Field Flowline & Network Debottlenecking: Multiphase flow regimes (Beggs-Brill), hydrate prevention/MEG injection, emulsion tr... |
+| [reservoir-engineering](petroleum-engineering/reservoir-engineering/SKILL.md) | `reservoir-engineering` | `low` | "Hydrocarbon Reservoir Characterization: Material balance equations (Havlena-Odeh), Darcy flow in porous media, PVT fluid phase... |
+| [reservoir-simulation](petroleum-engineering/reservoir-simulation/SKILL.md) | `reservoir-simulation` | `low` | "Numerical Black-Oil & Compositional Modeling: Finite-difference reservoir grid blocks, IMPES vs fully implicit schemes, histor... |
+| [well-logging](petroleum-engineering/well-logging/SKILL.md) | `well-logging` | `low` | "Petrophysical Log Interpretation: Gamma ray lithology, resistivity log water saturation (Archie equation), neutron-density por... |
+| [well-testing](petroleum-engineering/well-testing/SKILL.md) | `well-testing` | `low` | "Pressure Transient Analysis (PTA): Horner plots, pressure buildup/drawdown analysis, skin factor ($s$), reservoir permeability... |
+
+---
+
 ## <a id="pharmacy"></a>📁 Pharmacy (20 skills)
 
 | Skill ID | Name | Risk | Description |
@@ -13408,6 +13881,25 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [video-production-plan](photography/video-production-plan/SKILL.md) | `video-production-plan` | `low` | "Plan video productions with pre to post-production. TRIGGERS - Use when user needs help with video-production-plan related tas... |
 | [wedding-photography-plan](photography/wedding-photography-plan/SKILL.md) | `wedding-photography-plan` | `low` | "Plan wedding photography with shot lists and timelines. TRIGGERS - Use when user needs help with wedding-photography-plan rela... |
 | [wildlife-photography-plan](photography/wildlife-photography-plan/SKILL.md) | `wildlife-photography-plan` | `low` | "Plan wildlife photography expeditions. TRIGGERS - Use when user needs help with wildlife-photography-plan related tasks." |
+
+---
+
+## <a id="physical-therapy"></a>📁 Physical Therapy (12 skills)
+
+| Skill ID | Name | Risk | Description |
+| :--- | :--- | :---: | :--- |
+| [cardiopulmonary](physical-therapy/cardiopulmonary/SKILL.md) | `cardiopulmonary` | `low` | "Cardiopulmonary Physical Therapy & Endurance Training: Phase I-III cardiac rehabilitation, 6-minute walk test (6MWT), Borg rat... |
+| [exercise-prescription](physical-therapy/exercise-prescription/SKILL.md) | `exercise-prescription` | `low` | "Therapeutic Exercise Prescription & Dosage Modeling: ACSM exercise guidelines, intensity prescription (%1RM, target heart rate... |
+| [gait-analysis](physical-therapy/gait-analysis/SKILL.md) | `gait-analysis` | `low` | "Clinical & Instrument-Based Gait Analysis: Stance and swing phase kinematic breakdown, spatial-temporal gait parameters (caden... |
+| [geriatric](physical-therapy/geriatric/SKILL.md) | `geriatric` | `low` | "Geriatric Physical Therapy & Fall Risk Reduction: Timed Up and Go (TUG), Berg Balance Scale, functional reach test, sarcopenia... |
+| [mobility](physical-therapy/mobility/SKILL.md) | `mobility` | `low` | "Transfer Training & Functional Mobility Interventions: Bed mobility techniques, sit-to-stand bio-mechanics, wheelchair propuls... |
+| [musculoskeletal](physical-therapy/musculoskeletal/SKILL.md) | `musculoskeletal` | `low` | "Musculoskeletal Physical Therapy & Joint Mobilization: Orthopedic manual therapy (Kaltenborn/Maitland grades I-V), joint arthr... |
+| [neurological](physical-therapy/neurological/SKILL.md) | `neurological` | `low` | "Neurological Physical Therapy & Movement Re-education: Proprioceptive Neuromuscular Facilitation (PNF), Bobath/NDT concepts, p... |
+| [orthopedic](physical-therapy/orthopedic/SKILL.md) | `orthopedic` | `low` | "Pre- and Post-Surgical Orthopedic Rehabilitation: Total hip and knee arthroplasty rehabilitation pathways, spinal fusion recov... |
+| [pediatric](physical-therapy/pediatric/SKILL.md) | `pediatric` | `low` | "Pediatric Physical Therapy & Gross Motor Milestones: Gross Motor Function Measure (GMFM), Alberta Infant Motor Scale (AIMS), t... |
+| [post-surgical](physical-therapy/post-surgical/SKILL.md) | `post-surgical` | `low` | "Post-Operative Acute Inpatient Physical Therapy: Early mobilization safety criteria, sternal precautions, hemodynamic monitori... |
+| [rehabilitation](physical-therapy/rehabilitation/SKILL.md) | `rehabilitation` | `low` | "Comprehensive Functional Movement Rehabilitation: Patient-reported outcome measures (LEFS, DASH, Oswestry Disability Index), o... |
+| [sports-rehabilitation](physical-therapy/sports-rehabilitation/SKILL.md) | `sports-rehabilitation` | `low` | "Sports Physical Therapy & Return-to-Play Testing: Athletic injury rehabilitation (ACL reconstruction protocols, rotator cuff r... |
 
 ---
 
@@ -13735,6 +14227,25 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
+## <a id="public-health"></a>📁 Public Health (12 skills)
+
+| Skill ID | Name | Risk | Description |
+| :--- | :--- | :---: | :--- |
+| [biostatistics](public-health/biostatistics/SKILL.md) | `biostatistics` | `low` | "Public Health Biostatistics & Hypothesis Testing: Kaplan-Meier survival estimation, Cox proportional hazards regression, logis... |
+| [disease-surveillance](public-health/disease-surveillance/SKILL.md) | `disease-surveillance` | `low` | "Public Health Surveillance & Syndromic Monitoring: Active vs passive surveillance systems, National Notifiable Diseases Survei... |
+| [environmental-health](public-health/environmental-health/SKILL.md) | `environmental-health` | `low` | "Environmental Hazard Assessment & Water Sanitation: Toxic chemical exposure risk characterization, air quality index (AQI) mon... |
+| [epidemiology](public-health/epidemiology/SKILL.md) | `epidemiology` | `low` | "Descriptive & Analytical Epidemiological Methods: Incidence and prevalence rate calculations, cohort and case-control study de... |
+| [global-health](public-health/global-health/SKILL.md) | `global-health` | `low` | "Global Health Policy & International Health Regulations: WHO International Health Regulations (IHR 2005), Global Burden of Dis... |
+| [health-policy](public-health/health-policy/SKILL.md) | `health-policy` | `low` | "Public Health Policy Formulation & Economic Evaluation: Cost-effectiveness analysis (CEA), incremental cost-effectiveness rati... |
+| [health-program-evaluation](public-health/health-program-evaluation/SKILL.md) | `health-program-evaluation` | `low` | "Public Health Program Evaluation & Logic Modeling: CDC Evaluation Framework (Engage, Describe, Focus, Gather, Justify, Ensure)... |
+| [health-promotion](public-health/health-promotion/SKILL.md) | `health-promotion` | `low` | "Health Behavior Change & Health Promotion Campaign Design: Transtheoretical model of behavior change, social ecological framew... |
+| [occupational-health](public-health/occupational-health/SKILL.md) | `occupational-health` | `low` | "Workplace Epidemiology & Occupational Disease Prevention: Workplace hazard surveillance, industrial hygiene sampling plans, oc... |
+| [outbreak-investigation](public-health/outbreak-investigation/SKILL.md) | `outbreak-investigation` | `low` | "Field Epidemiology & Outbreak Investigation Steps: CDC 10-step outbreak investigation framework, case definitions, epidemic cu... |
+| [population-health](public-health/population-health/SKILL.md) | `population-health` | `low` | "Population Health Management & Community Needs Assessment: Community Health Needs Assessment (CHNA) methodology, social determ... |
+| [vaccination-programs](public-health/vaccination-programs/SKILL.md) | `vaccination-programs` | `low` | "Immunization Program Management & Vaccine Safety: ACIP immunization schedule implementation, cold chain temperature monitoring... |
+
+---
+
 ## <a id="public-relations"></a>📁 Public Relations (11 skills)
 
 | Skill ID | Name | Risk | Description |
@@ -13778,6 +14289,24 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
+## <a id="quantum"></a>📁 Quantum (11 skills)
+
+| Skill ID | Name | Risk | Description |
+| :--- | :--- | :---: | :--- |
+| [cirq](quantum/cirq/SKILL.md) | `cirq` | `low` | "Cirq Quantum Development Architecture: Google Cirq primitives, grid qubit geometries, scheduled circuits, noise modeling (dens... |
+| [pennylane](quantum/pennylane/SKILL.md) | `pennylane` | `low` | "PennyLane Hybrid Quantum-Classical Computing: Differentiable quantum computing, parameter-shift rule for analytic gradients, P... |
+| [qiskit](quantum/qiskit/SKILL.md) | `qiskit` | `low` | "Qiskit Quantum Programming Framework: IBM Qiskit SDK, QuantumCircuit construction, Transpiler passes, Aer statevector simulato... |
+| [quantum-algorithms](quantum/quantum-algorithms/SKILL.md) | `quantum-algorithms` | `low` | "Core Quantum Algorithms & Complexity: Shor's factoring algorithm, Grover's search algorithm ($O(\sqrt{N})$), Quantum Fourier T... |
+| [quantum-circuits](quantum/quantum-circuits/SKILL.md) | `quantum-circuits` | `low` | "Quantum Circuit Synthesis & Gate Decompositions: Clifford + T universal gate set, CNOT and Toffoli decomposition, circuit dept... |
+| [quantum-cryptography](quantum/quantum-cryptography/SKILL.md) | `quantum-cryptography` | `low` | "Quantum Key Distribution & Post-Quantum Cryptography: BB84 protocol, decoy-state QKD, quantum random number generation (QRNG),... |
+| [quantum-error-correction](quantum/quantum-error-correction/SKILL.md) | `quantum-error-correction` | `low` | "Quantum Error Correction & Fault-Tolerant Architecture: Surface codes, Shor code, stabilizer formalisms, syndrome measurement,... |
+| [quantum-hardware](quantum/quantum-hardware/SKILL.md) | `quantum-hardware` | `low` | "Quantum Hardware Physical Realizations: Superconducting transmon qubits, trapped-ion systems, neutral atom arrays, photonic qu... |
+| [quantum-machine-learning](quantum/quantum-machine-learning/SKILL.md) | `quantum-machine-learning` | `low` | "Quantum Machine Learning & Parameterized Circuits: Quantum neural networks (QNN), variational classifiers, quantum kernel esti... |
+| [quantum-optimization](quantum/quantum-optimization/SKILL.md) | `quantum-optimization` | `low` | "Quantum Approximate Optimization Algorithm (QAOA): Problem Hamiltonian formulation (QUBO/Ising), mixer Hamiltonians, parameter... |
+| [quantum-simulation](quantum/quantum-simulation/SKILL.md) | `quantum-simulation` | `low` | "Quantum System & Hamiltonian Simulation: Trotter-Suzuki product formulas, variational quantum eigensolver (VQE), quantum chemi... |
+
+---
+
 ## <a id="quantum-computing"></a>📁 Quantum Computing (5 skills)
 
 | Skill ID | Name | Risk | Description |
@@ -13787,6 +14316,27 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [quantum-strategy](quantum-computing/quantum-strategy/SKILL.md) | `quantum-strategy` | `low` | "Design quantum computing strategies. TRIGGERS - Use when user needs help with quantum-strategy related tasks." |
 | [quantum-use-case-analysis](quantum-computing/quantum-use-case-analysis/SKILL.md) | `quantum-use-case-analysis` | `low` | "Analyze quantum computing use cases. TRIGGERS - Use when user needs help with quantum-use-case-analysis related tasks." |
 | [quantum-workforce-plan](quantum-computing/quantum-workforce-plan/SKILL.md) | `quantum-workforce-plan` | `low` | "Plan quantum workforce development. TRIGGERS - Use when user needs help with quantum-workforce-plan related tasks." |
+
+---
+
+## <a id="railway"></a>📁 Railway (14 skills)
+
+| Skill ID | Name | Risk | Description |
+| :--- | :--- | :---: | :--- |
+| [high-speed-rail](railway/high-speed-rail/SKILL.md) | `high-speed-rail` | `low` | "High-Speed Rail Alignment & Aerodynamics: Superelevation deficit, tunnel pressure waves, sonic boom mitigation, aerodynamic ba... |
+| [metro-systems](railway/metro-systems/SKILL.md) | `metro-systems` | `low` | "Urban Rail & High-Capacity Transit: Automated Train Operation (ATO/GoA 4), platform screen doors, power regeneration, and rapi... |
+| [rail-signaling](railway/rail-signaling/SKILL.md) | `rail-signaling` | `low` | "Railway Signaling & Train Control: Block signaling, CBTC (Communications-Based Train Control), ETCS/ERTMS Level 1-3, interlock... |
+| [railway-control](railway/railway-control/SKILL.md) | `railway-control` | `low` | "Centralized Traffic Control & SCADA Systems: CTC console interfaces, automatic route setting (ARS), SCADA telemetry, traction ... |
+| [railway-electrification](railway/railway-electrification/SKILL.md) | `railway-electrification` | `low` | "Overhead Catenary & Third Rail Traction: Traction power substations (25kV AC / 750V-1500V DC), OLE tensioning, pantograph-cate... |
+| [railway-engineering](railway/railway-engineering/SKILL.md) | `railway-engineering` | `low` | "Railway Engineering Core Principles: AREMA, UIC, EN 13803 standards, track geometric design, wheel-rail interface, and ballast... |
+| [railway-infrastructure](railway/railway-infrastructure/SKILL.md) | `railway-infrastructure` | `low` | "Civil Railway Structures & Geotechnics: Railway bridges, culverts, embankment stabilization, ballast degradation modeling, and... |
+| [railway-maintenance](railway/railway-maintenance/SKILL.md) | `railway-maintenance` | `low` | "Track & Rolling Stock Asset Maintenance: Track recording cars, ultrasonic rail flaw detection, tamping/grinding cycles, and co... |
+| [railway-operations](railway/railway-operations/SKILL.md) | `railway-operations` | `low` | "Railway Dispatching & Fleet Operations: Train path allocation, headway management, line capacity calculations (UIC 406), and d... |
+| [railway-rolling-stock](railway/railway-rolling-stock/SKILL.md) | `railway-rolling-stock` | `low` | "Traction & Rolling Stock Vehicle Dynamics: Bogie architecture, wheelset profiling, traction motors, brake bladders/pneumatics,... |
+| [railway-safety](railway/railway-safety/SKILL.md) | `railway-safety` | `low` | "Rail System Safety & Risk Assurance: EN 50126 (RAMS), common safety methods (CSM-RA), derailment risk index, level crossing pr... |
+| [railway-scheduling](railway/railway-scheduling/SKILL.md) | `railway-scheduling` | `low` | "Timetable Planning & Fleet Rostering: String-line diagrams (timetables), cyclic timetables (Taktfahrplan), conflict detection,... |
+| [railway-stations](railway/railway-stations/SKILL.md) | `railway-stations` | `low` | "Station Capacity & Passenger Flow Design: Pedestrian egress dynamics, platform sizing (NFPA 130), intermodal transit integrati... |
+| [railway-track](railway/railway-track/SKILL.md) | `railway-track` | `low` | "Permanent Way & Track Structure Design: Ballasted track components, sleeper spacing, continuous welded rail (CWR), rail anchor... |
 
 ---
 
@@ -13911,6 +14461,17 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
+## <a id="religious-studies"></a>📁 Religious Studies (4 skills)
+
+| Skill ID | Name | Risk | Description |
+| :--- | :--- | :---: | :--- |
+| [theo-exegese-juive-pardes](religious-studies/theo-exegese-juive-pardes/SKILL.md) | `theo-exegese-juive-pardes` | `low` | "Orchestre une exégèse juive multicouche des textes bibliques en utilisant la méthode traditionnelle du PaRDeS (acronyme formal... |
+| [theo-rethorique-semitique](religious-studies/theo-rethorique-semitique/SKILL.md) | `theo-rethorique-semitique` | `low` | "Analyse des textes bibliques et sémitiques selon la méthode de l'analyse rhétorique (Roland Meynet). Utilisez cette compétence... |
+| [theo-rethorique-synchronique](religious-studies/theo-rethorique-synchronique/SKILL.md) | `theo-rethorique-synchronique` | `low` | "Analyse socio-rhétorique des textes bibliques (méthode de Vernon Robbins). Utilisez ce skill lorsque l'utilisateur demande une... |
+| [theo-robert-alter-analyse](religious-studies/theo-robert-alter-analyse/SKILL.md) | `theo-robert-alter-analyse` | `low` | "Analyse des textes bibliques selon la méthode littéraire et les principes de traduction de Robert Alter. À utiliser pour exami... |
+
+---
+
 ## <a id="research"></a>📁 Research (14 skills)
 
 | Skill ID | Name | Risk | Description |
@@ -13946,14 +14507,14 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | :--- | :--- | :---: | :--- |
 | [advanced-pid-mpc](robotics/advanced-pid-mpc/SKILL.md) | `advanced-pid-mpc` | `low` | "Use when designing or tuning control loops beyond a single PID — cascade (current/velocity/position) architectures, feedforwar... |
 | [appyscript-language](robotics/appyscript-language/SKILL.md) | `appyscript-language` | `low` | "Use when writing, reviewing, or debugging AppyScript (.appy) programs for kids' robots, or when compiling AppyScript to ESP32/... |
-| [arduino-avr](robotics/arduino-avr/SKILL.md) | `arduino-avr` | `low` | "'Use when writing or debugging code for Arduino Uno, Nano, Pro Mini, or any ATmega328P/ATmega168 board. Provides expert AVR kn... |
+| [arduino-avr](robotics/arduino-avr/SKILL.md) | `arduino-avr` | `low` | "Use when writing or debugging code for Arduino Uno, Nano, Pro Mini, or any ATmega328P/ATmega168 board. Provides expert AVR kno... |
 | [balance-locomotion](robotics/balance-locomotion/SKILL.md) | `balance-locomotion` | `low` | "Use when building or debugging self-balancing robots (two-wheel balancers, Segway-style platforms) or balance-aware legged loc... |
 | [behavior-trees](robotics/behavior-trees/SKILL.md) | `behavior-trees` | `low` | "Use when designing robot task logic, mission sequencing, or replacing a finite state machine that has become unmaintainable. P... |
-| [ble-mqtt-wifi](robotics/ble-mqtt-wifi/SKILL.md) | `ble-mqtt-wifi` | `low` | "'Use when writing robot communication code: BLE GATT control links, MQTT fleet telemetry, WiFi connection management, or provi... |
+| [ble-mqtt-wifi](robotics/ble-mqtt-wifi/SKILL.md) | `ble-mqtt-wifi` | `low` | "Use when writing robot communication code: BLE GATT control links, MQTT fleet telemetry, WiFi connection management, or provis... |
 | [camera-vision](robotics/camera-vision/SKILL.md) | `camera-vision` | `low` | "Use when building robot vision pipelines — camera calibration, undistortion, color tracking under varying light, AprilTag/ArUc... |
 | [can-bus-industrial](robotics/can-bus-industrial/SKILL.md) | `can-bus-industrial` | `low` | "Use when wiring, configuring, or debugging CAN bus on robots — actuator networks (ODrive, moteus, T-motor), SocketCAN on Linux... |
 | [cobot-implementation](robotics/cobot-implementation/SKILL.md) | `cobot-implementation` | `low` | "Implement collaborative robots. TRIGGERS - Use when user needs help with cobot-implementation related tasks." |
-| [collision-avoidance](robotics/collision-avoidance/SKILL.md) | `collision-avoidance` | `low` | "'Use when implementing obstacle avoidance, protective stop zones, velocity scaling, contact detection, or safety layers on a m... |
+| [collision-avoidance](robotics/collision-avoidance/SKILL.md) | `collision-avoidance` | `low` | "Use when implementing obstacle avoidance, protective stop zones, velocity scaling, contact detection, or safety layers on a mo... |
 | [dc-motors-l298n](robotics/dc-motors-l298n/SKILL.md) | `dc-motors-l298n` | `low` | "Use when driving brushed DC motors with an L298N dual H-bridge module (the red board with the big heatsink). Covers the voltag... |
 | [depth-cameras](robotics/depth-cameras/SKILL.md) | `depth-cameras` | `low` | "Use when integrating, configuring, or debugging depth cameras (Intel RealSense, Luxonis OAK-D, Azure Kinect, Orbbec) on a robo... |
 | [differential-drive](robotics/differential-drive/SKILL.md) | `differential-drive` | `low` | "Use when writing code for a two-wheeled robot (differential drive) — driving straight, turning, odometry, or velocity control.... |
@@ -13961,14 +14522,14 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [dynamics-force](robotics/dynamics-force/SKILL.md) | `dynamics-force` | `low` | "Use when a robot arm moves fast, interacts with the environment (contact, insertion, polishing, human contact), or position co... |
 | [edge-inference](robotics/edge-inference/SKILL.md) | `edge-inference` | `low` | "Use when deploying ML inference on embedded robotics hardware — Jetson Orin Nano, Google Coral, or Raspberry Pi with accelerat... |
 | [esp-now-radio](robotics/esp-now-radio/SKILL.md) | `esp-now-radio` | `low` | "Use when building peer-to-peer wireless links between ESP32/ESP8266 boards (ESP-NOW) or between micro:bits (radio module) — ro... |
-| [esp32](robotics/esp32/SKILL.md) | `esp32` | `low` | "'Use when writing firmware, wiring plans, or debugging for ESP32 / ESP32-S3 boards (DevKitC, S3-DevKitC-1, WROOM/WROVER module... |
-| [estop-architecture](robotics/estop-architecture/SKILL.md) | `estop-architecture` | `low` | "'Use when designing or reviewing emergency stop systems for robots, CNC machines, mobile platforms, or any machine with hazard... |
-| [fail-safe-design](robotics/fail-safe-design/SKILL.md) | `fail-safe-design` | `low` | "'Use when designing or reviewing robot firmware/software that must fail safely — watchdogs, command timeouts, actuator safe st... |
-| [fault-detection-recovery](robotics/fault-detection-recovery/SKILL.md) | `fault-detection-recovery` | `low` | "'Use when a robot must detect, classify, and recover from faults — sensor dropouts, actuator stalls, software hangs, comms los... |
-| [firmware-deployment](robotics/firmware-deployment/SKILL.md) | `firmware-deployment` | `low` | "'Use when flashing, updating, or recovering firmware on classroom robots (ESP32, RP2040/Pico, AVR/Arduino) — covers mpremote/e... |
-| [functional-safety-standards](robotics/functional-safety-standards/SKILL.md) | `functional-safety-standards` | `low` | "'Use when designing, coding, or reviewing any robot that operates near humans — cobots, mobile robots, personal care robots, a... |
-| [guardrails-ai-robots](robotics/guardrails-ai-robots/SKILL.md) | `guardrails-ai-robots` | `low` | "'Use when an LLM, VLM, learned policy, or any AI model issues commands to a physical robot (mobile base, arm, drone, rover). P... |
-| [hil-testing](robotics/hil-testing/SKILL.md) | `hil-testing` | `low` | "'Use when testing robot software before or during hardware deployment — unit tests with mocked HALs, headless simulation in CI... |
+| [esp32](robotics/esp32/SKILL.md) | `esp32` | `low` | "Use when writing firmware, wiring plans, or debugging for ESP32 / ESP32-S3 boards (DevKitC, S3-DevKitC-1, WROOM/WROVER modules... |
+| [estop-architecture](robotics/estop-architecture/SKILL.md) | `estop-architecture` | `low` | "Use when designing or reviewing emergency stop systems for robots, CNC machines, mobile platforms, or any machine with hazardo... |
+| [fail-safe-design](robotics/fail-safe-design/SKILL.md) | `fail-safe-design` | `low` | "Use when designing or reviewing robot firmware/software that must fail safely — watchdogs, command timeouts, actuator safe sta... |
+| [fault-detection-recovery](robotics/fault-detection-recovery/SKILL.md) | `fault-detection-recovery` | `low` | "Use when a robot must detect, classify, and recover from faults — sensor dropouts, actuator stalls, software hangs, comms loss... |
+| [firmware-deployment](robotics/firmware-deployment/SKILL.md) | `firmware-deployment` | `low` | "Use when flashing, updating, or recovering firmware on classroom robots (ESP32, RP2040/Pico, AVR/Arduino) — covers mpremote/es... |
+| [functional-safety-standards](robotics/functional-safety-standards/SKILL.md) | `functional-safety-standards` | `low` | "Use when designing, coding, or reviewing any robot that operates near humans — cobots, mobile robots, personal care robots, au... |
+| [guardrails-ai-robots](robotics/guardrails-ai-robots/SKILL.md) | `guardrails-ai-robots` | `low` | "Use when an LLM, VLM, learned policy, or any AI model issues commands to a physical robot (mobile base, arm, drone, rover). Pr... |
+| [hil-testing](robotics/hil-testing/SKILL.md) | `hil-testing` | `low` | "Use when testing robot software before or during hardware deployment — unit tests with mocked HALs, headless simulation in CI,... |
 | [imu-mpu6050](robotics/imu-mpu6050/SKILL.md) | `imu-mpu6050` | `low` | "Use when wiring or coding an MPU6050 (or MPU6500/9250-family) IMU for tilt sensing, balance robots, shake detection, or orient... |
 | [industrial-robot-deployment](robotics/industrial-robot-deployment/SKILL.md) | `industrial-robot-deployment` | `low` | "Plan industrial robot deployments. TRIGGERS - Use when user needs help with industrial-robot-deployment related tasks." |
 | [inverse-kinematics](robotics/inverse-kinematics/SKILL.md) | `inverse-kinematics` | `low` | "Use when solving robot arm inverse kinematics — choosing between geometric/analytical and numerical solvers, handling singular... |
@@ -13977,25 +14538,25 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [lidar-fundamentals](robotics/lidar-fundamentals/SKILL.md) | `lidar-fundamentals` | `low` | "Use when working with 2D/3D lidar sensors — selecting hardware, parsing point clouds, correcting motion distortion, downsampli... |
 | [light-temp-touch](robotics/light-temp-touch/SKILL.md) | `light-temp-touch` | `low` | "Use when wiring or coding LDRs/photodiodes, temperature sensors (TMP36, DS18B20, NTC thermistor), or capacitive touch inputs (... |
 | [line-following](robotics/line-following/SKILL.md) | `line-following` | `low` | "Use when writing code for line-following robots using reflectance sensors (TCRT5000, QRE1113, or arrays like QTR-8A/8RC, 5-cha... |
-| [m5stack](robotics/m5stack/SKILL.md) | `m5stack` | `low` | "'Use when writing firmware for M5Stack CoreS3 / CoreS3 SE (ESP32-S3 dev kit with screen) — Grove port wiring, M5 MicroPython/U... |
+| [m5stack](robotics/m5stack/SKILL.md) | `m5stack-cores3` | `low` | "Use when writing firmware for M5Stack CoreS3 / CoreS3 SE (ESP32-S3 dev kit with screen) — Grove port wiring, M5 MicroPython/UI... |
 | [m5stack-cores3](robotics/m5stack-cores3/SKILL.md) | `m5stack-cores3` | `low` | "Use when writing firmware for M5Stack CoreS3 / CoreS3 SE (ESP32-S3 dev kit with screen) — Grove port wiring, M5 MicroPython/UI... |
-| [micro-ros-embedded](robotics/micro-ros-embedded/SKILL.md) | `micro-ros-embedded` | `low` | "'Use when integrating ESP32, Raspberry Pi Pico, or STM32 microcontrollers with ROS 2 via micro-ROS — agent/client setup, seria... |
+| [micro-ros-embedded](robotics/micro-ros-embedded/SKILL.md) | `micro-ros-embedded` | `low` | "Use when integrating ESP32, Raspberry Pi Pico, or STM32 microcontrollers with ROS 2 via micro-ROS — agent/client setup, serial... |
 | [microbit](robotics/microbit/SKILL.md) | `microbit` | `low` | "Use when writing code or wiring designs for the BBC micro:bit (V1 or V2) — edge connector projects, motor drivers, sensors, ra... |
 | [motion-control](robotics/motion-control/SKILL.md) | `motion-control` | `low` | "Use when implementing or tuning local motion control for mobile robots - DWA/TEB local planners, pure pursuit path tracking, t... |
 | [motor-control-foc](robotics/motor-control-foc/SKILL.md) | `motor-control-foc` | `low` | "Use when selecting, wiring, tuning, or debugging motor drives for robots — BLDC/stepper/DC selection, field-oriented control (... |
 | [nav2-stack](robotics/nav2-stack/SKILL.md) | `nav2-stack` | `low` | "Use when configuring, customizing, or debugging the ROS2 Nav2 navigation stack — bringup, behavior trees, planner/controller s... |
 | [object-detection-edge](robotics/object-detection-edge/SKILL.md) | `object-detection-edge` | `low` | "Use when deploying object detection on robot edge hardware (Jetson, Coral, Raspberry Pi) — selecting and training YOLO-family ... |
-| [obstacle-state-machines](robotics/obstacle-state-machines/SKILL.md) | `obstacle-state-machines` | `low` | "'Use when writing obstacle-avoidance, wall-following, or maze-navigation code for wheeled robots with ultrasonic/IR sensors. P... |
+| [obstacle-state-machines](robotics/obstacle-state-machines/SKILL.md) | `obstacle-state-machines` | `low` | "Use when writing obstacle-avoidance, wall-following, or maze-navigation code for wheeled robots with ultrasonic/IR sensors. Pr... |
 | [oled-ssd1306](robotics/oled-ssd1306/SKILL.md) | `oled-ssd1306` | `low` | "Use when wiring or coding an SSD1306 128x64/128x32 OLED over I2C (or SPI) on ESP32, Pico, or Arduino. Covers the 0x3C address ... |
 | [outdoor-gps](robotics/outdoor-gps/SKILL.md) | `outdoor-gps` | `low` | "Use when building outdoor robot navigation with GPS/GNSS — choosing receivers, setting up RTK/NTRIP corrections, fusing GPS wi... |
 | [path-planning](robotics/path-planning/SKILL.md) | `path-planning` | `low` | "Use when implementing or debugging robot path planning — A*/Dijkstra/D* Lite on occupancy grids, RRT/RRT* for high-DOF spaces,... |
 | [pid-control](robotics/pid-control/SKILL.md) | `pid-control` | `low` | "Use when implementing or tuning PID control loops on robots — motor speed control, line followers, balance bots, heading hold,... |
-| [power-management](robotics/power-management/SKILL.md) | `power-management` | `low` | "'Use when designing or debugging power systems for robots — battery chemistry selection (NiMH/LiPo/18650), brownout prevention... |
+| [power-management](robotics/power-management/SKILL.md) | `power-management` | `low` | "Use when designing or debugging power systems for robots — battery chemistry selection (NiMH/LiPo/18650), brownout prevention ... |
 | [power-systems-pro](robotics/power-systems-pro/SKILL.md) | `power-systems-pro` | `low` | "Use when designing or debugging robot power systems — Li-ion battery pack design, BMS selection, precharge/inrush limiting, em... |
 | [raspberry-pi-pico](robotics/raspberry-pi-pico/SKILL.md) | `raspberry-pi-pico` | `low` | "Use when writing firmware for Raspberry Pi Pico, Pico W, Pico 2, or any RP2040/RP2350 board. Covers PIO state machines for pre... |
 | [reinforcement-learning-robots](robotics/reinforcement-learning-robots/SKILL.md) | `reinforcement-learning-robots` | `low` | "Use when training RL policies for robots (locomotion, manipulation, navigation), debugging reward hacking or sim-to-real trans... |
 | [robot-design-spec](robotics/robot-design-spec/SKILL.md) | `robot-design-spec` | `low` | "Write robot design specifications. TRIGGERS - Use when user needs help with robot-design-spec related tasks." |
-| [robot-project-architecture](robotics/robot-project-architecture/SKILL.md) | `robot-project-architecture` | `low` | "'Use when starting any robot codebase, restructuring a messy robot project, or reviewing robot code organization. Provides the... |
+| [robot-project-architecture](robotics/robot-project-architecture/SKILL.md) | `robot-project-architecture` | `low` | "Use when starting any robot codebase, restructuring a messy robot project, or reviewing robot code organization. Provides the ... |
 | [robotic-process-spec](robotics/robotic-process-spec/SKILL.md) | `robotic-process-spec` | `low` | "Write robotic process specifications. TRIGGERS - Use when user needs help with robotic-process-spec related tasks." |
 | [robotics-competition-plan](robotics/robotics-competition-plan/SKILL.md) | `robotics-competition-plan` | `low` | "Plan robotics competitions. TRIGGERS - Use when user needs help with robotics-competition-plan related tasks." |
 | [robotics-curriculum](robotics/robotics-curriculum/SKILL.md) | `robotics-curriculum` | `low` | "Design robotics curricula. TRIGGERS - Use when user needs help with robotics-curriculum related tasks." |
@@ -14007,16 +14568,16 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [rtos-realtime](robotics/rtos-realtime/SKILL.md) | `rtos-realtime` | `low` | "Use when writing or reviewing real-time firmware for robots — FreeRTOS task architecture, control-loop scheduling, ISR design,... |
 | [sensor-fusion-kalman](robotics/sensor-fusion-kalman/SKILL.md) | `sensor-fusion-kalman` | `low` | "Use when fusing noisy sensors (IMU, GPS, wheel odometry, vision) into a state estimate, implementing or debugging a Kalman fil... |
 | [servos](robotics/servos/SKILL.md) | `servos` | `low` | "Use when controlling hobby servos (SG90, MG90S, MG996R, DS3218) or continuous-rotation servos from Arduino, ESP32, Pico, or an... |
-| [simulation-gazebo-isaac](robotics/simulation-gazebo-isaac/SKILL.md) | `simulation-gazebo-isaac` | `low` | "'Use when setting up robot simulation in Gazebo, Isaac Sim, Webots, PyBullet, or MuJoCo with ROS 2 — URDF/SDF physics tuning, ... |
+| [simulation-gazebo-isaac](robotics/simulation-gazebo-isaac/SKILL.md) | `simulation-gazebo-isaac` | `low` | "Use when setting up robot simulation in Gazebo, Isaac Sim, Webots, PyBullet, or MuJoCo with ROS 2 — URDF/SDF physics tuning, s... |
 | [slam](robotics/slam/SKILL.md) | `slam` | `low` | "Use when building, tuning, or debugging SLAM and localization on mobile robots — occupancy grid mapping, AMCL particle filter ... |
 | [state-machines-pro](robotics/state-machines-pro/SKILL.md) | `state-machines-pro` | `low` | "Use when designing, implementing, or debugging robot behavior coordination with finite state machines — task sequencing, missi... |
-| [steppers-buzzers](robotics/steppers-buzzers/SKILL.md) | `steppers-buzzers` | `low` | "'Use when driving a 28BYJ-48 stepper via ULN2003, or generating sound from passive/active buzzers on Arduino, ESP32, or Raspbe... |
+| [steppers-buzzers](robotics/steppers-buzzers/SKILL.md) | `steppers-buzzers` | `low` | "Use when driving a 28BYJ-48 stepper via ULN2003, or generating sound from passive/active buzzers on Arduino, ESP32, or Raspber... |
 | [task-planning](robotics/task-planning/SKILL.md) | `task-planning` | `low` | "Use when building task-level autonomy for robots — multi-step missions, task queues, mission interruption/resumption, charging... |
-| [telemetry-logging](robotics/telemetry-logging/SKILL.md) | `telemetry-logging` | `low` | "'Use when implementing robot telemetry, structured logging, flight-recorder/black-box capture, MCAP/rosbag recording, Foxglove... |
-| [tf2-coordinate-frames](robotics/tf2-coordinate-frames/SKILL.md) | `tf2-coordinate-frames` | `low` | "'Use when writing or debugging ROS 2 code that publishes, listens to, or transforms between coordinate frames (TF2): map/odom/... |
+| [telemetry-logging](robotics/telemetry-logging/SKILL.md) | `telemetry-logging` | `low` | "Use when implementing robot telemetry, structured logging, flight-recorder/black-box capture, MCAP/rosbag recording, Foxglove/... |
+| [tf2-coordinate-frames](robotics/tf2-coordinate-frames/SKILL.md) | `tf2-coordinate-frames` | `low` | "Use when writing or debugging ROS 2 code that publishes, listens to, or transforms between coordinate frames (TF2): map/odom/b... |
 | [ultrasonic-hcsr04](robotics/ultrasonic-hcsr04/SKILL.md) | `ultrasonic-hcsr04` | `low` | "Use when wiring or coding an HC-SR04 (or HC-SR04P/RCWL-1601/US-100) ultrasonic distance sensor on Arduino, ESP32, Pico, or any... |
-| [urdf-robot-description](robotics/urdf-robot-description/SKILL.md) | `urdf-robot-description` | `low` | "'Use when writing or debugging URDF/Xacro robot descriptions for ROS 2 — link/joint trees, inertia tensors, collision geometry... |
-| [vla-foundation-models](robotics/vla-foundation-models/SKILL.md) | `vla-foundation-models` | `low` | "'Use when building, fine-tuning, deploying, or safety-wrapping Vision-Language-Action (VLA) models for robot manipulation — RT... |
+| [urdf-robot-description](robotics/urdf-robot-description/SKILL.md) | `urdf-robot-description` | `low` | "Use when writing or debugging URDF/Xacro robot descriptions for ROS 2 — link/joint trees, inertia tensors, collision geometry,... |
+| [vla-foundation-models](robotics/vla-foundation-models/SKILL.md) | `vla-foundation-models` | `low` | "Use when building, fine-tuning, deploying, or safety-wrapping Vision-Language-Action (VLA) models for robot manipulation — RT-... |
 | [voice-interaction](robotics/voice-interaction/SKILL.md) | `voice-interaction` | `low` | "Use when building voice interfaces for robots — wake word detection, streaming ASR, on-device TTS, barge-in, mic arrays near m... |
 
 ---
@@ -14053,6 +14614,29 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [saas-security-compliance](saas/saas-security-compliance/SKILL.md) | `saas-security-compliance` | `low` | "Design SaaS security compliance. TRIGGERS - Use when user needs help with saas-security-compliance related tasks." |
 | [saas-support-strategy](saas/saas-support-strategy/SKILL.md) | `saas-support-strategy` | `low` | "Design SaaS support strategies. TRIGGERS - Use when user needs help with saas-support-strategy related tasks." |
 | [saas-uptime-strategy](saas/saas-uptime-strategy/SKILL.md) | `saas-uptime-strategy` | `low` | "Design SaaS uptime strategies. TRIGGERS - Use when user needs help with saas-uptime-strategy related tasks." |
+
+---
+
+## <a id="safety-engineering"></a>📁 Safety Engineering (16 skills)
+
+| Skill ID | Name | Risk | Description |
+| :--- | :--- | :---: | :--- |
+| [chemical-safety](safety-engineering/chemical-safety/SKILL.md) | `chemical-safety` | `low` | "Toxic Material & Hazardous Substance Control: GHS labeling, safety data sheet (SDS) authoring, threshold limit values (TLV), a... |
+| [electrical-safety](safety-engineering/electrical-safety/SKILL.md) | `electrical-safety` | `low` | "High-Voltage & Arc Flash Hazard Mitigation: NFPA 70E compliance, arc flash incident energy calculations (IEEE 1584), approach ... |
+| [fire-safety](safety-engineering/fire-safety/SKILL.md) | `fire-safety` | `low` | "Industrial Fire Safety & Conflagration Prevention: Flashover modeling, fire hazard classification, sprinkler density curves, a... |
+| [fmea](safety-engineering/fmea/SKILL.md) | `fmea` | `low` | "Failure Mode and Effects Analysis (FMEA/FMECA): Severity (S), Occurrence (O), Detection (D), Risk Priority Number (RPN), and c... |
+| [fta](safety-engineering/fta/SKILL.md) | `fta` | `low` | "Fault Tree Analysis & Boolean Logic Modeling: Top-event gate expansion (AND/OR/VOTE gates), minimal cut set evaluation, and qu... |
+| [functional-safety](safety-engineering/functional-safety/SKILL.md) | `functional-safety` | `low` | "Functional Safety & SIL/ASIL Allocation: IEC 61508 / ISO 26262 frameworks, safety integrity levels (SIL 1-4, ASIL A-D), safe f... |
+| [hazard-analysis](safety-engineering/hazard-analysis/SKILL.md) | `hazard-analysis` | `low` | "System Hazard Identification & Analysis: Preliminary Hazard Analysis (PHA), Subsystem Hazard Analysis (SSHA), and Operating & ... |
+| [hazop](safety-engineering/hazop/SKILL.md) | `hazop` | `low` | "Hazard and Operability Studies (HAZOP): Guide-word methodology (MORE, LESS, NONE, REVERSE, OTHER), node definition, deviation ... |
+| [industrial-safety](safety-engineering/industrial-safety/SKILL.md) | `industrial-safety` | `low` | "Machinery & Plant Floor Safety Guarding: ISO 13849 safety of machinery, safety distance calculations (ISO 13855), interlocking... |
+| [machinery-safety](safety-engineering/machinery-safety/SKILL.md) | `machinery-safety` | `low` | "Mechanical Risk Assessment & CE Marking: Machinery Directive compliance, risk assessment per ISO 12100, emergency stop archite... |
+| [occupational-safety](safety-engineering/occupational-safety/SKILL.md) | `occupational-safety` | `low` | "Workplace Safety & Ergonomics: OSHA 1910 standards, NIOSH lifting equation, personal protective equipment (PPE) matrix, and lo... |
+| [process-safety](safety-engineering/process-safety/SKILL.md) | `process-safety` | `low` | "Chemical & Industrial Process Safety: CCPS framework, layer of protection analysis (LOPA), runaway reaction mitigation, and pr... |
+| [risk-analysis](safety-engineering/risk-analysis/SKILL.md) | `risk-analysis` | `low` | "Quantitative & Qualitative Risk Assessment: Risk matrices, ALARP (As Low As Reasonably Practicable) criteria, expected loss co... |
+| [safety-case](safety-engineering/safety-case/SKILL.md) | `safety-case` | `low` | "Assurance Case & Goal Structuring Notation (GSN): Claim-argument-evidence structures, GSN modeling, safety case report authori... |
+| [software-safety](safety-engineering/software-safety/SKILL.md) | `software-safety` | `low` | "Safety-Critical Software Architecture: DO-178C / IEC 62304 / ISO 26262 Part 6, static defensive invariants, boundary sanitizat... |
+| [system-safety](safety-engineering/system-safety/SKILL.md) | `system-safety` | `low` | "System-Level Safety Lifecycle Engineering: MIL-STD-882E safety tasks, hazard tracking databases, safety baseline verification,... |
 
 ---
 
@@ -14463,11 +15047,24 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
-## <a id="search"></a>📁 Search (1 skills)
+## <a id="search"></a>📁 Search (14 skills)
 
 | Skill ID | Name | Risk | Description |
 | :--- | :--- | :---: | :--- |
+| [autocomplete](search/autocomplete/SKILL.md) | `autocomplete` | `low` | "Query Autocomplete & Typeahead Suggestions: Trie data structures, finite state transducers (FST), popularity-weighted completi... |
+| [bm25](search/bm25/SKILL.md) | `bm25` | `low` | "Okapi BM25 Lexical Scoring Formulation: Term frequency saturation parameter ($k_1$), document length normalization ($b$), inve... |
+| [enterprise-search](search/enterprise-search/SKILL.md) | `enterprise-search` | `low` | "Enterprise Search Connectors & Permission Filtering: Document level security (ACL) indexing, incremental crawling, connector p... |
+| [faceted-search](search/faceted-search/SKILL.md) | `faceted-search` | `low` | "Faceted Navigation & Structured Search Filtering: Taxonomy facet counting algorithms, hierarchical aggregations, bitset filter... |
+| [hybrid-search](search/hybrid-search/SKILL.md) | `hybrid-search` | `low` | "Hybrid Search Fusion & Score Normalization: Reciprocal Rank Fusion (RRF), cross-encoder reranking, combining sparse BM25 with ... |
+| [information-retrieval](search/information-retrieval/SKILL.md) | `information-retrieval` | `low` | "Information Retrieval Foundations & Evaluation: Inverted index architecture, posting lists compression (PForDelta), precision@... |
+| [query-understanding](search/query-understanding/SKILL.md) | `query-understanding` | `low` | "Query Understanding, Intent & Entity Extraction: Query segmentation, named entity recognition (NER) in short text, intent clas... |
+| [relevance](search/relevance/SKILL.md) | `relevance` | `low` | "Search Relevance Tuning & Judged Datasets: Click-through rate (CTR) modeling, explicit human relevance judgment guidelines (gr... |
+| [search-analytics](search/search-analytics/SKILL.md) | `search-analytics` | `low` | "Search Analytics & Zero-Result Telemetry: Zero-result query mining, query volume distributions, reformulated query tracking, s... |
+| [search-ranking](search/search-ranking/SKILL.md) | `search-ranking` | `low` | "Learning-to-Rank (LTR) & Scoring Models: Pointwise, pairwise, and listwise ranking loss formulations, LambdaMART, RankNet, and... |
 | [search-specialist](search/search-specialist/SKILL.md) | `search-specialist` | `low` | Expert web researcher using advanced search techniques and synthesis. Masters search operators, result filtering, and multi-sou... |
+| [semantic-search](search/semantic-search/SKILL.md) | `semantic-search` | `low` | "Semantic Search & Dense Bi-Encoder Embeddings: Dense retrieval pipelines, contrastive learning representations, domain-specifi... |
+| [spell-correction](search/spell-correction/SKILL.md) | `spell-correction` | `low` | "Search Spell Correction & Fuzzy Query Matching: Damerau-Levenshtein edit distance, noisy channel model, phonetic matching (Dou... |
+| [vector-search](search/vector-search/SKILL.md) | `vector-search` | `low` | "Approximate Nearest Neighbor (ANN) Vector Search: HNSW graph search (M, efConstruction, efSearch), IVF-PQ (inverted file produ... |
 
 ---
 
@@ -14768,6 +15365,75 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
+## <a id="skill-governance"></a>📁 Skill Governance (62 skills)
+
+| Skill ID | Name | Risk | Description |
+| :--- | :--- | :---: | :--- |
+| [askit-backlog](skill-governance/askit-backlog/SKILL.md) | `askit-backlog` | `low` | "Creates, triages, and prunes a plugin's two backlogs (new-component proposals and enhancements) to the Advanced Skill Library ... |
+| [askit-build-agents-md](skill-governance/askit-build-agents-md/SKILL.md) | `askit-build-agents-md` | `low` | "Creates and improves a plugin's AGENTS.md (the agent navigation and instructions entrypoint) to the Advanced Skill Library Sta... |
+| [askit-build-chain-contract](skill-governance/askit-build-chain-contract/SKILL.md) | `askit-build-chain-contract` | `low` | "Creates and improves a plugin's chain contract (agents/_chain-permitted.yaml) to the Advanced Skill Library Standard. Use when... |
+| [askit-build-command](skill-governance/askit-build-command/SKILL.md) | `askit-build-command` | `low` | "Creates and improves Claude slash commands (commands/<name>.md) that map to a skill, to the Advanced Skill Library Standard. U... |
+| [askit-build-docs](skill-governance/askit-build-docs/SKILL.md) | `askit-build-docs` | `low` | "Creates and improves a plugin's documentation across modes (readme, quickstart, tutorial, how-to, reference, glossary, faq, tr... |
+| [askit-build-hook](skill-governance/askit-build-hook/SKILL.md) | `askit-build-hook` | `low` | "Creates and improves event-driven hooks (Advanced tier) for a plugin to the Advanced Skill Library Standard. Use when you need... |
+| [askit-build-mcp](skill-governance/askit-build-mcp/SKILL.md) | `askit-build-mcp` | `low` | "Creates and improves MCP server definitions (a portable .mcp.json) for a plugin to the Advanced Skill Library Standard. Use wh... |
+| [askit-build-output-style](skill-governance/askit-build-output-style/SKILL.md) | `askit-build-output-style` | `low` | "Creates and improves Claude Code output styles (Claude-only response-mode definitions) to the Advanced Skill Library Standard.... |
+| [askit-build-samples](skill-governance/askit-build-samples/SKILL.md) | `askit-build-samples` | `low` | "Creates and validates a skill's sample sets and eval sets (golden examples, anti-examples, and triggering cases) and detects d... |
+| [askit-build-settings](skill-governance/askit-build-settings/SKILL.md) | `askit-build-settings` | `low` | "Creates and improves a plugin's settings and permissions per target and recommends least-privilege allowlists. Use when author... |
+| [askit-build-skill](skill-governance/askit-build-skill/SKILL.md) | `askit-build-skill` | `low` | "Creates and improves agentskills.io skills to the Advanced Skill Library Standard. Use when you need to author a new SKILL.md,... |
+| [askit-build-statusline](skill-governance/askit-build-statusline/SKILL.md) | `askit-build-statusline` | `low` | "Creates and improves a Claude Code status line script and its settings registration. Use when authoring a status line, customi... |
+| [askit-build-subagent](skill-governance/askit-build-subagent/SKILL.md) | `askit-build-subagent` | `low` | "Creates and improves Claude subagents (agents/<name>.md) to the Advanced Skill Library Standard. Use when you need to author a... |
+| [askit-build-workflow](skill-governance/askit-build-workflow/SKILL.md) | `askit-build-workflow` | `low` | "Creates and improves workflows (an ordered multi-skill arc) for a plugin to the Advanced Skill Library Standard. Use when a re... |
+| [askit-capability-advisor](skill-governance/askit-capability-advisor/SKILL.md) | `askit-capability-advisor` | `low` | "Reports which component types a target agent can run and recommends a conformance tier before a plugin is built, mapping Claud... |
+| [askit-capability-gap-analysis](skill-governance/askit-capability-gap-analysis/SKILL.md) | `askit-capability-gap-analysis` | `low` | "Assesses a new agent capability against the capability matrix, the Standard, and every skill, subagent and command this plugin... |
+| [askit-capability-whats-new](skill-governance/askit-capability-whats-new/SKILL.md) | `askit-capability-whats-new` | `low` | "Surveys what the agent platforms shipped since this repository last looked, diffing each vendor's release feed forward from a ... |
+| [askit-decision](skill-governance/askit-decision/SKILL.md) | `askit-decision` | `low` | "Creates and maintains a plugin's decision records (MADR ADRs) and RFCs in docs/internal, and the summary TL;DR companion for l... |
+| [askit-deprecate](skill-governance/askit-deprecate/SKILL.md) | `askit-deprecate` | `low` | "Validates and records a component's deprecation (status, replacement, and removal target) and keeps deprecated components vali... |
+| [askit-evaluate](skill-governance/askit-evaluate/SKILL.md) | `askit-evaluate` | `low` | "Evaluates a skill or plugin against the Advanced Skill Library Standard across three modes, producing deterministic conformanc... |
+| [askit-init-marketplace](skill-governance/askit-init-marketplace/SKILL.md) | `askit-init-marketplace` | `low` | "Creates and validates a marketplace index that catalogs plugins for Claude Code and Codex, checking each entry, its plugin ref... |
+| [askit-init-plugin](skill-governance/askit-init-plugin/SKILL.md) | `askit-init-plugin` | `low` | "Creates a starting plugin that satisfies the Bronze anatomy and onboards the maintainer, in three modes (interview, questionna... |
+| [askit-migrate](skill-governance/askit-migrate/SKILL.md) | `askit-migrate` | `low` | "Assesses an existing skills repository against the Advanced Skill Library Standard, produces a staged bring-to-conformance pla... |
+| [askit-release](skill-governance/askit-release/SKILL.md) | `askit-release` | `low` | "Builds and validates a plugin's release by computing the version, promoting the changelog, curating the release notes, and run... |
+| [askit-standards-watch](skill-governance/askit-standards-watch/SKILL.md) | `askit-standards-watch` | `low` | "Checks whether the pinned agentskills.io upstream specification has changed, reports which Universal conformance checks each d... |
+| [askit-template-manager](skill-governance/askit-template-manager/SKILL.md) | `askit-template-manager` | `low` | "Creates and maintains a plugin's global templates directory so the scaffolders produce consistent components. Use when adding ... |
+| [broken](skill-governance/broken/SKILL.md) | `broken` | `low` | "[unclosed list" |
+| [cd-on-disk-only](skill-governance/cd-on-disk-only/SKILL.md) | `cd-on-disk-only` | `low` | "Converts CSV input into a formatted summary. Use when the user asks to summarize or tabulate spreadsheet data." |
+| [cd-skill](skill-governance/cd-skill/SKILL.md) | `cd-skill` | `low` | "Does a thing with data. Use when the user asks to process or transform a dataset." |
+| [cf-do-thing](skill-governance/cf-do-thing/SKILL.md) | `cf-do-thing` | `low` | "Converts CSV input into a formatted summary. Use when the user asks to summarize spreadsheet data." |
+| [co-caller](skill-governance/co-caller/SKILL.md) | `co-caller` | `low` | "Declares it invokes co-worker, which the chain contract does not permit. Use to exercise S4 orphan detection." |
+| [consent-log-audit](skill-governance/consent-log-audit/SKILL.md) | `consent-log-audit` | `low` | "Audits an exported marketing consent log for expired retention windows, withdrawn consents still marked active, and rows missi... |
+| [cs-caller-comma](skill-governance/cs-caller-comma/SKILL.md) | `cs-caller-comma` | `low` | "Calls both worker subagents using a comma-separated metadata.chain string. Use when delegating work to cs-worker-a and cs-work... |
+| [cs-caller-space](skill-governance/cs-caller-space/SKILL.md) | `cs-caller-space` | `low` | "Calls both worker subagents using a whitespace-only-separated metadata.chain string. Use when delegating work to cs-worker-a a... |
+| [cso-caller](skill-governance/cso-caller/SKILL.md) | `cso-caller` | `low` | "Declares it invokes cso-worker as a STRING, which the chain contract does not permit. Use to exercise the S4 migration-cap cei... |
+| [cx-caller](skill-governance/cx-caller/SKILL.md) | `cx-caller` | `low` | "Declares metadata.chain as a string with no chain contract present. Use to exercise the S4 migration-cap ceiling (ADR 0041) wh... |
+| [data-request-router](skill-governance/data-request-router/SKILL.md) | `data-request-router` | `low` | "Routes an incoming consumer data request to the team that owns it, using the request type and the requester's state of residen... |
+| [do-thing](skill-governance/do-thing/SKILL.md) | `do-thing` | `low` | "Converts a CSV file into a formatted summary table. Use when the user asks to summarize, tabulate, or report on CSV or spreads... |
+| [dsar-intake-triage](skill-governance/dsar-intake-triage/SKILL.md) | `dsar-intake-triage` | `low` | "Triages an incoming data-subject access request by verifying the requester's identity, classifying the request as access, dele... |
+| [fx-demo](skill-governance/fx-demo/SKILL.md) | `fx-demo` | `low` | "A fixture skill that exists so the re-derived manifest has a component list to compare. Use only from tests/unit/self-consiste... |
+| [integration-init](skill-governance/integration-init/SKILL.md) | `integration-init` | `low` | Specialized instructions for integration init. |
+| [library-audit](skill-governance/library-audit/SKILL.md) | `library-audit` | `low` | Specialized instructions for library audit. |
+| [linkrot](skill-governance/linkrot/SKILL.md) | `linkrot` | `low` | "Converts a meeting transcript into a decision log. Use when the user asks to extract decisions, action items, or owners from a... |
+| [lone-skill](skill-governance/lone-skill/SKILL.md) | `lone-skill` | `low` | "Converts a list of tasks into a prioritized plan. Use when the user asks to order, rank, or sequence work items by priority." |
+| [pg-skill-one](skill-governance/pg-skill-one/SKILL.md) | `pg-skill-one` | `low` | "Creates output for things. Use when the user asks for things." |
+| [pg-skill-three](skill-governance/pg-skill-three/SKILL.md) | `pg-skill-three` | `low` | "Creates output for things. Use when the user asks for things." |
+| [pg-skill-two](skill-governance/pg-skill-two/SKILL.md) | `pg-skill-two` | `low` | "Creates output for things. Use when the user asks for things." |
+| [pg-toplevel](skill-governance/pg-toplevel/SKILL.md) | `pg-toplevel` | `low` | "Creates output for things. Use when the user asks for things." |
+| [privacy-notice-review](skill-governance/privacy-notice-review/SKILL.md) | `privacy-notice-review` | `low` | "Reviews a published privacy notice against a seven-point disclosure checklist and the US state privacy statutes, and returns a... |
+| [probe-duplicate](skill-governance/probe-duplicate/SKILL.md) | `probe-duplicate` | `low` | "PROBE FIXTURE side B. Two plugins ship a skill with this exact directory name and this exact skill name. Invoke it and read wh... |
+| [sd-skill](skill-governance/sd-skill/SKILL.md) | `sd-skill` | `low` | "Creates a thing and validates it. Use when the frontmatter status must be mirrored by the library.json entry for the mirroring... |
+| [sf-caller](skill-governance/sf-caller/SKILL.md) | `sf-caller` | `low` | "Calls the worker subagent to do a thing. Use when delegating work to sf-worker." |
+| [sf-do-thing](skill-governance/sf-do-thing/SKILL.md) | `sf-do-thing` | `low` | "Converts CSV input into a formatted summary. Use when the user asks to summarize or tabulate spreadsheet data." |
+| [skill-build-portable](skill-governance/skill-build-portable/SKILL.md) | `skill-build-portable` | `low` | Specialized instructions for skill build portable. |
+| [skill-compare](skill-governance/skill-compare/SKILL.md) | `skill-compare` | `low` | Specialized instructions for skill compare. |
+| [skill-evaluate](skill-governance/skill-evaluate/SKILL.md) | `skill-evaluate` | `low` | Specialized instructions for skill evaluate. |
+| [skill-find](skill-governance/skill-find/SKILL.md) | `skill-find` | `low` | Specialized instructions for skill find. |
+| [summarize-doc](skill-governance/summarize-doc/SKILL.md) | `summarize-doc` | `low` | "Converts a document into a summary. Use when the user asks about the document thing." |
+| [td-skill](skill-governance/td-skill/SKILL.md) | `td-skill` | `low` | "Creates a thing and validates it. Use when the frontmatter tier must be mirrored by the library.json entry for the mirroring t... |
+| [templates](skill-governance/templates/SKILL.md) | `replace-with-kebab-case-name-matching-this-directory` | `low` | "REPLACE - state what the skill does AND when to use it, with concrete trigger keywords. One to two sentences. Third person. Av... |
+| [vague](skill-governance/vague/SKILL.md) | `vague` | `low` | "Helps with stuff." |
+| [wrong-name](skill-governance/wrong-name/SKILL.md) | `totally-different` | `low` | "Renders a Markdown document to PDF. Use when the user asks to export or convert notes to PDF." |
+
+---
+
 ## <a id="skilled-trades"></a>📁 Skilled Trades (29 skills)
 
 | Skill ID | Name | Risk | Description |
@@ -14867,6 +15533,24 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [space-manufacturing-plan](space/space-manufacturing-plan/SKILL.md) | `space-manufacturing-plan` | `low` | "Plan space manufacturing. TRIGGERS - Use when user needs help with space-manufacturing-plan related tasks." |
 | [space-startup-plan](space/space-startup-plan/SKILL.md) | `space-startup-plan` | `low` | "Plan space industry startups. TRIGGERS - Use when user needs help with space-startup-plan related tasks." |
 | [space-tourism-plan](space/space-tourism-plan/SKILL.md) | `space-tourism-plan` | `low` | "Plan space tourism ventures. TRIGGERS - Use when user needs help with space-tourism-plan related tasks." |
+
+---
+
+## <a id="speech-language-pathology"></a>📁 Speech Language Pathology (11 skills)
+
+| Skill ID | Name | Risk | Description |
+| :--- | :--- | :---: | :--- |
+| [aphasia](speech-language-pathology/aphasia/SKILL.md) | `aphasia` | `low` | "Neurogenic Aphasia Assessment & Neurologic Therapy: Western Aphasia Battery (WAB-R), Boston Diagnostic Aphasia Examination, Co... |
+| [articulation](speech-language-pathology/articulation/SKILL.md) | `articulation` | `low` | "Motor Speech & Articulation Therapy Interventions: Van Riper traditional articulation therapy, phonetic placement cues, contra... |
+| [augmentative-communication](speech-language-pathology/augmentative-communication/SKILL.md) | `augmentative-communication` | `low` | "Augmentative and Alternative Communication (AAC): Feature matching AAC evaluations, high-tech eye-gaze and speech-generating d... |
+| [fluency](speech-language-pathology/fluency/SKILL.md) | `fluency` | `low` | "Stuttering & Fluency Diagnostic Evaluation: Percentage of disfluent syllables (%SS), stuttering severity instrument (SSI-4), f... |
+| [language-assessment](speech-language-pathology/language-assessment/SKILL.md) | `language-assessment` | `low` | "Pediatric & Adult Language Diagnostic Assessment: Expressive and receptive language batteries (CELF-5, PLS-5), mean length of ... |
+| [neurogenic-communication](speech-language-pathology/neurogenic-communication/SKILL.md) | `neurogenic-communication` | `low` | "Cognitive-Communication & Motor Speech Disorders: Assessment of dysarthria (Frenchay Dysarthria Assessment), apraxia of speech... |
+| [pediatric-speech](speech-language-pathology/pediatric-speech/SKILL.md) | `pediatric-speech` | `low` | "Early Childhood Speech & Language Milestones: Late talker identification, parent-implemented language interventions (Hanen mod... |
+| [rehabilitation](speech-language-pathology/rehabilitation/SKILL.md) | `rehabilitation` | `low` | "Speech & Language Neuro-Rehabilitation Protocols: Interdisciplinary stroke rehabilitation, traumatic brain injury (TBI) cognit... |
+| [speech-assessment](speech-language-pathology/speech-assessment/SKILL.md) | `speech-assessment` | `low` | "Comprehensive Speech Sound Disorder Evaluation: Oral mechanism examination, standardized articulation testing (GFTA-3), phonet... |
+| [swallowing](speech-language-pathology/swallowing/SKILL.md) | `swallowing` | `low` | "Dysphagia Assessment & Deglutition Rehabilitation: Clinical bedside swallow evaluation, Modified Barium Swallow Study (MBSS/VF... |
+| [voice](speech-language-pathology/voice/SKILL.md) | `voice` | `low` | "Voice Disorder Assessment & Acoustic Laryngeal Analysis: CAPE-V perceptual ratings, fundamental frequency ($F_0$), jitter, shi... |
 
 ---
 
@@ -15154,6 +15838,26 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [sustainable-packaging](sustainability/sustainable-packaging/SKILL.md) | `sustainable-packaging` | `low` | Design sustainable packaging strategies. TRIGGERS - Use when user needs help with sustainable-packaging related tasks. |
 | [water-conservation-plan](sustainability/water-conservation-plan/SKILL.md) | `water-conservation-plan` | `low` | Create water conservation plans with efficiency measures. TRIGGERS - Use when user needs help with water-conservation-plan rela... |
 | [water-stewardship-plan](sustainability/water-stewardship-plan/SKILL.md) | `water-stewardship-plan` | `low` | Design water stewardship plans. TRIGGERS - Use when user needs help with water-stewardship-plan related tasks. |
+
+---
+
+## <a id="systems-engineering"></a>📁 Systems Engineering (13 skills)
+
+| Skill ID | Name | Risk | Description |
+| :--- | :--- | :---: | :--- |
+| [configuration-management](systems-engineering/configuration-management/SKILL.md) | `configuration-management` | `low` | "Configuration Baselines & Change Control: Functional/Allocated/Product baselines, Engineering Change Proposals (ECP), Configur... |
+| [interface-management](systems-engineering/interface-management/SKILL.md) | `interface-management` | `low` | "Interface Control Documents (ICD) & Contracts: ICD authoring, electrical/mechanical/data boundary definitions, pinout matrices... |
+| [lifecycle-engineering](systems-engineering/lifecycle-engineering/SKILL.md) | `lifecycle-engineering` | `low` | "Full Lifecycle Management (ISO/IEC/IEEE 15288): Concept, Development, Production, Utilization, Support, and Retirement stage g... |
+| [mbse](systems-engineering/mbse/SKILL.md) | `mbse` | `low` | "Model-Based Systems Engineering (MBSE): Cameo / Enterprise Architect workflows, system behavioral modeling, parametric constra... |
+| [reliability](systems-engineering/reliability/SKILL.md) | `reliability` | `low` | "System Reliability, Availability & Maintainability (RAM): MTBF/MTTR computations, reliability block diagrams (RBD), parallel a... |
+| [requirements-engineering](systems-engineering/requirements-engineering/SKILL.md) | `requirements-engineering` | `low` | "System Requirements Analysis & Allocation: Stakeholder need decomposition, clear verification statements, functional baseline ... |
+| [safety](systems-engineering/safety/SKILL.md) | `safety` | `low` | "Integrated System Safety Engineering: Hazards tracking in systems lifecycle, safety requirements allocation to hardware/softwa... |
+| [sysml](systems-engineering/sysml/SKILL.md) | `sysml` | `low` | "SysML Modeling & Diagram Specifications: Block Definition Diagrams (BDD), Internal Block Diagrams (IBD), Activity, State Machi... |
+| [system-architecture](systems-engineering/system-architecture/SKILL.md) | `system-architecture` | `low` | "System Architecture & Functional Decomposition: Physical, logical, and functional views (DoDAF/UAF), subsystem boundary encaps... |
+| [systems-integration](systems-engineering/systems-integration/SKILL.md) | `systems-integration` | `low` | "System Integration & Assembly Sequencing: Bottom-up and continuous integration strategies, harness testing, mock hardware-in-t... |
+| [systems-optimization](systems-engineering/systems-optimization/SKILL.md) | `systems-optimization` | `low` | "System Multi-Objective Parameter Optimization: Pareto frontier analysis, design of experiments (DOE), multidisciplinary design... |
+| [trade-studies](systems-engineering/trade-studies/SKILL.md) | `trade-studies` | `low` | "Multi-Criteria Decision Making & Trade Studies: Weighting criteria matrices, TOPSIS and Pugh matrix evaluations, cost vs perfo... |
+| [verification-validation](systems-engineering/verification-validation/SKILL.md) | `verification-validation` | `low` | "System Verification & Validation (V&V): Verification cross-reference matrix (VCRM), test/inspection/analysis/demonstration met... |
 
 ---
 
@@ -15684,15 +16388,27 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
-## <a id="voice-agents"></a>📁 Voice Agents (5 skills)
+## <a id="voice-agents"></a>📁 Voice Agents (17 skills)
 
 | Skill ID | Name | Risk | Description |
 | :--- | :--- | :---: | :--- |
 | [audio-transcriber](voice-agents/audio-transcriber/SKILL.md) | `audio-transcriber` | `safe` | "Transform audio recordings into professional Markdown documentation with intelligent summaries using LLM integration" |
 | [auri-core](voice-agents/auri-core/SKILL.md) | `auri-core` | `none` | "Auri: assistente de voz inteligente (Alexa + Claude claude-opus-4-20250805). Visao do produto, persona Vitoria Neural, stack A... |
+| [call-routing](voice-agents/call-routing/SKILL.md) | `call-routing` | `low` | "Interactive Voice Response (IVR) & Intelligent Routing: Intent classification from speech, caller sentiment analysis, transfer... |
 | [fal-audio](voice-agents/fal-audio/SKILL.md) | `fal-audio` | `safe` | "Text-to-speech and speech-to-text using fal.ai audio models" |
+| [interruption-handling](voice-agents/interruption-handling/SKILL.md) | `interruption-handling` | `low` | "Barge-In Detection & Audio Cutoff Execution: Instantaneous synthesizer abort upon user barge-in, prompt replay suppression, co... |
 | [pipecat-friday-agent](voice-agents/pipecat-friday-agent/SKILL.md) | `pipecat-friday-agent` | `safe` | "Build a low-latency, Iron Man-inspired tactical voice assistant (F.R.I.D.A.Y.) using Pipecat, Gemini, and OpenAI." |
+| [realtime-conversation](voice-agents/realtime-conversation/SKILL.md) | `realtime-conversation` | `low` | "Conversational State & Turn-Taking Models: Managing conversational grounding, feedback backchannels ('uh-huh', 'got it'), end-... |
+| [speaker-diarization](voice-agents/speaker-diarization/SKILL.md) | `speaker-diarization` | `low` | "Speaker Diarization & Audio Clustering: x-vector and d-vector embeddings, spectral clustering, overlap detection, and turn-tak... |
+| [speech-to-text](voice-agents/speech-to-text/SKILL.md) | `speech-to-text` | `low` | "Speech-to-Text & Automatic Speech Recognition (ASR): Whisper, Kaldi, and wav2vec2 pipeline integration, word error rate (WER) ... |
+| [telephony](voice-agents/telephony/SKILL.md) | `telephony` | `low` | "Telephony Gateway & SIP/PSTN Trunking: Twilio, LiveKit, Asterisk, and FreeSWITCH SIP integration, G.711 / Opus transcoding, du... |
+| [text-to-speech](voice-agents/text-to-speech/SKILL.md) | `text-to-speech` | `low` | "Neural Text-to-Speech & Acoustic Synthesis: Mel-spectrogram synthesis, vocoder architectures (HiFi-GAN), SSML markup, prosody ... |
+| [turn-taking](voice-agents/turn-taking/SKILL.md) | `turn-taking` | `low` | "Acoustic & Semantic Turn-Taking Prediction: Prosodic boundary detection (pitch contour, pause duration), semantic completion s... |
+| [voice-activity-detection](voice-agents/voice-activity-detection/SKILL.md) | `voice-activity-detection` | `low` | "Voice Activity Detection (VAD) & Audio Thresholding: Silero VAD, WebRTC VAD, energy and spectral flux thresholding, hangover t... |
+| [voice-agent-architecture](voice-agents/voice-agent-architecture/SKILL.md) | `voice-agent-architecture` | `low` | "Full-Duplex Realtime Voice Agent Pipeline: WebSocket/WebRTC full duplex audio loops, LLM token streaming to audio synth, pipel... |
 | [voice-ai-development](voice-agents/voice-ai-development/SKILL.md) | `voice-ai-development` | `critical` | Expert in building voice AI applications - from real-time voice agents to voice-enabled apps. Covers OpenAI Realtime API, Vapi ... |
+| [voice-authentication](voice-agents/voice-authentication/SKILL.md) | `voice-authentication` | `low` | "Biometric Voice Authentication & Verification: Voiceprint enrollment, cosine similarity thresholding on speaker embeddings, an... |
+| [voice-evaluation](voice-agents/voice-evaluation/SKILL.md) | `voice-evaluation` | `low` | "Voice Agent Latency & Intelligibility Benchmarking: Time-to-first-audio (TTFA), MOS (Mean Opinion Score), PESQ, POLQA, and tas... |
 
 ---
 

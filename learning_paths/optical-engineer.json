@@ -1,0 +1,42 @@
+{
+  "path_id": "optical-engineer",
+  "title": "Optical Systems Design Path",
+  "domain": "optical-engineering",
+  "stages": [
+    {
+      "stage": 1,
+      "name": "Geometric Optics",
+      "skills": [
+        "optical-design",
+        "lens-design"
+      ]
+    },
+    {
+      "stage": 2,
+      "name": "Physical Optics & Lasers",
+      "skills": [
+        "laser-systems",
+        "fiber-optics",
+        "interferometry"
+      ]
+    },
+    {
+      "stage": 3,
+      "name": "Advanced Photonics",
+      "skills": [
+        "photonics",
+        "optical-coatings",
+        "detectors"
+      ]
+    },
+    {
+      "stage": 4,
+      "name": "System Metrology",
+      "skills": [
+        "optical-testing",
+        "optomechanics",
+        "lidar"
+      ]
+    }
+  ]
+}

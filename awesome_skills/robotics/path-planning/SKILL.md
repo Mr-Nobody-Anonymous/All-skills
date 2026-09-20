@@ -1,16 +1,27 @@
 ---
 name: path-planning
-description: "Use when implementing or debugging robot path planning — A*/Dijkstra/D* Lite on occupancy grids, RRT/RRT* for high-DOF spaces, costmap inflation, global/local planner architecture, path smoothing, or planning frequency budgets. Provides the math, parameter starting values, and failure modes for prod"
+description: "Use when implementing or debugging robot path planning — A*/Dijkstra/D* Lite on occupancy grids, RRT/RRT* for high-DOF spaces, costmap inflation, global/local planner architecture, path smoothing, or planning frequency budgets. Provides the math, parameter starting values, and failure modes for production-grade planners."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/navigation/path-planning/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # Path Planning
 
 Expert knowledge for grid-based and sampling-based planning on real robots. Covers algorithm selection, admissible heuristics, costmap construction, replanning, smoothing, and the timing budgets that keep a robot from freezing mid-aisle or clipping a shelf corner.

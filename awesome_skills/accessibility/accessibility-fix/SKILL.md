@@ -1,16 +1,30 @@
 ---
 name: accessibility-fix
-description: "'Remediation only — repair web accessibility (a11y) violations against WCAG 2.2 with a baseline, edit, and verify loop. Takes a target (URL, files, directory) or a findings worklist from `accessibility-scan`/`accessibility-inspect`/`accessibility-audit`, applies mechanical fixes as given, leaves TOD"
+description: "Remediation only — repair web accessibility (a11y) violations against WCAG 2.2 with a baseline, edit, and verify loop. Takes a target (URL, files, directory) or a findings worklist from `accessibility-scan`/`accessibility-inspect`/`accessibility-audit`, applies mechanical fixes as given, leaves TODOs for visual or contextual judgment, and verifies by re-running the baseline check. It only fixes. To find issues use `accessibility-scan` (one page, automated), `accessibility-inspect` (one page, manual), or `accessibility-audit` (whole site, WCAG-EM); to check for regressions use `accessibility-diff`. Use it for 'fix the a11y issues in X', 'make this accessible', 'add missing alt text and labels', 'apply these accessibility fixes', 'remediate these violations'."
 category: accessibility
+domain: accessibility
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/AccessLint/skills"
-source_repository: "AccessLint/skills"
-source_path: "plugins/accesslint/skills/accessibility-fix/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "AccessLint/skills"
+  commit: "2e9d733667"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+# Accessibility Fix
+
+
+
 This skill remediates accessibility violations: baseline, edit, verify. It only fixes. To find what's wrong, use `accesslint:accessibility-scan` (one page, automated), `accesslint:accessibility-inspect` (one page, manual), or `accesslint:accessibility-audit` (whole site, WCAG-EM); to check for regressions, use `accesslint:accessibility-diff`. The engine runs here are internal to the loop — a baseline before and a check after — not a report.
 
 Shared conventions (grounding, never invent content): [`../shared/methodology.md`](../shared/methodology.md).

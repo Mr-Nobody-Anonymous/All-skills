@@ -1,16 +1,27 @@
 ---
 name: tf2-coordinate-frames
-description: "'Use when writing or debugging ROS 2 code that publishes, listens to, or transforms between coordinate frames (TF2): map/odom/base_link trees, static vs dynamic transforms, lookup timeouts, extrapolation errors, multi-robot namespacing. Provides REP-103/REP-105 conventions, exact frame contracts, wo"
+description: "Use when writing or debugging ROS 2 code that publishes, listens to, or transforms between coordinate frames (TF2): map/odom/base_link trees, static vs dynamic transforms, lookup timeouts, extrapolation errors, multi-robot namespacing. Provides REP-103/REP-105 conventions, exact frame contracts, working rclpy/rclcpp patterns, and a debugging checklist that resolves 95% of TF errors."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/ros2/tf2-coordinate-frames/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # TF2 Coordinate Frames (ROS 2)
 
 Expert reference for the ROS 2 transform system. Everything here assumes ROS 2 Humble or newer (Jazzy-compatible). All code is tested patterns — copy them as-is.

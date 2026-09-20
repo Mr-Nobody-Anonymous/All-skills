@@ -2,15 +2,26 @@
 name: sensor-fusion-kalman
 description: "Use when fusing noisy sensors (IMU, GPS, wheel odometry, vision) into a state estimate, implementing or debugging a Kalman filter / EKF / UKF, tuning Q and R covariances, or configuring robot_localization in ROS2. Provides the math, worked examples, tuning methodology, and production failure modes."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/perception/sensor-fusion-kalman/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # Sensor Fusion with Kalman Filters
 
 State estimation is the foundation under everything else on the robot. If your pose estimate is wrong, your controller fights phantom errors, your planner plans from the wrong place, and your map smears. This skill covers the Kalman filter family from first principles to production deployment, with the tuning methodology that actually works on hardware.

@@ -1,16 +1,27 @@
 ---
 name: telemetry-logging
-description: "'Use when implementing robot telemetry, structured logging, flight-recorder/black-box capture, MCAP/rosbag recording, Foxglove/PlotJuggler visualization, or fleet telemetry uplinks over MQTT. Provides exact logging-level discipline, ring-buffer fault capture patterns, rosbag2/MCAP record strategies"
+description: "Use when implementing robot telemetry, structured logging, flight-recorder/black-box capture, MCAP/rosbag recording, Foxglove/PlotJuggler visualization, or fleet telemetry uplinks over MQTT. Provides exact logging-level discipline, ring-buffer fault capture patterns, rosbag2/MCAP record strategies with QoS and storage budgets, sim-vs-wall clock correlation, and bandwidth-budgeted MQTT downsampling code for MicroPython, Arduino C++, and ROS 2 Python."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/diagnostics/telemetry-logging/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # Robot Telemetry & Logging
 
 Telemetry that can't answer "what happened in the 5 seconds before the fault?" is decoration.

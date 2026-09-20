@@ -1,16 +1,27 @@
 ---
 name: inverse-kinematics
-description: "Use when solving robot arm inverse kinematics — choosing between geometric/analytical and numerical solvers, handling singularities, joint limits, redundancy, or selecting between IKFast, KDL, and trac-ik. Provides DH parameter methodology, Jacobian-based IK math with damped least squares, workspace"
+description: "Use when solving robot arm inverse kinematics — choosing between geometric/analytical and numerical solvers, handling singularities, joint limits, redundancy, or selecting between IKFast, KDL, and trac-ik. Provides DH parameter methodology, Jacobian-based IK math with damped least squares, workspace analysis, and production-grade failure-mode handling."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/control/inverse-kinematics/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # Inverse Kinematics for Robot Arms
 
 Inverse kinematics (IK) answers: *given a desired end-effector pose, what joint angles achieve it?*

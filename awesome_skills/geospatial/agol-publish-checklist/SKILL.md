@@ -2,15 +2,26 @@
 name: agol-publish-checklist
 description: "Create a pre‑publish checklist for ArcGIS Online items with risk and data quality checks"
 category: geospatial
+domain: geospatial
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/danmaps/gis-agent-skills"
-source_repository: "danmaps/gis-agent-skills"
-source_path: "skills/agol-publish-checklist/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "danmaps/gis-agent-skills"
+  commit: "47afe3a4b5"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # AGOL Publish Checklist
 
 Generate a concise, practical checklist to publish an item to AGOL safely.

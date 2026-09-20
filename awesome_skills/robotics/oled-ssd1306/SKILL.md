@@ -1,16 +1,27 @@
 ---
 name: oled-ssd1306
-description: "Use when wiring or coding an SSD1306 128x64/128x32 OLED over I2C (or SPI) on ESP32, Pico, or Arduino. Covers the 0x3C address trap, the 1KB framebuffer RAM cost, MicroPython ssd1306 lib quirks, Adafruit GFX/SSD1306 on Arduino, drawing robot faces with primitives, real refresh-rate limits, burn-in av"
+description: "Use when wiring or coding an SSD1306 128x64/128x32 OLED over I2C (or SPI) on ESP32, Pico, or Arduino. Covers the 0x3C address trap, the 1KB framebuffer RAM cost, MicroPython ssd1306 lib quirks, Adafruit GFX/SSD1306 on Arduino, drawing robot faces with primitives, real refresh-rate limits, burn-in avoidance, and the I2C debugging checklist."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/displays/oled-ssd1306/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # SSD1306 OLED (128x64 / 128x32) — Field Guide
 
 The SSD1306 is the default tiny display in robotics: 0.96" 128x64 (most common), 0.91" 128x32, and 1.3" modules that are *often actually SH1106* (see Gotcha #1). Monochrome, I2C or SPI, 3.3V logic, self-emissive — no backlight, true black, but it burns in.

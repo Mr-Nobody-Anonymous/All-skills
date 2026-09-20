@@ -1,0 +1,42 @@
+{
+  "path_id": "hpc-engineer",
+  "title": "High-Performance Computing Engineer Path",
+  "domain": "high-performance-computing",
+  "stages": [
+    {
+      "stage": 1,
+      "name": "Foundations",
+      "skills": [
+        "parallel-algorithms",
+        "numerical-computing"
+      ]
+    },
+    {
+      "stage": 2,
+      "name": "Distributed Memory",
+      "skills": [
+        "mpi",
+        "openmp",
+        "hpc-storage"
+      ]
+    },
+    {
+      "stage": 3,
+      "name": "GPU Acceleration",
+      "skills": [
+        "cuda",
+        "gpu-computing",
+        "vectorization"
+      ]
+    },
+    {
+      "stage": 4,
+      "name": "Cluster Operations",
+      "skills": [
+        "cluster-computing",
+        "slurm",
+        "performance-modeling"
+      ]
+    }
+  ]
+}

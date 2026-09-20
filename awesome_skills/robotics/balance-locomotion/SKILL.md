@@ -1,16 +1,27 @@
 ---
 name: balance-locomotion
-description: "Use when building or debugging self-balancing robots (two-wheel balancers, Segway-style platforms) or balance-aware legged locomotion (ZMP-based walking). Provides the inverted pendulum math, a complete IMU→filter→PID→motor recipe with exact starting gains, deadband/backlash compensation, ZMP fundam"
+description: "Use when building or debugging self-balancing robots (two-wheel balancers, Segway-style platforms) or balance-aware legged locomotion (ZMP-based walking). Provides the inverted pendulum math, a complete IMU→filter→PID→motor recipe with exact starting gains, deadband/backlash compensation, ZMP fundamentals, steering mixing, and the diagnosis tree for oscillation and drift on real hardware."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/control/balance-locomotion/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # Balance Control & Locomotion
 
 This skill covers dynamic balance: keeping an inherently unstable plant (an inverted pendulum) upright with active control. It applies to two-wheeled balancing robots, Segway-style personal transporters, reaction-wheel balancers, and the ZMP foundation used in bipedal walking.

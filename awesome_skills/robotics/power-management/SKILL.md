@@ -1,16 +1,27 @@
 ---
 name: power-management
-description: "'Use when designing or debugging power systems for robots — battery chemistry selection (NiMH/LiPo/18650), brownout prevention on motor start, regulator choice (buck vs LDO), battery voltage sensing, low-battery behaviors, and TP4056 charging circuits. Provides exact wiring tables, voltage/current b"
+description: "Use when designing or debugging power systems for robots — battery chemistry selection (NiMH/LiPo/18650), brownout prevention on motor start, regulator choice (buck vs LDO), battery voltage sensing, low-battery behaviors, and TP4056 charging circuits. Provides exact wiring tables, voltage/current budgets, capacitor sizing, ADC divider math, and working MicroPython/Arduino code for battery monitoring and graceful degradation."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/product/power-management/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # Robot Power Management
 
 Power is the #1 cause of "random" robot failures. A robot that resets when motors start, an ESP32 that boot-loops, a Pi that corrupts its SD card — these are power problems, not software bugs. This skill makes the power system correct **before** debugging code.

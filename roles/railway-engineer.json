@@ -1,0 +1,24 @@
+{
+  "role": "Railway Systems Engineer",
+  "domain": "railway",
+  "description": "Designs and manages railway infrastructure, signaling, track alignment, rolling stock, and rail operations safety.",
+  "primary_skills": [
+    "railway-engineering",
+    "railway-track",
+    "rail-signaling",
+    "railway-electrification",
+    "railway-safety"
+  ],
+  "tools": [
+    "terminal",
+    "bash",
+    "file_read",
+    "file_write"
+  ],
+  "platforms": [
+    "claude-code",
+    "cursor",
+    "codex",
+    "gemini"
+  ]
+}

@@ -1,16 +1,27 @@
 ---
 name: vla-foundation-models
-description: "'Use when building, fine-tuning, deploying, or safety-wrapping Vision-Language-Action (VLA) models for robot manipulation — RT-2, OpenVLA, pi0, Octo, ACT, diffusion policies, ALOHA-style teleop data collection, action chunking, latency budgeting. Provides exact model specs, inference-rate math, work"
+description: "Use when building, fine-tuning, deploying, or safety-wrapping Vision-Language-Action (VLA) models for robot manipulation — RT-2, OpenVLA, pi0, Octo, ACT, diffusion policies, ALOHA-style teleop data collection, action chunking, latency budgeting. Provides exact model specs, inference-rate math, working OpenVLA/ACT/pi0 deployment code, dataset formats (RLDS/LeRobot), the failure modes that ruin runs, and hard safety-wrapper patterns for learned policies."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/ai-ml/vla-foundation-models/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # Vision-Language-Action (VLA) Foundation Models
 
 Expert knowledge for deploying learned manipulation policies on real hardware.

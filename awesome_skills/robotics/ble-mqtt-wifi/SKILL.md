@@ -1,16 +1,27 @@
 ---
 name: ble-mqtt-wifi
-description: "'Use when writing robot communication code: BLE GATT control links, MQTT fleet telemetry, WiFi connection management, or provisioning on ESP32/Pico W/Raspberry Pi. Provides exact UUIDs, MTU/timing numbers, QoS selection rules, LWT offline detection, reconnect state machines, captive portal provision"
+description: "Use when writing robot communication code: BLE GATT control links, MQTT fleet telemetry, WiFi connection management, or provisioning on ESP32/Pico W/Raspberry Pi. Provides exact UUIDs, MTU/timing numbers, QoS selection rules, LWT offline detection, reconnect state machines, captive portal provisioning, and BLE+WiFi coexistence constraints so generated code works first try."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/comms/ble-mqtt-wifi/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # Robot Comms: BLE GATT, MQTT Fleets, WiFi State Machines
 
 Scope: ESP32 (Arduino C++ / ESP-IDF concepts), Raspberry Pi Pico W (MicroPython), Raspberry Pi / Linux (Python, paho-mqtt), with notes for ROS2 bridging. Everything here is battle-tested numbers and patterns — copy them, don't improvise.

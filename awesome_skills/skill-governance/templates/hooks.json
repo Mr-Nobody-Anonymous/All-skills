@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "REPLACE-with-event-name": [
+      {
+        "matcher": "REPLACE-with-tool-regex",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/REPLACE-with-script-name.mjs\""
+          }
+        ]
+      }
+    ]
+  }
+}

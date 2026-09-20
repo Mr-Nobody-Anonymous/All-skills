@@ -1,16 +1,27 @@
 ---
 name: esp-now-radio
-description: "Use when building peer-to-peer wireless links between ESP32/ESP8266 boards (ESP-NOW) or between micro:bits (radio module) — robot remote controls, sensor swarms, telemetry without a router. Provides exact pairing/channel rules, payload limits, callback patterns, and the failure modes that silently b"
+description: "Use when building peer-to-peer wireless links between ESP32/ESP8266 boards (ESP-NOW) or between micro:bits (radio module) — robot remote controls, sensor swarms, telemetry without a router. Provides exact pairing/channel rules, payload limits, callback patterns, and the failure modes that silently break links."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/comms/esp-now-radio/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # ESP-NOW & micro:bit Radio — Router-less Peer-to-Peer Wireless
 
 Two completely different protocols, same job: send small packets between boards with no Wi-Fi router, no pairing UI, no TCP stack. ESP-NOW runs on ESP32/ESP8266 (2.4 GHz Wi-Fi PHY, connectionless). micro:bit radio runs on the nRF51/nRF52 (proprietary 2.4 GHz, Nordic Gazell-like). They CANNOT talk to each other.

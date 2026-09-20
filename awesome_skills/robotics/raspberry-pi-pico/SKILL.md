@@ -1,16 +1,27 @@
 ---
 name: raspberry-pi-pico
-description: "Use when writing firmware for Raspberry Pi Pico, Pico W, Pico 2, or any RP2040/RP2350 board. Covers PIO state machines for precise timing, dual-core programming with _thread, ADC quirks (internal temp sensor, VSYS divider), the GP25 LED vs Pico W WiFi-chip LED trap, UF2 flashing, and 3.3V-only GPIO"
+description: "Use when writing firmware for Raspberry Pi Pico, Pico W, Pico 2, or any RP2040/RP2350 board. Covers PIO state machines for precise timing, dual-core programming with _thread, ADC quirks (internal temp sensor, VSYS divider), the GP25 LED vs Pico W WiFi-chip LED trap, UF2 flashing, and 3.3V-only GPIO constraints."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/chips/raspberry-pi-pico/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # Raspberry Pi Pico / Pico W (RP2040)
 
 ## Identity Card — know which board you have

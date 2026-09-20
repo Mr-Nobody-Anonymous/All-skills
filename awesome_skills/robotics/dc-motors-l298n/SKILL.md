@@ -1,16 +1,27 @@
 ---
 name: dc-motors-l298n
-description: "Use when driving brushed DC motors with an L298N dual H-bridge module (the red board with the big heatsink). Covers the voltage-drop trap that makes motors crawl, the 5V-EN jumper rules that brick boards, IN1/IN2/ENA truth tables, PWM frequency selection, stall-current sizing, and correct MicroPytho"
+description: "Use when driving brushed DC motors with an L298N dual H-bridge module (the red board with the big heatsink). Covers the voltage-drop trap that makes motors crawl, the 5V-EN jumper rules that brick boards, IN1/IN2/ENA truth tables, PWM frequency selection, stall-current sizing, and correct MicroPython/Arduino code patterns."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/actuators/dc-motors-l298n/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # DC Motors with the L298N Dual H-Bridge
 
 The L298N is the most common motor driver in hobby robotics and the most misunderstood. It is a 1990s-era BJT (Darlington) H-bridge, NOT a MOSFET driver. That single fact explains almost every problem people have with it. Read the voltage-drop section before writing any code or recommending any battery.

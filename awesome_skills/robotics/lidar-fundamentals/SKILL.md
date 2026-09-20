@@ -1,16 +1,27 @@
 ---
 name: lidar-fundamentals
-description: "Use when working with 2D/3D lidar sensors — selecting hardware, parsing point clouds, correcting motion distortion, downsampling, removing ground planes, or clustering obstacles. Provides expert knowledge on lidar physics, point cloud processing pipelines (PCL/Open3D/ROS2), deskewing with IMU, RANSA"
+description: "Use when working with 2D/3D lidar sensors — selecting hardware, parsing point clouds, correcting motion distortion, downsampling, removing ground planes, or clustering obstacles. Provides expert knowledge on lidar physics, point cloud processing pipelines (PCL/Open3D/ROS2), deskewing with IMU, RANSAC ground removal, Euclidean/DBSCAN clustering, sensor selection from hobby (RPLidar) to professional (Ouster/Hesai), and mounting/FOV planning."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/perception/lidar-fundamentals/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # Lidar Fundamentals: From Photons to Obstacle Lists
 
 This skill covers the full pipeline from raw lidar returns to actionable obstacle data:

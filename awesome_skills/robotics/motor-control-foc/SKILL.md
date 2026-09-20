@@ -1,16 +1,27 @@
 ---
 name: motor-control-foc
-description: "Use when selecting, wiring, tuning, or debugging motor drives for robots — BLDC/stepper/DC selection, field-oriented control (FOC), ODrive/VESC/moteus/SimpleFOC controllers, encoder integration (incremental/absolute/magnetic), current limits, thermal management, and regenerative braking. Provides th"
+description: "Use when selecting, wiring, tuning, or debugging motor drives for robots — BLDC/stepper/DC selection, field-oriented control (FOC), ODrive/VESC/moteus/SimpleFOC controllers, encoder integration (incremental/absolute/magnetic), current limits, thermal management, and regenerative braking. Provides the math, exact starting parameters, and the production failure modes that destroy hardware."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/control/motor-control-foc/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # Motor Control & Field-Oriented Control (FOC)
 
 Expert knowledge for actuator selection and closed-loop motor control on real robots.

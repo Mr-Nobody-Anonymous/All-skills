@@ -1,16 +1,27 @@
 ---
 name: rtos-realtime
-description: "Use when writing or reviewing real-time firmware for robots — FreeRTOS task architecture, control-loop scheduling, ISR design, priority inversion, jitter measurement, PREEMPT_RT Linux tuning, or RT/non-RT communication. Provides expert knowledge on priority assignment, mutex protocols, lockless queu"
+description: "Use when writing or reviewing real-time firmware for robots — FreeRTOS task architecture, control-loop scheduling, ISR design, priority inversion, jitter measurement, PREEMPT_RT Linux tuning, or RT/non-RT communication. Provides expert knowledge on priority assignment, mutex protocols, lockless queues, and why deadline misses kill robots in production."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/hardware-pro/rtos-realtime/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # Real-Time Firmware for Robots: FreeRTOS, PREEMPT_RT, and Deterministic Control
 
 ## Why This Matters

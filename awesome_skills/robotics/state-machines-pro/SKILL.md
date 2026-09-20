@@ -1,16 +1,27 @@
 ---
 name: state-machines-pro
-description: "Use when designing, implementing, or debugging robot behavior coordination with finite state machines — task sequencing, mission executives, mode managers, error recovery flows, or when choosing between SMACH/yasmin/hand-rolled FSMs in ROS2. Provides production patterns for hierarchical FSMs, entry/"
+description: "Use when designing, implementing, or debugging robot behavior coordination with finite state machines — task sequencing, mission executives, mode managers, error recovery flows, or when choosing between SMACH/yasmin/hand-rolled FSMs in ROS2. Provides production patterns for hierarchical FSMs, entry/exit actions, transition guards, event-driven vs polled execution, explicit error-state modeling, state timeouts, and state-history logging."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/behavior/state-machines-pro/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # Production State Machines for Robot Behavior
 
 State machines coordinate everything above the control loop: docking sequences, pick-and-place missions, charging behavior, error recovery, operational modes. Most robot field failures that are not hardware are *behavioral*: the robot gets stuck in a state, transitions on a stale event, or enters a state nobody modeled. This skill encodes the patterns that prevent that.

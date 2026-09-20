@@ -1,16 +1,27 @@
 ---
 name: esp32
-description: "'Use when writing firmware, wiring plans, or debugging for ESP32 / ESP32-S3 boards (DevKitC, S3-DevKitC-1, WROOM/WROVER modules). Provides exact GPIO/strapping-pin rules, ADC calibration and attenuation tables, LEDC PWM register limits, deep-sleep current budgets, brownout-with-motors wiring, esptoo"
+description: "Use when writing firmware, wiring plans, or debugging for ESP32 / ESP32-S3 boards (DevKitC, S3-DevKitC-1, WROOM/WROVER modules). Provides exact GPIO/strapping-pin rules, ADC calibration and attenuation tables, LEDC PWM register limits, deep-sleep current budgets, brownout-with-motors wiring, esptool flashing recipes, and PSRAM configuration — so generated hardware code is correct on the first flash."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/chips/esp32/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # ESP32 / ESP32-S3 Hardware Engineering
 
 Covers classic ESP32 (Xtensa LX6 dual-core, 240 MHz) and ESP32-S3 (Xtensa LX7 dual-core, 240 MHz, native USB). Where behavior differs, both are stated. Default assumption: ESP32-DevKitC (WROOM-32) or ESP32-S3-DevKitC-1 (WROOM-1), Arduino core 3.x (IDF 5.x underneath) or MicroPython 1.22+.

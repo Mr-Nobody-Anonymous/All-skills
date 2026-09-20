@@ -1,16 +1,27 @@
 ---
 name: steppers-buzzers
-description: "'Use when driving a 28BYJ-48 stepper via ULN2003, or generating sound from passive/active buzzers on Arduino, ESP32, or Raspberry Pi Pico. Provides exact half-step sequences, step math (2048 steps/rev), RPM/torque limits, holding-current thermal data, coil de-energizing, passive-vs-active buzzer ide"
+description: "Use when driving a 28BYJ-48 stepper via ULN2003, or generating sound from passive/active buzzers on Arduino, ESP32, or Raspberry Pi Pico. Provides exact half-step sequences, step math (2048 steps/rev), RPM/torque limits, holding-current thermal data, coil de-energizing, passive-vs-active buzzer identification, tone() timer conflicts, MicroPython PWM beep patterns, and RTTTL melody playback."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/actuators/steppers-buzzers/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # 28BYJ-48 Stepper (ULN2003) + Buzzers — Expert Reference
 
 ## PART 1: 28BYJ-48 STEPPER MOTOR

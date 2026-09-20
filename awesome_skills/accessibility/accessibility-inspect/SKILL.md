@@ -1,16 +1,30 @@
 ---
 name: accessibility-inspect
-description: "'One page, hands-on manual tier — drive a live page through the web accessibility (a11y) checks a rule engine can't decide: keyboard operation and focus order, screen-reader names, roles and states from the accessibility tree, reflow and zoom, reduced motion, form errors, and target size. Grades eac"
+description: "One page, hands-on manual tier — drive a live page through the web accessibility (a11y) checks a rule engine can't decide: keyboard operation and focus order, screen-reader names, roles and states from the accessibility tree, reflow and zoom, reduced motion, form errors, and target size. Grades each finding by evidence basis (verified / confirm-with-a-human / human-required) and severity, and closes every criterion in a ledger: verified, flagged, not exercised, or N/A. Locates and assesses; does not fix (use `accessibility-fix`). Use it for keyboard testing, focus-order checks, screen-reader or a11y-tree review, reflow and zoom at 200%, or 'is this operable, not just lint-clean'. The automated tier is `accessibility-scan`; `accessibility-audit` runs both across a sampled site."
 category: accessibility
+domain: accessibility
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/AccessLint/skills"
-source_repository: "AccessLint/skills"
-source_path: "plugins/accesslint/skills/accessibility-inspect/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "AccessLint/skills"
+  commit: "2e9d733667"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+# Accessibility Inspect
+
+
+
 This is the semi-automated manual tier of a WCAG assessment: the checks that need interaction (keyboard, focus, state changes, reflow) or human review (focus visibility, error recovery, reading order), which a static rule engine can't decide. Work against the running page; use source only to map a finding to `file:line`. Locate and assess — don't fix (that's `accesslint:accessibility-fix`). The automated tier is `accesslint:accessibility-scan`; `accesslint:accessibility-audit` runs both under WCAG-EM.
 
 The shared rules — severity, the no-proxy boundary, high-risk patterns, conformance, grounding — are in [`../shared/methodology.md`](../shared/methodology.md). Read it when a call needs judgment. The rules that always apply are below.

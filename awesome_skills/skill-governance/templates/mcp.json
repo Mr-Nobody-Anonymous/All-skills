@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "REPLACE-with-kebab-case-server-name": {
+      "command": "node",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/mcp/REPLACE-with-server-file-name.mjs"],
+      "env": {
+        "REPLACE_WITH_ENV_VAR_NAME": ""
+      }
+    }
+  }
+}

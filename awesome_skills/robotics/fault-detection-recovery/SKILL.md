@@ -1,16 +1,27 @@
 ---
 name: fault-detection-recovery
-description: "'Use when a robot must detect, classify, and recover from faults — sensor dropouts, actuator stalls, software hangs, comms loss — or when designing watchdogs, heartbeats, plausibility checks, degraded modes, or chaos tests. Provides fault taxonomy, detection patterns (heartbeat/plausibility/residual"
+description: "Use when a robot must detect, classify, and recover from faults — sensor dropouts, actuator stalls, software hangs, comms loss — or when designing watchdogs, heartbeats, plausibility checks, degraded modes, or chaos tests. Provides fault taxonomy, detection patterns (heartbeat/plausibility/residual), fault→response matrices, auto-recovery vs escalation logic, and working MicroPython, Arduino C++, and ROS 2 code."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/diagnostics/fault-detection-recovery/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # Fault Detection & Recovery for Robots
 
 Core principle: **a robot that cannot detect its own faults is a robot that fails silently and dangerously.** Every fault must map to exactly one of: (a) tolerate, (b) degrade, (c) safe-stop, (d) escalate to operator. Never "log and continue" for actuator or safety faults.

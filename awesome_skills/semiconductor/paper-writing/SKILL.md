@@ -1,16 +1,27 @@
 ---
 name: paper-writing
-description: "Conventions for writing and editing academic papers (LaTeX). Enforces captions that state the conclusion (not describe the table), a topic comment before every paragraph, units on every table column and plot axis, consistent compact references, an abstract that answers problem/difficulty/approach/re"
+description: "Conventions for writing and editing academic papers (LaTeX). Enforces captions that state the conclusion (not describe the table), a topic comment before every paragraph, units on every table column and plot axis, consistent compact references, an abstract that answers problem/difficulty/approach/results, a motivating Figure 1, and human-authored style with AI used only to polish (no AI tells). Use whenever creating or editing paper .tex source."
 category: semiconductor
+domain: semiconductor
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: Apache-2.0
 risk: low
-source: "https://github.com/VLSIDA/vlsida-skills"
-source_repository: "VLSIDA/vlsida-skills"
-source_path: "paper-writing/SKILL.md"
-license: "Apache-2.0"
-imported_at: "2026-09-20"
+source:
+  repository: "VLSIDA/vlsida-skills"
+  commit: "51ee200aae"
+  imported_at: "2026-09-20"
+  license: "Apache-2.0"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # Paper Writing
 
 Conventions for the user's academic papers. Apply these to every `.tex` edit.

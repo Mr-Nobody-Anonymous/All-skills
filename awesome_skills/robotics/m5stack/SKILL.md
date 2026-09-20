@@ -1,16 +1,27 @@
 ---
-name: m5stack
-description: "'Use when writing firmware for M5Stack CoreS3 / CoreS3 SE (ESP32-S3 dev kit with screen) — Grove port wiring, M5 MicroPython/UIFlow2 APIs, Arduino M5Unified, AXP2101 power chip gotchas, and the M5 Unit ecosystem. Provides exact pin maps, I2C addresses, power rails, working code patterns, and debuggi"
+name: m5stack-cores3
+description: "Use when writing firmware for M5Stack CoreS3 / CoreS3 SE (ESP32-S3 dev kit with screen) — Grove port wiring, M5 MicroPython/UIFlow2 APIs, Arduino M5Unified, AXP2101 power chip gotchas, and the M5 Unit ecosystem. Provides exact pin maps, I2C addresses, power rails, working code patterns, and debugging checklists so hardware code works first try."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/chips/m5stack/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # M5Stack CoreS3 / CoreS3 SE — Expert Firmware Knowledge
 
 ## 1. Hardware Identity — know exactly which board you have

@@ -1,16 +1,27 @@
 ---
 name: reinforcement-learning-robots
-description: "Use when training RL policies for robots (locomotion, manipulation, navigation), debugging reward hacking or sim-to-real transfer failures, choosing between scripted and learned control, or setting up Isaac Gym/Lab massively-parallel training. Provides PPO configuration, reward shaping patterns, dom"
+description: "Use when training RL policies for robots (locomotion, manipulation, navigation), debugging reward hacking or sim-to-real transfer failures, choosing between scripted and learned control, or setting up Isaac Gym/Lab massively-parallel training. Provides PPO configuration, reward shaping patterns, domain randomization ranges, and safe-RL constraints that work on real hardware."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/ai-ml/reinforcement-learning-robots/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # Reinforcement Learning for Robots
 
 RL on robots is a different discipline from RL on Atari. The state-action space is continuous, episodes are expensive, the simulator never matches reality, and a bad policy can destroy a $50k robot in 200 ms. This skill encodes the workflow that actually ships: **train massively parallel in simulation, shape rewards carefully, randomize the sim until the real world looks like just another sample, and deploy with hard safety layers the policy cannot override.**

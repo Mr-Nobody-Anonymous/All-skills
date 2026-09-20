@@ -1,16 +1,27 @@
 ---
 name: appyscript-language
-description: "Use when writing, reviewing, or debugging AppyScript (.appy) programs for kids' robots, or when compiling AppyScript to ESP32/Arduino/Pico/micro:bit/CircuitPython. Provides the exact verified grammar (end-block syntax, when/forever/define, move/turn/say/show/wait, let/set/change, sensors), the const"
+description: "Use when writing, reviewing, or debugging AppyScript (.appy) programs for kids' robots, or when compiling AppyScript to ESP32/Arduino/Pico/micro:bit/CircuitPython. Provides the exact verified grammar (end-block syntax, when/forever/define, move/turn/say/show/wait, let/set/change, sensors), the constructs that FAIL validation despite appearing in docs, per-target sensor availability, generated-code shapes, CLI/MCP validation workflow, and 10 known-valid example programs."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/appyscript/appyscript-language/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # AppyScript Language — Expert Reference
 
 AppyScript (github.com/rahulbachina/appyscript, MIT, invented by Applaa) is an

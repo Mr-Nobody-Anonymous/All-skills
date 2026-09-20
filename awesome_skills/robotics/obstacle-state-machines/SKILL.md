@@ -1,16 +1,27 @@
 ---
 name: obstacle-state-machines
-description: "'Use when writing obstacle-avoidance, wall-following, or maze-navigation code for wheeled robots with ultrasonic/IR sensors. Provides finite-state-machine architecture (enum states, transition tables, non-blocking millis()/asyncio patterns), single-sensor wall following with P-control, Bug-0/1/2 alg"
+description: "Use when writing obstacle-avoidance, wall-following, or maze-navigation code for wheeled robots with ultrasonic/IR sensors. Provides finite-state-machine architecture (enum states, transition tables, non-blocking millis()/asyncio patterns), single-sensor wall following with P-control, Bug-0/1/2 algorithms, ultrasonic failure modes on soft/angled surfaces, and the delay()-kills-responsiveness fix."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/algorithms/obstacle-state-machines/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # Obstacle Avoidance State Machines & Wall Following
 
 Expert reference for writing robot navigation FSMs that work first try. Covers

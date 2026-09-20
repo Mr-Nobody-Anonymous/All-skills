@@ -1,16 +1,27 @@
 ---
 name: depth-cameras
-description: "Use when integrating, configuring, or debugging depth cameras (Intel RealSense, Luxonis OAK-D, Azure Kinect, Orbbec) on a robot. Covers stereo/ToF/structured-light tradeoffs, depth-RGB alignment, point cloud generation, hole filling, minimum-range blind zones, multi-camera IR interference, and outdo"
+description: "Use when integrating, configuring, or debugging depth cameras (Intel RealSense, Luxonis OAK-D, Azure Kinect, Orbbec) on a robot. Covers stereo/ToF/structured-light tradeoffs, depth-RGB alignment, point cloud generation, hole filling, minimum-range blind zones, multi-camera IR interference, and outdoor sunlight failure modes — with correct intrinsics math, ROS2 patterns, and production-validated parameter values."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/perception/depth-cameras/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # Depth Cameras: Selection, Integration, and Failure Modes
 
 Depth cameras are the most commonly misused sensor in robotics. The depth image *looks*

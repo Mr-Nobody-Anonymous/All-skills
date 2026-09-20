@@ -1,16 +1,27 @@
 ---
 name: fail-safe-design
-description: "'Use when designing or reviewing robot firmware/software that must fail safely — watchdogs, command timeouts, actuator safe states, sensor plausibility, startup self-test, brownout persistence. Provides exact timing budgets, register-level WDT setup for AVR/ESP32/STM32, deadman patterns for MicroPyt"
+description: "Use when designing or reviewing robot firmware/software that must fail safely — watchdogs, command timeouts, actuator safe states, sensor plausibility, startup self-test, brownout persistence. Provides exact timing budgets, register-level WDT setup for AVR/ESP32/STM32, deadman patterns for MicroPython/Arduino/ROS2, per-actuator safe-state tables, and the failure modes that injure people or destroy hardware when missed."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/safety/fail-safe-design/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # Fail-Safe Design for Robots
 
 The core principle: **a robot must be safe when the software is wrong, not just when it is right.** Every fail-safe layer assumes the layer above it has already failed. Design order: (1) what happens when power dies, (2) what happens when the MCU hangs, (3) what happens when commands stop arriving, (4) what happens when a sensor lies, (5) only then — normal operation.

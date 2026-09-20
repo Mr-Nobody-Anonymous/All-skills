@@ -1,16 +1,27 @@
 ---
 name: voice-interaction
-description: "Use when building voice interfaces for robots — wake word detection, streaming ASR, on-device TTS, barge-in, mic arrays near motors, or voice command pipelines. Provides expert knowledge on edge speech stacks (Porcupine/openWakeWord, faster-whisper, Piper), acoustic noise mitigation on mobile platfo"
+description: "Use when building voice interfaces for robots — wake word detection, streaming ASR, on-device TTS, barge-in, mic arrays near motors, or voice command pipelines. Provides expert knowledge on edge speech stacks (Porcupine/openWakeWord, faster-whisper, Piper), acoustic noise mitigation on mobile platforms, and safety-critical intent design where voice must never directly trigger motion."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/ai-ml/voice-interaction/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # Robot Voice Interaction
 
 Voice on a robot is not a smart speaker problem. The microphone lives centimeters from brushless motors, fans, and gear trains; the platform moves (Doppler, changing reverb); latency budgets are tight because a human is standing next to a machine that can hurt them; and — most importantly — **a speech recognizer is a sensor with a double-digit error rate feeding a system that can apply force**. Design accordingly.

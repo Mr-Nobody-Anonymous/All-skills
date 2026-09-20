@@ -1,0 +1,44 @@
+{
+  "path_id": "clinical-informatics",
+  "title": "Clinical Informaticist Path",
+  "domain": "clinical-informatics",
+  "stages": [
+    {
+      "stage": 1,
+      "name": "Healthcare Vocabularies",
+      "skills": [
+        "medical-terminology",
+        "snomed-ct",
+        "loinc",
+        "icd"
+      ]
+    },
+    {
+      "stage": 2,
+      "name": "Clinical Messaging",
+      "skills": [
+        "hl7",
+        "fhir",
+        "interoperability"
+      ]
+    },
+    {
+      "stage": 3,
+      "name": "EHR Systems & Data Modeling",
+      "skills": [
+        "ehr",
+        "emr",
+        "clinical-data-modeling"
+      ]
+    },
+    {
+      "stage": 4,
+      "name": "Decision Support & Analytics",
+      "skills": [
+        "clinical-decision-support",
+        "clinical-analytics",
+        "clinical-workflows"
+      ]
+    }
+  ]
+}

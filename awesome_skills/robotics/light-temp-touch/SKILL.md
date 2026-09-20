@@ -2,15 +2,26 @@
 name: light-temp-touch
 description: "Use when wiring or coding LDRs/photodiodes, temperature sensors (TMP36, DS18B20, NTC thermistor), or capacitive touch inputs (ESP32 touchRead, TTP223). Provides voltage-divider sizing math, sensor selection rules, ADC pitfalls, touch debouncing patterns, and working MicroPython + Arduino code."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/sensors/light-temp-touch/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # Light, Temperature & Touch Sensors
 
 Hard rules first, then per-sensor detail.

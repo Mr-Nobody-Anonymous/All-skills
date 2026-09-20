@@ -1,16 +1,27 @@
 ---
 name: kids-robot-safety
-description: "Use when designing, coding, or reviewing any robot that children (under 14) will touch, hold, or operate — toys, classroom kits, STEM products, hand-held bots. Provides safety engineering expertise: pinch-point elimination, LiPo vs NiMH battery decisions, EN71/CPSIA small-parts compliance awareness,"
+description: "Use when designing, coding, or reviewing any robot that children (under 14) will touch, hold, or operate — toys, classroom kits, STEM products, hand-held bots. Provides safety engineering expertise: pinch-point elimination, LiPo vs NiMH battery decisions, EN71/CPSIA small-parts compliance awareness, motor torque/force limits for hand-held robots, firmware emergency-stop patterns (watchdog + hardware kill), and touchable-voltage limits."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/product/kids-robot-safety/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # Kids Robot Safety Engineering
 
 Safety for children's robots is not a feature — it is a set of hard constraints that must be designed in from the first line of firmware and the first CAD sketch. Retrofitting safety fails. This skill encodes the constraints, the numbers, and the firmware patterns.

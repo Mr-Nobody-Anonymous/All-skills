@@ -1,16 +1,27 @@
 ---
 name: firmware-deployment
-description: "'Use when flashing, updating, or recovering firmware on classroom robots (ESP32, RP2040/Pico, AVR/Arduino) — covers mpremote/esptool/avrdude/UF2 tooling, ESP32 OTA with dual partitions, firmware version checks, safe-mode boot on crash loops, serial REPL debugging, and mass-flashing 30 robots from on"
+description: "Use when flashing, updating, or recovering firmware on classroom robots (ESP32, RP2040/Pico, AVR/Arduino) — covers mpremote/esptool/avrdude/UF2 tooling, ESP32 OTA with dual partitions, firmware version checks, safe-mode boot on crash loops, serial REPL debugging, and mass-flashing 30 robots from one laptop. Provides exact commands, baud rates, partition tables, working MicroPython/C++ code, and recovery procedures."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/product/firmware-deployment/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # Firmware Deployment for Classroom Robots
 
 Expert knowledge for deploying firmware to fleets of student robots: ESP32 (MicroPython + Arduino C++), RP2040/Pico (UF2 + MicroPython), and AVR/Arduino Uno/Nano. Optimized for the worst-case environment: 30 robots, 1 laptop, 45-minute class period, USB hubs of unknown quality, students who unplug things mid-flash.

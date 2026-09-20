@@ -1,16 +1,27 @@
 ---
 name: task-planning
-description: "Use when building task-level autonomy for robots — multi-step missions, task queues, mission interruption/resumption, charging-aware planning, prioritized scheduling, or multi-robot task allocation. Provides PDDL planning concepts, persistent task queue architectures, return-to-dock hysteresis math,"
+description: "Use when building task-level autonomy for robots — multi-step missions, task queues, mission interruption/resumption, charging-aware planning, prioritized scheduling, or multi-robot task allocation. Provides PDDL planning concepts, persistent task queue architectures, return-to-dock hysteresis math, auction-based allocation algorithms, and the failure modes that strand robots in the field."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/behavior/task-planning/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # Task Planning and Mission Autonomy
 
 Task planning is the layer above motion planning: deciding *what* the robot does next, not *how* it moves. This is where robots fail embarrassingly in production — a robot that navigates flawlessly but forgets its mission after a reboot, drains its battery 200m from the dock, or deadlocks because two robots claimed the same task. This skill covers the architectures and math that prevent those failures.

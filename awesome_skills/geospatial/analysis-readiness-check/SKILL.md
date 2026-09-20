@@ -2,15 +2,26 @@
 name: analysis-readiness-check
 description: "Decide if a dataset/project is ready for a specific spatial analysis (buffer, overlay, join, routing) and list blockers + preflight steps."
 category: geospatial
+domain: geospatial
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/danmaps/gis-agent-skills"
-source_repository: "danmaps/gis-agent-skills"
-source_path: "skills/analysis-readiness-check/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "danmaps/gis-agent-skills"
+  commit: "47afe3a4b5"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # Analysis Readiness Check
 
 Answer: **"Should I even run this yet?"**

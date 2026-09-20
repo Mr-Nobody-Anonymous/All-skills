@@ -1,16 +1,30 @@
 ---
 name: accessibility-diff
-description: "'Regression check — diff a live page's web accessibility (a11y) violations against a baseline. By default it compares your uncommitted changes (stash-based); pass `--branch [<name>]` to compare against a branch. Reports the new WCAG violations introduced, the ones fixed, and the count of pre-existin"
+description: "Regression check — diff a live page's web accessibility (a11y) violations against a baseline. By default it compares your uncommitted changes (stash-based); pass `--branch [<name>]` to compare against a branch. Reports the new WCAG violations introduced, the ones fixed, and the count of pre-existing ones. Use it for 'did my change break accessibility', 'what a11y issues did this PR add', or as a CI gate. For a full scan of one page use `accessibility-scan`; for a whole site use `accessibility-audit`."
 category: accessibility
+domain: accessibility
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/AccessLint/skills"
-source_repository: "AccessLint/skills"
-source_path: "plugins/accesslint/skills/accessibility-diff/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "AccessLint/skills"
+  commit: "2e9d733667"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+# Accessibility Diff
+
+
+
 Default branch: !`git symbolic-ref refs/remotes/origin/HEAD --short 2>/dev/null | sed 's|.*/||' || echo main`
 
 Report only what changed. Locate; don't fix.

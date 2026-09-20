@@ -2,15 +2,26 @@
 name: imu-mpu6050
 description: "Use when wiring or coding an MPU6050 (or MPU6500/9250-family) IMU for tilt sensing, balance robots, shake detection, or orientation. Covers I2C addressing, register-level init, gyro drift, complementary filter, vibration isolation, calibration, and the failure modes that wreck first attempts."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/sensors/imu-mpu6050/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # MPU6050 IMU — Tilt, Orientation, Shake Detection
 
 The MPU6050 is a 6-axis IMU: 3-axis accelerometer + 3-axis gyroscope on one die, I2C interface, built-in temperature sensor. It is the default IMU in hobby robotics (GY-521 breakout). It boots in SLEEP MODE and outputs garbage until you wake it — that single fact explains 50% of "my IMU returns zeros / -1 / 340" forum posts.

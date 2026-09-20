@@ -1,16 +1,27 @@
 ---
 name: dynamics-force
-description: "Use when a robot arm moves fast, interacts with the environment (contact, insertion, polishing, human contact), or position control alone is failing — torque ripple, overshoot at speed, crashes on contact. Provides rigid-body dynamics, torque vs position control, impedance/admittance control design"
+description: "Use when a robot arm moves fast, interacts with the environment (contact, insertion, polishing, human contact), or position control alone is failing — torque ripple, overshoot at speed, crashes on contact. Provides rigid-body dynamics, torque vs position control, impedance/admittance control design with starting gains, F/T sensor integration, and current-based collision detection."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/control/dynamics-force/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # Robot Dynamics & Force Control
 
 Kinematics tells you *where* the robot is. Dynamics tells you *what torques it takes to get there* — and what happens when it touches something. This skill covers the point where position control stops being enough: fast motion, contact tasks, and safety.

@@ -1,16 +1,27 @@
 ---
 name: hil-testing
-description: "'Use when testing robot software before or during hardware deployment — unit tests with mocked HALs, headless simulation in CI, hardware-in-the-loop (HIL) rigs, clamped-motor bench tests, field test protocols, or scenario regression suites. Provides the full robot test pyramid: mock HAL design patte"
+description: "Use when testing robot software before or during hardware deployment — unit tests with mocked HALs, headless simulation in CI, hardware-in-the-loop (HIL) rigs, clamped-motor bench tests, field test protocols, or scenario regression suites. Provides the full robot test pyramid: mock HAL design patterns (MicroPython + C++ + ROS2), HIL rig wiring and timing budgets, bench-test safety procedures, envelope-expansion field checklists, and the failure modes that only appear on real hardware."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/diagnostics/hil-testing/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # Robot Test Pyramid & Hardware-in-the-Loop Testing
 
 The single most expensive mistake in robotics: testing only on the real robot. The second most expensive: trusting tests that never touch hardware. This skill defines the five-layer test pyramid and exactly how to build each layer so bugs are caught at the cheapest possible level.

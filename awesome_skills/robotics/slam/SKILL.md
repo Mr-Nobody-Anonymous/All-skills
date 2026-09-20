@@ -1,16 +1,27 @@
 ---
 name: slam
-description: "Use when building, tuning, or debugging SLAM and localization on mobile robots — occupancy grid mapping, AMCL particle filter localization, graph SLAM with slam_toolbox or Cartographer, visual SLAM (ORB-SLAM3) vs lidar SLAM selection, map saving/serving, loop closure tuning, and fixing corridor/feat"
+description: "Use when building, tuning, or debugging SLAM and localization on mobile robots — occupancy grid mapping, AMCL particle filter localization, graph SLAM with slam_toolbox or Cartographer, visual SLAM (ORB-SLAM3) vs lidar SLAM selection, map saving/serving, loop closure tuning, and fixing corridor/featureless-environment failures."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/perception/slam/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # SLAM: Mapping, Localization, and Why Robots Get Lost
 
 This skill covers the SLAM knowledge needed to ship a mobile robot that builds a map once and

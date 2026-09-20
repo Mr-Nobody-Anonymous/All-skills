@@ -1,16 +1,30 @@
 ---
 name: accessibility-scan
-description: "'One page, automated tier — run the web accessibility (a11y) rule engine against a live page and locate every violation it can detect mechanically. Pass a URL, a config target name (e.g. `accesslint:accessibility-scan dev`), or nothing to use the default target from `accesslint.config.json`. Ensures"
+description: "One page, automated tier — run the web accessibility (a11y) rule engine against a live page and locate every violation it can detect mechanically. Pass a URL, a config target name (e.g. `accesslint:accessibility-scan dev`), or nothing to use the default target from `accesslint.config.json`. Ensures a debuggable Chrome, runs the @accesslint/core engine over CDP, and returns a worklist of live-DOM WCAG 2.2 violations, each grounded to its DOM selector and source `file:line`. Locates; doesn't edit. Use it for 'is this page accessible', 'check a11y on this URL', 'find contrast and alt-text issues', or to verify a UI change. For hands-on keyboard and screen-reader checks use `accessibility-inspect`; for a whole site or product use `accessibility-audit`; to diff against uncommitted changes or a branch use `accessibility-diff`."
 category: accessibility
+domain: accessibility
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/AccessLint/skills"
-source_repository: "AccessLint/skills"
-source_path: "plugins/accesslint/skills/accessibility-scan/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "AccessLint/skills"
+  commit: "2e9d733667"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+# Accessibility Scan
+
+
+
 Audit a live page and report each violation and where it is. Locate; don't fix.
 
 Shared grounding and honesty conventions: [`../shared/methodology.md`](../shared/methodology.md).

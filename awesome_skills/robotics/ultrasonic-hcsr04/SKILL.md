@@ -1,16 +1,27 @@
 ---
 name: ultrasonic-hcsr04
-description: "Use when wiring or coding an HC-SR04 (or HC-SR04P/RCWL-1601/US-100) ultrasonic distance sensor on Arduino, ESP32, Pico, or any 3.3V/5V MCU. Covers the 5V-echo-into-3.3V-pin trap, voltage divider values, ping timing limits, timeout handling that doesn't crash or block, temperature compensation, multi"
+description: "Use when wiring or coding an HC-SR04 (or HC-SR04P/RCWL-1601/US-100) ultrasonic distance sensor on Arduino, ESP32, Pico, or any 3.3V/5V MCU. Covers the 5V-echo-into-3.3V-pin trap, voltage divider values, ping timing limits, timeout handling that doesn't crash or block, temperature compensation, multi-sensor crosstalk scheduling, and mounting geometry for floor robots."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/sensors/ultrasonic-hcsr04/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # HC-SR04 Ultrasonic Distance Sensor
 
 ## What it actually is

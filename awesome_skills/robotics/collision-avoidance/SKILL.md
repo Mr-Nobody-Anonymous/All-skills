@@ -1,16 +1,27 @@
 ---
 name: collision-avoidance
-description: "'Use when implementing obstacle avoidance, protective stop zones, velocity scaling, contact detection, or safety layers on a mobile robot or manipulator. Provides layered collision-avoidance architecture: lidar stop/slow zones with exact timing budgets, proximity-based velocity scaling math, current"
+description: "Use when implementing obstacle avoidance, protective stop zones, velocity scaling, contact detection, or safety layers on a mobile robot or manipulator. Provides layered collision-avoidance architecture: lidar stop/slow zones with exact timing budgets, proximity-based velocity scaling math, current-based contact detection thresholds, costmap vs reactive (VFH, potential fields) layer selection, blind-zone mitigation, constant-velocity obstacle prediction, and soft-target test protocols with working ROS2/Python, Arduino C++, and MicroPython code."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/safety/collision-avoidance/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # Layered Collision Avoidance
 
 ## The Non-Negotiable Architecture

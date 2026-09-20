@@ -1,16 +1,27 @@
 ---
 name: power-systems-pro
-description: "Use when designing or debugging robot power systems — Li-ion battery pack design, BMS selection, precharge/inrush limiting, emergency stop power paths, power sequencing, DC-DC converter sizing, or grounding/noise problems. Provides professional-grade pack architecture math, protection circuit design"
+description: "Use when designing or debugging robot power systems — Li-ion battery pack design, BMS selection, precharge/inrush limiting, emergency stop power paths, power sequencing, DC-DC converter sizing, or grounding/noise problems. Provides professional-grade pack architecture math, protection circuit design, safety-rated E-stop topology, derating rules, and the grounding discipline that prevents motor noise from corrupting logic and sensors."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/hardware-pro/power-systems-pro/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # Robot Power Systems — Professional Design
 
 Power architecture is the most common cause of "mysterious" robot failures: brownouts that reboot the compute mid-mission, inrush that welds relay contacts, ground loops that corrupt encoder counts, packs that die at 60% of rated cycle life. This skill covers the design discipline that prevents all of these — on the first hardware revision.

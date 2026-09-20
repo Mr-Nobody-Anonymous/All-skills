@@ -1,16 +1,27 @@
 ---
 name: differential-drive
-description: "Use when writing code for a two-wheeled robot (differential drive) — driving straight, turning, odometry, or velocity control. Provides exact kinematics (v_l/v_r to linear/angular velocity and back), turning-radius math, encoder odometry with slip-aware error budgets, motor deadband compensation (~2"
+description: "Use when writing code for a two-wheeled robot (differential drive) — driving straight, turning, odometry, or velocity control. Provides exact kinematics (v_l/v_r to linear/angular velocity and back), turning-radius math, encoder odometry with slip-aware error budgets, motor deadband compensation (~20% PWM), gyro-assisted straight-line driving, point turns vs arc turns, and working MicroPython, Arduino C++, and ROS 2 code patterns."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/algorithms/differential-drive/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # Differential Drive: Kinematics, Odometry, and Motor Control
 
 A differential-drive robot has two independently driven wheels on a common axis plus

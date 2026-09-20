@@ -1,16 +1,27 @@
 ---
 name: microbit
-description: "Use when writing code or wiring designs for the BBC micro:bit (V1 or V2) — edge connector projects, motor drivers, sensors, radio, or breakout boards. Provides V1/V2 hardware differences, full edge-connector pinout, LED-matrix pin conflicts, power budget limits, radio group behaviour, and MicroPytho"
+description: "Use when writing code or wiring designs for the BBC micro:bit (V1 or V2) — edge connector projects, motor drivers, sensors, radio, or breakout boards. Provides V1/V2 hardware differences, full edge-connector pinout, LED-matrix pin conflicts, power budget limits, radio group behaviour, and MicroPython vs MakeCode tradeoffs."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/chips/microbit/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # BBC micro:bit (V1 & V2) — Hardware-Correct Coding
 
 The micro:bit is NOT an Arduino. It is a 3.3 V board with a multiplexed LED display that

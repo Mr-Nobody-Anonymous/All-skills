@@ -1,16 +1,27 @@
 ---
 name: behavior-trees
-description: "Use when designing robot task logic, mission sequencing, or replacing a finite state machine that has become unmaintainable. Provides expert knowledge of behavior trees: node semantics (sequence/fallback/parallel/decorators), tick-based execution, BehaviorTree.CPP v4 and py_trees/py_trees_ros patter"
+description: "Use when designing robot task logic, mission sequencing, or replacing a finite state machine that has become unmaintainable. Provides expert knowledge of behavior trees: node semantics (sequence/fallback/parallel/decorators), tick-based execution, BehaviorTree.CPP v4 and py_trees/py_trees_ros patterns, blackboard data flow, ROS2 action integration, interruptibility/reactivity design, and the antipatterns (blocking ticks, conditions with side effects, blackboard abuse) that break BTs in production."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/behavior/behavior-trees/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # Behavior Trees for Robot Task Logic
 
 ## Why BTs beat FSMs at scale

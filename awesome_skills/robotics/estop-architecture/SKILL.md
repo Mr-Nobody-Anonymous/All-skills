@@ -1,16 +1,27 @@
 ---
 name: estop-architecture
-description: "'Use when designing or reviewing emergency stop systems for robots, CNC machines, mobile platforms, or any machine with hazardous motion. Provides IEC 60204-1 stop category selection (0/1/2), hardware E-stop chain design (software E-stop is NOT a safety function), dual-channel monitoring with safety"
+description: "Use when designing or reviewing emergency stop systems for robots, CNC machines, mobile platforms, or any machine with hazardous motion. Provides IEC 60204-1 stop category selection (0/1/2), hardware E-stop chain design (software E-stop is NOT a safety function), dual-channel monitoring with safety relays, motor contactor cut wiring, latching+reset state machines, and wireless E-stop heartbeat patterns with exact wiring tables, timing constraints, and working MicroPython/Arduino/ROS2 code."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/safety/estop-architecture/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # E-Stop Architecture
 
 ## The One Rule That Overrides Everything

@@ -1,16 +1,27 @@
 ---
 name: object-detection-edge
-description: "Use when deploying object detection on robot edge hardware (Jetson, Coral, Raspberry Pi) — selecting and training YOLO-family models, TensorRT/INT8 quantization, hitting fps/latency budgets, building custom datasets for robot viewpoints, adding multi-object tracking (SORT/ByteTrack), and estimating"
+description: "Use when deploying object detection on robot edge hardware (Jetson, Coral, Raspberry Pi) — selecting and training YOLO-family models, TensorRT/INT8 quantization, hitting fps/latency budgets, building custom datasets for robot viewpoints, adding multi-object tracking (SORT/ByteTrack), and estimating object distance from bounding boxes. Provides exact export/quantization workflows, parameter starting values, and the failure modes that break detection on real robots."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/perception/object-detection-edge/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # Object Detection on Edge Hardware for Robots
 
 Detection on a robot is not a Kaggle problem. The model must run at a fixed latency budget on a thermally constrained device, survive motion blur and weird viewpoints, feed a tracker with stable IDs, and never silently degrade. This skill covers the full pipeline: model selection → training on robot-realistic data → quantized deployment → tracking → metric distance from detections.

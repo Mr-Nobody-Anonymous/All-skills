@@ -1,16 +1,27 @@
 ---
 name: nav2-stack
-description: "Use when configuring, customizing, or debugging the ROS2 Nav2 navigation stack — bringup, behavior trees, planner/controller servers, costmap layers, keepout/speed zones, waypoint following, or diagnosing failures like a broken TF tree, stale costmaps, or a robot spinning in place. Provides full-sta"
+description: "Use when configuring, customizing, or debugging the ROS2 Nav2 navigation stack — bringup, behavior trees, planner/controller servers, costmap layers, keepout/speed zones, waypoint following, or diagnosing failures like a broken TF tree, stale costmaps, or a robot spinning in place. Provides full-stack Nav2 anatomy, lifecycle ordering, BT XML patterns, and production-tested parameter values."
 category: robotics
+domain: robotics
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/rahulbachina/robotics-skills"
-source_repository: "rahulbachina/robotics-skills"
-source_path: "skills/navigation/nav2-stack/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "rahulbachina/robotics-skills"
+  commit: "e69d9828fb"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # ROS2 Nav2 Stack
 
 Nav2 is not a monolith. It is a federation of ~10 lifecycle-managed servers coordinated by a behavior tree. Almost every "Nav2 is broken" report traces to one of three things: a bad TF tree, a misconfigured costmap, or a lifecycle node that never reached `active`. Internalize the architecture below and you can localize any failure in minutes.

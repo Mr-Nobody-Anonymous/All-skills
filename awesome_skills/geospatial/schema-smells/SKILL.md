@@ -2,15 +2,26 @@
 name: schema-smells
 description: "Detect common schema and data quality smells in GIS layers"
 category: geospatial
+domain: geospatial
+subdomain: general
 version: 1.0.0
-disable-model-invocation: false
+license: MIT
 risk: low
-source: "https://github.com/danmaps/gis-agent-skills"
-source_repository: "danmaps/gis-agent-skills"
-source_path: "skills/schema-smells/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source:
+  repository: "danmaps/gis-agent-skills"
+  commit: "47afe3a4b5"
+  imported_at: "2026-09-20"
+  license: "MIT"
+platforms:
+  - claude-code
+  - cursor
+  - codex
+  - gemini
+  - antigravity
+  - copilot
 ---
+
+
 # Schema Smells
 
 Identify schema issues that cause brittle analyses or slow performance.

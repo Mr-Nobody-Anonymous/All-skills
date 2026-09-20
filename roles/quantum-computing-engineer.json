@@ -1,0 +1,24 @@
+{
+  "role": "Quantum Computing Engineer",
+  "domain": "quantum",
+  "description": "Develops quantum circuits, error-corrected algorithms, Hamiltonian simulations, and Qiskit/Cirq hybrid programs.",
+  "primary_skills": [
+    "quantum-algorithms",
+    "quantum-circuits",
+    "quantum-error-correction",
+    "qiskit",
+    "cirq"
+  ],
+  "tools": [
+    "terminal",
+    "bash",
+    "file_read",
+    "file_write"
+  ],
+  "platforms": [
+    "claude-code",
+    "cursor",
+    "codex",
+    "gemini"
+  ]
+}
