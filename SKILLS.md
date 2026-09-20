@@ -1,153 +1,111 @@
-# Agent Skills Library
+# ⚡ Agent Skills Specification & Platform Overview
 
-A clean, organized, scalable library of **122** independently discoverable skills across eight categories, following the open Agent Skills standard. The library contains 113 local skills and 9 vetted, pinned adaptations (7 from `obra/superpowers`, 2 from `anthropics/skills`).
+A unified, high-performance platform of **2,160+ specialized Agent Skills** designed for modern AI coding assistants (Claude Code, Cursor, Codex CLI, Antigravity, and Gemini CLI).
 
-## Quick Start
+---
+
+## 🏛️ Platform Organization
+
+The repository is organized into three complementary layers:
+
+### 1. ⚡ Canonical Engine (`skills/`) — 122 Core Routed Skills
+- **8 Core Categories**: `productivity`, `development`, `research`, `web`, `documents`, `design`, `security`, `utilities`.
+- **9-Signal Scored Router**: Sub-millisecond natural language routing without reading file bodies upfront.
+- **Deterministic Chaining**: Multi-skill workflows defined in `skills/chains.json`.
+- **Quality & Security**: 6-axis quality scoring, static scanning, and quarantine isolation.
+
+### 2. 🚀 Awesome Skills Library (`awesome_skills/`) — 2,041+ Categorized Skills
+- **100 Functional Categories**: Grouped into dedicated folders (`development/`, `cloud/`, `ai-ml/`, `security/`, `workflow/`, etc.).
+- **Complete Catalog Reference**: [CATALOG.md](awesome_skills/CATALOG.md) lists every single skill with descriptions, risk ratings, and quick links.
+- **Metadata Database**: [skills_index.json](awesome_skills/skills_index.json) provides structured records for programmatic tools and harnesses.
+
+### 3. 🤖 Universal Active Agent Harness (`.agents/skills/`, `.claude/skills/`, `.cursor/skills/`, `.codex/skills/`)
+- **66 Pre-Loaded Staff Engineer Skills**: Pre-installed in the workspace root for immediate discovery by all AI harnesses without prompt token bloat.
+- **Synced Across All Tools**: Linked seamlessly to Claude Code, Cursor, Codex CLI, and Antigravity.
+
+---
+
+## 🧭 Multi-Tool Compatibility & Harness Setup
+
+Every skill uses the open standard:
+- Folder format: `<skill-id>/SKILL.md`
+- YAML frontmatter: `name`, `description`, `category`, `risk`, `tags`
+- Standard sections: `Purpose`, `When to Use`, `Workflow`, `Examples`, `Safety`
+
+### Universal Harness Sync
+Connect your active skills to your preferred AI coding harness in one command:
 
 ```bash
-# List all skills
-python scripts/skills/skills.py list
+# Sync all local workspace harnesses (.agents, .claude, .cursor, .codex)
+python scripts/setup_tools.py
 
-# Search skills
-python scripts/skills/skills.py search productivity
+# Check status of local and global harnesses
+python scripts/setup_tools.py --status
 
-# Get info about a skill
-python scripts/skills/skills.py info productivity.unlazy
+# Also sync to user home directories
+python scripts/setup_tools.py --global
+```
 
-# Route and include compatible follow-on skills
-python scripts/skills/skills.py route --chain --top-k 6 "I am procrastinating on a large project"
+---
 
-# Enable, disable, or move a skill through its lifecycle
-python scripts/skills/skills.py disable productivity.unlazy
-python scripts/skills/skills.py enable productivity.unlazy
-python scripts/skills/skills.py lifecycle productivity.unlazy disabled
+## 🎮 CLI Quick Reference
 
-# Explain why a request matched (per-signal breakdown)
-python scripts/skills/skills.py explain "I'm procrastinating"
+### Awesome Skills Manager (`scripts/manage_awesome_skills.py`)
+```bash
+# Search across 2,041+ skills
+python scripts/manage_awesome_skills.py search "rag"
+python scripts/manage_awesome_skills.py search "prompt"
 
-# Named deterministic workflows
+# Inspect detailed skill specifications
+python scripts/manage_awesome_skills.py info multi-agent-architect
+
+# List categories or skills in a category
+python scripts/manage_awesome_skills.py list
+python scripts/manage_awesome_skills.py list --category ai-agents
+
+# Check active skills status
+python scripts/manage_awesome_skills.py status
+
+# Install an individual skill or category into your active harness
+python scripts/manage_awesome_skills.py install redis-cli
+python scripts/manage_awesome_skills.py install security
+
+# Install curated role bundles
+python scripts/manage_awesome_skills.py install-bundle senior-engineer
+python scripts/manage_awesome_skills.py install-bundle agentic-architect
+python scripts/manage_awesome_skills.py install-bundle fullstack
+python scripts/manage_awesome_skills.py install-bundle devops-cloud
+python scripts/manage_awesome_skills.py install-bundle security
+python scripts/manage_awesome_skills.py install-bundle saas-growth
+```
+
+### Canonical Skills Engine (`scripts/skills/skills.py`)
+```bash
+# Route a user goal to the best skill
+python scripts/skills/skills.py route "I'm procrastinating on a paper"
+python scripts/skills/skills.py route "Review this Python code for vulnerabilities"
+
+# Route with chained follow-on suggestions and dry-run preview
+python scripts/skills/skills.py route --chain --dry-run "Break this project into tasks"
+
+# Explain score breakdowns
+python scripts/skills/skills.py explain "Review this code"
+
+# Execute or dry-run named deterministic chains
 python scripts/skills/skills.py chain deep-research --dry-run
+python scripts/skills/skills.py chain anti-procrastination --dry-run
+python scripts/skills/skills.py chain code-review-flow --dry-run
 
-# Quality, conflicts, and static security scan
-python scripts/skills/skills.py quality
-python scripts/skills/skills.py conflicts
-python scripts/skills/skills.py scan
-
-# Check pinned upstream commits without changing files
-python scripts/skills/skills.py update
-
-# Test and diagnose
-python scripts/skills/skills.py test
+# Run full health diagnostics and test suite
 python scripts/skills/skills.py doctor
+python scripts/skills/skills.py test
 ```
 
-## Natural Language Invocation
+---
 
-The skill router understands natural language. Examples:
+## 🛡️ Security & Lifecycle Policy
 
-| User says | Activates |
-|---|---|
-| "I'm procrastinating" | `productivity.unlazy` |
-| "Help me focus for 30 minutes" | `productivity.focus` |
-| "Break this project into steps" | `productivity.task-decomposition` |
-| "I keep getting distracted" | `productivity.adhd` |
-| "Review this code" | `development.code-review` |
-| "Find bugs in my code" | `development.debugging` |
-| "Research this topic" | `research.web-research` |
-| "Analyze this PDF" | `documents.pdf` |
-| "Check this for security issues" | `security.secure-coding` |
-
-## Library Stats
-
-- **Total skills:** 122
-- **Categories:** 8
-- **Custom skills:** 113
-- **Imported skills:** 9 (7 `obra/superpowers`, 2 `anthropics/skills`)
-- **Format:** Agent Skills standard (`SKILL.md` + frontmatter)
-- **Discovery:** exact IDs, aliases, categories, triggers, keywords, capability vocabulary, and token matching
-- **Composition:** `composes_with` / `suggests_after`, exposed by `route --chain`; named workflows in `skills/chains.json`
-- **Quality:** deterministic 6-axis scoring stored in `registry.json`
-- **Lifecycle:** explicit states from `discovered` to `enabled | disabled | quarantined | deprecated`
-- **Security:** static-only `scan` with severity-graded patterns
-
-## Categories
-
-- **productivity** — ADHD, focus, anti-procrastination, planning, task decomposition
-- **development** — Coding, debugging, refactoring, code review, testing, Git/GitHub
-- **research** — Web research, deep research, fact checking, data analysis
-- **web** — Browser automation, scraping, SEO, accessibility
-- **documents** — PDF, DOCX, XLSX, PPTX, Markdown, CSV
-- **design** — UI/UX, frontend design, presentations, branding
-- **security** — Secure coding, dependency audit, secret detection
-- **utilities** — File management, text processing, automation
-
-## Architecture
-
-The model is never handed all 122 skills. Discovery -> routing -> best match ->
-**load-on-demand** keeps context small:
-
-`
-                     AGENT
-                       |
-                       v
-                SKILL DISCOVERY
-                       |
-                       v
-                 SKILL ROUTER
-                       |
-        +--------------+--------------+
-        v              v              v
-   candidates     candidate chains  chains.json
-        +--------------+--------------+
-                       v
-                 BEST MATCH
-      (quality + permissions + deps + safety)
-                       |
-                       v
-          LOAD SKILL (one body on demand)
-`
-
-See docs/skills/ARCHITECTURE.md for the full layered-scoring explanation.
-
-## Directory Structure
-
-```
-skills/
-├── productivity/      # ADHD, focus, planning, unlazy
-├── development/       # coding, debugging, testing, git
-├── research/          # web research, fact checking
-├── web/               # browser automation, scraping
-├── documents/         # PDF, DOCX, XLSX, PPTX
-├── design/            # UI/UX, presentations
-├── security/          # secure coding, auditing
-├── utilities/         # general utilities
-├── _quarantine/       # suspicious skills held for review
-├── registry.json      # skill index (includes lifecycle + quality)
-├── registry.md        # human-readable registry
-├── SOURCES.json       # source attribution
-├── DEPENDENCIES.md    # human-readable dependency tracking
-├── dependencies.json  # machine-readable dependency tracking
-├── chains.json        # named deterministic workflows
-└── conflicts.json     # declared pairwise conflicts
-```
-
-## Adding a New Skill
-
-1. Create `skills/<category>/<skill-name>/` with `SKILL.md` and `README.md`.
-2. Include `name`, `description`, `category`, and `version`, plus all standard body sections.
-3. Add aliases, triggers, keywords, dependencies, composition targets, and risk metadata.
-4. Optionally declare `capabilities`, `inputs`, `outputs`, `permissions:`, `compatibility:`, and `lifecycle:` in frontmatter.
-5. For imports, preserve `LICENSE`, `references/upstream-SKILL.md`, repository, source path, commit, author, and modification status.
-6. Backfill the registry + quality scores: `python scripts/refresh_registry.py`.
-7. Export and regenerate docs: `python scripts/skills/skills.py export`, then run both `scripts/generate_*.py` files.
-8. Run `python scripts/skills/skills.py validate`, `test`, `scan`, and `doctor`.
-
-## Security Policy
-
-- All downloaded skills are security audited before integration
-- Suspicious skills go to `skills/_quarantine/`
-- Skills are not auto-executed; they require explicit invocation
-- Network access, file deletion, and credential access are flagged
-- Each skill lists its risk profile in its SKILL.md
-
-See [docs/skills/SECURITY.md](docs/skills/SECURITY.md) for the full policy.
+1. **Static Inspection**: No execution of external code during indexing or scanning (`src/skills/security.py`).
+2. **Quarantine Isolation**: Suspicious or unverified instructions are isolated in `skills/_quarantine/`.
+3. **8-State Lifecycle**: `discovered` → `imported` → `validated` → `security_scanned` → `ready` → `enabled` | `disabled` | `quarantined` | `deprecated`.
+4. **Explicit Provenance**: Upstream adaptations are pinned to explicit Git commit SHAs in `skills/SOURCES.json`.

@@ -1,35 +1,53 @@
-# ⚡ Agent Skills Library
+# ⚡ All Skills — Universal Agentic AI Toolkit & Platform
 
 <p align="center">
-  <img src="https://img.shields.io/badge/skills-122%20Active-7c3aed?style=for-the-badge&logo=codewars&logoColor=white" alt="122 Skills" />
+  <img src="https://img.shields.io/badge/skills-2%2C163%2B%20Total%20Skills-7c3aed?style=for-the-badge&logo=codewars&logoColor=white" alt="2163+ Skills" />
+  <img src="https://img.shields.io/badge/awesome--catalog-2%2C041%20Categorized-0ea5e9?style=for-the-badge&logo=github&logoColor=white" alt="2041 Awesome Skills" />
+  <img src="https://img.shields.io/badge/active--harness-66%20Pre--Loaded-10b981?style=for-the-badge&logo=lightning&logoColor=white" alt="66 Active Skills" />
+  <img src="https://img.shields.io/badge/canonical--engine-122%20Routed-f59e0b?style=for-the-badge&logo=fastapi&logoColor=white" alt="122 Routed Skills" />
   <img src="https://img.shields.io/badge/tests-86%2F86%20Passing-10b981?style=for-the-badge&logo=pytest&logoColor=white" alt="86 Tests Passing" />
+  <img src="https://img.shields.io/badge/tools-Claude%20%7C%20Cursor%20%7C%20Codex%20%7C%20Antigravity-ec4899?style=for-the-badge" alt="Multi-Tool Compatible" />
   <img src="https://img.shields.io/badge/dependencies-Zero%20External-0ea5e9?style=for-the-badge&logo=python&logoColor=white" alt="Zero External Dependencies" />
   <img src="https://img.shields.io/badge/python-3.10+-3776ab?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.10+" />
-  <img src="https://img.shields.io/badge/standard-Agent%20Skills-f59e0b?style=for-the-badge" alt="Agent Skills Standard" />
-  <img src="https://img.shields.io/badge/security-Static%20Scanned-ef4444?style=for-the-badge&logo=shield" alt="Security Scanned" />
 </p>
 
 <p align="center">
-  <strong>A high-performance, dependency-light Agent Skills engine, natural-language router, quality scorer, lifecycle manager, and deterministic workflow platform for 122 modular skills.</strong>
+  <strong>The complete, load-on-demand Agent Skills operating system. Over 2,160+ modular skills, 66 pre-loaded staff-engineer playbooks, 9-signal natural language routing, deterministic workflow chaining, and native multi-tool compatibility across Claude Code, Cursor, Codex CLI, and Antigravity.</strong>
 </p>
 
 ---
 
-## 🌟 Why Agent Skills Library?
+## 🌟 Why All Skills?
 
-When AI coding assistants and autonomous agents are loaded with dozens of full skill prompts upfront, context windows bloat, instruction adherence collapses, and token costs explode.
+When AI coding assistants are front-loaded with thousands of prompt instructions upfront, context windows choke, instruction adherence deteriorates, and token usage explodes.
 
-**Agent Skills Library** solves this with a **load-on-demand architecture**:
-- 🧠 **Context-Efficient ($O(1)$)**: The LLM is never given all 122 skills at once. Discovery, routing, and scoring select the optimal skill before reading a single line of skill body.
+**All Skills** solves this through a **3-tier hybrid architecture**:
+
+```
+┌─────────────────────────────────────────────────────────────────────────────────────────────────┐
+│                                   ⚡ ALL SKILLS PLATFORM TIERS                                  │
+├───────────────────────────────┬─────────────────────────────────┬───────────────────────────────┤
+│    1. ⚡ CANONICAL ENGINE      │      2. 🚀 AWESOME LIBRARY      │    3. 🤖 UNIVERSAL HARNESS    │
+│          (skills/)            │        (awesome_skills/)        │     (.agents/ / .claude/ /    │
+│                               │                                 │     .cursor/ / .codex/)       │
+├───────────────────────────────┼─────────────────────────────────┼───────────────────────────────┤
+│  • 122 Curated & Tested Skills│  • 2,041 Categorized Skills     │  • 66 Staff Engineer Skills   │
+│  • 9-Signal Layered Scoring   │  • 100 Functional Domain Dirs   │  • Pre-Loaded in Workspace    │
+│  • Deterministic Workflows    │  • Machine-Readable Index       │  • Native Multi-Tool Synced   │
+│  • 8-State Formal Lifecycle   │  • Complete CATALOG.md Reference│  • $O(1)$ Load-on-Demand      │
+│  • 86/86 Passing Unit Tests   │  • Dynamic Manager CLI          │  • Zero Prompt Bloat          │
+└───────────────────────────────┴─────────────────────────────────┴───────────────────────────────┘
+```
+
+- 🧠 **Context-Efficient ($O(1)$)**: Prompts stay hyper-lean. Your agent activates the exact right instruction block (`SKILL.md`) at the moment it's required.
 - 🎯 **9-Signal Layered Router**: Sub-millisecond natural-language routing with deterministic scoring (Exact ID → Alias → Category → Trigger Phrase → Keyword Overlap → Capabilities/IO Vocabulary → Token Overlap → Dependency Availability → Quality Boost).
 - ⛓️ **Deterministic Chaining**: Compose complex multi-step workflows like `deep-research`, `anti-procrastination`, and `code-review-flow` with dry-run telemetry.
 - 🛡️ **Defensive Security & Quarantine**: AST-free static inspection against prompt injections, credential leaks, and pipe-to-shell payloads with a hardened quarantine boundary (`skills/_quarantine/`).
-- 📊 **Deterministic 6-Axis Quality Scoring**: Automated quality ratings across documentation, maintenance, reliability, security, compatibility, and usefulness.
-- 🚦 **Formal 8-State Lifecycle**: Enforces strict transitions from `discovered` through `enabled`, `quarantined`, or `deprecated`.
+- 🤖 **Universal Multi-Tool Harness**: Pre-configured support for Claude Code, Cursor, Codex CLI, Antigravity, and Gemini CLI.
 
 ---
 
-## 🏛️ Architecture
+## 🏛️ Platform Architecture
 
 ```
                                ┌────────────────────────┐
@@ -37,341 +55,297 @@ When AI coding assistants and autonomous agents are loaded with dozens of full s
                                └───────────┬────────────┘
                                            │
                                            ▼
-┌──────────────────────────────────────────────────────────────────────────────────────┐
-│                            ⚡ 9-SIGNAL SCORING ROUTER                                │
-│  Exact ID (100) → Alias (90) → Category (80) → Triggers (+100) → Keywords (+40)      │
-│  → Capability/IO (+15) → Tokens (+25) → Dep Penalty (-) → Quality Boost (+4)         │
-└──────────────────────────┬───────────────────────────────────────┬───────────────────┘
-                           │                                       │
-                           ▼                                       ▼
-               ┌───────────────────────┐               ┌───────────────────────┐
-               │    Candidate Match    │               │    Candidate Chain    │
-               │  (Single Best Skill)  │               │   (Multi-Step Plan)   │
-               └───────────┬───────────┘               └───────────┬───────────┘
-                           │                                       │
-                           └───────────────────┬───────────────────┘
-                                               │
-                                               ▼
-                               ┌───────────────────────────────┐
-                               │    Load-on-Demand Runtime     │
-                               │   Reads 1 SKILL.md on Demand  │
-                               └───────────────┬───────────────┘
-                                               │
-                                               ▼
-                               ┌───────────────────────────────┐
-                               │       Active AI Agent         │
-                               └───────────────────────────────┘
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│                              ⚡ 9-SIGNAL SCORING ROUTER                                 │
+│  Exact ID (100) → Alias (90) → Category (80) → Triggers (+100) → Keywords (+40)         │
+│  → Capability/IO (+15) → Tokens (+25) → Dep Penalty (-) → Quality Boost (+4)            │
+└────────────────────────────┬──────────────────────────────────────────┬─────────────────┘
+                             │                                          │
+                             ▼                                          ▼
+                 ┌───────────────────────┐                  ┌───────────────────────┐
+                 │    Candidate Match    │                  │    Candidate Chain    │
+                 │  (Single Best Skill)  │                  │   (Multi-Step Plan)   │
+                 └───────────┬───────────┘                  └───────────┬───────────┘
+                             │                                          │
+                             └────────────────────┬─────────────────────┘
+                                                  │
+                                                  ▼
+                                 ┌─────────────────────────────────┐
+                                 │     Load-on-Demand Runtime      │
+                                 │    Reads 1 SKILL.md on Demand   │
+                                 └────────────────┬────────────────┘
+                                                  │
+                                                  ▼
+                                 ┌─────────────────────────────────┐
+                                 │        Active AI Agent          │
+                                 │ (Claude / Cursor / Antigravity) │
+                                 └─────────────────────────────────┘
 ```
 
 ---
 
-## 🚀 Quick Start
+## 🤖 Multi-Tool Support: Works in Any Agent Tool
 
-The entire library runs on pure Python 3.10+ standard library with **zero required third-party dependencies**.
+Every skill in this repository strictly adheres to the open **Agent Skills standard** (`SKILL.md` + YAML frontmatter). Your agent environment automatically discovers and loads skills:
 
+| AI Harness | Workspace Path | Global User Path | Support Status |
+| :--- | :--- | :--- | :---: |
+| **Claude Code** | `.claude/skills/` | `~/.claude/skills/` | ✅ Active |
+| **Cursor** | `.cursor/skills/` | `~/.cursor/skills/` | ✅ Active |
+| **Antigravity / Gemini CLI** | `.agents/skills/` | `~/.gemini/antigravity-cli/skills/` | ✅ Active |
+| **Codex CLI** | `.codex/skills/` | `~/.codex/skills/` | ✅ Active |
+| **Kiro / OpenClaw** | `.agents/skills/` | `~/.kiro/skills/` | ✅ Active |
+
+### ⚡ 1-Step Multi-Tool Harness Sync
+Run the universal setup script to sync all active skills across all installed coding agents in one step:
 ```bash
-# Clone the repository
-git clone https://github.com/Mr-Nobody-Anonymous/All-skills.git
-cd "All skills"
+# Sync all local workspace harnesses (.agents, .claude, .cursor, .codex)
+python scripts/setup_tools.py
 
-# Check library health & run complete verification
-python scripts/skills/skills.py doctor
-python scripts/skills/skills.py test
+# Inspect detection across local and global user directories
+python scripts/setup_tools.py --status
+
+# Optionally link skills to your global user profile
+python scripts/setup_tools.py --global
 ```
 
-### 🎮 Common CLI Workflows
+---
 
-#### 1. Discovery & Search
+## 🚀 Pre-Loaded Active Harness Skills (66 Skills)
+
+Your workspace comes pre-loaded with **66 staff-engineer and AI architect playbooks** in [`.agents/skills/`](.agents/skills/) (synced to `.claude/skills/`, `.cursor/skills/`, and `.codex/skills/`):
+
+<details open>
+<summary><strong>📋 View Pre-Loaded Skill Suites</strong></summary>
+
+### 1. 🎯 Core Planning & Workflow Architecture
+- `brainstorming` — Socratic design refinement before implementation
+- `executing-plans` — Batch plan execution with verification checkpoints
+- `concise-planning` — Actionable, atomic checklists (2–5 minute tasks)
+- `subagent-driven-development` — Autonomous recursive child-agent delegation
+- `dispatching-parallel-agents` — Concurrently tackle independent files/modules
+- `using-git-worktrees` — Isolated Git working trees for clean parallel branches
+- `verification-before-completion` — Mandatory automated test & build checks
+- `llm-prompt-optimizer` — Precision prompt engineering using the RSCIT framework
+
+### 2. 🧪 Code Quality, Testing & Debugging
+- `code-showcase-systematic-debugging` — 4-phase root-cause analysis (Isolate, Trace, Hypothesize, Fix)
+- `tdd` — Strict Red-Green-Refactor test-driven cycles
+- `code-reviewer` — Automated quality sweep against tech debt and N+1 queries
+- `code-review-excellence` — Collaborative, senior review workflows
+- `review-and-simplify-changes` — Diff optimization and simplification
+- `requesting-code-review` — Structured pre-review self-audits and patch summaries
+- `receiving-code-review` — Systematic response to human critique and CI logs
+- `performance-profiling` — CPU, memory, and bundle bottleneck optimization
+
+### 3. 🌐 Full-Stack Web & Frontend Engineering
+- `design-system` — Token architecture, typography hierarchy, and UI invariants
+- `tailwind-design-system` — Production-grade Tailwind CSS tokens and variants
+- `wcag-audit-patterns` — Comprehensive WCAG 2.2 accessibility remediation
+- `accessibility-compliance-accessibility-audit` — Screen-reader and ARIA auditing
+- `playwright-skill` — End-to-end browser automation and test execution
+- `browser-automation` — Robust DOM interactions and visual verifications
+- `browser-act` — Authenticated browser workflows and extraction
+- `react-state-management` — Predictable state layers (Zustand, RTK, TanStack Query)
+- `angular-state-management` — Modern Angular signals and component stores
+
+### 4. 🗄️ Backend, APIs & Database Engineering
+- `api-designer` — Clean, production-ready REST & GraphQL schemas
+- `api-and-interface-design` — Stable public contracts and module boundaries
+- `api-documentation` — OpenAPI/Swagger specs and developer guides
+- `database-design` — Normalized SQL schemas, indexing, and partitioning
+- `prisma-expert` — Type-safe relational modeling and query optimization
+- `drizzle-orm-expert` — Serverless SQL query builders and migrations
+- `redis-cli` — Cache-aside strategies, invalidation, and TTL tuning
+- `database-migration` — Zero-downtime forward and backward migration scripts
+
+### 5. 🤖 AI, Agents & Model Context Protocol (MCP)
+- `mcp-builder` — FastMCP Python & TypeScript server development
+- `mcp-tool-developer` — Production MCP tools with strict JSON schemas
+- `ai-engineer` — Advanced RAG, hybrid search, and multi-modal AI systems
+- `ai-engineering-toolkit` — Prompt evaluation, context budget planning, and evals
+- `agent-memory` — Persistent hybrid memory and vector knowledge stores
+- `agent-memory-systems` — Cognitive memory architecture (short-term & long-term)
+- `agent-evaluation` — Versioned test harnesses and LLM-as-a-judge scoring
+- `context-window-management` — Sliding-window context pruning and memory guards
+- `multi-agent-architect` — Production LangGraph, swarm, and supervisor graphs
+- `multi-agent-patterns` — Agent handoffs, supervisor loops, and isolation
+- `multi-agent-brainstorming` — Multi-agent peer review to stress-test designs
+- `agent-tool-builder` — Schema design, error handling, and token optimization
+
+### 6. ☁️ DevOps, Cloud & Infrastructure
+- `cloud-devops` — AWS, GCP, Azure, Docker, and Kubernetes deployment
+- `terraform-infrastructure` — Modular, state-safe Infrastructure as Code
+- `ci-cd-and-automation` — GitHub Actions test matrices, linting, and releases
+- `kubernetes-architect` — Cloud-native container orchestration & ArgoCD GitOps
+- `kubernetes-deployment` — Production Helm charts, pods, and ingress rules
+- `aws-serverless` — AWS Lambda, API Gateway, DynamoDB, and SAM/CDK
+
+### 7. 🛡️ Security, SAST & Vulnerability Auditing
+- `top-web-vulnerabilities` — OWASP Top 10 mitigation and security review
+- `sast-configuration` — Static Application Security Testing rules and scans
+- `security-scanning-security-sast` — Code vulnerability analysis across languages
+- `vulnerability-scanner` — Supply chain security and dependency audit
+- `marketplace-rbac-audit` — Multi-role marketplace authorization and RBAC
+- `secrets-management` — Vault, AWS Secrets Manager, and credential masking
+- `red-team-tactics` — Adversarial simulation based on MITRE ATT&CK
+
+### 8. 📈 SaaS Growth, Product & Docs
+- `saas-mvp-launcher` — Onboarding, billing (Stripe), and MVP launch roadmap
+- `micro-saas-launcher` — Fast indie-hacker MVP execution
+- `seo-geo` — Generative Engine Optimization for AI search engines
+- `copywriting` — Rigorous, high-converting direct-response copy
+- `email-sequence` — Automated customer lifecycle and nurture flows
+- `analytics-product` — PostHog, Mixpanel, and telemetry tracking schemas
+- `changelog-automation` — Keep a Changelog semantic release notes
+- `pdf-official` — PDF text parsing, OCR, and table extraction
+
+</details>
+
+---
+
+## 🛠️ CLI Toolkit & Workflows
+
+The repository includes two powerful CLI suites running on pure standard library with **zero external dependencies**:
+
+### 1. Awesome Skills Manager (`scripts/manage_awesome_skills.py`)
+Interact with all 2,041+ categorized skills in [`awesome_skills/`](awesome_skills/):
+
 ```bash
-# List all 122 skills grouped by category
-python scripts/skills/skills.py list
+# List all 100 domain categories with skill counts
+python scripts/manage_awesome_skills.py list
 
-# Search skills by query or keyword
-python scripts/skills/skills.py search productivity
+# List all skills inside a specific category
+python scripts/manage_awesome_skills.py list --category ai-agents
+python scripts/manage_awesome_skills.py list --category security
 
-# Show skill metadata (loaded on demand — zero file body read)
-python scripts/skills/skills.py info productivity.unlazy
+# Fuzzy search across all 2,041+ skills by keyword
+python scripts/manage_awesome_skills.py search "rag"
+python scripts/manage_awesome_skills.py search "prompt"
+python scripts/manage_awesome_skills.py search "kubernetes"
 
-# Load a specific skill's body into agent context
-python scripts/skills/skills.py load documents.pdf
+# View skill details, path, risk level, and instructions preview
+python scripts/manage_awesome_skills.py info multi-agent-architect
+
+# Inspect active harness status across all tools
+python scripts/manage_awesome_skills.py status
+
+# Install an individual skill into your active agent harness
+python scripts/manage_awesome_skills.py install redis-cli
+
+# Install an entire category into your active harness
+python scripts/manage_awesome_skills.py install security
+
+# Install role-specific curated bundles
+python scripts/manage_awesome_skills.py install-bundle senior-engineer
+python scripts/manage_awesome_skills.py install-bundle agentic-architect
+python scripts/manage_awesome_skills.py install-bundle fullstack
+python scripts/manage_awesome_skills.py install-bundle devops-cloud
+python scripts/manage_awesome_skills.py install-bundle security
+python scripts/manage_awesome_skills.py install-bundle saas-growth
 ```
 
-#### 2. Natural Language Routing
+---
+
+### 2. Canonical Routing Engine (`scripts/skills/skills.py`)
+Run sub-millisecond natural language routing, quality audits, and workflow chains across the 122 canonical engine skills:
+
 ```bash
-# Route a natural language request to the best-matching skill
-python scripts/skills/skills.py route "I'm procrastinating on a paper"
+# Route a natural language goal to the optimal skill
+python scripts/skills/skills.py route "I am procrastinating on my project"
+python scripts/skills/skills.py route "Review this Python code for security issues"
 
 # Route with chained follow-on suggestions and dry-run preview
 python scripts/skills/skills.py route --chain --dry-run "Break my project into tasks"
 
-# Explain routing scores with a per-signal breakdown
-python scripts/skills/skills.py explain "Review this Python code for security problems"
-```
+# Explain routing scores with a per-signal score breakdown
+python scripts/skills/skills.py explain "Review this code for vulnerabilities"
 
-#### 3. Deterministic Workflow Chains
-```bash
-# Execute or dry-run named canonical workflows
+# Execute or dry-run named deterministic workflow chains
 python scripts/skills/skills.py chain deep-research --dry-run
 python scripts/skills/skills.py chain anti-procrastination --dry-run
 python scripts/skills/skills.py chain code-review-flow --dry-run
-```
 
-#### 4. Quality, Lifecycle, Conflicts & Security
-```bash
-# Inspect quality scores across all skills or for a specific skill
-python scripts/skills/skills.py quality productivity.focus
-
-# View declared pairwise conflicts & priority arbitration
-python scripts/skills/skills.py conflicts
-
-# Inspect or transition skill lifecycle state
-python scripts/skills/skills.py lifecycle productivity.unlazy
-python scripts/skills/skills.py lifecycle productivity.unlazy disabled
-
-# Run static security inspection on all skill directories
-python scripts/skills/skills.py scan --strict
-```
-
-#### 5. Diagnostics & Integrity
-```bash
-# Run comprehensive library health diagnostics
+# Run full health diagnostics and 86-test verification suite
 python scripts/skills/skills.py doctor
-
-# Validate SKILL.md frontmatter, required sections, and links
-python scripts/skills/skills.py validate
-
-# Run the complete test suite (unit, routing, lifecycle, provenance)
 python scripts/skills/skills.py test
 ```
 
 ---
 
-## 💻 Interactive Showcase
-
-<details open>
-<summary><strong>🔍 Route Natural Language Query</strong></summary>
-
-```console
-$ python scripts/skills/skills.py route "I'm procrastinating on my programming assignment."
-
-Matched: productivity.unlazy (score 97.0 via trigger)
-Description: Anti-procrastination engine — breaks inertia with immediate micro-actions and friction removal.
-```
-</details>
-
-<details>
-<summary><strong>📊 Explain Route Decision (Signal Breakdown)</strong></summary>
-
-```console
-$ python scripts/skills/skills.py explain "I'm procrastinating"
-
-Top matches for: "I'm procrastinating"
-1. productivity.unlazy (score: 97.0, primary: trigger)
-   Signals: trigger=87.0, token=6.2, quality=3.12
-2. productivity.focus (score: 13.08, primary: token)
-   Signals: token=10.0, quality=3.08
-3. productivity.adhd (score: 13.08, primary: token)
-   Signals: token=10.0, quality=3.08
-```
-</details>
-
-<details>
-<summary><strong>⛓️ Named Deterministic Chain Preview</strong></summary>
-
-```console
-$ python scripts/skills/skills.py chain deep-research --dry-run
-
-Chain: deep-research
-Description: Research a topic on the web, verify sources, fact-check, summarize, and produce a Markdown report.
-Steps (5):
-  1. research.web-research
-  2. research.source-verification
-  3. research.fact-checking
-  4. utilities.summarization
-  5. documents.markdown
-Declared permissions across chain:
-  filesystem: read
-  network: required
-```
-</details>
-
-<details>
-<summary><strong>🩺 Library Diagnostics (doctor)</strong></summary>
-
-```console
-$ python scripts/skills/skills.py doctor
-
-== Skill Library Diagnostics ==
-
-Total skills: 122
-Enabled:      122
-Disabled:     0
-Categories:   8
-  - design: 8
-  - development: 38
-  - documents: 7
-  - productivity: 24
-  - research: 8
-  - security: 7
-  - utilities: 20
-  - web: 10
-
-Validation:
-  Errors:   0
-  Warnings: 1
-Quarantined: 0
-Dependencies checked: 48
-Missing required:      0
-Lifecycle:
-  - enabled: 122
-Quality: average 6.5
-```
-</details>
-
----
-
-## 📚 Skill Catalog by Category
-
-The library organizes **122 production-ready skills** across 8 core domains:
-
-| Category | Skills | Highlights & Core Capabilities | Reference |
-|---|:---:|---|---|
-| **💻 Development** | **38** | Architecture, coding, debugging, refactoring, code review, git worktrees, Docker, MCP server builder, PR splitter, issue triage, release management, CI/CD pipeline. | [development.md](docs/skills/development.md) |
-| **🚀 Productivity** | **24** | Anti-procrastination (`unlazy`), ADHD task breakdown, focus guard, calendar assistant, inbox zero, Obsidian sync, time blocking, ADHD output style, divergent brainstorming, first principles reasoning, executive summary, Kaizen, session analytics. | [productivity.md](docs/skills/productivity.md) |
-| **🛠️ Utilities** | **20** | Parallel agent dispatching, audio transcription, system monitor, Sonos CLI, Telegram/WhatsApp routers, Slack synthesizer, text processing, automation. | [utilities.md](docs/skills/utilities.md) |
-| **🌐 Web** | **10** | Agent browser automation, web scraper, form filler, media downloader, SEO audit, accessibility, web extraction. | [web.md](docs/skills/web.md) |
-| **🔬 Research** | **8** | Web research, search synthesizer, fact-checking, deep research, competitive analysis, data analysis, source verification. | [research.md](docs/skills/research.md) |
-| **🎨 Design** | **8** | UI/UX design, frontend design, slide presentations, Remotion video, avatar creator, image generation, Google Veo video generation. | [design.md](docs/skills/design.md) |
-| **📄 Documents** | **7** | PDF analysis, Markdown editing, DOCX, XLSX, PPTX, CSV processing, automated expense & receipt parser. | [documents.md](docs/skills/documents.md) |
-| **🛡️ Security** | **7** | Secure coding guidance (OWASP Top 10), release security scanner, npm auditor, secret detection, command safety guard, prompt-injection defense. | [security-category.md](docs/skills/security-category.md) |
-
----
-
-## 📋 Anatomy of an Agent Skill
-
-Every skill in this repository complies with the open **Agent Skills specification** and is laid out as:
+## 🗂️ Repository Directory Structure
 
 ```
-skills/<category>/<skill-name>/
-├── SKILL.md        # Canonical prompt instructions with YAML frontmatter
-├── README.md       # Human-readable documentation & provenance
-├── LICENSE         # Preserved third-party license (for imported skills)
-└── references/     # Auxiliary guides, schemas, or upstream snapshots
-```
-
-### Required Frontmatter Specification
-
-```yaml
----
-name: web-research
-description: Conduct structured web research — query formulation, source diversification, synthesis, and source tracking.
-category: research
-aliases: [research, internet-research, search]
-triggers:
-  - research this
-  - research this topic
-  - look this up
-keywords: [research, search, web, lookup, find, information, query]
-dependencies: []
-risk: low
-version: 1.0.0
-source: custom
-enabled: true
-lifecycle: enabled
-capabilities: [web-research, query-decomposition, source-tracking]
-inputs: [topic, constraints]
-outputs: [research_report, citations]
-permissions:
-  filesystem: read
-  network: required
----
-```
-
-Each `SKILL.md` body strictly implements the **11 mandatory structural sections**:
-1. `## Purpose`
-2. `## When to Use`
-3. `## When NOT to Use`
-4. `## Capabilities`
-5. `## Inputs`
-6. `## Workflow`
-7. `## Tools`
-8. `## Examples`
-9. `## Safety`
-10. `## Source`
-11. `## Notes`
-
----
-
-## 📁 Repository Structure
-
-```
-.
-├── skills/                     # 122 Canonical Skill Implementations
-│   ├── design/                 # Avatar creator, Remotion, Veo, UI/UX (8 skills)
-│   ├── development/            # Coding, debugging, MCP builder, Docker, PR split (38 skills)
-│   ├── documents/              # PDF, DOCX, XLSX, PPTX, Expense Parser (7 skills)
-│   ├── productivity/           # Unlazy, Focus, ADHD, Inbox Zero, Executive, Kaizen (24 skills)
-│   ├── research/               # Web research, search synthesizer (8 skills)
-│   ├── security/               # Secure coding, scanner, npm audit (7 skills)
-│   ├── utilities/              # Parallel agents, system monitor, beam (20 skills)
-│   ├── web/                    # Browser automation, scraper, form filler (10 skills)
-│   ├── _quarantine/            # Isolated directory for untrusted/flagged skills
-│   ├── registry.json           # Machine-readable skill catalog & quality scores
-│   ├── registry.md             # Human-readable registry overview
-│   ├── dependencies.json       # Machine-readable dependency matrix
-│   ├── DEPENDENCIES.md         # Human-readable dependency audit
-│   ├── chains.json             # Named deterministic multi-skill workflows
-│   ├── conflicts.json          # Declared pairwise skill conflicts & arbitration
-│   └── SOURCES.json            # Pinned upstream provenance, commits & licenses
-├── src/skills/                 # Core Python Engine (Zero Dependencies)
-│   ├── router.py               # 9-signal layered natural-language router
-│   ├── registry.py             # Metadata loader and skill indexer
-│   ├── loader.py               # On-demand lazy body loader
-│   ├── validator.py            # Static validation and integrity checker
-│   ├── quality.py              # Deterministic 6-axis quality scoring engine
-│   ├── lifecycle.py            # State-machine lifecycle manager
-│   ├── chains.py               # Deterministic workflow resolver
-│   ├── conflicts.py            # Pairwise conflict detector
-│   └── security.py             # AST-free pattern-based static security scanner
-├── scripts/                    # CLI and Automation Tools
-│   ├── skills/skills.py        # Primary CLI executable
-│   ├── refresh_registry.py     # Registry metadata synchronization tool
-│   ├── generate_registry_docs.py # Automated doc generator
-│   └── generate_category_docs.py # Category doc generator
-├── docs/skills/                # Architecture, Security & Category Docs
-│   ├── ARCHITECTURE.md         # Load-on-demand platform architecture
-│   ├── SECURITY.md             # Threat model and security policy
-│   ├── SOURCE_AUDIT.md         # Upstream audit log and exclusion rationale
-│   └── *.md                    # Individual category reference guides
-└── tests/skill_tests/          # Comprehensive Pytest / Unittest Suite (86 tests)
+All skills/
+├── .agents/skills/              # 🤖 Antigravity / Gemini CLI Active Harness (66 skills)
+├── .claude/skills/              # 🤖 Claude Code Active Harness (synced via junction)
+├── .cursor/skills/              # 🤖 Cursor Active Harness (synced via junction)
+├── .codex/skills/               # 🤖 Codex CLI Active Harness (synced via junction)
+│
+├── awesome_skills/              # 🚀 2,041+ Categorized Skills Library
+│   ├── CATALOG.md               # Complete searchable markdown catalog
+│   ├── skills_index.json        # 2,141-item metadata database
+│   ├── development/             # 187 skills (Coding, Git, Refactoring)
+│   ├── cloud/                   # 146 skills (AWS, GCP, Azure, Terraform)
+│   ├── ai-ml/                   # 129 skills (Prompting, RAG, Evals)
+│   ├── security/                # 82 skills  (SAST, Secrets, RBAC)
+│   ├── web-development/         # 65 skills  (Frontend, Fullstack)
+│   └── ...                      # 95 additional domain categories
+│
+├── skills/                      # ⚡ 122 Canonical Engine Skills (8 Categories)
+│   ├── productivity/            # Focus, anti-procrastination, planning
+│   ├── development/             # TDD, debugging, code-review
+│   ├── research/                # Deep research, synthesis
+│   ├── web/                     # Browser automation, SEO
+│   ├── documents/               # PDF, DOCX, XLSX
+│   ├── design/                  # UI/UX, presentations
+│   ├── security/                # Static scanning, secrets
+│   ├── utilities/               # File and system tools
+│   ├── _quarantine/             # Hardened quarantine boundary
+│   ├── registry.json            # 6-axis quality scores & lifecycle states
+│   └── chains.json              # Named deterministic multi-skill workflows
+│
+├── scripts/                     # 🛠️ Platform & Harness Tooling
+│   ├── setup_tools.py           # Universal multi-tool harness synchronizer
+│   ├── manage_awesome_skills.py # Awesome skills search, inspection & installer
+│   ├── refresh_registry.py      # Backfill registry metadata & quality scores
+│   └── skills/skills.py         # 9-signal router & CLI engine
+│
+├── docs/skills/                 # 📚 Architecture, Security & Category Documentation
+│   ├── ARCHITECTURE.md          # Scoring algorithm & load-on-demand platform
+│   ├── SECURITY.md              # Threat model & static inspection policy
+│   └── *.md                     # Per-category detailed reference guides
+│
+└── tests/skill_tests/           # 🧪 Unit & Integration Test Suite (86 tests)
 ```
 
 ---
 
-## 🛡️ Security & Provenance
+## 🛡️ Defensive Security & Provenance
 
-- **Static Inspection Only**: The security scanner (`src/skills/security.py`) never executes upstream code. Every script and instruction is treated strictly as text.
-- **Strict Quarantine**: Any flagged or unverified skill is isolated in `skills/_quarantine/`, completely unrouteable and excluded from runtime indexing.
-- **Pinned Provenance**: All third-party skills (adapted from `obra/superpowers` and `anthropics/skills`) are pinned to explicit Git commit SHAs with original author attribution in [skills/SOURCES.json](skills/SOURCES.json) and upstream references in `references/upstream-SKILL.md`.
+- **100% Static Inspection**: The built-in security scanner (`src/skills/security.py`) never executes external scripts. Code is analyzed strictly through AST-free static token matching.
+- **Hardened Quarantine**: Any unverified or potentially destructive pattern triggers an immediate hold in `skills/_quarantine/`, completely unrouteable by agents.
+- **Audited Provenance**: Upstream adaptations are pinned to explicit Git commit SHAs with author attribution in [`skills/SOURCES.json`](skills/SOURCES.json).
 
 ---
 
-## 🤝 Contributing & Adding Skills
+## 🧪 Verification & Health Check
 
-1. Create a new skill folder: `skills/<category>/<skill-name>/`
-2. Add `SKILL.md` following the required frontmatter schema and 11 standard sections.
-3. Add a companion `README.md`.
-4. Refresh metadata and run diagnostics:
-   ```bash
-   python scripts/refresh_registry.py
-   python scripts/generate_registry_docs.py
-   python scripts/generate_category_docs.py
-   python scripts/skills/skills.py validate
-   python scripts/skills/skills.py test
-   ```
+Run complete test suites and diagnostic checks at any time:
+
+```bash
+# 1. Check health of all 122 canonical skills
+python scripts/skills/skills.py doctor
+
+# 2. Run the 86 unit and integration tests
+python scripts/skills/skills.py test
+
+# 3. Verify multi-tool harness connections
+python scripts/setup_tools.py --status
+```
 
 ---
 
 ## 📄 License
 
-Individual skills retain their respective open-source licenses (MIT, Apache-2.0, or Custom). Detailed provenance and copyright details are documented in [skills/SOURCES.json](skills/SOURCES.json).
+Individual skills retain their respective open-source licenses (MIT, Apache-2.0, or Custom). Provenance details are documented in [`skills/SOURCES.json`](skills/SOURCES.json) and [`awesome_skills/skills_index.json`](awesome_skills/skills_index.json).
