@@ -1,0 +1,521 @@
+{
+  "version": "fallback_prov",
+  "skills": {
+    "skill-ovos-weather": {
+      "url": "https://github.com/OpenVoiceOS/skill-ovos-weather",
+      "name": "skill-ovos-weather",
+      "origin": "ovos",
+      "status": "verified"
+    },
+    "skill-ovos-wikipedia": {
+      "url": "https://github.com/OpenVoiceOS/skill-ovos-wikipedia",
+      "name": "skill-ovos-wikipedia",
+      "origin": "ovos",
+      "status": "verified"
+    },
+    "skill-ovos-wolfram-alpha": {
+      "url": "https://github.com/OpenVoiceOS/skill-ovos-wolfram-alpha",
+      "name": "skill-ovos-wolfram-alpha",
+      "origin": "ovos",
+      "status": "verified"
+    },
+    "skill-ovos-ddg": {
+      "url": "https://github.com/OpenVoiceOS/skill-ovos-ddg",
+      "name": "skill-ovos-ddg",
+      "origin": "ovos",
+      "status": "verified"
+    },
+    "skill-ovos-timer": {
+      "url": "https://github.com/OpenVoiceOS/skill-ovos-timer",
+      "name": "skill-ovos-timer",
+      "origin": "ovos",
+      "status": "verified"
+    },
+    "skill-ovos-alarm": {
+      "url": "https://github.com/OpenVoiceOS/skill-ovos-alarm",
+      "name": "skill-ovos-alarm",
+      "origin": "ovos",
+      "status": "verified"
+    },
+    "skill-ovos-notes": {
+      "url": "https://github.com/OpenVoiceOS/skill-ovos-notes",
+      "name": "skill-ovos-notes",
+      "origin": "ovos",
+      "status": "verified"
+    },
+    "skill-ovos-news": {
+      "url": "https://github.com/OpenVoiceOS/skill-ovos-news",
+      "name": "skill-ovos-news",
+      "origin": "ovos",
+      "status": "verified"
+    },
+    "skill-ovos-volume": {
+      "url": "https://github.com/OpenVoiceOS/skill-ovos-volume",
+      "name": "skill-ovos-volume",
+      "origin": "ovos",
+      "status": "verified"
+    },
+    "skill-ovos-date-time": {
+      "url": "https://github.com/OpenVoiceOS/skill-ovos-date-time",
+      "name": "skill-ovos-date-time",
+      "origin": "ovos",
+      "status": "verified"
+    },
+    "skill-ovos-hello-world": {
+      "url": "https://github.com/OpenVoiceOS/skill-ovos-hello-world",
+      "name": "skill-ovos-hello-world",
+      "origin": "ovos",
+      "status": "verified"
+    },
+    "skill-ovos-stop": {
+      "url": "https://github.com/OpenVoiceOS/skill-ovos-stop",
+      "name": "skill-ovos-stop",
+      "origin": "ovos",
+      "status": "verified"
+    },
+    "skill-ovos-fallback-unknown": {
+      "url": "https://github.com/OpenVoiceOS/skill-ovos-fallback-unknown",
+      "name": "skill-ovos-fallback-unknown",
+      "origin": "ovos",
+      "status": "verified"
+    },
+    "skill-ovos-fallback-chatgpt": {
+      "url": "https://github.com/OpenVoiceOS/skill-ovos-fallback-chatgpt",
+      "name": "skill-ovos-fallback-chatgpt",
+      "origin": "ovos",
+      "status": "verified"
+    },
+    "skill-ovos-setup": {
+      "url": "https://github.com/OpenVoiceOS/skill-ovos-setup",
+      "name": "skill-ovos-setup",
+      "origin": "ovos",
+      "status": "verified"
+    },
+    "skill-ovos-wifi-setup": {
+      "url": "https://github.com/OpenVoiceOS/skill-ovos-wifi-setup",
+      "name": "skill-ovos-wifi-setup",
+      "origin": "ovos",
+      "status": "verified"
+    },
+    "skill-ovos-homeassistant": {
+      "url": "https://github.com/OpenVoiceOS/skill-ovos-homeassistant",
+      "name": "skill-ovos-homeassistant",
+      "origin": "ovos",
+      "status": "verified"
+    },
+    "skill-ovos-media": {
+      "url": "https://github.com/OpenVoiceOS/skill-ovos-media",
+      "name": "skill-ovos-media",
+      "origin": "ovos",
+      "status": "verified"
+    },
+    "skill-ovos-sunrise-sunset": {
+      "url": "https://github.com/OpenVoiceOS/skill-ovos-sunrise-sunset",
+      "name": "skill-ovos-sunrise-sunset",
+      "origin": "ovos",
+      "status": "verified"
+    },
+    "skill-ovos-youtube": {
+      "url": "https://github.com/OpenVoiceOS/skill-ovos-youtube",
+      "name": "skill-ovos-youtube",
+      "origin": "ovos",
+      "status": "verified"
+    },
+    "skill-ovos-spotify": {
+      "url": "https://github.com/OpenVoiceOS/skill-ovos-spotify",
+      "name": "skill-ovos-spotify",
+      "origin": "ovos",
+      "status": "verified"
+    },
+    "skill-ovos-bandcamp": {
+      "url": "https://github.com/OpenVoiceOS/skill-ovos-bandcamp",
+      "name": "skill-ovos-bandcamp",
+      "origin": "ovos",
+      "status": "verified"
+    },
+    "skill-ovos-soundcloud": {
+      "url": "https://github.com/OpenVoiceOS/skill-ovos-soundcloud",
+      "name": "skill-ovos-soundcloud",
+      "origin": "ovos",
+      "status": "verified"
+    },
+    "skill-ovos-radio-browser": {
+      "url": "https://github.com/OpenVoiceOS/skill-ovos-radio-browser",
+      "name": "skill-ovos-radio-browser",
+      "origin": "ovos",
+      "status": "verified"
+    },
+    "skill-ovos-podcasts": {
+      "url": "https://github.com/OpenVoiceOS/skill-ovos-podcasts",
+      "name": "skill-ovos-podcasts",
+      "origin": "ovos",
+      "status": "verified"
+    },
+    "skill-ovos-iss-location": {
+      "url": "https://github.com/OpenVoiceOS/skill-ovos-iss-location",
+      "name": "skill-ovos-iss-location",
+      "origin": "ovos",
+      "status": "verified"
+    },
+    "skill-ovos-number-facts": {
+      "url": "https://github.com/OpenVoiceOS/skill-ovos-number-facts",
+      "name": "skill-ovos-number-facts",
+      "origin": "ovos",
+      "status": "verified"
+    },
+    "skill-ovos-wordnet": {
+      "url": "https://github.com/OpenVoiceOS/skill-ovos-wordnet",
+      "name": "skill-ovos-wordnet",
+      "origin": "ovos",
+      "status": "verified"
+    },
+    "skill-ovos-dictation": {
+      "url": "https://github.com/OpenVoiceOS/skill-ovos-dictation",
+      "name": "skill-ovos-dictation",
+      "origin": "ovos",
+      "status": "verified"
+    },
+    "skill-ovos-calculator": {
+      "url": "https://github.com/OpenVoiceOS/skill-ovos-calculator",
+      "name": "skill-ovos-calculator",
+      "origin": "ovos",
+      "status": "verified"
+    },
+    "skill-ovos-translation": {
+      "url": "https://github.com/OpenVoiceOS/skill-ovos-translation",
+      "name": "skill-ovos-translation",
+      "origin": "ovos",
+      "status": "verified"
+    },
+    "skill-ovos-personal": {
+      "url": "https://github.com/OpenVoiceOS/skill-ovos-personal",
+      "name": "skill-ovos-personal",
+      "origin": "ovos",
+      "status": "verified"
+    },
+    "skill-ovos-camera": {
+      "url": "https://github.com/OpenVoiceOS/skill-ovos-camera",
+      "name": "skill-ovos-camera",
+      "origin": "ovos",
+      "status": "verified"
+    },
+    "skill-ovos-laugh": {
+      "url": "https://github.com/OpenVoiceOS/skill-ovos-laugh",
+      "name": "skill-ovos-laugh",
+      "origin": "ovos",
+      "status": "verified"
+    },
+    "skill-ovos-parrot": {
+      "url": "https://github.com/OpenVoiceOS/skill-ovos-parrot",
+      "name": "skill-ovos-parrot",
+      "origin": "ovos",
+      "status": "verified"
+    },
+    "skill-ovos-speedtest": {
+      "url": "https://github.com/OpenVoiceOS/skill-ovos-speedtest",
+      "name": "skill-ovos-speedtest",
+      "origin": "ovos",
+      "status": "verified"
+    },
+    "skill-ovos-icanhazdadjokes": {
+      "url": "https://github.com/OpenVoiceOS/skill-ovos-icanhazdadjokes",
+      "name": "skill-ovos-icanhazdadjokes",
+      "origin": "ovos",
+      "status": "verified"
+    },
+    "skill-ovos-naptime": {
+      "url": "https://github.com/OpenVoiceOS/skill-ovos-naptime",
+      "name": "skill-ovos-naptime",
+      "origin": "ovos",
+      "status": "verified"
+    },
+    "skill-ovos-boot-finished": {
+      "url": "https://github.com/OpenVoiceOS/skill-ovos-boot-finished",
+      "name": "skill-ovos-boot-finished",
+      "origin": "ovos",
+      "status": "verified"
+    },
+    "skill-alerts": {
+      "url": "https://github.com/NeonGeckoCom/skill-alerts",
+      "name": "skill-alerts",
+      "origin": "neon",
+      "status": "verified"
+    },
+    "skill-weather": {
+      "url": "https://github.com/MycroftAI/skill-weather",
+      "name": "skill-weather",
+      "origin": "mycroft",
+      "status": "archived"
+    },
+    "skill-date_time": {
+      "url": "https://github.com/NeonGeckoCom/skill-date_time",
+      "name": "skill-date_time",
+      "origin": "neon",
+      "status": "verified"
+    },
+    "skill-calendar": {
+      "url": "https://github.com/NeonGeckoCom/skill-calendar",
+      "name": "skill-calendar",
+      "origin": "neon",
+      "status": "verified"
+    },
+    "skill-reminder": {
+      "url": "https://github.com/MycroftAI/skill-reminder",
+      "name": "skill-reminder",
+      "origin": "mycroft",
+      "status": "archived"
+    },
+    "skill-translation": {
+      "url": "https://github.com/NeonGeckoCom/skill-translation",
+      "name": "skill-translation",
+      "origin": "neon",
+      "status": "verified"
+    },
+    "skill-fallback-chatgpt": {
+      "url": "https://github.com/NeonGeckoCom/skill-fallback-chatgpt",
+      "name": "skill-fallback-chatgpt",
+      "origin": "neon",
+      "status": "verified"
+    },
+    "skill-duckduckgo": {
+      "url": "https://github.com/NeonGeckoCom/skill-duckduckgo",
+      "name": "skill-duckduckgo",
+      "origin": "neon",
+      "status": "verified"
+    },
+    "skill-wikipedia": {
+      "url": "https://github.com/NeonGeckoCom/skill-wikipedia",
+      "name": "skill-wikipedia",
+      "origin": "neon",
+      "status": "verified"
+    },
+    "skill-wolfram-alpha": {
+      "url": "https://github.com/NeonGeckoCom/skill-wolfram-alpha",
+      "name": "skill-wolfram-alpha",
+      "origin": "neon",
+      "status": "verified"
+    },
+    "skill-local_media": {
+      "url": "https://github.com/NeonGeckoCom/skill-local_media",
+      "name": "skill-local_media",
+      "origin": "neon",
+      "status": "verified"
+    },
+    "skill-messaging": {
+      "url": "https://github.com/NeonGeckoCom/skill-messaging",
+      "name": "skill-messaging",
+      "origin": "neon",
+      "status": "verified"
+    },
+    "skill-converse": {
+      "url": "https://github.com/NeonGeckoCom/skill-converse",
+      "name": "skill-converse",
+      "origin": "neon",
+      "status": "verified"
+    },
+    "skill-about": {
+      "url": "https://github.com/NeonGeckoCom/skill-about",
+      "name": "skill-about",
+      "origin": "neon",
+      "status": "verified"
+    },
+    "skill-device_controls": {
+      "url": "https://github.com/NeonGeckoCom/skill-device_controls",
+      "name": "skill-device_controls",
+      "origin": "neon",
+      "status": "verified"
+    },
+    "skill-iss": {
+      "url": "https://github.com/NeonGeckoCom/skill-iss",
+      "name": "skill-iss",
+      "origin": "neon",
+      "status": "verified"
+    },
+    "skill-somafm": {
+      "url": "https://github.com/NeonGeckoCom/skill-somafm",
+      "name": "skill-somafm",
+      "origin": "neon",
+      "status": "verified"
+    },
+    "skill-casual_conversation": {
+      "url": "https://github.com/NeonGeckoCom/skill-casual_conversation",
+      "name": "skill-casual_conversation",
+      "origin": "neon",
+      "status": "verified"
+    },
+    "skill-fallback_llm": {
+      "url": "https://github.com/NeonGeckoCom/skill-fallback_llm",
+      "name": "skill-fallback_llm",
+      "origin": "neon",
+      "status": "verified"
+    },
+    "skill-stock": {
+      "url": "https://github.com/NeonGeckoCom/skill-stock",
+      "name": "skill-stock",
+      "origin": "neon",
+      "status": "verified"
+    },
+    "skill-crypto": {
+      "url": "https://github.com/NeonGeckoCom/skill-crypto",
+      "name": "skill-crypto",
+      "origin": "neon",
+      "status": "verified"
+    },
+    "skill-npr_news": {
+      "url": "https://github.com/NeonGeckoCom/skill-npr_news",
+      "name": "skill-npr_news",
+      "origin": "neon",
+      "status": "verified"
+    },
+    "skill-reddit": {
+      "url": "https://github.com/NeonGeckoCom/skill-reddit",
+      "name": "skill-reddit",
+      "origin": "neon",
+      "status": "verified"
+    },
+    "skill-homescreen": {
+      "url": "https://github.com/NeonGeckoCom/skill-homescreen",
+      "name": "skill-homescreen",
+      "origin": "neon",
+      "status": "verified"
+    },
+    "skill-audio_record": {
+      "url": "https://github.com/NeonGeckoCom/skill-audio_record",
+      "name": "skill-audio_record",
+      "origin": "neon",
+      "status": "verified"
+    },
+    "skill-voice_ping": {
+      "url": "https://github.com/NeonGeckoCom/skill-voice_ping",
+      "name": "skill-voice_ping",
+      "origin": "neon",
+      "status": "verified"
+    },
+    "skill-demo": {
+      "url": "https://github.com/NeonGeckoCom/skill-demo",
+      "name": "skill-demo",
+      "origin": "neon",
+      "status": "verified"
+    },
+    "skill-wiki": {
+      "url": "https://github.com/MycroftAI/skill-wiki",
+      "name": "skill-wiki",
+      "origin": "mycroft",
+      "status": "archived"
+    },
+    "skill-volume": {
+      "url": "https://github.com/MycroftAI/skill-volume",
+      "name": "skill-volume",
+      "origin": "mycroft",
+      "status": "archived"
+    },
+    "skill-alarm": {
+      "url": "https://github.com/MycroftAI/skill-alarm",
+      "name": "skill-alarm",
+      "origin": "mycroft",
+      "status": "archived"
+    },
+    "skill-timer": {
+      "url": "https://github.com/MycroftAI/skill-timer",
+      "name": "skill-timer",
+      "origin": "mycroft",
+      "status": "archived"
+    },
+    "skill-date-time": {
+      "url": "https://github.com/MycroftAI/skill-date-time",
+      "name": "skill-date-time",
+      "origin": "mycroft",
+      "status": "archived"
+    },
+    "skill-npr-news": {
+      "url": "https://github.com/MycroftAI/skill-npr-news",
+      "name": "skill-npr-news",
+      "origin": "mycroft",
+      "status": "archived"
+    },
+    "skill-hello-world": {
+      "url": "https://github.com/MycroftAI/skill-hello-world",
+      "name": "skill-hello-world",
+      "origin": "mycroft",
+      "status": "archived"
+    },
+    "skill-stop": {
+      "url": "https://github.com/MycroftAI/skill-stop",
+      "name": "skill-stop",
+      "origin": "mycroft",
+      "status": "archived"
+    },
+    "skill-pairing": {
+      "url": "https://github.com/MycroftAI/skill-pairing",
+      "name": "skill-pairing",
+      "origin": "mycroft",
+      "status": "archived"
+    },
+    "skill-configuration": {
+      "url": "https://github.com/MycroftAI/skill-configuration",
+      "name": "skill-configuration",
+      "origin": "mycroft",
+      "status": "archived"
+    },
+    "skill-installer": {
+      "url": "https://github.com/MycroftAI/skill-installer",
+      "name": "skill-installer",
+      "origin": "mycroft",
+      "status": "archived"
+    },
+    "skill-ip": {
+      "url": "https://github.com/MycroftAI/skill-ip",
+      "name": "skill-ip",
+      "origin": "mycroft",
+      "status": "archived"
+    },
+    "skill-spelling": {
+      "url": "https://github.com/MycroftAI/skill-spelling",
+      "name": "skill-spelling",
+      "origin": "mycroft",
+      "status": "archived"
+    },
+    "skill-singing": {
+      "url": "https://github.com/MycroftAI/skill-singing",
+      "name": "skill-singing",
+      "origin": "mycroft",
+      "status": "archived"
+    },
+    "skill-joke": {
+      "url": "https://github.com/MycroftAI/skill-joke",
+      "name": "skill-joke",
+      "origin": "mycroft",
+      "status": "archived"
+    },
+    "skill-audio-record": {
+      "url": "https://github.com/MycroftAI/skill-audio-record",
+      "name": "skill-audio-record",
+      "origin": "mycroft",
+      "status": "archived"
+    },
+    "skill-playback-control": {
+      "url": "https://github.com/MycroftAI/skill-playback-control",
+      "name": "skill-playback-control",
+      "origin": "mycroft",
+      "status": "archived"
+    },
+    "skill-mark-1-demo": {
+      "url": "https://github.com/MycroftAI/skill-mark-1-demo",
+      "name": "skill-mark-1-demo",
+      "origin": "mycroft",
+      "status": "archived"
+    },
+    "mycroft-core": {
+      "url": "https://github.com/MycroftAI/mycroft-core",
+      "name": "mycroft-core",
+      "origin": "mycroft",
+      "status": "archived"
+    },
+    "mycroft-skills": {
+      "url": "https://github.com/MycroftAI/mycroft-skills",
+      "name": "mycroft-skills",
+      "origin": "mycroft",
+      "status": "archived"
+    }
+  }
+}

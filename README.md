@@ -24,6 +24,7 @@
 
 <p align="center">
   <a href="awesome_skills/CATALOG.md"><strong>Catalog (14,855)</strong></a> •
+  <a href="docs/skill_catalog.md"><strong>Voice OS (27 Categories)</strong></a> •
   <a href="categories/"><strong>25 Major Categories</strong></a> •
   <a href="roadmaps/"><strong>Roadmaps</strong></a> •
   <a href="projects/"><strong>Projects</strong></a> •
@@ -231,6 +232,34 @@ Beyond instruction text files, **All Skills** provides a complete execution, val
     - [`CLAUDE.md`](CLAUDE.md) — For Anthropic Claude Code
     - [`.cursorrules`](.cursorrules) — For Cursor IDE
     - [`rules/`](rules/) — Modular rules for context pruning, AST edits, and security guardrails
+
+---
+
+## 🎙️ Universal Voice Assistant & Multimodal OS (OVOS, Neon, Mycroft)
+
+All-Skills integrates a production-ready voice assistant and multimodal runtime engine compatible with **OpenVoiceOS (OVOS)**, **Neon AI**, and legacy **Mycroft AI**:
+
+```
+┌─────────────────────────────────────────────────────────────────────────────────────────────────┐
+│                     🎙️ UNIVERSAL VOICE ASSISTANT & MULTIMODAL RUNTIME                           │
+├───────────────────────────────┬─────────────────────────────────┬───────────────────────────────┤
+│    27 CORE DOMAIN PACKAGES    │     7-TIER PRIORITY IMPORTER    │   VERIFIED UPSTREAM CATALOG   │
+│         (skills/<cat>/)       │   (scratch_priority_import/)    │    (OpenVoiceOS / Neon / OSM) │
+├───────────────────────────────┼─────────────────────────────────┼───────────────────────────────┤
+│  • 405 Built-in Native Skills │  • Tier 0: Critical System      │  • 39 Verified Active OVOS    │
+│  • Intent / Dialog / Vocab    │  • Tier 1: Real-time Sensors    │  • 28 Verified Active Neon    │
+│  • 12 Full Language Packs     │  • Tier 2: Productivity/Media   │  • 22 Archived Mycroft Ref    │
+│  • Manifests & Requirements   │  • Tier 3: Connected & Search   │  • Official OSM Catalog Sync  │
+│  • Automated Testing Tools    │  • Tier 4-6: Complex to Lazy    │  • Safe Disk Quota Protection │
+└───────────────────────────────┴─────────────────────────────────┴───────────────────────────────┘
+```
+
+### 🌟 Key Voice & Multimodal Features:
+1. **27 Capability Categories & 714+ Skills Modeled**: Covering Communication, Media, Smart Home, Productivity, Navigation, Weather, Health, Finance, Education, News, Automotive, Science, Emergency, and Fallback. Detailed in [`docs/skill_catalog.md`](docs/skill_catalog.md).
+2. **Deterministic Priority Importer**: [`scratch_priority_import/`](scratch_priority_import/) enforces millisecond latency budgets, circular dependency prevention, and memory-aware loading.
+3. **Official OSM Synchronization**: Query and sync with the curated OpenVoiceOS Skills Manager catalog via `python scripts/sync_osm_skills.py --stats`.
+4. **Verified Upstream Repositories**: Grounded upstream sources covering 39 active OpenVoiceOS repos, 28 Neon repos, and 22 archived Mycroft reference repositories. Run `python scripts/clone_all_repos.py --dry-run --verified-only` to inspect.
+5. **Zero Deletion & Safety Invariant**: All repository synchronization tools enforce strict disk-space checks and never delete existing files or packages.
 
 ---
 
