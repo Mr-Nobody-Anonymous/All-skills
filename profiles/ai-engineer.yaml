@@ -1,0 +1,20 @@
+name: AI & LLM Engineer
+description: RAG architectures, fine-tuning, prompt optimization, vector search, and
+  agentic workflows
+domains:
+- artificial-intelligence
+- machine-learning
+- data-science
+required_capabilities:
+- rag-pipeline
+- prompt-optimization
+- agent-evaluation
+mcp_profile: developer
+recommended_packs:
+- ai-engineering
+- llm-ops
+active_skills:
+- ai-engineer
+- ai-engineering-toolkit
+- llm-prompt-optimizer
+- agent-evaluation

@@ -1,0 +1,9 @@
+{
+  "id": "docs",
+  "command": "python",
+  "args": [
+    "-m",
+    "mcp_server_docs"
+  ],
+  "category": "documents"
+}

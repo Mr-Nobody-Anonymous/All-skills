@@ -1,0 +1,18 @@
+name: Business & Product Operations
+description: Market research, business modeling, agile product management, and KPI
+  tracking
+domains:
+- business
+- management
+- product-management
+required_capabilities:
+- market-analysis
+- product-strategy
+- workflow-optimization
+mcp_profile: business
+recommended_packs:
+- product-management
+- business-strategy
+active_skills:
+- analytics-product
+- saas-mvp-launcher

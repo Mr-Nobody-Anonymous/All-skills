@@ -1,0 +1,20 @@
+name: UI/UX & Creative Designer
+description: Design systems, accessibility compliance, visual aesthetics, and component
+  hierarchy
+domains:
+- design
+- humanities-arts
+- multimedia
+required_capabilities:
+- design-tokens
+- accessibility-audit
+- wireframing
+mcp_profile: designer
+recommended_packs:
+- design-system-core
+- accessibility-mastery
+active_skills:
+- design-system
+- tailwind-design-system
+- accessibility-compliance-accessibility-audit
+- wcag-audit-patterns

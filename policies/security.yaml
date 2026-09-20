@@ -1,0 +1,59 @@
+# Security & Sandboxing Policies
+version: "1.0.0"
+updated_at: "2026-09-20"
+
+sandboxing:
+  enforcement: strict
+  workspace_boundary_enforced: true
+  allowed_roots:
+    - "."
+    - ".agents"
+    - "scratch"
+
+forbidden_file_targets:
+  patterns:
+    - "**/.env"
+    - "**/.env.*"
+    - "**/*.key"
+    - "**/*.pem"
+    - "**/id_rsa*"
+    - "**/id_ed25519*"
+    - "~/.aws/credentials"
+    - "~/.ssh/*"
+    - "**/secrets.json"
+    - "**/service-account*.json"
+
+forbidden_commands:
+  patterns:
+    - "rm -rf /"
+    - "rmdir /s /q c:\\"
+    - "format "
+    - "curl * | sh"
+    - "curl * | bash"
+    - "wget * | sh"
+    - "git push --force"
+    - "git push * -f"
+    - "chmod 777"
+    - "shutdown"
+    - "reboot"
+
+credential_protection:
+  redact_in_logs: true
+  detect_entropy: true
+  block_exfiltration: true
+  prohibited_exports:
+    - "AWS_SECRET_ACCESS_KEY"
+    - "GITHUB_TOKEN"
+    - "OPENAI_API_KEY"
+    - "ANTHROPIC_API_KEY"
+    - "SLACK_BOT_TOKEN"
+    - "DATABASE_URL"
+
+network_rules:
+  outbound_mode: restricted
+  whitelisted_hosts:
+    - "github.com"
+    - "api.github.com"
+    - "raw.githubusercontent.com"
+    - "pypi.org"
+    - "registry.npmjs.org"

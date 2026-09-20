@@ -1,0 +1,9 @@
+{
+  "id": "sentry",
+  "command": "npx",
+  "args": [
+    "-y",
+    "@modelcontextprotocol/server-sentry"
+  ],
+  "category": "observability"
+}

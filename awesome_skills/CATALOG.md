@@ -1,6 +1,6 @@
 # 📚 Awesome Skills Catalog
 
-Complete categorized index of **14,840 Agent Skills** across **250 domain categories**.
+Complete categorized index of **14,855 Agent Skills** across **251 domain categories**.
 
 Every skill contains a standardized, load-on-demand `SKILL.md` instruction playbook with YAML frontmatter, compatible across Claude Code, Cursor, Codex CLI, Antigravity, and Gemini CLI.
 
@@ -104,6 +104,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 - [Environmental](#environmental) (20 skills)
 - [Eval](#eval) (2 skills)
 - [Event Management](#event-management) (21 skills)
+- [Execution](#execution) (15 skills)
 - [Fashion](#fashion) (35 skills)
 - [Fashion Retail](#fashion-retail) (29 skills)
 - [Film Tv](#film-tv) (2 skills)
@@ -257,7 +258,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 - [Wellness](#wellness) (100 skills)
 - [Writing](#writing) (19 skills)
 
-*Total skills indexed: 14,840 across 250 categories*
+*Total skills indexed: 14,855 across 251 categories*
 
 ---
 
@@ -7924,6 +7925,28 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [virtual-event-planner](event-management/virtual-event-planner/SKILL.md) | `virtual-event-planner` | `low` | Plan virtual events. TRIGGERS - Use when user needs help with virtual-event-planner related tasks. |
 | [virtual-event-planning](event-management/virtual-event-planning/SKILL.md) | `virtual-event-planning` | `low` | Plan virtual events. TRIGGERS - Use when user needs help with virtual-event-planning related tasks. |
 | [workshop-event-plan](event-management/workshop-event-plan/SKILL.md) | `workshop-event-plan` | `low` | Plan workshop events. TRIGGERS - Use when user needs help with workshop-event-plan related tasks. |
+
+---
+
+## <a id="execution"></a>📁 Execution (15 skills)
+
+| Skill ID | Name | Risk | Description |
+| :--- | :--- | :---: | :--- |
+| [artifact-validator](execution/artifact-validator/SKILL.md) | `artifact-validator` | `low` | Verify generated documents, diagrams, and code artifacts against structural schemas and styling rules. |
+| [checkpoint-manager](execution/checkpoint-manager/SKILL.md) | `checkpoint-manager` | `low` | Record intermediate execution checkpoints and memory state to enable resumable long-running agent jobs. |
+| [dependency-resolution](execution/dependency-resolution/SKILL.md) | `dependency-resolution` | `low` | Resolve missing packages, tool dependencies, and version incompatibilities prior to execution. |
+| [environment-detection](execution/environment-detection/SKILL.md) | `environment-detection` | `low` | Detect OS, CPU architecture, installed runtimes, shell environments, and container runtimes dynamically. |
+| [execution-monitor](execution/execution-monitor/SKILL.md) | `execution-monitor` | `low` | Continuously monitor streaming command output, process health, and memory consumption during tasks. |
+| [execution-planner](execution/execution-planner/SKILL.md) | `execution-planner` | `low` | Synthesize atomic execution plans with discrete verification gates and failure checkpoints. |
+| [execution-retry](execution/execution-retry/SKILL.md) | `execution-retry` | `low` | Apply exponential backoff, jitter, and adaptive error analysis to recover from transient execution failures. |
+| [permission-check](execution/permission-check/SKILL.md) | `permission-check` | `low` | Audit tool execution permissions, file permissions, and sandbox constraints against security policies. |
+| [post-execution-audit](execution/post-execution-audit/SKILL.md) | `post-execution-audit` | `low` | Perform a comprehensive post-execution security, code quality, and documentation audit before completion. |
+| [preflight-check](execution/preflight-check/SKILL.md) | `preflight-check` | `low` | Execute rigorous preflight validation before running commands, checking working tree, network, and disk space. |
+| [regression-validator](execution/regression-validator/SKILL.md) | `regression-validator` | `low` | Run regression suites and automated test suites to ensure modifications introduce no breaking changes. |
+| [result-validator](execution/result-validator/SKILL.md) | `result-validator` | `low` | Audit execution output against intended success criteria, exit codes, and operational benchmarks. |
+| [rollback-manager](execution/rollback-manager/SKILL.md) | `rollback-manager` | `low` | Revert uncommitted file edits, undo database migrations, and clean up temporary scratch files on abort. |
+| [state-manager](execution/state-manager/SKILL.md) | `state-manager` | `low` | Synchronize session state, workflow contexts, and active stack definitions across agent transitions. |
+| [tool-selection](execution/tool-selection/SKILL.md) | `tool-selection` | `low` | Select the minimal, safest, and most effective tool or MCP server for a given operational task. |
 
 ---
 

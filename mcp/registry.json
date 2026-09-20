@@ -1,0 +1,91 @@
+{
+  "version": "1.0.0",
+  "categories": {
+    "development": [
+      "github",
+      "gitlab",
+      "bitbucket",
+      "npm",
+      "pypi",
+      "docker-registry",
+      "artifact-registry",
+      "package-search"
+    ],
+    "project_management": [
+      "jira",
+      "linear",
+      "asana",
+      "trello",
+      "monday",
+      "clickup"
+    ],
+    "communication": [
+      "gmail",
+      "outlook",
+      "slack",
+      "discord",
+      "teams",
+      "telegram"
+    ],
+    "documents": [
+      "google-drive",
+      "google-docs",
+      "google-sheets",
+      "google-slides",
+      "onedrive",
+      "sharepoint",
+      "notion",
+      "dropbox"
+    ],
+    "design": [
+      "figma",
+      "canva",
+      "adobe",
+      "blender",
+      "cad",
+      "bim"
+    ],
+    "cloud": [
+      "aws",
+      "azure",
+      "gcp",
+      "cloudflare",
+      "vercel",
+      "netlify",
+      "digitalocean"
+    ],
+    "observability": [
+      "sentry",
+      "datadog",
+      "grafana",
+      "prometheus",
+      "new-relic",
+      "elastic",
+      "opentelemetry"
+    ],
+    "databases": [
+      "postgres",
+      "mysql",
+      "mariadb",
+      "mongodb",
+      "redis",
+      "sqlite",
+      "clickhouse",
+      "snowflake",
+      "bigquery",
+      "redshift"
+    ],
+    "business": [
+      "salesforce",
+      "hubspot",
+      "stripe",
+      "shopify",
+      "quickbooks",
+      "xero",
+      "sap",
+      "oracle"
+    ]
+  },
+  "servers_count": 12,
+  "profiles_count": 9
+}

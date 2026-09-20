@@ -1,0 +1,11 @@
+{
+  "profile": "administrator",
+  "servers": [
+    "cloud",
+    "sentry",
+    "filesystem",
+    "git",
+    "github"
+  ],
+  "default_policy": "least-privilege"
+}

@@ -1,0 +1,201 @@
+{
+  "version": "2.0",
+  "updated_at": "2026-09-20",
+  "capabilities": {
+    "code-generation": {
+      "title": "Code Generation & Scaffolding",
+      "description": "Authoring idiomatic source code, scaffolding modules, or implementing algorithms.",
+      "tools": [
+        "editor",
+        "terminal"
+      ],
+      "inputs": [
+        "spec",
+        "prompt",
+        "ast"
+      ],
+      "outputs": [
+        "source-code",
+        "diff"
+      ],
+      "side_effects": [
+        "filesystem-write"
+      ]
+    },
+    "code-review": {
+      "title": "Automated Code Review & Static Analysis",
+      "description": "Inspecting pull requests, evaluating style, detecting antipatterns, and verifying correctness.",
+      "tools": [
+        "git",
+        "linter",
+        "ast-parser"
+      ],
+      "inputs": [
+        "source-code",
+        "git-diff"
+      ],
+      "outputs": [
+        "review-comments",
+        "lint-report"
+      ],
+      "side_effects": [
+        "filesystem-read"
+      ]
+    },
+    "ast-analysis": {
+      "title": "Abstract Syntax Tree Code Analysis",
+      "description": "Extracting syntax trees, checking type invariants, and semantic transformations.",
+      "tools": [
+        "ast-parser",
+        "type-checker"
+      ],
+      "inputs": [
+        "source-code"
+      ],
+      "outputs": [
+        "ast-nodes",
+        "type-diagnostics"
+      ],
+      "side_effects": [
+        "none"
+      ]
+    },
+    "security-audit": {
+      "title": "Security & Vulnerability Auditing",
+      "description": "Identifying OWASP Top 10 vulnerabilities, credential exposures, and configuration flaws.",
+      "tools": [
+        "sast-scanner",
+        "git"
+      ],
+      "inputs": [
+        "source-code",
+        "config"
+      ],
+      "outputs": [
+        "vulnerability-report",
+        "cve-list"
+      ],
+      "side_effects": [
+        "filesystem-read"
+      ]
+    },
+    "dependency-resolution": {
+      "title": "Dependency & Package Graph Resolution",
+      "description": "Resolving semantic version constraints, checking transitive locks, and detecting conflicts.",
+      "tools": [
+        "package-manager",
+        "lockfile-parser"
+      ],
+      "inputs": [
+        "manifest",
+        "lockfile"
+      ],
+      "outputs": [
+        "dependency-graph",
+        "resolution-tree"
+      ],
+      "side_effects": [
+        "filesystem-read"
+      ]
+    },
+    "test-generation-and-execution": {
+      "title": "Test Generation & Test Execution",
+      "description": "Formulating unit, integration, and property tests and asserting pass/fail status.",
+      "tools": [
+        "test-runner",
+        "coverage-tool"
+      ],
+      "inputs": [
+        "source-code",
+        "spec"
+      ],
+      "outputs": [
+        "test-suite",
+        "coverage-report"
+      ],
+      "side_effects": [
+        "filesystem-write",
+        "terminal-execution"
+      ]
+    },
+    "api-design": {
+      "title": "REST & GraphQL API Design",
+      "description": "Drafting OpenAPI, GraphQL, or gRPC specifications and contracts.",
+      "tools": [
+        "editor",
+        "schema-validator"
+      ],
+      "inputs": [
+        "requirements",
+        "domain-model"
+      ],
+      "outputs": [
+        "openapi-spec",
+        "contract"
+      ],
+      "side_effects": [
+        "filesystem-write"
+      ]
+    },
+    "database-migration": {
+      "title": "Database Schema Design & Migration",
+      "description": "Creating DDL migrations, optimizing indexes, and verifying schema rollbacks.",
+      "tools": [
+        "orm",
+        "db-cli"
+      ],
+      "inputs": [
+        "schema-spec",
+        "migration-plan"
+      ],
+      "outputs": [
+        "sql-migration",
+        "schema-diff"
+      ],
+      "side_effects": [
+        "filesystem-write",
+        "external-db-write"
+      ]
+    },
+    "cloud-infrastructure-provisioning": {
+      "title": "Cloud Infrastructure as Code",
+      "description": "Defining Terraform/OpenTofu, CloudFormation, or Pulumi cloud topology.",
+      "tools": [
+        "terraform",
+        "cloud-cli"
+      ],
+      "inputs": [
+        "architecture-spec"
+      ],
+      "outputs": [
+        "hcl-module",
+        "plan-output"
+      ],
+      "side_effects": [
+        "filesystem-write",
+        "cloud-resource-creation"
+      ]
+    },
+    "document-analysis": {
+      "title": "Multi-Modal Document & Data Analysis",
+      "description": "Extracting structured entities, tables, and citations from PDF, DOCX, XLSX, and images.",
+      "tools": [
+        "pdf-extractor",
+        "ocr",
+        "spreadsheet-parser"
+      ],
+      "inputs": [
+        "pdf",
+        "xlsx",
+        "image"
+      ],
+      "outputs": [
+        "structured-json",
+        "markdown-summary"
+      ],
+      "side_effects": [
+        "filesystem-read"
+      ]
+    }
+  }
+}

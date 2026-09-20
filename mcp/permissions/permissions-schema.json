@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "tools": {
+      "type": "array"
+    },
+    "resources": {
+      "type": "array"
+    },
+    "prompts": {
+      "type": "array"
+    }
+  }
+}

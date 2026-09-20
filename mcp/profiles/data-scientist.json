@@ -1,0 +1,10 @@
+{
+  "profile": "data-scientist",
+  "servers": [
+    "filesystem",
+    "database",
+    "docs",
+    "fetch"
+  ],
+  "default_policy": "least-privilege"
+}

@@ -1,0 +1,9 @@
+{
+  "id": "git",
+  "command": "python",
+  "args": [
+    "-m",
+    "mcp_server_git"
+  ],
+  "category": "development"
+}

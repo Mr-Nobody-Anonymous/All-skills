@@ -1,0 +1,9 @@
+{
+  "profile": "business",
+  "servers": [
+    "jira",
+    "slack",
+    "docs"
+  ],
+  "default_policy": "least-privilege"
+}

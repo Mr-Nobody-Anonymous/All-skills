@@ -1,0 +1,9 @@
+{
+  "id": "slack",
+  "command": "npx",
+  "args": [
+    "-y",
+    "@modelcontextprotocol/server-slack"
+  ],
+  "category": "communication"
+}

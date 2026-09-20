@@ -1,0 +1,16 @@
+name: Universal Generalist
+description: Full spectrum multi-domain coverage with dynamic capability-driven intent
+  routing
+domains:
+- all
+required_capabilities:
+- '*'
+mcp_profile: developer
+recommended_packs:
+- all
+active_skills:
+- which-skill
+- concise-planning
+- verification-before-completion
+- code-reviewer
+- ai-engineer

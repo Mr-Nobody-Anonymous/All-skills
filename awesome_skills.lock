@@ -2,7 +2,7 @@
   "version": "1.0.0",
   "format": "AAS-Awesome-Lock-v1",
   "generated_at": "2026-09-20",
-  "total_skills": 14834,
+  "total_skills": 14849,
   "skills": {
     "3d/3d-blender-python-procedural-modeling": {
       "skill_id": "3d-blender-python-procedural-modeling",
@@ -148340,6 +148340,156 @@
       "version": "1.0",
       "sha256": "1db0e93e5264643f6708613aceeed4a28f4088c90a5dbde302f3e440c1c02224",
       "source_repo": "Winbda/claude-skills-collection",
+      "license": "MIT",
+      "risk": "low",
+      "last_verified": "2026-09-20"
+    },
+    "execution/artifact-validator": {
+      "skill_id": "artifact-validator",
+      "category": "execution",
+      "version": "1.0.0",
+      "sha256": "56d2f96dccf881cc5ee14ee5691b5b84ad6e162164dbc38f3b85d37bd032d485",
+      "source_repo": "canonical",
+      "license": "MIT",
+      "risk": "low",
+      "last_verified": "2026-09-20"
+    },
+    "execution/checkpoint-manager": {
+      "skill_id": "checkpoint-manager",
+      "category": "execution",
+      "version": "1.0.0",
+      "sha256": "82792382d818a2388bc8976bdaf886830b2d04ff7e3169c733975abf509c3ad3",
+      "source_repo": "canonical",
+      "license": "MIT",
+      "risk": "low",
+      "last_verified": "2026-09-20"
+    },
+    "execution/dependency-resolution": {
+      "skill_id": "dependency-resolution",
+      "category": "execution",
+      "version": "1.0.0",
+      "sha256": "f5b89c145922ebe2fdb7377be100a2a9fe5f2ace5031ef7b0f0411cd80aafa6f",
+      "source_repo": "canonical",
+      "license": "MIT",
+      "risk": "low",
+      "last_verified": "2026-09-20"
+    },
+    "execution/environment-detection": {
+      "skill_id": "environment-detection",
+      "category": "execution",
+      "version": "1.0.0",
+      "sha256": "785930a9821c7d2232772d3597edd5fd3590483af3ec2962f1774f6a899855d2",
+      "source_repo": "canonical",
+      "license": "MIT",
+      "risk": "low",
+      "last_verified": "2026-09-20"
+    },
+    "execution/execution-monitor": {
+      "skill_id": "execution-monitor",
+      "category": "execution",
+      "version": "1.0.0",
+      "sha256": "96624e7cb8083d492c44fbbed4266b09afb6ec86702f4ef17331ff577b8a7feb",
+      "source_repo": "canonical",
+      "license": "MIT",
+      "risk": "low",
+      "last_verified": "2026-09-20"
+    },
+    "execution/execution-planner": {
+      "skill_id": "execution-planner",
+      "category": "execution",
+      "version": "1.0.0",
+      "sha256": "3cdd2c182170103e65973c46f3dad8d7d18e745c8bcb2c057aaad4752213a00b",
+      "source_repo": "canonical",
+      "license": "MIT",
+      "risk": "low",
+      "last_verified": "2026-09-20"
+    },
+    "execution/execution-retry": {
+      "skill_id": "execution-retry",
+      "category": "execution",
+      "version": "1.0.0",
+      "sha256": "4a27e32f5aa8ded983105435be6821539b178fe492daf4edc27135d2e4d21a66",
+      "source_repo": "canonical",
+      "license": "MIT",
+      "risk": "low",
+      "last_verified": "2026-09-20"
+    },
+    "execution/permission-check": {
+      "skill_id": "permission-check",
+      "category": "execution",
+      "version": "1.0.0",
+      "sha256": "3e883e9ef1db976792bb36e568a0e00b5400ce44eff16d900d306fe551991eee",
+      "source_repo": "canonical",
+      "license": "MIT",
+      "risk": "low",
+      "last_verified": "2026-09-20"
+    },
+    "execution/post-execution-audit": {
+      "skill_id": "post-execution-audit",
+      "category": "execution",
+      "version": "1.0.0",
+      "sha256": "e80908f8e89df68ce87c094c8ae91f67558d72e64267666fb4d3219f893d4cd7",
+      "source_repo": "canonical",
+      "license": "MIT",
+      "risk": "low",
+      "last_verified": "2026-09-20"
+    },
+    "execution/preflight-check": {
+      "skill_id": "preflight-check",
+      "category": "execution",
+      "version": "1.0.0",
+      "sha256": "961907017f5016e36a2662dd699489165ef75ea81374de1d1eb1b730a97ff973",
+      "source_repo": "canonical",
+      "license": "MIT",
+      "risk": "low",
+      "last_verified": "2026-09-20"
+    },
+    "execution/regression-validator": {
+      "skill_id": "regression-validator",
+      "category": "execution",
+      "version": "1.0.0",
+      "sha256": "2f064787e89bf6b9a65d57142a7994ef005e97b8c6778df34983a16f07fd65f4",
+      "source_repo": "canonical",
+      "license": "MIT",
+      "risk": "low",
+      "last_verified": "2026-09-20"
+    },
+    "execution/result-validator": {
+      "skill_id": "result-validator",
+      "category": "execution",
+      "version": "1.0.0",
+      "sha256": "c63f227e2c2027ca42ba763dea6315c1712a001fa05848c2d91a05a58c34dfa9",
+      "source_repo": "canonical",
+      "license": "MIT",
+      "risk": "low",
+      "last_verified": "2026-09-20"
+    },
+    "execution/rollback-manager": {
+      "skill_id": "rollback-manager",
+      "category": "execution",
+      "version": "1.0.0",
+      "sha256": "b114f37031965dce6f482f84dd8572ff92b7f69a0f8eb05457749495e85e5efe",
+      "source_repo": "canonical",
+      "license": "MIT",
+      "risk": "low",
+      "last_verified": "2026-09-20"
+    },
+    "execution/state-manager": {
+      "skill_id": "state-manager",
+      "category": "execution",
+      "version": "1.0.0",
+      "sha256": "46fee3e35a6db101a700028ad9b612108ef56177901c1975f3935e2ca680513c",
+      "source_repo": "canonical",
+      "license": "MIT",
+      "risk": "low",
+      "last_verified": "2026-09-20"
+    },
+    "execution/tool-selection": {
+      "skill_id": "tool-selection",
+      "category": "execution",
+      "version": "1.0.0",
+      "sha256": "f7cf1e54bba10752190180acb1937f5211f999393cdeee22665fc4528d471fb8",
+      "source_repo": "canonical",
       "license": "MIT",
       "risk": "low",
       "last_verified": "2026-09-20"

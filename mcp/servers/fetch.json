@@ -1,0 +1,9 @@
+{
+  "id": "fetch",
+  "command": "npx",
+  "args": [
+    "-y",
+    "@modelcontextprotocol/server-fetch"
+  ],
+  "category": "core"
+}

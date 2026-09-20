@@ -1,0 +1,21 @@
+name: Software Engineer
+description: Fullstack software development, architectural patterns, clean code, and
+  automated testing
+domains:
+- computer-science
+- software-engineering
+- development
+required_capabilities:
+- code-review
+- ast-transform
+- testing
+- refactoring
+mcp_profile: developer
+recommended_packs:
+- development-core
+- testing-mastery
+active_skills:
+- code-reviewer
+- tdd
+- api-designer
+- react-state-management

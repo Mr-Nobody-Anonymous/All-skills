@@ -1,0 +1,34 @@
+[
+  {
+    "query": "Build an application that detects pneumonia from X-rays",
+    "expected_skills": [
+      "ai-engineer",
+      "analytics-product"
+    ],
+    "expected_domain": "life-sciences-medicine"
+  },
+  {
+    "query": "Analyze this malware binary in a sandbox",
+    "expected_skills": [
+      "vulnerability-scanner",
+      "red-team-tactics"
+    ],
+    "forbidden_side_effects": [
+      "destructive-operation"
+    ]
+  },
+  {
+    "query": "Review this pull request for race conditions",
+    "expected_skills": [
+      "code-reviewer",
+      "code-review-excellence"
+    ]
+  },
+  {
+    "query": "Audit my web application for WCAG 2.2 accessibility",
+    "expected_skills": [
+      "wcag-audit-patterns",
+      "accessibility-compliance-accessibility-audit"
+    ]
+  }
+]

@@ -1,0 +1,17 @@
+name: Healthcare & Biomedical Specialist
+description: Clinical workflows, bioinformatics, medical imaging analysis, and regulatory
+  health standards
+domains:
+- life-sciences-medicine
+- healthcare
+- bioinformatics
+required_capabilities:
+- clinical-workflow
+- medical-compliance
+- imaging-analysis
+mcp_profile: healthcare
+recommended_packs:
+- clinical-medicine
+- bioinformatics
+active_skills:
+- brainstorming

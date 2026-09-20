@@ -1,0 +1,10 @@
+{
+  "profile": "security",
+  "servers": [
+    "filesystem",
+    "git",
+    "github",
+    "sentry"
+  ],
+  "default_policy": "least-privilege"
+}

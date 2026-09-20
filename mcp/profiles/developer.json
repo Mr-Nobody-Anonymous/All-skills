@@ -1,0 +1,11 @@
+{
+  "profile": "developer",
+  "servers": [
+    "filesystem",
+    "git",
+    "github",
+    "fetch",
+    "memory"
+  ],
+  "default_policy": "least-privilege"
+}

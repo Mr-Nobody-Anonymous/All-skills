@@ -1,0 +1,46 @@
+{
+  "version": "2.0",
+  "updated_at": "2026-09-20",
+  "standards": {
+    "OWASP-ASVS-4.0": {
+      "title": "Application Security Verification Standard 4.0",
+      "domain": "Cybersecurity"
+    },
+    "OWASP-Top-10-2025": {
+      "title": "OWASP Top 10 Web Application Security Risks",
+      "domain": "Cybersecurity"
+    },
+    "NIST-SP-800-53": {
+      "title": "Security and Privacy Controls for Information Systems",
+      "domain": "Cybersecurity & GRC"
+    },
+    "ISO-IEC-27001-2022": {
+      "title": "Information Security Management Systems",
+      "domain": "Compliance & GRC"
+    },
+    "WCAG-2.2-AA": {
+      "title": "Web Content Accessibility Guidelines 2.2 AA",
+      "domain": "Accessibility & Frontend"
+    },
+    "HL7-FHIR-R4": {
+      "title": "Fast Healthcare Interoperability Resources Release 4",
+      "domain": "Healthcare Informatics"
+    },
+    "HIPAA-Security-Rule": {
+      "title": "Health Insurance Portability and Accountability Act Security Rule",
+      "domain": "Healthcare Compliance"
+    },
+    "GDPR-Regulation-2016-679": {
+      "title": "General Data Protection Regulation",
+      "domain": "Privacy & Legal"
+    },
+    "PCI-DSS-4.0": {
+      "title": "Payment Card Industry Data Security Standard 4.0",
+      "domain": "Fintech & Payments"
+    },
+    "SOC-2-Type-II": {
+      "title": "Service Organization Control Trust Services Criteria",
+      "domain": "Cloud & Compliance"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "terminal": 70,
+  "file_read": 70,
+  "file_write": 65,
+  "file_edit": 50,
+  "browser": 25,
+  "manage_task": 20
+}

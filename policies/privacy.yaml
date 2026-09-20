@@ -1,0 +1,31 @@
+# Data Privacy & Confidentiality Policies
+version: "1.0.0"
+updated_at: "2026-09-20"
+
+privacy_compliance:
+  frameworks:
+    - "GDPR"
+    - "HIPAA"
+    - "CCPA"
+    - "FERPA"
+
+pii_detection:
+  scan_prompts: true
+  scan_artifacts: true
+  redaction_enabled: true
+  patterns:
+    - name: "social_security_number"
+      regex: "\\b\\d{3}-\\d{2}-\\d{4}\\b"
+      replacement: "[REDACTED_SSN]"
+    - name: "credit_card"
+      regex: "\\b(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|3[47][0-9]{13})\\b"
+      replacement: "[REDACTED_CARD]"
+    - name: "email_address"
+      regex: "\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Z|a-z]{2,7}\\b"
+      replacement: "[REDACTED_EMAIL]"
+
+telemetry_and_logging:
+  anonymize_ip: true
+  mask_auth_headers: true
+  drop_session_tokens: true
+  retain_logs_days: 30

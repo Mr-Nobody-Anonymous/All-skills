@@ -1,0 +1,9 @@
+{
+  "id": "cloud",
+  "command": "python",
+  "args": [
+    "-m",
+    "mcp_server_cloud"
+  ],
+  "category": "cloud"
+}

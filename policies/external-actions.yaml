@@ -1,0 +1,24 @@
+# External Actions & Webhook Integration Policies
+version: "1.0.0"
+updated_at: "2026-09-20"
+
+external_actions:
+  git_operations:
+    allowed_push_branches:
+      - "main"
+      - "develop"
+      - "feature/*"
+      - "fix/*"
+    require_clean_working_tree_for_release: true
+    prevent_force_push: true
+
+  webhooks:
+    verify_signature: true
+    enforce_https: true
+    rate_limit_per_minute: 60
+
+  api_integrations:
+    require_idempotency_keys: true
+    max_retries: 3
+    backoff_multiplier: 2.0
+    timeout_seconds: 30

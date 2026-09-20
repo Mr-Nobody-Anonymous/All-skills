@@ -1,0 +1,1006 @@
+[
+  {
+    "id": "3d",
+    "count": 7
+  },
+  {
+    "id": "accessibility",
+    "count": 18
+  },
+  {
+    "id": "accounting",
+    "count": 64
+  },
+  {
+    "id": "actuarial",
+    "count": 16
+  },
+  {
+    "id": "advertising",
+    "count": 83
+  },
+  {
+    "id": "aerospace",
+    "count": 32
+  },
+  {
+    "id": "agency",
+    "count": 20
+  },
+  {
+    "id": "agent-behavior",
+    "count": 5
+  },
+  {
+    "id": "agent-evaluation",
+    "count": 3
+  },
+  {
+    "id": "agent-orchestration",
+    "count": 27
+  },
+  {
+    "id": "agent-standards",
+    "count": 1
+  },
+  {
+    "id": "agents",
+    "count": 1
+  },
+  {
+    "id": "agriculture",
+    "count": 70
+  },
+  {
+    "id": "ai-automation",
+    "count": 307
+  },
+  {
+    "id": "ai-evaluation",
+    "count": 162
+  },
+  {
+    "id": "ai-ml",
+    "count": 497
+  },
+  {
+    "id": "analytics",
+    "count": 1
+  },
+  {
+    "id": "api-designer",
+    "count": 2
+  },
+  {
+    "id": "api-integration",
+    "count": 29
+  },
+  {
+    "id": "app-builder",
+    "count": 3
+  },
+  {
+    "id": "architecture",
+    "count": 106
+  },
+  {
+    "id": "archiving",
+    "count": 12
+  },
+  {
+    "id": "arts-crafts",
+    "count": 10
+  },
+  {
+    "id": "arts-culture",
+    "count": 5
+  },
+  {
+    "id": "audiology",
+    "count": 8
+  },
+  {
+    "id": "automation",
+    "count": 142
+  },
+  {
+    "id": "automotive",
+    "count": 166
+  },
+  {
+    "id": "aviation",
+    "count": 30
+  },
+  {
+    "id": "backend",
+    "count": 40
+  },
+  {
+    "id": "banking",
+    "count": 82
+  },
+  {
+    "id": "beauty-wellness",
+    "count": 61
+  },
+  {
+    "id": "biology",
+    "count": 537
+  },
+  {
+    "id": "biotech",
+    "count": 52
+  },
+  {
+    "id": "blockchain",
+    "count": 7
+  },
+  {
+    "id": "browser-automation",
+    "count": 21
+  },
+  {
+    "id": "business",
+    "count": 74
+  },
+  {
+    "id": "business-intelligence",
+    "count": 4
+  },
+  {
+    "id": "business-strategy",
+    "count": 50
+  },
+  {
+    "id": "career",
+    "count": 40
+  },
+  {
+    "id": "chemical-engineering",
+    "count": 35
+  },
+  {
+    "id": "chemistry",
+    "count": 20
+  },
+  {
+    "id": "childcare",
+    "count": 37
+  },
+  {
+    "id": "ci-cd-and-automation",
+    "count": 2
+  },
+  {
+    "id": "civil-engineering",
+    "count": 20
+  },
+  {
+    "id": "cleaning",
+    "count": 20
+  },
+  {
+    "id": "climate-tech",
+    "count": 20
+  },
+  {
+    "id": "clinical-informatics",
+    "count": 14
+  },
+  {
+    "id": "cloud",
+    "count": 236
+  },
+  {
+    "id": "coaching",
+    "count": 19
+  },
+  {
+    "id": "code-quality",
+    "count": 18
+  },
+  {
+    "id": "communications",
+    "count": 9
+  },
+  {
+    "id": "compliance",
+    "count": 55
+  },
+  {
+    "id": "computer-science",
+    "count": 14
+  },
+  {
+    "id": "construction",
+    "count": 58
+  },
+  {
+    "id": "consulting",
+    "count": 113
+  },
+  {
+    "id": "content-creation",
+    "count": 247
+  },
+  {
+    "id": "content-writing",
+    "count": 345
+  },
+  {
+    "id": "corporate-communications",
+    "count": 10
+  },
+  {
+    "id": "coworking",
+    "count": 10
+  },
+  {
+    "id": "creative",
+    "count": 3
+  },
+  {
+    "id": "creator-economy",
+    "count": 20
+  },
+  {
+    "id": "crypto-blockchain",
+    "count": 39
+  },
+  {
+    "id": "customer-service",
+    "count": 14
+  },
+  {
+    "id": "customer-success",
+    "count": 30
+  },
+  {
+    "id": "cybersecurity",
+    "count": 94
+  },
+  {
+    "id": "data",
+    "count": 35
+  },
+  {
+    "id": "data-ai",
+    "count": 14
+  },
+  {
+    "id": "data-analytics",
+    "count": 148
+  },
+  {
+    "id": "data-engineering",
+    "count": 11
+  },
+  {
+    "id": "data-science",
+    "count": 155
+  },
+  {
+    "id": "database",
+    "count": 24
+  },
+  {
+    "id": "dental",
+    "count": 20
+  },
+  {
+    "id": "design",
+    "count": 225
+  },
+  {
+    "id": "desktop",
+    "count": 9
+  },
+  {
+    "id": "developer-tools",
+    "count": 14
+  },
+  {
+    "id": "development",
+    "count": 504
+  },
+  {
+    "id": "devops",
+    "count": 68
+  },
+  {
+    "id": "devsecops",
+    "count": 125
+  },
+  {
+    "id": "document-processing",
+    "count": 3
+  },
+  {
+    "id": "document-verification",
+    "count": 7
+  },
+  {
+    "id": "documentation",
+    "count": 221
+  },
+  {
+    "id": "documents",
+    "count": 2
+  },
+  {
+    "id": "e-learning",
+    "count": 14
+  },
+  {
+    "id": "earth-science",
+    "count": 18
+  },
+  {
+    "id": "ecommerce",
+    "count": 145
+  },
+  {
+    "id": "economics",
+    "count": 21
+  },
+  {
+    "id": "education",
+    "count": 157
+  },
+  {
+    "id": "electrical-engineering",
+    "count": 34
+  },
+  {
+    "id": "embedded",
+    "count": 26
+  },
+  {
+    "id": "emergency",
+    "count": 2
+  },
+  {
+    "id": "energy",
+    "count": 40
+  },
+  {
+    "id": "energy-utilities",
+    "count": 19
+  },
+  {
+    "id": "engineering",
+    "count": 503
+  },
+  {
+    "id": "entrepreneurship",
+    "count": 3
+  },
+  {
+    "id": "environment-climate",
+    "count": 73
+  },
+  {
+    "id": "environmental",
+    "count": 20
+  },
+  {
+    "id": "eval",
+    "count": 2
+  },
+  {
+    "id": "event-management",
+    "count": 21
+  },
+  {
+    "id": "execution",
+    "count": 15
+  },
+  {
+    "id": "fashion",
+    "count": 35
+  },
+  {
+    "id": "fashion-retail",
+    "count": 29
+  },
+  {
+    "id": "film-tv",
+    "count": 2
+  },
+  {
+    "id": "finance",
+    "count": 735
+  },
+  {
+    "id": "fire-protection",
+    "count": 10
+  },
+  {
+    "id": "fitness-nutrition",
+    "count": 19
+  },
+  {
+    "id": "food-beverage",
+    "count": 60
+  },
+  {
+    "id": "formal-methods",
+    "count": 11
+  },
+  {
+    "id": "framework",
+    "count": 13
+  },
+  {
+    "id": "franchise-management",
+    "count": 23
+  },
+  {
+    "id": "freelance",
+    "count": 40
+  },
+  {
+    "id": "frontend",
+    "count": 47
+  },
+  {
+    "id": "game-development",
+    "count": 64
+  },
+  {
+    "id": "gaming",
+    "count": 57
+  },
+  {
+    "id": "general",
+    "count": 87
+  },
+  {
+    "id": "geospatial",
+    "count": 144
+  },
+  {
+    "id": "governance",
+    "count": 14
+  },
+  {
+    "id": "government",
+    "count": 67
+  },
+  {
+    "id": "graphics",
+    "count": 15
+  },
+  {
+    "id": "graphics-processing",
+    "count": 4
+  },
+  {
+    "id": "growth",
+    "count": 3
+  },
+  {
+    "id": "healthcare",
+    "count": 329
+  },
+  {
+    "id": "high-performance-computing",
+    "count": 22
+  },
+  {
+    "id": "home-diy",
+    "count": 20
+  },
+  {
+    "id": "home-garden",
+    "count": 5
+  },
+  {
+    "id": "hospitality",
+    "count": 50
+  },
+  {
+    "id": "hr-people",
+    "count": 203
+  },
+  {
+    "id": "humanities",
+    "count": 99
+  },
+  {
+    "id": "insurance",
+    "count": 67
+  },
+  {
+    "id": "integration",
+    "count": 7
+  },
+  {
+    "id": "interior-design",
+    "count": 30
+  },
+  {
+    "id": "international-development",
+    "count": 2
+  },
+  {
+    "id": "iot",
+    "count": 18
+  },
+  {
+    "id": "journalism",
+    "count": 34
+  },
+  {
+    "id": "knowledge-management",
+    "count": 14
+  },
+  {
+    "id": "languages",
+    "count": 101
+  },
+  {
+    "id": "legal",
+    "count": 1646
+  },
+  {
+    "id": "library",
+    "count": 9
+  },
+  {
+    "id": "life-transitions",
+    "count": 15
+  },
+  {
+    "id": "linguistics",
+    "count": 15
+  },
+  {
+    "id": "logistics",
+    "count": 19
+  },
+  {
+    "id": "luxury",
+    "count": 10
+  },
+  {
+    "id": "manufacturing",
+    "count": 49
+  },
+  {
+    "id": "marine",
+    "count": 12
+  },
+  {
+    "id": "marketing",
+    "count": 222
+  },
+  {
+    "id": "materials-science",
+    "count": 11
+  },
+  {
+    "id": "mathematics",
+    "count": 47
+  },
+  {
+    "id": "mcp",
+    "count": 3
+  },
+  {
+    "id": "mechanical-engineering",
+    "count": 27
+  },
+  {
+    "id": "media",
+    "count": 73
+  },
+  {
+    "id": "media-journalism",
+    "count": 34
+  },
+  {
+    "id": "medical-laboratory",
+    "count": 11
+  },
+  {
+    "id": "memory",
+    "count": 6
+  },
+  {
+    "id": "mental-models",
+    "count": 10
+  },
+  {
+    "id": "meta",
+    "count": 34
+  },
+  {
+    "id": "metrology",
+    "count": 10
+  },
+  {
+    "id": "migration",
+    "count": 42
+  },
+  {
+    "id": "mining",
+    "count": 13
+  },
+  {
+    "id": "mlops",
+    "count": 20
+  },
+  {
+    "id": "mobile",
+    "count": 30
+  },
+  {
+    "id": "museum-studies",
+    "count": 2
+  },
+  {
+    "id": "music-audio",
+    "count": 56
+  },
+  {
+    "id": "music-industry",
+    "count": 30
+  },
+  {
+    "id": "nonprofit",
+    "count": 70
+  },
+  {
+    "id": "nuclear-engineering",
+    "count": 13
+  },
+  {
+    "id": "occupational-therapy",
+    "count": 10
+  },
+  {
+    "id": "offline",
+    "count": 1
+  },
+  {
+    "id": "operations",
+    "count": 156
+  },
+  {
+    "id": "optical-engineering",
+    "count": 17
+  },
+  {
+    "id": "optometry",
+    "count": 11
+  },
+  {
+    "id": "outdoor-adventure",
+    "count": 15
+  },
+  {
+    "id": "parenting",
+    "count": 57
+  },
+  {
+    "id": "personal-development",
+    "count": 78
+  },
+  {
+    "id": "personal-finance",
+    "count": 24
+  },
+  {
+    "id": "pet-business",
+    "count": 9
+  },
+  {
+    "id": "pet-care",
+    "count": 8
+  },
+  {
+    "id": "pet-industry",
+    "count": 15
+  },
+  {
+    "id": "pet-veterinary",
+    "count": 20
+  },
+  {
+    "id": "petroleum-engineering",
+    "count": 13
+  },
+  {
+    "id": "pharmacy",
+    "count": 20
+  },
+  {
+    "id": "philanthropy",
+    "count": 2
+  },
+  {
+    "id": "philosophy",
+    "count": 3
+  },
+  {
+    "id": "photography",
+    "count": 49
+  },
+  {
+    "id": "physical-therapy",
+    "count": 12
+  },
+  {
+    "id": "physics",
+    "count": 18
+  },
+  {
+    "id": "planning",
+    "count": 7
+  },
+  {
+    "id": "podcast",
+    "count": 8
+  },
+  {
+    "id": "presentation",
+    "count": 19
+  },
+  {
+    "id": "privacy",
+    "count": 16
+  },
+  {
+    "id": "procurement",
+    "count": 20
+  },
+  {
+    "id": "product",
+    "count": 4
+  },
+  {
+    "id": "product-management",
+    "count": 47
+  },
+  {
+    "id": "productivity",
+    "count": 35
+  },
+  {
+    "id": "professional-services",
+    "count": 20
+  },
+  {
+    "id": "project-management",
+    "count": 29
+  },
+  {
+    "id": "psychology",
+    "count": 17
+  },
+  {
+    "id": "public-health",
+    "count": 12
+  },
+  {
+    "id": "public-relations",
+    "count": 11
+  },
+  {
+    "id": "publishing",
+    "count": 9
+  },
+  {
+    "id": "quality",
+    "count": 2
+  },
+  {
+    "id": "quantum",
+    "count": 11
+  },
+  {
+    "id": "quantum-computing",
+    "count": 5
+  },
+  {
+    "id": "railway",
+    "count": 14
+  },
+  {
+    "id": "real-estate",
+    "count": 93
+  },
+  {
+    "id": "reliability",
+    "count": 14
+  },
+  {
+    "id": "religious-studies",
+    "count": 4
+  },
+  {
+    "id": "research",
+    "count": 14
+  },
+  {
+    "id": "resilience",
+    "count": 1
+  },
+  {
+    "id": "robotics",
+    "count": 74
+  },
+  {
+    "id": "saas",
+    "count": 28
+  },
+  {
+    "id": "safety-engineering",
+    "count": 16
+  },
+  {
+    "id": "sales",
+    "count": 366
+  },
+  {
+    "id": "science-research",
+    "count": 27
+  },
+  {
+    "id": "search",
+    "count": 14
+  },
+  {
+    "id": "security",
+    "count": 215
+  },
+  {
+    "id": "semiconductor",
+    "count": 21
+  },
+  {
+    "id": "senior-care",
+    "count": 20
+  },
+  {
+    "id": "seo",
+    "count": 4
+  },
+  {
+    "id": "skill-authoring",
+    "count": 2
+  },
+  {
+    "id": "skill-governance",
+    "count": 62
+  },
+  {
+    "id": "skilled-trades",
+    "count": 29
+  },
+  {
+    "id": "social-impact",
+    "count": 21
+  },
+  {
+    "id": "social-science",
+    "count": 14
+  },
+  {
+    "id": "software-engineering",
+    "count": 2
+  },
+  {
+    "id": "space",
+    "count": 10
+  },
+  {
+    "id": "speech-language-pathology",
+    "count": 11
+  },
+  {
+    "id": "sports",
+    "count": 72
+  },
+  {
+    "id": "sports-business",
+    "count": 10
+  },
+  {
+    "id": "sports-fitness",
+    "count": 44
+  },
+  {
+    "id": "spreadsheet-processing",
+    "count": 3
+  },
+  {
+    "id": "startup",
+    "count": 47
+  },
+  {
+    "id": "supply-chain",
+    "count": 29
+  },
+  {
+    "id": "sustainability",
+    "count": 33
+  },
+  {
+    "id": "systems-engineering",
+    "count": 13
+  },
+  {
+    "id": "systems-networking",
+    "count": 18
+  },
+  {
+    "id": "tax",
+    "count": 13
+  },
+  {
+    "id": "telecom",
+    "count": 46
+  },
+  {
+    "id": "test-automation",
+    "count": 9
+  },
+  {
+    "id": "testing",
+    "count": 73
+  },
+  {
+    "id": "trading-markets",
+    "count": 39
+  },
+  {
+    "id": "training",
+    "count": 16
+  },
+  {
+    "id": "transportation",
+    "count": 30
+  },
+  {
+    "id": "travel",
+    "count": 30
+  },
+  {
+    "id": "travel-tourism",
+    "count": 82
+  },
+  {
+    "id": "utilities",
+    "count": 1
+  },
+  {
+    "id": "ux-design",
+    "count": 48
+  },
+  {
+    "id": "veterinary",
+    "count": 77
+  },
+  {
+    "id": "voice-agents",
+    "count": 17
+  },
+  {
+    "id": "web-development",
+    "count": 66
+  },
+  {
+    "id": "web3",
+    "count": 20
+  },
+  {
+    "id": "wellness",
+    "count": 100
+  },
+  {
+    "id": "writing",
+    "count": 19
+  }
+]

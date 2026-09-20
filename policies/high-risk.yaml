@@ -1,0 +1,79 @@
+# High-Risk Operational Policies & Human Approval Gates
+version: "1.0.0"
+updated_at: "2026-09-20"
+
+approval_gates:
+  enforcement: strict
+  default_action: prompt_user
+  timeout_seconds: 300
+
+  required_for:
+    - action: production-deploy
+      risk: critical
+      description: "Deploying code, containers, or infrastructure to production environments"
+      required_approvers: 1
+    - action: delete-files
+      risk: high
+      description: "Destructive deletion of files, directories, or workspace resources"
+      required_approvers: 1
+    - action: send-email
+      risk: high
+      description: "Transmitting outbound email or transactional messages to external recipients"
+      required_approvers: 1
+    - action: publish-content
+      risk: high
+      description: "Publishing releases, social posts, package registries, or public web content"
+      required_approvers: 1
+    - action: financial-transaction
+      risk: critical
+      description: "Initiating banking, payments, billing, cryptocurrency, or money transfers"
+      required_approvers: 1
+    - action: cloud-resource-creation
+      risk: high
+      description: "Provisioning billing-enabled cloud resources (VMs, clusters, databases)"
+      required_approvers: 1
+    - action: credential-export
+      risk: critical
+      description: "Exporting, printing, or transmitting secrets, tokens, or private keys"
+      required_approvers: 1
+    - action: system-configuration
+      risk: high
+      description: "Modifying OS-level services, registry, network routing, or firewall rules"
+      required_approvers: 1
+
+action_taxonomies:
+  READ:
+    risk: low
+    gate: automatic
+    side_effects: []
+    description: "Reading local files, inspecting status, or reviewing logs"
+  ANALYZE:
+    risk: low
+    gate: automatic
+    side_effects: []
+    description: "Evaluating metrics, static analysis, running benchmarks, querying indexes"
+  CREATE:
+    risk: medium
+    gate: automatic
+    side_effects: ["filesystem-write"]
+    description: "Authoring new files, scaffolding directories, generating documentation"
+  MODIFY:
+    risk: medium
+    gate: automatic
+    side_effects: ["filesystem-write"]
+    description: "Updating existing workspace code, fixing tests, adjusting configuration"
+  DELETE:
+    risk: high
+    gate: human-approval
+    side_effects: ["destructive-operation"]
+    description: "Removing files, cleaning databases, deleting cloud resources"
+  EXTERNAL-WRITE:
+    risk: high
+    gate: human-approval
+    side_effects: ["network-request", "external-api-write", "git-push"]
+    description: "Writing to external webhooks, third-party APIs, or remote git repositories"
+  PRODUCTION-ACTION:
+    risk: critical
+    gate: human-approval
+    side_effects: ["cloud-resource-creation", "external-api-write", "system-config-change"]
+    description: "Modifying live production traffic, executing database migrations, or scaling services"

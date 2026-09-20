@@ -1,8 +1,8 @@
 # ⚡ All Skills — Universal Agentic AI Toolkit & Platform
 
 <p align="center">
-  <img src="https://img.shields.io/badge/skills-12740%2B%20Total%20Skills-7c3aed?style=for-the-badge&logo=codewars&logoColor=white" alt="2167+ Skills" />
-  <img src="https://img.shields.io/badge/awesome--catalog-14840%20Categorized-0ea5e9?style=for-the-badge&logo=github&logoColor=white" alt="2041 Awesome Skills" />
+  <img src="https://img.shields.io/badge/skills-12755%2B%20Total%20Skills-7c3aed?style=for-the-badge&logo=codewars&logoColor=white" alt="2167+ Skills" />
+  <img src="https://img.shields.io/badge/awesome--catalog-14855%20Categorized-0ea5e9?style=for-the-badge&logo=github&logoColor=white" alt="2041 Awesome Skills" />
   <img src="https://img.shields.io/badge/active--harness-70%20Pre--Loaded-10b981?style=for-the-badge&logo=lightning&logoColor=white" alt="70 Active Skills" />
   <img src="https://img.shields.io/badge/manifest-192%20Indexed-6366f1?style=for-the-badge&logo=json&logoColor=white" alt="192 Manifest Skills" />
   <img src="https://img.shields.io/badge/tests-94%2F94%20Passing-10b981?style=for-the-badge&logo=pytest&logoColor=white" alt="86 Tests Passing" />
@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <strong>A comprehensive, extensible Agent Skills platform & discovery engine. Over 12,740 unique skills across 250 domain categories, 70 pre-loaded staff-engineer playbooks, 122 canonical tested skills, machine-readable dependency & conflict graphs, confidence thresholding with out-of-domain rejection, capability security enforcement, reproducible lockfiles, and native multi-tool compatibility across Claude Code, Cursor, Codex CLI, and Antigravity.</strong>
+  <strong>A comprehensive, extensible Agent Skills platform & discovery engine. Over 12,755 unique skills across 251 domain categories, 70 pre-loaded staff-engineer playbooks, 122 canonical tested skills, machine-readable dependency & conflict graphs, confidence thresholding with out-of-domain rejection, capability security enforcement, reproducible lockfiles, and native multi-tool compatibility across Claude Code, Cursor, Codex CLI, and Antigravity.</strong>
 </p>
 
 ---
@@ -31,8 +31,8 @@ When AI coding assistants are front-loaded with thousands of prompt instructions
 │          (skills/)            │        (awesome_skills/)        │     (.agents/ / .claude/ /    │
 │                               │                                 │     .cursor/ / .codex/)       │
 ├───────────────────────────────┼─────────────────────────────────┼───────────────────────────────┤
-│  • 122 Curated & Tested Skills│  • 14,840 Categorized Skills     │  • 70 Staff Engineer Skills   │
-│  • 9-Signal Layered Scoring   │  • 250 Functional Domain Dirs   │  • Pre-Loaded in Workspace    │
+│  • 122 Curated & Tested Skills│  • 14,855 Categorized Skills     │  • 70 Staff Engineer Skills   │
+│  • 9-Signal Layered Scoring   │  • 251 Functional Domain Dirs   │  • Pre-Loaded in Workspace    │
 │  • Deterministic Workflows    │  • Machine-Readable Index       │  • Native Multi-Tool Synced   │
 │  • 8-State Formal Lifecycle   │  • Complete CATALOG.md Reference│  • $O(1)$ Load-on-Demand      │
 │  • 94/94 Passing Unit Tests   │  • Dynamic Manager CLI          │  • Zero Prompt Bloat          │
@@ -158,7 +158,7 @@ Beyond instruction text files, **All Skills** provides a complete execution, val
 
 ### 📋 Key Infrastructure Components:
 1. **Formal Frontmatter Schema**: [`schemas/skill-frontmatter.schema.json`](schemas/skill-frontmatter.schema.json) validates required properties (`name`, `description`, `category`, `disable-model-invocation`), triggers, aliases, and tool permissions via `python scripts/validate_schema.py`.
-2. **Master Intent Router (`which-skill`)**: [`.agents/skills/which-skill/SKILL.md`](.agents/skills/which-skill/SKILL.md) provides instant decision matrix mapping and CLI routing (`python scripts/skills/skills.py route`) across all 14,840+ skills.
+2. **Master Intent Router (`which-skill`)**: [`.agents/skills/which-skill/SKILL.md`](.agents/skills/which-skill/SKILL.md) provides instant decision matrix mapping and CLI routing (`python scripts/skills/skills.py route`) across all 14,855+ skills.
 3. **Multi-Step Execution Playbooks (`workflows/`)**: Complete chained workflows in [`workflows/`](workflows/) (`feature-development.md`, `bug-investigation-and-fix.md`, `fullstack-saas-launch.md`, etc.) for autonomous multi-step execution.
 4. **State Tracking & Stack Manifests (`aas-stack.json`)**: Structured sidecar schema ([`schemas/aas-stack.schema.json`](schemas/aas-stack.schema.json)) and CLI ([`scripts/manage_state.py`](scripts/manage_state.py)) for tracking phase progress, variables, and architectural decisions (ADRs) with auto-synced [`CONTEXT.md`](CONTEXT.md).
 5. **Central Tool-to-Skill Manifest**: [`manifest.json`](manifest.json) indexes all 192+ platform skills, mapping them to required tool permissions (`bash`, `file_edit`, `ast_grep`, `browser`), MCP servers (`filesystem`, `git`, `fetch`, `memory`), and lifecycle hooks.
@@ -195,7 +195,7 @@ Your workspace comes pre-loaded with **70 staff-engineer and AI architect playbo
 <summary><strong>📋 View Pre-Loaded Skill Suites</strong></summary>
 
 ### 1. 🎯 Core Planning & Workflow Architecture
-- `which-skill` — Master agent intent router across all 14,840+ skills and workflows
+- `which-skill` — Master agent intent router across all 14,855+ skills and workflows
 - `brainstorming` — Socratic design refinement before implementation
 - `context-budget-and-pruning` — Token budget management, scratchpad offloading, and state distillation
 - `executing-plans` — Batch plan execution with verification checkpoints
@@ -289,17 +289,17 @@ Your workspace comes pre-loaded with **70 staff-engineer and AI architect playbo
 The repository includes two powerful CLI suites running on pure standard library with **zero external dependencies**:
 
 ### 1. Awesome Skills Manager (`scripts/manage_awesome_skills.py`)
-Interact with all 14,840+ categorized skills in [`awesome_skills/`](awesome_skills/):
+Interact with all 14,855+ categorized skills in [`awesome_skills/`](awesome_skills/):
 
 ```bash
-# List all 250 domain categories with skill counts
+# List all 251 domain categories with skill counts
 python scripts/manage_awesome_skills.py list
 
 # List all skills inside a specific category
 python scripts/manage_awesome_skills.py list --category ai-agents
 python scripts/manage_awesome_skills.py list --category security
 
-# Fuzzy search across all 14,840+ skills by keyword
+# Fuzzy search across all 14,855+ skills by keyword
 python scripts/manage_awesome_skills.py search "rag"
 python scripts/manage_awesome_skills.py search "prompt"
 python scripts/manage_awesome_skills.py search "kubernetes"
@@ -397,7 +397,7 @@ All skills/
 │
 ├── awesome_skills/              # 🚀 2,041+ Categorized Skills Library
 │   ├── CATALOG.md               # Complete searchable markdown catalog
-│   ├── skills_index.json        # 14,840-item metadata database
+│   ├── skills_index.json        # 14,855-item metadata database
 │   ├── development/             # 187 skills (Coding, Git, Refactoring)
 │   ├── cloud/                   # 146 skills (AWS, GCP, Azure, Terraform)
 │   ├── ai-ml/                   # 129 skills (Prompting, RAG, Evals)

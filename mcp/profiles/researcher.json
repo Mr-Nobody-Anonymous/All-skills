@@ -1,0 +1,10 @@
+{
+  "profile": "researcher",
+  "servers": [
+    "fetch",
+    "memory",
+    "docs",
+    "browser"
+  ],
+  "default_policy": "least-privilege"
+}

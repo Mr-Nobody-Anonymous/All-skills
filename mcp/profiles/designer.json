@@ -1,0 +1,9 @@
+{
+  "profile": "designer",
+  "servers": [
+    "docs",
+    "filesystem",
+    "browser"
+  ],
+  "default_policy": "least-privilege"
+}

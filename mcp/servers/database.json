@@ -1,0 +1,9 @@
+{
+  "id": "database",
+  "command": "npx",
+  "args": [
+    "-y",
+    "@modelcontextprotocol/server-postgres"
+  ],
+  "category": "databases"
+}

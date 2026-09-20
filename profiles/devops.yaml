@@ -1,0 +1,20 @@
+name: DevOps & SRE Specialist
+description: CI/CD automation, container orchestration, monitoring, incident response,
+  and infrastructure as code
+domains:
+- devops
+- cloud
+- infrastructure
+required_capabilities:
+- ci-cd-pipeline
+- container-management
+- infrastructure-as-code
+mcp_profile: administrator
+recommended_packs:
+- devops-core
+- kubernetes-mastery
+active_skills:
+- ci-cd-and-automation
+- terraform-infrastructure
+- kubernetes-deployment
+- cloud-devops

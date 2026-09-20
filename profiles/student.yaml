@@ -1,0 +1,18 @@
+name: Student & Lifelong Learner
+description: Curriculum navigation, algorithmic study, conceptual breakdowns, and
+  active recall practice
+domains:
+- computer-science
+- mathematics
+- humanities-arts
+required_capabilities:
+- tutoring
+- explanation
+- conceptual-synthesis
+mcp_profile: researcher
+recommended_packs:
+- cs-fundamentals
+- learning-accelerator
+active_skills:
+- brainstorming
+- concise-planning

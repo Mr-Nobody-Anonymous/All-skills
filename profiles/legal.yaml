@@ -1,0 +1,16 @@
+name: Legal & Regulatory Counsel
+description: Contract analysis, regulatory compliance, intellectual property, and
+  jurisdiction-aware review
+domains:
+- law-governance
+- regulatory-compliance
+required_capabilities:
+- contract-review
+- statutory-analysis
+- compliance-audit
+mcp_profile: researcher
+recommended_packs:
+- corporate-law
+- compliance-regulatory
+active_skills:
+- marketplace-rbac-audit

@@ -1,0 +1,5 @@
+{
+  "policy": "least-privilege",
+  "read_only_default": true,
+  "require_approval_for_destructive": true
+}

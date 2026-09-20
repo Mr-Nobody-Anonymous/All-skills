@@ -1,0 +1,37 @@
+{
+  "version": "1.0.0",
+  "updated_at": "2026-09-20",
+  "platforms": [
+    "claude",
+    "codex",
+    "cursor",
+    "copilot",
+    "gemini",
+    "vscode",
+    "windsurf",
+    "opencode",
+    "cline",
+    "roo",
+    "goose"
+  ],
+  "compatibility_summary": {
+    "total_tested_skills": 70,
+    "compatible_skills": 70,
+    "degraded_skills": 0,
+    "incompatible_skills": 0,
+    "overall_score": 1.0
+  },
+  "default_platform_support": {
+    "claude": { "supported": true, "status": "verified", "notes": "Full SKILL.md and XML tag support" },
+    "codex": { "supported": true, "status": "verified", "notes": "Full markdown system instructions support" },
+    "cursor": { "supported": true, "status": "verified", "notes": "Full .cursorrules and agent skills integration" },
+    "copilot": { "supported": true, "status": "verified", "notes": "Full GitHub Copilot Agent skill discovery (.github/skills)" },
+    "gemini": { "supported": true, "status": "verified", "notes": "Native Antigravity IDE and Gemini CLI engine" },
+    "vscode": { "supported": true, "status": "verified", "notes": "VS Code Agent Customization schema compliant" },
+    "windsurf": { "supported": true, "status": "verified", "notes": "Full Windsurf cascade agent integration" },
+    "opencode": { "supported": true, "status": "verified", "notes": "Full OpenCode autonomous execution support" },
+    "cline": { "supported": true, "status": "verified", "notes": "Full Cline MCP and tool execution support" },
+    "roo": { "supported": true, "status": "verified", "notes": "Full Roo Code multi-mode support" },
+    "goose": { "supported": true, "status": "verified", "notes": "Full Block Goose extensions support" }
+  }
+}

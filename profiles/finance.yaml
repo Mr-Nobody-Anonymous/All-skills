@@ -1,0 +1,17 @@
+name: Financial & Quantitative Analyst
+description: Financial modeling, valuation, portfolio analysis, risk management, and
+  regulatory compliance
+domains:
+- finance
+- economics
+- quantitative-finance
+required_capabilities:
+- financial-modeling
+- valuation
+- risk-assessment
+mcp_profile: finance
+recommended_packs:
+- corporate-finance
+- quantitative-analytics
+active_skills:
+- analytics-product

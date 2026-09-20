@@ -1,0 +1,19 @@
+name: Systems & Cloud Architect
+description: Distributed system architecture, microservices, cloud-native patterns,
+  and infrastructure design
+domains:
+- architecture
+- cloud
+- systems-engineering
+required_capabilities:
+- architecture-design
+- cloud-infrastructure
+- api-contracts
+mcp_profile: administrator
+recommended_packs:
+- cloud-architecture
+- distributed-systems
+active_skills:
+- api-and-interface-design
+- cloud-devops
+- kubernetes-architect

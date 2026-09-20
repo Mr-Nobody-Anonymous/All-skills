@@ -1,0 +1,9 @@
+{
+  "profile": "healthcare",
+  "servers": [
+    "docs",
+    "filesystem",
+    "fetch"
+  ],
+  "default_policy": "least-privilege"
+}

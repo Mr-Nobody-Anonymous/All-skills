@@ -1,0 +1,20 @@
+name: Cybersecurity & AppSec
+description: Threat modeling, vulnerability scanning, static application security
+  testing, and penetration testing
+domains:
+- security
+- application-security
+- cryptography
+required_capabilities:
+- vulnerability-scan
+- sast-scan
+- secret-detection
+mcp_profile: security
+recommended_packs:
+- security-audit
+- penetration-testing
+active_skills:
+- vulnerability-scanner
+- red-team-tactics
+- top-web-vulnerabilities
+- sast-configuration

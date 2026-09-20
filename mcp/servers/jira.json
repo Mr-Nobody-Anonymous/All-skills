@@ -1,0 +1,9 @@
+{
+  "id": "jira",
+  "command": "npx",
+  "args": [
+    "-y",
+    "@modelcontextprotocol/server-jira"
+  ],
+  "category": "project_management"
+}

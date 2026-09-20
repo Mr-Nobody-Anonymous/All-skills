@@ -216,6 +216,244 @@
         }
       },
       "description": "Automated fallback and loop prevention strategy."
+    },
+    "id": {
+      "type": "string",
+      "description": "Canonical identifier slug of the skill."
+    },
+    "display_name": {
+      "type": "string",
+      "description": "Human-friendly display name for user interfaces and dashboards."
+    },
+    "summary": {
+      "type": "string",
+      "description": "Single-sentence concise synopsis of capability."
+    },
+    "discipline": {
+      "type": "string",
+      "description": "Academic or professional discipline (e.g. machine-learning, cardiology, structural-mechanics)."
+    },
+    "profession": {
+      "type": "string",
+      "description": "Professional field associated with the workflow."
+    },
+    "role": {
+      "type": "string",
+      "description": "Job role executing the workflow (e.g. security-analyst, staff-engineer, radiologist)."
+    },
+    "capabilities": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "List of atomic functional capabilities delivered by this skill."
+    },
+    "tasks": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Standard engineering or analytical tasks fulfilled by this skill."
+    },
+    "methods": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Methodologies or algorithms used."
+    },
+    "techniques": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Specific technical techniques applied."
+    },
+    "frameworks": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Frameworks utilized (e.g. React, PyTorch, Spring, ASP.NET)."
+    },
+    "libraries": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Third-party libraries required."
+    },
+    "protocols": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Network or communication protocols used (e.g. HTTP/2, gRPC, WebSocket, MQTT)."
+    },
+    "apis": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "APIs accessed or manipulated."
+    },
+    "operating_systems": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Supported OS environments (e.g. windows, linux, darwin)."
+    },
+    "architectures": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Supported CPU architectures (e.g. x86_64, arm64)."
+    },
+    "hardware": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Target hardware, boards, or peripherals (e.g. raspberry-pi, esp32, cuda-gpu)."
+    },
+    "languages": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Programming or natural languages utilized."
+    },
+    "locales": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Supported natural language locales (e.g. en-US, es-ES, am-ET, ja-JP)."
+    },
+    "regulations": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Governing regulatory frameworks (e.g. GDPR, HIPAA, SOC2, PCI-DSS)."
+    },
+    "certifications": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Applicable compliance or industry certifications."
+    },
+    "sensitivity": {
+      "type": "string",
+      "enum": ["public", "internal", "confidential", "restricted"],
+      "description": "Data sensitivity classification."
+    },
+    "side_effects": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "filesystem-read",
+          "filesystem-write",
+          "network-request",
+          "external-api-write",
+          "git-push",
+          "cloud-resource-creation",
+          "process-spawn",
+          "system-config-change"
+        ]
+      },
+      "description": "Explicit side effects caused by executing this skill."
+    },
+    "network_access": {
+      "type": "boolean",
+      "description": "Declares whether the skill requires outbound network connectivity."
+    },
+    "filesystem_access": {
+      "type": "string",
+      "enum": ["none", "read", "write", "full"],
+      "description": "Declares filesystem permission requirements."
+    },
+    "credential_access": {
+      "type": "boolean",
+      "description": "Declares whether the skill reads credentials or authentication tokens."
+    },
+    "external_write": {
+      "type": "boolean",
+      "description": "Declares whether the skill modifies external services or third-party states."
+    },
+    "destructive_operations": {
+      "type": "boolean",
+      "description": "Declares whether the skill performs destructive file, database, or resource deletion."
+    },
+    "dependencies": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Prerequisite skill IDs that must be loaded or executed first."
+    },
+    "optional_dependencies": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Complementary skill IDs that enhance execution if present."
+    },
+    "conflicts": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Mutually exclusive skill IDs that must not be active simultaneously."
+    },
+    "verification": {
+      "type": "object",
+      "description": "Verification directives, assertions, and test specifications."
+    },
+    "examples": {
+      "type": "array",
+      "description": "Representative positive execution examples."
+    },
+    "counterexamples": {
+      "type": "array",
+      "description": "Explicit negative or misuse counterexamples."
+    },
+    "failure_modes": {
+      "type": "array",
+      "description": "Known failure states and troubleshooting remedies."
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "repository": { "type": "string" },
+        "path": { "type": "string" },
+        "commit": { "type": "string" },
+        "license": { "type": "string" },
+        "author": { "type": "string" },
+        "imported_at": { "type": "string" },
+        "modified": { "type": "boolean" }
+      },
+      "description": "Cryptographic and repository provenance of the skill."
+    },
+    "source_repo": {
+      "type": "string",
+      "description": "Upstream source repository identifier."
+    },
+    "source_path": {
+      "type": "string",
+      "description": "Original file path in upstream repository."
+    },
+    "source_commit": {
+      "type": "string",
+      "description": "Upstream Git commit SHA-1 or tag at import time."
+    },
+    "source_license": {
+      "type": "string",
+      "description": "Upstream open source license."
+    },
+    "upstream_version": {
+      "type": "string",
+      "description": "Upstream release version."
+    },
+    "created_at": {
+      "type": "string",
+      "description": "Timestamp of creation."
+    },
+    "updated_at": {
+      "type": "string",
+      "description": "Timestamp of latest modification."
+    },
+    "last_verified": {
+      "type": "string",
+      "description": "Timestamp of last automated quality or execution verification."
+    },
+    "quality_score": {
+      "type": "number",
+      "description": "Automated composite quality score (0.0 - 1.0)."
+    },
+    "test_status": {
+      "type": "string",
+      "description": "Automated test status (e.g. passed, failed, untested)."
+    },
+    "security_status": {
+      "type": "string",
+      "description": "Automated security scanning status (e.g. clean, flagged, approved)."
+    },
+    "compatibility_status": {
+      "type": "string",
+      "description": "Multi-agent platform compatibility status."
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Extensible metadata namespace for custom attributes."
     }
   },
   "additionalProperties": true
