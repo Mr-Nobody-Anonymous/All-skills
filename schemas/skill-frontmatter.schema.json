@@ -1,0 +1,142 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AgentSkillFrontmatter",
+  "description": "Standardized YAML frontmatter schema for autonomous agent skills (SKILL.md).",
+  "type": "object",
+  "required": [
+    "name",
+    "description"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "pattern": "^[a-z0-9-_]+$",
+      "description": "Unique identifier slug for the skill (lowercase, alphanumeric with hyphens or underscores)."
+    },
+    "description": {
+      "type": "string",
+      "minLength": 10,
+      "description": "Detailed explanation of what the skill does and exact criteria for when the agent should load it."
+    },
+    "category": {
+      "type": "string",
+      "description": "Functional domain category (e.g. development, security, workflow, ai-ml, design)."
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+(-[a-zA-Z0-9.]+)?$",
+      "description": "Semantic versioning string (e.g. 1.0.0)."
+    },
+    "author": {
+      "type": "string",
+      "description": "Author, team, or upstream repository maintainer."
+    },
+    "license": {
+      "type": "string",
+      "description": "Software license for the skill instructions (e.g. MIT, Apache-2.0)."
+    },
+    "triggers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of user phrases or prompt keywords that trigger the activation of this skill."
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Short command or slash command aliases for manual invocation (e.g. ['/test', 'run-tests'])."
+    },
+    "keywords": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Search and retrieval indexing tokens for dynamic vector or BM25 retrieval."
+    },
+    "tools": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "bash",
+          "terminal",
+          "file_read",
+          "file_write",
+          "file_edit",
+          "ast_grep",
+          "read_url",
+          "browser",
+          "generate_image",
+          "mcp_call",
+          "manage_task",
+          "claude",
+          "claude-code",
+          "cursor",
+          "gemini",
+          "codex",
+          "codex-cli",
+          "windsurf",
+          "copilot"
+        ]
+      },
+      "description": "List of tool capabilities required by the agent to execute this skill."
+    },
+    "mcp_servers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of Model Context Protocol (MCP) servers required (e.g. ['filesystem', 'github', 'fetch', 'memory'])."
+    },
+    "env": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Environment variable names required at runtime (e.g. ['OPENAI_API_KEY', 'AWS_REGION'])."
+    },
+    "parameters": {
+      "type": "object",
+      "description": "Optional argument schema accepted when invoking this skill directly."
+    },
+    "preconditions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Checks that must pass before execution (e.g. ['git_clean', 'venv_active', 'tests_passing'])."
+    },
+    "postconditions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Checks that must pass after execution (e.g. ['syntax_valid', 'tests_pass', 'lint_clean'])."
+    },
+    "recovery": {
+      "type": "object",
+      "properties": {
+        "fallback_skill": {
+          "type": "string",
+          "description": "Alternative skill ID to route to if this skill fails."
+        },
+        "max_retries": {
+          "type": "integer",
+          "default": 3,
+          "description": "Maximum number of corrective attempts before aborting."
+        },
+        "on_failure": {
+          "type": "string",
+          "enum": ["rollback", "escalate", "warn", "retry"],
+          "default": "rollback",
+          "description": "Action to take when failure threshold is reached."
+        }
+      },
+      "description": "Automated fallback and loop prevention strategy."
+    }
+  },
+  "additionalProperties": true
+}

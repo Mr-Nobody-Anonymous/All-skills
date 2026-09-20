@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "version": "1.0.0",
+  "hooks": {
+    "pre_execution": [
+      {
+        "id": "check_environment",
+        "description": "Verify Python runtime, virtual environment, and core tool binaries",
+        "script": "hooks/pre/check_environment.py",
+        "required": true
+      },
+      {
+        "id": "check_git_clean",
+        "description": "Ensure workspace state is known and snapshot baseline Git commit SHA",
+        "script": "hooks/pre/check_git_clean.py",
+        "required": false
+      },
+      {
+        "id": "check_permissions",
+        "description": "Verify tool permissions and required environment variables for the skill",
+        "script": "hooks/pre/check_permissions.py",
+        "required": true
+      }
+    ],
+    "post_execution": [
+      {
+        "id": "verify_syntax",
+        "description": "Run AST syntax check on any modified Python, JavaScript/TypeScript, and JSON files",
+        "script": "hooks/post/verify_syntax.py",
+        "required": true
+      },
+      {
+        "id": "verify_tests",
+        "description": "Run repository unit tests to ensure no regressions were introduced",
+        "script": "hooks/post/verify_tests.py",
+        "required": false
+      }
+    ],
+    "on_failure": [
+      {
+        "id": "handle_recovery",
+        "description": "Evaluate retry budget, check error fingerprint to avoid loops, and optionally rollback",
+        "script": "hooks/on_failure/handle_recovery.py",
+        "required": true
+      }
+    ]
+  }
+}

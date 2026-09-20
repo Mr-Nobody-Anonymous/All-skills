@@ -1,0 +1,17 @@
+# Cursor Agent Rules
+
+## Invariants & Architecture
+1. **Multi-Tool Compatibility**: Active skills reside in `.cursor/skills/` (linked to `.agents/skills/`).
+2. **AST-First Editing**:
+   - Do not perform blind regex replacements on multi-line blocks.
+   - Include 3-5 lines of context when editing.
+   - Verify Python syntax via `python -m py_compile` and JSON via `python -m json.tool`.
+3. **Context Budgeting**:
+   - Keep context lean.
+   - Store large command dumps or intermediate logs in `scratch/`.
+4. **Security Blocklist**:
+   - Strictly forbidden from reading `.env*`, `*.pem`, `*.key`, or credential directories.
+   - Never run destructive commands (`rm -rf /`, `git push -f`).
+5. **Testing & Hooks**:
+   - Run `python scripts/skills/skills.py test` (86 tests must pass).
+   - Run lifecycle hooks via `python scripts/run_hook.py <pre|post> <skill_id>`.

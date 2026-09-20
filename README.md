@@ -1,10 +1,10 @@
 # ⚡ All Skills — Universal Agentic AI Toolkit & Platform
 
 <p align="center">
-  <img src="https://img.shields.io/badge/skills-2%2C163%2B%20Total%20Skills-7c3aed?style=for-the-badge&logo=codewars&logoColor=white" alt="2163+ Skills" />
+  <img src="https://img.shields.io/badge/skills-2%2C166%2B%20Total%20Skills-7c3aed?style=for-the-badge&logo=codewars&logoColor=white" alt="2166+ Skills" />
   <img src="https://img.shields.io/badge/awesome--catalog-2%2C041%20Categorized-0ea5e9?style=for-the-badge&logo=github&logoColor=white" alt="2041 Awesome Skills" />
-  <img src="https://img.shields.io/badge/active--harness-66%20Pre--Loaded-10b981?style=for-the-badge&logo=lightning&logoColor=white" alt="66 Active Skills" />
-  <img src="https://img.shields.io/badge/canonical--engine-122%20Routed-f59e0b?style=for-the-badge&logo=fastapi&logoColor=white" alt="122 Routed Skills" />
+  <img src="https://img.shields.io/badge/active--harness-69%20Pre--Loaded-10b981?style=for-the-badge&logo=lightning&logoColor=white" alt="69 Active Skills" />
+  <img src="https://img.shields.io/badge/manifest-191%20Indexed-6366f1?style=for-the-badge&logo=json&logoColor=white" alt="191 Manifest Skills" />
   <img src="https://img.shields.io/badge/tests-86%2F86%20Passing-10b981?style=for-the-badge&logo=pytest&logoColor=white" alt="86 Tests Passing" />
   <img src="https://img.shields.io/badge/tools-Claude%20%7C%20Cursor%20%7C%20Codex%20%7C%20Antigravity-ec4899?style=for-the-badge" alt="Multi-Tool Compatible" />
   <img src="https://img.shields.io/badge/dependencies-Zero%20External-0ea5e9?style=for-the-badge&logo=python&logoColor=white" alt="Zero External Dependencies" />
@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <strong>The complete, load-on-demand Agent Skills operating system. Over 2,160+ modular skills, 66 pre-loaded staff-engineer playbooks, 9-signal natural language routing, deterministic workflow chaining, and native multi-tool compatibility across Claude Code, Cursor, Codex CLI, and Antigravity.</strong>
+  <strong>The complete, load-on-demand Agent Skills operating system. Over 2,160+ modular skills, 69 pre-loaded staff-engineer playbooks, Model Context Protocol (MCP) manifest, lifecycle hooks, AST-safe code transformations, and native multi-tool compatibility across Claude Code, Cursor, Codex CLI, and Antigravity.</strong>
 </p>
 
 ---
@@ -111,15 +111,62 @@ python scripts/setup_tools.py --global
 
 ---
 
-## 🚀 Pre-Loaded Active Harness Skills (66 Skills)
+## 🧠 Autonomous Agent Infrastructure
 
-Your workspace comes pre-loaded with **66 staff-engineer and AI architect playbooks** in [`.agents/skills/`](.agents/skills/) (synced to `.claude/skills/`, `.cursor/skills/`, and `.codex/skills/`):
+Beyond instruction text files, **All Skills** provides a complete execution, validation, and security framework for fully autonomous AI agents:
+
+```
+┌───────────────────────────────────────────────────────────────────────────────────────┐
+│                        ⚡ AUTONOMOUS AGENT EXECUTION ARCHITECTURE                      │
+├────────────────────────────────┬──────────────────────────────────────────────────────┤
+│ 1. Structural Standardization  │ • Draft-07 JSON Schema (`schemas/skill-frontmatter`) │
+│                                │ • Universal Tool & MCP Manifest (`manifest.json`)    │
+│                                │ • Native Model Context Protocol (`mcp_config.json`)  │
+├────────────────────────────────┼──────────────────────────────────────────────────────┤
+│ 2. State & Lifecycle Hooks     │ • Pre-Execution: Git baseline snapshot, env & perms  │
+│                                │ • Post-Execution: AST parse gate, regression tests   │
+│                                │ • On-Failure: State fingerprinting & loop breaking   │
+├────────────────────────────────┼──────────────────────────────────────────────────────┤
+│ 3. Specialized Guardrails      │ • Context Budgeting & Pruning (70% tipping point)    │
+│                                │ • AST Code Transformation (zero regex corruption)    │
+│                                │ • Security Directives (forbidden files & commands)   │
+└────────────────────────────────┴──────────────────────────────────────────────────────┘
+```
+
+### 📋 Key Infrastructure Components:
+1. **Formal Frontmatter Schema**: [`schemas/skill-frontmatter.schema.json`](schemas/skill-frontmatter.schema.json) validates required properties (`name`, `description`, `category`), triggers, aliases, and tool permissions via `python scripts/validate_schema.py`.
+2. **Central Tool-to-Skill Manifest**: [`manifest.json`](manifest.json) indexes all 191+ platform skills, mapping them to required tool permissions (`bash`, `file_edit`, `ast_grep`, `browser`), MCP servers (`filesystem`, `git`, `fetch`, `memory`), and lifecycle hooks.
+3. **Model Context Protocol (MCP)**: Native [`mcp_config.json`](mcp_config.json) configuring local MCP servers for Claude Code, Cursor, and Antigravity.
+4. **Lifecycle Hooks Engine**: Execute automated gates before and after skills run via [`scripts/run_hook.py`](scripts/run_hook.py):
+   ```bash
+   # Pre-execution: check env, snapshot Git baseline, verify tool permissions
+   python scripts/run_hook.py pre active.context-budget-and-pruning
+
+   # Post-execution: verify AST syntax on modified files and run test suite
+   python scripts/run_hook.py post active.context-budget-and-pruning
+
+   # Inspect all configured hooks
+   python scripts/run_hook.py list
+   ```
+5. **Deterministic Fallback & Loop Prevention**: [`docs/spec/FALLBACK_AND_RECOVERY.md`](docs/spec/FALLBACK_AND_RECOVERY.md) specifies the 4-tier recovery tree with SHA-256 error fingerprinting to immediately break infinite retry loops.
+6. **Universal Native Directives**: Pre-configured root instruction files that agents automatically ingest:
+   - [`AGENTS.md`](AGENTS.md) — For Antigravity, OpenAI Codex, and multi-agent harnesses
+   - [`CLAUDE.md`](CLAUDE.md) — For Anthropic Claude Code
+   - [`.cursorrules`](.cursorrules) — For Cursor IDE
+   - [`rules/`](rules/) — Modular rules for context pruning, AST edits, and security guardrails
+
+---
+
+## 🚀 Pre-Loaded Active Harness Skills (69 Skills)
+
+Your workspace comes pre-loaded with **69 staff-engineer and AI architect playbooks** in [`.agents/skills/`](.agents/skills/) (synced to `.claude/skills/`, `.cursor/skills/`, and `.codex/skills/`):
 
 <details open>
 <summary><strong>📋 View Pre-Loaded Skill Suites</strong></summary>
 
 ### 1. 🎯 Core Planning & Workflow Architecture
 - `brainstorming` — Socratic design refinement before implementation
+- `context-budget-and-pruning` — Token budget management, scratchpad offloading, and state distillation
 - `executing-plans` — Batch plan execution with verification checkpoints
 - `concise-planning` — Actionable, atomic checklists (2–5 minute tasks)
 - `subagent-driven-development` — Autonomous recursive child-agent delegation
@@ -129,6 +176,7 @@ Your workspace comes pre-loaded with **66 staff-engineer and AI architect playbo
 - `llm-prompt-optimizer` — Precision prompt engineering using the RSCIT framework
 
 ### 2. 🧪 Code Quality, Testing & Debugging
+- `ast-code-transformation` — Structural AST pattern matching, tree-sitter safety, and syntax gates
 - `code-showcase-systematic-debugging` — 4-phase root-cause analysis (Isolate, Trace, Hypothesize, Fix)
 - `tdd` — Strict Red-Green-Refactor test-driven cycles
 - `code-reviewer` — Automated quality sweep against tech debt and N+1 queries
@@ -182,6 +230,7 @@ Your workspace comes pre-loaded with **66 staff-engineer and AI architect playbo
 - `aws-serverless` — AWS Lambda, API Gateway, DynamoDB, and SAM/CDK
 
 ### 7. 🛡️ Security, SAST & Vulnerability Auditing
+- `security-sandboxing-guardrails` — Ironclad forbidden file blocklists and dangerous shell guardrails
 - `top-web-vulnerabilities` — OWASP Top 10 mitigation and security review
 - `sast-configuration` — Static Application Security Testing rules and scans
 - `security-scanning-security-sast` — Code vulnerability analysis across languages
