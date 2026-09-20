@@ -1,0 +1,15 @@
+{
+  "title": "AI / LLM Engineer",
+  "domain": "ai",
+  "description": "Builds production agentic workflows, RAG systems, and LLM applications.",
+  "core_skills": [
+    "ai-engineer",
+    "ai-engineering-toolkit",
+    "multi-agent-patterns",
+    "agent-memory-systems"
+  ],
+  "recommended_tools": [
+    "mcp_call",
+    "bash"
+  ]
+}

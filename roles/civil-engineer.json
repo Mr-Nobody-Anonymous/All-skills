@@ -1,0 +1,13 @@
+{
+  "title": "Professional Civil Engineer",
+  "domain": "engineering",
+  "description": "Designs municipal infrastructure, structural framing, and geotechnical foundations.",
+  "core_skills": [
+    "reinforced-concrete",
+    "structural-steel",
+    "foundation-engineering"
+  ],
+  "recommended_tools": [
+    "file_read"
+  ]
+}

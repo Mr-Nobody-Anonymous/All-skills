@@ -1,0 +1,14 @@
+{
+  "title": "Penetration Tester / Red Teamer",
+  "domain": "security",
+  "description": "Simulates adversarial attacks to discover and remediate security vulnerabilities.",
+  "core_skills": [
+    "red-team-tactics",
+    "security-sandboxing-guardrails",
+    "vulnerability-scanner"
+  ],
+  "recommended_tools": [
+    "bash",
+    "terminal"
+  ]
+}

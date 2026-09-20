@@ -1,0 +1,10 @@
+{
+  "title": "Fullstack Developer",
+  "stages": [
+    "frontend-engineering",
+    "backend-engineering",
+    "database-design",
+    "api-designer",
+    "ci-cd-and-automation"
+  ]
+}

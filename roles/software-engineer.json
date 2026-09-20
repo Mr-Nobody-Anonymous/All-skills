@@ -1,0 +1,18 @@
+{
+  "title": "Software Engineer",
+  "domain": "engineering",
+  "description": "Designs, develops, tests, and maintains robust software systems.",
+  "core_skills": [
+    "clean-code",
+    "tdd",
+    "git",
+    "code-review",
+    "testing",
+    "algorithms"
+  ],
+  "recommended_tools": [
+    "bash",
+    "file_edit",
+    "terminal"
+  ]
+}

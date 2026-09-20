@@ -1,0 +1,15 @@
+{
+  "title": "Frontend Engineer",
+  "domain": "engineering",
+  "description": "Constructs responsive, performant, and accessible client-side interfaces.",
+  "core_skills": [
+    "react-state-management",
+    "tailwind-design-system",
+    "design-system",
+    "wcag-audit-patterns"
+  ],
+  "recommended_tools": [
+    "browser",
+    "file_edit"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Mechanical Engineer",
+  "domain": "engineering",
+  "description": "Designs thermal/fluid systems, mechanical linkages, and manufacturing tooling.",
+  "core_skills": [
+    "finite-element-analysis",
+    "cfd",
+    "thermodynamics",
+    "machine-design"
+  ],
+  "recommended_tools": [
+    "file_read"
+  ]
+}

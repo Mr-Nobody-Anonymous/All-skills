@@ -1,0 +1,10 @@
+{
+  "title": "Cloud Architect",
+  "stages": [
+    "linux",
+    "networking",
+    "terraform-infrastructure",
+    "kubernetes-architect",
+    "cloud-devops"
+  ]
+}

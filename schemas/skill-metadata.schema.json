@@ -1,0 +1,154 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AgentSkillMetadata",
+  "description": "Comprehensive metadata record schema for universal skill indexing, provenance, capability enforcement, and lifecycle governance.",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "description",
+    "category",
+    "version",
+    "source",
+    "license",
+    "risk"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Canonical identifier slug matching the directory and skill name."
+    },
+    "name": {
+      "type": "string",
+      "description": "Human-readable display name."
+    },
+    "description": {
+      "type": "string",
+      "description": "Complete description and invocation triggers."
+    },
+    "category": {
+      "type": "string",
+      "description": "Primary functional category."
+    },
+    "domain": {
+      "type": "string",
+      "description": "Universal high-level knowledge domain."
+    },
+    "subdomain": {
+      "type": "string",
+      "description": "Sub-discipline taxonomy."
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Search and discovery indexing keywords."
+    },
+    "level": {
+      "type": "string",
+      "enum": ["beginner", "intermediate", "advanced", "expert"]
+    },
+    "platforms": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "tools": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "mcp_servers": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "inputs": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "outputs": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "prerequisites": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Skill IDs or knowledge domains required before executing this skill."
+    },
+    "dependencies": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Runtime skill or tool dependencies required."
+    },
+    "related": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Related complementary skills."
+    },
+    "alternatives": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Alternative skills serving equivalent functionality."
+    },
+    "conflicts": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Skills that should not be invoked concurrently."
+    },
+    "jurisdiction": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "standards": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "source": {
+      "type": "object",
+      "required": ["repository"],
+      "properties": {
+        "repository": { "type": "string" },
+        "path": { "type": "string" },
+        "commit": { "type": "string" },
+        "url": { "type": "string" },
+        "imported_at": { "type": "string" }
+      }
+    },
+    "license": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string"
+    },
+    "risk": {
+      "type": "string",
+      "enum": ["low", "medium", "high", "critical"]
+    },
+    "data_sensitivity": {
+      "type": "string",
+      "enum": ["public", "internal", "confidential", "restricted"]
+    },
+    "capabilities": {
+      "type": "object",
+      "properties": {
+        "network": { "type": "boolean" },
+        "filesystem_read": { "type": "boolean" },
+        "filesystem_write": { "type": "boolean" },
+        "shell": { "type": "boolean" },
+        "credentials": { "type": "boolean" },
+        "external_api": { "type": "boolean" }
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": ["discovered", "candidate", "normalized", "validated", "verified", "published", "deprecated"]
+    }
+  },
+  "additionalProperties": true
+}

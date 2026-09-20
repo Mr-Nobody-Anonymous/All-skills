@@ -1,26 +1,22 @@
 ---
 name: experiment-tracking
-description: "MLflow, Weights & Biases, hyperparameter logging, metric visualization, artifact tracking, and reproducible model runs"
+description: "Log hyperparameters, metrics, artifacts, and execution environments with deterministic run reproducibility."
 category: mlops
+author: AAS Platform
 version: 1.0.0
 disable-model-invocation: false
 risk: low
-source: "https://github.com/Mr-Nobody-Anonymous/All-skills"
-source_repository: "Mr-Nobody-Anonymous/All-skills"
-source_path: "awesome_skills/mlops/experiment-tracking/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source: authoring
+tags:
+  - mlops
+  - experiment-tracking
+  - mlflow
+  - wandb
 ---
 
-# ML Experiment Tracking
+# MLflow and Weights & Biases Experiment Tracking
 
-## Scope
-Experiment tracking systematically logs hyperparameters, dataset hashes, code commits, environment dependencies, and training evaluation metrics across machine learning runs.
+## Overview & Core Principles
+Log hyperparameters, metrics, artifacts, and execution environments with deterministic run reproducibility.
 
-## Core Invariants & Best Practices
-- **Reproducibility Manifest**: Every experiment run must log: Git commit hash, Python environment (`pip freeze`), hardware specs, random seed, training configuration.
-- **Metric Time-Series**: Continuous logging of training/validation loss, learning rate schedules, accuracy, and F1-score per epoch.
-- **Artifact Versioning**: Logging trained model checkpoints, confusion matrices, ROC curves, and sample prediction tables.
-
-## Tools & Platforms
-- **Platforms**: MLflow, Weights & Biases (wandb), Neptune.ai, TensorBoard.
+Instrument training loops to capture learning curves, model weights, and system GPU utilization.

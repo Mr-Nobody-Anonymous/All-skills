@@ -1,0 +1,13 @@
+{
+  "title": "Attorney / Legal Counsel",
+  "domain": "legal",
+  "description": "Drafts legal instruments, conducts statutory research, and advises on compliance.",
+  "core_skills": [
+    "legal-holds",
+    "contract-drafting",
+    "regulatory-compliance"
+  ],
+  "recommended_tools": [
+    "file_read"
+  ]
+}

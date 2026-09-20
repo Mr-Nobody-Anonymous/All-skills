@@ -1,18 +1,17 @@
 # 📚 Awesome Skills Catalog
 
-Complete categorized index of **13,786 Agent Skills** across **221 domain categories**.
+Complete categorized index of **14,174 Agent Skills** across **218 domain categories**.
 
 Every skill contains a standardized, load-on-demand `SKILL.md` instruction playbook with YAML frontmatter, compatible across Claude Code, Cursor, Codex CLI, Antigravity, and Gemini CLI.
 
 ## 🧭 Categories Index
 
-- [3D](#3d) (43 skills)
+- [3D](#3d) (7 skills)
 - [Accessibility](#accessibility) (17 skills)
 - [Accounting](#accounting) (64 skills)
-- [Actuarial](#actuarial) (2 skills)
-- [Advertising](#advertising) (1 skills)
+- [Actuarial](#actuarial) (16 skills)
+- [Advertising](#advertising) (83 skills)
 - [Aerospace](#aerospace) (32 skills)
-- [Africa](#africa) (2 skills)
 - [Agency](#agency) (20 skills)
 - [Agent Behavior](#agent-behavior) (5 skills)
 - [Agent Evaluation](#agent-evaluation) (2 skills)
@@ -20,12 +19,12 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 - [Agriculture](#agriculture) (70 skills)
 - [Ai Automation](#ai-automation) (307 skills)
 - [Ai Evaluation](#ai-evaluation) (162 skills)
-- [Ai Ml](#ai-ml) (493 skills)
-- [Andruia](#andruia) (3 skills)
+- [Ai Ml](#ai-ml) (497 skills)
+- [Analytics](#analytics) (1 skills)
 - [Api Integration](#api-integration) (29 skills)
 - [App Builder](#app-builder) (3 skills)
 - [Architecture](#architecture) (106 skills)
-- [Archiving](#archiving) (2 skills)
+- [Archiving](#archiving) (12 skills)
 - [Arts Crafts](#arts-crafts) (10 skills)
 - [Arts Culture](#arts-culture) (5 skills)
 - [Automation](#automation) (142 skills)
@@ -38,7 +37,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 - [Biotech](#biotech) (52 skills)
 - [Blockchain](#blockchain) (7 skills)
 - [Browser Automation](#browser-automation) (3 skills)
-- [Business](#business) (67 skills)
+- [Business](#business) (74 skills)
 - [Business Intelligence](#business-intelligence) (4 skills)
 - [Business Strategy](#business-strategy) (50 skills)
 - [Career](#career) (40 skills)
@@ -52,7 +51,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 - [Coaching](#coaching) (19 skills)
 - [Code Quality](#code-quality) (18 skills)
 - [Communications](#communications) (9 skills)
-- [Compliance](#compliance) (26 skills)
+- [Compliance](#compliance) (55 skills)
 - [Construction](#construction) (58 skills)
 - [Consulting](#consulting) (113 skills)
 - [Content Creation](#content-creation) (247 skills)
@@ -61,7 +60,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 - [Creative](#creative) (3 skills)
 - [Creator Economy](#creator-economy) (20 skills)
 - [Crypto Blockchain](#crypto-blockchain) (39 skills)
-- [Customer Service](#customer-service) (2 skills)
+- [Customer Service](#customer-service) (14 skills)
 - [Customer Success](#customer-success) (30 skills)
 - [Cybersecurity](#cybersecurity) (94 skills)
 - [Data](#data) (35 skills)
@@ -69,11 +68,11 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 - [Data Analytics](#data-analytics) (148 skills)
 - [Data Engineering](#data-engineering) (11 skills)
 - [Data Science](#data-science) (155 skills)
-- [Database](#database) (23 skills)
+- [Database](#database) (24 skills)
 - [Dental](#dental) (20 skills)
-- [Design](#design) (129 skills)
+- [Design](#design) (225 skills)
 - [Developer Tools](#developer-tools) (8 skills)
-- [Development](#development) (490 skills)
+- [Development](#development) (504 skills)
 - [Devops](#devops) (68 skills)
 - [Devsecops](#devsecops) (1 skills)
 - [Document Processing](#document-processing) (3 skills)
@@ -109,33 +108,34 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 - [Gaming](#gaming) (57 skills)
 - [General](#general) (87 skills)
 - [Geospatial](#geospatial) (144 skills)
-- [Governance](#governance) (1 skills)
+- [Governance](#governance) (14 skills)
 - [Government](#government) (67 skills)
+- [Graphics](#graphics) (15 skills)
 - [Graphics Processing](#graphics-processing) (4 skills)
 - [Growth](#growth) (3 skills)
-- [Healthcare](#healthcare) (317 skills)
+- [Healthcare](#healthcare) (329 skills)
 - [Home Diy](#home-diy) (20 skills)
 - [Home Garden](#home-garden) (5 skills)
 - [Hospitality](#hospitality) (50 skills)
 - [Hr People](#hr-people) (203 skills)
-- [Humanities](#humanities) (3 skills)
+- [Humanities](#humanities) (99 skills)
 - [Insurance](#insurance) (67 skills)
 - [Integration](#integration) (7 skills)
 - [Interior Design](#interior-design) (30 skills)
+- [International Development](#international-development) (2 skills)
 - [Iot](#iot) (18 skills)
 - [Journalism](#journalism) (34 skills)
-- [Knowledge Management](#knowledge-management) (2 skills)
+- [Knowledge Management](#knowledge-management) (14 skills)
 - [Languages](#languages) (101 skills)
-- [Legal](#legal) (1652 skills)
-- [Leiloeiro](#leiloeiro) (6 skills)
+- [Legal](#legal) (1646 skills)
 - [Library](#library) (9 skills)
 - [Life Transitions](#life-transitions) (15 skills)
-- [Linguistics](#linguistics) (3 skills)
+- [Linguistics](#linguistics) (15 skills)
 - [Logistics](#logistics) (19 skills)
 - [Luxury](#luxury) (10 skills)
 - [Manufacturing](#manufacturing) (49 skills)
 - [Marine](#marine) (12 skills)
-- [Marketing](#marketing) (219 skills)
+- [Marketing](#marketing) (222 skills)
 - [Materials Science](#materials-science) (11 skills)
 - [Mathematics](#mathematics) (47 skills)
 - [Mcp](#mcp) (3 skills)
@@ -145,20 +145,17 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 - [Memory](#memory) (6 skills)
 - [Mental Models](#mental-models) (10 skills)
 - [Meta](#meta) (34 skills)
-- [Metier Fr](#metier-fr) (7 skills)
 - [Migration](#migration) (42 skills)
 - [Mining](#mining) (13 skills)
-- [Mlops](#mlops) (6 skills)
+- [Mlops](#mlops) (20 skills)
 - [Mobile](#mobile) (30 skills)
 - [Music Audio](#music-audio) (56 skills)
 - [Music Industry](#music-industry) (30 skills)
 - [Nonprofit](#nonprofit) (70 skills)
-- [Nonprofit Ngo](#nonprofit-ngo) (70 skills)
 - [Offline](#offline) (1 skills)
 - [Operations](#operations) (156 skills)
 - [Outdoor Adventure](#outdoor-adventure) (15 skills)
-- [Parenting](#parenting) (20 skills)
-- [Parenting Family](#parenting-family) (57 skills)
+- [Parenting](#parenting) (57 skills)
 - [Personal Development](#personal-development) (78 skills)
 - [Personal Finance](#personal-finance) (24 skills)
 - [Pet Business](#pet-business) (9 skills)
@@ -172,21 +169,20 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 - [Physics](#physics) (18 skills)
 - [Planning](#planning) (7 skills)
 - [Podcast](#podcast) (8 skills)
-- [Presentation](#presentation) (1 skills)
-- [Presentation Processing](#presentation-processing) (4 skills)
-- [Privacy](#privacy) (3 skills)
-- [Procurement](#procurement) (15 skills)
+- [Presentation](#presentation) (19 skills)
+- [Privacy](#privacy) (16 skills)
+- [Procurement](#procurement) (20 skills)
 - [Product](#product) (4 skills)
 - [Product Management](#product-management) (47 skills)
-- [Productivity](#productivity) (34 skills)
+- [Productivity](#productivity) (35 skills)
 - [Professional Services](#professional-services) (20 skills)
 - [Project Management](#project-management) (29 skills)
-- [Psychology](#psychology) (4 skills)
-- [Public Relations](#public-relations) (1 skills)
+- [Psychology](#psychology) (17 skills)
+- [Public Relations](#public-relations) (11 skills)
 - [Publishing](#publishing) (9 skills)
 - [Quality](#quality) (2 skills)
 - [Quantum Computing](#quantum-computing) (5 skills)
-- [Real Estate](#real-estate) (90 skills)
+- [Real Estate](#real-estate) (93 skills)
 - [Reliability](#reliability) (14 skills)
 - [Research](#research) (14 skills)
 - [Resilience](#resilience) (1 skills)
@@ -194,15 +190,15 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 - [Saas](#saas) (28 skills)
 - [Sales](#sales) (366 skills)
 - [Science Research](#science-research) (27 skills)
-- [Security](#security) (214 skills)
+- [Search](#search) (1 skills)
+- [Security](#security) (215 skills)
 - [Semiconductor](#semiconductor) (21 skills)
 - [Senior Care](#senior-care) (20 skills)
 - [Seo](#seo) (4 skills)
 - [Skill Authoring](#skill-authoring) (2 skills)
 - [Skilled Trades](#skilled-trades) (29 skills)
 - [Social Impact](#social-impact) (21 skills)
-- [Social Science](#social-science) (2 skills)
-- [Sovereignty](#sovereignty) (1 skills)
+- [Social Science](#social-science) (14 skills)
 - [Space](#space) (10 skills)
 - [Sports](#sports) (72 skills)
 - [Sports Business](#sports-business) (10 skills)
@@ -216,69 +212,34 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 - [Test Automation](#test-automation) (9 skills)
 - [Testing](#testing) (52 skills)
 - [Trading Markets](#trading-markets) (39 skills)
-- [Training](#training) (2 skills)
+- [Training](#training) (16 skills)
 - [Transportation](#transportation) (30 skills)
 - [Travel](#travel) (30 skills)
 - [Travel Tourism](#travel-tourism) (82 skills)
+- [Utilities](#utilities) (1 skills)
 - [Ux Design](#ux-design) (48 skills)
 - [Veterinary](#veterinary) (77 skills)
 - [Voice Agents](#voice-agents) (5 skills)
 - [Web Development](#web-development) (66 skills)
 - [Web3](#web3) (20 skills)
 - [Wellness](#wellness) (100 skills)
-- [Writing](#writing) (17 skills)
+- [Writing](#writing) (19 skills)
 
-*Total skills indexed: 13,786 across 221 categories*
+*Total skills indexed: 14,174 across 218 categories*
 
 ---
 
-## <a id="3d"></a>📁 3D (43 skills)
+## <a id="3d"></a>📁 3D (7 skills)
 
 | Skill ID | Name | Risk | Description |
 | :--- | :--- | :---: | :--- |
 | [3d-blender-python-procedural-modeling](3d/3d-blender-python-procedural-modeling/SKILL.md) | `3d-blender-python-procedural-modeling` | `low` | "Automate 3D geometry generation, UV unwrapping, PBR material assignment, and glTF asset export using the Blender Python (bpy) ... |
 | [3d-gaussian-splatting-web-optimization](3d/3d-gaussian-splatting-web-optimization/SKILL.md) | `3d-gaussian-splatting-web-optimization` | `low` | "Train, compress, and render 3D Gaussian Splatting (3DGS) radiance fields on web targets using WebGL/WebGPU compute shaders." |
 | [3d-web-experience](3d/3d-web-experience/SKILL.md) | `3d-web-experience` | `low` | "Expert in building 3D experiences for the web - Three.js, React Three Fiber, Spline, WebGL, and interactive 3D scenes. Covers ... |
-| [analytics-tracking](3d/analytics-tracking/SKILL.md) | `analytics-tracking` | `low` | > Design, audit, and improve analytics tracking systems that produce reliable, decision-ready data. Use when the user wants to ... |
-| [backend-dev-guidelines](3d/backend-dev-guidelines/SKILL.md) | `backend-dev-guidelines` | `low` | Opinionated backend development standards for Node.js + Express + TypeScript microservices. Covers layered architecture, BaseCo... |
 | [blender-modeling](3d/blender-modeling/SKILL.md) | `blender-modeling` | `low` | "3D modeling in Blender: poly-modeling, non-destructive modifiers, UV unwrapping, PBR texturing, and asset optimization for rea... |
-| [brainstorming](3d/brainstorming/SKILL.md) | `brainstorming` | `low` | > Use this skill before any creative or constructive work (features, components, architecture, behavior changes, or functionali... |
-| [clean-code](3d/clean-code/SKILL.md) | `clean-code` | `low` | Pragmatic coding standards - concise, direct, no over-engineering, no unnecessary comments |
-| [code-refactoring-context-restore](3d/code-refactoring-context-restore/SKILL.md) | `code-refactoring-context-restore` | `low` | "Use when working with code refactoring context restore" |
-| [code-refactoring-refactor-clean](3d/code-refactoring-refactor-clean/SKILL.md) | `code-refactoring-refactor-clean` | `low` | "You are a code refactoring expert specializing in clean code principles, SOLID design patterns, and modern software engineerin... |
-| [code-refactoring-tech-debt](3d/code-refactoring-tech-debt/SKILL.md) | `code-refactoring-tech-debt` | `low` | "You are a technical debt expert specializing in identifying, quantifying, and prioritizing technical debt in software projects... |
-| [code-review-ai-ai-review](3d/code-review-ai-ai-review/SKILL.md) | `code-review-ai-ai-review` | `low` | "You are an expert AI-powered code review specialist combining automated static analysis, intelligent pattern recognition, and ... |
-| [code-review-checklist](3d/code-review-checklist/SKILL.md) | `code-review-checklist` | `low` | "Comprehensive checklist for conducting thorough code reviews covering functionality, security, performance, and maintainability" |
-| [code-review-excellence](3d/code-review-excellence/SKILL.md) | `code-review-excellence` | `low` | Master effective code review practices to provide constructive feedback, catch bugs early, and foster knowledge sharing while m... |
-| [code-reviewer](3d/code-reviewer/SKILL.md) | `code-reviewer` | `low` | Elite code review expert specializing in modern AI-powered code analysis, security vulnerabilities, performance optimization, a... |
-| [copywriting](3d/copywriting/SKILL.md) | `copywriting` | `low` | > Use this skill when writing, rewriting, or improving marketing copy for any page (homepage, landing page, pricing, feature, p... |
-| [error-diagnostics-error-analysis](3d/error-diagnostics-error-analysis/SKILL.md) | `error-diagnostics-error-analysis` | `low` | "You are an expert error analysis specialist with deep expertise in debugging distributed systems, analyzing production inciden... |
-| [error-diagnostics-error-trace](3d/error-diagnostics-error-trace/SKILL.md) | `error-diagnostics-error-trace` | `low` | "You are an error tracking and observability expert specializing in implementing comprehensive error monitoring solutions. Set ... |
-| [error-diagnostics-smart-debug](3d/error-diagnostics-smart-debug/SKILL.md) | `error-diagnostics-smart-debug` | `low` | "Use when working with error diagnostics smart debug" |
-| [frontend-design](3d/frontend-design/SKILL.md) | `frontend-design` | `low` | Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build w... |
-| [frontend-dev-guidelines](3d/frontend-dev-guidelines/SKILL.md) | `frontend-dev-guidelines` | `low` | Opinionated frontend development standards for modern React + TypeScript applications. Covers Suspense-first data fetching, laz... |
-| [frontend-developer](3d/frontend-developer/SKILL.md) | `frontend-developer` | `low` | Build React components, implement responsive layouts, and handle client-side state management. Masters React 19, Next.js 15, an... |
-| [frontend-patterns](3d/frontend-patterns/SKILL.md) | `frontend-patterns` | `low` | Frontend development patterns for React, Next.js, state management, performance optimization, and UI best practices. |
 | [google-3d-tiles-r3f](3d/google-3d-tiles-r3f/SKILL.md) | `google-3d-tiles-r3f` | `low` | Builds a 3D world using Google Maps Photorealistic 3D Tiles API with Three.js and React Three Fiber (R3F), including ECEF-to-EN... |
 | [mediapipe-usage](3d/mediapipe-usage/SKILL.md) | `mediapipe-usage` | `low` | Provides guidance for Google MediaPipe Pose Landmarker on web using @mediapipe/tasks-vision. Covers setup, landmark indices, ru... |
-| [mobile-design](3d/mobile-design/SKILL.md) | `mobile-design` | `low` | Mobile-first design and engineering doctrine for iOS and Android apps. Covers touch interaction, performance, platform conventi... |
-| [multiplayer-websocket](3d/multiplayer-websocket/SKILL.md) | `multiplayer-websocket` | `low` | Manages WebSocket-based real-time multiplayer in Tokyo Sounds. Use when modifying multiplayer sync, useMultiplayer hook, multip... |
-| [murakami-style-writing](3d/murakami-style-writing/SKILL.md) | `murakami-style-writing` | `low` | Generates or revises prose in the style of Haruki Murakami (村上春樹): short sentences, rhythm, mundane details, first-person detac... |
-| [neon-postgres](3d/neon-postgres/SKILL.md) | `neon-postgres` | `low` | "Expert patterns for Neon serverless Postgres, branching, connection pooling, and Prisma/Drizzle integration Use when: neon dat... |
-| [next-intl-app-router](3d/next-intl-app-router/SKILL.md) | `next-intl-app-router` | `low` | Configures and uses next-intl for Next.js App Router with locale-based routing. Use when adding or changing i18n, locale routin... |
-| [page-cro](3d/page-cro/SKILL.md) | `page-cro` | `low` | > Analyze and optimize individual pages for conversion performance. Use when the user wants to improve conversion rates, diagno... |
-| [rag-implementation](3d/rag-implementation/SKILL.md) | `rag-implementation` | `low` | Build Retrieval-Augmented Generation (RAG) systems for LLM applications with vector databases and semantic search. Use when imp... |
-| [react-ui-patterns](3d/react-ui-patterns/SKILL.md) | `react-ui-patterns` | `low` | Modern React UI patterns for loading states, error handling, and data fetching. Use when building UI components, handling async... |
-| [screenshots](3d/screenshots/SKILL.md) | `screenshots` | `safe` | "Generate marketing screenshots of your app using Playwright. Use when the user wants to create screenshots for Product Hunt, s... |
-| [scroll-experience](3d/scroll-experience/SKILL.md) | `scroll-experience` | `low` | "Expert in building immersive scroll-driven experiences - parallax storytelling, scroll animations, interactive narratives, and... |
-| [search-specialist](3d/search-specialist/SKILL.md) | `search-specialist` | `low` | Expert web researcher using advanced search techniques and synthesis. Masters search operators, result filtering, and multi-sou... |
-| [tailwind-patterns](3d/tailwind-patterns/SKILL.md) | `tailwind-patterns` | `low` | Tailwind CSS v4 principles. CSS-first configuration, container queries, modern patterns, design token architecture. |
 | [threejs-skills](3d/threejs-skills/SKILL.md) | `threejs-skills` | `safe` | "Three.js skills for creating 3D elements and interactive experiences" |
-| [ui-ux-pro-max](3d/ui-ux-pro-max/SKILL.md) | `ui-ux-pro-max` | `low` | "UI/UX design intelligence. 50 styles, 21 palettes, 50 font pairings, 20 charts, 9 stacks (React, Next.js, Vue, Svelte, SwiftUI... |
-| [vercel-composition-patterns](3d/vercel-composition-patterns/SKILL.md) | `vercel-composition-patterns` | `low` | React composition patterns that scale. Use when refactoring components with boolean prop proliferation, building flexible compo... |
-| [vercel-react-best-practices](3d/vercel-react-best-practices/SKILL.md) | `vercel-react-best-practices` | `low` | React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing, reviewin... |
-| [vercel-react-native-skills](3d/vercel-react-native-skills/SKILL.md) | `vercel-react-native-skills` | `low` | React Native and Expo best practices for building performant mobile apps. Use when building React Native components, optimizing... |
-| [web-design-guidelines](3d/web-design-guidelines/SKILL.md) | `web-design-guidelines` | `low` | Review UI code for Web Interface Guidelines compliance. Use when asked to "review my UI", "check accessibility", "audit design"... |
 
 ---
 
@@ -377,20 +338,116 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
-## <a id="actuarial"></a>📁 Actuarial (2 skills)
+## <a id="actuarial"></a>📁 Actuarial (16 skills)
 
 | Skill ID | Name | Risk | Description |
 | :--- | :--- | :---: | :--- |
 | [act-loss-reserving-chain-ladder](actuarial/act-loss-reserving-chain-ladder/SKILL.md) | `act-loss-reserving-chain-ladder` | `low` | "Compute Incurred But Not Reported (IBNR) claim reserves using Chain Ladder, Bornhuetter-Ferguson, and Cape Cod actuarial trian... |
+| [actuarial-mathematics](actuarial/actuarial-mathematics/SKILL.md) | `actuarial-mathematics` | `low` | "Calculate present values of contingent life annuities, assurances, and net premium reserves using actuarial commutation functi... |
+| [catastrophe-modeling](actuarial/catastrophe-modeling/SKILL.md) | `catastrophe-modeling` | `low` | "Simulate hurricane, flood, and earthquake hazard footprints to construct Occurrence Exceedance Probability (OEP) and Aggregate... |
+| [enterprise-risk](actuarial/enterprise-risk/SKILL.md) | `enterprise-risk` | `low` | "Quantify multi-risk aggregation, correlation matrices, and ORSA (Own Risk and Solvency Assessment) capital allocation." |
+| [health-insurance](actuarial/health-insurance/SKILL.md) | `health-insurance` | `low` | "Calculate medical loss ratios (MLR), incurred claims cost per member per month (PMPM), and aging curve morbidity adjustments." |
+| [life-insurance](actuarial/life-insurance/SKILL.md) | `life-insurance` | `low` | "Price whole life, term life, and universal life contracts incorporating mortality charges, acquisition expense amortization, a... |
+| [mortality-modeling](actuarial/mortality-modeling/SKILL.md) | `mortality-modeling` | `low` | "Model age-specific mortality rates and project future longevity improvements using the Lee-Carter bilinear log-mortality decom... |
 | [mortality-models](actuarial/mortality-models/SKILL.md) | `mortality-models` | `low` | "Life tables, mortality laws, survival analysis, longevity risk modeling, and population projections" |
+| [pensions](actuarial/pensions/SKILL.md) | `pensions` | `low` | "Value Projected Benefit Obligations (PBO) and Accumulated Benefit Obligations (ABO) under IAS 19 and US GAAP ASC 715." |
+| [pricing](actuarial/pricing/SKILL.md) | `pricing` | `low` | "Fit Poisson frequency and Gamma severity GLMs with log link functions to establish multi-variable multiplicative tariff rating... |
+| [property-casualty](actuarial/property-casualty/SKILL.md) | `property-casualty` | `low` | "Structure property and casualty premium indications using Pure Premium and Loss Ratio approaches with credibility weighting." |
+| [reserving](actuarial/reserving/SKILL.md) | `reserving` | `low` | "Estimate ultimate liabilities using Chain-Ladder, Bornhuetter-Ferguson, and Mack stochastic volatility confidence intervals." |
+| [risk-theory](actuarial/risk-theory/SKILL.md) | `risk-theory` | `low` | "Calculate finite and infinite-horizon ruin probabilities for surplus processes governed by compound Poisson claim arrivals." |
+| [solvency](actuarial/solvency/SKILL.md) | `solvency` | `low` | "Compute Solvency Capital Requirement (SCR) across Life, Non-Life, Health, and Market underwriting modules conforming to EIOPA ... |
+| [stochastic-modeling](actuarial/stochastic-modeling/SKILL.md) | `stochastic-modeling` | `low` | "Generate risk-neutral and real-world interest rate paths (Hull-White, Cox-Ingersoll-Ross) for asset-liability management (ALM)." |
+| [survival-analysis](actuarial/survival-analysis/SKILL.md) | `survival-analysis` | `low` | "Estimate survival curves, hazard rates, and right-censored policy duration data using Kaplan-Meier product-limit and Cox propo... |
 
 ---
 
-## <a id="advertising"></a>📁 Advertising (1 skills)
+## <a id="advertising"></a>📁 Advertising (83 skills)
 
 | Skill ID | Name | Risk | Description |
 | :--- | :--- | :---: | :--- |
+| [a11y-audit](advertising/a11y-audit/SKILL.md) | `a11y-audit` | `low` | > Use this skill for accessibility audits of websites, landing pages, forms, checkout flows, dashboards, apps, marketing pages,... |
+| [ab-testing](advertising/ab-testing/SKILL.md) | `ab-testing` | `low` | > Use this skill when planning, designing, or analyzing A/B tests and growth experiments. Trigger phrases: "run an A/B test," "... |
+| [ad-analytics](advertising/ad-analytics/SKILL.md) | `ad-analytics` | `low` | "Consolidate spend, impression, and conversion telemetry across disparate ad platform APIs into normalized data stores." |
+| [ad-creative](advertising/ad-creative/SKILL.md) | `ad-creative` | `low` | > Use this skill when generating, iterating, or scaling ad creative for any paid platform. Trigger phrases: "write ad copy," "g... |
+| [ads](advertising/ads/SKILL.md) | `ads` | `low` | > Use this skill for paid advertising campaign strategy, setup, optimization, and reporting. Trigger phrases: "paid ads," "Goog... |
 | [adv-programmatic-dsp-attribution-modeling](advertising/adv-programmatic-dsp-attribution-modeling/SKILL.md) | `adv-programmatic-dsp-attribution-modeling` | `low` | "Engineer digital advertising campaigns, optimize programmatic Real-Time Bidding (RTB) algorithms, and construct statistical Ma... |
+| [advertising-compliance](advertising/advertising-compliance/SKILL.md) | `advertising-compliance` | `low` | "Audit ad creatives for FTC endorsement guides, COPPA child protection, GDPR consent, and restricted category rules." |
+| [ai-image-creator](advertising/ai-image-creator/SKILL.md) | `ai-image-creator` | `low` | > You are an AI-powered image creation expert trained in visual storytelling, brand aesthetics, and concept development. Use th... |
+| [ai-seo](advertising/ai-seo/SKILL.md) | `ai-seo` | `low` | > Use this skill when optimizing content to appear in AI-generated answers, be cited by LLMs, or rank in AI search engines. Tri... |
+| [analytics](advertising/analytics/SKILL.md) | `analytics` | `low` | > Use this skill for setting up, auditing, or improving marketing analytics tracking. Trigger phrases: "analytics setup," "GA4,... |
+| [aso](advertising/aso/SKILL.md) | `aso` | `low` | > Use this skill for App Store Optimization on iOS App Store and Google Play. Trigger phrases: "ASO," "app store optimization,"... |
+| [attribution](advertising/attribution/SKILL.md) | `attribution` | `low` | "Evaluate Shapley value, Markov chain multi-touch attribution, and Bayesian marketing mix modeling (MMM)." |
+| [audience-targeting](advertising/audience-targeting/SKILL.md) | `audience-targeting` | `low` | "Build deterministic lookalike segments, RFM cohorts, and hashed offline CRM audience match pipelines." |
+| [brand-guidelines](advertising/brand-guidelines/SKILL.md) | `brand-guidelines` | `low` | > Use this skill when the user wants brand guidelines, brand voice rules, tone standards, visual identity documentation, messag... |
+| [brand-review](advertising/brand-review/SKILL.md) | `brand-review` | `low` | > Use this skill to review content against brand voice, style rules, messaging pillars, terminology, positioning, audience fit,... |
+| [brand-storytelling](advertising/brand-storytelling/SKILL.md) | `brand-storytelling` | `low` | > You are a professional brand strategist, storyteller, and messaging framework expert. Use this skill when the user wants to b... |
+| [business-strategy](advertising/business-strategy/SKILL.md) | `business-strategy` | `low` | > You are a professional business strategist and customer journey specialist. Use this skill when the user wants to develop a b... |
+| [campaign-brief-generator](advertising/campaign-brief-generator/SKILL.md) | `campaign-brief-generator` | `low` | > Use this skill to create a complete marketing campaign brief from a launch goal, product context, audience, channel plan, mes... |
+| [campaign-strategy](advertising/campaign-strategy/SKILL.md) | `campaign-strategy` | `low` | "Architect performance and brand advertising campaigns across full-funnel customer acquisition pathways." |
+| [churn-prevention](advertising/churn-prevention/SKILL.md) | `churn-prevention` | `low` | > Use this skill for reducing churn in SaaS and subscription businesses. Trigger phrases: "reduce churn," "churn prevention," "... |
+| [cold-email](advertising/cold-email/SKILL.md) | `cold-email` | `low` | > Use this skill when writing B2B cold emails or follow-up sequences. Trigger phrases include: "write a cold email," "draft an ... |
+| [competitive-teardown](advertising/competitive-teardown/SKILL.md) | `competitive-teardown` | `low` | > Use this skill for deep competitor teardowns covering positioning, website UX, pricing, reviews, SEO, content, jobs, social p... |
+| [competitor-profiling](advertising/competitor-profiling/SKILL.md) | `competitor-profiling` | `low` | > Use this skill when researching and documenting a specific competitor. Trigger phrases include: "research this competitor," "... |
+| [competitors](advertising/competitors/SKILL.md) | `competitors` | `low` | > Use this skill when writing competitor comparison or alternative pages for a website. Trigger phrases include: "write a compe... |
+| [content-humanizer](advertising/content-humanizer/SKILL.md) | `content-humanizer` | `low` | > Use this skill when the user wants to make AI-generated or stiff content sound more human, natural, specific, clear, and bran... |
+| [content-repurposing](advertising/content-repurposing/SKILL.md) | `content-repurposing` | `low` | > You are a highly skilled content strategist and repurposing specialist. Use this skill when the user wants to repurpose exist... |
+| [content-strategy](advertising/content-strategy/SKILL.md) | `content-strategy` | `low` | > Use this skill when planning a content strategy or deciding what content to create. Trigger phrases include: "build a content... |
+| [conversion-tracking](advertising/conversion-tracking/SKILL.md) | `conversion-tracking` | `low` | "Implement Meta Conversions API (CAPI) and Google Enhanced Conversions via server-side Google Tag Manager." |
+| [copy-editing](advertising/copy-editing/SKILL.md) | `copy-editing` | `low` | > Use this skill when reviewing, editing, or improving existing marketing copy, or when refreshing outdated content. Trigger ph... |
+| [copywriting](advertising/copywriting/SKILL.md) | `copywriting` | `low` | > Use this skill when writing new marketing copy for any page. Trigger phrases include: "write homepage copy," "write a landing... |
+| [creative-testing](advertising/creative-testing/SKILL.md) | `creative-testing` | `low` | "Design statistically rigorous creative testing frameworks isolating hooks, visual styles, and calls-to-action." |
+| [cro](advertising/cro/SKILL.md) | `cro` | `low` | > Use this skill for conversion rate optimization on marketing pages and forms. Trigger phrases include: "improve our conversio... |
+| [customer-research](advertising/customer-research/SKILL.md) | `customer-research` | `low` | > Use this skill when conducting, analyzing, or synthesizing customer research. Trigger phrases include: "research our customer... |
+| [customer-service](advertising/customer-service/SKILL.md) | `customer-service` | `low` | > You are a professional Customer Service Specialist and Communication Strategist. Use this skill when the user wants to write ... |
+| [customer-story-builder](advertising/customer-story-builder/SKILL.md) | `customer-story-builder` | `low` | > Use this skill to turn customer interviews, survey responses, support tickets, reviews, transcripts, and approved quotes into... |
+| [directory-submissions](advertising/directory-submissions/SKILL.md) | `directory-submissions` | `low` | > Use this skill when submitting a product to startup, SaaS, AI, agent, or review directories. Trigger phrases include: "submit... |
+| [display-advertising](advertising/display-advertising/SKILL.md) | `display-advertising` | `low` | "Design responsive, interactive HTML5 display banners and high-impact programmatic rich media units." |
+| [ecommerce-content](advertising/ecommerce-content/SKILL.md) | `ecommerce-content` | `low` | > You are a professional E-commerce Content Strategist and Conversion Copywriter. Use this skill when the user wants to write o... |
+| [ecommerce-product-opportunity-researcher](advertising/ecommerce-product-opportunity-researcher/SKILL.md) | `ecommerce-product-opportunity-researcher` | `low` | > Find, research, compare, score, and validate physical or digital product opportunities for ecommerce stores, Amazon FBA, Etsy... |
+| [education-content](advertising/education-content/SKILL.md) | `education-content` | `low` | > You are a professional education content developer and instructional design specialist. Use this skill when the user wants to... |
+| [emails](advertising/emails/SKILL.md) | `emails` | `low` | > Use this skill when creating, planning, or optimizing email sequences, drip campaigns, and lifecycle email programs. Trigger ... |
+| [env-secrets-manager](advertising/env-secrets-manager/SKILL.md) | `env-secrets-manager` | `low` | > Use this skill when the user wants to manage environment variables, secrets, API keys, .env files, deployment configuration, ... |
+| [free-tools](advertising/free-tools/SKILL.md) | `free-tools` | `low` | > Use this skill when planning or building free tools for marketing purposes. Trigger phrases include: "build a free tool," "cr... |
+| [image](advertising/image/SKILL.md) | `image` | `low` | > Use this skill when creating, generating, or optimizing marketing images. Trigger phrases include: "generate an image for thi... |
+| [instagram-carousel](advertising/instagram-carousel/SKILL.md) | `instagram-carousel` | `low` | > You are a professional social media copywriter creating Instagram carousel content for entrepreneurs, marketers, and business... |
+| [landing-page-cro](advertising/landing-page-cro/SKILL.md) | `landing-page-cro` | `low` | > You are a Conversion Rate Optimization Strategist and Persuasive Content Specialist. Use this skill when the user wants to au... |
+| [launch](advertising/launch/SKILL.md) | `launch` | `low` | > Use this skill when planning a product launch, feature announcement, or release strategy. Trigger phrases include: "plan our ... |
+| [lead-magnets](advertising/lead-magnets/SKILL.md) | `lead-magnets` | `low` | > Use this skill when creating or distributing lead magnets for email capture and lead generation. Trigger phrases include: "cr... |
+| [linkedin-strategy](advertising/linkedin-strategy/SKILL.md) | `linkedin-strategy` | `low` | > You are a LinkedIn strategist, brand positioning expert, and professional content copywriter. Use this skill when the user wa... |
+| [local-seo](advertising/local-seo/SKILL.md) | `local-seo` | `low` | > You are a highly skilled Local SEO strategist and content copywriter. Use this skill when the user wants to improve local sea... |
+| [market-research](advertising/market-research/SKILL.md) | `market-research` | `low` | > Use this skill for market research, TAM SAM SOM sizing, customer segmentation, category analysis, survey planning, interview ... |
+| [media-buying](advertising/media-buying/SKILL.md) | `media-buying` | `low` | "Negotiate upfront direct publisher buys, private marketplace (PMP) deals, and programmatic guaranteed inventory." |
+| [media-planning](advertising/media-planning/SKILL.md) | `media-planning` | `low` | "Calculate reach, frequency, GRPs, and CPM efficiencies across digital and linear broadcast channels." |
+| [onboarding](advertising/onboarding/SKILL.md) | `onboarding` | `low` | > Optimize post-signup onboarding, user activation, and time-to-value for SaaS products. Trigger phrases: "improve onboarding,"... |
+| [paid-ads-ops](advertising/paid-ads-ops/SKILL.md) | `paid-ads-ops` | `low` | > Use this skill for paid advertising planning, account audits, budget and bid reviews, competitor ad intelligence, landing pag... |
+| [paid-search](advertising/paid-search/SKILL.md) | `paid-search` | `low` | "Structure Google/Bing Ads campaigns using Single-Theme Ad Groups (STAG), negative keyword pruning, and Value-Based Bidding." |
+| [paid-social](advertising/paid-social/SKILL.md) | `paid-social` | `low` | "Engineer creative variant testing and algorithmic audience scaling across Meta, TikTok, and LinkedIn platforms." |
+| [paywalls](advertising/paywalls/SKILL.md) | `paywalls` | `low` | > Create and optimize in-app paywalls, upgrade screens, upsell modals, and feature gates for SaaS products. Trigger phrases: "w... |
+| [podcast-pipeline](advertising/podcast-pipeline/SKILL.md) | `podcast-pipeline` | `low` | > Use this skill to turn podcast episodes, interviews, webinars, transcripts, and long-form conversations into show notes, clip... |
+| [popups](advertising/popups/SKILL.md) | `popups` | `low` | > Create and optimize popups, modals, overlays, slide-ins, announcement banners, and exit-intent captures. Trigger phrases: "cr... |
+| [pr-communications](advertising/pr-communications/SKILL.md) | `pr-communications` | `low` | > You are a professional Public Relations Strategist and Media Communications Expert. Use this skill when the user wants to wri... |
+| [pricing](advertising/pricing/SKILL.md) | `pricing` | `low` | > Pricing strategy, packaging, and monetization decisions for SaaS and software products. Trigger phrases: "help me price my pr... |
+| [programmatic](advertising/programmatic/SKILL.md) | `programmatic` | `low` | "Configure Demand-Side Platforms (DSP), Supply-Side Platforms (SSP), and Ad Exchanges conforming to OpenRTB 3.0." |
+| [programmatic-seo](advertising/programmatic-seo/SKILL.md) | `programmatic-seo` | `low` | > Create SEO-driven pages at scale using templates and data. Trigger phrases: "programmatic SEO," "pSEO," "SEO at scale," "crea... |
+| [prospect-research](advertising/prospect-research/SKILL.md) | `prospect-research` | `low` | > Use this skill when the user wants to build prospect lists, research accounts, identify buying signals, map decision-makers, ... |
+| [prospecting](advertising/prospecting/SKILL.md) | `prospecting` | `low` | > Use this skill as the entry point for prospecting, lead list building, account targeting, lead qualification, buying signal r... |
+| [referrals](advertising/referrals/SKILL.md) | `referrals` | `low` | > Create, design, and optimize referral programs, affiliate programs, and word-of-mouth strategies. Trigger phrases: "referral ... |
+| [retargeting](advertising/retargeting/SKILL.md) | `retargeting` | `low` | "Architect cross-channel retargeting funnels with strict frequency caps and recency tiering." |
+| [revops](advertising/revops/SKILL.md) | `revops` | `low` | > Use this skill for revenue operations questions, lead lifecycle management, and marketing-to-sales handoff. Triggers on: MQL ... |
+| [sales-copywriting](advertising/sales-copywriting/SKILL.md) | `sales-copywriting` | `low` | > You are a professional Sales Copywriter and Conversion Strategist. Use this skill when the user wants to write or improve sal... |
+| [sales-enablement](advertising/sales-enablement/SKILL.md) | `sales-enablement` | `low` | > Use this skill for creating sales collateral and materials that help sales teams close deals. Triggers on: pitch deck, one-pa... |
+| [schema](advertising/schema/SKILL.md) | `schema` | `low` | > Use this skill for structured data and schema markup questions. Triggers on: JSON-LD, schema.org, structured data, rich snipp... |
+| [seo-audit](advertising/seo-audit/SKILL.md) | `seo-audit` | `low` | > Use this skill for full SEO audits and SEO analysis tasks. Triggers on: SEO audit, technical SEO, crawlability issues, indexa... |
+| [seo-blog-writer](advertising/seo-blog-writer/SKILL.md) | `seo-blog-writer` | `low` | > You are an expert SEO strategist and skilled content creator. Use this skill when the user wants to write, plan, or optimize ... |
+| [seo-content-strategy](advertising/seo-content-strategy/SKILL.md) | `seo-content-strategy` | `low` | > You are an SEO expert and content strategist. Use this skill when the user wants to improve organic search rankings, plan SEO... |
+| [signup](advertising/signup/SKILL.md) | `signup` | `low` | > Use this skill for optimizing signup, registration, account creation, and free trial flows. Triggers on: signup form optimiza... |
+| [site-architecture](advertising/site-architecture/SKILL.md) | `site-architecture` | `low` | > Use this skill for planning, mapping, and structuring website page hierarchy, navigation, and internal linking. Triggers on: ... |
+| [sms](advertising/sms/SKILL.md) | `sms` | `low` | > Use this skill for SMS or MMS marketing strategy, opt-in flows, abandoned cart texts, event reminders, win-back campaigns, ST... |
+| [social](advertising/social/SKILL.md) | `social` | `low` | > Use this skill for creating, scheduling, and optimizing social media content. Triggers on: LinkedIn post, LinkedIn carousel, ... |
+| [social-content-planner](advertising/social-content-planner/SKILL.md) | `social-content-planner` | `low` | > You are a social media content strategist for Instagram and Facebook. Use this skill when the user wants to plan, write, or o... |
+| [social-media-analyzer](advertising/social-media-analyzer/SKILL.md) | `social-media-analyzer` | `low` | > Use this skill to analyze social media performance, engagement quality, channel ROI, content patterns, audience response, rep... |
+| [video](advertising/video/SKILL.md) | `video` | `low` | > Use this skill for creating, generating, and producing video content for marketing using AI tools and production workflows. T... |
+| [yt-competitive-analysis](advertising/yt-competitive-analysis/SKILL.md) | `yt-competitive-analysis` | `low` | > Use this skill for YouTube competitive analysis, channel teardown, outlier video research, title and thumbnail analysis, cont... |
 
 ---
 
@@ -430,15 +487,6 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [satellite-deployment-plan](aerospace/satellite-deployment-plan/SKILL.md) | `satellite-deployment-plan` | `low` | "Plan satellite deployment with launch and operations. TRIGGERS - Use when user needs help with satellite-deployment-plan relat... |
 | [space-mission-plan](aerospace/space-mission-plan/SKILL.md) | `space-mission-plan` | `low` | "Plan space mission operations with milestones. TRIGGERS - Use when user needs help with space-mission-plan related tasks." |
 | [unmanned-traffic-management](aerospace/unmanned-traffic-management/SKILL.md) | `unmanned-traffic-management` | `low` | "Design unmanned traffic management systems. TRIGGERS - Use when user needs help with unmanned-traffic-management related tasks." |
-
----
-
-## <a id="africa"></a>📁 Africa (2 skills)
-
-| Skill ID | Name | Risk | Description |
-| :--- | :--- | :---: | :--- |
-| [africa-mobile-money](africa/africa-mobile-money/SKILL.md) | `africa-mobile-money` | `low` | Integrate M-Pesa, Orange Money, Wave, and MTN MoMo payment APIs with proper error handling, reconciliation, and multi-operator ... |
-| [africa-ussd-development](africa/africa-ussd-development/SKILL.md) | `africa-ussd-development` | `low` | Build USSD applications for African markets — menu design, session management, multi-operator integration, and user experience ... |
 
 ---
 
@@ -1084,10 +1132,13 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
-## <a id="ai-ml"></a>📁 Ai Ml (493 skills)
+## <a id="ai-ml"></a>📁 Ai Ml (497 skills)
 
 | Skill ID | Name | Risk | Description |
 | :--- | :--- | :---: | :--- |
+| [00-andruia-consultant](ai-ml/00-andruia-consultant/SKILL.md) | `00-andruia-consultant` | `safe` | "Arquitecto de Soluciones Principal y Consultor Tecnológico de Andru.ia. Diagnostica y traza la hoja de ruta óptima para proyec... |
+| [10-andruia-skill-smith](ai-ml/10-andruia-skill-smith/SKILL.md) | `10-andruia-skill-smith` | `safe` | "Ingeniero de Sistemas de Andru.ia. Diseña, redacta y despliega nuevas habilidades (skills) dentro del repositorio siguiendo el... |
+| [20-andruia-niche-intelligence](ai-ml/20-andruia-niche-intelligence/SKILL.md) | `20-andruia-niche-intelligence` | `safe` | "Estratega de Inteligencia de Dominio de Andru.ia. Analiza el nicho específico de un proyecto para inyectar conocimientos, regu... |
 | [advanced-evaluation](ai-ml/advanced-evaluation/SKILL.md) | `advanced-evaluation` | `safe` | This skill should be used when the user asks to "implement LLM-as-judge", "compare model outputs", "create evaluation rubrics",... |
 | [agent-creator](ai-ml/agent-creator/SKILL.md) | `agent-creator` | `critical` | "Create custom AI subagents with proper plugin structure, persona generation, and companion routing skills." |
 | [agent-evaluation](ai-ml/agent-evaluation/SKILL.md) | `agent-evaluation` | `safe` | "Evaluate agent behavior with versioned cases and explicit verifiers. Use when comparing agent or prompt changes, reproducing f... |
@@ -1546,6 +1597,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [prompt-engineering](ai-ml/prompt-engineering/SKILL.md) | `prompt-engineering` | `none` | "Expert guide on prompt engineering patterns, best practices, and optimization techniques. Use when user wants to improve promp... |
 | [prompt-engineering-patterns](ai-ml/prompt-engineering-patterns/SKILL.md) | `prompt-engineering-patterns` | `critical` | "Master advanced prompt engineering techniques to maximize LLM performance, reliability, and controllability." |
 | [pydantic-ai](ai-ml/pydantic-ai/SKILL.md) | `pydantic-ai` | `safe` | "Build production-ready AI agents with PydanticAI — type-safe tool use, structured outputs, dependency injection, and multi-mod... |
+| [rag-implementation](ai-ml/rag-implementation/SKILL.md) | `rag-implementation` | `low` | Build Retrieval-Augmented Generation (RAG) systems for LLM applications with vector databases and semantic search. Use when imp... |
 | [recursive-context-pruning-token-budgeting](ai-ml/recursive-context-pruning-token-budgeting/SKILL.md) | `recursive-context-pruning-token-budgeting` | `safe` | "Optimizes AI agent performance by pruning redundant context, managing token usage, and enforcing ultra-concise, direct-to-valu... |
 | [routerbase-model-gateway](ai-ml/routerbase-model-gateway/SKILL.md) | `routerbase-model-gateway` | `safe` | "Integrate RouterBase as an OpenAI-compatible model gateway for routing GPT, Claude, Gemini, media, audio, and embedding reques... |
 | [rpa-designer](ai-ml/rpa-designer/SKILL.md) | `rpa-designer` | `low` | "Design RPA solutions with bot workflows and exception handling. TRIGGERS - Use when user needs help with rpa-designer related ... |
@@ -1584,13 +1636,11 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
-## <a id="andruia"></a>📁 Andruia (3 skills)
+## <a id="analytics"></a>📁 Analytics (1 skills)
 
 | Skill ID | Name | Risk | Description |
 | :--- | :--- | :---: | :--- |
-| [00-andruia-consultant](andruia/00-andruia-consultant/SKILL.md) | `00-andruia-consultant` | `safe` | "Arquitecto de Soluciones Principal y Consultor Tecnológico de Andru.ia. Diagnostica y traza la hoja de ruta óptima para proyec... |
-| [10-andruia-skill-smith](andruia/10-andruia-skill-smith/SKILL.md) | `10-andruia-skill-smith` | `safe` | "Ingeniero de Sistemas de Andru.ia. Diseña, redacta y despliega nuevas habilidades (skills) dentro del repositorio siguiendo el... |
-| [20-andruia-niche-intelligence](andruia/20-andruia-niche-intelligence/SKILL.md) | `20-andruia-niche-intelligence` | `safe` | "Estratega de Inteligencia de Dominio de Andru.ia. Analiza el nicho específico de un proyecto para inyectar conocimientos, regu... |
+| [analytics-tracking](analytics/analytics-tracking/SKILL.md) | `analytics-tracking` | `low` | > Design, audit, and improve analytics tracking systems that produce reliable, decision-ready data. Use when the user wants to ... |
 
 ---
 
@@ -1753,12 +1803,22 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
-## <a id="archiving"></a>📁 Archiving (2 skills)
+## <a id="archiving"></a>📁 Archiving (12 skills)
 
 | Skill ID | Name | Risk | Description |
 | :--- | :--- | :---: | :--- |
 | [arch-digital-preservation-oais-bagit](archiving/arch-digital-preservation-oais-bagit/SKILL.md) | `arch-digital-preservation-oais-bagit` | `low` | "Package and preserve long-term digital records conforming to ISO 14721 (OAIS Reference Model) and RFC 8493 BagIt specification... |
-| [records-management](archiving/records-management/SKILL.md) | `records-management` | `low` | "Organizational records lifecycle: classification, retention scheduling, disposition, compliance, and digital preservation" |
+| [archival-description](archiving/archival-description/SKILL.md) | `archival-description` | `low` | "Encode hierarchical archival collections conforming to Encoded Archival Description (EAD3) and ISAD(G) standards." |
+| [digital-curation](archiving/digital-curation/SKILL.md) | `digital-curation` | `low` | "Execute OAIS-compliant digital curation workflows from producer deposit to dissemination." |
+| [digital-preservation](archiving/digital-preservation/SKILL.md) | `digital-preservation` | `low` | "Implement long-term bit preservation, format normalization (PDF/A, TIFF), and emulation environments." |
+| [historical-archives](archiving/historical-archives/SKILL.md) | `historical-archives` | `low` | "Maintain physical manuscript archives adhering to archival climate control, acid-free rehousing, and disaster salvage." |
+| [information-governance](archiving/information-governance/SKILL.md) | `information-governance` | `low` | "Align enterprise information assets with privacy, cybersecurity, compliance, and business productivity." |
+| [legal-holds](archiving/legal-holds/SKILL.md) | `legal-holds` | `low` | "Orchestrate legal hold notices, custodial interviews, and auto-suspension of record disposal routines." |
+| [metadata](archiving/metadata/SKILL.md) | `metadata` | `low` | "Author standards-compliant preservation metadata, structural packaging, and provenance event audits." |
+| [preservation-planning](archiving/preservation-planning/SKILL.md) | `preservation-planning` | `low` | "Conduct risk assessments on digital format obsolescence and formulate preservation action plans." |
+| [records-classification](archiving/records-classification/SKILL.md) | `records-classification` | `low` | "Design functional, hierarchical business classification schemes reflecting organizational activities." |
+| [records-management](archiving/records-management/SKILL.md) | `records-management` | `low` | "Establish ISO 15489 records management policies, classification schemes, and disposition schedules." |
+| [retention-schedules](archiving/retention-schedules/SKILL.md) | `retention-schedules` | `low` | "Formulate statutory records retention schedules balancing regulatory requirements with discovery exposure." |
 
 ---
 
@@ -2981,7 +3041,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
-## <a id="business"></a>📁 Business (67 skills)
+## <a id="business"></a>📁 Business (74 skills)
 
 | Skill ID | Name | Risk | Description |
 | :--- | :--- | :---: | :--- |
@@ -2994,6 +3054,13 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [crossframe-org](business/crossframe-org/SKILL.md) | `crossframe-org` | `safe` | "Use when CrossFrame Suite routes explicit Chinese analysis of teams, projects, organizations, responsibility chains, feedback ... |
 | [customer-support](business/customer-support/SKILL.md) | `customer-support` | `critical` | Elite AI-powered customer support specialist mastering conversational AI, automated ticketing, sentiment analysis, and omnichan... |
 | [energy-procurement](business/energy-procurement/SKILL.md) | `energy-procurement` | `safe` | Codified expertise for electricity and gas procurement, tariff optimisation, demand charge management, renewable PPA evaluation... |
+| [fr-comptabilite](business/fr-comptabilite/SKILL.md) | `fr-comptabilite` | `low` | Guide French accounting with Plan Comptable General (PCG), journal entries, TVA declarations, and liasse fiscale preparation. |
+| [fr-droit-immobilier](business/fr-droit-immobilier/SKILL.md) | `fr-droit-immobilier` | `low` | Navigate French real estate law for individuals — leases, mandatory diagnostics, tenant rights, co-ownership, energy renovation... |
+| [fr-facturation-electronique](business/fr-facturation-electronique/SKILL.md) | `fr-facturation-electronique` | `low` | Implement French mandatory e-invoicing (Factur-X, UBL) — formats, PDP/PPF platforms, timeline, and compliance requirements for ... |
+| [fr-fec-generator](business/fr-fec-generator/SKILL.md) | `fr-fec-generator` | `low` | Generate and validate FEC (Fichier des Ecritures Comptables) files compliant with French DGFIP specifications. 18 mandatory fie... |
+| [fr-fiscalite-particulier](business/fr-fiscalite-particulier/SKILL.md) | `fr-fiscalite-particulier` | `low` | Guide French personal income tax (IR) — tax brackets, deductions, credits, micro-entrepreneur, rental income, capital gains, cr... |
+| [fr-notariat](business/fr-notariat/SKILL.md) | `fr-notariat` | `low` | Navigate French notarial acts — fee calculation (emoluments), succession, donation, SCI creation, property transfer, and regula... |
+| [fr-recherche-emploi](business/fr-recherche-emploi/SKILL.md) | `fr-recherche-emploi` | `low` | Structure a job search for the French/European market — CV format europass, cover letter VOUS-MOI-NOUS, job evaluation scoring,... |
 | [hr-pro](business/hr-pro/SKILL.md) | `hr-pro` | `none` | Professional, ethical HR partner for hiring, onboarding/offboarding, PTO and leave, performance, compliant policies, and employ... |
 | [inventory-demand-planning](business/inventory-demand-planning/SKILL.md) | `inventory-demand-planning` | `safe` | Codified expertise for demand forecasting, safety stock optimisation, replenishment planning, and promotional lift estimation a... |
 | [kpi-dashboard-design](business/kpi-dashboard-design/SKILL.md) | `kpi-dashboard-design` | `critical` | "Comprehensive patterns for designing effective Key Performance Indicator (KPI) dashboards that drive business decisions." |
@@ -3593,22 +3660,39 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
-## <a id="compliance"></a>📁 Compliance (26 skills)
+## <a id="compliance"></a>📁 Compliance (55 skills)
 
 | Skill ID | Name | Risk | Description |
 | :--- | :--- | :---: | :--- |
+| [access-control-identity-audit](compliance/access-control-identity-audit/SKILL.md) | `access-control-identity-audit` | `low` | Audits identity and access management—least privilege, RBAC, MFA, privileged access, joiner-mover-leaver—for SOC 2 CC6.1–CC6.8,... |
 | [analyzing-erisa-and-benefit-plan-compliance](compliance/analyzing-erisa-and-benefit-plan-compliance/SKILL.md) | `analyzing-erisa-and-benefit-plan-compliance` | `low` | Evaluates ERISA plan asset rules with 25% test, VCOC/REOC exemptions, and benefit plan investor tracking. Use when analyzing ER... |
+| [audit-logging-integrity](compliance/audit-logging-integrity/SKILL.md) | `audit-logging-integrity` | `low` | Designs and validates tamper-evident audit logging, SIEM integration, and log retention for HIPAA §164.312(b) audit controls, S... |
 | [auditing-hipaa-compliance](compliance/auditing-hipaa-compliance/SKILL.md) | `auditing-hipaa-compliance` | `low` | Conducts HIPAA compliance assessments with Privacy Rule, Security Rule, and Breach Notification analysis. Use when auditing HIP... |
+| [breach-incident-response](compliance/breach-incident-response/SKILL.md) | `breach-incident-response` | `low` | Executes USA breach and security incident response—HIPAA Breach Notification Rule (45 CFR §164.400–414), HITECH 60-day notifica... |
+| [ccpa-cpra-privacy-rights](compliance/ccpa-cpra-privacy-rights/SKILL.md) | `ccpa-cpra-privacy-rights` | `low` | Implements California Consumer Privacy Act (CCPA) as amended by the California Privacy Rights Act (CPRA)—Cal. Civ. Code §1798.1... |
+| [cmmc-nist-800-171](compliance/cmmc-nist-800-171/SKILL.md) | `cmmc-nist-800-171` | `low` | Implements CMMC 2.0 Level 2 assessments aligned to NIST SP 800-171 Revision 2 (110 security requirements across 14 families) fo... |
+| [compliance-as-code-governance](compliance/compliance-as-code-governance/SKILL.md) | `compliance-as-code-governance` | `low` | Implements policy-as-code and infrastructure compliance scanning—OPA/Rego policies, Terraform static analysis, CI gates, and dr... |
 | [compliance-handling](compliance/compliance-handling/SKILL.md) | `compliance-handling` | `low` | When the user wants to build or improve a sales bot's ability to respect opt-outs, DNC lists, and regulatory requirements like ... |
 | [conducting-pre-trade-compliance-checks](compliance/conducting-pre-trade-compliance-checks/SKILL.md) | `conducting-pre-trade-compliance-checks` | `low` | Structures pre-trade compliance with restricted list screening, position limits, and regulatory constraint verification. Use wh... |
 | [conducting-reg-ab-compliance](compliance/conducting-reg-ab-compliance/SKILL.md) | `conducting-reg-ab-compliance` | `low` | Structures Regulation AB II compliance with asset-level data requirements, servicer reporting, and shelf registration eligibili... |
 | [conversation-compliance-auditing](compliance/conversation-compliance-auditing/SKILL.md) | `conversation-compliance-auditing` | `low` | When the user wants to build or improve a sales bot's ability to ensure conversations meet regulatory and company standards. Al... |
+| [coppa-children-privacy](compliance/coppa-children-privacy/SKILL.md) | `coppa-children-privacy` | `low` | Implements FTC COPPA (15 U.S.C. §6501–6506; 16 CFR Part 312) for operators of websites, apps, and AI agents directed to childre... |
 | [eu-ai-act-compliance](compliance/eu-ai-act-compliance/SKILL.md) | `eu-ai-act-compliance` | `low` | Classify AI system risk under EU AI Act (Reg 2024/1689), generate Article 50 disclosures, and design conformity audit trails. |
 | [eu-ai-act-content-disclosure](compliance/eu-ai-act-content-disclosure/SKILL.md) | `eu-ai-act-content-disclosure` | `low` | Generate AI Act Article 50 compliant disclosure notices, metadata tags, and content marking for AI-generated text, images, audi... |
 | [eu-dora-compliance](compliance/eu-dora-compliance/SKILL.md) | `eu-dora-compliance` | `low` | Implement DORA Regulation (2022/2554) digital operational resilience for financial entities — ICT risk management, incident rep... |
 | [eu-nis2-compliance](compliance/eu-nis2-compliance/SKILL.md) | `eu-nis2-compliance` | `low` | Implement NIS2 Directive (2022/2555) cybersecurity obligations for essential and important entities — risk management, incident... |
 | [eu-regulatory-router](compliance/eu-regulatory-router/SKILL.md) | `eu-regulatory-router` | `low` | Identify which EU regulations (AI Act, NIS2, DORA, GDPR) apply to your system based on sector, data types, and entity size, the... |
+| [fedramp-moderate-baseline](compliance/fedramp-moderate-baseline/SKILL.md) | `fedramp-moderate-baseline` | `low` | Implements FedRAMP Moderate baseline assessments using NIST SP 800-53 Revision 5 controls—authorization boundary definition, Sy... |
+| [ferpa-education-records](compliance/ferpa-education-records/SKILL.md) | `ferpa-education-records` | `low` | Implements FERPA (20 U.S.C. §1232g; 34 CFR Part 99) protections for student education records in EdTech, LMS integrations, and ... |
 | [gdpr-data-protection](compliance/gdpr-data-protection/SKILL.md) | `gdpr-data-protection` | `low` | Implement GDPR (Reg 2016/679) data protection — DPIA templates, Art.30 processing records, data subject rights, legal bases, an... |
+| [gdpr-us-multinational](compliance/gdpr-us-multinational/SKILL.md) | `gdpr-us-multinational` | `low` | Implements GDPR compliance workflows for US-headquartered multinationals—EU/EEA/UK data subjects, Articles 5-7 lawful basis, Ar... |
+| [glba-ffiec-financial-privacy](compliance/glba-ffiec-financial-privacy/SKILL.md) | `glba-ffiec-financial-privacy` | `low` | Implements Gramm-Leach-Bliley Act (GLBA) Safeguards Rule (16 CFR Part 314) and Privacy Rule (16 CFR Part 313) compliance aligne... |
+| [hipaa-baa-vendor-assessment](compliance/hipaa-baa-vendor-assessment/SKILL.md) | `hipaa-baa-vendor-assessment` | `low` | Reviews Business Associate Agreements and subprocessors for LLM vendors, cloud providers, and MCP server operators under HIPAA ... |
+| [hipaa-phi-redaction-pipeline](compliance/hipaa-phi-redaction-pipeline/SKILL.md) | `hipaa-phi-redaction-pipeline` | `low` | Configures and validates the Presidio-based PHI redaction pipeline—DLP entity detection, reversible tokenization before LLM ing... |
+| [hipaa-privacy-minimum-necessary](compliance/hipaa-privacy-minimum-necessary/SKILL.md) | `hipaa-privacy-minimum-necessary` | `low` | Implements HIPAA Privacy Rule minimum necessary standard—45 CFR §164.502(b)—plus §164.514 de-identification, Limited Data Sets,... |
+| [hipaa-technical-safeguards](compliance/hipaa-technical-safeguards/SKILL.md) | `hipaa-technical-safeguards` | `low` | Implements HIPAA Security Rule technical safeguards (45 CFR §164.312)—access control, audit controls, integrity, person/entity ... |
+| [hitech-breach-notification](compliance/hitech-breach-notification/SKILL.md) | `hitech-breach-notification` | `low` | Implements HITECH Act breach notification depth beyond baseline HIPAA—42 U.S.C. §17921–17923, ARRA Title XIII Subtitle D, OCR b... |
+| [iso27001-annex-a-controls](compliance/iso27001-annex-a-controls/SKILL.md) | `iso27001-annex-a-controls` | `low` | Implements ISO/IEC 27001:2022 Annex A control assessment—93 controls across Organizational, People, Physical, and Technological... |
 | [managing-accreditation-compliance](compliance/managing-accreditation-compliance/SKILL.md) | `managing-accreditation-compliance` | `low` | Tracks Joint Commission/HFAP/DNV accreditation standards compliance with survey preparation. Use when preparing for accreditati... |
 | [managing-best-execution-compliance](compliance/managing-best-execution-compliance/SKILL.md) | `managing-best-execution-compliance` | `low` | Structures best execution monitoring with venue analysis, systematic internalization assessment, and regulatory compliance docu... |
 | [managing-billing-compliance](compliance/managing-billing-compliance/SKILL.md) | `managing-billing-compliance` | `low` | Structures billing compliance programs with audit methodology and corrective action protocols. Use when auditing billing practi... |
@@ -3621,8 +3705,20 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [managing-regulatory-fund-compliance](compliance/managing-regulatory-fund-compliance/SKILL.md) | `managing-regulatory-fund-compliance` | `low` | Coordinates fund regulatory requirements across SEC, AIFMD, and local jurisdiction registration, reporting, and compliance obli... |
 | [managing-research-compliance](compliance/managing-research-compliance/SKILL.md) | `managing-research-compliance` | `low` | Monitors research compliance with federal regulations (21 CFR, 45 CFR 46) and institutional policies. Use when ensuring researc... |
 | [managing-state-regulatory-compliance](compliance/managing-state-regulatory-compliance/SKILL.md) | `managing-state-regulatory-compliance` | `low` | Monitors state-specific healthcare regulatory requirements including licensing, reporting, and scope of practice. Use when trac... |
+| [mcp-compliance-integration](compliance/mcp-compliance-integration/SKILL.md) | `mcp-compliance-integration` | `low` | Hardens Model Context Protocol (MCP) server integrations for compliance—OAuth 2.1, PKCE, scoped tool sets, transport security, ... |
+| [nist-csf-2-assessment](compliance/nist-csf-2-assessment/SKILL.md) | `nist-csf-2-assessment` | `low` | Performs NIST Cybersecurity Framework 2.0 gap assessments across six Functions—Govern, Identify, Protect, Detect, Respond, Reco... |
+| [pci-dss-encryption-key-management](compliance/pci-dss-encryption-key-management/SKILL.md) | `pci-dss-encryption-key-management` | `low` | Audits PCI-DSS v4.0 Requirement 3 (protect stored account data) and Requirement 4 (protect cardholder data with strong cryptogr... |
+| [pci-dss-network-segmentation](compliance/pci-dss-network-segmentation/SKILL.md) | `pci-dss-network-segmentation` | `low` | Validates PCI-DSS v4.0 network segmentation and scope reduction—Requirement 1.x (firewalls, network security controls) and 2.x ... |
+| [pci-dss-script-audit](compliance/pci-dss-script-audit/SKILL.md) | `pci-dss-script-audit` | `low` | Automates PCI-DSS v4.0 Requirements 6.4.3 (payment-page script authorization, inventory, integrity hashes, and business justifi... |
+| [soc2-ccm-continuous-monitoring](compliance/soc2-ccm-continuous-monitoring/SKILL.md) | `soc2-ccm-continuous-monitoring` | `low` | Implements Continuous Control Monitoring (CCM) for SOC 2—automated control testing, configuration drift detection, predictive r... |
+| [soc2-evidence-collection](compliance/soc2-evidence-collection/SKILL.md) | `soc2-evidence-collection` | `low` | Automates SOC 2 evidence gathering—screenshots, configuration exports, access reviews, log samples, and audit-trail packaging w... |
+| [soc2-trust-services-criteria](compliance/soc2-trust-services-criteria/SKILL.md) | `soc2-trust-services-criteria` | `low` | Maps organizational controls and evidence to AICPA SOC 2 Trust Services Criteria (2017 TSC with 2022 revisions)—Security (CC), ... |
 | [sox-compliance](compliance/sox-compliance/SKILL.md) | `sox-compliance` | `low` | When the user wants to plan or execute SOX 404 control testing, select audit samples, build testing workpapers, or classify con... |
+| [sox-itgc-audit](compliance/sox-itgc-audit/SKILL.md) | `sox-itgc-audit` | `low` | Performs Sarbanes-Oxley Act (SOX) IT General Controls (ITGC) audits aligned to COSO Internal Control—Integrated Framework and P... |
 | [structuring-risk-retention-compliance](compliance/structuring-risk-retention-compliance/SKILL.md) | `structuring-risk-retention-compliance` | `low` | Designs risk retention structures meeting US and EU requirements with vertical, horizontal, and L-shaped retention options. Use... |
+| [us-state-privacy-laws](compliance/us-state-privacy-laws/SKILL.md) | `us-state-privacy-laws` | `low` | Implements comprehensive US state comprehensive privacy law assessments—Virginia VCDPA (Va. Code §59.1-575), Colorado CPA (C.R.... |
+| [using-compliance-agent-skills](compliance/using-compliance-agent-skills/SKILL.md) | `using-compliance-agent-skills` | `low` | Meta entry skill for the USA compliance agent repository. Routes tasks to HIPAA, HITECH, PCI-DSS, SOC 2, ISO 27001, NIST CSF 2.... |
+| [vendor-third-party-risk](compliance/vendor-third-party-risk/SKILL.md) | `vendor-third-party-risk` | `low` | Performs third-party and vendor risk assessments for compliance programs—security questionnaires, SOC 2 report review, control ... |
 
 ---
 
@@ -4517,12 +4613,24 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
-## <a id="customer-service"></a>📁 Customer Service (2 skills)
+## <a id="customer-service"></a>📁 Customer Service (14 skills)
 
 | Skill ID | Name | Risk | Description |
 | :--- | :--- | :---: | :--- |
+| [call-center](customer-service/call-center/SKILL.md) | `call-center` | `low` | "Design IVR decision trees, skill-based ACD routing, and monitor average handle time (AHT) and abandon rate." |
+| [complaint-management](customer-service/complaint-management/SKILL.md) | `complaint-management` | `low` | "De-escalate acute customer grievances, conduct root-cause defect logging, and issue regulatory complaint responses." |
 | [cust-omnichannel-sla-escalation-matrix](customer-service/cust-omnichannel-sla-escalation-matrix/SKILL.md) | `cust-omnichannel-sla-escalation-matrix` | `low` | "Architect tiered customer support routing, multi-tier escalation matrices, and SLA breach warning automation across Zendesk, S... |
-| [ticket-triage](customer-service/ticket-triage/SKILL.md) | `ticket-triage` | `low` | "Support ticket classification, priority assignment, routing, SLA management, and escalation workflows" |
+| [customer-feedback](customer-service/customer-feedback/SKILL.md) | `customer-feedback` | `low` | "Deploy post-interaction CSAT surveys, transactional CES, and relational Net Promoter Score loops." |
+| [escalation](customer-service/escalation/SKILL.md) | `escalation` | `low` | "Manage technical escalation pathways, engineer-on-call pages, and customer stakeholder updates." |
+| [helpdesk](customer-service/helpdesk/SKILL.md) | `helpdesk` | `low` | "Configure multi-channel helpdesk ticket lifecycles, macros, auto-responders, and business hours." |
+| [knowledge-base](customer-service/knowledge-base/SKILL.md) | `knowledge-base` | `low` | "Author searchable, SEO-optimized troubleshooting articles and FAQs conforming to Knowledge-Centered Service (KCS)." |
+| [live-chat](customer-service/live-chat/SKILL.md) | `live-chat` | `low` | "Manage concurrent live chat sessions maintaining sub-30-second first response times and high CSAT." |
+| [refund-processing](customer-service/refund-processing/SKILL.md) | `refund-processing` | `low` | "Process payment gateway charge reversals, store credits, and detect return fraud anomalies." |
+| [returns](customer-service/returns/SKILL.md) | `returns` | `low` | "Orchestrate automated return shipping labels, inspection grading, and inventory restocking." |
+| [service-recovery](customer-service/service-recovery/SKILL.md) | `service-recovery` | `low` | "Transform catastrophic service failures into brand loyalty through empowered compensatory concessions." |
+| [support-analytics](customer-service/support-analytics/SKILL.md) | `support-analytics` | `low` | "Forecast ticket volumes using Erlang C staffing models and optimize agent shift schedules." |
+| [support-quality](customer-service/support-quality/SKILL.md) | `support-quality` | `low` | "Calibrate support quality scores across empathy, technical accuracy, compliance, and procedural adherence." |
+| [ticket-triage](customer-service/ticket-triage/SKILL.md) | `ticket-triage` | `low` | "Classify incoming ticket urgency, sentiment, and intent to route to specialized tier specialists." |
 
 ---
 
@@ -5062,7 +5170,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
-## <a id="database"></a>📁 Database (23 skills)
+## <a id="database"></a>📁 Database (24 skills)
 
 | Skill ID | Name | Risk | Description |
 | :--- | :--- | :---: | :--- |
@@ -5077,6 +5185,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [database-security](database/database-security/SKILL.md) | `database-security` | `offensive` | "Authorized database security assessment across PostgreSQL, MySQL, MSSQL, MongoDB, and Redis: exposure, authorization gaps, UDF... |
 | [drizzle-migration-conflict](database/drizzle-migration-conflict/SKILL.md) | `drizzle-migration-conflict` | `critical` | "Diagnose, repair, and prevent Drizzle Kit migration conflicts involving generated SQL, snapshots, journals, merge queues, and ... |
 | [drizzle-orm-expert](database/drizzle-orm-expert/SKILL.md) | `drizzle-orm-expert` | `safe` | "Expert in Drizzle ORM for TypeScript — schema design, relational queries, migrations, and serverless database integration. Use... |
+| [neon-postgres](database/neon-postgres/SKILL.md) | `neon-postgres` | `low` | "Expert patterns for Neon serverless Postgres, branching, connection pooling, and Prisma/Drizzle integration Use when: neon dat... |
 | [neon-postgres-branches](database/neon-postgres-branches/SKILL.md) | `neon-postgres-branches` | `critical` | "Choose and create the right Neon branch type for testing and development. Use when users ask about Neon branching, migration t... |
 | [nosql-expert](database/nosql-expert/SKILL.md) | `nosql-expert` | `none` | "Expert guidance for distributed NoSQL databases (Cassandra, DynamoDB). Focuses on mental models, query-first modeling, single-... |
 | [postgres-best-practices](database/postgres-best-practices/SKILL.md) | `postgres-best-practices` | `safe` | "Postgres performance optimization and best practices from Supabase. Use this skill when writing, reviewing, or optimizing Post... |
@@ -5119,7 +5228,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
-## <a id="design"></a>📁 Design (129 skills)
+## <a id="design"></a>📁 Design (225 skills)
 
 | Skill ID | Name | Risk | Description |
 | :--- | :--- | :---: | :--- |
@@ -5128,10 +5237,20 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [accessibility-audit-ux](design/accessibility-audit-ux/SKILL.md) | `accessibility-audit-ux` | `low` | "Audit UX accessibility with WCAG. TRIGGERS - Use when user needs help with accessibility-audit-ux related tasks." |
 | [accessibility-compliance-accessibility-audit](design/accessibility-compliance-accessibility-audit/SKILL.md) | `accessibility-compliance-accessibility-audit` | `safe` | "You are an accessibility expert specializing in WCAG compliance, inclusive design, and assistive technology compatibility. Con... |
 | [agent-designer](design/agent-designer/SKILL.md) | `skill` | `low` | "Imported from robertbstillwell/marketing-skills" |
+| [airbnb-ui-skills](design/airbnb-ui-skills/SKILL.md) | `airbnb-ui-skills` | `low` | Airbnb's UI design system. Use when building interfaces inspired by Airbnb's aesthetic - light mode, Inter font, 4px grid. |
+| [airtable-ui-skills](design/airtable-ui-skills/SKILL.md) | `airtable-ui-skills` | `low` | Airtable's UI design system. Use when building interfaces inspired by Airtable's aesthetic - light mode, Inter font, 4px grid. |
+| [amplitude-ui-skills](design/amplitude-ui-skills/SKILL.md) | `amplitude-ui-skills` | `low` | Amplitude's UI design system. Use when building interfaces inspired by Amplitude's aesthetic - light mode, Inter font, 4px grid. |
+| [anthropic-ui-skills](design/anthropic-ui-skills/SKILL.md) | `anthropic-ui-skills` | `low` | Anthropic's UI design system. Use when building interfaces inspired by Anthropic's aesthetic - light mode, Inter font, 4px grid. |
 | [antigravity-design-expert](design/antigravity-design-expert/SKILL.md) | `antigravity-design-expert` | `safe` | Core UI/UX engineering skill for building highly interactive, spatial, weightless, and glassmorphism-based web interfaces using... |
 | [api-design-reviewer](design/api-design-reviewer/SKILL.md) | `skill` | `low` | "Imported from robertbstillwell/marketing-skills" |
+| [apple-ui-skills](design/apple-ui-skills/SKILL.md) | `apple-ui-skills` | `low` | Apple's UI design system. Use when building interfaces inspired by Apple's aesthetic - light mode, Inter font, 4px grid. |
+| [arc-ui-skills](design/arc-ui-skills/SKILL.md) | `arc-ui-skills` | `low` | Arc's UI design system. Use when building interfaces inspired by Arc's aesthetic - light mode, Inter font, 4px grid. |
+| [ashby-ui-skills](design/ashby-ui-skills/SKILL.md) | `ashby-ui-skills` | `low` | Ashby's UI design system. Use when building interfaces inspired by Ashby's aesthetic - dark mode, Inter font, 4px grid. |
 | [automated-triage](design/automated-triage/SKILL.md) | `automated-triage` | `critical` | Triage Monte Carlo alerts interactively or build an automated workflow. Fetch, score, and troubleshoot alerts using MCP tools n... |
+| [awwwards-ui-skills](design/awwwards-ui-skills/SKILL.md) | `awwwards-ui-skills` | `low` | Awwwards's UI design system. Use when building interfaces inspired by Awwwards's aesthetic - light mode, Inter font, 4px grid. |
 | [baseline-ui](design/baseline-ui/SKILL.md) | `baseline-ui` | `critical` | Quickly deslop UI code by fixing spacing, hierarchy, typography, and small layout issues. Use when the interface needs a fast c... |
+| [bear-ui-skills](design/bear-ui-skills/SKILL.md) | `bear-ui-skills` | `low` | Bear's UI design system. Use when building interfaces inspired by Bear's aesthetic - light mode, Inter font, 4px grid. |
+| [beehiiv-ui-skills](design/beehiiv-ui-skills/SKILL.md) | `beehiiv-ui-skills` | `low` | Beehiiv's UI design system. Use when building interfaces inspired by Beehiiv's aesthetic - light mode, Inter font, 4px grid. |
 | [bio-clinical-biostatistics-adaptive-designs](design/bio-clinical-biostatistics-adaptive-designs/SKILL.md) | `bio-clinical-biostatistics-adaptive-designs` | `low` | Designs adaptive clinical trials including group-sequential (O'Brien-Fleming, Pocock, Lan-DeMets spending), sample-size re-esti... |
 | [bio-covalent-design](design/bio-covalent-design/SKILL.md) | `bio-covalent-design` | `low` | Designs covalent inhibitors and warheads targeting cysteine, lysine, serine, threonine, tyrosine, and aspartate residues, with ... |
 | [bio-crispr-screens-library-design](design/bio-crispr-screens-library-design/SKILL.md) | `bio-crispr-screens-library-design` | `low` | Designs pooled sgRNA libraries for CRISPR knockout, interference (CRISPRi), activation (CRISPRa), Cas12a multiplex, base-editor... |
@@ -5151,17 +5270,28 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [bio-primer-design-primer-specificity](design/bio-primer-design-primer-specificity/SKILL.md) | `bio-primer-design-primer-specificity` | `low` | Checks whether a PCR primer PAIR amplifies only the intended target genome-wide, using pair-aware in-silico PCR (MFEprimer-3.0,... |
 | [bio-primer-design-primer-validation](design/bio-primer-design-primer-validation/SKILL.md) | `bio-primer-design-primer-validation` | `low` | Validates chosen PCR/qPCR oligos for intramolecular thermodynamic liabilities with primer3-py - hairpins, self-dimers, cross-di... |
 | [bio-primer-design-qpcr-primers](design/bio-primer-design-qpcr-primers/SKILL.md) | `bio-primer-design-qpcr-primers` | `low` | Co-designs qPCR/RT-qPCR primers and hydrolysis (TaqMan) or molecular-beacon probes with primer3-py (PRIMER_PICK_INTERNAL_OLIGO,... |
+| [brex-ui-skills](design/brex-ui-skills/SKILL.md) | `brex-ui-skills` | `low` | Brex's UI design system. Use when building interfaces inspired by Brex's aesthetic - light mode, Inter font, 4px grid. |
+| [cal-ui-skills](design/cal-ui-skills/SKILL.md) | `cal-ui-skills` | `low` | Cal's UI design system. Use when building interfaces inspired by Cal's aesthetic - light mode, Inter font, 4px grid. |
 | [canva-automation](design/canva-automation/SKILL.md) | `canva-automation` | `critical` | "Automate Canva tasks via Rube MCP (Composio): designs, exports, folders, brand templates, autofill. Always search tools first ... |
 | [card-sorting-study](design/card-sorting-study/SKILL.md) | `card-sorting-study` | `low` | "Plan card sorting studies. TRIGGERS - Use when user needs help with card-sorting-study related tasks." |
+| [clerk-ui-skills](design/clerk-ui-skills/SKILL.md) | `clerk-ui-skills` | `low` | Clerk's UI design system. Use when building interfaces inspired by Clerk's aesthetic - light mode, Inter font, 4px grid. |
+| [coda-ui-skills](design/coda-ui-skills/SKILL.md) | `coda-ui-skills` | `low` | Coda's UI design system. Use when building interfaces inspired by Coda's aesthetic - light mode, Inter font, 4px grid. |
+| [codeium-ui-skills](design/codeium-ui-skills/SKILL.md) | `codeium-ui-skills` | `low` | Codeium's UI design system. Use when building interfaces inspired by Codeium's aesthetic - dark mode, Inter font, 4px grid. |
 | [cognitive-walkthrough](design/cognitive-walkthrough/SKILL.md) | `cognitive-walkthrough` | `low` | "Conduct cognitive walkthroughs. TRIGGERS - Use when user needs help with cognitive-walkthrough related tasks." |
 | [color-system-designer-ux](design/color-system-designer-ux/SKILL.md) | `color-system-designer-ux` | `low` | "Design color systems for products. TRIGGERS - Use when user needs help with color-system-designer-ux related tasks." |
 | [community-building](design/community-building/SKILL.md) | `community-building` | `critical` | "When the user wants to build, grow, or improve a developer community on Discord, Slack, or forums." |
 | [content-design-system](design/content-design-system/SKILL.md) | `content-design-system` | `low` | "Design content design systems. TRIGGERS - Use when user needs help with content-design-system related tasks." |
 | [contextual-inquiry-plan](design/contextual-inquiry-plan/SKILL.md) | `contextual-inquiry-plan` | `low` | "Plan contextual inquiry research. TRIGGERS - Use when user needs help with contextual-inquiry-plan related tasks." |
+| [convertkit-ui-skills](design/convertkit-ui-skills/SKILL.md) | `convertkit-ui-skills` | `low` | Convertkit's UI design system. Use when building interfaces inspired by Convertkit's aesthetic - light mode, Inter font, 4px grid. |
+| [convex-ui-skills](design/convex-ui-skills/SKILL.md) | `convex-ui-skills` | `low` | Convex's UI design system. Use when building interfaces inspired by Convex's aesthetic - dark mode, Inter font, 4px grid. |
+| [copy-ai-ui-skills](design/copy-ai-ui-skills/SKILL.md) | `copy-ai-ui-skills` | `low` | Copy Ai's UI design system. Use when building interfaces inspired by Copy Ai's aesthetic - light mode, Inter font, 4px grid. |
+| [craft-ui-skills](design/craft-ui-skills/SKILL.md) | `craft-ui-skills` | `low` | Craft's UI design system. Use when building interfaces inspired by Craft's aesthetic - light mode, Inter font, 4px grid. |
 | [dark-pattern-audit](design/dark-pattern-audit/SKILL.md) | `dark-pattern-audit` | `low` | "Audit UX for dark patterns. TRIGGERS - Use when user needs help with dark-pattern-audit related tasks." |
 | [dashboard-ux-design](design/dashboard-ux-design/SKILL.md) | `dashboard-ux-design` | `low` | "Design dashboard UX patterns. TRIGGERS - Use when user needs help with dashboard-ux-design related tasks." |
 | [data-table-design](design/data-table-design/SKILL.md) | `data-table-design` | `low` | "Design data table UX patterns. TRIGGERS - Use when user needs help with data-table-design related tasks." |
 | [database-designer](design/database-designer/SKILL.md) | `skill` | `low` | "Imported from robertbstillwell/marketing-skills" |
+| [deel-ui-skills](design/deel-ui-skills/SKILL.md) | `deel-ui-skills` | `low` | Deel's UI design system. Use when building interfaces inspired by Deel's aesthetic - light mode, Inter font, 4px grid. |
+| [descript-ui-skills](design/descript-ui-skills/SKILL.md) | `descript-ui-skills` | `low` | Descript's UI design system. Use when building interfaces inspired by Descript's aesthetic - dark mode, Inter font, 4px grid. |
 | [design-critique-guide](design/design-critique-guide/SKILL.md) | `design-critique-guide` | `low` | "Guide design critique sessions. TRIGGERS - Use when user needs help with design-critique-guide related tasks." |
 | [design-handoff-guide](design/design-handoff-guide/SKILL.md) | `design-handoff-guide` | `low` | "Design handoff guidelines for dev. TRIGGERS - Use when user needs help with design-handoff-guide related tasks." |
 | [design-md](design/design-md/SKILL.md) | `design-md` | `safe` | "Analyze Stitch projects and synthesize a semantic design system into DESIGN.md files" |
@@ -5176,53 +5306,121 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [designing-clinical-trials](design/designing-clinical-trials/SKILL.md) | `designing-clinical-trials` | `low` | Structures clinical trial protocol design with study type selection, endpoint definition, and power calculation. Use when desig... |
 | [designing-observational-studies](design/designing-observational-studies/SKILL.md) | `designing-observational-studies` | `low` | Structures observational study designs (cohort, case-control, cross-sectional) with bias mitigation strategies. Use when design... |
 | [diary-study-plan](design/diary-study-plan/SKILL.md) | `diary-study-plan` | `low` | "Plan diary studies for research. TRIGGERS - Use when user needs help with diary-study-plan related tasks." |
+| [discord-ui-skills](design/discord-ui-skills/SKILL.md) | `discord-ui-skills` | `low` | Discord's UI design system. Use when building interfaces inspired by Discord's aesthetic - light mode, Inter font, 4px grid. |
 | [distillation-shortcut-design](design/distillation-shortcut-design/SKILL.md) | `distillation-shortcut-design` | `low` | >- Estimate distillation column theoretical stages, minimum reflux, feed-stage location, and McCabe-Thiele stair-stepping for b... |
+| [dribbble-ui-skills](design/dribbble-ui-skills/SKILL.md) | `dribbble-ui-skills` | `low` | Dribbble's UI design system. Use when building interfaces inspired by Dribbble's aesthetic - light mode, Inter font, 4px grid. |
 | [emotional-arc-designer](design/emotional-arc-designer/SKILL.md) | `emotional-arc-designer` | `safe` | "One sentence - what this skill does and when to invoke it" |
 | [empathy-map-builder](design/empathy-map-builder/SKILL.md) | `empathy-map-builder` | `low` | "Build empathy maps for users. TRIGGERS - Use when user needs help with empathy-map-builder related tasks." |
 | [empty-state-designer](design/empty-state-designer/SKILL.md) | `empty-state-designer` | `low` | "Design empty states for apps. TRIGGERS - Use when user needs help with empty-state-designer related tasks." |
 | [error-state-designer](design/error-state-designer/SKILL.md) | `error-state-designer` | `low` | "Design error states for apps. TRIGGERS - Use when user needs help with error-state-designer related tasks." |
+| [experiment-design](design/experiment-design/SKILL.md) | `experiment-design` | `low` | >- Design a minimal, decision-relevant experiment with fair baselines, explicit controls, and measurable success criteria — and... |
 | [fail-safe-design](design/fail-safe-design/SKILL.md) | `fail-safe-design` | `low` | "Use when designing or reviewing robot firmware/software that must fail safely — watchdogs, command timeouts, actuator safe sta... |
 | [figma-automation](design/figma-automation/SKILL.md) | `figma-automation` | `safe` | "Automate Figma tasks via Rube MCP (Composio): files, components, design tokens, comments, exports. Always search tools first f... |
+| [figma-ui-skills](design/figma-ui-skills/SKILL.md) | `figma-ui-skills` | `low` | Figma's UI design system. Use when building interfaces inspired by Figma's aesthetic - light mode, Inter font, 4px grid. |
 | [form-design-guide](design/form-design-guide/SKILL.md) | `form-design-guide` | `low` | "Design form UX guidelines. TRIGGERS - Use when user needs help with form-design-guide related tasks." |
 | [formik-patterns](design/formik-patterns/SKILL.md) | `formik-patterns` | `critical` | Formik form handling with validation patterns. Use when building forms, implementing validation, or handling form submission. |
+| [framer-ui-skills](design/framer-ui-skills/SKILL.md) | `framer-ui-skills` | `low` | Framer's UI design system. Use when building interfaces inspired by Framer's aesthetic - dark mode, Inter font, 4px grid. |
+| [front-ui-skills](design/front-ui-skills/SKILL.md) | `front-ui-skills` | `low` | Front's UI design system. Use when building interfaces inspired by Front's aesthetic - light mode, Inter font, 4px grid. |
+| [frontend-design](design/frontend-design/SKILL.md) | `frontend-design` | `low` | Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build w... |
 | [gemini-live-api-dev](design/gemini-live-api-dev/SKILL.md) | `gemini-live-api-dev` | `critical` | "Use this skill when building real-time, bidirectional streaming applications with the Gemini Live API." |
+| [ghost-ui-skills](design/ghost-ui-skills/SKILL.md) | `ghost-ui-skills` | `low` | Ghost's UI design system. Use when building interfaces inspired by Ghost's aesthetic - dark mode, Inter font, 4px grid. |
+| [github-ui-skills](design/github-ui-skills/SKILL.md) | `github-ui-skills` | `low` | GitHub's UI design system. Use when building interfaces inspired by GitHub's aesthetic - dark mode, Inter font, 4px grid. |
+| [gumroad-ui-skills](design/gumroad-ui-skills/SKILL.md) | `gumroad-ui-skills` | `low` | Gumroad's UI design system. Use when building interfaces inspired by Gumroad's aesthetic - dark mode, Inter font, 4px grid. |
+| [gusto-ui-skills](design/gusto-ui-skills/SKILL.md) | `gusto-ui-skills` | `low` | Gusto's UI design system. Use when building interfaces inspired by Gusto's aesthetic - light mode, Inter font, 4px grid. |
+| [hugging-face-ui-skills](design/hugging-face-ui-skills/SKILL.md) | `hugging-face-ui-skills` | `low` | Hugging Face's UI design system. Use when building interfaces inspired by Hugging Face's aesthetic - dark mode, Inter font, 4px... |
 | [icon-system-guide](design/icon-system-guide/SKILL.md) | `icon-system-guide` | `low` | "Design icon system guidelines. TRIGGERS - Use when user needs help with icon-system-guide related tasks." |
 | [information-architecture](design/information-architecture/SKILL.md) | `information-architecture` | `low` | "Design information architectures. TRIGGERS - Use when user needs help with information-architecture related tasks." |
 | [integrated-circuit-designer](design/integrated-circuit-designer/SKILL.md) | `agents` | `low` | "Imported from K-Dense-AI/scientific-agents" |
+| [intercom-ui-skills](design/intercom-ui-skills/SKILL.md) | `intercom-ui-skills` | `low` | Intercom's UI design system. Use when building interfaces inspired by Intercom's aesthetic - light mode, Inter font, 4px grid. |
 | [interview-system-designer](design/interview-system-designer/SKILL.md) | `interview-system-designer` | `low` | This skill should be used when the user asks to "design interview processes", "create hiring pipelines", "calibrate interview l... |
+| [jasper-ui-skills](design/jasper-ui-skills/SKILL.md) | `jasper-ui-skills` | `low` | Jasper's UI design system. Use when building interfaces inspired by Jasper's aesthetic - light mode, Inter font, 4px grid. |
 | [jobgpt](design/jobgpt/SKILL.md) | `jobgpt` | `safe` | "Job search automation, auto apply, resume generation, application tracking, salary intelligence, and recruiter outreach using ... |
 | [json-canvas](design/json-canvas/SKILL.md) | `json-canvas` | `critical` | Create and edit JSON Canvas files (.canvas) with nodes, edges, groups, and connections. Use when working with .canvas files, cr... |
+| [lattice-ui-skills](design/lattice-ui-skills/SKILL.md) | `lattice-ui-skills` | `low` | Lattice's UI design system. Use when building interfaces inspired by Lattice's aesthetic - light mode, Inter font, 4px grid. |
+| [launchdarkly-ui-skills](design/launchdarkly-ui-skills/SKILL.md) | `launchdarkly-ui-skills` | `low` | Launchdarkly's UI design system. Use when building interfaces inspired by Launchdarkly's aesthetic - dark mode, Inter font, 4px... |
+| [lemonsqueezy-ui-skills](design/lemonsqueezy-ui-skills/SKILL.md) | `lemonsqueezy-ui-skills` | `low` | Lemonsqueezy's UI design system. Use when building interfaces inspired by Lemonsqueezy's aesthetic - light mode, Inter font, 4p... |
+| [linear-ui-skills](design/linear-ui-skills/SKILL.md) | `linear-ui-skills` | `low` | Linear's UI design system. Use when building interfaces inspired by Linear's aesthetic - dark mode, Inter font, 4px grid. |
+| [liveblocks-ui-skills](design/liveblocks-ui-skills/SKILL.md) | `liveblocks-ui-skills` | `low` | Liveblocks's UI design system. Use when building interfaces inspired by Liveblocks's aesthetic - dark mode, Inter font, 4px grid. |
 | [loading-state-designer](design/loading-state-designer/SKILL.md) | `loading-state-designer` | `low` | "Design loading states for apps. TRIGGERS - Use when user needs help with loading-state-designer related tasks." |
 | [logic-diff](design/logic-diff/SKILL.md) | `logic-diff` | `safe` | "Compare two code versions for semantic equivalence via semi-formal tracing of both versions side-by-side." |
+| [loom-ui-skills](design/loom-ui-skills/SKILL.md) | `loom-ui-skills` | `low` | Loom's UI design system. Use when building interfaces inspired by Loom's aesthetic - light mode, Inter font, 4px grid. |
+| [loops-ui-skills](design/loops-ui-skills/SKILL.md) | `loops-ui-skills` | `low` | Loops's UI design system. Use when building interfaces inspired by Loops's aesthetic - light mode, Inter font, 4px grid. |
 | [loss-aversion-designer](design/loss-aversion-designer/SKILL.md) | `loss-aversion-designer` | `safe` | "One sentence - what this skill does and when to invoke it" |
 | [macos-menubar-tuist-app](design/macos-menubar-tuist-app/SKILL.md) | `macos-menubar-tuist-app` | `safe` | Build, refactor, or review SwiftUI macOS menubar apps that use Tuist. |
 | [macos-spm-app-packaging](design/macos-spm-app-packaging/SKILL.md) | `macos-spm-app-packaging` | `safe` | Scaffold, build, sign, and package SwiftPM macOS apps without Xcode projects. |
+| [mailchimp-ui-skills](design/mailchimp-ui-skills/SKILL.md) | `mailchimp-ui-skills` | `low` | Mailchimp's UI design system. Use when building interfaces inspired by Mailchimp's aesthetic - light mode, Inter font, 4px grid. |
+| [matter-ui-skills](design/matter-ui-skills/SKILL.md) | `matter-ui-skills` | `low` | Matter's UI design system. Use when building interfaces inspired by Matter's aesthetic - dark mode, Inter font, 4px grid. |
+| [mem-ui-skills](design/mem-ui-skills/SKILL.md) | `mem-ui-skills` | `low` | Mem's UI design system. Use when building interfaces inspired by Mem's aesthetic - light mode, Inter font, 4px grid. |
+| [mercury-ui-skills](design/mercury-ui-skills/SKILL.md) | `mercury-ui-skills` | `low` | Mercury's UI design system. Use when building interfaces inspired by Mercury's aesthetic - light mode, Inter font, 4px grid. |
 | [micro-interaction-design](design/micro-interaction-design/SKILL.md) | `micro-interaction-design` | `low` | "Design micro-interactions. TRIGGERS - Use when user needs help with micro-interaction-design related tasks." |
+| [miro-ui-skills](design/miro-ui-skills/SKILL.md) | `miro-ui-skills` | `low` | Miro's UI design system. Use when building interfaces inspired by Miro's aesthetic - light mode, Inter font, 4px grid. |
+| [mixpanel-ui-skills](design/mixpanel-ui-skills/SKILL.md) | `mixpanel-ui-skills` | `low` | Mixpanel's UI design system. Use when building interfaces inspired by Mixpanel's aesthetic - light mode, Inter font, 4px grid. |
+| [mobbin-ui-skills](design/mobbin-ui-skills/SKILL.md) | `mobbin-ui-skills` | `low` | Mobbin's UI design system. Use when building interfaces inspired by Mobbin's aesthetic - light mode, Inter font, 4px grid. |
+| [mobile-design](design/mobile-design/SKILL.md) | `mobile-design` | `low` | Mobile-first design and engineering doctrine for iOS and Android apps. Covers touch interaction, performance, platform conventi... |
 | [mobile-ux-patterns](design/mobile-ux-patterns/SKILL.md) | `mobile-ux-patterns` | `low` | "Design mobile UX patterns. TRIGGERS - Use when user needs help with mobile-ux-patterns related tasks." |
 | [modal-dialog-design](design/modal-dialog-design/SKILL.md) | `modal-dialog-design` | `low` | "Design modal and dialog patterns. TRIGGERS - Use when user needs help with modal-dialog-design related tasks." |
+| [monzo-ui-skills](design/monzo-ui-skills/SKILL.md) | `monzo-ui-skills` | `low` | Monzo's UI design system. Use when building interfaces inspired by Monzo's aesthetic - light mode, Inter font, 4px grid. |
 | [motion-design-guide](design/motion-design-guide/SKILL.md) | `motion-design-guide` | `low` | "Design motion guidelines. TRIGGERS - Use when user needs help with motion-design-guide related tasks." |
+| [n26-ui-skills](design/n26-ui-skills/SKILL.md) | `n26-ui-skills` | `low` | N26's UI design system. Use when building interfaces inspired by N26's aesthetic - dark mode, Inter font, 4px grid. |
 | [navigation-design](design/navigation-design/SKILL.md) | `navigation-design` | `low` | "Design navigation patterns. TRIGGERS - Use when user needs help with navigation-design related tasks." |
+| [neon-ui-skills](design/neon-ui-skills/SKILL.md) | `neon-ui-skills` | `low` | Neon's UI design system. Use when building interfaces inspired by Neon's aesthetic - dark mode, Inter font, 4px grid. |
 | [nerdzao-elite](design/nerdzao-elite/SKILL.md) | `nerdzao-elite` | `safe` | "Senior Elite Software Engineer (15+) and Senior Product Designer. Full workflow with planning, architecture, TDD, clean code, ... |
 | [notification-ux-design](design/notification-ux-design/SKILL.md) | `notification-ux-design` | `low` | "Design notification UX patterns. TRIGGERS - Use when user needs help with notification-ux-design related tasks." |
+| [notion-ui-skills](design/notion-ui-skills/SKILL.md) | `notion-ui-skills` | `low` | Notion's UI design system. Use when building interfaces inspired by Notion's aesthetic - light mode, Inter font, 4px grid. |
 | [observability-designer](design/observability-designer/SKILL.md) | `skill` | `low` | "Imported from robertbstillwell/marketing-skills" |
+| [obsidian-ui-skills](design/obsidian-ui-skills/SKILL.md) | `obsidian-ui-skills` | `low` | Obsidian's UI design system. Use when building interfaces inspired by Obsidian's aesthetic - dark mode, Inter font, 4px grid. |
 | [onboarding-ux-flow](design/onboarding-ux-flow/SKILL.md) | `onboarding-ux-flow` | `low` | "Design onboarding UX flows. TRIGGERS - Use when user needs help with onboarding-ux-flow related tasks." |
+| [openai-ui-skills](design/openai-ui-skills/SKILL.md) | `openai-ui-skills` | `low` | OpenAI's UI design system. Use when building interfaces inspired by OpenAI's aesthetic - light mode, Inter font, 4px grid. |
+| [paddle-ui-skills](design/paddle-ui-skills/SKILL.md) | `paddle-ui-skills` | `low` | Paddle's UI design system. Use when building interfaces inspired by Paddle's aesthetic - light mode, Inter font, 4px grid. |
 | [persona-builder-ux](design/persona-builder-ux/SKILL.md) | `persona-builder-ux` | `low` | "Build user personas for design. TRIGGERS - Use when user needs help with persona-builder-ux related tasks." |
 | [personal-tool-builder](design/personal-tool-builder/SKILL.md) | `personal-tool-builder` | `critical` | Expert in building custom tools that solve your own problems first. The best products often start as personal tools - scratch y... |
+| [pilot-and-evaluation-design](design/pilot-and-evaluation-design/SKILL.md) | `pilot-and-evaluation-design` | `low` | Design practical pilots and evaluation protocols for industry R&D, AI, ML, analytics, LLM, banking, fintech, or enterprise solu... |
+| [pinterest-ui-skills](design/pinterest-ui-skills/SKILL.md) | `pinterest-ui-skills` | `low` | Pinterest's UI design system. Use when building interfaces inspired by Pinterest's aesthetic - light mode, Inter font, 4px grid. |
+| [pitch-ui-skills](design/pitch-ui-skills/SKILL.md) | `pitch-ui-skills` | `low` | Pitch's UI design system. Use when building interfaces inspired by Pitch's aesthetic - light mode, Inter font, 4px grid. |
+| [plaid-ui-skills](design/plaid-ui-skills/SKILL.md) | `plaid-ui-skills` | `low` | Plaid's UI design system. Use when building interfaces inspired by Plaid's aesthetic - dark mode, Inter font, 4px grid. |
+| [planetscale-ui-skills](design/planetscale-ui-skills/SKILL.md) | `planetscale-ui-skills` | `low` | Planetscale's UI design system. Use when building interfaces inspired by Planetscale's aesthetic - dark mode, Inter font, 4px g... |
 | [planning-and-task-breakdown](design/planning-and-task-breakdown/SKILL.md) | `planning-and-task-breakdown` | `none` | Breaks work into ordered tasks. Use when you have a spec or clear requirements and need to break work into implementable tasks.... |
+| [posthog-ui-skills](design/posthog-ui-skills/SKILL.md) | `posthog-ui-skills` | `low` | Posthog's UI design system. Use when building interfaces inspired by Posthog's aesthetic - dark mode, Inter font, 4px grid. |
 | [prometheus-configuration](design/prometheus-configuration/SKILL.md) | `prometheus-configuration` | `critical` | "Complete guide to Prometheus setup, metric collection, scrape configuration, and recording rules." |
 | [prototype-plan](design/prototype-plan/SKILL.md) | `prototype-plan` | `low` | "Plan prototyping with fidelity. TRIGGERS - Use when user needs help with prototype-plan related tasks." |
+| [publication-grounded-solution-design](design/publication-grounded-solution-design/SKILL.md) | `publication-grounded-solution-design` | `low` | Design industry R&D solution directions grounded in prior successful cases, academic papers, technical reports, and credible in... |
+| [railway-ui-skills](design/railway-ui-skills/SKILL.md) | `railway-ui-skills` | `low` | Railway's UI design system. Use when building interfaces inspired by Railway's aesthetic - dark mode, Inter font, 4px grid. |
+| [ramp-ui-skills](design/ramp-ui-skills/SKILL.md) | `ramp-ui-skills` | `low` | Ramp's UI design system. Use when building interfaces inspired by Ramp's aesthetic - light mode, Inter font, 4px grid. |
+| [raycast-ui-skills](design/raycast-ui-skills/SKILL.md) | `raycast-ui-skills` | `low` | Raycast's UI design system. Use when building interfaces inspired by Raycast's aesthetic - light mode, Inter font, 4px grid. |
 | [rayden-use](design/rayden-use/SKILL.md) | `rayden-use` | `safe` | Build and maintain Rayden UI components and screens in Figma via Figma MCP with full design token enforcement |
+| [readwise-ui-skills](design/readwise-ui-skills/SKILL.md) | `readwise-ui-skills` | `low` | Readwise's UI design system. Use when building interfaces inspired by Readwise's aesthetic - light mode, Inter font, 4px grid. |
 | [redis-cli](design/redis-cli/SKILL.md) | `redis-cli` | `critical` | "Redis command-line interface (redis-cli) reference and usage guide. Use this skill whenever the user mentions redis-cli, Redis... |
+| [replit-ui-skills](design/replit-ui-skills/SKILL.md) | `replit-ui-skills` | `low` | Replit's UI design system. Use when building interfaces inspired by Replit's aesthetic - light mode, Inter font, 4px grid. |
+| [resend-brand](design/resend-brand/SKILL.md) | `resend-brand` | `low` | Use when creating Resend marketing materials, documents, presentations, or visual content. Triggers for Resend brand, Resend st... |
+| [resend-design-skills](design/resend-design-skills/SKILL.md) | `resend-design-skills` | `low` | Use when needing Resend design resources. Routes to brand guidelines and visual identity. |
+| [resend-ui-skills](design/resend-ui-skills/SKILL.md) | `resend-ui-skills` | `low` | Resend's UI design system. Use when building interfaces inspired by Resend's aesthetic - dark mode, Inter font, 4px grid. |
 | [responsive-design-guide](design/responsive-design-guide/SKILL.md) | `responsive-design-guide` | `low` | "Design responsive layout guides. TRIGGERS - Use when user needs help with responsive-design-guide related tasks." |
+| [retool-ui-skills](design/retool-ui-skills/SKILL.md) | `retool-ui-skills` | `low` | Retool's UI design system. Use when building interfaces inspired by Retool's aesthetic - light mode, Inter font, 4px grid. |
+| [rippling-ui-skills](design/rippling-ui-skills/SKILL.md) | `rippling-ui-skills` | `low` | Rippling's UI design system. Use when building interfaces inspired by Rippling's aesthetic - dark mode, Inter font, 4px grid. |
+| [robinhood-ui-skills](design/robinhood-ui-skills/SKILL.md) | `robinhood-ui-skills` | `low` | Robinhood's UI design system. Use when building interfaces inspired by Robinhood's aesthetic - dark mode, Inter font, 4px grid. |
+| [scroll-experience](design/scroll-experience/SKILL.md) | `scroll-experience` | `low` | "Expert in building immersive scroll-driven experiences - parallax storytelling, scroll animations, interactive narratives, and... |
 | [search-ux-design](design/search-ux-design/SKILL.md) | `search-ux-design` | `low` | "Design search UX patterns. TRIGGERS - Use when user needs help with search-ux-design related tasks." |
+| [segment-ui-skills](design/segment-ui-skills/SKILL.md) | `segment-ui-skills` | `low` | Segment's UI design system. Use when building interfaces inspired by Segment's aesthetic - light mode, Inter font, 4px grid. |
 | [settings-page-design](design/settings-page-design/SKILL.md) | `settings-page-design` | `low` | "Design settings page patterns. TRIGGERS - Use when user needs help with settings-page-design related tasks." |
+| [shopify-ui-skills](design/shopify-ui-skills/SKILL.md) | `shopify-ui-skills` | `low` | Shopify's UI design system. Use when building interfaces inspired by Shopify's aesthetic - light mode, Inter font, 4px grid. |
+| [shortcut-ui-skills](design/shortcut-ui-skills/SKILL.md) | `shortcut-ui-skills` | `low` | Shortcut's UI design system. Use when building interfaces inspired by Shortcut's aesthetic - light mode, Inter font, 4px grid. |
 | [sitemap-designer](design/sitemap-designer/SKILL.md) | `sitemap-designer` | `low` | "Design sitemaps for websites. TRIGGERS - Use when user needs help with sitemap-designer related tasks." |
+| [slack-ui-skills](design/slack-ui-skills/SKILL.md) | `slack-ui-skills` | `low` | Slack's UI design system. Use when building interfaces inspired by Slack's aesthetic - light mode, Inter font, 4px grid. |
 | [spacing-system](design/spacing-system/SKILL.md) | `spacing-system` | `low` | "Design spacing and layout systems. TRIGGERS - Use when user needs help with spacing-system related tasks." |
 | [spec-driven-development](design/spec-driven-development/SKILL.md) | `spec-driven-development` | `critical` | Creates specs before coding. Use when starting a new project, feature, or significant change and no specification exists yet. U... |
+| [spotify-ui-skills](design/spotify-ui-skills/SKILL.md) | `spotify-ui-skills` | `low` | Spotify's UI design system. Use when building interfaces inspired by Spotify's aesthetic - dark mode, Inter font, 4px grid. |
 | [stitch-ui-design](design/stitch-ui-design/SKILL.md) | `stitch-ui-design` | `safe` | "Expert guidance for crafting effective prompts in Google Stitch, the AI-powered UI design tool by Google Labs. This skill help... |
+| [stripe-ui-skills](design/stripe-ui-skills/SKILL.md) | `stripe-ui-skills` | `low` | Stripe's UI design system. Use when building interfaces inspired by Stripe's aesthetic - light mode, Inter font, 4px grid. |
 | [structuring-smart-beta-product-design](design/structuring-smart-beta-product-design/SKILL.md) | `structuring-smart-beta-product-design` | `low` | Designs systematic investment products with transparent methodology, rebalancing rules, and index construction specifications. ... |
+| [substack-ui-skills](design/substack-ui-skills/SKILL.md) | `substack-ui-skills` | `low` | Substack's UI design system. Use when building interfaces inspired by Substack's aesthetic - light mode, Inter font, 4px grid. |
+| [supabase-ui-skills](design/supabase-ui-skills/SKILL.md) | `supabase-ui-skills` | `low` | Supabase's UI design system. Use when building interfaces inspired by Supabase's aesthetic - dark mode, Inter font, 4px grid. |
+| [superhuman-ui-skills](design/superhuman-ui-skills/SKILL.md) | `superhuman-ui-skills` | `low` | Superhuman's UI design system. Use when building interfaces inspired by Superhuman's aesthetic - light mode, Inter font, 4px grid. |
 | [telegram-mini-app](design/telegram-mini-app/SKILL.md) | `telegram-mini-app` | `critical` | Expert in building Telegram Mini Apps (TWA) - web apps that run inside Telegram with native-like experience. Covers the TON eco... |
 | [theme-factory](design/theme-factory/SKILL.md) | `theme-factory` | `critical` | "This skill provides a curated collection of professional font and color themes themes, each with carefully selected color pale... |
+| [things-ui-skills](design/things-ui-skills/SKILL.md) | `things-ui-skills` | `low` | Things's UI design system. Use when building interfaces inspired by Things's aesthetic - light mode, Inter font, 8px grid. |
+| [ticktick-ui-skills](design/ticktick-ui-skills/SKILL.md) | `ticktick-ui-skills` | `low` | Ticktick's UI design system. Use when building interfaces inspired by Ticktick's aesthetic - light mode, Inter font, 4px grid. |
+| [tldraw-ui-skills](design/tldraw-ui-skills/SKILL.md) | `tldraw-ui-skills` | `low` | Tldraw's UI design system. Use when building interfaces inspired by Tldraw's aesthetic - light mode, Inter font, 4px grid. |
+| [todoist-ui-skills](design/todoist-ui-skills/SKILL.md) | `todoist-ui-skills` | `low` | Todoist's UI design system. Use when building interfaces inspired by Todoist's aesthetic - light mode, Inter font, 4px grid. |
 | [tooltip-design-guide](design/tooltip-design-guide/SKILL.md) | `tooltip-design-guide` | `low` | "Design tooltip guidelines. TRIGGERS - Use when user needs help with tooltip-design-guide related tasks." |
 | [tree-testing-plan](design/tree-testing-plan/SKILL.md) | `tree-testing-plan` | `low` | "Plan tree testing studies. TRIGGERS - Use when user needs help with tree-testing-plan related tasks." |
 | [typography-system](design/typography-system/SKILL.md) | `typography-system` | `low` | "Design typography systems. TRIGGERS - Use when user needs help with typography-system related tasks." |
@@ -5231,8 +5429,10 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [ui-pattern](design/ui-pattern/SKILL.md) | `ui-pattern` | `critical` | Generate a composed UI pattern (card layout, list, form section, grid, etc.) using design system primitives |
 | [ui-setup](design/ui-setup/SKILL.md) | `ui-setup` | `critical` | Interactive setup wizard — guides you step-by-step to configure the design system for your project |
 | [ui-update](design/ui-update/SKILL.md) | `ui-update` | `critical` | Update StyleSeed engine in your project — analyzes what's outdated and updates safely |
+| [ui-ux-pro-max](design/ui-ux-pro-max/SKILL.md) | `ui-ux-pro-max` | `low` | "UI/UX design intelligence. 50 styles, 21 palettes, 50 font pairings, 20 charts, 9 stacks (React, Next.js, Vue, Svelte, SwiftUI... |
 | [ui-visual-validator](design/ui-visual-validator/SKILL.md) | `ui-visual-validator` | `safe` | Rigorous visual validation expert specializing in UI testing, design system compliance, and accessibility verification. |
 | [update-swiftui-apis](design/update-swiftui-apis/SKILL.md) | `update-swiftui-apis` | `critical` | "Scan Apple's SwiftUI documentation for deprecated APIs and update the SwiftUI Expert Skill with modern replacements." |
+| [upstash-ui-skills](design/upstash-ui-skills/SKILL.md) | `upstash-ui-skills` | `low` | Upstash's UI design system. Use when building interfaces inspired by Upstash's aesthetic - light mode, Inter font, 4px grid. |
 | [usability-heuristic-review](design/usability-heuristic-review/SKILL.md) | `usability-heuristic-review` | `low` | "Conduct heuristic usability reviews. TRIGGERS - Use when user needs help with usability-heuristic-review related tasks." |
 | [user-journey-map](design/user-journey-map/SKILL.md) | `user-journey-map` | `low` | "Map user journeys with touchpoints. TRIGGERS - Use when user needs help with user-journey-map related tasks." |
 | [ux-benchmark-study](design/ux-benchmark-study/SKILL.md) | `ux-benchmark-study` | `low` | "Design UX benchmark studies. TRIGGERS - Use when user needs help with ux-benchmark-study related tasks." |
@@ -5245,13 +5445,18 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [ux-researcher-designer](design/ux-researcher-designer/SKILL.md) | `ux-researcher-designer` | `low` | UX research and design toolkit for Senior UX Designer/Researcher including data-driven persona generation, journey mapping, usa... |
 | [ux-writing-guide](design/ux-writing-guide/SKILL.md) | `ux-writing-guide` | `low` | "Write UX writing guidelines. TRIGGERS - Use when user needs help with ux-writing-guide related tasks." |
 | [uxui-principles](design/uxui-principles/SKILL.md) | `uxui-principles` | `safe` | "Evaluate interfaces against 168 research-backed UX/UI principles, detect antipatterns, and inject UX context into AI coding se... |
+| [vercel-ui-skills](design/vercel-ui-skills/SKILL.md) | `vercel-ui-skills` | `low` | Vercel's UI design system. Use when building interfaces inspired by Vercel's aesthetic - light mode, Inter font, 4px grid. |
 | [visual-emotion-engineer](design/visual-emotion-engineer/SKILL.md) | `visual-emotion-engineer` | `safe` | "One sentence - what this skill does and when to invoke it" |
 | [vizcom](design/vizcom/SKILL.md) | `vizcom` | `safe` | AI-powered product design tool for transforming sketches into full-fidelity 3D renders. |
 | [voice-tone-guide-ux](design/voice-tone-guide-ux/SKILL.md) | `voice-tone-guide-ux` | `low` | "Design voice and tone guides. TRIGGERS - Use when user needs help with voice-tone-guide-ux related tasks." |
+| [warp-ui-skills](design/warp-ui-skills/SKILL.md) | `warp-ui-skills` | `low` | Warp's UI design system. Use when building interfaces inspired by Warp's aesthetic - light mode, Inter font, 4px grid. |
 | [wcag-audit-patterns](design/wcag-audit-patterns/SKILL.md) | `wcag-audit-patterns` | `safe` | "Comprehensive guide to auditing web content against WCAG 2.2 guidelines with actionable remediation strategies." |
 | [web-design-guidelines](design/web-design-guidelines/SKILL.md) | `web-design-guidelines` | `safe` | "Review files for compliance with Web Interface Guidelines." |
 | [webflow-automation](design/webflow-automation/SKILL.md) | `webflow-automation` | `critical` | "Automate Webflow CMS collections, site publishing, page management, asset uploads, and ecommerce orders via Rube MCP (Composio... |
+| [webflow-ui-skills](design/webflow-ui-skills/SKILL.md) | `webflow-ui-skills` | `low` | Webflow's UI design system. Use when building interfaces inspired by Webflow's aesthetic - dark mode, Inter font, 4px grid. |
+| [weights-biases-ui-skills](design/weights-biases-ui-skills/SKILL.md) | `weights-biases-ui-skills` | `low` | Weights Biases's UI design system. Use when building interfaces inspired by Weights Biases's aesthetic - light mode, Inter font... |
 | [wireframe-spec](design/wireframe-spec/SKILL.md) | `wireframe-spec` | `low` | "Write wireframe specifications. TRIGGERS - Use when user needs help with wireframe-spec related tasks." |
+| [wise-ui-skills](design/wise-ui-skills/SKILL.md) | `wise-ui-skills` | `low` | Wise's UI design system. Use when building interfaces inspired by Wise's aesthetic - light mode, Inter font, 4px grid. |
 
 ---
 
@@ -5270,7 +5475,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
-## <a id="development"></a>📁 Development (490 skills)
+## <a id="development"></a>📁 Development (504 skills)
 
 | Skill ID | Name | Risk | Description |
 | :--- | :--- | :---: | :--- |
@@ -5311,6 +5516,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [awareness-stage-mapper](development/awareness-stage-mapper/SKILL.md) | `awareness-stage-mapper` | `safe` | "One sentence - what this skill does and when to invoke it" |
 | [aws-well-architected](development/aws-well-architected/SKILL.md) | `aws-well-architected` | `low` | "Apply AWS Well-Architected Framework principles. TRIGGERS - Use when user needs help with aws-well-architected related tasks." |
 | [ax-extract-workflow](development/ax-extract-workflow/SKILL.md) | `ax-extract-workflow` | `safe` | "Reconstruct workflow behind a past coding-agent artifact using local ax sessions/commits/skills/tool traces. Use when asked ho... |
+| [backend-dev-guidelines](development/backend-dev-guidelines/SKILL.md) | `backend-dev-guidelines` | `low` | Opinionated backend development standards for Node.js + Express + TypeScript microservices. Covers layered architecture, BaseCo... |
 | [backup-strategy](development/backup-strategy/SKILL.md) | `backup-strategy` | `low` | "Design backup strategies with recovery testing. TRIGGERS - Use when user needs help with backup-strategy related tasks." |
 | [bash-defensive-patterns](development/bash-defensive-patterns/SKILL.md) | `bash-defensive-patterns` | `safe` | "Master defensive Bash programming techniques for production-grade scripts. Use when writing robust shell scripts, CI/CD pipeli... |
 | [bash-linux](development/bash-linux/SKILL.md) | `bash-linux` | `critical` | "Bash/Linux terminal patterns. Critical commands, piping, error handling, scripting. Use when working on macOS or Linux systems." |
@@ -5340,6 +5546,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [ci-cd-pipeline-design](development/ci-cd-pipeline-design/SKILL.md) | `ci-cd-pipeline-design` | `low` | "Design CI/CD pipelines with stages. TRIGGERS - Use when user needs help with ci-cd-pipeline-design related tasks." |
 | [circuit-breaker-pattern](development/circuit-breaker-pattern/SKILL.md) | `circuit-breaker-pattern` | `low` | "Implement circuit breaker patterns. TRIGGERS - Use when user needs help with circuit-breaker-pattern related tasks." |
 | [clean-architecture](development/clean-architecture/SKILL.md) | `clean-architecture` | `low` | "Implement clean architecture patterns for maintainability. TRIGGERS - Use when user needs help with clean-architecture related... |
+| [clean-code](development/clean-code/SKILL.md) | `clean-code` | `low` | Pragmatic coding standards - concise, direct, no over-engineering, no unnecessary comments |
 | [cloud-architecture](development/cloud-architecture/SKILL.md) | `cloud-architecture` | `low` | "Design cloud architectures with scalability and cost. TRIGGERS - Use when user needs help with cloud-architecture related tasks." |
 | [cloud-cost-optimization](development/cloud-cost-optimization/SKILL.md) | `cloud-cost-optimization` | `low` | "Optimize cloud costs with rightsizing. TRIGGERS - Use when user needs help with cloud-cost-optimization related tasks." |
 | [cmux](development/cmux/SKILL.md) | `cmux` | `critical` | "Control cmux workspaces, panes, surfaces, and agent sessions safely from macOS terminal workflows." |
@@ -5350,9 +5557,11 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [code-documentation-system](development/code-documentation-system/SKILL.md) | `code-documentation-system` | `low` | "Design code documentation systems with generation. TRIGGERS - Use when user needs help with code-documentation-system related ... |
 | [code-polish](development/code-polish/SKILL.md) | `code-polish` | `critical` | Rewrites unprofessional code comments into clear ones and performs non-semantic cleanup. Use to professionalize code without al... |
 | [code-refactoring-context-restore](development/code-refactoring-context-restore/SKILL.md) | `code-refactoring-context-restore` | `critical` | "Use when working with code refactoring context restore" |
+| [code-refactoring-refactor-clean](development/code-refactoring-refactor-clean/SKILL.md) | `code-refactoring-refactor-clean` | `low` | "You are a code refactoring expert specializing in clean code principles, SOLID design patterns, and modern software engineerin... |
 | [code-refactoring-tech-debt](development/code-refactoring-tech-debt/SKILL.md) | `code-refactoring-tech-debt` | `safe` | "Identify technical debt from actual code and change history, estimate its impact, and prioritize bounded improvements with exp... |
 | [code-review-ai-ai-review](development/code-review-ai-ai-review/SKILL.md) | `code-review-ai-ai-review` | `critical` | "You are an expert AI-powered code review specialist combining automated static analysis, intelligent pattern recognition, and ... |
 | [code-review-and-quality](development/code-review-and-quality/SKILL.md) | `code-review-and-quality` | `critical` | Conducts multi-axis code review. Use before merging any change. Use when reviewing code written by yourself, another agent, or ... |
+| [code-review-checklist](development/code-review-checklist/SKILL.md) | `code-review-checklist` | `low` | "Comprehensive checklist for conducting thorough code reviews covering functionality, security, performance, and maintainability" |
 | [code-review-excellence](development/code-review-excellence/SKILL.md) | `code-review-excellence` | `safe` | "Transform code reviews from gatekeeping to knowledge sharing through constructive feedback, systematic analysis, and collabora... |
 | [code-review-guidelines](development/code-review-guidelines/SKILL.md) | `code-review-guidelines` | `low` | "Create code review guidelines with checklist. TRIGGERS - Use when user needs help with code-review-guidelines related tasks." |
 | [code-review-standards](development/code-review-standards/SKILL.md) | `code-review-standards` | `low` | "Design code review standards and practices. TRIGGERS - Use when user needs help with code-review-standards related tasks." |
@@ -5475,8 +5684,11 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [framework-migration-code-migrate](development/framework-migration-code-migrate/SKILL.md) | `framework-migration-code-migrate` | `safe` | "You are a code migration expert specializing in transitioning codebases between frameworks, languages, versions, and platforms... |
 | [framework-migration-deps-upgrade](development/framework-migration-deps-upgrade/SKILL.md) | `framework-migration-deps-upgrade` | `critical` | "You are a dependency management expert specializing in safe, incremental upgrades of project dependencies. Plan and execute de... |
 | [framework-migration-legacy-modernize](development/framework-migration-legacy-modernize/SKILL.md) | `framework-migration-legacy-modernize` | `critical` | "Orchestrate a comprehensive legacy system modernization using the strangler fig pattern, enabling gradual replacement of outda... |
+| [frontend-dev-guidelines](development/frontend-dev-guidelines/SKILL.md) | `frontend-dev-guidelines` | `low` | Opinionated frontend development standards for modern React + TypeScript applications. Covers Suspense-first data fetching, laz... |
+| [frontend-developer](development/frontend-developer/SKILL.md) | `frontend-developer` | `low` | Build React components, implement responsive layouts, and handle client-side state management. Masters React 19, Next.js 15, an... |
 | [frontend-observability](development/frontend-observability/SKILL.md) | `frontend-observability` | `critical` | "A portable, framework-agnostic field-side observability system for any React or React Native app." |
 | [frontend-optimistic-mutations](development/frontend-optimistic-mutations/SKILL.md) | `frontend-optimistic-mutations` | `critical` | "A portable, framework-agnostic discipline for the write path of any React or React Native app using a query/cache layer." |
+| [frontend-patterns](development/frontend-patterns/SKILL.md) | `frontend-patterns` | `low` | Frontend development patterns for React, Next.js, state management, performance optimization, and UI best practices. |
 | [full-text-search-setup](development/full-text-search-setup/SKILL.md) | `full-text-search-setup` | `low` | "Set up full-text search with Elasticsearch. TRIGGERS - Use when user needs help with full-text-search-setup related tasks." |
 | [gdb-cli](development/gdb-cli/SKILL.md) | `gdb-cli` | `critical` | "GDB debugging assistant for AI agents - analyze core dumps, debug live processes, investigate crashes and deadlocks with sourc... |
 | [git-workflow-design](development/git-workflow-design/SKILL.md) | `git-workflow-design` | `low` | "Design Git branching workflows. TRIGGERS - Use when user needs help with git-workflow-design related tasks." |
@@ -5587,7 +5799,9 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [monorepo-strategy](development/monorepo-strategy/SKILL.md) | `monorepo-strategy` | `low` | "Design monorepo strategies with tools. TRIGGERS - Use when user needs help with monorepo-strategy related tasks." |
 | [multi-platform-apps-multi-platform](development/multi-platform-apps-multi-platform/SKILL.md) | `multi-platform-apps-multi-platform` | `critical` | "Build and deploy the same feature consistently across web, mobile, and desktop platforms using API-first architecture and para... |
 | [multi-tenancy-design](development/multi-tenancy-design/SKILL.md) | `multi-tenancy-design` | `low` | "Design multi-tenant architectures with isolation. TRIGGERS - Use when user needs help with multi-tenancy-design related tasks." |
+| [multiplayer-websocket](development/multiplayer-websocket/SKILL.md) | `multiplayer-websocket` | `low` | Manages WebSocket-based real-time multiplayer in Tokyo Sounds. Use when modifying multiplayer sync, useMultiplayer hook, multip... |
 | [native-data-fetching](development/native-data-fetching/SKILL.md) | `native-data-fetching` | `critical` | Use when implementing or debugging ANY network request, API call, or data fetching. Covers fetch API, React Query, SWR, error h... |
+| [next-intl-app-router](development/next-intl-app-router/SKILL.md) | `next-intl-app-router` | `low` | Configures and uses next-intl for Next.js App Router with locale-based routing. Use when adding or changing i18n, locale routin... |
 | [nosql-design-patterns](development/nosql-design-patterns/SKILL.md) | `nosql-design-patterns` | `low` | "Design NoSQL database patterns. TRIGGERS - Use when user needs help with nosql-design-patterns related tasks." |
 | [notification-system](development/notification-system/SKILL.md) | `notification-system` | `low` | "Design notification systems with channels and preferences. TRIGGERS - Use when user needs help with notification-system relate... |
 | [nx-workspace-patterns](development/nx-workspace-patterns/SKILL.md) | `nx-workspace-patterns` | `critical` | "Configure and optimize Nx monorepo workspaces. Use when setting up Nx, configuring project boundaries, optimizing build cachin... |
@@ -5647,6 +5861,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [rayden-code](development/rayden-code/SKILL.md) | `rayden-code` | `safe` | Generate React code with Rayden UI components using correct props, tokens, and premium layout patterns |
 | [re-create](development/re-create/SKILL.md) | `re-create` | `critical` | "Completely delete and rewrite a file or module from scratch when structural rot makes patching impossible." |
 | [react-native-setup](development/react-native-setup/SKILL.md) | `react-native-setup` | `low` | "Set up React Native projects with configuration. TRIGGERS - Use when user needs help with react-native-setup related tasks." |
+| [react-ui-patterns](development/react-ui-patterns/SKILL.md) | `react-ui-patterns` | `low` | Modern React UI patterns for loading states, error handling, and data fetching. Use when building UI components, handling async... |
 | [real-time-architecture](development/real-time-architecture/SKILL.md) | `real-time-architecture` | `low` | "Design real-time architectures with WebSocket. TRIGGERS - Use when user needs help with real-time-architecture related tasks." |
 | [real-time-system-design](development/real-time-system-design/SKILL.md) | `real-time-system-design` | `low` | "Design real-time systems with WebSockets. TRIGGERS - Use when user needs help with real-time-system-design related tasks." |
 | [refactoring-plan](development/refactoring-plan/SKILL.md) | `refactoring-plan` | `low` | "Plan code refactoring with prioritization and testing. TRIGGERS - Use when user needs help with refactoring-plan related tasks." |
@@ -5720,6 +5935,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [system-design-template](development/system-design-template/SKILL.md) | `system-design-template` | `low` | "Create system design documentation templates. TRIGGERS - Use when user needs help with system-design-template related tasks." |
 | [systematic-debugging](development/systematic-debugging/SKILL.md) | `systematic-debugging` | `critical` | "Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes" |
 | [systems-programming-rust-project](development/systems-programming-rust-project/SKILL.md) | `systems-programming-rust-project` | `critical` | "You are a Rust project architecture expert specializing in scaffolding production-ready Rust applications. Generate complete p... |
+| [tailwind-patterns](development/tailwind-patterns/SKILL.md) | `tailwind-patterns` | `low` | Tailwind CSS v4 principles. CSS-first configuration, container queries, modern patterns, design token architecture. |
 | [tdd](development/tdd/SKILL.md) | `tdd` | `safe` | Test-driven development. Use when the user wants to build features or fix bugs test-first, mentions "red-green-refactor", or wa... |
 | [tech-debt-tracker](development/tech-debt-tracker/SKILL.md) | `tech-debt-tracker` | `low` | "Track and prioritize technical debt for remediation. TRIGGERS - Use when user needs help with tech-debt-tracker related tasks." |
 | [technical-blog-setup](development/technical-blog-setup/SKILL.md) | `technical-blog-setup` | `low` | "Set up technical blogs with SSG and deployment. TRIGGERS - Use when user needs help with technical-blog-setup related tasks." |
@@ -5748,6 +5964,9 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [using-git-worktrees](development/using-git-worktrees/SKILL.md) | `using-git-worktrees` | `critical` | "Git worktrees create isolated workspaces sharing the same repository, allowing work on multiple branches simultaneously withou... |
 | [using-lwc](development/using-lwc/SKILL.md) | `using-lwc` | `critical` | "Use when project decisions, code structure, research, incidents, or verified context must survive future coding-agent sessions... |
 | [uv-package-manager](development/uv-package-manager/SKILL.md) | `uv-package-manager` | `safe` | "Comprehensive guide to using uv, an extremely fast Python package installer and resolver written in Rust, for modern Python pr... |
+| [vercel-composition-patterns](development/vercel-composition-patterns/SKILL.md) | `vercel-composition-patterns` | `low` | React composition patterns that scale. Use when refactoring components with boolean prop proliferation, building flexible compo... |
+| [vercel-react-best-practices](development/vercel-react-best-practices/SKILL.md) | `vercel-react-best-practices` | `low` | React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing, reviewin... |
+| [vercel-react-native-skills](development/vercel-react-native-skills/SKILL.md) | `vercel-react-native-skills` | `low` | React Native and Expo best practices for building performant mobile apps. Use when building React Native components, optimizing... |
 | [vexor](development/vexor/SKILL.md) | `vexor` | `safe` | "Vector-powered CLI for semantic file search with a Claude/Codex skill" |
 | [vexor-cli](development/vexor-cli/SKILL.md) | `vexor-cli` | `critical` | Semantic file discovery via `vexor`. Use whenever locating where something is implemented/loaded/defined in a medium or large r... |
 | [visual-regression-testing](development/visual-regression-testing/SKILL.md) | `visual-regression-testing` | `low` | "Set up visual regression testing. TRIGGERS - Use when user needs help with visual-regression-testing related tasks." |
@@ -8744,10 +8963,23 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
-## <a id="governance"></a>📁 Governance (1 skills)
+## <a id="governance"></a>📁 Governance (14 skills)
 
 | Skill ID | Name | Risk | Description |
 | :--- | :--- | :---: | :--- |
+| [ai-governance](governance/ai-governance/SKILL.md) | `ai-governance` | `low` | "Operationalize trustworthy AI systems adhering to EU AI Act risk tiers and NIST AI RMF 1.0." |
+| [corporate-governance](governance/corporate-governance/SKILL.md) | `corporate-governance` | `low` | "Establish board committee charters, fiduciary duty compliance, and shareholder rights frameworks." |
+| [data-governance](governance/data-governance/SKILL.md) | `data-governance` | `low` | "Formulate data cataloging, business glossaries, stewardship councils, and data lineage pipelines." |
+| [data-sovereignty-patterns](governance/data-sovereignty-patterns/SKILL.md) | `data-sovereignty-patterns` | `low` | Navigate cross-border data transfer rules — Schrems II, EU SCCs, adequacy decisions, data localization requirements for EU, US,... |
+| [decision-rights](governance/decision-rights/SKILL.md) | `decision-rights` | `low` | "Clarify organizational accountability, decision boundaries, and escalation authority using RACI models." |
+| [governance-frameworks](governance/governance-frameworks/SKILL.md) | `governance-frameworks` | `low` | "Harmonize cross-regulatory mandates across ISO 27001, SOC 2, HIPAA, PCI-DSS, and FedRAMP." |
+| [information-governance](governance/information-governance/SKILL.md) | `information-governance` | `low` | "Coordinate legal, privacy, security, and records management to govern corporate information assets." |
+| [it-governance](governance/it-governance/SKILL.md) | `it-governance` | `low` | "Implement COBIT 2019 enterprise IT governance, value delivery metrics, and resource management." |
+| [model-governance](governance/model-governance/SKILL.md) | `model-governance` | `low` | "Validate algorithmic trading, credit underwriting, and risk models conforming to Federal Reserve SR 11-7." |
+| [nist-ai-rmf-governance](governance/nist-ai-rmf-governance/SKILL.md) | `nist-ai-rmf-governance` | `low` | Implements NIST AI Risk Management Framework (AI RMF 1.0, NIST AI 100-1)—GOVERN, MAP, MEASURE, and MANAGE functions—for trustwo... |
+| [policy-governance](governance/policy-governance/SKILL.md) | `policy-governance` | `low` | "Draft, review, approve, and track employee attestation for corporate policies and codes of conduct." |
+| [risk-governance](governance/risk-governance/SKILL.md) | `risk-governance` | `low` | "Structure enterprise risk appetites, key risk indicators (KRIs), and board risk reporting registers." |
+| [security-governance](governance/security-governance/SKILL.md) | `security-governance` | `low` | "Architect organizational security policies, executive CISO dashboards, and defense-in-depth maturity roadmaps." |
 | [skill-lifecycle-management](governance/skill-lifecycle-management/SKILL.md) | `skill-lifecycle-management` | `low` | Manage skill versioning, freshness tracking, deprecation, changelog generation, and maintenance workflows for skill repository ... |
 
 ---
@@ -8826,6 +9058,28 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
+## <a id="graphics"></a>📁 Graphics (15 skills)
+
+| Skill ID | Name | Risk | Description |
+| :--- | :--- | :---: | :--- |
+| [computer-graphics](graphics/computer-graphics/SKILL.md) | `computer-graphics` | `low` | "Implement transformation matrices, homogeneous coordinates, perspective projection, and frustum culling." |
+| [computer-vision](graphics/computer-vision/SKILL.md) | `computer-vision` | `low` | "Implement Harris corner detection, optical flow (Lucas-Kanade), spatial pyramids, and feature matching." |
+| [directx](graphics/directx/SKILL.md) | `directx` | `low` | "Program DirectX 12 root signatures, pipeline state objects (PSO), command lists, and execute indirect dispatches." |
+| [gpu-compute](graphics/gpu-compute/SKILL.md) | `gpu-compute` | `low` | "Engineer parallel GPU kernel dispatches, shared memory reduction, thread divergence optimization, and atomics." |
+| [graphics-optimization](graphics/graphics-optimization/SKILL.md) | `graphics-optimization` | `low` | "Profile GPU bottlenecks using RenderDoc, PIX, and NVIDIA Nsight to eliminate overdraw and state churn." |
+| [image-processing](graphics/image-processing/SKILL.md) | `image-processing` | `low` | "Implement separable Gaussian blurs, Sobel edge detectors, tone mapping (ACES), and color grading LUTs." |
+| [opengl](graphics/opengl/SKILL.md) | `opengl` | `low` | "Manage Vertex Array Objects (VAO), Vertex Buffer Objects (VBO), Framebuffer Objects (FBO), and persistent mapping." |
+| [rasterization](graphics/rasterization/SKILL.md) | `rasterization` | `low` | "Implement barycentric coordinate triangle interpolation, depth buffer testing, and sub-pixel edge equations." |
+| [ray-tracing](graphics/ray-tracing/SKILL.md) | `ray-tracing` | `low` | "Construct Bounding Volume Hierarchies (BVH), compute Möller-Trumbore ray-triangle intersections, and trace shadow rays." |
+| [rendering](graphics/rendering/SKILL.md) | `rendering` | `low` | "Implement the rendering equation, Cook-Torrance microfacet specular reflectance, and GGX normal distribution." |
+| [shaders](graphics/shaders/SKILL.md) | `shaders` | `low` | "Author vertex, fragment, geometry, tessellation, and compute shaders with uniform buffer object (UBO) optimization." |
+| [visualization](graphics/visualization/SKILL.md) | `visualization` | `low` | "Implement Ray Marching for volumetric clouds, medical 3D CT scans, and isosurface extraction (Marching Cubes)." |
+| [vulkan](graphics/vulkan/SKILL.md) | `vulkan` | `low` | "Orchestrate Vulkan command pools, render passes, pipeline barriers, swapchains, and descriptor sets." |
+| [webgl](graphics/webgl/SKILL.md) | `webgl` | `low` | "Implement multi-render targets (MRT), floating-point textures, transform feedback, and instanced drawing in WebGL 2." |
+| [webgpu](graphics/webgpu/SKILL.md) | `webgpu` | `low` | "Write WGSL compute and render pipelines, GPU buffers, bind groups, and canvas contexts in browser targets." |
+
+---
+
 ## <a id="graphics-processing"></a>📁 Graphics Processing (4 skills)
 
 | Skill ID | Name | Risk | Description |
@@ -8847,7 +9101,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
-## <a id="healthcare"></a>📁 Healthcare (317 skills)
+## <a id="healthcare"></a>📁 Healthcare (329 skills)
 
 | Skill ID | Name | Risk | Description |
 | :--- | :--- | :---: | :--- |
@@ -8881,19 +9135,24 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [coding-compliance-program](healthcare/coding-compliance-program/SKILL.md) | `coding-compliance-program` | `low` | "Design medical coding compliance programs. TRIGGERS - Use when user needs help with coding-compliance-program related tasks." |
 | [coding-guide](healthcare/coding-guide/SKILL.md) | `coding-guide` | `low` | "Create medical coding guides for billing accuracy. TRIGGERS - Use when user needs help with coding-guide related tasks." |
 | [coding-medical-encounters](healthcare/coding-medical-encounters/SKILL.md) | `coding-medical-encounters` | `low` | Assigns ICD-10-CM diagnosis codes and CPT/HCPCS procedure codes with supporting documentation validation. Use when coding medic... |
+| [coding-surgical-procedures](healthcare/coding-surgical-procedures/SKILL.md) | `coding-surgical-procedures` | `low` | Assigns CPT surgical codes with modifier selection and bundling/unbundling rules. Use when coding surgeries, applying surgical ... |
 | [coding-telehealth-services](healthcare/coding-telehealth-services/SKILL.md) | `coding-telehealth-services` | `low` | Assigns telehealth-specific codes with place of service, modifier, and technology requirements. Use when coding virtual visits,... |
 | [community-health-assessment](healthcare/community-health-assessment/SKILL.md) | `community-health-assessment` | `low` | "Conduct community health needs assessments. TRIGGERS - Use when user needs help with community-health-assessment related tasks." |
 | [comparative-medicine-researcher](healthcare/comparative-medicine-researcher/SKILL.md) | `agents` | `low` | "Imported from K-Dense-AI/scientific-agents" |
 | [compounding-protocol](healthcare/compounding-protocol/SKILL.md) | `compounding-protocol` | `low` | "Create compounding protocols and procedures. TRIGGERS - Use when user needs help with compounding-protocol related tasks." |
+| [conducting-daily-rounds](healthcare/conducting-daily-rounds/SKILL.md) | `conducting-daily-rounds` | `low` | Structures systematic rounding documentation with overnight events, assessment, and plan updates. Use when documenting daily ro... |
 | [conducting-discharge-planning-nursing](healthcare/conducting-discharge-planning-nursing/SKILL.md) | `conducting-discharge-planning-nursing` | `low` | Coordinates nursing discharge planning with medication teaching, follow-up scheduling, and resource coordination. Use when plan... |
 | [conducting-health-economics-research](healthcare/conducting-health-economics-research/SKILL.md) | `conducting-health-economics-research` | `low` | Structures cost-effectiveness and health economic analyses with QALY calculations and model validation. Use when conducting hea... |
 | [conducting-health-equity-analyses](healthcare/conducting-health-equity-analyses/SKILL.md) | `conducting-health-equity-analyses` | `low` | Analyzes health disparities with demographic stratification and equity-focused intervention planning. Use when analyzing health... |
 | [conducting-health-impact-assessments](healthcare/conducting-health-impact-assessments/SKILL.md) | `conducting-health-impact-assessments` | `low` | Structures health impact assessment with exposure evaluation and risk characterization. Use when assessing health impacts, eval... |
 | [conducting-nursing-assessments](healthcare/conducting-nursing-assessments/SKILL.md) | `conducting-nursing-assessments` | `low` | Structures head-to-toe nursing assessments with system-by-system documentation and abnormal findings. Use when performing nursi... |
 | [conducting-program-evaluation-public-health](healthcare/conducting-program-evaluation-public-health/SKILL.md) | `conducting-program-evaluation-public-health` | `low` | Structures program evaluation using CDC framework with process, outcome, and impact assessment. Use when evaluating public heal... |
+| [conducting-surgical-time-outs](healthcare/conducting-surgical-time-outs/SKILL.md) | `conducting-surgical-time-outs` | `low` | Structures WHO surgical safety checklist completion with sign-in, time-out, and sign-out documentation. Use when performing sur... |
 | [consent-form](healthcare/consent-form/SKILL.md) | `consent-form` | `low` | "Create informed consent forms for procedures. TRIGGERS - Use when user needs help with consent-form related tasks." |
 | [continuing-education](healthcare/continuing-education/SKILL.md) | `continuing-education` | `low` | "Plan continuing education programs for healthcare. TRIGGERS - Use when user needs help with continuing-education related tasks." |
 | [converting-medication-routes](healthcare/converting-medication-routes/SKILL.md) | `converting-medication-routes` | `low` | Calculates IV-to-oral conversions and opioid equianalgesic dosing. Use when converting medication routes, calculating equianalg... |
+| [coordinating-multidisciplinary-rounds](healthcare/coordinating-multidisciplinary-rounds/SKILL.md) | `coordinating-multidisciplinary-rounds` | `low` | Synthesizes input from nursing, pharmacy, PT/OT, social work, and case management into unified care plans. Use when conducting ... |
+| [coordinating-surgical-scheduling](healthcare/coordinating-surgical-scheduling/SKILL.md) | `coordinating-surgical-scheduling` | `low` | Manages surgical scheduling with block time utilization, equipment needs, and team coordination. Use when scheduling surgeries,... |
 | [creating-nursing-care-plans](healthcare/creating-nursing-care-plans/SKILL.md) | `creating-nursing-care-plans` | `low` | Develops NANDA-I nursing care plans with nursing diagnoses, outcomes (NOC), and interventions (NIC). Use when creating care pla... |
 | [credentialing-process](healthcare/credentialing-process/SKILL.md) | `credentialing-process` | `low` | "Design provider credentialing processes. TRIGGERS - Use when user needs help with credentialing-process related tasks." |
 | [dental-case-presentation](healthcare/dental-case-presentation/SKILL.md) | `dental-case-presentation` | `low` | "Design case presentation frameworks for treatment. TRIGGERS - Use when user needs help with dental-case-presentation related t... |
@@ -8925,6 +9184,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [documenting-nursing-notes](healthcare/documenting-nursing-notes/SKILL.md) | `documenting-nursing-notes` | `low` | Structures nursing progress notes with SBAR communication and clinical narrative documentation. Use when writing nursing notes,... |
 | [documenting-psychotherapy-notes](healthcare/documenting-psychotherapy-notes/SKILL.md) | `documenting-psychotherapy-notes` | `low` | Structures psychotherapy documentation meeting billing and clinical requirements. Use when documenting therapy sessions, writin... |
 | [documenting-resuscitation-events](healthcare/documenting-resuscitation-events/SKILL.md) | `documenting-resuscitation-events` | `low` | Creates structured code documentation with timestamps, interventions, and ROSC criteria. Use when documenting cardiac arrests, ... |
+| [documenting-surgical-pathology-requests](healthcare/documenting-surgical-pathology-requests/SKILL.md) | `documenting-surgical-pathology-requests` | `low` | Structures surgical pathology requisitions with clinical history, specimen description, and specific diagnostic questions. Use ... |
 | [documenting-telemedicine-visits](healthcare/documenting-telemedicine-visits/SKILL.md) | `documenting-telemedicine-visits` | `low` | Structures telehealth encounter documentation with technology modality, clinical limitations, and follow-up planning. Use when ... |
 | [drug-utilization-review](healthcare/drug-utilization-review/SKILL.md) | `drug-utilization-review` | `low` | "Design drug utilization review programs. TRIGGERS - Use when user needs help with drug-utilization-review related tasks." |
 | [eas-update-insights](healthcare/eas-update-insights/SKILL.md) | `eas-update-insights` | `critical` | "Check the health of published EAS Updates: crash rates, install/launch counts, unique users, payload size, and the split betwe... |
@@ -8986,6 +9246,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [informed-consent-form-clinical-trial](healthcare/informed-consent-form-clinical-trial/SKILL.md) | `informed-consent-form-clinical-trial` | `low` | Drafts an IRB-ready Informed Consent Form (ICF) for FDA-regulated clinical trials compliant with 21 CFR 50.25, 50.27, and ICH-G... |
 | [insurance-appeal](healthcare/insurance-appeal/SKILL.md) | `insurance-appeal` | `low` | "Write insurance appeal letters with documentation. TRIGGERS - Use when user needs help with insurance-appeal related tasks." |
 | [intake-form](healthcare/intake-form/SKILL.md) | `intake-form` | `low` | "Create patient intake forms with history and screening. TRIGGERS - Use when user needs help with intake-form related tasks." |
+| [interpreting-surgical-pathology](healthcare/interpreting-surgical-pathology/SKILL.md) | `interpreting-surgical-pathology` | `low` | Structures surgical pathology reports with diagnosis, staging, margins, and prognostic markers. Use when interpreting biopsies,... |
 | [inventory-management-pharmacy](healthcare/inventory-management-pharmacy/SKILL.md) | `inventory-management-pharmacy` | `low` | "Design pharmacy inventory management. TRIGGERS - Use when user needs help with inventory-management-pharmacy related tasks." |
 | [invoice-health-check](healthcare/invoice-health-check/SKILL.md) | `invoice-health-check` | `low` | Use when scoring invoice completeness, billing accuracy, customer clarity, and collection risk before sending an invoice or pub... |
 | [irb-application](healthcare/irb-application/SKILL.md) | `irb-application` | `low` | "Write IRB applications for research approval. TRIGGERS - Use when user needs help with irb-application related tasks." |
@@ -9027,6 +9288,8 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [managing-psychotropic-medications](healthcare/managing-psychotropic-medications/SKILL.md) | `managing-psychotropic-medications` | `low` | Guides psychotropic prescribing with evidence-based selection, monitoring, and titration schedules. Use when selecting psychotr... |
 | [managing-rapid-response-nursing](healthcare/managing-rapid-response-nursing/SKILL.md) | `managing-rapid-response-nursing` | `low` | Structures rapid response team activation criteria and nursing documentation during rapid response events. Use when activating ... |
 | [managing-risk-management-healthcare](healthcare/managing-risk-management-healthcare/SKILL.md) | `managing-risk-management-healthcare` | `low` | Structures healthcare risk management with incident investigation, claims analysis, and loss prevention strategies. Use when ma... |
+| [managing-surgical-complications](healthcare/managing-surgical-complications/SKILL.md) | `managing-surgical-complications` | `low` | Classifies and documents surgical complications using Clavien-Dindo grading with management protocols. Use when managing post-s... |
+| [managing-surgical-site-infections](healthcare/managing-surgical-site-infections/SKILL.md) | `managing-surgical-site-infections` | `low` | Classifies SSIs using CDC criteria with treatment protocols and reporting requirements. Use when identifying surgical infection... |
 | [managing-telehealth-compliance](healthcare/managing-telehealth-compliance/SKILL.md) | `managing-telehealth-compliance` | `low` | Evaluates telehealth program compliance with state licensing, prescribing, and reimbursement requirements. Use when assessing t... |
 | [managing-telemedicine-technology](healthcare/managing-telemedicine-technology/SKILL.md) | `managing-telemedicine-technology` | `low` | Evaluates and implements telemedicine technology platforms with clinical workflow integration. Use when selecting telehealth pl... |
 | [managing-workplace-safety-healthcare](healthcare/managing-workplace-safety-healthcare/SKILL.md) | `managing-workplace-safety-healthcare` | `low` | Tracks OSHA healthcare requirements including bloodborne pathogen, TB, and violence prevention programs. Use when managing OSHA... |
@@ -9108,6 +9371,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [pharmacy-staff-training](healthcare/pharmacy-staff-training/SKILL.md) | `pharmacy-staff-training` | `low` | "Design training for pharmacy staff. TRIGGERS - Use when user needs help with pharmacy-staff-training related tasks." |
 | [pharmacy-technology](healthcare/pharmacy-technology/SKILL.md) | `pharmacy-technology` | `low` | "Guide pharmacy technology selection. TRIGGERS - Use when user needs help with pharmacy-technology related tasks." |
 | [physical-therapy-plan](healthcare/physical-therapy-plan/SKILL.md) | `physical-therapy-plan` | `low` | "Create physical therapy plans with exercises and goals. TRIGGERS - Use when user needs help with physical-therapy-plan related... |
+| [physician-employment-agreement](healthcare/physician-employment-agreement/SKILL.md) | `physician-employment-agreement` | `low` | >- Drafts regulatory-compliant Physician Employment Agreements between healthcare employers and licensed physicians, enforcing ... |
 | [physician-recruitment-plan](healthcare/physician-recruitment-plan/SKILL.md) | `physician-recruitment-plan` | `low` | "Plan physician recruitment. TRIGGERS - Use when user needs help with physician-recruitment-plan related tasks." |
 | [population-health-management](healthcare/population-health-management/SKILL.md) | `population-health-management` | `low` | "Design population health management programs. TRIGGERS - Use when user needs help with population-health-management related ta... |
 | [practice-marketing](healthcare/practice-marketing/SKILL.md) | `practice-marketing` | `low` | "Create healthcare practice marketing strategies. TRIGGERS - Use when user needs help with practice-marketing related tasks." |
@@ -9167,6 +9431,8 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [wellally-tech](healthcare/wellally-tech/SKILL.md) | `wellally-tech` | `critical` | "Integrate multiple digital health data sources, connect to [WellAlly.tech](https://www.wellally.tech/) knowledge base, providi... |
 | [wellness-plan](healthcare/wellness-plan/SKILL.md) | `wellness-plan` | `low` | "Create wellness plans with lifestyle modifications. TRIGGERS - Use when user needs help with wellness-plan related tasks." |
 | [writing-clinical-study-reports](healthcare/writing-clinical-study-reports/SKILL.md) | `writing-clinical-study-reports` | `low` | Creates ICH E3-compliant clinical study reports with required sections and data presentation. Use when writing CSRs, formatting... |
+| [writing-discharge-instructions-surgical](healthcare/writing-discharge-instructions-surgical/SKILL.md) | `writing-discharge-instructions-surgical` | `low` | Creates procedure-specific discharge instructions with activity restrictions, wound care, and return precautions. Use when writ... |
+| [writing-surgical-consultation-notes](healthcare/writing-surgical-consultation-notes/SKILL.md) | `writing-surgical-consultation-notes` | `low` | Creates structured surgical consultation responses with assessment and surgical candidacy determination. Use when responding to... |
 | [your-skill-name](healthcare/your-skill-name/SKILL.md) | `your-skill-name` | `low` | Healthcare-focused skill for <replace-this>. Use when an agent needs support with <replace-this>, especially in healthcare soft... |
 
 ---
@@ -9477,13 +9743,109 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
-## <a id="humanities"></a>📁 Humanities (3 skills)
+## <a id="humanities"></a>📁 Humanities (99 skills)
 
 | Skill ID | Name | Risk | Description |
 | :--- | :--- | :---: | :--- |
+| [abstract-and-intro-writer](humanities/abstract-and-intro-writer/SKILL.md) | `abstract-and-intro-writer` | `low` | Draft or revise the abstract and introduction of a research paper. Use whenever the user needs to write or improve these sectio... |
+| [anthropology](humanities/anthropology/SKILL.md) | `anthropology` | `low` | "Conduct ethnographic fieldwork, systematic participant observation, thick description, and kinship diagramming." |
+| [apply-cold-email-drafter](humanities/apply-cold-email-drafter/SKILL.md) | `apply-cold-email-drafter` | `low` | Draft, critique, and revise concise cold emails to professors for PhD applications, research internships, RA opportunities, lab... |
+| [apply-cv-builder](humanities/apply-cv-builder/SKILL.md) | `apply-cv-builder` | `low` | Build, revise, and restructure academic CVs for PhD applications, research master's programs, fellowships, research internships... |
+| [apply-cv-reviewer](humanities/apply-cv-reviewer/SKILL.md) | `apply-cv-reviewer` | `low` | >- Diagnose an academic CV the way an admissions committee reads it, before any rewriting. Use whenever the user asks to review... |
+| [apply-dossier-evaluator](humanities/apply-dossier-evaluator/SKILL.md) | `apply-dossier-evaluator` | `low` | Score and evaluate a further-education application dossier (PhD, research master's, scholarship/fellowship, or research interns... |
+| [apply-interview-prep](humanities/apply-interview-prep/SKILL.md) | `apply-interview-prep` | `low` | >- Prepare for academic selection interviews and conversations — PhD admissions, funded-project or DAAD-style panels, scholarsh... |
+| [apply-motivation-keeper](humanities/apply-motivation-keeper/SKILL.md) | `apply-motivation-keeper` | `low` | Help a PhD student recover motivation, reframe setbacks, and rebuild momentum after rejection, failure, stagnation, or burnout.... |
+| [apply-package-auditor](humanities/apply-package-auditor/SKILL.md) | `apply-package-auditor` | `low` | >- Audit a full PhD or research-application package for declared-theme fit, coherence, missing evidence, narrative consistency,... |
+| [apply-profile-reader](humanities/apply-profile-reader/SKILL.md) | `apply-profile-reader` | `low` | Read an academic-career applicant profile from files, folders, notes, CVs, resumes, transcripts, research statements, project w... |
+| [apply-program-fit-mapper](humanities/apply-program-fit-mapper/SKILL.md) | `apply-program-fit-mapper` | `low` | >- Map an applicant's research interests to programmes, tracks, faculty, labs, and departments, and check whether their profile... |
+| [apply-program-theme-extractor](humanities/apply-program-theme-extractor/SKILL.md) | `apply-program-theme-extractor` | `low` | >- Determine what a programme, track, specialisation pathway, doctoral school, or funding call actually selects for — its decla... |
+| [apply-recommendation-letter-strategist](humanities/apply-recommendation-letter-strategist/SKILL.md) | `apply-recommendation-letter-strategist` | `low` | >- Plan PhD and research-application recommendation letters: choose recommenders, assess letter strength and risk, draft reques... |
+| [apply-research-direction-mapper](humanities/apply-research-direction-mapper/SKILL.md) | `apply-research-direction-mapper` | `low` | Define a professor's recent and trending research direction from publications, lab pages, grants, talks, students, and public m... |
+| [apply-sop-writer](humanities/apply-sop-writer/SKILL.md) | `apply-sop-writer` | `low` | >- Write, review, score, improve, or iterate on Statements of Purpose and PhD application essays for research programs. Use thi... |
+| [archaeology](humanities/archaeology/SKILL.md) | `archaeology` | `low` | "Apply the Harris Matrix to archaeological stratigraphy, execute ceramic typologies, and conduct artifact provenance analysis." |
+| [argument-audit](humanities/argument-audit/SKILL.md) | `argument-audit` | `low` | >- Interactively audit whether stated evidence or premises establish a claim in a proof, essay, research conclusion, or everyda... |
+| [art-history](humanities/art-history/SKILL.md) | `art-history` | `low` | "Deconstruct visual artwork using Panofsky's three-tiered iconographical method and formal stylistic analysis." |
+| [artifact-release-packager](humanities/artifact-release-packager/SKILL.md) | `artifact-release-packager` | `low` | Plan and audit research artifact releases for papers, including code, data, models, configs, checkpoints, scripts, environment ... |
+| [banking-ai-literature-mapper](humanities/banking-ai-literature-mapper/SKILL.md) | `banking-ai-literature-mapper` | `low` | Map publications, prior successful cases, datasets, benchmarks, and method families for banking and fintech AI problems. Use wh... |
+| [banking-use-case-discovery](humanities/banking-use-case-discovery/SKILL.md) | `banking-use-case-discovery` | `low` | Discover and prioritize banking, fintech, and financial-services AI/ML/R&D use cases from vague business goals, stakeholder pai... |
+| [benchmark-and-baseline-selector](humanities/benchmark-and-baseline-selector/SKILL.md) | `benchmark-and-baseline-selector` | `low` | Given a research proposal, claim, method, or result, recommend the baselines and benchmarks needed to support it — split into a... |
+| [citation-auditor](humanities/citation-auditor/SKILL.md) | `citation-auditor` | `low` | Audit a paper's bibliography and inline citations for correctness — verifying papers exist, claims match what the cited paper a... |
+| [classics](humanities/classics/SKILL.md) | `classics` | `low` | "Perform recensio, collation of manuscript witnesses, stemma codicum reconstruction, and emendatio on classical Latin and Greek... |
+| [concept-exercise-generator](humanities/concept-exercise-generator/SKILL.md) | `concept-exercise-generator` | `low` | >- Generate a graded exercise set — easy to advanced — that lets a learner verify whether they actually understand a topic, con... |
+| [cross-domain-analogy-finder](humanities/cross-domain-analogy-finder/SKILL.md) | `cross-domain-analogy-finder` | `low` | >- Find a concept's structural twin in a distant field — to borrow a solution, or to check whether the idea already exists unde... |
+| [cultural-heritage](humanities/cultural-heritage/SKILL.md) | `cultural-heritage` | `low` | "Document and revitalize intangible cultural heritage (ICH) conforming to the 2003 UNESCO Convention." |
+| [cultural-history](humanities/cultural-history/SKILL.md) | `cultural-history` | `low` | "Examine historical mentalities, cultural representations, popular rituals, and everyday life structures." |
+| [deck-beamer-academic](humanities/deck-beamer-academic/SKILL.md) | `deck-beamer-academic` | `low` | >- Build a compile-ready LaTeX Beamer deck for an academic talk — conference presentation, seminar/colloquium, invited talk, jo... |
+| [deck-beamer-proposal-report](humanities/deck-beamer-proposal-report/SKILL.md) | `deck-beamer-proposal-report` | `low` | >- Build a compile-ready LaTeX Beamer deck for a research proposal or a research report — grant/PhD/project proposal defenses, ... |
+| [deck-business-report](humanities/deck-business-report/SKILL.md) | `deck-business-report` | `low` | >- Build a business / industrial report deck in PowerPoint or Canva — executive summaries, stakeholder updates, project/pilot r... |
+| [discussion-report-synthesizer](humanities/discussion-report-synthesizer/SKILL.md) | `discussion-report-synthesizer` | `low` | 'Synthesize a fragmented academic conversation into a cohesive, structured markdown report. Use this skill whenever the user ha... |
+| [figure-table-planner](humanities/figure-table-planner/SKILL.md) | `figure-table-planner` | `low` | Plan, audit, or revise the figures, tables, captions, and visual evidence for a research paper. Use this skill whenever the use... |
+| [flow-deep-understanding](humanities/flow-deep-understanding/SKILL.md) | `flow-deep-understanding` | `low` | >- Orchestrate depth-first mastery of ONE specific object the user already partly knows — a paper, method, algorithm, theorem, ... |
+| [flow-idea-to-proof](humanities/flow-idea-to-proof/SKILL.md) | `flow-idea-to-proof` | `low` | >- Orchestrate the path from a raw research idea to a formal claim with a defensible proof design — drawing the hypothesis out ... |
+| [flow-learn-new-topic](humanities/flow-learn-new-topic/SKILL.md) | `flow-learn-new-topic` | `low` | >- Orchestrate breadth-first onboarding into an unfamiliar topic, method, subfield, or research area — going from near-zero to ... |
+| [flow-paper-lifecycle](humanities/flow-paper-lifecycle/SKILL.md) | `flow-paper-lifecycle` | `low` | >- Orchestrate a research paper end-to-end — from raw idea through literature grounding, experiment design, implementation, res... |
+| [flow-phd-application](humanities/flow-phd-application/SKILL.md) | `flow-phd-application` | `low` | >- Orchestrate a complete PhD / research-program application package end-to-end — from reading the applicant's materials throug... |
+| [folklore](humanities/folklore/SKILL.md) | `folklore` | `low` | "Classify folktales using the Aarne-Thompson-Uther (ATU) index and analyze oral formulaic composition." |
+| [gap-finder](humanities/gap-finder/SKILL.md) | `gap-finder` | `low` | Read a research paper and surface publishable theoretical gaps — unstated assumptions, loose bounds, missing guarantees, unjust... |
+| [gap-motivation-builder](humanities/gap-motivation-builder/SKILL.md) | `gap-motivation-builder` | `low` | >- Interactively build the motivation case for filling a research gap — turn "no one has done X" into who is concretely hurt, w... |
+| [gre-issue-essay](humanities/gre-issue-essay/SKILL.md) | `gre-issue-essay` | `low` | Draft, score, and improve GRE Analytical Writing "Analyze an Issue" essays against the 0–6 rubric. Use this skill whenever the ... |
+| [gre-learning-planner](humanities/gre-learning-planner/SKILL.md) | `gre-learning-planner` | `low` | Build a personalised GRE study plan — diagnostic baseline, Verbal/Quant/Writing time allocation, weekly schedule, vocabulary pi... |
+| [gre-quant-coach](humanities/gre-quant-coach/SKILL.md) | `gre-quant-coach` | `low` | Coach GRE Quantitative Reasoning — quantitative comparison tactics, problem-solving and data-interpretation strategy, content-g... |
+| [gre-reading-comprehension](humanities/gre-reading-comprehension/SKILL.md) | `gre-reading-comprehension` | `low` | Coach GRE Reading Comprehension and paragraph-argument (critical reasoning) questions — passage mapping, question-type strategi... |
+| [gre-verbal-reasoning](humanities/gre-verbal-reasoning/SKILL.md) | `gre-verbal-reasoning` | `low` | Coach GRE Verbal Reasoning Text Completion and Sentence Equivalence — explain items, generate practice sets, diagnose recurring... |
+| [gre-vocabulary-builder](humanities/gre-vocabulary-builder/SKILL.md) | `gre-vocabulary-builder` | `low` | Build, drill, and retain GRE-level vocabulary the way the test actually uses it — meaning clusters, charge (positive/negative),... |
+| [heritage](humanities/heritage/SKILL.md) | `heritage` | `low` | "Manage heritage conservation plans, Outstanding Universal Value (OUV) statements, and cultural tourism impacts." |
+| [historiography](humanities/historiography/SKILL.md) | `historiography` | `low` | "Analyze the evolution of historical thought from Rankean positivism to the Annales School, Marxist history, and Subaltern stud... |
+| [history](humanities/history/SKILL.md) | `history` | `low` | "Analyze historical documents, critique provenance, cross-examine secondary scholarship, and construct causal historical narrat... |
 | [hum-digital-humanities-tei-paleography](humanities/hum-digital-humanities-tei-paleography/SKILL.md) | `hum-digital-humanities-tei-paleography` | `low` | "Transcribe, encode, and computationally analyze historical manuscripts using Text Encoding Initiative (TEI P5) XML guidelines ... |
 | [humanities-writing-companion](humanities/humanities-writing-companion/SKILL.md) | `humanities-writing-companion` | `low` | > Thinking partner for humanities scholars — history, philosophy, literature, art history, religious studies, classics, and adj... |
+| [hypothesis-and-ablation-planner](humanities/hypothesis-and-ablation-planner/SKILL.md) | `hypothesis-and-ablation-planner` | `low` | Design ablations that isolate causal mechanisms instead of producing decorative tables. Use during paper preparation, benchmark... |
+| [ielts-grammar-coach](humanities/ielts-grammar-coach/SKILL.md) | `ielts-grammar-coach` | `low` | >- Coach and score English grammar for IELTS, focused on the Grammatical Range & Accuracy (GRA) criterion — estimate a GRA band... |
+| [ielts-learning-planner](humanities/ielts-learning-planner/SKILL.md) | `ielts-learning-planner` | `low` | Build a personalised IELTS study plan with weekly schedules, skill-specific drills, and progress milestones. Use this skill whe... |
+| [ielts-progress-reporter](humanities/ielts-progress-reporter/SKILL.md) | `ielts-progress-reporter` | `low` | Read marked IELTS Writing feedback in a practice vault and produce a periodic progress report with band trends, recurring error... |
+| [ielts-reading-strategies](humanities/ielts-reading-strategies/SKILL.md) | `ielts-reading-strategies` | `low` | Teach, practise, and give feedback on IELTS Academic or General Training Reading strategies. Use this skill when the user wants... |
+| [ielts-speaking-coach](humanities/ielts-speaking-coach/SKILL.md) | `ielts-speaking-coach` | `low` | >- Simulate, score, and give feedback on IELTS Speaking tests (Parts 1, 2, and 3). Use this skill when the user wants to practi... |
+| [ielts-vocabulary-builder](humanities/ielts-vocabulary-builder/SKILL.md) | `ielts-vocabulary-builder` | `low` | Build, drill, and apply IELTS-relevant vocabulary for Writing, Speaking, and Reading. Use this skill when the user wants to lea... |
+| [ielts-writing-task1](humanities/ielts-writing-task1/SKILL.md) | `ielts-writing-task1` | `low` | "Draft, analyse, score, and improve IELTS Academic Writing Task 1 responses (150-word minimum reports on graphs, charts, tables... |
+| [ielts-writing-task2](humanities/ielts-writing-task2/SKILL.md) | `ielts-writing-task2` | `low` | "Draft, analyse, score, and improve IELTS Academic or General Training Writing Task 2 essays (250-word minimum). Use this skill... |
+| [industry-problem-framing](humanities/industry-problem-framing/SKILL.md) | `industry-problem-framing` | `low` | Convert vague industry, banking, fintech, enterprise, or operational problems into precise R&D problem statements, stakeholder ... |
+| [init-workspace](humanities/init-workspace/SKILL.md) | `init-workspace` | `low` | 'Initialize a structured Obsidian-style workspace for learning, research notebooks, papers, academic applications, talks, test ... |
+| [jax-training-recipe](humanities/jax-training-recipe/SKILL.md) | `jax-training-recipe` | `low` | Produce an implementable JAX, Flax, and Optax training recipe with explicit PRNG management, pure functions, jit/vmap/pmap usag... |
+| [knowledge-debt-audit](humanities/knowledge-debt-audit/SKILL.md) | `knowledge-debt-audit` | `low` | Detect when AI assistance has produced output you cannot regenerate yourself, call the loan before it compounds, and re-probe r... |
+| [literature-triangulation](humanities/literature-triangulation/SKILL.md) | `literature-triangulation` | `low` | Build a source-grounded map of a research topic by comparing papers, benchmarks, code, and genuine disagreements. Use whenever ... |
+| [method-section-writer](humanities/method-section-writer/SKILL.md) | `method-section-writer` | `low` | Draft or revise the method (approach / model / framework) section of a research paper. Use whenever the user needs to write or ... |
+| [model-eval-error-analysis](humanities/model-eval-error-analysis/SKILL.md) | `model-eval-error-analysis` | `low` | Evaluate a model rigorously and inspect where it fails. Use after training, during comparison to baselines, for LLM/system eval... |
+| [museum-studies](humanities/museum-studies/SKILL.md) | `museum-studies` | `low` | "Design museum narrative exhibition layouts, author object labels, and manage collection acquisition ethics." |
+| [naive-student](humanities/naive-student/SKILL.md) | `naive-student` | `low` | >- Become an honest novice while the USER teaches a concept, theorem, method, or mechanism. Use when the user says "let me expl... |
+| [paper-argument-planner](humanities/paper-argument-planner/SKILL.md) | `paper-argument-planner` | `low` | Plan the argument of a research paper from an idea, partial draft, experiment results, notes, or reviewer-facing story. Use thi... |
+| [paper-idea-and-scope-brainstormer](humanities/paper-idea-and-scope-brainstormer/SKILL.md) | `paper-idea-and-scope-brainstormer` | `low` | Brainstorm a research idea and decide what a new paper should cover — generate candidate framings, pick the central contributio... |
+| [paper-to-code](humanities/paper-to-code/SKILL.md) | `paper-to-code` | `low` | Reproduce a paper's method in minimal, direct PyTorch when no official code is available, to check whether the method works as ... |
+| [peer-review-writer](humanities/peer-review-writer/SKILL.md) | `peer-review-writer` | `low` | >- Write a peer review of someone else's paper for a conference or journal — structured summary, evidenced strengths and weakne... |
+| [professor-critic](humanities/professor-critic/SKILL.md) | `professor-critic` | `low` | >- Critique a FINISHED artifact the way the specific person who will judge it actually would — a strict-professor teardown with... |
+| [professor-mentor-technical-teaching](humanities/professor-mentor-technical-teaching/SKILL.md) | `professor-mentor-technical-teaching` | `low` | Explain advanced technical topics the way a senior professor mentors a graduate student — intuition and motivation first, mathe... |
+| [prompting-claude-models](humanities/prompting-claude-models/SKILL.md) | `prompting-claude-models` | `low` | >- Design prompts, system prompts, and agent scaffolding for LLM-backed features built on Claude models — LLM-as-judge and eval... |
+| [pytorch-training-recipe](humanities/pytorch-training-recipe/SKILL.md) | `pytorch-training-recipe` | `low` | Produce an implementable PyTorch or PyTorch Lightning training recipe with dataset handling, optimization, logging, checkpointi... |
+| [related-work-writer](humanities/related-work-writer/SKILL.md) | `related-work-writer` | `low` | Write or revise a Related Work section from a source-grounded literature map, annotated bibliography, paper list, or draft. Use... |
+| [reproducibility-audit](humanities/reproducibility-audit/SKILL.md) | `reproducibility-audit` | `low` | Audit whether a result can actually be reproduced from the available code, data, configs, and documentation. Use before trustin... |
+| [research-codebase](humanities/research-codebase/SKILL.md) | `research-codebase` | `low` | >- Set up and maintain a research-experiment harness so experiments run fast and every paper number traces to one command. Use ... |
+| [research-idea-stress-test](humanities/research-idea-stress-test/SKILL.md) | `research-idea-stress-test` | `low` | Stress-test a research idea before major investment. Use to expose hidden assumptions, weak novelty, confounders, and the cheap... |
+| [research-proposal-writer](humanities/research-proposal-writer/SKILL.md) | `research-proposal-writer` | `low` | >- Write or refine a forward-looking research proposal — a plan for work not yet done, judged on plausibility and feasibility r... |
+| [research-talk-planner](humanities/research-talk-planner/SKILL.md) | `research-talk-planner` | `low` | Plan and structure a research talk (conference presentation, seminar, invited talk, or job talk) from a paper, set of results, ... |
+| [results-writeup](humanities/results-writeup/SKILL.md) | `results-writeup` | `low` | Turn verified research findings into clear, calibrated scientific writing — paper sections (Results, Experiments, Discussion), ... |
+| [reviewer-response-strategist](humanities/reviewer-response-strategist/SKILL.md) | `reviewer-response-strategist` | `low` | Plan rebuttals, reviewer responses, and revision strategies for research papers. Use this skill whenever the user shares peer r... |
+| [statistical-testing-guide](humanities/statistical-testing-guide/SKILL.md) | `statistical-testing-guide` | `low` | >- Choose the right statistical test, compute effect sizes, design power analyses, and report statistics correctly in ML and AI... |
+| [submission-readiness-audit](humanities/submission-readiness-audit/SKILL.md) | `submission-readiness-audit` | `low` | Audit a research paper, draft, appendix, or submission package before deadline. Use this skill whenever the user asks if a pape... |
+| [survey-paper-writer](humanities/survey-paper-writer/SKILL.md) | `survey-paper-writer` | `low` | Write, plan, or revise standalone survey, tutorial, review, or perspective papers whose main contribution is synthesizing a res... |
+| [theorem-and-claim-audit](humanities/theorem-and-claim-audit/SKILL.md) | `theorem-and-claim-audit` | `low` | Pressure-test mathematical arguments, derivations, and ML paper claims, and deliver a written report-style audit. Use for theor... |
+| [theory-assumption-extractor](humanities/theory-assumption-extractor/SKILL.md) | `theory-assumption-extractor` | `low` | Extract explicit and hidden assumptions from a proof, model, or empirical argument. Use for theorem reading, paper review, prop... |
+| [theory-counterexample-hunter](humanities/theory-counterexample-hunter/SKILL.md) | `theory-counterexample-hunter` | `low` | Search for edge cases, pathological constructions, and violated assumptions that break a conjecture or weaken a theorem. Use wh... |
+| [theory-formalism-translator](humanities/theory-formalism-translator/SKILL.md) | `theory-formalism-translator` | `low` | Translate an idea across optimization, probability, information theory, dynamical systems, graph theory, and statistics languag... |
+| [theory-paper-to-theorem-distiller](humanities/theory-paper-to-theorem-distiller/SKILL.md) | `theory-paper-to-theorem-distiller` | `low` | Distill a dense theory paper into definitions, main claims, proof strategy, and reusable techniques. Use for theoretical ML or ... |
+| [theory-proof-sketcher](humanities/theory-proof-sketcher/SKILL.md) | `theory-proof-sketcher` | `low` | Convert an informal mathematical idea into a precise theorem, lemma, or proof scaffold with explicit assumptions, dependency st... |
+| [theory-to-toy-cases](humanities/theory-to-toy-cases/SKILL.md) | `theory-to-toy-cases` | `low` | Turn abstract math or ML ideas into minimal examples, counterexamples, sanity checks, and tiny simulations. Use for theorem int... |
 | [tizzy916-humanities-writing-companion](humanities/tizzy916-humanities-writing-companion/SKILL.md) | `tizzy916-humanities-writing-companion` | `low` | "> Thinking partner for humanities scholars — history, philosophy, literature, art history, religious studies, classics, and ad... |
+| [venue-targeting](humanities/venue-targeting/SKILL.md) | `venue-targeting` | `low` | Select and prioritize publication venues (conferences, workshops, journals) for a research paper. Use whenever the user asks wh... |
+| [whiteboard-peer](humanities/whiteboard-peer/SKILL.md) | `whiteboard-peer` | `low` | >- Co-solve the unfinished middle of a research idea, conjecture, proof attempt, model design, or technical mechanism as an opi... |
 
 ---
 
@@ -9612,6 +9974,15 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
+## <a id="international-development"></a>📁 International Development (2 skills)
+
+| Skill ID | Name | Risk | Description |
+| :--- | :--- | :---: | :--- |
+| [africa-mobile-money](international-development/africa-mobile-money/SKILL.md) | `africa-mobile-money` | `low` | Integrate M-Pesa, Orange Money, Wave, and MTN MoMo payment APIs with proper error handling, reconciliation, and multi-operator ... |
+| [africa-ussd-development](international-development/africa-ussd-development/SKILL.md) | `africa-ussd-development` | `low` | Build USSD applications for African markets — menu design, session management, multi-operator integration, and user experience ... |
+
+---
+
 ## <a id="iot"></a>📁 Iot (18 skills)
 
 | Skill ID | Name | Risk | Description |
@@ -9678,11 +10049,23 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
-## <a id="knowledge-management"></a>📁 Knowledge Management (2 skills)
+## <a id="knowledge-management"></a>📁 Knowledge Management (14 skills)
 
 | Skill ID | Name | Risk | Description |
 | :--- | :--- | :---: | :--- |
+| [enterprise-search](knowledge-management/enterprise-search/SKILL.md) | `enterprise-search` | `low` | "Optimize search relevance, query expansion, spell checking, and metadata boosting across Elasticsearch/OpenSearch." |
+| [information-architecture](knowledge-management/information-architecture/SKILL.md) | `information-architecture` | `low` | "Organize site maps, content labeling systems, and contextual navigation pathways using card-sorting telemetry." |
+| [knowledge-architecture](knowledge-management/knowledge-architecture/SKILL.md) | `knowledge-architecture` | `low` | "Design structural schemas, search models, and content taxonomies connecting distributed organizational knowledge nodes." |
+| [knowledge-bases](knowledge-management/knowledge-bases/SKILL.md) | `knowledge-bases` | `low` | "Design, structure, and maintain Notion, Confluence, and internal wikis with verification cadences and stale content pruners." |
+| [knowledge-capture](knowledge-management/knowledge-capture/SKILL.md) | `knowledge-capture` | `low` | "Extract uncodified, tacit expertise from departing senior personnel using structured CDM (Critical Decision Method) interviews." |
+| [knowledge-governance](knowledge-management/knowledge-governance/SKILL.md) | `knowledge-governance` | `low` | "Establish content deprecation criteria, review SLAs, ownership metrics, and search drop-off analytics." |
+| [knowledge-sharing](knowledge-management/knowledge-sharing/SKILL.md) | `knowledge-sharing` | `low` | "Establish sustainable internal communities of practice, brown-bag sessions, and peer knowledge exchanges." |
+| [lessons-learned](knowledge-management/lessons-learned/SKILL.md) | `lessons-learned` | `low` | "Facilitate blame-free retrospectives to distill actionable lessons learned and feed insights into future planning templates." |
 | [maintain-codex-wiki](knowledge-management/maintain-codex-wiki/SKILL.md) | `maintain-codex-wiki` | `critical` | "Maintain a review-first engineering wiki with provenance, citation-aware queries, explicit capture and promotion, and determin... |
+| [ontology](knowledge-management/ontology/SKILL.md) | `ontology` | `low` | "Model domain semantics, classes, properties, and relationships using RDF, RDFS, OWL, and SPARQL queries." |
+| [organizational-memory](knowledge-management/organizational-memory/SKILL.md) | `organizational-memory` | `low` | "Capture enterprise institutional memory, project post-mortems, and historical rationale behind critical decisions." |
+| [tacit-knowledge](knowledge-management/tacit-knowledge/SKILL.md) | `tacit-knowledge` | `low` | "Operationalize Nonaka and Takeuchi's SECI model (Socialization, Externalization, Combination, Internalization)." |
+| [taxonomy](knowledge-management/taxonomy/SKILL.md) | `taxonomy` | `low` | "Construct hierarchical, faceted taxonomies and controlled vocabularies adhering to ISO 25964 standards." |
 | [wiki-builder](knowledge-management/wiki-builder/SKILL.md) | `wiki-builder` | `safe` | "Create and maintain reusable research wikis with source provenance, configurable structure, and local markdown outputs." |
 
 ---
@@ -9795,7 +10178,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
-## <a id="legal"></a>📁 Legal (1652 skills)
+## <a id="legal"></a>📁 Legal (1646 skills)
 
 | Skill ID | Name | Risk | Description |
 | :--- | :--- | :---: | :--- |
@@ -10130,7 +10513,6 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [coding-emergency-services](legal/coding-emergency-services/SKILL.md) | `coding-emergency-services` | `low` | Assigns ED-specific E/M codes with critical care time documentation and procedure coding. Use when coding ED visits, documentin... |
 | [coding-laboratory-services](legal/coding-laboratory-services/SKILL.md) | `coding-laboratory-services` | `low` | Assigns laboratory CPT codes with panel construction and specimen-specific modifiers. Use when coding lab tests, building lab p... |
 | [coding-radiology-services](legal/coding-radiology-services/SKILL.md) | `coding-radiology-services` | `low` | Assigns radiology CPT codes with professional/technical component and supervision level documentation. Use when coding imaging ... |
-| [coding-surgical-procedures](legal/coding-surgical-procedures/SKILL.md) | `coding-surgical-procedures` | `low` | Assigns CPT surgical codes with modifier selection and bundling/unbundling rules. Use when coding surgeries, applying surgical ... |
 | [cognovit-note](legal/cognovit-note/SKILL.md) | `cognovit-note` | `low` | Drafts cognovit promissory notes with confession of judgment provisions, gated by mandatory jurisdictional enforceability resea... |
 | [cognovit-promissory-note](legal/cognovit-promissory-note/SKILL.md) | `cognovit-promissory-note` | `low` | >- Drafts a U.S. cognovit promissory note with confession of judgment clause, enforceability gate, and execution formalities. U... |
 | [coi-compliance-review](legal/coi-compliance-review/SKILL.md) | `coi-compliance-review` | `low` | Reviews CRE insurance certificates (ACORD 25) and endorsements against Access Agreement insurance requirements, producing a pas... |
@@ -10168,7 +10550,6 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [conducting-credit-committee-presentations](legal/conducting-credit-committee-presentations/SKILL.md) | `conducting-credit-committee-presentations` | `low` | Structures credit committee packages with borrower analysis, risk assessment, structuring proposal, and recommendation document... |
 | [conducting-cross-border-due-diligence](legal/conducting-cross-border-due-diligence/SKILL.md) | `conducting-cross-border-due-diligence` | `low` | Structures international DD with multi-jurisdictional legal review, regulatory assessment, and cultural integration analysis. U... |
 | [conducting-customer-reference-checks](legal/conducting-customer-reference-checks/SKILL.md) | `conducting-customer-reference-checks` | `low` | Structures customer diligence with interview guides, NPS analysis, switching cost assessment, and usage pattern evaluation. Use... |
-| [conducting-daily-rounds](legal/conducting-daily-rounds/SKILL.md) | `conducting-daily-rounds` | `low` | Structures systematic rounding documentation with overnight events, assessment, and plan updates. Use when documenting daily ro... |
 | [conducting-debt-market-conditions-analysis](legal/conducting-debt-market-conditions-analysis/SKILL.md) | `conducting-debt-market-conditions-analysis` | `low` | Synthesizes DCM market activity with new issue spreads, fund flows, and market technical analysis for issuance timing. Use when... |
 | [conducting-dental-examinations](legal/conducting-dental-examinations/SKILL.md) | `conducting-dental-examinations` | `low` | Structures comprehensive dental examinations with periodontal charting, caries assessment, and oral cancer screening. Use when ... |
 | [conducting-disease-surveillance](legal/conducting-disease-surveillance/SKILL.md) | `conducting-disease-surveillance` | `low` | Structures disease surveillance systems with case definitions, reporting requirements, and trend analysis. Use when monitoring ... |
@@ -10205,7 +10586,6 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [conducting-secondary-due-diligence](legal/conducting-secondary-due-diligence/SKILL.md) | `conducting-secondary-due-diligence` | `low` | Structures buy-side DD for secondary transactions with underlying fund analysis, manager assessment, and portfolio-level risk e... |
 | [conducting-stark-law-analysis](legal/conducting-stark-law-analysis/SKILL.md) | `conducting-stark-law-analysis` | `low` | Evaluates physician self-referral arrangements against Stark Law exceptions with documentation. Use when analyzing Stark compli... |
 | [conducting-stress-test-interpretation](legal/conducting-stress-test-interpretation/SKILL.md) | `conducting-stress-test-interpretation` | `low` | Interprets exercise and pharmacologic stress tests with Duke treadmill score and nuclear findings. Use when reading stress test... |
-| [conducting-surgical-time-outs](legal/conducting-surgical-time-outs/SKILL.md) | `conducting-surgical-time-outs` | `low` | Structures WHO surgical safety checklist completion with sign-in, time-out, and sign-out documentation. Use when performing sur... |
 | [conducting-technical-due-diligence](legal/conducting-technical-due-diligence/SKILL.md) | `conducting-technical-due-diligence` | `low` | Structures technology diligence with architecture review, code quality assessment, scalability analysis, and technical debt eva... |
 | [conducting-traffic-and-demand-studies](legal/conducting-traffic-and-demand-studies/SKILL.md) | `conducting-traffic-and-demand-studies` | `low` | Evaluates demand forecasts for toll roads, airports, and ports with independent engineer review and scenario sensitivity analys... |
 | [conference-summary](legal/conference-summary/SKILL.md) | `conference-summary` | `low` | >- Produces structured legal conference summaries capturing session substance, speaker credentials, cited authorities, and prac... |
@@ -10248,9 +10628,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [coordinating-care-transitions](legal/coordinating-care-transitions/SKILL.md) | `coordinating-care-transitions` | `low` | Manages post-hospitalization follow-up with medication reconciliation and readmission prevention. Use when following up after d... |
 | [coordinating-emergency-transfers](legal/coordinating-emergency-transfers/SKILL.md) | `coordinating-emergency-transfers` | `low` | Structures EMTALA-compliant inter-facility transfer documentation and stabilization requirements. Use when arranging emergency ... |
 | [coordinating-multidisciplinary-cancer-care](legal/coordinating-multidisciplinary-cancer-care/SKILL.md) | `coordinating-multidisciplinary-cancer-care` | `low` | Synthesizes surgical, medical, and radiation oncology inputs into coordinated treatment timelines. Use when coordinating multim... |
-| [coordinating-multidisciplinary-rounds](legal/coordinating-multidisciplinary-rounds/SKILL.md) | `coordinating-multidisciplinary-rounds` | `low` | Synthesizes input from nursing, pharmacy, PT/OT, social work, and case management into unified care plans. Use when conducting ... |
 | [coordinating-social-work-needs](legal/coordinating-social-work-needs/SKILL.md) | `coordinating-social-work-needs` | `low` | Identifies psychosocial barriers to discharge and coordinates social work interventions. Use when assessing social needs, coord... |
-| [coordinating-surgical-scheduling](legal/coordinating-surgical-scheduling/SKILL.md) | `coordinating-surgical-scheduling` | `low` | Manages surgical scheduling with block time utilization, equipment needs, and team coordination. Use when scheduling surgeries,... |
 | [copyright-license-agreement](legal/copyright-license-agreement/SKILL.md) | `copyright-license-agreement` | `low` | Drafts a U.S. Copyright License Agreement for media content (film, music, photography, video, software, artwork). Structures re... |
 | [copyright-license-agreement-media](legal/copyright-license-agreement-media/SKILL.md) | `copyright-license-agreement-media` | `low` | Drafts a Copyright License Agreement for media content between a Licensor and Licensee. Covers exclusive/non-exclusive grants, ... |
 | [corporate](legal/corporate/SKILL.md) | `corporate` | `low` | Advises on corporate law matters including entity formation, governance, finance, M&A, securities, venture capital, non-profits... |
@@ -10361,7 +10739,6 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [documenting-informed-consent](legal/documenting-informed-consent/SKILL.md) | `documenting-informed-consent` | `low` | Structures informed consent documentation with risks, benefits, alternatives, and patient understanding confirmation. Use when ... |
 | [documenting-procedure-notes](legal/documenting-procedure-notes/SKILL.md) | `documenting-procedure-notes` | `low` | Creates structured procedure documentation with indications, technique, findings, and complications. Use when documenting inpat... |
 | [documenting-surgical-consent](legal/documenting-surgical-consent/SKILL.md) | `documenting-surgical-consent` | `low` | Structures surgical consent documentation with procedure-specific risks, alternatives, and patient understanding. Use when obta... |
-| [documenting-surgical-pathology-requests](legal/documenting-surgical-pathology-requests/SKILL.md) | `documenting-surgical-pathology-requests` | `low` | Structures surgical pathology requisitions with clinical history, specimen description, and specific diagnostic questions. Use ... |
 | [documenting-trauma-surgery](legal/documenting-trauma-surgery/SKILL.md) | `documenting-trauma-surgery` | `low` | Creates trauma surgery documentation with injury severity scoring and damage control principles. Use when documenting trauma op... |
 | [documenting-tumor-board-presentations](legal/documenting-tumor-board-presentations/SKILL.md) | `documenting-tumor-board-presentations` | `low` | Structures multidisciplinary tumor board case presentations with radiology, pathology, and treatment synthesis. Use when prepar... |
 | [documenting-ultrasound-obstetric](legal/documenting-ultrasound-obstetric/SKILL.md) | `documenting-ultrasound-obstetric` | `low` | Structures obstetric ultrasound reporting with biometry, anatomy survey, and growth assessment. Use when reporting OB ultrasoun... |
@@ -10614,7 +10991,6 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [interpreting-neuroradiology](legal/interpreting-neuroradiology/SKILL.md) | `interpreting-neuroradiology` | `low` | Structures brain and spine imaging interpretation with stroke, mass, and degenerative disease assessment. Use when reading neur... |
 | [interpreting-pediatric-imaging](legal/interpreting-pediatric-imaging/SKILL.md) | `interpreting-pediatric-imaging` | `low` | Adapts imaging interpretation for pediatric anatomy with age-appropriate normal variants. Use when reading pediatric imaging, d... |
 | [interpreting-routine-labs](legal/interpreting-routine-labs/SKILL.md) | `interpreting-routine-labs` | `low` | Analyzes comprehensive metabolic panels, CBCs, lipid panels, and thyroid function with clinical correlation. Use when reviewing... |
-| [interpreting-surgical-pathology](legal/interpreting-surgical-pathology/SKILL.md) | `interpreting-surgical-pathology` | `low` | Structures surgical pathology reports with diagnosis, staging, margins, and prognostic markers. Use when interpreting biopsies,... |
 | [interpreting-toxicology-screens](legal/interpreting-toxicology-screens/SKILL.md) | `interpreting-toxicology-screens` | `low` | Structures drug screen interpretation with confirmation testing and clinical correlation. Use when interpreting drug screens, m... |
 | [interpreting-tumor-markers](legal/interpreting-tumor-markers/SKILL.md) | `interpreting-tumor-markers` | `low` | Tracks tumor marker trends with diagnostic and monitoring interpretive frameworks. Use when tracking tumor markers, interpretin... |
 | [interpreting-urinalysis](legal/interpreting-urinalysis/SKILL.md) | `interpreting-urinalysis` | `low` | Structures complete urinalysis interpretation with microscopy correlation and clinical significance. Use when interpreting UA r... |
@@ -10682,6 +11058,12 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [legal-strategy-summary](legal/legal-strategy-summary/SKILL.md) | `legal-strategy-summary` | `low` | Generates structured litigation strategy summaries synthesizing case facts, legal arguments, procedural tactics, and risk asses... |
 | [legal-tech-strategy](legal/legal-tech-strategy/SKILL.md) | `legal-tech-strategy` | `low` | "Design legal technology strategies. TRIGGERS - Use when user needs help with legal-tech-strategy related tasks." |
 | [legal-technology-strategy](legal/legal-technology-strategy/SKILL.md) | `legal-technology-strategy` | `low` | "Design legal technology strategies. TRIGGERS - Use when user needs help with legal-technology-strategy related tasks." |
+| [leiloeiro-avaliacao](legal/leiloeiro-avaliacao/SKILL.md) | `leiloeiro-avaliacao` | `safe` | Avaliacao pericial de imoveis em leilao. Valor de mercado, liquidacao forcada, ABNT NBR 14653, metodos comparativo/renda/custo,... |
+| [leiloeiro-edital](legal/leiloeiro-edital/SKILL.md) | `leiloeiro-edital` | `safe` | Analise e auditoria de editais de leilao judicial e extrajudicial. Riscos ocultos, clausulas perigosas, debitos, ocupante e cla... |
+| [leiloeiro-ia](legal/leiloeiro-ia/SKILL.md) | `leiloeiro-ia` | `safe` | Especialista em leiloes judiciais e extrajudiciais de imoveis. Analise juridica, pericial e de mercado integrada. Orquestra os ... |
+| [leiloeiro-juridico](legal/leiloeiro-juridico/SKILL.md) | `leiloeiro-juridico` | `safe` | 'Analise juridica de leiloes: nulidades, bem de familia, alienacao fiduciaria, CPC arts 829-903, Lei 9514/97, onus reais, embar... |
+| [leiloeiro-mercado](legal/leiloeiro-mercado/SKILL.md) | `leiloeiro-mercado` | `safe` | Analise de mercado imobiliario para leiloes. Liquidez, desagio tipico, ROI, estrategias de saida (flip/reforma/renda), Selic 20... |
+| [leiloeiro-risco](legal/leiloeiro-risco/SKILL.md) | `leiloeiro-risco` | `safe` | Analise de risco em leiloes de imoveis. Score 36 pontos, riscos juridicos/financeiros/operacionais, stress test 4 cenarios e RO... |
 | [letter-of-intent](legal/letter-of-intent/SKILL.md) | `letter-of-intent` | `low` | "Write letters of intent for business transactions. TRIGGERS - Use when user needs help with letter-of-intent related tasks." |
 | [letter-of-intent-loi](legal/letter-of-intent-loi/SKILL.md) | `letter-of-intent-loi` | `low` | >- Drafts U.S. corporate transaction Letters of Intent (LOI) for mergers, acquisitions, investments, and strategic alliances. S... |
 | [lex](legal/lex/SKILL.md) | `lex` | `safe` | "Centralized 'Truth Engine' for cross-jurisdictional legal context (US, EU, CA) and contract scaffolding." |
@@ -10916,8 +11298,6 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [managing-strength-testing](legal/managing-strength-testing/SKILL.md) | `managing-strength-testing` | `low` | Structures manual muscle testing and dynamometry with grading and functional correlation. Use when testing muscle strength, gra... |
 | [managing-substance-abuse-confidentiality](legal/managing-substance-abuse-confidentiality/SKILL.md) | `managing-substance-abuse-confidentiality` | `low` | Applies 42 CFR Part 2 substance abuse confidentiality requirements with consent and disclosure protocols. Use when managing SUD... |
 | [managing-substance-use-disorders](legal/managing-substance-use-disorders/SKILL.md) | `managing-substance-use-disorders` | `low` | Structures SUD assessment with ASAM criteria placement, MAT protocols, and recovery planning. Use when assessing substance use,... |
-| [managing-surgical-complications](legal/managing-surgical-complications/SKILL.md) | `managing-surgical-complications` | `low` | Classifies and documents surgical complications using Clavien-Dindo grading with management protocols. Use when managing post-s... |
-| [managing-surgical-site-infections](legal/managing-surgical-site-infections/SKILL.md) | `managing-surgical-site-infections` | `low` | Classifies SSIs using CDC criteria with treatment protocols and reporting requirements. Use when identifying surgical infection... |
 | [managing-survivorship-care](legal/managing-survivorship-care/SKILL.md) | `managing-survivorship-care` | `low` | Creates survivorship care plans with surveillance schedules, late effects monitoring, and wellness recommendations. Use when cr... |
 | [managing-syndication-and-co-investment](legal/managing-syndication-and-co-investment/SKILL.md) | `managing-syndication-and-co-investment` | `low` | Coordinates multi-investor rounds with allocation, lead/follow dynamics, and information rights structuring. Use when syndicati... |
 | [managing-telemetry-monitoring](legal/managing-telemetry-monitoring/SKILL.md) | `managing-telemetry-monitoring` | `low` | Interprets telemetry rhythm strips with documentation requirements and escalation criteria. Use when monitoring telemetry, docu... |
@@ -11087,7 +11467,6 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [pfs-analyzer](legal/pfs-analyzer/SKILL.md) | `pfs-analyzer` | `low` | > Extracts and reconciles medical provider, wage-loss, and insurance/lien data from personal injury plaintiff fact sheets and i... |
 | [pharma-reg-summary](legal/pharma-reg-summary/SKILL.md) | `pharma-reg-summary` | `low` | Generates structured pharmaceutical regulatory compliance summaries covering FDA approval pathways, patent/IP intersections (Or... |
 | [phase-i-esa](legal/phase-i-esa/SKILL.md) | `phase-i-esa` | `low` | Drafts ASTM E1527-21 environmental site assessment reports under 40 CFR Part 312. Classifies RECs, CRECs, and HRECs to establis... |
-| [physician-employment-agreement](legal/physician-employment-agreement/SKILL.md) | `physician-employment-agreement` | `low` | >- Drafts regulatory-compliant Physician Employment Agreements between healthcare employers and licensed physicians, enforcing ... |
 | [pi-demand-summary](legal/pi-demand-summary/SKILL.md) | `pi-demand-summary` | `low` | Generates structured personal injury demand summaries covering liability analysis, chronological injury documentation, itemized... |
 | [pi-intake-form](legal/pi-intake-form/SKILL.md) | `pi-intake-form` | `low` | >- Drafts a structured personal injury client intake form for initial consultations covering client identification, incident de... |
 | [piia](legal/piia/SKILL.md) | `piia` | `low` | Drafts a Proprietary Information and Inventions Agreement (PIIA) for employment or consulting relationships. Covers confidentia... |
@@ -11442,28 +11821,13 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [work-for-hire-agreement](legal/work-for-hire-agreement/SKILL.md) | `work-for-hire-agreement` | `low` | Drafts a U.S. Work for Hire Agreement under 17 U.S.C. §§ 101 and 201(b) with fallback IP assignment, creator warranties, and in... |
 | [writ-of-execution](legal/writ-of-execution/SKILL.md) | `writ-of-execution` | `low` | Drafts writs of execution and supporting levy instructions for post-judgment enforcement of money judgments. Covers application... |
 | [writing-admission-orders](legal/writing-admission-orders/SKILL.md) | `writing-admission-orders` | `low` | Generates structured admission order sets with diagnosis-specific protocols and safety checks. Use when admitting patients, cre... |
-| [writing-discharge-instructions-surgical](legal/writing-discharge-instructions-surgical/SKILL.md) | `writing-discharge-instructions-surgical` | `low` | Creates procedure-specific discharge instructions with activity restrictions, wound care, and return precautions. Use when writ... |
 | [writing-grant-applications-research](legal/writing-grant-applications-research/SKILL.md) | `writing-grant-applications-research` | `low` | Structures NIH/foundation grant applications with specific aims, significance, and innovation sections. Use when writing resear... |
 | [writing-irb-submissions](legal/writing-irb-submissions/SKILL.md) | `writing-irb-submissions` | `low` | Creates IRB submission packages with protocol summaries, consent forms, and risk-benefit analysis. Use when submitting to IRB, ... |
 | [writing-operative-reports](legal/writing-operative-reports/SKILL.md) | `writing-operative-reports` | `low` | Creates structured operative notes with findings, technique, specimens, and estimated blood loss. Use when dictating operative ... |
-| [writing-surgical-consultation-notes](legal/writing-surgical-consultation-notes/SKILL.md) | `writing-surgical-consultation-notes` | `low` | Creates structured surgical consultation responses with assessment and surgical candidacy determination. Use when responding to... |
 | [written-consent](legal/written-consent/SKILL.md) | `written-consent` | `low` | Drafts Written Consents in Lieu of Meeting for corporate boards or shareholders. Ensures compliance with state corporate law (e... |
 | [written-consent-in-lieu-of-meeting](legal/written-consent-in-lieu-of-meeting/SKILL.md) | `written-consent-in-lieu-of-meeting` | `low` | Drafts U.S. corporate written-consent instruments (board, shareholder, member) as substitutes for formal meetings. Triggers whe... |
 | [written-consent-of-incorporator](legal/written-consent-of-incorporator/SKILL.md) | `written-consent-of-incorporator` | `low` | Drafts a U.S. corporate Action by Written Consent of Incorporator for post-formation organizational actions (adopting bylaws, a... |
 | [wrongful-termination-complaint](legal/wrongful-termination-complaint/SKILL.md) | `wrongful-termination-complaint` | `low` | Drafts wrongful termination complaints for employment litigation. Covers at-will exceptions, statutory claims (Title VII, ADA, ... |
-
----
-
-## <a id="leiloeiro"></a>📁 Leiloeiro (6 skills)
-
-| Skill ID | Name | Risk | Description |
-| :--- | :--- | :---: | :--- |
-| [leiloeiro-avaliacao](leiloeiro/leiloeiro-avaliacao/SKILL.md) | `leiloeiro-avaliacao` | `safe` | Avaliacao pericial de imoveis em leilao. Valor de mercado, liquidacao forcada, ABNT NBR 14653, metodos comparativo/renda/custo,... |
-| [leiloeiro-edital](leiloeiro/leiloeiro-edital/SKILL.md) | `leiloeiro-edital` | `safe` | Analise e auditoria de editais de leilao judicial e extrajudicial. Riscos ocultos, clausulas perigosas, debitos, ocupante e cla... |
-| [leiloeiro-ia](leiloeiro/leiloeiro-ia/SKILL.md) | `leiloeiro-ia` | `safe` | Especialista em leiloes judiciais e extrajudiciais de imoveis. Analise juridica, pericial e de mercado integrada. Orquestra os ... |
-| [leiloeiro-juridico](leiloeiro/leiloeiro-juridico/SKILL.md) | `leiloeiro-juridico` | `safe` | 'Analise juridica de leiloes: nulidades, bem de familia, alienacao fiduciaria, CPC arts 829-903, Lei 9514/97, onus reais, embar... |
-| [leiloeiro-mercado](leiloeiro/leiloeiro-mercado/SKILL.md) | `leiloeiro-mercado` | `safe` | Analise de mercado imobiliario para leiloes. Liquidez, desagio tipico, ROI, estrategias de saida (flip/reforma/renda), Selic 20... |
-| [leiloeiro-risco](leiloeiro/leiloeiro-risco/SKILL.md) | `leiloeiro-risco` | `safe` | Analise de risco em leiloes de imoveis. Score 36 pontos, riscos juridicos/financeiros/operacionais, stress test 4 cenarios e RO... |
 
 ---
 
@@ -11505,13 +11869,25 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
-## <a id="linguistics"></a>📁 Linguistics (3 skills)
+## <a id="linguistics"></a>📁 Linguistics (15 skills)
 
 | Skill ID | Name | Risk | Description |
 | :--- | :--- | :---: | :--- |
-| [computational-linguistics](linguistics/computational-linguistics/SKILL.md) | `computational-linguistics` | `low` | "Natural language processing foundations: tokenization, parsing, semantics, machine translation, and language models" |
+| [computational-linguistics](linguistics/computational-linguistics/SKILL.md) | `computational-linguistics` | `low` | "Implement chart parsing, Earley algorithm, Probabilistic Context-Free Grammars (PCFG), and vector semantics." |
+| [corpus-linguistics](linguistics/corpus-linguistics/SKILL.md) | `corpus-linguistics` | `low` | "Extract collocations, concordance lines, keyness statistics, and Mutual Information (MI) scores from corpora." |
+| [discourse-analysis](linguistics/discourse-analysis/SKILL.md) | `discourse-analysis` | `low` | "Analyze conversational turn-taking sequences, adjacency pairs, repair mechanisms, and ideological discourse framing." |
+| [historical-linguistics](linguistics/historical-linguistics/SKILL.md) | `historical-linguistics` | `low` | "Reconstruct proto-languages using the comparative method, Grimm's Law, Verner's Law, and glottochronology." |
+| [lexicography](linguistics/lexicography/SKILL.md) | `lexicography` | `low` | "Structure lexicographical headwords, sense discrimination, etymologies, and FrameNet semantic frame annotations." |
 | [ling-phonetic-ipa-dependency-parsing](linguistics/ling-phonetic-ipa-dependency-parsing/SKILL.md) | `ling-phonetic-ipa-dependency-parsing` | `low` | "Transcribe acoustic phonetics using International Phonetic Alphabet (IPA) standards and construct Universal Dependencies synta... |
-| [phonetics](linguistics/phonetics/SKILL.md) | `phonetics` | `low` | "The physical properties of speech sounds: articulatory, acoustic, and auditory phonetics, IPA transcription" |
+| [morphology](linguistics/morphology/SKILL.md) | `morphology` | `low` | "Analyze concatenative and non-concatenative morphology, inflectional paradigms, derivation, and root-and-pattern systems." |
+| [phonetics](linguistics/phonetics/SKILL.md) | `phonetics` | `low` | "Analyze speech sound production, vocal tract geometry, formant spectrograms, and acoustic voice onset time (VOT)." |
+| [phonology](linguistics/phonology/SKILL.md) | `phonology` | `low` | "Formulate phonological rule ordering, distinctive feature matrices, autosegmental tiers, and Optimality Theory (OT) tableaux." |
+| [pragmatics](linguistics/pragmatics/SKILL.md) | `pragmatics` | `low` | "Analyze conversational implicatures, Gricean cooperative maxims, presuppositions, and Austin-Searle speech acts." |
+| [psycholinguistics](linguistics/psycholinguistics/SKILL.md) | `psycholinguistics` | `low` | "Model human sentence processing, syntactic garden-path disambiguation, lexical access (Cohort model), and priming effects." |
+| [semantics](linguistics/semantics/SKILL.md) | `semantics` | `low` | "Formalize sentence meaning using typed lambda calculus, Montague semantics, generalized quantifiers, and intensional logic." |
+| [sociolinguistics](linguistics/sociolinguistics/SKILL.md) | `sociolinguistics` | `low` | "Quantify sociolinguistic variable stratification by social class, age, gender, and analyze Labovian language change." |
+| [syntax](linguistics/syntax/SKILL.md) | `syntax` | `low` | "Construct phrase structure syntactic trees, c-command relations, movement transformations, and theta-role assignments." |
+| [typology](linguistics/typology/SKILL.md) | `typology` | `low` | "Classify word order universals (Greenberg's universals), alignment types (Nominative-Accusative vs Ergative-Absolutive)." |
 
 ---
 
@@ -11633,7 +12009,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
-## <a id="marketing"></a>📁 Marketing (219 skills)
+## <a id="marketing"></a>📁 Marketing (222 skills)
 
 | Skill ID | Name | Risk | Description |
 | :--- | :--- | :---: | :--- |
@@ -11666,6 +12042,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [co-marketing](marketing/co-marketing/SKILL.md) | `co-marketing` | `safe` | "When the user wants to find co-marketing partners, plan joint campaigns, or brainstorm partnership opportunities." |
 | [code-reviewer](marketing/code-reviewer/SKILL.md) | `code-reviewer` | `low` | Code review automation for TypeScript, JavaScript, Python, Go, Swift, Kotlin. Analyzes PRs for complexity and risk, checks code... |
 | [cold-email](marketing/cold-email/SKILL.md) | `cold-email` | `safe` | "Write B2B cold emails and follow-up sequences that earn replies. Use when creating outbound prospecting emails, SDR outreach, ... |
+| [community-marketing](marketing/community-marketing/SKILL.md) | `community-marketing` | `low` | > Use this skill when building or improving community-driven growth strategies. Trigger phrases include: "build a community str... |
 | [competitor-ad-intelligence](marketing/competitor-ad-intelligence/SKILL.md) | `competitor-ad-intelligence` | `critical` | "Research public competitor ads, analyze creative patterns and landing pages, and produce an evidence-labeled strategic teardown." |
 | [competitor-alternatives](marketing/competitor-alternatives/SKILL.md) | `competitor-alternatives` | `low` | "When the user wants to create competitor comparison or alternative pages for SEO and sales enablement. Also use when the user ... |
 | [competitor-analysis](marketing/competitor-analysis/SKILL.md) | `competitor-analysis` | `safe` | "Research competitors with Browserbase discovery, enrichment lanes, screenshots, matrices, and HTML reports." |
@@ -11693,6 +12070,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [domain-research](marketing/domain-research/SKILL.md) | `domain-research` | `low` | Research domain WHOIS data and check marketplace listings. Use when the user says "domain lookup", "check domain", "WHOIS", "do... |
 | [doubt-driven-development](marketing/doubt-driven-development/SKILL.md) | `doubt-driven-development` | `critical` | "Subjects every non-trivial decision to a fresh-context adversarial review before it stands." |
 | [elon-musk](marketing/elon-musk/SKILL.md) | `elon-musk` | `safe` | "Agente que simula Elon Musk com profundidade psicologica e comunicacional de alta fidelidade. Ativado para: \"fale como Elon\"... |
+| [email-marketing](marketing/email-marketing/SKILL.md) | `email-marketing` | `low` | > You are a professional Email Marketing Specialist and Conversion Copywriter. Use this skill when the user wants to write, opt... |
 | [email-sequence](marketing/email-sequence/SKILL.md) | `email-sequence` | `none` | "You are an expert in email marketing and automation. Your goal is to create email sequences that nurture relationships, drive ... |
 | [email-subject-lines](marketing/email-subject-lines/SKILL.md) | `email-subject-lines` | `low` | > Generate, evaluate, and A/B test email subject lines for maximum open rates. Includes formulas for curiosity, urgency, person... |
 | [email-systems](marketing/email-systems/SKILL.md) | `email-systems` | `none` | Email has the highest ROI of any marketing channel. $36 for every $1 spent. Yet most startups treat it as an afterthought - bul... |
@@ -11744,6 +12122,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [mailtrap-sending-emails](marketing/mailtrap-sending-emails/SKILL.md) | `mailtrap-sending-emails` | `critical` | Configure or troubleshoot Mailtrap live email sending with Email API, SMTP, transactional streams, bulk streams, or batches. |
 | [marketing-demand-acquisition](marketing/marketing-demand-acquisition/SKILL.md) | `marketing-demand-acquisition` | `low` | Multi-channel demand generation, paid media optimization, SEO strategy, and partnership programs for Series A+ startups |
 | [marketing-ideas](marketing/marketing-ideas/SKILL.md) | `marketing-ideas` | `safe` | "Provide proven marketing strategies and growth ideas for SaaS and software products, prioritized using a marketing feasibility... |
+| [marketing-os](marketing/marketing-os/SKILL.md) | `marketing-os` | `low` | > Use this skill when the user wants to build, operate, audit, or improve a complete marketing operating system. Trigger phrase... |
 | [marketing-plan](marketing/marketing-plan/SKILL.md) | `marketing-plan` | `critical` | "When the user needs a comprehensive marketing plan for a client, a company they advise, or their own product." |
 | [marketing-psychology](marketing/marketing-psychology/SKILL.md) | `marketing-psychology` | `none` | "Apply behavioral science and mental models to marketing decisions, prioritized using a psychological leverage and feasibility ... |
 | [marketing-strategy-pmm](marketing/marketing-strategy-pmm/SKILL.md) | `marketing-strategy-pmm` | `low` | Product marketing skill for positioning, GTM strategy, competitive intelligence, and product launches. Covers April Dunford pos... |
@@ -12167,20 +12546,6 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
-## <a id="metier-fr"></a>📁 Metier Fr (7 skills)
-
-| Skill ID | Name | Risk | Description |
-| :--- | :--- | :---: | :--- |
-| [fr-comptabilite](metier-fr/fr-comptabilite/SKILL.md) | `fr-comptabilite` | `low` | Guide French accounting with Plan Comptable General (PCG), journal entries, TVA declarations, and liasse fiscale preparation. |
-| [fr-droit-immobilier](metier-fr/fr-droit-immobilier/SKILL.md) | `fr-droit-immobilier` | `low` | Navigate French real estate law for individuals — leases, mandatory diagnostics, tenant rights, co-ownership, energy renovation... |
-| [fr-facturation-electronique](metier-fr/fr-facturation-electronique/SKILL.md) | `fr-facturation-electronique` | `low` | Implement French mandatory e-invoicing (Factur-X, UBL) — formats, PDP/PPF platforms, timeline, and compliance requirements for ... |
-| [fr-fec-generator](metier-fr/fr-fec-generator/SKILL.md) | `fr-fec-generator` | `low` | Generate and validate FEC (Fichier des Ecritures Comptables) files compliant with French DGFIP specifications. 18 mandatory fie... |
-| [fr-fiscalite-particulier](metier-fr/fr-fiscalite-particulier/SKILL.md) | `fr-fiscalite-particulier` | `low` | Guide French personal income tax (IR) — tax brackets, deductions, credits, micro-entrepreneur, rental income, capital gains, cr... |
-| [fr-notariat](metier-fr/fr-notariat/SKILL.md) | `fr-notariat` | `low` | Navigate French notarial acts — fee calculation (emoluments), succession, donation, SCI creation, property transfer, and regula... |
-| [fr-recherche-emploi](metier-fr/fr-recherche-emploi/SKILL.md) | `fr-recherche-emploi` | `low` | Structure a job search for the French/European market — CV format europass, cover letter VOUS-MOI-NOUS, job evaluation scoring,... |
-
----
-
 ## <a id="migration"></a>📁 Migration (42 skills)
 
 | Skill ID | Name | Risk | Description |
@@ -12250,16 +12615,30 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
-## <a id="mlops"></a>📁 Mlops (6 skills)
+## <a id="mlops"></a>📁 Mlops (20 skills)
 
 | Skill ID | Name | Risk | Description |
 | :--- | :--- | :---: | :--- |
-| [experiment-tracking](mlops/experiment-tracking/SKILL.md) | `experiment-tracking` | `low` | "MLflow, Weights & Biases, hyperparameter logging, metric visualization, artifact tracking, and reproducible model runs" |
+| [batch-inference](mlops/batch-inference/SKILL.md) | `batch-inference` | `low` | "Process multi-terabyte dataset batch scoring using Apache Spark, Ray, and distributed GPU worker pools." |
+| [data-drift](mlops/data-drift/SKILL.md) | `data-drift` | `low` | "Generate automated data quality and feature drift dashboards comparing inference traffic against reference baselines." |
+| [drift-detection](mlops/drift-detection/SKILL.md) | `drift-detection` | `low` | "Compute Kolmogorov-Smirnov (KS) tests, Population Stability Index (PSI), and Wasserstein distance on live traffic." |
+| [experiment-tracking](mlops/experiment-tracking/SKILL.md) | `experiment-tracking` | `low` | "Log hyperparameters, metrics, artifacts, and execution environments with deterministic run reproducibility." |
+| [feature-store](mlops/feature-store/SKILL.md) | `feature-store` | `low` | "Define feature views, point-in-time correct historical training joins, and low-latency Redis online lookups." |
 | [feature-stores](mlops/feature-stores/SKILL.md) | `feature-stores` | `low` | "Feature stores (Feast, Hopsworks): dual online/offline storage, point-in-time correctness, feature discovery, and zero trainin... |
-| [model-monitoring](mlops/model-monitoring/SKILL.md) | `model-monitoring` | `low` | "Monitoring ML in production: data drift (KS test, PSI), concept drift, prediction drift, latency p99, and automated retraining... |
-| [model-registry](mlops/model-registry/SKILL.md) | `model-registry` | `low` | "Centralized model registry: versioning, staging/production stage transitions, model signing, and metadata governance" |
-| [model-serving](mlops/model-serving/SKILL.md) | `model-serving` | `low` | "Real-time and batch model serving: Triton Inference Server, TorchServe, vLLM, FastAPI, REST/gRPC endpoints, and dynamic batching" |
+| [gpu-inference](mlops/gpu-inference/SKILL.md) | `gpu-inference` | `low` | "Configure multi-model concurrent execution, dynamic batching, and GPU memory instance slicing (MIG) on Triton." |
+| [inference](mlops/inference/SKILL.md) | `inference` | `low` | "Optimize model latency and throughput using ONNX Runtime, TensorRT quantization (FP16/INT8), and kernel fusion." |
+| [llmops](mlops/llmops/SKILL.md) | `llmops` | `low` | "Manage prompt versioning, LLM fine-tuning pipelines (LoRA/QLoRA), evaluation harnesses, and LLM cache layers." |
+| [model-cost-optimization](mlops/model-cost-optimization/SKILL.md) | `model-cost-optimization` | `low` | "Optimize training and inference infrastructure costs using spot instances, auto-scaling clusters, and model pruning." |
+| [model-governance](mlops/model-governance/SKILL.md) | `model-governance` | `low` | "Generate automated Model Cards detailing intended use, benchmark metrics, ethical considerations, and training lineage." |
+| [model-monitoring](mlops/model-monitoring/SKILL.md) | `model-monitoring` | `low` | "Monitor production model latency, throughput, error rates, and track ground-truth delayed accuracy metrics." |
+| [model-registry](mlops/model-registry/SKILL.md) | `model-registry` | `low` | "Manage model versions, stage transitions (Development -> Staging -> Production), and approval webhooks." |
+| [model-security](mlops/model-security/SKILL.md) | `model-security` | `low` | "Audit models for pickle deserialization vulnerabilities (safetensors conversion) and adversarial evasion perturbations." |
+| [model-serving](mlops/model-serving/SKILL.md) | `model-serving` | `low` | "Package ML models into production microservices with adaptive dynamic batching and worker process concurrency." |
+| [model-validation](mlops/model-validation/SKILL.md) | `model-validation` | `low` | "Deploy models into shadow (dark) traffic mode and compare outputs against the incumbent champion model." |
+| [model-versioning](mlops/model-versioning/SKILL.md) | `model-versioning` | `low` | "Version massive datasets and model checkpoints alongside Git commits using Data Version Control (DVC)." |
+| [online-inference](mlops/online-inference/SKILL.md) | `online-inference` | `low` | "Architect real-time streaming feature aggregation and low-latency online inference using Kafka and Flink." |
 | [remote-gpu-trainer](mlops/remote-gpu-trainer/SKILL.md) | `remote-gpu-trainer` | `safe` | "Deploy, monitor, and debug long GPU jobs on RENTED/remote instances (AutoDL, RunPod, vast.ai, Lambda, Slurm, K8s): teardown/bi... |
+| [training-pipelines](mlops/training-pipelines/SKILL.md) | `training-pipelines` | `low` | "Build modular, containerized ML training DAG pipelines with automatic hardware resource provisioning." |
 
 ---
 
@@ -12477,83 +12856,6 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
-## <a id="nonprofit-ngo"></a>📁 Nonprofit Ngo (70 skills)
-
-| Skill ID | Name | Risk | Description |
-| :--- | :--- | :---: | :--- |
-| [advocacy-campaign](nonprofit-ngo/advocacy-campaign/SKILL.md) | `advocacy-campaign` | `low` | "Design advocacy campaigns with messaging and actions. TRIGGERS - Use when user needs help with advocacy-campaign related tasks." |
-| [advocacy-campaign-plan](nonprofit-ngo/advocacy-campaign-plan/SKILL.md) | `advocacy-campaign-plan` | `low` | "Design advocacy campaign plans. TRIGGERS - Use when user needs help with advocacy-campaign-plan related tasks." |
-| [annual-appeal](nonprofit-ngo/annual-appeal/SKILL.md) | `annual-appeal` | `low` | "Write annual appeal campaigns with messaging and asks. TRIGGERS - Use when user needs help with annual-appeal related tasks." |
-| [annual-fund-campaign](nonprofit-ngo/annual-fund-campaign/SKILL.md) | `annual-fund-campaign` | `low` | "Plan annual fund campaigns. TRIGGERS - Use when user needs help with annual-fund-campaign related tasks." |
-| [annual-report-nonprofit](nonprofit-ngo/annual-report-nonprofit/SKILL.md) | `annual-report-nonprofit` | `low` | "Create nonprofit annual reports with impact data. TRIGGERS - Use when user needs help with annual-report-nonprofit related tas... |
-| [board-development-plan](nonprofit-ngo/board-development-plan/SKILL.md) | `board-development-plan` | `low` | "Design board development plans. TRIGGERS - Use when user needs help with board-development-plan related tasks." |
-| [board-meeting-agenda](nonprofit-ngo/board-meeting-agenda/SKILL.md) | `board-meeting-agenda` | `low` | "Create board meeting agendas with governance items. TRIGGERS - Use when user needs help with board-meeting-agenda related tasks." |
-| [board-meeting-template](nonprofit-ngo/board-meeting-template/SKILL.md) | `board-meeting-template` | `low` | "Create board meeting templates. TRIGGERS - Use when user needs help with board-meeting-template related tasks." |
-| [board-meeting-toolkit](nonprofit-ngo/board-meeting-toolkit/SKILL.md) | `board-meeting-toolkit` | `low` | "Create board meeting toolkits. TRIGGERS - Use when user needs help with board-meeting-toolkit related tasks." |
-| [board-recruitment](nonprofit-ngo/board-recruitment/SKILL.md) | `board-recruitment` | `low` | "Design board member recruitment processes. TRIGGERS - Use when user needs help with board-recruitment related tasks." |
-| [board-report-nonprofit](nonprofit-ngo/board-report-nonprofit/SKILL.md) | `board-report-nonprofit` | `low` | "Write nonprofit board reports with program updates. TRIGGERS - Use when user needs help with board-report-nonprofit related ta... |
-| [capital-campaign-plan](nonprofit-ngo/capital-campaign-plan/SKILL.md) | `capital-campaign-plan` | `low` | "Plan capital campaigns with phases. TRIGGERS - Use when user needs help with capital-campaign-plan related tasks." |
-| [community-needs-assessment](nonprofit-ngo/community-needs-assessment/SKILL.md) | `community-needs-assessment` | `low` | "Conduct community needs assessments. TRIGGERS - Use when user needs help with community-needs-assessment related tasks." |
-| [community-survey](nonprofit-ngo/community-survey/SKILL.md) | `community-survey` | `low` | "Design community surveys for needs and feedback. TRIGGERS - Use when user needs help with community-survey related tasks." |
-| [corporate-partnership-nonprofit](nonprofit-ngo/corporate-partnership-nonprofit/SKILL.md) | `corporate-partnership-nonprofit` | `low` | "Design corporate partnerships. TRIGGERS - Use when user needs help with corporate-partnership-nonprofit related tasks." |
-| [corporate-sponsorship-plan](nonprofit-ngo/corporate-sponsorship-plan/SKILL.md) | `corporate-sponsorship-plan` | `low` | "Design corporate sponsorship programs. TRIGGERS - Use when user needs help with corporate-sponsorship-plan related tasks." |
-| [crowdfunding-nonprofit](nonprofit-ngo/crowdfunding-nonprofit/SKILL.md) | `crowdfunding-nonprofit` | `low` | "Design nonprofit crowdfunding campaigns. TRIGGERS - Use when user needs help with crowdfunding-nonprofit related tasks." |
-| [donor-appeal](nonprofit-ngo/donor-appeal/SKILL.md) | `donor-appeal` | `low` | "Write donor appeal letters with stories and impact. TRIGGERS - Use when user needs help with donor-appeal related tasks." |
-| [donor-database-management](nonprofit-ngo/donor-database-management/SKILL.md) | `donor-database-management` | `low` | "Design donor database management systems. TRIGGERS - Use when user needs help with donor-database-management related tasks." |
-| [donor-recognition](nonprofit-ngo/donor-recognition/SKILL.md) | `donor-recognition` | `low` | "Create donor recognition programs with tiers. TRIGGERS - Use when user needs help with donor-recognition related tasks." |
-| [donor-recognition-program](nonprofit-ngo/donor-recognition-program/SKILL.md) | `donor-recognition-program` | `low` | "Design donor recognition programs. TRIGGERS - Use when user needs help with donor-recognition-program related tasks." |
-| [donor-stewardship](nonprofit-ngo/donor-stewardship/SKILL.md) | `donor-stewardship` | `low` | "Design donor stewardship programs for retention. TRIGGERS - Use when user needs help with donor-stewardship related tasks." |
-| [donor-stewardship-plan](nonprofit-ngo/donor-stewardship-plan/SKILL.md) | `donor-stewardship-plan` | `low` | "Design donor stewardship programs. TRIGGERS - Use when user needs help with donor-stewardship-plan related tasks." |
-| [endowment-strategy](nonprofit-ngo/endowment-strategy/SKILL.md) | `endowment-strategy` | `low` | "Design endowment strategies. TRIGGERS - Use when user needs help with endowment-strategy related tasks." |
-| [fundraising-campaign-design](nonprofit-ngo/fundraising-campaign-design/SKILL.md) | `fundraising-campaign-design` | `low` | "Design fundraising campaigns. TRIGGERS - Use when user needs help with fundraising-campaign-design related tasks." |
-| [fundraising-campaign-plan](nonprofit-ngo/fundraising-campaign-plan/SKILL.md) | `fundraising-campaign-plan` | `low` | "Plan fundraising campaigns. TRIGGERS - Use when user needs help with fundraising-campaign-plan related tasks." |
-| [fundraising-event](nonprofit-ngo/fundraising-event/SKILL.md) | `fundraising-event` | `low` | "Plan fundraising events with logistics and sponsorship. TRIGGERS - Use when user needs help with fundraising-event related tas... |
-| [fundraising-plan](nonprofit-ngo/fundraising-plan/SKILL.md) | `fundraising-plan` | `low` | "Create fundraising plans with goals, channels, and timelines. TRIGGERS - Use when user needs help with fundraising-plan relate... |
-| [grant-budget](nonprofit-ngo/grant-budget/SKILL.md) | `grant-budget` | `low` | "Create grant budgets with line items and justifications. TRIGGERS - Use when user needs help with grant-budget related tasks." |
-| [grant-compliance-tracker](nonprofit-ngo/grant-compliance-tracker/SKILL.md) | `grant-compliance-tracker` | `low` | "Track grant compliance with reporting. TRIGGERS - Use when user needs help with grant-compliance-tracker related tasks." |
-| [grant-proposal](nonprofit-ngo/grant-proposal/SKILL.md) | `grant-proposal` | `low` | "Write grant proposals with narrative, budget, and outcomes. TRIGGERS - Use when user needs help with grant-proposal related ta... |
-| [grant-report](nonprofit-ngo/grant-report/SKILL.md) | `grant-report` | `low` | "Write grant reports with progress, financials, and outcomes. TRIGGERS - Use when user needs help with grant-report related tas... |
-| [grant-reporting-template](nonprofit-ngo/grant-reporting-template/SKILL.md) | `grant-reporting-template` | `low` | "Create grant reporting templates. TRIGGERS - Use when user needs help with grant-reporting-template related tasks." |
-| [impact-measurement-plan](nonprofit-ngo/impact-measurement-plan/SKILL.md) | `impact-measurement-plan` | `low` | "Design impact measurement systems. TRIGGERS - Use when user needs help with impact-measurement-plan related tasks." |
-| [impact-report](nonprofit-ngo/impact-report/SKILL.md) | `impact-report` | `low` | "Write impact reports with outcomes and stories. TRIGGERS - Use when user needs help with impact-report related tasks." |
-| [impact-report-writer](nonprofit-ngo/impact-report-writer/SKILL.md) | `impact-report-writer` | `low` | "Write impact reports with data. TRIGGERS - Use when user needs help with impact-report-writer related tasks." |
-| [legislative-testimony](nonprofit-ngo/legislative-testimony/SKILL.md) | `legislative-testimony` | `low` | "Write legislative testimony with evidence and positions. TRIGGERS - Use when user needs help with legislative-testimony relate... |
-| [logic-model](nonprofit-ngo/logic-model/SKILL.md) | `logic-model` | `low` | "Build logic models linking activities to impact. TRIGGERS - Use when user needs help with logic-model related tasks." |
-| [logic-model-builder](nonprofit-ngo/logic-model-builder/SKILL.md) | `logic-model-builder` | `low` | "Build logic models for programs. TRIGGERS - Use when user needs help with logic-model-builder related tasks." |
-| [logic-model-designer](nonprofit-ngo/logic-model-designer/SKILL.md) | `logic-model-designer` | `low` | "Design logic models for programs. TRIGGERS - Use when user needs help with logic-model-designer related tasks." |
-| [major-donor-strategy](nonprofit-ngo/major-donor-strategy/SKILL.md) | `major-donor-strategy` | `low` | "Design major donor cultivation strategies. TRIGGERS - Use when user needs help with major-donor-strategy related tasks." |
-| [major-gift-strategy](nonprofit-ngo/major-gift-strategy/SKILL.md) | `major-gift-strategy` | `low` | "Design major gift fundraising strategies. TRIGGERS - Use when user needs help with major-gift-strategy related tasks." |
-| [major-gifts-strategy](nonprofit-ngo/major-gifts-strategy/SKILL.md) | `major-gifts-strategy` | `low` | "Design major gifts fundraising strategies. TRIGGERS - Use when user needs help with major-gifts-strategy related tasks." |
-| [needs-assessment-community](nonprofit-ngo/needs-assessment-community/SKILL.md) | `needs-assessment-community` | `low` | "Conduct community needs assessments with data. TRIGGERS - Use when user needs help with needs-assessment-community related tas... |
-| [nonprofit-board-development](nonprofit-ngo/nonprofit-board-development/SKILL.md) | `nonprofit-board-development` | `low` | "Design board development strategies. TRIGGERS - Use when user needs help with nonprofit-board-development related tasks." |
-| [nonprofit-business-plan](nonprofit-ngo/nonprofit-business-plan/SKILL.md) | `nonprofit-business-plan` | `low` | "Create nonprofit business plans. TRIGGERS - Use when user needs help with nonprofit-business-plan related tasks." |
-| [nonprofit-compliance-checklist](nonprofit-ngo/nonprofit-compliance-checklist/SKILL.md) | `nonprofit-compliance-checklist` | `low` | "Create nonprofit compliance checklists. TRIGGERS - Use when user needs help with nonprofit-compliance-checklist related tasks." |
-| [nonprofit-content-strategy](nonprofit-ngo/nonprofit-content-strategy/SKILL.md) | `nonprofit-content-strategy` | `low` | "Design nonprofit content strategies. TRIGGERS - Use when user needs help with nonprofit-content-strategy related tasks." |
-| [nonprofit-email-strategy](nonprofit-ngo/nonprofit-email-strategy/SKILL.md) | `nonprofit-email-strategy` | `low` | "Design nonprofit email strategies. TRIGGERS - Use when user needs help with nonprofit-email-strategy related tasks." |
-| [nonprofit-governance](nonprofit-ngo/nonprofit-governance/SKILL.md) | `nonprofit-governance` | `low` | "Design nonprofit governance structures. TRIGGERS - Use when user needs help with nonprofit-governance related tasks." |
-| [nonprofit-marketing-plan](nonprofit-ngo/nonprofit-marketing-plan/SKILL.md) | `nonprofit-marketing-plan` | `low` | "Create nonprofit marketing plans. TRIGGERS - Use when user needs help with nonprofit-marketing-plan related tasks." |
-| [nonprofit-social-media](nonprofit-ngo/nonprofit-social-media/SKILL.md) | `nonprofit-social-media` | `low` | "Design nonprofit social media strategies. TRIGGERS - Use when user needs help with nonprofit-social-media related tasks." |
-| [nonprofit-storytelling](nonprofit-ngo/nonprofit-storytelling/SKILL.md) | `nonprofit-storytelling` | `low` | "Design nonprofit storytelling frameworks. TRIGGERS - Use when user needs help with nonprofit-storytelling related tasks." |
-| [nonprofit-strategic-plan](nonprofit-ngo/nonprofit-strategic-plan/SKILL.md) | `nonprofit-strategic-plan` | `low` | "Create nonprofit strategic plans. TRIGGERS - Use when user needs help with nonprofit-strategic-plan related tasks." |
-| [peer-to-peer-fundraising](nonprofit-ngo/peer-to-peer-fundraising/SKILL.md) | `peer-to-peer-fundraising` | `low` | "Design peer-to-peer fundraising campaigns. TRIGGERS - Use when user needs help with peer-to-peer-fundraising related tasks." |
-| [petition-writer](nonprofit-ngo/petition-writer/SKILL.md) | `petition-writer` | `low` | "Write petitions with clear demands and support language. TRIGGERS - Use when user needs help with petition-writer related tasks." |
-| [planned-giving-guide](nonprofit-ngo/planned-giving-guide/SKILL.md) | `planned-giving-guide` | `low` | "Create planned giving guides for donors. TRIGGERS - Use when user needs help with planned-giving-guide related tasks." |
-| [planned-giving-program](nonprofit-ngo/planned-giving-program/SKILL.md) | `planned-giving-program` | `low` | "Design planned giving programs. TRIGGERS - Use when user needs help with planned-giving-program related tasks." |
-| [policy-brief](nonprofit-ngo/policy-brief/SKILL.md) | `policy-brief` | `low` | "Write policy briefs with analysis and recommendations. TRIGGERS - Use when user needs help with policy-brief related tasks." |
-| [program-evaluation](nonprofit-ngo/program-evaluation/SKILL.md) | `program-evaluation` | `low` | "Design program evaluation frameworks with metrics. TRIGGERS - Use when user needs help with program-evaluation related tasks." |
-| [program-evaluation-design](nonprofit-ngo/program-evaluation-design/SKILL.md) | `program-evaluation-design` | `low` | "Design program evaluations. TRIGGERS - Use when user needs help with program-evaluation-design related tasks." |
-| [public-comment](nonprofit-ngo/public-comment/SKILL.md) | `public-comment` | `low` | "Write public comments on regulations and policies. TRIGGERS - Use when user needs help with public-comment related tasks." |
-| [public-meeting-agenda](nonprofit-ngo/public-meeting-agenda/SKILL.md) | `public-meeting-agenda` | `low` | "Create public meeting agendas with participation. TRIGGERS - Use when user needs help with public-meeting-agenda related tasks." |
-| [theory-of-change](nonprofit-ngo/theory-of-change/SKILL.md) | `theory-of-change` | `low` | "Develop theories of change with inputs to outcomes. TRIGGERS - Use when user needs help with theory-of-change related tasks." |
-| [volunteer-management](nonprofit-ngo/volunteer-management/SKILL.md) | `volunteer-management` | `low` | "Create volunteer management systems and procedures. TRIGGERS - Use when user needs help with volunteer-management related tasks." |
-| [volunteer-management-system](nonprofit-ngo/volunteer-management-system/SKILL.md) | `volunteer-management-system` | `low` | "Design volunteer management systems. TRIGGERS - Use when user needs help with volunteer-management-system related tasks." |
-| [volunteer-recruitment](nonprofit-ngo/volunteer-recruitment/SKILL.md) | `volunteer-recruitment` | `low` | "Design volunteer recruitment strategies. TRIGGERS - Use when user needs help with volunteer-recruitment related tasks." |
-| [volunteer-recruitment-plan](nonprofit-ngo/volunteer-recruitment-plan/SKILL.md) | `volunteer-recruitment-plan` | `low` | "Plan volunteer recruitment strategies. TRIGGERS - Use when user needs help with volunteer-recruitment-plan related tasks." |
-| [volunteer-training-program](nonprofit-ngo/volunteer-training-program/SKILL.md) | `volunteer-training-program` | `low` | "Design volunteer training programs. TRIGGERS - Use when user needs help with volunteer-training-program related tasks." |
-| [white-paper-policy](nonprofit-ngo/white-paper-policy/SKILL.md) | `white-paper-policy` | `low` | "Write policy white papers with research and proposals. TRIGGERS - Use when user needs help with white-paper-policy related tas... |
-
----
-
 ## <a id="offline"></a>📁 Offline (1 skills)
 
 | Skill ID | Name | Risk | Description |
@@ -12747,15 +13049,34 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
-## <a id="parenting"></a>📁 Parenting (20 skills)
+## <a id="parenting"></a>📁 Parenting (57 skills)
 
 | Skill ID | Name | Risk | Description |
 | :--- | :--- | :---: | :--- |
+| [after-school-program](parenting/after-school-program/SKILL.md) | `after-school-program` | `low` | "Design after-school program activities and structure. TRIGGERS - Use when user needs help with after-school-program related ta... |
+| [art-curriculum-kids](parenting/art-curriculum-kids/SKILL.md) | `art-curriculum-kids` | `low` | "Design art curricula for young children. TRIGGERS - Use when user needs help with art-curriculum-kids related tasks." |
 | [baby-registry-guide](parenting/baby-registry-guide/SKILL.md) | `baby-registry-guide` | `low` | Guide baby registry planning. TRIGGERS - Use when user needs help with baby-registry-guide related tasks. |
+| [babysitter-guide](parenting/babysitter-guide/SKILL.md) | `babysitter-guide` | `low` | "Create babysitter guides with emergency procedures. TRIGGERS - Use when user needs help with babysitter-guide related tasks." |
+| [behavior-guidance](parenting/behavior-guidance/SKILL.md) | `behavior-guidance` | `low` | "Design positive behavior guidance strategies. TRIGGERS - Use when user needs help with behavior-guidance related tasks." |
 | [birthday-party-planner](parenting/birthday-party-planner/SKILL.md) | `birthday-party-planner` | `low` | Plan birthday parties. TRIGGERS - Use when user needs help with birthday-party-planner related tasks. |
+| [child-development-tracker](parenting/child-development-tracker/SKILL.md) | `child-development-tracker` | `low` | "Design child development tracking systems. TRIGGERS - Use when user needs help with child-development-tracker related tasks." |
+| [child-safety-plan](parenting/child-safety-plan/SKILL.md) | `child-safety-plan` | `low` | "Create child safety plans with procedures. TRIGGERS - Use when user needs help with child-safety-plan related tasks." |
 | [child-screen-time-plan](parenting/child-screen-time-plan/SKILL.md) | `child-screen-time-plan` | `low` | Design screen time management. TRIGGERS - Use when user needs help with child-screen-time-plan related tasks. |
+| [childcare-licensing-guide](parenting/childcare-licensing-guide/SKILL.md) | `childcare-licensing-guide` | `low` | "Guide childcare licensing requirements. TRIGGERS - Use when user needs help with childcare-licensing-guide related tasks." |
+| [childcare-marketing](parenting/childcare-marketing/SKILL.md) | `childcare-marketing` | `low` | "Create marketing plans for childcare centers. TRIGGERS - Use when user needs help with childcare-marketing related tasks." |
+| [childcare-marketing-plan](parenting/childcare-marketing-plan/SKILL.md) | `childcare-marketing-plan` | `low` | "Design childcare marketing. TRIGGERS - Use when user needs help with childcare-marketing-plan related tasks." |
+| [childcare-newsletter](parenting/childcare-newsletter/SKILL.md) | `childcare-newsletter` | `low` | "Write newsletters for childcare centers. TRIGGERS - Use when user needs help with childcare-newsletter related tasks." |
+| [childcare-parent-communication](parenting/childcare-parent-communication/SKILL.md) | `childcare-parent-communication` | `low` | "Design parent communication. TRIGGERS - Use when user needs help with childcare-parent-communication related tasks." |
+| [childcare-quality-assessment](parenting/childcare-quality-assessment/SKILL.md) | `childcare-quality-assessment` | `low` | "Conduct quality assessments for childcare programs. TRIGGERS - Use when user needs help with childcare-quality-assessment rela... |
+| [childcare-safety-plan](parenting/childcare-safety-plan/SKILL.md) | `childcare-safety-plan` | `low` | "Design childcare safety plans. TRIGGERS - Use when user needs help with childcare-safety-plan related tasks." |
+| [childcare-staff-training](parenting/childcare-staff-training/SKILL.md) | `childcare-staff-training` | `low` | "Design childcare staff training. TRIGGERS - Use when user needs help with childcare-staff-training related tasks." |
+| [childcare-technology-plan](parenting/childcare-technology-plan/SKILL.md) | `childcare-technology-plan` | `low` | "Plan childcare technology. TRIGGERS - Use when user needs help with childcare-technology-plan related tasks." |
 | [children-chore-system](parenting/children-chore-system/SKILL.md) | `children-chore-system` | `low` | Design children's chore systems. TRIGGERS - Use when user needs help with children-chore-system related tasks. |
 | [college-prep-guide](parenting/college-prep-guide/SKILL.md) | `college-prep-guide` | `low` | Guide college preparation. TRIGGERS - Use when user needs help with college-prep-guide related tasks. |
+| [daycare-business-plan](parenting/daycare-business-plan/SKILL.md) | `daycare-business-plan` | `low` | "Create daycare center business plans with licensing. TRIGGERS - Use when user needs help with daycare-business-plan related ta... |
+| [early-literacy-program](parenting/early-literacy-program/SKILL.md) | `early-literacy-program` | `low` | "Design early literacy programs for young children. TRIGGERS - Use when user needs help with early-literacy-program related tas... |
+| [emergency-preparedness-childcare](parenting/emergency-preparedness-childcare/SKILL.md) | `emergency-preparedness-childcare` | `low` | "Create emergency preparedness plans for childcare. TRIGGERS - Use when user needs help with emergency-preparedness-childcare r... |
+| [enrollment-process](parenting/enrollment-process/SKILL.md) | `enrollment-process` | `low` | "Design enrollment processes for childcare. TRIGGERS - Use when user needs help with enrollment-process related tasks." |
 | [family-activity-planner](parenting/family-activity-planner/SKILL.md) | `family-activity-planner` | `low` | Plan family activities. TRIGGERS - Use when user needs help with family-activity-planner related tasks. |
 | [family-budget-planner](parenting/family-budget-planner/SKILL.md) | `family-budget-planner` | `low` | Plan family budgets. TRIGGERS - Use when user needs help with family-budget-planner related tasks. |
 | [family-communication-plan](parenting/family-communication-plan/SKILL.md) | `family-communication-plan` | `low` | Design family communication. TRIGGERS - Use when user needs help with family-communication-plan related tasks. |
@@ -12766,75 +13087,29 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [family-meeting-guide](parenting/family-meeting-guide/SKILL.md) | `family-meeting-guide` | `low` | Design family meeting guides. TRIGGERS - Use when user needs help with family-meeting-guide related tasks. |
 | [family-tradition-builder](parenting/family-tradition-builder/SKILL.md) | `family-tradition-builder` | `low` | Build family traditions. TRIGGERS - Use when user needs help with family-tradition-builder related tasks. |
 | [family-travel-budget](parenting/family-travel-budget/SKILL.md) | `family-travel-budget` | `low` | Plan family travel budgets. TRIGGERS - Use when user needs help with family-travel-budget related tasks. |
+| [field-trip-childcare](parenting/field-trip-childcare/SKILL.md) | `field-trip-childcare` | `low` | "Plan field trips for childcare programs. TRIGGERS - Use when user needs help with field-trip-childcare related tasks." |
 | [homeschool-curriculum](parenting/homeschool-curriculum/SKILL.md) | `homeschool-curriculum` | `low` | Design homeschool curricula. TRIGGERS - Use when user needs help with homeschool-curriculum related tasks. |
+| [mealtime-management](parenting/mealtime-management/SKILL.md) | `mealtime-management` | `low` | "Design mealtime management for childcare. TRIGGERS - Use when user needs help with mealtime-management related tasks." |
+| [montessori-program-design](parenting/montessori-program-design/SKILL.md) | `montessori-program-design` | `low` | "Design Montessori programs. TRIGGERS - Use when user needs help with montessori-program-design related tasks." |
+| [music-program-kids](parenting/music-program-kids/SKILL.md) | `music-program-kids` | `low` | "Design music programs for early childhood. TRIGGERS - Use when user needs help with music-program-kids related tasks." |
+| [nanny-agreement](parenting/nanny-agreement/SKILL.md) | `nanny-agreement` | `low` | "Draft nanny employment agreement outlines. TRIGGERS - Use when user needs help with nanny-agreement related tasks." |
+| [naptime-routine](parenting/naptime-routine/SKILL.md) | `naptime-routine` | `low` | "Create naptime routines for childcare centers. TRIGGERS - Use when user needs help with naptime-routine related tasks." |
 | [new-parent-guide](parenting/new-parent-guide/SKILL.md) | `new-parent-guide` | `low` | Guide new parents. TRIGGERS - Use when user needs help with new-parent-guide related tasks. |
+| [outdoor-education](parenting/outdoor-education/SKILL.md) | `outdoor-education` | `low` | "Design outdoor education programs for children. TRIGGERS - Use when user needs help with outdoor-education related tasks." |
+| [parent-communication-childcare](parenting/parent-communication-childcare/SKILL.md) | `parent-communication-childcare` | `low` | "Design parent communication systems for childcare. TRIGGERS - Use when user needs help with parent-communication-childcare rel... |
+| [parent-handbook](parenting/parent-handbook/SKILL.md) | `parent-handbook` | `low` | "Write parent handbooks for childcare centers. TRIGGERS - Use when user needs help with parent-handbook related tasks." |
 | [parent-self-care-plan](parenting/parent-self-care-plan/SKILL.md) | `parent-self-care-plan` | `low` | Design parent self-care plans. TRIGGERS - Use when user needs help with parent-self-care-plan related tasks. |
 | [parenting-plan](parenting/parenting-plan/SKILL.md) | `parenting-plan` | `low` | Design co-parenting plans. TRIGGERS - Use when user needs help with parenting-plan related tasks. |
+| [playground-design](parenting/playground-design/SKILL.md) | `playground-design` | `low` | "Guide playground design with safety standards. TRIGGERS - Use when user needs help with playground-design related tasks." |
+| [preschool-curriculum](parenting/preschool-curriculum/SKILL.md) | `preschool-curriculum` | `low` | "Design preschool curricula with developmental goals. TRIGGERS - Use when user needs help with preschool-curriculum related tas... |
+| [reggio-emilia-program](parenting/reggio-emilia-program/SKILL.md) | `reggio-emilia-program` | `low` | "Design Reggio Emilia programs. TRIGGERS - Use when user needs help with reggio-emilia-program related tasks." |
+| [special-needs-inclusion](parenting/special-needs-inclusion/SKILL.md) | `special-needs-inclusion` | `low` | "Guide special needs inclusion in childcare. TRIGGERS - Use when user needs help with special-needs-inclusion related tasks." |
+| [staff-to-child-ratio](parenting/staff-to-child-ratio/SKILL.md) | `staff-to-child-ratio` | `low` | "Guide staff-to-child ratio compliance. TRIGGERS - Use when user needs help with staff-to-child-ratio related tasks." |
+| [staff-training-childcare](parenting/staff-training-childcare/SKILL.md) | `staff-training-childcare` | `low` | "Design staff training for childcare workers. TRIGGERS - Use when user needs help with staff-training-childcare related tasks." |
+| [stem-activities-kids](parenting/stem-activities-kids/SKILL.md) | `stem-activities-kids` | `low` | "Design STEM activities for children. TRIGGERS - Use when user needs help with stem-activities-kids related tasks." |
+| [summer-camp-plan](parenting/summer-camp-plan/SKILL.md) | `summer-camp-plan` | `low` | "Plan summer camp programs with activities and staffing. TRIGGERS - Use when user needs help with summer-camp-plan related tasks." |
 | [teen-independence-plan](parenting/teen-independence-plan/SKILL.md) | `teen-independence-plan` | `low` | Plan teen independence building. TRIGGERS - Use when user needs help with teen-independence-plan related tasks. |
-
----
-
-## <a id="parenting-family"></a>📁 Parenting Family (57 skills)
-
-| Skill ID | Name | Risk | Description |
-| :--- | :--- | :---: | :--- |
-| [after-school-program](parenting-family/after-school-program/SKILL.md) | `after-school-program` | `low` | "Design after-school program activities and structure. TRIGGERS - Use when user needs help with after-school-program related ta... |
-| [art-curriculum-kids](parenting-family/art-curriculum-kids/SKILL.md) | `art-curriculum-kids` | `low` | "Design art curricula for young children. TRIGGERS - Use when user needs help with art-curriculum-kids related tasks." |
-| [baby-registry-guide](parenting-family/baby-registry-guide/SKILL.md) | `baby-registry-guide` | `low` | "Guide baby registry planning. TRIGGERS - Use when user needs help with baby-registry-guide related tasks." |
-| [babysitter-guide](parenting-family/babysitter-guide/SKILL.md) | `babysitter-guide` | `low` | "Create babysitter guides with emergency procedures. TRIGGERS - Use when user needs help with babysitter-guide related tasks." |
-| [behavior-guidance](parenting-family/behavior-guidance/SKILL.md) | `behavior-guidance` | `low` | "Design positive behavior guidance strategies. TRIGGERS - Use when user needs help with behavior-guidance related tasks." |
-| [birthday-party-planner](parenting-family/birthday-party-planner/SKILL.md) | `birthday-party-planner` | `low` | "Plan birthday parties. TRIGGERS - Use when user needs help with birthday-party-planner related tasks." |
-| [child-development-tracker](parenting-family/child-development-tracker/SKILL.md) | `child-development-tracker` | `low` | "Design child development tracking systems. TRIGGERS - Use when user needs help with child-development-tracker related tasks." |
-| [child-safety-plan](parenting-family/child-safety-plan/SKILL.md) | `child-safety-plan` | `low` | "Create child safety plans with procedures. TRIGGERS - Use when user needs help with child-safety-plan related tasks." |
-| [child-screen-time-plan](parenting-family/child-screen-time-plan/SKILL.md) | `child-screen-time-plan` | `low` | "Design screen time management. TRIGGERS - Use when user needs help with child-screen-time-plan related tasks." |
-| [childcare-licensing-guide](parenting-family/childcare-licensing-guide/SKILL.md) | `childcare-licensing-guide` | `low` | "Guide childcare licensing requirements. TRIGGERS - Use when user needs help with childcare-licensing-guide related tasks." |
-| [childcare-marketing](parenting-family/childcare-marketing/SKILL.md) | `childcare-marketing` | `low` | "Create marketing plans for childcare centers. TRIGGERS - Use when user needs help with childcare-marketing related tasks." |
-| [childcare-marketing-plan](parenting-family/childcare-marketing-plan/SKILL.md) | `childcare-marketing-plan` | `low` | "Design childcare marketing. TRIGGERS - Use when user needs help with childcare-marketing-plan related tasks." |
-| [childcare-newsletter](parenting-family/childcare-newsletter/SKILL.md) | `childcare-newsletter` | `low` | "Write newsletters for childcare centers. TRIGGERS - Use when user needs help with childcare-newsletter related tasks." |
-| [childcare-parent-communication](parenting-family/childcare-parent-communication/SKILL.md) | `childcare-parent-communication` | `low` | "Design parent communication. TRIGGERS - Use when user needs help with childcare-parent-communication related tasks." |
-| [childcare-quality-assessment](parenting-family/childcare-quality-assessment/SKILL.md) | `childcare-quality-assessment` | `low` | "Conduct quality assessments for childcare programs. TRIGGERS - Use when user needs help with childcare-quality-assessment rela... |
-| [childcare-safety-plan](parenting-family/childcare-safety-plan/SKILL.md) | `childcare-safety-plan` | `low` | "Design childcare safety plans. TRIGGERS - Use when user needs help with childcare-safety-plan related tasks." |
-| [childcare-staff-training](parenting-family/childcare-staff-training/SKILL.md) | `childcare-staff-training` | `low` | "Design childcare staff training. TRIGGERS - Use when user needs help with childcare-staff-training related tasks." |
-| [childcare-technology-plan](parenting-family/childcare-technology-plan/SKILL.md) | `childcare-technology-plan` | `low` | "Plan childcare technology. TRIGGERS - Use when user needs help with childcare-technology-plan related tasks." |
-| [children-chore-system](parenting-family/children-chore-system/SKILL.md) | `children-chore-system` | `low` | "Design children's chore systems. TRIGGERS - Use when user needs help with children-chore-system related tasks." |
-| [college-prep-guide](parenting-family/college-prep-guide/SKILL.md) | `college-prep-guide` | `low` | "Guide college preparation. TRIGGERS - Use when user needs help with college-prep-guide related tasks." |
-| [daycare-business-plan](parenting-family/daycare-business-plan/SKILL.md) | `daycare-business-plan` | `low` | "Create daycare center business plans with licensing. TRIGGERS - Use when user needs help with daycare-business-plan related ta... |
-| [early-literacy-program](parenting-family/early-literacy-program/SKILL.md) | `early-literacy-program` | `low` | "Design early literacy programs for young children. TRIGGERS - Use when user needs help with early-literacy-program related tas... |
-| [emergency-preparedness-childcare](parenting-family/emergency-preparedness-childcare/SKILL.md) | `emergency-preparedness-childcare` | `low` | "Create emergency preparedness plans for childcare. TRIGGERS - Use when user needs help with emergency-preparedness-childcare r... |
-| [enrollment-process](parenting-family/enrollment-process/SKILL.md) | `enrollment-process` | `low` | "Design enrollment processes for childcare. TRIGGERS - Use when user needs help with enrollment-process related tasks." |
-| [family-activity-planner](parenting-family/family-activity-planner/SKILL.md) | `family-activity-planner` | `low` | "Plan family activities. TRIGGERS - Use when user needs help with family-activity-planner related tasks." |
-| [family-budget-planner](parenting-family/family-budget-planner/SKILL.md) | `family-budget-planner` | `low` | "Plan family budgets. TRIGGERS - Use when user needs help with family-budget-planner related tasks." |
-| [family-communication-plan](parenting-family/family-communication-plan/SKILL.md) | `family-communication-plan` | `low` | "Design family communication. TRIGGERS - Use when user needs help with family-communication-plan related tasks." |
-| [family-emergency-plan](parenting-family/family-emergency-plan/SKILL.md) | `family-emergency-plan` | `low` | "Design family emergency plans. TRIGGERS - Use when user needs help with family-emergency-plan related tasks." |
-| [family-finance-education](parenting-family/family-finance-education/SKILL.md) | `family-finance-education` | `low` | "Educate families about finance. TRIGGERS - Use when user needs help with family-finance-education related tasks." |
-| [family-health-plan](parenting-family/family-health-plan/SKILL.md) | `family-health-plan` | `low` | "Design family health plans. TRIGGERS - Use when user needs help with family-health-plan related tasks." |
-| [family-meal-planner](parenting-family/family-meal-planner/SKILL.md) | `family-meal-planner` | `low` | "Plan family meals. TRIGGERS - Use when user needs help with family-meal-planner related tasks." |
-| [family-meeting-guide](parenting-family/family-meeting-guide/SKILL.md) | `family-meeting-guide` | `low` | "Design family meeting guides. TRIGGERS - Use when user needs help with family-meeting-guide related tasks." |
-| [family-tradition-builder](parenting-family/family-tradition-builder/SKILL.md) | `family-tradition-builder` | `low` | "Build family traditions. TRIGGERS - Use when user needs help with family-tradition-builder related tasks." |
-| [family-travel-budget](parenting-family/family-travel-budget/SKILL.md) | `family-travel-budget` | `low` | "Plan family travel budgets. TRIGGERS - Use when user needs help with family-travel-budget related tasks." |
-| [field-trip-childcare](parenting-family/field-trip-childcare/SKILL.md) | `field-trip-childcare` | `low` | "Plan field trips for childcare programs. TRIGGERS - Use when user needs help with field-trip-childcare related tasks." |
-| [homeschool-curriculum](parenting-family/homeschool-curriculum/SKILL.md) | `homeschool-curriculum` | `low` | "Design homeschool curricula. TRIGGERS - Use when user needs help with homeschool-curriculum related tasks." |
-| [mealtime-management](parenting-family/mealtime-management/SKILL.md) | `mealtime-management` | `low` | "Design mealtime management for childcare. TRIGGERS - Use when user needs help with mealtime-management related tasks." |
-| [montessori-program-design](parenting-family/montessori-program-design/SKILL.md) | `montessori-program-design` | `low` | "Design Montessori programs. TRIGGERS - Use when user needs help with montessori-program-design related tasks." |
-| [music-program-kids](parenting-family/music-program-kids/SKILL.md) | `music-program-kids` | `low` | "Design music programs for early childhood. TRIGGERS - Use when user needs help with music-program-kids related tasks." |
-| [nanny-agreement](parenting-family/nanny-agreement/SKILL.md) | `nanny-agreement` | `low` | "Draft nanny employment agreement outlines. TRIGGERS - Use when user needs help with nanny-agreement related tasks." |
-| [naptime-routine](parenting-family/naptime-routine/SKILL.md) | `naptime-routine` | `low` | "Create naptime routines for childcare centers. TRIGGERS - Use when user needs help with naptime-routine related tasks." |
-| [new-parent-guide](parenting-family/new-parent-guide/SKILL.md) | `new-parent-guide` | `low` | "Guide new parents. TRIGGERS - Use when user needs help with new-parent-guide related tasks." |
-| [outdoor-education](parenting-family/outdoor-education/SKILL.md) | `outdoor-education` | `low` | "Design outdoor education programs for children. TRIGGERS - Use when user needs help with outdoor-education related tasks." |
-| [parent-communication-childcare](parenting-family/parent-communication-childcare/SKILL.md) | `parent-communication-childcare` | `low` | "Design parent communication systems for childcare. TRIGGERS - Use when user needs help with parent-communication-childcare rel... |
-| [parent-handbook](parenting-family/parent-handbook/SKILL.md) | `parent-handbook` | `low` | "Write parent handbooks for childcare centers. TRIGGERS - Use when user needs help with parent-handbook related tasks." |
-| [parent-self-care-plan](parenting-family/parent-self-care-plan/SKILL.md) | `parent-self-care-plan` | `low` | "Design parent self-care plans. TRIGGERS - Use when user needs help with parent-self-care-plan related tasks." |
-| [parenting-plan](parenting-family/parenting-plan/SKILL.md) | `parenting-plan` | `low` | "Design co-parenting plans. TRIGGERS - Use when user needs help with parenting-plan related tasks." |
-| [playground-design](parenting-family/playground-design/SKILL.md) | `playground-design` | `low` | "Guide playground design with safety standards. TRIGGERS - Use when user needs help with playground-design related tasks." |
-| [preschool-curriculum](parenting-family/preschool-curriculum/SKILL.md) | `preschool-curriculum` | `low` | "Design preschool curricula with developmental goals. TRIGGERS - Use when user needs help with preschool-curriculum related tas... |
-| [reggio-emilia-program](parenting-family/reggio-emilia-program/SKILL.md) | `reggio-emilia-program` | `low` | "Design Reggio Emilia programs. TRIGGERS - Use when user needs help with reggio-emilia-program related tasks." |
-| [special-needs-inclusion](parenting-family/special-needs-inclusion/SKILL.md) | `special-needs-inclusion` | `low` | "Guide special needs inclusion in childcare. TRIGGERS - Use when user needs help with special-needs-inclusion related tasks." |
-| [staff-to-child-ratio](parenting-family/staff-to-child-ratio/SKILL.md) | `staff-to-child-ratio` | `low` | "Guide staff-to-child ratio compliance. TRIGGERS - Use when user needs help with staff-to-child-ratio related tasks." |
-| [staff-training-childcare](parenting-family/staff-training-childcare/SKILL.md) | `staff-training-childcare` | `low` | "Design staff training for childcare workers. TRIGGERS - Use when user needs help with staff-training-childcare related tasks." |
-| [stem-activities-kids](parenting-family/stem-activities-kids/SKILL.md) | `stem-activities-kids` | `low` | "Design STEM activities for children. TRIGGERS - Use when user needs help with stem-activities-kids related tasks." |
-| [summer-camp-plan](parenting-family/summer-camp-plan/SKILL.md) | `summer-camp-plan` | `low` | "Plan summer camp programs with activities and staffing. TRIGGERS - Use when user needs help with summer-camp-plan related tasks." |
-| [teen-independence-plan](parenting-family/teen-independence-plan/SKILL.md) | `teen-independence-plan` | `low` | "Plan teen independence building. TRIGGERS - Use when user needs help with teen-independence-plan related tasks." |
-| [tutoring-business-plan](parenting-family/tutoring-business-plan/SKILL.md) | `tutoring-business-plan` | `low` | "Create tutoring business plans with services. TRIGGERS - Use when user needs help with tutoring-business-plan related tasks." |
+| [tutoring-business-plan](parenting/tutoring-business-plan/SKILL.md) | `tutoring-business-plan` | `low` | "Create tutoring business plans with services. TRIGGERS - Use when user needs help with tutoring-business-plan related tasks." |
 
 ---
 
@@ -13190,39 +13465,60 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
-## <a id="presentation"></a>📁 Presentation (1 skills)
+## <a id="presentation"></a>📁 Presentation (19 skills)
 
 | Skill ID | Name | Risk | Description |
 | :--- | :--- | :---: | :--- |
+| [academic-presentations](presentation/academic-presentations/SKILL.md) | `academic-presentations` | `low` | "Design peer-reviewed research conference talks, thesis defenses, and poster sessions adhering to scientific rigor." |
+| [accessibility](presentation/accessibility/SKILL.md) | `accessibility` | `low` | "Ensure slide deck color contrast compliance (4.5:1 ratio), screen-reader reading orders, and closed-captioning." |
+| [conference-presentations](presentation/conference-presentations/SKILL.md) | `conference-presentations` | `low` | "Author massive 16:9 stage-optimized keynote presentations with minimal text, high-impact imagery, and stage cues." |
+| [executive-presentations](presentation/executive-presentations/SKILL.md) | `executive-presentations` | `low` | "Deliver concise, bottom-line-first executive briefings designed for high-interruption boardroom environments." |
+| [frontend-slides](presentation/frontend-slides/SKILL.md) | `frontend-slides` | `safe` | Create stunning, animation-rich HTML presentations from scratch or by converting PowerPoint files. |
+| [google-slides](presentation/google-slides/SKILL.md) | `google-slides` | `low` | "Automate Google Slides generation via Apps Script, maintain centralized corporate themes, and link Sheets charts." |
+| [google-slides-automation](presentation/google-slides-automation/SKILL.md) | `google-slides-automation` | `critical` | "Read and edit Google Slides through an available authenticated connector or reviewed API integration, with scoped changes and ... |
+| [keynote](presentation/keynote/SKILL.md) | `keynote` | `low` | "Leverage Keynote Magic Move, cinematic transitions, precision typographic kerning, and video alpha channels." |
+| [nanobanana-ppt-skills](presentation/nanobanana-ppt-skills/SKILL.md) | `nanobanana-ppt-skills` | `safe` | "AI-powered PPT generation with document analysis and styled images" |
+| [pitch-decks](presentation/pitch-decks/SKILL.md) | `pitch-decks` | `low` | "Construct standard 12-slide venture capital pitch decks covering problem, solution, market size, traction, and ask." |
+| [powerpoint](presentation/powerpoint/SKILL.md) | `powerpoint` | `low` | "Build standardized slide master layouts, XML color themes, morph transitions, and custom vector graphics." |
+| [pptx-official](presentation/pptx-official/SKILL.md) | `pptx-official` | `critical` | "A user may ask you to create, edit, or analyze the contents of a .pptx file. A .pptx file is essentially a ZIP archive contain... |
 | [pres-executive-narrative-pyramid-deck](presentation/pres-executive-narrative-pyramid-deck/SKILL.md) | `pres-executive-narrative-pyramid-deck` | `low` | "Structure high-impact board and executive presentations using the Barbara Minto Pyramid Principle and SCQA (Situation-Complica... |
+| [presentation-storytelling](presentation/presentation-storytelling/SKILL.md) | `presentation-storytelling` | `low` | "Structure presentation storylines using the Hero's Journey, Freytag's Pyramid, and contrast-driven narrative cadence." |
+| [public-speaking](presentation/public-speaking/SKILL.md) | `public-speaking` | `low` | "Master diaphragmatic breathing, vocal variety, eye contact triangulation, and purposeful stage movement." |
+| [rehearsal](presentation/rehearsal/SKILL.md) | `rehearsal` | `low` | "Execute recorded dry runs, stress-test anticipated hostile Q&A questions, and time slide transitions." |
+| [slide-design](presentation/slide-design/SKILL.md) | `slide-design` | `low` | "Apply graphic design principles, grid layouts, typographic hierarchy, and visual focal points to slide decks." |
+| [speaker-notes](presentation/speaker-notes/SKILL.md) | `speaker-notes` | `low` | "Author structured speaker notes with stage pacing marks, slide advancement cues, and vocal inflection highlights." |
+| [technical-presentations](presentation/technical-presentations/SKILL.md) | `technical-presentations` | `low` | "Explain distributed systems, algorithmic workflows, and engineering trade-offs to mixed technical/business audiences." |
 
 ---
 
-## <a id="presentation-processing"></a>📁 Presentation Processing (4 skills)
+## <a id="privacy"></a>📁 Privacy (16 skills)
 
 | Skill ID | Name | Risk | Description |
 | :--- | :--- | :---: | :--- |
-| [frontend-slides](presentation-processing/frontend-slides/SKILL.md) | `frontend-slides` | `safe` | Create stunning, animation-rich HTML presentations from scratch or by converting PowerPoint files. |
-| [google-slides-automation](presentation-processing/google-slides-automation/SKILL.md) | `google-slides-automation` | `critical` | "Read and edit Google Slides through an available authenticated connector or reviewed API integration, with scoped changes and ... |
-| [nanobanana-ppt-skills](presentation-processing/nanobanana-ppt-skills/SKILL.md) | `nanobanana-ppt-skills` | `safe` | "AI-powered PPT generation with document analysis and styled images" |
-| [pptx-official](presentation-processing/pptx-official/SKILL.md) | `pptx-official` | `critical` | "A user may ask you to create, edit, or analyze the contents of a .pptx file. A .pptx file is essentially a ZIP archive contain... |
-
----
-
-## <a id="privacy"></a>📁 Privacy (3 skills)
-
-| Skill ID | Name | Risk | Description |
-| :--- | :--- | :---: | :--- |
+| [anonymization](privacy/anonymization/SKILL.md) | `anonymization` | `low` | "Implement $k$-anonymity, $\ell$-diversity, and $t$-closeness on sensitive relational datasets to prevent re-identification." |
+| [consent-management](privacy/consent-management/SKILL.md) | `consent-management` | `low` | "Implement IAB TCF 2.2 consent banners, Global Privacy Control (GPC) headers, and opt-out synchronization." |
+| [cookie-privacy](privacy/cookie-privacy/SKILL.md) | `cookie-privacy` | `low` | "Audit web applications for zombie cookies, canvas fingerprinting, CNAME cloaking, and unconsented third-party beacons." |
+| [data-minimization](privacy/data-minimization/SKILL.md) | `data-minimization` | `low` | "Enforce strict need-to-know data collection boundaries, tokenization, and purpose-bound schema pruning." |
+| [data-retention](privacy/data-retention/SKILL.md) | `data-retention` | `low` | "Implement scheduled database purging, soft-delete cascades, and cryptographic data shredding across backups." |
+| [data-subject-rights](privacy/data-subject-rights/SKILL.md) | `data-subject-rights` | `low` | "Automate Right of Access, Rectification, and Right to be Forgotten (Erasure) workflows across disparate systems." |
+| [differential-privacy](privacy/differential-privacy/SKILL.md) | `differential-privacy` | `low` | "Inject calibrated Laplace and Gaussian noise into analytics queries to guarantee $(\epsilon, \delta)$-differential privacy bou... |
+| [dsar](privacy/dsar/SKILL.md) | `dsar` | `low` | "Authenticate data subject identities securely and redact third-party PII from document disclosures." |
 | [managing-privacy-breach-response](privacy/managing-privacy-breach-response/SKILL.md) | `managing-privacy-breach-response` | `low` | Guides HIPAA breach investigation with risk assessment, notification requirements, and remediation documentation. Use when mana... |
 | [pii-detection](privacy/pii-detection/SKILL.md) | `pii-detection` | `low` | Detect personally identifiable information (PII) in code, data, and agent outputs before processing or storage. Multi-language,... |
 | [priv-differential-privacy-gdpr-dpia](privacy/priv-differential-privacy-gdpr-dpia/SKILL.md) | `priv-differential-privacy-gdpr-dpia` | `low` | "Quantify privacy loss with $(\epsilon, \delta)$-differential privacy mechanisms and perform rigorous General Data Protection R... |
+| [privacy-auditing](privacy/privacy-auditing/SKILL.md) | `privacy-auditing` | `low` | "Audit vendor Data Processing Agreements (DPA), Standard Contractual Clauses (SCC), and Schrems II transfer risks." |
+| [privacy-by-design](privacy/privacy-by-design/SKILL.md) | `privacy-by-design` | `low` | "Operationalize Ann Cavoukian's 7 Foundational Principles of Privacy by Design into software development lifecycles." |
+| [privacy-engineering](privacy/privacy-engineering/SKILL.md) | `privacy-engineering` | `low` | "Conduct systematic privacy threat modeling across Linkability, Identifiability, Non-repudiation, and Disclosure." |
+| [privacy-impact-assessment](privacy/privacy-impact-assessment/SKILL.md) | `privacy-impact-assessment` | `low` | "Conduct formal Data Protection Impact Assessments (DPIA) under Article 35 GDPR and state privacy frameworks." |
+| [pseudonymization](privacy/pseudonymization/SKILL.md) | `pseudonymization` | `low` | "Replace direct personal identifiers with HMAC-derived tokens stored in isolated key vaults with segregated access." |
 
 ---
 
-## <a id="procurement"></a>📁 Procurement (15 skills)
+## <a id="procurement"></a>📁 Procurement (20 skills)
 
 | Skill ID | Name | Risk | Description |
 | :--- | :--- | :---: | :--- |
+| [bid-compass](procurement/bid-compass/SKILL.md) | `bid-compass` | `low` | Guide users through RFP generation and RFP evaluation end-to-end with configurable scoring, mandatory quality gates, and struct... |
 | [category-strategy](procurement/category-strategy/SKILL.md) | `category-strategy` | `low` | "Expert instructions and domain workflows for category strategy." |
 | [contract-commercial-review](procurement/contract-commercial-review/SKILL.md) | `contract-commercial-review` | `low` | "Expert instructions and domain workflows for contract commercial review." |
 | [document-review-word-pdf](procurement/document-review-word-pdf/SKILL.md) | `document-review-word-pdf` | `low` | "Expert instructions and domain workflows for document review word pdf." |
@@ -13230,13 +13526,17 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [excel-procurement-analysis](procurement/excel-procurement-analysis/SKILL.md) | `excel-procurement-analysis` | `low` | "Expert instructions and domain workflows for excel procurement analysis." |
 | [management-reporting](procurement/management-reporting/SKILL.md) | `management-reporting` | `low` | "Expert instructions and domain workflows for management reporting." |
 | [negotiation-brief](procurement/negotiation-brief/SKILL.md) | `negotiation-brief` | `low` | "Expert instructions and domain workflows for negotiation brief." |
+| [procure-voice](procurement/procure-voice/SKILL.md) | `procure-voice` | `low` | Apply an honest, plain-English tone to procurement outputs. Use as a tone overlay whenever generating procurement content — con... |
 | [procurement-task-router](procurement/procurement-task-router/SKILL.md) | `procurement-task-router` | `low` | "Expert instructions and domain workflows for procurement task router." |
 | [quotation-comparison](procurement/quotation-comparison/SKILL.md) | `quotation-comparison` | `low` | "Expert instructions and domain workflows for quotation comparison." |
+| [redline-sentry](procurement/redline-sentry/SKILL.md) | `redline-sentry` | `low` | Review NDAs, MSAs, DPAs, SaaS agreements, and other procurement contracts against a configurable risk playbook. Use whenever th... |
 | [rfq-rfp](procurement/rfq-rfp/SKILL.md) | `rfq-rfp` | `low` | "Expert instructions and domain workflows for rfq rfp." |
 | [spend-baseline-analysis](procurement/spend-baseline-analysis/SKILL.md) | `spend-baseline-analysis` | `low` | "Expert instructions and domain workflows for spend baseline analysis." |
+| [spend-prism](procurement/spend-prism/SKILL.md) | `spend-prism` | `low` | Analyse procurement spend data from Coupa, Ariba, SAP, Concur, Oracle, or generic CSV/XLSX exports. Use whenever the user share... |
 | [supplier-counterproposal](procurement/supplier-counterproposal/SKILL.md) | `supplier-counterproposal` | `low` | "Expert instructions and domain workflows for supplier counterproposal." |
 | [supplier-portfolio-review](procurement/supplier-portfolio-review/SKILL.md) | `supplier-portfolio-review` | `low` | "Expert instructions and domain workflows for supplier portfolio review." |
 | [supplier-scorecard](procurement/supplier-scorecard/SKILL.md) | `skill` | `low` | "Imported from gasquet82-code/procurement-agent-skills" |
+| [supplier-truthcheck](procurement/supplier-truthcheck/SKILL.md) | `supplier-truthcheck` | `low` | Validate supplier / vendor master data for quality and risk. Use whenever the user provides a list of suppliers, a single vendo... |
 | [tco-analysis](procurement/tco-analysis/SKILL.md) | `tco-analysis` | `low` | "Expert instructions and domain workflows for tco analysis." |
 
 ---
@@ -13306,7 +13606,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
-## <a id="productivity"></a>📁 Productivity (34 skills)
+## <a id="productivity"></a>📁 Productivity (35 skills)
 
 | Skill ID | Name | Risk | Description |
 | :--- | :--- | :---: | :--- |
@@ -13314,6 +13614,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [ask-matt](productivity/ask-matt/SKILL.md) | `ask-matt` | `safe` | Ask which skill or flow fits your situation. A router over the user-invoked skills in this repo. |
 | [box-automation](productivity/box-automation/SKILL.md) | `box-automation` | `critical` | "Automate Box operations including file upload/download, content search, folder management, collaboration, metadata queries, an... |
 | [brain-to-docs](productivity/brain-to-docs/SKILL.md) | `brain-to-docs` | `critical` | "Interview the user to turn project vision and decisions into README and ADR documentation." |
+| [brainstorming](productivity/brainstorming/SKILL.md) | `brainstorming` | `low` | > Use this skill before any creative or constructive work (features, components, architecture, behavior changes, or functionali... |
 | [cal-com-automation](productivity/cal-com-automation/SKILL.md) | `cal-com-automation` | `critical` | "Automate Cal.com tasks via Rube MCP (Composio): manage bookings, check availability, configure webhooks, and handle teams. Alw... |
 | [calendly-automation](productivity/calendly-automation/SKILL.md) | `calendly-automation` | `critical` | "Automate Calendly scheduling, event management, invitee tracking, availability checks, and organization administration via Rub... |
 | [codex-profiles](productivity/codex-profiles/SKILL.md) | `codex-profiles` | `critical` | "Use codex-profiles to run Codex CLI or Codex Desktop with isolated CODEX_HOME profiles for separate accounts, projects, and lo... |
@@ -13410,22 +13711,45 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
-## <a id="psychology"></a>📁 Psychology (4 skills)
+## <a id="psychology"></a>📁 Psychology (17 skills)
 
 | Skill ID | Name | Risk | Description |
 | :--- | :--- | :---: | :--- |
+| [behavioral](psychology/behavioral/SKILL.md) | `behavioral` | `low` | "Formulate reinforcement schedules (fixed/variable ratio/interval), extinction bursts, stimulus control, and functional behavio... |
+| [behavioral-economics](psychology/behavioral-economics/SKILL.md) | `behavioral-economics` | `low` | "Design ethical nudge interventions using the EAST framework (Easy, Attractive, Social, Timely) to encourage desired civic/heal... |
+| [clinical](psychology/clinical/SKILL.md) | `clinical` | `low` | "Structure diagnostic clinical interviews, symptom criteria differential diagnosis (DSM-5-TR), and evidence-based treatment pla... |
+| [cognitive](psychology/cognitive/SKILL.md) | `cognitive` | `low` | "Model cognitive load theory, Baddeley's working memory model, dual-process theory (System 1/2), and mental schemas." |
 | [cognitive-psychology](psychology/cognitive-psychology/SKILL.md) | `cognitive-psychology` | `low` | "Mental processes: attention, perception, memory, language, reasoning, decision-making, and problem-solving" |
+| [decision-making](psychology/decision-making/SKILL.md) | `decision-making` | `low` | "Model Kahneman-Tversky Prospect Theory, loss aversion, availability heuristic, anchoring, and choice architecture." |
+| [developmental](psychology/developmental/SKILL.md) | `developmental` | `low` | "Assess developmental trajectories across Piaget's stages of cognitive development, Erikson's psychosocial crises, and attachme... |
+| [educational](psychology/educational/SKILL.md) | `educational` | `low` | "Apply Vygotsky's Zone of Proximal Development (ZPD), instructional scaffolding, Bloom's Revised Taxonomy, and self-regulated l... |
+| [experimental](psychology/experimental/SKILL.md) | `experimental` | `low` | "Design randomized controlled behavioral trials, between-subject and within-subject factorial designs, and counterbalancing." |
+| [human-factors](psychology/human-factors/SKILL.md) | `human-factors` | `low` | "Design physical and digital systems matching human cognitive and sensory limitations conforming to ISO 9241." |
+| [neuropsychology](psychology/neuropsychology/SKILL.md) | `neuropsychology` | `low` | "Evaluate executive function, aphasia, amnesia, and focal brain injury impairments using standardized test batteries (WAIS, Hal... |
+| [organizational](psychology/organizational/SKILL.md) | `organizational` | `low` | "Evaluate workplace motivation models (Herzberg, Vroom's expectancy), organizational citizenship behavior, and burnout mitigati... |
 | [organizational-psychology](psychology/organizational-psychology/SKILL.md) | `organizational-psychology` | `low` | "Workplace behavior: motivation, leadership, team dynamics, organizational culture, job satisfaction, and organizational change" |
+| [personality](psychology/personality/SKILL.md) | `personality` | `low` | "Assess personality constructs using the Five Factor Model (Big Five OCEAN), HEXACO, and psychodynamic personality profiles." |
 | [psych-cbt-case-formulation-scoring](psychology/psych-cbt-case-formulation-scoring/SKILL.md) | `psych-cbt-case-formulation-scoring` | `low` | "Execute evidence-based CBT case formulations using Beck's cognitive triad and interpret standardized psychometric instruments ... |
-| [psychometrics](psychology/psychometrics/SKILL.md) | `psychometrics` | `low` | "Psychological measurement: test construction, reliability, validity, item response theory, factor analysis, and assessment" |
+| [psychometrics](psychology/psychometrics/SKILL.md) | `psychometrics` | `low` | "Evaluate test reliability (Cronbach's alpha), construct validity, item difficulty parameters, and Rasch models." |
+| [social](psychology/social/SKILL.md) | `social` | `low` | "Analyze social influence, cognitive dissonance theory, fundamental attribution error, ingroup/outgroup bias, and bystander apa... |
 
 ---
 
-## <a id="public-relations"></a>📁 Public Relations (1 skills)
+## <a id="public-relations"></a>📁 Public Relations (11 skills)
 
 | Skill ID | Name | Risk | Description |
 | :--- | :--- | :---: | :--- |
+| [communications-strategy](public-relations/communications-strategy/SKILL.md) | `communications-strategy` | `low` | "Develop annual PR roadmaps, brand narratives, speaking opportunity calendars, and executive thought leadership platforms." |
+| [crisis-communications](public-relations/crisis-communications/SKILL.md) | `crisis-communications` | `low` | "Formulate rapid response statements, holding lines, internal FAQs, and executive media defense during acute crises." |
+| [media-monitoring](public-relations/media-monitoring/SKILL.md) | `media-monitoring` | `low` | "Track brand mentions, media reach, sentiment ratios, and competitor Share of Voice across broadcast and digital channels." |
+| [media-pitching](public-relations/media-pitching/SKILL.md) | `media-pitching` | `low` | "Draft personalized 100-word email pitches tied to trending news beats and manage coordinated press embargoes." |
+| [media-relations](public-relations/media-relations/SKILL.md) | `media-relations` | `low` | "Build and maintain relationships with beat journalists, editors, and industry analysts across tier-1 publications." |
+| [press-releases](public-relations/press-releases/SKILL.md) | `press-releases` | `low` | "Author newswire-ready press releases conforming to Associated Press (AP) style with compelling headlines and executive quotes." |
+| [public-affairs](public-relations/public-affairs/SKILL.md) | `public-affairs` | `low` | "Advocate policy positions before government bodies, draft legislative testimony, and build issue coalitions." |
 | [public-relations](public-relations/public-relations/SKILL.md) | `public-relations` | `critical` | "When the user wants help with public relations, earned media, press coverage, journalist outreach, or media strategy (not pull... |
+| [reputation-management](public-relations/reputation-management/SKILL.md) | `reputation-management` | `low` | "Audit brand sentiment across news editorial coverage, executive Wikipedia articles, and online reputation trackers." |
+| [spokesperson-preparation](public-relations/spokesperson-preparation/SKILL.md) | `spokesperson-preparation` | `low` | "Coach executives on on-camera demeanor, soundbite formulation, and the Bridging technique during contentious interviews." |
+| [stakeholder-communications](public-relations/stakeholder-communications/SKILL.md) | `stakeholder-communications` | `low` | "Coordinate messaging across internal employees, investors, community leaders, and regulatory bodies during corporate transitio... |
 
 ---
 
@@ -13466,7 +13790,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
-## <a id="real-estate"></a>📁 Real Estate (90 skills)
+## <a id="real-estate"></a>📁 Real Estate (93 skills)
 
 | Skill ID | Name | Risk | Description |
 | :--- | :--- | :---: | :--- |
@@ -13524,6 +13848,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [real-estate-blog-strategy](real-estate/real-estate-blog-strategy/SKILL.md) | `real-estate-blog-strategy` | `low` | "Design real estate blog strategies. TRIGGERS - Use when user needs help with real-estate-blog-strategy related tasks." |
 | [real-estate-brokerage-plan](real-estate/real-estate-brokerage-plan/SKILL.md) | `real-estate-brokerage-plan` | `low` | "Create real estate brokerage business plans. TRIGGERS - Use when user needs help with real-estate-brokerage-plan related tasks." |
 | [real-estate-coaching-plan](real-estate/real-estate-coaching-plan/SKILL.md) | `real-estate-coaching-plan` | `low` | "Design real estate coaching. TRIGGERS - Use when user needs help with real-estate-coaching-plan related tasks." |
+| [real-estate-community-top-design](real-estate/real-estate-community-top-design/SKILL.md) | `real-estate-community-top-design` | `low` | 专为房地产企业规划和导入社群运营体系的专业工具。当用户提到地产社群、房地产社区运营、业主社群、地产品牌社群体系、社群顶层设计、地产客户社群、业主运营体系、社群IP打造、全民推荐体系、地产NPS、业主满意度运营、老带新社群机制、地产社群品牌等关键词时，必须... |
 | [real-estate-crm-setup](real-estate/real-estate-crm-setup/SKILL.md) | `real-estate-crm-setup` | `low` | "Set up real estate CRM systems. TRIGGERS - Use when user needs help with real-estate-crm-setup related tasks." |
 | [real-estate-crowdfunding](real-estate/real-estate-crowdfunding/SKILL.md) | `real-estate-crowdfunding` | `low` | "Design real estate crowdfunding strategies. TRIGGERS - Use when user needs help with real-estate-crowdfunding related tasks." |
 | [real-estate-drip-campaign](real-estate/real-estate-drip-campaign/SKILL.md) | `real-estate-drip-campaign` | `low` | "Design email drip campaigns. TRIGGERS - Use when user needs help with real-estate-drip-campaign related tasks." |
@@ -13537,6 +13862,8 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [real-estate-proforma](real-estate/real-estate-proforma/SKILL.md) | `real-estate-proforma` | `low` | "Build real estate pro forma financial models. TRIGGERS - Use when user needs help with real-estate-proforma related tasks." |
 | [real-estate-social](real-estate/real-estate-social/SKILL.md) | `real-estate-social` | `low` | "Create real estate social media content strategies. TRIGGERS - Use when user needs help with real-estate-social related tasks." |
 | [real-estate-social-media](real-estate/real-estate-social-media/SKILL.md) | `real-estate-social-media` | `low` | "Design real estate social media. TRIGGERS - Use when user needs help with real-estate-social-media related tasks." |
+| [real-estate-storyline](real-estate/real-estate-storyline/SKILL.md) | `real-estate-storyline` | `low` | 专为房地产项目创作高端品牌故事线及全套营销内容的专业工具，支持中文、英文及中英双语对照输出。以品牌故事线为核心模块，完成后按需扩展输出：营销推广策略（含豪宅/刚需/刚改差异化分支）、媒体选题策略（结合时事热点）、主视觉AI提示词、主视觉生成、视频脚本。当... |
+| [real-estate-strategy](real-estate/real-estate-strategy/SKILL.md) | `real-estate-strategy` | `low` | 地产项目前期产策定位专业技能。覆盖新项目立项研判、竞品分析报告、产品定位方案、投前风险排查、客户研究报告。 触发条件：用户提及"产策定位""竞品分析""土地研判""产品定位""投前风险"等关键词，或用户提供项目名称+城市时激活。 |
 | [real-estate-syndication](real-estate/real-estate-syndication/SKILL.md) | `real-estate-syndication` | `low` | "Design real estate syndication structures. TRIGGERS - Use when user needs help with real-estate-syndication related tasks." |
 | [real-estate-tax-strategy](real-estate/real-estate-tax-strategy/SKILL.md) | `real-estate-tax-strategy` | `low` | "Design real estate tax strategies. TRIGGERS - Use when user needs help with real-estate-tax-strategy related tasks." |
 | [real-estate-team-building](real-estate/real-estate-team-building/SKILL.md) | `real-estate-team-building` | `low` | "Build real estate teams. TRIGGERS - Use when user needs help with real-estate-team-building related tasks." |
@@ -14136,7 +14463,15 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
-## <a id="security"></a>📁 Security (214 skills)
+## <a id="search"></a>📁 Search (1 skills)
+
+| Skill ID | Name | Risk | Description |
+| :--- | :--- | :---: | :--- |
+| [search-specialist](search/search-specialist/SKILL.md) | `search-specialist` | `low` | Expert web researcher using advanced search techniques and synthesis. Masters search operators, result filtering, and multi-sou... |
+
+---
+
+## <a id="security"></a>📁 Security (215 skills)
 
 | Skill ID | Name | Risk | Description |
 | :--- | :--- | :---: | :--- |
@@ -14317,6 +14652,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [skill-audit](security/skill-audit/SKILL.md) | `skill-audit` | `safe` | "Pre-install security scanner for AI agent skills. 7.5% of 14,706 skills are malicious. Audit before you trust." |
 | [skill-quality-linter](security/skill-quality-linter/SKILL.md) | `skill-quality-linter` | `low` | Validate SKILL.md structure, frontmatter completeness, token budget, freshness, naming conventions, and cross-platform portabil... |
 | [skill-security-audit](security/skill-security-audit/SKILL.md) | `skill-security-audit` | `safe` | "Audit an Agent Skill, MCP server, connector, or desktop extension before installation by tracing code, dependencies, permissio... |
+| [skill-security-auditor](security/skill-security-auditor/SKILL.md) | `skill-security-auditor` | `low` | > Use this skill to audit Agent Skills, SKILL.md files, imported prompts, scripts, tools, and skill repositories for prompt inj... |
 | [smtp-penetration-testing](security/smtp-penetration-testing/SKILL.md) | `smtp-penetration-testing` | `offensive` | "Conduct comprehensive security assessments of SMTP (Simple Mail Transfer Protocol) servers to identify vulnerabilities includi... |
 | [soc-design](security/soc-design/SKILL.md) | `soc-design` | `low` | "Design Security Operations Centers with processes. TRIGGERS - Use when user needs help with soc-design related tasks." |
 | [soc2-compliance-guide](security/soc2-compliance-guide/SKILL.md) | `soc2-compliance-guide` | `low` | "Guide SOC 2 compliance implementation. TRIGGERS - Use when user needs help with soc2-compliance-guide related tasks." |
@@ -14496,20 +14832,24 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
-## <a id="social-science"></a>📁 Social Science (2 skills)
+## <a id="social-science"></a>📁 Social Science (14 skills)
 
 | Skill ID | Name | Risk | Description |
 | :--- | :--- | :---: | :--- |
+| [anthropology](social-science/anthropology/SKILL.md) | `anthropology` | `low` | "Analyze kinship networks, structural functionalism, exchange theory (Mauss), and ritual symbolism." |
+| [demography](social-science/demography/SKILL.md) | `demography` | `low` | "Calculate Total Fertility Rates (TFR), dependency ratios, net migration rates, and population age-sex pyramids." |
+| [development-studies](social-science/development-studies/SKILL.md) | `development-studies` | `low` | "Analyze poverty traps, microfinance impacts, institutional quality (Acemoglu/Robinson), and Washington vs Beijing Consensuses." |
+| [human-geography](social-science/human-geography/SKILL.md) | `human-geography` | `low` | "Analyze central place theory (Christaller), spatial diffusion models, gentrification, and core-periphery geography." |
+| [international-relations](social-science/international-relations/SKILL.md) | `international-relations` | `low` | "Evaluate interstate conflict, balance of power, security dilemmas, international regimes, and democratic peace theory." |
+| [labor-studies](social-science/labor-studies/SKILL.md) | `labor-studies` | `low` | "Analyze minimum wage monopsony models, union density, collective bargaining agreements, and skill-biased technical change." |
+| [migration-studies](social-science/migration-studies/SKILL.md) | `migration-studies` | `low` | "Model push-pull migration factors, bilateral remittance flows, labor market absorption, and refugee resettlement." |
+| [political-science](social-science/political-science/SKILL.md) | `political-science` | `low` | "Model electoral mechanisms (First-Past-The-Post, Proportional Representation), Duverger's Law, and institutional veto players." |
+| [public-policy](social-science/public-policy/SKILL.md) | `public-policy` | `low` | "Conduct policy problem definition, stakeholder impact matrices, discounting future benefits, and regulatory impact analyses." |
 | [soc-causal-inference-econometrics](social-science/soc-causal-inference-econometrics/SKILL.md) | `soc-causal-inference-econometrics` | `low` | "Formulate and estimate causal effects using Difference-in-Differences (DiD), Instrumental Variables (2SLS), and Regression Dis... |
-| [sociology](social-science/sociology/SKILL.md) | `sociology` | `low` | "Study of society: social structures, institutions, stratification, culture, socialization, and research methods" |
-
----
-
-## <a id="sovereignty"></a>📁 Sovereignty (1 skills)
-
-| Skill ID | Name | Risk | Description |
-| :--- | :--- | :---: | :--- |
-| [data-sovereignty-patterns](sovereignty/data-sovereignty-patterns/SKILL.md) | `data-sovereignty-patterns` | `low` | Navigate cross-border data transfer rules — Schrems II, EU SCCs, adequacy decisions, data localization requirements for EU, US,... |
+| [social-research](social-science/social-research/SKILL.md) | `social-research` | `low` | "Design concurrent mixed-methods research integrating quantitative surveys with qualitative grounded theory coding." |
+| [social-statistics](social-science/social-statistics/SKILL.md) | `social-statistics` | `low` | "Compute stratified and clustered survey sample weights, post-stratification raking, and design effects." |
+| [sociology](social-science/sociology/SKILL.md) | `sociology` | `low` | "Analyze institutional power dynamics, social capital (Bourdieu), social mobility, and structural inequality." |
+| [urban-studies](social-science/urban-studies/SKILL.md) | `urban-studies` | `low` | "Evaluate Transit-Oriented Development (TOD), urban heat island mitigation, inclusionary zoning, and smart growth." |
 
 ---
 
@@ -15011,11 +15351,25 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
-## <a id="training"></a>📁 Training (2 skills)
+## <a id="training"></a>📁 Training (16 skills)
 
 | Skill ID | Name | Risk | Description |
 | :--- | :--- | :---: | :--- |
+| [certification-programs](training/certification-programs/SKILL.md) | `certification-programs` | `low` | "Construct psychometrically valid certification exams using Angoff standard-setting cut-score methodologies." |
+| [compliance-training](training/compliance-training/SKILL.md) | `compliance-training` | `low` | "Design memorable compliance courses (anti-harassment, insider trading, FCPA) using scenario branching." |
+| [corporate-training](training/corporate-training/SKILL.md) | `corporate-training` | `low` | "Align enterprise training portfolios with strategic workforce planning and succession management." |
+| [curriculum-development](training/curriculum-development/SKILL.md) | `curriculum-development` | `low` | "Structure multi-week technical training curricula adhering to ADDIE and Successive Approximation Model (SAM)." |
+| [customer-training](training/customer-training/SKILL.md) | `customer-training` | `low` | "Build scalable customer academies, software onboarding webinars, and product certification exams." |
+| [employee-training](training/employee-training/SKILL.md) | `employee-training` | `low` | "Design individual development plans (IDPs), stretch assignments, and lateral job shadowing rotations." |
+| [instructor-led-training](training/instructor-led-training/SKILL.md) | `instructor-led-training` | `low` | "Facilitate interactive adult learning sessions using breakout activities, live polling, and discussion management." |
+| [leadership-training](training/leadership-training/SKILL.md) | `leadership-training` | `low` | "Develop managerial competencies across effective 1-on-1s, radical candor feedback, delegation, and coaching." |
+| [onboarding](training/onboarding/SKILL.md) | `onboarding` | `low` | "Engineer structured 30-60-90 day onboarding pathways accelerating new hire time-to-productivity." |
+| [sales-training](training/sales-training/SKILL.md) | `sales-training` | `low` | "Train enterprise sales reps on Challenger selling, MEDDPICC deal qualification, and discovery call pacing." |
+| [technical-training](training/technical-training/SKILL.md) | `technical-training` | `low` | "Design sandbox coding environments, architectural katas, and guided lab exercises for software engineers." |
 | [train-kirkpatrick-curriculum-design](training/train-kirkpatrick-curriculum-design/SKILL.md) | `train-kirkpatrick-curriculum-design` | `low` | "Develop corporate technical training programs and measure business impact across reaction, learning, behavior transfer, and or... |
+| [train-the-trainer](training/train-the-trainer/SKILL.md) | `train-the-trainer` | `low` | "Coach subject matter experts (SMEs) to become effective classroom facilitators and peer mentors." |
+| [training-evaluation](training/training-evaluation/SKILL.md) | `training-evaluation` | `low` | "Measure monetary ROI of training interventions: $ROI = \frac{\text{Net Benefits}}{\text{Training Costs}} \times 100\%$." |
+| [training-needs-analysis](training/training-needs-analysis/SKILL.md) | `training-needs-analysis` | `low` | "Conduct organizational, task, and individual level needs analysis to identify genuine training vs systemic performance gaps." |
 | [tut-socratic-pedagogy-worked-examples](training/tut-socratic-pedagogy-worked-examples/SKILL.md) | `tut-socratic-pedagogy-worked-examples` | `low` | "Design instructional learning dialogues using cognitive apprenticeship, Socratic diagnostic questioning, and faded worked-exam... |
 
 ---
@@ -15180,6 +15534,14 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [voluntourism-plan](travel-tourism/voluntourism-plan/SKILL.md) | `voluntourism-plan` | `low` | "Design voluntourism programs. TRIGGERS - Use when user needs help with voluntourism-plan related tasks." |
 | [wellness-travel-plan](travel-tourism/wellness-travel-plan/SKILL.md) | `wellness-travel-plan` | `low` | "Design wellness travel packages. TRIGGERS - Use when user needs help with wellness-travel-plan related tasks." |
 | [wine-tourism-plan](travel-tourism/wine-tourism-plan/SKILL.md) | `wine-tourism-plan` | `low` | "Design wine tourism experiences. TRIGGERS - Use when user needs help with wine-tourism-plan related tasks." |
+
+---
+
+## <a id="utilities"></a>📁 Utilities (1 skills)
+
+| Skill ID | Name | Risk | Description |
+| :--- | :--- | :---: | :--- |
+| [screenshots](utilities/screenshots/SKILL.md) | `screenshots` | `safe` | "Generate marketing screenshots of your app using Playwright. Use when the user wants to create screenshots for Product Hunt, s... |
 
 ---
 
@@ -15541,7 +15903,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
-## <a id="writing"></a>📁 Writing (17 skills)
+## <a id="writing"></a>📁 Writing (19 skills)
 
 | Skill ID | Name | Risk | Description |
 | :--- | :--- | :---: | :--- |
@@ -15552,11 +15914,13 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [book-proposal-writer](writing/book-proposal-writer/SKILL.md) | `book-proposal-writer` | `low` | Write book proposals. TRIGGERS - Use when user needs help with book-proposal-writer related tasks. |
 | [book-series-planning](writing/book-series-planning/SKILL.md) | `book-series-planning` | `low` | Plan book series. TRIGGERS - Use when user needs help with book-series-planning related tasks. |
 | [children-book-guide](writing/children-book-guide/SKILL.md) | `children-book-guide` | `low` | Guide children's book writing. TRIGGERS - Use when user needs help with children-book-guide related tasks. |
+| [copywriting](writing/copywriting/SKILL.md) | `copywriting` | `low` | > Use this skill when writing, rewriting, or improving marketing copy for any page (homepage, landing page, pricing, feature, p... |
 | [copywriting-portfolio](writing/copywriting-portfolio/SKILL.md) | `copywriting-portfolio` | `low` | Build copywriting portfolios. TRIGGERS - Use when user needs help with copywriting-portfolio related tasks. |
 | [editing-checklist](writing/editing-checklist/SKILL.md) | `editing-checklist` | `low` | Create editing checklists. TRIGGERS - Use when user needs help with editing-checklist related tasks. |
 | [fiction-manuscript-guide](writing/fiction-manuscript-guide/SKILL.md) | `fiction-manuscript-guide` | `low` | Guide fiction manuscripts. TRIGGERS - Use when user needs help with fiction-manuscript-guide related tasks. |
 | [grant-writing-guide](writing/grant-writing-guide/SKILL.md) | `grant-writing-guide` | `low` | Guide grant writing. TRIGGERS - Use when user needs help with grant-writing-guide related tasks. |
 | [memoir-writing-guide](writing/memoir-writing-guide/SKILL.md) | `memoir-writing-guide` | `low` | Guide memoir writing. TRIGGERS - Use when user needs help with memoir-writing-guide related tasks. |
+| [murakami-style-writing](writing/murakami-style-writing/SKILL.md) | `murakami-style-writing` | `low` | Generates or revises prose in the style of Haruki Murakami (村上春樹): short sentences, rhythm, mundane details, first-person detac... |
 | [nonfiction-manuscript-guide](writing/nonfiction-manuscript-guide/SKILL.md) | `nonfiction-manuscript-guide` | `low` | Guide nonfiction manuscripts. TRIGGERS - Use when user needs help with nonfiction-manuscript-guide related tasks. |
 | [self-publishing-plan](writing/self-publishing-plan/SKILL.md) | `self-publishing-plan` | `low` | Plan self-publishing. TRIGGERS - Use when user needs help with self-publishing-plan related tasks. |
 | [writing-group-facilitation](writing/writing-group-facilitation/SKILL.md) | `writing-group-facilitation` | `low` | Facilitate writing groups. TRIGGERS - Use when user needs help with writing-group-facilitation related tasks. |

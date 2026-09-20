@@ -1,0 +1,15 @@
+{
+  "title": "Product / UX Designer",
+  "domain": "design",
+  "description": "Researches user needs, crafts wireframes, and prototypes design systems.",
+  "core_skills": [
+    "design-system",
+    "wireframing",
+    "user-research",
+    "accessibility"
+  ],
+  "recommended_tools": [
+    "browser",
+    "file_edit"
+  ]
+}

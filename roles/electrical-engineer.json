@@ -1,0 +1,13 @@
+{
+  "title": "Electrical Engineer",
+  "domain": "engineering",
+  "description": "Designs circuit boards, power grids, and electromagnetic signal chains.",
+  "core_skills": [
+    "power-systems",
+    "circuit-design",
+    "pcb-layout"
+  ],
+  "recommended_tools": [
+    "file_read"
+  ]
+}

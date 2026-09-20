@@ -1,28 +1,23 @@
 ---
 name: model-monitoring
-description: "Monitoring ML in production: data drift (KS test, PSI), concept drift, prediction drift, latency p99, and automated retraining triggers"
+description: "Monitor production model latency, throughput, error rates, and track ground-truth delayed accuracy metrics."
 category: mlops
+author: AAS Platform
 version: 1.0.0
 disable-model-invocation: false
 risk: low
-source: "https://github.com/Mr-Nobody-Anonymous/All-skills"
-source_repository: "Mr-Nobody-Anonymous/All-skills"
-source_path: "awesome_skills/mlops/model-monitoring/SKILL.md"
-license: "MIT"
-imported_at: "2026-09-20"
+source: authoring
+tags:
+  - mlops
+  - monitoring
+  - telemetry
+  - prometheus
+  - grafana
 ---
 
-# ML Model Monitoring & Drift Detection
+# Production ML Model Performance & Accuracy Telemetry
 
-## Scope
-Production ML monitoring detects degradation in model performance, input data distribution shifts (data drift), and changes in ground-truth relationships (concept drift).
+## Overview & Core Principles
+Monitor production model latency, throughput, error rates, and track ground-truth delayed accuracy metrics.
 
-## Drift Detection Statistical Tests
-- **Population Stability Index (PSI)**:
-  $$\text{PSI} = \sum_{i=1}^k (B_i - T_i) \ln\left(\frac{B_i}{T_i}\right)$$
-  where $B_i$ is baseline population fraction, $T_i$ target production fraction ($\text{PSI} < 0.1$ stable, $\text{PSI} > 0.25$ significant shift).
-- **Kolmogorov-Smirnov (KS) Test**: Non-parametric test comparing continuous feature cumulative distribution functions; drift flagged if $p < 0.05$.
-- **Operational Metrics**: Latency percentiles (p50, p95, p99), error rates, throughput (QPS).
-
-## Tools & Platforms
-- **Software**: Evidently AI, Whylabs, Arize AI, Prometheus + Grafana.
+Instrument OpenTelemetry spans to capture inference latency percentiles (P95, P99) and payload shapes.

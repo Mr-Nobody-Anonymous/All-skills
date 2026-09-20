@@ -1,0 +1,13 @@
+{
+  "title": "Physician / Medical Doctor",
+  "domain": "healthcare",
+  "description": "Evaluates patient health, formulates differential diagnoses, and orders treatments.",
+  "core_skills": [
+    "conducting-daily-rounds",
+    "managing-clinical-data-quality",
+    "reviewing-medication-safety"
+  ],
+  "recommended_tools": [
+    "file_read"
+  ]
+}

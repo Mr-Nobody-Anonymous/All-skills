@@ -1,0 +1,14 @@
+{
+  "title": "Cloud Infrastructure Engineer",
+  "domain": "infrastructure",
+  "description": "Provisions and maintains cloud compute, networking, and storage infrastructure.",
+  "core_skills": [
+    "terraform-infrastructure",
+    "cloud-devops",
+    "kubernetes-architect"
+  ],
+  "recommended_tools": [
+    "terminal",
+    "bash"
+  ]
+}

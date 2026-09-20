@@ -27,6 +27,14 @@
       "type": "string",
       "description": "Functional domain category (e.g. development, security, workflow, ai-ml, design)."
     },
+    "domain": {
+      "type": "string",
+      "description": "Higher-level universal knowledge domain (e.g. finance, healthcare, engineering, computer-science)."
+    },
+    "subdomain": {
+      "type": "string",
+      "description": "Specialized sub-discipline within the domain (e.g. accounting, cardiology, structural-engineering)."
+    },
     "version": {
       "type": "string",
       "pattern": "^\\d+\\.\\d+\\.\\d+(-[a-zA-Z0-9.]+)?$",
@@ -40,12 +48,30 @@
       "type": "string",
       "description": "Software license for the skill instructions (e.g. MIT, Apache-2.0)."
     },
+    "risk": {
+      "type": "string",
+      "enum": ["low", "medium", "high", "critical"],
+      "default": "low",
+      "description": "Security and operational risk classification of the skill."
+    },
+    "level": {
+      "type": "string",
+      "enum": ["beginner", "intermediate", "advanced", "expert"],
+      "description": "Competency or difficulty level required to execute or understand this skill."
+    },
     "triggers": {
       "type": "array",
       "items": {
         "type": "string"
       },
       "description": "List of user phrases or prompt keywords that trigger the activation of this skill."
+    },
+    "negative_triggers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Phrases or contexts that explicitly suppress or forbid this skill from activating."
     },
     "aliases": {
       "type": "array",
@@ -89,12 +115,61 @@
       },
       "description": "List of tool capabilities required by the agent to execute this skill."
     },
+    "platforms": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "claude",
+          "claude-code",
+          "cursor",
+          "codex",
+          "codex-cli",
+          "gemini",
+          "gemini-cli",
+          "antigravity",
+          "kiro",
+          "openclaw",
+          "windsurf",
+          "copilot"
+        ]
+      },
+      "description": "Target AI agent host platforms officially supported by this skill."
+    },
     "mcp_servers": {
       "type": "array",
       "items": {
         "type": "string"
       },
       "description": "List of Model Context Protocol (MCP) servers required (e.g. ['filesystem', 'github', 'fetch', 'memory'])."
+    },
+    "inputs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Input modalities accepted by the skill (e.g. ['text', 'code', 'image', 'audio', 'pdf'])."
+    },
+    "outputs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Output modalities produced by the skill (e.g. ['text', 'code', 'diagram', 'structured-data'])."
+    },
+    "jurisdiction": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Geographic or legal jurisdictions where this skill applies (e.g. ['US', 'EU', 'Global', 'UK', 'Ethiopia'])."
+    },
+    "standards": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Industry or regulatory standards referenced (e.g. ['ISO-27001', 'NIST-CSF', 'GDPR', 'HIPAA', 'WCAG-2.2'])."
     },
     "env": {
       "type": "array",

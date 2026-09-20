@@ -1,0 +1,13 @@
+{
+  "title": "Registered Nurse",
+  "domain": "healthcare",
+  "description": "Administers clinical patient care, medication reconciliation, and care planning.",
+  "core_skills": [
+    "managing-nursing-quality-metrics",
+    "reconciling-inpatient-medications",
+    "managing-hospital-handoffs"
+  ],
+  "recommended_tools": [
+    "file_read"
+  ]
+}

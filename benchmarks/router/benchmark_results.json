@@ -1,0 +1,422 @@
+{
+  "summary": {
+    "timestamp": "2026-09-20 16:28:50",
+    "total_cases": 18,
+    "positive_cases": 13,
+    "negative_cases": 5,
+    "recall_at_1_pct": 69.23,
+    "recall_at_3_pct": 76.92,
+    "recall_at_5_pct": 92.31,
+    "ood_rejection_rate_pct": 100.0,
+    "false_activation_rate_pct": 0.0,
+    "latency_ms": {
+      "mean": 70.256,
+      "p95": 1023.146,
+      "p99": 1023.146
+    },
+    "status": "WARN"
+  },
+  "cases": [
+    {
+      "id": "react-a11y",
+      "prompt": "Make my React app accessible and audit WCAG 2.2 compliance",
+      "type": "positive",
+      "expected": [
+        "web.accessibility",
+        "development.frontend",
+        "wcag-audit-patterns",
+        "accessibility-compliance-accessibility-audit"
+      ],
+      "routed": [
+        "web.accessibility",
+        "development.frontend",
+        "security.security-scanner",
+        "security.dependency-audit",
+        "design.remotion-best-practices"
+      ],
+      "scores": [
+        94.14,
+        19.9,
+        12.24,
+        11.85,
+        11.81
+      ],
+      "hit@1": true,
+      "hit@3": true,
+      "latency_ms": 1023.146
+    },
+    {
+      "id": "code-review",
+      "prompt": "Review this pull request for bugs, security risks, and style",
+      "type": "positive",
+      "expected": [
+        "code-reviewer",
+        "development.code-review",
+        "development.requesting-code-review"
+      ],
+      "routed": [
+        "development.requesting-code-review",
+        "development.pr-splitter",
+        "development.code-review",
+        "development.github-cli",
+        "security.cmd-safety-check"
+      ],
+      "scores": [
+        30.02,
+        23.43,
+        19.11,
+        17.54,
+        16.73
+      ],
+      "hit@1": true,
+      "hit@3": true,
+      "latency_ms": 21.436
+    },
+    {
+      "id": "cicd-pipeline",
+      "prompt": "Set up a GitHub Actions CI/CD automation pipeline for our repository",
+      "type": "positive",
+      "expected": [
+        "development.devops",
+        "ci-cd-and-automation",
+        "development.ci-cd",
+        "development.ci-cd-pipeline"
+      ],
+      "routed": [
+        "development.devops",
+        "development.github",
+        "development.ci-cd-pipeline",
+        "development.github-cli",
+        "development.cursor-agent"
+      ],
+      "scores": [
+        100.0,
+        100.0,
+        36.2,
+        19.77,
+        13.65
+      ],
+      "hit@1": true,
+      "hit@3": true,
+      "latency_ms": 9.244
+    },
+    {
+      "id": "tdd-workflow",
+      "prompt": "Write unit tests using red-green-refactor test driven development",
+      "type": "positive",
+      "expected": [
+        "development.tdd",
+        "tdd",
+        "development.testing"
+      ],
+      "routed": [
+        "development.tdd",
+        "development.testing",
+        "development.api-mock-generator",
+        "development.autoreview",
+        "development.behavior-validator"
+      ],
+      "scores": [
+        44.89,
+        28.3,
+        22.77,
+        16.4,
+        16.4
+      ],
+      "hit@1": true,
+      "hit@3": true,
+      "latency_ms": 9.558
+    },
+    {
+      "id": "postgres-schema",
+      "prompt": "Design normalized PostgreSQL schema and migration strategy",
+      "type": "positive",
+      "expected": [
+        "development.databases",
+        "database-design",
+        "database-migration"
+      ],
+      "routed": [
+        "development.databases",
+        "development.db-inspector",
+        "design.avatar-creator",
+        "development.brainstorming",
+        "productivity.brainstorming"
+      ],
+      "scores": [
+        32.68,
+        21.65,
+        17.52,
+        17.09,
+        12.92
+      ],
+      "hit@1": true,
+      "hit@3": true,
+      "latency_ms": 40.435
+    },
+    {
+      "id": "k8s-cluster",
+      "prompt": "Deploy containerized services to Kubernetes using Helm charts",
+      "type": "positive",
+      "expected": [
+        "development.devops",
+        "cloud-devops",
+        "kubernetes-architect",
+        "kubernetes-deployment"
+      ],
+      "routed": [
+        "design.image-gen",
+        "development.cf-worker-deploy",
+        "development.devops",
+        "development.ci-cd-pipeline",
+        "development.dokploy"
+      ],
+      "scores": [
+        14.07,
+        12.36,
+        10.97,
+        10.82,
+        10.73
+      ],
+      "hit@1": false,
+      "hit@3": true,
+      "latency_ms": 9.119
+    },
+    {
+      "id": "ast-refactor",
+      "prompt": "Perform structural AST code transformation without broken regex",
+      "type": "positive",
+      "expected": [
+        "development.refactoring",
+        "ast-code-transformation"
+      ],
+      "routed": [
+        "development.cursor-agent",
+        "documents.markdown",
+        "development.coding",
+        "development.coding-agent",
+        "development.refactoring"
+      ],
+      "scores": [
+        13.65,
+        11.48,
+        10.33,
+        10.05,
+        8.93
+      ],
+      "hit@1": false,
+      "hit@3": false,
+      "latency_ms": 9.331
+    },
+    {
+      "id": "sast-scan",
+      "prompt": "Scan codebase for top web vulnerabilities, SQL injection, and XSS",
+      "type": "positive",
+      "expected": [
+        "vulnerability-scanner",
+        "security.security-audit",
+        "security-scanning-security-sast",
+        "security.secure-coding",
+        "top-web-vulnerabilities"
+      ],
+      "routed": [
+        "security.secure-coding",
+        "security.prompt-injection-defense",
+        "security.security-scanner",
+        "research.web-research",
+        "research.search-synthesizer"
+      ],
+      "scores": [
+        30.14,
+        14.32,
+        14.32,
+        11.48,
+        11.44
+      ],
+      "hit@1": true,
+      "hit@3": true,
+      "latency_ms": 9.463
+    },
+    {
+      "id": "rag-pipeline",
+      "prompt": "Build an enterprise RAG pipeline with vector search and agent evaluation",
+      "type": "positive",
+      "expected": [
+        "ai-engineer",
+        "agent-evaluation",
+        "ai-engineering-toolkit"
+      ],
+      "routed": [
+        "development.ci-cd-pipeline",
+        "development.verification-before-completion",
+        "research.web-research",
+        "research.search-synthesizer",
+        "utilities.text-processing"
+      ],
+      "scores": [
+        17.94,
+        14.04,
+        11.48,
+        11.44,
+        11.4
+      ],
+      "hit@1": false,
+      "hit@3": false,
+      "latency_ms": 25.084
+    },
+    {
+      "id": "pdf-processing",
+      "prompt": "Extract structured table data and form fields from PDF document",
+      "type": "positive",
+      "expected": [
+        "documents.pdf",
+        "pdf-official"
+      ],
+      "routed": [
+        "documents.pdf",
+        "web.web-scraping",
+        "web.web-extraction",
+        "development.refactoring",
+        "documents.docx"
+      ],
+      "scores": [
+        35.38,
+        21.77,
+        18.68,
+        17.23,
+        16.89
+      ],
+      "hit@1": true,
+      "hit@3": true,
+      "latency_ms": 9.902
+    },
+    {
+      "id": "git-worktree",
+      "prompt": "Create isolated git worktree to work on hotfix branch simultaneously",
+      "type": "positive",
+      "expected": [
+        "development.git-worktrees",
+        "using-git-worktrees"
+      ],
+      "routed": [
+        "development.git-worktrees",
+        "development.pr-splitter",
+        "development.git-workflow",
+        "development.git",
+        "development.crabbox"
+      ],
+      "scores": [
+        61.43,
+        27.09,
+        20.7,
+        17.62,
+        11.4
+      ],
+      "hit@1": true,
+      "hit@3": true,
+      "latency_ms": 9.573
+    },
+    {
+      "id": "seo-optimization",
+      "prompt": "Optimize web content for AI search engines, Perplexity, and LLM citations",
+      "type": "positive",
+      "expected": [
+        "web.seo",
+        "seo-geo"
+      ],
+      "routed": [
+        "research.web-research",
+        "research.search-synthesizer",
+        "security.prompt-injection-defense",
+        "web.seo",
+        "web.web-scraper"
+      ],
+      "scores": [
+        19.62,
+        19.58,
+        13.63,
+        13.2,
+        13.2
+      ],
+      "hit@1": false,
+      "hit@3": false,
+      "latency_ms": 9.545
+    },
+    {
+      "id": "deep-focus",
+      "prompt": "Help me stop procrastinating and start a deep work focus session",
+      "type": "positive",
+      "expected": [
+        "productivity.unlazy",
+        "productivity.focus"
+      ],
+      "routed": [
+        "productivity.focus",
+        "productivity.time-blocking",
+        "productivity.unlazy",
+        "productivity.focus-guard",
+        "productivity.session-analytics"
+      ],
+      "scores": [
+        100.0,
+        26.65,
+        18.28,
+        18.19,
+        14.94
+      ],
+      "hit@1": true,
+      "hit@3": true,
+      "latency_ms": 15.245
+    },
+    {
+      "id": "ood-spacecraft",
+      "prompt": "Design a spacecraft thermal-control system with titanium heat pipes",
+      "type": "negative",
+      "is_rejected": true,
+      "routed": [
+        "design.avatar-creator"
+      ],
+      "latency_ms": 9.576
+    },
+    {
+      "id": "ood-sourdough",
+      "prompt": "Bake a sourdough bread loaf with 80% hydration and crisp crust",
+      "type": "negative",
+      "is_rejected": true,
+      "routed": [
+        "documents.pdf"
+      ],
+      "latency_ms": 9.047
+    },
+    {
+      "id": "ood-plumbing",
+      "prompt": "Fix a leaking P-trap pipe under the kitchen sink",
+      "type": "negative",
+      "is_rejected": true,
+      "routed": [
+        "development.debugging"
+      ],
+      "latency_ms": 19.296
+    },
+    {
+      "id": "ood-haiku",
+      "prompt": "Compose a lyrical 5-7-5 haiku about ancient Rome and Julius Caesar",
+      "type": "negative",
+      "is_rejected": true,
+      "routed": [
+        "development.docker-manager"
+      ],
+      "latency_ms": 16.296
+    },
+    {
+      "id": "ood-astronomy",
+      "prompt": "Calculate the perihelion gravitational trajectory of Halley comet",
+      "type": "negative",
+      "is_rejected": true,
+      "routed": [
+        "productivity.unlazy"
+      ],
+      "latency_ms": 9.316
+    }
+  ]
+}

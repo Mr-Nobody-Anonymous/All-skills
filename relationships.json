@@ -1,0 +1,176 @@
+{
+  "framework": "AAS Universal Skill Graph",
+  "version": "1.0.0",
+  "edges": [
+    {
+      "skill": "ai-engineer",
+      "prerequisites": [
+        "clean-code",
+        "python-async-await",
+        "api-designer"
+      ],
+      "complements": [
+        "agent-memory-systems",
+        "ai-engineering-toolkit",
+        "multi-agent-patterns"
+      ],
+      "alternatives": [
+        "prompt-engineer"
+      ],
+      "domain": "ai-ml"
+    },
+    {
+      "skill": "mlops",
+      "prerequisites": [
+        "python",
+        "docker",
+        "ci-cd-and-automation"
+      ],
+      "complements": [
+        "experiment-tracking",
+        "model-registry",
+        "model-serving",
+        "drift-detection"
+      ],
+      "alternatives": [
+        "devops-engineer"
+      ],
+      "domain": "ai-ml"
+    },
+    {
+      "skill": "actuarial-mathematics",
+      "prerequisites": [
+        "calculus",
+        "probability",
+        "statistics"
+      ],
+      "complements": [
+        "mortality-modeling",
+        "survival-analysis",
+        "reserving",
+        "solvency"
+      ],
+      "alternatives": [
+        "financial-modeling"
+      ],
+      "domain": "actuarial"
+    },
+    {
+      "skill": "data-engineering",
+      "prerequisites": [
+        "sql",
+        "python",
+        "database-design"
+      ],
+      "complements": [
+        "bi-star-schema-kimball-modeling",
+        "feature-store",
+        "batch-inference"
+      ],
+      "alternatives": [
+        "database-administrator"
+      ],
+      "domain": "data"
+    },
+    {
+      "skill": "cybersecurity-analyst",
+      "prerequisites": [
+        "networking",
+        "linux",
+        "operating-systems"
+      ],
+      "complements": [
+        "security-scanning-security-sast",
+        "top-web-vulnerabilities",
+        "vulnerability-scanner"
+      ],
+      "alternatives": [
+        "penetration-tester"
+      ],
+      "domain": "security"
+    },
+    {
+      "skill": "privacy-engineering",
+      "prerequisites": [
+        "data-governance",
+        "security-governance"
+      ],
+      "complements": [
+        "differential-privacy",
+        "anonymization",
+        "privacy-by-design",
+        "dsar"
+      ],
+      "alternatives": [
+        "compliance-auditor"
+      ],
+      "domain": "privacy"
+    },
+    {
+      "skill": "civil-engineering",
+      "prerequisites": [
+        "engineering-mechanics",
+        "materials-science"
+      ],
+      "complements": [
+        "reinforced-concrete",
+        "structural-steel",
+        "foundation-engineering"
+      ],
+      "alternatives": [
+        "structural-engineering"
+      ],
+      "domain": "engineering"
+    },
+    {
+      "skill": "customer-service",
+      "prerequisites": [
+        "business-communication"
+      ],
+      "complements": [
+        "helpdesk",
+        "ticket-triage",
+        "complaint-management",
+        "service-recovery"
+      ],
+      "alternatives": [
+        "customer-success"
+      ],
+      "domain": "operations"
+    },
+    {
+      "skill": "public-relations",
+      "prerequisites": [
+        "copywriting",
+        "media-literacy"
+      ],
+      "complements": [
+        "media-relations",
+        "press-releases",
+        "crisis-communications",
+        "reputation-management"
+      ],
+      "alternatives": [
+        "brand-marketing"
+      ],
+      "domain": "communications"
+    },
+    {
+      "skill": "corporate-governance",
+      "prerequisites": [
+        "business-law",
+        "ethics"
+      ],
+      "complements": [
+        "it-governance",
+        "data-governance",
+        "ai-governance",
+        "risk-governance"
+      ],
+      "alternatives": [
+        "compliance-management"
+      ],
+      "domain": "governance"
+    }
+  ]
+}

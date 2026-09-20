@@ -1,0 +1,13 @@
+{
+  "title": "Certified Public Accountant",
+  "domain": "finance",
+  "description": "Prepares financial statements, audits ledgers, and ensures tax compliance.",
+  "core_skills": [
+    "financial-audit",
+    "tax-prep",
+    "general-ledger"
+  ],
+  "recommended_tools": [
+    "file_read"
+  ]
+}

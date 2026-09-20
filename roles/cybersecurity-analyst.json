@@ -1,0 +1,14 @@
+{
+  "title": "Cybersecurity Analyst",
+  "domain": "security",
+  "description": "Protects systems against cyber threats, audits vulnerabilities, and enforces compliance.",
+  "core_skills": [
+    "security-scanning-security-sast",
+    "top-web-vulnerabilities",
+    "vulnerability-scanner"
+  ],
+  "recommended_tools": [
+    "terminal",
+    "file_read"
+  ]
+}

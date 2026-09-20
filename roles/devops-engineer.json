@@ -1,0 +1,14 @@
+{
+  "title": "DevOps / SRE Engineer",
+  "domain": "infrastructure",
+  "description": "Automates CI/CD delivery pipelines, telemetry monitoring, and system reliability.",
+  "core_skills": [
+    "ci-cd-and-automation",
+    "performance-profiling",
+    "emerg-incident-command-system-dr"
+  ],
+  "recommended_tools": [
+    "bash",
+    "terminal"
+  ]
+}

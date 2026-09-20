@@ -1,0 +1,14 @@
+{
+  "title": "Scientific Researcher",
+  "domain": "science",
+  "description": "Formulates scientific hypotheses, conducts empirical experiments, and publishes findings.",
+  "core_skills": [
+    "soc-causal-inference-econometrics",
+    "experimental-design",
+    "peer-review"
+  ],
+  "recommended_tools": [
+    "file_read",
+    "terminal"
+  ]
+}

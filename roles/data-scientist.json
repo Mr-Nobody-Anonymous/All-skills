@@ -1,0 +1,15 @@
+{
+  "title": "Data Scientist",
+  "domain": "data",
+  "description": "Extracts insights from structured/unstructured data using statistics and ML.",
+  "core_skills": [
+    "statistics",
+    "probability",
+    "mathematical-modeling",
+    "econometrics"
+  ],
+  "recommended_tools": [
+    "terminal",
+    "file_read"
+  ]
+}

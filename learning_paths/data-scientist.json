@@ -1,0 +1,11 @@
+{
+  "title": "Data Scientist",
+  "stages": [
+    "linear-algebra",
+    "probability",
+    "statistics",
+    "data-engineering",
+    "machine-learning",
+    "causal-inference"
+  ]
+}

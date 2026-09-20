@@ -1,0 +1,13 @@
+{
+  "title": "Financial Analyst",
+  "domain": "finance",
+  "description": "Models DCF valuations, financial statements, and capital investment budgets.",
+  "core_skills": [
+    "ent-unit-economics-cac-ltv",
+    "financial-modeling",
+    "bank-basel-capital-adequacy-aml"
+  ],
+  "recommended_tools": [
+    "file_read"
+  ]
+}

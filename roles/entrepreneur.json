@@ -1,0 +1,13 @@
+{
+  "title": "Startup Founder / Entrepreneur",
+  "domain": "business",
+  "description": "Validates market needs, raises venture funding, and scales technology startups.",
+  "core_skills": [
+    "ent-lean-customer-discovery",
+    "ent-cap-table-dilution-modeling",
+    "ent-unit-economics-cac-ltv"
+  ],
+  "recommended_tools": [
+    "file_read"
+  ]
+}

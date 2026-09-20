@@ -1,0 +1,12 @@
+{
+  "title": "Educator / Instructional Lead",
+  "domain": "education",
+  "description": "Designs curricula, delivers instructional pedagogy, and assesses student mastery.",
+  "core_skills": [
+    "tut-socratic-pedagogy-worked-examples",
+    "train-kirkpatrick-curriculum-design"
+  ],
+  "recommended_tools": [
+    "file_read"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Machine Learning Engineer",
+  "domain": "ai",
+  "description": "Trains, optimizes, serves, and monitors machine learning models in production.",
+  "core_skills": [
+    "experiment-tracking",
+    "model-registry",
+    "model-serving",
+    "inference",
+    "drift-detection"
+  ],
+  "recommended_tools": [
+    "bash",
+    "terminal"
+  ]
+}

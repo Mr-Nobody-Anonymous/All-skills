@@ -128,30 +128,37 @@ def sync_readme(stats: dict, repo_root: Path | None = None) -> bool:
 
     content = readme_path.read_text(encoding="utf-8")
 
-    # Update Shields badges
+    # Update Shields badges (robust against URL-encoded chars like %2C and %2F)
     content = re.sub(
-        r'skills-[0-9%,\+]+Total%20Skills',
+        r'skills-[a-zA-Z0-9%,\+\-]+?Total%20Skills',
         f'skills-{stats["total_unique_skills"]}%2B%20Total%20Skills',
         content
     )
     content = re.sub(
-        r'awesome--catalog-[0-9%,\+]+Categorized',
+        r'awesome--catalog-[a-zA-Z0-9%,\+\-]+?Categorized',
         f'awesome--catalog-{stats["catalog_skills"]}%20Categorized',
         content
     )
     content = re.sub(
-        r'active--harness-[0-9%,\+]+Pre--Loaded',
+        r'active--harness-[a-zA-Z0-9%,\+\-]+?Pre--Loaded',
         f'active--harness-{stats["active_harness_skills"]}%20Pre--Loaded',
         content
     )
     content = re.sub(
-        r'manifest-[0-9%,\+]+Indexed',
+        r'manifest-[a-zA-Z0-9%,\+\-]+?Indexed',
         f'manifest-{stats["manifest_skills"]}%20Indexed',
         content
     )
     content = re.sub(
-        r'tests-[0-9%,\+]+Passing',
+        r'tests-[a-zA-Z0-9%,\+\-]+?Passing',
         f'tests-{stats["tests"]}%2F{stats["tests"]}%20Passing',
+        content
+    )
+
+    # Update opening summary paragraph
+    content = re.sub(
+        r'Over\s+[0-9,]+\s+unique skills across\s+[0-9,]+\s+domain categories',
+        f'Over {stats["total_unique_skills"]:,} unique skills across {stats["categories"]} domain categories',
         content
     )
 
@@ -176,21 +183,61 @@ def sync_readme(stats: dict, repo_root: Path | None = None) -> bool:
         f'• {stats["categories"]} Functional Domain Dirs',
         content
     )
+    content = re.sub(
+        r'•\s*[0-9]+/[0-9]+\s*Passing Unit Tests',
+        f'• {stats["tests"]}/{stats["tests"]} Passing Unit Tests',
+        content
+    )
 
-    # Update Directory Tree
+    # Update Directory Tree and Router sections
     content = re.sub(
         r'\(66 skills\)|\(69 skills\)|\(70 skills\)',
         f'({stats["active_harness_skills"]} skills)',
         content
     )
     content = re.sub(
-        r'#\s*2,[0-9]+-item metadata database',
+        r'#\s*[0-9,]+-item metadata database',
         f'# {stats["catalog_index_records"]:,}-item metadata database',
         content
     )
     content = re.sub(
         r'#\s*122 Canonical Engine Skills',
         f'# {stats["canonical_skills"]} Canonical Engine Skills',
+        content
+    )
+    content = re.sub(
+        r'across all [0-9,]+\+\s*skills',
+        f'across all {stats["catalog_skills"]:,}+ skills',
+        content
+    )
+    content = re.sub(
+        r'Interact with all [0-9,]+\+\s*categorized skills',
+        f'Interact with all {stats["catalog_skills"]:,}+ categorized skills',
+        content
+    )
+    content = re.sub(
+        r'#\s*List all [0-9,]+\s*domain categories',
+        f'# List all {stats["categories"]} domain categories',
+        content
+    )
+    content = re.sub(
+        r'#\s*Fuzzy search across all [0-9,]+\+\s*skills',
+        f'# Fuzzy search across all {stats["catalog_skills"]:,}+ skills',
+        content
+    )
+    content = re.sub(
+        r'[0-9]+-test verification suite',
+        f'{stats["tests"]}-test verification suite',
+        content
+    )
+    content = re.sub(
+        r'Test Suite \([0-9]+\s*tests\)',
+        f'Test Suite ({stats["tests"]} tests)',
+        content
+    )
+    content = re.sub(
+        r'Run the [0-9]+\s*unit and integration tests',
+        f'Run the {stats["tests"]} unit and integration tests',
         content
     )
 

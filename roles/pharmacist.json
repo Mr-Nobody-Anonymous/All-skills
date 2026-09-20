@@ -1,0 +1,13 @@
+{
+  "title": "Clinical Pharmacist",
+  "domain": "healthcare",
+  "description": "Monitors pharmaceutical therapy, drug interactions, and dosage safety.",
+  "core_skills": [
+    "converting-medication-routes",
+    "reconciling-medications",
+    "reviewing-medication-safety"
+  ],
+  "recommended_tools": [
+    "file_read"
+  ]
+}

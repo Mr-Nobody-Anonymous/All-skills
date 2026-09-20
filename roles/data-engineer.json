@@ -1,0 +1,14 @@
+{
+  "title": "Data Engineer",
+  "domain": "data",
+  "description": "Constructs scalable batch/streaming data pipelines and data warehouses.",
+  "core_skills": [
+    "bi-star-schema-kimball-modeling",
+    "drizzle-orm-expert",
+    "database-migration"
+  ],
+  "recommended_tools": [
+    "bash",
+    "file_edit"
+  ]
+}

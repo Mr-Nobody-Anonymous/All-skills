@@ -1,0 +1,10 @@
+{
+  "title": "Beginner Programmer",
+  "stages": [
+    "clean-code",
+    "algorithms",
+    "git",
+    "tdd",
+    "debugging"
+  ]
+}

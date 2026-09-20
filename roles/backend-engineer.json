@@ -1,0 +1,17 @@
+{
+  "title": "Backend Engineer",
+  "domain": "engineering",
+  "description": "Architects server-side logic, microservices, databases, and APIs.",
+  "core_skills": [
+    "api-designer",
+    "database-design",
+    "redis-cli",
+    "prisma-expert",
+    "cloud-devops"
+  ],
+  "recommended_tools": [
+    "bash",
+    "terminal",
+    "file_edit"
+  ]
+}

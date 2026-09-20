@@ -1,0 +1,13 @@
+{
+  "title": "Journalist / Investigative Reporter",
+  "domain": "journalism",
+  "description": "Investigates public affairs, interviews sources, and drafts news reports.",
+  "core_skills": [
+    "press-releases",
+    "investigative-research",
+    "media-relations"
+  ],
+  "recommended_tools": [
+    "file_read"
+  ]
+}

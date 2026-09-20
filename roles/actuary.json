@@ -1,0 +1,15 @@
+{
+  "title": "Credentialed Actuary",
+  "domain": "actuarial",
+  "description": "Quantifies statistical risk, models survival contingencies, and calculates reserves.",
+  "core_skills": [
+    "act-loss-reserving-chain-ladder",
+    "actuarial-mathematics",
+    "mortality-modeling",
+    "solvency"
+  ],
+  "recommended_tools": [
+    "file_read",
+    "terminal"
+  ]
+}
