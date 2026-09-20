@@ -14,7 +14,7 @@
   <img src="https://img.shields.io/badge/super--domains-15%20Ontologies-f59e0b?style=for-the-badge&logo=graphql&logoColor=white" alt="15 Super-Domains" />
   <img src="https://img.shields.io/badge/platforms-11%20Agent%20Harnesses-ec4899?style=for-the-badge&logo=probot&logoColor=white" alt="11 Agent Harnesses" />
   <img src="https://img.shields.io/badge/active--harness-70%20Verified%20Skills-6366f1?style=for-the-badge&logo=lightning&logoColor=white" alt="70 Active Skills" />
-  <img src="https://img.shields.io/badge/tests-94%2F94%20Passing-10b981?style=for-the-badge&logo=pytest&logoColor=white" alt="94 Tests Passing" />
+  <img src="https://img.shields.io/badge/tests-104%2F104%20Passing-10b981?style=for-the-badge&logo=pytest&logoColor=white" alt="94 Tests Passing" />
   <img src="https://img.shields.io/badge/python-3.10+-3776ab?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.10+" />
 </p>
 
@@ -57,7 +57,7 @@ When AI coding assistants are front-loaded with thousands of prompt instructions
 │  • 9-Signal Layered Scoring   │  • 251 Functional Domain Dirs   │  • Pre-Loaded in Workspace    │
 │  • Deterministic Workflows    │  • Machine-Readable Index       │  • Native Multi-Tool Synced   │
 │  • 8-State Formal Lifecycle   │  • Complete CATALOG.md Reference│  • $O(1)$ Load-on-Demand      │
-│  • 94/94 Passing Unit Tests   │  • Dynamic Manager CLI          │  • Zero Prompt Bloat          │
+│  • 104/104 Passing Unit Tests   │  • Dynamic Manager CLI          │  • Zero Prompt Bloat          │
 └───────────────────────────────┴─────────────────────────────────┴───────────────────────────────┘
 ```
 
@@ -393,7 +393,7 @@ python scripts/skills/skills.py chain deep-research --dry-run
 python scripts/skills/skills.py chain anti-procrastination --dry-run
 python scripts/skills/skills.py chain code-review-flow --dry-run
 
-# Run full health diagnostics and 94-test verification suite
+# Run full health diagnostics and 104-test verification suite
 python scripts/skills/skills.py doctor
 python scripts/skills/skills.py test
 
@@ -416,9 +416,37 @@ python scripts/skills/skills.py policy list
 python scripts/skills/skills.py benchmark
 ```
 
+### 2.1. Priority-Based Skill Loading & Dependency Resolution (`all-skills` CLI)
+
+The platform provides a standalone, priority-weighted skill loader and dependency management engine with Kahn's topological sort, circular dependency detection, and domain isolation:
+
+```bash
+# View system statistics across all 28 domains
+all-skills stats   # or: python -m scratch_priority_import.cli stats
+
+# List skills by engineering domain
+all-skills list --domain programming
+all-skills list --domain ai_ml
+all-skills list --domain cybersecurity
+
+# Resolve topological dependency load order and ASCII tree
+all-skills deps web.fullstack
+all-skills deps blockchain.defi --tree
+
+# Validate all dependencies and verify zero circular references
+all-skills validate
+
+# Search across the universal skill catalog
+all-skills search "docker"
+
+# Export full catalog to JSON
+all-skills export --output catalog.json
+```
+
 ---
 
 ### 3. Interactive Web Marketplace (`marketplace/index.html`)
+
 
 Launch the glassmorphic discovery dashboard with real-time fuzzy search, capability filters, dependency trees, and instant CLI command copying:
 
@@ -486,7 +514,7 @@ All skills/
 │   ├── SECURITY.md              # Threat model & static inspection policy
 │   └── *.md                     # Per-category detailed reference guides
 │
-└── tests/skill_tests/           # 🧪 Unit & Integration Test Suite (94 tests)
+└── tests/skill_tests/           # 🧪 Unit & Integration Test Suite (104 tests)
 ```
 
 ---
@@ -507,7 +535,7 @@ Run complete test suites and diagnostic checks at any time:
 # 1. Check health of all 122 canonical skills
 python scripts/skills/skills.py doctor
 
-# 2. Run the 94 unit and integration tests
+# 2. Run the 104 unit and integration tests
 python scripts/skills/skills.py test
 
 # 3. Verify multi-tool harness connections

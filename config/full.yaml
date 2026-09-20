@@ -1,0 +1,14 @@
+# Full Universal Skill System Configuration (All Domains / High Concurrency)
+skills_root: "./skills"
+max_workers: 8
+auto_discover: true
+load_on_init: false
+log_level: "DEBUG"
+enabled_domains: []  # empty = all 28 domains enabled
+disabled_skills: []
+custom_priorities:
+  "prog.fundamentals": 0
+  "prog.git": 1
+  "sec.fundamentals": 2
+  "devops.linux": 3
+  "web.html_css": 4

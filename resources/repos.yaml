@@ -1,0 +1,525 @@
+# ==============================================================================
+# Master Upstream Repository Catalog
+# Exhaustive directory of 250+ essential foundational repositories
+# Organized across all 28 major capability domains
+# ==============================================================================
+
+version: "2.0"
+updated_at: "2026-09-20"
+
+programming:
+  curricula_and_foundations:
+    - url: https://github.com/codecrafters-io/build-your-own-x
+      description: Build your own technology from scratch (Git, Docker, SQLite, OS, etc.)
+    - url: https://github.com/ossu/computer-science
+      description: Complete self-taught computer science curriculum
+    - url: https://github.com/jwasham/coding-interview-university
+      description: Comprehensive software engineering study plan
+    - url: https://github.com/EbookFoundation/free-programming-books
+      description: Freely available programming books in multiple languages
+    - url: https://github.com/practical-tutorials/project-based-learning
+      description: Curated project-based tutorials across tech stacks
+    - url: https://github.com/sindresorhus/awesome
+      description: Master collection of awesome lists across all computing topics
+    - url: https://github.com/kamranahmedse/developer-roadmap
+      description: Interactive community educational roadmaps for developers
+    - url: https://github.com/exercism/exercism
+      description: Crowd-sourced code practice and mentorship across 70+ languages
+    - url: https://github.com/gothinkster/realworld
+      description: Exemplary full-stack applications built across modern frameworks
+
+  algorithms_and_data_structures:
+    - url: https://github.com/TheAlgorithms/Python
+      description: All algorithms implemented in Python
+    - url: https://github.com/TheAlgorithms/Java
+      description: All algorithms implemented in Java
+    - url: https://github.com/TheAlgorithms/C-Plus-Plus
+      description: All algorithms implemented in C++
+    - url: https://github.com/TheAlgorithms/Go
+      description: All algorithms implemented in Go
+    - url: https://github.com/TheAlgorithms/Rust
+      description: All algorithms implemented in Rust
+    - url: https://github.com/trekhleb/javascript-algorithms
+      description: Algorithms and data structures implemented in JavaScript
+    - url: https://github.com/williamfiset/Algorithms
+      description: Collection of competitive programming and standard algorithms
+    - url: https://github.com/keon/algorithms
+      description: Minimal examples of data structures and algorithms in Python
+    - url: https://github.com/labuladong/fucking-algorithm
+      description: Visual and intuitive algorithm walkthroughs
+    - url: https://github.com/algorithm-visualizer/algorithm-visualizer
+      description: Interactive algorithm visualization platform
+
+  languages:
+    - url: https://github.com/vinta/awesome-python
+      description: Curated list of awesome Python frameworks, libraries, and resources
+    - url: https://github.com/sorrycc/awesome-javascript
+      description: Collection of awesome JavaScript libraries, resources, and shiny things
+    - url: https://github.com/rust-unofficial/awesome-rust
+      description: Curated list of Rust code and resources
+    - url: https://github.com/avelino/awesome-go
+      description: Curated list of awesome Go frameworks, libraries, and software
+    - url: https://github.com/fffaraz/awesome-cpp
+      description: Curated list of awesome C++ frameworks, libraries, and software
+    - url: https://github.com/akullpp/awesome-java
+      description: Curated list of awesome Java frameworks, libraries, and software
+    - url: https://github.com/enaqx/awesome-react
+      description: Collection of awesome things regarding React ecosystem
+
+  design_patterns_and_clean_code:
+    - url: https://github.com/iluwatar/java-design-patterns
+      description: Design patterns implemented in Java
+    - url: https://github.com/faif/python-patterns
+      description: Collection of design patterns and idioms in Python
+    - url: https://github.com/ryanmcdermott/clean-code-javascript
+      description: Clean Code concepts adapted for JavaScript
+
+ai_ml:
+  frameworks_and_core:
+    - url: https://github.com/pytorch/pytorch
+      description: Tensors and Dynamic neural networks in Python with GPU acceleration
+    - url: https://github.com/tensorflow/tensorflow
+      description: End-to-end machine learning platform
+    - url: https://github.com/scikit-learn/scikit-learn
+      description: Machine learning in Python with NumPy, SciPy, and matplotlib
+    - url: https://github.com/keras-team/keras
+      description: Deep Learning for humans running on JAX, PyTorch, and TensorFlow
+    - url: https://github.com/Lightning-AI/pytorch-lightning
+      description: Deep learning framework for professional AI researchers
+    - url: https://github.com/fastai/fastai
+      description: Fastai deep learning library
+    - url: https://github.com/ray-project/ray
+      description: Unified framework for scaling AI and Python applications
+    - url: https://github.com/microsoft/DeepSpeed
+      description: Deep learning optimization library for distributed training
+
+  large_language_models:
+    - url: https://github.com/huggingface/transformers
+      description: State-of-the-art Machine Learning for Pytorch, TensorFlow, and JAX
+    - url: https://github.com/facebookresearch/llama
+      description: Inference code for LLaMA models
+    - url: https://github.com/ggerganov/llama.cpp
+      description: Port of Facebook's LLaMA model in C/C++
+    - url: https://github.com/ollama/ollama
+      description: Get up and running with Llama, Mistral, and other large language models
+    - url: https://github.com/openai/openai-cookbook
+      description: Examples and guides for using the OpenAI API
+    - url: https://github.com/state-spaces/mamba
+      description: Linear-time sequence modeling with selective state spaces
+
+  agents_and_rag:
+    - url: https://github.com/langchain-ai/langchain
+      description: Building applications with LLMs through composability
+    - url: https://github.com/run-llama/llama_index
+      description: Data framework for LLM-based applications and RAG systems
+    - url: https://github.com/microsoft/autogen
+      description: Enabling next-generation large language model applications
+    - url: https://github.com/Significant-Gravitas/AutoGPT
+      description: Autonomous agent building blocks and execution loops
+    - url: https://github.com/microsoft/JARVIS
+      description: System to connect LLMs with ML community models
+    - url: https://github.com/chroma-core/chroma
+      description: The open-source AI application database (embeddings/vector)
+    - url: https://github.com/qdrant/qdrant
+      description: Vector Similarity Search Engine and database with extended filtering
+    - url: https://github.com/milvus-io/milvus
+      description: Cloud-native vector database built for scalable similarity search
+
+  vision_and_generative:
+    - url: https://github.com/CompVis/stable-diffusion
+      description: High-Resolution Image Synthesis with Latent Diffusion Models
+    - url: https://github.com/AUTOMATIC1111/stable-diffusion-webui
+      description: Stable Diffusion web UI
+    - url: https://github.com/lllyasviel/ControlNet
+      description: Let us control diffusion models
+    - url: https://github.com/ultralytics/ultralytics
+      description: NEW - YOLOv8 / YOLOv11 in PyTorch for Computer Vision
+    - url: https://github.com/facebookresearch/segment-anything
+      description: The Segment Anything Model (SAM)
+    - url: https://github.com/openai/CLIP
+      description: Contrastive Language-Image Pre-Training
+    - url: https://github.com/lucidrains/vit-pytorch
+      description: Implementation of Vision Transformer in PyTorch
+
+  speech_and_nlp:
+    - url: https://github.com/openai/whisper
+      description: Robust Speech Recognition via Large-Scale Weak Supervision
+    - url: https://github.com/explosion/spaCy
+      description: Industrial-strength Natural Language Processing in Python
+    - url: https://github.com/nltk/nltk
+      description: Natural Language Toolkit
+
+  applied_ml_and_discovery:
+    - url: https://github.com/google-deepmind/alphafold
+      description: Computational predictions of protein structures
+    - url: https://github.com/Farama-Foundation/Gymnasium
+      description: Standard API for reinforcement learning environments
+    - url: https://github.com/dair-ai/ML-Papers-Explained
+      description: Explanations of key machine learning papers
+    - url: https://github.com/eugeneyan/applied-ml
+      description: Papers and tech blogs on practical machine learning production systems
+    - url: https://github.com/josephmisiti/awesome-machine-learning
+      description: Curated list of awesome Machine Learning frameworks and libraries
+
+cybersecurity:
+  offensive_and_pentesting:
+    - url: https://github.com/rapid7/metasploit-framework
+      description: Metasploit Framework for penetration testing and exploit execution
+    - url: https://github.com/sqlmapproject/sqlmap
+      description: Automatic SQL injection and database takeover tool
+    - url: https://github.com/nmap/nmap
+      description: Nmap Network Scanner
+    - url: https://github.com/OJ/gobuster
+      description: Directory/file, DNS and VHost busting tool written in Go
+    - url: https://github.com/RustScan/RustScan
+      description: The Modern Port Scanner
+    - url: https://github.com/bettercap/bettercap
+      description: Swiss army knife for 802.11, BLE, and Ethernet reconnaissance
+    - url: https://github.com/aircrack-ng/aircrack-ng
+      description: WiFi 802.11 security auditing tool suite
+    - url: https://github.com/projectdiscovery/nuclei
+      description: Fast and customizable vulnerability scanner based on simple YAML DSL
+    - url: https://github.com/projectdiscovery/httpx
+      description: Fast and multi-purpose HTTP toolkit
+    - url: https://github.com/projectdiscovery/subfinder
+      description: Fast passive subdomain enumeration tool
+
+  active_directory_and_exploitation:
+    - url: https://github.com/gentilkiwi/mimikatz
+      description: Windows credential extraction and security exploration
+    - url: https://github.com/BloodHoundAD/BloodHound
+      description: Six Degrees of Domain Admin active directory visualizer
+    - url: https://github.com/PowerShellMafia/PowerSploit
+      description: PowerShell post-exploitation framework
+    - url: https://github.com/S3cur3Th1sSh1t/WinPwn
+      description: Automation for internal Windows and AD penetration testing
+    - url: https://github.com/carlospolop/PEASS-ng
+      description: Privilege Escalation Awesome Scripts Suite (LinPEAS/WinPEAS)
+
+  wordlists_and_payloads:
+    - url: https://github.com/danielmiessler/SecLists
+      description: Security tester's companion wordlists and fuzzing dictionaries
+    - url: https://github.com/swisskyrepo/PayloadsAllTheThings
+      description: List of useful payloads and bypasses for Web Application Security
+    - url: https://github.com/OWASP/wstg
+      description: The OWASP Web Security Testing Guide
+    - url: https://github.com/OWASP/CheatSheetSeries
+      description: OWASP Cheat Sheet Series
+    - url: https://github.com/juice-shop/juice-shop
+      description: OWASP Juice Shop vulnerable training web application
+
+  reverse_engineering_and_forensics:
+    - url: https://github.com/NationalSecurityAgency/ghidra
+      description: Software reverse engineering (SRE) suite
+    - url: https://github.com/radareorg/radare2
+      description: UNIX-like reverse engineering framework and command-line toolset
+    - url: https://github.com/rizinorg/rizin
+      description: Free and open-source reverse engineering framework
+    - url: https://github.com/frida/frida
+      description: Dynamic instrumentation toolkit for developers and reverse-engineers
+    - url: https://github.com/volatilityfoundation/volatility3
+      description: Memory forensics framework
+
+  osint_and_recon:
+    - url: https://github.com/sherlock-project/sherlock
+      description: Hunt down social media accounts by username across social networks
+    - url: https://github.com/smicallef/spiderfoot
+      description: Open source intelligence (OSINT) automation tool
+    - url: https://github.com/laramies/theHarvester
+      description: E-mails, subdomains and names Harvester
+    - url: https://github.com/OWASP/Amass
+      description: In-depth Attack Surface Mapping and Asset Discovery
+
+  smart_contract_security:
+    - url: https://github.com/crytic/slither
+      description: Static Analyzer for Solidity
+    - url: https://github.com/trailofbits/manticore
+      description: Symbolic execution tool for smart contracts and binaries
+    - url: https://github.com/immunefi-team/Web3-Security-Library
+      description: Web3 security resources and bug bounty writeups
+    - url: https://github.com/SunWeb3Sec/DeFiHackLabs
+      description: Reproduce DeFi hack incidents using Foundry
+
+web_development:
+  frameworks_and_react:
+    - url: https://github.com/facebook/react
+      description: The library for web and native user interfaces
+    - url: https://github.com/vercel/next.js
+      description: The React Framework for the Web
+    - url: https://github.com/vuejs/core
+      description: Progressive JavaScript Framework
+    - url: https://github.com/angular/angular
+      description: Deliver web apps across platforms
+    - url: https://github.com/sveltejs/svelte
+      description: Cybernetically enhanced web apps
+    - url: https://github.com/solidjs/solid
+      description: Simple and performant reactivity for building user interfaces
+    - url: https://github.com/withastro/astro
+      description: Web framework for content-driven websites
+
+  styling_and_ui:
+    - url: https://github.com/tailwindlabs/tailwindcss
+      description: Utility-first CSS framework
+    - url: https://github.com/shadcn-ui/ui
+      description: Beautifully designed components that you can copy and paste
+
+  backend_and_api:
+    - url: https://github.com/expressjs/express
+      description: Fast, unopinionated, minimalist web framework for Node.js
+    - url: https://github.com/fastify/fastify
+      description: Fast and low overhead web framework for Node.js
+    - url: https://github.com/nestjs/nest
+      description: Progressive Node.js framework for building efficient server-side apps
+    - url: https://github.com/tiangolo/fastapi
+      description: FastAPI framework, high performance, easy to learn, fast to code
+    - url: https://github.com/django/django
+      description: The Web framework for perfectionists with deadlines
+    - url: https://github.com/pallets/flask
+      description: Micro web development framework for Python
+    - url: https://github.com/gin-gonic/gin
+      description: HTTP web framework written in Go
+    - url: https://github.com/tokio-rs/axum
+      description: Ergonomic and modular web framework built with Tokio, Tower, and Hyper
+    - url: https://github.com/trpc/trpc
+      description: End-to-end typesafe APIs made easy
+    - url: https://github.com/graphql/graphql-js
+      description: Reference implementation of GraphQL for JavaScript
+    - url: https://github.com/socketio/socket.io
+      description: Realtime application framework (Node.JS server)
+
+  databases_and_backend_services:
+    - url: https://github.com/prisma/prisma
+      description: Next-generation ORM for Node.js & TypeScript
+    - url: https://github.com/drizzle-team/drizzle-orm
+      description: TypeScript ORM for SQL databases
+    - url: https://github.com/supabase/supabase
+      description: The open source Firebase alternative (Postgres, Auth, Storage, Edge)
+    - url: https://github.com/appwrite/appwrite
+      description: Secure backend server for Web, Mobile & Flutter developers
+    - url: https://github.com/pocketbase/pocketbase
+      description: Open Source backend in 1 file (Go + SQLite)
+
+  build_tools_and_documentation:
+    - url: https://github.com/vitejs/vite
+      description: Next generation frontend tooling
+    - url: https://github.com/mdn/content
+      description: The content behind MDN Web Docs
+
+devops:
+  containers_and_orchestration:
+    - url: https://github.com/docker/docker-ce
+      description: Open source application container engine
+    - url: https://github.com/kubernetes/kubernetes
+      description: Production-Grade Container Scheduling and Management
+    - url: https://github.com/helm/helm
+      description: The Kubernetes Package Manager
+    - url: https://github.com/argoproj/argo-cd
+      description: Declarative continuous deployment for Kubernetes
+    - url: https://github.com/istio/istio
+      description: Connect, secure, control, and observe services
+
+  infrastructure_as_code:
+    - url: https://github.com/hashicorp/terraform
+      description: Infrastructure as Code tool to build, change, and version cloud infrastructure
+    - url: https://github.com/ansible/ansible
+      description: Radically simple IT automation system
+    - url: https://github.com/pulumi/pulumi
+      description: Universal Infrastructure as Code platform
+
+  monitoring_and_networking:
+    - url: https://github.com/prometheus/prometheus
+      description: The Prometheus monitoring system and time series database
+    - url: https://github.com/grafana/grafana
+      description: The open and composable observability and data visualization platform
+    - url: https://github.com/elastic/elasticsearch
+      description: Free and Open Distributed, RESTful Search Engine
+    - url: https://github.com/open-telemetry/opentelemetry-specification
+      description: Specifications for OpenTelemetry
+    - url: https://github.com/traefik/traefik
+      description: Cloud Native Application Proxy
+    - url: https://github.com/nginx/nginx
+      description: High performance web server and reverse proxy
+
+  knowledge_and_exercises:
+    - url: https://github.com/bregman-arie/devops-exercises
+      description: Linux, Jenkins, AWS, SRE, Prometheus, Docker, Python, Ansible, Git, Kubernetes exercises
+    - url: https://github.com/MichaelCade/90DaysOfDevOps
+      description: 90 Days of DevOps foundational training guide
+    - url: https://github.com/trimstray/the-book-of-secret-knowledge
+      description: Collection of inspiring lists, manuals, cheatsheets, and tools
+
+data_engineering:
+  pipelines_and_streaming:
+    - url: https://github.com/apache/spark
+      description: Unified engine for large-scale data processing
+    - url: https://github.com/apache/kafka
+      description: Distributed streaming platform
+    - url: https://github.com/apache/airflow
+      description: Platform to programmatically author, schedule, and monitor workflows
+    - url: https://github.com/apache/flink
+      description: Stateful Computations over Data Streams
+    - url: https://github.com/dbt-labs/dbt-core
+      description: Transformation workflow tool for data in warehouses
+    - url: https://github.com/delta-io/delta
+      description: Open-source storage layer that brings reliability to data lakes
+
+  analytics_and_visualization:
+    - url: https://github.com/pandas-dev/pandas
+      description: Flexible and powerful data analysis / manipulation library for Python
+    - url: https://github.com/pola-rs/polars
+      description: Extremely fast query engine and DataFrame library in Rust & Python
+    - url: https://github.com/duckdb/duckdb
+      description: In-process SQL OLAP database management system
+    - url: https://github.com/plotly/plotly.py
+      description: Interactive graphing library for Python
+    - url: https://github.com/d3/d3
+      description: JavaScript library for visualizing data with web standards
+    - url: https://github.com/streamlit/streamlit
+      description: Fastest way to build and share data apps
+
+blockchain:
+  core_and_contracts:
+    - url: https://github.com/ethereum/go-ethereum
+      description: Official Go implementation of the Ethereum protocol
+    - url: https://github.com/foundry-rs/foundry
+      description: Fast, portable and modular toolkit for Ethereum application development in Rust
+    - url: https://github.com/NomicFoundation/hardhat
+      description: Ethereum development environment for professionals
+    - url: https://github.com/OpenZeppelin/openzeppelin-contracts
+      description: Library for secure smart contract development
+    - url: https://github.com/Uniswap/v3-core
+      description: Core smart contracts of Uniswap V3 AMM
+    - url: https://github.com/aave/aave-v3-core
+      description: Aave V3 core protocol contracts
+    - url: https://github.com/solana-labs/solana
+      description: Web-Scale Blockchain for fast, secure, scalable, decentralized apps
+    - url: https://github.com/coral-xyz/anchor
+      description: Solana Sealevel framework
+
+  zero_knowledge:
+    - url: https://github.com/iden3/circom
+      description: zk-SNARK compiler in Rust
+    - url: https://github.com/matter-labs/zksync-era
+      description: ZK-rollup scaling protocol for Ethereum
+    - url: https://github.com/smartcontractkit/chainlink
+      description: Node of the decentralized oracle network
+
+mobile_development:
+  frameworks_and_runtimes:
+    - url: https://github.com/flutter/flutter
+      description: Google's SDK for crafting beautiful applications on any platform
+    - url: https://github.com/facebook/react-native
+      description: Framework for building native applications using React
+    - url: https://github.com/JetBrains/kotlin
+      description: The Kotlin Programming Language (Multiplatform & Android)
+    - url: https://github.com/apple/swift
+      description: The Swift Programming Language
+
+game_development:
+  engines_and_tools:
+    - url: https://github.com/godotengine/godot
+      description: Free and open source 2D and 3D game engine
+    - url: https://github.com/bevyengine/bevy
+      description: Refreshingly simple data-driven game engine built in Rust
+    - url: https://github.com/raysan5/raylib
+      description: Simple and easy-to-use library to enjoy videogames programming
+    - url: https://github.com/pygame/pygame
+      description: Python game development library
+    - url: https://github.com/MonoGame/MonoGame
+      description: Framework for creating cross-platform games in C#
+    - url: https://github.com/mrdoob/three.js
+      description: JavaScript 3D Library
+    - url: https://github.com/BabylonJS/Babylon.js
+      description: WebGL and WebGPU 3D graphics rendering engine
+
+embedded_and_iot:
+  firmware_and_hardware:
+    - url: https://github.com/arduino/Arduino
+      description: Arduino open-source electronics platform
+    - url: https://github.com/espressif/esp-idf
+      description: Espressif IoT Development Framework for ESP32
+    - url: https://github.com/micropython/micropython
+      description: Lean and efficient Python implementation for microcontrollers
+    - url: https://github.com/FreeRTOS/FreeRTOS
+      description: Market-leading Real Time Operating System (RTOS) for microcontrollers
+    - url: https://github.com/zephyrproject-rtos/zephyr
+      description: Scalable real-time operating system supporting multiple hardware architectures
+    - url: https://github.com/rust-embedded/awesome-embedded-rust
+      description: Curated list of awesome resources related to embedded and low-level development in Rust
+    - url: https://github.com/KiCad/kicad-source-mirror
+      description: KiCad Schematic and PCB design suite
+    - url: https://github.com/home-assistant/core
+      description: Open source home automation that puts local control and privacy first
+
+os_and_low_level:
+  kernels_and_compilers:
+    - url: https://github.com/torvalds/linux
+      description: Linux kernel source tree
+    - url: https://github.com/mit-pdos/xv6-riscv
+      description: Modern re-implementation of Unix Sixth Edition on RISC-V
+    - url: https://github.com/SerenityOS/serenity
+      description: Graphical Unix-like operating system for x86-64
+    - url: https://github.com/redox-os/redox
+      description: Unix-like Operating System written in Rust
+    - url: https://github.com/llvm/llvm-project
+      description: The LLVM Project collection of modular compiler and toolchain technologies
+    - url: https://github.com/munificent/craftinginterpreters
+      description: Handbook for making programming languages
+    - url: https://github.com/nand2tetris/nand2tetris
+      description: Building a Modern Computer from First Principles
+
+networking_and_distributed_systems:
+  architecture_and_consensus:
+    - url: https://github.com/donnemartin/system-design-primer
+      description: Learn how to design large-scale systems and prepare for system design interviews
+    - url: https://github.com/ByteByteGoHq/system-design-101
+      description: Visual guide explaining complex systems using animations and diagrams
+    - url: https://github.com/hashicorp/raft
+      description: Golang implementation of the Raft consensus protocol
+    - url: https://github.com/etcd-io/etcd
+      description: Distributed reliable key-value store for critical data of a distributed system
+    - url: https://github.com/rabbitmq/rabbitmq-server
+      description: Open source multi-protocol messaging and streaming broker
+    - url: https://github.com/nats-io/nats-server
+      description: High-Performance server for NATS messaging system
+    - url: https://github.com/cockroachdb/cockroach
+      description: Cloud-native distributed SQL database designed for high availability and consistency
+    - url: https://github.com/pingcap/tidb
+      description: Open-source distributed HTAP database compatible with MySQL
+
+robotics_and_automation:
+  frameworks_and_sim:
+    - url: https://github.com/ros2/ros2
+      description: Robot Operating System 2 core code and packages
+    - url: https://github.com/google-deepmind/mujoco
+      description: Multi-Joint dynamics with Contact physics engine
+    - url: https://github.com/PX4/PX4-Autopilot
+      description: Professional Autopilot for drones and aerial robotics
+    - url: https://github.com/ArduPilot/ardupilot
+      description: Open source autopilot software for unmanned vehicles
+    - url: https://github.com/AtsushiSakai/PythonRobotics
+      description: Python sample codes for robotics algorithms
+    - url: https://github.com/commaai/openpilot
+      description: Open source driver assistance system
+
+quantum_computing:
+  frameworks:
+    - url: https://github.com/qiskit/qiskit
+      description: Open-source SDK for working with quantum computers at the level of circuits and algorithms
+    - url: https://github.com/quantumlib/Cirq
+      description: Python library for writing, manipulating, and optimizing quantum circuits
+    - url: https://github.com/PennyLaneAI/pennylane
+      description: Cross-platform Python library for quantum computing and quantum machine learning
+    - url: https://github.com/microsoft/qsharp-language
+      description: Q# quantum programming language compiler and runtime
+
+automation_and_scraping:
+  tools:
+    - url: https://github.com/microsoft/playwright
+      description: Fast and reliable end-to-end testing and browser automation for modern web apps
+    - url: https://github.com/puppeteer/puppeteer
+      description: Node.js library for automating Chrome or Chromium browsers
+    - url: https://github.com/scrapy/scrapy
+      description: Fast high-level web crawling & scraping framework for Python
+    - url: https://github.com/n8n-io/n8n
+      description: Fair-code workflow automation platform

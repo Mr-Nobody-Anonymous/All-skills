@@ -1,0 +1,9 @@
+# Default Skill System Configuration
+skills_root: "./skills"
+max_workers: 4
+auto_discover: true
+load_on_init: false
+log_level: "INFO"
+enabled_domains: []  # empty = all domains enabled
+disabled_skills: []
+custom_priorities: {}

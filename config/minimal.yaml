@@ -1,0 +1,14 @@
+# Minimal Skill System Configuration (Lean Context / Core Only)
+skills_root: "./skills"
+max_workers: 2
+auto_discover: false
+load_on_init: false
+log_level: "WARNING"
+enabled_domains:
+  - "programming"
+  - "ai_ml"
+  - "cybersecurity"
+  - "web_development"
+  - "devops"
+disabled_skills: []
+custom_priorities: {}
