@@ -18,18 +18,39 @@ class DependencyStatus:
     detail: str
 
 
+_DEP_CACHE: dict[str, tuple[bool, str]] = {}
+
+
+def _check_candidate_cached(candidate: str) -> tuple[bool, str]:
+    if candidate in _DEP_CACHE:
+        return _DEP_CACHE[candidate]
+    binary_aliases = {"gh-cli": "gh", "playwright": "playwright", "cypress": "cypress"}
+    binary = binary_aliases.get(candidate, candidate)
+    if shutil.which(binary):
+        res = (True, f"command: {binary}")
+        _DEP_CACHE[candidate] = res
+        return res
+    module = candidate.replace("-", "_")
+    try:
+        if importlib.util.find_spec(module) is not None:
+            res = (True, f"python module: {module}")
+            _DEP_CACHE[candidate] = res
+            return res
+    except Exception:
+        pass
+    res = (False, "not detected")
+    _DEP_CACHE[candidate] = res
+    return res
+
+
 def check_dependency(skill_id: str, declaration: str) -> DependencyStatus:
     optional = declaration.endswith("-optional") or declaration.startswith("optional:")
     name = declaration.removeprefix("optional:").removesuffix("-optional")
     alternatives = [part.strip() for part in name.split("-or-") if part.strip()]
-    binary_aliases = {"gh-cli": "gh", "playwright": "playwright", "cypress": "cypress"}
     for candidate in alternatives:
-        binary = binary_aliases.get(candidate, candidate)
-        if shutil.which(binary):
-            return DependencyStatus(skill_id, declaration, True, optional, f"command: {binary}")
-        module = candidate.replace("-", "_")
-        if importlib.util.find_spec(module) is not None:
-            return DependencyStatus(skill_id, declaration, True, optional, f"python module: {module}")
+        available, detail = _check_candidate_cached(candidate)
+        if available:
+            return DependencyStatus(skill_id, declaration, True, optional, detail)
     return DependencyStatus(skill_id, declaration, False, optional, "not detected")
 
 

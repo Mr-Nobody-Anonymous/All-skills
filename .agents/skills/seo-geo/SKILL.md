@@ -7,6 +7,19 @@ source: "https://github.com/AgriciDaniel/claude-seo"
 date_added: "2026-03-21"
 user-invokable: true
 argument-hint: "[url]"
+triggers:
+  - "optimize web content for ai search"
+  - "ai search engines"
+  - "perplexity"
+  - "geo optimization"
+keywords:
+  - "seo"
+  - "geo"
+  - "citations"
+  - "perplexity"
+  - "search"
+  - "llm"
+  - "search-engine"
 allowed-tools:
   - Read
   - Grep

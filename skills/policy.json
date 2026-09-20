@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "description": "Formal capability policy configuration for agent execution.",
+  "capabilities": {
+    "filesystem.read": {
+      "verdict": "ALLOW",
+      "risk": "SAFE",
+      "description": "Read workspace source files, documentation, and metadata."
+    },
+    "filesystem.write": {
+      "verdict": "ALLOW",
+      "risk": "LOW_RISK",
+      "description": "Modify or create workspace files within workspace boundaries."
+    },
+    "git.read": {
+      "verdict": "ALLOW",
+      "risk": "SAFE",
+      "description": "Inspect git status, log, diff, and branches."
+    },
+    "git.write": {
+      "verdict": "ALLOW",
+      "risk": "LOW_RISK",
+      "description": "Create commits, branches, or stage changes."
+    },
+    "shell.execute": {
+      "verdict": "ALLOW",
+      "risk": "MEDIUM_RISK",
+      "description": "Execute non-destructive development commands (tests, linters, builds)."
+    },
+    "network.request": {
+      "verdict": "ALLOW",
+      "risk": "MEDIUM_RISK",
+      "description": "Issue external HTTP/API requests for docs or package info."
+    },
+    "credentials.read": {
+      "verdict": "DENY",
+      "risk": "HIGH_RISK",
+      "description": "Read raw environment secrets, SSH keys, or cloud credentials."
+    },
+    "cloud.modify": {
+      "verdict": "ASK",
+      "risk": "HIGH_RISK",
+      "description": "Provision, modify, or tear down cloud resources."
+    },
+    "production.deploy": {
+      "verdict": "ASK",
+      "risk": "CRITICAL",
+      "description": "Trigger deployments to production environments."
+    },
+    "database.delete": {
+      "verdict": "DENY",
+      "risk": "CRITICAL",
+      "description": "Drop tables, truncate databases, or execute irreversible data purges."
+    }
+  }
+}

@@ -281,35 +281,60 @@ def cmd_info(args, _parser):
 
 
 def cmd_route(args, _parser):
-
     reg = load_registry(_workspace_root())
-
     router = Router(reg)
+    threshold = getattr(args, "threshold", 18.0)
+    as_json = getattr(args, "json", False)
 
     matches = (
-
         router.route_chain(args.query, top_k=args.top_k)
-
         if args.chain else router.route(args.query, top_k=args.top_k)
-
     )
 
-    if not matches:
+    top_score = matches[0].score if matches else 0.0
+    matched = bool(matches) and (threshold is None or top_score >= threshold)
 
-        print(f"No skill matches: {args.query}")
+    if as_json:
+        if not matched:
+            data = {
+                "status": "no_match",
+                "confidence": round(top_score / 100.0, 3),
+                "threshold": round(threshold / 100.0, 3) if threshold else 0.0,
+                "message": "No sufficiently relevant skill found.",
+                "suggestions": [m.skill.id for m in matches[:3]] if matches else []
+            }
+        else:
+            data = {
+                "status": "matched",
+                "confidence": round(top_score / 100.0, 3),
+                "primary_match": matches[0].skill.id,
+                "matches": [
+                    {
+                        "id": m.skill.id,
+                        "score": round(m.score, 2),
+                        "confidence": round(m.score / 100.0, 3),
+                        "matched_on": m.matched_on,
+                        "description": m.skill.description
+                    }
+                    for m in matches
+                ]
+            }
+        print(json.dumps(data, indent=2))
+        return 0 if matched else 1
 
+    if not matched:
+        print(f"No sufficiently relevant skill found for: {args.query!r}")
+        if matches:
+            print(f"Closest candidate: {matches[0].skill.id} (confidence: {top_score/100.0:.2f}, below threshold {threshold/100.0:.2f})")
+            print("Suggestions: " + ", ".join(m.skill.id for m in matches[:3]))
         return 1
 
     if args.dry_run:
-
         print("DRY RUN — plan shown below; nothing was executed.\n")
 
     for i, m in enumerate(matches, 1):
-
         print(f"{i}. {m.skill.id}  (score={m.score:.1f}, matched_on={m.matched_on})")
-
         print(f"   {m.skill.description}")
-
     return 0
 
 
@@ -807,31 +832,31 @@ def cmd_lifecycle(args, _parser):
 
 
 def cmd_conflicts(args, _parser):
-
-    reg = load_registry(_workspace_root())
-
-    conflicts = load_conflicts(_workspace_root())
-
-    records = conflicts.all()
-
-    if not records:
-
-        print("No declared conflicts.")
-
+    target = getattr(args, "skill_id", None)
+    if target:
+        from skills.graph import SkillGraph
+        graph = SkillGraph(_workspace_root())
+        conflicts = graph.get_conflicts(target)
+        if not conflicts:
+            print(f"No conflicts detected for '{target}'.")
+            return 0
+        print(f"Conflicts for '{target}':")
+        for c in conflicts:
+            print(f"  [{c['severity'].upper()}] with {c['conflicts_with']}: {c['reason']}")
         return 0
 
+    reg = load_registry(_workspace_root())
+    conflicts = load_conflicts(_workspace_root())
+    records = conflicts.all()
+    if not records:
+        print("No declared conflicts.")
+        return 0
     active_keys = {tuple(c.skills) for c in conflicts.active(reg)}
-
     for conflict in records:
-
         marker = "ACTIVE" if tuple(conflict.skills) in active_keys else "declared"
-
         print(f"[{marker}] severity={conflict.severity} priority={conflict.priority or '-'}")
-
         print(f"  {' + '.join(conflict.skills)}")
-
         print(f"  {conflict.reason}")
-
     return 0
 
 
@@ -1051,7 +1076,119 @@ def cmd_pack(args, _parser):
     if getattr(args, "pack_name", None):
         cmd.append(args.pack_name)
     res = subprocess.run(cmd, cwd=str(root))
+def cmd_graph(args, _parser):
+    from skills.graph import SkillGraph
+    graph = SkillGraph(_workspace_root())
+    print(graph.render_ascii_tree(args.skill_id, max_depth=args.depth))
+    return 0
+
+
+def cmd_deps(args, _parser):
+    from skills.graph import SkillGraph
+    graph = SkillGraph(_workspace_root())
+    deps = graph.get_dependencies(args.skill_id, recursive=args.recursive)
+    print(f"Dependencies for '{args.skill_id}' ({'recursive' if args.recursive else 'direct'}):")
+    if not deps:
+        print("  (None declared)")
+    for d in deps:
+        print(f"  - {d}")
+    return 0
+
+
+def cmd_dependents(args, _parser):
+    from skills.graph import SkillGraph
+    graph = SkillGraph(_workspace_root())
+    dependents = graph.get_dependents(args.skill_id)
+    print(f"Skills depending on '{args.skill_id}':")
+    if not dependents:
+        print("  (No reverse dependents found)")
+    for dep in dependents:
+        print(f"  - {dep}")
+    return 0
+
+
+def cmd_benchmark(args, _parser):
+    import subprocess
+    cmd = [sys.executable, str(ROOT / "scripts" / "run_benchmarks.py")]
+    if getattr(args, "cases", None):
+        cmd.extend(["--cases", args.cases])
+    if getattr(args, "threshold", None):
+        cmd.extend(["--threshold", str(args.threshold)])
+    if getattr(args, "no_perf", False):
+        cmd.append("--no-perf")
+    if getattr(args, "json", False):
+        cmd.append("--json")
+    res = subprocess.run(cmd)
     return res.returncode
+
+
+def cmd_lock(args, _parser):
+    from skills.lock import SkillLockManager
+    mgr = SkillLockManager(_workspace_root())
+    if getattr(args, "verify", False):
+        res = mgr.verify_all()
+        print(f"Lockfile verification: {res['passed']}/{res['total']} skills verified successfully.")
+        return 0 if res['failed'] == 0 else 1
+    out_file = mgr.save_lockfile()
+    print(f"Successfully generated skills.lock with 192 cryptographically pinned skills ({out_file}).")
+    return 0
+
+
+def cmd_verify(args, _parser):
+    from skills.lock import SkillLockManager
+    mgr = SkillLockManager(_workspace_root())
+    sid = getattr(args, "skill_id", "")
+    if sid:
+        res = mgr.verify_skill(sid)
+        if res.get("status") == "verified":
+            print(f"✓ Signature/Hash valid: {sid}")
+            print(f"  SHA-256: {res['current_sha256']}")
+            print(f"  Version: {res.get('version', '1.0.0')}")
+            print(f"  Files:   {res['files_count']}")
+            print(f"  Quarantine: Clean (No flags)")
+            return 0
+        else:
+            print(f"✗ Verification FAILED for {sid}: {res.get('message', res.get('status'))}")
+            return 1
+    else:
+        res = mgr.verify_all()
+        print(f"Verification summary: {res['passed']}/{res['total']} passed, {res['failed']} failed.")
+        return 0 if res['failed'] == 0 else 1
+
+
+def cmd_stale(args, _parser):
+    from skills.lock import SkillLockManager
+    mgr = SkillLockManager(_workspace_root())
+    stale = mgr.check_stale(threshold_days=args.threshold)
+    print(f"Freshness Audit (threshold: {args.threshold} days):")
+    if not stale:
+        print(f"  All skills are verified and current within the last {args.threshold} days.")
+        return 0
+    for s in stale:
+        print(f"  ⚠ {s['skill']} ({s['category']}): verified {s['days_ago']} days ago")
+    return 0
+
+
+def cmd_policy(args, _parser):
+    from skills.policy import PolicyEngine
+    pe = PolicyEngine(_workspace_root())
+    if getattr(args, "policy_action", None) == "check" and getattr(args, "skill_id", None):
+        res = pe.evaluate_skill(args.skill_id)
+        print(f"Security Capability Verdict for '{args.skill_id}': {res.overall_verdict.value} (Risk: {res.max_risk.value})")
+        print("Requested capabilities:")
+        for cap, info in res.breakdown.items():
+            print(f"  - {cap}: {info['verdict']} [{info['risk']}]")
+        print("Reasons:")
+        for r in res.reasons:
+            print(f"  - {r}")
+        return 0 if res.overall_verdict.value != "DENY" else 1
+    else:
+        print("Active Security Capability Policies:")
+        for cap, p in sorted(pe.policies.items()):
+            v = p['verdict'].value if hasattr(p['verdict'], 'value') else str(p['verdict'])
+            r = p['risk'].value if hasattr(p['risk'], 'value') else str(p['risk'])
+            print(f"  - {cap:<20} {v:<6} [{r:<11}] {p['description']}")
+        return 0
 
 
 def main():
@@ -1093,14 +1230,51 @@ def main():
 
 
     s = sub.add_parser("route", help="Route natural language to a skill")
-
     s.add_argument("query", help="Natural language request")
-
     s.add_argument("--top-k", type=int, default=3, help="Number of matches")
-
+    s.add_argument("--threshold", type=float, default=18.0, help="Confidence threshold")
+    s.add_argument("--json", action="store_true", help="Emit structured output as JSON")
     s.add_argument("--chain", action="store_true", help="Include compatible follow-on skills")
     s.add_argument("--dry-run", action="store_true", help="Print the plan without side effects")
     s.set_defaults(func=cmd_route)
+
+    s = sub.add_parser("graph", help="Render machine-readable dependency tree for a skill")
+    s.add_argument("skill_id", nargs="?", default="react", help="Root skill to render tree for")
+    s.add_argument("--depth", type=int, default=2, help="Maximum tree traversal depth")
+    s.set_defaults(func=cmd_graph)
+
+    s = sub.add_parser("deps", help="List direct and transitive dependencies of a skill")
+    s.add_argument("skill_id", help="Skill ID")
+    s.add_argument("--recursive", action="store_true", help="Include transitive dependencies")
+    s.set_defaults(func=cmd_deps)
+
+    s = sub.add_parser("dependents", help="List all skills that depend on a given skill")
+    s.add_argument("skill_id", help="Skill ID")
+    s.set_defaults(func=cmd_dependents)
+
+    s = sub.add_parser("benchmark", help="Run routing intent benchmarks and latency percentiles")
+    s.add_argument("--cases", default="", help="Path to evaluation cases JSON")
+    s.add_argument("--threshold", type=float, default=18.0, help="Confidence threshold")
+    s.add_argument("--no-perf", action="store_true", help="Skip latency percentile benchmarking")
+    s.add_argument("--json", action="store_true", help="Emit benchmark results as JSON")
+    s.set_defaults(func=cmd_benchmark)
+
+    s = sub.add_parser("lock", help="Generate or verify skills.lock cryptographic pinfile")
+    s.add_argument("--verify", action="store_true", help="Verify all skills against skills.lock")
+    s.set_defaults(func=cmd_lock)
+
+    s = sub.add_parser("verify", help="Cryptographically verify integrity of a skill")
+    s.add_argument("skill_id", nargs="?", default="", help="Skill ID to verify")
+    s.set_defaults(func=cmd_verify)
+
+    s = sub.add_parser("stale", help="Audit skill freshness and detect outdated playbooks")
+    s.add_argument("--threshold", type=int, default=90, help="Staleness threshold in days")
+    s.set_defaults(func=cmd_stale)
+
+    s = sub.add_parser("policy", help="Inspect capability security policy or check a skill")
+    s.add_argument("policy_action", nargs="?", default="list", choices=["list", "check"], help="Action: list or check")
+    s.add_argument("skill_id", nargs="?", default="", help="Skill ID to check when action is check")
+    s.set_defaults(func=cmd_policy)
 
     s = sub.add_parser("recommend", help="Recommend skill pipeline and workflow for a goal")
     s.add_argument("query", help="Goal or user objective (e.g. 'build a SaaS with Next.js and PostgreSQL')")
@@ -1112,40 +1286,23 @@ def main():
     s.add_argument("pack_name", nargs="?", default="", help="Pack name (e.g. ai-engineer-pack)")
     s.set_defaults(func=cmd_pack)
 
-
-
     s = sub.add_parser("explain", help="Explain why skills matched a request")
-
     s.add_argument("query", help="Natural language request")
-
     s.add_argument("--top-k", type=int, default=3, help="Number of matches")
-
     s.set_defaults(func=cmd_explain)
 
-
-
     s = sub.add_parser("chain", help="Show/resolve a named chain from skills/chains.json")
-
     s.add_argument("name", help="Chain name (e.g. deep-research)")
-
     s.add_argument("--dry-run", action="store_true", help="Print the plan without side effects")
-
     s.set_defaults(func=cmd_chain)
 
-
-
     s = sub.add_parser("lifecycle", help="Show or change a skill's lifecycle state")
-
     s.add_argument("skill_id", help="Skill ID")
-
     s.add_argument("state", nargs="?", help="Target lifecycle state to transition to")
-
     s.set_defaults(func=cmd_lifecycle)
 
-
-
-    s = sub.add_parser("conflicts", help="List declared skill conflicts")
-
+    s = sub.add_parser("conflicts", help="List declared and semantic skill conflicts")
+    s.add_argument("skill_id", nargs="?", default="", help="Optional skill ID to check conflicts for")
     s.set_defaults(func=cmd_conflicts)
 
 

@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <strong>The complete, load-on-demand Agent Skills operating system. Over 2,160+ modular skills, 70 pre-loaded staff-engineer playbooks, AAS-compliant stack manifests, lifecycle hooks, multi-step workflows, AST-safe code transformations, and native multi-tool compatibility across Claude Code, Cursor, Codex CLI, and Antigravity.</strong>
+  <strong>A comprehensive, extensible Agent Skills platform & discovery engine. Over 2,237 unique skills across 100 domain categories, 70 pre-loaded staff-engineer playbooks, 122 canonical tested skills, machine-readable dependency & conflict graphs, confidence thresholding with out-of-domain rejection, capability security enforcement, reproducible lockfiles, and native multi-tool compatibility across Claude Code, Cursor, Codex CLI, and Antigravity.</strong>
 </p>
 
 ---
@@ -31,7 +31,7 @@ When AI coding assistants are front-loaded with thousands of prompt instructions
 │          (skills/)            │        (awesome_skills/)        │     (.agents/ / .claude/ /    │
 │                               │                                 │     .cursor/ / .codex/)       │
 ├───────────────────────────────┼─────────────────────────────────┼───────────────────────────────┤
-│  • 122 Curated & Tested Skills│  • 2,041 Categorized Skills     │  • 66 Staff Engineer Skills   │
+│  • 122 Curated & Tested Skills│  • 2,041 Categorized Skills     │  • 70 Staff Engineer Skills   │
 │  • 9-Signal Layered Scoring   │  • 100 Functional Domain Dirs   │  • Pre-Loaded in Workspace    │
 │  • Deterministic Workflows    │  • Machine-Readable Index       │  • Native Multi-Tool Synced   │
 │  • 8-State Formal Lifecycle   │  • Complete CATALOG.md Reference│  • $O(1)$ Load-on-Demand      │
@@ -326,6 +326,39 @@ python scripts/skills/skills.py chain code-review-flow --dry-run
 # Run full health diagnostics and 86-test verification suite
 python scripts/skills/skills.py doctor
 python scripts/skills/skills.py test
+
+# Machine-Readable Dependency & Conflict Graphs
+python scripts/skills/skills.py graph react
+python scripts/skills/skills.py deps nextjs --recursive
+python scripts/skills/skills.py dependents typescript
+python scripts/skills/skills.py conflicts react
+
+# Reproducible Lockfile & Cryptographic Verification
+python scripts/skills/skills.py lock
+python scripts/skills/skills.py verify react-state-management
+python scripts/skills/skills.py stale --threshold 90
+
+# Capability-Based Security Policy Enforcement
+python scripts/skills/skills.py policy check direct-production-deployment
+python scripts/skills/skills.py policy list
+
+# Intent Routing Benchmark & Latency Percentiles
+python scripts/skills/skills.py benchmark
+```
+
+---
+
+### 3. Interactive Web Marketplace (`marketplace/index.html`)
+
+Launch the glassmorphic discovery dashboard with real-time fuzzy search, capability filters, dependency trees, and instant CLI command copying:
+
+```bash
+# Rebuild marketplace database
+python scripts/build_marketplace.py
+
+# Launch static discovery server
+python -m http.server 3000 --directory marketplace
+# Open http://localhost:3000 in your browser
 ```
 
 ---
@@ -334,7 +367,7 @@ python scripts/skills/skills.py test
 
 ```
 All skills/
-├── .agents/skills/              # 🤖 Antigravity / Gemini CLI Active Harness (66 skills)
+├── .agents/skills/              # 🤖 Antigravity / Gemini CLI Active Harness (70 skills)
 ├── .claude/skills/              # 🤖 Claude Code Active Harness (synced via junction)
 ├── .cursor/skills/              # 🤖 Cursor Active Harness (synced via junction)
 ├── .codex/skills/               # 🤖 Codex CLI Active Harness (synced via junction)

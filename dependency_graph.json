@@ -1,0 +1,2216 @@
+{
+  "version": 1,
+  "nodes_count": 207,
+  "nodes": {
+    "nextjs": {
+      "id": "nextjs",
+      "name": "Next.js Fullstack Platform",
+      "category": "web-development",
+      "dependencies": [
+        "react",
+        "typescript",
+        "seo",
+        "authentication",
+        "database",
+        "deployment"
+      ],
+      "conflicts": [
+        "vue",
+        "angular"
+      ]
+    },
+    "react": {
+      "id": "react",
+      "name": "React Framework",
+      "category": "web-development",
+      "dependencies": [
+        "typescript",
+        "accessibility",
+        "testing",
+        "state-management",
+        "performance"
+      ],
+      "conflicts": [
+        "angular-state-management"
+      ]
+    },
+    "react-state-management": {
+      "id": "react-state-management",
+      "name": "React State Management (Zustand/Redux/Jotai)",
+      "category": "web-development",
+      "dependencies": [
+        "react",
+        "typescript"
+      ],
+      "conflicts": [
+        "angular-state-management"
+      ]
+    },
+    "angular-state-management": {
+      "id": "angular-state-management",
+      "name": "Angular State Management (Signals/NgRx)",
+      "category": "web-development",
+      "dependencies": [
+        "typescript"
+      ],
+      "conflicts": [
+        "react-state-management",
+        "react"
+      ]
+    },
+    "saas-mvp-launcher": {
+      "id": "saas-mvp-launcher",
+      "name": "SaaS MVP Launcher Playbook",
+      "category": "fullstack",
+      "dependencies": [
+        "api-designer",
+        "database-design",
+        "react-state-management",
+        "wcag-audit-patterns",
+        "secrets-management",
+        "ci-cd-and-automation"
+      ],
+      "conflicts": []
+    },
+    "ai-engineer": {
+      "id": "ai-engineer",
+      "name": "AI Systems & RAG Engineer",
+      "category": "ai-ml",
+      "dependencies": [
+        "ai-engineering-toolkit",
+        "agent-memory",
+        "multi-agent-patterns",
+        "evaluation"
+      ],
+      "conflicts": []
+    },
+    "multi-agent-architect": {
+      "id": "multi-agent-architect",
+      "name": "Multi-Agent Architect",
+      "category": "ai-ml",
+      "dependencies": [
+        "multi-agent-patterns",
+        "dispatching-parallel-agents",
+        "agent-memory-systems",
+        "verification-before-completion"
+      ],
+      "conflicts": []
+    },
+    "database-design": {
+      "id": "database-design",
+      "name": "Database Architecture & Schema Design",
+      "category": "database",
+      "dependencies": [
+        "database-migration",
+        "performance-profiling"
+      ],
+      "conflicts": []
+    },
+    "prisma-expert": {
+      "id": "prisma-expert",
+      "name": "Prisma ORM Expert",
+      "category": "database",
+      "dependencies": [
+        "database-design",
+        "database-migration",
+        "typescript"
+      ],
+      "conflicts": [
+        "drizzle-orm-expert"
+      ]
+    },
+    "drizzle-orm-expert": {
+      "id": "drizzle-orm-expert",
+      "name": "Drizzle ORM Expert",
+      "category": "database",
+      "dependencies": [
+        "database-design",
+        "database-migration",
+        "typescript"
+      ],
+      "conflicts": [
+        "prisma-expert"
+      ]
+    },
+    "kubernetes-architect": {
+      "id": "kubernetes-architect",
+      "name": "Kubernetes & Cloud Native Architect",
+      "category": "cloud-devops",
+      "dependencies": [
+        "kubernetes-deployment",
+        "terraform-infrastructure",
+        "cloud-devops",
+        "secrets-management"
+      ],
+      "conflicts": []
+    },
+    "code-reviewer": {
+      "id": "code-reviewer",
+      "name": "Elite Code Reviewer",
+      "category": "development",
+      "dependencies": [
+        "ast-code-transformation",
+        "security-scanning-security-sast",
+        "top-web-vulnerabilities"
+      ],
+      "conflicts": []
+    },
+    "wcag-audit-patterns": {
+      "id": "wcag-audit-patterns",
+      "name": "WCAG 2.2 Accessibility Auditing",
+      "category": "web-development",
+      "dependencies": [
+        "accessibility-compliance-accessibility-audit",
+        "playwright-skill"
+      ],
+      "conflicts": []
+    },
+    "productivity.focus": {
+      "id": "productivity.focus",
+      "name": "Deep Work Focus Session",
+      "category": "productivity",
+      "dependencies": [
+        "productivity.unlazy"
+      ],
+      "conflicts": [
+        "productivity.brainstorming"
+      ]
+    },
+    "productivity.brainstorming": {
+      "id": "productivity.brainstorming",
+      "name": "Divergent Ideation & Brainstorming",
+      "category": "productivity",
+      "dependencies": [],
+      "conflicts": [
+        "productivity.focus",
+        "productivity.unlazy"
+      ]
+    },
+    "productivity.unlazy": {
+      "id": "productivity.unlazy",
+      "name": "Procrastination Breaker",
+      "category": "productivity",
+      "dependencies": [],
+      "conflicts": [
+        "productivity.brainstorming"
+      ]
+    },
+    "safe-production-mode": {
+      "id": "safe-production-mode",
+      "name": "Safe Read-Only Production Guardrails",
+      "category": "security",
+      "dependencies": [
+        "security-sandboxing-guardrails"
+      ],
+      "conflicts": [
+        "direct-production-deployment"
+      ]
+    },
+    "direct-production-deployment": {
+      "id": "direct-production-deployment",
+      "name": "Direct Unattended Production Deployer",
+      "category": "cloud-devops",
+      "dependencies": [
+        "cloud-devops"
+      ],
+      "conflicts": [
+        "safe-production-mode"
+      ]
+    },
+    "design.branding": {
+      "id": "design.branding",
+      "name": "branding",
+      "category": "design",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "design.frontend-design": {
+      "id": "design.frontend-design",
+      "name": "frontend-design",
+      "category": "design",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "design.presentations": {
+      "id": "design.presentations",
+      "name": "presentations",
+      "category": "design",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "design.ui-ux": {
+      "id": "design.ui-ux",
+      "name": "ui-ux",
+      "category": "design",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "development.architecture": {
+      "id": "development.architecture",
+      "name": "architecture",
+      "category": "development",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "development.backend": {
+      "id": "development.backend",
+      "name": "backend",
+      "category": "development",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "development.code-review": {
+      "id": "development.code-review",
+      "name": "code-review",
+      "category": "development",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "development.coding": {
+      "id": "development.coding",
+      "name": "coding",
+      "category": "development",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "development.databases": {
+      "id": "development.databases",
+      "name": "databases",
+      "category": "development",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "development.debugging": {
+      "id": "development.debugging",
+      "name": "debugging",
+      "category": "development",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "development.devops": {
+      "id": "development.devops",
+      "name": "devops",
+      "category": "development",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "development.frontend": {
+      "id": "development.frontend",
+      "name": "frontend",
+      "category": "development",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "development.git": {
+      "id": "development.git",
+      "name": "git",
+      "category": "development",
+      "dependencies": [
+        "git"
+      ],
+      "conflicts": []
+    },
+    "development.github": {
+      "id": "development.github",
+      "name": "github",
+      "category": "development",
+      "dependencies": [
+        "git",
+        "gh-cli-optional"
+      ],
+      "conflicts": []
+    },
+    "development.performance-optimization": {
+      "id": "development.performance-optimization",
+      "name": "performance-optimization",
+      "category": "development",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "development.refactoring": {
+      "id": "development.refactoring",
+      "name": "refactoring",
+      "category": "development",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "development.tdd": {
+      "id": "development.tdd",
+      "name": "tdd",
+      "category": "development",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "development.testing": {
+      "id": "development.testing",
+      "name": "testing",
+      "category": "development",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "documents.csv": {
+      "id": "documents.csv",
+      "name": "csv",
+      "category": "documents",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "documents.docx": {
+      "id": "documents.docx",
+      "name": "docx",
+      "category": "documents",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "documents.markdown": {
+      "id": "documents.markdown",
+      "name": "markdown",
+      "category": "documents",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "documents.pdf": {
+      "id": "documents.pdf",
+      "name": "pdf",
+      "category": "documents",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "documents.pptx": {
+      "id": "documents.pptx",
+      "name": "pptx",
+      "category": "documents",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "documents.xlsx": {
+      "id": "documents.xlsx",
+      "name": "xlsx",
+      "category": "documents",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "productivity.adhd": {
+      "id": "productivity.adhd",
+      "name": "adhd",
+      "category": "productivity",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "productivity.planning": {
+      "id": "productivity.planning",
+      "name": "planning",
+      "category": "productivity",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "productivity.prioritization": {
+      "id": "productivity.prioritization",
+      "name": "prioritization",
+      "category": "productivity",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "productivity.task-decomposition": {
+      "id": "productivity.task-decomposition",
+      "name": "task-decomposition",
+      "category": "productivity",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "productivity.time-management": {
+      "id": "productivity.time-management",
+      "name": "time-management",
+      "category": "productivity",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "research.academic-research": {
+      "id": "research.academic-research",
+      "name": "academic-research",
+      "category": "research",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "research.competitive-analysis": {
+      "id": "research.competitive-analysis",
+      "name": "competitive-analysis",
+      "category": "research",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "research.data-analysis": {
+      "id": "research.data-analysis",
+      "name": "data-analysis",
+      "category": "research",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "research.deep-research": {
+      "id": "research.deep-research",
+      "name": "deep-research",
+      "category": "research",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "research.fact-checking": {
+      "id": "research.fact-checking",
+      "name": "fact-checking",
+      "category": "research",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "research.source-verification": {
+      "id": "research.source-verification",
+      "name": "source-verification",
+      "category": "research",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "research.web-research": {
+      "id": "research.web-research",
+      "name": "web-research",
+      "category": "research",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "security.dependency-audit": {
+      "id": "security.dependency-audit",
+      "name": "dependency-audit",
+      "category": "security",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "security.prompt-injection-defense": {
+      "id": "security.prompt-injection-defense",
+      "name": "prompt-injection-defense",
+      "category": "security",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "security.secret-detection": {
+      "id": "security.secret-detection",
+      "name": "secret-detection",
+      "category": "security",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "security.secure-coding": {
+      "id": "security.secure-coding",
+      "name": "secure-coding",
+      "category": "security",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "utilities.automation": {
+      "id": "utilities.automation",
+      "name": "automation",
+      "category": "utilities",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "utilities.documentation": {
+      "id": "utilities.documentation",
+      "name": "documentation",
+      "category": "utilities",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "utilities.file-management": {
+      "id": "utilities.file-management",
+      "name": "file-management",
+      "category": "utilities",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "utilities.image": {
+      "id": "utilities.image",
+      "name": "image",
+      "category": "utilities",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "utilities.summarization": {
+      "id": "utilities.summarization",
+      "name": "summarization",
+      "category": "utilities",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "utilities.text-processing": {
+      "id": "utilities.text-processing",
+      "name": "text-processing",
+      "category": "utilities",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "utilities.writing": {
+      "id": "utilities.writing",
+      "name": "writing",
+      "category": "utilities",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "web.accessibility": {
+      "id": "web.accessibility",
+      "name": "accessibility",
+      "category": "web",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "web.browser-automation": {
+      "id": "web.browser-automation",
+      "name": "browser-automation",
+      "category": "web",
+      "dependencies": [
+        "optional:playwright-or-similar"
+      ],
+      "conflicts": []
+    },
+    "web.seo": {
+      "id": "web.seo",
+      "name": "seo",
+      "category": "web",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "web.web-extraction": {
+      "id": "web.web-extraction",
+      "name": "web-extraction",
+      "category": "web",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "web.web-scraping": {
+      "id": "web.web-scraping",
+      "name": "web-scraping",
+      "category": "web",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "web.website-testing": {
+      "id": "web.website-testing",
+      "name": "website-testing",
+      "category": "web",
+      "dependencies": [
+        "optional:playwright-or-cypress"
+      ],
+      "conflicts": []
+    },
+    "development.brainstorming": {
+      "id": "development.brainstorming",
+      "name": "brainstorming",
+      "category": "development",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "development.git-worktrees": {
+      "id": "development.git-worktrees",
+      "name": "git-worktrees",
+      "category": "development",
+      "dependencies": [
+        "git"
+      ],
+      "conflicts": []
+    },
+    "development.mcp-server-development": {
+      "id": "development.mcp-server-development",
+      "name": "mcp-server-development",
+      "category": "development",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "development.receiving-code-review": {
+      "id": "development.receiving-code-review",
+      "name": "receiving-code-review",
+      "category": "development",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "development.requesting-code-review": {
+      "id": "development.requesting-code-review",
+      "name": "requesting-code-review",
+      "category": "development",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "development.verification-before-completion": {
+      "id": "development.verification-before-completion",
+      "name": "verification-before-completion",
+      "category": "development",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "utilities.parallel-agents": {
+      "id": "utilities.parallel-agents",
+      "name": "parallel-agents",
+      "category": "utilities",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "development.mcp-builder": {
+      "id": "development.mcp-builder",
+      "name": "mcp-builder",
+      "category": "development",
+      "dependencies": [
+        "python-or-node"
+      ],
+      "conflicts": []
+    },
+    "design.avatar-creator": {
+      "id": "design.avatar-creator",
+      "name": "avatar-creator",
+      "category": "design",
+      "dependencies": [
+        "optional:image-generator"
+      ],
+      "conflicts": []
+    },
+    "design.image-gen": {
+      "id": "design.image-gen",
+      "name": "image-gen",
+      "category": "design",
+      "dependencies": [
+        "optional:image-generator"
+      ],
+      "conflicts": []
+    },
+    "design.remotion-best-practices": {
+      "id": "design.remotion-best-practices",
+      "name": "remotion-best-practices",
+      "category": "design",
+      "dependencies": [
+        "optional:node",
+        "optional:remotion"
+      ],
+      "conflicts": []
+    },
+    "design.veo-video-generator": {
+      "id": "design.veo-video-generator",
+      "name": "veo-video-generator",
+      "category": "design",
+      "dependencies": [
+        "optional:GOOGLE_API_KEY"
+      ],
+      "conflicts": []
+    },
+    "development.api-mock-generator": {
+      "id": "development.api-mock-generator",
+      "name": "api-mock-generator",
+      "category": "development",
+      "dependencies": [
+        "optional:test-framework"
+      ],
+      "conflicts": []
+    },
+    "development.autoreview": {
+      "id": "development.autoreview",
+      "name": "autoreview",
+      "category": "development",
+      "dependencies": [
+        "optional:codex-or-claude-cli"
+      ],
+      "conflicts": []
+    },
+    "development.behavior-validator": {
+      "id": "development.behavior-validator",
+      "name": "behavior-validator",
+      "category": "development",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "development.cf-worker-deploy": {
+      "id": "development.cf-worker-deploy",
+      "name": "cf-worker-deploy",
+      "category": "development",
+      "dependencies": [
+        "optional:wrangler"
+      ],
+      "conflicts": []
+    },
+    "development.coding-agent": {
+      "id": "development.coding-agent",
+      "name": "coding-agent",
+      "category": "development",
+      "dependencies": [
+        "optional:codex-or-claude-cli"
+      ],
+      "conflicts": []
+    },
+    "development.crabbox": {
+      "id": "development.crabbox",
+      "name": "crabbox",
+      "category": "development",
+      "dependencies": [
+        "optional:crabbox"
+      ],
+      "conflicts": []
+    },
+    "development.cursor-agent": {
+      "id": "development.cursor-agent",
+      "name": "cursor-agent",
+      "category": "development",
+      "dependencies": [
+        "optional:cursor-agent"
+      ],
+      "conflicts": []
+    },
+    "development.db-inspector": {
+      "id": "development.db-inspector",
+      "name": "db-inspector",
+      "category": "development",
+      "dependencies": [
+        "optional:database-client"
+      ],
+      "conflicts": []
+    },
+    "development.docker-manager": {
+      "id": "development.docker-manager",
+      "name": "docker-manager",
+      "category": "development",
+      "dependencies": [
+        "optional:docker"
+      ],
+      "conflicts": []
+    },
+    "development.dokploy": {
+      "id": "development.dokploy",
+      "name": "dokploy",
+      "category": "development",
+      "dependencies": [
+        "optional:DOKPLOY_API_KEY"
+      ],
+      "conflicts": []
+    },
+    "development.git-workflow": {
+      "id": "development.git-workflow",
+      "name": "git-workflow",
+      "category": "development",
+      "dependencies": [
+        "git"
+      ],
+      "conflicts": []
+    },
+    "development.github-cli": {
+      "id": "development.github-cli",
+      "name": "github-cli",
+      "category": "development",
+      "dependencies": [
+        "optional:gh"
+      ],
+      "conflicts": []
+    },
+    "development.summarize-repo": {
+      "id": "development.summarize-repo",
+      "name": "summarize-repo",
+      "category": "development",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "documents.expense-parser": {
+      "id": "documents.expense-parser",
+      "name": "expense-parser",
+      "category": "documents",
+      "dependencies": [
+        "optional:ocr"
+      ],
+      "conflicts": []
+    },
+    "productivity.adhd-task-breakdown": {
+      "id": "productivity.adhd-task-breakdown",
+      "name": "adhd-task-breakdown",
+      "category": "productivity",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "productivity.calendar-assistant": {
+      "id": "productivity.calendar-assistant",
+      "name": "calendar-assistant",
+      "category": "productivity",
+      "dependencies": [
+        "optional:calendar-access"
+      ],
+      "conflicts": []
+    },
+    "productivity.context-summarize": {
+      "id": "productivity.context-summarize",
+      "name": "context-summarize",
+      "category": "productivity",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "productivity.daily-journal": {
+      "id": "productivity.daily-journal",
+      "name": "daily-journal",
+      "category": "productivity",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "productivity.email-inbox-zero": {
+      "id": "productivity.email-inbox-zero",
+      "name": "email-inbox-zero",
+      "category": "productivity",
+      "dependencies": [
+        "optional:email-access"
+      ],
+      "conflicts": []
+    },
+    "productivity.focus-guard": {
+      "id": "productivity.focus-guard",
+      "name": "focus-guard",
+      "category": "productivity",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "productivity.meeting-action-extractor": {
+      "id": "productivity.meeting-action-extractor",
+      "name": "meeting-action-extractor",
+      "category": "productivity",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "productivity.obsidian-sync": {
+      "id": "productivity.obsidian-sync",
+      "name": "obsidian-sync",
+      "category": "productivity",
+      "dependencies": [
+        "optional:obsidian"
+      ],
+      "conflicts": []
+    },
+    "productivity.time-blocking": {
+      "id": "productivity.time-blocking",
+      "name": "time-blocking",
+      "category": "productivity",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "productivity.voice-to-action": {
+      "id": "productivity.voice-to-action",
+      "name": "voice-to-action",
+      "category": "productivity",
+      "dependencies": [
+        "optional:transcript"
+      ],
+      "conflicts": []
+    },
+    "research.search-synthesizer": {
+      "id": "research.search-synthesizer",
+      "name": "search-synthesizer",
+      "category": "research",
+      "dependencies": [
+        "optional:web-search"
+      ],
+      "conflicts": []
+    },
+    "security.cmd-safety-check": {
+      "id": "security.cmd-safety-check",
+      "name": "cmd-safety-check",
+      "category": "security",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "security.npm-auditor": {
+      "id": "security.npm-auditor",
+      "name": "npm-auditor",
+      "category": "security",
+      "dependencies": [
+        "optional:npm"
+      ],
+      "conflicts": []
+    },
+    "security.security-scanner": {
+      "id": "security.security-scanner",
+      "name": "security-scanner",
+      "category": "security",
+      "dependencies": [
+        "optional:security-scanners"
+      ],
+      "conflicts": []
+    },
+    "utilities.agent-transcript": {
+      "id": "utilities.agent-transcript",
+      "name": "agent-transcript",
+      "category": "utilities",
+      "dependencies": [
+        "optional:node",
+        "optional:gh"
+      ],
+      "conflicts": []
+    },
+    "utilities.audio-transcribe": {
+      "id": "utilities.audio-transcribe",
+      "name": "audio-transcribe",
+      "category": "utilities",
+      "dependencies": [
+        "optional:transcription-engine"
+      ],
+      "conflicts": []
+    },
+    "utilities.beam": {
+      "id": "utilities.beam",
+      "name": "beam",
+      "category": "utilities",
+      "dependencies": [
+        "optional:node",
+        "optional:BEAM_ACCESS_TOKEN"
+      ],
+      "conflicts": []
+    },
+    "utilities.handoff": {
+      "id": "utilities.handoff",
+      "name": "handoff",
+      "category": "utilities",
+      "dependencies": [
+        "optional:clipboard-tool"
+      ],
+      "conflicts": []
+    },
+    "utilities.readme-standard": {
+      "id": "utilities.readme-standard",
+      "name": "readme-standard",
+      "category": "utilities",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "utilities.slack-synthesizer": {
+      "id": "utilities.slack-synthesizer",
+      "name": "slack-synthesizer",
+      "category": "utilities",
+      "dependencies": [
+        "optional:slack-access"
+      ],
+      "conflicts": []
+    },
+    "utilities.sonos-cli": {
+      "id": "utilities.sonos-cli",
+      "name": "sonos-cli",
+      "category": "utilities",
+      "dependencies": [
+        "optional:sonos-cli"
+      ],
+      "conflicts": []
+    },
+    "utilities.system-monitor": {
+      "id": "utilities.system-monitor",
+      "name": "system-monitor",
+      "category": "utilities",
+      "dependencies": [
+        "optional:system-tools"
+      ],
+      "conflicts": []
+    },
+    "utilities.telegram-actions": {
+      "id": "utilities.telegram-actions",
+      "name": "telegram-actions",
+      "category": "utilities",
+      "dependencies": [
+        "optional:TELEGRAM_BOT_TOKEN"
+      ],
+      "conflicts": []
+    },
+    "utilities.unit-converter": {
+      "id": "utilities.unit-converter",
+      "name": "unit-converter",
+      "category": "utilities",
+      "dependencies": [
+        "optional:exchange-rate-source"
+      ],
+      "conflicts": []
+    },
+    "utilities.weather-now": {
+      "id": "utilities.weather-now",
+      "name": "weather-now",
+      "category": "utilities",
+      "dependencies": [
+        "optional:weather-api"
+      ],
+      "conflicts": []
+    },
+    "utilities.whatsapp-router": {
+      "id": "utilities.whatsapp-router",
+      "name": "whatsapp-router",
+      "category": "utilities",
+      "dependencies": [
+        "optional:whatsapp-api"
+      ],
+      "conflicts": []
+    },
+    "web.agent-browser": {
+      "id": "web.agent-browser",
+      "name": "agent-browser",
+      "category": "web",
+      "dependencies": [
+        "optional:agent-browser"
+      ],
+      "conflicts": []
+    },
+    "web.form-filler": {
+      "id": "web.form-filler",
+      "name": "form-filler",
+      "category": "web",
+      "dependencies": [
+        "optional:browser-automation"
+      ],
+      "conflicts": []
+    },
+    "web.media-downloader": {
+      "id": "web.media-downloader",
+      "name": "media-downloader",
+      "category": "web",
+      "dependencies": [
+        "optional:media-downloader"
+      ],
+      "conflicts": []
+    },
+    "web.web-scraper": {
+      "id": "web.web-scraper",
+      "name": "web-scraper",
+      "category": "web",
+      "dependencies": [
+        "optional:http-client"
+      ],
+      "conflicts": []
+    },
+    "productivity.adhd-divergent-brainstorm": {
+      "id": "productivity.adhd-divergent-brainstorm",
+      "name": "adhd-divergent-brainstorm",
+      "category": "productivity",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "productivity.adhd-output-style": {
+      "id": "productivity.adhd-output-style",
+      "name": "adhd-output-style",
+      "category": "productivity",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "productivity.executive-summary": {
+      "id": "productivity.executive-summary",
+      "name": "executive-summary",
+      "category": "productivity",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "productivity.first-principles-reasoning": {
+      "id": "productivity.first-principles-reasoning",
+      "name": "first-principles-reasoning",
+      "category": "productivity",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "development.ci-cd-pipeline": {
+      "id": "development.ci-cd-pipeline",
+      "name": "ci-cd-pipeline",
+      "category": "development",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "development.issue-triage": {
+      "id": "development.issue-triage",
+      "name": "issue-triage",
+      "category": "development",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "development.pr-splitter": {
+      "id": "development.pr-splitter",
+      "name": "pr-splitter",
+      "category": "development",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "development.release-management": {
+      "id": "development.release-management",
+      "name": "release-management",
+      "category": "development",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "productivity.kaizen-continuous-improvement": {
+      "id": "productivity.kaizen-continuous-improvement",
+      "name": "kaizen-continuous-improvement",
+      "category": "productivity",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "productivity.session-analytics": {
+      "id": "productivity.session-analytics",
+      "name": "session-analytics",
+      "category": "productivity",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.accessibility-compliance-accessibility-audit": {
+      "id": "active.accessibility-compliance-accessibility-audit",
+      "name": "Active.Accessibility Compliance Accessibility Audit",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.agent-evaluation": {
+      "id": "active.agent-evaluation",
+      "name": "Active.Agent Evaluation",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.agent-memory": {
+      "id": "active.agent-memory",
+      "name": "Active.Agent Memory",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.agent-memory-systems": {
+      "id": "active.agent-memory-systems",
+      "name": "Active.Agent Memory Systems",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.agent-tool-builder": {
+      "id": "active.agent-tool-builder",
+      "name": "Active.Agent Tool Builder",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.ai-engineer": {
+      "id": "active.ai-engineer",
+      "name": "Active.Ai Engineer",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.ai-engineering-toolkit": {
+      "id": "active.ai-engineering-toolkit",
+      "name": "Active.Ai Engineering Toolkit",
+      "category": "data-ai",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.analytics-product": {
+      "id": "active.analytics-product",
+      "name": "Active.Analytics Product",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.angular-state-management": {
+      "id": "active.angular-state-management",
+      "name": "Active.Angular State Management",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.api-and-interface-design": {
+      "id": "active.api-and-interface-design",
+      "name": "Active.Api And Interface Design",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.api-designer": {
+      "id": "active.api-designer",
+      "name": "Active.Api Designer",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.api-documentation": {
+      "id": "active.api-documentation",
+      "name": "Active.Api Documentation",
+      "category": "granular-workflow-bundle",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.ast-code-transformation": {
+      "id": "active.ast-code-transformation",
+      "name": "Active.Ast Code Transformation",
+      "category": "development",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.aws-serverless": {
+      "id": "active.aws-serverless",
+      "name": "Active.Aws Serverless",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.brainstorming": {
+      "id": "active.brainstorming",
+      "name": "Active.Brainstorming",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.browser-act": {
+      "id": "active.browser-act",
+      "name": "Active.Browser Act",
+      "category": "browser-automation",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.browser-automation": {
+      "id": "active.browser-automation",
+      "name": "Active.Browser Automation",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.changelog-automation": {
+      "id": "active.changelog-automation",
+      "name": "Active.Changelog Automation",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.ci-cd-and-automation": {
+      "id": "active.ci-cd-and-automation",
+      "name": "Active.Ci Cd And Automation",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.cloud-devops": {
+      "id": "active.cloud-devops",
+      "name": "Active.Cloud Devops",
+      "category": "workflow-bundle",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.code-review-excellence": {
+      "id": "active.code-review-excellence",
+      "name": "Active.Code Review Excellence",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.code-reviewer": {
+      "id": "active.code-reviewer",
+      "name": "Active.Code Reviewer",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.code-showcase-systematic-debugging": {
+      "id": "active.code-showcase-systematic-debugging",
+      "name": "Active.Code Showcase Systematic Debugging",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.concise-planning": {
+      "id": "active.concise-planning",
+      "name": "Active.Concise Planning",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.context-budget-and-pruning": {
+      "id": "active.context-budget-and-pruning",
+      "name": "Active.Context Budget And Pruning",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.context-window-management": {
+      "id": "active.context-window-management",
+      "name": "Active.Context Window Management",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.copywriting": {
+      "id": "active.copywriting",
+      "name": "Active.Copywriting",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.database-design": {
+      "id": "active.database-design",
+      "name": "Active.Database Design",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.database-migration": {
+      "id": "active.database-migration",
+      "name": "Active.Database Migration",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.design-system": {
+      "id": "active.design-system",
+      "name": "Active.Design System",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.dispatching-parallel-agents": {
+      "id": "active.dispatching-parallel-agents",
+      "name": "Active.Dispatching Parallel Agents",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.drizzle-orm-expert": {
+      "id": "active.drizzle-orm-expert",
+      "name": "Active.Drizzle Orm Expert",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.email-sequence": {
+      "id": "active.email-sequence",
+      "name": "Active.Email Sequence",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.executing-plans": {
+      "id": "active.executing-plans",
+      "name": "Active.Executing Plans",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.kubernetes-architect": {
+      "id": "active.kubernetes-architect",
+      "name": "Active.Kubernetes Architect",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.kubernetes-deployment": {
+      "id": "active.kubernetes-deployment",
+      "name": "Active.Kubernetes Deployment",
+      "category": "granular-workflow-bundle",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.llm-prompt-optimizer": {
+      "id": "active.llm-prompt-optimizer",
+      "name": "Active.Llm Prompt Optimizer",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.marketplace-rbac-audit": {
+      "id": "active.marketplace-rbac-audit",
+      "name": "Active.Marketplace Rbac Audit",
+      "category": "security",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.mcp-builder": {
+      "id": "active.mcp-builder",
+      "name": "Active.Mcp Builder",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.mcp-tool-developer": {
+      "id": "active.mcp-tool-developer",
+      "name": "Active.Mcp Tool Developer",
+      "category": "developer-tools",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.micro-saas-launcher": {
+      "id": "active.micro-saas-launcher",
+      "name": "Active.Micro Saas Launcher",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.multi-agent-architect": {
+      "id": "active.multi-agent-architect",
+      "name": "Active.Multi Agent Architect",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.multi-agent-brainstorming": {
+      "id": "active.multi-agent-brainstorming",
+      "name": "Active.Multi Agent Brainstorming",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.multi-agent-patterns": {
+      "id": "active.multi-agent-patterns",
+      "name": "Active.Multi Agent Patterns",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.pdf-official": {
+      "id": "active.pdf-official",
+      "name": "Active.Pdf Official",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.performance-profiling": {
+      "id": "active.performance-profiling",
+      "name": "Active.Performance Profiling",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.playwright-skill": {
+      "id": "active.playwright-skill",
+      "name": "Active.Playwright Skill",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.prisma-expert": {
+      "id": "active.prisma-expert",
+      "name": "Active.Prisma Expert",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.react-state-management": {
+      "id": "active.react-state-management",
+      "name": "Active.React State Management",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.receiving-code-review": {
+      "id": "active.receiving-code-review",
+      "name": "Active.Receiving Code Review",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.red-team-tactics": {
+      "id": "active.red-team-tactics",
+      "name": "Active.Red Team Tactics",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.redis-cli": {
+      "id": "active.redis-cli",
+      "name": "Active.Redis Cli",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.requesting-code-review": {
+      "id": "active.requesting-code-review",
+      "name": "Active.Requesting Code Review",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.review-and-simplify-changes": {
+      "id": "active.review-and-simplify-changes",
+      "name": "Active.Review And Simplify Changes",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.saas-mvp-launcher": {
+      "id": "active.saas-mvp-launcher",
+      "name": "Active.Saas Mvp Launcher",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.sast-configuration": {
+      "id": "active.sast-configuration",
+      "name": "Active.Sast Configuration",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.secrets-management": {
+      "id": "active.secrets-management",
+      "name": "Active.Secrets Management",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.security-sandboxing-guardrails": {
+      "id": "active.security-sandboxing-guardrails",
+      "name": "Active.Security Sandboxing Guardrails",
+      "category": "security",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.security-scanning-security-sast": {
+      "id": "active.security-scanning-security-sast",
+      "name": "Active.Security Scanning Security Sast",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.seo-geo": {
+      "id": "active.seo-geo",
+      "name": "Active.Seo Geo",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.subagent-driven-development": {
+      "id": "active.subagent-driven-development",
+      "name": "Active.Subagent Driven Development",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.tailwind-design-system": {
+      "id": "active.tailwind-design-system",
+      "name": "Active.Tailwind Design System",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.tdd": {
+      "id": "active.tdd",
+      "name": "Active.Tdd",
+      "category": "development",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.terraform-infrastructure": {
+      "id": "active.terraform-infrastructure",
+      "name": "Active.Terraform Infrastructure",
+      "category": "granular-workflow-bundle",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.top-web-vulnerabilities": {
+      "id": "active.top-web-vulnerabilities",
+      "name": "Active.Top Web Vulnerabilities",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.using-git-worktrees": {
+      "id": "active.using-git-worktrees",
+      "name": "Active.Using Git Worktrees",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.verification-before-completion": {
+      "id": "active.verification-before-completion",
+      "name": "Active.Verification Before Completion",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.vulnerability-scanner": {
+      "id": "active.vulnerability-scanner",
+      "name": "Active.Vulnerability Scanner",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.wcag-audit-patterns": {
+      "id": "active.wcag-audit-patterns",
+      "name": "Active.Wcag Audit Patterns",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    },
+    "active.which-skill": {
+      "id": "active.which-skill",
+      "name": "Active.Which Skill",
+      "category": "workflow",
+      "dependencies": [],
+      "conflicts": []
+    }
+  },
+  "edges": [
+    {
+      "source": "nextjs",
+      "target": "react",
+      "type": "requires"
+    },
+    {
+      "source": "nextjs",
+      "target": "development.typescript",
+      "type": "requires"
+    },
+    {
+      "source": "nextjs",
+      "target": "seo-geo",
+      "type": "requires"
+    },
+    {
+      "source": "nextjs",
+      "target": "marketplace-rbac-audit",
+      "type": "requires"
+    },
+    {
+      "source": "nextjs",
+      "target": "database-design",
+      "type": "requires"
+    },
+    {
+      "source": "nextjs",
+      "target": "cloud-devops",
+      "type": "requires"
+    },
+    {
+      "source": "react",
+      "target": "development.typescript",
+      "type": "requires"
+    },
+    {
+      "source": "react",
+      "target": "wcag-audit-patterns",
+      "type": "requires"
+    },
+    {
+      "source": "react",
+      "target": "tdd",
+      "type": "requires"
+    },
+    {
+      "source": "react",
+      "target": "react-state-management",
+      "type": "requires"
+    },
+    {
+      "source": "react",
+      "target": "performance-profiling",
+      "type": "requires"
+    },
+    {
+      "source": "react-state-management",
+      "target": "react",
+      "type": "requires"
+    },
+    {
+      "source": "react-state-management",
+      "target": "development.typescript",
+      "type": "requires"
+    },
+    {
+      "source": "angular-state-management",
+      "target": "development.typescript",
+      "type": "requires"
+    },
+    {
+      "source": "saas-mvp-launcher",
+      "target": "api-designer",
+      "type": "requires"
+    },
+    {
+      "source": "saas-mvp-launcher",
+      "target": "database-design",
+      "type": "requires"
+    },
+    {
+      "source": "saas-mvp-launcher",
+      "target": "react-state-management",
+      "type": "requires"
+    },
+    {
+      "source": "saas-mvp-launcher",
+      "target": "wcag-audit-patterns",
+      "type": "requires"
+    },
+    {
+      "source": "saas-mvp-launcher",
+      "target": "secrets-management",
+      "type": "requires"
+    },
+    {
+      "source": "saas-mvp-launcher",
+      "target": "ci-cd-and-automation",
+      "type": "requires"
+    },
+    {
+      "source": "ai-engineer",
+      "target": "ai-engineering-toolkit",
+      "type": "requires"
+    },
+    {
+      "source": "ai-engineer",
+      "target": "agent-memory",
+      "type": "requires"
+    },
+    {
+      "source": "ai-engineer",
+      "target": "multi-agent-patterns",
+      "type": "requires"
+    },
+    {
+      "source": "ai-engineer",
+      "target": "agent-evaluation",
+      "type": "requires"
+    },
+    {
+      "source": "multi-agent-architect",
+      "target": "multi-agent-patterns",
+      "type": "requires"
+    },
+    {
+      "source": "multi-agent-architect",
+      "target": "dispatching-parallel-agents",
+      "type": "requires"
+    },
+    {
+      "source": "multi-agent-architect",
+      "target": "agent-memory-systems",
+      "type": "requires"
+    },
+    {
+      "source": "multi-agent-architect",
+      "target": "verification-before-completion",
+      "type": "requires"
+    },
+    {
+      "source": "database-design",
+      "target": "database-migration",
+      "type": "requires"
+    },
+    {
+      "source": "database-design",
+      "target": "performance-profiling",
+      "type": "requires"
+    },
+    {
+      "source": "prisma-expert",
+      "target": "database-design",
+      "type": "requires"
+    },
+    {
+      "source": "prisma-expert",
+      "target": "database-migration",
+      "type": "requires"
+    },
+    {
+      "source": "prisma-expert",
+      "target": "development.typescript",
+      "type": "requires"
+    },
+    {
+      "source": "drizzle-orm-expert",
+      "target": "database-design",
+      "type": "requires"
+    },
+    {
+      "source": "drizzle-orm-expert",
+      "target": "database-migration",
+      "type": "requires"
+    },
+    {
+      "source": "drizzle-orm-expert",
+      "target": "development.typescript",
+      "type": "requires"
+    },
+    {
+      "source": "kubernetes-architect",
+      "target": "kubernetes-deployment",
+      "type": "requires"
+    },
+    {
+      "source": "kubernetes-architect",
+      "target": "terraform-infrastructure",
+      "type": "requires"
+    },
+    {
+      "source": "kubernetes-architect",
+      "target": "cloud-devops",
+      "type": "requires"
+    },
+    {
+      "source": "kubernetes-architect",
+      "target": "secrets-management",
+      "type": "requires"
+    },
+    {
+      "source": "code-reviewer",
+      "target": "ast-code-transformation",
+      "type": "requires"
+    },
+    {
+      "source": "code-reviewer",
+      "target": "security-scanning-security-sast",
+      "type": "requires"
+    },
+    {
+      "source": "code-reviewer",
+      "target": "top-web-vulnerabilities",
+      "type": "requires"
+    },
+    {
+      "source": "wcag-audit-patterns",
+      "target": "accessibility-compliance-accessibility-audit",
+      "type": "requires"
+    },
+    {
+      "source": "wcag-audit-patterns",
+      "target": "playwright-skill",
+      "type": "requires"
+    },
+    {
+      "source": "productivity.focus",
+      "target": "productivity.unlazy",
+      "type": "requires"
+    },
+    {
+      "source": "safe-production-mode",
+      "target": "security-sandboxing-guardrails",
+      "type": "requires"
+    },
+    {
+      "source": "direct-production-deployment",
+      "target": "cloud-devops",
+      "type": "requires"
+    },
+    {
+      "source": "development.git",
+      "target": "git",
+      "type": "requires"
+    },
+    {
+      "source": "development.github",
+      "target": "git",
+      "type": "requires"
+    },
+    {
+      "source": "development.github",
+      "target": "gh-cli-optional",
+      "type": "requires"
+    },
+    {
+      "source": "web.browser-automation",
+      "target": "optional:playwright-or-similar",
+      "type": "requires"
+    },
+    {
+      "source": "web.website-testing",
+      "target": "optional:playwright-or-cypress",
+      "type": "requires"
+    },
+    {
+      "source": "development.git-worktrees",
+      "target": "git",
+      "type": "requires"
+    },
+    {
+      "source": "development.mcp-builder",
+      "target": "python-or-node",
+      "type": "requires"
+    },
+    {
+      "source": "design.avatar-creator",
+      "target": "optional:image-generator",
+      "type": "requires"
+    },
+    {
+      "source": "design.image-gen",
+      "target": "optional:image-generator",
+      "type": "requires"
+    },
+    {
+      "source": "design.remotion-best-practices",
+      "target": "optional:node",
+      "type": "requires"
+    },
+    {
+      "source": "design.remotion-best-practices",
+      "target": "optional:remotion",
+      "type": "requires"
+    },
+    {
+      "source": "design.veo-video-generator",
+      "target": "optional:google_api_key",
+      "type": "requires"
+    },
+    {
+      "source": "development.api-mock-generator",
+      "target": "optional:test-framework",
+      "type": "requires"
+    },
+    {
+      "source": "development.autoreview",
+      "target": "optional:codex-or-claude-cli",
+      "type": "requires"
+    },
+    {
+      "source": "development.cf-worker-deploy",
+      "target": "optional:wrangler",
+      "type": "requires"
+    },
+    {
+      "source": "development.coding-agent",
+      "target": "optional:codex-or-claude-cli",
+      "type": "requires"
+    },
+    {
+      "source": "development.crabbox",
+      "target": "optional:crabbox",
+      "type": "requires"
+    },
+    {
+      "source": "development.cursor-agent",
+      "target": "optional:cursor-agent",
+      "type": "requires"
+    },
+    {
+      "source": "development.db-inspector",
+      "target": "optional:database-client",
+      "type": "requires"
+    },
+    {
+      "source": "development.docker-manager",
+      "target": "optional:docker",
+      "type": "requires"
+    },
+    {
+      "source": "development.dokploy",
+      "target": "optional:dokploy_api_key",
+      "type": "requires"
+    },
+    {
+      "source": "development.git-workflow",
+      "target": "git",
+      "type": "requires"
+    },
+    {
+      "source": "development.github-cli",
+      "target": "optional:gh",
+      "type": "requires"
+    },
+    {
+      "source": "documents.expense-parser",
+      "target": "optional:ocr",
+      "type": "requires"
+    },
+    {
+      "source": "productivity.calendar-assistant",
+      "target": "optional:calendar-access",
+      "type": "requires"
+    },
+    {
+      "source": "productivity.email-inbox-zero",
+      "target": "optional:email-access",
+      "type": "requires"
+    },
+    {
+      "source": "productivity.obsidian-sync",
+      "target": "optional:obsidian",
+      "type": "requires"
+    },
+    {
+      "source": "productivity.voice-to-action",
+      "target": "optional:transcript",
+      "type": "requires"
+    },
+    {
+      "source": "research.search-synthesizer",
+      "target": "optional:web-search",
+      "type": "requires"
+    },
+    {
+      "source": "security.npm-auditor",
+      "target": "optional:npm",
+      "type": "requires"
+    },
+    {
+      "source": "security.security-scanner",
+      "target": "optional:security-scanners",
+      "type": "requires"
+    },
+    {
+      "source": "utilities.agent-transcript",
+      "target": "optional:node",
+      "type": "requires"
+    },
+    {
+      "source": "utilities.agent-transcript",
+      "target": "optional:gh",
+      "type": "requires"
+    },
+    {
+      "source": "utilities.audio-transcribe",
+      "target": "optional:transcription-engine",
+      "type": "requires"
+    },
+    {
+      "source": "utilities.beam",
+      "target": "optional:node",
+      "type": "requires"
+    },
+    {
+      "source": "utilities.beam",
+      "target": "optional:beam_access_token",
+      "type": "requires"
+    },
+    {
+      "source": "utilities.handoff",
+      "target": "optional:clipboard-tool",
+      "type": "requires"
+    },
+    {
+      "source": "utilities.slack-synthesizer",
+      "target": "optional:slack-access",
+      "type": "requires"
+    },
+    {
+      "source": "utilities.sonos-cli",
+      "target": "optional:sonos-cli",
+      "type": "requires"
+    },
+    {
+      "source": "utilities.system-monitor",
+      "target": "optional:system-tools",
+      "type": "requires"
+    },
+    {
+      "source": "utilities.telegram-actions",
+      "target": "optional:telegram_bot_token",
+      "type": "requires"
+    },
+    {
+      "source": "utilities.unit-converter",
+      "target": "optional:exchange-rate-source",
+      "type": "requires"
+    },
+    {
+      "source": "utilities.weather-now",
+      "target": "optional:weather-api",
+      "type": "requires"
+    },
+    {
+      "source": "utilities.whatsapp-router",
+      "target": "optional:whatsapp-api",
+      "type": "requires"
+    },
+    {
+      "source": "web.agent-browser",
+      "target": "optional:agent-browser",
+      "type": "requires"
+    },
+    {
+      "source": "web.form-filler",
+      "target": "optional:browser-automation",
+      "type": "requires"
+    },
+    {
+      "source": "web.media-downloader",
+      "target": "optional:media-downloader",
+      "type": "requires"
+    },
+    {
+      "source": "web.web-scraper",
+      "target": "optional:http-client",
+      "type": "requires"
+    }
+  ],
+  "conflicts": [
+    {
+      "skill_a": "productivity.focus",
+      "skill_b": "productivity.brainstorming",
+      "reason": "focus guards a single deep-work session while brainstorming deliberately opens divergent exploration; running both simultaneously dilutes both outcomes. Chaining (brainstorm first, then focus) is allowed.",
+      "severity": "warn"
+    },
+    {
+      "skill_a": "productivity.unlazy",
+      "skill_b": "productivity.brainstorming",
+      "reason": "unlazy forces a single smallest next action whereas brainstorming expands into many ideas; simultaneity conflicts, chaining does not.",
+      "severity": "info"
+    },
+    {
+      "skill_a": "nextjs",
+      "skill_b": "vue",
+      "reason": "Semantic architectural conflict between nextjs and vue.",
+      "severity": "warn"
+    },
+    {
+      "skill_a": "nextjs",
+      "skill_b": "angular",
+      "reason": "Semantic architectural conflict between nextjs and angular.",
+      "severity": "warn"
+    },
+    {
+      "skill_a": "react",
+      "skill_b": "angular-state-management",
+      "reason": "Semantic architectural conflict between react and angular-state-management.",
+      "severity": "warn"
+    },
+    {
+      "skill_a": "react-state-management",
+      "skill_b": "angular-state-management",
+      "reason": "Semantic architectural conflict between react-state-management and angular-state-management.",
+      "severity": "warn"
+    },
+    {
+      "skill_a": "angular-state-management",
+      "skill_b": "react-state-management",
+      "reason": "Semantic architectural conflict between angular-state-management and react-state-management.",
+      "severity": "warn"
+    },
+    {
+      "skill_a": "angular-state-management",
+      "skill_b": "react",
+      "reason": "Semantic architectural conflict between angular-state-management and react.",
+      "severity": "warn"
+    },
+    {
+      "skill_a": "prisma-expert",
+      "skill_b": "drizzle-orm-expert",
+      "reason": "Semantic architectural conflict between prisma-expert and drizzle-orm-expert.",
+      "severity": "warn"
+    },
+    {
+      "skill_a": "drizzle-orm-expert",
+      "skill_b": "prisma-expert",
+      "reason": "Semantic architectural conflict between drizzle-orm-expert and prisma-expert.",
+      "severity": "warn"
+    },
+    {
+      "skill_a": "productivity.focus",
+      "skill_b": "productivity.brainstorming",
+      "reason": "Semantic architectural conflict between productivity.focus and productivity.brainstorming.",
+      "severity": "warn"
+    },
+    {
+      "skill_a": "productivity.brainstorming",
+      "skill_b": "productivity.focus",
+      "reason": "Semantic architectural conflict between productivity.brainstorming and productivity.focus.",
+      "severity": "warn"
+    },
+    {
+      "skill_a": "productivity.brainstorming",
+      "skill_b": "productivity.unlazy",
+      "reason": "Semantic architectural conflict between productivity.brainstorming and productivity.unlazy.",
+      "severity": "warn"
+    },
+    {
+      "skill_a": "productivity.unlazy",
+      "skill_b": "productivity.brainstorming",
+      "reason": "Semantic architectural conflict between productivity.unlazy and productivity.brainstorming.",
+      "severity": "warn"
+    },
+    {
+      "skill_a": "safe-production-mode",
+      "skill_b": "direct-production-deployment",
+      "reason": "Semantic architectural conflict between safe-production-mode and direct-production-deployment.",
+      "severity": "warn"
+    },
+    {
+      "skill_a": "direct-production-deployment",
+      "skill_b": "safe-production-mode",
+      "reason": "Semantic architectural conflict between direct-production-deployment and safe-production-mode.",
+      "severity": "warn"
+    }
+  ]
+}

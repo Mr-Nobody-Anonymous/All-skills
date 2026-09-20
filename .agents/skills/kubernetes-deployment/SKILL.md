@@ -4,6 +4,19 @@ description: "Kubernetes deployment workflow for container orchestration, Helm c
 disable-model-invocation: false
 category: granular-workflow-bundle
 risk: safe
+triggers:
+  - "deploy to kubernetes"
+  - "kubernetes helm"
+  - "helm charts"
+  - "deploy containerized services"
+keywords:
+  - "kubernetes"
+  - "k8s"
+  - "helm"
+  - "container"
+  - "cluster"
+  - "deploy"
+  - "orchestration"
 source: personal
 date_added: "2026-02-27"
 ---

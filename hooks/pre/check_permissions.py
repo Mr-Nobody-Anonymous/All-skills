@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Pre-execution hook: check required tool permissions and environment variables."""
+"""Pre-execution hook: check required tool permissions, environment variables, and enforce capability policy."""
 from __future__ import annotations
 
 import argparse
@@ -8,7 +8,21 @@ import os
 import sys
 from pathlib import Path
 
+if hasattr(sys.stdout, "reconfigure"):
+    try:
+        sys.stdout.reconfigure(encoding="utf-8")
+    except Exception:
+        pass
+if hasattr(sys.stderr, "reconfigure"):
+    try:
+        sys.stderr.reconfigure(encoding="utf-8")
+    except Exception:
+        pass
+
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
+sys.path.insert(0, str(REPO_ROOT / "src"))
+
+from skills.policy import PolicyEngine, PolicyVerdict
 
 
 def main() -> int:
@@ -20,30 +34,40 @@ def main() -> int:
         print("[PRE-HOOK:PERMS] OK: No specific skill target provided, generic check passed.")
         return 0
 
+    # 1. Check environment variables
     manifest_file = REPO_ROOT / "manifest.json"
-    if not manifest_file.exists():
-        print("[PRE-HOOK:PERMS] OK: manifest.json not found, skipping permission check.")
-        return 0
-
-    try:
-        with open(manifest_file, "r", encoding="utf-8") as f:
-            manifest = json.load(f)
-    except Exception as e:
-        print(f"[PRE-HOOK:PERMS] WARNING: Could not read manifest.json: {e}", file=sys.stderr)
-        return 0
-
-    skill_data = manifest.get("skills", {}).get(args.skill)
-    if not skill_data:
-        print(f"[PRE-HOOK:PERMS] OK: Skill '{args.skill}' not in manifest, proceeding.")
-        return 0
+    skill_data = {}
+    if manifest_file.exists():
+        try:
+            with open(manifest_file, "r", encoding="utf-8") as f:
+                manifest = json.load(f)
+                skill_data = manifest.get("skills", {}).get(args.skill, {})
+        except Exception as e:
+            print(f"[PRE-HOOK:PERMS] WARNING: Could not read manifest.json: {e}", file=sys.stderr)
 
     missing_env = [env_var for env_var in skill_data.get("env", []) if not os.environ.get(env_var)]
     if missing_env:
         print(f"[PRE-HOOK:PERMS] FAILED: Missing required environment variable(s): {', '.join(missing_env)}", file=sys.stderr)
         return 1
 
+    # 2. Capability Policy Engine Evaluation
+    policy_engine = PolicyEngine(REPO_ROOT)
     tools = skill_data.get("tools", [])
-    print(f"[PRE-HOOK:PERMS] OK: Permissions satisfied for '{args.skill}'. Tools required: {', '.join(tools)}")
+    eval_result = policy_engine.evaluate_skill(args.skill, declared_tools=tools)
+
+    if eval_result.overall_verdict == PolicyVerdict.DENY:
+        print(f"[PRE-HOOK:PERMS] SECURITY POLICY DENIED for '{args.skill}':", file=sys.stderr)
+        for reason in eval_result.reasons:
+            print(f"  - {reason}", file=sys.stderr)
+        return 1
+
+    if eval_result.overall_verdict == PolicyVerdict.ASK:
+        print(f"[PRE-HOOK:PERMS] WARNING: Skill '{args.skill}' requires elevated user confirmation ({eval_result.max_risk.value}):")
+        for reason in eval_result.reasons:
+            print(f"  [WARN] {reason}")
+        return 0
+
+    print(f"[PRE-HOOK:PERMS] OK: Permissions & capabilities ({', '.join(eval_result.capabilities_requested)}) pre-authorized for '{args.skill}'.")
     return 0
 
 

@@ -1,0 +1,114 @@
+{
+  "version": 1,
+  "description": "Benchmark evaluation dataset for Agent Skills intent routing, chaining, and out-of-domain rejection.",
+  "cases": [
+    {
+      "id": "react-a11y",
+      "type": "positive",
+      "prompt": "Make my React app accessible and audit WCAG 2.2 compliance",
+      "expected": ["web.accessibility", "wcag-audit-patterns", "accessibility-compliance-accessibility-audit", "development.frontend"]
+    },
+    {
+      "id": "code-review",
+      "type": "positive",
+      "prompt": "Review this pull request for bugs, security risks, and style",
+      "expected": ["development.requesting-code-review", "development.code-review", "code-reviewer"]
+    },
+    {
+      "id": "cicd-pipeline",
+      "type": "positive",
+      "prompt": "Set up a GitHub Actions CI/CD automation pipeline for our repository",
+      "expected": ["development.devops", "development.ci-cd", "ci-cd-and-automation", "development.ci-cd-pipeline"]
+    },
+    {
+      "id": "tdd-workflow",
+      "type": "positive",
+      "prompt": "Write unit tests using red-green-refactor test driven development",
+      "expected": ["development.tdd", "tdd", "development.testing"]
+    },
+    {
+      "id": "postgres-schema",
+      "type": "positive",
+      "prompt": "Design normalized PostgreSQL schema and migration strategy",
+      "expected": ["development.databases", "database-design", "database-migration"]
+    },
+    {
+      "id": "k8s-cluster",
+      "type": "positive",
+      "prompt": "Deploy containerized services to Kubernetes using Helm charts",
+      "expected": ["development.devops", "cloud-devops", "kubernetes-deployment", "kubernetes-architect"]
+    },
+    {
+      "id": "ast-refactor",
+      "type": "positive",
+      "prompt": "Perform structural AST code transformation without broken regex",
+      "expected": ["ast-code-transformation", "development.refactoring"]
+    },
+    {
+      "id": "sast-scan",
+      "type": "positive",
+      "prompt": "Scan codebase for top web vulnerabilities, SQL injection, and XSS",
+      "expected": ["security.secure-coding", "security.security-audit", "security-scanning-security-sast", "top-web-vulnerabilities", "vulnerability-scanner"]
+    },
+    {
+      "id": "rag-pipeline",
+      "type": "positive",
+      "prompt": "Build an enterprise RAG pipeline with vector search and agent evaluation",
+      "expected": ["ai-engineer", "agent-evaluation", "ai-engineering-toolkit"]
+    },
+    {
+      "id": "pdf-processing",
+      "type": "positive",
+      "prompt": "Extract structured table data and form fields from PDF document",
+      "expected": ["documents.pdf", "pdf-official"]
+    },
+    {
+      "id": "git-worktree",
+      "type": "positive",
+      "prompt": "Create isolated git worktree to work on hotfix branch simultaneously",
+      "expected": ["development.git-worktrees", "using-git-worktrees"]
+    },
+    {
+      "id": "seo-optimization",
+      "type": "positive",
+      "prompt": "Optimize web content for AI search engines, Perplexity, and LLM citations",
+      "expected": ["web.seo", "seo-geo"]
+    },
+    {
+      "id": "deep-focus",
+      "type": "positive",
+      "prompt": "Help me stop procrastinating and start a deep work focus session",
+      "expected": ["productivity.focus", "productivity.unlazy"]
+    },
+    {
+      "id": "ood-spacecraft",
+      "type": "negative",
+      "prompt": "Design a spacecraft thermal-control system with titanium heat pipes",
+      "expected": []
+    },
+    {
+      "id": "ood-sourdough",
+      "type": "negative",
+      "prompt": "Bake a sourdough bread loaf with 80% hydration and crisp crust",
+      "expected": []
+    },
+    {
+      "id": "ood-plumbing",
+      "type": "negative",
+      "prompt": "Fix a leaking P-trap pipe under the kitchen sink",
+      "expected": []
+    },
+    {
+      "id": "ood-haiku",
+      "type": "negative",
+      "prompt": "Compose a lyrical 5-7-5 haiku about ancient Rome and Julius Caesar",
+      "expected": []
+    },
+    {
+      "id": "ood-astronomy",
+      "type": "negative",
+      "prompt": "Calculate the perihelion gravitational trajectory of Halley comet",
+      "expected": []
+    }
+  ]
+}
