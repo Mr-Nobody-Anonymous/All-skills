@@ -1,0 +1,8 @@
+name: "skill-meme-generator"
+category: "entertainment"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for meme generator."
+intents:
+  - "meme_generator"
+dependencies: []

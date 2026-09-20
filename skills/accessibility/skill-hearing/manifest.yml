@@ -1,0 +1,8 @@
+name: "skill-hearing"
+category: "accessibility"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for hearing."
+intents:
+  - "hearing"
+dependencies: []

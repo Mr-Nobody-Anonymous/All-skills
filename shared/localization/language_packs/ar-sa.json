@@ -1,0 +1,15 @@
+{
+  "locale": "ar-sa",
+  "greetings": [
+    "hello",
+    "hi"
+  ],
+  "affirmations": [
+    "yes",
+    "ok"
+  ],
+  "denials": [
+    "no",
+    "cancel"
+  ]
+}

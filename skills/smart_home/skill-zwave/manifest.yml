@@ -1,0 +1,8 @@
+name: "skill-zwave"
+category: "smart_home"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for zwave."
+intents:
+  - "zwave"
+dependencies: []

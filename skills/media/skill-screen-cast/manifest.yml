@@ -1,0 +1,8 @@
+name: "skill-screen-cast"
+category: "media"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for screen cast."
+intents:
+  - "screen_cast"
+dependencies: []

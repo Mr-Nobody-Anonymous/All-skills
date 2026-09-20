@@ -1,0 +1,2 @@
+class Hashing:
+    pass

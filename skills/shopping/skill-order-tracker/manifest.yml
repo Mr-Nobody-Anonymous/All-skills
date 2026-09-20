@@ -1,0 +1,8 @@
+name: "skill-order-tracker"
+category: "shopping"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for order tracker."
+intents:
+  - "order_tracker"
+dependencies: []

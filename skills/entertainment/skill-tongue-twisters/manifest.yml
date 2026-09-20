@@ -1,0 +1,8 @@
+name: "skill-tongue-twisters"
+category: "entertainment"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for tongue twisters."
+intents:
+  - "tongue_twisters"
+dependencies: []

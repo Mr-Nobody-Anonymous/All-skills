@@ -1,0 +1,8 @@
+name: "skill-apple-health"
+category: "health"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for apple health."
+intents:
+  - "apple_health"
+dependencies: []

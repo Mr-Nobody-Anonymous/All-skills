@@ -1,0 +1,2 @@
+class LocationParser:
+    pass

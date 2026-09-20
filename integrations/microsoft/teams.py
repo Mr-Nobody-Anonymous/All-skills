@@ -1,0 +1,2 @@
+class TeamsClient:
+    pass

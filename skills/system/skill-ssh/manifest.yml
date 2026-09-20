@@ -1,0 +1,8 @@
+name: "skill-ssh"
+category: "system"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for ssh."
+intents:
+  - "ssh"
+dependencies: []

@@ -1,0 +1,8 @@
+name: "skill-slideshow"
+category: "media"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for slideshow."
+intents:
+  - "slideshow"
+dependencies: []

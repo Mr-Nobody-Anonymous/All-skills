@@ -1,0 +1,8 @@
+name: "skill-mortgage-calculator"
+category: "finance"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for mortgage calculator."
+intents:
+  - "mortgage_calculator"
+dependencies: []

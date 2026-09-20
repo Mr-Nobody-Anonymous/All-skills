@@ -1,0 +1,8 @@
+name: "skill-loan-calculator"
+category: "finance"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for loan calculator."
+intents:
+  - "loan_calculator"
+dependencies: []

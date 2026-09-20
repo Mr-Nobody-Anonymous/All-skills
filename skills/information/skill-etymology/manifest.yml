@@ -1,0 +1,8 @@
+name: "skill-etymology"
+category: "information"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for etymology."
+intents:
+  - "etymology"
+dependencies: []

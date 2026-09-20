@@ -1,0 +1,8 @@
+name: "skill-adventure-game"
+category: "entertainment"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for adventure game."
+intents:
+  - "adventure_game"
+dependencies: []

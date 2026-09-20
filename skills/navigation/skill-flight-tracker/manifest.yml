@@ -1,0 +1,8 @@
+name: "skill-flight-tracker"
+category: "navigation"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for flight tracker."
+intents:
+  - "flight_tracker"
+dependencies: []

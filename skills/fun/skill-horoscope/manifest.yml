@@ -1,0 +1,8 @@
+name: "skill-horoscope"
+category: "fun"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for horoscope."
+intents:
+  - "horoscope"
+dependencies: []

@@ -1,0 +1,8 @@
+name: "skill-creative-writing"
+category: "creative"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for creative writing."
+intents:
+  - "creative_writing"
+dependencies: []

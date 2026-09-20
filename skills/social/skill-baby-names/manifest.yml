@@ -1,0 +1,8 @@
+name: "skill-baby-names"
+category: "social"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for baby names."
+intents:
+  - "baby_names"
+dependencies: []

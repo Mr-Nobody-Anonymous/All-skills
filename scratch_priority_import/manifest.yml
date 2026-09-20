@@ -1,0 +1,155 @@
+# Master Manifest for All-Skills scratch_priority_import
+version: "2.0.0"
+platform: "Universal Skill Operating System"
+
+tiers:
+  TIER_0_CRITICAL:
+    description: "Core system and fallback capabilities required for foundational runtime operation."
+    max_latency_sec: 0.25
+    skills:
+      - name: "skill-system"
+        repo: "https://github.com/JarbasSkills/skill-system"
+        category: "system"
+        dependencies: []
+      - name: "skill-volume"
+        repo: "https://github.com/OpenVoiceOS/skill-ovos-volume"
+        category: "system"
+        dependencies: []
+      - name: "skill-diagnostics"
+        repo: "https://github.com/OpenVoiceOS/skill-ovos-diagnostics"
+        category: "system"
+        dependencies: []
+      - name: "skill-fallback-chatgpt"
+        repo: "https://github.com/OpenVoiceOS/skill-ovos-fallback-chatgpt"
+        category: "fallback"
+        dependencies: []
+      - name: "skill-fallback-unknown"
+        repo: "https://github.com/OpenVoiceOS/skill-ovos-fallback-unknown"
+        category: "fallback"
+        dependencies: []
+
+  TIER_1_ESSENTIAL:
+    description: "Temporal, alarm, and immediate situational awareness skills."
+    max_latency_sec: 0.50
+    skills:
+      - name: "skill-date-time"
+        repo: "https://github.com/MycroftAI/skill-date-time"
+        category: "productivity"
+        dependencies: []
+      - name: "skill-ovos-weather"
+        repo: "https://github.com/OpenVoiceOS/skill-ovos-weather"
+        category: "weather"
+        dependencies: []
+      - name: "skill-ovos-alarm"
+        repo: "https://github.com/OpenVoiceOS/skill-ovos-alarm"
+        category: "productivity"
+        dependencies: ["skill-date-time"]
+      - name: "skill-ovos-timer"
+        repo: "https://github.com/OpenVoiceOS/skill-ovos-timer"
+        category: "productivity"
+        dependencies: []
+
+  TIER_2_HIGH:
+    description: "Primary personal productivity, calculation, and media streaming."
+    max_latency_sec: 1.00
+    skills:
+      - name: "skill-calendar"
+        repo: "https://github.com/NeonGeckoCom/skill-calendar"
+        category: "productivity"
+        dependencies: ["skill-date-time"]
+      - name: "skill-calculator"
+        repo: "https://github.com/NeonGeckoCom/skill-calculator"
+        category: "information"
+        dependencies: []
+      - name: "skill-ovos-media"
+        repo: "https://github.com/OpenVoiceOS/skill-ovos-media"
+        category: "media"
+        dependencies: []
+      - name: "skill-ovos-spotify"
+        repo: "https://github.com/OpenVoiceOS/skill-ovos-spotify"
+        category: "media"
+        dependencies: ["skill-ovos-media"]
+      - name: "skill-ovos-youtube"
+        repo: "https://github.com/OpenVoiceOS/skill-ovos-youtube"
+        category: "media"
+        dependencies: ["skill-ovos-media"]
+
+  TIER_3_MEDIUM:
+    description: "Smart home automation, news, local navigation, and asynchronous communication."
+    max_latency_sec: 2.50
+    skills:
+      - name: "skill-ovos-homeassistant"
+        repo: "https://github.com/OpenVoiceOS/skill-ovos-homeassistant"
+        category: "smart_home"
+        dependencies: []
+      - name: "skill-ovos-news"
+        repo: "https://github.com/OpenVoiceOS/skill-ovos-news"
+        category: "news"
+        dependencies: []
+      - name: "skill-navigation"
+        repo: "https://github.com/NeonGeckoCom/skill-navigation"
+        category: "navigation"
+        dependencies: []
+      - name: "skill-ovos-email"
+        repo: "https://github.com/OpenVoiceOS/skill-ovos-email"
+        category: "communication"
+        dependencies: []
+
+  TIER_4_STANDARD:
+    description: "Domain encyclopedic knowledge, health, education, shopping, and finance."
+    max_latency_sec: 5.00
+    skills:
+      - name: "skill-ovos-wikipedia"
+        repo: "https://github.com/OpenVoiceOS/skill-ovos-wikipedia"
+        category: "information"
+        dependencies: []
+      - name: "skill-health"
+        repo: "https://github.com/NeonGeckoCom/skill-health"
+        category: "health"
+        dependencies: []
+      - name: "skill-stock"
+        repo: "https://github.com/JarbasSkills/skill-stock"
+        category: "finance"
+        dependencies: []
+      - name: "skill-recipes"
+        repo: "https://github.com/NeonGeckoCom/skill-recipes"
+        category: "cooking"
+        dependencies: []
+      - name: "skill-ovos-translate"
+        repo: "https://github.com/OpenVoiceOS/skill-ovos-translate"
+        category: "education"
+        dependencies: []
+
+  TIER_5_LOW:
+    description: "Casual entertainment, jokes, casual games, and social trivia."
+    max_latency_sec: 10.00
+    skills:
+      - name: "skill-joke"
+        repo: "https://github.com/MycroftAI/skill-joke"
+        category: "entertainment"
+        dependencies: []
+      - name: "skill-trivia"
+        repo: "https://github.com/JarbasSkills/skill-trivia"
+        category: "entertainment"
+        dependencies: []
+      - name: "skill-adventure"
+        repo: "https://github.com/JarbasSkills/skill-adventure"
+        category: "entertainment"
+        dependencies: []
+
+  TIER_6_LAZY:
+    description: "Specialized, deep-domain, heavy computational or on-demand tools."
+    max_latency_sec: 30.00
+    skills:
+      - name: "skill-obd"
+        repo: "https://github.com/JarbasSkills/skill-obd"
+        category: "automotive"
+        dependencies: []
+      - name: "skill-garden"
+        repo: "https://github.com/JarbasSkills/skill-garden"
+        category: "agriculture"
+        dependencies: []
+      - name: "skill-docker"
+        repo: "https://github.com/JarbasSkills/skill-docker"
+        category: "developer"
+        dependencies: []

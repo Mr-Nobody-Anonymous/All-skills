@@ -1,0 +1,8 @@
+name: "skill-severe-weather"
+category: "weather"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for severe weather."
+intents:
+  - "severe_weather"
+dependencies: []

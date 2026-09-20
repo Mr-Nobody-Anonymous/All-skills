@@ -1,0 +1,8 @@
+name: "skill-fallback-web-search"
+category: "fallback"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for fallback web search."
+intents:
+  - "fallback_web_search"
+dependencies: []

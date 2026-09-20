@@ -1,0 +1,8 @@
+name: "skill-obd-diagnostics"
+category: "automotive"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for obd diagnostics."
+intents:
+  - "obd_diagnostics"
+dependencies: []

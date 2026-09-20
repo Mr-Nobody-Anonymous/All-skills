@@ -1,0 +1,8 @@
+name: "skill-birthday-reminder"
+category: "social"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for birthday reminder."
+intents:
+  - "birthday_reminder"
+dependencies: []

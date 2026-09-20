@@ -1,0 +1,2 @@
+class DalleClient:
+    pass

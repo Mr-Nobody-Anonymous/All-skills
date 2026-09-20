@@ -1,0 +1,8 @@
+name: "skill-calorie-counter"
+category: "health"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for calorie counter."
+intents:
+  - "calorie_counter"
+dependencies: []

@@ -1,0 +1,8 @@
+name: "skill-random-generator"
+category: "fun"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for random generator."
+intents:
+  - "random_generator"
+dependencies: []

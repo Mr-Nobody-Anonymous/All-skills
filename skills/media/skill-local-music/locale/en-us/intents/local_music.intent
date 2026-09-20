@@ -1,0 +1,3 @@
+local music
+run local music
+execute local music

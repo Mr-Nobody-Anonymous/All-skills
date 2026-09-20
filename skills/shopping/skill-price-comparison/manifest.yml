@@ -1,0 +1,8 @@
+name: "skill-price-comparison"
+category: "shopping"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for price comparison."
+intents:
+  - "price_comparison"
+dependencies: []

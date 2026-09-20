@@ -1,0 +1,8 @@
+name: "skill-wildfire"
+category: "weather"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for wildfire."
+intents:
+  - "wildfire"
+dependencies: []

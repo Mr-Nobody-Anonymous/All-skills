@@ -1,0 +1,8 @@
+name: "skill-poetry"
+category: "creative"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for poetry."
+intents:
+  - "poetry"
+dependencies: []

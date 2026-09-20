@@ -1,0 +1,8 @@
+name: "skill-code-explain"
+category: "developer"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for code explain."
+intents:
+  - "code_explain"
+dependencies: []

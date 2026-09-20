@@ -1,0 +1,8 @@
+name: "skill-pet-care"
+category: "social"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for pet care."
+intents:
+  - "pet_care"
+dependencies: []

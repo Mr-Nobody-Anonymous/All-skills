@@ -1,0 +1,8 @@
+name: "skill-deal-finder"
+category: "shopping"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for deal finder."
+intents:
+  - "deal_finder"
+dependencies: []

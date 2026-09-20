@@ -1,0 +1,8 @@
+name: "skill-breathing"
+category: "health"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for breathing."
+intents:
+  - "breathing"
+dependencies: []

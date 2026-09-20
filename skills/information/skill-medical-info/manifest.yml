@@ -1,0 +1,8 @@
+name: "skill-medical-info"
+category: "information"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for medical info."
+intents:
+  - "medical_info"
+dependencies: []

@@ -1,0 +1,2 @@
+class GoogleAuth:
+    pass

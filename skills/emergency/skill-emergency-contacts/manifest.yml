@@ -1,0 +1,8 @@
+name: "skill-emergency-contacts"
+category: "emergency"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for emergency contacts."
+intents:
+  - "emergency_contacts"
+dependencies: []

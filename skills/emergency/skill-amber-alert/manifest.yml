@@ -1,0 +1,8 @@
+name: "skill-amber-alert"
+category: "emergency"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for amber alert."
+intents:
+  - "amber_alert"
+dependencies: []

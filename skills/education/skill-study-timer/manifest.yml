@@ -1,0 +1,8 @@
+name: "skill-study-timer"
+category: "education"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for study timer."
+intents:
+  - "study_timer"
+dependencies: []

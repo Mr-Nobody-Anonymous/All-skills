@@ -1,0 +1,8 @@
+name: "skill-white-noise"
+category: "media"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for white noise."
+intents:
+  - "white_noise"
+dependencies: []

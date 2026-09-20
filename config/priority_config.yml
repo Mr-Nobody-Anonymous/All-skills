@@ -1,0 +1,136 @@
+# ==============================================================================
+# All-Skills Priority & Execution Tier Configuration
+# ==============================================================================
+
+version: "2.0.0"
+
+runtime:
+  max_concurrent_workers: 8
+  default_timeout_seconds: 5.0
+  memory_limit_mb: 2048.0
+  cpu_threshold_percent: 85.0
+  enable_lazy_loading: true
+  hot_reload_enabled: true
+
+tiers:
+  tier_0_critical:
+    level: 0
+    label: "CRITICAL"
+    description: "Core voice assistant system and emergency fallbacks"
+    latency_budget_seconds: 0.25
+    preload: true
+    allow_deferral: false
+    domains:
+      - "system"
+      - "volume"
+      - "settings"
+      - "diagnostics"
+      - "fallback"
+
+  tier_1_essential:
+    level: 1
+    label: "ESSENTIAL"
+    description: "Temporal, alarm, clock, and primary weather services"
+    latency_budget_seconds: 0.50
+    preload: true
+    allow_deferral: false
+    domains:
+      - "time"
+      - "date"
+      - "weather"
+      - "alarm"
+      - "timer"
+
+  tier_2_high:
+    level: 2
+    label: "HIGH"
+    description: "Personal calendar, reminders, calculator, and audio playback"
+    latency_budget_seconds: 1.00
+    preload: true
+    allow_deferral: false
+    domains:
+      - "calendar"
+      - "reminders"
+      - "notes"
+      - "calculator"
+      - "media"
+      - "music"
+
+  tier_3_medium:
+    level: 3
+    label: "MEDIUM"
+    description: "Smart home automation, news, local navigation, and asynchronous messaging"
+    latency_budget_seconds: 2.50
+    preload: false
+    allow_deferral: false
+    domains:
+      - "smart_home"
+      - "iot"
+      - "news"
+      - "navigation"
+      - "email"
+      - "communication"
+
+  tier_4_standard:
+    level: 4
+    label: "STANDARD"
+    description: "Knowledge lookup, health, education, shopping, and personal finance"
+    latency_budget_seconds: 5.00
+    preload: false
+    allow_deferral: true
+    domains:
+      - "information"
+      - "health"
+      - "finance"
+      - "education"
+      - "cooking"
+      - "shopping"
+
+  tier_5_low:
+    level: 5
+    label: "LOW"
+    description: "Games, entertainment, creative arts, and social trivia"
+    latency_budget_seconds: 10.00
+    preload: false
+    allow_deferral: true
+    domains:
+      - "games"
+      - "entertainment"
+      - "creative"
+      - "social"
+      - "fun"
+
+  tier_6_lazy:
+    level: 6
+    label: "LAZY"
+    description: "On-demand specialized tools, agricultural planning, legal databases, automotive diagnostics"
+    latency_budget_seconds: 30.00
+    preload: false
+    allow_deferral: true
+    domains:
+      - "agriculture"
+      - "legal"
+      - "automotive"
+      - "science"
+      - "developer"
+
+fallback_chain:
+  sequence:
+    - handler: "skill-fallback-wolfram"
+      priority: 10
+      timeout_seconds: 2.0
+    - handler: "skill-fallback-chatgpt"
+      priority: 20
+      timeout_seconds: 4.0
+    - handler: "skill-fallback-duckduckgo"
+      priority: 30
+      timeout_seconds: 2.5
+    - handler: "skill-fallback-wikipedia"
+      priority: 40
+      timeout_seconds: 2.0
+    - handler: "skill-fallback-web-search"
+      priority: 50
+      timeout_seconds: 3.0
+    - handler: "skill-fallback-unknown"
+      priority: 100
+      timeout_seconds: 0.5

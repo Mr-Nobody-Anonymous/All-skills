@@ -1,0 +1,8 @@
+name: "skill-science-news"
+category: "news"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for science news."
+intents:
+  - "science_news"
+dependencies: []

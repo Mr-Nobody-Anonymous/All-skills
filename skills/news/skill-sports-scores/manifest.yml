@@ -1,0 +1,8 @@
+name: "skill-sports-scores"
+category: "news"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for sports scores."
+intents:
+  - "sports_scores"
+dependencies: []

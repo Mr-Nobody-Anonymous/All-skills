@@ -1,0 +1,3 @@
+host: "http://homeassistant.local:8123"
+timeout: 10
+ssl_verify: true

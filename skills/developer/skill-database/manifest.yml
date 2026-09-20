@@ -1,0 +1,8 @@
+name: "skill-database"
+category: "developer"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for database."
+intents:
+  - "database"
+dependencies: []

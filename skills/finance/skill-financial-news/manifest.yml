@@ -1,0 +1,8 @@
+name: "skill-financial-news"
+category: "finance"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for financial news."
+intents:
+  - "financial_news"
+dependencies: []

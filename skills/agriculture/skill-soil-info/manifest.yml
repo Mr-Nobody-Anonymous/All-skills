@@ -1,0 +1,8 @@
+name: "skill-soil-info"
+category: "agriculture"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for soil info."
+intents:
+  - "soil_info"
+dependencies: []

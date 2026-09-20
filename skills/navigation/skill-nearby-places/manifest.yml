@@ -1,0 +1,8 @@
+name: "skill-nearby-places"
+category: "navigation"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for nearby places."
+intents:
+  - "nearby_places"
+dependencies: []

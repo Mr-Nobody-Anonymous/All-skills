@@ -1,0 +1,8 @@
+name: "skill-citation-generator"
+category: "education"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for citation generator."
+intents:
+  - "citation_generator"
+dependencies: []

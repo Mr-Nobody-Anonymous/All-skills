@@ -1,0 +1,8 @@
+name: "skill-sign-language"
+category: "accessibility"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for sign language."
+intents:
+  - "sign_language"
+dependencies: []

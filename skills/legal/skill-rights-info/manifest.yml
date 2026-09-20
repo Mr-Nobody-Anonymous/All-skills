@@ -1,0 +1,8 @@
+name: "skill-rights-info"
+category: "legal"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for rights info."
+intents:
+  - "rights_info"
+dependencies: []

@@ -1,0 +1,8 @@
+name: "skill-commodities"
+category: "finance"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for commodities."
+intents:
+  - "commodities"
+dependencies: []

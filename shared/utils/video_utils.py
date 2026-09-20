@@ -1,0 +1,2 @@
+class VideoUtils:
+    pass

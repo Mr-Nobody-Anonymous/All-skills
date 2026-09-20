@@ -1,0 +1,8 @@
+name: "skill-magic-8-ball"
+category: "fun"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for magic 8 ball."
+intents:
+  - "magic_8_ball"
+dependencies: []

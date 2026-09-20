@@ -1,0 +1,8 @@
+name: "skill-diy-projects"
+category: "creative"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for diy projects."
+intents:
+  - "diy_projects"
+dependencies: []

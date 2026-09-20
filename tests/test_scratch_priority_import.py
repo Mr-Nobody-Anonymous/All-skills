@@ -21,6 +21,12 @@ from scratch_priority_import.catalog import get_full_catalog
 from scratch_priority_import.config import SkillConfig
 from scratch_priority_import.utils import format_slug, render_ascii_tree
 
+# Re-export Part 5 test suites for unified test runner execution
+from scratch_priority_import.tests.test_priority import TestPriorityLevels, TestPriorityQueue
+from scratch_priority_import.tests.test_registry import TestEnhancedSkillRegistry, TestVersionAndCompatibility
+from scratch_priority_import.tests.test_imports import TestImportManager, TestLazyLoader
+from scratch_priority_import.tests.test_conflicts import TestConflictResolver, TestFallbackChain
+
 
 class TestSkillRegistry(unittest.TestCase):
     def setUp(self):

@@ -523,3 +523,175 @@ automation_and_scraping:
       description: Fast high-level web crawling & scraping framework for Python
     - url: https://github.com/n8n-io/n8n
       description: Fair-code workflow automation platform
+
+voice_and_multimodal_ecosystem:
+  ovos_core_framework:
+    - url: https://github.com/OpenVoiceOS/ovos-core
+      description: OpenVoiceOS core voice assistant runtime
+    - url: https://github.com/OpenVoiceOS/ovos-bus-client
+      description: OpenVoiceOS messagebus client library
+    - url: https://github.com/OpenVoiceOS/ovos-messagebus
+      description: OpenVoiceOS event and message bus daemon
+    - url: https://github.com/OpenVoiceOS/ovos-workshop
+      description: Base skill framework, classes, and decorator tools
+    - url: https://github.com/OpenVoiceOS/ovos-utils
+      description: Core utility functions for OVOS ecosystems
+    - url: https://github.com/OpenVoiceOS/ovos-config
+      description: Configuration manager for voice assistant
+    - url: https://github.com/OpenVoiceOS/ovos-plugin-manager
+      description: Dynamic plugin discovery and loader for STT, TTS, Wake Word
+    - url: https://github.com/OpenVoiceOS/ovos-classifiers
+      description: Machine learning classifiers for intent and utterances
+    - url: https://github.com/OpenVoiceOS/ovos-audio
+      description: Audio recording, playback, and stream coordination
+    - url: https://github.com/OpenVoiceOS/ovos-media
+      description: Common Play audio and video streaming framework
+    - url: https://github.com/OpenVoiceOS/ovos-gui
+      description: Qt/QML graphical interface for voice assistants
+    - url: https://github.com/OpenVoiceOS/ovos-lingua-franca
+      description: Multi-lingual natural language date, time, and number parser
+    - url: https://github.com/OpenVoiceOS/ovos-personal-backend
+      description: Self-hosted local device pairing and skill backend
+
+  stt_plugins:
+    - url: https://github.com/OpenVoiceOS/ovos-stt-plugin-vosk
+      description: Offline fast speech-to-text using Vosk models
+    - url: https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper
+      description: OpenAI Whisper speech recognition plugin
+    - url: https://github.com/OpenVoiceOS/ovos-stt-plugin-server
+      description: Remote streaming STT server plugin
+    - url: https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium
+      description: Chromium browser free STT provider plugin
+    - url: https://github.com/OpenVoiceOS/ovos-stt-plugin-deepgram
+      description: High-accuracy Deepgram cloud STT plugin
+    - url: https://github.com/OpenVoiceOS/ovos-stt-plugin-fasterwhisper
+      description: CTranslate2 faster-whisper STT plugin
+
+  tts_plugins:
+    - url: https://github.com/OpenVoiceOS/ovos-tts-plugin-piper
+      description: Fast local neural text-to-speech engine
+    - url: https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3
+      description: Mycroft Mimic 3 neural voice synthesizer
+    - url: https://github.com/OpenVoiceOS/ovos-tts-plugin-server
+      description: Remote TTS server client plugin
+    - url: https://github.com/OpenVoiceOS/ovos-tts-plugin-espeakng
+      description: Lightweight multi-lingual formant TTS engine
+    - url: https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx
+      description: Google Translate free voice synthesis plugin
+    - url: https://github.com/OpenVoiceOS/ovos-tts-plugin-elevenlabs
+      description: Ultra-realistic ElevenLabs neural voice generator
+
+  wakeword_plugins:
+    - url: https://github.com/OpenVoiceOS/ovos-ww-plugin-precise
+      description: Mycroft Precise acoustic wake word spotter
+    - url: https://github.com/OpenVoiceOS/ovos-ww-plugin-openwakeword
+      description: OpenWakeWord deep learning wake word detector
+    - url: https://github.com/OpenVoiceOS/ovos-ww-plugin-vosk
+      description: Small vocabulary grammar-based wake word plugin
+    - url: https://github.com/OpenVoiceOS/ovos-ww-plugin-pocketsphinx
+      description: CMU PocketSphinx acoustic model detector
+
+  intent_and_solver_plugins:
+    - url: https://github.com/OpenVoiceOS/ovos-intent-plugin-padatious
+      description: Neural network intent parser for natural speech
+    - url: https://github.com/OpenVoiceOS/ovos-intent-plugin-adapt
+      description: Keyword and regex entity parser engine
+    - url: https://github.com/OpenVoiceOS/ovos-solver-plugin-openai
+      description: Question answering solver backed by OpenAI GPT models
+    - url: https://github.com/OpenVoiceOS/ovos-solver-plugin-wolfram-alpha
+      description: Computational knowledge solver using Wolfram Alpha API
+    - url: https://github.com/OpenVoiceOS/ovos-solver-plugin-ddg
+      description: DuckDuckGo instant answer solver plugin
+    - url: https://github.com/OpenVoiceOS/ovos-solver-plugin-wikipedia
+      description: Encyclopedic search and summary solver
+
+  phal_hardware_plugins:
+    - url: https://github.com/OpenVoiceOS/ovos-PHAL
+      description: Platform Hardware Abstraction Layer daemon
+    - url: https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events
+      description: Network connectivity and WiFi status events
+    - url: https://github.com/OpenVoiceOS/ovos-PHAL-plugin-system
+      description: Host shutdown, reboot, and sleep events
+    - url: https://github.com/OpenVoiceOS/ovos-PHAL-plugin-notification-widgets
+      description: Visual and audio status indicators
+    - url: https://github.com/OpenVoiceOS/ovos-PHAL-plugin-brightness-control-rpi
+      description: Hardware display backlight and brightness control
+    - url: https://github.com/OpenVoiceOS/ovos-PHAL-plugin-oauth
+      description: Hardware device OAuth flow handler
+
+  neon_gecko_framework:
+    - url: https://github.com/NeonGeckoCom/neon-core
+      description: Neon AI multimodal voice assistant core
+    - url: https://github.com/NeonGeckoCom/neon-utils
+      description: Utility libraries for Neon AI voice skills
+    - url: https://github.com/NeonGeckoCom/neon-skill-utils
+      description: Extended voice skill decorators and conversational helpers
+
+  canonical_voice_skills:
+    - url: https://github.com/NeonGeckoCom/skill-messaging
+      description: SMS and chat messaging skill
+    - url: https://github.com/NeonGeckoCom/skill-communication
+      description: Contact management and telephony
+    - url: https://github.com/OpenVoiceOS/skill-ovos-email
+      description: IMAP/SMTP email composer and reader
+    - url: https://github.com/JarbasSkills/skill-slack
+      description: Slack messaging and channel monitor
+    - url: https://github.com/JarbasSkills/skill-discord
+      description: Discord channel messenger and voice client
+    - url: https://github.com/JarbasSkills/skill-telegram
+      description: Telegram bot integration
+    - url: https://github.com/JarbasSkills/skill-irc
+      description: IRC chat client
+    - url: https://github.com/emphasize/skill-voicemail
+      description: Voicemail recording and playback
+    - url: https://github.com/OpenVoiceOS/skill-ovos-youtube
+      description: YouTube video and audio playback
+    - url: https://github.com/OpenVoiceOS/skill-ovos-spotify
+      description: Spotify music streaming
+    - url: https://github.com/OpenVoiceOS/skill-ovos-soundcloud
+      description: SoundCloud music playback
+    - url: https://github.com/OpenVoiceOS/skill-ovos-bandcamp
+      description: Bandcamp artist playback
+    - url: https://github.com/OpenVoiceOS/skill-ovos-radio-browser
+      description: 30,000+ internet radio stations
+    - url: https://github.com/JarbasSkills/skill-plex
+      description: Plex media server controller
+    - url: https://github.com/JarbasSkills/skill-kodi
+      description: Kodi home theater remote
+    - url: https://github.com/MycroftAI/skill-joke
+      description: Spoken joke teller
+    - url: https://github.com/MycroftAI/skill-game-trivia
+      description: Interactive voice trivia challenge
+    - url: https://github.com/JarbasSkills/skill-twenty-questions
+      description: 20 Questions deduction game
+    - url: https://github.com/emphasize/skill-ambient-sound
+      description: Ambient background audio and sleep sounds
+    - url: https://github.com/OpenVoiceOS/skill-ovos-homeassistant
+      description: Home Assistant smart home bridge
+    - url: https://github.com/OpenVoiceOS/skill-ovos-weather
+      description: Full meteorological forecasts and alerts
+    - url: https://github.com/OpenVoiceOS/skill-ovos-timer
+      description: Multi-timer management
+    - url: https://github.com/OpenVoiceOS/skill-ovos-alarm
+      description: Alarm clocks and recurring alarms
+    - url: https://github.com/NeonGeckoCom/skill-calendar
+      description: Google and CalDAV calendar synchronizer
+    - url: https://github.com/NeonGeckoCom/skill-navigation
+      description: Turn-by-turn spoken driving and walking routes
+    - url: https://github.com/OpenVoiceOS/skill-ovos-news
+      description: Daily audio news briefing
+    - url: https://github.com/JarbasSkills/skill-stock
+      description: Real-time stock market quotes
+    - url: https://github.com/JarbasSkills/skill-crypto
+      description: Cryptocurrency live tickers
+    - url: https://github.com/JarbasSkills/skill-obd
+      description: OBD-II automotive engine diagnostics
+    - url: https://github.com/JarbasSkills/skill-tesla
+      description: Tesla vehicle telematics and remote controls
+    - url: https://github.com/JarbasSkills/skill-emergency
+      description: Emergency dispatch, SOS signaling, and first aid
+    - url: https://github.com/JarbasSkills/skill-iss
+      description: International Space Station tracking
+    - url: https://github.com/JarbasSkills/skill-garden
+      description: Smart garden and agriculture automation
+

@@ -1,0 +1,8 @@
+name: "skill-name-generator"
+category: "creative"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for name generator."
+intents:
+  - "name_generator"
+dependencies: []

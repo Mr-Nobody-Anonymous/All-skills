@@ -1,0 +1,8 @@
+name: "skill-bmi-calculator"
+category: "health"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for bmi calculator."
+intents:
+  - "bmi_calculator"
+dependencies: []

@@ -1,0 +1,8 @@
+name: "skill-movie-recommendations"
+category: "entertainment"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for movie recommendations."
+intents:
+  - "movie_recommendations"
+dependencies: []

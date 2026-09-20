@@ -1,0 +1,8 @@
+name: "skill-weight-tracker"
+category: "health"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for weight tracker."
+intents:
+  - "weight_tracker"
+dependencies: []

@@ -1,0 +1,8 @@
+name: "skill-quote-of-the-day"
+category: "fun"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for quote of the day."
+intents:
+  - "quote_of_the_day"
+dependencies: []

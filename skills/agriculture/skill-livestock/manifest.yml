@@ -1,0 +1,8 @@
+name: "skill-livestock"
+category: "agriculture"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for livestock."
+intents:
+  - "livestock"
+dependencies: []

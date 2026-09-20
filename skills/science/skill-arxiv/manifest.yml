@@ -1,0 +1,8 @@
+name: "skill-arxiv"
+category: "science"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for arxiv."
+intents:
+  - "arxiv"
+dependencies: []

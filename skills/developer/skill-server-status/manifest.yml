@@ -1,0 +1,8 @@
+name: "skill-server-status"
+category: "developer"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for server status."
+intents:
+  - "server_status"
+dependencies: []

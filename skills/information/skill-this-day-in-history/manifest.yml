@@ -1,0 +1,8 @@
+name: "skill-this-day-in-history"
+category: "information"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for this day in history."
+intents:
+  - "this_day_in_history"
+dependencies: []

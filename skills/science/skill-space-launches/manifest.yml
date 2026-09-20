@@ -1,0 +1,8 @@
+name: "skill-space-launches"
+category: "science"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for space launches."
+intents:
+  - "space_launches"
+dependencies: []

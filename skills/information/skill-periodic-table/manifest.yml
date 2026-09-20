@@ -1,0 +1,8 @@
+name: "skill-periodic-table"
+category: "information"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for periodic table."
+intents:
+  - "periodic_table"
+dependencies: []

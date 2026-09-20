@@ -1,0 +1,8 @@
+name: "skill-iss-tracker"
+category: "science"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for iss tracker."
+intents:
+  - "iss_tracker"
+dependencies: []

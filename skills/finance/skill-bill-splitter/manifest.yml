@@ -1,0 +1,8 @@
+name: "skill-bill-splitter"
+category: "finance"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for bill splitter."
+intents:
+  - "bill_splitter"
+dependencies: []

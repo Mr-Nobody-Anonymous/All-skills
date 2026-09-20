@@ -1,0 +1,8 @@
+name: "skill-plant-info"
+category: "information"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for plant info."
+intents:
+  - "plant_info"
+dependencies: []

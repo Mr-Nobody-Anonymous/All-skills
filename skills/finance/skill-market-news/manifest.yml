@@ -1,0 +1,8 @@
+name: "skill-market-news"
+category: "finance"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for market news."
+intents:
+  - "market_news"
+dependencies: []

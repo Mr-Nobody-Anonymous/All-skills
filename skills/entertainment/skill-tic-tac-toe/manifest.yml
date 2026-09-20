@@ -1,0 +1,8 @@
+name: "skill-tic-tac-toe"
+category: "entertainment"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for tic tac toe."
+intents:
+  - "tic_tac_toe"
+dependencies: []

@@ -1,0 +1,2 @@
+class AWSIoTClient:
+    pass

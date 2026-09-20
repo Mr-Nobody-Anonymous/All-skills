@@ -1,0 +1,8 @@
+name: "skill-cooking-timer"
+category: "cooking"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for cooking timer."
+intents:
+  - "cooking_timer"
+dependencies: []

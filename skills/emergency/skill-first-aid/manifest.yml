@@ -1,0 +1,8 @@
+name: "skill-first-aid"
+category: "emergency"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for first aid."
+intents:
+  - "first_aid"
+dependencies: []

@@ -1,0 +1,2 @@
+class OpenAITTSClient:
+    pass

@@ -1,0 +1,8 @@
+name: "skill-coin-flip"
+category: "fun"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for coin flip."
+intents:
+  - "coin_flip"
+dependencies: []

@@ -1,0 +1,43 @@
+# ==============================================================================
+# All-Skills Default Voice & Agent OS Configuration
+# ==============================================================================
+
+system:
+  assistant_name: "Antigravity All-Skills"
+  version: "2.0.0"
+  locale: "en-us"
+  timezone: "UTC"
+  debug_mode: false
+
+bus:
+  host: "127.0.0.1"
+  port: 8181
+  route: "/core"
+  ssl: false
+
+plugins:
+  stt:
+    module: "ovos-stt-plugin-vosk"
+    fallback_module: "ovos-stt-plugin-server"
+  tts:
+    module: "ovos-tts-plugin-piper"
+    fallback_module: "ovos-tts-plugin-mimic3"
+  wakeword:
+    module: "ovos-ww-plugin-openwakeword"
+    wake_words:
+      - "hey antigravity"
+      - "hey mycroft"
+  intent:
+    modules:
+      - "ovos-intent-plugin-padatious"
+      - "ovos-intent-plugin-adapt"
+  audio:
+    module: "ovos-audio"
+    backend: "vlc"
+
+skills:
+  directory: "skills"
+  auto_update: false
+  blacklisted_skills: []
+  priority_manifest: "config/skills_manifest.yml"
+  priority_config: "config/priority_config.yml"

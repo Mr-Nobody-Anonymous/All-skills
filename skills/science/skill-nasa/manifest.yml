@@ -1,0 +1,8 @@
+name: "skill-nasa"
+category: "science"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for nasa."
+intents:
+  - "nasa"
+dependencies: []

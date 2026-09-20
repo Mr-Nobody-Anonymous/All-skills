@@ -1,0 +1,8 @@
+name: "skill-would-you-rather"
+category: "entertainment"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for would you rather."
+intents:
+  - "would_you_rather"
+dependencies: []

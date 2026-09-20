@@ -1,0 +1,8 @@
+name: "skill-dependency-check"
+category: "developer"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for dependency check."
+intents:
+  - "dependency_check"
+dependencies: []

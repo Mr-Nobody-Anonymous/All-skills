@@ -1,0 +1,110 @@
+# ==============================================================================
+# All-Skills API Keys and Credentials Template
+# Copy this file to api_keys.yml and replace placeholders with your actual keys.
+# DO NOT commit real secrets or api_keys.yml to version control!
+# ==============================================================================
+
+# Core Intelligence & Solvers
+openai:
+  api_key: "sk-..."
+  org_id: "org-..."
+  default_model: "gpt-4o"
+
+anthropic:
+  api_key: "sk-ant-..."
+  default_model: "claude-3-5-sonnet-latest"
+
+wolfram_alpha:
+  app_id: "WOLFRAM-APP-ID-HERE"
+
+# Weather & Meteorology
+openweathermap:
+  api_key: "OPENWEATHERMAP-API-KEY-HERE"
+  units: "metric"  # or imperial
+
+airnow:
+  api_key: "AIRNOW-API-KEY-HERE"
+
+national_weather_service:
+  user_agent: "AllSkillsVoiceAssistant/2.0 (contact@example.com)"
+
+# Search & Encyclopedic Knowledge
+google_cloud:
+  api_key: "GOOGLE-CLOUD-API-KEY-HERE"
+  custom_search_cx: "SEARCH-ENGINE-ID"
+  maps_api_key: "GOOGLE-MAPS-API-KEY"
+  tts_api_key: "GOOGLE-TTS-KEY"
+  stt_api_key: "GOOGLE-STT-KEY"
+
+microsoft_azure:
+  speech_key: "AZURE-SPEECH-KEY-HERE"
+  speech_region: "eastus"
+  translator_key: "AZURE-TRANSLATOR-KEY"
+  vision_key: "AZURE-VISION-KEY"
+
+# Media Streaming & Playback
+spotify:
+  client_id: "SPOTIFY-CLIENT-ID-HERE"
+  client_secret: "SPOTIFY-CLIENT-SECRET-HERE"
+  redirect_uri: "http://localhost:8888/callback"
+
+youtube:
+  api_key: "YOUTUBE-DATA-API-V3-KEY"
+
+lastfm:
+  api_key: "LASTFM-API-KEY-HERE"
+  shared_secret: "LASTFM-SECRET-HERE"
+
+genius:
+  access_token: "GENIUS-ACCESS-TOKEN-HERE"
+
+# Financial Markets & Crypto
+alpha_vantage:
+  api_key: "ALPHAVANTAGE-API-KEY-HERE"
+
+coingecko:
+  api_key: "COINGECKO-API-KEY-OPTIONAL"
+
+# Communications & SMS
+twilio:
+  account_sid: "TWILIO-ACCOUNT-SID-HERE"
+  auth_token: "TWILIO-AUTH-TOKEN-HERE"
+  phone_number: "+1234567890"
+
+sendgrid:
+  api_key: "SG.SENDGRID-API-KEY-HERE"
+  sender_email: "assistant@example.com"
+
+# Smart Home Automation
+home_assistant:
+  base_url: "http://homeassistant.local:8123"
+  long_lived_access_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+
+ifttt:
+  webhook_key: "IFTTT-WEBHOOK-KEY-HERE"
+
+# Science, Space & Geology
+nasa:
+  api_key: "NASA-API-KEY-HERE"
+
+# Movies & Pop Culture
+omdb:
+  api_key: "OMDB-API-KEY-HERE"
+
+tmdb:
+  api_key: "TMDB-API-KEY-HERE"
+
+# Voice Synthesis & AI Generation
+elevenlabs:
+  api_key: "ELEVENLABS-API-KEY-HERE"
+  default_voice_id: "21m00Tcm4TlvDq8ikWAM"
+
+stability_ai:
+  api_key: "STABILITY-AI-KEY-HERE"
+
+huggingface:
+  api_token: "hf_..."
+
+# Security Auditing
+haveibeenpwned:
+  api_key: "HIBP-API-KEY-HERE"

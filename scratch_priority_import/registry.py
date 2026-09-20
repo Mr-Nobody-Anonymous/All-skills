@@ -97,8 +97,10 @@ class SkillRegistry:
         }
         self._loaded_modules: Dict[str, Any] = {}
         self._load_order: List[str] = []
+        self._metadata_store: Dict[str, Any] = {}
         self._initialized = True
         logger.info("SkillRegistry initialized")
+
     
     def register(self, skill: SkillModule) -> None:
         """Register a skill module"""
@@ -211,4 +213,72 @@ class SkillRegistry:
         self._domains = {domain: [] for domain in SkillDomain}
         self._loaded_modules.clear()
         self._load_order.clear()
+        self._metadata_store.clear()
         logger.info("SkillRegistry reset")
+
+    def register_metadata(self, metadata: Any) -> None:
+        """Register skill metadata record."""
+        self._metadata_store[metadata.name] = metadata
+        if metadata.name not in self._skills:
+            try:
+                domain = SkillDomain(metadata.category.lower().replace("-", "_"))
+            except (ValueError, AttributeError):
+                domain = SkillDomain.AUTOMATION
+
+            p = getattr(metadata, "priority_tier", 4)
+            p_val = int(p) * 10 if hasattr(p, "value") else int(p)
+
+            mod = SkillModule(
+                name=metadata.name,
+                domain=domain,
+                level=SkillLevel.CORE,
+                priority=p_val,
+                dependencies=getattr(metadata, "dependencies", []),
+                description=getattr(metadata, "description", ""),
+                repos=[getattr(metadata, "repository", "")] if getattr(metadata, "repository", "") else [],
+                enabled=getattr(metadata, "enabled", True),
+                loaded=getattr(metadata, "loaded", False),
+            )
+            self.register(mod)
+
+    def get_metadata(self, name: str) -> Optional[Any]:
+        """Retrieve rich metadata for a given skill name."""
+        if name in self._metadata_store:
+            return self._metadata_store[name]
+        base = self.get(name)
+        if base:
+            from .priority_levels import get_tier_for_skill
+            from .skill_registry import SkillMetadata
+            tier = get_tier_for_skill(base.name, base.domain.value)
+            meta = SkillMetadata(
+                name=base.name,
+                category=base.domain.value,
+                priority_tier=tier,
+                dependencies=base.dependencies,
+                description=base.description,
+                repository=base.repos[0] if base.repos else "",
+                enabled=base.enabled,
+                loaded=base.loaded,
+            )
+            self._metadata_store[name] = meta
+            return meta
+        return None
+
+    def get_by_tier(self, tier: Any) -> List[Any]:
+        """Return all skills matching a specific priority tier."""
+        results = []
+        for name in list(self._skills.keys()):
+            meta = self.get_metadata(name)
+            if meta and getattr(meta, "priority_tier", None) == tier:
+                results.append(meta)
+        return results
+
+    def get_conflicts_for_skill(self, name: str) -> List[str]:
+        """Get list of conflicting skill names for a specified skill."""
+        meta = self.get_metadata(name)
+        return getattr(meta, "conflicts", []) if meta else []
+
+    def get_all_metadata(self) -> List[Any]:
+        """Retrieve metadata for all registered skills."""
+        return [self.get_metadata(k) for k in self._skills.keys() if self.get_metadata(k) is not None]
+

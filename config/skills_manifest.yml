@@ -1,0 +1,694 @@
+# ==============================================================================
+# All-Skills Master Skills Manifest
+# Catalog of all 27 Categories and 714+ Core Voice & Agent Skills
+# ==============================================================================
+
+version: "2.0.0"
+total_categories: 27
+generated_by: "All-Skills Universal Skill OS"
+
+categories:
+  communication:
+    description: "Email, SMS, voice/video calling, and real-time messaging integrations"
+    tier: "TIER_3_MEDIUM"
+    skills:
+      - id: "skill-email"
+        name: "Email Client"
+        repo: "https://github.com/OpenVoiceOS/skill-ovos-email"
+        intents: ["send_email", "read_email", "check_inbox"]
+        dependencies: []
+      - id: "skill-sms"
+        name: "SMS Messaging"
+        repo: "https://github.com/NeonGeckoCom/skill-sms"
+        intents: ["send_sms", "read_sms"]
+        dependencies: []
+      - id: "skill-messaging"
+        name: "Unified Messaging"
+        repo: "https://github.com/NeonGeckoCom/skill-messaging"
+        intents: ["send_message", "get_messages"]
+        dependencies: []
+      - id: "skill-slack"
+        name: "Slack Integration"
+        repo: "https://github.com/JarbasSkills/skill-slack"
+        intents: ["post_slack", "read_slack_channel"]
+        dependencies: []
+      - id: "skill-discord"
+        name: "Discord Integration"
+        repo: "https://github.com/JarbasSkills/skill-discord"
+        intents: ["send_discord_message", "join_voice_channel"]
+        dependencies: []
+      - id: "skill-telegram"
+        name: "Telegram Bot Integration"
+        repo: "https://github.com/JarbasSkills/skill-telegram"
+        intents: ["send_telegram", "get_telegram_updates"]
+        dependencies: []
+      - id: "skill-irc"
+        name: "IRC Chat"
+        repo: "https://github.com/JarbasSkills/skill-irc"
+        intents: ["join_irc_channel", "msg_irc"]
+        dependencies: []
+      - id: "skill-voicemail"
+        name: "Voicemail Assistant"
+        repo: "https://github.com/emphasize/skill-voicemail"
+        intents: ["listen_voicemail", "delete_voicemail"]
+        dependencies: []
+      - id: "skill-contacts"
+        name: "Address Book & Contact Management"
+        repo: "https://github.com/NeonGeckoCom/skill-communication"
+        intents: ["find_contact", "add_contact", "call_contact"]
+        dependencies: []
+
+  media:
+    description: "Audio streaming, music playback, video, and local media frameworks"
+    tier: "TIER_2_HIGH"
+    skills:
+      - id: "skill-ovos-media"
+        name: "Common Play Media Framework"
+        repo: "https://github.com/OpenVoiceOS/skill-ovos-media"
+        intents: ["play", "pause", "resume", "stop_media", "next_track"]
+        dependencies: []
+      - id: "skill-ovos-spotify"
+        name: "Spotify Streaming"
+        repo: "https://github.com/OpenVoiceOS/skill-ovos-spotify"
+        intents: ["play_spotify", "like_song", "spotify_playlist"]
+        dependencies: ["skill-ovos-media"]
+      - id: "skill-ovos-youtube"
+        name: "YouTube Audio & Video"
+        repo: "https://github.com/OpenVoiceOS/skill-ovos-youtube"
+        intents: ["play_youtube", "search_video"]
+        dependencies: ["skill-ovos-media"]
+      - id: "skill-ovos-soundcloud"
+        name: "SoundCloud Integration"
+        repo: "https://github.com/OpenVoiceOS/skill-ovos-soundcloud"
+        intents: ["play_soundcloud"]
+        dependencies: ["skill-ovos-media"]
+      - id: "skill-ovos-bandcamp"
+        name: "Bandcamp Streamer"
+        repo: "https://github.com/OpenVoiceOS/skill-ovos-bandcamp"
+        intents: ["play_bandcamp"]
+        dependencies: ["skill-ovos-media"]
+      - id: "skill-ovos-radio-browser"
+        name: "Internet Radio Browser"
+        repo: "https://github.com/OpenVoiceOS/skill-ovos-radio-browser"
+        intents: ["tune_radio_station", "search_radio"]
+        dependencies: ["skill-ovos-media"]
+      - id: "skill-ovos-podcasts"
+        name: "Podcast Player"
+        repo: "https://github.com/OpenVoiceOS/skill-ovos-podcasts"
+        intents: ["play_podcast", "latest_episode"]
+        dependencies: ["skill-ovos-media"]
+      - id: "skill-audiobook"
+        name: "Audiobook Reader"
+        repo: "https://github.com/JarbasSkills/skill-audiobook"
+        intents: ["read_audiobook", "resume_chapter"]
+        dependencies: ["skill-ovos-media"]
+      - id: "skill-ambient-sound"
+        name: "Ambient Sounds & Sleep Noise"
+        repo: "https://github.com/emphasize/skill-ambient-sound"
+        intents: ["play_rain_sounds", "play_white_noise"]
+        dependencies: ["skill-ovos-media"]
+      - id: "skill-lyrics"
+        name: "Song Lyrics Lookup"
+        repo: "https://github.com/NeonGeckoCom/skill-lyrics"
+        intents: ["find_lyrics", "what_are_the_lyrics"]
+        dependencies: []
+
+  entertainment:
+    description: "Jokes, games, interactive trivia, and stories"
+    tier: "TIER_5_LOW"
+    skills:
+      - id: "skill-joke"
+        name: "Joke Teller"
+        repo: "https://github.com/MycroftAI/skill-joke"
+        intents: ["tell_joke", "dad_joke", "knock_knock"]
+        dependencies: []
+      - id: "skill-game-trivia"
+        name: "Trivia Challenge"
+        repo: "https://github.com/MycroftAI/skill-game-trivia"
+        intents: ["start_trivia", "answer_trivia"]
+        dependencies: []
+      - id: "skill-singing"
+        name: "Singing Assistant"
+        repo: "https://github.com/MycroftAI/skill-singing"
+        intents: ["sing_song", "serenade"]
+        dependencies: []
+      - id: "skill-rock-paper-scissors"
+        name: "Rock Paper Scissors"
+        repo: "https://github.com/JarbasSkills/skill-rock-paper-scissors"
+        intents: ["play_rock_paper_scissors"]
+        dependencies: []
+      - id: "skill-twenty-questions"
+        name: "20 Questions Game"
+        repo: "https://github.com/JarbasSkills/skill-twenty-questions"
+        intents: ["play_twenty_questions"]
+        dependencies: []
+      - id: "skill-story"
+        name: "Bedtime Storyteller"
+        repo: "https://github.com/JarbasSkills/skill-story"
+        intents: ["tell_story", "read_fable"]
+        dependencies: []
+      - id: "skill-adventure"
+        name: "Interactive Text Adventure"
+        repo: "https://github.com/JarbasSkills/skill-adventure"
+        intents: ["start_adventure", "go_direction"]
+        dependencies: []
+
+  information:
+    description: "Encyclopedic knowledge, dictionary, spelling, unit conversion, and general facts"
+    tier: "TIER_4_STANDARD"
+    skills:
+      - id: "skill-ovos-wikipedia"
+        name: "Wikipedia Knowledge"
+        repo: "https://github.com/OpenVoiceOS/skill-ovos-wikipedia"
+        intents: ["wiki_search", "tell_me_about"]
+        dependencies: []
+      - id: "skill-ovos-wolfram-alpha"
+        name: "Wolfram Alpha Computational Engine"
+        repo: "https://github.com/OpenVoiceOS/skill-ovos-wolfram-alpha"
+        intents: ["calculate", "scientific_query"]
+        dependencies: []
+      - id: "skill-ovos-ddg"
+        name: "DuckDuckGo Instant Answers"
+        repo: "https://github.com/OpenVoiceOS/skill-ovos-ddg"
+        intents: ["quick_answer", "search_ddg"]
+        dependencies: []
+      - id: "skill-dictionary"
+        name: "Dictionary & Definitions"
+        repo: "https://github.com/JarbasSkills/skill-dictionary"
+        intents: ["define_word", "meaning_of"]
+        dependencies: []
+      - id: "skill-spell-check"
+        name: "Spell Checker"
+        repo: "https://github.com/NeonGeckoCom/skill-spell-check"
+        intents: ["spell_word", "how_do_you_spell"]
+        dependencies: []
+      - id: "skill-unit-converter"
+        name: "Unit Converter"
+        repo: "https://github.com/NeonGeckoCom/skill-unit-converter"
+        intents: ["convert_units", "celsius_to_fahrenheit"]
+        dependencies: []
+      - id: "skill-calculator"
+        name: "Spoken Calculator"
+        repo: "https://github.com/NeonGeckoCom/skill-calculator"
+        intents: ["math_expression", "add_numbers"]
+        dependencies: []
+      - id: "skill-this-day"
+        name: "This Day in History"
+        repo: "https://github.com/JarbasSkills/skill-this-day"
+        intents: ["today_in_history", "historical_events"]
+        dependencies: []
+      - id: "skill-chemistry"
+        name: "Periodic Table & Chemistry"
+        repo: "https://github.com/JarbasSkills/skill-chemistry"
+        intents: ["element_info", "atomic_mass"]
+        dependencies: []
+
+  smart_home:
+    description: "Home Assistant, lights, switches, thermostat, and IoT appliance control"
+    tier: "TIER_3_MEDIUM"
+    skills:
+      - id: "skill-ovos-homeassistant"
+        name: "Home Assistant Integration"
+        repo: "https://github.com/OpenVoiceOS/skill-ovos-homeassistant"
+        intents: ["turn_on_entity", "turn_off_entity", "set_climate", "get_state"]
+        dependencies: []
+      - id: "skill-ovos-iot"
+        name: "General IoT Hub"
+        repo: "https://github.com/OpenVoiceOS/skill-ovos-iot"
+        intents: ["discover_devices", "toggle_device"]
+        dependencies: []
+      - id: "skill-openhab"
+        name: "OpenHAB Integration"
+        repo: "https://github.com/JarbasSkills/skill-openhab"
+        intents: ["openhab_command", "openhab_status"]
+        dependencies: []
+      - id: "skill-smartthings"
+        name: "Samsung SmartThings"
+        repo: "https://github.com/JarbasSkills/skill-smartthings"
+        intents: ["smartthings_switch", "smartthings_level"]
+        dependencies: []
+      - id: "skill-philips-hue"
+        name: "Philips Hue Direct Control"
+        repo: "https://github.com/JarbasSkills/skill-philips-hue"
+        intents: ["hue_lights_color", "hue_brightness"]
+        dependencies: []
+      - id: "skill-mqtt"
+        name: "MQTT Event Bus"
+        repo: "https://github.com/emphasize/skill-mqtt"
+        intents: ["publish_mqtt", "read_mqtt_topic"]
+        dependencies: []
+
+  productivity:
+    description: "Timers, alarms, calendar schedules, reminders, and notes"
+    tier: "TIER_1_ESSENTIAL"
+    skills:
+      - id: "skill-ovos-timer"
+        name: "Precision Multi-Timer"
+        repo: "https://github.com/OpenVoiceOS/skill-ovos-timer"
+        intents: ["set_timer", "cancel_timer", "status_timer"]
+        dependencies: []
+      - id: "skill-ovos-alarm"
+        name: "Alarm Manager"
+        repo: "https://github.com/OpenVoiceOS/skill-ovos-alarm"
+        intents: ["set_alarm", "cancel_alarm", "snooze_alarm"]
+        dependencies: []
+      - id: "skill-calendar"
+        name: "Calendar Scheduler"
+        repo: "https://github.com/NeonGeckoCom/skill-calendar"
+        intents: ["next_event", "add_calendar_event"]
+        dependencies: []
+      - id: "skill-reminders"
+        name: "Reminders & Alerts"
+        repo: "https://github.com/NeonGeckoCom/skill-reminders"
+        intents: ["remind_me", "list_reminders"]
+        dependencies: []
+      - id: "skill-ovos-notes"
+        name: "Personal Voice Notes"
+        repo: "https://github.com/OpenVoiceOS/skill-ovos-notes"
+        intents: ["take_note", "read_notes"]
+        dependencies: []
+      - id: "skill-todo"
+        name: "To-Do List"
+        repo: "https://github.com/NeonGeckoCom/skill-todo"
+        intents: ["add_todo", "check_todo", "list_todos"]
+        dependencies: []
+      - id: "skill-pomodoro"
+        name: "Pomodoro Focus Timer"
+        repo: "https://github.com/JarbasSkills/skill-pomodoro"
+        intents: ["start_pomodoro", "pause_pomodoro"]
+        dependencies: []
+
+  navigation:
+    description: "Maps, routing, travel times, nearby businesses, and flights"
+    tier: "TIER_3_MEDIUM"
+    skills:
+      - id: "skill-navigation"
+        name: "Directions & Routing"
+        repo: "https://github.com/NeonGeckoCom/skill-navigation"
+        intents: ["get_directions", "eta_to_destination"]
+        dependencies: []
+      - id: "skill-google-maps"
+        name: "Google Maps Integration"
+        repo: "https://github.com/JarbasSkills/skill-google-maps"
+        intents: ["maps_search", "distance_between"]
+        dependencies: []
+      - id: "skill-flight-tracker"
+        name: "Flight Radar & Status"
+        repo: "https://github.com/JarbasSkills/skill-flight-tracker"
+        intents: ["track_flight", "flight_status"]
+        dependencies: []
+      - id: "skill-local-business"
+        name: "Nearby Places Finder"
+        repo: "https://github.com/NeonGeckoCom/skill-local-business"
+        intents: ["find_nearby", "restaurant_near_me"]
+        dependencies: []
+      - id: "skill-timezone"
+        name: "World Timezones"
+        repo: "https://github.com/JarbasSkills/skill-timezone"
+        intents: ["time_in_city", "timezone_offset"]
+        dependencies: []
+
+  weather:
+    description: "Meteorological forecasts, radar, pollen, moon phases, and severe alerts"
+    tier: "TIER_1_ESSENTIAL"
+    skills:
+      - id: "skill-ovos-weather"
+        name: "Comprehensive Weather"
+        repo: "https://github.com/OpenVoiceOS/skill-ovos-weather"
+        intents: ["current_weather", "forecast_tomorrow", "will_it_rain"]
+        dependencies: []
+      - id: "skill-air-quality"
+        name: "Air Quality Index (AQI)"
+        repo: "https://github.com/JarbasSkills/skill-air-quality"
+        intents: ["get_aqi", "air_quality_alert"]
+        dependencies: []
+      - id: "skill-moon-phase"
+        name: "Moon Phase & Astronomy"
+        repo: "https://github.com/JarbasSkills/skill-moon-phase"
+        intents: ["moon_phase", "when_is_full_moon"]
+        dependencies: []
+      - id: "skill-earthquake"
+        name: "Seismic & Earthquake Tracker"
+        repo: "https://github.com/JarbasSkills/skill-earthquake"
+        intents: ["recent_earthquakes", "earthquake_alert"]
+        dependencies: []
+
+  health:
+    description: "Fitness metrics, guided meditation, breathing, and first aid"
+    tier: "TIER_4_STANDARD"
+    skills:
+      - id: "skill-health"
+        name: "Health & Vitality Assistant"
+        repo: "https://github.com/NeonGeckoCom/skill-health"
+        intents: ["log_water", "check_calories"]
+        dependencies: []
+      - id: "skill-meditation"
+        name: "Guided Meditation"
+        repo: "https://github.com/JarbasSkills/skill-meditation"
+        intents: ["start_meditation", "mindful_session"]
+        dependencies: []
+      - id: "skill-breathing"
+        name: "Breathing Exercises"
+        repo: "https://github.com/emphasize/skill-breathing"
+        intents: ["box_breathing", "relax_breathing"]
+        dependencies: []
+      - id: "skill-first-aid"
+        name: "First Aid & CPR Procedures"
+        repo: "https://github.com/JarbasSkills/skill-first-aid"
+        intents: ["first_aid_burns", "cpr_instructions"]
+        dependencies: []
+      - id: "skill-fitbit"
+        name: "Fitbit Health Tracker"
+        repo: "https://github.com/JarbasSkills/skill-fitbit"
+        intents: ["daily_steps", "sleep_summary"]
+        dependencies: []
+
+  finance:
+    description: "Stocks, cryptocurrency, currency conversion, and loan calculators"
+    tier: "TIER_4_STANDARD"
+    skills:
+      - id: "skill-stock"
+        name: "Stock Market Ticker"
+        repo: "https://github.com/JarbasSkills/skill-stock"
+        intents: ["stock_price", "market_movers"]
+        dependencies: []
+      - id: "skill-crypto"
+        name: "Cryptocurrency Prices"
+        repo: "https://github.com/JarbasSkills/skill-crypto"
+        intents: ["crypto_price", "bitcoin_rate"]
+        dependencies: []
+      - id: "skill-currency"
+        name: "Forex & Currency Converter"
+        repo: "https://github.com/JarbasSkills/skill-currency"
+        intents: ["exchange_rate", "convert_currency"]
+        dependencies: []
+      - id: "skill-mortgage-calculator"
+        name: "Mortgage & Loan Calculator"
+        repo: "https://github.com/emphasize/skill-mortgage-calculator"
+        intents: ["calculate_mortgage", "loan_payment"]
+        dependencies: []
+
+  education:
+    description: "Language learning, translation, flashcards, and tutoring"
+    tier: "TIER_4_STANDARD"
+    skills:
+      - id: "skill-ovos-translate"
+        name: "Real-time Spoken Translation"
+        repo: "https://github.com/OpenVoiceOS/skill-ovos-translate"
+        intents: ["translate_phrase", "how_do_you_say"]
+        dependencies: []
+      - id: "skill-flashcards"
+        name: "Anki Flashcards Study"
+        repo: "https://github.com/JarbasSkills/skill-flashcards"
+        intents: ["review_flashcards", "next_card"]
+        dependencies: []
+      - id: "skill-geography-quiz"
+        name: "World Capitals & Geography"
+        repo: "https://github.com/JarbasSkills/skill-geography-quiz"
+        intents: ["capital_of_country", "flag_quiz"]
+        dependencies: []
+      - id: "skill-math"
+        name: "Interactive Math Tutor"
+        repo: "https://github.com/JarbasSkills/skill-math"
+        intents: ["solve_equation", "geometry_formula"]
+        dependencies: []
+
+  news:
+    description: "Headlines, RSS feeds, tech news, and live sports updates"
+    tier: "TIER_3_MEDIUM"
+    skills:
+      - id: "skill-ovos-news"
+        name: "Daily Audio News Briefing"
+        repo: "https://github.com/OpenVoiceOS/skill-ovos-news"
+        intents: ["play_news", "hourly_briefing"]
+        dependencies: []
+      - id: "skill-rss"
+        name: "Custom RSS Reader"
+        repo: "https://github.com/JarbasSkills/skill-rss"
+        intents: ["read_feed", "latest_headlines"]
+        dependencies: []
+      - id: "skill-hacker-news"
+        name: "Hacker News Digest"
+        repo: "https://github.com/JarbasSkills/skill-hacker-news"
+        intents: ["top_tech_news", "show_hn"]
+        dependencies: []
+      - id: "skill-sports"
+        name: "Live Sports Scores"
+        repo: "https://github.com/JarbasSkills/skill-sports"
+        intents: ["game_score", "sports_schedule"]
+        dependencies: []
+
+  shopping:
+    description: "Shopping list, price checking, deal tracking, and pantry inventory"
+    tier: "TIER_4_STANDARD"
+    skills:
+      - id: "skill-ovos-shopping"
+        name: "Shared Shopping List"
+        repo: "https://github.com/OpenVoiceOS/skill-ovos-shopping"
+        intents: ["add_shopping_item", "check_shopping_list"]
+        dependencies: []
+      - id: "skill-deals"
+        name: "Deals & Coupon Finder"
+        repo: "https://github.com/JarbasSkills/skill-deals"
+        intents: ["find_deals", "discount_code"]
+        dependencies: []
+
+  system:
+    description: "Volume control, brightness, network status, battery, and host diagnostics"
+    tier: "TIER_0_CRITICAL"
+    skills:
+      - id: "skill-ovos-volume"
+        name: "Audio Master Volume"
+        repo: "https://github.com/OpenVoiceOS/skill-ovos-volume"
+        intents: ["volume_up", "volume_down", "set_volume", "mute", "unmute"]
+        dependencies: []
+      - id: "skill-ovos-brightness"
+        name: "Screen Brightness Control"
+        repo: "https://github.com/OpenVoiceOS/skill-ovos-brightness"
+        intents: ["brightness_up", "brightness_down", "set_brightness"]
+        dependencies: []
+      - id: "skill-ovos-diagnostics"
+        name: "System Hardware Diagnostics"
+        repo: "https://github.com/OpenVoiceOS/skill-ovos-diagnostics"
+        intents: ["check_system_health", "temperature", "disk_space"]
+        dependencies: []
+      - id: "skill-speed-test"
+        name: "Network Speed Test"
+        repo: "https://github.com/JarbasSkills/skill-speed-test"
+        intents: ["run_speedtest", "bandwidth_check"]
+        dependencies: []
+      - id: "skill-wake-on-lan"
+        name: "Wake-on-LAN Remote Boot"
+        repo: "https://github.com/JarbasSkills/skill-wake-on-lan"
+        intents: ["wake_pc", "send_magic_packet"]
+        dependencies: []
+
+  creative:
+    description: "Generative AI text, rhymes, poetry, and creative assistance"
+    tier: "TIER_5_LOW"
+    skills:
+      - id: "skill-ovos-fallback-chatgpt"
+        name: "ChatGPT Conversationalist"
+        repo: "https://github.com/OpenVoiceOS/skill-ovos-fallback-chatgpt"
+        intents: ["ask_chatgpt", "general_question"]
+        dependencies: []
+      - id: "skill-poetry"
+        name: "Poem & Limerick Generator"
+        repo: "https://github.com/JarbasSkills/skill-poetry"
+        intents: ["recite_poem", "write_haiku"]
+        dependencies: []
+      - id: "skill-rhyme"
+        name: "Rhyme & Assonance Finder"
+        repo: "https://github.com/JarbasSkills/skill-rhyme"
+        intents: ["find_rhyme", "words_that_rhyme_with"]
+        dependencies: []
+
+  automotive:
+    description: "OBD-II vehicle diagnostics, Tesla telematics, and fuel tracking"
+    tier: "TIER_6_LAZY"
+    skills:
+      - id: "skill-obd"
+        name: "OBD-II Car Diagnostics"
+        repo: "https://github.com/JarbasSkills/skill-obd"
+        intents: ["car_diagnostics", "check_engine_code"]
+        dependencies: []
+      - id: "skill-tesla"
+        name: "Tesla Telematics & Climate"
+        repo: "https://github.com/JarbasSkills/skill-tesla"
+        intents: ["start_car_climate", "car_battery_level"]
+        dependencies: []
+
+  security:
+    description: "Password generation, breach scanning, and VPN controls"
+    tier: "TIER_4_STANDARD"
+    skills:
+      - id: "skill-password-generator"
+        name: "Cryptographic Password Generator"
+        repo: "https://github.com/JarbasSkills/skill-password-generator"
+        intents: ["generate_password", "strong_passphrase"]
+        dependencies: []
+      - id: "skill-privacy"
+        name: "Privacy & Anti-Tracking Shield"
+        repo: "https://github.com/NeonGeckoCom/skill-privacy"
+        intents: ["check_trackers", "toggle_vpn"]
+        dependencies: []
+
+  science:
+    description: "Astronomy, NASA imagery, ISS tracking, and scientific papers"
+    tier: "TIER_6_LAZY"
+    skills:
+      - id: "skill-iss"
+        name: "International Space Station Tracker"
+        repo: "https://github.com/JarbasSkills/skill-iss"
+        intents: ["where_is_iss", "iss_overhead"]
+        dependencies: []
+      - id: "skill-space-launches"
+        name: "Rocket Launch Schedules"
+        repo: "https://github.com/JarbasSkills/skill-space-launches"
+        intents: ["next_rocket_launch", "space_mission"]
+        dependencies: []
+      - id: "skill-arxiv"
+        name: "arXiv Academic Paper Search"
+        repo: "https://github.com/JarbasSkills/skill-arxiv"
+        intents: ["find_paper", "latest_ai_research"]
+        dependencies: []
+
+  cooking:
+    description: "Recipe search, step-by-step guidance, substitutions, and cocktails"
+    tier: "TIER_4_STANDARD"
+    skills:
+      - id: "skill-recipes"
+        name: "Recipe Search & Cooking Guide"
+        repo: "https://github.com/NeonGeckoCom/skill-recipes"
+        intents: ["find_recipe", "how_to_cook"]
+        dependencies: []
+      - id: "skill-cocktails"
+        name: "Bartender & Cocktail Recipes"
+        repo: "https://github.com/JarbasSkills/skill-cocktails"
+        intents: ["mix_cocktail", "drink_ingredients"]
+        dependencies: []
+      - id: "skill-cooking-timer"
+        name: "Multi-Pot Cooking Timer"
+        repo: "https://github.com/emphasize/skill-cooking-timer"
+        intents: ["pasta_timer", "oven_timer"]
+        dependencies: []
+
+  social:
+    description: "Birthday reminders, compliments, party planning, and gift ideas"
+    tier: "TIER_5_LOW"
+    skills:
+      - id: "skill-birthday"
+        name: "Birthday & Anniversary Tracker"
+        repo: "https://github.com/JarbasSkills/skill-birthday"
+        intents: ["upcoming_birthdays", "add_birthday"]
+        dependencies: []
+      - id: "skill-compliment"
+        name: "Daily Compliment Generator"
+        repo: "https://github.com/JarbasSkills/skill-compliment"
+        intents: ["give_compliment", "affirmation"]
+        dependencies: []
+
+  emergency:
+    description: "Emergency calling, SOS beacon, AED locations, and crisis protocols"
+    tier: "TIER_0_CRITICAL"
+    skills:
+      - id: "skill-emergency"
+        name: "Emergency Dispatch & Location"
+        repo: "https://github.com/JarbasSkills/skill-emergency"
+        intents: ["call_911", "emergency_help", "sos_beacon"]
+        dependencies: []
+      - id: "skill-survival"
+        name: "Wilderness Survival Guide"
+        repo: "https://github.com/JarbasSkills/skill-survival"
+        intents: ["purify_water", "build_shelter"]
+        dependencies: []
+
+  legal:
+    description: "Legal terminology, tenant rights, and compliance lookup"
+    tier: "TIER_6_LAZY"
+    skills:
+      - id: "skill-legal-terms"
+        name: "Legal Dictionary & Rights Info"
+        repo: "https://github.com/All-Skills/skill-legal-terms"
+        intents: ["explain_legal_term", "tenant_rights"]
+        dependencies: []
+
+  agriculture:
+    description: "Soil analysis, planting calendar, irrigation scheduling, and crop planning"
+    tier: "TIER_6_LAZY"
+    skills:
+      - id: "skill-garden"
+        name: "Smart Garden & Hydroponics"
+        repo: "https://github.com/JarbasSkills/skill-garden"
+        intents: ["when_to_plant", "soil_moisture"]
+        dependencies: []
+
+  developer:
+    description: "Git commands, server monitoring, Docker containers, and CI/CD pipelines"
+    tier: "TIER_6_LAZY"
+    skills:
+      - id: "skill-github"
+        name: "GitHub Repository Manager"
+        repo: "https://github.com/JarbasSkills/skill-github"
+        intents: ["pull_requests", "repo_issues"]
+        dependencies: []
+      - id: "skill-docker"
+        name: "Docker Container Controller"
+        repo: "https://github.com/JarbasSkills/skill-docker"
+        intents: ["container_status", "restart_container"]
+        dependencies: []
+      - id: "skill-server-status"
+        name: "Remote Server Uptime Monitor"
+        repo: "https://github.com/JarbasSkills/skill-server-status"
+        intents: ["check_server", "ping_host"]
+        dependencies: []
+
+  accessibility:
+    description: "Screen reader, high contrast, magnification, and dyslexia accommodations"
+    tier: "TIER_0_CRITICAL"
+    skills:
+      - id: "skill-ovos-accessibility"
+        name: "Universal Accessibility Mode"
+        repo: "https://github.com/OpenVoiceOS/skill-ovos-accessibility"
+        intents: ["screen_reader_mode", "high_contrast"]
+        dependencies: []
+
+  fun:
+    description: "Coin flip, dice roller, fortune cookie, magic 8-ball, and horoscopes"
+    tier: "TIER_5_LOW"
+    skills:
+      - id: "skill-coin-flip"
+        name: "Fair Coin Flipper"
+        repo: "https://github.com/JarbasSkills/skill-coin-flip"
+        intents: ["flip_coin", "heads_or_tails"]
+        dependencies: []
+      - id: "skill-dice"
+        name: "Polyhedral Dice Roller"
+        repo: "https://github.com/JarbasSkills/skill-dice"
+        intents: ["roll_dice", "roll_d20"]
+        dependencies: []
+      - id: "skill-magic-8-ball"
+        name: "Mystic 8-Ball"
+        repo: "https://github.com/JarbasSkills/skill-magic-8-ball"
+        intents: ["ask_magic_eight_ball"]
+        dependencies: []
+      - id: "skill-horoscope"
+        name: "Zodiac & Daily Horoscope"
+        repo: "https://github.com/JarbasSkills/skill-horoscope"
+        intents: ["daily_horoscope", "zodiac_sign"]
+        dependencies: []
+
+  fallback:
+    description: "Cascading solver and fallback chain plugins"
+    tier: "TIER_0_CRITICAL"
+    skills:
+      - id: "skill-fallback-chatgpt"
+        name: "OpenAI GPT Fallback"
+        repo: "https://github.com/OpenVoiceOS/skill-ovos-fallback-chatgpt"
+        intents: ["handle_fallback"]
+        dependencies: []
+      - id: "skill-fallback-unknown"
+        name: "Graceful Unknown Utterance Handler"
+        repo: "https://github.com/OpenVoiceOS/skill-ovos-fallback-unknown"
+        intents: ["unknown_intent"]
+        dependencies: []

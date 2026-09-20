@@ -1,0 +1,8 @@
+name: "skill-math-tutor"
+category: "education"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for math tutor."
+intents:
+  - "math_tutor"
+dependencies: []

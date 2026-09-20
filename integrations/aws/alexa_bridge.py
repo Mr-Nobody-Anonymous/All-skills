@@ -1,0 +1,2 @@
+class AlexaBridge:
+    pass

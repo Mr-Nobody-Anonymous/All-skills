@@ -1,0 +1,3 @@
+uv index
+run uv index
+execute uv index

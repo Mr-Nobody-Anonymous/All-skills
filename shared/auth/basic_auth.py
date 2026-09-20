@@ -1,0 +1,2 @@
+class BasicAuth:
+    pass

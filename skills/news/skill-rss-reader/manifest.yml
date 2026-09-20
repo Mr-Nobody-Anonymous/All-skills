@@ -1,0 +1,8 @@
+name: "skill-rss-reader"
+category: "news"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for rss reader."
+intents:
+  - "rss_reader"
+dependencies: []

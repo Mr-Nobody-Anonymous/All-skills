@@ -1,0 +1,8 @@
+name: "skill-cooking-conversion"
+category: "cooking"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for cooking conversion."
+intents:
+  - "cooking_conversion"
+dependencies: []

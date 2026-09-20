@@ -1,0 +1,8 @@
+name: "skill-dashcam"
+category: "automotive"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for dashcam."
+intents:
+  - "dashcam"
+dependencies: []

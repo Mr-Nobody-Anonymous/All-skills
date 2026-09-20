@@ -1,0 +1,2 @@
+class Sanitization:
+    pass

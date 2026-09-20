@@ -1,0 +1,8 @@
+name: "skill-soundcloud"
+category: "media"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for soundcloud."
+intents:
+  - "soundcloud"
+dependencies: []

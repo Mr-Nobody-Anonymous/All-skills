@@ -1,0 +1,8 @@
+name: "skill-grocery-list"
+category: "shopping"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for grocery list."
+intents:
+  - "grocery_list"
+dependencies: []

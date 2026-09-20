@@ -1,0 +1,8 @@
+name: "skill-json-tools"
+category: "developer"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for json tools."
+intents:
+  - "json_tools"
+dependencies: []

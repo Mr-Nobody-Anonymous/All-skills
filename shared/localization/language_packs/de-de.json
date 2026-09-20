@@ -1,0 +1,15 @@
+{
+  "locale": "de-de",
+  "greetings": [
+    "hello",
+    "hi"
+  ],
+  "affirmations": [
+    "yes",
+    "ok"
+  ],
+  "denials": [
+    "no",
+    "cancel"
+  ]
+}

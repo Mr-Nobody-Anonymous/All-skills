@@ -1,0 +1,2 @@
+class GraphQLClient:
+    pass

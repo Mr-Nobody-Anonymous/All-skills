@@ -1,0 +1,8 @@
+name: "skill-typing-tutor"
+category: "education"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for typing tutor."
+intents:
+  - "typing_tutor"
+dependencies: []

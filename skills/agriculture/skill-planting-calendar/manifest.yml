@@ -1,0 +1,8 @@
+name: "skill-planting-calendar"
+category: "agriculture"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for planting calendar."
+intents:
+  - "planting_calendar"
+dependencies: []

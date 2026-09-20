@@ -1,0 +1,8 @@
+name: "skill-fallback-wolfram"
+category: "fallback"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for fallback wolfram."
+intents:
+  - "fallback_wolfram"
+dependencies: []

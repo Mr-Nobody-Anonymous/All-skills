@@ -1,0 +1,8 @@
+name: "skill-decision-maker"
+category: "fun"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for decision maker."
+intents:
+  - "decision_maker"
+dependencies: []

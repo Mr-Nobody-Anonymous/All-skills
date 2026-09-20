@@ -1,0 +1,2 @@
+class LogViewer:
+    pass

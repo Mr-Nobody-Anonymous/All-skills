@@ -1,0 +1,8 @@
+name: "skill-fallback-duckduckgo"
+category: "fallback"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for fallback duckduckgo."
+intents:
+  - "fallback_duckduckgo"
+dependencies: []

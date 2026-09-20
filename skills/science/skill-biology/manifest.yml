@@ -1,0 +1,8 @@
+name: "skill-biology"
+category: "science"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for biology."
+intents:
+  - "biology"
+dependencies: []

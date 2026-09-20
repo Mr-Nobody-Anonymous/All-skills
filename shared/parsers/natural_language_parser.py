@@ -1,0 +1,2 @@
+class NaturalLanguageParser:
+    pass

@@ -1,0 +1,8 @@
+name: "skill-docker"
+category: "system"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for docker."
+intents:
+  - "docker"
+dependencies: []

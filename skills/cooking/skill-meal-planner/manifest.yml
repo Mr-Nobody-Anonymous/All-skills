@@ -1,0 +1,8 @@
+name: "skill-meal-planner"
+category: "cooking"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for meal planner."
+intents:
+  - "meal_planner"
+dependencies: []

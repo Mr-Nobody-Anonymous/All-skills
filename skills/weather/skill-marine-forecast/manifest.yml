@@ -1,0 +1,8 @@
+name: "skill-marine-forecast"
+category: "weather"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for marine forecast."
+intents:
+  - "marine_forecast"
+dependencies: []

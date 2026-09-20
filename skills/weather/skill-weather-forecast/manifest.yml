@@ -1,0 +1,8 @@
+name: "skill-weather-forecast"
+category: "weather"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for weather forecast."
+intents:
+  - "weather_forecast"
+dependencies: []

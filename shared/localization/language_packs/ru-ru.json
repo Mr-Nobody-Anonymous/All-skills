@@ -1,0 +1,15 @@
+{
+  "locale": "ru-ru",
+  "greetings": [
+    "hello",
+    "hi"
+  ],
+  "affirmations": [
+    "yes",
+    "ok"
+  ],
+  "denials": [
+    "no",
+    "cancel"
+  ]
+}

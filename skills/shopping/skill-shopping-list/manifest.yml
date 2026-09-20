@@ -1,0 +1,8 @@
+name: "skill-shopping-list"
+category: "shopping"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for shopping list."
+intents:
+  - "shopping_list"
+dependencies: []

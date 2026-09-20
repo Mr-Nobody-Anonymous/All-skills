@@ -1,0 +1,2 @@
+class InputValidator:
+    pass

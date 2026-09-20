@@ -1,0 +1,8 @@
+name: "skill-road-conditions"
+category: "navigation"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for road conditions."
+intents:
+  - "road_conditions"
+dependencies: []

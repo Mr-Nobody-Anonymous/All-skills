@@ -1,0 +1,2 @@
+class TokenStore:
+    pass

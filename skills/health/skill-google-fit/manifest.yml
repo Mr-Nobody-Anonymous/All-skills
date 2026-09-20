@@ -1,0 +1,8 @@
+name: "skill-google-fit"
+category: "health"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for google fit."
+intents:
+  - "google_fit"
+dependencies: []

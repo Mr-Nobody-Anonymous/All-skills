@@ -1,0 +1,8 @@
+name: "skill-medication-reminder"
+category: "health"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for medication reminder."
+intents:
+  - "medication_reminder"
+dependencies: []

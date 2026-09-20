@@ -1,0 +1,8 @@
+name: "skill-fallback-unknown"
+category: "fallback"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for fallback unknown."
+intents:
+  - "fallback_unknown"
+dependencies: []

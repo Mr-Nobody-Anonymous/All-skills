@@ -1,0 +1,8 @@
+name: "skill-ev-charging"
+category: "navigation"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for ev charging."
+intents:
+  - "ev_charging"
+dependencies: []

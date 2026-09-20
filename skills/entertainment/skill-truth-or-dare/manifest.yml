@@ -1,0 +1,8 @@
+name: "skill-truth-or-dare"
+category: "entertainment"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for truth or dare."
+intents:
+  - "truth_or_dare"
+dependencies: []

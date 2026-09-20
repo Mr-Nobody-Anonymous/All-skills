@@ -1,0 +1,8 @@
+name: "skill-astronomy"
+category: "science"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for astronomy."
+intents:
+  - "astronomy"
+dependencies: []

@@ -1,0 +1,15 @@
+{
+  "locale": "pt-br",
+  "greetings": [
+    "hello",
+    "hi"
+  ],
+  "affirmations": [
+    "yes",
+    "ok"
+  ],
+  "denials": [
+    "no",
+    "cancel"
+  ]
+}

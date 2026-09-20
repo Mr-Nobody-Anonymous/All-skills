@@ -1,0 +1,8 @@
+name: "skill-wake-on-lan"
+category: "system"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for wake on lan."
+intents:
+  - "wake_on_lan"
+dependencies: []

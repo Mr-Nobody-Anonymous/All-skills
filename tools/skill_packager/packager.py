@@ -1,0 +1,2 @@
+class SkillPackager:
+    pass

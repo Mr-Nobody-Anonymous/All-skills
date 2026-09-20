@@ -1,0 +1,8 @@
+name: "skill-barcode-scanner"
+category: "shopping"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for barcode scanner."
+intents:
+  - "barcode_scanner"
+dependencies: []

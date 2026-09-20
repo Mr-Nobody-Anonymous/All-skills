@@ -1,0 +1,8 @@
+name: "skill-process-manager"
+category: "system"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for process manager."
+intents:
+  - "process_manager"
+dependencies: []

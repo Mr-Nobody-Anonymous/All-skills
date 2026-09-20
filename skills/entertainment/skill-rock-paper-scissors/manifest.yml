@@ -1,0 +1,8 @@
+name: "skill-rock-paper-scissors"
+category: "entertainment"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for rock paper scissors."
+intents:
+  - "rock_paper_scissors"
+dependencies: []

@@ -1,0 +1,8 @@
+name: "skill-language-learning"
+category: "education"
+version: "1.0.0"
+author: "All-Skills Universal Platform"
+description: "Voice and autonomous assistant skill for language learning."
+intents:
+  - "language_learning"
+dependencies: []
