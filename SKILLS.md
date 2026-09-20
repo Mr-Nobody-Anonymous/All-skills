@@ -47,6 +47,12 @@ All-skills/
 - **Upstream Source Registry**: Tracks vendor, specialized, and community repositories in `sources/registry.yaml`.
 - **Strict Governance**: Automated license auditing, credential detection, and destructive operation guardrails in `sources/policies.yaml`.
 
+### 5. 🏛️ Agent Operating System & v2 Master Plan (`docs/spec/`)
+- **Formal Specifications**: Complete architectural blueprints formalized in [V2_RUNTIME_MASTER_PLAN.md](docs/spec/V2_RUNTIME_MASTER_PLAN.md) and [AGENT_RUNTIME_SPECIFICATION.md](docs/spec/AGENT_RUNTIME_SPECIFICATION.md).
+- **6 Core Primitives**: Registry, Router, Runtime, Composer, Workflow Engine, and Evaluation.
+- **5 Autonomy Levels (L0–L4)**: Informational (`L0`), Read-Only (`L1`), Local Modification (`L2`), External Side Effects (`L3`), and Production-Impacting (`L4`).
+- **Top 10 Reference Ecosystem Repositories**: Synthesizes architecture from `NVIDIA/SkillEvaluator`, `zhengyanzhao1997/SkillRouter`, `oneal2000/SR-Agents`, `SkillLens-AI/skilllens`, `Aakash2512git/skillregistry`, `nikships/skills-registry`, `anthropics/skills`, `darkrishabh/agent-skills-eval`, `simota/agent-skills`, and `open-agent-craft/awesome-agent-skills`.
+
 ---
 
 ## 🧭 Multi-Tool Compatibility & Harness Setup

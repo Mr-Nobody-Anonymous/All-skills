@@ -24,6 +24,8 @@
 
 <p align="center">
   <a href="awesome_skills/CATALOG.md"><strong>Explore Catalog (14,855 Skills)</strong></a> •
+  <a href="docs/spec/V2_RUNTIME_MASTER_PLAN.md"><strong>v2 Master Plan</strong></a> •
+  <a href="docs/spec/AGENT_RUNTIME_SPECIFICATION.md"><strong>Runtime Spec</strong></a> •
   <a href="#-universal-cli-allskills"><strong>Universal CLI (allskills)</strong></a> •
   <a href="ontology/"><strong>Universal Ontology</strong></a> •
   <a href="adapters/"><strong>Platform Adapters</strong></a> •
@@ -499,6 +501,58 @@ python scripts/skills/skills.py test
 # 3. Verify multi-tool harness connections
 python scripts/setup_tools.py --status
 ```
+
+---
+
+## 🏛️ All-skills v2 Operating System Architecture & Master Plan
+
+For the full formal blueprint, see the comprehensive [**All-skills v2 Runtime Master Plan**](docs/spec/V2_RUNTIME_MASTER_PLAN.md) and [**Agent Runtime Specification**](docs/spec/AGENT_RUNTIME_SPECIFICATION.md).
+
+All-skills v2 synthesizes the ecosystem from a raw collection of `SKILL.md` instructions into a **verifiable, sandboxed, composable Agent Operating System** governed by **6 Core Operating Primitives**:
+
+```
+                    ALL SKILLS v2 ARCHITECTURE
+                                │
+        ┌───────────────────────┼───────────────────────┐
+        ▼                       ▼                       ▼
+     Registry                Router                  Runtime
+   [Provenance]           [Multi-Signal]          [Sandboxing]
+   [Versioning]           [Large-Scale]           [L0–L4 Autonomy]
+   [Lockfiles]            [Telemetry]             [Least-Privilege]
+        │                       │                       │
+        └───────────────────────┼───────────────────────┘
+                                │
+                                ▼
+                             Composer
+                        [Typed I/O Stages]
+                        [Sequential/Parallel]
+                                │
+                                ▼
+                            Evaluation
+                    [Evidence & Benchmark Suite]
+                    [NVIDIA SkillEvaluator / A/B]
+```
+
+### 🔒 5-Tier Autonomy Classification (L0 to L4)
+Every skill declares an explicit autonomy ceiling governing execution safety and confirmation gates:
+- **`L0 — Informational`**: Advisory only. Zero tool mutations (`AUTO`).
+- **`L1 — Read-Only`**: Inspect files, search codebase, read logs, run AST linters (`AUTO`).
+- **`L2 — Local Modification`**: Workspace file edits, local unit test runs, safe refactoring (`AUTO`).
+- **`L3 — External Side Effects`**: Git push, package installation, remote API calls (`ASK - Requires Approval`).
+- **`L4 — Production-Impacting`**: Cloud deployments, DB drops, credential changes (`BLOCK / Strict Gate`).
+
+### 📚 Top 10 Reference Repositories Synthesized
+All-skills v2 actively builds upon architectural patterns established by the premier agent skill repositories:
+1. **`NVIDIA/SkillEvaluator`** — 3-tier validation (Validation $\rightarrow$ Deduplication $\rightarrow$ Live Agent Eval) & benchmarks.
+2. **`zhengyanzhao1997/SkillRouter`** — Dual-stage neural reranking and large-scale skill retrieval over 80k+ skills.
+3. **`oneal2000/SR-Agents` (SRA-Bench)** — Comprehensive retrieval and joint task execution benchmark.
+4. **`SkillLens-AI/skilllens`** — Rigorous separation of utility probes and adversarial security evaluation.
+5. **`Aakash2512git/skillregistry`** — Automated skill scanning, semantic indexing, and Recall@K / MRR metrics.
+6. **`nikships/skills-registry`** — Distribution engine, Go CLI/TUI, and multi-agent directory packaging.
+7. **`anthropics/skills`** — Canonical `SKILL.md` specification and progressive disclosure design.
+8. **`darkrishabh/agent-skills-eval`** — Empirical A/B evaluation measuring delta performance with-vs-without skills.
+9. **`simota/agent-skills`** — Nexus multi-agent orchestrator, agent personas, and cross-agent recipes.
+10. **`open-agent-craft/awesome-agent-skills`** — Broad domain categorization index and community skill curation ecosystem.
 
 ---
 

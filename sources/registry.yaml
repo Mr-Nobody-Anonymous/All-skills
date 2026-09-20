@@ -307,3 +307,215 @@ sources:
       security_scan: required
       license_policy: allow-mit
       behavior_tested: true
+
+  - id: microsoft-agent-skills-docs
+    name: Microsoft Agent Skills Specification & Docs
+    repo: MicrosoftDocs/Agent-Skills
+    url: https://github.com/MicrosoftDocs/Agent-Skills
+    branch: main
+    class: official
+    vendor: microsoft
+    license: MIT
+    description: "Documentation and reference material covering the Agent Skills standard across Claude, Codex, and Copilot."
+    skill_paths:
+      - skills
+    update_schedule: weekly
+    trust_tier: Tier-1-Vendor
+    verification:
+      security_scan: required
+      license_policy: allow-mit
+      behavior_tested: true
+
+  # ==========================================
+  # Evaluation & Benchmark Repositories
+  # ==========================================
+  - id: nvidia-skillevaluator
+    name: NVIDIA SkillEvaluator
+    repo: NVIDIA/SkillEvaluator
+    url: https://github.com/NVIDIA/SkillEvaluator
+    branch: main
+    class: evaluation
+    vendor: nvidia
+    license: Apache-2.0
+    description: "3-tier validation (Validation -> Deduplication -> Live Agent Eval), PII scanning, and sandboxed benchmark runner."
+    skill_paths:
+      - skills
+      - benchmarks
+    update_schedule: weekly
+    trust_tier: Tier-1-Vendor
+    verification:
+      security_scan: required
+      license_policy: allow-apache
+      behavior_tested: true
+
+  - id: skilllens
+    name: SkillLens Agent Security & Utility Evaluator
+    repo: SkillLens-AI/skilllens
+    url: https://github.com/SkillLens-AI/skilllens
+    branch: main
+    class: evaluation
+    vendor: skilllens-ai
+    license: MIT
+    description: "Agent skills evaluation through utility testing, adversarial security probes, trajectory capture, and LLM judging."
+    skill_paths:
+      - skills
+      - probes
+    update_schedule: weekly
+    trust_tier: Tier-2-Specialized
+    verification:
+      security_scan: required
+      license_policy: allow-mit
+      behavior_tested: true
+
+  - id: agent-skills-eval
+    name: Agent Skills Effectiveness Evaluator
+    repo: darkrishabh/agent-skills-eval
+    url: https://github.com/darkrishabh/agent-skills-eval
+    branch: main
+    class: evaluation
+    vendor: darkrishabh
+    license: MIT
+    description: "Empirical A/B evaluation measuring task completion rate: Agent with skill vs Agent without skill."
+    skill_paths:
+      - evals
+    update_schedule: weekly
+    trust_tier: Tier-2-Specialized
+    verification:
+      security_scan: required
+      license_policy: allow-mit
+      behavior_tested: true
+
+  - id: skill-compass
+    name: Evol-AI SkillCompass
+    repo: Evol-ai/SkillCompass
+    url: https://github.com/Evol-ai/SkillCompass
+    branch: main
+    class: evaluation
+    vendor: evol-ai
+    license: Apache-2.0
+    description: "Agent-skill quality evaluation framework for identifying operational gaps, failure modes, and weak points."
+    skill_paths:
+      - eval
+    update_schedule: monthly
+    trust_tier: Tier-2-Specialized
+    verification:
+      security_scan: required
+      license_policy: allow-apache
+      behavior_tested: true
+
+  # ==========================================
+  # Large-Scale Routing & Retrieval Repositories
+  # ==========================================
+  - id: skillrouter
+    name: SkillRouter Large-Scale Retrieval
+    repo: zhengyanzhao1997/SkillRouter
+    url: https://github.com/zhengyanzhao1997/SkillRouter
+    branch: main
+    class: routing
+    vendor: zhengyanzhao1997
+    license: MIT
+    description: "Large-scale skill retrieval and neural reranking architecture evaluated over 80,000+ skills."
+    skill_paths:
+      - skills
+      - router
+    update_schedule: monthly
+    trust_tier: Tier-2-Specialized
+    verification:
+      security_scan: required
+      license_policy: allow-mit
+      behavior_tested: true
+
+  - id: sr-agents-sra-bench
+    name: SR-Agents SRA-Bench
+    repo: oneal2000/SR-Agents
+    url: https://github.com/oneal2000/SR-Agents
+    branch: main
+    class: routing
+    vendor: oneal2000
+    license: MIT
+    description: "SRA-Bench evaluation suite for end-to-end skill retrieval, skill incorporation, and execution success across 5,400 instances."
+    skill_paths:
+      - benchmarks
+    update_schedule: monthly
+    trust_tier: Tier-2-Specialized
+    verification:
+      security_scan: required
+      license_policy: allow-mit
+      behavior_tested: true
+
+  - id: aakash-skillregistry
+    name: Aakash Skill Registry & Semantic Search
+    repo: Aakash2512git/skillregistry
+    url: https://github.com/Aakash2512git/skillregistry
+    branch: main
+    class: registry
+    vendor: aakash2512git
+    license: MIT
+    description: "Automated skill scanning, registry metadata indexing, semantic retrieval, and Recall@K / MRR evaluation."
+    skill_paths:
+      - registry
+    update_schedule: monthly
+    trust_tier: Tier-2-Specialized
+    verification:
+      security_scan: required
+      license_policy: allow-mit
+      behavior_tested: true
+
+  # ==========================================
+  # Distribution, Packaging & Multi-Agent Orchestration
+  # ==========================================
+  - id: nikships-skills-registry
+    name: Nikships Skills Registry CLI & TUI
+    repo: nikships/skills-registry
+    url: https://github.com/nikships/skills-registry
+    branch: main
+    class: registry
+    vendor: nikships
+    license: MIT
+    description: "Multi-agent skill registry, distribution engine, Go CLI/TUI, and cross-agent directory installation."
+    skill_paths:
+      - registry
+    update_schedule: monthly
+    trust_tier: Tier-2-Specialized
+    verification:
+      security_scan: required
+      license_policy: allow-mit
+      behavior_tested: true
+
+  - id: simota-agent-skills
+    name: Simota Agent Skills & Nexus Orchestrator
+    repo: simota/agent-skills
+    url: https://github.com/simota/agent-skills
+    branch: main
+    class: orchestration
+    vendor: simota
+    license: MIT
+    description: "Nexus multi-agent orchestrator, global agent personas, project-local extensions, and cross-agent synchronization recipes."
+    skill_paths:
+      - agents
+      - skills
+    update_schedule: weekly
+    trust_tier: Tier-2-Specialized
+    verification:
+      security_scan: required
+      license_policy: allow-mit
+      behavior_tested: true
+
+  - id: open-agent-craft-skills
+    name: Open Agent Craft Awesome Agent Skills
+    repo: open-agent-craft/awesome-agent-skills
+    url: https://github.com/open-agent-craft/awesome-agent-skills
+    branch: main
+    class: community
+    vendor: open-agent-craft
+    license: MIT
+    description: "Curated ecosystem index covering skills, workflows, tool recipes, Codex, Claude Code, Cursor, and Copilot."
+    skill_paths:
+      - skills
+    update_schedule: weekly
+    trust_tier: Tier-3-Community
+    verification:
+      security_scan: required
+      license_policy: allow-mit
+      behavior_tested: true
+
