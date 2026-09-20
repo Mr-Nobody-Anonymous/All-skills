@@ -1,0 +1,87 @@
+# Upstream Skill Governance, Licensing, and Verification Policies
+# Enforces automated safety, provenance preservation, and quality constraints.
+
+version: "1.0"
+updated_at: "2026-09-20"
+
+licensing:
+  policy: strict-open-source
+  allowed_licenses:
+    - MIT
+    - Apache-2.0
+    - BSD-2-Clause
+    - BSD-3-Clause
+    - ISC
+    - CC-BY-4.0
+    - CC0-1.0
+    - Unlicense
+  quarantine_on_unknown_license: true
+  strip_proprietary_notices: false
+
+provenance:
+  mandatory_fields:
+    - repository
+    - commit
+    - path
+    - license
+    - imported_at
+  author_attribution_required: true
+  upstream_integrity_hash: sha256
+
+security_scanning:
+  ast_validation:
+    enabled: true
+    parsers:
+      - python_py_compile
+      - node_check_syntax
+      - yaml_safe_load
+  credential_leak_detection:
+    patterns:
+      - "(?:api[_-]?key|auth[_-]?token|secret|password|private[_-]?key)\\s*[:=]\\s*['\"][A-Za-z0-9_\\-]{16,}['\"]"
+      - "-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----"
+    action: quarantine_immediately
+  destructive_command_filter:
+    prohibited_patterns:
+      - "rm\\s+-rf\\s+/"
+      - "mkfs\\."
+      - "format\\s+[C-Z]:"
+      - "dd\\s+if=/dev/zero"
+      - "curl\\s+.*\\|\\s*(?:sh|bash|powershell)"
+      - "git\\s+push\\s+.*--force"
+    action: quarantine_immediately
+
+risk_classification:
+  tiers:
+    read_only:
+      allowed_side_effects:
+        - none
+        - filesystem-read
+      human_approval: optional
+    analysis:
+      allowed_side_effects:
+        - filesystem-read
+        - memory-store
+      human_approval: optional
+    create_modify:
+      allowed_side_effects:
+        - filesystem-write
+        - network-request
+      human_approval: recommended
+    destructive_production:
+      triggers:
+        - production-deploy
+        - delete-files
+        - send-email
+        - publish-content
+        - financial-transaction
+        - cloud-resource-creation
+      human_approval: mandatory
+
+freshness_and_sync:
+  verification_intervals:
+    official: 86400        # 24 hours
+    specialized: 604800    # 7 days
+    community: 604800      # 7 days
+    reference: 2592000     # 30 days
+  stale_threshold_days: 180
+  deprecation_action: mark_stale_and_retain

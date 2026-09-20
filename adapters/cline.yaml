@@ -1,0 +1,16 @@
+# Platform Adapter: Cline (Autonomous Coding Agent)
+agent_id: cline
+display_name: "Cline"
+vendor: Cline
+discovery_paths:
+  workspace:
+    - ".cline/skills"
+    - ".roomodes"
+  user_global:
+    - "~/.cline/skills"
+manifest_format: markdown_frontmatter
+frontmatter_standard: agent_skills_v1
+supported_features:
+  - step_verification
+  - terminal_supervision
+reload_trigger: context_reload

@@ -1,0 +1,17 @@
+# Platform Adapter: Cursor AI
+agent_id: cursor
+display_name: "Cursor AI"
+vendor: Anysphere
+discovery_paths:
+  workspace:
+    - ".cursor/skills"
+    - ".cursorrules"
+  user_global:
+    - "~/.cursor/skills"
+manifest_format: markdown_frontmatter
+frontmatter_standard: agent_skills_v1
+supported_features:
+  - semantic_indexing
+  - codebase_context
+  - ast_symbol_search
+reload_trigger: window_reload

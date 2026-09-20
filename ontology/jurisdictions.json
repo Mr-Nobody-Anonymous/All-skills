@@ -1,0 +1,61 @@
+{
+  "version": "2.0",
+  "updated_at": "2026-09-20",
+  "jurisdictions": {
+    "international": {
+      "name": "International Treaties & Global Standards",
+      "code": "INT"
+    },
+    "united-states": {
+      "name": "United States",
+      "code": "US",
+      "levels": [
+        "federal",
+        "state",
+        "municipal"
+      ],
+      "key_states": [
+        "CA",
+        "NY",
+        "TX",
+        "WA",
+        "DE"
+      ]
+    },
+    "european-union": {
+      "name": "European Union",
+      "code": "EU",
+      "scope": "supranational"
+    },
+    "united-kingdom": {
+      "name": "United Kingdom",
+      "code": "UK",
+      "scope": "national"
+    },
+    "canada": {
+      "name": "Canada",
+      "code": "CA",
+      "scope": "federal_provincial"
+    },
+    "australia": {
+      "name": "Australia",
+      "code": "AU",
+      "scope": "commonwealth_states"
+    },
+    "japan": {
+      "name": "Japan",
+      "code": "JP",
+      "scope": "national"
+    },
+    "india": {
+      "name": "India",
+      "code": "IN",
+      "scope": "federal_states"
+    },
+    "ethiopia": {
+      "name": "Ethiopia",
+      "code": "ET",
+      "scope": "federal"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+# Platform Adapter: Windsurf AI (Codeium)
+agent_id: windsurf
+display_name: "Windsurf AI"
+vendor: Codeium
+discovery_paths:
+  workspace:
+    - ".windsurf/skills"
+    - ".codeium/windsurf/memories"
+  user_global:
+    - "~/.codeium/windsurf/skills"
+manifest_format: markdown_frontmatter
+frontmatter_standard: agent_skills_v1
+supported_features:
+  - cascade_flow
+  - multi_file_editing
+reload_trigger: flow_refresh

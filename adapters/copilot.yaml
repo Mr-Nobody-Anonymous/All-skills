@@ -1,0 +1,16 @@
+# Platform Adapter: GitHub Copilot
+agent_id: github-copilot
+display_name: "GitHub Copilot"
+vendor: GitHub
+discovery_paths:
+  workspace:
+    - ".github/skills"
+    - ".github/copilot-instructions.md"
+  user_global:
+    - "~/.config/github-copilot/skills"
+manifest_format: markdown_frontmatter
+frontmatter_standard: agent_skills_v1
+supported_features:
+  - copilot_instructions
+  - agent_skill_stack
+reload_trigger: workspace_reindex

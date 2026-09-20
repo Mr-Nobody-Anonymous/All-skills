@@ -245,9 +245,67 @@ def sync_readme(stats: dict, repo_root: Path | None = None) -> bool:
     return True
 
 
+def sync_skills_md(stats: dict, repo_root: Path | None = None) -> bool:
+    if repo_root is None:
+        repo_root = get_repo_root()
+    skills_md_path = repo_root / "SKILLS.md"
+    if not skills_md_path.exists():
+        return False
+
+    content = skills_md_path.read_text(encoding="utf-8")
+    content = re.sub(
+        r'platform of \*\*[0-9,]+\+\s*unique specialized Agent Skills\*\*',
+        f'platform of **{stats["total_unique_skills"]:,}+ unique specialized Agent Skills**',
+        content
+    )
+    content = re.sub(
+        r'\(\*\*[0-9,]+\s*cataloged instances\*\*',
+        f'(**{stats["catalog_skills"]:,} cataloged instances**',
+        content
+    )
+    content = re.sub(
+        r'across \*\*[0-9,]+\s*domain categories\*\*',
+        f'across **{stats["categories"]} domain categories**',
+        content
+    )
+    content = re.sub(
+        r'Awesome Skills Library \(`awesome_skills/`\) — [0-9,]+\s*Categorized Skills',
+        f'Awesome Skills Library (`awesome_skills/`) — {stats["catalog_skills"]:,} Categorized Skills',
+        content
+    )
+    content = re.sub(
+        r'\*\*[0-9,]+\s*Domain Categories\*\*',
+        f'**{stats["categories"]} Domain Categories**',
+        content
+    )
+    content = re.sub(
+        r'\[CATALOG\.md\]\(awesome_skills/CATALOG\.md\) lists all [0-9,]+\s*skills',
+        f'[CATALOG.md](awesome_skills/CATALOG.md) lists all {stats["catalog_skills"]:,} skills',
+        content
+    )
+    content = re.sub(
+        r'# Search across all [0-9,]+\s*skills',
+        f'# Search across all {stats["catalog_skills"]:,} skills',
+        content
+    )
+    content = re.sub(
+        r'\*\*[0-9,]+\s*Pre-Loaded Staff Engineer Skills\*\*',
+        f'**{stats["active_harness_skills"]} Pre-Loaded Staff Engineer Skills**',
+        content
+    )
+    content = re.sub(
+        r'Test suite \([0-9]+\s*tests\)',
+        f'test suite ({stats["tests"]} tests)',
+        content
+    )
+
+    skills_md_path.write_text(content, encoding="utf-8")
+    return True
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Compute authoritative stats.json")
-    parser.add_argument("--sync-readme", action="store_true", help="Synchronize README.md with generated stats")
+    parser.add_argument("--sync-readme", action="store_true", help="Synchronize README.md and SKILLS.md with generated stats")
     args = parser.parse_args()
 
     repo_root = get_repo_root()
@@ -257,9 +315,12 @@ def main() -> None:
     print(json.dumps(stats, indent=2))
 
     if args.sync_readme:
-        synced = sync_readme(stats, repo_root)
-        if synced:
+        synced_readme = sync_readme(stats, repo_root)
+        synced_skills = sync_skills_md(stats, repo_root)
+        if synced_readme:
             print("Successfully synchronized README.md numbers.")
+        if synced_skills:
+            print("Successfully synchronized SKILLS.md numbers.")
 
 
 if __name__ == "__main__":

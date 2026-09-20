@@ -23,32 +23,27 @@ def extract_skill_metadata(skill_dir: Path, cat_name: str) -> dict:
 
     if md_file.exists():
         try:
-            content = md_file.read_text(encoding="utf-8", errors="ignore")
+            with open(md_file, "r", encoding="utf-8", errors="ignore") as f:
+                content = f.read(1500)
             if content.startswith("---"):
                 parts = content.split("---", 2)
                 if len(parts) >= 3:
-                    fm = parts[1]
-                    m_name = re.search(r"name:\s*([^\n\r]+)", fm)
-                    if m_name:
-                        name = m_name.group(1).strip().strip('"\'')
-                    m_desc = re.search(r"description:\s*\|?\s*([^\n\r]+(?:\n\s+[^\n\r]+)*)", fm)
-                    if m_desc:
-                        raw_d = m_desc.group(1).strip()
-                        clean_d = " ".join(line.strip() for line in raw_d.splitlines() if line.strip())
-                        if len(clean_d) >= 5:
-                            desc = clean_d
-                    m_risk = re.search(r"risk:\s*([^\n\r]+)", fm)
-                    if m_risk:
-                        risk = m_risk.group(1).strip().strip('"\'')
-                    m_ver = re.search(r"version:\s*([^\n\r]+)", fm)
-                    if m_ver:
-                        version = m_ver.group(1).strip().strip('"\'')
-                    m_src = re.search(r"source:\s*([^\n\r]+)", fm)
-                    if m_src:
-                        source = m_src.group(1).strip().strip('"\'')
-                    m_lic = re.search(r"license:\s*([^\n\r]+)", fm)
-                    if m_lic:
-                        license_type = m_lic.group(1).strip().strip('"\'')
+                    for line in parts[1].splitlines():
+                        l = line.strip()
+                        if l.startswith("name:") and name == skill_id:
+                            name = l.split(":", 1)[1].strip().strip('"\'')
+                        elif l.startswith("description:") and desc.startswith("Specialized instructions"):
+                            raw_d = l.split(":", 1)[1].strip().strip('"\'')
+                            if len(raw_d) >= 5:
+                                desc = raw_d
+                        elif l.startswith("risk:"):
+                            risk = l.split(":", 1)[1].strip().strip('"\'')
+                        elif l.startswith("version:"):
+                            version = l.split(":", 1)[1].strip().strip('"\'')
+                        elif l.startswith("source:"):
+                            source = l.split(":", 1)[1].strip().strip('"\'')
+                        elif l.startswith("license:"):
+                            license_type = l.split(":", 1)[1].strip().strip('"\'')
         except Exception:
             pass
 
@@ -71,19 +66,30 @@ def build_catalog() -> tuple[Path, Path, int]:
         if (AWESOME_DIR / d).is_dir() and not d.startswith(".") and d not in ("node_modules", ".git")
     ])
 
+    from concurrent.futures import ThreadPoolExecutor
+
+    def process_category(cat: str) -> tuple[str, list[dict]]:
+        cat_path = AWESOME_DIR / cat
+        cat_skills = []
+        try:
+            for s in sorted(os.listdir(cat_path)):
+                sdir = cat_path / s
+                if sdir.is_dir() and not s.startswith("."):
+                    meta = extract_skill_metadata(sdir, cat)
+                    cat_skills.append(meta)
+        except Exception:
+            pass
+        return cat, cat_skills
+
+    with ThreadPoolExecutor(max_workers=16) as executor:
+        results = list(executor.map(process_category, cats))
+
     skills_index: list[dict] = []
     category_map: dict[str, list[dict]] = {}
 
-    for cat in cats:
-        cat_path = AWESOME_DIR / cat
-        cat_skills = []
-        for s in sorted(os.listdir(cat_path)):
-            sdir = cat_path / s
-            if sdir.is_dir() and not s.startswith("."):
-                meta = extract_skill_metadata(sdir, cat)
-                skills_index.append(meta)
-                cat_skills.append(meta)
+    for cat, cat_skills in results:
         category_map[cat] = cat_skills
+        skills_index.extend(cat_skills)
 
     # 1. Save skills_index.json
     index_path = AWESOME_DIR / "skills_index.json"

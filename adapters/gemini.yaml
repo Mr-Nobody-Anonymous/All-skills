@@ -1,0 +1,18 @@
+# Platform Adapter: Google Antigravity & Gemini CLI
+agent_id: antigravity-gemini
+display_name: "Google Antigravity / Gemini CLI"
+vendor: Google
+discovery_paths:
+  workspace:
+    - ".agents/skills"
+  user_global:
+    - "~/.agents/skills"
+    - "~/.gemini/antigravity-cli/skills"
+manifest_format: markdown_frontmatter
+frontmatter_standard: agent_skills_v1
+supported_features:
+  - mcp_support
+  - progressive_disclosure
+  - deterministic_workflows
+  - deepmind_reasoning
+reload_trigger: hot_reload

@@ -1,0 +1,20 @@
+# Platform Adapter: Claude Code / Anthropic
+agent_id: claude-code
+display_name: "Claude Code"
+vendor: Anthropic
+discovery_paths:
+  workspace:
+    - ".claude/skills"
+  user_global:
+    - "~/.claude/skills"
+manifest_format: markdown_frontmatter
+frontmatter_standard: agent_skills_v1
+supported_features:
+  - progressive_disclosure
+  - references_dir
+  - scripts_dir
+  - prompt_injection_defense
+hook_lifecycle:
+  pre_execution: "python scripts/run_hook.py pre {skill_id}"
+  post_execution: "python scripts/run_hook.py post {skill_id}"
+reload_trigger: filesystem_watcher

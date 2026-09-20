@@ -1,0 +1,78 @@
+# Dynamic Platform Harness Registry
+# Configures local workspace targets, global user directories, and discovery paths for AI coding agents.
+
+version: "2.0"
+updated_at: "2026-09-20"
+
+source_harness:
+  path: ".agents/skills"
+  type: canonical
+
+local_targets:
+  - id: antigravity
+    name: "Antigravity / Gemini CLI"
+    path: ".agents/skills"
+    adapter: "adapters/gemini.yaml"
+    is_source: true
+  - id: claude
+    name: "Claude Code"
+    path: ".claude/skills"
+    adapter: "adapters/claude.yaml"
+  - id: cursor
+    name: "Cursor"
+    path: ".cursor/skills"
+    adapter: "adapters/cursor.yaml"
+  - id: codex
+    name: "Codex CLI"
+    path: ".codex/skills"
+    adapter: "adapters/codex.yaml"
+  - id: copilot
+    name: "GitHub Copilot"
+    path: ".github/skills"
+    adapter: "adapters/copilot.yaml"
+  - id: vscode
+    name: "VS Code Agent"
+    path: ".vscode/skills"
+    adapter: "adapters/vscode.yaml"
+  - id: windsurf
+    name: "Windsurf"
+    path: ".windsurf/skills"
+    adapter: "adapters/windsurf.yaml"
+  - id: opencode
+    name: "OpenCode"
+    path: ".opencode/skills"
+    adapter: "adapters/opencode.yaml"
+  - id: cline
+    name: "Cline"
+    path: ".cline/skills"
+    adapter: "adapters/cline.yaml"
+  - id: roo
+    name: "Roo Code"
+    path: ".roo/skills"
+    adapter: "adapters/roo.yaml"
+  - id: goose
+    name: "Block Goose"
+    path: ".goose/skills"
+    adapter: "adapters/goose.yaml"
+
+global_targets:
+  - id: claude_global
+    name: "Claude Code (User Global)"
+    path: "~/.claude/skills"
+    adapter: "adapters/claude.yaml"
+  - id: cursor_global
+    name: "Cursor (User Global)"
+    path: "~/.cursor/skills"
+    adapter: "adapters/cursor.yaml"
+  - id: codex_global
+    name: "Codex CLI (User Global)"
+    path: "~/.codex/skills"
+    adapter: "adapters/codex.yaml"
+  - id: antigravity_global
+    name: "Antigravity / Agents (User Global)"
+    path: "~/.agents/skills"
+    adapter: "adapters/gemini.yaml"
+  - id: gemini_slash_global
+    name: "Antigravity CLI Slash Commands"
+    path: "~/.gemini/antigravity-cli/skills"
+    adapter: "adapters/gemini.yaml"

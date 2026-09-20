@@ -1,0 +1,15 @@
+# Platform Adapter: OpenCode Interpreter
+agent_id: opencode
+display_name: "OpenCode Interpreter"
+vendor: OpenCode
+discovery_paths:
+  workspace:
+    - ".opencode/skills"
+  user_global:
+    - "~/.opencode/skills"
+manifest_format: markdown_frontmatter
+frontmatter_standard: agent_skills_v1
+supported_features:
+  - local_sandbox
+  - python_execution
+reload_trigger: session_restart

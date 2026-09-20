@@ -24,6 +24,12 @@ dist/
 .claude/
 .cursor/
 .codex/
+.cline/
+.goose/
+.opencode/
+.roo/
+.windsurf/
+.github/skills/
 *.swp
 *.swo
 .DS_Store
@@ -40,6 +46,7 @@ Thumbs.db
 # Temp
 tmp/
 temp/
+scratch/
 .cache/
 
 # Agent Runtime State

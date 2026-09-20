@@ -1,0 +1,16 @@
+# Platform Adapter: VS Code Agent (GitHub Agent Protocol)
+agent_id: vscode-agent
+display_name: "VS Code Agent"
+vendor: Microsoft
+discovery_paths:
+  workspace:
+    - ".vscode/skills"
+    - ".github/skills"
+  user_global:
+    - "~/.vscode/skills"
+manifest_format: markdown_frontmatter
+frontmatter_standard: agent_skills_v1
+supported_features:
+  - language_server_integration
+  - diagnostics_provider
+reload_trigger: window_reload

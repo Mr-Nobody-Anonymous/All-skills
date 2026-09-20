@@ -1,0 +1,16 @@
+# Platform Adapter: OpenAI Codex / Codex CLI
+agent_id: codex-cli
+display_name: "OpenAI Codex CLI"
+vendor: OpenAI
+discovery_paths:
+  workspace:
+    - ".codex/skills"
+  user_global:
+    - "~/.codex/skills"
+manifest_format: markdown_frontmatter
+frontmatter_standard: agent_skills_v1
+supported_features:
+  - ast_validation
+  - terminal_execution
+  - sandbox_isolation
+reload_trigger: session_restart

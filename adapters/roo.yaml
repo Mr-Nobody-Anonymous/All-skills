@@ -1,0 +1,15 @@
+# Platform Adapter: Roo Code
+agent_id: roo-code
+display_name: "Roo Code"
+vendor: Roo Code
+discovery_paths:
+  workspace:
+    - ".roo/skills"
+  user_global:
+    - "~/.roo/skills"
+manifest_format: markdown_frontmatter
+frontmatter_standard: agent_skills_v1
+supported_features:
+  - custom_modes
+  - prompt_injection_defense
+reload_trigger: mode_switch

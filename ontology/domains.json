@@ -1,0 +1,247 @@
+{
+  "version": "2.0",
+  "updated_at": "2026-09-20",
+  "super_domains_count": 15,
+  "super_domains": {
+    "01-computer-science-and-software": {
+      "title": "Computer Science & Software",
+      "description": "Core algorithms, data structures, programming languages, compilers, and formal foundations.",
+      "categories": [
+        "computer-science",
+        "development",
+        "software-engineering",
+        "formal-methods",
+        "algorithms",
+        "programming-languages",
+        "compilers",
+        "distributed-systems"
+      ]
+    },
+    "02-web-and-application-development": {
+      "title": "Web & Application Development",
+      "description": "Frontend, backend, fullstack, API design, mobile apps, desktop frameworks, and UI/UX.",
+      "categories": [
+        "frontend",
+        "backend",
+        "fullstack",
+        "mobile",
+        "api-designer",
+        "web-development",
+        "react",
+        "nextjs",
+        "vue",
+        "angular",
+        "desktop",
+        "ui-ux"
+      ]
+    },
+    "03-data-and-analytics": {
+      "title": "Data & Analytics",
+      "description": "Data engineering, databases, business intelligence, big data, analytics, and ETL pipelines.",
+      "categories": [
+        "data",
+        "data-engineering",
+        "data-science",
+        "data-analytics",
+        "database",
+        "business-intelligence",
+        "analytics",
+        "data-warehousing",
+        "etl-pipelines"
+      ]
+    },
+    "04-ai-and-machine-learning": {
+      "title": "AI & Machine Learning",
+      "description": "Machine learning, deep learning, LLMs, RAG, multi-agent systems, computer vision, speech, and MLOps.",
+      "categories": [
+        "ai-ml",
+        "ai-engineer",
+        "agents",
+        "multi-agent",
+        "mlops",
+        "voice-agents",
+        "agent-evaluation",
+        "llm-prompt-optimizer",
+        "computer-vision",
+        "nlp"
+      ]
+    },
+    "05-cybersecurity": {
+      "title": "Cybersecurity & Information Assurance",
+      "description": "Offensive security, defensive operations (SOC/DFIR), AppSec, cloud security, cryptography, and GRC.",
+      "categories": [
+        "security",
+        "cybersecurity",
+        "devsecops",
+        "privacy",
+        "governance",
+        "compliance",
+        "red-team-tactics",
+        "appsec",
+        "cryptography"
+      ]
+    },
+    "06-cloud-and-infrastructure": {
+      "title": "Cloud & Infrastructure",
+      "description": "Cloud providers (AWS, Azure, GCP), Kubernetes, DevOps, CI/CD, Terraform, and site reliability engineering.",
+      "categories": [
+        "cloud",
+        "cloud-devops",
+        "kubernetes",
+        "devops",
+        "ci-cd-and-automation",
+        "terraform-infrastructure",
+        "sre",
+        "serverless",
+        "observability"
+      ]
+    },
+    "07-systems-and-networking": {
+      "title": "Systems & Networking",
+      "description": "Operating systems, network protocols, high-performance computing, virtualization, and distributed systems.",
+      "categories": [
+        "systems-networking",
+        "high-performance-computing",
+        "linux",
+        "operating-systems",
+        "networking",
+        "virtualization",
+        "storage",
+        "telecom"
+      ]
+    },
+    "08-hardware-embedded-and-robotics": {
+      "title": "Hardware, Embedded & Robotics",
+      "description": "Microcontrollers, ROS2, robotics, semiconductors (VLSI/ASIC), IoT, and firmware engineering.",
+      "categories": [
+        "embedded",
+        "robotics",
+        "iot",
+        "semiconductor",
+        "hardware",
+        "quantum",
+        "firmware",
+        "electronics",
+        "fpga",
+        "mechatronics"
+      ]
+    },
+    "09-science-and-research": {
+      "title": "Science & Research",
+      "description": "Mathematics, physics, chemistry, biology, materials science, earth science, and metrology.",
+      "categories": [
+        "mathematics",
+        "physics",
+        "chemistry",
+        "biology",
+        "earth-science",
+        "materials-science",
+        "metrology",
+        "astronomy",
+        "scientific-research"
+      ]
+    },
+    "10-engineering-and-architecture": {
+      "title": "Engineering & Architecture",
+      "description": "Civil, mechanical, electrical, aerospace, nuclear, petroleum, railway, and safety engineering.",
+      "categories": [
+        "engineering",
+        "civil-engineering",
+        "mechanical-engineering",
+        "electrical-engineering",
+        "aerospace",
+        "nuclear-engineering",
+        "petroleum-engineering",
+        "railway",
+        "safety-engineering",
+        "optical-engineering",
+        "systems-engineering",
+        "fire-protection"
+      ]
+    },
+    "11-healthcare-and-life-sciences": {
+      "title": "Healthcare & Life Sciences",
+      "description": "Clinical medicine, clinical informatics (FHIR/HL7), optometry, audiology, allied health, and public health.",
+      "categories": [
+        "healthcare",
+        "clinical-informatics",
+        "optometry",
+        "audiology",
+        "speech-language-pathology",
+        "occupational-therapy",
+        "physical-therapy",
+        "medical-laboratory",
+        "public-health",
+        "veterinary",
+        "pharmacy",
+        "radiology"
+      ]
+    },
+    "12-business-finance-and-operations": {
+      "title": "Business, Finance & Operations",
+      "description": "Accounting, banking, quantitative finance, actuarial science, marketing, procurement, and operations.",
+      "categories": [
+        "business",
+        "finance",
+        "accounting",
+        "banking",
+        "actuarial",
+        "tax",
+        "marketing",
+        "advertising",
+        "procurement",
+        "franchise-management",
+        "real-estate",
+        "ecommerce",
+        "sales",
+        "venture-capital"
+      ]
+    },
+    "13-education-and-knowledge": {
+      "title": "Education & Knowledge Management",
+      "description": "Curriculum development, instructional design, corporate training, pedagogy, and knowledge systems.",
+      "categories": [
+        "education",
+        "training",
+        "knowledge-management",
+        "archiving",
+        "museum-studies",
+        "library",
+        "pedagogy",
+        "curriculum-design"
+      ]
+    },
+    "14-creative-media-and-design": {
+      "title": "Creative, Media & Design",
+      "description": "Graphic design, 3D modeling, animation, typography, video editing, journalism, and audio production.",
+      "categories": [
+        "design",
+        "3d",
+        "graphics",
+        "presentation",
+        "writing",
+        "copywriting",
+        "public-relations",
+        "corporate-communications",
+        "video-production",
+        "audio-engineering"
+      ]
+    },
+    "15-personal-and-professional": {
+      "title": "Personal, Professional & Social Sciences",
+      "description": "Productivity, psychology, social sciences, ethics, law, legal analysis, and religious studies.",
+      "categories": [
+        "legal",
+        "psychology",
+        "social-science",
+        "productivity",
+        "religious-studies",
+        "humanities",
+        "parenting",
+        "sports",
+        "philosophy",
+        "ethics"
+      ]
+    }
+  }
+}

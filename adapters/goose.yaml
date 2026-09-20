@@ -1,0 +1,16 @@
+# Platform Adapter: Block Goose
+agent_id: goose
+display_name: "Goose (Block)"
+vendor: Block
+discovery_paths:
+  workspace:
+    - ".goose/skills"
+    - ".goosehints"
+  user_global:
+    - "~/.config/goose/skills"
+manifest_format: markdown_frontmatter
+frontmatter_standard: agent_skills_v1
+supported_features:
+  - toolkit_extensions
+  - session_recipes
+reload_trigger: session_start

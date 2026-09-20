@@ -1,0 +1,223 @@
+{
+  "version": "2.0",
+  "updated_at": "2026-09-20",
+  "stacks": {
+    "languages": [
+      {
+        "id": "python",
+        "aliases": [
+          "py",
+          "python3"
+        ],
+        "versions": ">=3.9"
+      },
+      {
+        "id": "typescript",
+        "aliases": [
+          "ts"
+        ],
+        "versions": ">=5.0"
+      },
+      {
+        "id": "javascript",
+        "aliases": [
+          "js",
+          "es6",
+          "node"
+        ],
+        "versions": ">=ES2022"
+      },
+      {
+        "id": "csharp",
+        "aliases": [
+          "c#",
+          "dotnet",
+          ".net"
+        ],
+        "versions": ">=8.0"
+      },
+      {
+        "id": "go",
+        "aliases": [
+          "golang"
+        ],
+        "versions": ">=1.21"
+      },
+      {
+        "id": "rust",
+        "aliases": [
+          "rs"
+        ],
+        "versions": ">=1.75"
+      },
+      {
+        "id": "java",
+        "aliases": [
+          "jdk"
+        ],
+        "versions": ">=17"
+      },
+      {
+        "id": "cpp",
+        "aliases": [
+          "c++"
+        ],
+        "versions": ">=C++20"
+      },
+      {
+        "id": "c",
+        "aliases": [
+          "clang"
+        ],
+        "versions": ">=C11"
+      },
+      {
+        "id": "php",
+        "aliases": [
+          "php8"
+        ],
+        "versions": ">=8.2"
+      },
+      {
+        "id": "ruby",
+        "aliases": [
+          "rb"
+        ],
+        "versions": ">=3.2"
+      },
+      {
+        "id": "swift",
+        "aliases": [
+          "swift5"
+        ],
+        "versions": ">=5.9"
+      },
+      {
+        "id": "kotlin",
+        "aliases": [
+          "kt"
+        ],
+        "versions": ">=1.9"
+      }
+    ],
+    "frameworks": [
+      {
+        "id": "react",
+        "category": "frontend",
+        "versions": ">=18.0 <20.0"
+      },
+      {
+        "id": "nextjs",
+        "category": "fullstack",
+        "versions": ">=14.0"
+      },
+      {
+        "id": "vue",
+        "category": "frontend",
+        "versions": ">=3.3"
+      },
+      {
+        "id": "angular",
+        "category": "frontend",
+        "versions": ">=17.0"
+      },
+      {
+        "id": "fastapi",
+        "category": "backend",
+        "versions": ">=0.100"
+      },
+      {
+        "id": "django",
+        "category": "backend",
+        "versions": ">=4.2"
+      },
+      {
+        "id": "spring-boot",
+        "category": "backend",
+        "versions": ">=3.0"
+      },
+      {
+        "id": "aspnet-core",
+        "category": "backend",
+        "versions": ">=8.0"
+      }
+    ],
+    "databases": [
+      {
+        "id": "postgresql",
+        "aliases": [
+          "postgres",
+          "pgsql"
+        ],
+        "type": "relational"
+      },
+      {
+        "id": "mysql",
+        "aliases": [
+          "mariadb"
+        ],
+        "type": "relational"
+      },
+      {
+        "id": "sqlite",
+        "aliases": [
+          "sqlite3"
+        ],
+        "type": "embedded"
+      },
+      {
+        "id": "redis",
+        "aliases": [
+          "valkey"
+        ],
+        "type": "key-value"
+      },
+      {
+        "id": "mongodb",
+        "aliases": [
+          "mongo"
+        ],
+        "type": "document"
+      },
+      {
+        "id": "clickhouse",
+        "aliases": [
+          "ch"
+        ],
+        "type": "columnar"
+      }
+    ],
+    "infrastructure": [
+      {
+        "id": "docker",
+        "category": "containers"
+      },
+      {
+        "id": "kubernetes",
+        "aliases": [
+          "k8s"
+        ],
+        "category": "orchestration"
+      },
+      {
+        "id": "terraform",
+        "aliases": [
+          "opentofu"
+        ],
+        "category": "iac"
+      },
+      {
+        "id": "aws",
+        "category": "cloud-provider"
+      },
+      {
+        "id": "azure",
+        "category": "cloud-provider"
+      },
+      {
+        "id": "gcp",
+        "category": "cloud-provider"
+      }
+    ]
+  }
+}

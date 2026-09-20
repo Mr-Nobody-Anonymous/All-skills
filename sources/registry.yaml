@@ -1,0 +1,309 @@
+# Universal Agent Skills Upstream Source Registry
+# Authoritative registry of trusted, upstream skill repositories across official, specialized, and community tiers.
+
+version: "2.0"
+updated_at: "2026-09-20"
+
+sources:
+  # ==========================================
+  # Official / Vendor Repositories
+  # ==========================================
+  - id: anthropic-skills
+    name: Anthropic Official Agent Skills
+    repo: anthropics/skills
+    url: https://github.com/anthropics/skills
+    branch: main
+    class: official
+    vendor: anthropic
+    license: MIT
+    description: "Official Claude skills, document workflows, coding, and general agent capabilities."
+    skill_paths:
+      - skills
+    update_schedule: daily
+    trust_tier: Tier-1-Vendor
+    verification:
+      security_scan: required
+      license_policy: allow-mit
+      behavior_tested: true
+
+  - id: openai-skills
+    name: OpenAI Codex Skills Catalog
+    repo: openai/skills
+    url: https://github.com/openai/skills
+    branch: main
+    class: official
+    vendor: openai
+    license: Apache-2.0
+    description: "Codex skill structure, installer, and foundational prompt engineering patterns."
+    skill_paths:
+      - skills
+    update_schedule: weekly
+    trust_tier: Tier-1-Vendor
+    verification:
+      security_scan: required
+      license_policy: allow-apache
+      behavior_tested: true
+
+  - id: github-awesome-copilot
+    name: GitHub Awesome Copilot
+    repo: github/awesome-copilot
+    url: https://github.com/github/awesome-copilot
+    branch: main
+    class: official
+    vendor: github
+    license: MIT
+    description: "Large collection of GitHub Copilot skills, agents, prompts, and reusable workflow assets."
+    skill_paths:
+      - skills
+      - instructions
+    update_schedule: daily
+    trust_tier: Tier-1-Vendor
+    verification:
+      security_scan: required
+      license_policy: allow-mit
+      behavior_tested: true
+
+  - id: microsoft-skills
+    name: Microsoft Agent Skills & MCP Servers
+    repo: microsoft/skills
+    url: https://github.com/microsoft/skills
+    branch: main
+    class: official
+    vendor: microsoft
+    license: MIT
+    description: "Azure SDK, Microsoft AI Foundry, custom agents, MCP configurations, and enterprise cloud skills."
+    skill_paths:
+      - skills
+    update_schedule: daily
+    trust_tier: Tier-1-Vendor
+    verification:
+      security_scan: required
+      license_policy: allow-mit
+      behavior_tested: true
+
+  - id: dotnet-skills
+    name: Microsoft .NET Agent Skills
+    repo: dotnet/skills
+    url: https://github.com/dotnet/skills
+    branch: main
+    class: official
+    vendor: microsoft
+    license: MIT
+    description: "C#, .NET, ASP.NET Core, Blazor, EF/data, diagnostics, MSBuild, and modern .NET coding skills."
+    skill_paths:
+      - skills
+    update_schedule: weekly
+    trust_tier: Tier-1-Vendor
+    verification:
+      security_scan: required
+      license_policy: allow-mit
+      behavior_tested: true
+
+  - id: openhands-skills
+    name: OpenHands Agent Skills
+    repo: OpenHands/OpenHands
+    url: https://github.com/OpenHands/OpenHands
+    branch: main
+    class: official
+    vendor: openhands
+    license: MIT
+    description: "OpenHands shareable agent skills, environment hooks, and automated coding workflows."
+    skill_paths:
+      - skills
+    update_schedule: daily
+    trust_tier: Tier-1-Vendor
+    verification:
+      security_scan: required
+      license_policy: allow-mit
+      behavior_tested: true
+
+  # ==========================================
+  # Specialized Repositories
+  # ==========================================
+  - id: microsoft-win-dev-skills
+    name: Microsoft Windows Dev Skills
+    repo: microsoft/win-dev-skills
+    url: https://github.com/microsoft/win-dev-skills
+    branch: main
+    class: specialized
+    vendor: microsoft
+    license: MIT
+    description: "WinUI 3, Windows App SDK, native Windows development, testing, packaging, and shipping."
+    skill_paths:
+      - skills
+    update_schedule: weekly
+    trust_tier: Tier-2-Specialized
+    verification:
+      security_scan: required
+      license_policy: allow-mit
+      behavior_tested: true
+
+  - id: kdense-scientific-skills
+    name: K-Dense Scientific & Lab Agent Skills
+    repo: K-Dense-AI/claude-scientific-skills
+    url: https://github.com/K-Dense-AI/claude-scientific-skills
+    branch: main
+    class: specialized
+    vendor: k-dense
+    license: MIT
+    description: "146+ scientific/research skills covering computational chemistry, bioinformatics, lab automation, and data analysis."
+    skill_paths:
+      - skills
+      - scientific-skills
+    update_schedule: weekly
+    trust_tier: Tier-2-Specialized
+    verification:
+      security_scan: required
+      license_policy: allow-mit
+      behavior_tested: true
+
+  - id: superpowers
+    name: Superpowers Agentic Skills Framework
+    repo: obra/superpowers
+    url: https://github.com/obra/superpowers
+    branch: main
+    class: specialized
+    vendor: obra
+    license: MIT
+    description: "Composable software-engineering skills and a complete test-driven coding agent methodology."
+    skill_paths:
+      - skills
+    update_schedule: weekly
+    trust_tier: Tier-2-Specialized
+    verification:
+      security_scan: required
+      license_policy: allow-mit
+      behavior_tested: true
+
+  # ==========================================
+  # Large Community Repositories
+  # ==========================================
+  - id: agentic-awesome-skills
+    name: Agentic Awesome Skills (AAS Core)
+    repo: sickn33/agentic-awesome-skills
+    url: https://github.com/sickn33/agentic-awesome-skills
+    branch: main
+    class: community
+    vendor: community
+    license: MIT
+    description: "Extensive community skill catalog with provenance, stack-oriented workflows, and validation hooks."
+    skill_paths:
+      - skills
+      - awesome_skills
+    update_schedule: daily
+    trust_tier: Tier-3-Community
+    verification:
+      security_scan: required
+      license_policy: allow-mit
+      behavior_tested: true
+
+  - id: composio-awesome-claude-skills
+    name: Composio Awesome Claude Skills
+    repo: ComposioHQ/awesome-claude-skills
+    url: https://github.com/ComposioHQ/awesome-claude-skills
+    branch: master
+    class: community
+    vendor: composio
+    license: Apache-2.0
+    description: "Practical Claude agent skills with external system integrations, tool actions, and connectors."
+    skill_paths:
+      - skills
+    update_schedule: daily
+    trust_tier: Tier-3-Community
+    verification:
+      security_scan: required
+      license_policy: allow-apache
+      behavior_tested: true
+
+  - id: awesome-llm-skills
+    name: Awesome LLM Skills
+    repo: Prat011/awesome-llm-skills
+    url: https://github.com/Prat011/awesome-llm-skills
+    branch: master
+    class: community
+    vendor: community
+    license: MIT
+    description: "Curated skills and resources for Claude, Codex, Gemini CLI, Qwen Code, and OpenCode."
+    skill_paths:
+      - skills
+    update_schedule: weekly
+    trust_tier: Tier-3-Community
+    verification:
+      security_scan: required
+      license_policy: allow-mit
+      behavior_tested: true
+
+  - id: hypergiant-agent-skills
+    name: Hypergiant Agent Skills
+    repo: gohypergiant/agent-skills
+    url: https://github.com/gohypergiant/agent-skills
+    branch: main
+    class: community
+    vendor: gohypergiant
+    license: MIT
+    description: "Reusable agent skills with executable scripts, references, assets, and multi-harness support."
+    skill_paths:
+      - skills
+    update_schedule: weekly
+    trust_tier: Tier-3-Community
+    verification:
+      security_scan: required
+      license_policy: allow-mit
+      behavior_tested: true
+
+  - id: emmraan-agent-skills
+    name: Emmraan Agent Skills
+    repo: Emmraan/agent-skills
+    url: https://github.com/Emmraan/agent-skills
+    branch: main
+    class: community
+    vendor: emmraan
+    license: MIT
+    description: "170+ skills spanning cloud architecture, security, monitoring, frontend, and growth engineering."
+    skill_paths:
+      - skills
+    update_schedule: weekly
+    trust_tier: Tier-3-Community
+    verification:
+      security_scan: required
+      license_policy: allow-mit
+      behavior_tested: true
+
+  - id: jayrha-agentskills
+    name: JayRHa AgentSkills
+    repo: JayRHa/AgentSkills
+    url: https://github.com/JayRHa/AgentSkills
+    branch: main
+    class: community
+    vendor: jayrha
+    license: MIT
+    description: "Portable SKILL.md packages with modular scripts, references, examples, and task templates."
+    skill_paths:
+      - skills
+    update_schedule: weekly
+    trust_tier: Tier-3-Community
+    verification:
+      security_scan: required
+      license_policy: allow-mit
+      behavior_tested: true
+
+  # ==========================================
+  # Reference / Orchestration Repositories
+  # ==========================================
+  - id: github-agent-skill-stack
+    name: GitHub Agent Skill Stack
+    repo: github/awesome-copilot
+    url: https://github.com/github/awesome-copilot
+    branch: main
+    class: reference
+    vendor: github
+    license: MIT
+    description: "Reference implementation for dynamic capability-based skill stacking and runtime agent composition."
+    skill_paths:
+      - skills/agent-skill-stack
+    update_schedule: monthly
+    trust_tier: Tier-1-Vendor
+    verification:
+      security_scan: required
+      license_policy: allow-mit
+      behavior_tested: true

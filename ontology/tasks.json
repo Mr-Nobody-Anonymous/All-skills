@@ -1,0 +1,60 @@
+{
+  "version": "2.0",
+  "updated_at": "2026-09-20",
+  "tasks": {
+    "plan": {
+      "description": "Decompose complex multi-step user intents into an executable, dependency-aware plan."
+    },
+    "precheck": {
+      "description": "Validate runtime prerequisites, environment variables, dependencies, and permissions."
+    },
+    "capability-check": {
+      "description": "Match required tool operations against current model/harness capabilities."
+    },
+    "permission-check": {
+      "description": "Assert least-privilege policies and determine if human authorization is mandated."
+    },
+    "execute": {
+      "description": "Perform deterministic tool actions, code generation, refactoring, or builds."
+    },
+    "observe": {
+      "description": "Capture stdout, stderr, process return codes, and diff outcomes from executions."
+    },
+    "verify": {
+      "description": "Execute AST linters, unit tests, and schema validators to certify functional correctness."
+    },
+    "repair": {
+      "description": "Perform targeted root-cause repairs upon detecting validation or test failures."
+    },
+    "reverify": {
+      "description": "Run the complete verification battery after applying automated repairs."
+    },
+    "report": {
+      "description": "Summarize accomplished work, changes made, evidence verified, and next steps."
+    },
+    "audit": {
+      "description": "Examine codebases or configurations for compliance, security, and quality benchmarks."
+    },
+    "scaffold": {
+      "description": "Initialize boilerplate, project templates, configuration files, and harnesses."
+    },
+    "refactor": {
+      "description": "Restructure existing code without modifying external observable behavior."
+    },
+    "benchmark": {
+      "description": "Measure latency, throughput, token efficiency, or execution characteristics."
+    },
+    "document": {
+      "description": "Generate technical documentation, OpenAPI specs, architecture guides, and READMEs."
+    },
+    "deploy": {
+      "description": "Push artifacts to staging or production environments under strict authorization gates."
+    },
+    "rollback": {
+      "description": "Revert failed deployments, migrations, or code changes to last known good checkpoint."
+    },
+    "sync": {
+      "description": "Reconcile local catalog, lockfile, and harness skills with upstream authoritative sources."
+    }
+  }
+}
