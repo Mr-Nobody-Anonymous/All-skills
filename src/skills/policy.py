@@ -251,6 +251,57 @@ class PolicyEngine:
             reasons=reasons
         )
 
+    def explain_policy(self, skill_id: str) -> dict:
+        """Structured policy simulation explaining permission and risk boundaries."""
+        res = self.evaluate_skill(skill_id)
+        return {
+            "skill_id": skill_id,
+            "overall_verdict": res.overall_verdict.value,
+            "max_risk": res.max_risk.value,
+            "capabilities": res.breakdown,
+            "reasons": res.reasons,
+        }
+
+
+import ipaddress
+import os
+import urllib.parse
+
+
+def validate_network_target(url_or_host: str) -> tuple[bool, str]:
+    """Inspect destination host for SSRF hazards, loopback, link-local, and cloud metadata."""
+    target = url_or_host.strip()
+    if "://" in target:
+        parsed = urllib.parse.urlparse(target)
+        host = parsed.hostname or ""
+    else:
+        host = target.split(":")[0]
+
+    host_lower = host.lower()
+    if host_lower in {"localhost", "metadata.google.internal", "169.254.169.254", "0.0.0.0"}:
+        return False, f"SSRF blocked: access to '{host}' is forbidden"
+
+    try:
+        ip = ipaddress.ip_address(host_lower)
+        if ip.is_loopback or ip.is_private or ip.is_link_local or ip.is_reserved or ip.is_multicast:
+            return False, f"SSRF blocked: '{host}' is a non-routable or private IP address"
+    except ValueError:
+        pass
+
+    return True, "valid"
+
+
+def broker_secrets(skill_id: str, declared_secrets: Optional[List[str]] = None) -> Dict[str, str]:
+    """Brokers ONLY explicitly declared credentials for a skill, isolating the environment."""
+    brokered: Dict[str, str] = {}
+    if not declared_secrets:
+        return brokered
+    for sec_name in declared_secrets:
+        val = os.environ.get(sec_name)
+        if val:
+            brokered[sec_name] = val
+    return brokered
+
 
 def save_default_policy(repo_root: Path) -> Path:
     out_file = repo_root / "skills" / "policy.json"

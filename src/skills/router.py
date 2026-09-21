@@ -159,39 +159,61 @@ class Router:
 
         score = 0.0
 
-        # 4. Trigger phrase substring (longer triggers score higher)
+        # 4. Trigger phrase matching (word-boundary matched)
         best_trigger = 0.0
         for t in entry.triggers:
             tl = (t or "").lower().strip()
-            if tl and tl in q:
-                s = 70.0 + min(len(tl), 30)
-                if s > best_trigger:
-                    best_trigger = s
+            if tl:
+                pattern = r"(?:\b|_)" + re.escape(tl) + r"(?:\b|_)"
+                if re.search(pattern, q):
+                    s = 70.0 + min(len(tl), 30)
+                    if s > best_trigger:
+                        best_trigger = s
         if best_trigger:
             signals["trigger"] = round(best_trigger, 1)
             score += best_trigger
 
-        # 5. Keyword overlap (fraction of the skill's keywords found in query)
+        # 5. Keyword overlap (token and boundary matched)
+        q_tokens = set(_WORD_RE.findall(q))
         keyword_hits = 0
         total_keywords = 0
         for kw in entry.keywords:
             kwl = (kw or "").lower().strip()
             total_keywords += 1
-            if kwl and (kwl in q or kwl.replace("-", " ") in q):
+            if not kwl:
+                continue
+            if " " in kwl or "-" in kwl:
+                phrase = kwl.replace("-", " ")
+                pattern = r"(?:\b|_)" + re.escape(phrase) + r"(?:\b|_)"
+                if re.search(pattern, q) or kwl in q_tokens:
+                    keyword_hits += 1
+            elif kwl in q_tokens:
                 keyword_hits += 1
+
         keyword_score = 0.0
         if total_keywords > 0 and keyword_hits > 0:
             keyword_score = (keyword_hits / total_keywords) * 40.0
             signals["keyword"] = round(keyword_score, 1)
             score += keyword_score
 
-        # 6. Capability/input/output vocabulary match (semantic relevance)
+        # 6. Capability/input/output vocabulary match (token and boundary matched)
         vocab = (
             [c for c in entry.capabilities]
             + [i for i in entry.inputs]
             + [o for o in entry.outputs]
         )
-        cap_hits = sum(1 for term in vocab if term and term.lower() in q)
+        cap_hits = 0
+        for term in vocab:
+            if not term:
+                continue
+            tl = term.lower().strip()
+            if " " in tl or "-" in tl:
+                pattern = r"(?:\b|_)" + re.escape(tl.replace("-", " ")) + r"(?:\b|_)"
+                if re.search(pattern, q) or tl in q_tokens:
+                    cap_hits += 1
+            elif tl in q_tokens:
+                cap_hits += 1
+
         if cap_hits:
             cap_score = min(cap_hits, 3) * 5.0
             signals["capability"] = round(cap_score, 1)

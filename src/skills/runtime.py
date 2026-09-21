@@ -108,8 +108,11 @@ class ExecutionRuntime:
             }
             with open(self.audit_log_path, "a", encoding="utf-8") as f:
                 f.write(json.dumps(entry) + "\n")
-        except Exception:
-            pass
+        except Exception as exc:
+            import sys
+            print(f"[AUDIT ERROR] Failed writing audit log to {self.audit_log_path}: {exc}", file=sys.stderr)
+            if status in {"blocked", "quarantined"}:
+                raise RuntimeError(f"Audit log failure during security boundary event: {exc}")
 
     def execute(
         self,
@@ -204,6 +207,23 @@ class ExecutionRuntime:
                 audit_id=audit_id,
                 error=err_msg,
             )
+
+        # SSRF verification on any URL inputs
+        for key, val in context.items():
+            if isinstance(val, str) and (val.startswith("http://") or val.startswith("https://")):
+                from .policy import validate_network_target
+                is_safe, ssrf_reason = validate_network_target(val)
+                if not is_safe:
+                    duration_ms = (time.perf_counter() - t0) * 1000
+                    err_msg = f"SSRF boundary violation in input parameter '{key}': {ssrf_reason}"
+                    self._log_audit(audit_id, skill, "blocked", duration_ms, session_id, "DENY", [], err_msg)
+                    return ExecutionResult(
+                        status="blocked",
+                        skill=skill,
+                        duration_ms=duration_ms,
+                        audit_id=audit_id,
+                        error=err_msg,
+                    )
 
         # Caller explicit permissions overrides
         if permissions:

@@ -111,6 +111,15 @@ class TestExecutionRuntime(unittest.TestCase):
         self.assertEqual(result.status, "failed")
         self.assertIn("not found in registry", result.error)
 
+    def test_runtime_blocks_ssrf_inputs(self):
+        """Input URLs pointing to internal loopback, private IPs, or cloud metadata must be blocked."""
+        result = self.runtime.execute(
+            skill="development.debugging",
+            input={"webhook_url": "http://169.254.169.254/latest/meta-data/"},
+        )
+        self.assertEqual(result.status, "blocked")
+        self.assertIn("SSRF", result.error)
+
     def test_runtime_result_to_dict(self):
         """ExecutionResult.to_dict() returns all required fields for structured API consumers."""
         result = ExecutionResult(
