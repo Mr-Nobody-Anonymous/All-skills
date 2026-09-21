@@ -80,6 +80,19 @@ def check_version_authority() -> tuple[bool, list[str]]:
             if stat_ver and stat_ver != canonical_version:
                 errors.append(f"stats.json platform_version '{stat_ver}' != VERSION '{canonical_version}'")
 
+    # 6. src/skills/_version.py
+    py_version_file = REPO_ROOT / "src" / "skills" / "_version.py"
+    if py_version_file.exists():
+        py_ver_content = py_version_file.read_text(encoding="utf-8")
+        for line in py_ver_content.splitlines():
+            if line.strip().startswith("__version__ ="):
+                mod_ver = line.split("=", 1)[1].strip().strip('"').strip("'")
+                if mod_ver != canonical_version:
+                    errors.append(f"src/skills/_version.py '{mod_ver}' != VERSION '{canonical_version}'")
+                break
+    else:
+        errors.append("src/skills/_version.py missing")
+
     return len(errors) == 0, errors
 
 
@@ -169,6 +182,14 @@ def check_stats_consistency() -> tuple[bool, list[str]]:
             errors.append(f"Tests count mismatch: stats.json has {stored.get('tests')}, discovered {test_count}")
     except Exception as e:
         errors.append(f"Could not discover tests: {e}")
+
+    # 7. README.md documentation sync
+    try:
+        from generate_readme_stats import sync_readme
+        if not sync_readme(stored, verify_only=True):
+            errors.append("README.md metrics are out of sync with stats.json (run scripts/generate_readme_stats.py)")
+    except Exception:
+        pass
 
     return len(errors) == 0, errors
 

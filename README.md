@@ -13,7 +13,7 @@
   <img src="https://img.shields.io/badge/domains-251%20Categories-10b981?style=for-the-badge&logo=hubspot&logoColor=white" alt="251 Categories" />
   <img src="https://img.shields.io/badge/platforms-11%20Agent%20Harnesses-ec4899?style=for-the-badge&logo=probot&logoColor=white" alt="11 Agent Harnesses" />
   <img src="https://img.shields.io/badge/active--harness-72%20Verified%20Skills-6366f1?style=for-the-badge&logo=lightning&logoColor=white" alt="72 Active Skills" />
-  <img src="https://img.shields.io/badge/tests-143%2F143%20Passing-10b981?style=for-the-badge&logo=pytest&logoColor=white" alt="143 Tests Passing" />
+  <img src="https://img.shields.io/badge/tests-149%2F149%20Passing-10b981?style=for-the-badge&logo=pytest&logoColor=white" alt="149 Tests Passing" />
   <img src="https://img.shields.io/badge/license-MIT-green?style=for-the-badge" alt="MIT License" />
   <img src="https://img.shields.io/badge/skillhub-compatible-0ea5e9?style=for-the-badge&logo=npm&logoColor=white" alt="SkillHub Compatible" />
   <img src="https://img.shields.io/badge/python-3.10+-3776ab?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.10+" />
@@ -59,7 +59,7 @@ When AI coding assistants are front-loaded with thousands of prompt instructions
 │  • 9-Signal Layered Scoring   │  • 251 Functional Domain Dirs   │  • Pre-Loaded in Workspace    │
 │  • Deterministic Workflows    │  • Machine-Readable Index       │  • Native Multi-Tool Synced   │
 │  • 8-State Formal Lifecycle   │  • Complete CATALOG.md Reference│  • $O(1)$ Load-on-Demand      │
-│  • 143/143 Passing Unit Tests │  • Dynamic Manager CLI          │  • Zero Prompt Bloat          │
+│  • 149/149 Passing Unit Tests │  • Dynamic Manager CLI          │  • Zero Prompt Bloat          │
 └───────────────────────────────┴─────────────────────────────────┴───────────────────────────────┘
 ```
 
@@ -246,7 +246,7 @@ allskills profile install ai-engineer
 # Verify cryptographic lockfile, schemas, and harness symlink integrity
 allskills verify
 
-# Run regression test suite (94 tests)
+# Run regression test suite (149 tests)
 allskills test
 
 # Inspect upstream source registry and trust tiers
@@ -498,7 +498,7 @@ python scripts/skills/skills.py chain deep-research --dry-run
 python scripts/skills/skills.py chain anti-procrastination --dry-run
 python scripts/skills/skills.py chain code-review-flow --dry-run
 
-# Run full health diagnostics and 104-test verification suite
+# Run full health diagnostics and 149-test verification suite
 python scripts/skills/skills.py doctor
 python scripts/skills/skills.py test
 
@@ -619,7 +619,7 @@ All skills/
 │   ├── SECURITY.md              # Threat model & static inspection policy
 │   └── *.md                     # Per-category detailed reference guides
 │
-└── tests/skill_tests/           # 🧪 Unit & Integration Test Suite (104 tests)
+└── tests/skill_tests/           # 🧪 Unit & Integration Test Suite (149 tests)
 ```
 
 ---
@@ -640,7 +640,7 @@ Run complete test suites and diagnostic checks at any time:
 # 1. Check health of all 122 canonical skills
 python scripts/skills/skills.py doctor
 
-# 2. Run the 104 unit and integration tests
+# 2. Run the 149 unit and integration tests
 python scripts/skills/skills.py test
 
 # 3. Verify multi-tool harness connections

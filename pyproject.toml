@@ -3,19 +3,37 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "agent-skills-library"
+name = "all-skills"
 version = "3.0.0"
-description = "Dependency-light Agent Skills registry, router, validator, quality scoring, lifecycle, chains, and CLI"
+description = "Universal AI Agent Skill Operating System & Execution Runtime"
+requires-python = ">=3.10"
 dependencies = [
     "pyyaml>=6.0",
+    "rich>=13.0.0",
+    "click>=8.0.0",
+    "requests>=2.31.0",
+    "httpx>=0.25.0",
+    "python-dotenv>=1.0.0",
+    "attrs>=23.1.0",
+    "networkx>=3.1",
 ]
 
 [project.optional-dependencies]
-test = ["pytest>=7"]
+test = [
+    "pytest>=7",
+    "pytest-cov",
+]
+dev = [
+    "pytest>=7",
+    "pytest-cov",
+    "black",
+    "ruff",
+    "mypy",
+]
 
 [project.scripts]
+all-skills = "skills.cli:main"
 agent-skills = "skills.cli:main"
-all-skills = "scratch_priority_import.cli:main"
 
 [tool.setuptools]
 package-dir = {"" = "src", "scratch_priority_import" = "scratch_priority_import"}

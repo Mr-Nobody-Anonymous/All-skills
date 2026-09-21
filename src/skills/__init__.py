@@ -55,6 +55,7 @@ __all__ = [
     "high_severity",
     "ExecutionRuntime",
     "ExecutionResult",
+    "__version__",
 ]
 
-__version__ = "3.0.0"
+from ._version import __version__

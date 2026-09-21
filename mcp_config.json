@@ -5,7 +5,7 @@
       "command": "npx",
       "args": [
         "-y",
-        "@modelcontextprotocol/server-filesystem",
+        "@modelcontextprotocol/server-filesystem@0.6.2",
         "."
       ],
       "env": {},
@@ -14,7 +14,7 @@
     "fetch": {
       "command": "uvx",
       "args": [
-        "mcp-server-fetch"
+        "mcp-server-fetch>=0.6.0"
       ],
       "env": {},
       "description": "HTTP and documentation retrieval"
@@ -22,7 +22,7 @@
     "git": {
       "command": "uvx",
       "args": [
-        "mcp-server-git",
+        "mcp-server-git>=0.6.0",
         "--repository",
         "."
       ],
@@ -33,7 +33,7 @@
       "command": "npx",
       "args": [
         "-y",
-        "@modelcontextprotocol/server-memory"
+        "@modelcontextprotocol/server-memory@0.6.2"
       ],
       "env": {},
       "description": "Persistent cross-session knowledge graph and agent memory"

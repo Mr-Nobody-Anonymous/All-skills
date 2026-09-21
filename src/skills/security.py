@@ -41,6 +41,13 @@ PATTERNS = [
 MAX_SCAN_FILE_SIZE = 2_000_000
 
 
+class ScanStatus:
+    SCANNED = "SCANNED"
+    SCANNED_WITH_LIMIT = "SCANNED_WITH_LIMIT"
+    SCAN_FAILED = "SCAN_FAILED"
+    UNSCANNABLE = "UNSCANNABLE"
+
+
 import ast
 import yaml
 
@@ -70,13 +77,15 @@ def scan_skill(entry: SkillEntry, skill_dir: Path) -> List[Finding]:
         try:
             sz = f.stat().st_size
             if sz > MAX_SCAN_FILE_SIZE:
-                findings.append(Finding(entry.id, rel, f"file exceeds max scan size ({sz} bytes)", "warn"))
+                findings.append(Finding(entry.id, rel, f"file exceeds max scan size ({sz} bytes) - status: {ScanStatus.UNSCANNABLE}", "warn"))
                 continue
-        except OSError:
+        except OSError as exc:
+            findings.append(Finding(entry.id, rel, f"unreadable file ({exc}) - status: {ScanStatus.SCAN_FAILED}", "warn"))
             continue
         try:
             content = f.read_text(encoding="utf-8", errors="ignore")
-        except Exception:
+        except Exception as exc:
+            findings.append(Finding(entry.id, rel, f"read failure ({exc}) - status: {ScanStatus.SCAN_FAILED}", "warn"))
             continue
 
         # File-level explicit exemption only

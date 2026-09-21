@@ -111,9 +111,12 @@ class Registry:
                 data = json.loads(registry_path.read_text(encoding="utf-8"))
                 for raw in data.get("skills", []):
                     reg.entries.append(SkillEntry.from_dict(raw))
-            except Exception:
-                # Corrupted registry — fall back to disk scan
-                pass
+            except Exception as e:
+                # Corrupted registry — fail closed in production
+                raise ValueError(
+                    f"Corrupted or invalid registry file '{registry_path}': {e}. "
+                    "Fail-closed policy requires repairing or rebuilding the registry."
+                )
         # Merge entries from disk that are not already present
         existing_ids = {e.id for e in reg.entries}
         for skill_md in skills_root.rglob("SKILL.md"):
