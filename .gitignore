@@ -48,10 +48,6 @@ Thumbs.db
 *.log
 logs/
 
-# OS
-.DS_Store
-Thumbs.db
-
 # Temp
 tmp/
 temp/

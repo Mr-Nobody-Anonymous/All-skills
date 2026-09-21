@@ -14,14 +14,14 @@
   "curated_packs": 7,
   "agents": 11,
   "profiles": 20,
-  "adapters": 11,
+  "adapters": 12,
   "harnesses": 11,
   "registry_records": {
     "skills": 14855,
     "agents": 11,
     "profiles": 20,
-    "capabilities": 0,
-    "sources": 0
+    "capabilities": 10,
+    "sources": 48
   },
   "last_generated": "2026-09-21"
 }

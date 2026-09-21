@@ -147,7 +147,48 @@
         "code-review", "tdd"
       ],
       "optional": []
+    },
+    "business": {
+      "file": "profiles/business.yaml",
+      "description": "Market research, business modeling, agile product management, and KPI tracking",
+      "skills": [
+        "analytics-product", "saas-mvp-launcher"
+      ],
+      "optional": ["brainstorming", "copywriting"]
+    },
+    "designer": {
+      "file": "profiles/designer.yaml",
+      "description": "Design systems, accessibility compliance, visual aesthetics, and component hierarchy",
+      "skills": [
+        "design-system", "tailwind-design-system",
+        "accessibility-compliance-accessibility-audit", "wcag-audit-patterns"
+      ],
+      "optional": ["seo-geo"]
+    },
+    "finance": {
+      "file": "profiles/finance.yaml",
+      "description": "Financial modeling, valuation, portfolio analysis, risk management, and regulatory compliance",
+      "skills": [
+        "analytics-product"
+      ],
+      "optional": ["brainstorming"]
+    },
+    "healthcare": {
+      "file": "profiles/healthcare.yaml",
+      "description": "Clinical workflows, bioinformatics, medical imaging analysis, and regulatory health standards",
+      "skills": [
+        "brainstorming"
+      ],
+      "optional": []
+    },
+    "legal": {
+      "file": "profiles/legal.yaml",
+      "description": "Contract analysis, regulatory compliance, intellectual property, and jurisdiction-aware review",
+      "skills": [
+        "marketplace-rbac-audit"
+      ],
+      "optional": ["brainstorming"]
     }
   },
-  "total": 15
+  "total": 20
 }
