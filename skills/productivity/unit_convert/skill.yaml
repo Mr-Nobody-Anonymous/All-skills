@@ -1,0 +1,19 @@
+name: unit_convert
+version: 1.0.0
+category: productivity
+priority: 15
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - convert units
+  - unit conversion
+triggers:
+  - "convert"
+  - "how many"
+  - "in"
+  - "to meters"

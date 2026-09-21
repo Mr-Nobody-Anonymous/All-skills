@@ -1,0 +1,18 @@
+name: nl_to_sql
+version: 1.0.0
+category: data_science
+priority: 20
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - natural language to sql
+  - nl to sql
+triggers:
+  - "query the database"
+  - "sql for"
+  - "write sql to"

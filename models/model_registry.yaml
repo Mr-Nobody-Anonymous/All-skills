@@ -1,0 +1,50 @@
+# Model Registry
+# Maps model IDs to their download URLs, local cache paths, and metadata.
+
+models:
+  whisper-base:
+    id: whisper-base
+    type: stt
+    provider: openai
+    url: https://huggingface.co/openai/whisper-base
+    cache_path: models/cache/whisper-base
+    size_mb: 145
+    languages: [en, fr, de, es, zh, ja, ar]
+    gpu_required: false
+
+  coqui-tts-en:
+    id: coqui-tts-en
+    type: tts
+    provider: coqui
+    url: https://github.com/coqui-ai/TTS/releases
+    cache_path: models/cache/coqui-tts-en
+    size_mb: 220
+    languages: [en]
+    gpu_required: false
+
+  yolov8n:
+    id: yolov8n
+    type: object_detection
+    provider: ultralytics
+    url: https://github.com/ultralytics/assets/releases/download/v0.0.0/yolov8n.pt
+    cache_path: models/cache/yolov8n.pt
+    size_mb: 6
+    gpu_required: false
+
+  deepface-vgg:
+    id: deepface-vgg
+    type: face_recognition
+    provider: serengil
+    url: https://github.com/serengil/deepface_models
+    cache_path: models/cache/deepface
+    size_mb: 580
+    gpu_required: false
+
+  sentence-transformers-mpnet:
+    id: sentence-transformers-mpnet
+    type: embeddings
+    provider: ukplab
+    url: https://huggingface.co/sentence-transformers/all-mpnet-base-v2
+    cache_path: models/cache/mpnet-base-v2
+    size_mb: 420
+    gpu_required: false

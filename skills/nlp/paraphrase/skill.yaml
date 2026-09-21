@@ -1,0 +1,18 @@
+name: paraphrase
+version: 1.0.0
+category: nlp
+priority: 45
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - paraphrase text
+  - rephrase
+triggers:
+  - "rephrase this"
+  - "say it differently"
+  - "paraphrase"

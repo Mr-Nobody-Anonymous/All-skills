@@ -1,0 +1,19 @@
+name: pii_detect
+version: 1.0.0
+category: security
+priority: 15
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - detect pii
+  - anonymize data
+triggers:
+  - "find personal data"
+  - "pii"
+  - "anonymize"
+  - "sensitive data"

@@ -1,0 +1,18 @@
+name: recipe_gen
+version: 1.0.0
+category: creative
+priority: 30
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - generate recipe
+  - recipe from ingredients
+triggers:
+  - "recipe with"
+  - "what can I make with"
+  - "cook"

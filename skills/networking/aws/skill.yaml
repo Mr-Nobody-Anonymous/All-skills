@@ -1,0 +1,20 @@
+name: aws
+version: 1.0.0
+category: networking
+priority: 25
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - aws operation
+  - s3 upload
+triggers:
+  - "aws"
+  - "s3"
+  - "ec2"
+  - "lambda"
+  - "dynamodb"

@@ -1,0 +1,20 @@
+name: image_edit
+version: 1.0.0
+category: media
+priority: 25
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - edit image
+  - crop image
+  - resize image
+triggers:
+  - "edit this image"
+  - "crop"
+  - "resize"
+  - "filter"

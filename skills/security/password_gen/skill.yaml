@@ -1,0 +1,18 @@
+name: password_gen
+version: 1.0.0
+category: security
+priority: 10
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - generate password
+  - create password
+triggers:
+  - "generate password"
+  - "strong password"
+  - "random password"

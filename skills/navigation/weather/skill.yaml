@@ -1,0 +1,19 @@
+name: weather
+version: 1.0.0
+category: navigation
+priority: 10
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - get weather
+  - weather forecast
+triggers:
+  - "weather in"
+  - "will it rain"
+  - "temperature today"
+  - "forecast"

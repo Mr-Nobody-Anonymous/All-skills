@@ -1,0 +1,19 @@
+name: process_manage
+version: 1.0.0
+category: system
+priority: 15
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - manage process
+  - list processes
+  - kill process
+triggers:
+  - "what processes are running"
+  - "kill process"
+  - "cpu usage"

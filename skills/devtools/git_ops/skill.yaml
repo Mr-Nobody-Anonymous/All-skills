@@ -1,0 +1,20 @@
+name: git_ops
+version: 1.0.0
+category: devtools
+priority: 15
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - git commit
+  - git push
+  - git status
+triggers:
+  - "commit"
+  - "push to git"
+  - "git log"
+  - "git branch"

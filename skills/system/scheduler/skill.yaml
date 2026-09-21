@@ -1,0 +1,19 @@
+name: scheduler
+version: 1.0.0
+category: system
+priority: 10
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - schedule task
+  - cron job
+  - schedule reminder
+triggers:
+  - "remind me at"
+  - "schedule this"
+  - "run every"

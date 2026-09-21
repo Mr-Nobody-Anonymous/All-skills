@@ -1,0 +1,18 @@
+name: language_detect
+version: 1.0.0
+category: nlp
+priority: 10
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - detect language
+  - identify language
+triggers:
+  - "what language is this"
+  - "which language"
+  - "detect lang"

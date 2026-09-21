@@ -1,0 +1,17 @@
+name: scene_understand
+version: 1.0.0
+category: vision
+priority: 30
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - understand scene
+  - segment scene
+triggers:
+  - "what's in this scene"
+  - "analyze the scene"

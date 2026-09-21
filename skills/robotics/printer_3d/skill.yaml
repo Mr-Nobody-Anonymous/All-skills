@@ -1,0 +1,19 @@
+name: printer_3d
+version: 1.0.0
+category: robotics
+priority: 25
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - 3d print
+  - octoprint control
+triggers:
+  - "print"
+  - "3d printer"
+  - "octoprint"
+  - "gcode"

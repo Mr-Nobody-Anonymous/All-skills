@@ -1,0 +1,17 @@
+name: gesture
+version: 1.0.0
+category: vision
+priority: 20
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - detect gesture
+  - recognize hand gesture
+triggers:
+  - "what gesture is this"
+  - "detect hand pose"

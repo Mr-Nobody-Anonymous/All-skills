@@ -1,0 +1,20 @@
+name: todo
+version: 1.0.0
+category: productivity
+priority: 20
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - add todo
+  - list todos
+  - complete todo
+triggers:
+  - "add to do"
+  - "todo"
+  - "task"
+  - "remind me to"

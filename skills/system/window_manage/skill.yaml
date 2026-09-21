@@ -1,0 +1,19 @@
+name: window_manage
+version: 1.0.0
+category: system
+priority: 20
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - manage windows
+  - resize window
+triggers:
+  - "focus window"
+  - "minimize"
+  - "maximize"
+  - "move window"

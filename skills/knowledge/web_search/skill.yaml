@@ -1,0 +1,18 @@
+name: web_search
+version: 1.0.0
+category: knowledge
+priority: 15
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - search web
+  - google this
+triggers:
+  - "search for"
+  - "look up"
+  - "find information about"

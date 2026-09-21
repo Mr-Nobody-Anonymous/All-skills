@@ -1,0 +1,17 @@
+name: pose_estimate
+version: 1.0.0
+category: vision
+priority: 25
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - estimate pose
+  - detect body pose
+triggers:
+  - "what pose is this"
+  - "analyze body position"

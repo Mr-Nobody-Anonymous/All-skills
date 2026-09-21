@@ -1,0 +1,20 @@
+name: visualization
+version: 1.0.0
+category: data_science
+priority: 20
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - visualize data
+  - create chart
+  - plot data
+triggers:
+  - "plot"
+  - "chart"
+  - "visualize"
+  - "graph"

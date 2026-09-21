@@ -1,0 +1,18 @@
+name: encrypt
+version: 1.0.0
+category: security
+priority: 15
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - encrypt data
+  - decrypt data
+triggers:
+  - "encrypt this"
+  - "decrypt"
+  - "secure with password"

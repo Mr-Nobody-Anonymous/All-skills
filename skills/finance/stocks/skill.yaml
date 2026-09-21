@@ -1,0 +1,19 @@
+name: stocks
+version: 1.0.0
+category: finance
+priority: 15
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - get stock price
+  - stock data
+triggers:
+  - "stock price of"
+  - "how is"
+  - "stock market"
+  - "share price"

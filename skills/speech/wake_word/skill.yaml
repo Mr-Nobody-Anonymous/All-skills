@@ -1,0 +1,17 @@
+name: wake_word
+version: 1.0.0
+category: speech
+priority: 1
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - detect wake word
+  - listen for wake word
+triggers:
+  - "hey assistant"
+  - "wake word detected"

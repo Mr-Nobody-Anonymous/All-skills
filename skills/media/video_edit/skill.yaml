@@ -1,0 +1,19 @@
+name: video_edit
+version: 1.0.0
+category: media
+priority: 30
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - edit video
+  - cut video
+  - merge videos
+triggers:
+  - "edit video"
+  - "trim"
+  - "add effects to video"

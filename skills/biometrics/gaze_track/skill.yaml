@@ -1,0 +1,18 @@
+name: gaze_track
+version: 1.0.0
+category: biometrics
+priority: 20
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - gaze tracking
+  - eye tracking
+triggers:
+  - "track gaze"
+  - "where am I looking"
+  - "eye contact"

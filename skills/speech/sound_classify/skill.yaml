@@ -1,0 +1,17 @@
+name: sound_classify
+version: 1.0.0
+category: speech
+priority: 25
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - classify sound
+  - identify sound
+triggers:
+  - "what sound is this"
+  - "classify this audio"

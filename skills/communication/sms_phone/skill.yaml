@@ -1,0 +1,19 @@
+name: sms_phone
+version: 1.0.0
+category: communication
+priority: 15
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - send sms
+  - make phone call
+triggers:
+  - "text me"
+  - "call"
+  - "sms to"
+  - "send text"

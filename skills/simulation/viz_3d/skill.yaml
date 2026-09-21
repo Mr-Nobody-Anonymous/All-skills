@@ -1,0 +1,18 @@
+name: viz_3d
+version: 1.0.0
+category: simulation
+priority: 30
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - 3d visualization
+  - render 3d
+triggers:
+  - "3d"
+  - "visualize mesh"
+  - "render"

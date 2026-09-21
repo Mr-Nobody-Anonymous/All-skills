@@ -1,0 +1,17 @@
+name: coreference
+version: 1.0.0
+category: nlp
+priority: 40
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - resolve coreference
+  - resolve pronouns
+triggers:
+  - "what does 'it' refer to"
+  - "resolve references"

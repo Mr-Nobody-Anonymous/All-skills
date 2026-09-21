@@ -1,0 +1,19 @@
+name: notes
+version: 1.0.0
+category: productivity
+priority: 20
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - take note
+  - save note
+  - find note
+triggers:
+  - "note this"
+  - "remember that"
+  - "save a note"

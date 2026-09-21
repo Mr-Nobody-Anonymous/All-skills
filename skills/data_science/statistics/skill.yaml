@@ -1,0 +1,19 @@
+name: statistics
+version: 1.0.0
+category: data_science
+priority: 20
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - statistical analysis
+  - compute statistics
+triggers:
+  - "mean"
+  - "standard deviation"
+  - "correlation"
+  - "stats"

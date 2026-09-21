@@ -1,0 +1,18 @@
+name: zigbee
+version: 1.0.0
+category: smart_home
+priority: 20
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - control zigbee device
+  - zigbee command
+triggers:
+  - "zigbee"
+  - "z2m"
+  - "pair device"

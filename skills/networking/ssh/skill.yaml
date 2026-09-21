@@ -1,0 +1,18 @@
+name: ssh
+version: 1.0.0
+category: networking
+priority: 20
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - ssh connect
+  - remote command
+triggers:
+  - "ssh"
+  - "remote command"
+  - "connect to server"

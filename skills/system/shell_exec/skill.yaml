@@ -1,0 +1,19 @@
+name: shell_exec
+version: 1.0.0
+category: system
+priority: 5
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - execute shell command
+  - run command
+triggers:
+  - "run"
+  - "execute"
+  - "bash"
+  - "shell command"

@@ -1,0 +1,17 @@
+name: face_recognize
+version: 1.0.0
+category: vision
+priority: 15
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - recognize face
+  - identify person
+triggers:
+  - "who is this person"
+  - "recognize this face"

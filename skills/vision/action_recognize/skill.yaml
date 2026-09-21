@@ -1,0 +1,17 @@
+name: action_recognize
+version: 1.0.0
+category: vision
+priority: 30
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - recognize action
+  - identify action in video
+triggers:
+  - "what action is this"
+  - "what are they doing"

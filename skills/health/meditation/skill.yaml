@@ -1,0 +1,19 @@
+name: meditation
+version: 1.0.0
+category: health
+priority: 25
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - start meditation
+  - guided breathing
+triggers:
+  - "meditate"
+  - "breathing exercise"
+  - "relax"
+  - "mindfulness"

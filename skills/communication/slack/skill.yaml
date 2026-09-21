@@ -1,0 +1,18 @@
+name: slack
+version: 1.0.0
+category: communication
+priority: 20
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - send slack message
+  - slack notify
+triggers:
+  - "send slack"
+  - "notify on slack"
+  - "post to channel"

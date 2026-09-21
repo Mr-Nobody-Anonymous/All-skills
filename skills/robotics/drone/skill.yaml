@@ -1,0 +1,20 @@
+name: drone
+version: 1.0.0
+category: robotics
+priority: 25
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - drone control
+  - uav command
+triggers:
+  - "drone"
+  - "uav"
+  - "fly to"
+  - "takeoff"
+  - "land"

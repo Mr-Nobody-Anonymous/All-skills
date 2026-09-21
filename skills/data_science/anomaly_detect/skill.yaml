@@ -1,0 +1,19 @@
+name: anomaly_detect
+version: 1.0.0
+category: data_science
+priority: 25
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - detect anomalies
+  - find outliers
+triggers:
+  - "anomaly"
+  - "outlier"
+  - "unusual pattern"
+  - "detect anomaly"

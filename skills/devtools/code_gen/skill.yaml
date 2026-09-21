@@ -1,0 +1,19 @@
+name: code_gen
+version: 1.0.0
+category: devtools
+priority: 20
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - generate code
+  - write function
+  - code completion
+triggers:
+  - "write a function"
+  - "generate code"
+  - "code for"

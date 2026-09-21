@@ -1,0 +1,19 @@
+name: data_format
+version: 1.0.0
+category: devtools
+priority: 25
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - convert data format
+  - parse json
+  - yaml to json
+triggers:
+  - "convert json"
+  - "parse yaml"
+  - "xml to"

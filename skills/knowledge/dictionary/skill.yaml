@@ -1,0 +1,19 @@
+name: dictionary
+version: 1.0.0
+category: knowledge
+priority: 20
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - define word
+  - dictionary lookup
+triggers:
+  - "define"
+  - "what does"
+  - "mean"
+  - "synonym of"

@@ -1,0 +1,19 @@
+name: os_control
+version: 1.0.0
+category: system
+priority: 10
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - control os
+  - automate gui
+triggers:
+  - "click on"
+  - "type this"
+  - "move mouse"
+  - "press key"

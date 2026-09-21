@@ -1,0 +1,18 @@
+name: braille
+version: 1.0.0
+category: accessibility
+priority: 20
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - translate to braille
+  - braille convert
+triggers:
+  - "braille"
+  - "convert to braille"
+  - "braille translation"

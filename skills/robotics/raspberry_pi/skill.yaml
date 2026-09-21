@@ -1,0 +1,19 @@
+name: raspberry_pi
+version: 1.0.0
+category: robotics
+priority: 20
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - raspberry pi gpio
+  - rpi control
+triggers:
+  - "raspberry pi"
+  - "gpio"
+  - "led on pin"
+  - "button"

@@ -1,0 +1,5 @@
+openai-whisper>=20231117
+TTS>=0.22.0
+pvporcupine>=3.0.0
+speechbrain>=1.0.0
+pydub>=0.25.1

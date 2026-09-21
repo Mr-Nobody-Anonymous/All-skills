@@ -1,0 +1,19 @@
+name: email
+version: 1.0.0
+category: communication
+priority: 10
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - send email
+  - read email
+  - check email
+triggers:
+  - "email"
+  - "send message to"
+  - "check inbox"

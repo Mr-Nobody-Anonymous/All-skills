@@ -1,0 +1,19 @@
+name: file_system
+version: 1.0.0
+category: system
+priority: 20
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - manage files
+  - watch directory
+triggers:
+  - "create file"
+  - "delete file"
+  - "move file"
+  - "watch folder"

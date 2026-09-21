@@ -1,0 +1,19 @@
+name: pdf
+version: 1.0.0
+category: productivity
+priority: 15
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - create pdf
+  - read pdf
+  - merge pdf
+triggers:
+  - "create pdf"
+  - "convert to pdf"
+  - "read pdf"

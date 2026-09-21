@@ -1,0 +1,19 @@
+name: sentiment
+version: 1.0.0
+category: nlp
+priority: 15
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - analyze sentiment
+  - detect mood
+  - check tone
+triggers:
+  - "how does this sound"
+  - "is this positive"
+  - "what's the tone"

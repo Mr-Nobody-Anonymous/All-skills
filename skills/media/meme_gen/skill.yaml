@@ -1,0 +1,18 @@
+name: meme_gen
+version: 1.0.0
+category: media
+priority: 40
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - generate meme
+  - create meme
+triggers:
+  - "make a meme"
+  - "create meme"
+  - "meme with"

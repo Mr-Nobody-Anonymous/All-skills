@@ -1,0 +1,19 @@
+name: physics
+version: 1.0.0
+category: simulation
+priority: 25
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - physics simulation
+  - simulate physics
+triggers:
+  - "simulate"
+  - "physics"
+  - "collision"
+  - "rigid body"

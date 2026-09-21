@@ -1,0 +1,19 @@
+name: audio_edit
+version: 1.0.0
+category: speech
+priority: 35
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - edit audio
+  - convert audio format
+  - trim audio
+triggers:
+  - "cut this audio"
+  - "convert to mp3"
+  - "mix audio"

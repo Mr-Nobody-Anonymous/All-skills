@@ -1,0 +1,19 @@
+name: home_assistant
+version: 1.0.0
+category: smart_home
+priority: 10
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - control home assistant
+  - ha command
+triggers:
+  - "turn on"
+  - "turn off"
+  - "set temperature"
+  - "ha"

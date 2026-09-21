@@ -1,0 +1,19 @@
+name: ner
+version: 1.0.0
+category: nlp
+priority: 20
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - extract entities
+  - find named entities
+  - identify names
+triggers:
+  - "who is mentioned"
+  - "what places are in"
+  - "find people"

@@ -1,0 +1,18 @@
+name: workflow
+version: 1.0.0
+category: reasoning
+priority: 20
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - run workflow
+  - orchestrate tasks
+triggers:
+  - "workflow"
+  - "pipeline"
+  - "automate tasks"

@@ -1,0 +1,19 @@
+name: timer_alarm
+version: 1.0.0
+category: productivity
+priority: 5
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - set timer
+  - set alarm
+  - countdown
+triggers:
+  - "set timer for"
+  - "alarm at"
+  - "remind me in"

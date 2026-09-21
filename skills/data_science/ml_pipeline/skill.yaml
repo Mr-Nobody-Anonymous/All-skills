@@ -1,0 +1,20 @@
+name: ml_pipeline
+version: 1.0.0
+category: data_science
+priority: 30
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - train model
+  - ml pipeline
+  - classify data
+triggers:
+  - "train"
+  - "classify"
+  - "predict"
+  - "cluster"

@@ -1,0 +1,17 @@
+name: music_recognize
+version: 1.0.0
+category: speech
+priority: 30
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - recognize music
+  - identify song
+triggers:
+  - "what song is this"
+  - "identify this music"

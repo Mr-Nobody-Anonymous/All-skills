@@ -1,0 +1,17 @@
+name: voice_activity
+version: 1.0.0
+category: speech
+priority: 3
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - detect voice activity
+  - vad
+triggers:
+  - "is someone speaking"
+  - "detect speech"

@@ -1,0 +1,17 @@
+name: emotion_voice
+version: 1.0.0
+category: speech
+priority: 20
+dependencies:
+  []
+load_strategy: lazy
+resources:
+  gpu: false
+  memory_mb: 256
+platforms: [linux, macos, windows]
+intents_handled:
+  - detect voice emotion
+  - analyze voice emotion
+triggers:
+  - "how do I sound"
+  - "detect emotion from voice"
