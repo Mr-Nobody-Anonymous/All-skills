@@ -1,4 +1,5 @@
 {
+  "_comment": "Single authoritative metrics source. Do not edit manually — regenerate via: python scripts/compute_stats.py",
   "total_unique_skills": 12755,
   "catalog_skills": 14855,
   "catalog_index_records": 14855,
@@ -7,9 +8,21 @@
   "manifest_skills": 192,
   "categories": 251,
   "canonical_categories": 8,
-  "tests": 104,
+  "tests": 136,
   "workflows": 5,
   "named_chains": 4,
   "curated_packs": 7,
-  "last_generated": "2026-09-20"
+  "agents": 11,
+  "profiles": 20,
+  "adapters": 11,
+  "harnesses": 11,
+  "registry_records": {
+    "skills": 14855,
+    "agents": 11,
+    "profiles": 20,
+    "capabilities": 0,
+    "sources": 0
+  },
+  "last_generated": "2026-09-21"
 }
+

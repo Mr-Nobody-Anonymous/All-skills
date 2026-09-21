@@ -1,0 +1,4 @@
+{
+  "_comment": "Managed harnesses ledger. Tracks every junction/symlink All-skills created. DO NOT manually edit — maintained by scripts/setup_tools.py.",
+  "_schema": "https://github.com/Mr-Nobody-Anonymous/All-skills/blob/main/docs/managed_harnesses_schema.json"
+}

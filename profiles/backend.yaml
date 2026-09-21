@@ -1,0 +1,22 @@
+name: backend
+description: >
+  Backend and API engineering skill bundle.
+  Covers API design and documentation, database design and migration,
+  ORM expertise, security, and performance profiling.
+version: "1.0.0"
+skills:
+  - api-designer
+  - api-documentation
+  - database-design
+  - database-migration
+  - prisma-expert
+  - drizzle-orm-expert
+  - code-review
+  - tdd
+  - security-sandboxing-guardrails
+  - performance-profiling
+optional:
+  - redis-cli
+  - secrets-management
+  - ci-cd-and-automation
+tags: [backend, api, database, server]

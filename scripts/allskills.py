@@ -40,30 +40,184 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 def run_cmd(args_list: list[str]) -> int:
     return subprocess.run([sys.executable] + args_list, cwd=REPO_ROOT).returncode
 
-def cmd_doctor() -> int:
-    print("[DOCTOR] All-skills System Diagnostics\n")
-    print(f"Directory Workspace Root: {REPO_ROOT}")
-    
-    # 1. Check registry
+# ─────────────────────────────────────────────────────────────────────────────
+# DOCTOR — 11-layer full diagnostic
+# ─────────────────────────────────────────────────────────────────────────────
+
+def _check(label: str, ok: bool, detail: str = "") -> bool:
+    """Print one diagnostic row and return the ok flag."""
+    status = "PASS" if ok else "FAIL"
+    symbol = "✅" if ok else "❌"
+    detail_str = f"  ({detail})" if detail else ""
+    print(f"  {symbol} {label:<28} {status}{detail_str}")
+    return ok
+
+
+def cmd_doctor(full: bool = False) -> int:
+    """Run system diagnostics. With --full, validates all 11 layers."""
+    print()
+    print("╔══════════════════════════════════════════════════════╗")
+    print("║   All-skills Platform Doctor                        ║")
+    print("╚══════════════════════════════════════════════════════╝")
+    print(f"  Workspace: {REPO_ROOT}")
+    print()
+
+    failures = []
+
+    # ── Layer 1: Registry ─────────────────────────────────────────────────────
     reg = REPO_ROOT / "registry" / "skills.json"
     if reg.exists():
-        with open(reg, "r", encoding="utf-8") as f:
-            cnt = len(json.load(f))
-        print(f"[OK] Registry: Healthy ({cnt:,} skills loaded)")
+        try:
+            with open(reg, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            cnt = len(data) if isinstance(data, list) else len(data.get("skills", data))
+            ok = _check("Registry", True, f"{cnt:,} records")
+        except Exception as e:
+            ok = _check("Registry", False, str(e))
     else:
-        print("[WARN] Registry: Missing registry/skills.json")
+        ok = _check("Registry", False, "registry/skills.json missing")
+    if not ok:
+        failures.append("Registry")
 
-    # 2. Check harnesses
-    res = subprocess.run([sys.executable, "scripts/setup_tools.py", "--verify"], cwd=REPO_ROOT)
-    
-    # 3. Check tests
-    print("\nRunning quick test health check...")
-    t_res = subprocess.run([sys.executable, "scripts/skills/skills.py", "test"], cwd=REPO_ROOT)
-    
-    if res.returncode == 0 and t_res.returncode == 0:
-        print("\n[SUCCESS] All systems operational! Universal Skill OS is 100% healthy.")
+    if not full:
+        # Quick doctor: only registry + harnesses + tests
+        r = subprocess.run(
+            [sys.executable, "scripts/setup_tools.py", "--verify"],
+            cwd=REPO_ROOT, capture_output=True, text=True,
+        )
+        ok = _check("Harnesses", r.returncode == 0)
+        if not ok:
+            failures.append("Harnesses")
+
+        t = subprocess.run(
+            [sys.executable, "scripts/skills/skills.py", "test"],
+            cwd=REPO_ROOT, capture_output=True, text=True,
+        )
+        ok = _check("Test suite", t.returncode == 0)
+        if not ok:
+            failures.append("Tests")
+
+        print()
+        if not failures:
+            print("  🎉 All checks passed. Run with --full for complete 11-layer audit.")
+            return 0
+        else:
+            print(f"  ⚠️  {len(failures)} check(s) failed: {', '.join(failures)}")
+            return 1
+
+    # ─── Full 11-layer diagnostic ─────────────────────────────────────────────
+    print("  Full 11-layer audit:\n")
+
+    # Layer 2: Skill frontmatter
+    r = subprocess.run(
+        [sys.executable, "scripts/validate_schema.py"],
+        cwd=REPO_ROOT, capture_output=True, text=True,
+    )
+    lines = r.stdout.strip().split("\n")
+    detail = lines[-1] if lines else ""
+    ok = _check("Skill frontmatter", r.returncode == 0, detail)
+    if not ok:
+        failures.append("Skill frontmatter")
+
+    # Layer 3: Dependencies
+    dep_file = REPO_ROOT / "dependency_graph.json"
+    ok = _check("Dependencies", dep_file.exists(), f"{dep_file.stat().st_size:,} bytes" if dep_file.exists() else "missing")
+    if not ok:
+        failures.append("Dependencies")
+
+    # Layer 4: Profiles
+    profiles_dir = REPO_ROOT / "profiles"
+    profiles = list(profiles_dir.glob("*.yaml")) if profiles_dir.exists() else []
+    reg_prof = REPO_ROOT / "registry" / "profiles.json"
+    ok = _check("Profiles", len(profiles) > 0 and reg_prof.exists(),
+                f"{len(profiles)} profiles, registry {'OK' if reg_prof.exists() else 'MISSING'}")
+    if not ok:
+        failures.append("Profiles")
+
+    # Layer 5: Workflows
+    workflows_dir = REPO_ROOT / "workflows"
+    wf_files = list(workflows_dir.glob("*.md")) + list(workflows_dir.glob("*.yaml")) if workflows_dir.exists() else []
+    ok = _check("Workflows", len(wf_files) > 0, f"{len(wf_files)} workflow files")
+    if not ok:
+        failures.append("Workflows")
+
+    # Layer 6: Adapters
+    adapters_dir = REPO_ROOT / "adapters"
+    adapter_files = list(adapters_dir.glob("*.yaml")) if adapters_dir.exists() else []
+    expected_agents = [
+        "gemini", "claude", "cursor", "codex", "copilot",
+        "vscode", "windsurf", "opencode", "cline", "roo", "goose",
+    ]
+    missing_adapters = [a for a in expected_agents
+                        if not (adapters_dir / f"{a}.yaml").exists()]
+    ok = _check("Adapters",
+                len(missing_adapters) == 0,
+                f"{len(adapter_files)} YAML files" if not missing_adapters
+                else f"missing: {missing_adapters}")
+    if not ok:
+        failures.append("Adapters")
+
+    # Layer 7: Harnesses
+    r = subprocess.run(
+        [sys.executable, "scripts/setup_tools.py", "--verify"],
+        cwd=REPO_ROOT, capture_output=True, text=True,
+    )
+    ok = _check("Harnesses", r.returncode == 0)
+    if not ok:
+        failures.append("Harnesses")
+
+    # Layer 8: Permissions / Policies
+    policies_dir = REPO_ROOT / "policies"
+    pol_files = list(policies_dir.glob("*")) if policies_dir.exists() else []
+    ok = _check("Permissions/Policies", policies_dir.exists() and len(pol_files) > 0,
+                f"{len(pol_files)} policy files")
+    if not ok:
+        failures.append("Permissions")
+
+    # Layer 9: Provenance
+    prov_dir = REPO_ROOT / "provenance"
+    prov_reg = REPO_ROOT / "registry" / "provenance.json"
+    ok = _check("Provenance", prov_dir.exists() or prov_reg.exists(),
+                "provenance/ or registry/provenance.json present")
+    if not ok:
+        failures.append("Provenance")
+
+    # Layer 10: Lockfile
+    lockfile = REPO_ROOT / "skills.lock"
+    awesome_lock = REPO_ROOT / "awesome_skills.lock"
+    ok = _check("Lockfile",
+                lockfile.exists() or awesome_lock.exists(),
+                "skills.lock or awesome_skills.lock present")
+    if not ok:
+        failures.append("Lockfile")
+
+    # Layer 11: Agent compatibility (registry/agents.json)
+    agents_reg = REPO_ROOT / "registry" / "agents.json"
+    if agents_reg.exists():
+        try:
+            with open(agents_reg, "r", encoding="utf-8") as f:
+                ag_data = json.load(f)
+            n_agents = ag_data.get("total", len(ag_data.get("agents", {})))
+            ok = _check("Agent compatibility", n_agents >= 11, f"{n_agents} agents declared")
+        except Exception as e:
+            ok = _check("Agent compatibility", False, str(e))
+    else:
+        ok = _check("Agent compatibility", False, "registry/agents.json missing")
+    if not ok:
+        failures.append("Agent compatibility")
+
+    # ── Summary ──────────────────────────────────────────────────────────────
+    total = 11
+    passed = total - len(failures)
+    print()
+    print(f"  {'─'*50}")
+    print(f"  Result: {passed}/{total} layers passed")
+    if not failures:
+        print("  🎉 ALL LAYERS PASSED — platform is fully healthy!")
         return 0
-    return 1
+    else:
+        print(f"  ⚠️  FAILED layers: {', '.join(failures)}")
+        return 1
 
 def cmd_search(query: str) -> int:
     q = query.lower()
@@ -109,7 +263,8 @@ def main() -> int:
     s_search = subparsers.add_parser("search", help="Search the universal catalog")
     s_search.add_argument("query", help="Keywords or functional phrase")
 
-    subparsers.add_parser("doctor", help="Run system diagnostics")
+    s_doctor = subparsers.add_parser("doctor", help="Run system diagnostics")
+    s_doctor.add_argument("--full", action="store_true", help="Run the complete 11-layer audit")
     subparsers.add_parser("verify", help="Verify harness and lockfile integrity")
     subparsers.add_parser("test", help="Run full regression test suite")
     subparsers.add_parser("sources", help="List registered upstream sources")
@@ -123,7 +278,7 @@ def main() -> int:
     args = parser.parse_args()
 
     if args.subcommand == "doctor":
-        return cmd_doctor()
+        return cmd_doctor(full=getattr(args, "full", False))
     elif args.subcommand == "search":
         return cmd_search(args.query)
     elif args.subcommand == "verify":

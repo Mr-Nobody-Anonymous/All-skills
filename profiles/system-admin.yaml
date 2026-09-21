@@ -1,0 +1,17 @@
+name: system-admin
+description: >
+  Systems administration and operations skill bundle.
+  Covers cloud infrastructure management, CI/CD, secrets management,
+  security, Redis operations, and performance monitoring.
+version: "1.0.0"
+skills:
+  - cloud-devops
+  - ci-cd-and-automation
+  - secrets-management
+  - security-sandboxing-guardrails
+  - redis-cli
+  - performance-profiling
+optional:
+  - kubernetes-deployment
+  - terraform-infrastructure
+tags: [sysadmin, operations, linux, infrastructure, monitoring]

@@ -1,0 +1,18 @@
+name: cloud
+description: >
+  Cloud infrastructure and architecture skill bundle.
+  Covers multi-cloud strategy, IaC with Terraform, Kubernetes architecture,
+  secrets management, and CI/CD pipelines.
+version: "1.0.0"
+skills:
+  - cloud-devops
+  - terraform-infrastructure
+  - kubernetes-architect
+  - kubernetes-deployment
+  - secrets-management
+  - performance-profiling
+  - ci-cd-and-automation
+optional:
+  - database-design
+  - sast-configuration
+tags: [cloud, aws, gcp, azure, kubernetes, terraform, infrastructure]

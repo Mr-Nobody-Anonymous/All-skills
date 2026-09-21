@@ -1,0 +1,20 @@
+name: web-developer
+description: >
+  Front-end and full-stack web development skill bundle.
+  Covers UI design systems, API design, SEO, accessibility, and testing.
+version: "1.0.0"
+skills:
+  - code-review
+  - tailwind-design-system
+  - design-system
+  - api-designer
+  - database-design
+  - tdd
+  - accessibility-compliance-accessibility-audit
+  - seo-geo
+  - performance-profiling
+optional:
+  - react-state-management
+  - angular-state-management
+  - wcag-audit-patterns
+tags: [web, frontend, fullstack, ui, ux]

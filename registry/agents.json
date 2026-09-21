@@ -1,0 +1,140 @@
+{
+  "_comment": "Registry of all 11 supported AI coding agents. Source of truth for adapter paths, workspace targets, and manifest formats.",
+  "schema_version": "1.0.0",
+  "agents": {
+    "gemini": {
+      "id": "gemini",
+      "display_name": "Antigravity / Gemini CLI",
+      "workspace_path": ".agents/skills",
+      "global_path": "~/.agents/skills",
+      "adapter": "adapters/gemini.yaml",
+      "manifest_format": "markdown_frontmatter",
+      "frontmatter_standard": "agent_skills_v1",
+      "is_canonical_source": true,
+      "context_loading": "on-demand",
+      "description": "Google Antigravity IDE and Gemini CLI agent harness"
+    },
+    "claude-code": {
+      "id": "claude-code",
+      "display_name": "Claude Code",
+      "workspace_path": ".claude/skills",
+      "global_path": "~/.claude/skills",
+      "adapter": "adapters/claude.yaml",
+      "manifest_format": "markdown_frontmatter",
+      "frontmatter_standard": "agent_skills_v1",
+      "is_canonical_source": false,
+      "context_loading": "on-demand",
+      "description": "Anthropic Claude Code agent harness"
+    },
+    "cursor": {
+      "id": "cursor",
+      "display_name": "Cursor",
+      "workspace_path": ".cursor/skills",
+      "global_path": "~/.cursor/skills",
+      "adapter": "adapters/cursor.yaml",
+      "manifest_format": "markdown_frontmatter",
+      "frontmatter_standard": "agent_skills_v1",
+      "is_canonical_source": false,
+      "context_loading": "on-demand",
+      "description": "Cursor AI agent harness"
+    },
+    "codex-cli": {
+      "id": "codex-cli",
+      "display_name": "Codex CLI",
+      "workspace_path": ".codex/skills",
+      "global_path": "~/.codex/skills",
+      "adapter": "adapters/codex.yaml",
+      "manifest_format": "markdown_frontmatter",
+      "frontmatter_standard": "agent_skills_v1",
+      "is_canonical_source": false,
+      "context_loading": "on-demand",
+      "description": "OpenAI Codex CLI agent harness"
+    },
+    "copilot": {
+      "id": "copilot",
+      "display_name": "GitHub Copilot",
+      "workspace_path": ".github/skills",
+      "global_path": null,
+      "adapter": "adapters/copilot.yaml",
+      "manifest_format": "markdown_frontmatter",
+      "frontmatter_standard": "agent_skills_v1",
+      "is_canonical_source": false,
+      "context_loading": "workspace-index",
+      "description": "GitHub Copilot Workspace agent harness"
+    },
+    "vscode": {
+      "id": "vscode",
+      "display_name": "VS Code Agent",
+      "workspace_path": ".vscode/skills",
+      "global_path": null,
+      "adapter": "adapters/vscode.yaml",
+      "manifest_format": "markdown_frontmatter",
+      "frontmatter_standard": "agent_skills_v1",
+      "is_canonical_source": false,
+      "context_loading": "on-demand",
+      "description": "VS Code language model tool harness"
+    },
+    "windsurf": {
+      "id": "windsurf",
+      "display_name": "Windsurf",
+      "workspace_path": ".windsurf/skills",
+      "global_path": "~/.windsurf/skills",
+      "adapter": "adapters/windsurf.yaml",
+      "manifest_format": "markdown_frontmatter",
+      "frontmatter_standard": "agent_skills_v1",
+      "is_canonical_source": false,
+      "context_loading": "on-demand",
+      "description": "Codeium Windsurf agent harness"
+    },
+    "opencode": {
+      "id": "opencode",
+      "display_name": "OpenCode",
+      "workspace_path": ".opencode/skills",
+      "global_path": "~/.opencode/skills",
+      "adapter": "adapters/opencode.yaml",
+      "manifest_format": "markdown_frontmatter",
+      "frontmatter_standard": "agent_skills_v1",
+      "is_canonical_source": false,
+      "context_loading": "on-demand",
+      "description": "OpenCode AI agent harness"
+    },
+    "cline": {
+      "id": "cline",
+      "display_name": "Cline",
+      "workspace_path": ".cline/skills",
+      "global_path": "~/.cline/skills",
+      "adapter": "adapters/cline.yaml",
+      "manifest_format": "markdown_frontmatter",
+      "frontmatter_standard": "agent_skills_v1",
+      "is_canonical_source": false,
+      "context_loading": "on-demand",
+      "description": "Cline (VS Code extension) agent harness"
+    },
+    "roo": {
+      "id": "roo",
+      "display_name": "Roo Code",
+      "workspace_path": ".roo/skills",
+      "global_path": "~/.roo/skills",
+      "adapter": "adapters/roo.yaml",
+      "manifest_format": "markdown_frontmatter",
+      "frontmatter_standard": "agent_skills_v1",
+      "is_canonical_source": false,
+      "context_loading": "on-demand",
+      "description": "Roo Code agent harness"
+    },
+    "goose": {
+      "id": "goose",
+      "display_name": "Block Goose",
+      "workspace_path": ".goose/skills",
+      "global_path": "~/.goose/skills",
+      "adapter": "adapters/goose.yaml",
+      "manifest_format": "markdown_frontmatter",
+      "frontmatter_standard": "agent_skills_v1",
+      "is_canonical_source": false,
+      "context_loading": "on-demand",
+      "description": "Block Goose agent harness"
+    }
+  },
+  "total": 11,
+  "canonical_source": "gemini"
+}

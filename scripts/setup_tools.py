@@ -15,21 +15,27 @@ platform adapters defined in platforms/platforms.yaml and adapters/*.yaml:
   - Roo Code (.roo/skills)
   - Block Goose (.goose/skills)
 
+Safety invariants (hub-and-spoke architecture):
+  1. A real (non-link) directory is NEVER touched — only managed links/junctions.
+  2. --replace-managed-links only removes entries present in state/managed_harnesses.json.
+  3. shutil.rmtree() is never called on any path.
+  4. Every created link is recorded in state/managed_harnesses.json.
+
 Usage:
-    python scripts/setup_tools.py                # Set up local workspace harnesses
-    python scripts/setup_tools.py --status       # Check health & detection across all tools
-    python scripts/setup_tools.py --global       # Also link/sync to user profile directories
-    python scripts/setup_tools.py --repair       # Repair broken links and refresh targets
-    python scripts/setup_tools.py --update       # Update existing links/copies
-    python scripts/setup_tools.py --unlink       # Unlink harnesses cleanly without deleting source
-    python scripts/setup_tools.py --verify       # Verify resolve and manifest integrity
+    python scripts/setup_tools.py                        # Set up local workspace harnesses
+    python scripts/setup_tools.py --status               # Check health & detection across all tools
+    python scripts/setup_tools.py --global               # Also link/sync to user profile directories
+    python scripts/setup_tools.py --replace-managed-links# Replace only All-skills-managed links
+    python scripts/setup_tools.py --unlink               # Unlink harnesses cleanly (checks ledger)
+    python scripts/setup_tools.py --verify               # Verify resolve and manifest integrity
 """
 from __future__ import annotations
 
 import argparse
+import json
 import os
-import shutil
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
@@ -46,7 +52,13 @@ if hasattr(sys.stderr, "reconfigure"):
 
 ROOT = Path(__file__).resolve().parents[1]
 PLATFORMS_CONFIG = ROOT / "platforms" / "platforms.yaml"
+LEDGER_PATH = ROOT / "state" / "managed_harnesses.json"
 HOME = Path.home()
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# YAML LOADER
+# ─────────────────────────────────────────────────────────────────────────────
 
 def load_yaml(path: Path) -> Dict[str, Any]:
     """Simple robust YAML loader for platform configurations."""
@@ -84,26 +96,220 @@ def load_yaml(path: Path) -> Dict[str, Any]:
         data[current_section].append(current_item)
     return data
 
+
+# ─────────────────────────────────────────────────────────────────────────────
+# LEDGER (managed_harnesses.json)
+# ─────────────────────────────────────────────────────────────────────────────
+
+def load_ledger() -> Dict[str, Any]:
+    """Load the managed harnesses ledger. Returns {} if not yet created."""
+    if LEDGER_PATH.exists():
+        try:
+            with open(LEDGER_PATH, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            return {}
+    return {}
+
+
+def save_ledger(ledger: Dict[str, Any]) -> None:
+    """Persist the ledger to disk atomically."""
+    LEDGER_PATH.parent.mkdir(parents=True, exist_ok=True)
+    tmp = LEDGER_PATH.with_suffix(".tmp")
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(ledger, f, indent=2)
+    tmp.replace(LEDGER_PATH)
+
+
+def ledger_record(dst: Path, src: Path, link_type: str) -> None:
+    """Record a managed link/junction in the ledger."""
+    ledger = load_ledger()
+    key = str(dst.relative_to(ROOT) if dst.is_relative_to(ROOT) else dst)
+    ledger[key] = {
+        "managed": True,
+        "type": link_type,
+        "source": str(src.relative_to(ROOT) if src.is_relative_to(ROOT) else src),
+        "created_at": datetime.now(timezone.utc).isoformat(),
+    }
+    save_ledger(ledger)
+
+
+def ledger_remove(dst: Path) -> None:
+    """Remove a path from the ledger after it is unlinked."""
+    ledger = load_ledger()
+    key = str(dst.relative_to(ROOT) if dst.is_relative_to(ROOT) else dst)
+    ledger.pop(key, None)
+    save_ledger(ledger)
+
+
+def is_managed(dst: Path) -> bool:
+    """Return True if this path is tracked as a managed link in the ledger."""
+    ledger = load_ledger()
+    key = str(dst.relative_to(ROOT) if dst.is_relative_to(ROOT) else dst)
+    return ledger.get(key, {}).get("managed", False)
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# LINK / JUNCTION DETECTION
+# ─────────────────────────────────────────────────────────────────────────────
+
+def is_link_or_junction(path: Path) -> bool:
+    """
+    Return True ONLY for symlinks and Windows directory junctions.
+    Returns False for real directories even if they point elsewhere.
+    """
+    if path.is_symlink():
+        return True
+    if os.name == "nt":
+        # Detect Windows junction via reparse point tag
+        try:
+            import ctypes
+            import ctypes.wintypes
+            FILE_ATTRIBUTE_REPARSE_POINT = 0x0400
+            attrs = ctypes.windll.kernel32.GetFileAttributesW(str(path))
+            if attrs != 0xFFFFFFFF and (attrs & FILE_ATTRIBUTE_REPARSE_POINT):
+                return True
+        except Exception:
+            pass
+    return False
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# SAFE LINK / UNLINK
+# ─────────────────────────────────────────────────────────────────────────────
+
+def link_or_copy(src: Path, dst: Path, replace_managed: bool = False) -> Tuple[bool, str]:
+    """
+    Create a junction (Windows), symlink (Unix), or copy from src → dst.
+
+    Safety rules:
+      - If dst is a REAL directory (not a link/junction) → REFUSE, return conflict.
+      - If dst is a managed link/junction AND replace_managed=True → replace it.
+      - If dst is a managed link/junction AND replace_managed=False → skip (already set up).
+      - If dst does not exist → create link and record in ledger.
+
+    Returns (success: bool, message: str).
+    """
+    if dst.exists() or dst.is_symlink():
+        if is_link_or_junction(dst):
+            if not replace_managed:
+                return True, "already-linked"
+            # Safe to replace: remove the existing managed link
+            _remove_link_only(dst)
+        else:
+            # Real directory — NEVER touch it
+            return False, f"CONFLICT: {dst} is a real directory. All-skills will not modify it."
+
+    dst.parent.mkdir(parents=True, exist_ok=True)
+
+    # 1) Windows junction (no admin required)
+    if os.name == "nt":
+        try:
+            import _winapi
+            _winapi.CreateJunction(str(src), str(dst))
+            ledger_record(dst, src, "junction")
+            return True, "junction"
+        except Exception:
+            pass
+
+    # 2) Standard symlink
+    try:
+        os.symlink(str(src), str(dst), target_is_directory=True)
+        ledger_record(dst, src, "symlink")
+        return True, "symlink"
+    except Exception:
+        pass
+
+    # 3) Fallback: copy (last resort, marks as 'copy' in ledger)
+    try:
+        import shutil
+        shutil.copytree(str(src), str(dst))
+        ledger_record(dst, src, "copy")
+        return True, "copy"
+    except Exception as e:
+        return False, f"failed: {e}"
+
+
+def _remove_link_only(dst: Path) -> bool:
+    """
+    Remove a symlink or Windows junction only — never a real directory tree.
+    This is the ONLY place junction/symlink removal happens.
+    """
+    if not dst.exists() and not dst.is_symlink():
+        return True
+    try:
+        if dst.is_symlink():
+            dst.unlink()
+            return True
+        if os.name == "nt":
+            # Remove junction: os.rmdir works for junctions (not shutil.rmtree)
+            os.rmdir(str(dst))
+            return True
+        # Unix non-symlink link (shouldn't exist, but safe fallback)
+        dst.unlink(missing_ok=True)
+        return True
+    except Exception as e:
+        print(f"  ⚠️  Could not remove link {dst}: {e}", file=sys.stderr)
+        return False
+
+
+def unlink_target(dst: Path) -> Tuple[bool, str]:
+    """
+    Unlink a managed harness target ONLY if it appears in the ledger.
+
+    Returns (success: bool, message: str).
+    """
+    if not dst.exists() and not dst.is_symlink():
+        return True, "not-present"
+
+    if not is_link_or_junction(dst):
+        return False, f"REFUSING: {dst} is a real directory, not a managed link."
+
+    if not is_managed(dst):
+        return False, (
+            f"REFUSING: {dst} is a link/junction but is NOT in the managed ledger. "
+            "All-skills did not create it — will not remove it."
+        )
+
+    ok = _remove_link_only(dst)
+    if ok:
+        ledger_remove(dst)
+        return True, "unlinked"
+    return False, "removal-failed"
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# PLATFORM DISCOVERY
+# ─────────────────────────────────────────────────────────────────────────────
+
 def resolve_path(raw: str) -> Path:
     if raw.startswith("~"):
         return HOME / raw[2:].lstrip("/\\")
     p = Path(raw)
     return p if p.is_absolute() else ROOT / p
 
+
 def get_platform_targets() -> Tuple[Path, List[Dict[str, Any]], List[Dict[str, Any]]]:
     if not PLATFORMS_CONFIG.exists():
         source = ROOT / ".agents" / "skills"
         local = [
             {"name": "Antigravity / Gemini CLI", "path": ROOT / ".agents" / "skills", "is_source": True},
-            {"name": "Claude Code", "path": ROOT / ".claude" / "skills"},
-            {"name": "Cursor", "path": ROOT / ".cursor" / "skills"},
-            {"name": "Codex CLI", "path": ROOT / ".codex" / "skills"},
+            {"name": "Claude Code",               "path": ROOT / ".claude" / "skills"},
+            {"name": "Cursor",                    "path": ROOT / ".cursor" / "skills"},
+            {"name": "Codex CLI",                 "path": ROOT / ".codex" / "skills"},
+            {"name": "GitHub Copilot",            "path": ROOT / ".github" / "skills"},
+            {"name": "VS Code Agent",             "path": ROOT / ".vscode" / "skills"},
+            {"name": "Windsurf",                  "path": ROOT / ".windsurf" / "skills"},
+            {"name": "OpenCode",                  "path": ROOT / ".opencode" / "skills"},
+            {"name": "Cline",                     "path": ROOT / ".cline" / "skills"},
+            {"name": "Roo Code",                  "path": ROOT / ".roo" / "skills"},
+            {"name": "Block Goose",               "path": ROOT / ".goose" / "skills"},
         ]
         glob = [
-            {"name": "Claude Code (User Global)", "path": HOME / ".claude" / "skills"},
-            {"name": "Cursor (User Global)", "path": HOME / ".cursor" / "skills"},
-            {"name": "Codex CLI (User Global)", "path": HOME / ".codex" / "skills"},
-            {"name": "Antigravity / Agents (User Global)", "path": HOME / ".agents" / "skills"},
+            {"name": "Claude Code (Global)",    "path": HOME / ".claude" / "skills"},
+            {"name": "Cursor (Global)",         "path": HOME / ".cursor" / "skills"},
+            {"name": "Codex CLI (Global)",      "path": HOME / ".codex" / "skills"},
+            {"name": "Antigravity (Global)",    "path": HOME / ".agents" / "skills"},
         ]
         return source, local, glob
 
@@ -125,69 +331,17 @@ def get_platform_targets() -> Tuple[Path, List[Dict[str, Any]], List[Dict[str, A
 
     return source_skills, local_targets, global_targets
 
-def link_or_copy(src: Path, dst: Path, force: bool = False) -> bool:
-    if dst.exists():
-        if force:
-            unlink_target(dst)
-        else:
-            return True
 
-    dst.parent.mkdir(parents=True, exist_ok=True)
-
-    # Windows junction first (does not require admin privileges)
-    if os.name == "nt":
-        try:
-            import _winapi
-            _winapi.CreateJunction(str(src), str(dst))
-            return True
-        except Exception:
-            pass
-
-    # Try standard symlink
-    try:
-        os.symlink(str(src), str(dst), target_is_directory=True)
-        return True
-    except Exception:
-        pass
-
-    # Fallback: copy directory tree
-    try:
-        shutil.copytree(src, dst)
-        return True
-    except Exception as e:
-        print(f"Failed to link or copy {src} -> {dst}: {e}", file=sys.stderr)
-        return False
-
-def unlink_target(dst: Path) -> bool:
-    if not dst.exists() and not dst.is_symlink():
-        return True
-    try:
-        if dst.is_symlink():
-            dst.unlink()
-            return True
-        elif os.name == "nt":
-            # Check for junction
-            try:
-                import _winapi
-                # Removing junction directory on Windows
-                os.rmdir(str(dst))
-                return True
-            except Exception:
-                pass
-        if dst.is_dir():
-            shutil.rmtree(dst)
-        else:
-            dst.unlink()
-        return True
-    except Exception as e:
-        print(f"Failed to unlink {dst}: {e}", file=sys.stderr)
-        return False
+# ─────────────────────────────────────────────────────────────────────────────
+# COMMANDS
+# ─────────────────────────────────────────────────────────────────────────────
 
 def cmd_status() -> None:
     source_skills, local_targets, global_targets = get_platform_targets()
+    ledger = load_ledger()
     print("\n🔍 AI Coding Agent Harness Status:\n")
     source_count = len(os.listdir(source_skills)) if source_skills.exists() and source_skills.is_dir() else 0
-    print(f"Source canonical harness: {source_skills.relative_to(ROOT) if source_skills.is_relative_to(ROOT) else source_skills} ({source_count} skills)\n")
+    print(f"  Source canonical harness : {source_skills.relative_to(ROOT) if source_skills.is_relative_to(ROOT) else source_skills} ({source_count} skills)\n")
 
     print("📁 Local Workspace Targets:")
     for item in local_targets:
@@ -195,11 +349,27 @@ def cmd_status() -> None:
         path = item["path"]
         exists = path.exists()
         count = len(os.listdir(path)) if exists and path.is_dir() else 0
-        is_sym = path.is_symlink()
-        tag = "[symlink/junction]" if is_sym else ("[source]" if item.get("is_source") else "[dir/copy]")
-        status = f"✅ Active ({count} skills) {tag}" if exists and count > 0 else "❌ Not linked"
+        is_link = is_link_or_junction(path)
+        managed = is_managed(path)
+        key = str(path.relative_to(ROOT) if path.is_relative_to(ROOT) else path)
+        link_type = ledger.get(key, {}).get("type", "?") if managed else "—"
+        if item.get("is_source"):
+            tag = "[canonical source]"
+            status = f"✅ Active ({source_count} skills)"
+        elif not exists:
+            tag = ""
+            status = "⚪ Not linked"
+        elif is_link and managed:
+            tag = f"[managed {link_type}]"
+            status = f"✅ Active ({count} items)"
+        elif is_link and not managed:
+            tag = "[external link — not managed]"
+            status = f"⚠️  Exists ({count} items)"
+        else:
+            tag = "[real directory — not managed]"
+            status = f"⚠️  Real dir ({count} items)"
         rel = path.relative_to(ROOT) if path.is_relative_to(ROOT) else path
-        print(f"  • {name:30} -> {str(rel):22} : {status}")
+        print(f"  • {name:30} → {str(rel):22} : {status}  {tag}")
 
     print("\n🌐 Global User Profile Targets:")
     for item in global_targets:
@@ -208,64 +378,83 @@ def cmd_status() -> None:
         exists = path.exists()
         count = len(os.listdir(path)) if exists and path.is_dir() else 0
         status = f"✅ Active ({count} skills)" if exists and count > 0 else "⚪ Not configured"
-        print(f"  • {name:35} -> {str(path):38} : {status}")
-    print()
+        print(f"  • {name:35} → {str(path):38} : {status}")
+    print(f"\n📋 Managed Ledger: {len(ledger)} recorded entries ({LEDGER_PATH})\n")
 
-def cmd_setup(include_global: bool = False, force: bool = False) -> None:
+
+def cmd_setup(include_global: bool = False, replace_managed: bool = False) -> None:
     source_skills, local_targets, global_targets = get_platform_targets()
     if not source_skills.exists():
         print(f"Error: Source skills directory not found at {source_skills}", file=sys.stderr)
         sys.exit(1)
 
-    print("\n⚡ Setting up Local Workspace AI Agent Harnesses...\n")
+    mode = "replacing managed links" if replace_managed else "creating missing links"
+    print(f"\n⚡ Setting up Local Workspace AI Agent Harnesses ({mode})…\n")
+    conflicts = []
+
     for item in local_targets:
         if item.get("is_source"):
             continue
         name = item["name"]
         dst = item["path"]
-        success = link_or_copy(source_skills, dst, force=force)
+        ok, msg = link_or_copy(source_skills, dst, replace_managed=replace_managed)
         count = len(os.listdir(dst)) if dst.exists() and dst.is_dir() else 0
-        mark = "✅ Linked" if success else "❌ Failed"
         rel = dst.relative_to(ROOT) if dst.is_relative_to(ROOT) else dst
-        print(f"  {mark:10} {name:28} -> {rel} ({count} skills)")
+
+        if ok and msg == "already-linked":
+            print(f"  ✅ (exists)   {name:28} → {rel}")
+        elif ok:
+            print(f"  ✅ {msg:9} {name:28} → {rel} ({count} items)")
+        else:
+            print(f"  ⚠️  CONFLICT   {name:28} → {rel}")
+            print(f"            {msg}")
+            conflicts.append((name, msg))
 
     if include_global:
-        print("\n🌐 Setting up Global User Profile Harnesses...\n")
+        print("\n🌐 Setting up Global User Profile Harnesses…\n")
         for item in global_targets:
             name = item["name"]
             dst = item["path"]
-            success = link_or_copy(source_skills, dst, force=force)
+            ok, msg = link_or_copy(source_skills, dst, replace_managed=replace_managed)
             count = len(os.listdir(dst)) if dst.exists() and dst.is_dir() else 0
-            mark = "✅ Linked" if success else "❌ Failed"
-            print(f"  {mark:10} {name:35} -> {dst} ({count} skills)")
+            mark = "✅" if ok else "⚠️ "
+            print(f"  {mark} {name:35} → {dst} ({count} items)  [{msg}]")
 
-    print("\n🎉 Multi-tool setup complete! All agents can now discover and load active skills.\n")
+    if conflicts:
+        print(f"\n⚠️  {len(conflicts)} CONFLICT(S) — existing real directories were not modified.")
+        print("   Resolve by manually removing or renaming those directories, then re-run.\n")
+    else:
+        print("\n🎉 Multi-tool setup complete! All agents can now discover and load active skills.\n")
+
 
 def cmd_unlink() -> None:
     _, local_targets, _ = get_platform_targets()
-    print("\n🧹 Unlinking Managed Workspace Harnesses...\n")
+    print("\n🧹 Unlinking Managed Workspace Harnesses (ledger-safe)…\n")
     for item in local_targets:
         if item.get("is_source"):
             continue
         dst = item["path"]
-        if dst.exists() or dst.is_symlink():
-            success = unlink_target(dst)
-            mark = "✅ Unlinked" if success else "❌ Failed"
-            rel = dst.relative_to(ROOT) if dst.is_relative_to(ROOT) else dst
-            print(f"  {mark:12} {item['name']:28} -> {rel}")
+        ok, msg = unlink_target(dst)
+        rel = dst.relative_to(ROOT) if dst.is_relative_to(ROOT) else dst
+        if msg == "not-present":
+            print(f"  ⚪ Skipped    {item['name']:28} → {rel}  (not present)")
+        elif ok:
+            print(f"  ✅ Unlinked   {item['name']:28} → {rel}")
         else:
-            print(f"  ⚪ Skipped    {item['name']:28} (not present)")
+            print(f"  ⚠️  Refused    {item['name']:28} → {rel}")
+            print(f"            {msg}")
     print("\nDone. Source canonical harness remains untouched.\n")
+
 
 def cmd_verify() -> None:
     source_skills, local_targets, _ = get_platform_targets()
-    print("\n🔬 Verifying Platform Harness Integrity...\n")
+    print("\n🔬 Verifying Platform Harness Integrity…\n")
     errors = 0
     if not source_skills.exists():
-        print(f"❌ Source harness missing at {source_skills}")
+        print(f"  ❌ Source harness missing at {source_skills}")
         errors += 1
     else:
-        print(f"✅ Source canonical harness verified ({len(os.listdir(source_skills))} skills)")
+        print(f"  ✅ Source canonical harness verified ({len(os.listdir(source_skills))} skills)")
 
     for item in local_targets:
         name = item["name"]
@@ -274,25 +463,44 @@ def cmd_verify() -> None:
             continue
         skill_files = list(path.glob("*/SKILL.md"))
         if len(skill_files) == 0:
-            print(f"⚠️  {name:28}: Target directory exists but no SKILL.md files found")
+            print(f"  ⚠️  {name:30}: Target exists but no SKILL.md files found")
             errors += 1
         else:
-            print(f"✅ {name:28}: Verified ({len(skill_files)} readable SKILL.md manifests)")
+            print(f"  ✅ {name:30}: Verified ({len(skill_files)} readable SKILL.md manifests)")
 
+    print()
     if errors == 0:
-        print("\n🎉 All active harnesses verified with 100% integrity!\n")
+        print("  🎉 All active harnesses verified with 100% integrity!\n")
     else:
-        print(f"\n⚠️  Verification completed with {errors} warnings/errors.\n")
+        print(f"  ⚠️  Verification completed with {errors} warnings/errors.\n")
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# CLI ENTRY POINT
+# ─────────────────────────────────────────────────────────────────────────────
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Multi-Tool Agent Harness Setup")
-    parser.add_argument("--status", action="store_true", help="Inspect status of tool harnesses")
-    parser.add_argument("--global", dest="is_global", action="store_true", help="Also link to user home directories")
-    parser.add_argument("--repair", action="store_true", help="Repair and refresh broken or stale harnesses")
-    parser.add_argument("--update", action="store_true", help="Update all harness targets")
-    parser.add_argument("--force", action="store_true", help="Force recreate links")
-    parser.add_argument("--unlink", action="store_true", help="Unlink managed workspace harnesses")
-    parser.add_argument("--verify", action="store_true", help="Verify integrity of all harnesses")
+    parser = argparse.ArgumentParser(
+        description="Multi-Tool Agent Harness Setup (hub-and-spoke, non-destructive)",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Safety guarantee:
+  This script NEVER touches real directories. It only manages symlinks/junctions
+  that it created itself (tracked in state/managed_harnesses.json).
+
+Examples:
+  python scripts/setup_tools.py                    # Create missing harness links
+  python scripts/setup_tools.py --status           # Read-only status report
+  python scripts/setup_tools.py --verify           # Read-only integrity check
+  python scripts/setup_tools.py --replace-managed-links  # Replace managed links only
+  python scripts/setup_tools.py --unlink           # Remove managed links (checks ledger)
+        """,
+    )
+    parser.add_argument("--status",                action="store_true", help="Inspect harness status (read-only)")
+    parser.add_argument("--global",                dest="is_global", action="store_true", help="Also link global user profile directories")
+    parser.add_argument("--replace-managed-links", action="store_true", help="Replace existing managed links/junctions (safe — ledger-checked)")
+    parser.add_argument("--unlink",                action="store_true", help="Remove managed workspace harnesses (ledger-safe)")
+    parser.add_argument("--verify",                action="store_true", help="Verify integrity of all harnesses (read-only)")
     args = parser.parse_args()
 
     if args.status:
@@ -301,10 +509,11 @@ def main() -> None:
         cmd_unlink()
     elif args.verify:
         cmd_verify()
-    elif args.repair or args.update or args.force:
-        cmd_setup(include_global=args.is_global, force=True)
+    elif args.replace_managed_links:
+        cmd_setup(include_global=args.is_global, replace_managed=True)
     else:
-        cmd_setup(include_global=args.is_global)
+        cmd_setup(include_global=args.is_global, replace_managed=False)
+
 
 if __name__ == "__main__":
     main()

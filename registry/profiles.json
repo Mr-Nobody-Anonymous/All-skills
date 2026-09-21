@@ -1,0 +1,153 @@
+{
+  "_comment": "Profile → skill ID index. Maps each role profile to the skill IDs it activates. Source of truth for `allskills profile install <name>`.",
+  "schema_version": "1.0.0",
+  "profiles": {
+    "universal": {
+      "file": "profiles/universal.yaml",
+      "description": "Minimal universal skill set active for all roles",
+      "skills": [
+        "web-research", "summarization", "note-taking", "calculator",
+        "file-management", "code-review", "writing-assistant"
+      ],
+      "optional": []
+    },
+    "software-engineer": {
+      "file": "profiles/software-engineer.yaml",
+      "description": "Full-stack software engineering skill bundle",
+      "skills": [
+        "code-review", "tdd", "debugging", "api-designer", "database-design",
+        "git-workflow", "ci-cd-and-automation", "performance-profiling",
+        "security-scanning-security-sast", "ast-code-transformation"
+      ],
+      "optional": ["kubernetes-deployment", "terraform-infrastructure"]
+    },
+    "web-developer": {
+      "file": "profiles/web-developer.yaml",
+      "description": "Front-end and full-stack web development skill bundle",
+      "skills": [
+        "code-review", "tailwind-design-system", "design-system",
+        "api-designer", "database-design", "tdd", "accessibility-compliance-accessibility-audit",
+        "seo-geo", "performance-profiling"
+      ],
+      "optional": ["react-state-management", "angular-state-management"]
+    },
+    "backend": {
+      "file": "profiles/backend.yaml",
+      "description": "Backend and API engineering skill bundle",
+      "skills": [
+        "api-designer", "api-documentation", "database-design", "database-migration",
+        "prisma-expert", "drizzle-orm-expert", "code-review", "tdd",
+        "security-sandboxing-guardrails", "performance-profiling"
+      ],
+      "optional": ["redis-cli", "secrets-management"]
+    },
+    "frontend": {
+      "file": "profiles/frontend.yaml",
+      "description": "Frontend and UI engineering skill bundle",
+      "skills": [
+        "design-system", "tailwind-design-system", "accessibility-compliance-accessibility-audit",
+        "react-state-management", "angular-state-management", "tdd",
+        "seo-geo", "performance-profiling", "code-review"
+      ],
+      "optional": ["wcag-audit-patterns"]
+    },
+    "mobile": {
+      "file": "profiles/mobile.yaml",
+      "description": "Mobile application development skill bundle",
+      "skills": [
+        "code-review", "tdd", "api-designer", "performance-profiling",
+        "accessibility-compliance-accessibility-audit", "security-sandboxing-guardrails"
+      ],
+      "optional": ["database-design"]
+    },
+    "ai-engineer": {
+      "file": "profiles/ai-engineer.yaml",
+      "description": "LLM application and AI systems engineering skill bundle",
+      "skills": [
+        "ai-engineer", "ai-engineering-toolkit", "llm-prompt-optimizer",
+        "agent-memory", "agent-memory-systems", "multi-agent-architect",
+        "multi-agent-patterns", "mcp-builder", "mcp-tool-developer",
+        "agent-evaluation", "rag-pipeline"
+      ],
+      "optional": ["agent-evaluation", "multi-agent-brainstorming"]
+    },
+    "data-scientist": {
+      "file": "profiles/data-scientist.yaml",
+      "description": "Data science and ML engineering skill bundle",
+      "skills": [
+        "ai-engineering-toolkit", "agent-evaluation", "database-design",
+        "performance-profiling", "code-review", "tdd"
+      ],
+      "optional": ["api-designer"]
+    },
+    "cybersecurity": {
+      "file": "profiles/cybersecurity.yaml",
+      "description": "Security analysis and penetration testing skill bundle",
+      "skills": [
+        "top-web-vulnerabilities", "vulnerability-scanner", "red-team-tactics",
+        "sast-configuration", "security-scanning-security-sast",
+        "secrets-management", "security-sandboxing-guardrails",
+        "marketplace-rbac-audit", "agent-evaluation"
+      ],
+      "optional": ["wcag-audit-patterns"]
+    },
+    "devops": {
+      "file": "profiles/devops.yaml",
+      "description": "DevOps and infrastructure engineering skill bundle",
+      "skills": [
+        "cloud-devops", "ci-cd-and-automation", "kubernetes-deployment",
+        "kubernetes-architect", "terraform-infrastructure", "secrets-management",
+        "performance-profiling", "sast-configuration", "security-sandboxing-guardrails"
+      ],
+      "optional": []
+    },
+    "cloud": {
+      "file": "profiles/cloud.yaml",
+      "description": "Cloud infrastructure and architecture skill bundle",
+      "skills": [
+        "cloud-devops", "terraform-infrastructure", "kubernetes-architect",
+        "kubernetes-deployment", "secrets-management", "performance-profiling",
+        "ci-cd-and-automation"
+      ],
+      "optional": ["database-design"]
+    },
+    "system-admin": {
+      "file": "profiles/system-admin.yaml",
+      "description": "Systems administration and operations skill bundle",
+      "skills": [
+        "cloud-devops", "ci-cd-and-automation", "secrets-management",
+        "security-sandboxing-guardrails", "redis-cli", "performance-profiling"
+      ],
+      "optional": ["kubernetes-deployment"]
+    },
+    "researcher": {
+      "file": "profiles/researcher.yaml",
+      "description": "Research, analysis, and knowledge synthesis skill bundle",
+      "skills": [
+        "web-research", "brainstorming", "summarization", "seo-geo",
+        "copywriting", "agent-memory", "llm-prompt-optimizer"
+      ],
+      "optional": ["multi-agent-brainstorming"]
+    },
+    "architect": {
+      "file": "profiles/architect.yaml",
+      "description": "Software and systems architecture skill bundle",
+      "skills": [
+        "api-and-interface-design", "api-designer", "database-design",
+        "multi-agent-architect", "cloud-devops", "kubernetes-architect",
+        "performance-profiling", "security-sandboxing-guardrails", "code-review"
+      ],
+      "optional": ["brainstorming", "multi-agent-brainstorming"]
+    },
+    "student": {
+      "file": "profiles/student.yaml",
+      "description": "Learning-focused skill bundle for students and beginners",
+      "skills": [
+        "web-research", "summarization", "brainstorming", "copywriting",
+        "code-review", "tdd"
+      ],
+      "optional": []
+    }
+  },
+  "total": 15
+}

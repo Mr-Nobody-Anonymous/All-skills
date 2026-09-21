@@ -1,0 +1,20 @@
+name: frontend
+description: >
+  Frontend and UI engineering skill bundle.
+  Covers design systems, component-level state management,
+  WCAG accessibility, SEO, and testing.
+version: "1.0.0"
+skills:
+  - design-system
+  - tailwind-design-system
+  - accessibility-compliance-accessibility-audit
+  - react-state-management
+  - angular-state-management
+  - tdd
+  - seo-geo
+  - performance-profiling
+  - code-review
+optional:
+  - wcag-audit-patterns
+  - copywriting
+tags: [frontend, ui, components, react, angular]

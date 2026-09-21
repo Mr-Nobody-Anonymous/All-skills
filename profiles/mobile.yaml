@@ -1,0 +1,17 @@
+name: mobile
+description: >
+  Mobile application development skill bundle.
+  Covers cross-platform development, API integration,
+  accessibility, performance, and security.
+version: "1.0.0"
+skills:
+  - code-review
+  - tdd
+  - api-designer
+  - performance-profiling
+  - accessibility-compliance-accessibility-audit
+  - security-sandboxing-guardrails
+optional:
+  - database-design
+  - api-documentation
+tags: [mobile, ios, android, cross-platform]
