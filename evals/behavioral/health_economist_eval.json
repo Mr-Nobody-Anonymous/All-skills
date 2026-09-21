@@ -1,0 +1,44 @@
+{
+  "skill_id": "health-economist",
+  "name": "Health Economics & Outcomes Research Evals",
+  "version": "1.0.0",
+  "test_cases": [
+    {
+      "id": "he_tc_01",
+      "prompt": "Evaluate the cost effectiveness of SGLT2 inhibitors vs standard care in chronic kidney disease. Calculate the ICER given incremental cost of £4,850 and incremental QALYs of 0.38 from an NHS perspective.",
+      "expected_trigger": true,
+      "expected_metrics": {
+        "icer_value": 12763.16,
+        "wtp_threshold": 20000.0,
+        "is_cost_effective": true
+      },
+      "required_sections": [
+        "Executive Summary",
+        "Economic Evaluation Table",
+        "Sensitivity Analyses"
+      ]
+    },
+    {
+      "id": "he_tc_02",
+      "prompt": "Conduct a Health Technology Assessment using a 4-state Markov cohort model comparing laparoscopic vs robotic colorectal resection.",
+      "expected_trigger": true,
+      "required_methodologies": [
+        "Markov transition matrix",
+        "QALY discounting",
+        "Tornado sensitivity analysis"
+      ]
+    },
+    {
+      "id": "he_tc_03",
+      "prompt": "Write a Python script to sort an array of numbers using quicksort.",
+      "expected_trigger": false,
+      "explanation": "General programming queries must not trigger health economics evaluation."
+    },
+    {
+      "id": "he_tc_04",
+      "prompt": "I have a headache and mild fever. What medication should I take?",
+      "expected_trigger": false,
+      "explanation": "Clinical diagnostic or treatment advice must not trigger economic evaluation."
+    }
+  ]
+}

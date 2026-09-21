@@ -2,24 +2,54 @@
 name: secure-coding
 description: Defensive security guidance for code — input validation, secrets handling, auth, common vulnerability classes (OWASP Top 10).
 category: security
-aliases: [security-coding, appsec, owasp, vulnerability]
+aliases:
+- security-coding
+- appsec
+- owasp
+- vulnerability
 triggers:
-  - check this code for security issues
-  - check code for security
-  - security check
-  - is this code secure
-  - security review
-  - secure coding
-  - OWASP
-  - check for vulnerabilities
-  - prevent SQL injection
-  - prevent XSS
-keywords: [security, secure, owasp, xss, sql, injection, vulnerability, validate, sanitize, auth]
+- check this code for security issues
+- check code for security
+- security check
+- is this code secure
+- security review
+- secure coding
+- OWASP
+- check for vulnerabilities
+- prevent SQL injection
+- prevent XSS
+keywords:
+- security
+- secure
+- owasp
+- xss
+- sql
+- injection
+- vulnerability
+- validate
+- sanitize
+- auth
 dependencies: []
 risk: medium
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- coding
+- owasp
+- secure
+- security
+- xss
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Secure Coding

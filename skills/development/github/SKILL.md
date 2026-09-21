@@ -2,19 +2,48 @@
 name: github
 description: Work with GitHub — pull requests, issues, Actions, code review, project boards, releases.
 category: development
-aliases: [pr, pull-request, issue, gh, github-actions]
+aliases:
+- pr
+- pull-request
+- issue
+- gh
+- github-actions
 triggers:
-  - open a PR
-  - create an issue
-  - github actions
-  - help with GitHub
-  - review a PR
-keywords: [github, pr, pull-request, issue, action, workflow, release]
-dependencies: [git, gh-cli-optional]
+- open a PR
+- create an issue
+- github actions
+- help with GitHub
+- review a PR
+keywords:
+- github
+- pr
+- pull-request
+- issue
+- action
+- workflow
+- release
+dependencies:
+- git
+- gh-cli-optional
 risk: medium
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- development
+- github
+- issue
+- pull-request
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # GitHub

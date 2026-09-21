@@ -1,23 +1,55 @@
 ---
 name: slack-synthesizer
-description: "Summarize Slack threads into decisions, evidence, disagreements, and action items."
+description: Summarize Slack threads into decisions, evidence, disagreements, and action items.
 category: utilities
-aliases: [slack, thread]
+aliases:
+- slack
+- thread
 triggers:
-  - "Summarize this Slack thread"
-  - "What was decided in this channel"
-  - "Extract action items from Slack"
-  - "Slack summary"
-keywords: [slack, summary, thread, decision, action-items, channel]
-dependencies: [optional:slack-access]
+- Summarize this Slack thread
+- What was decided in this channel
+- Extract action items from Slack
+- Slack summary
+keywords:
+- slack
+- summary
+- thread
+- decision
+- action-items
+- channel
+dependencies:
+- optional:slack-access
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [slack-synthesizer, utilities]
-inputs: [task, context]
-outputs: [result, report]
+capabilities:
+- slack-synthesizer
+- utilities
+inputs:
+- task
+- context
+outputs:
+- result
+- report
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- decision
+- slack
+- summary
+- synthesizer
+- thread
+- utilities
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Slack Synthesizer

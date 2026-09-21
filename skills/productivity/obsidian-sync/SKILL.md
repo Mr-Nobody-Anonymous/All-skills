@@ -1,23 +1,60 @@
 ---
 name: obsidian-sync
-description: "Plan and verify safe synchronization between an Obsidian vault and a working directory."
+description: Plan and verify safe synchronization between an Obsidian vault and a working directory.
 category: productivity
-aliases: [obsidian, vault, notes, sync, markdown-sync]
+aliases:
+- obsidian
+- vault
+- notes
+- sync
+- markdown-sync
 triggers:
-  - "Sync my Obsidian"
-  - "Mirror notes to Obsidian"
-  - "Update my vault"
-  - "Copy today's journal to Obsidian"
-keywords: [obsidian, vault, notes, sync, markdown, daily, journal, knowledge, base]
-dependencies: [optional:obsidian]
+- Sync my Obsidian
+- Mirror notes to Obsidian
+- Update my vault
+- Copy today's journal to Obsidian
+keywords:
+- obsidian
+- vault
+- notes
+- sync
+- markdown
+- daily
+- journal
+- knowledge
+- base
+dependencies:
+- optional:obsidian
 risk: medium
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [obsidian-sync, productivity]
-inputs: [task, context]
-outputs: [result, report]
+capabilities:
+- obsidian-sync
+- productivity
+inputs:
+- task
+- context
+outputs:
+- result
+- report
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- notes
+- obsidian
+- productivity
+- sync
+- vault
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Obsidian Sync

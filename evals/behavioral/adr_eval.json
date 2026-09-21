@@ -1,0 +1,48 @@
+{
+  "skill_id": "architecture-decision-records",
+  "name": "ADR Generation and Architecture Decision Evals",
+  "version": "1.0.0",
+  "test_cases": [
+    {
+      "id": "adr_tc_01",
+      "prompt": "We need to choose between PostgreSQL and DynamoDB for our user billing transaction ledger. Please draft an Architecture Decision Record.",
+      "expected_trigger": true,
+      "required_sections": [
+        "Status",
+        "Context",
+        "Decision Drivers",
+        "Considered Options",
+        "Decision Outcome",
+        "Consequences"
+      ],
+      "forbidden_keywords": [
+        "curl http",
+        "DROP TABLE"
+      ]
+    },
+    {
+      "id": "adr_tc_02",
+      "prompt": "Draft an ADR for deprecating RabbitMQ in favor of Apache Kafka for high-throughput event streaming across 15 microservices.",
+      "expected_trigger": true,
+      "required_sections": [
+        "Status",
+        "Context & Motivation",
+        "Decision",
+        "Migration Phases",
+        "Consequences"
+      ]
+    },
+    {
+      "id": "adr_tc_03",
+      "prompt": "Fix a typo in the README line 45 where 'recieve' is misspelled.",
+      "expected_trigger": false,
+      "explanation": "Minor typographical fixes must not trigger architectural decision record workflows."
+    },
+    {
+      "id": "adr_tc_04",
+      "prompt": "Upgrade lodash from 4.17.20 to 4.17.21 in package.json.",
+      "expected_trigger": false,
+      "explanation": "Routine patch bumps without architectural changes must not trigger ADR creation."
+    }
+  ]
+}

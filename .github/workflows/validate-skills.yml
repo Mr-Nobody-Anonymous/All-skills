@@ -1,0 +1,44 @@
+name: Validate Skills & Spec Compliance
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate-and-test:
+    name: Lint, Validate Schema, Run Evals & Security Scan
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+          cache: "pip"
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: 1. Validate YAML Frontmatter Schemas
+        run: python scripts/validate_schema.py
+
+      - name: 2. Validate SkillHub & Multi-Agent Specifications
+        run: python scripts/validate_skillhub_spec.py
+
+      - name: 3. Run Canonical Skills Unit Test Suite
+        run: python scripts/skills/skills.py test
+
+      - name: 4. Run Behavioral, Routing & Adversarial Evals
+        run: python scripts/run_evals.py
+
+      - name: 5. Run Security & Prompt-Injection Scanner
+        run: python scripts/scan_skills_security.py
+
+      - name: 6. Full System Diagnostic & Integrity Check
+        run: python scripts/allskills.py doctor --full

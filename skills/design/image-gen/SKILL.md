@@ -1,24 +1,58 @@
 ---
 name: image-gen
-description: "Create precise, safe image-generation prompts and iterate against visual requirements."
+description: Create precise, safe image-generation prompts and iterate against visual requirements.
 category: design
-aliases: [dalle, midjourney, stable-diffusion, art]
+aliases:
+- dalle
+- midjourney
+- stable-diffusion
+- art
 triggers:
-  - "Generate an image"
-  - "Create artwork"
-  - "Make a picture"
-  - "AI art"
-  - "Image generation"
-keywords: [image, generation, ai, art, dalle, midjourney, illustration]
-dependencies: [optional:image-generator]
+- Generate an image
+- Create artwork
+- Make a picture
+- AI art
+- Image generation
+keywords:
+- image
+- generation
+- ai
+- art
+- dalle
+- midjourney
+- illustration
+dependencies:
+- optional:image-generator
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [image-gen, design]
-inputs: [task, context]
-outputs: [result, report]
+capabilities:
+- image-gen
+- design
+inputs:
+- task
+- context
+outputs:
+- result
+- report
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- art
+- design
+- gen
+- generation
+- image
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Image Gen

@@ -2,19 +2,48 @@
 name: time-management
 description: Design calendars, schedules, and time allocations that match the user's energy, priorities, and constraints.
 category: productivity
-aliases: [schedule, calendar, time-block, timebox, weekly-planning]
+aliases:
+- schedule
+- calendar
+- time-block
+- timebox
+- weekly-planning
 triggers:
-  - help me schedule
-  - time management
-  - weekly schedule
-  - calendar planning
-  - when should I do this
-keywords: [schedule, time, calendar, block, plan, weekly, day]
+- help me schedule
+- time management
+- weekly schedule
+- calendar planning
+- when should I do this
+keywords:
+- schedule
+- time
+- calendar
+- block
+- plan
+- weekly
+- day
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- block
+- calendar
+- management
+- productivity
+- schedule
+- time
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Time Management

@@ -2,20 +2,48 @@
 name: dependency-audit
 description: Audit project dependencies for known vulnerabilities (CVEs), outdated packages, and supply-chain risks.
 category: security
-aliases: [supply-chain, npm-audit, pip-audit, cve]
+aliases:
+- supply-chain
+- npm-audit
+- pip-audit
+- cve
 triggers:
-  - audit my dependencies
-  - check for vulnerable packages
-  - are my dependencies safe
-  - CVE check
-  - npm audit
-  - pip audit
-keywords: [dependency, audit, cve, vulnerability, supply-chain, npm, pip, maven]
+- audit my dependencies
+- check for vulnerable packages
+- are my dependencies safe
+- CVE check
+- npm audit
+- pip audit
+keywords:
+- dependency
+- audit
+- cve
+- vulnerability
+- supply-chain
+- npm
+- pip
+- maven
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- audit
+- cve
+- dependency
+- security
+- vulnerability
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Dependency Audit

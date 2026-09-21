@@ -2,19 +2,46 @@
 name: accessibility
 description: Accessibility (a11y) testing — WCAG checks, keyboard navigation, screen-reader semantics, color contrast.
 category: web
-aliases: [a11y, wcag, accessibility-testing]
+aliases:
+- a11y
+- wcag
+- accessibility-testing
 triggers:
-  - accessibility check
-  - a11y audit
-  - WCAG
-  - is this accessible
-  - keyboard navigation
-keywords: [accessibility, a11y, wcag, keyboard, screen, reader, contrast, aria]
+- accessibility check
+- a11y audit
+- WCAG
+- is this accessible
+- keyboard navigation
+keywords:
+- accessibility
+- a11y
+- wcag
+- keyboard
+- screen
+- reader
+- contrast
+- aria
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- a11y
+- accessibility
+- keyboard
+- wcag
+- web
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Accessibility

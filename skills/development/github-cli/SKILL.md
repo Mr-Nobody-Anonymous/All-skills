@@ -1,24 +1,58 @@
 ---
 name: github-cli
-description: "Use GitHub CLI for issues, pull requests, Actions, and API queries with confirmation for writes."
+description: Use GitHub CLI for issues, pull requests, Actions, and API queries with confirmation for writes.
 category: development
-aliases: [github, gh-cli]
+aliases:
+- github
+- gh-cli
 triggers:
-  - "Open a PR"
-  - "List my issues"
-  - "Check the CI run"
-  - "Create a release"
-  - "Use the GitHub API"
-keywords: [github, gh, pr, pull, request, issue, ci, workflow, release, api]
-dependencies: [optional:gh]
+- Open a PR
+- List my issues
+- Check the CI run
+- Create a release
+- Use the GitHub API
+keywords:
+- github
+- gh
+- pr
+- pull
+- request
+- issue
+- ci
+- workflow
+- release
+- api
+dependencies:
+- optional:gh
 risk: medium
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [github-cli, development]
-inputs: [task, context]
-outputs: [result, report]
+capabilities:
+- github-cli
+- development
+inputs:
+- task
+- context
+outputs:
+- result
+- report
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- cli
+- development
+- github
+- pull
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Github Cli

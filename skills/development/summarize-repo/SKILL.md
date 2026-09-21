@@ -1,23 +1,57 @@
 ---
 name: summarize-repo
-description: "Produce an evidence-based codebase map covering architecture, entry points, dependencies, and risks."
+description: Produce an evidence-based codebase map covering architecture, entry points, dependencies, and risks.
 category: development
-aliases: [summarize, repo-overview, codebase-summary, on boarding]
+aliases:
+- summarize
+- repo-overview
+- codebase-summary
+- on boarding
 triggers:
-  - "Summarize this repo"
-  - "What is this project"
-  - "Give me an overview"
-  - "Onboard me to this codebase"
-keywords: [summarize, repo, codebase, overview, tour, onboarding, readme, architecture]
+- Summarize this repo
+- What is this project
+- Give me an overview
+- Onboard me to this codebase
+keywords:
+- summarize
+- repo
+- codebase
+- overview
+- tour
+- onboarding
+- readme
+- architecture
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [summarize-repo, development]
-inputs: [task, context]
-outputs: [result, report]
+capabilities:
+- summarize-repo
+- development
+inputs:
+- task
+- context
+outputs:
+- result
+- report
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- codebase
+- development
+- overview
+- repo
+- summarize
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Summarize Repo

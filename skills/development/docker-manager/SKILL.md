@@ -1,24 +1,62 @@
 ---
 name: docker-manager
-description: "Inspect and manage Docker resources with read-only defaults and confirmation for mutations."
+description: Inspect and manage Docker resources with read-only defaults and confirmation for mutations.
 category: development
-aliases: [docker, container, image, compose, podman]
+aliases:
+- docker
+- container
+- image
+- compose
+- podman
 triggers:
-  - "List docker containers"
-  - "Tail container logs"
-  - "Restart this container"
-  - "Prune docker"
-  - "Build this image"
-keywords: [docker, container, image, compose, podman, volume, network, prune, build]
-dependencies: [optional:docker]
+- List docker containers
+- Tail container logs
+- Restart this container
+- Prune docker
+- Build this image
+keywords:
+- docker
+- container
+- image
+- compose
+- podman
+- volume
+- network
+- prune
+- build
+dependencies:
+- optional:docker
 risk: high
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [docker-manager, development]
-inputs: [task, context]
-outputs: [result, report]
+capabilities:
+- docker-manager
+- development
+inputs:
+- task
+- context
+outputs:
+- result
+- report
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- compose
+- container
+- development
+- docker
+- image
+- manager
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Docker Manager

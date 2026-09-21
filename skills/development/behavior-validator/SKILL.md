@@ -1,21 +1,51 @@
 ---
 name: behavior-validator
-description: "Validate user-visible behavior against a written contract without inspecting implementation source."
+description: Validate user-visible behavior against a written contract without inspecting implementation source.
 category: development
 aliases: []
 triggers:
-  - "use behavior-validator"
-  - "run behavior-validator"
-keywords: [behavior-validator, development, validate, user, visible, behavior, against]
+- use behavior-validator
+- run behavior-validator
+keywords:
+- behavior-validator
+- development
+- validate
+- user
+- visible
+- behavior
+- against
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [behavior-validator, development]
-inputs: [task, context]
-outputs: [result, report]
+capabilities:
+- behavior-validator
+- development
+inputs:
+- task
+- context
+outputs:
+- result
+- report
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- behavior
+- behavior-validator
+- development
+- user
+- validate
+- validator
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Behavior Validator

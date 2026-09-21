@@ -2,18 +2,46 @@
 name: secret-detection
 description: Detect accidentally committed secrets (API keys, tokens, passwords) in code and history.
 category: security
-aliases: [secret-scanning, leak-detection, credentials]
+aliases:
+- secret-scanning
+- leak-detection
+- credentials
 triggers:
-  - find secrets in this code
-  - check for API keys
-  - secret scan
-  - did I commit a secret
-keywords: [secret, leak, api, key, token, credential, scan, detect]
+- find secrets in this code
+- check for API keys
+- secret scan
+- did I commit a secret
+keywords:
+- secret
+- leak
+- api
+- key
+- token
+- credential
+- scan
+- detect
 dependencies: []
 risk: medium
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- api
+- detection
+- key
+- leak
+- secret
+- security
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Secret Detection

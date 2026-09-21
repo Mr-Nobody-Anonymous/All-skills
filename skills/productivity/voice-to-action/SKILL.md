@@ -1,23 +1,59 @@
 ---
 name: voice-to-action
-description: "Convert rough voice-note text into clarified tasks, owners, dates, and follow-ups."
+description: Convert rough voice-note text into clarified tasks, owners, dates, and follow-ups.
 category: productivity
-aliases: [dictation, memo, transcribe, action]
+aliases:
+- dictation
+- memo
+- transcribe
+- action
 triggers:
-  - "From my voice memo"
-  - "Transcribe this audio"
-  - "What did I just say"
-  - "Convert this to a task"
-keywords: [voice, audio, transcribe, dictation, memo, action, task, whisper]
-dependencies: [optional:transcript]
+- From my voice memo
+- Transcribe this audio
+- What did I just say
+- Convert this to a task
+keywords:
+- voice
+- audio
+- transcribe
+- dictation
+- memo
+- action
+- task
+- whisper
+dependencies:
+- optional:transcript
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [voice-to-action, productivity]
-inputs: [task, context]
-outputs: [result, report]
+capabilities:
+- voice-to-action
+- productivity
+inputs:
+- task
+- context
+outputs:
+- result
+- report
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- action
+- audio
+- dictation
+- productivity
+- transcribe
+- voice
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Voice To Action

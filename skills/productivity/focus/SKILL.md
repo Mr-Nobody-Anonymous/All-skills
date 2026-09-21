@@ -2,25 +2,47 @@
 name: focus
 description: Help the user enter and sustain focused work via session design, distraction blocking, and break structure.
 category: productivity
-aliases: [deep-work, concentration, pomodoro, focus-session, get-in-the-zone]
+aliases:
+- deep-work
+- concentration
+- pomodoro
+- focus-session
+- get-in-the-zone
 triggers:
-  - help me focus
-  - I can't concentrate
-  - I keep getting distracted
-  - deep work
-  - pomodoro
-  - let's do a focus session
-  - 25 minutes of focus
-  - I need to concentrate
-keywords: [focus, concentrate, distract, attention, deep, work, pomodoro, session, flow]
+- help me focus
+- I can't concentrate
+- I keep getting distracted
+- deep work
+- pomodoro
+- let's do a focus session
+- 25 minutes of focus
+- I need to concentrate
+keywords:
+- focus
+- concentrate
+- distract
+- attention
+- deep
+- work
+- pomodoro
+- session
+- flow
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [focus-session, deep-work, distraction-blocking, pomodoro, break-structure]
-inputs: [duration, distraction-source]
-outputs: [focus-session-plan]
+capabilities:
+- focus-session
+- deep-work
+- distraction-blocking
+- pomodoro
+- break-structure
+inputs:
+- duration
+- distraction-source
+outputs:
+- focus-session-plan
 permissions:
   filesystem: read
   network: none
@@ -34,6 +56,17 @@ compatibility:
   cline: true
   opencode: true
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- attention
+- concentrate
+- distract
+- focus
+- productivity
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Focus

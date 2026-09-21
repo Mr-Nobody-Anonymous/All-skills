@@ -2,18 +2,44 @@
 name: documentation
 description: Write and structure documentation — READMEs, API docs, guides, and reference material.
 category: utilities
-aliases: [docs, readme, api-docs]
+aliases:
+- docs
+- readme
+- api-docs
 triggers:
-  - write docs for this
-  - document this API
-  - write a README
-  - help me document
-keywords: [document, docs, readme, api, reference, guide]
+- write docs for this
+- document this API
+- write a README
+- help me document
+keywords:
+- document
+- docs
+- readme
+- api
+- reference
+- guide
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- api
+- docs
+- document
+- documentation
+- readme
+- utilities
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Documentation

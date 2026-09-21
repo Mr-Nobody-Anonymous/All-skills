@@ -1,23 +1,60 @@
 ---
 name: remotion-best-practices
-description: "Design and implement maintainable Remotion video compositions with deterministic rendering."
+description: Design and implement maintainable Remotion video compositions with deterministic rendering.
 category: design
-aliases: [remotion, video, react-video, motion]
+aliases:
+- remotion
+- video
+- react-video
+- motion
 triggers:
-  - "Make a video with Remotion"
-  - "Render a Remotion project"
-  - "Remotion composition"
-  - "Programmatic video"
-keywords: [remotion, video, react, composition, render, motion, ffmpeg, programmatic]
-dependencies: [optional:node, optional:remotion]
+- Make a video with Remotion
+- Render a Remotion project
+- Remotion composition
+- Programmatic video
+keywords:
+- remotion
+- video
+- react
+- composition
+- render
+- motion
+- ffmpeg
+- programmatic
+dependencies:
+- optional:node
+- optional:remotion
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [remotion-best-practices, design]
-inputs: [task, context]
-outputs: [result, report]
+capabilities:
+- remotion-best-practices
+- design
+inputs:
+- task
+- context
+outputs:
+- result
+- report
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- best
+- composition
+- design
+- practices
+- react
+- remotion
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Remotion Best Practices

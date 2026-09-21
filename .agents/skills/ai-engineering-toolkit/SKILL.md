@@ -1,15 +1,36 @@
 ---
 name: ai-engineering-toolkit
-description: "6 production-ready AI engineering workflows: prompt evaluation (8-dimension scoring), context budget planning, RAG pipeline design, agent security audit (65-point checklist), eval harness building, and product sense coaching."
+description: '6 production-ready AI engineering workflows: prompt evaluation (8-dimension scoring), context budget planning, RAG pipeline design, agent security audit (65-point checklist), eval harness building, and product sense coaching.'
 disable-model-invocation: false
 category: data-ai
 risk: offensive
 source: community
-date_added: "2026-03-15"
+date_added: '2026-03-15'
 author: viliawang-pm
-tags: [prompt-engineering, rag, security, evaluation, ai-engineering, llm]
-tools: [claude, cursor, gemini, copilot]
+tags:
+- prompt-engineering
+- rag
+- security
+- evaluation
+- ai-engineering
+- llm
+tools:
+- claude
+- cursor
+- gemini
+- copilot
+version: 1.0.0
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
+
 
 > **⚠️ AUTHORIZED USE ONLY**
 > This skill is for educational purposes or authorized security assessments only.
@@ -120,3 +141,10 @@ cp -r ai-engineering-toolkit/skills/* ~/.claude/skills/
 - Use this skill only when the task clearly matches the scope described above.
 - Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
 - Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.
+
+## When NOT to Use
+
+- Do not use for unrelated tasks or domains outside the stated scope.
+- Do not use for minor trivial edits where standard direct execution suffices.
+- Do not use to bypass required human confirmation or security approvals.
+

@@ -1,23 +1,44 @@
 ---
 name: browser-act
-description: "Use BrowserAct for authenticated browser automation, JS-rendered extraction, screenshots, parallel sessions, verification handling, and human handoff."
+description: Use BrowserAct for authenticated browser automation, JS-rendered extraction, screenshots, parallel sessions, verification handling, and human handoff.
 disable-model-invocation: false
 category: browser-automation
 risk: critical
 source: https://github.com/browser-act/skills/tree/main/browser-act
 source_repo: browser-act/skills
 source_type: official
-date_added: "2026-07-28"
+date_added: '2026-07-28'
 author: BrowserAct
-tags: [browser-automation, web-extraction, ai-agents, cli, multi-session]
-tools: [claude, codex, cursor, gemini, windsurf]
+tags:
+- browser-automation
+- web-extraction
+- ai-agents
+- cli
+- multi-session
+tools:
+- claude
+- codex
+- cursor
+- gemini
+- windsurf
 license: MIT
 license_source: https://github.com/browser-act/skills/blob/main/LICENSE
 metadata:
-  version: "2.0.2"
-  install: "uv tool install browser-act-cli==1.1.0 --python 3.12"
-  homepage: "https://www.browseract.com"
+  version: 2.0.2
+  install: uv tool install browser-act-cli==1.1.0 --python 3.12
+  homepage: https://www.browseract.com
+version: 1.0.0
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
+
 
 # BrowserAct Browser Automation
 
@@ -99,3 +120,10 @@ Run the same browser workflow across two isolated accounts and return separate r
 - [Official BrowserAct Skill](https://github.com/browser-act/skills/tree/main/browser-act)
 - [BrowserAct website](https://www.browseract.com)
 - [MIT license](https://github.com/browser-act/skills/blob/main/LICENSE)
+
+## When NOT to Use
+
+- Do not use for unrelated tasks or domains outside the stated scope.
+- Do not use for minor trivial edits where standard direct execution suffices.
+- Do not use to bypass required human confirmation or security approvals.
+

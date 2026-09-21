@@ -2,21 +2,51 @@
 name: debugging
 description: Systematically diagnose and fix bugs using reproduction, isolation, root-cause analysis, and verification.
 category: development
-aliases: [debug, fix-bug, troubleshoot, diagnose]
+aliases:
+- debug
+- fix-bug
+- troubleshoot
+- diagnose
 triggers:
-  - this isn't working
-  - help me debug
-  - find the bug
-  - why is this failing
-  - I have a bug
-  - something is broken
-  - trace this error
-keywords: [debug, bug, error, fail, fix, trace, exception, stack, traceback]
+- this isn't working
+- help me debug
+- find the bug
+- why is this failing
+- I have a bug
+- something is broken
+- trace this error
+keywords:
+- debug
+- bug
+- error
+- fail
+- fix
+- trace
+- exception
+- stack
+- traceback
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- bug
+- debug
+- debugging
+- development
+- error
+- fail
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Debugging

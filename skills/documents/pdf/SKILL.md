@@ -2,22 +2,40 @@
 name: pdf
 description: Read, extract text, summarize, and produce PDF files. Parse structured content where possible.
 category: documents
-aliases: [pdf-reading, pdf-generation, pdf-extraction]
+aliases:
+- pdf-reading
+- pdf-generation
+- pdf-extraction
 triggers:
-  - read this PDF
-  - extract text from PDF
-  - summarize this PDF
-  - generate a PDF
-  - make a PDF
-keywords: [pdf, document, extract, summarize, generate, read]
+- read this PDF
+- extract text from PDF
+- summarize this PDF
+- generate a PDF
+- make a PDF
+keywords:
+- pdf
+- document
+- extract
+- summarize
+- generate
+- read
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [pdf-reading, extract-text, extract-tables, summarize, generate-pdf]
-inputs: [pdf_file]
-outputs: [text, markdown, tables]
+capabilities:
+- pdf-reading
+- extract-text
+- extract-tables
+- summarize
+- generate-pdf
+inputs:
+- pdf_file
+outputs:
+- text
+- markdown
+- tables
 permissions:
   filesystem: read-write
   network: none
@@ -31,6 +49,17 @@ compatibility:
   cline: true
   opencode: true
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- document
+- documents
+- extract
+- pdf
+- summarize
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # PDF

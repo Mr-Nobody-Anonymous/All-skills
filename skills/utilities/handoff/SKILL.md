@@ -1,21 +1,50 @@
 ---
 name: handoff
-description: "Prepare a portable context-rich handoff prompt for another coding agent."
+description: Prepare a portable context-rich handoff prompt for another coding agent.
 category: utilities
 aliases: []
 triggers:
-  - "use handoff"
-  - "run handoff"
-keywords: [handoff, utilities, prepare, portable, context, rich, handoff]
-dependencies: [optional:clipboard-tool]
+- use handoff
+- run handoff
+keywords:
+- handoff
+- utilities
+- prepare
+- portable
+- context
+- rich
+- handoff
+dependencies:
+- optional:clipboard-tool
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [handoff, utilities]
-inputs: [task, context]
-outputs: [result, report]
+capabilities:
+- handoff
+- utilities
+inputs:
+- task
+- context
+outputs:
+- result
+- report
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- handoff
+- portable
+- prepare
+- utilities
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Handoff

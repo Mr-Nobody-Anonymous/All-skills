@@ -1,21 +1,51 @@
 ---
 name: beam
-description: "Publish a locally redacted coding-session snapshot only when explicitly requested."
+description: Publish a locally redacted coding-session snapshot only when explicitly requested.
 category: utilities
 aliases: []
 triggers:
-  - "use beam"
-  - "run beam"
-keywords: [beam, utilities, publish, locally, redacted, coding, session]
-dependencies: [optional:node, optional:BEAM_ACCESS_TOKEN]
+- use beam
+- run beam
+keywords:
+- beam
+- utilities
+- publish
+- locally
+- redacted
+- coding
+- session
+dependencies:
+- optional:node
+- optional:BEAM_ACCESS_TOKEN
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [beam, utilities]
-inputs: [task, context]
-outputs: [result, report]
+capabilities:
+- beam
+- utilities
+inputs:
+- task
+- context
+outputs:
+- result
+- report
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- beam
+- locally
+- publish
+- utilities
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Beam

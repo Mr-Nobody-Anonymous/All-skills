@@ -2,19 +2,47 @@
 name: data-analysis
 description: Analyze data files (CSV, JSON, tabular) — load, profile, transform, summarize, and visualize.
 category: research
-aliases: [analyze-data, csv-analysis, statistics, explore-data]
+aliases:
+- analyze-data
+- csv-analysis
+- statistics
+- explore-data
 triggers:
-  - analyze this data
-  - what's in this CSV
-  - explore this dataset
-  - data analysis
-  - statistics on this
-keywords: [data, analysis, csv, pandas, dataframe, statistics, explore, profile]
+- analyze this data
+- what's in this CSV
+- explore this dataset
+- data analysis
+- statistics on this
+keywords:
+- data
+- analysis
+- csv
+- pandas
+- dataframe
+- statistics
+- explore
+- profile
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- analysis
+- csv
+- data
+- pandas
+- research
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Data Analysis

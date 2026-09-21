@@ -2,19 +2,47 @@
 name: performance-optimization
 description: Find and fix performance bottlenecks — profiling, measurement, and targeted optimization.
 category: development
-aliases: [perf, profiling, bottleneck, speed-up]
+aliases:
+- perf
+- profiling
+- bottleneck
+- speed-up
 triggers:
-  - this is slow
-  - profile this
-  - find the bottleneck
-  - speed this up
-  - performance optimization
-keywords: [performance, slow, profile, bottleneck, latency, throughput, optimize]
+- this is slow
+- profile this
+- find the bottleneck
+- speed this up
+- performance optimization
+keywords:
+- performance
+- slow
+- profile
+- bottleneck
+- latency
+- throughput
+- optimize
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- bottleneck
+- development
+- optimization
+- performance
+- profile
+- slow
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Performance Optimization

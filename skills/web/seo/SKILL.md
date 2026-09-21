@@ -2,19 +2,45 @@
 name: seo
 description: Search engine optimization audits — on-page, technical, content, and link analysis with prioritized recommendations.
 category: web
-aliases: [search-engine-optimization, site-audit]
+aliases:
+- search-engine-optimization
+- site-audit
 triggers:
-  - SEO audit
-  - check this page for SEO
-  - improve SEO
-  - meta tags
-  - search rankings
-keywords: [seo, search, ranking, meta, keyword, on-page, technical, audit]
+- SEO audit
+- check this page for SEO
+- improve SEO
+- meta tags
+- search rankings
+keywords:
+- seo
+- search
+- ranking
+- meta
+- keyword
+- on-page
+- technical
+- audit
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- meta
+- ranking
+- search
+- seo
+- web
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # SEO

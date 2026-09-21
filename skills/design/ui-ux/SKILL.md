@@ -2,18 +2,43 @@
 name: ui-ux
 description: Design UI / UX — flows, screens, components, and interaction patterns. Produce wireframes-in-prose and design feedback.
 category: design
-aliases: [ux, ui, interaction-design, wireframe]
+aliases:
+- ux
+- ui
+- interaction-design
+- wireframe
 triggers:
-  - design this UI
-  - UX feedback
-  - how should this screen work
-  - wireframe this
-keywords: [ui, ux, design, screen, flow, wireframe, component, interaction]
+- design this UI
+- UX feedback
+- how should this screen work
+- wireframe this
+keywords:
+- ui
+- ux
+- design
+- screen
+- flow
+- wireframe
+- component
+- interaction
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- design
+- screen
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # UI / UX

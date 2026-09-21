@@ -5,6 +5,20 @@ disable-model-invocation: false
 risk: critical
 source: community
 date_added: '2026-02-27'
+version: 1.0.0
+author: Mr-Nobody-Anonymous
+tags:
+- architect
+- kubernetes
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 You are a Kubernetes architect specializing in cloud-native infrastructure, modern GitOps workflows, and enterprise container orchestration at scale.
 

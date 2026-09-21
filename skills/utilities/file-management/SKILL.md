@@ -2,18 +2,46 @@
 name: file-management
 description: Safely and predictably manage files and directories — read, write, copy, move, rename, organize.
 category: utilities
-aliases: [fs, filesystem, file-ops]
+aliases:
+- fs
+- filesystem
+- file-ops
 triggers:
-  - organize my files
-  - rename these files
-  - move files
-  - clean up the folder
-keywords: [file, folder, directory, organize, rename, move, copy, fs]
+- organize my files
+- rename these files
+- move files
+- clean up the folder
+keywords:
+- file
+- folder
+- directory
+- organize
+- rename
+- move
+- copy
+- fs
 dependencies: []
 risk: medium
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- directory
+- file
+- folder
+- management
+- organize
+- utilities
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # File Management

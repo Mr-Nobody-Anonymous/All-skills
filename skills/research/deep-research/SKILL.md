@@ -2,19 +2,45 @@
 name: deep-research
 description: Conduct long-horizon, multi-source deep research with synthesis, contradiction handling, and a final report.
 category: research
-aliases: [deep-dive, long-research, exhaustive-research]
+aliases:
+- deep-dive
+- long-research
+- exhaustive-research
 triggers:
-  - deep research
-  - do a deep dive
-  - exhaustive research
-  - comprehensive analysis
-  - research everything about
-keywords: [deep, dive, exhaustive, comprehensive, research, multi-source, report]
+- deep research
+- do a deep dive
+- exhaustive research
+- comprehensive analysis
+- research everything about
+keywords:
+- deep
+- dive
+- exhaustive
+- comprehensive
+- research
+- multi-source
+- report
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- comprehensive
+- deep
+- dive
+- exhaustive
+- research
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Deep Research

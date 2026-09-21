@@ -2,20 +2,48 @@
 name: refactoring
 description: Improve the internal structure of existing code without changing external behavior — naming, decomposition, clarity, duplication removal.
 category: development
-aliases: [refactor, clean-up, simplify, restructure]
+aliases:
+- refactor
+- clean-up
+- simplify
+- restructure
 triggers:
-  - refactor this
-  - clean up this code
-  - simplify this
-  - rename this
-  - extract a function
-  - make this clearer
-keywords: [refactor, clean, simplify, rename, extract, structure, readability]
+- refactor this
+- clean up this code
+- simplify this
+- rename this
+- extract a function
+- make this clearer
+keywords:
+- refactor
+- clean
+- simplify
+- rename
+- extract
+- structure
+- readability
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- clean
+- development
+- refactor
+- refactoring
+- rename
+- simplify
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Refactoring

@@ -1,23 +1,57 @@
 ---
 name: form-filler
-description: "Fill web forms from user-approved data while requiring confirmation before submission."
+description: Fill web forms from user-approved data while requiring confirmation before submission.
 category: web
-aliases: [form, autofill, webform, submit]
+aliases:
+- form
+- autofill
+- webform
+- submit
 triggers:
-  - "Fill out this form"
-  - "Submit this application"
-  - "Auto-fill the form"
-  - "Complete this registration"
-keywords: [form, fill, submit, autofill, webform, input]
-dependencies: [optional:browser-automation]
+- Fill out this form
+- Submit this application
+- Auto-fill the form
+- Complete this registration
+keywords:
+- form
+- fill
+- submit
+- autofill
+- webform
+- input
+dependencies:
+- optional:browser-automation
 risk: high
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [form-filler, web]
-inputs: [task, context]
-outputs: [result, report]
+capabilities:
+- form-filler
+- web
+inputs:
+- task
+- context
+outputs:
+- result
+- report
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- autofill
+- fill
+- filler
+- form
+- submit
+- web
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Form Filler

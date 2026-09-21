@@ -2,18 +2,44 @@
 name: prompt-injection-defense
 description: Detect and defend against prompt-injection attempts in untrusted text, tool outputs, and web pages.
 category: security
-aliases: [injection-defense, llm-security, prompt-security]
+aliases:
+- injection-defense
+- llm-security
+- prompt-security
 triggers:
-  - check for prompt injection
-  - is this safe to summarize
-  - untrusted text handling
-  - LLM security
-keywords: [prompt, injection, llm, security, jailbreak, defense, untrusted]
+- check for prompt injection
+- is this safe to summarize
+- untrusted text handling
+- LLM security
+keywords:
+- prompt
+- injection
+- llm
+- security
+- jailbreak
+- defense
+- untrusted
 dependencies: []
 risk: medium
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- defense
+- injection
+- llm
+- prompt
+- security
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Prompt Injection Defense

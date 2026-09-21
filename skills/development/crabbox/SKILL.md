@@ -1,21 +1,50 @@
 ---
 name: crabbox
-description: "Coordinate isolated remote or clean-machine validation while preserving trust and credential boundaries."
+description: Coordinate isolated remote or clean-machine validation while preserving trust and credential boundaries.
 category: development
 aliases: []
 triggers:
-  - "use crabbox"
-  - "run crabbox"
-keywords: [crabbox, development, coordinate, isolated, remote, clean, machine]
-dependencies: [optional:crabbox]
+- use crabbox
+- run crabbox
+keywords:
+- crabbox
+- development
+- coordinate
+- isolated
+- remote
+- clean
+- machine
+dependencies:
+- optional:crabbox
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [crabbox, development]
-inputs: [task, context]
-outputs: [result, report]
+capabilities:
+- crabbox
+- development
+inputs:
+- task
+- context
+outputs:
+- result
+- report
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- coordinate
+- crabbox
+- development
+- isolated
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Crabbox

@@ -1,29 +1,66 @@
 ---
 name: pr-splitter
-description: "Decompose large, complex pull requests into atomic, logically isolated, reviewable PR branches."
+description: Decompose large, complex pull requests into atomic, logically isolated, reviewable PR branches.
 category: development
-aliases: [split-pr, atomic-pr, decompose-pr, pr-slice]
+aliases:
+- split-pr
+- atomic-pr
+- decompose-pr
+- pr-slice
 triggers:
-  - "split this PR"
-  - "break down large pull request"
-  - "decompose PR into smaller chunks"
-  - "make this PR reviewable"
-  - "slice this diff"
-keywords: [pr, pull-request, split, atomic, diff, review, branch, git]
+- split this PR
+- break down large pull request
+- decompose PR into smaller chunks
+- make this PR reviewable
+- slice this diff
+keywords:
+- pr
+- pull-request
+- split
+- atomic
+- diff
+- review
+- branch
+- git
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
 lifecycle: enabled
-capabilities: [pr-splitting, diff-decomposition, atomic-branching]
-inputs: [git_diff, branch, target_branch]
-outputs: [split_plan, branch_sequence, dependency_graph]
+capabilities:
+- pr-splitting
+- diff-decomposition
+- atomic-branching
+inputs:
+- git_diff
+- branch
+- target_branch
+outputs:
+- split_plan
+- branch_sequence
+- dependency_graph
 permissions:
   filesystem: none
   network: none
   shell: none
   secrets: none
+author: Mr-Nobody-Anonymous
+tags:
+- atomic
+- development
+- pull-request
+- split
+- splitter
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # PR Splitter

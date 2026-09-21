@@ -2,18 +2,43 @@
 name: pptx
 description: Read, edit, and generate PowerPoint .pptx files — extract slides, build decks from outlines.
 category: documents
-aliases: [powerpoint, slides, deck, presentation-generation]
+aliases:
+- powerpoint
+- slides
+- deck
+- presentation-generation
 triggers:
-  - read this PowerPoint
-  - generate a slide deck
-  - make a presentation
-  - extract slides from
-keywords: [pptx, powerpoint, slides, deck, presentation]
+- read this PowerPoint
+- generate a slide deck
+- make a presentation
+- extract slides from
+keywords:
+- pptx
+- powerpoint
+- slides
+- deck
+- presentation
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- deck
+- documents
+- powerpoint
+- pptx
+- slides
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # PPTX

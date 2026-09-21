@@ -2,19 +2,45 @@
 name: devops
 description: DevOps practices — CI/CD, infrastructure, deployment, observability, and incident response.
 category: development
-aliases: [ci-cd, deploy, sre, ops]
+aliases:
+- ci-cd
+- deploy
+- sre
+- ops
 triggers:
-  - set up CI
-  - deploy this
-  - infrastructure help
-  - CI/CD
-  - devops
-keywords: [devops, ci, cd, deploy, pipeline, observability, incident, sre]
+- set up CI
+- deploy this
+- infrastructure help
+- CI/CD
+- devops
+keywords:
+- devops
+- ci
+- cd
+- deploy
+- pipeline
+- observability
+- incident
+- sre
 dependencies: []
 risk: medium
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- deploy
+- development
+- devops
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # DevOps

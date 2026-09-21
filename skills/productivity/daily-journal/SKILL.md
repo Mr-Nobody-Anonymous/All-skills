@@ -1,24 +1,61 @@
 ---
 name: daily-journal
-description: "Create a concise daily journal with events, reflection, lessons, and tomorrow's priorities."
+description: Create a concise daily journal with events, reflection, lessons, and tomorrow's priorities.
 category: productivity
-aliases: [journal, daily, reflection, gratitude, intention, mood]
+aliases:
+- journal
+- daily
+- reflection
+- gratitude
+- intention
+- mood
 triggers:
-  - "Daily journal"
-  - "Reflect on today"
-  - "What did I do today"
-  - "Morning prompt"
-  - "Evening wrap"
-keywords: [journal, daily, reflection, gratitude, mood, intention, win, lesson, log]
+- Daily journal
+- Reflect on today
+- What did I do today
+- Morning prompt
+- Evening wrap
+keywords:
+- journal
+- daily
+- reflection
+- gratitude
+- mood
+- intention
+- win
+- lesson
+- log
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [daily-journal, productivity]
-inputs: [task, context]
-outputs: [result, report]
+capabilities:
+- daily-journal
+- productivity
+inputs:
+- task
+- context
+outputs:
+- result
+- report
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- daily
+- gratitude
+- journal
+- productivity
+- reflection
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Daily Journal

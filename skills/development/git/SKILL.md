@@ -2,21 +2,50 @@
 name: git
 description: Use git effectively — commits, branches, rebases, merges, conflict resolution, history surgery, and common workflows.
 category: development
-aliases: [version-control, source-control, vcs]
+aliases:
+- version-control
+- source-control
+- vcs
 triggers:
-  - git help
-  - how do I use git
-  - help me commit
-  - resolve this merge conflict
-  - git rebase
-  - git workflow
-  - undo this commit
-keywords: [git, commit, branch, merge, rebase, conflict, stash, log, diff]
-dependencies: [git]
+- git help
+- how do I use git
+- help me commit
+- resolve this merge conflict
+- git rebase
+- git workflow
+- undo this commit
+keywords:
+- git
+- commit
+- branch
+- merge
+- rebase
+- conflict
+- stash
+- log
+- diff
+dependencies:
+- git
 risk: medium
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- branch
+- commit
+- development
+- git
+- merge
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Git

@@ -1,29 +1,67 @@
 ---
 name: ci-cd-pipeline
-description: "Design, audit, and optimize CI/CD pipelines with build caching, test parallelism, secret boundaries, and automated gates."
+description: Design, audit, and optimize CI/CD pipelines with build caching, test parallelism, secret boundaries, and automated gates.
 category: development
-aliases: [github-actions-pipeline, ci-cd-workflow, continuous-integration, pipeline-builder]
+aliases:
+- github-actions-pipeline
+- ci-cd-workflow
+- continuous-integration
+- pipeline-builder
 triggers:
-  - "build a CI/CD pipeline"
-  - "create GitHub Actions workflow"
-  - "optimize build pipeline caching"
-  - "audit CI security and test stages"
-  - "automate deployment pipeline"
-keywords: [ci, cd, github-actions, workflow, pipeline, build, test, cache, deploy]
+- build a CI/CD pipeline
+- create GitHub Actions workflow
+- optimize build pipeline caching
+- audit CI security and test stages
+- automate deployment pipeline
+keywords:
+- ci
+- cd
+- github-actions
+- workflow
+- pipeline
+- build
+- test
+- cache
+- deploy
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
 lifecycle: enabled
-capabilities: [pipeline-authoring, cache-optimization, matrix-testing, secret-isolation]
-inputs: [project_tech_stack, test_commands, deploy_target]
-outputs: [workflow_yaml, security_review, cache_strategy]
+capabilities:
+- pipeline-authoring
+- cache-optimization
+- matrix-testing
+- secret-isolation
+inputs:
+- project_tech_stack
+- test_commands
+- deploy_target
+outputs:
+- workflow_yaml
+- security_review
+- cache_strategy
 permissions:
   filesystem: none
   network: none
   shell: none
   secrets: none
+author: Mr-Nobody-Anonymous
+tags:
+- development
+- github-actions
+- pipeline
+- workflow
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # CI/CD Pipeline

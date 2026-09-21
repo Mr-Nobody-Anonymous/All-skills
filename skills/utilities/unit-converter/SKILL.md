@@ -1,23 +1,58 @@
 ---
 name: unit-converter
-description: "Convert units and currencies while showing assumptions, precision, and exchange-rate timestamps."
+description: Convert units and currencies while showing assumptions, precision, and exchange-rate timestamps.
 category: utilities
-aliases: [convert, units, currency, conversion, calculator]
+aliases:
+- convert
+- units
+- currency
+- conversion
+- calculator
 triggers:
-  - "Convert units"
-  - "Currency conversion"
-  - "How many miles in a km"
-  - "Convert this measurement"
-keywords: [convert, units, currency, measurement, exchange, rate]
-dependencies: [optional:exchange-rate-source]
+- Convert units
+- Currency conversion
+- How many miles in a km
+- Convert this measurement
+keywords:
+- convert
+- units
+- currency
+- measurement
+- exchange
+- rate
+dependencies:
+- optional:exchange-rate-source
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [unit-converter, utilities]
-inputs: [task, context]
-outputs: [result, report]
+capabilities:
+- unit-converter
+- utilities
+inputs:
+- task
+- context
+outputs:
+- result
+- report
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- convert
+- converter
+- currency
+- measurement
+- unit
+- units
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Unit Converter

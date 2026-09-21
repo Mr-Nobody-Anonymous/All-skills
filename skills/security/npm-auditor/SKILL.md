@@ -1,24 +1,64 @@
 ---
 name: npm-auditor
-description: "Audit npm dependencies for vulnerabilities, staleness, licenses, and supply-chain risk."
+description: Audit npm dependencies for vulnerabilities, staleness, licenses, and supply-chain risk.
 category: security
-aliases: [npm, audit, pnpm, yarn, dependency, vulnerabilities]
+aliases:
+- npm
+- audit
+- pnpm
+- yarn
+- dependency
+- vulnerabilities
 triggers:
-  - "Audit my dependencies"
-  - "Run npm audit"
-  - "Check for CVEs"
-  - "Are my packages up to date"
-  - "License check"
-keywords: [npm, pnpm, yarn, audit, dependency, vulnerability, cve, license, supply, chain]
-dependencies: [optional:npm]
+- Audit my dependencies
+- Run npm audit
+- Check for CVEs
+- Are my packages up to date
+- License check
+keywords:
+- npm
+- pnpm
+- yarn
+- audit
+- dependency
+- vulnerability
+- cve
+- license
+- supply
+- chain
+dependencies:
+- optional:npm
 risk: medium
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [npm-auditor, security]
-inputs: [task, context]
-outputs: [result, report]
+capabilities:
+- npm-auditor
+- security
+inputs:
+- task
+- context
+outputs:
+- result
+- report
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- audit
+- auditor
+- npm
+- pnpm
+- security
+- yarn
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Npm Auditor

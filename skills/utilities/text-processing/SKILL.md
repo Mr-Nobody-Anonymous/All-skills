@@ -2,18 +2,44 @@
 name: text-processing
 description: Process text — search, replace, transform, dedupe, slice, and convert between common formats.
 category: utilities
-aliases: [text-utils, string-manipulation]
+aliases:
+- text-utils
+- string-manipulation
 triggers:
-  - process this text
-  - find and replace
-  - clean this text
-  - transform this
-keywords: [text, string, search, replace, transform, slice, dedupe]
+- process this text
+- find and replace
+- clean this text
+- transform this
+keywords:
+- text
+- string
+- search
+- replace
+- transform
+- slice
+- dedupe
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- processing
+- replace
+- search
+- string
+- text
+- utilities
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Text Processing

@@ -1,7 +1,6 @@
 ---
 name: security-scanning-security-sast
-description: 'Static Application Security Testing (SAST) for code vulnerability
-disable-model-invocation: false
+description: 'Static Application Security Testing (SAST) for code vulnerability disable-model-invocation: false
 
   analysis across multiple languages and frameworks
 
@@ -9,6 +8,21 @@ disable-model-invocation: false
 risk: critical
 source: community
 date_added: '2026-02-27'
+version: 1.0.0
+author: Mr-Nobody-Anonymous
+tags:
+- sast
+- scanning
+- security
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 # SAST Security Plugin
 

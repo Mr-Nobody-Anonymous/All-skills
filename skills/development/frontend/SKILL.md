@@ -2,18 +2,46 @@
 name: frontend
 description: Build frontend applications — frameworks, state management, routing, data fetching, and integration with APIs.
 category: development
-aliases: [frontend-dev, web-app, react-vue-svelte]
+aliases:
+- frontend-dev
+- web-app
+- react-vue-svelte
 triggers:
-  - build a frontend
-  - frontend dev
-  - build a web app
-  - help with react
-keywords: [frontend, react, vue, svelte, web, app, spa, ssr, state]
+- build a frontend
+- frontend dev
+- build a web app
+- help with react
+keywords:
+- frontend
+- react
+- vue
+- svelte
+- web
+- app
+- spa
+- ssr
+- state
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- development
+- frontend
+- react
+- svelte
+- vue
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Frontend

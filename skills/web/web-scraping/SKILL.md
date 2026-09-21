@@ -2,18 +2,46 @@
 name: web-scraping
 description: Extract structured data from websites — list pages, parse DOM, normalize records, and write to CSV / JSON.
 category: web
-aliases: [scrape, extraction, data-extraction]
+aliases:
+- scrape
+- extraction
+- data-extraction
 triggers:
-  - scrape this site
-  - extract data from
-  - pull all the X from this website
-  - get me a list of
-keywords: [scrape, extract, parse, dom, html, data, web, crawl]
+- scrape this site
+- extract data from
+- pull all the X from this website
+- get me a list of
+keywords:
+- scrape
+- extract
+- parse
+- dom
+- html
+- data
+- web
+- crawl
 dependencies: []
 risk: medium
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- dom
+- extract
+- parse
+- scrape
+- scraping
+- web
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Web Scraping

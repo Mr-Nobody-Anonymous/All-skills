@@ -2,20 +2,45 @@
 name: web-research
 description: Conduct structured web research — query formulation, source diversification, synthesis, and source tracking.
 category: research
-aliases: [research, internet-research, search]
+aliases:
+- research
+- internet-research
+- search
 triggers:
-  - research this topic
-  - research this
-  - look this up
-  - find information about
-  - what does the internet say
-  - search for
-keywords: [research, search, web, lookup, find, information, query]
+- research this topic
+- research this
+- look this up
+- find information about
+- what does the internet say
+- search for
+keywords:
+- research
+- search
+- web
+- lookup
+- find
+- information
+- query
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- lookup
+- research
+- search
+- web
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Web Research

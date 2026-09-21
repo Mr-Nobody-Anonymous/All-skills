@@ -1,29 +1,67 @@
 ---
 name: issue-triage
-description: "Classify, deduplicate, label, and prioritize incoming issues with reproduction checklists and routing rules."
+description: Classify, deduplicate, label, and prioritize incoming issues with reproduction checklists and routing rules.
 category: development
-aliases: [triage-issues, bug-triage, issue-classifier, issue-routing]
+aliases:
+- triage-issues
+- bug-triage
+- issue-classifier
+- issue-routing
 triggers:
-  - "triage incoming issues"
-  - "classify this bug report"
-  - "prioritize GitHub issues"
-  - "label and route this issue"
-  - "check issue for reproduction steps"
-keywords: [issue, triage, github, bug, label, priority, reproduce, classify]
+- triage incoming issues
+- classify this bug report
+- prioritize GitHub issues
+- label and route this issue
+- check issue for reproduction steps
+keywords:
+- issue
+- triage
+- github
+- bug
+- label
+- priority
+- reproduce
+- classify
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
 lifecycle: enabled
-capabilities: [issue-classification, reproduction-verification, priority-routing]
-inputs: [issue_body, labels, repository_context]
-outputs: [triaged_issue, severity_rating, recommended_assignee, reproduction_checklist]
+capabilities:
+- issue-classification
+- reproduction-verification
+- priority-routing
+inputs:
+- issue_body
+- labels
+- repository_context
+outputs:
+- triaged_issue
+- severity_rating
+- recommended_assignee
+- reproduction_checklist
 permissions:
   filesystem: none
   network: none
   shell: none
   secrets: none
+author: Mr-Nobody-Anonymous
+tags:
+- bug
+- development
+- github
+- issue
+- triage
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Issue Triage

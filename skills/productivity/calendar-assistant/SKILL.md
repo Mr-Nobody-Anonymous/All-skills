@@ -1,24 +1,57 @@
 ---
 name: calendar-assistant
-description: "Plan and modify calendar events with timezone checks, conflict detection, and confirmation."
+description: Plan and modify calendar events with timezone checks, conflict detection, and confirmation.
 category: productivity
-aliases: [event, google-calendar, outlook]
+aliases:
+- event
+- google-calendar
+- outlook
 triggers:
-  - "Schedule this meeting"
-  - "Add to my calendar"
-  - "What's on my calendar"
-  - "Find a time for"
-  - "Check for conflicts"
-keywords: [calendar, schedule, meeting, event, time, timezone]
-dependencies: [optional:calendar-access]
+- Schedule this meeting
+- Add to my calendar
+- What's on my calendar
+- Find a time for
+- Check for conflicts
+keywords:
+- calendar
+- schedule
+- meeting
+- event
+- time
+- timezone
+dependencies:
+- optional:calendar-access
 risk: medium
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [calendar-assistant, productivity]
-inputs: [task, context]
-outputs: [result, report]
+capabilities:
+- calendar-assistant
+- productivity
+inputs:
+- task
+- context
+outputs:
+- result
+- report
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- assistant
+- calendar
+- event
+- meeting
+- productivity
+- schedule
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Calendar Assistant

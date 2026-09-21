@@ -1,22 +1,54 @@
 ---
 name: whatsapp-router
-description: "Classify and route WhatsApp messages with consent, privacy, and escalation boundaries."
+description: Classify and route WhatsApp messages with consent, privacy, and escalation boundaries.
 category: utilities
-aliases: [whatsapp, route, classify]
+aliases:
+- whatsapp
+- route
+- classify
 triggers:
-  - "Route this WhatsApp message"
-  - "Categorize WhatsApp message"
-  - "Process WhatsApp input"
-keywords: [whatsapp, message, route, classify, triage]
-dependencies: [optional:whatsapp-api]
+- Route this WhatsApp message
+- Categorize WhatsApp message
+- Process WhatsApp input
+keywords:
+- whatsapp
+- message
+- route
+- classify
+- triage
+dependencies:
+- optional:whatsapp-api
 risk: high
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [whatsapp-router, utilities]
-inputs: [task, context]
-outputs: [result, report]
+capabilities:
+- whatsapp-router
+- utilities
+inputs:
+- task
+- context
+outputs:
+- result
+- report
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- classify
+- message
+- route
+- router
+- utilities
+- whatsapp
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Whatsapp Router

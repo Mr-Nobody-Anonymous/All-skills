@@ -1,29 +1,69 @@
 ---
 name: release-management
-description: "Coordinate end-to-end software releases with semantic versioning, automated changelogs, tag verification, and rollbacks."
+description: Coordinate end-to-end software releases with semantic versioning, automated changelogs, tag verification, and rollbacks.
 category: development
-aliases: [release-workflow, release-coordinator, semantic-release, cut-release]
+aliases:
+- release-workflow
+- release-coordinator
+- semantic-release
+- cut-release
 triggers:
-  - "cut a new release"
-  - "manage release workflow"
-  - "generate release notes and tag"
-  - "prepare semantic version bump"
-  - "coordinate production release"
-keywords: [release, semver, version, tag, changelog, publish, rollout, rollback]
+- cut a new release
+- manage release workflow
+- generate release notes and tag
+- prepare semantic version bump
+- coordinate production release
+keywords:
+- release
+- semver
+- version
+- tag
+- changelog
+- publish
+- rollout
+- rollback
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
 lifecycle: enabled
-capabilities: [semantic-versioning, changelog-generation, release-orchestration, rollback-readiness]
-inputs: [commits, current_version, release_type]
-outputs: [new_version, changelog_entry, git_tag_command, release_checklist]
+capabilities:
+- semantic-versioning
+- changelog-generation
+- release-orchestration
+- rollback-readiness
+inputs:
+- commits
+- current_version
+- release_type
+outputs:
+- new_version
+- changelog_entry
+- git_tag_command
+- release_checklist
 permissions:
   filesystem: none
   network: none
   shell: none
   secrets: none
+author: Mr-Nobody-Anonymous
+tags:
+- development
+- management
+- release
+- semver
+- tag
+- version
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Release Management

@@ -2,21 +2,51 @@
 name: brainstorming
 description: Explore user intent, requirements, and design before implementation. Use when starting creative work, new feature design, or when encountering ambiguity.
 category: productivity
-aliases: [ideation, design-brainstorm, concept-development]
+aliases:
+- ideation
+- design-brainstorm
+- concept-development
 triggers:
-  - let's brainstorm
-  - I have an idea
-  - help me design this
-  - what are some ideas for
-  - brainstorm
-keywords: [brainstorm, idea, concept, design, creative, requirement, ideation]
+- let's brainstorm
+- I have an idea
+- help me design this
+- what are some ideas for
+- brainstorm
+keywords:
+- brainstorm
+- idea
+- concept
+- design
+- creative
+- requirement
+- ideation
 dependencies: []
-composes_with: [productivity.task-decomposition, development.architecture]
-suggests_after: [productivity.planning]
+composes_with:
+- productivity.task-decomposition
+- development.architecture
+suggests_after:
+- productivity.planning
 risk: low
 version: 1.0.0
 source: obra/superpowers
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- brainstorm
+- brainstorming
+- concept
+- design
+- idea
+- productivity
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 # Brainstorming Ideas Into Designs
 

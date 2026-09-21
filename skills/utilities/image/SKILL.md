@@ -2,18 +2,44 @@
 name: image
 description: Work with images — read, resize, convert, OCR, and inspect metadata.
 category: utilities
-aliases: [images, ocr, image-processing]
+aliases:
+- images
+- ocr
+- image-processing
 triggers:
-  - read this image
-  - OCR this
-  - resize image
-  - convert image format
-keywords: [image, ocr, resize, convert, jpg, png, metadata]
+- read this image
+- OCR this
+- resize image
+- convert image format
+keywords:
+- image
+- ocr
+- resize
+- convert
+- jpg
+- png
+- metadata
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- convert
+- image
+- ocr
+- resize
+- utilities
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Image

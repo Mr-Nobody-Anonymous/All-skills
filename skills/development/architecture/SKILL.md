@@ -2,20 +2,48 @@
 name: architecture
 description: Design and review software architecture — modules, boundaries, data flow, dependencies, and trade-offs.
 category: development
-aliases: [system-design, design, architect, modular]
+aliases:
+- system-design
+- design
+- architect
+- modular
 triggers:
-  - how should I structure this
-  - design the architecture
-  - system design
-  - architect this
-  - pick a tech stack
-  - module boundaries
-keywords: [architecture, design, module, boundary, layer, dependency, stack, trade-off]
+- how should I structure this
+- design the architecture
+- system design
+- architect this
+- pick a tech stack
+- module boundaries
+keywords:
+- architecture
+- design
+- module
+- boundary
+- layer
+- dependency
+- stack
+- trade-off
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- architecture
+- boundary
+- design
+- development
+- module
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Architecture

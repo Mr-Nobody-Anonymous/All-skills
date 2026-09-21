@@ -2,20 +2,50 @@
 name: testing
 description: Design and write automated tests (unit, integration, end-to-end) using TDD where appropriate.
 category: development
-aliases: [tdd, unit-test, integration-test, write-tests, test-coverage]
+aliases:
+- tdd
+- unit-test
+- integration-test
+- write-tests
+- test-coverage
 triggers:
-  - write tests for this
-  - add tests
-  - how do I test this
-  - TDD
-  - test coverage
-  - unit test this
-keywords: [test, tdd, unit, integration, coverage, assert, fixture, mock]
+- write tests for this
+- add tests
+- how do I test this
+- TDD
+- test coverage
+- unit test this
+keywords:
+- test
+- tdd
+- unit
+- integration
+- coverage
+- assert
+- fixture
+- mock
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- development
+- integration
+- tdd
+- test
+- testing
+- unit
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Testing

@@ -1,29 +1,67 @@
 ---
 name: kaizen-continuous-improvement
-description: "Apply Toyota Kaizen principles and Plan-Do-Check-Act (PDCA) cycles to systematically eliminate waste (Muda) in daily workflows."
+description: Apply Toyota Kaizen principles and Plan-Do-Check-Act (PDCA) cycles to systematically eliminate waste (Muda) in daily workflows.
 category: productivity
-aliases: [kaizen, continuous-improvement, pdca-cycle, muda-elimination]
+aliases:
+- kaizen
+- continuous-improvement
+- pdca-cycle
+- muda-elimination
 triggers:
-  - "apply Kaizen to my workflow"
-  - "continuous improvement PDCA"
-  - "eliminate waste in development process"
-  - "run a Kaizen workflow review"
-  - "identify Muda in my routine"
-keywords: [kaizen, pdca, continuous-improvement, toyota, muda, waste, efficiency, workflow]
+- apply Kaizen to my workflow
+- continuous improvement PDCA
+- eliminate waste in development process
+- run a Kaizen workflow review
+- identify Muda in my routine
+keywords:
+- kaizen
+- pdca
+- continuous-improvement
+- toyota
+- muda
+- waste
+- efficiency
+- workflow
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
 lifecycle: enabled
-capabilities: [waste-elimination, pdca-cycle-execution, workflow-streamlining]
-inputs: [workflow_description, recurring_friction, cycle_time]
-outputs: [kaizen_event_plan, muda_audit, standard_work_update]
+capabilities:
+- waste-elimination
+- pdca-cycle-execution
+- workflow-streamlining
+inputs:
+- workflow_description
+- recurring_friction
+- cycle_time
+outputs:
+- kaizen_event_plan
+- muda_audit
+- standard_work_update
 permissions:
   filesystem: none
   network: none
   shell: none
   secrets: none
+author: Mr-Nobody-Anonymous
+tags:
+- continuous
+- continuous-improvement
+- improvement
+- kaizen
+- pdca
+- productivity
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Kaizen Continuous Improvement

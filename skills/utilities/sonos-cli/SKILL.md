@@ -1,23 +1,57 @@
 ---
 name: sonos-cli
-description: "Inspect and control Sonos playback with room validation and confirmation for disruptive actions."
+description: Inspect and control Sonos playback with room validation and confirmation for disruptive actions.
 category: utilities
-aliases: [sonos, music, speaker, playback]
+aliases:
+- sonos
+- music
+- speaker
+- playback
 triggers:
-  - "Control Sonos"
-  - "Play music on Sonos"
-  - "Sonos speaker"
-  - "Pause Sonos"
-keywords: [sonos, music, speaker, playback, audio, streaming]
-dependencies: [optional:sonos-cli]
+- Control Sonos
+- Play music on Sonos
+- Sonos speaker
+- Pause Sonos
+keywords:
+- sonos
+- music
+- speaker
+- playback
+- audio
+- streaming
+dependencies:
+- optional:sonos-cli
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [sonos-cli, utilities]
-inputs: [task, context]
-outputs: [result, report]
+capabilities:
+- sonos-cli
+- utilities
+inputs:
+- task
+- context
+outputs:
+- result
+- report
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- cli
+- music
+- playback
+- sonos
+- speaker
+- utilities
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Sonos Cli

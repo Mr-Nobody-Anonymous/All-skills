@@ -2,18 +2,44 @@
 name: summarization
 description: Summarize long content — articles, documents, transcripts — at various lengths and for various audiences.
 category: utilities
-aliases: [summary, tldr, abstract]
+aliases:
+- summary
+- tldr
+- abstract
 triggers:
-  - summarize this
-  - tldr
-  - give me the summary
-  - shorten this
-keywords: [summarize, summary, tldr, abstract, shorten, condense]
+- summarize this
+- tldr
+- give me the summary
+- shorten this
+keywords:
+- summarize
+- summary
+- tldr
+- abstract
+- shorten
+- condense
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- abstract
+- summarization
+- summarize
+- summary
+- tldr
+- utilities
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Summarization

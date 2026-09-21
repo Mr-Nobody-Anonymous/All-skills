@@ -7,16 +7,33 @@ __pycache__/
 *.egg-info/
 .eggs/
 .pytest_cache/
+.coverage
+htmlcov/
 
 # Virtual environments
 venv/
 env/
 .venv/
+ENV/
 
 # Distribution
 build/
 dist/
 *.egg
+
+# Node / JS
+node_modules/
+.npm/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Secrets & Environment Variables
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
 
 # ─── Generated Runtime Views (hub-and-spoke architecture) ────────────────────
 # These agent harness directories are intentionally ignored because they are
@@ -37,12 +54,14 @@ dist/
 .roo/
 .windsurf/
 .github/skills/
+.gemini/
 # ─────────────────────────────────────────────────────────────────────────────
 
 *.swp
 *.swo
 .DS_Store
 Thumbs.db
+desktop.ini
 
 # Logs
 *.log

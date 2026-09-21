@@ -2,18 +2,43 @@
 name: xlsx
 description: Read, edit, and generate Excel .xlsx files — read sheets, compute, and produce workbooks programmatically.
 category: documents
-aliases: [excel, spreadsheet, xlsx-reading]
+aliases:
+- excel
+- spreadsheet
+- xlsx-reading
 triggers:
-  - read this spreadsheet
-  - extract from xlsx
-  - generate an Excel file
-  - edit this spreadsheet
-keywords: [xlsx, excel, spreadsheet, sheet, workbook, .xlsx]
+- read this spreadsheet
+- extract from xlsx
+- generate an Excel file
+- edit this spreadsheet
+keywords:
+- xlsx
+- excel
+- spreadsheet
+- sheet
+- workbook
+- .xlsx
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- documents
+- excel
+- sheet
+- spreadsheet
+- xlsx
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # XLSX

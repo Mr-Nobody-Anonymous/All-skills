@@ -2,19 +2,46 @@
 name: frontend-design
 description: Design and implement frontend interfaces — HTML, CSS, layouts, and visual design for the web.
 category: design
-aliases: [html-css, web-design, landing-page]
+aliases:
+- html-css
+- web-design
+- landing-page
 triggers:
-  - design this landing page
-  - style this page
-  - frontend design
-  - layout this
-  - CSS for this
-keywords: [frontend, html, css, layout, design, landing, page, style]
+- design this landing page
+- style this page
+- frontend design
+- layout this
+- CSS for this
+keywords:
+- frontend
+- html
+- css
+- layout
+- design
+- landing
+- page
+- style
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- css
+- design
+- frontend
+- html
+- layout
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Frontend Design

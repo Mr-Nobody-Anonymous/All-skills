@@ -1,29 +1,66 @@
 ---
 name: adhd-divergent-brainstorm
-description: "Spawn isolated parallel cognitive frames to prevent linear anchoring, bypass mental blocks, and prune low-value ideas."
+description: Spawn isolated parallel cognitive frames to prevent linear anchoring, bypass mental blocks, and prune low-value ideas.
 category: productivity
-aliases: [divergent-thinking, tree-of-thought, non-linear-brainstorm, parallel-ideation]
+aliases:
+- divergent-thinking
+- tree-of-thought
+- non-linear-brainstorm
+- parallel-ideation
 triggers:
-  - "divergent brainstorm"
-  - "tree of thought ideation"
-  - "bypass my mental block"
-  - "explore non-linear ideas"
-  - "ADHD brainstorming session"
-keywords: [divergent, brainstorm, adhd, tree-of-thought, cognitive, ideation, mental-block, parallel]
+- divergent brainstorm
+- tree of thought ideation
+- bypass my mental block
+- explore non-linear ideas
+- ADHD brainstorming session
+keywords:
+- divergent
+- brainstorm
+- adhd
+- tree-of-thought
+- cognitive
+- ideation
+- mental-block
+- parallel
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
 lifecycle: enabled
-capabilities: [divergent-brainstorming, tree-of-thought-exploration, block-bypassing]
-inputs: [problem, domain, constraints]
-outputs: [divergent_branches, pruned_options, high_leverage_ideas]
+capabilities:
+- divergent-brainstorming
+- tree-of-thought-exploration
+- block-bypassing
+inputs:
+- problem
+- domain
+- constraints
+outputs:
+- divergent_branches
+- pruned_options
+- high_leverage_ideas
 permissions:
   filesystem: none
   network: none
   shell: none
   secrets: none
+author: Mr-Nobody-Anonymous
+tags:
+- adhd
+- brainstorm
+- divergent
+- productivity
+- tree-of-thought
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # ADHD Divergent Brainstorm

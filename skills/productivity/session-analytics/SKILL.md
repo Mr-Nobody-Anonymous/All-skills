@@ -1,29 +1,68 @@
 ---
 name: session-analytics
-description: "Parse developer and agent session traces into productivity telemetry, decision trails, time allocation, and cognitive bottleneck metrics."
+description: Parse developer and agent session traces into productivity telemetry, decision trails, time allocation, and cognitive bottleneck metrics.
 category: productivity
-aliases: [developer-telemetry, productivity-analytics, session-metrics, work-log-parser]
+aliases:
+- developer-telemetry
+- productivity-analytics
+- session-metrics
+- work-log-parser
 triggers:
-  - "parse session analytics"
-  - "analyze my productivity session"
-  - "extract decision trail from working session"
-  - "summarize developer time allocation"
-  - "identify cognitive bottlenecks in work log"
-keywords: [analytics, session, metrics, telemetry, time, productivity, bottlenecks, decisions]
+- parse session analytics
+- analyze my productivity session
+- extract decision trail from working session
+- summarize developer time allocation
+- identify cognitive bottlenecks in work log
+keywords:
+- analytics
+- session
+- metrics
+- telemetry
+- time
+- productivity
+- bottlenecks
+- decisions
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
 lifecycle: enabled
-capabilities: [session-trace-parsing, decision-extraction, bottleneck-detection, time-auditing]
-inputs: [session_log, command_history, agent_transcript]
-outputs: [productivity_report, time_breakdown, decision_log, bottleneck_recommendations]
+capabilities:
+- session-trace-parsing
+- decision-extraction
+- bottleneck-detection
+- time-auditing
+inputs:
+- session_log
+- command_history
+- agent_transcript
+outputs:
+- productivity_report
+- time_breakdown
+- decision_log
+- bottleneck_recommendations
 permissions:
   filesystem: none
   network: none
   shell: none
   secrets: none
+author: Mr-Nobody-Anonymous
+tags:
+- analytics
+- metrics
+- productivity
+- session
+- telemetry
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Session Analytics

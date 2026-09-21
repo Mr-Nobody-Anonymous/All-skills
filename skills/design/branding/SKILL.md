@@ -2,18 +2,46 @@
 name: branding
 description: Brand identity work — voice, naming, visual language, and consistency.
 category: design
-aliases: [brand, identity, voice, naming]
+aliases:
+- brand
+- identity
+- voice
+- naming
 triggers:
-  - brand this
-  - help with brand voice
-  - naming ideas
-  - visual identity
-keywords: [brand, voice, identity, naming, logo, visual, language]
+- brand this
+- help with brand voice
+- naming ideas
+- visual identity
+keywords:
+- brand
+- voice
+- identity
+- naming
+- logo
+- visual
+- language
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- brand
+- branding
+- design
+- identity
+- naming
+- voice
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Branding

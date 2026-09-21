@@ -1,24 +1,57 @@
 ---
 name: agent-browser
-description: "Operate an agent-browser CLI for auditable navigation, extraction, screenshots, and UI checks."
+description: Operate an agent-browser CLI for auditable navigation, extraction, screenshots, and UI checks.
 category: web
-aliases: [browser]
+aliases:
+- browser
 triggers:
-  - "Navigate to this URL"
-  - "Take a screenshot"
-  - "Extract data from a webpage"
-  - "Fill out a web form"
-  - "Click a button on a page"
-keywords: [browser, automation, navigation, scrape, screenshot, click, type, extract]
-dependencies: [optional:agent-browser]
+- Navigate to this URL
+- Take a screenshot
+- Extract data from a webpage
+- Fill out a web form
+- Click a button on a page
+keywords:
+- browser
+- automation
+- navigation
+- scrape
+- screenshot
+- click
+- type
+- extract
+dependencies:
+- optional:agent-browser
 risk: medium
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [agent-browser, web]
-inputs: [task, context]
-outputs: [result, report]
+capabilities:
+- agent-browser
+- web
+inputs:
+- task
+- context
+outputs:
+- result
+- report
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- agent
+- automation
+- browser
+- navigation
+- scrape
+- web
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Agent Browser

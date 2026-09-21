@@ -1,24 +1,57 @@
 ---
 name: time-blocking
-description: "Build realistic deep-work time blocks around energy, priorities, breaks, and constraints."
+description: Build realistic deep-work time blocks around energy, priorities, breaks, and constraints.
 category: productivity
-aliases: [calendar-block]
+aliases:
+- calendar-block
 triggers:
-  - "Schedule deep work"
-  - "Block time for"
-  - "When should I do this"
-  - "I keep getting interrupted"
-  - "Help me plan my week"
-keywords: [time, block, schedule, deep, work, calendar, pomodoro, focus, planning]
+- Schedule deep work
+- Block time for
+- When should I do this
+- I keep getting interrupted
+- Help me plan my week
+keywords:
+- time
+- block
+- schedule
+- deep
+- work
+- calendar
+- pomodoro
+- focus
+- planning
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [time-blocking, productivity]
-inputs: [task, context]
-outputs: [result, report]
+capabilities:
+- time-blocking
+- productivity
+inputs:
+- task
+- context
+outputs:
+- result
+- report
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- block
+- blocking
+- deep
+- productivity
+- schedule
+- time
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Time Blocking

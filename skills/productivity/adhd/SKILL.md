@@ -2,25 +2,49 @@
 name: adhd
 description: Support ADHD-style working memory, initiation, and attention patterns with external scaffolding and task design.
 category: productivity
-aliases: [adhd-assistant, attention, working-memory, executive-function]
+aliases:
+- adhd-assistant
+- attention
+- working-memory
+- executive-function
 triggers:
-  - ADHD
-  - I have ADHD
-  - I just remembered
-  - I started something else
-  - I can't remember what I was doing
-  - I have 100 tabs open
-  - executive function
-  - I keep losing track
-keywords: [adhd, attention, working, memory, hyperfocus, executive, function, distract, initiat]
+- ADHD
+- I have ADHD
+- I just remembered
+- I started something else
+- I can't remember what I was doing
+- I have 100 tabs open
+- executive function
+- I keep losing track
+keywords:
+- adhd
+- attention
+- working
+- memory
+- hyperfocus
+- executive
+- function
+- distract
+- initiat
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [scaffolding, working-memory, task-design, attention, reminder, external-structure]
-inputs: [task, attention-state, context]
-outputs: [scaffold-plan, reminder]
+capabilities:
+- scaffolding
+- working-memory
+- task-design
+- attention
+- reminder
+- external-structure
+inputs:
+- task
+- attention-state
+- context
+outputs:
+- scaffold-plan
+- reminder
 permissions:
   filesystem: read
   network: none
@@ -34,6 +58,17 @@ compatibility:
   cline: true
   opencode: true
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- adhd
+- attention
+- memory
+- productivity
+- working
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # ADHD

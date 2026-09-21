@@ -1,23 +1,58 @@
 ---
 name: web-scraper
-description: "Extract permitted public web data with rate limits, provenance, and robots/terms awareness."
+description: Extract permitted public web data with rate limits, provenance, and robots/terms awareness.
 category: web
-aliases: [scraper, crawl, extract, web-data]
+aliases:
+- scraper
+- crawl
+- extract
+- web-data
 triggers:
-  - "Scrape this webpage"
-  - "Extract data from a website"
-  - "Pull information from this URL"
-  - "Parse web content"
-keywords: [scraping, extraction, crawl, data, parse, html, json]
-dependencies: [optional:http-client]
+- Scrape this webpage
+- Extract data from a website
+- Pull information from this URL
+- Parse web content
+keywords:
+- scraping
+- extraction
+- crawl
+- data
+- parse
+- html
+- json
+dependencies:
+- optional:http-client
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [web-scraper, web]
-inputs: [task, context]
-outputs: [result, report]
+capabilities:
+- web-scraper
+- web
+inputs:
+- task
+- context
+outputs:
+- result
+- report
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- crawl
+- data
+- extraction
+- scraper
+- scraping
+- web
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Web Scraper

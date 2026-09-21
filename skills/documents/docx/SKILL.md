@@ -2,18 +2,42 @@
 name: docx
 description: Read, edit, and generate Microsoft Word .docx files — extract text, modify structure, and produce documents programmatically.
 category: documents
-aliases: [word, docx-reading, docx-generation]
+aliases:
+- word
+- docx-reading
+- docx-generation
 triggers:
-  - read this Word doc
-  - extract from docx
-  - generate a Word document
-  - edit this docx
-keywords: [docx, word, document, .docx, openxml]
+- read this Word doc
+- extract from docx
+- generate a Word document
+- edit this docx
+keywords:
+- docx
+- word
+- document
+- .docx
+- openxml
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- .docx
+- document
+- documents
+- docx
+- word
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # DOCX

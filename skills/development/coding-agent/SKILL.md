@@ -1,24 +1,62 @@
 ---
 name: coding-agent
-description: "Delegate bounded coding work to an installed coding-agent CLI with explicit scope and verification."
+description: Delegate bounded coding work to an installed coding-agent CLI with explicit scope and verification.
 category: development
-aliases: [codex, claude-code, headless-agent, ai-coding, autopilot]
+aliases:
+- codex
+- claude-code
+- headless-agent
+- ai-coding
+- autopilot
 triggers:
-  - "Run the coding agent"
-  - "Use Codex"
-  - "Use Claude Code"
-  - "Spin up an agent to fix this"
-  - "Hand this off to an agent"
-keywords: [codex, claude, code, agent, headless, cli, autonomous, coding, ai]
-dependencies: [optional:codex-or-claude-cli]
+- Run the coding agent
+- Use Codex
+- Use Claude Code
+- Spin up an agent to fix this
+- Hand this off to an agent
+keywords:
+- codex
+- claude
+- code
+- agent
+- headless
+- cli
+- autonomous
+- coding
+- ai
+dependencies:
+- optional:codex-or-claude-cli
 risk: medium
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [coding-agent, development]
-inputs: [task, context]
-outputs: [result, report]
+capabilities:
+- coding-agent
+- development
+inputs:
+- task
+- context
+outputs:
+- result
+- report
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- agent
+- claude
+- code
+- codex
+- coding
+- development
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Coding Agent

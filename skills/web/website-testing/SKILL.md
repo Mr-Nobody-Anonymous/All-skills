@@ -2,18 +2,46 @@
 name: website-testing
 description: End-to-end testing of websites — happy paths, edge cases, browser matrix, and visual regressions.
 category: web
-aliases: [e2e-testing, end-to-end, visual-regression]
+aliases:
+- e2e-testing
+- end-to-end
+- visual-regression
 triggers:
-  - test this website
-  - e2e tests
-  - end-to-end test
-  - visual regression
-keywords: [test, e2e, end-to-end, regression, browser, matrix, automation]
-dependencies: [optional:playwright-or-cypress]
+- test this website
+- e2e tests
+- end-to-end test
+- visual regression
+keywords:
+- test
+- e2e
+- end-to-end
+- regression
+- browser
+- matrix
+- automation
+dependencies:
+- optional:playwright-or-cypress
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- e2e
+- end-to-end
+- regression
+- test
+- testing
+- web
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Website Testing

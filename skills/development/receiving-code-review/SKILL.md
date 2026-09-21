@@ -3,21 +3,48 @@ name: receiving-code-review
 description: Evaluate code-review feedback technically before accepting, rejecting, or implementing it.
 category: development
 version: 1.0.0
-aliases: [review-feedback, address-review, respond-to-review]
-triggers: [address this review feedback, is this reviewer correct]
-keywords: [review, feedback, verify, pushback]
+aliases:
+- review-feedback
+- address-review
+- respond-to-review
+triggers:
+- address this review feedback
+- is this reviewer correct
+keywords:
+- review
+- feedback
+- verify
+- pushback
 dependencies: []
-composes_with: [development.testing]
+composes_with:
+- development.testing
 source: obra/superpowers
 source_repository: obra/superpowers
 source_path: skills/receiving-code-review
 source_commit: b36e0829c6d0140e93cfef2ca599b1b07d4a7797
 imported_at: 2026-09-01
 license: MIT
-original_author: "Jesse Vincent"
+original_author: Jesse Vincent
 modified: true
 enabled: true
 risk: low
+author: Jesse Vincent
+tags:
+- code
+- development
+- feedback
+- pushback
+- receiving
+- review
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Receiving Code Review

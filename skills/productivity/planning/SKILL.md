@@ -2,21 +2,48 @@
 name: planning
 description: Turn a vague goal, idea, or situation into a clear, scoped plan with objectives, scope, and first moves.
 category: productivity
-aliases: [plan, strategic-planning, goal-planning, daily-planning]
+aliases:
+- plan
+- strategic-planning
+- goal-planning
+- daily-planning
 triggers:
-  - help me plan
-  - I want to plan
-  - let's plan this
-  - daily plan
-  - weekly plan
-  - I need a plan
-  - goal planning
-keywords: [plan, planning, goal, objective, scope, schedule, strategy]
+- help me plan
+- I want to plan
+- let's plan this
+- daily plan
+- weekly plan
+- I need a plan
+- goal planning
+keywords:
+- plan
+- planning
+- goal
+- objective
+- scope
+- schedule
+- strategy
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- goal
+- objective
+- plan
+- planning
+- productivity
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Planning

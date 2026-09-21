@@ -1,23 +1,56 @@
 ---
 name: weather-now
-description: "Retrieve current weather and local conditions with location, timestamp, and source clarity."
+description: Retrieve current weather and local conditions with location, timestamp, and source clarity.
 category: utilities
-aliases: [weather, forecast, temperature, conditions]
+aliases:
+- weather
+- forecast
+- temperature
+- conditions
 triggers:
-  - "What's the weather"
-  - "Weather forecast"
-  - "Current conditions"
-  - "Temperature"
-keywords: [weather, forecast, temperature, conditions, location]
-dependencies: [optional:weather-api]
+- What's the weather
+- Weather forecast
+- Current conditions
+- Temperature
+keywords:
+- weather
+- forecast
+- temperature
+- conditions
+- location
+dependencies:
+- optional:weather-api
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [weather-now, utilities]
-inputs: [task, context]
-outputs: [result, report]
+capabilities:
+- weather-now
+- utilities
+inputs:
+- task
+- context
+outputs:
+- result
+- report
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- conditions
+- forecast
+- now
+- temperature
+- utilities
+- weather
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Weather Now

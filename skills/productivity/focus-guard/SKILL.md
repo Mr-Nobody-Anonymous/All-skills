@@ -1,24 +1,60 @@
 ---
 name: focus-guard
-description: "Protect a focus session by defining one outcome, blocking distractions, and handling interruptions."
+description: Protect a focus session by defining one outcome, blocking distractions, and handling interruptions.
 category: productivity
-aliases: [do-not-disturb, dnd, focus-mode, distraction-shield, quiet]
+aliases:
+- do-not-disturb
+- dnd
+- focus-mode
+- distraction-shield
+- quiet
 triggers:
-  - "I need to focus"
-  - "Turn off notifications"
-  - "Stop the distractions"
-  - "Focus mode"
-  - "I'm getting pulled away"
-keywords: [focus, distraction, notification, dnd, quiet, interrupt, shield, block]
+- I need to focus
+- Turn off notifications
+- Stop the distractions
+- Focus mode
+- I'm getting pulled away
+keywords:
+- focus
+- distraction
+- notification
+- dnd
+- quiet
+- interrupt
+- shield
+- block
 dependencies: []
 risk: medium
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [focus-guard, productivity]
-inputs: [task, context]
-outputs: [result, report]
+capabilities:
+- focus-guard
+- productivity
+inputs:
+- task
+- context
+outputs:
+- result
+- report
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- distraction
+- dnd
+- focus
+- guard
+- notification
+- productivity
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Focus Guard

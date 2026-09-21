@@ -2,26 +2,50 @@
 name: unlazy
 description: Activate the user out of procrastination, avoidance, or "I don't want to start" states using tiny first steps and momentum framing.
 category: productivity
-aliases: [anti-procrastination, motivation, get-started, just-start, overcome-procrastination]
+aliases:
+- anti-procrastination
+- motivation
+- get-started
+- just-start
+- overcome-procrastination
 triggers:
-  - I'm procrastinating
-  - I don't want to work
-  - I keep avoiding this
-  - I can't get started
-  - help me start
-  - I'm being lazy
-  - I don't feel like it
-  - I should be working but I'm not
-  - motivation
-keywords: [procrastinate, avoid, lazy, stuck, start, begin, momentum, motivation, avoidant]
+- I'm procrastinating
+- I don't want to work
+- I keep avoiding this
+- I can't get started
+- help me start
+- I'm being lazy
+- I don't feel like it
+- I should be working but I'm not
+- motivation
+keywords:
+- procrastinate
+- avoid
+- lazy
+- stuck
+- start
+- begin
+- momentum
+- motivation
+- avoidant
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [start-task, momentum, next-action, two-minute-rule, anti-procrastination, body-doubling]
-inputs: [task, stuck-duration, attempts]
-outputs: [next-action]
+capabilities:
+- start-task
+- momentum
+- next-action
+- two-minute-rule
+- anti-procrastination
+- body-doubling
+inputs:
+- task
+- stuck-duration
+- attempts
+outputs:
+- next-action
 permissions:
   filesystem: read
   network: none
@@ -36,6 +60,18 @@ compatibility:
   opencode: true
   gemini_cli: true
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- avoid
+- lazy
+- procrastinate
+- productivity
+- stuck
+- unlazy
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Unlazy

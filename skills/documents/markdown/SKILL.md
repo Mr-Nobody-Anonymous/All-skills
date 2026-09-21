@@ -2,18 +2,43 @@
 name: markdown
 description: Read, write, lint, and transform Markdown — headings, links, code fences, tables, and common dialects.
 category: documents
-aliases: [md, markdown-lint, gfm]
+aliases:
+- md
+- markdown-lint
+- gfm
 triggers:
-  - format this markdown
-  - lint markdown
-  - convert markdown to
-  - markdown style
-keywords: [markdown, md, gfm, headings, links, code, fence]
+- format this markdown
+- lint markdown
+- convert markdown to
+- markdown style
+keywords:
+- markdown
+- md
+- gfm
+- headings
+- links
+- code
+- fence
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- documents
+- gfm
+- headings
+- markdown
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Markdown

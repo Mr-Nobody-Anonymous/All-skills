@@ -2,19 +2,45 @@
 name: fact-checking
 description: Verify a claim by checking primary sources, looking for authoritative confirmation, and rating confidence.
 category: research
-aliases: [verify, fact-check, claim-verification]
+aliases:
+- verify
+- fact-check
+- claim-verification
 triggers:
-  - is this true
-  - verify this
-  - fact check
-  - check this claim
-  - is this accurate
-keywords: [fact, check, verify, true, claim, accuracy, source]
+- is this true
+- verify this
+- fact check
+- check this claim
+- is this accurate
+keywords:
+- fact
+- check
+- verify
+- true
+- claim
+- accuracy
+- source
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- check
+- checking
+- fact
+- research
+- verify
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Fact Checking

@@ -2,18 +2,42 @@
 name: tdd
 description: Test-Driven Development discipline — red/green/refactor cycles for designing code from tests outward.
 category: development
-aliases: [test-driven, red-green-refactor]
+aliases:
+- test-driven
+- red-green-refactor
 triggers:
-  - let's do TDD
-  - test first
-  - red green refactor
-  - write the test first
-keywords: [tdd, test-driven, red, green, refactor, cycle]
+- let's do TDD
+- test first
+- red green refactor
+- write the test first
+keywords:
+- tdd
+- test-driven
+- red
+- green
+- refactor
+- cycle
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- development
+- green
+- red
+- tdd
+- test-driven
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # TDD (Test-Driven Development)

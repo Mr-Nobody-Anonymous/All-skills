@@ -2,19 +2,45 @@
 name: code-review
 description: Review code for correctness, readability, design, tests, security, and style. Produce actionable, kind, prioritized feedback.
 category: development
-aliases: [review, pr-review, peer-review]
+aliases:
+- review
+- pr-review
+- peer-review
 triggers:
-  - review this code
-  - review my PR
-  - code review
-  - look at this diff
-  - is this code good
-keywords: [review, pr, diff, feedback, critique, comment, approve]
+- review this code
+- review my PR
+- code review
+- look at this diff
+- is this code good
+keywords:
+- review
+- pr
+- diff
+- feedback
+- critique
+- comment
+- approve
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- code
+- development
+- diff
+- feedback
+- review
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Code Review

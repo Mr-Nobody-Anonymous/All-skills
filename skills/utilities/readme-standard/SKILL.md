@@ -1,21 +1,51 @@
 ---
 name: readme-standard
-description: "Write and review concise, progressive READMEs with executable examples and verified links."
+description: Write and review concise, progressive READMEs with executable examples and verified links.
 category: utilities
 aliases: []
 triggers:
-  - "use readme-standard"
-  - "run readme-standard"
-keywords: [readme-standard, utilities, write, review, concise, progressive, readmes]
+- use readme-standard
+- run readme-standard
+keywords:
+- readme-standard
+- utilities
+- write
+- review
+- concise
+- progressive
+- readmes
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [readme-standard, utilities]
-inputs: [task, context]
-outputs: [result, report]
+capabilities:
+- readme-standard
+- utilities
+inputs:
+- task
+- context
+outputs:
+- result
+- report
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- readme
+- readme-standard
+- review
+- standard
+- utilities
+- write
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Readme Standard

@@ -1,23 +1,58 @@
 ---
 name: cursor-agent
-description: "Use Cursor Agent safely for bounded software tasks without unattended destructive actions."
+description: Use Cursor Agent safely for bounded software tasks without unattended destructive actions.
 category: development
-aliases: [cursor, cursor-cli, ai-ide, agent]
+aliases:
+- cursor
+- cursor-cli
+- ai-ide
+- agent
 triggers:
-  - "Use Cursor"
-  - "Run the Cursor agent"
-  - "Hand this to Cursor"
-  - "Cursor CLI"
-keywords: [cursor, cli, agent, ide, tmux, code, ai, automation]
-dependencies: [optional:cursor-agent]
+- Use Cursor
+- Run the Cursor agent
+- Hand this to Cursor
+- Cursor CLI
+keywords:
+- cursor
+- cli
+- agent
+- ide
+- tmux
+- code
+- ai
+- automation
+dependencies:
+- optional:cursor-agent
 risk: medium
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [cursor-agent, development]
-inputs: [task, context]
-outputs: [result, report]
+capabilities:
+- cursor-agent
+- development
+inputs:
+- task
+- context
+outputs:
+- result
+- report
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- agent
+- cli
+- cursor
+- development
+- ide
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Cursor Agent

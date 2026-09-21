@@ -2,18 +2,43 @@
 name: csv
 description: Read, parse, write, and clean CSV files — dialect handling, type inference, and validation.
 category: documents
-aliases: [csv-reading, csv-cleaning, csv-generation]
+aliases:
+- csv-reading
+- csv-cleaning
+- csv-generation
 triggers:
-  - read this CSV
-  - parse CSV
-  - clean this CSV
-  - generate a CSV
-keywords: [csv, comma-separated, parse, dialect, quote, field]
+- read this CSV
+- parse CSV
+- clean this CSV
+- generate a CSV
+keywords:
+- csv
+- comma-separated
+- parse
+- dialect
+- quote
+- field
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- comma-separated
+- csv
+- dialect
+- documents
+- parse
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # CSV

@@ -1,0 +1,77 @@
+name: Propose New Skill
+description: Propose a new agent skill for inclusion in All-Skills
+title: "[Skill]: <skill-slug-name>"
+labels: ["enhancement", "skill-proposal"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for proposing a new skill to **All Skills**! Please provide the details below so the skill can be reviewed and validated against our schema.
+  - type: input
+    id: skill_name
+    attributes:
+      label: Skill Name / Identifier Slug
+      description: Lowercase alphanumeric with hyphens (e.g., `distributed-tracing-expert`).
+      placeholder: e.g. distributed-tracing-expert
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category / Functional Domain
+      description: Choose the primary domain category.
+      options:
+        - development
+        - security
+        - architecture
+        - devops
+        - testing
+        - ai-ml
+        - data_science
+        - database
+        - design
+        - healthcare
+        - finance
+        - workflow
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Skill Description & Activation Criteria
+      description: Detailed summary explaining what the skill accomplishes and exact conditions under which an agent should activate it.
+      placeholder: "Expert guidance in instrumenting OpenTelemetry collectors... Use this skill when..."
+    validations:
+      required: true
+  - type: textarea
+    id: trigger_phrases
+    attributes:
+      label: Trigger Phrases
+      description: List of user prompt keywords or phrases that activate this skill (one per line).
+      placeholder: |
+        - set up opentelemetry tracing
+        - debug distributed span latency
+        - configure jaeger exporter
+    validations:
+      required: true
+  - type: checkboxes
+    id: permissions
+    attributes:
+      label: Required Tool Capabilities & Permissions
+      options:
+        - label: Terminal / Shell execution (`bash`)
+        - label: Filesystem read access (`file_read`)
+        - label: Filesystem write access (`file_write`, `file_edit`)
+        - label: Network / Internet access (`read_url`, `browser`)
+        - label: AST search / code transform (`ast_grep`)
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Contributor Checklist
+      options:
+        - label: I have verified this skill name is unique across the catalog.
+          required: true
+        - label: I will provide a standard layout (`SKILL.md`, `README.md`, `examples/`, `references/`).
+          required: true
+        - label: I will include prompt-injection hardening and safety boundaries.
+          required: true

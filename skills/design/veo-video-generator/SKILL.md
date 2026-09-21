@@ -1,23 +1,56 @@
 ---
 name: veo-video-generator
-description: "Plan and generate Google Veo videos from approved prompts, assets, and output constraints."
+description: Plan and generate Google Veo videos from approved prompts, assets, and output constraints.
 category: design
-aliases: [generation, veo, google-veo, ai-video]
+aliases:
+- generation
+- veo
+- google-veo
+- ai-video
 triggers:
-  - "Generate a video"
-  - "Create a video from this prompt"
-  - "Make an AI video"
-  - "Veo video"
-keywords: [video, generation, ai, veo, google, animation]
-dependencies: [optional:GOOGLE_API_KEY]
+- Generate a video
+- Create a video from this prompt
+- Make an AI video
+- Veo video
+keywords:
+- video
+- generation
+- ai
+- veo
+- google
+- animation
+dependencies:
+- optional:GOOGLE_API_KEY
 risk: medium
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [veo-video-generator, design]
-inputs: [task, context]
-outputs: [result, report]
+capabilities:
+- veo-video-generator
+- design
+inputs:
+- task
+- context
+outputs:
+- result
+- report
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- design
+- generation
+- generator
+- veo
+- video
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Veo Video Generator

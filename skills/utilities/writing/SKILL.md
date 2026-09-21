@@ -2,18 +2,45 @@
 name: writing
 description: Help the user write clearly — drafts, edits, tone, structure. Apply principles of clear writing.
 category: utilities
-aliases: [draft, edit, copywriting]
+aliases:
+- draft
+- edit
+- copywriting
 triggers:
-  - help me write
-  - edit this
-  - draft an email
-  - make this clearer
-keywords: [write, draft, edit, copy, prose, tone, clarity]
+- help me write
+- edit this
+- draft an email
+- make this clearer
+keywords:
+- write
+- draft
+- edit
+- copy
+- prose
+- tone
+- clarity
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- copy
+- draft
+- edit
+- utilities
+- write
+- writing
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Writing

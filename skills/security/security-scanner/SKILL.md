@@ -1,24 +1,56 @@
 ---
 name: security-scanner
-description: "Gate releases with defensive static, dependency, secret, and configuration security checks."
+description: Gate releases with defensive static, dependency, secret, and configuration security checks.
 category: security
-aliases: [scan, secret]
+aliases:
+- scan
+- secret
 triggers:
-  - "Security scan"
-  - "Check for vulnerabilities"
-  - "Scan for secrets"
-  - "Security audit"
-  - "Vulnerability check"
-keywords: [security, scan, vulnerability, secret, audit, cve, sast]
-dependencies: [optional:security-scanners]
+- Security scan
+- Check for vulnerabilities
+- Scan for secrets
+- Security audit
+- Vulnerability check
+keywords:
+- security
+- scan
+- vulnerability
+- secret
+- audit
+- cve
+- sast
+dependencies:
+- optional:security-scanners
 risk: medium
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [security-scanner, security]
-inputs: [task, context]
-outputs: [result, report]
+capabilities:
+- security-scanner
+- security
+inputs:
+- task
+- context
+outputs:
+- result
+- report
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- scan
+- scanner
+- secret
+- security
+- vulnerability
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Security Scanner

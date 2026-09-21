@@ -1,23 +1,56 @@
 ---
 name: dokploy
-description: "Inspect and manage Dokploy deployments through its API with explicit confirmation for mutations."
+description: Inspect and manage Dokploy deployments through its API with explicit confirmation for mutations.
 category: development
-aliases: [hosting, self-host]
+aliases:
+- hosting
+- self-host
 triggers:
-  - "Deploy to Dokploy"
-  - "Restart the app on Dokploy"
-  - "Add a domain"
-  - "List projects on Dokploy"
-keywords: [dokploy, deploy, hosting, project, application, domain, server, docker]
-dependencies: [optional:DOKPLOY_API_KEY]
+- Deploy to Dokploy
+- Restart the app on Dokploy
+- Add a domain
+- List projects on Dokploy
+keywords:
+- dokploy
+- deploy
+- hosting
+- project
+- application
+- domain
+- server
+- docker
+dependencies:
+- optional:DOKPLOY_API_KEY
 risk: high
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [dokploy, development]
-inputs: [task, context]
-outputs: [result, report]
+capabilities:
+- dokploy
+- development
+inputs:
+- task
+- context
+outputs:
+- result
+- report
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- deploy
+- development
+- dokploy
+- hosting
+- project
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Dokploy

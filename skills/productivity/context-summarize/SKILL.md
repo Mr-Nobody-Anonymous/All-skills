@@ -1,24 +1,57 @@
 ---
 name: context-summarize
-description: "Compress active context into decisions, facts, open questions, and next actions."
+description: Compress active context into decisions, facts, open questions, and next actions.
 category: productivity
-aliases: [context, meeting-summary]
+aliases:
+- context
+- meeting-summary
 triggers:
-  - "Summarize this"
-  - "TL;DR"
-  - "Extract the action items"
-  - "What are the key points"
-  - "Compress this transcript"
-keywords: [summarize, tldr, context, notes, transcript, meeting, action, items, decisions]
+- Summarize this
+- TL;DR
+- Extract the action items
+- What are the key points
+- Compress this transcript
+keywords:
+- summarize
+- tldr
+- context
+- notes
+- transcript
+- meeting
+- action
+- items
+- decisions
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [context-summarize, productivity]
-inputs: [task, context]
-outputs: [result, report]
+capabilities:
+- context-summarize
+- productivity
+inputs:
+- task
+- context
+outputs:
+- result
+- report
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- context
+- notes
+- productivity
+- summarize
+- tldr
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Context Summarize

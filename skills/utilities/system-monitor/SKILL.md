@@ -1,24 +1,60 @@
 ---
 name: system-monitor
-description: "Inspect system telemetry and summarize CPU, memory, disk, process, and network anomalies."
+description: Inspect system telemetry and summarize CPU, memory, disk, process, and network anomalies.
 category: utilities
-aliases: [system, monitor, telemetry, metrics, performance]
+aliases:
+- system
+- monitor
+- telemetry
+- metrics
+- performance
 triggers:
-  - "Check system status"
-  - "System health"
-  - "Server metrics"
-  - "CPU usage"
-  - "Memory check"
-keywords: [system, monitor, cpu, memory, disk, network, metrics, telemetry]
-dependencies: [optional:system-tools]
+- Check system status
+- System health
+- Server metrics
+- CPU usage
+- Memory check
+keywords:
+- system
+- monitor
+- cpu
+- memory
+- disk
+- network
+- metrics
+- telemetry
+dependencies:
+- optional:system-tools
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [system-monitor, utilities]
-inputs: [task, context]
-outputs: [result, report]
+capabilities:
+- system-monitor
+- utilities
+inputs:
+- task
+- context
+outputs:
+- result
+- report
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- cpu
+- memory
+- monitor
+- system
+- utilities
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # System Monitor

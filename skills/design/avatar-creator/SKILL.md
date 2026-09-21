@@ -1,23 +1,58 @@
 ---
 name: avatar-creator
-description: "Design consistent avatar and asset specifications across required formats and sizes."
+description: Design consistent avatar and asset specifications across required formats and sizes.
 category: design
-aliases: [avatar, profile-image, icon, character-design]
+aliases:
+- avatar
+- profile-image
+- icon
+- character-design
 triggers:
-  - "Create an avatar"
-  - "Design a profile image"
-  - "Generate character art"
-  - "Make an icon"
-keywords: [avatar, profile, image, icon, character, design, art]
-dependencies: [optional:image-generator]
+- Create an avatar
+- Design a profile image
+- Generate character art
+- Make an icon
+keywords:
+- avatar
+- profile
+- image
+- icon
+- character
+- design
+- art
+dependencies:
+- optional:image-generator
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [avatar-creator, design]
-inputs: [task, context]
-outputs: [result, report]
+capabilities:
+- avatar-creator
+- design
+inputs:
+- task
+- context
+outputs:
+- result
+- report
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- avatar
+- creator
+- design
+- icon
+- image
+- profile
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Avatar Creator

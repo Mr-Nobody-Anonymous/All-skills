@@ -1,29 +1,66 @@
 ---
 name: adhd-output-style
-description: "Format agent responses to be ADHD-friendly (concise, scannable, bottom-line upfront, zero fluff, heavy visual chunking)."
+description: Format agent responses to be ADHD-friendly (concise, scannable, bottom-line upfront, zero fluff, heavy visual chunking).
 category: productivity
-aliases: [bluf, adhd-format, chunked-output, concise-format]
+aliases:
+- bluf
+- adhd-format
+- chunked-output
+- concise-format
 triggers:
-  - "format for ADHD"
-  - "give me the bottom line first"
-  - "BLUF format"
-  - "make this scannable"
-  - "ADHD output style"
-keywords: [adhd, bluf, format, concise, chunking, scannable, brevity, bullet]
+- format for ADHD
+- give me the bottom line first
+- BLUF format
+- make this scannable
+- ADHD output style
+keywords:
+- adhd
+- bluf
+- format
+- concise
+- chunking
+- scannable
+- brevity
+- bullet
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
 lifecycle: enabled
-capabilities: [adhd-formatting, visual-chunking, bluf-synthesis]
-inputs: [text, task, response]
-outputs: [scannable_response, action_checklist]
+capabilities:
+- adhd-formatting
+- visual-chunking
+- bluf-synthesis
+inputs:
+- text
+- task
+- response
+outputs:
+- scannable_response
+- action_checklist
 permissions:
   filesystem: none
   network: none
   shell: none
   secrets: none
+author: Mr-Nobody-Anonymous
+tags:
+- adhd
+- bluf
+- concise
+- format
+- output
+- productivity
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # ADHD Output Style

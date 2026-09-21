@@ -1,0 +1,157 @@
+{
+  "suite": "routing_trigger_evals",
+  "version": "2.0.0",
+  "total_cases": 25,
+  "cases": [
+    {
+      "id": "rt_01",
+      "query": "document architecture decision for selecting Aurora Postgres",
+      "expected_skill": "architecture-decision-records",
+      "expected_category": "architecture"
+    },
+    {
+      "id": "rt_02",
+      "query": "draft an ADR comparing Redis vs Memcached",
+      "expected_skill": "architecture-decision-records",
+      "expected_category": "architecture"
+    },
+    {
+      "id": "rt_03",
+      "query": "calculate ICER for new oncology monoclonal antibody treatment",
+      "expected_skill": "health-economist",
+      "expected_category": "healthcare"
+    },
+    {
+      "id": "rt_04",
+      "query": "perform health technology assessment and QALY valuation",
+      "expected_skill": "health-economist",
+      "expected_category": "healthcare"
+    },
+    {
+      "id": "rt_05",
+      "query": "review this git pull request for security vulnerabilities and race conditions",
+      "expected_skill": "code-review-excellence",
+      "expected_category": "development"
+    },
+    {
+      "id": "rt_06",
+      "query": "audit this web application for WCAG 2.2 AA accessibility compliance",
+      "expected_skill": "accessibility-compliance-accessibility-audit",
+      "expected_category": "design"
+    },
+    {
+      "id": "rt_07",
+      "query": "optimize database query indexing for postgresql jsonb queries",
+      "expected_skill": "database-design",
+      "expected_category": "database"
+    },
+    {
+      "id": "rt_08",
+      "query": "set up github actions ci cd pipeline with test runners",
+      "expected_skill": "ci-cd-and-automation",
+      "expected_category": "devops"
+    },
+    {
+      "id": "rt_09",
+      "query": "design rest api endpoints and openapi specification for order service",
+      "expected_skill": "api-designer",
+      "expected_category": "development"
+    },
+    {
+      "id": "rt_10",
+      "query": "perform red team penetration testing and attack surface mapping",
+      "expected_skill": "red-team-tactics",
+      "expected_category": "security"
+    },
+    {
+      "id": "rt_11",
+      "query": "manage state in angular with signals and component stores",
+      "expected_skill": "angular-state-management",
+      "expected_category": "development"
+    },
+    {
+      "id": "rt_12",
+      "query": "manage react global state with zustand and react query",
+      "expected_skill": "react-state-management",
+      "expected_category": "development"
+    },
+    {
+      "id": "rt_13",
+      "query": "brainstorm architecture ideas into design before coding",
+      "expected_skill": "brainstorming",
+      "expected_category": "development"
+    },
+    {
+      "id": "rt_14",
+      "query": "automate changelog generation from git commits following keep a changelog",
+      "expected_skill": "changelog-automation",
+      "expected_category": "development"
+    },
+    {
+      "id": "rt_15",
+      "query": "evaluate agent behavior with versioned eval cases and assertions",
+      "expected_skill": "agent-evaluation",
+      "expected_category": "ai-ml"
+    },
+    {
+      "id": "rt_16",
+      "query": "build production mcp server with typescript or python",
+      "expected_skill": "mcp-builder",
+      "expected_category": "development"
+    },
+    {
+      "id": "rt_17",
+      "query": "deploy kubernetes helm charts and service mesh for microservices",
+      "expected_skill": "kubernetes-deployment",
+      "expected_category": "devops"
+    },
+    {
+      "id": "rt_18",
+      "query": "provision cloud infrastructure with terraform modules",
+      "expected_skill": "terraform-infrastructure",
+      "expected_category": "devops"
+    },
+    {
+      "id": "rt_19",
+      "query": "write conversion focused copywriting for saas landing page",
+      "expected_skill": "copywriting",
+      "expected_category": "marketing"
+    },
+    {
+      "id": "rt_20",
+      "query": "optimize prompt for claude and reduce token usage",
+      "expected_skill": "llm-prompt-optimizer",
+      "expected_category": "ai-ml"
+    },
+    {
+      "id": "rt_21",
+      "query": "setup playwright browser automation tests with visual regression",
+      "expected_skill": "playwright-skill",
+      "expected_category": "testing"
+    },
+    {
+      "id": "rt_22",
+      "query": "test driven development red green refactor workflow",
+      "expected_skill": "tdd",
+      "expected_category": "development"
+    },
+    {
+      "id": "rt_23",
+      "query": "enforce security sandboxing guardrails and forbidden commands",
+      "expected_skill": "security-sandboxing-guardrails",
+      "expected_category": "security"
+    },
+    {
+      "id": "rt_24",
+      "query": "manage context window budget and prune tokens to avoid context rot",
+      "expected_skill": "context-budget-and-pruning",
+      "expected_category": "ai-ml"
+    },
+    {
+      "id": "rt_25",
+      "query": "multi-agent coordination with supervisor pattern and handoffs",
+      "expected_skill": "multi-agent-patterns",
+      "expected_category": "ai-ml"
+    }
+  ]
+}

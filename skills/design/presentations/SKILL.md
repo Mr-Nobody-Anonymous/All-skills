@@ -2,18 +2,45 @@
 name: presentations
 description: Design and structure presentations — narrative arc, slide content, visual hierarchy, and delivery notes.
 category: design
-aliases: [slide-design, deck-design, presentation-design]
+aliases:
+- slide-design
+- deck-design
+- presentation-design
 triggers:
-  - design a presentation
-  - structure my talk
-  - slides for
-  - presentation outline
-keywords: [presentation, slides, deck, talk, narrative, arc, visual]
+- design a presentation
+- structure my talk
+- slides for
+- presentation outline
+keywords:
+- presentation
+- slides
+- deck
+- talk
+- narrative
+- arc
+- visual
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- deck
+- design
+- presentation
+- presentations
+- slides
+- talk
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Presentations

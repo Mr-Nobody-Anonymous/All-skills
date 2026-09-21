@@ -1,23 +1,58 @@
 ---
 name: media-downloader
-description: "Download user-authorized public media while respecting rights, terms, and safe filenames."
+description: Download user-authorized public media while respecting rights, terms, and safe filenames.
 category: web
-aliases: [download, media, youtube, audio]
+aliases:
+- download
+- media
+- youtube
+- audio
 triggers:
-  - "Download this video"
-  - "Save this audio"
-  - "Download the image"
-  - "Get this media file"
-keywords: [download, media, video, audio, image, youtube, mp3]
-dependencies: [optional:media-downloader]
+- Download this video
+- Save this audio
+- Download the image
+- Get this media file
+keywords:
+- download
+- media
+- video
+- audio
+- image
+- youtube
+- mp3
+dependencies:
+- optional:media-downloader
 risk: medium
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [media-downloader, web]
-inputs: [task, context]
-outputs: [result, report]
+capabilities:
+- media-downloader
+- web
+inputs:
+- task
+- context
+outputs:
+- result
+- report
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- audio
+- download
+- downloader
+- media
+- video
+- web
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Media Downloader

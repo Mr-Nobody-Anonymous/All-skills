@@ -1,11 +1,27 @@
 ---
 name: using-git-worktrees
-description: "Git worktrees create isolated workspaces sharing the same repository, allowing work on multiple branches simultaneously without switching."
+description: Git worktrees create isolated workspaces sharing the same repository, allowing work on multiple branches simultaneously without switching.
 disable-model-invocation: false
 risk: critical
 source: community
-date_added: "2026-02-27"
+date_added: '2026-02-27'
+version: 1.0.0
+author: Mr-Nobody-Anonymous
+tags:
+- git
+- using
+- worktrees
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
+
 
 # Using Git Worktrees
 
@@ -227,3 +243,10 @@ This skill is applicable to execute the workflow or actions described in the ove
 - Use this skill only when the task clearly matches the scope described above.
 - Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
 - Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.
+
+## When NOT to Use
+
+- Do not use for unrelated tasks or domains outside the stated scope.
+- Do not use for minor trivial edits where standard direct execution suffices.
+- Do not use to bypass required human confirmation or security approvals.
+

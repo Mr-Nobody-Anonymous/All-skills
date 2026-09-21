@@ -1,24 +1,60 @@
 ---
 name: git-workflow
-description: "Guide safe commits, branches, pushes, and pull requests while preserving uncommitted work."
+description: Guide safe commits, branches, pushes, and pull requests while preserving uncommitted work.
 category: development
-aliases: [git, commit, conventional-commits, push]
+aliases:
+- git
+- commit
+- conventional-commits
+- push
 triggers:
-  - "Commit this"
-  - "Open a PR"
-  - "Push my branch"
-  - "Use a conventional commit message"
-  - "Sign my commits"
-keywords: [git, commit, pr, push, branch, conventional, signed, hook, changelog]
-dependencies: [git]
+- Commit this
+- Open a PR
+- Push my branch
+- Use a conventional commit message
+- Sign my commits
+keywords:
+- git
+- commit
+- pr
+- push
+- branch
+- conventional
+- signed
+- hook
+- changelog
+dependencies:
+- git
 risk: medium
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [git-workflow, development]
-inputs: [task, context]
-outputs: [result, report]
+capabilities:
+- git-workflow
+- development
+inputs:
+- task
+- context
+outputs:
+- result
+- report
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- commit
+- development
+- git
+- push
+- workflow
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Git Workflow

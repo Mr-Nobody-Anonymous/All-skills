@@ -2,18 +2,48 @@
 name: databases
 description: Work with databases — schema design, queries, indexing, migrations, and selecting the right store.
 category: development
-aliases: [sql, nosql, schema, migrations]
+aliases:
+- sql
+- nosql
+- schema
+- migrations
 triggers:
-  - design a database schema
-  - write a migration
-  - optimize this query
-  - pick a database
-keywords: [database, sql, postgres, mysql, mongodb, schema, migration, index, query]
+- design a database schema
+- write a migration
+- optimize this query
+- pick a database
+keywords:
+- database
+- sql
+- postgres
+- mysql
+- mongodb
+- schema
+- migration
+- index
+- query
 dependencies: []
 risk: medium
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- database
+- databases
+- development
+- mysql
+- postgres
+- sql
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Databases

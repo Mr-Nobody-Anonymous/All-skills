@@ -1,0 +1,3 @@
+We need to select a primary relational database for our multi-tenant SaaS application that requires strong ACID compliance, JSON document support for tenant configuration, horizontal read replicas, and integration with Prisma ORM.
+
+Evaluate PostgreSQL 16 vs MySQL 8.0, document decision drivers, and draft an Architecture Decision Record using standard MADR format.

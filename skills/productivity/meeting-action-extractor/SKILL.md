@@ -1,24 +1,56 @@
 ---
 name: meeting-action-extractor
-description: "Extract decisions, action items, owners, dates, and unresolved questions from meetings."
+description: Extract decisions, action items, owners, dates, and unresolved questions from meetings.
 category: productivity
-aliases: [meeting, action-items, decisions]
+aliases:
+- meeting
+- action-items
+- decisions
 triggers:
-  - "Extract action items from this meeting"
-  - "What were the decisions"
-  - "Meeting summary"
-  - "Parse meeting notes"
-  - "Extract follow-ups"
-keywords: [meeting, action-items, decisions, summary, follow-up, owner]
+- Extract action items from this meeting
+- What were the decisions
+- Meeting summary
+- Parse meeting notes
+- Extract follow-ups
+keywords:
+- meeting
+- action-items
+- decisions
+- summary
+- follow-up
+- owner
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [meeting-action-extractor, productivity]
-inputs: [task, context]
-outputs: [result, report]
+capabilities:
+- meeting-action-extractor
+- productivity
+inputs:
+- task
+- context
+outputs:
+- result
+- report
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- action
+- action-items
+- decisions
+- extractor
+- meeting
+- productivity
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Meeting Action Extractor

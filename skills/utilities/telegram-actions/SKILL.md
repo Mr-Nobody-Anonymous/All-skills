@@ -1,23 +1,57 @@
 ---
 name: telegram-actions
-description: "Draft and perform user-approved Telegram actions without exposing bot credentials."
+description: Draft and perform user-approved Telegram actions without exposing bot credentials.
 category: utilities
-aliases: [telegram, bot, message, telegram-bot]
+aliases:
+- telegram
+- bot
+- message
+- telegram-bot
 triggers:
-  - "Send a Telegram message"
-  - "Post to Telegram"
-  - "Telegram notification"
-  - "Message via Telegram"
-keywords: [telegram, bot, message, notify, channel, chat]
-dependencies: [optional:TELEGRAM_BOT_TOKEN]
+- Send a Telegram message
+- Post to Telegram
+- Telegram notification
+- Message via Telegram
+keywords:
+- telegram
+- bot
+- message
+- notify
+- channel
+- chat
+dependencies:
+- optional:TELEGRAM_BOT_TOKEN
 risk: medium
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [telegram-actions, utilities]
-inputs: [task, context]
-outputs: [result, report]
+capabilities:
+- telegram-actions
+- utilities
+inputs:
+- task
+- context
+outputs:
+- result
+- report
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- actions
+- bot
+- message
+- notify
+- telegram
+- utilities
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Telegram Actions

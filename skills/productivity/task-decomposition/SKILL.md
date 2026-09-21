@@ -2,21 +2,52 @@
 name: task-decomposition
 description: Break a large project or vague goal into concrete, ordered, completable subtasks with dependencies and estimates.
 category: productivity
-aliases: [break-down, subtasks, wbs, work-breakdown, project-decompose]
+aliases:
+- break-down
+- subtasks
+- wbs
+- work-breakdown
+- project-decompose
 triggers:
-  - break this into smaller tasks
-  - decompose this
-  - how do I start this project
-  - break down this project
-  - what are the steps
-  - subtasks
-  - work breakdown
-keywords: [break, decompose, subtasks, steps, project, plan, split, chunk, smaller]
+- break this into smaller tasks
+- decompose this
+- how do I start this project
+- break down this project
+- what are the steps
+- subtasks
+- work breakdown
+keywords:
+- break
+- decompose
+- subtasks
+- steps
+- project
+- plan
+- split
+- chunk
+- smaller
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- break
+- decompose
+- decomposition
+- productivity
+- steps
+- subtasks
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Task Decomposition

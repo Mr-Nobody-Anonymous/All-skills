@@ -1,23 +1,55 @@
 ---
 name: audio-transcribe
-description: "Transcribe audio into timestamped text and optionally extract speakers and actions."
+description: Transcribe audio into timestamped text and optionally extract speakers and actions.
 category: utilities
-aliases: [speech-to-text, transcription]
+aliases:
+- speech-to-text
+- transcription
 triggers:
-  - "Transcribe this audio"
-  - "Convert speech to text"
-  - "Get a transcript"
-  - "Speech recognition"
-keywords: [audio, transcription, speech, voice, text, whisper]
-dependencies: [optional:transcription-engine]
+- Transcribe this audio
+- Convert speech to text
+- Get a transcript
+- Speech recognition
+keywords:
+- audio
+- transcription
+- speech
+- voice
+- text
+- whisper
+dependencies:
+- optional:transcription-engine
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [audio-transcribe, utilities]
-inputs: [task, context]
-outputs: [result, report]
+capabilities:
+- audio-transcribe
+- utilities
+inputs:
+- task
+- context
+outputs:
+- result
+- report
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- audio
+- speech
+- transcribe
+- transcription
+- utilities
+- voice
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Audio Transcribe

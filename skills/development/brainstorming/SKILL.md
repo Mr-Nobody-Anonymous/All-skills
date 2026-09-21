@@ -3,21 +3,49 @@ name: brainstorming
 description: Clarify intent and turn software ideas into approved designs before implementation.
 category: development
 version: 1.0.0
-aliases: [design-first, requirements-discovery, software-ideation]
-triggers: [brainstorm this feature, help design this change]
-keywords: [design, requirements, brainstorm, intent]
+aliases:
+- design-first
+- requirements-discovery
+- software-ideation
+triggers:
+- brainstorm this feature
+- help design this change
+keywords:
+- design
+- requirements
+- brainstorm
+- intent
 dependencies: []
-composes_with: [productivity.task-decomposition, development.architecture]
+composes_with:
+- productivity.task-decomposition
+- development.architecture
 source: obra/superpowers
 source_repository: obra/superpowers
 source_path: skills/brainstorming
 source_commit: b36e0829c6d0140e93cfef2ca599b1b07d4a7797
 imported_at: 2026-09-01
 license: MIT
-original_author: "Jesse Vincent"
+original_author: Jesse Vincent
 modified: true
 enabled: true
 risk: low
+author: Jesse Vincent
+tags:
+- brainstorm
+- brainstorming
+- design
+- development
+- intent
+- requirements
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Brainstorming

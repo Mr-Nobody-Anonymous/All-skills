@@ -1,25 +1,61 @@
 ---
 name: adhd-task-breakdown
-description: "Turn overwhelming work into ADHD-friendly, visible, short, immediately actionable steps."
+description: Turn overwhelming work into ADHD-friendly, visible, short, immediately actionable steps.
 category: productivity
-aliases: [adhd, task-decomposition, breakdown, chunk-down]
+aliases:
+- adhd
+- task-decomposition
+- breakdown
+- chunk-down
 triggers:
-  - "Break this down"
-  - "I don't know where to start"
-  - "This feels too big"
-  - "ADHD task"
-  - "Help me start this project"
-  - "Too overwhelming"
-keywords: [adhd, overwhelm, task, chunk, decompose, planning, executive, function, friction]
+- Break this down
+- I don't know where to start
+- This feels too big
+- ADHD task
+- Help me start this project
+- Too overwhelming
+keywords:
+- adhd
+- overwhelm
+- task
+- chunk
+- decompose
+- planning
+- executive
+- function
+- friction
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [adhd-task-breakdown, productivity]
-inputs: [task, context]
-outputs: [result, report]
+capabilities:
+- adhd-task-breakdown
+- productivity
+inputs:
+- task
+- context
+outputs:
+- result
+- report
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- adhd
+- breakdown
+- chunk
+- overwhelm
+- productivity
+- task
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Adhd Task Breakdown

@@ -1,21 +1,47 @@
 ---
 name: multi-agent-architect
-description: "Design and optimize production-grade multi-agent systems with LangGraph, LangChain, and DeepAgents for complex AI workflows."
+description: Design and optimize production-grade multi-agent systems with LangGraph, LangChain, and DeepAgents for complex AI workflows.
 disable-model-invocation: false
 risk: safe
 source: community
-date_added: "2026-09-04"
+date_added: '2026-09-04'
 metadata:
   category: ai-engineering
   source_repo: pravin-python/antigravity-awesome-skills
   source_type: community
-  date_added: "2025-05-07"
+  date_added: '2025-05-07'
   author: community
-  tags: [langgraph, langchain, multi-agent, orchestration, deepagents, rag, tool-calling]
-  tools: [claude, cursor, gemini]
-  license: "MIT"
-  license_source: "https://github.com/pravin-python/antigravity-awesome-skills/blob/main/LICENSE"
+  tags:
+  - langgraph
+  - langchain
+  - multi-agent
+  - orchestration
+  - deepagents
+  - rag
+  - tool-calling
+  tools:
+  - claude
+  - cursor
+  - gemini
+  license: MIT
+  license_source: https://github.com/pravin-python/antigravity-awesome-skills/blob/main/LICENSE
+version: 1.0.0
+author: Mr-Nobody-Anonymous
+tags:
+- agent
+- architect
+- multi
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
+
 
 
 # Multi-Agent Architect & Updater Skill
@@ -361,3 +387,10 @@ async def reflection_node(state: AgentState) -> AgentState:
 - `@langchain-rag` - When you need retrieval-augmented generation pipelines specifically
 - `@fastapi-backend` - When deploying agent systems as production REST APIs
 - `@python-async` - When deepening async/await patterns used throughout agent nodes
+
+## When NOT to Use
+
+- Do not use for unrelated tasks or domains outside the stated scope.
+- Do not use for minor trivial edits where standard direct execution suffices.
+- Do not use to bypass required human confirmation or security approvals.
+

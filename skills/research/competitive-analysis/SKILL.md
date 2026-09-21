@@ -2,18 +2,44 @@
 name: competitive-analysis
 description: Analyze competitors — features, positioning, pricing, strengths, weaknesses — to inform product strategy.
 category: research
-aliases: [competitors, market-scan, competitor-research]
+aliases:
+- competitors
+- market-scan
+- competitor-research
 triggers:
-  - analyze competitors
-  - competitive landscape
-  - what are competitors doing
-  - market scan
-keywords: [competitor, competitive, market, landscape, comparison, positioning]
+- analyze competitors
+- competitive landscape
+- what are competitors doing
+- market scan
+keywords:
+- competitor
+- competitive
+- market
+- landscape
+- comparison
+- positioning
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- analysis
+- competitive
+- competitor
+- landscape
+- market
+- research
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Competitive Analysis

@@ -11,10 +11,11 @@
   <img src="https://img.shields.io/badge/skills-12%2C755%2B%20Unique%20Skills-7c3aed?style=for-the-badge&logo=openai&logoColor=white" alt="12755 Unique Skills" />
   <img src="https://img.shields.io/badge/catalog-14%2C855%20Total%20Skills-0ea5e9?style=for-the-badge&logo=github&logoColor=white" alt="14855 Catalog Skills" />
   <img src="https://img.shields.io/badge/domains-251%20Categories-10b981?style=for-the-badge&logo=hubspot&logoColor=white" alt="251 Categories" />
-  <img src="https://img.shields.io/badge/super--domains-15%20Ontologies-f59e0b?style=for-the-badge&logo=graphql&logoColor=white" alt="15 Super-Domains" />
   <img src="https://img.shields.io/badge/platforms-11%20Agent%20Harnesses-ec4899?style=for-the-badge&logo=probot&logoColor=white" alt="11 Agent Harnesses" />
-  <img src="https://img.shields.io/badge/active--harness-70%20Verified%20Skills-6366f1?style=for-the-badge&logo=lightning&logoColor=white" alt="70 Active Skills" />
-  <img src="https://img.shields.io/badge/tests-104%2F104%20Passing-10b981?style=for-the-badge&logo=pytest&logoColor=white" alt="94 Tests Passing" />
+  <img src="https://img.shields.io/badge/active--harness-72%20Verified%20Skills-6366f1?style=for-the-badge&logo=lightning&logoColor=white" alt="72 Active Skills" />
+  <img src="https://img.shields.io/badge/tests-136%2F136%20Passing-10b981?style=for-the-badge&logo=pytest&logoColor=white" alt="136 Tests Passing" />
+  <img src="https://img.shields.io/badge/license-MIT-green?style=for-the-badge" alt="MIT License" />
+  <img src="https://img.shields.io/badge/skillhub-compatible-0ea5e9?style=for-the-badge&logo=npm&logoColor=white" alt="SkillHub Compatible" />
   <img src="https://img.shields.io/badge/python-3.10+-3776ab?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.10+" />
 </p>
 
@@ -147,6 +148,81 @@ Every skill in this repository strictly adheres to the open **Agent Skills stand
 | **Cline** | `.cline/skills/` | [`adapters/cline.yaml`](adapters/cline.yaml) | ✅ Verified (100%) |
 | **Roo Code** | `.roo/skills/` | [`adapters/roo.yaml`](adapters/roo.yaml) | ✅ Verified (100%) |
 | **Block Goose** | `.goose/skills/` | [`adapters/goose.yaml`](adapters/goose.yaml) | ✅ Verified (100%) |
+
+---
+
+## 📦 Installation & AI Agent Ecosystem Setup
+
+You can consume skills from **All-Skills** via multiple distribution channels:
+
+### 1. SkillHub & npx (Instant Skill Installation)
+Install any individual skill directly into your current workspace:
+```bash
+# General syntax:
+npx skillhub install Mr-Nobody-Anonymous/All-skills/<skill-name>
+
+# Install Architecture Decision Records:
+npx skillhub install Mr-Nobody-Anonymous/All-skills/architecture-decision-records
+
+# Install Health Economist:
+npx skillhub install Mr-Nobody-Anonymous/All-skills/health-economist
+
+# Install Code Review Excellence:
+npx skillhub install Mr-Nobody-Anonymous/All-skills/code-review-excellence
+```
+
+### 2. Claude Code Native Integration
+To make skills available to Anthropic's Claude Code:
+```bash
+# Project-level setup (auto-creates symlinks / junctions into .claude/skills/):
+python scripts/setup_skills.py
+
+# Or install globally into your home directory:
+mkdir -p ~/.claude/skills
+cp -r .agents/skills/* ~/.claude/skills/
+```
+
+### 3. Cursor IDE Workspace Setup
+Skills are loaded into Cursor's agent context via `.cursor/skills/`:
+```bash
+# Run one-step workspace link creator:
+python scripts/setup_skills.py
+```
+
+### 4. OpenAI Codex CLI & Codex Workspaces
+Skills are loaded into Codex via `.codex/skills/`:
+```bash
+python scripts/setup_skills.py
+```
+
+### 5. Universal Node / npx Package
+```bash
+# Run doctor diagnostic:
+npx @mr-nobody-anonymous/all-skills doctor
+
+# Search skills catalog:
+npx @mr-nobody-anonymous/all-skills search "health economist"
+```
+
+---
+
+## 📚 Active Harness Skills Index (72 Verified Skills)
+
+Every skill below is pre-validated against `schemas/skill-frontmatter.schema.json`, includes strict prompt-injection defenses, and is immediately available across all 11 agent harnesses:
+
+| Category | Skills |
+| :--- | :--- |
+| **Architecture & Design** | [`architecture-decision-records`](.agents/skills/architecture-decision-records/SKILL.md) • [`api-and-interface-design`](.agents/skills/api-and-interface-design/SKILL.md) • [`database-design`](.agents/skills/database-design/SKILL.md) • [`design-system`](.agents/skills/design-system/SKILL.md) • [`multi-agent-architect`](.agents/skills/multi-agent-architect/SKILL.md) |
+| **Software Development** | [`angular-state-management`](.agents/skills/angular-state-management/SKILL.md) • [`react-state-management`](.agents/skills/react-state-management/SKILL.md) • [`drizzle-orm-expert`](.agents/skills/drizzle-orm-expert/SKILL.md) • [`prisma-expert`](.agents/skills/prisma-expert/SKILL.md) • [`ast-code-transformation`](.agents/skills/ast-code-transformation/SKILL.md) • [`mcp-builder`](.agents/skills/mcp-builder/SKILL.md) • [`mcp-tool-developer`](.agents/skills/mcp-tool-developer/SKILL.md) |
+| **Testing & Review** | [`code-review-excellence`](.agents/skills/code-review-excellence/SKILL.md) • [`code-reviewer`](.agents/skills/code-reviewer/SKILL.md) • [`tdd`](.agents/skills/tdd/SKILL.md) • [`code-showcase-systematic-debugging`](.agents/skills/code-showcase-systematic-debugging/SKILL.md) • [`verification-before-completion`](.agents/skills/verification-before-completion/SKILL.md) • [`playwright-skill`](.agents/skills/playwright-skill/SKILL.md) • [`browser-automation`](.agents/skills/browser-automation/SKILL.md) |
+| **Security & Guardrails** | [`security-sandboxing-guardrails`](.agents/skills/security-sandboxing-guardrails/SKILL.md) • [`security-scanning-security-sast`](.agents/skills/security-scanning-security-sast/SKILL.md) • [`top-web-vulnerabilities`](.agents/skills/top-web-vulnerabilities/SKILL.md) • [`vulnerability-scanner`](.agents/skills/vulnerability-scanner/SKILL.md) • [`red-team-tactics`](.agents/skills/red-team-tactics/SKILL.md) • [`secrets-management`](.agents/skills/secrets-management/SKILL.md) • [`marketplace-rbac-audit`](.agents/skills/marketplace-rbac-audit/SKILL.md) |
+| **DevOps & Cloud** | [`ci-cd-and-automation`](.agents/skills/ci-cd-and-automation/SKILL.md) • [`cloud-devops`](.agents/skills/cloud-devops/SKILL.md) • [`kubernetes-architect`](.agents/skills/kubernetes-architect/SKILL.md) • [`kubernetes-deployment`](.agents/skills/kubernetes-deployment/SKILL.md) • [`terraform-infrastructure`](.agents/skills/terraform-infrastructure/SKILL.md) • [`aws-serverless`](.agents/skills/aws-serverless/SKILL.md) • [`using-git-worktrees`](.agents/skills/using-git-worktrees/SKILL.md) |
+| **AI & LLM Engineering** | [`ai-engineer`](.agents/skills/ai-engineer/SKILL.md) • [`ai-engineering-toolkit`](.agents/skills/ai-engineering-toolkit/SKILL.md) • [`agent-evaluation`](.agents/skills/agent-evaluation/SKILL.md) • [`agent-memory`](.agents/skills/agent-memory/SKILL.md) • [`agent-memory-systems`](.agents/skills/agent-memory-systems/SKILL.md) • [`llm-prompt-optimizer`](.agents/skills/llm-prompt-optimizer/SKILL.md) • [`context-budget-and-pruning`](.agents/skills/context-budget-and-pruning/SKILL.md) • [`context-window-management`](.agents/skills/context-window-management/SKILL.md) • [`multi-agent-patterns`](.agents/skills/multi-agent-patterns/SKILL.md) |
+| **Healthcare & Sciences** | [`health-economist`](.agents/skills/health-economist/SKILL.md) • [`pdf-official`](.agents/skills/pdf-official/SKILL.md) |
+| **Accessibility & UX** | [`accessibility-compliance-accessibility-audit`](.agents/skills/accessibility-compliance-accessibility-audit/SKILL.md) • [`wcag-audit-patterns`](.agents/skills/wcag-audit-patterns/SKILL.md) • [`tailwind-design-system`](.agents/skills/tailwind-design-system/SKILL.md) |
+| **Product & Workflows** | [`saas-mvp-launcher`](.agents/skills/saas-mvp-launcher/SKILL.md) • [`micro-saas-launcher`](.agents/skills/micro-saas-launcher/SKILL.md) • [`analytics-product`](.agents/skills/analytics-product/SKILL.md) • [`brainstorming`](.agents/skills/brainstorming/SKILL.md) • [`copywriting`](.agents/skills/copywriting/SKILL.md) • [`email-sequence`](.agents/skills/email-sequence/SKILL.md) • [`changelog-automation`](.agents/skills/changelog-automation/SKILL.md) • [`which-skill`](.agents/skills/which-skill/SKILL.md) |
+
+---
 
 ---
 
@@ -690,4 +766,6 @@ All capabilities adhere to a canonical 8-part specification:
 
 ## 📄 License
 
-Individual skills retain their respective open-source licenses (MIT, Apache-2.0, or Custom). Provenance details are documented in [`skills/SOURCES.json`](skills/SOURCES.json) and [`awesome_skills/skills_index.json`](awesome_skills/skills_index.json).
+This repository is licensed under the **[MIT License](LICENSE)** © 2026 Mr-Nobody-Anonymous.
+
+All core infrastructure, validation tooling, schemas, CLI engines, and canonical skills are distributed under the MIT License. Individual upstream skills cataloged in `awesome_skills/` retain their original author licenses (MIT, Apache-2.0, or BSD). Full provenance details and source repositories are documented in [`skills/SOURCES.json`](skills/SOURCES.json) and [`manifest.json`](manifest.json).

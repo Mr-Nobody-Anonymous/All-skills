@@ -2,18 +2,44 @@
 name: backend
 description: Build backend services — APIs, server logic, persistence, queues, and integration with other systems.
 category: development
-aliases: [server, api-server, backend-dev]
+aliases:
+- server
+- api-server
+- backend-dev
 triggers:
-  - build a backend
-  - backend dev
-  - write an API
-  - server side
-keywords: [backend, server, api, rest, graphql, persistence, queue]
+- build a backend
+- backend dev
+- write an API
+- server side
+keywords:
+- backend
+- server
+- api
+- rest
+- graphql
+- persistence
+- queue
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- api
+- backend
+- development
+- rest
+- server
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Backend

@@ -3,21 +3,49 @@ name: mcp-server-development
 description: Design and implement discoverable, safe Model Context Protocol servers and evaluations.
 category: development
 version: 1.0.0
-aliases: [mcp-builder, model-context-protocol, mcp-server]
-triggers: [build an MCP server, create MCP tools for this API]
-keywords: [mcp, server, tools, resources, protocol]
+aliases:
+- mcp-builder
+- model-context-protocol
+- mcp-server
+triggers:
+- build an MCP server
+- create MCP tools for this API
+keywords:
+- mcp
+- server
+- tools
+- resources
+- protocol
 dependencies: []
-composes_with: [development.backend, development.testing]
+composes_with:
+- development.backend
+- development.testing
 source: anthropics/skills
 source_repository: anthropics/skills
 source_path: skills/mcp-builder
 source_commit: 53048666b05b4799081517d00e09e0a2dd688678
 imported_at: 2026-09-01
 license: Apache-2.0
-original_author: "Anthropic, PBC"
+original_author: Anthropic, PBC
 modified: true
 enabled: true
 risk: medium
+author: Anthropic, PBC
+tags:
+- development
+- mcp
+- resources
+- server
+- tools
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Mcp Server Development

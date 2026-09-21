@@ -2,17 +2,43 @@
 name: web-extraction
 description: Extract specific information from a URL — main content, article text, structured fields — without full scraping infrastructure.
 category: web
-aliases: [extract-from-url, article-extraction, main-content]
+aliases:
+- extract-from-url
+- article-extraction
+- main-content
 triggers:
-  - extract the main content from this page
-  - pull the article text
-  - get the text from this URL
-keywords: [extract, article, main, content, page, readability]
+- extract the main content from this page
+- pull the article text
+- get the text from this URL
+keywords:
+- extract
+- article
+- main
+- content
+- page
+- readability
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- article
+- content
+- extract
+- extraction
+- main
+- web
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Web Extraction

@@ -3,21 +3,47 @@ name: parallel-agents
 description: Split independent work into isolated agent tasks and coordinate them concurrently.
 category: utilities
 version: 1.0.0
-aliases: [parallel-work, delegate-agents, multi-agent]
-triggers: [run these independent tasks in parallel, delegate this work]
-keywords: [parallel, agents, delegate, independent]
+aliases:
+- parallel-work
+- delegate-agents
+- multi-agent
+triggers:
+- run these independent tasks in parallel
+- delegate this work
+keywords:
+- parallel
+- agents
+- delegate
+- independent
 dependencies: []
-composes_with: [development.verification-before-completion]
+composes_with:
+- development.verification-before-completion
 source: obra/superpowers
 source_repository: obra/superpowers
 source_path: skills/dispatching-parallel-agents
 source_commit: b36e0829c6d0140e93cfef2ca599b1b07d4a7797
 imported_at: 2026-09-01
 license: MIT
-original_author: "Jesse Vincent"
+original_author: Jesse Vincent
 modified: true
 enabled: true
 risk: low
+author: Jesse Vincent
+tags:
+- agents
+- delegate
+- independent
+- parallel
+- utilities
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Parallel Agents

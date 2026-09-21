@@ -1,24 +1,56 @@
 ---
 name: search-synthesizer
-description: "Search the web, compare credible sources, and synthesize a cited answer with uncertainty."
+description: Search the web, compare credible sources, and synthesize a cited answer with uncertainty.
 category: research
-aliases: [web-search, synthesize]
+aliases:
+- web-search
+- synthesize
 triggers:
-  - "Search for this"
-  - "Synthesize research on a topic"
-  - "What does the web say about"
-  - "Find information on"
-  - "Compare sources on"
-keywords: [search, research, web, synthesize, sources, compare, facts]
-dependencies: [optional:web-search]
+- Search for this
+- Synthesize research on a topic
+- What does the web say about
+- Find information on
+- Compare sources on
+keywords:
+- search
+- research
+- web
+- synthesize
+- sources
+- compare
+- facts
+dependencies:
+- optional:web-search
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [search-synthesizer, research]
-inputs: [task, context]
-outputs: [result, report]
+capabilities:
+- search-synthesizer
+- research
+inputs:
+- task
+- context
+outputs:
+- result
+- report
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- research
+- search
+- synthesize
+- synthesizer
+- web
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Search Synthesizer

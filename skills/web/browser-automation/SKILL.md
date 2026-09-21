@@ -2,20 +2,49 @@
 name: browser-automation
 description: Drive a headless browser to interact with web pages — fill forms, click, screenshot, scrape, test, and verify UI behavior.
 category: web
-aliases: [playwright, puppeteer, headless-browser, browser-driver]
+aliases:
+- playwright
+- puppeteer
+- headless-browser
+- browser-driver
 triggers:
-  - automate this website
-  - drive the browser
-  - browser automation
-  - click this button
-  - fill this form
-  - take a screenshot
-keywords: [browser, automation, playwright, puppeteer, headless, click, screenshot, scrape]
-dependencies: [optional:playwright-or-similar]
+- automate this website
+- drive the browser
+- browser automation
+- click this button
+- fill this form
+- take a screenshot
+keywords:
+- browser
+- automation
+- playwright
+- puppeteer
+- headless
+- click
+- screenshot
+- scrape
+dependencies:
+- optional:playwright-or-similar
 risk: medium
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- automation
+- browser
+- playwright
+- puppeteer
+- web
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Browser Automation

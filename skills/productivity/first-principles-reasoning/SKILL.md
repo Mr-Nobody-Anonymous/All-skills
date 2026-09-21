@@ -1,29 +1,66 @@
 ---
 name: first-principles-reasoning
-description: "Deconstruct complex problems into fundamental axioms and apply 5-Whys root cause analysis to eliminate cognitive overwhelm."
+description: Deconstruct complex problems into fundamental axioms and apply 5-Whys root cause analysis to eliminate cognitive overwhelm.
 category: productivity
-aliases: [5-whys, root-cause-analysis, first-principles, axiomatic-thinking]
+aliases:
+- 5-whys
+- root-cause-analysis
+- first-principles
+- axiomatic-thinking
 triggers:
-  - "first principles analysis"
-  - "5 whys root cause"
-  - "break this down to first principles"
-  - "find the root cause of this"
-  - "deconstruct this problem"
-keywords: [first-principles, 5-whys, root-cause, axioms, deconstruct, diagnostic, reasoning]
+- first principles analysis
+- 5 whys root cause
+- break this down to first principles
+- find the root cause of this
+- deconstruct this problem
+keywords:
+- first-principles
+- 5-whys
+- root-cause
+- axioms
+- deconstruct
+- diagnostic
+- reasoning
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
 lifecycle: enabled
-capabilities: [first-principles-deconstruction, 5-whys-root-cause, assumption-testing]
-inputs: [problem, assumptions, symptoms]
-outputs: [core_axioms, root_causes, fundamental_solutions]
+capabilities:
+- first-principles-deconstruction
+- 5-whys-root-cause
+- assumption-testing
+inputs:
+- problem
+- assumptions
+- symptoms
+outputs:
+- core_axioms
+- root_causes
+- fundamental_solutions
 permissions:
   filesystem: none
   network: none
   shell: none
   secrets: none
+author: Mr-Nobody-Anonymous
+tags:
+- 5-whys
+- axioms
+- first
+- first-principles
+- principles
+- productivity
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # First Principles Reasoning

@@ -2,18 +2,43 @@
 name: automation
 description: Automate repetitive workflows — scripts, scheduled jobs, glue code, and "do this every time" tasks.
 category: utilities
-aliases: [script, workflow-automation, glue]
+aliases:
+- script
+- workflow-automation
+- glue
 triggers:
-  - automate this
-  - run this every day
-  - write a script for
-  - glue this together
-keywords: [automation, script, schedule, cron, glue, workflow]
+- automate this
+- run this every day
+- write a script for
+- glue this together
+keywords:
+- automation
+- script
+- schedule
+- cron
+- glue
+- workflow
 dependencies: []
 risk: medium
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- automation
+- cron
+- schedule
+- script
+- utilities
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Automation

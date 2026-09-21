@@ -2,21 +2,54 @@
 name: mcp-builder
 description: Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK).
 category: development
-aliases: [mcp-scaffold, mcp-sdk, custom-mcp]
+aliases:
+- mcp-scaffold
+- mcp-sdk
+- custom-mcp
 triggers:
-  - build an MCP server
-  - create MCP tools
-  - integrate an API as MCP
-  - MCP server
-  - model context protocol
-keywords: [mcp, model, context, protocol, server, tool, sdk, fastmcp]
-dependencies: [python-or-node]
-composes_with: [development.coding, development.backend, development.testing]
-suggests_after: [development.architecture]
+- build an MCP server
+- create MCP tools
+- integrate an API as MCP
+- MCP server
+- model context protocol
+keywords:
+- mcp
+- model
+- context
+- protocol
+- server
+- tool
+- sdk
+- fastmcp
+dependencies:
+- python-or-node
+composes_with:
+- development.coding
+- development.backend
+- development.testing
+suggests_after:
+- development.architecture
 risk: medium
 version: 1.1.0
 source: anthropics/skills
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- builder
+- context
+- development
+- mcp
+- model
+- protocol
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 # MCP Server Development Guide
 

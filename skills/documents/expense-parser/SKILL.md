@@ -1,23 +1,59 @@
 ---
 name: expense-parser
-description: "Extract normalized vendor, date, currency, tax, line-item, and total data from receipts or invoices."
+description: Extract normalized vendor, date, currency, tax, line-item, and total data from receipts or invoices.
 category: documents
-aliases: [expense, receipt, invoice, parse, finance]
+aliases:
+- expense
+- receipt
+- invoice
+- parse
+- finance
 triggers:
-  - "Parse this receipt"
-  - "Extract expense data"
-  - "Scan invoice"
-  - "Process expense"
-keywords: [expense, receipt, invoice, ocr, parse, finance, accounting]
-dependencies: [optional:ocr]
+- Parse this receipt
+- Extract expense data
+- Scan invoice
+- Process expense
+keywords:
+- expense
+- receipt
+- invoice
+- ocr
+- parse
+- finance
+- accounting
+dependencies:
+- optional:ocr
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [expense-parser, documents]
-inputs: [task, context]
-outputs: [result, report]
+capabilities:
+- expense-parser
+- documents
+inputs:
+- task
+- context
+outputs:
+- result
+- report
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- documents
+- expense
+- invoice
+- ocr
+- parser
+- receipt
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Expense Parser

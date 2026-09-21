@@ -1,23 +1,56 @@
 ---
 name: cf-worker-deploy
-description: "Validate and deploy Cloudflare Workers with preview, secret, and rollback safeguards."
+description: Validate and deploy Cloudflare Workers with preview, secret, and rollback safeguards.
 category: development
-aliases: [cloudflare, worker, cf, edge]
+aliases:
+- cloudflare
+- worker
+- cf
+- edge
 triggers:
-  - "Deploy to Cloudflare Workers"
-  - "Publish worker"
-  - "Cloudflare deployment"
-  - "Update worker"
-keywords: [cloudflare, worker, deploy, edge, serverless, wrangler]
-dependencies: [optional:wrangler]
+- Deploy to Cloudflare Workers
+- Publish worker
+- Cloudflare deployment
+- Update worker
+keywords:
+- cloudflare
+- worker
+- deploy
+- edge
+- serverless
+- wrangler
+dependencies:
+- optional:wrangler
 risk: high
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [cf-worker-deploy, development]
-inputs: [task, context]
-outputs: [result, report]
+capabilities:
+- cf-worker-deploy
+- development
+inputs:
+- task
+- context
+outputs:
+- result
+- report
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- cloudflare
+- deploy
+- development
+- edge
+- worker
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Cf Worker Deploy

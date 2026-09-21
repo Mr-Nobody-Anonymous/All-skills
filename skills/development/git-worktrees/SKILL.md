@@ -3,21 +3,50 @@ name: git-worktrees
 description: Create isolated Git workspaces safely while preserving current work and verifying a clean baseline.
 category: development
 version: 1.0.0
-aliases: [worktree, isolated-branch, parallel-branch]
-triggers: [create a git worktree, work in an isolated branch]
-keywords: [git, worktree, branch, isolate]
-dependencies: [git]
-composes_with: [development.git, development.testing]
+aliases:
+- worktree
+- isolated-branch
+- parallel-branch
+triggers:
+- create a git worktree
+- work in an isolated branch
+keywords:
+- git
+- worktree
+- branch
+- isolate
+dependencies:
+- git
+composes_with:
+- development.git
+- development.testing
 source: obra/superpowers
 source_repository: obra/superpowers
 source_path: skills/using-git-worktrees
 source_commit: b36e0829c6d0140e93cfef2ca599b1b07d4a7797
 imported_at: 2026-09-01
 license: MIT
-original_author: "Jesse Vincent"
+original_author: Jesse Vincent
 modified: true
 enabled: true
 risk: medium
+author: Jesse Vincent
+tags:
+- branch
+- development
+- git
+- isolate
+- worktree
+- worktrees
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Git Worktrees

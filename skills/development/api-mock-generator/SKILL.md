@@ -1,23 +1,60 @@
 ---
 name: api-mock-generator
-description: "Derive API mocks and contract tests from schemas or observed interfaces without inventing behavior."
+description: Derive API mocks and contract tests from schemas or observed interfaces without inventing behavior.
 category: development
-aliases: [api, mock, test, contract, openapi, swagger]
+aliases:
+- api
+- mock
+- test
+- contract
+- openapi
+- swagger
 triggers:
-  - "Generate API mocks"
-  - "Create mock API"
-  - "API testing"
-  - "Mock endpoints"
-keywords: [api, mock, test, openapi, swagger, rest, contract]
-dependencies: [optional:test-framework]
+- Generate API mocks
+- Create mock API
+- API testing
+- Mock endpoints
+keywords:
+- api
+- mock
+- test
+- openapi
+- swagger
+- rest
+- contract
+dependencies:
+- optional:test-framework
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [api-mock-generator, development]
-inputs: [task, context]
-outputs: [result, report]
+capabilities:
+- api-mock-generator
+- development
+inputs:
+- task
+- context
+outputs:
+- result
+- report
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- api
+- development
+- generator
+- mock
+- openapi
+- test
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Api Mock Generator

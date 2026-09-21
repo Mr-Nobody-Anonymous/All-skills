@@ -2,20 +2,49 @@
 name: prioritization
 description: Help the user decide what to do first, what to defer, and what to drop when everything feels important.
 category: productivity
-aliases: [prioritize, triage, eisenhower, what-should-i-do-first]
+aliases:
+- prioritize
+- triage
+- eisenhower
+- what-should-i-do-first
 triggers:
-  - what should I do first
-  - prioritize this
-  - I have too many things
-  - what's most important
-  - triage
-  - help me decide what to do
-keywords: [priority, prioritize, important, urgent, decide, first, drop, defer]
+- what should I do first
+- prioritize this
+- I have too many things
+- what's most important
+- triage
+- help me decide what to do
+keywords:
+- priority
+- prioritize
+- important
+- urgent
+- decide
+- first
+- drop
+- defer
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- important
+- prioritization
+- prioritize
+- priority
+- productivity
+- urgent
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Prioritization

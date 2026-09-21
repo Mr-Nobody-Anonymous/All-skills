@@ -1,29 +1,67 @@
 ---
 name: executive-summary
-description: "Synthesize complex projects into Amazon Working Backwards PR-FAQs, 6-page memos, and McKinsey MECE Pyramid structures."
+description: Synthesize complex projects into Amazon Working Backwards PR-FAQs, 6-page memos, and McKinsey MECE Pyramid structures.
 category: productivity
-aliases: [working-backwards, pr-faq, pyramid-principle, mece, 6-page-memo]
+aliases:
+- working-backwards
+- pr-faq
+- pyramid-principle
+- mece
+- 6-page-memo
 triggers:
-  - "write an executive summary"
-  - "Amazon working backwards"
-  - "create a PR-FAQ"
-  - "McKinsey pyramid principle"
-  - "format as an executive memo"
-keywords: [executive, summary, working-backwards, pr-faq, mece, pyramid, memo, leadership]
+- write an executive summary
+- Amazon working backwards
+- create a PR-FAQ
+- McKinsey pyramid principle
+- format as an executive memo
+keywords:
+- executive
+- summary
+- working-backwards
+- pr-faq
+- mece
+- pyramid
+- memo
+- leadership
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
 lifecycle: enabled
-capabilities: [executive-summarization, working-backwards-framework, mece-structuring]
-inputs: [project_details, proposal, target_audience]
-outputs: [executive_memo, pr_faq_document, leadership_decision_brief]
+capabilities:
+- executive-summarization
+- working-backwards-framework
+- mece-structuring
+inputs:
+- project_details
+- proposal
+- target_audience
+outputs:
+- executive_memo
+- pr_faq_document
+- leadership_decision_brief
 permissions:
   filesystem: none
   network: none
   shell: none
   secrets: none
+author: Mr-Nobody-Anonymous
+tags:
+- executive
+- pr-faq
+- productivity
+- summary
+- working-backwards
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Executive Summary

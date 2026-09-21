@@ -1,6 +1,6 @@
 ---
 name: redis-cli
-description: "Redis command-line interface (redis-cli) reference and usage guide. Use this skill whenever the user mentions redis-cli, Redis CLI, or any task involving querying, inspecting, debugging, or managing Redis from the command line."
+description: Redis command-line interface (redis-cli) reference and usage guide. Use this skill whenever the user mentions redis-cli, Redis CLI, or any task involving querying, inspecting, debugging, or managing Redis from the command line.
 disable-model-invocation: false
 risk: critical
 source: https://github.com/chaunsin/agent-skills/tree/master/skills/redis-cli
@@ -9,7 +9,22 @@ source_type: community
 date_added: 2026-07-01
 license: Apache-2.0
 license_source: https://github.com/chaunsin/agent-skills/blob/master/LICENSE
+version: 1.0.0
+author: Mr-Nobody-Anonymous
+tags:
+- cli
+- redis
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
+
 
 # redis-cli — Redis Command Line Interface
 ## When to Use
@@ -391,3 +406,10 @@ done
 - Use this skill only when the task clearly matches its upstream source and local project context.
 - Verify commands, generated code, dependencies, credentials, and external service behavior before applying changes.
 - Do not treat examples as a substitute for environment-specific tests, security review, or user approval for destructive or costly actions.
+
+## When NOT to Use
+
+- Do not use for unrelated tasks or domains outside the stated scope.
+- Do not use for minor trivial edits where standard direct execution suffices.
+- Do not use to bypass required human confirmation or security approvals.
+

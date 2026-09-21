@@ -1,24 +1,62 @@
 ---
 name: db-inspector
-description: "Inspect database schemas and queries read-only by default and explain performance or safety risks."
+description: Inspect database schemas and queries read-only by default and explain performance or safety risks.
 category: development
-aliases: [database, db, query, inspect, mysql, postgres]
+aliases:
+- database
+- db
+- query
+- inspect
+- mysql
+- postgres
 triggers:
-  - "Check database schema"
-  - "Inspect this database"
-  - "Run a query"
-  - "Database structure"
-  - "Explain this query"
-keywords: [database, sql, schema, query, inspect, mysql, postgres, mongodb]
-dependencies: [optional:database-client]
+- Check database schema
+- Inspect this database
+- Run a query
+- Database structure
+- Explain this query
+keywords:
+- database
+- sql
+- schema
+- query
+- inspect
+- mysql
+- postgres
+- mongodb
+dependencies:
+- optional:database-client
 risk: medium
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [db-inspector, development]
-inputs: [task, context]
-outputs: [result, report]
+capabilities:
+- db-inspector
+- development
+inputs:
+- task
+- context
+outputs:
+- result
+- report
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- database
+- development
+- inspector
+- query
+- schema
+- sql
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Db Inspector

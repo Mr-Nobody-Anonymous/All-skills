@@ -1,23 +1,58 @@
 ---
 name: email-inbox-zero
-description: "Triage email into reply, action, defer, archive, or escalate queues without silent sending."
+description: Triage email into reply, action, defer, archive, or escalate queues without silent sending.
 category: productivity
-aliases: [email, inbox, gmail, mail]
+aliases:
+- email
+- inbox
+- gmail
+- mail
 triggers:
-  - "Triage my emails"
-  - "Process my inbox"
-  - "Clean up my email"
-  - "Inbox zero"
-keywords: [email, inbox, triage, archive, reply, action, organize]
-dependencies: [optional:email-access]
+- Triage my emails
+- Process my inbox
+- Clean up my email
+- Inbox zero
+keywords:
+- email
+- inbox
+- triage
+- archive
+- reply
+- action
+- organize
+dependencies:
+- optional:email-access
 risk: medium
 version: 1.0.0
 source: custom
 enabled: true
-capabilities: [email-inbox-zero, productivity]
-inputs: [task, context]
-outputs: [result, report]
+capabilities:
+- email-inbox-zero
+- productivity
+inputs:
+- task
+- context
+outputs:
+- result
+- report
 lifecycle: enabled
+author: Mr-Nobody-Anonymous
+tags:
+- archive
+- email
+- inbox
+- productivity
+- triage
+- zero
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Email Inbox Zero

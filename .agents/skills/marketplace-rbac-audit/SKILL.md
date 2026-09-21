@@ -1,16 +1,36 @@
 ---
 name: marketplace-rbac-audit
-description: "Audit multi-role marketplace authorization across roles, resource ownership, tenant boundaries, and order-state transitions; use when access rules need evidence, not UI assumptions."
+description: Audit multi-role marketplace authorization across roles, resource ownership, tenant boundaries, and order-state transitions; use when access rules need evidence, not UI assumptions.
 disable-model-invocation: false
 category: security
 risk: safe
 source: self
 source_type: self
-date_added: "2026-09-12"
+date_added: '2026-09-12'
 author: mosinlshaikh
-tags: [marketplace, rbac, authorization, access-control, security]
-tools: [claude, cursor, codex, gemini]
+tags:
+- marketplace
+- rbac
+- authorization
+- access-control
+- security
+tools:
+- claude
+- cursor
+- codex
+- gemini
+version: 1.0.0
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
+
 
 # Marketplace RBAC Audit
 
@@ -242,3 +262,10 @@ Base severity on demonstrated reach, sensitivity, prerequisites, and business im
 - **@api-security-best-practices** — use for broader API authentication, validation, abuse controls, and secure implementation patterns.
 - **@saas-multi-tenant** — use for designing tenant isolation and PostgreSQL row-level security.
 - **@idor-testing** — use only for explicitly authorized offensive IDOR testing.
+
+## When NOT to Use
+
+- Do not use for unrelated tasks or domains outside the stated scope.
+- Do not use for minor trivial edits where standard direct execution suffices.
+- Do not use to bypass required human confirmation or security approvals.
+

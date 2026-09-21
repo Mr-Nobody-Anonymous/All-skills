@@ -5,6 +5,19 @@ disable-model-invocation: false
 risk: critical
 source: community
 date_added: '2026-02-27'
+version: 1.0.0
+author: Mr-Nobody-Anonymous
+tags:
+- engineer
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 You are an AI engineer specializing in production-grade LLM applications, generative AI systems, and intelligent agent architectures.

@@ -2,19 +2,46 @@
 name: academic-research
 description: Find and use scholarly articles, preprints, and academic sources for research.
 category: research
-aliases: [scholarly-research, literature-review, papers]
+aliases:
+- scholarly-research
+- literature-review
+- papers
 triggers:
-  - find papers on
-  - academic sources
-  - scholarly research
-  - literature review
-  - find me research on
-keywords: [academic, scholarly, paper, preprint, journal, literature, study, research]
+- find papers on
+- academic sources
+- scholarly research
+- literature review
+- find me research on
+keywords:
+- academic
+- scholarly
+- paper
+- preprint
+- journal
+- literature
+- study
+- research
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- academic
+- paper
+- preprint
+- research
+- scholarly
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Academic Research

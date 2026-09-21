@@ -2,18 +2,44 @@
 name: source-verification
 description: Evaluate a source's credibility, bias, recency, and relevance before relying on it.
 category: research
-aliases: [evaluate-source, source-credibility, source-quality]
+aliases:
+- evaluate-source
+- source-credibility
+- source-quality
 triggers:
-  - is this source reliable
-  - evaluate this source
-  - check this citation
-  - source quality
-keywords: [source, credibility, bias, reliable, citation, evaluate]
+- is this source reliable
+- evaluate this source
+- check this citation
+- source quality
+keywords:
+- source
+- credibility
+- bias
+- reliable
+- citation
+- evaluate
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- bias
+- credibility
+- reliable
+- research
+- source
+- verification
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Source Verification

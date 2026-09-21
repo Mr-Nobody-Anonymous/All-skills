@@ -1,22 +1,53 @@
 ---
 name: coding
-description: General-purpose software engineering assistant: implement features, write functions, scaffold projects, and produce idiomatic code in many languages.
+description: 'General-purpose software engineering assistant: implement features, write functions, scaffold projects, and produce idiomatic code in many languages.'
 category: development
-aliases: [programming, software-engineering, implement, write-code, build-feature]
+aliases:
+- programming
+- software-engineering
+- implement
+- write-code
+- build-feature
 triggers:
-  - write this code
-  - implement this
-  - code this up
-  - help me code
-  - build a function
-  - write a script
-  - implement this feature
-keywords: [code, function, implement, build, script, feature, programming, software, develop]
+- write this code
+- implement this
+- code this up
+- help me code
+- build a function
+- write a script
+- implement this feature
+keywords:
+- code
+- function
+- implement
+- build
+- script
+- feature
+- programming
+- software
+- develop
 dependencies: []
 risk: low
 version: 1.0.0
 source: custom
 enabled: true
+author: Mr-Nobody-Anonymous
+tags:
+- build
+- code
+- coding
+- development
+- function
+- implement
+compatibility:
+  claude-code: '>=1.0'
+  skillhub: '*'
+  cursor: '>=0.40'
+  codex: '*'
+network_access: false
+filesystem_access: read
+credential_access: false
+destructive_operations: false
 ---
 
 # Coding
