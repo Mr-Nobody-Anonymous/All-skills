@@ -1,0 +1,18 @@
+{
+  "scanner_version": "3.0.0",
+  "high_severity_findings": 0,
+  "warning_findings_audited": 13,
+  "scanned_canonical_skills": 124,
+  "scanned_active_skills": 72,
+  "scan_status_states": [
+    "SCANNED",
+    "SCANNED_WITH_LIMIT",
+    "SCAN_FAILED",
+    "UNSCANNABLE"
+  ],
+  "ssrf_protection": true,
+  "secret_isolation_brokering": true,
+  "fail_closed_registry": true,
+  "fail_closed_hooks": true,
+  "verified_at": "2026-09-21"
+}

@@ -42,16 +42,19 @@ jobs:
       - name: 3. Verify Stats Synchronization
         run: python scripts/compute_stats.py --verify
 
-      - name: 4. Run Platform Test Suite
+      - name: 4. Verify Architecture Baselines
+        run: python scripts/generate_baselines.py --verify
+
+      - name: 5. Run Platform Test Suite
         run: python scripts/skills/skills.py test
 
-      - name: 5. Run Execution Runtime & Security Gate Unit Tests
+      - name: 6. Run Execution Runtime & Security Gate Unit Tests
         run: python -m unittest tests/test_runtime.py tests/test_security_gates.py
 
-      - name: 6. Run Behavioral, Routing & Adversarial Evals
+      - name: 7. Run Behavioral, Routing & Adversarial Evals
         run: python scripts/run_evals.py
 
-      - name: 7. Run Skill Library Doctor Diagnostics
+      - name: 8. Run Skill Library Doctor Diagnostics
         run: python scripts/skills/skills.py doctor
 
   security-scan:

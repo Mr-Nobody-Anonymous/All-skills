@@ -1,0 +1,11 @@
+{
+  "version": "3.0.0",
+  "ground_truth_cases": 25,
+  "out_of_distribution_cases": 25,
+  "adversarial_injection_cases": 10,
+  "behavioral_cases": 8,
+  "ood_rejection_rate_percent": 100.0,
+  "false_activation_rate_percent": 0.0,
+  "token_boundary_matching_enforced": true,
+  "verified_at": "2026-09-21"
+}

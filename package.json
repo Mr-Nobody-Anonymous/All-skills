@@ -36,7 +36,9 @@
     "doctor": "python scripts/allskills.py doctor --full",
     "evals": "python scripts/run_evals.py",
     "security": "python scripts/scan_skills_security.py",
-    "setup": "python scripts/setup_skills.py"
+    "setup": "python scripts/setup_skills.py",
+    "baseline": "python scripts/generate_baselines.py",
+    "baseline:verify": "python scripts/generate_baselines.py --verify"
   },
   "engines": {
     "node": ">=18.0.0",

@@ -1,0 +1,19 @@
+{
+  "package_name": "all-skills",
+  "version": "3.0.0",
+  "python_requires": ">=3.10",
+  "core_dependencies": [
+    "pyyaml>=6.0",
+    "rich>=13.0.0",
+    "click>=8.0.0",
+    "requests>=2.31.0",
+    "httpx>=0.25.0",
+    "python-dotenv>=1.0.0",
+    "attrs>=23.1.0",
+    "networkx>=3.1"
+  ],
+  "pyproject_configured": true,
+  "setup_py_unified": true,
+  "lockfile_skills": true,
+  "lockfile_awesome_skills": true
+}
