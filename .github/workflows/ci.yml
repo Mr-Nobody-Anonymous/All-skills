@@ -48,8 +48,8 @@ jobs:
       - name: 5. Run Platform Test Suite
         run: python scripts/skills/skills.py test
 
-      - name: 6. Run Execution Runtime & Security Gate Unit Tests
-        run: python -m unittest tests/test_runtime.py tests/test_security_gates.py
+      - name: 6. Run Execution Runtime, Security Gate & Adapter Conformance Unit Tests
+        run: python -m unittest tests/test_runtime.py tests/test_security_gates.py tests/test_adapters_conformance.py
 
       - name: 7. Run Behavioral, Routing & Adversarial Evals
         run: python scripts/run_evals.py

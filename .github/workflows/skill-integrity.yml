@@ -4,17 +4,37 @@ on:
   push:
     branches: [main]
   pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
 
 jobs:
   doctor:
+    name: Skill Library Integrity & Chain Verification
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Checkout Code
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Set up Python 3.10
+        uses: actions/setup-python@39cd14951b08e74b54015eac00f074f16fc18230 # v5.1.1
         with:
           python-version: "3.10"
+          cache: "pip"
+
+      - name: Install Dependencies & Verify Package
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e .
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
       - name: Doctor (lifecycle, quality, conflicts, deps)
         run: python scripts/skills/skills.py doctor
+
+      - name: 11-Layer Platform Doctor
+        run: python scripts/allskills.py doctor --full
+
       - name: Resolve named chains
         run: |
           python scripts/skills/skills.py chain deep-research | grep -q "Steps:"
