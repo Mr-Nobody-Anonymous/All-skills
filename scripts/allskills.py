@@ -266,6 +266,9 @@ def main() -> int:
     s_doctor = subparsers.add_parser("doctor", help="Run system diagnostics")
     s_doctor.add_argument("--full", action="store_true", help="Run the complete 11-layer audit")
     subparsers.add_parser("verify", help="Verify harness and lockfile integrity")
+    subparsers.add_parser("verify-registry", help="Run independent registry and statistics integrity verification")
+    s_stats = subparsers.add_parser("stats", help="View or verify platform statistics")
+    s_stats.add_argument("--verify", action="store_true", help="Verify stats.json without modifying")
     subparsers.add_parser("test", help="Run full regression test suite")
     subparsers.add_parser("sources", help="List registered upstream sources")
     subparsers.add_parser("sync", help="Synchronize upstream sources")
@@ -283,6 +286,13 @@ def main() -> int:
         return cmd_search(args.query)
     elif args.subcommand == "verify":
         return run_cmd(["scripts/setup_tools.py", "--verify"])
+    elif args.subcommand == "verify-registry":
+        return run_cmd(["scripts/verify_registry_integrity.py"])
+    elif args.subcommand == "stats":
+        cmd = ["scripts/compute_stats.py"]
+        if getattr(args, "verify", False):
+            cmd.append("--verify")
+        return run_cmd(cmd)
     elif args.subcommand == "test":
         return run_cmd(["scripts/skills/skills.py", "test"])
     elif args.subcommand == "sources":

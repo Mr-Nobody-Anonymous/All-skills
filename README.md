@@ -13,7 +13,7 @@
   <img src="https://img.shields.io/badge/domains-251%20Categories-10b981?style=for-the-badge&logo=hubspot&logoColor=white" alt="251 Categories" />
   <img src="https://img.shields.io/badge/platforms-11%20Agent%20Harnesses-ec4899?style=for-the-badge&logo=probot&logoColor=white" alt="11 Agent Harnesses" />
   <img src="https://img.shields.io/badge/active--harness-72%20Verified%20Skills-6366f1?style=for-the-badge&logo=lightning&logoColor=white" alt="72 Active Skills" />
-  <img src="https://img.shields.io/badge/tests-136%2F136%20Passing-10b981?style=for-the-badge&logo=pytest&logoColor=white" alt="136 Tests Passing" />
+  <img src="https://img.shields.io/badge/tests-143%2F143%20Passing-10b981?style=for-the-badge&logo=pytest&logoColor=white" alt="143 Tests Passing" />
   <img src="https://img.shields.io/badge/license-MIT-green?style=for-the-badge" alt="MIT License" />
   <img src="https://img.shields.io/badge/skillhub-compatible-0ea5e9?style=for-the-badge&logo=npm&logoColor=white" alt="SkillHub Compatible" />
   <img src="https://img.shields.io/badge/python-3.10+-3776ab?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.10+" />
@@ -55,11 +55,11 @@ When AI coding assistants are front-loaded with thousands of prompt instructions
 │          (skills/)            │        (awesome_skills/)        │     (.agents/ / .claude/ /    │
 │                               │                                 │     .cursor/ / .codex/)       │
 ├───────────────────────────────┼─────────────────────────────────┼───────────────────────────────┤
-│  • 122 Curated & Tested Skills│  • 14,855 Categorized Skills     │  • 70 Staff Engineer Skills   │
+│  • 122 Curated & Tested Skills│  • 14,855 Categorized Skills     │  • 72 Staff Engineer Skills   │
 │  • 9-Signal Layered Scoring   │  • 251 Functional Domain Dirs   │  • Pre-Loaded in Workspace    │
 │  • Deterministic Workflows    │  • Machine-Readable Index       │  • Native Multi-Tool Synced   │
 │  • 8-State Formal Lifecycle   │  • Complete CATALOG.md Reference│  • $O(1)$ Load-on-Demand      │
-│  • 104/104 Passing Unit Tests   │  • Dynamic Manager CLI          │  • Zero Prompt Bloat          │
+│  • 143/143 Passing Unit Tests │  • Dynamic Manager CLI          │  • Zero Prompt Bloat          │
 └───────────────────────────────┴─────────────────────────────────┴───────────────────────────────┘
 ```
 

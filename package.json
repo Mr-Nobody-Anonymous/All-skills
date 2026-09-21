@@ -1,6 +1,6 @@
 {
   "name": "@mr-nobody-anonymous/all-skills",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Universal Agent Skill Operating System and Multi-Agent Harness for Claude Code, Cursor, Codex, OpenClaw, SkillHub, and Antigravity",
   "author": "Mr-Nobody-Anonymous",
   "license": "MIT",
@@ -32,6 +32,7 @@
   "scripts": {
     "test": "python scripts/skills/skills.py test",
     "validate": "python scripts/validate_schema.py && python scripts/validate_skillhub_spec.py",
+    "verify:registry": "python scripts/verify_registry_integrity.py",
     "doctor": "python scripts/allskills.py doctor --full",
     "evals": "python scripts/run_evals.py",
     "security": "python scripts/scan_skills_security.py",

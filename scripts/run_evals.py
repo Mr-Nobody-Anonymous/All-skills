@@ -64,8 +64,44 @@ def run_adversarial_evals() -> bool:
     print(f"  Adversarial Cases: {passed}/{len(cases)} verified.")
     return passed == len(cases)
 
+def run_ood_evals() -> bool:
+    print("\n--- 4. Running Out-of-Distribution (OOD) Routing Evals ---")
+    ood_file = REPO_ROOT / "evals" / "routing" / "ood_cases.json"
+    if not ood_file.exists():
+        print("  Missing OOD cases file!")
+        return False
+    cases = json.loads(ood_file.read_text(encoding="utf-8"))
+    print(f"  Loaded {len(cases)} versioned out-of-distribution test cases.")
+
+    sys.path.insert(0, str(REPO_ROOT / "src"))
+    from skills.registry import load_registry
+    from skills.router import Router
+
+    registry = load_registry(REPO_ROOT)
+    router = Router(registry)
+
+    rejected = 0
+    false_activations = 0
+    for c in cases:
+        query = c.get("query", "")
+        # Score query against router
+        match = router.route_one(query)
+        # OOD queries should either return None or have very low score (< 40.0)
+        if match is None or match.score < 40.0:
+            rejected += 1
+        else:
+            false_activations += 1
+
+    rejection_rate = (rejected / len(cases)) * 100.0
+    false_activation_rate = (false_activations / len(cases)) * 100.0
+
+    print(f"  OOD Rejection Rate:     {rejection_rate:.1f}% ({rejected}/{len(cases)})")
+    print(f"  False Activation Rate:  {false_activation_rate:.1f}% ({false_activations}/{len(cases)})")
+    return rejection_rate >= 95.0
+
+
 def run_baseline_check() -> bool:
-    print("\n--- 4. Checking Baseline Prompt / Expected Output ---")
+    print("\n--- 5. Checking Baseline Prompt / Expected Output ---")
     p1 = REPO_ROOT / "evals" / "test_prompt.txt"
     p2 = REPO_ROOT / "evals" / "expected_output.md"
     if p1.exists() and p2.exists():
@@ -76,18 +112,21 @@ def run_baseline_check() -> bool:
     print("  Baseline pairs: MISSING")
     return False
 
+
 def main() -> int:
     b1 = run_behavioral_evals()
     b2 = run_routing_evals()
     b3 = run_adversarial_evals()
-    b4 = run_baseline_check()
+    b4 = run_ood_evals()
+    b5 = run_baseline_check()
 
-    if all([b1, b2, b3, b4]):
-        print("\n🎉 All evaluation suites PASSED successfully!")
+    if all([b1, b2, b3, b4, b5]):
+        print("\n🎉 All 5 evaluation suites PASSED successfully!")
         return 0
     else:
         print("\n❌ One or more evaluation suites FAILED.")
         return 1
+
 
 if __name__ == "__main__":
     sys.exit(main())

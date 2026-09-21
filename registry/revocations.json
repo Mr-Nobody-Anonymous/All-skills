@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "version": "1.0.0",
+  "last_updated": "2026-09-21",
+  "description": "Authoritative registry of revoked, compromised, or security-quarantined skills.",
+  "revoked_skills": [
+    {
+      "id": "security.malicious-demo",
+      "revoked_at": "2026-09-21T00:00:00Z",
+      "advisory_id": "AS-2026-0001",
+      "reason": "Test fixture demonstrating immediate router kill-switch and rejection",
+      "severity": "critical",
+      "replacement": null
+    }
+  ]
+}

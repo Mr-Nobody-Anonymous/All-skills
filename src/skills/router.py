@@ -21,6 +21,7 @@ from __future__ import annotations
 
 import re
 from dataclasses import dataclass, field
+from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
 from .dependencies import check_dependency
@@ -58,8 +59,23 @@ class RouteBreakdown:
 
 
 class Router:
-    def __init__(self, registry: Registry) -> None:
+    def __init__(self, registry: Registry, revocations_path: Optional[Path] = None) -> None:
         self.registry = registry
+        self.revoked_ids = set()
+        if revocations_path is None:
+            candidate = Path(__file__).resolve().parents[2] / "registry" / "revocations.json"
+            if candidate.exists():
+                revocations_path = candidate
+        if revocations_path and revocations_path.exists():
+            try:
+                import json
+                with open(revocations_path, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                    for item in data.get("revoked_skills", []):
+                        if isinstance(item, dict) and "id" in item:
+                            self.revoked_ids.add(item["id"])
+            except Exception:
+                pass
 
     def route(self, query: str, top_k: int = 3) -> List[RouteMatch]:
         breakdowns = self.explain(query, top_k=top_k)
@@ -80,7 +96,7 @@ class Router:
         # A bare category name activates every enabled skill in that category.
         category_hits = [
             e for e in self.registry.entries
-            if e.enabled and q == e.category.lower()
+            if e.enabled and q == e.category.lower() and e.id not in self.revoked_ids
         ]
         if category_hits:
             out = [
@@ -91,7 +107,7 @@ class Router:
             return out[:top_k]
         breakdowns: List[RouteBreakdown] = []
         for entry in self.registry.entries:
-            if not entry.enabled:
+            if not entry.enabled or entry.id in self.revoked_ids:
                 continue
             result = self._score_one(q, entry)
             if result is None:

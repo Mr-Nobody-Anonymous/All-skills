@@ -1,4 +1,5 @@
 {
+  "platform_version": "3.0.0",
   "total_unique_skills": 12755,
   "catalog_skills": 14855,
   "catalog_index_records": 14855,
@@ -7,8 +8,9 @@
   "manifest_skills": 192,
   "categories": 251,
   "canonical_categories": 8,
-  "tests": 136,
+  "tests": 143,
   "workflows": 5,
+  "ci_workflows": 8,
   "named_chains": 4,
   "curated_packs": 7,
   "last_generated": "2026-09-21"

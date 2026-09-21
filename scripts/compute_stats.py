@@ -15,6 +15,11 @@ import re
 import sys
 from pathlib import Path
 
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+if hasattr(sys.stderr, "reconfigure"):
+    sys.stderr.reconfigure(encoding="utf-8")
+
 
 def get_repo_root() -> Path:
     return Path(__file__).resolve().parent.parent
@@ -69,6 +74,12 @@ def compute_platform_stats(repo_root: Path | None = None) -> dict:
         if (workflows_dir / w).is_file() and w.endswith(".md") and w.lower() != "readme.md"
     ] if workflows_dir.exists() else []
 
+    ci_workflows_dir = repo_root / ".github" / "workflows"
+    ci_workflows = [
+        w for w in os.listdir(ci_workflows_dir)
+        if (ci_workflows_dir / w).is_file() and (w.endswith(".yml") or w.endswith(".yaml"))
+    ] if ci_workflows_dir.exists() else []
+
     chains_file = repo_root / "skills" / "chains.json"
     chains_count = 0
     if chains_file.exists():
@@ -98,7 +109,11 @@ def compute_platform_stats(repo_root: Path | None = None) -> dict:
     except Exception:
         test_count = 94
 
+    version_file = repo_root / "VERSION"
+    platform_version = version_file.read_text(encoding="utf-8").strip() if version_file.exists() else "3.0.0"
+
     stats = {
+        "platform_version": platform_version,
         "total_unique_skills": len(all_skill_ids),
         "catalog_skills": len(catalog_skills),
         "catalog_index_records": catalog_index_count,
@@ -109,6 +124,7 @@ def compute_platform_stats(repo_root: Path | None = None) -> dict:
         "canonical_categories": len(canonical_categories),
         "tests": test_count,
         "workflows": len(workflows),
+        "ci_workflows": len(ci_workflows),
         "named_chains": chains_count,
         "curated_packs": packs_count,
         "last_generated": datetime.date.today().isoformat()
@@ -313,17 +329,45 @@ def sync_skills_md(stats: dict, repo_root: Path | None = None) -> bool:
 def main() -> None:
     parser = argparse.ArgumentParser(description="Compute authoritative stats.json")
     parser.add_argument("--sync-readme", action="store_true", help="Synchronize README.md and SKILLS.md with generated stats")
+    parser.add_argument("--verify", action="store_true", help="Verify stats.json matches actual repository metrics without writing")
     args = parser.parse_args()
 
     repo_root = get_repo_root()
-    stats = compute_platform_stats(repo_root)
-    saved_path = save_stats(stats, repo_root)
+    computed = compute_platform_stats(repo_root)
+
+    if args.verify:
+        stats_file = repo_root / "stats.json"
+        if not stats_file.exists():
+            print(f"Error: {stats_file} does not exist", file=sys.stderr)
+            sys.exit(1)
+        with open(stats_file, "r", encoding="utf-8") as f:
+            existing = json.load(f)
+
+        mismatches = []
+        for key, val in computed.items():
+            if key == "last_generated":
+                continue
+            if key not in existing:
+                mismatches.append(f"Missing key '{key}' in stats.json (computed: {val})")
+            elif existing[key] != val:
+                mismatches.append(f"Field '{key}' mismatch: stats.json has {existing[key]}, computed {val}")
+
+        if mismatches:
+            print("❌ Stats Verification Failed:", file=sys.stderr)
+            for m in mismatches:
+                print(f"  - {m}", file=sys.stderr)
+            sys.exit(1)
+        else:
+            print("✅ Stats Verification Passed: stats.json perfectly matches repository metrics!")
+            sys.exit(0)
+
+    saved_path = save_stats(computed, repo_root)
     print(f"Authoritative stats generated at {saved_path}:")
-    print(json.dumps(stats, indent=2))
+    print(json.dumps(computed, indent=2))
 
     if args.sync_readme:
-        synced_readme = sync_readme(stats, repo_root)
-        synced_skills = sync_skills_md(stats, repo_root)
+        synced_readme = sync_readme(computed, repo_root)
+        synced_skills = sync_skills_md(computed, repo_root)
         if synced_readme:
             print("Successfully synchronized README.md numbers.")
         if synced_skills:

@@ -1,0 +1,42 @@
+# ==============================================================================
+# All-Skills Code Owners & Security Governance
+# ==============================================================================
+
+# Global Default
+* @Mr-Nobody-Anonymous
+
+# Security Pipeline, Sandboxing & Threat Model
+/src/skills/security.py @Mr-Nobody-Anonymous
+/scripts/scan_skills_security.py @Mr-Nobody-Anonymous
+/docs/security/ @Mr-Nobody-Anonymous
+/policies/ @Mr-Nobody-Anonymous
+/registry/revocations.json @Mr-Nobody-Anonymous
+SECURITY.md @Mr-Nobody-Anonymous
+
+# Lifecycle Hooks & Verification Gates
+/hooks/ @Mr-Nobody-Anonymous
+/scripts/run_hook.py @Mr-Nobody-Anonymous
+/scripts/verify_registry_integrity.py @Mr-Nobody-Anonymous
+/scripts/compute_stats.py @Mr-Nobody-Anonymous
+
+# JSON Schemas & Validation Contracts
+/schemas/ @Mr-Nobody-Anonymous
+/scripts/validate_schema.py @Mr-Nobody-Anonymous
+/scripts/validate_skillhub_spec.py @Mr-Nobody-Anonymous
+
+# Registry, Manifests, and Cryptographic Locks
+/manifest.json @Mr-Nobody-Anonymous
+/stats.json @Mr-Nobody-Anonymous
+/skills.lock @Mr-Nobody-Anonymous
+/registry/ @Mr-Nobody-Anonymous
+
+# Adapters, Agent Profiles & Harnesses
+/adapters/ @Mr-Nobody-Anonymous
+/profiles/ @Mr-Nobody-Anonymous
+/.agents/skills/ @Mr-Nobody-Anonymous
+/scripts/setup_tools.py @Mr-Nobody-Anonymous
+/scripts/setup_skills.py @Mr-Nobody-Anonymous
+
+# CI/CD Workflows
+/.github/workflows/ @Mr-Nobody-Anonymous
+/workflows/ @Mr-Nobody-Anonymous

@@ -41,6 +41,10 @@ PATTERNS = [
 MAX_SCAN_FILE_SIZE = 2_000_000
 
 
+import ast
+import yaml
+
+
 @dataclass(frozen=True)
 class Finding:
     skill_id: str
@@ -50,15 +54,23 @@ class Finding:
 
 
 def scan_skill(entry: SkillEntry, skill_dir: Path) -> List[Finding]:
-    """Statically scan every readable file in one skill folder."""
+    """Statically scan every readable file in one skill folder.
+
+    Never bypasses findings based on content keywords in the inspected lines.
+    Only explicit file-level annotations ('# security-scan: ignore') or
+    audited test fixture paths are exempted.
+    """
     findings: List[Finding] = []
     if not skill_dir.exists():
         return findings
     for f in skill_dir.rglob("*"):
         if not f.is_file() or f.name.startswith("."):
             continue
+        rel = str(f.relative_to(skill_dir)).replace("\\", "/")
         try:
-            if f.stat().st_size > MAX_SCAN_FILE_SIZE:
+            sz = f.stat().st_size
+            if sz > MAX_SCAN_FILE_SIZE:
+                findings.append(Finding(entry.id, rel, f"file exceeds max scan size ({sz} bytes)", "warn"))
                 continue
         except OSError:
             continue
@@ -66,21 +78,41 @@ def scan_skill(entry: SkillEntry, skill_dir: Path) -> List[Finding]:
             content = f.read_text(encoding="utf-8", errors="ignore")
         except Exception:
             continue
-        rel = str(f.relative_to(skill_dir)).replace("\\", "/")
+
+        # File-level explicit exemption only
+        if content.startswith("# security-scan: ignore") or content.startswith("<!-- security-scan: ignore -->"):
+            continue
+
         for pattern, label, severity in PATTERNS:
             try:
                 for match in pattern.finditer(content):
-                    # Check if line is a benign test/benchmark payload
-                    start_line = content.rfind("\n", 0, match.start()) + 1
-                    end_line = content.find("\n", match.end())
-                    line = content[start_line : end_line if end_line != -1 else len(content)]
-                    if any(k in line for k in ["input:", "payload:", "expectedToCatch", "test_", "adversarial", "PWNED"]):
-                        continue
                     findings.append(Finding(entry.id, rel, label, severity))
                     break
             except Exception:
                 continue
     return findings
+
+
+def check_python_ast(file_path: Path) -> tuple[bool, str]:
+    """Parse Python code into AST to detect syntax errors and malformed scripts."""
+    try:
+        content = file_path.read_text(encoding="utf-8", errors="ignore")
+        ast.parse(content, filename=str(file_path))
+        return True, "valid"
+    except SyntaxError as e:
+        return False, f"SyntaxError: {e.msg} on line {e.lineno}"
+    except Exception as e:
+        return False, str(e)
+
+
+def check_yaml_ast(file_path: Path) -> tuple[bool, str]:
+    """Verify YAML file syntactic validity via safe loading."""
+    try:
+        content = file_path.read_text(encoding="utf-8", errors="ignore")
+        yaml.safe_load(content)
+        return True, "valid"
+    except Exception as e:
+        return False, str(e)
 
 
 def scan_all(registry: Registry, skills_root: Path) -> List[Finding]:

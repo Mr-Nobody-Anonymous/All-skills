@@ -30,15 +30,25 @@ def load_hooks_config() -> dict:
         return json.load(f)
 
 
-def run_single_hook(script_rel_path: str, skill_id: str, extra_args: list[str]) -> int:
+def run_single_hook(script_rel_path: str, skill_id: str, extra_args: list[str], required: bool = False, security_critical: bool = False) -> int:
     script_path = REPO_ROOT / script_rel_path
     if not script_path.exists():
-        print(f"[HOOKS] Warning: Hook script not found: {script_path}", file=sys.stderr)
+        if required or security_critical:
+            print(f"[HOOKS] FATAL: Required security hook script not found: {script_path}", file=sys.stderr)
+            return 1
+        print(f"[HOOKS] Warning: Optional hook script not found: {script_path}", file=sys.stderr)
         return 0
 
     cmd = [sys.executable, str(script_path), "--skill", skill_id] + extra_args
-    res = subprocess.run(cmd, cwd=str(REPO_ROOT))
-    return res.returncode
+    try:
+        res = subprocess.run(cmd, cwd=str(REPO_ROOT), timeout=30)
+        return res.returncode
+    except subprocess.TimeoutExpired:
+        print(f"[HOOKS] ERROR: Hook '{script_rel_path}' timed out after 30s", file=sys.stderr)
+        return 124
+    except Exception as e:
+        print(f"[HOOKS] ERROR: Failed executing hook '{script_rel_path}': {e}", file=sys.stderr)
+        return 1
 
 
 def main() -> int:
@@ -57,7 +67,7 @@ def main() -> int:
         for stage_name, hooks in hooks_map.items():
             print(f"\n[{stage_name.upper()}]:")
             for h in hooks:
-                req = "REQUIRED" if h.get("required") else "OPTIONAL"
+                req = "REQUIRED" if h.get("required") or h.get("security_critical") else "OPTIONAL"
                 print(f"  - {h.get('id')} ({req}): {h.get('description')}")
         return 0
 
@@ -80,10 +90,14 @@ def main() -> int:
         hook_id = hook.get("id")
         script_rel = hook.get("script")
         required = hook.get("required", False)
-        code = run_single_hook(script_rel, args.skill, extra_args)
-        if code != 0 and required:
-            print(f"[HOOKS] ABORT: Required {args.stage} hook '{hook_id}' failed with exit code {code}", file=sys.stderr)
-            return code
+        security_critical = hook.get("security_critical", False)
+        code = run_single_hook(script_rel, args.skill, extra_args, required=required, security_critical=security_critical)
+        if code != 0:
+            if required or security_critical:
+                print(f"[HOOKS] ABORT: Required {args.stage} hook '{hook_id}' failed with exit code {code}", file=sys.stderr)
+                return code
+            else:
+                print(f"[HOOKS] Warning: Optional {args.stage} hook '{hook_id}' exited with code {code}", file=sys.stderr)
 
     print(f"[HOOKS] All {args.stage} hooks completed successfully.")
     return 0

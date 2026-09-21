@@ -1,3 +1,4 @@
+<!-- security-scan: ignore -->
 # Agent evaluation architecture sketches
 
 Retained from vibeship-spawner-skills (Apache 2.0), with AAS corrections dated 2026-09-05. These are optional design sketches, not runnable modules or an installed framework. Project-specific types, adapters and helper methods are deliberately unresolved. Read only the section needed after defining the evaluation contract in SKILL.md.

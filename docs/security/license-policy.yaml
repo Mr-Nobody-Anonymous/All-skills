@@ -1,0 +1,62 @@
+# ==============================================================================
+# All-Skills Open Source License & Compliance Policy
+# ==============================================================================
+version: "1.0.0"
+policy_id: "allskills-license-compliance"
+effective_date: "2026-09-21"
+
+repository:
+  root_license: "MIT"
+  spdx_id: "MIT"
+  author: "Mr-Nobody-Anonymous"
+  third_party_notices: "THIRD_PARTY_NOTICES.md"
+
+permitted_inbound_licenses:
+  permissive:
+    - spdx: "MIT"
+      commercial_use: true
+      distribution: true
+      modification: true
+    - spdx: "Apache-2.0"
+      commercial_use: true
+      distribution: true
+      modification: true
+      patent_grant: true
+    - spdx: "BSD-2-Clause"
+      commercial_use: true
+      distribution: true
+      modification: true
+    - spdx: "BSD-3-Clause"
+      commercial_use: true
+      distribution: true
+      modification: true
+    - spdx: "ISC"
+      commercial_use: true
+      distribution: true
+      modification: true
+    - spdx: "CC-BY-4.0"
+      commercial_use: true
+      distribution: true
+      modification: true
+
+restricted_or_prohibited_licenses:
+  strong_copyleft:
+    - spdx: "GPL-3.0-only"
+      reason: "Incompatible with permissive multi-agent runtime distribution"
+    - spdx: "GPL-3.0-or-later"
+      reason: "Incompatible with permissive multi-agent runtime distribution"
+    - spdx: "AGPL-3.0-only"
+      reason: "Network copyleft requires platform source redistribution"
+    - spdx: "AGPL-3.0-or-later"
+      reason: "Network copyleft requires platform source redistribution"
+  proprietary:
+    - spdx: "LicenseRef-Proprietary"
+      reason: "Closed source or undisclosed distribution terms"
+    - spdx: "UNLICENSED"
+      reason: "All rights reserved by default; distribution illegal"
+
+verification_rules:
+  require_spdx_id: true
+  fail_on_prohibited: true
+  audit_missing_license: true
+  track_provenance: true
