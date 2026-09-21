@@ -338,7 +338,36 @@ def cmd_route(args, _parser):
     return 0
 
 
+def cmd_execute(args, _parser):
+    from skills.runtime import ExecutionRuntime
+    runtime = ExecutionRuntime(_workspace_root())
 
+    input_data = {}
+    if getattr(args, "input", None):
+        try:
+            input_data = json.loads(args.input)
+        except Exception as e:
+            print(f"Error parsing --input JSON: {e}")
+            return 1
+
+    tools = [t.strip() for t in args.tools.split(",")] if getattr(args, "tools", None) else None
+    res = runtime.execute(args.skill_id, input=input_data, tools=tools, dry_run=getattr(args, "dry_run", False))
+
+    if getattr(args, "json", False):
+        print(json.dumps(res.to_dict(), indent=2))
+    else:
+        print(f"Skill: {res.skill}")
+        print(f"Status: {res.status.upper()}")
+        print(f"Duration: {res.duration_ms:.2f}ms")
+        print(f"Audit ID: {res.audit_id}")
+        if res.error:
+            print(f"Error: {res.error}")
+        if res.outputs:
+            print(f"Outputs: {json.dumps(res.outputs, indent=2)}")
+        if res.verification:
+            print(f"Verification: {json.dumps(res.verification)}")
+
+    return 0 if res.status == "completed" else 1
 
 
 def _registry_path() -> Path:
@@ -388,21 +417,28 @@ def _update_registry_entry(skill_id: str, **fields):
 
 
 def cmd_set_enabled(args, _parser):
-
-    enabled = args.cmd == "enable"
-
-    lifecycle = "enabled" if enabled else "disabled"
-
-    entry = _update_registry_entry(args.skill_id, enabled=enabled, lifecycle=lifecycle)
-
+    reg = load_registry(_workspace_root())
+    entry = reg.get(args.skill_id)
     if entry is None:
-
         print(f"Skill not found: {args.skill_id}")
-
         return 1
 
-    print(f"{'Enabled' if enabled else 'Disabled'} {args.skill_id} (lifecycle={lifecycle})")
+    enabled = args.cmd == "enable"
+    target_lifecycle = "enabled" if enabled else "disabled"
+    current_lifecycle = (entry.lifecycle or "enabled").strip().lower()
 
+    try:
+        new_lifecycle = transition(current_lifecycle, target_lifecycle)
+    except ValueError as exc:
+        print(f"Cannot transition {args.skill_id}: {exc}")
+        return 1
+
+    entry = _update_registry_entry(args.skill_id, enabled=enabled, lifecycle=new_lifecycle)
+    if entry is None:
+        print(f"Skill not found: {args.skill_id}")
+        return 1
+
+    print(f"{'Enabled' if enabled else 'Disabled'} {args.skill_id} (lifecycle={new_lifecycle})")
     return 0
 
 
@@ -1237,6 +1273,15 @@ def main():
     s.add_argument("--chain", action="store_true", help="Include compatible follow-on skills")
     s.add_argument("--dry-run", action="store_true", help="Print the plan without side effects")
     s.set_defaults(func=cmd_route)
+
+    for exec_cmd in ("execute", "run"):
+        s = sub.add_parser(exec_cmd, help="Execute a skill through the universal runtime")
+        s.add_argument("skill_id", help="Canonical skill ID")
+        s.add_argument("--input", help="JSON string of execution inputs")
+        s.add_argument("--tools", help="Comma-separated declared tools")
+        s.add_argument("--dry-run", action="store_true", help="Simulate execution without modifying artifacts")
+        s.add_argument("--json", action="store_true", help="Print structured ExecutionResult as JSON")
+        s.set_defaults(func=cmd_execute)
 
     s = sub.add_parser("graph", help="Render machine-readable dependency tree for a skill")
     s.add_argument("skill_id", nargs="?", default="react", help="Root skill to render tree for")

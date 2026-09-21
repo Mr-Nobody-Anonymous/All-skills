@@ -437,7 +437,9 @@
     },
     "quality_score": {
       "type": "number",
-      "description": "Automated composite quality score (0.0 - 1.0)."
+      "minimum": 0,
+      "maximum": 10,
+      "description": "Automated composite quality score (0.0 - 10.0 scale across documentation, maintenance, reliability, security, compatibility, and usefulness)."
     },
     "test_status": {
       "type": "string",

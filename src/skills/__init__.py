@@ -16,6 +16,7 @@ from .lifecycle import (
 from .chains import ChainResolver, ChainStore, SkillChain, load_chains
 from .conflicts import ConflictRecord, ConflictStore, load_conflicts
 from .security import Finding, scan_all, scan_skill, high_severity
+from .runtime import ExecutionRuntime, ExecutionResult
 
 __all__ = [
     "Registry",
@@ -52,6 +53,8 @@ __all__ = [
     "scan_all",
     "scan_skill",
     "high_severity",
+    "ExecutionRuntime",
+    "ExecutionResult",
 ]
 
-__version__ = "1.2.0"
+__version__ = "3.0.0"

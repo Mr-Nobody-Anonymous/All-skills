@@ -192,13 +192,29 @@ def link_or_copy(src: Path, dst: Path, replace_managed: bool = False) -> Tuple[b
     """
     if dst.exists() or dst.is_symlink():
         if is_link_or_junction(dst):
+            if not is_managed(dst):
+                return False, f"REFUSED: {dst} is an unmanaged link or junction. All-skills will not modify it."
             if not replace_managed:
                 return True, "already-linked"
             # Safe to replace: remove the existing managed link
             _remove_link_only(dst)
+            ledger_remove(dst)
         else:
-            # Real directory — NEVER touch it
-            return False, f"CONFLICT: {dst} is a real directory. All-skills will not modify it."
+            # Check if it was tracked in the ledger as a managed copy fallback
+            if is_managed(dst):
+                key = str(dst.relative_to(ROOT) if dst.is_relative_to(ROOT) else dst)
+                entry = load_ledger().get(key, {})
+                if entry.get("type") == "copy":
+                    if not replace_managed:
+                        return True, "already-copied"
+                    import shutil
+                    shutil.rmtree(str(dst))
+                    ledger_remove(dst)
+                else:
+                    return False, f"CONFLICT: {dst} is a real directory. All-skills will not modify it."
+            else:
+                # Real directory — NEVER touch it
+                return False, f"CONFLICT: {dst} is a real directory. All-skills will not modify it."
 
     dst.parent.mkdir(parents=True, exist_ok=True)
 
@@ -262,20 +278,32 @@ def unlink_target(dst: Path) -> Tuple[bool, str]:
     if not dst.exists() and not dst.is_symlink():
         return True, "not-present"
 
-    if not is_link_or_junction(dst):
-        return False, f"REFUSING: {dst} is a real directory, not a managed link."
-
     if not is_managed(dst):
         return False, (
-            f"REFUSING: {dst} is a link/junction but is NOT in the managed ledger. "
+            f"REFUSING: {dst} is not in the managed ledger. "
             "All-skills did not create it — will not remove it."
         )
 
-    ok = _remove_link_only(dst)
-    if ok:
-        ledger_remove(dst)
-        return True, "unlinked"
-    return False, "removal-failed"
+    if is_link_or_junction(dst):
+        ok = _remove_link_only(dst)
+        if ok:
+            ledger_remove(dst)
+            return True, "unlinked"
+        return False, "removal-failed"
+
+    # Handle managed copy fallback
+    key = str(dst.relative_to(ROOT) if dst.is_relative_to(ROOT) else dst)
+    entry = load_ledger().get(key, {})
+    if entry.get("type") == "copy":
+        import shutil
+        try:
+            shutil.rmtree(str(dst))
+            ledger_remove(dst)
+            return True, "unlinked"
+        except Exception as e:
+            return False, f"removal-failed: {e}"
+
+    return False, f"REFUSING: {dst} is a real directory and cannot be safely unlinked."
 
 
 # ─────────────────────────────────────────────────────────────────────────────

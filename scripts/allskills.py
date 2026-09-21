@@ -278,12 +278,31 @@ def main() -> int:
     s_prof.add_argument("action", choices=["list", "install", "show"])
     s_prof.add_argument("name", nargs="?", default="software-engineer")
 
+    for exec_alias in ("execute", "run"):
+        s_exec = subparsers.add_parser(exec_alias, help="Execute a skill through universal runtime")
+        s_exec.add_argument("skill_id", help="Canonical skill ID")
+        s_exec.add_argument("--input", help="JSON string of execution inputs")
+        s_exec.add_argument("--tools", help="Comma-separated declared tools")
+        s_exec.add_argument("--dry-run", action="store_true", help="Simulate execution without modifying artifacts")
+        s_exec.add_argument("--json", action="store_true", help="Print structured ExecutionResult as JSON")
+
     args = parser.parse_args()
 
     if args.subcommand == "doctor":
         return cmd_doctor(full=getattr(args, "full", False))
     elif args.subcommand == "search":
         return cmd_search(args.query)
+    elif args.subcommand in {"execute", "run"}:
+        cmd = ["scripts/skills/skills.py", "execute", args.skill_id]
+        if getattr(args, "input", None):
+            cmd.extend(["--input", args.input])
+        if getattr(args, "tools", None):
+            cmd.extend(["--tools", args.tools])
+        if getattr(args, "dry_run", False):
+            cmd.append("--dry-run")
+        if getattr(args, "json", False):
+            cmd.append("--json")
+        return run_cmd(cmd)
     elif args.subcommand == "verify":
         return run_cmd(["scripts/setup_tools.py", "--verify"])
     elif args.subcommand == "verify-registry":

@@ -60,9 +60,12 @@ def create_link(source: Path, target: Path) -> bool:
                 # Managed link — safe to replace
                 _remove_link_only(target)
             else:
-                # Unmanaged link — warn but allow replacement (user-created link is OK to replace)
-                print(f"  ⚠️  Replacing unmanaged link: {target}", file=sys.stderr)
-                _remove_link_only(target)
+                print(
+                    f"  ⚠️  REFUSED: {target} is an unmanaged link or junction. "
+                    "All-skills will not modify it.",
+                    file=sys.stderr,
+                )
+                return False
         else:
             # Real directory — NEVER touch
             print(

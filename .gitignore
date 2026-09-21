@@ -65,6 +65,7 @@ desktop.ini
 
 # Logs
 *.log
+*.jsonl
 logs/
 
 # Temp

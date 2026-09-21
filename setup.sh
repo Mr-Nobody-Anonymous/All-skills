@@ -15,7 +15,7 @@ if command -v python3 &>/dev/null; then
 elif command -v python &>/dev/null; then
     PYTHON_BIN="python"
 else
-    echo "Error: Python 3.9+ is required but not found in PATH." >&2
+    echo "Error: Python 3.10+ is required but not found in PATH." >&2
     exit 1
 fi
 
