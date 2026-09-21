@@ -95,6 +95,12 @@ class ExecutionRuntime:
         """Record an immutable execution entry to the audit log."""
         try:
             self.audit_log_path.parent.mkdir(parents=True, exist_ok=True)
+            safe_error = error
+            if safe_error and any(pat in safe_error for pat in ("AKIA", "ASIA", "PRIVATE KEY", "Bearer ")):
+                import re
+                safe_error = re.sub(r"(AKIA|ASIA)[0-9A-Z]{16}", "[REDACTED_AWS_KEY]", safe_error)
+                safe_error = re.sub(r"Bearer\s+[A-Za-z0-9._~+/-]+", "Bearer [REDACTED_TOKEN]", safe_error)
+
             entry = {
                 "timestamp": datetime.now(timezone.utc).isoformat(),
                 "audit_id": audit_id,
@@ -104,7 +110,7 @@ class ExecutionRuntime:
                 "duration_ms": round(duration_ms, 2),
                 "policy_verdict": policy_verdict,
                 "tool_calls_count": len(tool_calls),
-                "error": error,
+                "error": safe_error,
             }
             with open(self.audit_log_path, "a", encoding="utf-8") as f:
                 f.write(json.dumps(entry) + "\n")
@@ -312,3 +318,26 @@ class ExecutionRuntime:
             duration_ms=duration_ms,
             audit_id=audit_id,
         )
+
+    def simulate(
+        self,
+        skill: str,
+        input: Optional[Dict[str, Any]] = None,
+        permissions: Optional[Dict[str, str]] = None,
+    ) -> Dict[str, Any]:
+        """Perform a non-destructive dry-run simulation of skill execution."""
+        res = self.execute(skill=skill, input=input, permissions=permissions, dry_run=True)
+        reg = load_registry(self.workspace_root)
+        entry = reg.get(skill)
+        policy_eval = self.policy_engine.evaluate_skill(skill)
+        return {
+            "skill": skill,
+            "simulation_status": "would_succeed" if res.status in {"completed", "simulated"} else "would_fail",
+            "execution_status": res.status,
+            "error": res.error,
+            "verdict": policy_eval.overall_verdict.value,
+            "max_risk": policy_eval.max_risk.value,
+            "capabilities_required": policy_eval.capabilities_requested,
+            "reasons": policy_eval.reasons,
+            "side_effects": getattr(entry, "side_effects", []) if entry else [],
+        }

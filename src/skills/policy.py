@@ -27,6 +27,35 @@ class RiskLevel(str, Enum):
     CRITICAL = "CRITICAL"
 
 
+class AutonomyLevel(str, Enum):
+    L0_INFORMATIONAL = "L0_INFORMATIONAL"
+    L1_READ = "L1_READ"
+    L2_LOCAL_WRITE = "L2_LOCAL_WRITE"
+    L3_EXTERNAL = "L3_EXTERNAL"
+    L4_PRODUCTION = "L4_PRODUCTION"
+
+
+AUTONOMY_ALLOWED_CAPABILITIES: Dict[AutonomyLevel, Set[str]] = {
+    AutonomyLevel.L0_INFORMATIONAL: set(),
+    AutonomyLevel.L1_READ: {"filesystem.read", "git.read"},
+    AutonomyLevel.L2_LOCAL_WRITE: {"filesystem.read", "filesystem.write", "git.read", "git.write", "shell.execute"},
+    AutonomyLevel.L3_EXTERNAL: {"filesystem.read", "filesystem.write", "git.read", "git.write", "shell.execute", "network.request"},
+    AutonomyLevel.L4_PRODUCTION: {
+        "filesystem.read", "filesystem.write", "git.read", "git.write",
+        "shell.execute", "network.request", "secret.access", "deployment.execute",
+    },
+}
+
+
+def enforce_autonomy(requested_level: AutonomyLevel, capabilities: List[str]) -> tuple[bool, str]:
+    """Validate whether requested capabilities are within bounds of autonomy level."""
+    allowed = AUTONOMY_ALLOWED_CAPABILITIES.get(requested_level, set())
+    for cap in capabilities:
+        if cap not in allowed:
+            return False, f"Capability '{cap}' exceeds permitted boundary for autonomy level '{requested_level.value}'."
+    return True, "valid"
+
+
 # Default capability classifications and baseline policies
 DEFAULT_CAPABILITY_POLICIES: Dict[str, dict] = {
     "filesystem.read": {
@@ -211,6 +240,22 @@ class PolicyEngine:
             RiskLevel.HIGH_RISK,
             RiskLevel.CRITICAL
         ]
+
+        # Check negative capabilities (forbidden)
+        forbidden_caps = []
+        try:
+            from .registry import load_registry
+            reg = load_registry(self.workspace_root)
+            e = reg.get(skill_id)
+            if e:
+                forbidden_caps = getattr(e, "forbidden", []) or []
+        except Exception:
+            pass
+
+        for f_cap in forbidden_caps:
+            if f_cap in caps_requested:
+                overall = PolicyVerdict.DENY
+                reasons.append(f"Negative capability violation: capability '{f_cap}' is explicitly forbidden for skill '{skill_id}'.")
 
         for cap in sorted(caps_requested):
             policy = self.policies.get(cap, {

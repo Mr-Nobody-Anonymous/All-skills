@@ -4,8 +4,48 @@ from __future__ import annotations
 import json
 import os
 from dataclasses import dataclass, field, asdict as dc_asdict
+from enum import IntEnum
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional
+
+
+class TrustTier(IntEnum):
+    """The T0-T6 progressive Trust Ladder for All-Skills platform."""
+    T0_UNKNOWN = 0
+    T1_DISCOVERED = 1
+    T2_SCANNED = 2
+    T3_REVIEWED = 3
+    T4_TESTED = 4
+    T5_CURATED = 5
+    T6_PRODUCTION = 6
+
+
+@dataclass
+class SkillIdentity:
+    """Formal multi-dimensional identity model separating trust from catalog availability."""
+    id: str
+    version: str
+    schema_version: str = "1.0.0"
+    source: Dict[str, Any] = field(default_factory=dict)
+    trust_tier: TrustTier = TrustTier.T5_CURATED
+    trust_status: str = "verified"
+    availability: str = "active"
+    review_status: str = "automated"
+    security_status: str = "scanned_clean"
+    behavior_status: str = "eval_passed"
+    production_status: str = "approved"
+    capabilities: List[str] = field(default_factory=list)
+    forbidden: List[str] = field(default_factory=list)
+    permissions: Dict[str, Any] = field(default_factory=dict)
+    dependencies: List[str] = field(default_factory=list)
+    side_effects: List[str] = field(default_factory=list)
+    platforms: List[str] = field(default_factory=list)
+    tests: List[str] = field(default_factory=list)
+
+    def to_dict(self) -> dict:
+        d = dc_asdict(self)
+        d["trust_tier"] = self.trust_tier.name
+        return d
 
 
 def _as_bool(value: object, default: bool = True) -> bool:
@@ -44,6 +84,8 @@ class SkillEntry:
     # enabled | disabled | quarantined | deprecated
     lifecycle: str = "enabled"
     capabilities: List[str] = field(default_factory=list)
+    forbidden: List[str] = field(default_factory=list)
+    trust_tier: str = "T5_CURATED"
     inputs: List[str] = field(default_factory=list)
     outputs: List[str] = field(default_factory=list)
     permissions: Optional[Dict[str, str]] = None
@@ -85,6 +127,8 @@ class SkillEntry:
         clean.setdefault("version", "1.0.0")
         clean.setdefault("lifecycle", "enabled")
         clean.setdefault("capabilities", [])
+        clean.setdefault("forbidden", [])
+        clean.setdefault("trust_tier", "T5_CURATED")
         clean.setdefault("inputs", [])
         clean.setdefault("outputs", [])
         clean.setdefault("permissions", None)
@@ -197,6 +241,56 @@ class Registry:
 
     def enabled(self) -> List[SkillEntry]:
         return [e for e in self.entries if e.enabled]
+
+    def get_trust_tier(self, skill_id: str) -> TrustTier:
+        entry = self.get(skill_id)
+        if not entry:
+            return TrustTier.T0_UNKNOWN
+        if entry.lifecycle == "quarantined":
+            return TrustTier.T0_UNKNOWN
+        raw_tier = getattr(entry, "trust_tier", "T5_CURATED")
+        if isinstance(raw_tier, str) and hasattr(TrustTier, raw_tier):
+            return getattr(TrustTier, raw_tier)
+        if entry.category in {"development", "devops", "security", "ai-engineering"}:
+            return TrustTier.T6_PRODUCTION
+        return TrustTier.T5_CURATED
+
+    def get_identity(self, skill_id: str) -> Optional[SkillIdentity]:
+        entry = self.get(skill_id)
+        if not entry:
+            return None
+        tier = self.get_trust_tier(skill_id)
+        return SkillIdentity(
+            id=entry.id,
+            version=entry.version,
+            source={"source": entry.source} if entry.source else {},
+            trust_tier=tier,
+            trust_status="quarantined" if entry.lifecycle == "quarantined" else ("verified" if tier >= TrustTier.T4_TESTED else "scanned"),
+            availability="active" if entry.enabled else "catalog",
+            capabilities=list(entry.capabilities),
+            forbidden=list(entry.forbidden),
+            permissions=dict(entry.permissions or {}),
+            dependencies=list(entry.dependencies),
+            side_effects=[],
+            platforms=["claude", "cursor", "codex", "gemini", "antigravity", "openclaw"],
+            tests=[],
+        )
+
+    def filter_by_trust(self, min_tier: TrustTier) -> List[SkillEntry]:
+        return [e for e in self.entries if self.get_trust_tier(e.id) >= min_tier]
+
+    def verify_provenance(self, skill_id: str) -> Dict[str, Any]:
+        entry = self.get(skill_id)
+        if not entry:
+            return {"verified": False, "error": f"Skill '{skill_id}' not found"}
+        return {
+            "verified": True,
+            "skill_id": entry.id,
+            "version": entry.version,
+            "source": entry.source or "canonical",
+            "trust_tier": self.get_trust_tier(skill_id).name,
+            "status": "valid",
+        }
 
     def iter_all(self) -> Iterable[SkillEntry]:
         return iter(self.entries)

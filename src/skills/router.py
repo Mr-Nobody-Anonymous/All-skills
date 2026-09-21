@@ -43,11 +43,47 @@ _STOPWORDS = {
 }
 
 
+from enum import Enum
+
+
+class ConfidenceLevel(str, Enum):
+    """Calibrated confidence levels for router decision making."""
+    HIGH = "HIGH"          # score >= 75.0 (automatic execution)
+    MEDIUM = "MEDIUM"      # 50.0 <= score < 75.0 (conditional execution)
+    LOW = "LOW"            # 35.0 <= score < 50.0 (abstain / ask clarification)
+    AMBIGUOUS = "AMBIGUOUS"# multiple candidates within close margin
+    UNSAFE = "UNSAFE"      # adversarial prompt injection or revoked skill
+
+
 @dataclass
 class RouteMatch:
     skill: SkillEntry
     score: float
     matched_on: str  # "id" | "alias" | "category" | "trigger" | "keyword" | "capability" | "token" | "composition"
+
+
+@dataclass
+class RouteDecision:
+    """Formal decision structure for router with uncertainty and abstention."""
+    selected_skill: Optional[str]
+    confidence: float
+    confidence_level: ConfidenceLevel
+    reason: str
+    candidates: List[RouteMatch] = field(default_factory=list)
+    alternatives: List[Dict[str, Any]] = field(default_factory=list)
+
+    def to_dict(self) -> dict:
+        return {
+            "selected_skill": self.selected_skill,
+            "confidence": round(self.confidence, 2),
+            "confidence_level": self.confidence_level.value,
+            "reason": self.reason,
+            "candidates": [
+                {"skill": c.skill.id, "score": round(c.score, 2), "matched_on": c.matched_on}
+                for c in self.candidates
+            ],
+            "alternatives": self.alternatives,
+        }
 
 
 @dataclass
@@ -87,6 +123,89 @@ class Router:
     def route_one(self, query: str) -> Optional[RouteMatch]:
         matches = self.route(query, top_k=1)
         return matches[0] if matches else None
+
+    def route_with_confidence(self, query: str, min_confidence: float = 20.0) -> RouteDecision:
+        """Evaluate query with calibrated confidence, supporting safe abstention on uncertainty."""
+        q = (query or "").strip()
+        if not q:
+            return RouteDecision(
+                selected_skill=None,
+                confidence=0.0,
+                confidence_level=ConfidenceLevel.LOW,
+                reason="empty query",
+            )
+
+        # Prompt injection check
+        from .security import scan_instructions
+        findings = scan_instructions(q)
+        if any(sev == "high" for _, sev in findings):
+            return RouteDecision(
+                selected_skill=None,
+                confidence=0.0,
+                confidence_level=ConfidenceLevel.UNSAFE,
+                reason="Query rejected: prompt injection or security policy violation detected",
+            )
+
+        matches = self.route(q, top_k=5)
+        if not matches:
+            return RouteDecision(
+                selected_skill=None,
+                confidence=0.0,
+                confidence_level=ConfidenceLevel.LOW,
+                reason="insufficient evidence: no matching skill found",
+            )
+
+        top = matches[0]
+        alternatives = [
+            {"skill": m.skill.id, "score": round(m.score, 2), "matched_on": m.matched_on}
+            for m in matches[1:]
+        ]
+
+        if top.score < min_confidence:
+            return RouteDecision(
+                selected_skill=None,
+                confidence=top.score,
+                confidence_level=ConfidenceLevel.LOW,
+                reason=f"Confidence {top.score:.1f} is below minimum threshold ({min_confidence}) - abstaining",
+                candidates=matches[:1],
+                alternatives=alternatives,
+            )
+
+        # Check ambiguity if top two candidates are very close
+        if len(matches) > 1 and (top.score - matches[1].score) < 2.0 and top.score < 70.0:
+            return RouteDecision(
+                selected_skill=top.skill.id,
+                confidence=top.score,
+                confidence_level=ConfidenceLevel.AMBIGUOUS,
+                reason=f"Ambiguous match between '{top.skill.id}' and '{matches[1].skill.id}'",
+                candidates=matches[:2],
+                alternatives=alternatives,
+            )
+
+        level = ConfidenceLevel.HIGH if top.score >= 70.0 else ConfidenceLevel.MEDIUM
+        return RouteDecision(
+            selected_skill=top.skill.id,
+            confidence=top.score,
+            confidence_level=level,
+            reason=f"Confident match via {top.matched_on}",
+            candidates=matches[:1],
+            alternatives=alternatives,
+        )
+
+    def explain_decision(self, query: str) -> dict:
+        """Returns structured JSON explaining why a skill was selected or rejected."""
+        decision = self.route_with_confidence(query)
+        bd = self.explain(query, top_k=5)
+        evidence = {}
+        for b in bd:
+            evidence[b.skill.id] = {
+                "score": round(b.score, 2),
+                "primary_signal": b.primary_signal,
+                "signals": b.signals,
+            }
+        out = decision.to_dict()
+        out["evidence"] = evidence
+        return out
 
     def explain(self, query: str, top_k: int = 3) -> List[RouteBreakdown]:
         """Score every enabled skill for ``query`` and return ordered breakdowns."""

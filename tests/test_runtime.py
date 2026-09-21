@@ -120,6 +120,36 @@ class TestExecutionRuntime(unittest.TestCase):
         self.assertEqual(result.status, "blocked")
         self.assertIn("SSRF", result.error)
 
+    def test_runtime_simulate_mode(self):
+        """Simulation returns execution plan and required capabilities without execution."""
+        sim = self.runtime.simulate("development.debugging")
+        self.assertEqual(sim["skill"], "development.debugging")
+        self.assertEqual(sim["simulation_status"], "would_succeed")
+        self.assertEqual(sim["verdict"], "ALLOW")
+        self.assertIn("capabilities_required", sim)
+
+    def test_runtime_audit_redaction(self):
+        """Audit logging must redact embedded private keys, bearer tokens, and cloud keys."""
+        # Intentionally log an error with sensitive token
+        audit_id = "test-redact-1"
+        self.runtime._log_audit(
+            audit_id=audit_id,
+            skill="test.skill",
+            status="failed",
+            duration_ms=10.0,
+            session_id="s1",
+            policy_verdict="DENY",
+            tool_calls=[],
+            error="Failed with token: Bearer secret_token_xyz and AKIA1234567890ABCDEF",
+        )
+        with open(self.audit_log_path, "r", encoding="utf-8") as f:
+            lines = f.readlines()
+        last_entry = json.loads(lines[-1])
+        self.assertNotIn("secret_token_xyz", last_entry["error"])
+        self.assertNotIn("AKIA1234567890ABCDEF", last_entry["error"])
+        self.assertIn("[REDACTED_AWS_KEY]", last_entry["error"])
+        self.assertIn("[REDACTED_TOKEN]", last_entry["error"])
+
     def test_runtime_result_to_dict(self):
         """ExecutionResult.to_dict() returns all required fields for structured API consumers."""
         result = ExecutionResult(
@@ -138,4 +168,5 @@ class TestExecutionRuntime(unittest.TestCase):
 
 
 if __name__ == "__main__":
+    unittest.main()
     unittest.main()

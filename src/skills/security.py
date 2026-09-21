@@ -135,3 +135,143 @@ def scan_all(registry: Registry, skills_root: Path) -> List[Finding]:
 
 def high_severity(findings: List[Finding]) -> List[Finding]:
     return [f for f in findings if f.severity == "high"]
+
+
+INSTRUCTION_PATTERNS = [
+    (re.compile(r"(?i)\bignore\s+(all\s+)?(previous|prior)\s+instructions\b"), "prompt injection: ignore previous instructions", "high"),
+    (re.compile(r"(?i)\bdisregard\s+(all\s+)?(previous|above)\s+instructions\b"), "prompt injection: disregard instructions", "high"),
+    (re.compile(r"(?i)<\s*system_override\s*>"), "prompt injection: system override tag", "high"),
+    (re.compile(r"(?i)\breveal\s+(the\s+)?(system\s+prompt|instructions)\b"), "prompt injection: reveal system prompt", "high"),
+    (re.compile(r"(?i)\b(send|exfiltrate|post)\s+.*(credentials|api[_-]?keys?|secrets?|tokens?)\b"), "prompt injection: credential exfiltration", "high"),
+    (re.compile(r"(?i)\b(disable|turn\s+off|bypass)\s+.*(security|policy|guardrails?|sandbox)\b"), "prompt injection: security bypass", "high"),
+    (re.compile(r"(?i)\bexecute\s+.*without\s+(any\s+)?(confirmation|approval|asking)\b"), "prompt injection: unconfirmed execution", "warn"),
+    (re.compile(r"(?i)\bhide\s+this\s+(action|command|execution)\s+from\s+(the\s+)?user\b"), "prompt injection: covert execution", "high"),
+]
+
+
+def scan_instructions(text: str) -> List[tuple[str, str]]:
+    """Scan instruction or prompt text for injection patterns and safety bypasses.
+
+    Returns list of (label, severity) tuples.
+    """
+    findings: List[tuple[str, str]] = []
+    for pattern, label, severity in INSTRUCTION_PATTERNS:
+        if pattern.search(text):
+            findings.append((label, severity))
+    return findings
+
+
+import datetime
+import json
+
+
+def quarantine_skill(
+    skill_id: str,
+    reason: str,
+    reporter: str = "security_scanner",
+    repo_root: Path | None = None,
+) -> dict:
+    """Quarantine a skill, adding it to revocations.json and recording forensic evidence."""
+    root = repo_root or Path.cwd()
+    quarantine_dir = root / "quarantine"
+    quarantine_dir.mkdir(parents=True, exist_ok=True)
+    evidence_dir = quarantine_dir / "evidence"
+    evidence_dir.mkdir(parents=True, exist_ok=True)
+
+    timestamp = datetime.datetime.utcnow().isoformat() + "Z"
+    event = {
+        "timestamp": timestamp,
+        "action": "quarantine",
+        "skill_id": skill_id,
+        "reason": reason,
+        "reporter": reporter,
+    }
+
+    # Append to quarantine log
+    log_path = quarantine_dir / "quarantine_log.jsonl"
+    with open(log_path, "a", encoding="utf-8") as f:
+        f.write(json.dumps(event) + "\n")
+
+    # Update skills/revocations.json
+    revocations_path = root / "skills" / "revocations.json"
+    revocations_data = {"version": "1.0.0", "revocations": []}
+    if revocations_path.exists():
+        try:
+            revocations_data = json.loads(revocations_path.read_text(encoding="utf-8"))
+        except Exception:
+            pass
+
+    existing_ids = {r.get("skill_id") for r in revocations_data.get("revocations", [])}
+    if skill_id not in existing_ids:
+        revocations_data["revocations"].append({
+            "skill_id": skill_id,
+            "revoked_at": timestamp,
+            "reason": reason,
+            "severity": "high",
+        })
+        revocations_path.parent.mkdir(parents=True, exist_ok=True)
+        revocations_path.write_text(json.dumps(revocations_data, indent=2), encoding="utf-8")
+
+    # Save evidence file
+    evidence_path = evidence_dir / f"{skill_id.replace('/', '_')}.json"
+    evidence_path.write_text(json.dumps(event, indent=2), encoding="utf-8")
+
+    return {
+        "status": "quarantined",
+        "skill_id": skill_id,
+        "reason": reason,
+        "timestamp": timestamp,
+    }
+
+
+def is_quarantined(skill_id: str, repo_root: Path | None = None) -> bool:
+    """Check whether a skill is currently in quarantine or revocation."""
+    root = repo_root or Path.cwd()
+    revocations_path = root / "skills" / "revocations.json"
+    if revocations_path.exists():
+        try:
+            data = json.loads(revocations_path.read_text(encoding="utf-8"))
+            for r in data.get("revocations", []):
+                if r.get("skill_id") == skill_id:
+                    return True
+        except Exception:
+            pass
+    return False
+
+
+def unquarantine_skill(
+    skill_id: str,
+    reason: str,
+    approver: str,
+    repo_root: Path | None = None,
+) -> dict:
+    """Reinstates a quarantined skill after formal remediation."""
+    root = repo_root or Path.cwd()
+    timestamp = datetime.datetime.utcnow().isoformat() + "Z"
+    event = {
+        "timestamp": timestamp,
+        "action": "unquarantine",
+        "skill_id": skill_id,
+        "reason": reason,
+        "approver": approver,
+    }
+
+    log_path = root / "quarantine" / "quarantine_log.jsonl"
+    with open(log_path, "a", encoding="utf-8") as f:
+        f.write(json.dumps(event) + "\n")
+
+    revocations_path = root / "skills" / "revocations.json"
+    if revocations_path.exists():
+        try:
+            data = json.loads(revocations_path.read_text(encoding="utf-8"))
+            data["revocations"] = [r for r in data.get("revocations", []) if r.get("skill_id") != skill_id]
+            revocations_path.write_text(json.dumps(data, indent=2), encoding="utf-8")
+        except Exception:
+            pass
+
+    return {
+        "status": "reinstated",
+        "skill_id": skill_id,
+        "reason": reason,
+        "timestamp": timestamp,
+    }

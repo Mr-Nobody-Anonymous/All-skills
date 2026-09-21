@@ -1,0 +1,98 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/Mr-Nobody-Anonymous/All-skills/main/schemas/skill_identity.schema.json",
+  "title": "AllSkillsIdentity",
+  "description": "Formal multi-dimensional identity schema for All-Skills platform.",
+  "type": "object",
+  "required": ["id", "version", "trust_tier", "trust_status"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9_-]+(\\.[a-z0-9_-]+)*$",
+      "description": "Unique hierarchical skill identifier (e.g. development.debugging or github.issue-triage)"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+",
+      "description": "Semantic version of the skill definition"
+    },
+    "schema_version": {
+      "type": "string",
+      "default": "1.0.0"
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "type": { "type": "string" },
+        "repository": { "type": "string" },
+        "commit": { "type": "string" },
+        "path": { "type": "string" },
+        "content_sha256": { "type": "string" }
+      }
+    },
+    "trust_tier": {
+      "type": "string",
+      "enum": [
+        "T0_UNKNOWN",
+        "T1_DISCOVERED",
+        "T2_SCANNED",
+        "T3_REVIEWED",
+        "T4_TESTED",
+        "T5_CURATED",
+        "T6_PRODUCTION"
+      ]
+    },
+    "trust_status": {
+      "type": "string",
+      "enum": ["unverified", "scanned", "verified", "trusted", "quarantined", "revoked"]
+    },
+    "availability": {
+      "type": "string",
+      "enum": ["catalog", "active", "archived"]
+    },
+    "review_status": {
+      "type": "string",
+      "enum": ["unreviewed", "automated", "human_reviewed"]
+    },
+    "security_status": {
+      "type": "string",
+      "enum": ["unscanned", "scanned_clean", "warnings", "quarantined"]
+    },
+    "behavior_status": {
+      "type": "string",
+      "enum": ["unevaluated", "eval_passed", "eval_failed"]
+    },
+    "production_status": {
+      "type": "string",
+      "enum": ["experimental", "candidate", "approved"]
+    },
+    "capabilities": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "forbidden": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Negative capabilities that this skill must never execute"
+    },
+    "permissions": {
+      "type": "object"
+    },
+    "dependencies": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "side_effects": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "platforms": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "tests": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}
