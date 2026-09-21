@@ -1,0 +1,1 @@
+from .silero_vad import SileroVAD\n__all__ = ['SileroVAD']\n

@@ -1,0 +1,1 @@
+from .mmseg_scene import MMSegSceneParser\n__all__ = ['MMSegSceneParser']\n

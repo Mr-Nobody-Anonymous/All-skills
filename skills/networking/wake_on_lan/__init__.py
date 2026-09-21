@@ -1,0 +1,1 @@
+from .wol_send import WakeOnLanSender\n__all__ = ['WakeOnLanSender']\n

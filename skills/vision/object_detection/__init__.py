@@ -1,0 +1,1 @@
+from .yolov8_detect import YOLOv8Detector\n__all__ = ['YOLOv8Detector']\n

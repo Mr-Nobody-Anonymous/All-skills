@@ -1,0 +1,15 @@
+{
+  "confirmations": [
+    "Right away.",
+    "Consider it done.",
+    "Working on that for you."
+  ],
+  "errors": [
+    "Sorry, I ran into an issue fulfilling that request.",
+    "That operation could not be completed at this time."
+  ],
+  "clarifications": [
+    "Could you please clarify what you mean?",
+    "Which one would you like to select?"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "intents": [
+    {
+      "name": "music_play",
+      "skill": "skill-music-player",
+      "utterances": ["play music", "play song {title}", "play artist {artist}"]
+    },
+    {
+      "name": "timer_set",
+      "skill": "skill-timers",
+      "utterances": ["set a timer for {duration}", "timer for {duration}"]
+    },
+    {
+      "name": "alarm_set",
+      "skill": "skill-alarms",
+      "utterances": ["set alarm for {time}", "wake me up at {time}"]
+    },
+    {
+      "name": "todo_add",
+      "skill": "skill-todo-list",
+      "utterances": ["add {task} to my todo list", "remind me to {task}"]
+    }
+  ]
+}

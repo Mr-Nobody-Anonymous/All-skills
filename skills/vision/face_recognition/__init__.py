@@ -1,0 +1,1 @@
+from .deepface_recognize import DeepFaceRecognizer\n__all__ = ['DeepFaceRecognizer']\n

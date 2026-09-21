@@ -1,0 +1,1 @@
+from .wiki_lookup import WikipediaLookup\n__all__ = ['WikipediaLookup']\n

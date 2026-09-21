@@ -1,0 +1,1 @@
+from .mmaction_recognize import MMActionRecognizer\n__all__ = ['MMActionRecognizer']\n

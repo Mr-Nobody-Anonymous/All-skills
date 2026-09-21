@@ -1,0 +1,1 @@
+from .argos_translate import ArgosTranslator\n__all__ = ['ArgosTranslator']\n

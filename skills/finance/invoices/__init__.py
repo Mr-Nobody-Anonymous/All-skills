@@ -1,0 +1,1 @@
+from .invoice_gen import InvoiceGenerator\n__all__ = ['InvoiceGenerator']\n

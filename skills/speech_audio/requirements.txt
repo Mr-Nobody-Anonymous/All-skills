@@ -1,0 +1,1 @@
+openai-whisper>=20231117\nTTS>=0.22.0\nspeechbrain>=0.5.15\nsilero-vad>=4.0\npydub>=0.25.1\n

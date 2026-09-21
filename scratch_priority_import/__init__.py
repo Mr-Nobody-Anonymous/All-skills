@@ -21,6 +21,8 @@ from .fallback_chain import FallbackChain, FallbackHandler
 from .lazy_loader import LazyLoaderManager, LazySkillProxy
 from .resource_monitor import ResourceMonitor
 from .import_manager import ImportManager
+from .priority_registry import PriorityRegistry, RegisteredSkill
+from .import_order import ImportOrder
 
 __all__ = [
     'SkillLoader',
@@ -50,6 +52,9 @@ __all__ = [
     'LazyLoaderManager',
     'LazySkillProxy',
     'ResourceMonitor',
-    'ImportManager'
+    'ImportManager',
+    'PriorityRegistry',
+    'RegisteredSkill',
+    'ImportOrder'
 ]
 

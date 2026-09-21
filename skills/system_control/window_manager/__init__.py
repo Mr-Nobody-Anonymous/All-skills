@@ -1,0 +1,1 @@
+from .pygetwindow_manage import PyGetWindowManager\n__all__ = ['PyGetWindowManager']\n

@@ -1,0 +1,1 @@
+from .behavior_id import BehavioralBiometricID\n__all__ = ['BehavioralBiometricID']\n

@@ -26,3 +26,12 @@ class ErrorHandler:
             "error_code": code,
             "message": message
         }
+
+    def handle(self, error: Exception, context: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
+        logger.error(f"Pipeline error: {error}", exc_info=True)
+        return {
+            "success": False,
+            "error": str(error),
+            "context": context or {},
+            "message": "Encountered an internal error while processing request."
+        }

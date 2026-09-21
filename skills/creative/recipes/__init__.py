@@ -1,0 +1,1 @@
+from .recipe_gen import RecipeGenerator\n__all__ = ['RecipeGenerator']\n

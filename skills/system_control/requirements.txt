@@ -1,0 +1,1 @@
+pyautogui>=0.9.54\npsutil>=5.9.0\nwatchdog>=3.0.0\npyperclip>=1.8.2\napscheduler>=3.10.0\n

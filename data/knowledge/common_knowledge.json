@@ -1,0 +1,8 @@
+{
+  "facts": [
+    {"subject": "Earth", "predicate": "is_a", "object": "planet"},
+    {"subject": "Python", "predicate": "is_a", "object": "programming language"},
+    {"subject": "Speed of light", "predicate": "equals", "object": "299,792,458 m/s"},
+    {"subject": "Water", "predicate": "chemical_formula", "object": "H2O"}
+  ]
+}

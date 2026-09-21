@@ -1,0 +1,1 @@
+from .lingua_detect import LinguaDetector\n__all__ = ['LinguaDetector']\n

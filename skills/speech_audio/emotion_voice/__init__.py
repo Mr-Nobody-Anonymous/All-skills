@@ -1,0 +1,1 @@
+from .speechbrain_emotion import SpeechbrainVoiceEmotion\n__all__ = ['SpeechbrainVoiceEmotion']\n

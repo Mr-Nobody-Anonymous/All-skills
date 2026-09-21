@@ -1,0 +1,1 @@
+yagmail>=0.15.293\ntwilio>=8.10.0\nvobject>=0.9.6\n

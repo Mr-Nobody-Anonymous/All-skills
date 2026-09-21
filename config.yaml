@@ -1,0 +1,47 @@
+# ==============================================================================
+# All-Skills Universal Platform Configuration
+# Root configuration uniting Agent Harnesses, Voice & Multimodal OS,
+# Priority Import Engine, Interfaces, Adapters, and Model Caching.
+# ==============================================================================
+
+system:
+  name: "All-Skills Universal Platform"
+  version: "2.0.0"
+  environment: "production"
+  default_locale: "en-us"
+  log_level: "INFO"
+
+interfaces:
+  cli:
+    enabled: true
+    prompt: "skill-os> "
+  voice:
+    enabled: true
+    wake_word: "hey assistant"
+    stt_engine: "whisper"
+    tts_engine: "piper"
+  web:
+    enabled: true
+    port: 8000
+    host: "0.0.0.0"
+  api:
+    enabled: true
+    prefix: "/v1"
+
+memory:
+  short_term:
+    max_history_turns: 30
+  long_term:
+    vector_dim: 16
+    collection: "all_skills_memories"
+
+priority:
+  engine: "scratch_priority_import"
+  manifest: "scratch_priority_import/skill_manifest.yaml"
+  default_timeout_ms: 1500
+  strict_latency_enforcement: false
+
+models:
+  cache_dir: "models/cache"
+  lazy_loading: true
+  allow_remote_downloads: false

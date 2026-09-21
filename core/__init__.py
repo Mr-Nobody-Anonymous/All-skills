@@ -24,6 +24,11 @@ from .health_checker import HealthChecker
 from .metrics_collector import MetricsCollector
 from .plugin_system import PluginSystem
 from .event_bus import EventBus
+from .intent_engine import IntentEngine
+from .plugin_loader import PluginLoader
+from .priority_resolver import PriorityResolver
+from .pipeline import Pipeline
+from .config_loader import ConfigLoader
 
 __all__ = [
     "SkillManager",
@@ -45,4 +50,9 @@ __all__ = [
     "MetricsCollector",
     "PluginSystem",
     "EventBus",
+    "IntentEngine",
+    "PluginLoader",
+    "PriorityResolver",
+    "Pipeline",
+    "ConfigLoader",
 ]

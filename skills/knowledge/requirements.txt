@@ -1,0 +1,1 @@
+wikipedia>=1.4.0\nwolframalpha>=5.0.0\nsqlalchemy>=2.0.0\nscrapy>=2.11.0\nfeedparser>=6.0.10\n

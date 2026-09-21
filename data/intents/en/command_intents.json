@@ -1,0 +1,16 @@
+{
+  "intents": [
+    {
+      "name": "system_volume_set",
+      "utterances": ["set volume to {level}", "turn volume up", "turn volume down", "mute audio"]
+    },
+    {
+      "name": "system_app_launch",
+      "utterances": ["open {app_name}", "launch {app_name}", "start application {app_name}"]
+    },
+    {
+      "name": "system_stop",
+      "utterances": ["stop", "halt", "cancel", "pause playback", "be quiet"]
+    }
+  ]
+}

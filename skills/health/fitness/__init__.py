@@ -1,0 +1,1 @@
+from .garmin_fitness import GarminFitnessTracker\n__all__ = ['GarminFitnessTracker']\n

@@ -1,0 +1,1 @@
+"""All-Skills Category: education"""\n

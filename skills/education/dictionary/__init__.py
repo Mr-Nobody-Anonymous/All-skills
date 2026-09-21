@@ -1,0 +1,1 @@
+from .nltk_wordnet import NLTKWordNetDictionary\n__all__ = ['NLTKWordNetDictionary']\n

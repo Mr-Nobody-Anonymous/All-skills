@@ -1,0 +1,218 @@
+# ==============================================================================
+# Skill Priority & Dependency Master Manifest
+# Universal manifest mapping all skills, priorities (1-100), dependencies,
+# load strategies (eager vs lazy), resource budgets, and platform compatibility.
+# ==============================================================================
+
+version: "2.0.0"
+updated_at: "2026-09-20"
+
+skills:
+  # TIER 0 / 1: FOUNDATIONS (Priority 1-10)
+  stt_engine:
+    priority: 1
+    category: "speech_audio"
+    dependencies: []
+    load_strategy: "eager"
+    resource_requirements:
+      cpu: "standard"
+      gpu: false
+      memory_mb: 250
+    status: "enabled"
+    supported_platforms: ["all"]
+
+  tts_engine:
+    priority: 2
+    category: "speech_audio"
+    dependencies: []
+    load_strategy: "eager"
+    resource_requirements:
+      cpu: "standard"
+      gpu: false
+      memory_mb: 150
+    status: "enabled"
+    supported_platforms: ["all"]
+
+  wake_word_detector:
+    priority: 3
+    category: "speech_audio"
+    dependencies: []
+    load_strategy: "eager"
+    resource_requirements:
+      cpu: "low"
+      gpu: false
+      memory_mb: 40
+    status: "enabled"
+    supported_platforms: ["all"]
+
+  intent_engine:
+    priority: 4
+    category: "core"
+    dependencies: []
+    load_strategy: "eager"
+    resource_requirements:
+      cpu: "low"
+      gpu: false
+      memory_mb: 60
+    status: "enabled"
+    supported_platforms: ["all"]
+
+  system_volume:
+    priority: 5
+    category: "system_control"
+    dependencies: ["tts_engine"]
+    load_strategy: "eager"
+    resource_requirements:
+      cpu: "minimal"
+      gpu: false
+      memory_mb: 10
+    status: "enabled"
+    supported_platforms: ["all"]
+
+  # TIER 2: ESSENTIAL & PRODUCTIVITY (Priority 11-30)
+  clock_timer:
+    priority: 11
+    category: "productivity"
+    dependencies: ["tts_engine", "intent_engine"]
+    load_strategy: "eager"
+    resource_requirements:
+      cpu: "minimal"
+      gpu: false
+      memory_mb: 15
+    status: "enabled"
+    supported_platforms: ["all"]
+
+  alarm_manager:
+    priority: 12
+    category: "productivity"
+    dependencies: ["tts_engine", "intent_engine"]
+    load_strategy: "eager"
+    resource_requirements:
+      cpu: "minimal"
+      gpu: false
+      memory_mb: 20
+    status: "enabled"
+    supported_platforms: ["all"]
+
+  calendar_manager:
+    priority: 15
+    category: "communication"
+    dependencies: ["tts_engine", "intent_engine"]
+    load_strategy: "eager"
+    resource_requirements:
+      cpu: "standard"
+      gpu: false
+      memory_mb: 30
+    status: "enabled"
+    supported_platforms: ["all"]
+
+  music_playback:
+    priority: 20
+    category: "media"
+    dependencies: ["tts_engine", "intent_engine"]
+    load_strategy: "eager"
+    resource_requirements:
+      cpu: "standard"
+      gpu: false
+      memory_mb: 80
+    status: "enabled"
+    supported_platforms: ["all"]
+
+  # TIER 3: CONNECTED & PERCEPTUAL (Priority 31-50)
+  weather_forecast:
+    priority: 31
+    category: "navigation"
+    dependencies: ["tts_engine", "intent_engine"]
+    load_strategy: "eager"
+    resource_requirements:
+      cpu: "standard"
+      gpu: false
+      memory_mb: 25
+    status: "enabled"
+    supported_platforms: ["all"]
+
+  smart_home_controller:
+    priority: 35
+    category: "smart_home"
+    dependencies: ["tts_engine", "intent_engine"]
+    load_strategy: "eager"
+    resource_requirements:
+      cpu: "standard"
+      gpu: false
+      memory_mb: 60
+    status: "enabled"
+    supported_platforms: ["all"]
+
+  general_qa:
+    priority: 40
+    category: "knowledge"
+    dependencies: ["intent_engine"]
+    load_strategy: "eager"
+    resource_requirements:
+      cpu: "standard"
+      gpu: false
+      memory_mb: 100
+    status: "enabled"
+    supported_platforms: ["all"]
+
+  # TIER 4 / 5: COMPLEX, VISION, HEAVY (Priority 51-80, LAZY)
+  object_detection:
+    priority: 55
+    category: "vision"
+    dependencies: ["intent_engine"]
+    load_strategy: "lazy"
+    resource_requirements:
+      cpu: "high"
+      gpu: true
+      memory_mb: 500
+    status: "enabled"
+    supported_platforms: ["all"]
+
+  face_recognition:
+    priority: 60
+    category: "vision"
+    dependencies: ["intent_engine"]
+    load_strategy: "lazy"
+    resource_requirements:
+      cpu: "high"
+      gpu: true
+      memory_mb: 600
+    status: "enabled"
+    supported_platforms: ["all"]
+
+  code_generator:
+    priority: 70
+    category: "development"
+    dependencies: ["intent_engine"]
+    load_strategy: "lazy"
+    resource_requirements:
+      cpu: "high"
+      gpu: true
+      memory_mb: 800
+    status: "enabled"
+    supported_platforms: ["all"]
+
+  robot_controller:
+    priority: 85
+    category: "robotics"
+    dependencies: ["intent_engine"]
+    load_strategy: "lazy"
+    resource_requirements:
+      cpu: "high"
+      gpu: false
+      memory_mb: 300
+    status: "enabled"
+    supported_platforms: ["linux", "windows"]
+
+  # FALLBACK (Priority 100)
+  fallback_handler:
+    priority: 100
+    category: "fallback"
+    dependencies: ["tts_engine"]
+    load_strategy: "eager"
+    resource_requirements:
+      cpu: "minimal"
+      gpu: false
+      memory_mb: 10
+    status: "enabled"
+    supported_platforms: ["all"]

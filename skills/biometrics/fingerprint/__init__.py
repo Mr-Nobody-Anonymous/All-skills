@@ -1,0 +1,1 @@
+from .fingerprint_match import FingerprintMatcher\n__all__ = ['FingerprintMatcher']\n

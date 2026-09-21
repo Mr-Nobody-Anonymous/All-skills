@@ -1,0 +1,1 @@
+from .scrapy_scrape import ScrapyScraper\n__all__ = ['ScrapyScraper']\n

@@ -58,4 +58,8 @@ class EventBus:
             try:
                 handler(message)
             except Exception as e:
-                logger.error(f"Error handling message '{message.msg_type}': {e}", exc_info=True)
+                logger.error(f"Handler failed for {message.msg_type}: {e}")
+
+    def publish(self, msg_type: str, data: Optional[Dict[str, Any]] = None) -> None:
+        """Convenience wrapper to emit a message by event string and data payload."""
+        self.emit(Message(msg_type, data or {}))

@@ -1,0 +1,1 @@
+ultralytics>=8.0.0\ndeepface>=0.0.80\neasyocr>=1.7.0\npyzbar>=0.1.9\nPillow>=10.0.0\n

@@ -1,0 +1,1 @@
+from .yagmail_send import YagmailSender\n__all__ = ['YagmailSender']\n

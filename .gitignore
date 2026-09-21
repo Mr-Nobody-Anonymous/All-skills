@@ -51,3 +51,8 @@ scratch/
 
 # Agent Runtime State
 .agents/state/
+
+# Upstream Cloned Repositories
+upstream/
+models/cache/*
+!models/cache/.gitkeep

@@ -1,0 +1,1 @@
+from .vcard_contacts import VCardContactsManager\n__all__ = ['VCardContactsManager']\n

@@ -1,0 +1,1 @@
+from .ha_control import HomeAssistantController\n__all__ = ['HomeAssistantController']\n

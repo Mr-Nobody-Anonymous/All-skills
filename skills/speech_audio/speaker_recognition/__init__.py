@@ -1,0 +1,1 @@
+from .speechbrain_speaker import SpeechbrainSpeakerID\n__all__ = ['SpeechbrainSpeakerID']\n

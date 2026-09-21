@@ -1,0 +1,1 @@
+from .note_manager import NoteManager\n__all__ = ['NoteManager']\n

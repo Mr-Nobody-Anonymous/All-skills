@@ -1,0 +1,1 @@
+from .haystack_qa import HaystackQAPipeline\n__all__ = ['HaystackQAPipeline']\n

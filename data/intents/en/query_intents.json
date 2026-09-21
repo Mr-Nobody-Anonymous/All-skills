@@ -1,0 +1,16 @@
+{
+  "intents": [
+    {
+      "name": "weather_query",
+      "utterances": ["what is the weather", "how is the weather in {location}", "will it rain today"]
+    },
+    {
+      "name": "time_query",
+      "utterances": ["what time is it", "current time", "what is the date", "what day is it"]
+    },
+    {
+      "name": "wikipedia_query",
+      "utterances": ["who is {entity}", "tell me about {entity}", "define {term}", "what is {concept}"]
+    }
+  ]
+}

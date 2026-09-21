@@ -1,0 +1,1 @@
+from .wolfram_query import WolframQuery\n__all__ = ['WolframQuery']\n

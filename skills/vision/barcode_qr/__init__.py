@@ -1,0 +1,1 @@
+from .pyzbar_scan import PyzbarScanner\n__all__ = ['PyzbarScanner']\n

@@ -1,0 +1,1 @@
+from .searxng_search import SearXNGSearch\n__all__ = ['SearXNGSearch']\n

@@ -50,3 +50,14 @@ class ContextManager:
     def _prune(self) -> None:
         """Remove expired frames."""
         self._frames = [f for f in self._frames if not f.is_expired()]
+
+    def get_context(self, session_id: str = "default") -> Dict[str, Any]:
+        """Retrieve session-level context dictionary."""
+        data = self.get_context_data(session_id)
+        return dict(data) if data else {}
+
+    def update_context(self, session_id: str, data: Dict[str, Any]) -> None:
+        """Update or set session-level context data."""
+        current = self.get_context(session_id)
+        current.update(data)
+        self.set_context("session_manager", session_id, current)

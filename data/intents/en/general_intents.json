@@ -1,0 +1,16 @@
+{
+  "intents": [
+    {
+      "name": "greeting",
+      "utterances": ["hello", "hi", "hey there", "good morning", "good evening"]
+    },
+    {
+      "name": "farewell",
+      "utterances": ["goodbye", "bye", "see you later", "exit", "quit"]
+    },
+    {
+      "name": "help",
+      "utterances": ["help me", "what can you do", "show commands", "list skills"]
+    }
+  ]
+}
