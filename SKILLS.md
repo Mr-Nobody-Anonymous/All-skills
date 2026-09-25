@@ -1,6 +1,6 @@
 # ⚡ Agent Skills Specification & Platform Overview
 
-A unified, high-performance universal operating system of **12,755+ unique specialized Agent Skills** (**14,855 cataloged instances** across **251 domain categories** and **15 universal super-domains**) designed for modern AI coding assistants (Claude Code, Cursor, Codex CLI, GitHub Copilot, VS Code Agent, Antigravity, Gemini CLI, Windsurf, OpenCode, Cline, Roo Code, and Block Goose).
+A unified, high-performance universal operating system of **12,757+ unique specialized Agent Skills** (**14,855 cataloged instances** across **251 domain categories** and **15 universal super-domains**) designed for modern AI coding assistants (Claude Code, Cursor, Codex CLI, GitHub Copilot, VS Code Agent, Antigravity, Gemini CLI, Windsurf, OpenCode, Cline, Roo Code, and Block Goose).
 
 ---
 
@@ -38,7 +38,7 @@ All-skills/
 - **Cryptographic Lockfile**: [awesome_skills.lock](awesome_skills.lock) tracks SHA-256 integrity hashes for all cataloged skills.
 
 ### 3. 🤖 Universal Active Agent Harness (`.agents/skills/`, `.claude/skills/`, `.cursor/skills/`, `.codex/skills/`, `.github/skills/`, etc.)
-- **70 Pre-Loaded Staff Engineer Skills**: Pre-installed in the workspace root for immediate discovery by all AI harnesses without prompt token bloat.
+- **72 Pre-Loaded Staff Engineer Skills**: Pre-installed in the workspace root for immediate discovery by all AI harnesses without prompt token bloat.
 - **Multi-Platform Adapters**: Full specification contracts in `adapters/` and dynamic configuration in `platforms/platforms.yaml`.
 - **Cross-Agent Synchronization**: Dynamically linked across 11 AI coding assistants.
 
@@ -361,7 +361,7 @@ Unambiguous single-source-of-truth counts:
 - **Canonical Skills**: `122` tested foundational skills in `skills/`.
 - **Active Harness Skills**: `70` staff-engineer playbooks pre-loaded in `.agents/skills/`.
 - **Manifest Skills**: `192` tool-mapped skills in `manifest.json`.
-- **Unique Skills**: `12,755` distinct skill capabilities across the platform.
+- **Unique Skills**: `12,757` distinct skill capabilities across the platform.
 - **Catalog Skills**: `14,855` categorized implementations across 251 domains in `awesome_skills/`.
 - **Workflows**: `5` multi-step execution playbooks in `workflows/`.
 - **Named Chains**: `4` deterministic DAG chains in `skills/chains.json`.

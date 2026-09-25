@@ -12,7 +12,7 @@ A foundational distinction in All-skills is between **indexed discovery material
 ┌─────────────────────────────────────────────────────────────┐
 │ 14,855 Catalog Records (Indexed across 251 categories)       │
 ├─────────────────────────────────────────────────────────────┤
-│   ▼ 12,755 Unique Skill Identities                          │
+│   ▼ 12,757 Unique Skill Identities                          │
 ├─────────────────────────────────────────────────────────────┤
 │     ▼ 192 Manifest-Declared Specification Skills            │
 ├─────────────────────────────────────────────────────────────┤
