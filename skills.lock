@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-09-25T16:18:00.515626+00:00",
+  "generated_at": "2026-09-25T16:28:45.622187+00:00",
   "generator": "all-skills-lock v1.0.0",
   "total_skills": 196,
   "skills": {
@@ -881,7 +881,7 @@
     },
     "architecture.architecture-decision-records": {
       "version": "1.0.0",
-      "sha256": "5a982dc4f9afb944057bcdac36fe6145285b9043a914c49eee74985f2b5435ef",
+      "sha256": "c92c9dceddf7a02f71a13251559eecdc7d4264c9919e0de3365fc72997f16589",
       "category": "architecture",
       "files": [
         "README.md",
@@ -1609,7 +1609,7 @@
     },
     "healthcare.health-economist": {
       "version": "1.0.0",
-      "sha256": "57c1c8d27e8125d3f8fa318dad2d4d29846111fc0ff78157259410d0fb105a6e",
+      "sha256": "9f11ee50cacff83387977c121e3279852d3591b1a47133fa4f8f2a670a4b94e3",
       "category": "healthcare",
       "files": [
         "README.md",

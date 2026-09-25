@@ -25,7 +25,22 @@ disable-model-invocation: false
 tools:
 - file_read
 - file_write
+keywords:
+- health economics
+- cost-effectiveness
+- cost effectiveness
+- icer
+- qaly
+- daly
+- hta
+- budget impact
+- markov model
+- willingness to pay
 triggers:
+- icer
+- qaly
+- cost effectiveness
+- cost-effectiveness analysis
 - calculate icer
 - evaluate cost effectiveness
 - health technology assessment

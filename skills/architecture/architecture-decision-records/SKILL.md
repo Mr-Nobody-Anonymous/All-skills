@@ -23,7 +23,20 @@ disable-model-invocation: false
 tools:
 - file_read
 - file_write
+keywords:
+- adr
+- architecture decision
+- decision record
+- madr
+- trade-off
+- technology choice
+- rationale
+- consequences
 triggers:
+- adr
+- architecture decision record
+- architecture decision
+- draft an adr
 - write an adr
 - document architecture decision
 - draft architecture trade-off

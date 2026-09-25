@@ -207,6 +207,19 @@ INSTRUCTION_PATTERNS = [
     (re.compile(r"(?i)\b(disable|turn\s+off|bypass)\s+.*(security|policy|guardrails?|sandbox)\b"), "prompt injection: security bypass", "high"),
     (re.compile(r"(?i)\bexecute\s+.*without\s+(any\s+)?(confirmation|approval|asking)\b"), "prompt injection: unconfirmed execution", "warn"),
     (re.compile(r"(?i)\bhide\s+this\s+(action|command|execution)\s+from\s+(the\s+)?user\b"), "prompt injection: covert execution", "high"),
+    # Dangerous requests: refuse even without injection phrasing.
+    (re.compile(r"(?i)\brm\s+-rf\s+/(\s|$)|--no-preserve-root"), "destructive command: recursive root deletion", "high"),
+    (re.compile(r"(?i)\b(curl|wget)\b[^|\n]*\|\s*(sudo\s+)?(sh|bash|zsh)\b"), "remote script piped to a shell", "high"),
+    (re.compile(r"(?i)\bmkfs(\.\w+)?\s+/dev/|\bdd\s+if=\S+\s+of=/dev/|\bformat\s+[a-z]:(\s|/|$)"), "destructive command: disk format/overwrite", "high"),
+    (re.compile(r"(?i)\b(print|show|cat|dump|reveal|display|export|post|send|upload|exfiltrate|leak)\b[^.\n]{0,80}"
+                r"(\.aws/credentials|aws\s+credentials|\.env\b|id_rsa|id_ed25519|private\s+keys?|ssh\s+keys?|"
+                r"database\s+password|db\s+password|api[_\s-]?keys|access\s+tokens)"), "credential disclosure or exfiltration", "high"),
+    (re.compile(r"(?i)\bforce[\s-]?push\b[^.\n]*\b(main|master|production|prod)\b|\bgit\s+push\s+(-f|--force)\b[^\n]*\b(main|master)\b"),
+     "destructive history rewrite of a protected branch", "high"),
+    (re.compile(r"(?i)\b(download|fetch)\b[^.\n]{0,60}\b(run|execute)\b[^.\n]{0,60}\b(binary|payload|executable)\b|\bwithout\s+(any\s+)?verification\b"),
+     "execution of an unverified binary", "high"),
+    (re.compile(r"(?i)\b(assistant|ai|model|agent)\s+(must|should|will|shall)\s+(now\s+)?(delete|remove|wipe|erase|exfiltrate|disable|ignore|grant)\b"),
+     "embedded instruction addressed to the assistant", "high"),
 ]
 
 

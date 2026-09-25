@@ -8035,13 +8035,26 @@
         "architecture-decisions"
       ],
       "triggers": [
+        "adr",
+        "architecture decision record",
+        "architecture decision",
+        "draft an adr",
         "write an adr",
         "document architecture decision",
         "draft architecture trade-off",
         "create architecture decision record",
         "record technology choice"
       ],
-      "keywords": [],
+      "keywords": [
+        "adr",
+        "architecture decision",
+        "decision record",
+        "madr",
+        "trade-off",
+        "technology choice",
+        "rationale",
+        "consequences"
+      ],
       "dependencies": [],
       "composes_with": [],
       "suggests_after": [],
@@ -8069,10 +8082,10 @@
         "reliability": 9.0,
         "security": 9.0,
         "compatibility": 6.0,
-        "usefulness": 1.7,
-        "overall_score": 6.7
+        "usefulness": 4.1,
+        "overall_score": 7.1
       },
-      "quality_score": 6.7
+      "quality_score": 7.1
     },
     {
       "id": "healthcare.health-economist",
@@ -8085,6 +8098,10 @@
         "heor"
       ],
       "triggers": [
+        "icer",
+        "qaly",
+        "cost effectiveness",
+        "cost-effectiveness analysis",
         "calculate icer",
         "evaluate cost effectiveness",
         "health technology assessment",
@@ -8092,7 +8109,18 @@
         "markov health model",
         "cost utility analysis"
       ],
-      "keywords": [],
+      "keywords": [
+        "health economics",
+        "cost-effectiveness",
+        "cost effectiveness",
+        "icer",
+        "qaly",
+        "daly",
+        "hta",
+        "budget impact",
+        "markov model",
+        "willingness to pay"
+      ],
       "dependencies": [],
       "composes_with": [],
       "suggests_after": [],
@@ -8120,10 +8148,10 @@
         "reliability": 9.0,
         "security": 9.0,
         "compatibility": 6.0,
-        "usefulness": 1.9,
-        "overall_score": 6.7
+        "usefulness": 4.7,
+        "overall_score": 7.2
       },
-      "quality_score": 6.7
+      "quality_score": 7.2
     }
   ]
 }

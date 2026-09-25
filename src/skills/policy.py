@@ -7,6 +7,7 @@ returning deterministic execution verdicts: ALLOW, ASK, or DENY.
 from __future__ import annotations
 
 import json
+import re
 from dataclasses import dataclass, field
 from enum import Enum
 from pathlib import Path
@@ -151,6 +152,20 @@ PLATFORM_NAMES = {
     "antigravity", "claude", "claude-code", "cline", "codex", "codex-cli", "copilot",
     "cursor", "gemini", "gemini-cli", "goose", "opencode", "roo", "vscode", "windsurf",
 }
+
+
+# Capabilities implied by a natural-language request (used to gate prompts and
+# by the security evals). Conservative keyword rules; extend with care.
+REQUEST_CAPABILITY_HINTS = [
+    (re.compile(r"(?i)\bdeploy\w*\b.*\b(production|prod)\b|\b(production|prod)\b.*\bdeploy"), "production.deploy"),
+    (re.compile(r"(?i)\b(drop|truncate)\s+(the\s+)?([\w.]+\s+)?(table|database|schema)\b|\bdelete\s+all\s+(rows|records|data)\b"), "database.delete"),
+    (re.compile(r"(?i)\bterraform\s+destroy\b|\b(tear\s+down|provision|decommission)\b.*\b(cloud|aws|gcp|azure|cluster|infrastructure)\b"), "cloud.modify"),
+    (re.compile(r"(?i)\b(print|show|cat|dump|reveal|read|export|get)\b[^.\n]{0,60}\b(password|credentials?|secrets?|api[_\s-]?keys?|tokens?|id_rsa|\.env)\b"), "credentials.read"),
+]
+
+
+def infer_request_capabilities(prompt: str) -> Set[str]:
+    return {cap for pattern, cap in REQUEST_CAPABILITY_HINTS if pattern.search(prompt or "")}
 
 
 class PolicyConfigError(ValueError):
@@ -338,6 +353,28 @@ class PolicyEngine:
             breakdown=breakdown,
             reasons=reasons
         )
+
+    def evaluate_request(self, prompt: str) -> PolicyEvaluationResult:
+        """Evaluate the capabilities a natural-language request implies (see infer_request_capabilities)."""
+        caps = infer_request_capabilities(prompt)
+        overall, max_risk = PolicyVerdict.ALLOW, RiskLevel.SAFE
+        order = list(RiskLevel)
+        breakdown: Dict[str, dict] = {}
+        reasons: List[str] = []
+        for cap in sorted(caps):
+            policy = self.policies.get(cap, self.policies[UNCLASSIFIED_CAPABILITY])
+            verdict, risk = policy["verdict"], policy["risk"]
+            breakdown[cap] = {"verdict": verdict.value, "risk": risk.value, "description": policy["description"]}
+            if order.index(risk) > order.index(max_risk):
+                max_risk = risk
+            if verdict == PolicyVerdict.DENY:
+                overall = PolicyVerdict.DENY
+                reasons.append(f"Request implies '{cap}', which is DENIED by policy.")
+            elif verdict == PolicyVerdict.ASK and overall != PolicyVerdict.DENY:
+                overall = PolicyVerdict.ASK
+                reasons.append(f"Request implies '{cap}', which requires human approval.")
+        return PolicyEvaluationResult("request", overall, max_risk, sorted(caps), breakdown,
+                                      reasons or ["No restricted capability implied."])
 
     def explain_policy(self, skill_id: str) -> dict:
         """Structured policy simulation explaining permission and risk boundaries."""
