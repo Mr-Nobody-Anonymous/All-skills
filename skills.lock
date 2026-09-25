@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-09-25T11:57:59.466482+00:00",
+  "generated_at": "2026-09-25T16:18:00.515626+00:00",
   "generator": "all-skills-lock v1.0.0",
   "total_skills": 196,
   "skills": {
@@ -87,7 +87,7 @@
     },
     "analytics-product": {
       "version": "1.0.0",
-      "sha256": "ebed061d3899bdcf43c2685f5eb4079ad6c5cae27f246799ff3fcd678eb57015",
+      "sha256": "c444fe80804566f35bba240f68bcad798948f935d9ca46ee539d8385d969e577",
       "category": "active-harness",
       "files": [
         "SKILL.md"
@@ -737,7 +737,7 @@
     },
     "security-scanning-security-sast": {
       "version": "1.0.0",
-      "sha256": "84670f796d37bd4f944594bcf26ad3e12cdfbf5098dac8fa256e8e01da9b0c79",
+      "sha256": "84b0b712f5f4b6f38379cc75ade091da955b5ee4fd4aa93a0e3f849847a8ad0d",
       "category": "active-harness",
       "files": [
         "SKILL.md",
@@ -745,7 +745,7 @@
       ],
       "dependencies": [],
       "verified_at": "2026-09-25",
-      "risk": "low"
+      "risk": "critical"
     },
     "seo-geo": {
       "version": "1.0.0",
@@ -906,7 +906,9 @@
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "optional:image-generator"
+      ],
       "verified_at": "2026-09-25",
       "risk": "low"
     },
@@ -942,7 +944,9 @@
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "optional:image-generator"
+      ],
       "verified_at": "2026-09-25",
       "risk": "low"
     },
@@ -966,7 +970,10 @@
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "optional:node",
+        "optional:remotion"
+      ],
       "verified_at": "2026-09-25",
       "risk": "low"
     },
@@ -990,7 +997,9 @@
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "optional:GOOGLE_API_KEY"
+      ],
       "verified_at": "2026-09-25",
       "risk": "medium"
     },
@@ -1002,7 +1011,9 @@
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "optional:test-framework"
+      ],
       "verified_at": "2026-09-25",
       "risk": "low"
     },
@@ -1026,7 +1037,9 @@
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "optional:codex-or-claude-cli"
+      ],
       "verified_at": "2026-09-25",
       "risk": "low"
     },
@@ -1076,7 +1089,9 @@
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "optional:wrangler"
+      ],
       "verified_at": "2026-09-25",
       "risk": "high"
     },
@@ -1124,7 +1139,9 @@
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "optional:codex-or-claude-cli"
+      ],
       "verified_at": "2026-09-25",
       "risk": "medium"
     },
@@ -1136,7 +1153,9 @@
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "optional:crabbox"
+      ],
       "verified_at": "2026-09-25",
       "risk": "low"
     },
@@ -1148,7 +1167,9 @@
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "optional:cursor-agent"
+      ],
       "verified_at": "2026-09-25",
       "risk": "medium"
     },
@@ -1172,7 +1193,9 @@
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "optional:database-client"
+      ],
       "verified_at": "2026-09-25",
       "risk": "medium"
     },
@@ -1208,7 +1231,9 @@
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "optional:docker"
+      ],
       "verified_at": "2026-09-25",
       "risk": "high"
     },
@@ -1220,7 +1245,9 @@
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "optional:DOKPLOY_API_KEY"
+      ],
       "verified_at": "2026-09-25",
       "risk": "high"
     },
@@ -1244,7 +1271,9 @@
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "git"
+      ],
       "verified_at": "2026-09-25",
       "risk": "medium"
     },
@@ -1256,7 +1285,9 @@
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "git"
+      ],
       "verified_at": "2026-09-25",
       "risk": "medium"
     },
@@ -1270,7 +1301,9 @@
         "SKILL.md",
         "references/upstream-SKILL.md"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "git"
+      ],
       "verified_at": "2026-09-25",
       "risk": "medium"
     },
@@ -1282,7 +1315,10 @@
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "git",
+        "gh-cli-optional"
+      ],
       "verified_at": "2026-09-25",
       "risk": "medium"
     },
@@ -1294,7 +1330,9 @@
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "optional:gh"
+      ],
       "verified_at": "2026-09-25",
       "risk": "medium"
     },
@@ -1328,7 +1366,9 @@
         "references/python_mcp_server.md",
         "references/upstream-SKILL.md"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "python-or-node"
+      ],
       "verified_at": "2026-09-25",
       "risk": "medium"
     },
@@ -1513,7 +1553,9 @@
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "optional:ocr"
+      ],
       "verified_at": "2026-09-25",
       "risk": "low"
     },
@@ -1653,7 +1695,9 @@
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "optional:calendar-access"
+      ],
       "verified_at": "2026-09-25",
       "risk": "medium"
     },
@@ -1689,7 +1733,9 @@
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "optional:email-access"
+      ],
       "verified_at": "2026-09-25",
       "risk": "medium"
     },
@@ -1773,7 +1819,9 @@
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "optional:obsidian"
+      ],
       "verified_at": "2026-09-25",
       "risk": "medium"
     },
@@ -1869,7 +1917,9 @@
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "optional:transcript"
+      ],
       "verified_at": "2026-09-25",
       "risk": "low"
     },
@@ -1941,7 +1991,9 @@
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "optional:web-search"
+      ],
       "verified_at": "2026-09-25",
       "risk": "low"
     },
@@ -2001,7 +2053,9 @@
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "optional:npm"
+      ],
       "verified_at": "2026-09-25",
       "risk": "medium"
     },
@@ -2049,7 +2103,9 @@
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "optional:security-scanners"
+      ],
       "verified_at": "2026-09-25",
       "risk": "medium"
     },
@@ -2061,7 +2117,10 @@
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "optional:node",
+        "optional:gh"
+      ],
       "verified_at": "2026-09-25",
       "risk": "low"
     },
@@ -2073,7 +2132,9 @@
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "optional:transcription-engine"
+      ],
       "verified_at": "2026-09-25",
       "risk": "low"
     },
@@ -2097,7 +2158,10 @@
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "optional:node",
+        "optional:BEAM_ACCESS_TOKEN"
+      ],
       "verified_at": "2026-09-25",
       "risk": "low"
     },
@@ -2133,7 +2197,9 @@
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "optional:clipboard-tool"
+      ],
       "verified_at": "2026-09-25",
       "risk": "low"
     },
@@ -2183,7 +2249,9 @@
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "optional:slack-access"
+      ],
       "verified_at": "2026-09-25",
       "risk": "low"
     },
@@ -2195,7 +2263,9 @@
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "optional:sonos-cli"
+      ],
       "verified_at": "2026-09-25",
       "risk": "low"
     },
@@ -2219,7 +2289,9 @@
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "optional:system-tools"
+      ],
       "verified_at": "2026-09-25",
       "risk": "low"
     },
@@ -2231,7 +2303,9 @@
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "optional:TELEGRAM_BOT_TOKEN"
+      ],
       "verified_at": "2026-09-25",
       "risk": "medium"
     },
@@ -2255,7 +2329,9 @@
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "optional:exchange-rate-source"
+      ],
       "verified_at": "2026-09-25",
       "risk": "low"
     },
@@ -2267,7 +2343,9 @@
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "optional:weather-api"
+      ],
       "verified_at": "2026-09-25",
       "risk": "low"
     },
@@ -2279,7 +2357,9 @@
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "optional:whatsapp-api"
+      ],
       "verified_at": "2026-09-25",
       "risk": "high"
     },
@@ -2315,7 +2395,9 @@
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "optional:agent-browser"
+      ],
       "verified_at": "2026-09-25",
       "risk": "medium"
     },
@@ -2327,7 +2409,9 @@
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "optional:playwright-or-similar"
+      ],
       "verified_at": "2026-09-25",
       "risk": "medium"
     },
@@ -2339,7 +2423,9 @@
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "optional:browser-automation"
+      ],
       "verified_at": "2026-09-25",
       "risk": "high"
     },
@@ -2351,7 +2437,9 @@
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "optional:media-downloader"
+      ],
       "verified_at": "2026-09-25",
       "risk": "medium"
     },
@@ -2387,7 +2475,9 @@
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "optional:http-client"
+      ],
       "verified_at": "2026-09-25",
       "risk": "low"
     },
@@ -2411,7 +2501,9 @@
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "optional:playwright-or-cypress"
+      ],
       "verified_at": "2026-09-25",
       "risk": "low"
     }
