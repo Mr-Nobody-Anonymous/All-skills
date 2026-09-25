@@ -69,8 +69,9 @@ class TestVerificationExitCodes(unittest.TestCase):
     """verify / lock / doctor return meaningful exit codes."""
 
     def test_verify_and_lock_pass_on_a_consistent_checkout(self):
-        self.assertEqual(run("scripts/allskills.py", "verify").returncode, 0)
-        self.assertEqual(run("scripts/allskills.py", "lock", "--verify").returncode, 0)
+        for args in (("verify",), ("lock", "--verify")):
+            proc = run("scripts/allskills.py", *args)
+            self.assertEqual(proc.returncode, 0, f"allskills {' '.join(args)} failed:\n{proc.stdout[-3000:]}\n{proc.stderr[-3000:]}")
 
     def test_harness_verification_fails_when_required_targets_are_missing(self):
         proc = run("scripts/setup_tools.py", "--verify", "--strict")

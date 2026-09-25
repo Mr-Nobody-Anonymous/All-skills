@@ -527,7 +527,10 @@ def cmd_verify() -> int:
     ]
     failed = []
     for label, args in checks:
-        proc = subprocess.run([sys.executable] + args, cwd=REPO_ROOT, capture_output=True, text=True)
+        # Decode as UTF-8 explicitly: the child scripts write UTF-8, while text=True alone
+        # would use the locale code page on Windows (cp1252) and can fail to decode.
+        proc = subprocess.run([sys.executable] + args, cwd=REPO_ROOT, capture_output=True,
+                              text=True, encoding="utf-8", errors="replace")
         ok = _check(label, proc.returncode == 0, (proc.stdout.strip().splitlines() or [""])[-1][:70])
         if not ok:
             failed.append(label)
