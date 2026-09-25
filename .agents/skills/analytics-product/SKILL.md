@@ -12,7 +12,7 @@ tags:
 - metrics
 - posthog
 - mixpanel
-tools:
+platforms:
 - claude-code
 - antigravity
 - cursor

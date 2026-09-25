@@ -8030,8 +8030,17 @@
       "category": "architecture",
       "description": "Comprehensive patterns for creating, maintaining, and managing Architecture Decision Records (ADRs) that capture technical context, rationale, and consequences.",
       "path": "architecture/architecture-decision-records",
-      "aliases": [],
-      "triggers": [],
+      "aliases": [
+        "adr",
+        "architecture-decisions"
+      ],
+      "triggers": [
+        "write an adr",
+        "document architecture decision",
+        "draft architecture trade-off",
+        "create architecture decision record",
+        "record technology choice"
+      ],
       "keywords": [],
       "dependencies": [],
       "composes_with": [],
@@ -8060,10 +8069,10 @@
         "reliability": 9.0,
         "security": 9.0,
         "compatibility": 6.0,
-        "usefulness": 0.0,
-        "overall_score": 6.5
+        "usefulness": 1.7,
+        "overall_score": 6.7
       },
-      "quality_score": 6.5
+      "quality_score": 6.7
     },
     {
       "id": "healthcare.health-economist",
@@ -8071,8 +8080,18 @@
       "category": "healthcare",
       "description": "Expert health economics methodologies, cost-effectiveness analysis (CEA), cost-utility analysis (CUA), ICER calculations, and QALY/DALY evaluation.",
       "path": "healthcare/health-economist",
-      "aliases": [],
-      "triggers": [],
+      "aliases": [
+        "health-econ",
+        "heor"
+      ],
+      "triggers": [
+        "calculate icer",
+        "evaluate cost effectiveness",
+        "health technology assessment",
+        "qaly calculation",
+        "markov health model",
+        "cost utility analysis"
+      ],
       "keywords": [],
       "dependencies": [],
       "composes_with": [],
@@ -8101,10 +8120,10 @@
         "reliability": 9.0,
         "security": 9.0,
         "compatibility": 6.0,
-        "usefulness": 0.0,
-        "overall_score": 6.5
+        "usefulness": 1.9,
+        "overall_score": 6.7
       },
-      "quality_score": 6.5
+      "quality_score": 6.7
     }
   ]
 }

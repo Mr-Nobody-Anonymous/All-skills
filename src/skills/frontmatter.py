@@ -5,7 +5,8 @@ It supports the subset we actually use:
 
 - ``key: value``
 - ``key: [item1, item2]`` (inline list; ``key: []`` for an empty list)
-- ``key:`` followed by an indented block of ``- item`` lines (block list)
+- ``key:`` followed by a block of ``- item`` lines (block list), indented or
+  at the key's own indentation (YAML compact sequences, as emitted by PyYAML)
 - arbitrarily nested indented mappings (e.g. ``permissions``, ``compatibility``,
   or the ``metadata`` blocks used by some imported skills)
 
@@ -20,6 +21,8 @@ from typing import Any, Dict, List, Tuple
 
 
 FRONTMATTER_RE = re.compile(r"^---\s*\n(.*?)\n---\s*\n(.*)$", re.DOTALL)
+_INLINE_MAPPING_RE = re.compile(r"^([^\s:][^:]*?):(?:\s+(.*))?$")
+_BLOCK_SCALAR_INDICATORS = {"|", ">", "|-", ">-", "|+", ">+"}
 
 
 def parse_frontmatter(text: str) -> Tuple[Dict[str, Any], str]:
@@ -86,19 +89,51 @@ def _parse_block(entries: List[Tuple[int, str]], i: int, indent: int) -> Tuple[D
             if i + 1 < n and entries[i + 1][0] > indent:
                 child_indent = entries[i + 1][0]
                 child: Any
-                if entries[i + 1][1].startswith("- "):
+                if _is_list_item(entries[i + 1][1]):
                     child, i = _parse_list(entries, i + 1, child_indent)
                 else:
                     child, i = _parse_block(entries, i + 1, child_indent)
                 result[key] = child
+            elif i + 1 < n and entries[i + 1][0] == indent and _is_list_item(entries[i + 1][1]):
+                # Compact block sequence: list items at the same indentation as
+                # their key ("tags:\n- a\n- b"). This is valid YAML and the
+                # default style emitted by PyYAML's dumper.
+                result[key], i = _parse_list(entries, i + 1, indent)
             else:
                 # Empty key with no children — preserve historical "empty list".
                 result[key] = []
                 i += 1
+        elif value in _BLOCK_SCALAR_INDICATORS:
+            # Block scalar ("key: |" literal or "key: >" folded): consume the
+            # more-indented lines that follow. Blank lines are not preserved.
+            lines: List[str] = []
+            while i + 1 < n and entries[i + 1][0] > indent:
+                i += 1
+                lines.append(entries[i][1].strip())
+            joiner = "\n" if value.startswith("|") else " "
+            result[key] = joiner.join(lines)
+            i += 1
         else:
+            if _is_unterminated_quote(value):
+                # Multi-line quoted scalar: fold continuation lines until the
+                # closing quote (YAML folds single line breaks into spaces).
+                parts = [value]
+                while i + 1 < n and _is_unterminated_quote(" ".join(parts)):
+                    i += 1
+                    parts.append(entries[i][1].strip())
+                value = " ".join(part for part in parts if part)
             result[key] = _parse_value(value)
             i += 1
     return result, i
+
+
+def _is_unterminated_quote(value: str) -> bool:
+    """True if ``value`` opens a quoted scalar that is not closed on this line."""
+    if len(value) < 1 or value[0] not in ("'", '"'):
+        return False
+    quote, body = value[0], value[1:]
+    body = body.replace("''", "") if quote == "'" else re.sub(r"\\.", "", body)
+    return not body.endswith(quote)
 
 
 def _parse_list(entries: List[Tuple[int, str]], i: int, indent: int) -> Tuple[List[Any], int]:
@@ -116,18 +151,25 @@ def _parse_list(entries: List[Tuple[int, str]], i: int, indent: int) -> Tuple[Li
             # Nested children of a list item are not supported at this level.
             i += 1
             continue
-        if not text.startswith("- "):
+        if not _is_list_item(text):
             break
-        item = text[2:].strip()
-        if ":" in item:
-            # Inline mapping item: "- key: value" -> {key: value}
-            sub_key, _, sub_raw = item.partition(":")
-            sub_value = sub_raw.strip()
-            result.append({sub_key.strip(): _parse_value(sub_value) if sub_value else []})
+        item = text[1:].strip()
+        mapping = _INLINE_MAPPING_RE.match(item) if not item[:1] in ("'", '"') else None
+        if mapping:
+            # Inline mapping item: "- key: value" -> {key: value}. As in YAML, the
+            # colon must be followed by whitespace (or end the item), so plain
+            # scalars such as "optional:docker" or URLs stay strings.
+            sub_value = (mapping.group(2) or "").strip()
+            result.append({mapping.group(1).strip(): _parse_value(sub_value) if sub_value else []})
         else:
             result.append(_strip_quotes(item))
         i += 1
     return result, i
+
+
+def _is_list_item(text: str) -> bool:
+    """True for a block-sequence entry (``- item`` or a bare ``-``)."""
+    return text == "-" or text.startswith("- ")
 
 
 def _parse_value(value: str) -> Any:

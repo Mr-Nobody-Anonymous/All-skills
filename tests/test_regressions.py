@@ -19,6 +19,9 @@ Each test pins a defect that previously shipped on ``main``:
    machine that generated it, so ``refresh_registry.py --check`` failed in CI.
 7. Overall quality scores were aggregated with float ``sum()``, whose algorithm
    changed in Python 3.12, so boundary scores differed between interpreters.
+8. The frontmatter parser read YAML compact sequences ("tags:\n- a") as empty
+   lists, silently dropping triggers, aliases, tools and dependencies of every
+   canonical and active skill; block scalars also truncated the frontmatter.
 """
 
 from __future__ import annotations
@@ -207,6 +210,59 @@ class TestQualityScoreIsInterpreterIndependent(unittest.TestCase):
             security=9.0, compatibility=6.0, usefulness=0.0,
         )
         self.assertEqual(_weighted_overall(report), 6.5)
+
+
+class TestFrontmatterParserMatchesYaml(unittest.TestCase):
+    """Regression #8 — skill frontmatter must parse like YAML."""
+
+    def test_yaml_constructs_used_by_skills(self):
+        from skills.frontmatter import parse_frontmatter
+
+        text = (
+            "---\n"
+            "name: demo\n"
+            "tags:\n- a\n- b\n"
+            "dependencies:\n- optional:docker\n- url: http://example.com\n"
+            "description: 'first line\n  continued'\n"
+            "notes: >\n  folded\n  text\n"
+            "tools: [file_read, file_write]\n"
+            "---\nbody\n"
+        )
+        meta, body = parse_frontmatter(text)
+        self.assertEqual(meta["tags"], ["a", "b"])
+        self.assertEqual(meta["dependencies"], ["optional:docker", {"url": "http://example.com"}])
+        self.assertEqual(meta["description"], "first line continued")
+        self.assertEqual(meta["notes"], "folded text")
+        self.assertEqual(meta["tools"], ["file_read", "file_write"])
+        self.assertEqual(body, "body\n")
+
+    def test_library_frontmatter_matches_pyyaml(self):
+        import re
+
+        import yaml
+
+        from skills.frontmatter import parse_frontmatter
+
+        def norm(value):
+            if isinstance(value, dict):
+                return {str(k): norm(v) for k, v in value.items()}
+            if isinstance(value, list):
+                return [norm(v) for v in value]
+            if isinstance(value, bool):
+                return str(value).lower()
+            return "" if value is None else str(value).strip()
+
+        files = sorted(_SKILLS_DIR.glob("*/*/SKILL.md")) + sorted((_ROOT / ".agents" / "skills").glob("*/SKILL.md"))
+        self.assertGreater(len(files), 100)
+        mismatches = []
+        for path in files:
+            text = path.read_text(encoding="utf-8")
+            block = re.match(r"^---\s*\n(.*?)\n---", text, re.S)
+            self.assertIsNotNone(block, f"{path} has no frontmatter")
+            reference = yaml.safe_load(block.group(1)) or {}
+            parsed, _ = parse_frontmatter(text)
+            mismatches += [f"{path.relative_to(_ROOT)}:{k}" for k, v in reference.items() if norm(v) != norm(parsed.get(k))]
+        self.assertEqual(mismatches, [], f"{len(mismatches)} fields differ from YAML, e.g. {mismatches[:5]}")
 
 
 class TestNativeCliDoctor(unittest.TestCase):
