@@ -12,7 +12,9 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import difflib
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -63,6 +65,23 @@ def _merge_frontmatter(registry, skills_root: Path) -> int:
     return changed
 
 
+def _report_drift(name: str, current: str, new: str, limit: int = 40) -> None:
+    """Show what changed so a stale file can be diagnosed (locally and in CI)."""
+    diff = list(difflib.unified_diff(
+        current.splitlines(), new.splitlines(),
+        f"skills/{name} (committed)", f"skills/{name} (regenerated)", n=1, lineterm="",
+    ))
+    for line in diff[:limit]:
+        print(line)
+    if len(diff) > limit:
+        print(f"... {len(diff) - limit} more diff lines")
+    if os.environ.get("GITHUB_ACTIONS") == "true" and diff:
+        hunk = next((line for line in diff if line.startswith("@@")), "@@ -1")
+        line_no = hunk.split()[1].lstrip("-").split(",")[0] if len(hunk.split()) > 1 else "1"
+        body = "\n".join(diff[2:16]).replace("%", "%25").replace("\r", "%0D").replace("\n", "%0A")
+        print(f"::error file=skills/{name},line={line_no},title=skills/{name} is stale::{body}")
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
@@ -96,8 +115,10 @@ def main() -> int:
         stale = []
         if new_registry != current_registry:
             stale.append("registry.json is out of date (run python scripts/refresh_registry.py)")
+            _report_drift("registry.json", current_registry, new_registry)
         if new_deps != current_deps:
             stale.append("dependencies.json is out of date (run python scripts/refresh_registry.py)")
+            _report_drift("dependencies.json", current_deps, new_deps)
         for message in stale:
             print(f"STALE: {message}")
         if stale:
