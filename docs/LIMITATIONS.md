@@ -34,6 +34,10 @@ The `ExecutionRuntime` (`src/skills/runtime.py`) governs lifecycle transitions, 
 
 - **Agent Host Delegation**: In multi-agent IDE environments (Antigravity, Cursor, Claude Code, Codex), the AI model itself remains responsible for contextual generative reasoning, prompt execution, and AST block edits. The runtime provides the governance wrapper, tool broker, and audit verification.
 - **Dry-Run Mode**: When invoked with `--dry-run`, the runtime computes the execution plan, verifies capability policies, and estimates token costs without dispatching side-effecting operations.
+- **Gates, not a sandbox**: The runtime decides *whether* a skill may run (revocation, lifecycle, capability policy, enforced human approval for `ASK`, SSRF checks) and checks what the executor reports: missing declared outputs, or tool calls outside the tools and capabilities the run was authorised for, fail the run. A skill without a registered executor is returned as `prepared` instructions — it is never reported as done.
+- **In-process executors are trusted code**: They run with the runtime's own privileges, so the tool-call check detects a violation after the fact; it cannot prevent it.
+- **`SubprocessExecutor` bounds resources** (`src/skills/executors.py`): a separate process with a per-run scratch directory as `HOME`/`TMPDIR`, an environment reduced to an allow-list (parent credentials are not inherited), a timeout that kills the process group, an output cap, and on POSIX CPU/memory/file-size limits — requesting those on a platform without `setrlimit` is refused rather than ignored. Wall time, exit status and child CPU time are measured by the runtime, not self-reported.
+- **Not isolated**: the filesystem outside the scratch directory, and the network. On Windows only the direct child is killed on timeout; processes it started may survive. Run untrusted code in a container, microVM or OS job object.
 
 ---
 

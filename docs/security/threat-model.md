@@ -41,6 +41,14 @@ graph TD
     Sandbox -.->|Allowed Egress| ExternalAPI
 ```
 
+> **Who provides the sandbox.** The execution sandbox in Trust Zone 2 belongs to the
+> agent host — the coding agent's own sandbox, a container or a VM. All-Skills does not
+> provide one: its runtime decides *whether* a skill and its capabilities may run
+> (revocation, lifecycle, capability policy, human approval) and checks what executors
+> report; `SubprocessExecutor` bounds a run's time, output, environment and (on POSIX)
+> resources, but does not isolate the filesystem or network. See
+> [LIMITATIONS.md](../LIMITATIONS.md).
+
 ---
 
 ## 2. STRIDE Threat Analysis

@@ -194,6 +194,9 @@ class PolicyEvaluationResult:
     capabilities_requested: List[str]
     breakdown: Dict[str, dict] = field(default_factory=dict)
     reasons: List[str] = field(default_factory=list)
+    # The tools whose capabilities were evaluated (declared, from the manifest,
+    # or the read/edit default); the runtime holds executors to this list.
+    tools: List[str] = field(default_factory=list)
 
     def to_dict(self) -> dict:
         return {
@@ -351,7 +354,8 @@ class PolicyEngine:
             max_risk=max_risk,
             capabilities_requested=sorted(caps_requested),
             breakdown=breakdown,
-            reasons=reasons
+            reasons=reasons,
+            tools=[str(t) for t in tools],
         )
 
     def evaluate_request(self, prompt: str) -> PolicyEvaluationResult:

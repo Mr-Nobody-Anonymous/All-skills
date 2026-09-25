@@ -8,10 +8,12 @@ caller-permission checks — and then *honestly* reports what happened:
 ``prepared``           No executor is registered for the skill. The runtime
                        returns the skill's instruction bundle for the calling
                        agent to carry out; it does not claim the task was done.
-``completed``          A registered executor ran and returned every declared
-                       output.
-``failed``             The executor raised, or its result was missing declared
-                       outputs, or the skill does not exist.
+``completed``          A registered executor ran, returned every declared
+                       output, and reported only tool calls it was authorised
+                       to make.
+``failed``             The executor raised, its result was missing declared
+                       outputs, it reported a tool call outside its authorised
+                       tools/capabilities, or the skill does not exist.
 ``approval_required``  The policy verdict is ASK and no matching approval was
                        supplied. Nothing ran.
 ``blocked`` / ``quarantined`` / ``error``
@@ -21,7 +23,16 @@ caller-permission checks — and then *honestly* reports what happened:
 Executors are ordinary callables registered with
 :meth:`ExecutionRuntime.register_executor`; they receive a
 :class:`SkillInvocation` and return a mapping with an ``outputs`` dict and,
-optionally, ``artifacts``, ``tool_calls`` and ``usage``.
+optionally, ``artifacts``, ``tool_calls`` (``{"tool": <name>, ...}``) and
+``usage``.
+
+What the gates guarantee, and what they do not: the runtime decides *whether*
+an executor may run and checks what it reports. An in-process executor is
+trusted code — it runs with this process's privileges, so the tool-call check
+detects violations after the fact rather than preventing them. For bounded
+execution use :class:`skills.executors.SubprocessExecutor` (separate process,
+scratch directory, scrubbed environment, timeout, resource limits); for
+untrusted code add OS-level isolation (container/VM) — see docs/LIMITATIONS.md.
 """
 
 from __future__ import annotations
@@ -37,7 +48,7 @@ from typing import Any, Callable, Dict, List, Mapping, Optional
 
 from .lifecycle import is_valid, permits_activation
 from .loader import load_skill
-from .policy import PolicyEngine, PolicyEvaluationResult, PolicyVerdict, capabilities_for_tool
+from .policy import UNCLASSIFIED_CAPABILITY, PolicyEngine, PolicyEvaluationResult, PolicyVerdict, capabilities_for_tool
 from .registry import SkillEntry, load_registry
 from .revocations import LEGACY_RELPATH, RevocationError, load_revocations
 
@@ -95,6 +106,31 @@ Executor = Callable[[SkillInvocation], Mapping[str, Any]]
 
 
 SUCCESS_STATUSES = frozenset({"completed", "prepared", "simulated"})
+
+
+def tool_call_violations(tool_calls: List[Dict[str, Any]], authorized_tools: List[str],
+                         authorized_capabilities: List[str]) -> List[str]:
+    """Reported tool calls the invocation was not authorised to make (fail closed).
+
+    A call is allowed when its tool is one the skill was evaluated with, or when
+    every capability it needs was authorised. Unclassified capabilities only
+    count through the tool's own name, so approving one unknown tool never
+    authorises another; a call that does not name its tool is a violation.
+    """
+    tools = {str(t).strip().lower() for t in authorized_tools}
+    caps = set(authorized_capabilities) - {UNCLASSIFIED_CAPABILITY}
+    violations: List[str] = []
+    for call in tool_calls:
+        name = str(call.get("tool") or call.get("name") or "").strip()
+        if not name:
+            violations.append("a tool call that does not name its tool")
+            continue
+        if name.lower() in tools:
+            continue
+        missing = [cap for cap in capabilities_for_tool(name) if cap not in caps]
+        if missing:
+            violations.append(f"{name} (needs {', '.join(missing)})")
+    return violations
 
 
 def exit_code_for(status: str) -> int:
@@ -396,11 +432,18 @@ class ExecutionRuntime:
             cost["executor_usage"] = dict(usage)
 
         missing = [name for name in entry.outputs if isinstance(name, str) and name not in outputs]
-        verification["postconditions"] = "failed" if missing else "passed"
-        verification["verified"] = not missing
+        violations = tool_call_violations(tool_calls, pol_eval.tools or active_tools, pol_eval.capabilities_requested)
+        verification["postconditions"] = "failed" if missing or violations else "passed"
+        verification["verified"] = not missing and not violations
         verification["missing_outputs"] = missing
-        status = "failed" if missing else "completed"
-        err = f"Executor for '{skill}' did not return declared outputs: {', '.join(missing)}" if missing else None
+        verification["capability_violations"] = violations
+        status = "failed" if missing or violations else "completed"
+        problems = []
+        if violations:
+            problems.append(f"reported tool calls outside its authorisation: {'; '.join(violations)}")
+        if missing:
+            problems.append(f"did not return declared outputs: {', '.join(missing)}")
+        err = f"Executor for '{skill}' " + " and ".join(problems) if problems else None
 
         duration_ms = (time.perf_counter() - t0) * 1000
         self._log_audit(audit_id, skill, status, duration_ms, session_id,
