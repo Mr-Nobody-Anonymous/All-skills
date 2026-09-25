@@ -16,10 +16,14 @@ platform adapters defined in platforms/platforms.yaml and adapters/*.yaml:
   - Block Goose (.goose/skills)
 
 Safety invariants (hub-and-spoke architecture):
-  1. A real (non-link) directory is NEVER touched — only managed links/junctions.
-  2. --replace-managed-links only removes entries present in state/managed_harnesses.json.
-  3. shutil.rmtree() is never called on any path.
-  4. Every created link is recorded in state/managed_harnesses.json.
+  1. Unmanaged links and real directories are refused, never modified. The only
+     real directories ever changed are copies this tool created itself (the
+     fallback when a link cannot be made) and recorded in the ledger as such.
+  2. --replace-managed-links and --unlink only act on entries recorded in
+     state/managed_harnesses.json.
+  3. shutil.rmtree() is only called on those ledger-recorded copies; links and
+     junctions are removed as links, without following them into their targets.
+  4. Every created link or copy is recorded in state/managed_harnesses.json.
 
 Usage:
     python scripts/setup_tools.py                        # Set up local workspace harnesses
