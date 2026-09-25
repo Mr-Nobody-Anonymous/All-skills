@@ -1,18 +1,26 @@
-version: "3.8"
+# All-Skills — development container (live source mount)
+#
+#   docker compose -f docker/docker-compose.dev.yml run --rm dev              # run the test suite
+#   docker compose -f docker/docker-compose.dev.yml run --rm dev doctor       # any `all-skills` command
+#   docker compose -f docker/docker-compose.dev.yml run --rm --entrypoint bash dev
+#
+# The repository is bind-mounted, so edits on the host are picked up immediately.
+
+name: all-skills-dev
 
 services:
-  all-skills-dev:
+  dev:
     build:
       context: ..
       dockerfile: docker/Dockerfile
-    container_name: all-skills-dev
-    ports:
-      - "8000:8000"
-      - "8080:8080"
+    image: all-skills:dev
+    # Root inside the dev container avoids UID mismatches on the bind mount.
+    user: root
+    working_dir: /app
     volumes:
       - ..:/app
-    environment:
-      - PYTHONUNBUFFERED=1
-      - ALL_SKILLS_ENV=development
-      - DEBUG=true
-    command: ["python", "-m", "unittest", "discover", "tests"]
+    env_file:
+      - path: ../.env
+        required: false
+    entrypoint: ["python", "scripts/skills/skills.py"]
+    command: ["test"]
