@@ -24,6 +24,7 @@ sys.path.insert(0, str(ROOT / "src"))
 from skills.registry import load_registry  # noqa: E402
 from skills.frontmatter import parse_frontmatter  # noqa: E402
 from skills.quality import score_all  # noqa: E402
+from skills.trust import assess_trust, load_trust_ledger  # noqa: E402
 from skills.dependencies import generate_dependencies_json  # noqa: E402
 
 # Frontmatter fields that should flow from SKILL.md into the registry entry.
@@ -96,10 +97,13 @@ def main() -> int:
     merged = _merge_frontmatter(registry, skills_root)
 
     reports = score_all(registry, skills_root)
+    ledger = load_trust_ledger(ROOT)
     for entry in registry.entries:
         report = reports[entry.id]
         entry.quality = report.to_dict()
         entry.quality_score = report.overall_score
+        # Trust is derived from evidence (scan, maintainer review, tests), never defaulted.
+        entry.trust_tier = assess_trust(entry, ROOT, ledger).tier.name
 
     registry_path = skills_root / "registry.json"
     deps_path = skills_root / "dependencies.json"

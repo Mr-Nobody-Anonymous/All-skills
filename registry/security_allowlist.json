@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "description": "Maintainer-reviewed exceptions for scripts/scan_skills_security.py. Skill files cannot exempt themselves; every exception names the exact finding, gives a reason, and pins the reviewed file's SHA-256 (line endings normalised) so any edit to the file requires a new review. Suppressed findings are still reported.",
+  "entries": [
+    {
+      "skill": "active.agent-evaluation",
+      "path": "references/architecture-sketches.md",
+      "label": "prompt injection: ignore previous instructions",
+      "reason": "Adversarial test input inside an injection-resistance eval example (the string the agent under test must refuse), not an instruction to the agent.",
+      "sha256": "9e8dcdbaeb08165e6372fd6a3ee0c98670525ee79e5f4580c788c379245bd72f",
+      "reviewed_in": "PR #1 (initial audit \u2014 maintainer to confirm)"
+    },
+    {
+      "skill": "active.ci-cd-and-automation",
+      "path": "SKILL.md",
+      "label": "credential file reference",
+      "reason": "Documents that .env.example is committed while real .env files are not; no credential is read.",
+      "sha256": "e1509da902e43a1e640a4f72ca64ba4b370f4336cc9094f966eb13eec77211de",
+      "reviewed_in": "PR #1 (initial audit \u2014 maintainer to confirm)"
+    },
+    {
+      "skill": "active.code-review-excellence",
+      "path": "resources/implementation-playbook.md",
+      "label": "eval() call",
+      "reason": "Review checklist item ('No eval() or similar dynamic execution?'); defensive guidance, no code.",
+      "sha256": "ece72677dd719176f7c7b3c06ce59bfb3bbb74c25da471c0788e69bfd776ec13",
+      "reviewed_in": "PR #1 (initial audit \u2014 maintainer to confirm)"
+    },
+    {
+      "skill": "active.playwright-skill",
+      "path": "lib/helpers.js",
+      "label": "eval() call",
+      "reason": "Playwright's page.$$eval() DOM query API, not JavaScript/Python eval().",
+      "sha256": "388959d78412167a28a5af8bdc2b1d21ab6b619bac2c65273c9198e8671beefb",
+      "reviewed_in": "PR #1 (initial audit \u2014 maintainer to confirm)"
+    },
+    {
+      "skill": "active.security-sandboxing-guardrails",
+      "path": "SKILL.md",
+      "label": "credential file reference",
+      "reason": "Table of credential file globs the agent must never read; defensive policy text.",
+      "sha256": "3357d918f7308a9ad7694cbe022e838aa225ba85e4b9a35b526f0b33edf27a2b",
+      "reviewed_in": "PR #1 (initial audit \u2014 maintainer to confirm)"
+    },
+    {
+      "skill": "active.security-scanning-security-sast",
+      "path": "references/detailed-guide.md",
+      "label": "os.system call",
+      "reason": "Semgrep rule pattern ('pattern: os.system($CMD)') used to detect command injection.",
+      "sha256": "c272f0e6fafb307ac8d86d1038f07bee63ab1f125a07c0bd8341620580f0bb42",
+      "reviewed_in": "PR #1 (initial audit \u2014 maintainer to confirm)"
+    },
+    {
+      "skill": "active.security-scanning-security-sast",
+      "path": "references/detailed-guide.md",
+      "label": "subprocess with shell=True",
+      "reason": "Semgrep rule pattern ('subprocess.call($CMD, shell=True)') used to detect command injection.",
+      "sha256": "c272f0e6fafb307ac8d86d1038f07bee63ab1f125a07c0bd8341620580f0bb42",
+      "reviewed_in": "PR #1 (initial audit \u2014 maintainer to confirm)"
+    },
+    {
+      "skill": "active.vulnerability-scanner",
+      "path": "SKILL.md",
+      "label": "eval() call",
+      "reason": "Vulnerability reference table listing eval()/exec()/Function() as dangerous sinks.",
+      "sha256": "a7d5302d158c5fadc25bc0b74ea6f2230022e6bb6e22571671c10d641c305250",
+      "reviewed_in": "PR #1 (initial audit \u2014 maintainer to confirm)"
+    },
+    {
+      "skill": "active.vulnerability-scanner",
+      "path": "SKILL.md",
+      "label": "exec() call",
+      "reason": "Vulnerability reference table listing eval()/exec()/Function() as dangerous sinks.",
+      "sha256": "a7d5302d158c5fadc25bc0b74ea6f2230022e6bb6e22571671c10d641c305250",
+      "reviewed_in": "PR #1 (initial audit \u2014 maintainer to confirm)"
+    },
+    {
+      "skill": "active.vulnerability-scanner",
+      "path": "checklists.md",
+      "label": "eval() call",
+      "reason": "Security checklist item ('No eval() or dynamic code execution').",
+      "sha256": "fcad8d2be67a2ef31a223f2fba9e1ed13188fcc15857a584a8fb5b55d9813e42",
+      "reviewed_in": "PR #1 (initial audit \u2014 maintainer to confirm)"
+    },
+    {
+      "skill": "active.vulnerability-scanner",
+      "path": "scripts/security_scan.py",
+      "label": "eval() call",
+      "reason": "Detection regex (r'eval\\s*\\(') in the skill's own static scanner; nothing is evaluated.",
+      "sha256": "5a066b5ffeb57b29187aaa83f570279cb3b05f39521169a4ae407d19d37dc482",
+      "reviewed_in": "PR #1 (initial audit \u2014 maintainer to confirm)"
+    },
+    {
+      "skill": "active.vulnerability-scanner",
+      "path": "scripts/security_scan.py",
+      "label": "exec() call",
+      "reason": "Detection regex (r'exec\\s*\\(') in the skill's own static scanner; nothing is executed.",
+      "sha256": "5a066b5ffeb57b29187aaa83f570279cb3b05f39521169a4ae407d19d37dc482",
+      "reviewed_in": "PR #1 (initial audit \u2014 maintainer to confirm)"
+    }
+  ]
+}

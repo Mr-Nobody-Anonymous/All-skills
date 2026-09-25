@@ -7,8 +7,10 @@ third-party repositories are cloned, inspected, and only then imported — never
 """
 from __future__ import annotations
 
+import json
 import re
 from dataclasses import dataclass
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, List
 
@@ -29,7 +31,7 @@ PATTERNS = [
     (re.compile(r"powershell\s+-e(ncodedcommand)?\s+\S+", re.IGNORECASE), "powershell encoded command", "high"),
     (re.compile(r"-----BEGIN [A-Z ]*PRIVATE KEY-----"), "embedded private key", "high"),
     (re.compile(r"\b(AKIA|ASIA)[0-9A-Z]{16}\b"), "AWS access key", "high"),
-    (re.compile(r"eval\s*\(", re.IGNORECASE), "eval() call", "warn"),
+    (re.compile(r"\beval\s*\(", re.IGNORECASE), "eval() call", "warn"),
     (re.compile(r"\bexec\s*\(", re.IGNORECASE), "exec() call", "warn"),
     (re.compile(r"os\.system\s*\(", re.IGNORECASE), "os.system call", "warn"),
     (re.compile(r"subprocess\.(run|Popen|call|check_output)\([^)]*shell\s*=\s*True", re.IGNORECASE), "subprocess with shell=True", "warn"),
@@ -39,6 +41,8 @@ PATTERNS = [
 ]
 
 MAX_SCAN_FILE_SIZE = 2_000_000
+ALLOWLIST_RELPATH = Path("registry") / "security_allowlist.json"
+INCOMPLETE = "incomplete"  # severity of findings that mean "this file was not scanned"
 
 
 class ScanStatus:
@@ -61,35 +65,33 @@ class Finding:
 
 
 def scan_skill(entry: SkillEntry, skill_dir: Path) -> List[Finding]:
-    """Statically scan every readable file in one skill folder.
+    """Statically scan every file in one skill folder, including dotfiles.
 
-    Never bypasses findings based on content keywords in the inspected lines.
-    Only explicit file-level annotations ('# security-scan: ignore') or
-    audited test fixture paths are exempted.
+    Files cannot exempt themselves: content markers are ignored and exceptions
+    live only in the maintainer-controlled allowlist (see :func:`apply_allowlist`).
+    Files that could not be inspected produce ``incomplete`` findings, so an
+    unscanned package is never reported as clean.
     """
     findings: List[Finding] = []
     if not skill_dir.exists():
         return findings
-    for f in skill_dir.rglob("*"):
-        if not f.is_file() or f.name.startswith("."):
+    for f in sorted(skill_dir.rglob("*")):
+        rel_parts = f.relative_to(skill_dir).parts
+        if ".git" in rel_parts or "__pycache__" in rel_parts or not f.is_file():
             continue
-        rel = str(f.relative_to(skill_dir)).replace("\\", "/")
+        rel = "/".join(rel_parts)
         try:
             sz = f.stat().st_size
-            if sz > MAX_SCAN_FILE_SIZE:
-                findings.append(Finding(entry.id, rel, f"file exceeds max scan size ({sz} bytes) - status: {ScanStatus.UNSCANNABLE}", "warn"))
-                continue
         except OSError as exc:
-            findings.append(Finding(entry.id, rel, f"unreadable file ({exc}) - status: {ScanStatus.SCAN_FAILED}", "warn"))
+            findings.append(Finding(entry.id, rel, f"unreadable file ({exc}) - status: {ScanStatus.SCAN_FAILED}", INCOMPLETE))
+            continue
+        if sz > MAX_SCAN_FILE_SIZE:
+            findings.append(Finding(entry.id, rel, f"file exceeds max scan size ({sz} bytes) - status: {ScanStatus.UNSCANNABLE}", INCOMPLETE))
             continue
         try:
             content = f.read_text(encoding="utf-8", errors="ignore")
-        except Exception as exc:
-            findings.append(Finding(entry.id, rel, f"read failure ({exc}) - status: {ScanStatus.SCAN_FAILED}", "warn"))
-            continue
-
-        # File-level explicit exemption only
-        if content.startswith("# security-scan: ignore") or content.startswith("<!-- security-scan: ignore -->"):
+        except OSError as exc:
+            findings.append(Finding(entry.id, rel, f"read failure ({exc}) - status: {ScanStatus.SCAN_FAILED}", INCOMPLETE))
             continue
 
         for pattern, label, severity in PATTERNS:
@@ -137,6 +139,65 @@ def high_severity(findings: List[Finding]) -> List[Finding]:
     return [f for f in findings if f.severity == "high"]
 
 
+def scan_is_complete(findings: List[Finding]) -> bool:
+    """False if any file could not be inspected (unscannable or unreadable)."""
+    return not any(f.severity == INCOMPLETE for f in findings)
+
+
+def load_allowlist(workspace_root: Path) -> List[Dict[str, Any]]:
+    """Maintainer-reviewed scanner exceptions (``registry/security_allowlist.json``).
+
+    Every entry must name the skill, file, finding label, a reason and the
+    file's SHA-256 at review time; editing the file invalidates the exception.
+    """
+    path = Path(workspace_root) / ALLOWLIST_RELPATH
+    if not path.exists():
+        return []
+    data = json.loads(path.read_text(encoding="utf-8"))
+    entries = data.get("entries") if isinstance(data, dict) else None
+    if not isinstance(entries, list):
+        raise ValueError(f"{path}: 'entries' must be a list")
+    required = ("skill", "path", "label", "reason", "sha256")
+    for entry in entries:
+        if not isinstance(entry, dict) or any(not entry.get(k) for k in required):
+            raise ValueError(f"{path}: every entry needs {', '.join(required)}: {entry!r}")
+    return entries
+
+
+def apply_allowlist(
+    findings: List[Finding],
+    allowlist: List[Dict[str, Any]],
+    skill_dirs: Dict[str, Path],
+) -> tuple[List[Finding], List[Finding], List[Dict[str, Any]]]:
+    """Split findings into (active, suppressed) and report stale allowlist entries.
+
+    ``skill_dirs`` maps each finding's ``skill_id`` to its folder so the file
+    hash can be checked against the reviewed hash.
+    """
+    from .lock import compute_file_sha256
+
+    active: List[Finding] = []
+    suppressed: List[Finding] = []
+    used: set[int] = set()
+    for finding in findings:
+        match = None
+        for idx, entry in enumerate(allowlist):
+            if (entry["skill"], entry["path"], entry["label"]) != (finding.skill_id, finding.path, finding.label):
+                continue
+            skill_dir = skill_dirs.get(finding.skill_id)
+            file_path = skill_dir / finding.path if skill_dir else None
+            if file_path and file_path.is_file() and compute_file_sha256(file_path) == entry["sha256"]:
+                match = idx
+                break
+        if match is None:
+            active.append(finding)
+        else:
+            used.add(match)
+            suppressed.append(finding)
+    stale = [entry for idx, entry in enumerate(allowlist) if idx not in used]
+    return active, suppressed, stale
+
+
 INSTRUCTION_PATTERNS = [
     (re.compile(r"(?i)\bignore\s+(all\s+)?(previous|prior)\s+instructions\b"), "prompt injection: ignore previous instructions", "high"),
     (re.compile(r"(?i)\bdisregard\s+(all\s+)?(previous|above)\s+instructions\b"), "prompt injection: disregard instructions", "high"),
@@ -160,9 +221,6 @@ def scan_instructions(text: str) -> List[tuple[str, str]]:
             findings.append((label, severity))
     return findings
 
-
-import json
-from datetime import datetime, timezone
 
 from .revocations import add_revocation, get_revocation, remove_revocation
 
