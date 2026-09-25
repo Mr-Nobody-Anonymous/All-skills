@@ -9,7 +9,7 @@ Welcome to the **All Skills** agent engineering workspace.
 - Use the `which-skill` playbook to identify the optimal skill or workflow for any user task.
 - Multi-step execution playbooks are located in `workflows/` (`feature-development.md`, `bug-investigation-and-fix.md`, etc.).
 - Maintain multi-step workflow state using `python scripts/manage_state.py` (`aas-stack.json` and `CONTEXT.md`).
-- Consult `awesome_skills/CATALOG.md` when looking for domain-specific skills from the 2,041+ categorized skills library.
+- Consult `awesome_skills/CATALOG.md` when looking for domain-specific skills from the categorized skills library (current counts in `stats.json`).
 - Setup or re-link harness with `./setup.sh` or `python scripts/setup_skills.py`.
 - Install additional skills into your active harness with:
   ```bash
