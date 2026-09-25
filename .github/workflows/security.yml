@@ -75,7 +75,26 @@ jobs:
         with:
           persist-credentials: false
 
+      # Dependency review needs the repository's Dependency graph (Settings →
+      # Code security). Until it is enabled the review is skipped with a notice
+      # instead of failing every pull request; it activates automatically after.
+      - name: Check that the dependency graph is enabled
+        id: graph
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          if gh api "repos/$REPO/dependency-graph/compare/$BASE_SHA...$HEAD_SHA" --silent; then
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "::notice title=Dependency review skipped::Enable the Dependency graph in Settings > Code security to activate dependency review."
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Review dependency changes for known vulnerabilities
+        if: steps.graph.outputs.enabled == 'true'
         uses: actions/dependency-review-action@a1d282b36b6f3519aa1f3fc636f609c47dddb294 # v5.0.0
         with:
           fail-on-severity: high

@@ -41,7 +41,7 @@ Every commit and pull request is verified by multi-layer security gates
 - **Prompt Injection Defense**: Validated against `evals/adversarial/` benchmark suite
 - **Code Scanning**: GitHub CodeQL for Python, JavaScript and GitHub Actions workflows
 - **Secret Scanning**: Gitleaks on every push and pull request (configuration: [`.gitleaks.toml`](.gitleaks.toml))
-- **Dependency Review & Updates**: Vulnerable dependencies are blocked on pull requests; Dependabot keeps Actions, Python and Docker dependencies current
+- **Dependency Review & Updates**: Vulnerable dependencies are blocked on pull requests (requires the repository's Dependency graph to be enabled); Dependabot keeps Actions, Python and Docker dependencies current
 - **Fail-Closed Lifecycle Hooks**: Required hooks enforce non-zero failure exits
 - **Kill-Switch Enforcement**: Instant revocation lookup via `registry/revocations.json`
 - **Network Egress Constraints**: Outbound filtering per `docs/security/network-security.md`
