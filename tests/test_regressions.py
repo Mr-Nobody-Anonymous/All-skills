@@ -15,6 +15,8 @@ Each test pins a defect that previously shipped on ``main``:
    every skill as "tampered" on Linux CI.
 5. The packaged CLI's ``doctor`` command called ``Validator`` with the wrong
    signature and crashed with ``TypeError``.
+6. ``skills/dependencies.json`` recorded which tools were installed on the
+   machine that generated it, so ``refresh_registry.py --check`` failed in CI.
 """
 
 from __future__ import annotations
@@ -158,6 +160,37 @@ class TestLockHashIsPlatformIndependent(unittest.TestCase):
         after, files = compute_skill_tree_hash(self.skill)
         self.assertEqual(before, after)
         self.assertFalse(any("__pycache__" in f or f.startswith(".") for f in files))
+
+
+class TestDependenciesIndexIsEnvironmentIndependent(unittest.TestCase):
+    """Regression #6 — skills/dependencies.json must not depend on the local machine.
+
+    It used to record which tools were installed where it was generated, so
+    ``refresh_registry.py --check`` failed on every other machine (including CI).
+    """
+
+    def test_generated_index_ignores_installed_tools(self):
+        from skills import dependencies
+        from skills.registry import load_registry
+
+        entries = load_registry(_ROOT).entries
+
+        def generate(tools_available: bool) -> dict:
+            dependencies._DEP_CACHE.clear()
+            with mock.patch.object(dependencies.shutil, "which",
+                                   return_value="/usr/bin/tool" if tools_available else None), \
+                    mock.patch.object(dependencies.importlib.util, "find_spec",
+                                      return_value=object() if tools_available else None):
+                return dependencies.generate_dependencies_json(entries)
+
+        try:
+            everything_installed = generate(True)
+            nothing_installed = generate(False)
+        finally:
+            dependencies._DEP_CACHE.clear()
+        self.assertEqual(everything_installed, nothing_installed)
+        committed = json.loads((_SKILLS_DIR / "dependencies.json").read_text(encoding="utf-8"))
+        self.assertEqual(committed, nothing_installed)
 
 
 class TestNativeCliDoctor(unittest.TestCase):

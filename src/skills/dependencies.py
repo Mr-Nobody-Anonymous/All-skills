@@ -70,13 +70,17 @@ SYSTEM_BINARIES = {
 }
 
 
-def expand_declaration(declaration: str):
+def expand_declaration(declaration: str, *, probe_environment: bool = True):
     """Split a dependency declaration into (canonical_name, optional, kind).
 
     ``kind`` is one of ``system`` (a binary/tool), ``python`` (an importable
     module), or ``api`` (an external service not detectible locally).
     Handles the ``optional:`` prefix, the ``-optional`` suffix, and ``-or-``
     alternatives (the primary alternative is used for the canonical name).
+
+    The ``python`` kind is detected by probing importable modules, so it
+    depends on the local environment; pass ``probe_environment=False`` for a
+    deterministic classification (``system`` or ``api`` only).
     """
     optional = declaration.endswith("-optional") or declaration.startswith("optional:")
     name = declaration.removeprefix("optional:").removesuffix("-optional")
@@ -85,29 +89,36 @@ def expand_declaration(declaration: str):
     kind = "api"
     if any(a in SYSTEM_BINARIES for a in alternatives) or primary in SYSTEM_BINARIES:
         kind = "system"
-    elif any(importlib.util.find_spec(a.replace("-", "_")) is not None for a in alternatives):
+    elif probe_environment and any(
+        importlib.util.find_spec(a.replace("-", "_")) is not None for a in alternatives
+    ):
         kind = "python"
     return primary, optional, kind
 
 
-def structured_dependency_status(entry: SkillEntry) -> dict:
-    """Map a skill's flat dependency list to the structured form used by
-    ``skills/dependencies.json``:
+def structured_dependency_status(entry: SkillEntry, *, include_availability: bool = True) -> dict:
+    """Map a skill's flat dependency list to a structured form:
 
     {"required": [...], "optional": [...], "system": [...], "python": [...],
      "api": [...], "missing_required": [...], "missing_optional": [...]}
+
+    ``missing_*`` reflect what is installed on the *current* machine. With
+    ``include_availability=False`` they are omitted and no environment probing
+    happens, so the result is identical on every machine — this is the form
+    stored in the committed ``skills/dependencies.json`` index.
     """
     result: Dict[str, List[str]] = {
         "required": [], "optional": [], "system": [], "python": [], "api": [],
-        "missing_required": [], "missing_optional": [],
     }
+    if include_availability:
+        result["missing_required"] = []
+        result["missing_optional"] = []
     for dep in entry.dependencies:
-        status = check_dependency(entry.id, dep)
-        canonical, optional, kind = expand_declaration(dep)
+        canonical, optional, kind = expand_declaration(dep, probe_environment=include_availability)
         bucket = "optional" if optional else "required"
         result[bucket].append(canonical)
         result[kind].append(canonical)
-        if not status.available:
+        if include_availability and not check_dependency(entry.id, dep).available:
             result[f"missing_{bucket}"].append(canonical)
     # De-duplicate while preserving order.
     for key in list(result):
@@ -120,10 +131,20 @@ def structured_dependency_status(entry: SkillEntry) -> dict:
 
 
 def generate_dependencies_json(entries: Iterable[SkillEntry]) -> dict:
-    """Build the machine-readable dependencies index document."""
+    """Build the machine-readable dependencies index document.
+
+    The committed index records what each skill *declares*. It deliberately
+    excludes local availability (``missing_*``), which differs between
+    developer machines and CI runners and made ``refresh_registry.py --check``
+    fail everywhere except on the machine that generated the file. Use
+    ``check_dependencies()`` or ``skills.py doctor`` for live availability.
+    """
     return {
-        "version": 1,
-        "skills": {entry.id: structured_dependency_status(entry) for entry in entries},
+        "version": 2,
+        "skills": {
+            entry.id: structured_dependency_status(entry, include_availability=False)
+            for entry in entries
+        },
     }
 
 
