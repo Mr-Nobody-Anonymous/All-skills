@@ -34,6 +34,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import stat
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -161,16 +162,15 @@ def is_link_or_junction(path: Path) -> bool:
     if path.is_symlink():
         return True
     if os.name == "nt":
-        # Detect Windows junction via reparse point tag
+        # Junctions are reparse points. os.lstat() exposes the attribute bits
+        # without following the link. (A previous ctypes GetFileAttributesW call
+        # used the default signed return type, so INVALID_FILE_ATTRIBUTES came
+        # back as -1 and every *missing* path was reported as a junction.)
         try:
-            import ctypes
-            import ctypes.wintypes
-            FILE_ATTRIBUTE_REPARSE_POINT = 0x0400
-            attrs = ctypes.windll.kernel32.GetFileAttributesW(str(path))
-            if attrs != 0xFFFFFFFF and (attrs & FILE_ATTRIBUTE_REPARSE_POINT):
-                return True
-        except Exception:
-            pass
+            attrs = getattr(os.lstat(path), "st_file_attributes", 0)
+        except OSError:
+            return False
+        return bool(attrs & stat.FILE_ATTRIBUTE_REPARSE_POINT)
     return False
 
 

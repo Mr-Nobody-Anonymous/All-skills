@@ -22,6 +22,9 @@ Each test pins a defect that previously shipped on ``main``:
 8. The frontmatter parser read YAML compact sequences ("tags:\n- a") as empty
    lists, silently dropping triggers, aliases, tools and dependencies of every
    canonical and active skill; block scalars also truncated the frontmatter.
+9. On Windows, harness-link detection reported every *missing* target as a
+   broken junction (ctypes returned INVALID_FILE_ATTRIBUTES as -1), so
+   ``setup_tools.py --verify`` failed on every clean checkout.
 """
 
 from __future__ import annotations
@@ -263,6 +266,34 @@ class TestFrontmatterParserMatchesYaml(unittest.TestCase):
             parsed, _ = parse_frontmatter(text)
             mismatches += [f"{path.relative_to(_ROOT)}:{k}" for k, v in reference.items() if norm(v) != norm(parsed.get(k))]
         self.assertEqual(mismatches, [], f"{len(mismatches)} fields differ from YAML, e.g. {mismatches[:5]}")
+
+
+class TestHarnessLinkDetection(unittest.TestCase):
+    """Regression #9 — only real symlinks/junctions count as harness links."""
+
+    @classmethod
+    def setUpClass(cls):
+        spec = importlib.util.spec_from_file_location("_regression_setup_tools", _ROOT / "scripts" / "setup_tools.py")
+        assert spec is not None and spec.loader is not None
+        cls.setup_tools = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(cls.setup_tools)
+
+    def test_missing_and_real_paths_are_not_links(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            base = Path(tmp)
+            self.assertFalse(self.setup_tools.is_link_or_junction(base / "missing"))
+            (base / "real").mkdir()
+            self.assertFalse(self.setup_tools.is_link_or_junction(base / "real"))
+
+    def test_symlinks_are_links(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            base = Path(tmp)
+            (base / "target").mkdir()
+            try:
+                (base / "link").symlink_to(base / "target", target_is_directory=True)
+            except (OSError, NotImplementedError):
+                self.skipTest("creating symlinks is not permitted here")
+            self.assertTrue(self.setup_tools.is_link_or_junction(base / "link"))
 
 
 class TestNativeCliDoctor(unittest.TestCase):
