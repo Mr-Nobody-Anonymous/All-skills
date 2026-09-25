@@ -10,6 +10,7 @@ import os
 import runpy
 import sys
 from pathlib import Path
+from typing import List, Optional, Tuple
 
 if hasattr(sys.stdout, "reconfigure"):
     try:
@@ -18,19 +19,24 @@ if hasattr(sys.stdout, "reconfigure"):
         pass
 
 
-def _find_repo_script() -> Path | None:
-    """Return the repository script path if running in a source tree."""
-    try:
-        candidate = Path(__file__).resolve().parents[2] / "scripts" / "skills" / "skills.py"
-        if candidate.exists():
-            return candidate
-    except Exception:
-        pass
-    return None
+def _extract_workspace(argv: List[str]) -> Tuple[Optional[str], List[str]]:
+    """Pull ``--workspace PATH`` / ``--workspace=PATH`` out of ``argv`` (any position)."""
+    rest: List[str] = []
+    workspace: Optional[str] = None
+    it = iter(argv)
+    for arg in it:
+        if arg == "--workspace":
+            workspace = next(it, None)
+        elif arg.startswith("--workspace="):
+            workspace = arg.split("=", 1)[1]
+        else:
+            rest.append(arg)
+    return workspace, rest
 
 
-def _run_native_cli() -> None:
-    """Package-native CLI execution when installed without repository scripts."""
+def _run_native_cli(workspace: Optional[Path] = None, argv: Optional[List[str]] = None,
+                    workspace_error: Optional[str] = None) -> None:
+    """Built-in command subset, used when the workspace has no scripts/skills/skills.py."""
     from ._version import __version__
     from .registry import load_registry
     from .router import Router
@@ -77,8 +83,13 @@ def _run_native_cli() -> None:
     s_scan = sub.add_parser("scan", help="Run static security scan")
     s_scan.add_argument("--json", action="store_true", help="Output findings as JSON")
 
-    args = parser.parse_args()
-    workspace = Path.cwd()
+    args = parser.parse_args(argv)
+    if args.cmd is None:
+        parser.print_help()
+        sys.exit(0)
+    if workspace is None:
+        print(f"Error: {workspace_error or 'no All-Skills workspace found'}", file=sys.stderr)
+        sys.exit(2)
     reg = load_registry(workspace)
 
     if args.cmd == "list":
@@ -153,11 +164,22 @@ def _run_native_cli() -> None:
 
 
 def main() -> None:
-    repo_script = _find_repo_script()
-    if repo_script is not None:
-        runpy.run_path(str(repo_script), run_name="__main__")
-    else:
-        _run_native_cli()
+    """Resolve the workspace; delegate to its full CLI if present, else use the built-in subset."""
+    from .workspace import ENV_VAR, WorkspaceNotFound, resolve_workspace
+
+    explicit, argv = _extract_workspace(sys.argv[1:])
+    try:
+        workspace: Optional[Path] = resolve_workspace(explicit)
+        error = None
+    except WorkspaceNotFound as exc:
+        workspace, error = None, str(exc)
+    script = workspace / "scripts" / "skills" / "skills.py" if workspace else None
+    if script is not None and script.exists():
+        os.environ[ENV_VAR] = str(workspace)
+        sys.argv = [str(script), *argv]
+        runpy.run_path(str(script), run_name="__main__")
+        return
+    _run_native_cli(workspace, argv, error)
 
 
 if __name__ == "__main__":

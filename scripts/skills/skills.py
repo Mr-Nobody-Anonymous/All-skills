@@ -57,6 +57,7 @@ if hasattr(sys.stderr, "reconfigure"):
 import argparse
 
 import json
+import os
 
 import sys
 
@@ -99,8 +100,9 @@ from skills.security import scan_all  # noqa: E402
 
 
 def _workspace_root() -> Path:
-
-    return ROOT
+    """Workspace the command operates on (see skills.workspace for the resolution rule)."""
+    override = os.environ.get("ALL_SKILLS_WORKSPACE")
+    return Path(override).resolve() if override else ROOT
 
 
 
@@ -1236,6 +1238,7 @@ def cmd_policy(args, _parser):
 def main():
 
     p = argparse.ArgumentParser(prog="skills", description="Agent Skills CLI")
+    p.add_argument("--workspace", help="All-Skills workspace to operate on (default: this checkout)")
 
     sub = p.add_subparsers(dest="cmd", required=True)
 
@@ -1435,9 +1438,14 @@ def main():
 
 
     args = p.parse_args()
-
+    if args.workspace:
+        from skills.workspace import WorkspaceNotFound, resolve_workspace
+        try:
+            os.environ["ALL_SKILLS_WORKSPACE"] = str(resolve_workspace(args.workspace))
+        except WorkspaceNotFound as exc:
+            print(f"Error: {exc}", file=sys.stderr)
+            sys.exit(2)
     rc = args.func(args, p) or 0
-
     sys.exit(rc)
 
 

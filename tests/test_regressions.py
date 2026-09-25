@@ -74,7 +74,7 @@ class TestCatalogIsFullyTracked(unittest.TestCase):
         stdin = "\n".join(f"{d}/SKILL.md" for d in _catalog_skill_dirs())
         proc = subprocess.run(
             ["git", "check-ignore", "--no-index", "--stdin"],
-            cwd=_ROOT, input=stdin, capture_output=True, text=True, check=False,
+            cwd=_ROOT, input=stdin, capture_output=True, text=True, encoding="utf-8", errors="replace", check=False,
         )
         ignored = [line for line in proc.stdout.splitlines() if line.strip()]
         self.assertEqual(ignored, [], f".gitignore hides catalog skills: {ignored[:5]}")
@@ -272,15 +272,8 @@ class TestNativeCliDoctor(unittest.TestCase):
         from skills import cli
 
         stdout = io.StringIO()
-        cwd = os.getcwd()
-        try:
-            os.chdir(_ROOT)
-            with mock.patch.object(sys, "argv", ["all-skills", "doctor"]), \
-                    contextlib.redirect_stdout(stdout):
-                with self.assertRaises(SystemExit) as ctx:
-                    cli._run_native_cli()
-        finally:
-            os.chdir(cwd)
+        with contextlib.redirect_stdout(stdout), self.assertRaises(SystemExit) as ctx:
+            cli._run_native_cli(_ROOT, ["doctor"])
         self.assertIn(ctx.exception.code, (0, 1))
         self.assertIn("Doctor Diagnostic:", stdout.getvalue())
         self.assertIn("Validation Errors:", stdout.getvalue())

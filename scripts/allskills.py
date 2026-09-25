@@ -20,6 +20,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import subprocess
 import sys
 from pathlib import Path
@@ -27,7 +28,7 @@ from pathlib import Path
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
 
-REPO_ROOT = Path(__file__).resolve().parent.parent
+REPO_ROOT = Path(__file__).resolve().parent.parent  # replaced by the resolved workspace in main()
 
 def run_cmd(args_list: list[str]) -> int:
     return subprocess.run([sys.executable] + args_list, cwd=REPO_ROOT).returncode
@@ -125,10 +126,14 @@ def cmd_doctor(full: bool = False) -> int:
         try:
             records = _catalog_records()
             invalid = [r for r in records if not r.get("id") or not r.get("path")]
-            absent = [r["id"] for r in records if r.get("path") and not (REPO_ROOT / r["path"]).parent.is_dir()]
-            ok = _check("Registry", not invalid and not absent,
-                        f"{len(records):,} records" if not invalid and not absent
-                        else f"{len(invalid)} invalid records, {len(absent)} missing folders (e.g. {absent[:3]})")
+            if not (REPO_ROOT / "awesome_skills").is_dir():
+                ok = _check("Registry", not invalid,
+                            f"{len(records):,} records; catalog content not provisioned (metadata only)")
+            else:
+                absent = [r["id"] for r in records if r.get("path") and not (REPO_ROOT / r["path"]).parent.is_dir()]
+                ok = _check("Registry", not invalid and not absent,
+                            f"{len(records):,} records" if not invalid and not absent
+                            else f"{len(invalid)} invalid records, {len(absent)} missing folders (e.g. {absent[:3]})")
         except Exception as e:
             ok = _check("Registry", False, str(e))
     else:
@@ -184,11 +189,15 @@ def cmd_doctor(full: bool = False) -> int:
     # Layer 4: Profiles
     try:
         all_profiles = load_profiles()
+        resolution = {sid: resolve_skill(sid) for prof in all_profiles.values() for sid in prof["skills"]}
         unresolved = sorted({f"{n}:{sid}" for n, prof in all_profiles.items()
-                             for sid in prof["skills"] if resolve_skill(sid)[0] is None})
+                             for sid in prof["skills"] if resolution[sid][1] == "missing"})
+        unprovisioned = sorted({sid for sid, (_, where) in resolution.items() if where.startswith("catalog (")})
         no_file = [n for n, prof in all_profiles.items() if not prof["file"]]
         ok = _check("Profiles", bool(all_profiles) and not unresolved and not no_file,
-                    f"{len(all_profiles)} profiles, every skill resolves" if not unresolved and not no_file
+                    (f"{len(all_profiles)} profiles, every skill resolves"
+                     + (f" ({len(unprovisioned)} in the unprovisioned catalog)" if unprovisioned else ""))
+                    if not unresolved and not no_file
                     else f"unresolved skills {unresolved[:4]}, profiles without YAML {no_file[:4]}")
     except Exception as e:
         ok = _check("Profiles", False, str(e))
@@ -425,11 +434,14 @@ def resolve_skill(skill_id: str) -> tuple[Path | None, str]:
     canonical = sorted(REPO_ROOT.glob(f"skills/*/{skill_id}/SKILL.md"))
     if canonical:
         return canonical[0].parent, "canonical"
+    catalog_here = (REPO_ROOT / "awesome_skills").is_dir()
     for rec in sorted(_catalog_records(), key=lambda r: str(r.get("path"))):
         if rec.get("id") == skill_id:
             folder = (REPO_ROOT / str(rec.get("path", ""))).parent
             if folder.is_dir():
                 return folder, "catalog"
+            if not catalog_here:
+                return None, "catalog (not provisioned)"
     return None, "missing"
 
 
@@ -460,10 +472,15 @@ def cmd_profile(action: str, name: str | None, dest: str | None = None, dry_run:
         return 0
 
     # install — resolve everything first; nothing is copied if a skill is missing
-    missing = [sid for sid, (path, _) in resolved.items() if path is None]
+    missing = [sid for sid, (path, where) in resolved.items() if path is None and where == "missing"]
+    unprovisioned = [sid for sid, (path, where) in resolved.items() if path is None and where != "missing"]
     if missing:
         print(f"Error: profile {name!r} references skills that are not in the library: {', '.join(missing)}",
               file=sys.stderr)
+        return 1
+    if unprovisioned:
+        print(f"Error: {', '.join(unprovisioned)} live in the awesome_skills catalog, which is not provisioned in "
+              f"{REPO_ROOT}. Run inside a full clone or pass --workspace <clone>.", file=sys.stderr)
         return 1
     default_dest = REPO_ROOT / ".agents" / "skills"
     dest_dir = Path(dest).resolve() if dest else default_dest
@@ -520,6 +537,8 @@ def cmd_verify() -> int:
 
 def main() -> int:
     parser = argparse.ArgumentParser(prog="allskills", description="All-skills Universal Operating System CLI")
+    parser.add_argument("--workspace", help="All-Skills workspace (default: ALL_SKILLS_WORKSPACE, the current "
+                                            "directory tree, then this installation)")
     subparsers = parser.add_subparsers(dest="subcommand", help="Command to execute")
 
     s_init = subparsers.add_parser("init", help="Link the active harness into agent tools, then verify")
@@ -560,6 +579,15 @@ def main() -> int:
         s_exec.add_argument("--approved-by", help="Name of the human approving an ASK capability")
 
     args = parser.parse_args()
+    global REPO_ROOT
+    sys.path.insert(0, str(REPO_ROOT / "src"))
+    from skills.workspace import ENV_VAR, WorkspaceNotFound, resolve_workspace
+    try:
+        REPO_ROOT = resolve_workspace(args.workspace, cwd=Path.cwd())
+    except WorkspaceNotFound as exc:
+        print(f"Error: {exc}", file=sys.stderr)
+        return 2
+    os.environ[ENV_VAR] = str(REPO_ROOT)
 
     if args.subcommand == "doctor":
         return cmd_doctor(full=getattr(args, "full", False))
