@@ -41,8 +41,8 @@ jobs:
           cache: pip
           cache-dependency-path: pyproject.toml
 
-      - name: Install package with dev tools
-        run: python -m pip install -e ".[dev]"
+      - name: Install package with dev tools (pinned by requirements-dev.txt)
+        run: python -m pip install -c requirements-dev.txt -e ".[dev]"
 
       - name: Ruff (correctness lint)
         run: ruff check --output-format=github .
@@ -54,13 +54,22 @@ jobs:
         run: docker run --rm -v "$PWD:/repo" --workdir /repo rhysd/actionlint:1.7.12 -color
 
   test:
-    name: Tests (Python ${{ matrix.python-version }})
-    runs-on: ubuntu-24.04
-    timeout-minutes: 15
+    name: Tests (${{ matrix.os }}, Python ${{ matrix.python-version }})
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 20
+    defaults:
+      run:
+        shell: bash
     strategy:
       fail-fast: false
       matrix:
+        os: [ubuntu-24.04]
         python-version: ["3.10", "3.11", "3.12"]
+        include:
+          - os: windows-2025
+            python-version: "3.12"
+          - os: macos-15
+            python-version: "3.12"
     steps:
       - name: Checkout repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -74,19 +83,20 @@ jobs:
           cache: pip
           cache-dependency-path: pyproject.toml
 
-      - name: Install package with test extras
-        run: python -m pip install -e ".[test]"
+      - name: Install package with test extras (pinned by requirements-dev.txt)
+        run: python -m pip install -c requirements-dev.txt -e ".[test]"
 
       - name: Platform test suite (No-Regression Gate 2)
         run: python scripts/skills/skills.py test
 
+      # Fails below the coverage floor in pyproject.toml ([tool.coverage.report] fail_under).
       - name: pytest with coverage
         run: >-
           python -m pytest tests scratch_priority_import/tests
           --cov --cov-report=term --cov-report=xml
 
       - name: Publish coverage summary
-        if: matrix.python-version == '3.12'
+        if: matrix.os == 'ubuntu-24.04' && matrix.python-version == '3.12'
         run: |
           {
             echo "### Coverage — src/skills (Python ${{ matrix.python-version }})"
@@ -94,7 +104,7 @@ jobs:
           } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Upload coverage report
-        if: matrix.python-version == '3.12'
+        if: matrix.os == 'ubuntu-24.04' && matrix.python-version == '3.12'
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
           name: coverage-xml
@@ -118,8 +128,8 @@ jobs:
           cache: pip
           cache-dependency-path: pyproject.toml
 
-      - name: Install package
-        run: python -m pip install -e .
+      - name: Install package (pinned by requirements-dev.txt)
+        run: python -m pip install -c requirements-dev.txt -e .
 
       # Canonical + active skills must pass the JSON Schema; catalog violations
       # may only go down (102 third-party files lack valid frontmatter today).
@@ -194,6 +204,39 @@ jobs:
           wheel-venv/bin/pip install "$GITHUB_WORKSPACE"/dist/*.whl
           wheel-venv/bin/all-skills --version
           wheel-venv/bin/python -c "import skills, scratch_priority_import; print(skills.__version__)"
+          # Outside any workspace the CLI must fail clearly instead of guessing.
+          if wheel-venv/bin/all-skills list; then echo "::error::expected a missing-workspace error"; exit 1; fi
+          # With --workspace it runs that workspace's full CLI ...
+          wheel-venv/bin/all-skills --workspace "$GITHUB_WORKSPACE" route "review my pull request" --top-k 1
+          # ... and the built-in commands when the workspace only has skills/.
+          mkdir -p ws && cp -r "$GITHUB_WORKSPACE/skills" ws/
+          ALL_SKILLS_WORKSPACE="$PWD/ws" wheel-venv/bin/all-skills list
+
+      - name: Set up Node.js
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: "22"
+
+      - name: Build and smoke-test the npm package (clean install outside the checkout)
+        run: |
+          npm pack --pack-destination dist
+          python -m pip install -r requirements.txt
+          mkdir -p "$RUNNER_TEMP/npm-project"
+          cd "$RUNNER_TEMP/npm-project" || exit 1
+          npm init -y > /dev/null
+          npm install --no-audit --no-fund "$GITHUB_WORKSPACE"/dist/*.tgz
+          npx allskills --help
+          npx allskills profile list
+          npx allskills search terraform --json --limit 1
+          npx allskills lock --verify
+          npx allskills doctor --full
+
+      - name: Upload distributions
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: distributions
+          path: dist/
+          retention-days: 14
 
   docker:
     name: Docker image

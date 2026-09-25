@@ -160,6 +160,8 @@ source = ["src/skills"]
 branch = true
 
 [tool.coverage.report]
+# CI fails if coverage of src/skills drops below this floor (currently ~77%).
+fail_under = 75
 show_missing = true
 skip_empty = true
 exclude_also = [

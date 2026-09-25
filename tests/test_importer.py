@@ -44,7 +44,7 @@ Run `scripts/run.py` and read `references/guide.md`.
 
 
 def git(cwd: Path, *args: str) -> str:
-    return subprocess.run(["git", "-C", str(cwd), *args], check=True, capture_output=True, text=True).stdout.strip()
+    return subprocess.run(["git", "-C", str(cwd), *args], check=True, capture_output=True, text=True, encoding="utf-8", errors="replace").stdout.strip()
 
 
 def make_upstream(root: Path, name: str, skill_text: str = SKILL, license_text: str | None = None) -> Path:
@@ -70,7 +70,8 @@ def frontmatter(path: Path) -> dict:
 @unittest.skipIf(GIT is None, "git is required")
 class TestImporter(unittest.TestCase):
     def setUp(self):
-        self._tmp = tempfile.TemporaryDirectory()
+        # Git marks object files read-only; don't fail teardown on Windows.
+        self._tmp = tempfile.TemporaryDirectory(ignore_cleanup_errors=True)
         self.root = Path(self._tmp.name)
         workspace = self.root / "workspace"
         (workspace / "awesome_skills").mkdir(parents=True)

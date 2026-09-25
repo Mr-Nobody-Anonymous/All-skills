@@ -20,7 +20,7 @@ from scripts import allskills  # noqa: E402
 
 
 def run(*args: str) -> subprocess.CompletedProcess:
-    return subprocess.run([sys.executable, *args], cwd=_ROOT, capture_output=True, text=True, timeout=300)
+    return subprocess.run([sys.executable, *args], cwd=_ROOT, capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=300)
 
 
 class TestProfileInstall(unittest.TestCase):

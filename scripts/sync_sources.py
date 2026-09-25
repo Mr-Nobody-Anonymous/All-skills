@@ -79,7 +79,10 @@ def remove_readonly(func, path, excinfo):  # pragma: no cover - Windows only
 
 def cleanup_scratch_dir(path: Path) -> None:
     if path.exists():
-        shutil.rmtree(path, onerror=remove_readonly)
+        if sys.version_info >= (3, 12):
+            shutil.rmtree(path, onexc=remove_readonly)
+        else:
+            shutil.rmtree(path, onerror=remove_readonly)
 
 
 def slugify(text: str) -> str:

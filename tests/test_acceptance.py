@@ -296,7 +296,7 @@ class TestSchemaIsEnforced(unittest.TestCase):
             skill.mkdir(parents=True)
             (skill / "SKILL.md").write_text(frontmatter, encoding="utf-8")
             return subprocess.run([sys.executable, str(_ROOT / "scripts" / "validate_schema.py"), "--root", tmp],
-                                  capture_output=True, text=True)
+                                  capture_output=True, text=True, encoding="utf-8", errors="replace")
 
     def test_valid_skill_passes(self):
         self.assertEqual(self.validate(self.GOOD).returncode, 0)
