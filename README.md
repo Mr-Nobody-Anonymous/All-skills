@@ -75,7 +75,7 @@ When AI coding assistants are front-loaded with thousands of prompt instructions
 │  • 9-Signal Layered Scoring   │  • 251 Functional Domain Dirs   │  • Pre-Loaded in Workspace    │
 │  • Deterministic Workflows    │  • Machine-Readable Index       │  • Native Multi-Tool Synced   │
 │  • 8-State Formal Lifecycle   │  • Complete CATALOG.md Reference│  • $O(1)$ Load-on-Demand      │
-│  • 169/169 Passing Unit Tests │  • Dynamic Manager CLI          │  • Zero Prompt Bloat          │
+│  • 170/170 Passing Unit Tests │  • Dynamic Manager CLI          │  • Zero Prompt Bloat          │
 └───────────────────────────────┴─────────────────────────────────┴───────────────────────────────┘
 ```
 
@@ -292,7 +292,7 @@ allskills profile install ai-engineer
 # Verify cryptographic lockfile, schemas, and harness symlink integrity
 allskills verify
 
-# Run regression test suite (169 tests)
+# Run regression test suite (170 tests)
 allskills test
 
 # Inspect upstream source registry and trust tiers
@@ -544,7 +544,7 @@ python scripts/skills/skills.py chain deep-research --dry-run
 python scripts/skills/skills.py chain anti-procrastination --dry-run
 python scripts/skills/skills.py chain code-review-flow --dry-run
 
-# Run full health diagnostics and 169-test verification suite
+# Run full health diagnostics and 170-test verification suite
 python scripts/skills/skills.py doctor
 python scripts/skills/skills.py test
 
@@ -669,7 +669,7 @@ All skills/
 │   ├── SECURITY.md              # Threat model & static inspection policy
 │   └── *.md                     # Per-category detailed reference guides
 │
-└── tests/skill_tests/           # 🧪 Unit & Integration Test Suite (169 tests)
+└── tests/skill_tests/           # 🧪 Unit & Integration Test Suite (170 tests)
 ```
 
 ---
@@ -690,7 +690,7 @@ Run complete test suites and diagnostic checks at any time:
 # 1. Check health of all canonical skills
 python scripts/skills/skills.py doctor
 
-# 2. Run the 169 unit and integration tests
+# 2. Run the 170 unit and integration tests
 python scripts/skills/skills.py test
 
 # 3. Verify multi-tool harness connections
