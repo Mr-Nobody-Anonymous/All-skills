@@ -49,9 +49,9 @@
 
 ## 📑 Table of Contents
 
-- **Overview** — [Why All Skills?](#-why-all-skills) · [Multi-Platform Support](#-multi-platform-support-works-across-11-ai-coding-agents) · [25-Category Taxonomy](#-complete-25-category-universal-taxonomy--structural-layers)
+- **Overview** — [Why All Skills?](#-why-all-skills) · [Multi-Platform Support](#-multi-platform-support-11-ai-coding-agents) · [25-Category Taxonomy](#-complete-25-category-universal-taxonomy--structural-layers)
 - **Getting Started** — [Quick Start](#-quick-start-from-source) · [Installation & Agent Setup](#-installation--ai-agent-ecosystem-setup) · [Verification & Health Check](#-verification--health-check)
-- **Using All Skills** — [Universal CLI](#-universal-cli-allskills) · [CLI Toolkit & Workflows](#️-cli-toolkit--workflows) · [Active Harness Skills Index](#-active-harness-skills-index-72-verified-skills) · [Pre-Loaded Harness Skills](#-pre-loaded-active-harness-skills-70-skills) · [Voice Assistant & Multimodal OS](#️-universal-voice-assistant--multimodal-os-ovos-neon-mycroft)
+- **Using All Skills** — [Universal CLI](#-universal-cli-allskills) · [CLI Toolkit & Workflows](#️-cli-toolkit--workflows) · [Active Harness Skills Index](#-active-harness-skills-index-72-skills) · [Pre-Loaded Harness Skills](#-pre-loaded-active-harness-skills-72-skills) · [Voice Assistant & Multimodal OS](#️-universal-voice-assistant--multimodal-os-ovos-neon-mycroft)
 - **Architecture** — [Platform Architecture & Routing](#️-platform-architecture--routing-pipeline) · [Autonomous Agent Infrastructure](#-autonomous-agent-infrastructure) · [v2 Operating System & Master Plan](#️-all-skills-v2-operating-system-architecture--master-plan) · [Repository Directory Structure](#️-repository-directory-structure)
 - **Project** — [Defensive Security & Provenance](#️-defensive-security--provenance) · [Development, CI & Quality Gates](#-development-ci--quality-gates) · [License](#-license)
 
@@ -152,23 +152,23 @@ To ensure transparency across our single-source-of-truth metadata (`stats.json`)
 
 ---
 
-## 🤖 Multi-Platform Support: Works Across 11 AI Coding Agents
+## 🤖 Multi-Platform Support: 11 AI Coding Agents
 
-Every skill in this repository strictly adheres to the open **Agent Skills standard** (`SKILL.md` + YAML frontmatter) with dynamic adapter mappings under [`adapters/`](adapters/):
+Every active skill follows the open **Agent Skills** format (`SKILL.md` + YAML frontmatter), and [`scripts/setup_tools.py`](scripts/setup_tools.py) links it into each agent's skills directory using the adapter mappings under [`adapters/`](adapters/). Being *configured* and *discoverable* is verified automatically; running inside each agent is recorded separately in [`compatibility/matrix.json`](compatibility/matrix.json) — see [docs/COMPATIBILITY.md](docs/COMPATIBILITY.md).
 
-| AI Coding Agent | Workspace Path | Adapter Config | Verification Status |
+| AI Coding Agent | Workspace Path | Adapter Config | Evidence ([levels](docs/COMPATIBILITY.md#-compatibility-evidence)) |
 | :--- | :--- | :--- | :---: |
-| **Claude Code** | `.claude/skills/` | [`adapters/claude.yaml`](adapters/claude.yaml) | ✅ Verified (100%) |
-| **Cursor** | `.cursor/skills/` | [`adapters/cursor.yaml`](adapters/cursor.yaml) | ✅ Verified (100%) |
-| **Antigravity / Gemini CLI** | `.agents/skills/` | [`adapters/gemini.yaml`](adapters/gemini.yaml) | ✅ Verified (100%) |
-| **OpenAI Codex CLI** | `.codex/skills/` | [`adapters/codex.yaml`](adapters/codex.yaml) | ✅ Verified (100%) |
-| **GitHub Copilot** | `.github/skills/` | [`adapters/copilot.yaml`](adapters/copilot.yaml) | ✅ Verified (100%) |
-| **VS Code Agent** | `.vscode/skills/` | [`adapters/vscode.yaml`](adapters/vscode.yaml) | ✅ Verified (100%) |
-| **Codeium Windsurf** | `.windsurf/skills/` | [`adapters/windsurf.yaml`](adapters/windsurf.yaml) | ✅ Verified (100%) |
-| **OpenCode** | `.opencode/skills/` | [`adapters/opencode.yaml`](adapters/opencode.yaml) | ✅ Verified (100%) |
-| **Cline** | `.cline/skills/` | [`adapters/cline.yaml`](adapters/cline.yaml) | ✅ Verified (100%) |
-| **Roo Code** | `.roo/skills/` | [`adapters/roo.yaml`](adapters/roo.yaml) | ✅ Verified (100%) |
-| **Block Goose** | `.goose/skills/` | [`adapters/goose.yaml`](adapters/goose.yaml) | ✅ Verified (100%) |
+| **Claude Code** | `.claude/skills/` | [`adapters/claude.yaml`](adapters/claude.yaml) | Configured · Discoverable |
+| **Cursor** | `.cursor/skills/` | [`adapters/cursor.yaml`](adapters/cursor.yaml) | Configured · Discoverable |
+| **Antigravity / Gemini CLI** | `.agents/skills/` | [`adapters/gemini.yaml`](adapters/gemini.yaml) | Configured · Discoverable |
+| **OpenAI Codex CLI** | `.codex/skills/` | [`adapters/codex.yaml`](adapters/codex.yaml) | Configured · Discoverable |
+| **GitHub Copilot** | `.github/skills/` | [`adapters/copilot.yaml`](adapters/copilot.yaml) | Configured · Discoverable |
+| **VS Code Agent** | `.vscode/skills/` | [`adapters/vscode.yaml`](adapters/vscode.yaml) | Configured · Discoverable |
+| **Codeium Windsurf** | `.windsurf/skills/` | [`adapters/windsurf.yaml`](adapters/windsurf.yaml) | Configured · Discoverable |
+| **OpenCode** | `.opencode/skills/` | [`adapters/opencode.yaml`](adapters/opencode.yaml) | Configured · Discoverable |
+| **Cline** | `.cline/skills/` | [`adapters/cline.yaml`](adapters/cline.yaml) | Configured · Discoverable |
+| **Roo Code** | `.roo/skills/` | [`adapters/roo.yaml`](adapters/roo.yaml) | Configured · Discoverable |
+| **Block Goose** | `.goose/skills/` | [`adapters/goose.yaml`](adapters/goose.yaml) | Configured · Discoverable |
 
 ---
 
@@ -252,7 +252,7 @@ npx @mr-nobody-anonymous/all-skills search "health economist"
 
 ---
 
-## 📚 Active Harness Skills Index (72 Verified Skills)
+## 📚 Active Harness Skills Index (72 Skills)
 
 Every skill below is pre-validated against `schemas/skill-frontmatter.schema.json`, includes strict prompt-injection defenses, and is immediately available across all 11 agent harnesses:
 
@@ -388,7 +388,7 @@ All-Skills integrates a production-ready voice assistant and multimodal runtime 
 
 ---
 
-## 🚀 Pre-Loaded Active Harness Skills (70 Skills)
+## 🚀 Pre-Loaded Active Harness Skills (72 Skills)
 
 Your workspace comes pre-loaded with **70 staff-engineer and AI architect playbooks** in [`.agents/skills/`](.agents/skills/) (synced to `.claude/skills/`, `.cursor/skills/`, and `.codex/skills/`):
 
