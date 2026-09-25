@@ -1,1 +1,2 @@
-from .factscore_check import FactScoreChecker\n__all__ = ['FactScoreChecker']\n
+from .factscore_check import FactScoreChecker
+__all__ = ['FactScoreChecker']

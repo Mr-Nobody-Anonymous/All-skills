@@ -1,1 +1,1 @@
-"""All-Skills Category: media"""\n
+"""All-Skills Category: media"""

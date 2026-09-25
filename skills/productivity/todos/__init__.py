@@ -1,1 +1,2 @@
-from .task_manager import TaskManager\n__all__ = ['TaskManager']\n
+from .task_manager import TaskManager
+__all__ = ['TaskManager']

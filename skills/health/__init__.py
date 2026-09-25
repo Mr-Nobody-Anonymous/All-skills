@@ -1,1 +1,1 @@
-"""All-Skills Category: health"""\n
+"""All-Skills Category: health"""

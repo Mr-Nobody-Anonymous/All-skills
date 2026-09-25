@@ -1,1 +1,2 @@
-from .requests_api import RequestsAPITester\n__all__ = ['RequestsAPITester']\n
+from .requests_api import RequestsAPITester
+__all__ = ['RequestsAPITester']

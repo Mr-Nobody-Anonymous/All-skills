@@ -1,1 +1,1 @@
-"""All-Skills Category: simulation"""\n
+"""All-Skills Category: simulation"""

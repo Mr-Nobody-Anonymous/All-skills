@@ -1,1 +1,2 @@
-from .gpiozero_control import GpiozeroController\n__all__ = ['GpiozeroController']\n
+from .gpiozero_control import GpiozeroController
+__all__ = ['GpiozeroController']

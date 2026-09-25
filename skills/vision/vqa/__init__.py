@@ -1,1 +1,2 @@
-from .blip_vqa import BLIPVQAEngine\n__all__ = ['BLIPVQAEngine']\n
+from .blip_vqa import BLIPVQAEngine
+__all__ = ['BLIPVQAEngine']

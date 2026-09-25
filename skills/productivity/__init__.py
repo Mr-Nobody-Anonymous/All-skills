@@ -1,1 +1,1 @@
-"""All-Skills Category: productivity"""\n
+"""All-Skills Category: productivity"""

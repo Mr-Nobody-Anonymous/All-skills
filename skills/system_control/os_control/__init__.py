@@ -1,1 +1,2 @@
-from .pyautogui_control import PyAutoGUIController\n__all__ = ['PyAutoGUIController']\n
+from .pyautogui_control import PyAutoGUIController
+__all__ = ['PyAutoGUIController']

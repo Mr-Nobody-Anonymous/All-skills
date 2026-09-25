@@ -1,1 +1,3 @@
-from .story_gen import StoryGenerator\nfrom .poetry_gen import PoetryGenerator\n__all__ = ['StoryGenerator', 'PoetryGenerator']\n
+from .story_gen import StoryGenerator
+from .poetry_gen import PoetryGenerator
+__all__ = ['StoryGenerator', 'PoetryGenerator']

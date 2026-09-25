@@ -1,1 +1,3 @@
-from .easyocr_read import EasyOCRReader\nfrom .tesseract_read import TesseractReader\n__all__ = ['EasyOCRReader', 'TesseractReader']\n
+from .easyocr_read import EasyOCRReader
+from .tesseract_read import TesseractReader
+__all__ = ['EasyOCRReader', 'TesseractReader']

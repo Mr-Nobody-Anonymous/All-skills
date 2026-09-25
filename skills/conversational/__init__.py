@@ -1,1 +1,1 @@
-"""All-Skills Category: conversational"""\n
+"""All-Skills Category: conversational"""

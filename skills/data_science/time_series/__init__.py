@@ -1,1 +1,2 @@
-from .prophet_forecast import ProphetForecaster\n__all__ = ['ProphetForecaster']\n
+from .prophet_forecast import ProphetForecaster
+__all__ = ['ProphetForecaster']

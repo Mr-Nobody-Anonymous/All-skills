@@ -1,1 +1,2 @@
-from .pillow_draw import PillowDrawingGenerator\n__all__ = ['PillowDrawingGenerator']\n
+from .pillow_draw import PillowDrawingGenerator
+__all__ = ['PillowDrawingGenerator']

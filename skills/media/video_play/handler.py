@@ -12,6 +12,18 @@ except ImportError:
     _LIB_AVAILABLE = False
 
 
+try:
+    from skills.base_skill import BaseSkill
+except ImportError:
+    class BaseSkill:
+        def can_handle(self, intent, context): return False
+        def handle(self, intent, context): return {}
+        def get_priority(self): return 50
+        def load_model(self): pass
+        def unload_model(self): pass
+        def health_check(self): return {}
+
+
 class VideoPlaySkill(BaseSkill):
     """
     Video playback via python-vlc
@@ -59,15 +71,3 @@ class VideoPlaySkill(BaseSkill):
 
     def _execute(self, intent: str, context: Dict[str, Any]) -> Any:
         return f"{self.__class__.__name__} executed for: {intent}"
-
-
-try:
-    from skills.base_skill import BaseSkill
-except ImportError:
-    class BaseSkill:
-        def can_handle(self, intent, context): return False
-        def handle(self, intent, context): return {}
-        def get_priority(self): return 50
-        def load_model(self): pass
-        def unload_model(self): pass
-        def health_check(self): return {}

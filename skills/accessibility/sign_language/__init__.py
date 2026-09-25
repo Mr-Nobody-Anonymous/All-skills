@@ -1,1 +1,2 @@
-from .sign_recognize import SignLanguageRecognizer\n__all__ = ['SignLanguageRecognizer']\n
+from .sign_recognize import SignLanguageRecognizer
+__all__ = ['SignLanguageRecognizer']

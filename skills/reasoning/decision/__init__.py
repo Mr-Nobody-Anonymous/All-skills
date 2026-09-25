@@ -1,1 +1,2 @@
-from .decision_engine import DecisionEngine\n__all__ = ['DecisionEngine']\n
+from .decision_engine import DecisionEngine
+__all__ = ['DecisionEngine']

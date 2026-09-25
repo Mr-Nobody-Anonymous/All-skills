@@ -1,1 +1,2 @@
-from .sqlcoder_query import SqlcoderQueryEngine\n__all__ = ['SqlcoderQueryEngine']\n
+from .sqlcoder_query import SqlcoderQueryEngine
+__all__ = ['SqlcoderQueryEngine']

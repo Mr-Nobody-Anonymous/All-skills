@@ -1,1 +1,2 @@
-from .magenta_compose import MagentaMusicComposer\n__all__ = ['MagentaMusicComposer']\n
+from .magenta_compose import MagentaMusicComposer
+__all__ = ['MagentaMusicComposer']

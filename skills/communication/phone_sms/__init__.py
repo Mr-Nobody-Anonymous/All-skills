@@ -1,1 +1,2 @@
-from .twilio_comm import TwilioCommunicator\n__all__ = ['TwilioCommunicator']\n
+from .twilio_comm import TwilioCommunicator
+__all__ = ['TwilioCommunicator']

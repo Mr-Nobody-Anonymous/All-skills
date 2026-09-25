@@ -1,1 +1,2 @@
-from .screen_read import ScreenReaderSkill\n__all__ = ['ScreenReaderSkill']\n
+from .screen_read import ScreenReaderSkill
+__all__ = ['ScreenReaderSkill']

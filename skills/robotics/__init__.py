@@ -1,1 +1,1 @@
-"""All-Skills Category: robotics"""\n
+"""All-Skills Category: robotics"""

@@ -1,1 +1,2 @@
-from .stable_diffusion import StableDiffusionGenerator\n__all__ = ['StableDiffusionGenerator']\n
+from .stable_diffusion import StableDiffusionGenerator
+__all__ = ['StableDiffusionGenerator']

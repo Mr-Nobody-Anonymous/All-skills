@@ -1,1 +1,2 @@
-from .mmseg_scene import MMSegSceneParser\n__all__ = ['MMSegSceneParser']\n
+from .mmseg_scene import MMSegSceneParser
+__all__ = ['MMSegSceneParser']

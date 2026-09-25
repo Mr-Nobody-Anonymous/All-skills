@@ -1,1 +1,2 @@
-from .forex_convert import ForexConverter\n__all__ = ['ForexConverter']\n
+from .forex_convert import ForexConverter
+__all__ = ['ForexConverter']

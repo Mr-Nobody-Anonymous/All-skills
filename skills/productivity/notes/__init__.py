@@ -1,1 +1,2 @@
-from .note_manager import NoteManager\n__all__ = ['NoteManager']\n
+from .note_manager import NoteManager
+__all__ = ['NoteManager']

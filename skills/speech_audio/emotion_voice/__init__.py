@@ -1,1 +1,2 @@
-from .speechbrain_emotion import SpeechbrainVoiceEmotion\n__all__ = ['SpeechbrainVoiceEmotion']\n
+from .speechbrain_emotion import SpeechbrainVoiceEmotion
+__all__ = ['SpeechbrainVoiceEmotion']

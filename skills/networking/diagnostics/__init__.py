@@ -1,1 +1,3 @@
-from .ping_check import PingDiagnostics\nfrom .dns_lookup import DNSLookup\n__all__ = ['PingDiagnostics', 'DNSLookup']\n
+from .ping_check import PingDiagnostics
+from .dns_lookup import DNSLookup
+__all__ = ['PingDiagnostics', 'DNSLookup']
