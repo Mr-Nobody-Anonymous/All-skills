@@ -39,7 +39,7 @@ indentation for most editors automatically.
 When proposing or updating skills, note the hybrid architecture:
 1. **Active Harness Playbooks (`.agents/skills/`)**: Curated staff-engineer playbooks loaded into active contexts for Claude Code, Cursor, Codex CLI, Antigravity, and linked harnesses.
 2. **Canonical Engine (`skills/`)**: Routed, quality-scored skills with Python handlers and 100% unit test coverage.
-3. **Awesome Skills Catalog (`awesome_skills/`)**: Extended library of 14,855+ categorized skills across 251 functional domains.
+3. **Awesome Skills Catalog (`awesome_skills/`)**: Extended library of 14,855 catalog entries (12,757 unique skills) across 251 functional domains.
 4. **Agent Harnesses (`.claude/`, `.cursor/`, etc.)**: Generated runtime views created safely via `python scripts/setup_tools.py`.
 
 ---

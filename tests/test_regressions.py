@@ -326,21 +326,45 @@ class TestDocumentationCountsMatchStats(unittest.TestCase):
         spec.loader.exec_module(cls.cs)
 
     def test_stale_claims_are_rewritten_in_place(self):
-        stats = {"tests": 237, "canonical_skills": 124, "active_harness_skills": 72,
-                 "categories": 251, "catalog_skills": 14855}
-        text = ("intro\n# Run full health diagnostics and test suite (94 tests)\n"
-                "| 94 unit tests validating loader |\n"
-                "All 122 canonical skills and 70 active harness skills\n"
-                "## Pre-Loaded Active Harness Skills (70 Skills)\n"
-                "organized across 243 functional domains; `14,000` categorized implementations\n")
+        stats = json.loads((_ROOT / "stats.json").read_text(encoding="utf-8"))
+        stats.update({"tests": 237, "canonical_skills": 124, "active_harness_skills": 72, "categories": 251,
+                      "catalog_skills": 14855, "total_unique_skills": 12757})
+
+        def box(*cells: str) -> str:  # a two-column ASCII-art box row (widths 31 and 33)
+            return "│" + "│".join(c.ljust(w) for c, w in zip(cells, (31, 33))) + "│"
+
+        text = "\n".join([
+            "intro",
+            "# Run full health diagnostics and test suite (94 tests)",
+            "| 94 unit tests validating loader |",
+            "All 122 canonical skills and 70 active harness skills",
+            "## Pre-Loaded Active Harness Skills (70 Skills)",
+            "organized across 243 functional domains; `14,000` categorized implementations",
+            '<img src="https://img.shields.io/badge/catalog-9%2C999%20Catalog%20Entries-0ea5e9" alt="9,999 Catalog Entries" />',
+            box("  • 99 CI-Gated Tests", "  • 9,999 Catalog Entries"),
+            "Over 9,000 unique skills and 9,999 catalog entries",
+        ])
         new, changes = self.cs.apply_doc_counts(text, stats)
         self.assertIn("test suite (237 tests)", new, "case of the surrounding text must be preserved")
         self.assertIn("| 237 unit tests validating loader |", new)
         self.assertIn("All 124 canonical skills and 72 active harness skills", new)
         self.assertIn("Active Harness Skills (72 Skills)", new)
         self.assertIn("across 251 functional domains; `14,855` categorized", new)
+        self.assertIn("badge/catalog-14%2C855%20Catalog%20Entries", new, "badge paths use URL-encoded separators")
+        self.assertIn('alt="14,855 Catalog Entries"', new)
+        self.assertIn(box("  • 237 CI-Gated Tests", "  • 14,855 Catalog Entries"), new, "boxes stay aligned")
+        self.assertIn("Over 12,757 unique skills and 14,855 catalog entries", new,
+                      "catalog entries and unique skills are different metrics")
         self.assertIn((2, "94", "237"), changes, "drift is reported with its line number")
         self.assertEqual(self.cs.apply_doc_counts(new, stats)[1], [], "syncing must be idempotent")
+
+    def test_documentation_makes_no_static_passing_or_verified_claims(self):
+        for pattern, _key, _style in self.cs.DOC_COUNT_RULES:
+            self.assertNotRegex(pattern.pattern, r"(?i)passing|verified", "a sync rule would assert a status")
+        readme = (_ROOT / "README.md").read_text(encoding="utf-8")
+        for claim in (r"\d+/\d+ Passing", r"Tests? Passing", r"%20Passing", r"Verified%20Skills",
+                      r"Curated & Tested", r"least-privilege sandboxing", r"sandboxed, composable"):
+            self.assertNotRegex(readme, claim, "CI status comes from live badges, trust from recorded evidence")
 
     def test_repository_documentation_agrees_with_stats_json(self):
         stats = json.loads((_ROOT / "stats.json").read_text(encoding="utf-8"))
