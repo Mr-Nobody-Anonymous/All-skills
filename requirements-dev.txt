@@ -1,15 +1,15 @@
-# Pinned, tested dependency set for CI and local development (Python 3.10-3.12).
+# Pinned, tested dependency set for CI and local development — valid for Python 3.10-3.12 on
+# Linux, macOS and Windows (environment markers select the right pin per interpreter).
 # Used as a constraints file:  python -m pip install -c requirements-dev.txt -e ".[dev]"
-# Regenerate with pip-tools:     pip-compile --extra=dev --strip-extras --no-header \
-#                                  --output-file=requirements-dev.txt pyproject.toml
-# (then remove the self-referencing 'all-skills @ file://...' line). Dependabot keeps the pins current.
+# Regenerate with uv:           uv pip compile pyproject.toml --extra dev --universal \
+#                                 --python-version 3.10 --no-header -o requirements-dev.txt
+# and restore this header. Dependabot keeps the pins current.
 anyio==4.15.1
     # via httpx
 ast-serialize==0.11.2
     # via mypy
 attrs==26.1.0
     # via
-    #   all-skills
     #   all-skills (pyproject.toml)
     #   jsonschema
     #   referencing
@@ -23,13 +23,17 @@ cfgv==3.5.0
 charset-normalizer==3.5.1
     # via requests
 click==8.5.0
-    # via
-    #   all-skills
-    #   all-skills (pyproject.toml)
+    # via all-skills (pyproject.toml)
+colorama==0.4.6 ; sys_platform == 'win32'
+    # via pytest
 coverage==7.16.1
     # via pytest-cov
 distlib==0.4.3
     # via virtualenv
+exceptiongroup==1.3.1 ; python_full_version < '3.11'
+    # via
+    #   anyio
+    #   pytest
 filelock==4.0.3
     # via
     #   python-discovery
@@ -39,9 +43,7 @@ h11==0.16.0
 httpcore==1.0.9
     # via httpx
 httpx==0.28.1
-    # via
-    #   all-skills
-    #   all-skills (pyproject.toml)
+    # via all-skills (pyproject.toml)
 identify==2.6.19
     # via pre-commit
 idna==3.20
@@ -52,12 +54,10 @@ idna==3.20
 iniconfig==2.3.0
     # via pytest
 jsonschema==4.26.0
-    # via
-    #   all-skills
-    #   all-skills (pyproject.toml)
+    # via all-skills (pyproject.toml)
 jsonschema-specifications==2025.9.1
     # via jsonschema
-librt==0.15.0
+librt==0.15.0 ; platform_python_implementation != 'PyPy'
     # via mypy
 markdown-it-py==4.2.0
     # via rich
@@ -67,10 +67,12 @@ mypy==2.3.1
     # via all-skills (pyproject.toml)
 mypy-extensions==1.1.0
     # via mypy
-networkx==3.6.1
-    # via
-    #   all-skills
-    #   all-skills (pyproject.toml)
+networkx==3.4.2 ; python_full_version < '3.11'
+    # via all-skills (pyproject.toml)
+networkx==3.6.1 ; python_full_version == '3.11.*'
+    # via all-skills (pyproject.toml)
+networkx==3.7 ; python_full_version >= '3.12'
+    # via all-skills (pyproject.toml)
 nodeenv==1.10.0
     # via pre-commit
 packaging==26.3
@@ -91,19 +93,19 @@ pygments==2.21.0
     #   rich
 pytest==9.1.1
     # via
-    #   all-skills
+    #   all-skills (pyproject.toml)
     #   pytest-cov
+    #   pytest-github-actions-annotate-failures
 pytest-cov==7.1.0
-    # via all-skills
+    # via all-skills (pyproject.toml)
+pytest-github-actions-annotate-failures==0.4.2
+    # via all-skills (pyproject.toml)
 python-discovery==1.6.1
     # via virtualenv
 python-dotenv==1.2.3
-    # via
-    #   all-skills
-    #   all-skills (pyproject.toml)
+    # via all-skills (pyproject.toml)
 pyyaml==6.0.3
     # via
-    #   all-skills
     #   all-skills (pyproject.toml)
     #   pre-commit
 referencing==0.37.0
@@ -111,19 +113,24 @@ referencing==0.37.0
     #   jsonschema
     #   jsonschema-specifications
 requests==2.34.2
-    # via
-    #   all-skills
-    #   all-skills (pyproject.toml)
+    # via all-skills (pyproject.toml)
 rich==15.0.0
+    # via all-skills (pyproject.toml)
+rpds-py==0.30.0 ; python_full_version < '3.11'
     # via
-    #   all-skills
-    #   all-skills (pyproject.toml)
-rpds-py==2026.6.3
+    #   jsonschema
+    #   referencing
+rpds-py==2026.6.3 ; python_full_version >= '3.11'
     # via
     #   jsonschema
     #   referencing
 ruff==0.16.9
     # via all-skills (pyproject.toml)
+tomli==2.4.1 ; python_full_version <= '3.11'
+    # via
+    #   coverage
+    #   mypy
+    #   pytest
 types-pyyaml==6.0.12.20260906
     # via all-skills (pyproject.toml)
 types-requests==2.33.0.20260906
@@ -131,8 +138,10 @@ types-requests==2.33.0.20260906
 typing-extensions==4.16.0
     # via
     #   anyio
+    #   exceptiongroup
     #   mypy
     #   referencing
+    #   virtualenv
 urllib3==2.8.0
     # via
     #   requests

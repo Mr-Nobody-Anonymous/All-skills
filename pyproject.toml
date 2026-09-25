@@ -60,6 +60,8 @@ dependencies = [
 test = [
     "pytest>=7",
     "pytest-cov>=4",
+    # Reports failing tests as GitHub annotations (no-op outside GitHub Actions)
+    "pytest-github-actions-annotate-failures>=0.2",
 ]
 dev = [
     "all-skills[test]",
