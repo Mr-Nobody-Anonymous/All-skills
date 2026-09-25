@@ -2,7 +2,7 @@
 name: multi-agent-architect
 description: Design and optimize production-grade multi-agent systems with LangGraph, LangChain, and DeepAgents for complex AI workflows.
 disable-model-invocation: false
-risk: safe
+risk: low
 source: community
 date_added: '2026-09-04'
 metadata:

@@ -121,8 +121,10 @@ jobs:
       - name: Install package
         run: python -m pip install -e .
 
-      - name: Frontmatter schemas
-        run: python scripts/validate_schema.py
+      # Canonical + active skills must pass the JSON Schema; catalog violations
+      # may only go down (102 third-party files lack valid frontmatter today).
+      - name: Frontmatter schemas (JSON Schema)
+        run: python scripts/validate_schema.py --catalog --max-catalog-errors 102
 
       - name: SkillHub & multi-agent specifications
         run: python scripts/validate_skillhub_spec.py

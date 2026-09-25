@@ -2,7 +2,7 @@
 name: database-design
 description: Database design principles and decision-making. Schema design, indexing strategy, ORM selection, serverless databases.
 disable-model-invocation: false
-risk: safe
+risk: low
 source: community
 date_added: '2026-02-27'
 version: 1.0.0

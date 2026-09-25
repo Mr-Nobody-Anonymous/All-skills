@@ -92,28 +92,32 @@
       "items": {
         "type": "string",
         "enum": [
+          "ast_grep",
           "bash",
-          "terminal",
+          "browser",
+          "credentials",
+          "deploy",
+          "docker",
+          "edit_file",
+          "file_edit",
           "file_read",
           "file_write",
-          "file_edit",
-          "ast_grep",
-          "read_url",
-          "browser",
           "generate_image",
-          "mcp_call",
+          "git",
+          "glob",
+          "grep",
           "manage_task",
-          "claude",
-          "claude-code",
-          "cursor",
-          "gemini",
-          "codex",
-          "codex-cli",
-          "windsurf",
-          "copilot"
+          "mcp_call",
+          "read_file",
+          "read_url",
+          "shell",
+          "terminal",
+          "web_fetch",
+          "web_search",
+          "write_file"
         ]
       },
-      "description": "List of tool capabilities required by the agent to execute this skill."
+      "description": "Agent tools the skill uses; must be a tool known to the policy engine (src/skills/policy.py TOOL_TO_CAPABILITIES). Agent/harness names belong in 'platforms'."
     },
     "platforms": {
       "type": "array",
@@ -391,17 +395,23 @@
       "description": "Known failure states and troubleshooting remedies."
     },
     "source": {
-      "type": "object",
-      "properties": {
-        "repository": { "type": "string" },
-        "path": { "type": "string" },
-        "commit": { "type": "string" },
-        "license": { "type": "string" },
-        "author": { "type": "string" },
-        "imported_at": { "type": "string" },
-        "modified": { "type": "boolean" }
-      },
-      "description": "Cryptographic and repository provenance of the skill."
+      "anyOf": [
+        { "type": "string", "minLength": 1 },
+        {
+          "type": "object",
+          "properties": {
+            "repository": { "type": "string" },
+            "path": { "type": "string" },
+            "commit": { "type": "string" },
+            "license": { "type": "string" },
+            "author": { "type": "string" },
+            "imported_at": { "type": "string" },
+            "content_sha256": { "type": "string" },
+            "modified": { "type": "boolean" }
+          }
+        }
+      ],
+      "description": "Provenance: a short label (e.g. 'custom', 'owner/repo') or a detailed repository record."
     },
     "source_repo": {
       "type": "string",

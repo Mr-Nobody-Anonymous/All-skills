@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "generated_at": "2026-09-25T16:28:45.622187+00:00",
+  "generated_at": "2026-09-25T16:32:14.233020+00:00",
   "generator": "all-skills-lock v1.0.0",
   "total_skills": 196,
   "skills": {
     "accessibility-compliance-accessibility-audit": {
       "version": "1.0.0",
-      "sha256": "292779bc6d31a7cdb551b99369bfb9e14ab80b2a0ad78372c1cdd6c81b1cf8ad",
+      "sha256": "d510d3e1d1803547bc2b6f6fa876bc03cf1a134540cbf1925b22c292e085a147",
       "category": "active-harness",
       "files": [
         "SKILL.md",
@@ -14,11 +14,11 @@
       ],
       "dependencies": [],
       "verified_at": "2026-09-25",
-      "risk": "safe"
+      "risk": "low"
     },
     "agent-evaluation": {
       "version": "1.0.0",
-      "sha256": "efcb5f396aa6c2fc45c46467f77654f9afd68eb1b8ee09f1d3aad9698b0abc32",
+      "sha256": "44d859b8fe35201112ca1ca86e1c884f7297c8e4455b6b08ff8740d2730a9aef",
       "category": "active-harness",
       "files": [
         "SKILL.md",
@@ -26,7 +26,7 @@
       ],
       "dependencies": [],
       "verified_at": "2026-09-25",
-      "risk": "safe"
+      "risk": "low"
     },
     "agent-memory": {
       "version": "1.0.0",
@@ -41,7 +41,7 @@
     },
     "agent-memory-systems": {
       "version": "1.0.0",
-      "sha256": "41d521351d0e5d9b7fad97c522e7cf311b9d33e2f23ff34748e7b1fce3858281",
+      "sha256": "192a7e3dc59c1dd661875313b6909898d4b336828ea7805a4b277b7b85fa28c9",
       "category": "active-harness",
       "files": [
         "SKILL.md",
@@ -49,7 +49,7 @@
       ],
       "dependencies": [],
       "verified_at": "2026-09-25",
-      "risk": "safe"
+      "risk": "low"
     },
     "agent-tool-builder": {
       "version": "1.0.0",
@@ -76,29 +76,29 @@
     },
     "ai-engineering-toolkit": {
       "version": "1.0.0",
-      "sha256": "4b06fe6edcaa5e64d74a19a533b9eefc64a2db3554383fd53af143b94d6129e9",
+      "sha256": "cb2dd3ff30fd3acb8a1cbdacd73598b0b34ce7123fded7978830d9bb4e85dfde",
       "category": "data-ai",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
       "verified_at": "2026-09-25",
-      "risk": "offensive"
+      "risk": "high"
     },
     "analytics-product": {
       "version": "1.0.0",
-      "sha256": "c444fe80804566f35bba240f68bcad798948f935d9ca46ee539d8385d969e577",
+      "sha256": "af4781d99ff7cc89bd365523e0d9256086429638394ab1025bdcc19445101c4d",
       "category": "active-harness",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
       "verified_at": "2026-09-25",
-      "risk": "none"
+      "risk": "low"
     },
     "angular-state-management": {
       "version": "1.0.0",
-      "sha256": "f626f716a439b82183e396f8135431c4db513476ba894646bb644e12dc282e32",
+      "sha256": "0dd335992038de71f99e13fd311140d80f4db3725b20ca8e883927e9968d178e",
       "category": "active-harness",
       "files": [
         "README.md",
@@ -108,40 +108,40 @@
       ],
       "dependencies": [],
       "verified_at": "2026-09-25",
-      "risk": "safe"
+      "risk": "low"
     },
     "api-and-interface-design": {
       "version": "1.0.0",
-      "sha256": "7e1f6867b991ec77ad1693c37172c3f4c1fd63811f8ffd074043bffe87301ca5",
+      "sha256": "6b17bcb74d1c3ddeb8a53530e6247b7de4a79fb869d86f3a535027dd8022cc6e",
       "category": "active-harness",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
       "verified_at": "2026-09-25",
-      "risk": "none"
+      "risk": "low"
     },
     "api-designer": {
       "version": "1.0.0",
-      "sha256": "9171549e7180a3612d479ff15a40e509bc1f446d62363e3f6ae45a0822020935",
+      "sha256": "ab11989d51ad74e6bdd13ffc1ce846e459982016f3f1a9f51ae003f2507dd89c",
       "category": "active-harness",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
       "verified_at": "2026-09-25",
-      "risk": "safe"
+      "risk": "low"
     },
     "api-documentation": {
       "version": "1.0.0",
-      "sha256": "1b1a43db62e0bab870347d0c055adec0e8a80dbfb9909fc21d50cf1a1c69b7ce",
+      "sha256": "3e8e443aa845bbd28f564a344812cc9fab98e3d1f091bac9d9a88b6d78a30014",
       "category": "granular-workflow-bundle",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
       "verified_at": "2026-09-25",
-      "risk": "safe"
+      "risk": "low"
     },
     "architecture-decision-records": {
       "version": "1.0.0",
@@ -198,7 +198,7 @@
     },
     "browser-act": {
       "version": "1.0.0",
-      "sha256": "130cd7ec8c4ae93e9d26ff5ad73f9c68d3a184483819671c10d88ae72de42b02",
+      "sha256": "e57f9a5793f1dd61eef4cc5c5a4cc04a0abad0bd74c6d35042cf92c5ef387eeb",
       "category": "browser-automation",
       "files": [
         "SKILL.md"
@@ -244,18 +244,18 @@
     },
     "cloud-devops": {
       "version": "1.0.0",
-      "sha256": "be418ce26dec1ad624f6fd4ac40e4f533ade145f5fb66c8882738abd4a9f565e",
+      "sha256": "9b7a52e8475c7c7c2428bedb566ce6fa6d5551c61f01f06eb589ff7683683ad8",
       "category": "workflow-bundle",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
       "verified_at": "2026-09-25",
-      "risk": "safe"
+      "risk": "low"
     },
     "code-review-excellence": {
       "version": "1.0.0",
-      "sha256": "832c18e108e4a20effe7b4829b9777d5541c4ab4b0e623275756154d1b388663",
+      "sha256": "f6a1c44480243fc33f977420b1e193ecaecc866baa0a70a1cade49eb0325e38f",
       "category": "active-harness",
       "files": [
         "SKILL.md",
@@ -263,7 +263,7 @@
       ],
       "dependencies": [],
       "verified_at": "2026-09-25",
-      "risk": "safe"
+      "risk": "low"
     },
     "code-reviewer": {
       "version": "1.0.0",
@@ -289,14 +289,14 @@
     },
     "concise-planning": {
       "version": "1.0.0",
-      "sha256": "0296c3f23e73f3f8292b9eb711b5d235572f4e3885cab1ba9ea7e20e8aa67e5d",
+      "sha256": "a257846201ce98d648fcf055e3fb8a12c9d5d1a139e51bc23b9e3dfa315d3b85",
       "category": "active-harness",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
       "verified_at": "2026-09-25",
-      "risk": "safe"
+      "risk": "low"
     },
     "context-budget-and-pruning": {
       "version": "1.0.0",
@@ -322,18 +322,18 @@
     },
     "copywriting": {
       "version": "1.0.0",
-      "sha256": "0c516a7812a58534688512f209fda30712c32e8562c6abc4d0dd74916bf448f2",
+      "sha256": "f25833c5b6c15f6f86c6bd0ab1c6ecbd074eae3a4f8f6f5bf6cd7838488749be",
       "category": "active-harness",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
       "verified_at": "2026-09-25",
-      "risk": "none"
+      "risk": "low"
     },
     "database-design": {
       "version": "1.0.0",
-      "sha256": "543d67135bef687cd98c331bae6754f664f0baaf5e7fe56d0f970c65d6667c47",
+      "sha256": "34061cc803f394dfd84e4af0f7cd379b56ba03aee8b9b84f9c8c276eae3c4b76",
       "category": "active-harness",
       "files": [
         "SKILL.md",
@@ -347,7 +347,7 @@
       ],
       "dependencies": [],
       "verified_at": "2026-09-25",
-      "risk": "safe"
+      "risk": "low"
     },
     "database-migration": {
       "version": "1.0.0",
@@ -385,18 +385,18 @@
     },
     "drizzle-orm-expert": {
       "version": "1.0.0",
-      "sha256": "8d87574f78dcfff19b2b43b4659d0ccb7ad7743a6f6dee338f45e99c2f2386f5",
+      "sha256": "24366a467282df071d0765d23482300313005dfeacee7780238a230f90ca3072",
       "category": "active-harness",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
       "verified_at": "2026-09-25",
-      "risk": "safe"
+      "risk": "low"
     },
     "email-sequence": {
       "version": "1.0.0",
-      "sha256": "d8e1dd8bce4208dcdba0af95b80c26cd98172954d8bf4483ab9461260e11f556",
+      "sha256": "a1e0278d05c5680741817e92cd7a73b7753d86b84e746b428817f42c93200ecc",
       "category": "active-harness",
       "files": [
         "SKILL.md",
@@ -404,7 +404,7 @@
       ],
       "dependencies": [],
       "verified_at": "2026-09-25",
-      "risk": "none"
+      "risk": "low"
     },
     "executing-plans": {
       "version": "1.0.0",
@@ -448,36 +448,36 @@
     },
     "kubernetes-deployment": {
       "version": "1.0.0",
-      "sha256": "460ed6888ae0db886f8969f8f9ccef7e491f2c002e8b6643d8176adfab5ffefb",
+      "sha256": "0cc11056a4653da71cdb435edd706e7c29ecce007947f940c5b82235d2c7afe1",
       "category": "granular-workflow-bundle",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
       "verified_at": "2026-09-25",
-      "risk": "safe"
+      "risk": "low"
     },
     "llm-prompt-optimizer": {
       "version": "1.0.0",
-      "sha256": "a106995ca51bdb4391dfcae9370174f802324301caede81cb5358119be802af8",
+      "sha256": "cfe324df00d856303cfc2213a55a9b06b8713706997b2d91da48e56d2a905293",
       "category": "active-harness",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
       "verified_at": "2026-09-25",
-      "risk": "safe"
+      "risk": "low"
     },
     "marketplace-rbac-audit": {
       "version": "1.0.0",
-      "sha256": "3a2d9fd3162788b72bb0886d8c5a7babaf0bf2aab2fe4a75c2ea8cee49049dd6",
+      "sha256": "62c322d17d60a97e9da18faefa22af764826136ca30f466737d668604ebf916c",
       "category": "security",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
       "verified_at": "2026-09-25",
-      "risk": "safe"
+      "risk": "low"
     },
     "mcp-builder": {
       "version": "1.0.0",
@@ -501,14 +501,14 @@
     },
     "mcp-tool-developer": {
       "version": "1.0.0",
-      "sha256": "33ea72526f42950cb3609d22e954ddb51083db2daf8d3684bce493285c39bcf1",
+      "sha256": "7fd911e680c06ec70b88cd49490d4c41f44182f441691c0d081fbdcd057d7928",
       "category": "developer-tools",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
       "verified_at": "2026-09-25",
-      "risk": "safe"
+      "risk": "low"
     },
     "micro-saas-launcher": {
       "version": "1.0.0",
@@ -524,25 +524,25 @@
     },
     "multi-agent-architect": {
       "version": "1.0.0",
-      "sha256": "a9c95e6e070179ab520cf6892d135da3c2e27cd54aba196fbd9ef23744607dd6",
+      "sha256": "da2517df5c642a3b94b49e4837f4c124db1891e05ba5507ca1b79a1e3b9690df",
       "category": "active-harness",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
       "verified_at": "2026-09-25",
-      "risk": "safe"
+      "risk": "low"
     },
     "multi-agent-brainstorming": {
       "version": "1.0.0",
-      "sha256": "9026fb8b4309c5351be27f3385611d66e6d62851c23ee357ff6d7dc0a25dec62",
+      "sha256": "21966d49cd00d3dfbc83624bfaf9f65ff9832bb8f4b277f8e1ce590f4ad90a73",
       "category": "active-harness",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
       "verified_at": "2026-09-25",
-      "risk": "none"
+      "risk": "low"
     },
     "multi-agent-patterns": {
       "version": "1.0.0",
@@ -639,14 +639,14 @@
     },
     "red-team-tactics": {
       "version": "1.0.0",
-      "sha256": "57250b3568ef19060477359e0884e7bdd15890d90619bf37d19c9c3b5b8ecb5b",
+      "sha256": "47624d1b91f59e1534a0492175ef50b062382a2715aebb1e98fc7fd0aa1c8123",
       "category": "active-harness",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
       "verified_at": "2026-09-25",
-      "risk": "offensive"
+      "risk": "high"
     },
     "redis-cli": {
       "version": "1.0.0",
@@ -691,14 +691,14 @@
     },
     "saas-mvp-launcher": {
       "version": "1.0.0",
-      "sha256": "94ddbb640a01052307be38570fa0731bae8a3cd533e0dd2d18b185dd3b4fc7e7",
+      "sha256": "41272c6d1733be74c9e93ca22cdf6770bef900723da30b1e76e738960b68f95d",
       "category": "active-harness",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
       "verified_at": "2026-09-25",
-      "risk": "safe"
+      "risk": "low"
     },
     "sast-configuration": {
       "version": "1.0.0",
@@ -774,7 +774,7 @@
     },
     "tailwind-design-system": {
       "version": "1.0.0",
-      "sha256": "06b85a336deee0507b7da9e14535b3d292e80b07ec5cd7eb61395ff34fb7c71f",
+      "sha256": "a0c2ee7100e1bf340fa297628084dcf4169067c3298526f30eb93142d12b3fef",
       "category": "active-harness",
       "files": [
         "SKILL.md",
@@ -782,11 +782,11 @@
       ],
       "dependencies": [],
       "verified_at": "2026-09-25",
-      "risk": "safe"
+      "risk": "low"
     },
     "tdd": {
       "version": "1.0.0",
-      "sha256": "51bbce73ea7d387e29b895c4fd9799a383bcd506fe6f382da27e3af7ced7bf66",
+      "sha256": "8479ad5c19e2ab01382656fc2f01062470d2250a6be7ce71c11b058c0c5272c4",
       "category": "development",
       "files": [
         "SKILL.md",
@@ -796,22 +796,22 @@
       ],
       "dependencies": [],
       "verified_at": "2026-09-25",
-      "risk": "safe"
+      "risk": "low"
     },
     "terraform-infrastructure": {
       "version": "1.0.0",
-      "sha256": "7469d1af3d181d6def9b8e816914964e995901219e8583ce30742463f3a96e9f",
+      "sha256": "81e07bfb90b0eb4d469daca0359924afa9d2a05c2897e04433a5916bceafed78",
       "category": "granular-workflow-bundle",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
       "verified_at": "2026-09-25",
-      "risk": "safe"
+      "risk": "low"
     },
     "top-web-vulnerabilities": {
       "version": "1.0.0",
-      "sha256": "80f5219dfe6eb7b302bfe6e6d0b0c79c55ad3d650ef9d16c82267260a4fb6545",
+      "sha256": "7e8cd743c91d00226273d7530c8f30a523cce902cb0d1c3cc66b6c7c36f30647",
       "category": "active-harness",
       "files": [
         "SKILL.md",
@@ -819,7 +819,7 @@
       ],
       "dependencies": [],
       "verified_at": "2026-09-25",
-      "risk": "offensive"
+      "risk": "high"
     },
     "using-git-worktrees": {
       "version": "1.0.0",
@@ -858,7 +858,7 @@
     },
     "wcag-audit-patterns": {
       "version": "1.0.0",
-      "sha256": "cafcdd905e2e7527e71d3ca3445a993e75202c2b15b7a3e86edeb32266d643ba",
+      "sha256": "10beac513bc829bea30a5cfcc722497343ccfaa045dc38f70ae6bc3efaab0379",
       "category": "active-harness",
       "files": [
         "SKILL.md",
@@ -866,7 +866,7 @@
       ],
       "dependencies": [],
       "verified_at": "2026-09-25",
-      "risk": "safe"
+      "risk": "low"
     },
     "which-skill": {
       "version": "1.0.0",
@@ -1973,7 +1973,7 @@
     },
     "research.fact-checking": {
       "version": "1.0.0",
-      "sha256": "0564d9116338a76ef012f54d2f65b3198c4be62bdbb0b36f54b1271dd31fa2b0",
+      "sha256": "3520ca871763f7828f66cc9a7d0590ad937cac5b816d7d037112db534e2b4ebf",
       "category": "research",
       "files": [
         "README.md",

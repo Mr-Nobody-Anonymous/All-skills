@@ -2,7 +2,7 @@
 name: agent-evaluation
 description: Evaluate agent behavior with versioned cases and explicit verifiers. Use when comparing agent or prompt changes, reproducing failures, or running agent regression tests.
 disable-model-invocation: false
-risk: safe
+risk: low
 source: vibeship-spawner-skills (Apache 2.0)
 date_added: 2026-02-27
 version: 1.0.0

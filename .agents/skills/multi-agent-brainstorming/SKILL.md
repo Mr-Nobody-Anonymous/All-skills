@@ -2,7 +2,7 @@
 name: multi-agent-brainstorming
 description: Simulate a structured peer-review process using multiple specialized agents to validate designs, surface hidden assumptions, and identify failure modes before implementation.
 disable-model-invocation: false
-risk: none
+risk: low
 source: community
 date_added: '2026-02-27'
 version: 1.0.0

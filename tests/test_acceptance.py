@@ -285,6 +285,43 @@ class TestDryRunIsSimulated(AcceptanceCase):
         self.assertEqual(self.ws.audit_statuses(), ["simulated"])
 
 
+class TestSchemaIsEnforced(unittest.TestCase):
+    """8. A schema violation makes the validator exit non-zero."""
+
+    GOOD = "---\nname: demo\ndescription: A valid demonstration skill for schema tests.\nrisk: low\ntools:\n- file_read\n---\n# Demo\n"
+
+    def validate(self, frontmatter: str, dirname: str = "demo") -> subprocess.CompletedProcess:
+        with tempfile.TemporaryDirectory() as tmp:
+            skill = Path(tmp) / "skills" / "utilities" / dirname
+            skill.mkdir(parents=True)
+            (skill / "SKILL.md").write_text(frontmatter, encoding="utf-8")
+            return subprocess.run([sys.executable, str(_ROOT / "scripts" / "validate_schema.py"), "--root", tmp],
+                                  capture_output=True, text=True)
+
+    def test_valid_skill_passes(self):
+        self.assertEqual(self.validate(self.GOOD).returncode, 0)
+
+    def test_violations_fail(self):
+        cases = {
+            "enum": self.GOOD.replace("risk: low", "risk: extreme"),
+            "type": self.GOOD.replace("tools:\n- file_read", "tools: file_read"),
+            "required": self.GOOD.replace("description: A valid demonstration skill for schema tests.\n", ""),
+            "unknown tool": self.GOOD.replace("- file_read", "- teleport"),
+            "agent as tool": self.GOOD.replace("- file_read", "- cursor"),
+            "broken yaml": self.GOOD.replace("risk: low", "risk: [low"),
+        }
+        for label, text in cases.items():
+            proc = self.validate(text)
+            self.assertEqual(proc.returncode, 1, f"{label}: {proc.stdout}")
+        self.assertEqual(self.validate(self.GOOD, dirname="other-name").returncode, 1, "name must match directory")
+
+    def test_schema_tool_vocabulary_matches_policy_engine(self):
+        from skills.policy import TOOL_TO_CAPABILITIES
+
+        schema = json.loads((_ROOT / "schemas" / "skill-frontmatter.schema.json").read_text(encoding="utf-8"))
+        self.assertEqual(sorted(schema["properties"]["tools"]["items"]["enum"]), sorted(TOOL_TO_CAPABILITIES))
+
+
 class TestEvalsExecuteBehaviour(unittest.TestCase):
     """9. An eval case whose behaviour does not match its expectation fails the suite."""
 

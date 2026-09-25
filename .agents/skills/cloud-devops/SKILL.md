@@ -3,7 +3,7 @@ name: cloud-devops
 description: Cloud infrastructure and DevOps workflow covering AWS, Azure, GCP, Kubernetes, Terraform, CI/CD, monitoring, and cloud-native development.
 disable-model-invocation: false
 category: workflow-bundle
-risk: safe
+risk: low
 source: personal
 date_added: '2026-02-27'
 version: 1.0.0

@@ -3,7 +3,7 @@ name: tdd
 description: Test-driven development. Use when the user wants to build features or fix bugs test-first, mentions "red-green-refactor", or wants integration tests.
 disable-model-invocation: false
 category: development
-risk: safe
+risk: low
 source: community
 source_repo: mattpocock/skills
 source_type: community
@@ -15,7 +15,7 @@ tags:
 - engineering
 - workflow
 - coding-agents
-tools:
+platforms:
 - claude-code
 - codex-cli
 - cursor
