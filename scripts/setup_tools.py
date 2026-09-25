@@ -474,33 +474,85 @@ def cmd_unlink() -> None:
     print("\nDone. Source canonical harness remains untouched.\n")
 
 
-def cmd_verify() -> None:
+def _tree_hashes(root: Path) -> Dict[str, str]:
+    """Content hash of every skill folder directly under ``root``."""
+    sys.path.insert(0, str(ROOT / "src"))
+    from skills.lock import compute_skill_tree_hash
+
+    return {
+        d.name: compute_skill_tree_hash(d)[0]
+        for d in sorted(root.iterdir())
+        if d.is_dir() and not d.name.startswith(".")
+    }
+
+
+def cmd_verify(strict: bool = False) -> int:
+    """Verify every harness; return the number of errors (0 = healthy).
+
+    - The source harness must exist and every skill folder must contain SKILL.md.
+    - A target marked ``required: true`` in platforms.yaml (or any target with
+      ``--strict``) must exist.
+    - Linked targets must resolve to the source harness.
+    - Copied targets (no symlink support) must match the source content hashes.
+    """
     source_skills, local_targets, _ = get_platform_targets()
     print("\n🔬 Verifying Platform Harness Integrity…\n")
     errors = 0
-    if not source_skills.exists():
+    if not source_skills.is_dir():
         print(f"  ❌ Source harness missing at {source_skills}")
+        return 1
+    skill_dirs = [d for d in sorted(source_skills.iterdir()) if d.is_dir() and not d.name.startswith(".")]
+    no_manifest = [d.name for d in skill_dirs if not (d / "SKILL.md").is_file()]
+    if no_manifest:
+        print(f"  ❌ Source harness: {len(no_manifest)} skill folder(s) without SKILL.md: {', '.join(no_manifest[:5])}")
         errors += 1
     else:
-        print(f"  ✅ Source canonical harness verified ({len(os.listdir(source_skills))} skills)")
+        print(f"  ✅ Source harness verified ({len(skill_dirs)} skills, every folder has SKILL.md)")
 
+    source_hashes: Optional[Dict[str, str]] = None
     for item in local_targets:
         name = item["name"]
         path = item["path"]
-        if not path.exists():
+        if item.get("is_source") or path.resolve() == source_skills.resolve() and not is_link_or_junction(path):
             continue
-        skill_files = list(path.glob("*/SKILL.md"))
-        if len(skill_files) == 0:
-            print(f"  ⚠️  {name:30}: Target exists but no SKILL.md files found")
+        required = strict or bool(item.get("required"))
+        if not path.exists() and not is_link_or_junction(path):
+            if required:
+                print(f"  ❌ {name:30}: required target missing at {path}")
+                errors += 1
+            else:
+                print(f"  ·  {name:30}: not linked (optional)")
+            continue
+        if is_link_or_junction(path):
+            try:
+                target = path.resolve(strict=True)
+            except (OSError, RuntimeError) as exc:
+                print(f"  ❌ {name:30}: broken link ({exc})")
+                errors += 1
+                continue
+            if target != source_skills.resolve():
+                print(f"  ❌ {name:30}: link points to {target}, expected {source_skills}")
+                errors += 1
+            else:
+                print(f"  ✅ {name:30}: linked to the source harness")
+            continue
+        if source_hashes is None:
+            source_hashes = _tree_hashes(source_skills)
+        target_hashes = _tree_hashes(path)
+        drift = sorted(k for k in set(source_hashes) | set(target_hashes)
+                       if source_hashes.get(k) != target_hashes.get(k))
+        if drift:
+            print(f"  ❌ {name:30}: copy out of sync with the source ({len(drift)} skill(s), e.g. {', '.join(drift[:3])})")
             errors += 1
         else:
-            print(f"  ✅ {name:30}: Verified ({len(skill_files)} readable SKILL.md manifests)")
+            print(f"  ✅ {name:30}: copy matches the source ({len(target_hashes)} skills, hashes verified)")
 
     print()
     if errors == 0:
-        print("  🎉 All active harnesses verified with 100% integrity!\n")
+        print("  🎉 All harnesses verified.\n")
     else:
-        print(f"  ⚠️  Verification completed with {errors} warnings/errors.\n")
+        print(f"  ❌ Verification failed with {errors} error(s).\n")
+    return errors
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -529,6 +581,7 @@ Examples:
     parser.add_argument("--replace-managed-links", action="store_true", help="Replace existing managed links/junctions (safe — ledger-checked)")
     parser.add_argument("--unlink",                action="store_true", help="Remove managed workspace harnesses (ledger-safe)")
     parser.add_argument("--verify",                action="store_true", help="Verify integrity of all harnesses (read-only)")
+    parser.add_argument("--strict",                action="store_true", help="With --verify: every configured target is required")
     args = parser.parse_args()
 
     if args.status:
@@ -536,7 +589,7 @@ Examples:
     elif args.unlink:
         cmd_unlink()
     elif args.verify:
-        cmd_verify()
+        sys.exit(1 if cmd_verify(strict=args.strict) else 0)
     elif args.replace_managed_links:
         cmd_setup(include_global=args.is_global, replace_managed=True)
     else:

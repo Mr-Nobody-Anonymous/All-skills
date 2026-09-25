@@ -280,17 +280,20 @@ Manage the entire skill ecosystem, verify harnesses, search capabilities, instal
 # Run complete system health check & platform harness diagnostics
 allskills doctor        # On Windows: .\allskills.bat doctor
 
-# Search across 14,855+ skills using multi-stage keyword & capability matching
+# Ranked search: canonical skills via the 9-signal router, then catalog records
+# ranked by name/category/description relevance (paginated, filterable, JSON)
 allskills search "accessibility audit"
-allskills search "kubernetes helm"
+allskills search "kubernetes helm" --category devops --limit 10 --offset 10
+allskills search "terraform" --json
 
-# Install and activate curated role profiles
-allskills profile install software-engineer
-allskills profile install cybersecurity
-allskills profile install ai-engineer
+# Inspect and install role profiles (copies the profile's skills into .agents/skills)
+allskills profile list
+allskills profile show software-engineer
+allskills profile install software-engineer            # --dest DIR, --dry-run
 
-# Verify cryptographic lockfile, schemas, and harness symlink integrity
+# Verify lockfile hashes, frontmatter schema and harness links (non-zero exit on failure)
 allskills verify
+allskills lock --verify
 
 # Run regression test suite (187 tests)
 allskills test

@@ -1,19 +1,27 @@
 # Skill Registry
 
-_Generated: 2026-09-19T17:27:27+00:00_
+_Generated: 2026-09-25T16:19:25+00:00_
 
-**Total skills:** 122
+**Total skills:** 124
 
 | Category | Count |
 |---|---:|
+| architecture | 1 |
 | design | 8 |
 | development | 38 |
 | documents | 7 |
+| healthcare | 1 |
 | productivity | 24 |
 | research | 8 |
 | security | 7 |
 | utilities | 20 |
 | web | 10 |
+
+## architecture
+
+| ID | Risk | Description |
+|---|---|---|
+| `architecture.architecture-decision-records` | low | Comprehensive patterns for creating, maintaining, and managing Architecture Decision Records (ADRs) that capture technical context, rationale, and consequences. |
 
 ## design
 
@@ -82,6 +90,12 @@ _Generated: 2026-09-19T17:27:27+00:00_
 | `documents.pdf` | low | Read, extract text, summarize, and produce PDF files. Parse structured content where possible. |
 | `documents.pptx` | low | Read, edit, and generate PowerPoint .pptx files — extract slides, build decks from outlines. |
 | `documents.xlsx` | low | Read, edit, and generate Excel .xlsx files — read sheets, compute, and produce workbooks programmatically. |
+
+## healthcare
+
+| ID | Risk | Description |
+|---|---|---|
+| `healthcare.health-economist` | low | Expert health economics methodologies, cost-effectiveness analysis (CEA), cost-utility analysis (CUA), ICER calculations, and QALY/DALY evaluation. |
 
 ## productivity
 
