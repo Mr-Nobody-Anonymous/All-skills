@@ -42,10 +42,10 @@ jobs:
         with:
           python-version: "3.12"
           cache: pip
-          cache-dependency-path: pyproject.toml
+          cache-dependency-path: requirements-dev.txt
 
-      - name: Install package & build tools
-        run: python -m pip install -e . build twine
+      - name: Install package & build tools (pinned)
+        run: python -m pip install -c requirements-dev.txt -e ".[test]" build twine
 
       - name: Verify quality gates
         run: |
@@ -53,6 +53,7 @@ jobs:
           python scripts/validate_skillhub_spec.py
           python scripts/run_evals.py
           python scripts/skills/skills.py test
+          python -m pytest tests scratch_priority_import/tests -q -p no:cacheprovider
 
       - name: Resolve release version
         id: version

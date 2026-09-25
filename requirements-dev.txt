@@ -1,7 +1,7 @@
 # Pinned, tested dependency set for CI and local development — valid for Python 3.10-3.12 on
 # Linux, macOS and Windows (environment markers select the right pin per interpreter).
 # Used as a constraints file:  python -m pip install -c requirements-dev.txt -e ".[dev]"
-# Regenerate with uv:           uv pip compile pyproject.toml --extra dev --universal \
+# Regenerate with uv:           uv pip compile pyproject.toml --extra dev --extra release --universal \
 #                                 --python-version 3.10 --no-header -o requirements-dev.txt
 # and restore this header. Dependabot keeps the pins current.
 anyio==4.15.1
@@ -13,23 +13,35 @@ attrs==26.1.0
     #   all-skills (pyproject.toml)
     #   jsonschema
     #   referencing
+backports-tarfile==1.2.0 ; python_full_version < '3.12' and platform_machine != 'ppc64le' and platform_machine != 's390x'
+    # via jaraco-context
+build==1.6.1
+    # via all-skills (pyproject.toml)
 certifi==2026.7.22
     # via
     #   httpcore
     #   httpx
     #   requests
+cffi==2.1.1 ; platform_machine != 'ppc64le' and platform_machine != 's390x' and platform_python_implementation != 'PyPy' and sys_platform == 'linux'
+    # via cryptography
 cfgv==3.5.0
     # via pre-commit
 charset-normalizer==3.5.1
     # via requests
 click==8.5.0
     # via all-skills (pyproject.toml)
-colorama==0.4.6 ; sys_platform == 'win32'
-    # via pytest
+colorama==0.4.6 ; os_name == 'nt' or sys_platform == 'win32'
+    # via
+    #   build
+    #   pytest
 coverage==7.16.1
     # via pytest-cov
+cryptography==50.0.1 ; platform_machine != 'ppc64le' and platform_machine != 's390x' and sys_platform == 'linux'
+    # via secretstorage
 distlib==0.4.3
     # via virtualenv
+docutils==0.23
+    # via readme-renderer
 exceptiongroup==1.3.1 ; python_full_version < '3.11'
     # via
     #   anyio
@@ -44,6 +56,8 @@ httpcore==1.0.9
     # via httpx
 httpx==0.28.1
     # via all-skills (pyproject.toml)
+id==1.6.1
+    # via twine
 identify==2.6.19
     # via pre-commit
 idna==3.20
@@ -51,18 +65,38 @@ idna==3.20
     #   anyio
     #   httpx
     #   requests
+importlib-metadata==9.0.1 ; (python_full_version < '3.10.2' and platform_machine == 'ppc64le') or (python_full_version < '3.10.2' and platform_machine == 's390x') or (python_full_version < '3.12' and platform_machine != 'ppc64le' and platform_machine != 's390x')
+    # via
+    #   build
+    #   keyring
 iniconfig==2.3.0
     # via pytest
+jaraco-classes==3.4.0 ; platform_machine != 'ppc64le' and platform_machine != 's390x'
+    # via keyring
+jaraco-context==6.1.2 ; platform_machine != 'ppc64le' and platform_machine != 's390x'
+    # via keyring
+jaraco-functools==4.6.0 ; platform_machine != 'ppc64le' and platform_machine != 's390x'
+    # via keyring
+jeepney==0.9.0 ; platform_machine != 'ppc64le' and platform_machine != 's390x' and sys_platform == 'linux'
+    # via
+    #   keyring
+    #   secretstorage
 jsonschema==4.26.0
     # via all-skills (pyproject.toml)
 jsonschema-specifications==2025.9.1
     # via jsonschema
+keyring==25.7.0 ; platform_machine != 'ppc64le' and platform_machine != 's390x'
+    # via twine
 librt==0.15.0 ; platform_python_implementation != 'PyPy'
     # via mypy
 markdown-it-py==4.2.0
     # via rich
 mdurl==0.1.2
     # via markdown-it-py
+more-itertools==11.1.0 ; platform_machine != 'ppc64le' and platform_machine != 's390x'
+    # via
+    #   jaraco-classes
+    #   jaraco-functools
 mypy==2.3.1
     # via all-skills (pyproject.toml)
 mypy-extensions==1.1.0
@@ -73,10 +107,15 @@ networkx==3.6.1 ; python_full_version == '3.11.*'
     # via all-skills (pyproject.toml)
 networkx==3.7 ; python_full_version >= '3.12'
     # via all-skills (pyproject.toml)
+nh3==0.3.7
+    # via readme-renderer
 nodeenv==1.10.0
     # via pre-commit
 packaging==26.3
-    # via pytest
+    # via
+    #   build
+    #   pytest
+    #   twine
 pathspec==1.1.1
     # via mypy
 platformdirs==4.11.13
@@ -87,10 +126,15 @@ pluggy==1.6.0
     #   pytest-cov
 pre-commit==4.6.2
     # via all-skills (pyproject.toml)
+pycparser==3.0 ; implementation_name != 'PyPy' and platform_machine != 'ppc64le' and platform_machine != 's390x' and platform_python_implementation != 'PyPy' and sys_platform == 'linux'
+    # via cffi
 pygments==2.21.0
     # via
     #   pytest
+    #   readme-renderer
     #   rich
+pyproject-hooks==1.3.3
+    # via build
 pytest==9.1.1
     # via
     #   all-skills (pyproject.toml)
@@ -104,18 +148,31 @@ python-discovery==1.6.1
     # via virtualenv
 python-dotenv==1.2.3
     # via all-skills (pyproject.toml)
+pywin32-ctypes==0.2.3 ; platform_machine != 'ppc64le' and platform_machine != 's390x' and sys_platform == 'win32'
+    # via keyring
 pyyaml==6.0.3
     # via
     #   all-skills (pyproject.toml)
     #   pre-commit
+readme-renderer==46.0
+    # via twine
 referencing==0.37.0
     # via
     #   jsonschema
     #   jsonschema-specifications
 requests==2.34.2
-    # via all-skills (pyproject.toml)
+    # via
+    #   all-skills (pyproject.toml)
+    #   requests-toolbelt
+    #   twine
+requests-toolbelt==1.0.0
+    # via twine
+rfc3986==2.0.0
+    # via twine
 rich==15.0.0
-    # via all-skills (pyproject.toml)
+    # via
+    #   all-skills (pyproject.toml)
+    #   twine
 rpds-py==0.30.0 ; python_full_version < '3.11'
     # via
     #   jsonschema
@@ -126,11 +183,16 @@ rpds-py==2026.6.3 ; python_full_version >= '3.11'
     #   referencing
 ruff==0.16.9
     # via all-skills (pyproject.toml)
+secretstorage==3.5.0 ; platform_machine != 'ppc64le' and platform_machine != 's390x' and sys_platform == 'linux'
+    # via keyring
 tomli==2.4.1 ; python_full_version <= '3.11'
     # via
+    #   build
     #   coverage
     #   mypy
     #   pytest
+twine==7.0.0
+    # via all-skills (pyproject.toml)
 types-pyyaml==6.0.12.20260906
     # via all-skills (pyproject.toml)
 types-requests==2.33.0.20260906
@@ -138,13 +200,18 @@ types-requests==2.33.0.20260906
 typing-extensions==4.16.0
     # via
     #   anyio
+    #   cryptography
     #   exceptiongroup
     #   mypy
     #   referencing
     #   virtualenv
 urllib3==2.8.0
     # via
+    #   id
     #   requests
+    #   twine
     #   types-requests
 virtualenv==21.12.1
     # via pre-commit
+zipp==4.1.0 ; (python_full_version < '3.10.2' and platform_machine == 'ppc64le') or (python_full_version < '3.10.2' and platform_machine == 's390x') or (python_full_version < '3.12' and platform_machine != 'ppc64le' and platform_machine != 's390x')
+    # via importlib-metadata

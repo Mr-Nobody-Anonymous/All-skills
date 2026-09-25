@@ -71,6 +71,11 @@ dev = [
     "types-requests",
     "pre-commit>=3.5",
 ]
+# Distribution tooling used by CI's package job and the release workflow.
+release = [
+    "build>=1.2",
+    "twine>=6",
+]
 
 [project.urls]
 Homepage = "https://github.com/Mr-Nobody-Anonymous/All-skills"
