@@ -142,6 +142,27 @@ def save_stats(stats: dict, repo_root: Path | None = None) -> Path:
     return stats_file
 
 
+# Count claims in prose documentation, kept in sync with stats.json by
+# ``--sync-readme`` and checked by ``--verify`` (so drift fails CI). Each pattern
+# captures the number as group ``n``; only that group is rewritten.
+DOC_FILES = ("README.md", "SKILLS.md", "CONTRIBUTING.md", "docs/**/*.md")
+_N = r"(?P<n>\d[\d,]*)"
+DOC_COUNT_RULES: list[tuple[re.Pattern[str], str]] = [
+    (re.compile(rf"(?i:test suite) \({_N} tests\)"), "tests"),
+    (re.compile(rf"{_N}(?= unit tests validating)"), "tests"),
+    (re.compile(rf"{_N}(?= canonical skills)", re.I), "canonical_skills"),
+    (re.compile(rf"{_N}(?= Canonical Engine Skills)"), "canonical_skills"),
+    (re.compile(rf"{_N}(?= active (?:harness )?skills\b)", re.I), "active_harness_skills"),
+    (re.compile(rf"Active Harness Skills(?: Index)? \({_N} Skills\)"), "active_harness_skills"),
+    (re.compile(rf"active-harness-skills(?:-index)?-{_N}(?=-skills\))"), "active_harness_skills"),
+    (re.compile(rf"Active Harness \({_N} skills\)"), "active_harness_skills"),
+    (re.compile(rf"across {_N}(?= functional domains| domains in `awesome_skills/`| categories\))"), "categories"),
+    (re.compile(rf"`{_N}` categorized implementations"), "catalog_skills"),
+    (re.compile(rf"{_N}(?= Catalog Records)"), "catalog_skills"),
+    (re.compile(rf"library of {_N}(?=\+? categorized skills)"), "catalog_skills"),
+]
+
+
 def sync_readme(stats: dict, repo_root: Path | None = None) -> bool:
     if repo_root is None:
         repo_root = get_repo_root()
@@ -214,18 +235,8 @@ def sync_readme(stats: dict, repo_root: Path | None = None) -> bool:
 
     # Update Directory Tree and Router sections
     content = re.sub(
-        r'\(66 skills\)|\(69 skills\)|\(70 skills\)',
-        f'({stats["active_harness_skills"]} skills)',
-        content
-    )
-    content = re.sub(
         r'#\s*[0-9,]+-item metadata database',
         f'# {stats["catalog_index_records"]:,}-item metadata database',
-        content
-    )
-    content = re.sub(
-        r'#\s*122 Canonical Engine Skills',
-        f'# {stats["canonical_skills"]} Canonical Engine Skills',
         content
     )
     content = re.sub(
@@ -254,17 +265,12 @@ def sync_readme(stats: dict, repo_root: Path | None = None) -> bool:
         content
     )
     content = re.sub(
-        r'Test Suite \([0-9]+\s*tests\)',
-        f'Test Suite ({stats["tests"]} tests)',
-        content
-    )
-    content = re.sub(
         r'Run the [0-9]+\s*unit and integration tests',
         f'Run the {stats["tests"]} unit and integration tests',
         content
     )
 
-    readme_path.write_text(content, encoding="utf-8")
+    readme_path.write_text(apply_doc_counts(content, stats)[0], encoding="utf-8")
     return True
 
 
@@ -316,14 +322,56 @@ def sync_skills_md(stats: dict, repo_root: Path | None = None) -> bool:
         f'**{stats["active_harness_skills"]} Pre-Loaded Staff Engineer Skills**',
         content
     )
-    content = re.sub(
-        r'Test suite \([0-9]+\s*tests\)',
-        f'test suite ({stats["tests"]} tests)',
-        content
-    )
 
-    skills_md_path.write_text(content, encoding="utf-8")
+    skills_md_path.write_text(apply_doc_counts(content, stats)[0], encoding="utf-8")
     return True
+
+
+def doc_files(repo_root: Path) -> list[Path]:
+    files: set[Path] = set()
+    for pattern in DOC_FILES:
+        files.update(p for p in repo_root.glob(pattern) if p.is_file())
+    return sorted(files)
+
+
+def apply_doc_counts(content: str, stats: dict) -> tuple[str, list[tuple[int, str, str]]]:
+    """Rewrite every documented count claim; return (new text, [(line, old, new)])."""
+    changes: list[tuple[int, str, str]] = []
+
+    def rewrite(match: re.Match[str], key: str) -> str:
+        whole, start = match.group(0), match.start()
+        old = match.group("n")
+        new = f"{stats[key]:,}"
+        if old != new:
+            changes.append((content.count("\n", 0, match.start("n")) + 1, old, new))
+        return whole[: match.start("n") - start] + new + whole[match.end("n") - start:]
+
+    for pattern, key in DOC_COUNT_RULES:
+        content = pattern.sub(lambda m, k=key: rewrite(m, k), content)
+    return content, changes
+
+
+def sync_docs(stats: dict, repo_root: Path | None = None) -> list[str]:
+    """Apply DOC_COUNT_RULES to every documentation file; return the files changed."""
+    repo_root = repo_root or get_repo_root()
+    changed = []
+    for path in doc_files(repo_root):
+        text = path.read_text(encoding="utf-8")
+        new_text, changes = apply_doc_counts(text, stats)
+        if changes:
+            path.write_text(new_text, encoding="utf-8", newline="")
+            changed.append(path.relative_to(repo_root).as_posix())
+    return changed
+
+
+def verify_docs(stats: dict, repo_root: Path | None = None) -> list[str]:
+    """Every documented count that disagrees with ``stats`` (empty = consistent)."""
+    repo_root = repo_root or get_repo_root()
+    problems = []
+    for path in doc_files(repo_root):
+        for line, old, new in apply_doc_counts(path.read_text(encoding="utf-8"), stats)[1]:
+            problems.append(f"{path.relative_to(repo_root).as_posix()}:{line}: says {old}, stats.json says {new}")
+    return problems
 
 
 def main() -> None:
@@ -343,7 +391,7 @@ def main() -> None:
         with open(stats_file, "r", encoding="utf-8") as f:
             existing = json.load(f)
 
-        mismatches = []
+        mismatches = [f"Documentation drift: {p}" for p in verify_docs(existing, repo_root)]
         for key, val in computed.items():
             if key == "last_generated":
                 continue
@@ -372,6 +420,8 @@ def main() -> None:
             print("Successfully synchronized README.md numbers.")
         if synced_skills:
             print("Successfully synchronized SKILLS.md numbers.")
+        for changed in sync_docs(computed, repo_root):
+            print(f"Successfully synchronized {changed} numbers.")
 
 
 if __name__ == "__main__":

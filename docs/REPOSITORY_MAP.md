@@ -9,7 +9,7 @@ This authoritative map documents every top-level directory and artifact in the *
 | Directory / Path | Primary Role | Source of Truth? | Generated? | Safe to Edit? | Notes & Constraints |
 | :--- | :--- | :---: | :---: | :---: | :--- |
 | **`skills/`** | Canonical runtime skills | **Yes** | No | **Yes** | 122 validated, human-curated skills with strict schema enforcement. |
-| **`awesome_skills/`** | Large-scale knowledge library | **Yes** | Partly | **Yes** | Physical storage of the 14,000+ domain skills organized across 243 functional domains. |
+| **`awesome_skills/`** | Large-scale knowledge library | **Yes** | Partly | **Yes** | Physical storage of the 14,000+ domain skills organized across 251 functional domains. |
 | **`catalog/`** | Virtual taxonomy & multi-dimensional indexes | **Yes** | Partly | **Yes** | Maps physical skills to 15 super-domains, tasks, maturity tiers, and agent platforms without file moves. |
 | **`.agents/skills/`** | Active agent runtime harness | No | **Yes** | **No** | Auto-synchronized symlink/mirror harness for Antigravity, Gemini, Kiro, and OpenClaw. |
 | **`.claude/skills/`** | Claude Code agent harness | No | **Yes** | **No** | Auto-synchronized runtime mirror targeting Claude Code CLI. |
@@ -27,7 +27,7 @@ This authoritative map documents every top-level directory and artifact in the *
 | **`marketplace/`** | Interactive catalog dashboard | No | **Yes** | **No** | Compiled by `scripts/build_marketplace.py` into standalone `index.html`. |
 | **`src/skills/`** | Python runtime engine & routing implementation | **Yes** | No | **Yes** | Core package implementing 9-signal routing, registry loading, and validation. |
 | **`scripts/`** | Automation, stats, and audit scripts | **Yes** | No | **Yes** | Utilities for computing stats, building catalogs, testing, and lifecycle hooks. |
-| **`tests/`** | Unit and integration test suite | **Yes** | No | **Yes** | 94 unit tests validating loader, router, parser, frontmatter, and policies. |
+| **`tests/`** | Unit and integration test suite | **Yes** | No | **Yes** | 239 unit tests validating loader, router, parser, frontmatter, and policies. |
 | **`workflows/`** | Multi-step agent playbooks | **Yes** | No | **Yes** | Chained execution playbooks (`bug-investigation`, `feature-development`, etc.). |
 | **`rules/`** | Behavioral constraints & guidelines | **Yes** | No | **Yes** | Global directives governing agent operations, safety, and AST modifications. |
 | **`docs/`** | Platform documentation | **Yes** | Partly | **Yes** | Guides, architecture overviews, and system reference manuals. |

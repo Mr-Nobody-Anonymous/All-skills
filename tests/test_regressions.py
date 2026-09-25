@@ -25,6 +25,10 @@ Each test pins a defect that previously shipped on ``main``:
 9. On Windows, harness-link detection reported every *missing* target as a
    broken junction (ctypes returned INVALID_FILE_ATTRIBUTES as -1), so
    ``setup_tools.py --verify`` failed on every clean checkout.
+10. Documented counts drifted from ``stats.json`` ("94 tests", "243 domains",
+    "122 canonical skills"): sync rules only covered README/SKILLS, matched
+    hard-coded old values, lower-cased what they rewrote, and ``--verify``
+    never looked at the docs at all.
 """
 
 from __future__ import annotations
@@ -308,6 +312,40 @@ class TestNativeCliDoctor(unittest.TestCase):
         self.assertIn(ctx.exception.code, (0, 1))
         self.assertIn("Doctor Diagnostic:", stdout.getvalue())
         self.assertIn("Validation Errors:", stdout.getvalue())
+
+
+class TestDocumentationCountsMatchStats(unittest.TestCase):
+    """Regression #10 — documented counts follow stats.json in every doc."""
+
+    @classmethod
+    def setUpClass(cls):
+        spec = importlib.util.spec_from_file_location("compute_stats_under_test",
+                                                      _ROOT / "scripts" / "compute_stats.py")
+        assert spec and spec.loader
+        cls.cs = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(cls.cs)
+
+    def test_stale_claims_are_rewritten_in_place(self):
+        stats = {"tests": 237, "canonical_skills": 124, "active_harness_skills": 72,
+                 "categories": 251, "catalog_skills": 14855}
+        text = ("intro\n# Run full health diagnostics and test suite (94 tests)\n"
+                "| 94 unit tests validating loader |\n"
+                "All 122 canonical skills and 70 active harness skills\n"
+                "## Pre-Loaded Active Harness Skills (70 Skills)\n"
+                "organized across 243 functional domains; `14,000` categorized implementations\n")
+        new, changes = self.cs.apply_doc_counts(text, stats)
+        self.assertIn("test suite (237 tests)", new, "case of the surrounding text must be preserved")
+        self.assertIn("| 237 unit tests validating loader |", new)
+        self.assertIn("All 124 canonical skills and 72 active harness skills", new)
+        self.assertIn("Active Harness Skills (72 Skills)", new)
+        self.assertIn("across 251 functional domains; `14,855` categorized", new)
+        self.assertIn((2, "94", "237"), changes, "drift is reported with its line number")
+        self.assertEqual(self.cs.apply_doc_counts(new, stats)[1], [], "syncing must be idempotent")
+
+    def test_repository_documentation_agrees_with_stats_json(self):
+        stats = json.loads((_ROOT / "stats.json").read_text(encoding="utf-8"))
+        self.assertEqual(self.cs.verify_docs(stats, _ROOT), [],
+                         "run: python scripts/compute_stats.py --sync-readme")
 
 
 if __name__ == "__main__":
