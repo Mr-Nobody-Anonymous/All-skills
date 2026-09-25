@@ -125,6 +125,11 @@ class TestSubprocessExecutor(ScriptCase):
         with self.assertRaisesRegex(ExecutorError, "File too large|SIGXFSZ"):
             SubprocessExecutor(argv, ProcessLimits(max_file_bytes=64 * 1024))(invocation())
 
+    @unittest.skipUnless(sys.platform == "darwin", "macOS accepts RLIMIT_AS without enforcing it")
+    def test_memory_limit_is_refused_where_the_os_ignores_it(self):
+        with self.assertRaisesRegex(ExecutorError, "does not enforce"):
+            SubprocessExecutor([sys.executable, "-c", "pass"], ProcessLimits(memory_bytes=512 * 1024 * 1024))
+
     @unittest.skipIf(os.name == "posix", "only platforms without setrlimit refuse limits")
     def test_limits_that_cannot_be_enforced_are_refused(self):
         with self.assertRaisesRegex(ExecutorError, "cannot be enforced"):

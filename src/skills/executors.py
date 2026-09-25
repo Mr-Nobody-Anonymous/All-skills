@@ -12,8 +12,9 @@ gives every run:
 * a cap on the output it may return;
 * on POSIX, optional CPU-time, address-space and file-size limits, applied with
   ``setrlimit`` before the command starts — if a requested limit cannot be
-  applied the command does not run, and requesting them on a platform without
-  ``setrlimit`` is refused up front;
+  applied the command does not run, and a limit the platform would not enforce
+  is refused up front (Windows has no ``setrlimit``; macOS accepts
+  ``RLIMIT_AS`` but does not enforce it, so memory limits are refused there);
 * usage measured on the runtime side (wall time, exit status and, on POSIX,
   child CPU time), independent of anything the command reports about itself.
 
@@ -130,6 +131,9 @@ class SubprocessExecutor:
         if self.limits.rlimits() and os.name != "posix":
             raise ExecutorError("CPU, memory and file-size limits need POSIX setrlimit and cannot be "
                                 "enforced on this platform; refusing to run without them")
+        if self.limits.memory_bytes is not None and sys.platform == "darwin":
+            raise ExecutorError("macOS accepts RLIMIT_AS but does not enforce it, so a memory limit cannot be "
+                                "enforced on this platform; refusing to run without it")
         self.env_allowlist = tuple(env_allowlist)
         self.extra_env = dict(extra_env or {})
 

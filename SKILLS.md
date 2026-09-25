@@ -143,7 +143,7 @@ python scripts/skills/skills.py chain deep-research --dry-run
 python scripts/skills/skills.py chain anti-procrastination --dry-run
 python scripts/skills/skills.py chain code-review-flow --dry-run
 
-# Run full health diagnostics and test suite (249 tests)
+# Run full health diagnostics and test suite (250 tests)
 python scripts/skills/skills.py doctor
 python scripts/skills/skills.py test
 ```
