@@ -796,7 +796,9 @@
       "python": [],
       "api": [],
       "missing_required": [],
-      "missing_optional": []
+      "missing_optional": [
+        "docker"
+      ]
     },
     "development.dokploy": {
       "required": [],
@@ -1348,6 +1350,24 @@
       "missing_optional": []
     },
     "productivity.session-analytics": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "architecture.architecture-decision-records": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": [],
+      "missing_required": [],
+      "missing_optional": []
+    },
+    "healthcare.health-economist": {
       "required": [],
       "optional": [],
       "system": [],
