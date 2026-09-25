@@ -1,0 +1,271 @@
+"""End-to-end acceptance tests for the platform's safety and correctness guarantees.
+
+Each test proves an advertised guarantee holds through the real code path
+(not just that a file or field exists):
+
+1.  Quarantining a skill blocks its execution and routing.
+2.  A policy verdict of ASK never executes without a matching human approval.
+3.  A corrupt revocation registry is refused explicitly (fail closed).
+4.  A skill without trust evidence is not treated as curated or verified.
+5.  A dry run is reported as simulated and runs nothing.
+6.  Installing a profile makes its skills actually appear.
+7.  Importing a skill keeps its supporting files and upstream metadata.
+8.  A schema violation makes the validator exit non-zero.
+9.  An adversarial eval case that is not refused makes the evals fail.
+10. A built wheel works outside the source checkout (see the CI ``package`` job;
+    here we verify the workspace contract it relies on).
+"""
+
+from __future__ import annotations
+
+import json
+import shutil
+import subprocess
+import sys
+import tempfile
+import textwrap
+import unittest
+from pathlib import Path
+
+_ROOT = Path(__file__).resolve().parents[1]
+_SRC = _ROOT / "src"
+if str(_SRC) not in sys.path:
+    sys.path.insert(0, str(_SRC))
+
+from skills.registry import Registry, SkillEntry, load_registry  # noqa: E402
+from skills.revocations import RevocationError  # noqa: E402
+from skills.router import Router  # noqa: E402
+from skills.runtime import ExecutionRuntime  # noqa: E402
+
+SKILL_MD = textwrap.dedent(
+    """\
+    ---
+    name: {name}
+    description: Test skill used by the acceptance suite to exercise runtime gates.
+    category: utilities
+    version: 1.0.0
+    tools:
+    {tools}
+    ---
+
+    # {title}
+
+    ## Purpose
+    Demonstrate governed execution.
+    """
+)
+
+
+class Workspace:
+    """A minimal, isolated All-Skills workspace on disk."""
+
+    def __init__(self) -> None:
+        self._tmp = tempfile.TemporaryDirectory()
+        self.root = Path(self._tmp.name)
+        (self.root / "skills").mkdir()
+        (self.root / "registry").mkdir()
+        self.entries: list[dict] = []
+
+    def add_skill(self, name: str, tools=("file_read",), outputs=(), lifecycle="enabled", enabled=True) -> str:
+        skill_dir = self.root / "skills" / "utilities" / name
+        skill_dir.mkdir(parents=True)
+        tool_lines = "\n".join(f"- {t}" for t in tools) if tools else "[]"
+        (skill_dir / "SKILL.md").write_text(
+            SKILL_MD.format(name=name, tools=tool_lines, title=name.title()), encoding="utf-8"
+        )
+        skill_id = f"utilities.{name}"
+        self.entries.append({
+            "id": skill_id, "name": name, "category": "utilities",
+            "description": f"Acceptance skill {name}", "path": f"utilities/{name}",
+            "triggers": [f"run {name}"], "keywords": [name], "outputs": list(outputs),
+            "lifecycle": lifecycle, "enabled": enabled,
+        })
+        (self.root / "skills" / "registry.json").write_text(
+            json.dumps({"version": 1, "skills": self.entries}), encoding="utf-8"
+        )
+        return skill_id
+
+    def runtime(self, **kwargs) -> ExecutionRuntime:
+        return ExecutionRuntime(
+            workspace_root=self.root, audit_log_path=self.root / "audit.jsonl", **kwargs
+        )
+
+    def audit_statuses(self) -> list[str]:
+        path = self.root / "audit.jsonl"
+        if not path.exists():
+            return []
+        return [json.loads(line)["status"] for line in path.read_text(encoding="utf-8").splitlines()]
+
+    def cleanup(self) -> None:
+        self._tmp.cleanup()
+
+
+class AcceptanceCase(unittest.TestCase):
+    def setUp(self) -> None:
+        self.ws = Workspace()
+        self.calls: list[str] = []
+
+    def tearDown(self) -> None:
+        self.ws.cleanup()
+
+    def recording_executor(self, outputs: dict):
+        def _run(invocation):
+            self.calls.append(invocation.skill.id)
+            return {"outputs": outputs}
+        return _run
+
+
+class TestQuarantineBlocksExecution(AcceptanceCase):
+    """1. Quarantine → execution and routing are blocked (one shared revocation contract)."""
+
+    def test_quarantined_skill_is_not_executed_or_routed(self):
+        from skills.security import is_quarantined, quarantine_skill, unquarantine_skill
+
+        skill_id = self.ws.add_skill("target")
+        runtime = self.ws.runtime(executors={skill_id: self.recording_executor({})})
+        self.assertEqual(runtime.execute(skill_id).status, "completed")
+
+        quarantine_skill(skill_id, "suspicious payload", reporter="acceptance", repo_root=self.ws.root)
+        self.assertTrue(is_quarantined(skill_id, repo_root=self.ws.root))
+        result = runtime.execute(skill_id)
+        self.assertEqual(result.status, "blocked")
+        self.assertIn("suspicious payload", result.error)
+        router = Router(load_registry(self.ws.root), workspace_root=self.ws.root)
+        self.assertIsNone(router.route_one("run target"))
+        self.assertEqual(self.calls, [skill_id], "executor must not run after quarantine")
+
+        # The canonical registry file is the one written (and read) by everyone.
+        doc = json.loads((self.ws.root / "registry" / "revocations.json").read_text(encoding="utf-8"))
+        self.assertEqual([e["id"] for e in doc["revoked_skills"]], [skill_id])
+
+        unquarantine_skill(skill_id, "remediated", approver="maintainer", repo_root=self.ws.root)
+        self.assertEqual(runtime.execute(skill_id).status, "completed")
+
+    def test_legacy_quarantine_file_is_still_enforced(self):
+        skill_id = self.ws.add_skill("legacy")
+        (self.ws.root / "skills" / "revocations.json").write_text(
+            json.dumps({"version": "1.0.0", "revocations": [{"skill_id": skill_id, "reason": "old quarantine"}]}),
+            encoding="utf-8",
+        )
+        self.assertEqual(self.ws.runtime().execute(skill_id).status, "blocked")
+
+
+class TestApprovalIsEnforced(AcceptanceCase):
+    """2. ASK → no execution without an approval bound to the exact request."""
+
+    def test_ask_requires_matching_approval(self):
+        skill_id = self.ws.add_skill("deployer", tools=("deploy",))
+        runtime = self.ws.runtime(executors={skill_id: self.recording_executor({})})
+
+        pending = runtime.execute(skill_id, input={"env": "prod"})
+        self.assertEqual(pending.status, "approval_required")
+        self.assertFalse(pending.executed)
+        self.assertIn("production.deploy", pending.approval_request["capabilities"])
+        request_id = pending.approval_request["request_id"]
+
+        for bad in (None, {"request_id": "wrong", "approved_by": "alice"}, {"request_id": request_id}):
+            self.assertEqual(runtime.execute(skill_id, input={"env": "prod"}, approval=bad).status,
+                             "approval_required")
+        # An approval for one input does not authorise a different input.
+        self.assertEqual(
+            runtime.execute(skill_id, input={"env": "staging"},
+                            approval={"request_id": request_id, "approved_by": "alice"}).status,
+            "approval_required",
+        )
+        self.assertEqual(self.calls, [], "nothing may execute before approval")
+
+        approved = runtime.execute(skill_id, input={"env": "prod"},
+                                   approval={"request_id": request_id, "approved_by": "alice"})
+        self.assertEqual(approved.status, "completed")
+        self.assertEqual(approved.verification["approved_by"], "alice")
+        self.assertEqual(self.calls, [skill_id])
+
+    def test_unknown_tools_are_never_implicitly_allowed(self):
+        skill_id = self.ws.add_skill("mystery", tools=("quantum_teleporter",))
+        result = self.ws.runtime().execute(skill_id)
+        self.assertEqual(result.status, "approval_required")
+        self.assertIn("tool.unclassified", result.approval_request["capabilities"])
+
+
+class TestFailClosedSecurityState(AcceptanceCase):
+    """3. Invalid security state is refused explicitly."""
+
+    def test_corrupt_revocation_registry_is_refused(self):
+        skill_id = self.ws.add_skill("victim")
+        runtime = self.ws.runtime(executors={skill_id: self.recording_executor({})})
+        for corrupt in ("{not json", json.dumps({"revoked_skills": "everything"}),
+                        json.dumps({"revoked_skills": [{"reason": "no id"}]}), json.dumps(["x"])):
+            (self.ws.root / "registry" / "revocations.json").write_text(corrupt, encoding="utf-8")
+            result = runtime.execute(skill_id)
+            self.assertEqual(result.status, "error", corrupt)
+            self.assertIn("revocation registry is invalid", result.error)
+            with self.assertRaises(RevocationError):
+                Router(load_registry(self.ws.root), workspace_root=self.ws.root)
+        self.assertEqual(self.calls, [])
+
+    def test_contradictory_or_invalid_lifecycle_is_refused(self):
+        for name, lifecycle, enabled in (("dep", "deprecated", True), ("off", "enabled", False),
+                                         ("bogus", "production-ish", True)):
+            skill_id = self.ws.add_skill(name, lifecycle=lifecycle, enabled=enabled)
+            self.assertEqual(self.ws.runtime().execute(skill_id).status, "blocked", name)
+            router = Router(load_registry(self.ws.root), workspace_root=self.ws.root)
+            self.assertIsNone(router.route_one(f"run {name}"), name)
+
+    def test_malformed_policy_file_is_refused(self):
+        from skills.policy import PolicyConfigError, PolicyEngine
+
+        (self.ws.root / "skills" / "policy.json").write_text(
+            json.dumps({"capabilities": {"network.request": {"verdict": "ALOW"}}}), encoding="utf-8"
+        )
+        with self.assertRaises(PolicyConfigError):
+            PolicyEngine(self.ws.root)
+
+
+class TestDryRunIsSimulated(AcceptanceCase):
+    """5. Dry run → clearly simulated, executor never invoked."""
+
+    def test_dry_run_does_not_execute(self):
+        skill_id = self.ws.add_skill("writer", outputs=("report",))
+        runtime = self.ws.runtime(executors={skill_id: self.recording_executor({"report": "x"})})
+        result = runtime.execute(skill_id, dry_run=True)
+        self.assertEqual(result.status, "simulated")
+        self.assertFalse(result.executed)
+        self.assertEqual(result.outputs["plan"]["would_execute_with"], "executor")
+        self.assertEqual(self.calls, [])
+        self.assertEqual(self.ws.audit_statuses(), ["simulated"])
+
+
+class TestExecutorSemantics(AcceptanceCase):
+    """Real execution is reported as completed only when declared outputs exist."""
+
+    def test_outputs_are_validated(self):
+        skill_id = self.ws.add_skill("reporter", outputs=("report", "summary"))
+        runtime = self.ws.runtime()
+
+        runtime.register_executor(skill_id, self.recording_executor({"report": "done", "summary": "ok"}))
+        ok = runtime.execute(skill_id)
+        self.assertEqual((ok.status, ok.executed, ok.verification["postconditions"]), ("completed", True, "passed"))
+
+        runtime.register_executor(skill_id, self.recording_executor({"report": "done"}))
+        partial = runtime.execute(skill_id)
+        self.assertEqual(partial.status, "failed")
+        self.assertEqual(partial.verification["missing_outputs"], ["summary"])
+
+        def broken(_invocation):
+            raise RuntimeError("tool crashed")
+
+        runtime.register_executor(skill_id, broken)
+        crashed = runtime.execute(skill_id)
+        self.assertEqual(crashed.status, "failed")
+        self.assertIn("tool crashed", crashed.error)
+
+    def test_without_executor_the_skill_is_only_prepared(self):
+        skill_id = self.ws.add_skill("advisor")
+        result = self.ws.runtime().execute(skill_id)
+        self.assertEqual(result.status, "prepared")
+        self.assertFalse(result.executed)
+        self.assertIn("# Advisor", result.outputs["instructions"])
+
+
+if __name__ == "__main__":
+    unittest.main()

@@ -161,8 +161,14 @@ def scan_instructions(text: str) -> List[tuple[str, str]]:
     return findings
 
 
-import datetime
 import json
+from datetime import datetime, timezone
+
+from .revocations import add_revocation, get_revocation, remove_revocation
+
+
+def _utc_now() -> str:
+    return datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
 
 
 def quarantine_skill(
@@ -171,14 +177,18 @@ def quarantine_skill(
     reporter: str = "security_scanner",
     repo_root: Path | None = None,
 ) -> dict:
-    """Quarantine a skill, adding it to revocations.json and recording forensic evidence."""
+    """Quarantine a skill: revoke it in registry/revocations.json and record forensic evidence.
+
+    Uses the same revocation contract as the router and the execution runtime
+    (:mod:`skills.revocations`), so a quarantined skill can no longer be routed
+    or executed.
+    """
     root = repo_root or Path.cwd()
     quarantine_dir = root / "quarantine"
-    quarantine_dir.mkdir(parents=True, exist_ok=True)
     evidence_dir = quarantine_dir / "evidence"
     evidence_dir.mkdir(parents=True, exist_ok=True)
 
-    timestamp = datetime.datetime.utcnow().isoformat() + "Z"
+    timestamp = _utc_now()
     event = {
         "timestamp": timestamp,
         "action": "quarantine",
@@ -186,57 +196,24 @@ def quarantine_skill(
         "reason": reason,
         "reporter": reporter,
     }
-
-    # Append to quarantine log
-    log_path = quarantine_dir / "quarantine_log.jsonl"
-    with open(log_path, "a", encoding="utf-8") as f:
+    with open(quarantine_dir / "quarantine_log.jsonl", "a", encoding="utf-8") as f:
         f.write(json.dumps(event) + "\n")
 
-    # Update skills/revocations.json
-    revocations_path = root / "skills" / "revocations.json"
-    revocations_data: Dict[str, Any] = {"version": "1.0.0", "revocations": []}
-    if revocations_path.exists():
-        try:
-            revocations_data = json.loads(revocations_path.read_text(encoding="utf-8"))
-        except Exception:
-            pass
+    add_revocation(root, skill_id, reason, severity="high", reporter=reporter)
 
-    existing_ids = {r.get("skill_id") for r in revocations_data.get("revocations", [])}
-    if skill_id not in existing_ids:
-        revocations_data["revocations"].append({
-            "skill_id": skill_id,
-            "revoked_at": timestamp,
-            "reason": reason,
-            "severity": "high",
-        })
-        revocations_path.parent.mkdir(parents=True, exist_ok=True)
-        revocations_path.write_text(json.dumps(revocations_data, indent=2), encoding="utf-8")
-
-    # Save evidence file
     evidence_path = evidence_dir / f"{skill_id.replace('/', '_')}.json"
     evidence_path.write_text(json.dumps(event, indent=2), encoding="utf-8")
 
-    return {
-        "status": "quarantined",
-        "skill_id": skill_id,
-        "reason": reason,
-        "timestamp": timestamp,
-    }
+    return {"status": "quarantined", "skill_id": skill_id, "reason": reason, "timestamp": timestamp}
 
 
 def is_quarantined(skill_id: str, repo_root: Path | None = None) -> bool:
-    """Check whether a skill is currently in quarantine or revocation."""
-    root = repo_root or Path.cwd()
-    revocations_path = root / "skills" / "revocations.json"
-    if revocations_path.exists():
-        try:
-            data = json.loads(revocations_path.read_text(encoding="utf-8"))
-            for r in data.get("revocations", []):
-                if r.get("skill_id") == skill_id:
-                    return True
-        except Exception:
-            pass
-    return False
+    """Whether a skill is revoked or quarantined.
+
+    Raises :class:`skills.revocations.RevocationError` if the registry is
+    malformed — "unknown" must never be reported as "not quarantined".
+    """
+    return get_revocation(skill_id, repo_root or Path.cwd()) is not None
 
 
 def unquarantine_skill(
@@ -245,9 +222,9 @@ def unquarantine_skill(
     approver: str,
     repo_root: Path | None = None,
 ) -> dict:
-    """Reinstates a quarantined skill after formal remediation."""
+    """Reinstate a quarantined skill after formal remediation (records who approved it)."""
     root = repo_root or Path.cwd()
-    timestamp = datetime.datetime.utcnow().isoformat() + "Z"
+    timestamp = _utc_now()
     event = {
         "timestamp": timestamp,
         "action": "unquarantine",
@@ -255,19 +232,11 @@ def unquarantine_skill(
         "reason": reason,
         "approver": approver,
     }
-
-    log_path = root / "quarantine" / "quarantine_log.jsonl"
-    with open(log_path, "a", encoding="utf-8") as f:
+    (root / "quarantine").mkdir(parents=True, exist_ok=True)
+    with open(root / "quarantine" / "quarantine_log.jsonl", "a", encoding="utf-8") as f:
         f.write(json.dumps(event) + "\n")
 
-    revocations_path = root / "skills" / "revocations.json"
-    if revocations_path.exists():
-        try:
-            data = json.loads(revocations_path.read_text(encoding="utf-8"))
-            data["revocations"] = [r for r in data.get("revocations", []) if r.get("skill_id") != skill_id]
-            revocations_path.write_text(json.dumps(data, indent=2), encoding="utf-8")
-        except Exception:
-            pass
+    remove_revocation(root, skill_id)
 
     return {
         "status": "reinstated",

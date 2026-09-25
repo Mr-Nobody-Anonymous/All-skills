@@ -34,7 +34,7 @@ def _run_native_cli() -> None:
     from ._version import __version__
     from .registry import load_registry
     from .router import Router
-    from .runtime import ExecutionRuntime
+    from .runtime import ExecutionRuntime, approval_from_args, exit_code_for
     from .validator import Validator
     from .security import scan_all
 
@@ -66,6 +66,8 @@ def _run_native_cli() -> None:
         s_exec.add_argument("--input", help="JSON execution inputs")
         s_exec.add_argument("--tools", help="Comma-separated tools")
         s_exec.add_argument("--dry-run", action="store_true", help="Simulate execution")
+        s_exec.add_argument("--approval-id", help="request_id from an approval_required result")
+        s_exec.add_argument("--approved-by", help="Name of the human approving an ASK capability")
         s_exec.add_argument("--json", action="store_true", help="Output as JSON")
 
     # 5. doctor
@@ -113,7 +115,8 @@ def _run_native_cli() -> None:
         runtime = ExecutionRuntime(workspace)
         inp = json.loads(args.input) if getattr(args, "input", None) else {}
         tools = [t.strip() for t in args.tools.split(",")] if getattr(args, "tools", None) else None
-        res = runtime.execute(args.skill_id, input=inp, tools=tools, dry_run=args.dry_run)
+        approval = approval_from_args(args.approval_id, args.approved_by)
+        res = runtime.execute(args.skill_id, input=inp, tools=tools, dry_run=args.dry_run, approval=approval)
         if getattr(args, "json", False):
             print(json.dumps(res.to_dict(), indent=2))
         else:
@@ -123,7 +126,9 @@ def _run_native_cli() -> None:
             print(f"Audit ID: {res.audit_id}")
             if res.error:
                 print(f"Error: {res.error}")
-        sys.exit(0 if res.status == "completed" else 1)
+            if res.approval_request:
+                print(f"Approval required: re-run with --approval-id {res.approval_request['request_id']} --approved-by <name>")
+        sys.exit(exit_code_for(res.status))
 
     elif args.cmd == "doctor":
         validation = Validator(reg, workspace / "skills").validate_all()

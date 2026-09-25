@@ -351,7 +351,10 @@ def cmd_execute(args, _parser):
             return 1
 
     tools = [t.strip() for t in args.tools.split(",")] if getattr(args, "tools", None) else None
-    res = runtime.execute(args.skill_id, input=input_data, tools=tools, dry_run=getattr(args, "dry_run", False))
+    from skills.runtime import approval_from_args, exit_code_for
+    approval = approval_from_args(getattr(args, "approval_id", None), getattr(args, "approved_by", None))
+    res = runtime.execute(args.skill_id, input=input_data, tools=tools,
+                          dry_run=getattr(args, "dry_run", False), approval=approval)
 
     if getattr(args, "json", False):
         print(json.dumps(res.to_dict(), indent=2))
@@ -366,8 +369,10 @@ def cmd_execute(args, _parser):
             print(f"Outputs: {json.dumps(res.outputs, indent=2)}")
         if res.verification:
             print(f"Verification: {json.dumps(res.verification)}")
+        if res.approval_request:
+            print(f"Approval required: re-run with --approval-id {res.approval_request['request_id']} --approved-by <name>")
 
-    return 0 if res.status == "completed" else 1
+    return exit_code_for(res.status)
 
 
 def _registry_path() -> Path:
@@ -1281,6 +1286,8 @@ def main():
         s.add_argument("--input", help="JSON string of execution inputs")
         s.add_argument("--tools", help="Comma-separated declared tools")
         s.add_argument("--dry-run", action="store_true", help="Simulate execution without modifying artifacts")
+        s.add_argument("--approval-id", help="request_id from an approval_required result")
+        s.add_argument("--approved-by", help="Name of the human approving an ASK capability")
         s.add_argument("--json", action="store_true", help="Print structured ExecutionResult as JSON")
         s.set_defaults(func=cmd_execute)
 

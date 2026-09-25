@@ -22,9 +22,10 @@ from __future__ import annotations
 import re
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Optional, Set, Tuple
 
 from .dependencies import check_dependency
+from .lifecycle import permits_activation
 from .registry import Registry, SkillEntry
 
 
@@ -95,23 +96,32 @@ class RouteBreakdown:
 
 
 class Router:
-    def __init__(self, registry: Registry, revocations_path: Optional[Path] = None) -> None:
+    def __init__(
+        self,
+        registry: Registry,
+        revocations_path: Optional[Path] = None,
+        workspace_root: Optional[Path] = None,
+    ) -> None:
+        """Build a router over ``registry``.
+
+        Revoked skills are never routed. Revocations come from
+        ``revocations_path`` if given, otherwise from the workspace's
+        ``registry/revocations.json`` (see :mod:`skills.revocations`). A
+        malformed revocation registry raises ``RevocationError`` — the router
+        refuses to operate rather than silently ignoring the kill switch.
+        """
+        from .revocations import load_all, load_revocations
+
         self.registry = registry
-        self.revoked_ids = set()
-        if revocations_path is None:
-            candidate = Path(__file__).resolve().parents[2] / "registry" / "revocations.json"
-            if candidate.exists():
-                revocations_path = candidate
-        if revocations_path and revocations_path.exists():
-            try:
-                import json
-                with open(revocations_path, "r", encoding="utf-8") as f:
-                    data = json.load(f)
-                    for item in data.get("revoked_skills", []):
-                        if isinstance(item, dict) and "id" in item:
-                            self.revoked_ids.add(item["id"])
-            except Exception:
-                pass
+        if revocations_path is not None:
+            revoked = load_revocations(revocations_path)
+        else:
+            root = workspace_root or Path(__file__).resolve().parents[2]
+            revoked = load_all(root)
+        self.revoked_ids: Set[str] = set(revoked)
+
+    def _routable(self, entry: SkillEntry) -> bool:
+        return permits_activation(entry.lifecycle, entry.enabled) and entry.id not in self.revoked_ids
 
     def route(self, query: str, top_k: int = 3) -> List[RouteMatch]:
         breakdowns = self.explain(query, top_k=top_k)
@@ -215,7 +225,7 @@ class Router:
         # A bare category name activates every enabled skill in that category.
         category_hits = [
             e for e in self.registry.entries
-            if e.enabled and q == e.category.lower() and e.id not in self.revoked_ids
+            if self._routable(e) and q == e.category.lower()
         ]
         if category_hits:
             out = [
@@ -226,7 +236,7 @@ class Router:
             return out[:top_k]
         breakdowns: List[RouteBreakdown] = []
         for entry in self.registry.entries:
-            if not entry.enabled or entry.id in self.revoked_ids:
+            if not self._routable(entry):
                 continue
             result = self._score_one(q, entry)
             if result is None:
@@ -253,7 +263,7 @@ class Router:
                         existing.matched_on = "composition"
                     continue
                 entry = self.registry.get(skill_id)
-                if entry and entry.enabled:
+                if entry and self._routable(entry):
                     composed = RouteMatch(entry, composed_score, "composition")
                     ordered.append(composed)
                     by_id[skill_id] = composed

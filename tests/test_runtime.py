@@ -34,20 +34,32 @@ class TestExecutionRuntime(unittest.TestCase):
         self.temp_dir.cleanup()
 
     def test_runtime_execute_valid_skill(self):
-        """Executing an enabled canonical skill should succeed with full telemetry."""
+        """Without an executor, a skill is *prepared* (instructions for the agent), never reported as done.
+
+        This test previously asserted a fabricated ``completed`` status, synthesised
+        outputs, ``verified: True`` and tools marked "acquired" although nothing ran.
+        """
         result = self.runtime.execute(
             skill="development.debugging",
             input={"code_snippet": "def foo(): return 1 / 0", "issue": "ZeroDivisionError"},
             tools=["file_read", "file_edit"],
         )
-        self.assertEqual(result.status, "completed")
+        self.assertEqual(result.status, "prepared")
+        self.assertFalse(result.executed)
         self.assertEqual(result.skill, "development.debugging")
         self.assertGreater(result.duration_ms, 0)
         self.assertTrue(len(result.audit_id) > 0)
-        self.assertIn("result", result.outputs)
-        self.assertTrue(result.verification.get("verified"))
-        self.assertGreaterEqual(result.cost.get("tokens", 0), 50)
-        self.assertEqual(len(result.tool_calls), 2)
+        self.assertIn("# Debugging", result.outputs["instructions"])
+        self.assertEqual(result.outputs["inputs"]["issue"], "ZeroDivisionError")
+        self.assertFalse(result.verification["verified"])
+        self.assertEqual(result.verification["postconditions"], "not_evaluated")
+        self.assertIn("security_policy", result.verification["gates_passed"])
+        self.assertTrue(result.cost["tokens_are_estimate"])
+        self.assertGreater(result.cost["estimated_tokens"], 50)
+        self.assertEqual(result.tool_calls, [])
+        authorized = result.verification["tools_authorized"]
+        self.assertEqual([t["tool"] for t in authorized], ["file_read", "file_edit"])
+        self.assertEqual(authorized[1]["capabilities"], ["filesystem.write"])
 
     def test_runtime_blocks_revoked_killswitch_skill(self):
         """Executing any skill in revocations.json must be blocked immediately."""
@@ -101,7 +113,7 @@ class TestExecutionRuntime(unittest.TestCase):
         last_entry = json.loads(lines[-1])
         self.assertEqual(last_entry["audit_id"], result.audit_id)
         self.assertEqual(last_entry["skill"], "development.debugging")
-        self.assertEqual(last_entry["status"], "completed")
+        self.assertEqual(last_entry["status"], "prepared")
         self.assertEqual(last_entry["session_id"], "test-session-123")
         self.assertGreater(last_entry["duration_ms"], 0)
 
@@ -168,5 +180,4 @@ class TestExecutionRuntime(unittest.TestCase):
 
 
 if __name__ == "__main__":
-    unittest.main()
     unittest.main()

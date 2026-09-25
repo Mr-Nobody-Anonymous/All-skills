@@ -285,6 +285,8 @@ def main() -> int:
         s_exec.add_argument("--tools", help="Comma-separated declared tools")
         s_exec.add_argument("--dry-run", action="store_true", help="Simulate execution without modifying artifacts")
         s_exec.add_argument("--json", action="store_true", help="Print structured ExecutionResult as JSON")
+        s_exec.add_argument("--approval-id", help="request_id from an approval_required result")
+        s_exec.add_argument("--approved-by", help="Name of the human approving an ASK capability")
 
     args = parser.parse_args()
 
@@ -302,6 +304,8 @@ def main() -> int:
             cmd.append("--dry-run")
         if getattr(args, "json", False):
             cmd.append("--json")
+        if getattr(args, "approval_id", None):
+            cmd.extend(["--approval-id", args.approval_id, "--approved-by", args.approved_by or ""])
         return run_cmd(cmd)
     elif args.subcommand == "verify":
         return run_cmd(["scripts/setup_tools.py", "--verify"])
