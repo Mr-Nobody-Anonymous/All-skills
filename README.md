@@ -8,15 +8,21 @@
 ### *Autonomous Cognition, Multi-Platform Execution & Capability Orchestration Engine*
 
 <p align="center">
-  <img src="https://img.shields.io/badge/skills-12%2C755%2B%20Unique%20Skills-7c3aed?style=for-the-badge&logo=openai&logoColor=white" alt="12755 Unique Skills" />
+  <a href="https://github.com/Mr-Nobody-Anonymous/All-skills/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/Mr-Nobody-Anonymous/All-skills/ci.yml?branch=main&style=for-the-badge&logo=githubactions&logoColor=white&label=CI" alt="CI status" /></a>
+  <a href="https://github.com/Mr-Nobody-Anonymous/All-skills/actions/workflows/security.yml"><img src="https://img.shields.io/github/actions/workflow/status/Mr-Nobody-Anonymous/All-skills/security.yml?branch=main&style=for-the-badge&logo=githubactions&logoColor=white&label=Security" alt="Security scan status" /></a>
+  <a href="https://github.com/Mr-Nobody-Anonymous/All-skills/actions/workflows/codeql.yml"><img src="https://img.shields.io/github/actions/workflow/status/Mr-Nobody-Anonymous/All-skills/codeql.yml?branch=main&style=for-the-badge&logo=github&logoColor=white&label=CodeQL" alt="CodeQL status" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/Mr-Nobody-Anonymous/All-skills?style=for-the-badge" alt="License" /></a>
+  <a href="pyproject.toml"><img src="https://img.shields.io/python/required-version-toml?tomlFilePath=https%3A%2F%2Fraw.githubusercontent.com%2FMr-Nobody-Anonymous%2FAll-skills%2Fmain%2Fpyproject.toml&style=for-the-badge&logo=python&logoColor=white" alt="Supported Python versions" /></a>
+  <a href="https://github.com/Mr-Nobody-Anonymous/All-skills/commits/main"><img src="https://img.shields.io/github/last-commit/Mr-Nobody-Anonymous/All-skills?style=for-the-badge&logo=git&logoColor=white" alt="Last commit" /></a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/skills-12%2C757%2B%20Unique%20Skills-7c3aed?style=for-the-badge&logo=openai&logoColor=white" alt="12757 Unique Skills" />
   <img src="https://img.shields.io/badge/catalog-14%2C855%20Total%20Skills-0ea5e9?style=for-the-badge&logo=github&logoColor=white" alt="14855 Catalog Skills" />
   <img src="https://img.shields.io/badge/domains-251%20Categories-10b981?style=for-the-badge&logo=hubspot&logoColor=white" alt="251 Categories" />
   <img src="https://img.shields.io/badge/platforms-11%20Agent%20Harnesses-ec4899?style=for-the-badge&logo=probot&logoColor=white" alt="11 Agent Harnesses" />
   <img src="https://img.shields.io/badge/active--harness-72%20Verified%20Skills-6366f1?style=for-the-badge&logo=lightning&logoColor=white" alt="72 Active Skills" />
-  <img src="https://img.shields.io/badge/tests-160%2F160%20Passing-10b981?style=for-the-badge&logo=pytest&logoColor=white" alt="160 Tests Passing" />
-  <img src="https://img.shields.io/badge/license-MIT-green?style=for-the-badge" alt="MIT License" />
   <img src="https://img.shields.io/badge/skillhub-compatible-0ea5e9?style=for-the-badge&logo=npm&logoColor=white" alt="SkillHub Compatible" />
-  <img src="https://img.shields.io/badge/python-3.10+-3776ab?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.10+" />
 </p>
 
 <p align="center">
@@ -41,6 +47,16 @@
 
 ---
 
+## 📑 Table of Contents
+
+- **Overview** — [Why All Skills?](#-why-all-skills) · [Multi-Platform Support](#-multi-platform-support-works-across-11-ai-coding-agents) · [25-Category Taxonomy](#-complete-25-category-universal-taxonomy--structural-layers)
+- **Getting Started** — [Quick Start](#-quick-start-from-source) · [Installation & Agent Setup](#-installation--ai-agent-ecosystem-setup) · [Verification & Health Check](#-verification--health-check)
+- **Using All Skills** — [Universal CLI](#-universal-cli-allskills) · [CLI Toolkit & Workflows](#️-cli-toolkit--workflows) · [Active Harness Skills Index](#-active-harness-skills-index-72-verified-skills) · [Pre-Loaded Harness Skills](#-pre-loaded-active-harness-skills-70-skills) · [Voice Assistant & Multimodal OS](#️-universal-voice-assistant--multimodal-os-ovos-neon-mycroft)
+- **Architecture** — [Platform Architecture & Routing](#️-platform-architecture--routing-pipeline) · [Autonomous Agent Infrastructure](#-autonomous-agent-infrastructure) · [v2 Operating System & Master Plan](#️-all-skills-v2-operating-system-architecture--master-plan) · [Repository Directory Structure](#️-repository-directory-structure)
+- **Project** — [Defensive Security & Provenance](#️-defensive-security--provenance) · [Development, CI & Quality Gates](#-development-ci--quality-gates) · [License](#-license)
+
+---
+
 ## 🌟 Why All Skills?
 
 When AI coding assistants are front-loaded with thousands of prompt instructions upfront, context windows choke, instruction adherence deteriorates, and token usage explodes.
@@ -55,11 +71,11 @@ When AI coding assistants are front-loaded with thousands of prompt instructions
 │          (skills/)            │        (awesome_skills/)        │     (.agents/ / .claude/ /    │
 │                               │                                 │     .cursor/ / .codex/)       │
 ├───────────────────────────────┼─────────────────────────────────┼───────────────────────────────┤
-│  • 122 Curated & Tested Skills│  • 14,855 Categorized Skills     │  • 72 Staff Engineer Skills   │
+│  • 124 Curated & Tested Skills│  • 14,855 Categorized Skills     │  • 72 Staff Engineer Skills   │
 │  • 9-Signal Layered Scoring   │  • 251 Functional Domain Dirs   │  • Pre-Loaded in Workspace    │
 │  • Deterministic Workflows    │  • Machine-Readable Index       │  • Native Multi-Tool Synced   │
 │  • 8-State Formal Lifecycle   │  • Complete CATALOG.md Reference│  • $O(1)$ Load-on-Demand      │
-│  • 160/160 Passing Unit Tests │  • Dynamic Manager CLI          │  • Zero Prompt Bloat          │
+│  • 169/169 Passing Unit Tests │  • Dynamic Manager CLI          │  • Zero Prompt Bloat          │
 └───────────────────────────────┴─────────────────────────────────┴───────────────────────────────┘
 ```
 
@@ -67,54 +83,59 @@ When AI coding assistants are front-loaded with thousands of prompt instructions
 - 🎯 **9-Signal Layered Router**: Sub-millisecond natural-language routing with deterministic scoring (Exact ID → Alias → Category → Trigger Phrase → Keyword Overlap → Capabilities/IO Vocabulary → Token Overlap → Dependency Availability → Quality Boost).
 - ⛓️ **Deterministic Chaining**: Compose complex multi-step workflows like `deep-research`, `anti-procrastination`, and `code-review-flow` with dry-run telemetry.
 - 🛡️ **Defensive Security & Quarantine**: AST-free static inspection against prompt injections, credential leaks, and pipe-to-shell payloads with a hardened quarantine boundary (`skills/_quarantine/`).
+
+---
+
 ## 🏛️ Platform Architecture & Routing Pipeline
 
+### System overview
+
+```mermaid
+flowchart LR
+    subgraph Harnesses["AI coding agents"]
+        CC["Claude Code"]
+        CU["Cursor"]
+        CX["Codex CLI"]
+        GM["Gemini / Antigravity"]
+        MORE["+7 more"]
+    end
+
+    subgraph Library["Skill library"]
+        H[".agents/skills/<br/>active harness playbooks"]
+        C["skills/<br/>canonical engine + registry.json"]
+        A["awesome_skills/<br/>categorised catalog + CATALOG.md"]
+    end
+
+    subgraph Platform["Platform runtime · src/skills"]
+        CLI["CLI<br/>all-skills · scripts/skills/skills.py"]
+        R["9-signal router"]
+        P["Policy engine<br/>capabilities · trust tiers"]
+        RT["Execution runtime<br/>audit log · revocations"]
+        S["Security scanner<br/>& quarantine"]
+    end
+
+    Harnesses -- "junctions / symlinks<br/>(scripts/setup_tools.py)" --> H
+    CLI --> R --> P --> RT
+    R -. "scores" .-> C
+    R -. "searches" .-> A
+    S -. "scans" .-> Library
+    RT --> OUT["Selected SKILL.md<br/>loaded on demand"]
 ```
-                              ┌────────────────────────┐
-                              │      USER REQUEST      │
-                              └───────────┬────────────┘
-                                          │
-                                          ▼
-                              ┌────────────────────────┐
-                              │     Intent Parser      │
-                              └───────────┬────────────┘
-                                          ▼
-                              ┌────────────────────────┐
-                              │  9-Signal Domain Router│
-                              └───────────┬────────────┘
-                                          ▼
-                              ┌────────────────────────┐
-                              │    Capability Match    │
-                              │ (Inputs/Outputs/Tools) │
-                              └───────────┬────────────┘
-                                          ▼
-                              ┌────────────────────────┐
-                              │  Candidate Skill Set   │
-                              └───────────┬────────────┘
-                                          ▼
-                              ┌────────────────────────┐
-                              │ Dependency / Conflict  │
-                              │       Resolution       │
-                              └───────────┬────────────┘
-                                          ▼
-                              ┌────────────────────────┐
-                              │ Security & Permission  │
-                              │  Check (AST & Policy)  │
-                              └───────────┬────────────┘
-                                          ▼
-                              ┌────────────────────────┐
-                              │    Skill Execution     │
-                              │ (Load 1 SKILL.md O(1)) │
-                              └───────────┬────────────┘
-                                          ▼
-                              ┌────────────────────────┐
-                              │   Validation / Tests   │
-                              │ (Post-Execution Hooks) │
-                              └───────────┬────────────┘
-                                          ▼
-                              ┌────────────────────────┐
-                              │      FINAL RESULT      │
-                              └────────────────────────┘
+
+### Routing pipeline
+
+```mermaid
+flowchart TD
+    U([User request]) --> IP[Intent parser]
+    IP --> DR[9-signal domain router]
+    DR --> CM["Capability match<br/>inputs · outputs · tools"]
+    CM --> CS[Candidate skill set]
+    CS --> DC[Dependency & conflict resolution]
+    DC --> SEC["Security & permission check<br/>static scan · policy"]
+    SEC -->|allowed| EX["Skill execution<br/>load one SKILL.md — O(1)"]
+    SEC -->|denied / revoked| BLK([Blocked + audit entry])
+    EX --> VAL["Validation & tests<br/>post-execution hooks"]
+    VAL --> RES([Final result])
 ```
 
 ### 📊 Platform Metrics & Tier Definitions
@@ -148,6 +169,31 @@ Every skill in this repository strictly adheres to the open **Agent Skills stand
 | **Cline** | `.cline/skills/` | [`adapters/cline.yaml`](adapters/cline.yaml) | ✅ Verified (100%) |
 | **Roo Code** | `.roo/skills/` | [`adapters/roo.yaml`](adapters/roo.yaml) | ✅ Verified (100%) |
 | **Block Goose** | `.goose/skills/` | [`adapters/goose.yaml`](adapters/goose.yaml) | ✅ Verified (100%) |
+
+---
+
+## ⚡ Quick Start (from source)
+
+Requires **Python 3.10+** and Git (on Windows, activate with `.venv\Scripts\activate`).
+
+```bash
+git clone https://github.com/Mr-Nobody-Anonymous/All-skills.git
+cd All-skills
+python -m venv .venv && source .venv/bin/activate
+python -m pip install -e .            # add ".[dev]" for tests, linting and type-checking
+
+all-skills --help                     # canonical engine CLI
+all-skills route "review my pull request"
+python scripts/allskills.py doctor --full   # 11-layer platform health check
+python scripts/setup_tools.py         # link skills into Claude Code, Cursor, Codex, ...
+```
+
+Or run it in Docker — no local Python required:
+
+```bash
+docker compose -f docker/docker-compose.yml up --build                        # builds and runs `doctor`
+docker compose -f docker/docker-compose.yml run --rm all-skills search "kubernetes"
+```
 
 ---
 
@@ -246,7 +292,7 @@ allskills profile install ai-engineer
 # Verify cryptographic lockfile, schemas, and harness symlink integrity
 allskills verify
 
-# Run regression test suite (160 tests)
+# Run regression test suite (169 tests)
 allskills test
 
 # Inspect upstream source registry and trust tiers
@@ -498,7 +544,7 @@ python scripts/skills/skills.py chain deep-research --dry-run
 python scripts/skills/skills.py chain anti-procrastination --dry-run
 python scripts/skills/skills.py chain code-review-flow --dry-run
 
-# Run full health diagnostics and 160-test verification suite
+# Run full health diagnostics and 169-test verification suite
 python scripts/skills/skills.py doctor
 python scripts/skills/skills.py test
 
@@ -570,12 +616,12 @@ python -m http.server 3000 --directory marketplace
 
 ```
 All skills/
-├── .agents/skills/              # 🤖 Antigravity / Gemini CLI Active Harness (70 skills)
+├── .agents/skills/              # 🤖 Antigravity / Gemini CLI Active Harness (72 skills)
 ├── .claude/skills/              # 🤖 Claude Code Active Harness (synced via junction)
 ├── .cursor/skills/              # 🤖 Cursor Active Harness (synced via junction)
 ├── .codex/skills/               # 🤖 Codex CLI Active Harness (synced via junction)
 │
-├── awesome_skills/              # 🚀 2,041+ Categorized Skills Library
+├── awesome_skills/              # 🚀 Categorized skills catalog (counts: stats.json)
 │   ├── CATALOG.md               # Complete searchable markdown catalog
 │   ├── skills_index.json        # 14,855-item metadata database
 │   ├── development/             # 187 skills (Coding, Git, Refactoring)
@@ -585,7 +631,9 @@ All skills/
 │   ├── web-development/         # 65 skills  (Frontend, Fullstack)
 │   └── ...                      # 95 additional domain categories
 │
-├── skills/                      # ⚡ 122 Canonical Engine Skills (8 Categories)
+├── skills/                      # ⚡ 124 Canonical Engine Skills (10 Categories)
+│   ├── architecture/            # Architecture decision records
+│   ├── healthcare/              # Health economics
 │   ├── productivity/            # Focus, anti-procrastination, planning
 │   ├── development/             # TDD, debugging, code-review
 │   ├── research/                # Deep research, synthesis
@@ -614,12 +662,14 @@ All skills/
 │   ├── compute_stats.py         # Single-source-of-truth platform metrics synchronizer
 │   └── skills/skills.py         # 9-signal router & CLI engine
 │
+├── docker/                      # 🐳 Dockerfile & compose files (see docker/README.md)
+├── .github/workflows/           # ⚙️ CI, Security, CodeQL & Release pipelines
 ├── docs/skills/                 # 📚 Architecture, Security & Category Documentation
 │   ├── ARCHITECTURE.md          # Scoring algorithm & load-on-demand platform
 │   ├── SECURITY.md              # Threat model & static inspection policy
 │   └── *.md                     # Per-category detailed reference guides
 │
-└── tests/skill_tests/           # 🧪 Unit & Integration Test Suite (160 tests)
+└── tests/skill_tests/           # 🧪 Unit & Integration Test Suite (169 tests)
 ```
 
 ---
@@ -637,10 +687,10 @@ All skills/
 Run complete test suites and diagnostic checks at any time:
 
 ```bash
-# 1. Check health of all 122 canonical skills
+# 1. Check health of all canonical skills
 python scripts/skills/skills.py doctor
 
-# 2. Run the 160 unit and integration tests
+# 2. Run the 169 unit and integration tests
 python scripts/skills/skills.py test
 
 # 3. Verify multi-tool harness connections
@@ -761,6 +811,44 @@ All capabilities adhere to a canonical 8-part specification:
 - [**trimstray/the-book-of-secret-knowledge**](https://github.com/trimstray/the-book-of-secret-knowledge) (Tools, Cheatsheets & Manuals)
 - [**josephmisiti/awesome-machine-learning**](https://github.com/josephmisiti/awesome-machine-learning) (ML Frameworks & Toolkits)
 - [**Hannibal046/Awesome-LLM**](https://github.com/Hannibal046/Awesome-LLM) (Foundational Large Language Model Resources)
+
+---
+
+## 🧑‍💻 Development, CI & Quality Gates
+
+```bash
+python -m pip install -e ".[dev]"      # pytest, pytest-cov, ruff, mypy, pre-commit
+pre-commit install                     # optional: lint + secret scan on every commit
+
+ruff check .                           # correctness lint (rules in pyproject.toml)
+mypy                                   # strict-ish type checking of src/skills
+python scripts/skills/skills.py test   # platform test suite
+pytest tests scratch_priority_import/tests --cov   # tests + coverage report
+```
+
+Every push and pull request to `main` runs these GitHub Actions workflows:
+
+| Workflow | What it checks |
+| :--- | :--- |
+| [**CI**](.github/workflows/ci.yml) | Ruff, mypy, actionlint · tests with coverage on Python 3.10 / 3.11 / 3.12 · schema, registry, stats, lockfile and baseline integrity · evals & doctors · sdist/wheel build · Docker build + smoke test |
+| [**Security**](.github/workflows/security.yml) | Skill static-security & prompt-injection scans · Gitleaks secret scanning · dependency review on PRs |
+| [**CodeQL**](.github/workflows/codeql.yml) | Code scanning for Python, JavaScript and GitHub Actions (plus a weekly scheduled run) |
+| [**Release**](.github/workflows/publish-release.yml) | Manual or tag-triggered GitHub release with built distributions |
+
+```mermaid
+flowchart LR
+    PR([Push / pull request]) --> L[Lint & type-check]
+    PR --> T["Tests · py3.10–3.12<br/>+ coverage"]
+    PR --> V[Library integrity & evals]
+    PR --> PK[Package build]
+    PR --> D[Docker build]
+    PR --> SEC["Security scans<br/>Gitleaks · dependency review"]
+    PR --> Q[CodeQL]
+```
+
+Dependabot keeps GitHub Actions, Python and Docker dependencies up to date. See
+[CONTRIBUTING.md](CONTRIBUTING.md) for the full workflow, [SECURITY.md](SECURITY.md) to report a
+vulnerability, and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) for community guidelines.
 
 ---
 
