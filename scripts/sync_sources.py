@@ -292,7 +292,13 @@ def legacy_index(awesome_dir: Path) -> Dict[Tuple[str, str], Path]:
 
 
 def plan_source(repository: str, checkout: Path, skill_paths: Optional[List[str]], lock: Dict[str, Any],
-                awesome_dir: Path, legacy: Dict[Tuple[str, str], Path]) -> List[PlanItem]:
+                awesome_dir: Path, legacy: Dict[Tuple[str, str], Path],
+                category: Optional[str] = None) -> List[PlanItem]:
+    """Classify every package of a source as new / changed / unchanged / legacy.
+
+    ``category`` (optional, from the source definition) overrides the keyword
+    inference used to place *new* packages; existing imports never move.
+    """
     by_identity = {(v["repository"], v["path"]): awesome_dir.parent / k for k, v in lock["imports"].items()}
     local = Path(repository)
     owner = slugify(local.name if local.exists() else repository.split("/")[0])
@@ -312,10 +318,10 @@ def plan_source(repository: str, checkout: Path, skill_paths: Optional[List[str]
                                   ["imported before sources/imports.lock.json existed; unpinned"]))
             continue
         slug = slugify(package_dir.name)
-        category = infer_category(repository, rel, slug)
-        dest = awesome_dir / category / slug
+        target_category = slugify(category) if category else infer_category(repository, rel, slug)
+        dest = awesome_dir / target_category / slug
         if dest.exists() or dest in claimed:
-            dest = awesome_dir / category / f"{slug}--{owner}"
+            dest = awesome_dir / target_category / f"{slug}--{owner}"
         claimed.add(dest)
         items.append(PlanItem("new", repository, rel, package_dir, dest, digest))
     return items
@@ -416,7 +422,8 @@ def run(sources: List[Dict[str, Any]], update: bool, apply_updates: bool) -> int
             print(f"  ❌ fetch failed: {exc}")
             continue
         try:
-            items = plan_source(repository, SCRATCH_DIR, source.get("skill_paths"), lock, AWESOME_DIR, legacy)
+            items = plan_source(repository, SCRATCH_DIR, source.get("skill_paths"), lock, AWESOME_DIR, legacy,
+                                source.get("category"))
             for item in items:
                 totals[item.action] += 1
             reviewable = [i for i in items if i.action in ("changed", "legacy")]
