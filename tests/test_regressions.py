@@ -17,6 +17,8 @@ Each test pins a defect that previously shipped on ``main``:
    signature and crashed with ``TypeError``.
 6. ``skills/dependencies.json`` recorded which tools were installed on the
    machine that generated it, so ``refresh_registry.py --check`` failed in CI.
+7. Overall quality scores were aggregated with float ``sum()``, whose algorithm
+   changed in Python 3.12, so boundary scores differed between interpreters.
 """
 
 from __future__ import annotations
@@ -191,6 +193,20 @@ class TestDependenciesIndexIsEnvironmentIndependent(unittest.TestCase):
         self.assertEqual(everything_installed, nothing_installed)
         committed = json.loads((_SKILLS_DIR / "dependencies.json").read_text(encoding="utf-8"))
         self.assertEqual(committed, nothing_installed)
+
+
+class TestQualityScoreIsInterpreterIndependent(unittest.TestCase):
+    """Regression #7 — registry quality scores must not depend on the Python version."""
+
+    def test_boundary_score_rounds_half_up(self):
+        from skills.quality import QualityReport, _weighted_overall
+
+        # Exact weighted sum is 6.45; float sum() gives 6.4499… on Python < 3.12.
+        report = QualityReport(
+            skill_id="boundary", documentation=9.0, maintenance=3.0, reliability=9.0,
+            security=9.0, compatibility=6.0, usefulness=0.0,
+        )
+        self.assertEqual(_weighted_overall(report), 6.5)
 
 
 class TestNativeCliDoctor(unittest.TestCase):

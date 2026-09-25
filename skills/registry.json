@@ -8061,9 +8061,9 @@
         "security": 9.0,
         "compatibility": 6.0,
         "usefulness": 0.0,
-        "overall_score": 6.4
+        "overall_score": 6.5
       },
-      "quality_score": 6.4
+      "quality_score": 6.5
     },
     {
       "id": "healthcare.health-economist",
@@ -8102,9 +8102,9 @@
         "security": 9.0,
         "compatibility": 6.0,
         "usefulness": 0.0,
-        "overall_score": 6.4
+        "overall_score": 6.5
       },
-      "quality_score": 6.4
+      "quality_score": 6.5
     }
   ]
 }
