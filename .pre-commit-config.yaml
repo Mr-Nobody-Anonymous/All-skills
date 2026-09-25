@@ -1,0 +1,41 @@
+# Local quality gates that mirror CI.
+#   pip install -e ".[dev]" && pre-commit install
+#   pre-commit run --files <paths>        # hooks run only on the files you change
+# Keep hook versions current with:  pre-commit autoupdate
+
+# Imported catalogues and machine-generated artefacts are never rewritten.
+exclude: >-
+  (?x)^(
+    awesome_skills/.*|
+    agent_skills/.*|
+    skills\.lock|
+    awesome_skills\.lock|
+    stats\.json|
+    skills/(registry|dependencies)\.json|
+    baselines/.*
+  )$
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: check-merge-conflict
+      - id: check-yaml
+      - id: check-toml
+      - id: check-json
+      - id: check-added-large-files
+        args: ["--maxkb=1024"]
+      - id: detect-private-key
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+        args: ["--markdown-linebreak-ext=md"]
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.16.9
+    hooks:
+      - id: ruff-check
+
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.30.1
+    hooks:
+      - id: gitleaks

@@ -1,1 +1,1 @@
-"""All-Skills Category: creative"""\n
+"""All-Skills Category: creative"""

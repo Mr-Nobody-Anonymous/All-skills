@@ -23,7 +23,7 @@ This workspace is an advanced multi-agent engineering platform supporting **Anti
 
 - **Active Agent Harness**: Located at `.agents/skills/` (mirrored to `.claude/skills`, `.cursor/skills`, `.codex/skills`).
 - **Canonical Routing Engine**: 122 validated core skills managed via `python scripts/skills/skills.py`.
-- **Awesome Skills Library**: 2,041+ domain-categorized skills located at `awesome_skills/` and indexed in `awesome_skills/CATALOG.md`.
+- **Awesome Skills Library**: the domain-categorized skills catalog (current counts in `stats.json`) located at `awesome_skills/` and indexed in `awesome_skills/CATALOG.md`.
 - **Central Manifest**: `manifest.json` maps all skills to tool permissions, MCP servers, and lifecycle hooks.
 - **Model Context Protocol (MCP)**: Defined in `mcp_config.json` (`filesystem`, `git`, `fetch`, `memory`).
 

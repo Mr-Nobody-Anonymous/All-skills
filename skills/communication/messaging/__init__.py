@@ -1,1 +1,4 @@
-from .slack_msg import SlackMessenger\nfrom .telegram_msg import TelegramMessenger\nfrom .discord_msg import DiscordMessenger\n__all__ = ['SlackMessenger', 'TelegramMessenger', 'DiscordMessenger']\n
+from .slack_msg import SlackMessenger
+from .telegram_msg import TelegramMessenger
+from .discord_msg import DiscordMessenger
+__all__ = ['SlackMessenger', 'TelegramMessenger', 'DiscordMessenger']

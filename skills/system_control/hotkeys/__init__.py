@@ -1,1 +1,2 @@
-from .keyboard_hotkey import KeyboardHotkeyManager\n__all__ = ['KeyboardHotkeyManager']\n
+from .keyboard_hotkey import KeyboardHotkeyManager
+__all__ = ['KeyboardHotkeyManager']

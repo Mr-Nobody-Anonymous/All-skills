@@ -25,7 +25,6 @@
     "prompt-engineering",
     "developer-tools"
   ],
-  "main": "index.js",
   "bin": {
     "allskills": "./bin/allskills.js"
   },
@@ -38,10 +37,43 @@
     "security": "python scripts/scan_skills_security.py",
     "setup": "python scripts/setup_skills.py",
     "baseline": "python scripts/generate_baselines.py",
-    "baseline:verify": "python scripts/generate_baselines.py --verify"
+    "baseline:verify": "python scripts/generate_baselines.py --verify",
+    "pack:check": "npm pack --dry-run"
   },
   "engines": {
     "node": ">=18.0.0",
     "python": ">=3.10.0"
-  }
+  },
+  "files": [
+    "bin/",
+    "scripts/",
+    "src/",
+    "skills/",
+    ".agents/skills/",
+    "registry/",
+    "profiles/",
+    "schemas/",
+    "adapters/",
+    "platforms/",
+    "policies/",
+    "evals/",
+    "workflows/",
+    "packs/",
+    "sources/",
+    "hooks/",
+    "state/",
+    "config.yaml",
+    "manifest.json",
+    "mcp_config.json",
+    "skills.lock",
+    "stats.json",
+    "dependency_graph.json",
+    "pyproject.toml",
+    "setup.py",
+    "requirements.txt",
+    "requirements-core.txt",
+    "VERSION",
+    "README.md",
+    "LICENSE"
+  ]
 }

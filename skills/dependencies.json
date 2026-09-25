@@ -1,113 +1,89 @@
 {
-  "version": 1,
+  "version": 2,
   "skills": {
     "design.branding": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "design.frontend-design": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "design.presentations": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "design.ui-ux": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "development.architecture": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "development.backend": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "development.code-review": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "development.coding": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "development.databases": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "development.debugging": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "development.devops": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "development.frontend": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "development.git": {
       "required": [
@@ -118,9 +94,7 @@
         "git"
       ],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "development.github": {
       "required": [
@@ -134,333 +108,259 @@
         "gh-cli"
       ],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "development.performance-optimization": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "development.refactoring": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "development.tdd": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "development.testing": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "documents.csv": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "documents.docx": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "documents.markdown": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "documents.pdf": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "documents.pptx": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "documents.xlsx": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "productivity.adhd": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "productivity.focus": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "productivity.planning": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "productivity.prioritization": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "productivity.task-decomposition": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "productivity.time-management": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "productivity.unlazy": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "research.academic-research": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "research.competitive-analysis": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "research.data-analysis": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "research.deep-research": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "research.fact-checking": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "research.source-verification": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "research.web-research": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "security.dependency-audit": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "security.prompt-injection-defense": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "security.secret-detection": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "security.secure-coding": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "utilities.automation": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "utilities.documentation": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "utilities.file-management": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "utilities.image": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "utilities.summarization": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "utilities.text-processing": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "utilities.writing": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "web.accessibility": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "web.browser-automation": {
       "required": [],
@@ -471,10 +371,6 @@
       "python": [],
       "api": [
         "playwright"
-      ],
-      "missing_required": [],
-      "missing_optional": [
-        "playwright"
       ]
     },
     "web.seo": {
@@ -482,27 +378,21 @@
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "web.web-extraction": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "web.web-scraping": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "web.website-testing": {
       "required": [],
@@ -513,10 +403,6 @@
       "python": [],
       "api": [
         "playwright"
-      ],
-      "missing_required": [],
-      "missing_optional": [
-        "playwright"
       ]
     },
     "development.brainstorming": {
@@ -524,9 +410,7 @@
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "development.git-worktrees": {
       "required": [
@@ -537,54 +421,42 @@
         "git"
       ],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "development.mcp-server-development": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "development.receiving-code-review": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "development.requesting-code-review": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "development.verification-before-completion": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "utilities.parallel-agents": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "development.mcp-builder": {
       "required": [
@@ -595,18 +467,14 @@
         "python"
       ],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "productivity.brainstorming": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "design.avatar-creator": {
       "required": [],
@@ -616,10 +484,6 @@
       "system": [],
       "python": [],
       "api": [
-        "image-generator"
-      ],
-      "missing_required": [],
-      "missing_optional": [
         "image-generator"
       ]
     },
@@ -631,10 +495,6 @@
       "system": [],
       "python": [],
       "api": [
-        "image-generator"
-      ],
-      "missing_required": [],
-      "missing_optional": [
         "image-generator"
       ]
     },
@@ -650,10 +510,6 @@
       "python": [],
       "api": [
         "remotion"
-      ],
-      "missing_required": [],
-      "missing_optional": [
-        "remotion"
       ]
     },
     "design.veo-video-generator": {
@@ -664,10 +520,6 @@
       "system": [],
       "python": [],
       "api": [
-        "GOOGLE_API_KEY"
-      ],
-      "missing_required": [],
-      "missing_optional": [
         "GOOGLE_API_KEY"
       ]
     },
@@ -680,10 +532,6 @@
       "python": [],
       "api": [
         "test-framework"
-      ],
-      "missing_required": [],
-      "missing_optional": [
-        "test-framework"
       ]
     },
     "development.autoreview": {
@@ -695,10 +543,6 @@
       "python": [],
       "api": [
         "codex"
-      ],
-      "missing_required": [],
-      "missing_optional": [
-        "codex"
       ]
     },
     "development.behavior-validator": {
@@ -706,9 +550,7 @@
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "development.cf-worker-deploy": {
       "required": [],
@@ -718,10 +560,6 @@
       "system": [],
       "python": [],
       "api": [
-        "wrangler"
-      ],
-      "missing_required": [],
-      "missing_optional": [
         "wrangler"
       ]
     },
@@ -734,10 +572,6 @@
       "python": [],
       "api": [
         "codex"
-      ],
-      "missing_required": [],
-      "missing_optional": [
-        "codex"
       ]
     },
     "development.crabbox": {
@@ -748,10 +582,6 @@
       "system": [],
       "python": [],
       "api": [
-        "crabbox"
-      ],
-      "missing_required": [],
-      "missing_optional": [
         "crabbox"
       ]
     },
@@ -764,10 +594,6 @@
       "python": [],
       "api": [
         "cursor-agent"
-      ],
-      "missing_required": [],
-      "missing_optional": [
-        "cursor-agent"
       ]
     },
     "development.db-inspector": {
@@ -778,10 +604,6 @@
       "system": [],
       "python": [],
       "api": [
-        "database-client"
-      ],
-      "missing_required": [],
-      "missing_optional": [
         "database-client"
       ]
     },
@@ -794,9 +616,7 @@
         "docker"
       ],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "development.dokploy": {
       "required": [],
@@ -806,10 +626,6 @@
       "system": [],
       "python": [],
       "api": [
-        "DOKPLOY_API_KEY"
-      ],
-      "missing_required": [],
-      "missing_optional": [
         "DOKPLOY_API_KEY"
       ]
     },
@@ -822,9 +638,7 @@
         "git"
       ],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "development.github-cli": {
       "required": [],
@@ -835,18 +649,14 @@
         "gh"
       ],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "development.summarize-repo": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "documents.expense-parser": {
       "required": [],
@@ -857,10 +667,6 @@
       "python": [],
       "api": [
         "ocr"
-      ],
-      "missing_required": [],
-      "missing_optional": [
-        "ocr"
       ]
     },
     "productivity.adhd-task-breakdown": {
@@ -868,9 +674,7 @@
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "productivity.calendar-assistant": {
       "required": [],
@@ -881,10 +685,6 @@
       "python": [],
       "api": [
         "calendar-access"
-      ],
-      "missing_required": [],
-      "missing_optional": [
-        "calendar-access"
       ]
     },
     "productivity.context-summarize": {
@@ -892,18 +692,14 @@
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "productivity.daily-journal": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "productivity.email-inbox-zero": {
       "required": [],
@@ -914,10 +710,6 @@
       "python": [],
       "api": [
         "email-access"
-      ],
-      "missing_required": [],
-      "missing_optional": [
-        "email-access"
       ]
     },
     "productivity.focus-guard": {
@@ -925,18 +717,14 @@
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "productivity.meeting-action-extractor": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "productivity.obsidian-sync": {
       "required": [],
@@ -947,10 +735,6 @@
       "python": [],
       "api": [
         "obsidian"
-      ],
-      "missing_required": [],
-      "missing_optional": [
-        "obsidian"
       ]
     },
     "productivity.time-blocking": {
@@ -958,9 +742,7 @@
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "productivity.voice-to-action": {
       "required": [],
@@ -970,10 +752,6 @@
       "system": [],
       "python": [],
       "api": [
-        "transcript"
-      ],
-      "missing_required": [],
-      "missing_optional": [
         "transcript"
       ]
     },
@@ -986,10 +764,6 @@
       "python": [],
       "api": [
         "web-search"
-      ],
-      "missing_required": [],
-      "missing_optional": [
-        "web-search"
       ]
     },
     "security.cmd-safety-check": {
@@ -997,9 +771,7 @@
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "security.npm-auditor": {
       "required": [],
@@ -1010,9 +782,7 @@
         "npm"
       ],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "security.security-scanner": {
       "required": [],
@@ -1022,10 +792,6 @@
       "system": [],
       "python": [],
       "api": [
-        "security-scanners"
-      ],
-      "missing_required": [],
-      "missing_optional": [
         "security-scanners"
       ]
     },
@@ -1040,9 +806,7 @@
         "gh"
       ],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "utilities.audio-transcribe": {
       "required": [],
@@ -1052,10 +816,6 @@
       "system": [],
       "python": [],
       "api": [
-        "transcription-engine"
-      ],
-      "missing_required": [],
-      "missing_optional": [
         "transcription-engine"
       ]
     },
@@ -1071,10 +831,6 @@
       "python": [],
       "api": [
         "BEAM_ACCESS_TOKEN"
-      ],
-      "missing_required": [],
-      "missing_optional": [
-        "BEAM_ACCESS_TOKEN"
       ]
     },
     "utilities.handoff": {
@@ -1086,10 +842,6 @@
       "python": [],
       "api": [
         "clipboard-tool"
-      ],
-      "missing_required": [],
-      "missing_optional": [
-        "clipboard-tool"
       ]
     },
     "utilities.readme-standard": {
@@ -1097,9 +849,7 @@
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "utilities.slack-synthesizer": {
       "required": [],
@@ -1109,10 +859,6 @@
       "system": [],
       "python": [],
       "api": [
-        "slack-access"
-      ],
-      "missing_required": [],
-      "missing_optional": [
         "slack-access"
       ]
     },
@@ -1125,10 +871,6 @@
       "python": [],
       "api": [
         "sonos-cli"
-      ],
-      "missing_required": [],
-      "missing_optional": [
-        "sonos-cli"
       ]
     },
     "utilities.system-monitor": {
@@ -1139,10 +881,6 @@
       "system": [],
       "python": [],
       "api": [
-        "system-tools"
-      ],
-      "missing_required": [],
-      "missing_optional": [
         "system-tools"
       ]
     },
@@ -1155,10 +893,6 @@
       "python": [],
       "api": [
         "TELEGRAM_BOT_TOKEN"
-      ],
-      "missing_required": [],
-      "missing_optional": [
-        "TELEGRAM_BOT_TOKEN"
       ]
     },
     "utilities.unit-converter": {
@@ -1169,10 +903,6 @@
       "system": [],
       "python": [],
       "api": [
-        "exchange-rate-source"
-      ],
-      "missing_required": [],
-      "missing_optional": [
         "exchange-rate-source"
       ]
     },
@@ -1185,10 +915,6 @@
       "python": [],
       "api": [
         "weather-api"
-      ],
-      "missing_required": [],
-      "missing_optional": [
-        "weather-api"
       ]
     },
     "utilities.whatsapp-router": {
@@ -1199,10 +925,6 @@
       "system": [],
       "python": [],
       "api": [
-        "whatsapp-api"
-      ],
-      "missing_required": [],
-      "missing_optional": [
         "whatsapp-api"
       ]
     },
@@ -1215,10 +937,6 @@
       "python": [],
       "api": [
         "agent-browser"
-      ],
-      "missing_required": [],
-      "missing_optional": [
-        "agent-browser"
       ]
     },
     "web.form-filler": {
@@ -1229,10 +947,6 @@
       "system": [],
       "python": [],
       "api": [
-        "browser-automation"
-      ],
-      "missing_required": [],
-      "missing_optional": [
         "browser-automation"
       ]
     },
@@ -1245,10 +959,6 @@
       "python": [],
       "api": [
         "media-downloader"
-      ],
-      "missing_required": [],
-      "missing_optional": [
-        "media-downloader"
       ]
     },
     "web.web-scraper": {
@@ -1260,10 +970,6 @@
       "python": [],
       "api": [
         "http-client"
-      ],
-      "missing_required": [],
-      "missing_optional": [
-        "http-client"
       ]
     },
     "productivity.adhd-divergent-brainstorm": {
@@ -1271,90 +977,84 @@
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "productivity.adhd-output-style": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "productivity.executive-summary": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "productivity.first-principles-reasoning": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "development.ci-cd-pipeline": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "development.issue-triage": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "development.pr-splitter": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "development.release-management": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "productivity.kaizen-continuous-improvement": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
     },
     "productivity.session-analytics": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
-      "api": [],
-      "missing_required": [],
-      "missing_optional": []
+      "api": []
+    },
+    "architecture.architecture-decision-records": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "healthcare.health-economist": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
     }
   }
 }

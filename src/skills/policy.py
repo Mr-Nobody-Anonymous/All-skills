@@ -7,6 +7,7 @@ returning deterministic execution verdicts: ALLOW, ASK, or DENY.
 from __future__ import annotations
 
 import json
+import re
 from dataclasses import dataclass, field
 from enum import Enum
 from pathlib import Path
@@ -107,8 +108,15 @@ DEFAULT_CAPABILITY_POLICIES: Dict[str, dict] = {
         "verdict": PolicyVerdict.DENY,
         "risk": RiskLevel.CRITICAL,
         "description": "Drop tables, truncate databases, or execute irreversible data purges."
-    }
+    },
+    "tool.unclassified": {
+        "verdict": PolicyVerdict.ASK,
+        "risk": RiskLevel.HIGH_RISK,
+        "description": "A tool with no capability mapping. Never allowed implicitly; requires explicit approval."
+    },
 }
+
+UNCLASSIFIED_CAPABILITY = "tool.unclassified"
 
 # Map harness tools to capability sets
 TOOL_TO_CAPABILITIES: Dict[str, List[str]] = {
@@ -126,8 +134,56 @@ TOOL_TO_CAPABILITIES: Dict[str, List[str]] = {
     "git": ["git.read", "git.write"],
     "docker": ["shell.execute"],
     "deploy": ["production.deploy"],
-    "credentials": ["credentials.read"]
+    "credentials": ["credentials.read"],
+    # Common aliases used by agent harnesses
+    "read_file": ["filesystem.read"],
+    "write_file": ["filesystem.write"],
+    "edit_file": ["filesystem.write"],
+    "grep": ["filesystem.read"],
+    "glob": ["filesystem.read"],
+    "web_search": ["network.request"],
+    "web_fetch": ["network.request"],
+    "shell": ["shell.execute"],
 }
+
+# Harness / platform names are sometimes (wrongly) listed under ``tools``. They
+# name the agent that runs the skill and grant no capability.
+PLATFORM_NAMES = {
+    "antigravity", "claude", "claude-code", "cline", "codex", "codex-cli", "copilot",
+    "cursor", "gemini", "gemini-cli", "goose", "opencode", "roo", "vscode", "windsurf",
+}
+
+
+# Capabilities implied by a natural-language request (used to gate prompts and
+# by the security evals). Conservative keyword rules; extend with care.
+REQUEST_CAPABILITY_HINTS = [
+    (re.compile(r"(?i)\bdeploy\w*\b.*\b(production|prod)\b|\b(production|prod)\b.*\bdeploy"), "production.deploy"),
+    (re.compile(r"(?i)\b(drop|truncate)\s+(the\s+)?([\w.]+\s+)?(table|database|schema)\b|\bdelete\s+all\s+(rows|records|data)\b"), "database.delete"),
+    (re.compile(r"(?i)\bterraform\s+destroy\b|\b(tear\s+down|provision|decommission)\b.*\b(cloud|aws|gcp|azure|cluster|infrastructure)\b"), "cloud.modify"),
+    (re.compile(r"(?i)\b(print|show|cat|dump|reveal|read|export|get)\b[^.\n]{0,60}\b(password|credentials?|secrets?|api[_\s-]?keys?|tokens?|id_rsa|\.env)\b"), "credentials.read"),
+]
+
+
+def infer_request_capabilities(prompt: str) -> Set[str]:
+    return {cap for pattern, cap in REQUEST_CAPABILITY_HINTS if pattern.search(prompt or "")}
+
+
+class PolicyConfigError(ValueError):
+    """A policy input (policy.json, manifest.json, registry) is malformed."""
+
+
+def capabilities_for_tool(tool: str) -> List[str]:
+    """Capabilities a declared tool requires. Unknown tools are never implicitly allowed."""
+    tl = str(tool).strip().lower()
+    if tl in TOOL_TO_CAPABILITIES:
+        return list(TOOL_TO_CAPABILITIES[tl])
+    if tl in PLATFORM_NAMES:
+        return []
+    if "deploy" in tl or "production" in tl:
+        return ["production.deploy"]
+    if "credential" in tl or "secret" in tl:
+        return ["credentials.read"]
+    return [UNCLASSIFIED_CAPABILITY]
 
 
 @dataclass
@@ -138,6 +194,9 @@ class PolicyEvaluationResult:
     capabilities_requested: List[str]
     breakdown: Dict[str, dict] = field(default_factory=dict)
     reasons: List[str] = field(default_factory=list)
+    # The tools whose capabilities were evaluated (declared, from the manifest,
+    # or the read/edit default); the runtime holds executors to this list.
+    tools: List[str] = field(default_factory=list)
 
     def to_dict(self) -> dict:
         return {
@@ -159,22 +218,35 @@ class PolicyEngine:
         self._load_custom_policy()
 
     def _load_custom_policy(self) -> None:
+        """Merge ``skills/policy.json``. Malformed policy raises PolicyConfigError.
+
+        Silently ignoring a broken policy file would drop any restrictions it
+        adds, so the engine refuses to run instead (fail closed).
+        """
         policy_file = self.workspace_root / "skills" / "policy.json"
-        if policy_file.exists():
-            try:
-                data = json.loads(policy_file.read_text(encoding="utf-8"))
-                for cap, pdata in data.get("capabilities", {}).items():
-                    verdict_str = pdata.get("verdict", "ALLOW").upper()
-                    verdict = getattr(PolicyVerdict, verdict_str, PolicyVerdict.ASK)
-                    risk_str = pdata.get("risk", "MEDIUM_RISK").upper()
-                    risk = getattr(RiskLevel, risk_str, RiskLevel.MEDIUM_RISK)
-                    self.policies[cap] = {
-                        "verdict": verdict,
-                        "risk": risk,
-                        "description": pdata.get("description", "")
-                    }
-            except Exception:
-                pass
+        if not policy_file.exists():
+            return
+        try:
+            data = json.loads(policy_file.read_text(encoding="utf-8"))
+        except (OSError, UnicodeDecodeError, json.JSONDecodeError) as exc:
+            raise PolicyConfigError(f"{policy_file}: unreadable policy file: {exc}") from exc
+        capabilities = data.get("capabilities", {}) if isinstance(data, dict) else None
+        if not isinstance(capabilities, dict):
+            raise PolicyConfigError(f"{policy_file}: 'capabilities' must be an object")
+        for cap, pdata in capabilities.items():
+            if not isinstance(pdata, dict):
+                raise PolicyConfigError(f"{policy_file}: policy for '{cap}' must be an object")
+            verdict_str = str(pdata.get("verdict", "ASK")).upper()
+            risk_str = str(pdata.get("risk", "MEDIUM_RISK")).upper()
+            if verdict_str not in PolicyVerdict.__members__:
+                raise PolicyConfigError(f"{policy_file}: invalid verdict '{verdict_str}' for '{cap}'")
+            if risk_str not in RiskLevel.__members__:
+                raise PolicyConfigError(f"{policy_file}: invalid risk '{risk_str}' for '{cap}'")
+            self.policies[cap] = {
+                "verdict": PolicyVerdict[verdict_str],
+                "risk": RiskLevel[risk_str],
+                "description": pdata.get("description", ""),
+            }
 
     def evaluate_skill(self, skill_id: str, declared_tools: Optional[List[str]] = None) -> PolicyEvaluationResult:
         """Evaluate permissions required for a skill."""
@@ -186,10 +258,10 @@ class PolicyEngine:
             if manifest_file.exists():
                 try:
                     m = json.loads(manifest_file.read_text(encoding="utf-8"))
-                    skill_info = m.get("skills", {}).get(skill_id, {})
-                    tools.extend(skill_info.get("tools", []))
-                except Exception:
-                    pass
+                except (OSError, UnicodeDecodeError, json.JSONDecodeError) as exc:
+                    raise PolicyConfigError(f"{manifest_file}: unreadable manifest: {exc}") from exc
+                skill_info = m.get("skills", {}).get(skill_id, {}) if isinstance(m, dict) else {}
+                tools.extend(skill_info.get("tools", []) or [])
 
         # Check frontmatter if still empty
         if not tools:
@@ -197,12 +269,14 @@ class PolicyEngine:
             if not skill_md.exists():
                 skill_md = self.workspace_root / "skills" / skill_id.replace(".", "/") / "SKILL.md"
             if skill_md.exists():
+                from .frontmatter import parse_frontmatter
+
                 try:
-                    from .frontmatter import parse_frontmatter
                     meta, _ = parse_frontmatter(skill_md.read_text(encoding="utf-8"))
-                    tools.extend(meta.get("tools", []))
-                except Exception:
-                    pass
+                except (OSError, UnicodeDecodeError) as exc:
+                    raise PolicyConfigError(f"{skill_md}: unreadable skill manifest: {exc}") from exc
+                declared = meta.get("tools", []) or []
+                tools.extend([declared] if isinstance(declared, str) else list(declared))
 
         # If still empty, default to read/edit capabilities
         if not tools:
@@ -211,15 +285,7 @@ class PolicyEngine:
         # 2. Derive requested capabilities
         caps_requested: Set[str] = set()
         for t in tools:
-            tl = t.lower()
-            if tl in TOOL_TO_CAPABILITIES:
-                caps_requested.update(TOOL_TO_CAPABILITIES[tl])
-            elif "deploy" in tl or "production" in tl:
-                caps_requested.add("production.deploy")
-            elif "credential" in tl or "secret" in tl:
-                caps_requested.add("credentials.read")
-            else:
-                caps_requested.add("shell.execute")
+            caps_requested.update(capabilities_for_tool(t))
 
         # Check specific sensitive skills
         if "deploy" in skill_id or "production" in skill_id:
@@ -242,15 +308,10 @@ class PolicyEngine:
         ]
 
         # Check negative capabilities (forbidden)
-        forbidden_caps = []
-        try:
-            from .registry import load_registry
-            reg = load_registry(self.workspace_root)
-            e = reg.get(skill_id)
-            if e:
-                forbidden_caps = getattr(e, "forbidden", []) or []
-        except Exception:
-            pass
+        from .registry import load_registry
+
+        entry = load_registry(self.workspace_root).get(skill_id)  # corrupt registry raises
+        forbidden_caps: List[str] = list(getattr(entry, "forbidden", []) or []) if entry else []
 
         for f_cap in forbidden_caps:
             if f_cap in caps_requested:
@@ -293,8 +354,31 @@ class PolicyEngine:
             max_risk=max_risk,
             capabilities_requested=sorted(caps_requested),
             breakdown=breakdown,
-            reasons=reasons
+            reasons=reasons,
+            tools=[str(t) for t in tools],
         )
+
+    def evaluate_request(self, prompt: str) -> PolicyEvaluationResult:
+        """Evaluate the capabilities a natural-language request implies (see infer_request_capabilities)."""
+        caps = infer_request_capabilities(prompt)
+        overall, max_risk = PolicyVerdict.ALLOW, RiskLevel.SAFE
+        order = list(RiskLevel)
+        breakdown: Dict[str, dict] = {}
+        reasons: List[str] = []
+        for cap in sorted(caps):
+            policy = self.policies.get(cap, self.policies[UNCLASSIFIED_CAPABILITY])
+            verdict, risk = policy["verdict"], policy["risk"]
+            breakdown[cap] = {"verdict": verdict.value, "risk": risk.value, "description": policy["description"]}
+            if order.index(risk) > order.index(max_risk):
+                max_risk = risk
+            if verdict == PolicyVerdict.DENY:
+                overall = PolicyVerdict.DENY
+                reasons.append(f"Request implies '{cap}', which is DENIED by policy.")
+            elif verdict == PolicyVerdict.ASK and overall != PolicyVerdict.DENY:
+                overall = PolicyVerdict.ASK
+                reasons.append(f"Request implies '{cap}', which requires human approval.")
+        return PolicyEvaluationResult("request", overall, max_risk, sorted(caps), breakdown,
+                                      reasons or ["No restricted capability implied."])
 
     def explain_policy(self, skill_id: str) -> dict:
         """Structured policy simulation explaining permission and risk boundaries."""

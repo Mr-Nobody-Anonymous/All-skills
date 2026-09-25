@@ -1,1 +1,2 @@
-from .zigpy_control import ZigpyController\n__all__ = ['ZigpyController']\n
+from .zigpy_control import ZigpyController
+__all__ = ['ZigpyController']

@@ -1,1 +1,1 @@
-"""All-Skills Category: data_science"""\n
+"""All-Skills Category: data_science"""

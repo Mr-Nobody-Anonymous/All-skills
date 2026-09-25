@@ -1,1 +1,3 @@
-from .matplotlib_viz import MatplotlibVisualizer\nfrom .plotly_viz import PlotlyVisualizer\n__all__ = ['MatplotlibVisualizer', 'PlotlyVisualizer']\n
+from .matplotlib_viz import MatplotlibVisualizer
+from .plotly_viz import PlotlyVisualizer
+__all__ = ['MatplotlibVisualizer', 'PlotlyVisualizer']

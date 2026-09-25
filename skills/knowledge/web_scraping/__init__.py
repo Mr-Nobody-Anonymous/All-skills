@@ -1,1 +1,2 @@
-from .scrapy_scrape import ScrapyScraper\n__all__ = ['ScrapyScraper']\n
+from .scrapy_scrape import ScrapyScraper
+__all__ = ['ScrapyScraper']

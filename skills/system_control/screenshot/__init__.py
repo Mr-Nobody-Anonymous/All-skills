@@ -1,1 +1,2 @@
-from .mss_capture import MSSScreenCapture\n__all__ = ['MSSScreenCapture']\n
+from .mss_capture import MSSScreenCapture
+__all__ = ['MSSScreenCapture']

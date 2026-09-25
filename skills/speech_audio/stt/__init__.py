@@ -1,1 +1,2 @@
-from .whisper_stt import WhisperSTTEngine\n__all__ = ['WhisperSTTEngine']\n
+from .whisper_stt import WhisperSTTEngine
+__all__ = ['WhisperSTTEngine']

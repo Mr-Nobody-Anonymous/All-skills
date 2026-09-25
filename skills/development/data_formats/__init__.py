@@ -1,1 +1,3 @@
-from .yaml_process import YamlProcessor\nfrom .xml_process import XmlProcessor\n__all__ = ['YamlProcessor', 'XmlProcessor']\n
+from .yaml_process import YamlProcessor
+from .xml_process import XmlProcessor
+__all__ = ['YamlProcessor', 'XmlProcessor']

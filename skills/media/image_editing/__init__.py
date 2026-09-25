@@ -1,1 +1,2 @@
-from .pillow_edit import PillowImageEditor\n__all__ = ['PillowImageEditor']\n
+from .pillow_edit import PillowImageEditor
+__all__ = ['PillowImageEditor']

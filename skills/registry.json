@@ -37,21 +37,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "design.branding",
         "documentation": 7.8,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.5,
-        "overall_score": 6.4
+        "overall_score": 6.6
       },
-      "quality_score": 6.4
+      "quality_score": 6.6
     },
     {
       "id": "design.frontend-design",
@@ -90,21 +97,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "design.frontend-design",
         "documentation": 8.3,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.6,
-        "overall_score": 6.6
+        "overall_score": 6.8
       },
-      "quality_score": 6.6
+      "quality_score": 6.8
     },
     {
       "id": "design.presentations",
@@ -141,21 +155,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "design.presentations",
         "documentation": 8.6,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.2,
-        "overall_score": 6.6
+        "overall_score": 6.8
       },
-      "quality_score": 6.6
+      "quality_score": 6.8
     },
     {
       "id": "design.ui-ux",
@@ -194,21 +215,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "design.ui-ux",
         "documentation": 9.0,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.7,
-        "overall_score": 6.7
+        "overall_score": 6.9
       },
-      "quality_score": 6.7
+      "quality_score": 6.9
     },
     {
       "id": "development.architecture",
@@ -249,21 +277,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "development.architecture",
         "documentation": 8.6,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 4.1,
-        "overall_score": 6.7
+        "overall_score": 6.9
       },
-      "quality_score": 6.7
+      "quality_score": 6.9
     },
     {
       "id": "development.backend",
@@ -300,21 +335,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "development.backend",
         "documentation": 8.5,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.2,
-        "overall_score": 6.5
+        "overall_score": 6.7
       },
-      "quality_score": 6.5
+      "quality_score": 6.7
     },
     {
       "id": "development.code-review",
@@ -352,21 +394,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "development.code-review",
         "documentation": 9.0,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.4,
-        "overall_score": 6.7
+        "overall_score": 6.9
       },
-      "quality_score": 6.7
+      "quality_score": 6.9
     },
     {
       "id": "development.coding",
@@ -410,21 +459,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "development.coding",
         "documentation": 9.0,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 4.9,
-        "overall_score": 6.9
+        "overall_score": 7.1
       },
-      "quality_score": 6.9
+      "quality_score": 7.1
     },
     {
       "id": "development.databases",
@@ -464,21 +520,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "development.databases",
         "documentation": 8.4,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 6.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.9,
-        "overall_score": 6.0
+        "overall_score": 6.2
       },
-      "quality_score": 6.0
+      "quality_score": 6.2
     },
     {
       "id": "development.debugging",
@@ -521,21 +584,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "development.debugging",
         "documentation": 8.7,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 4.5,
-        "overall_score": 6.8
+        "overall_score": 7.0
       },
-      "quality_score": 6.8
+      "quality_score": 7.0
     },
     {
       "id": "development.devops",
@@ -575,21 +645,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "development.devops",
         "documentation": 8.3,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 6.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.9,
-        "overall_score": 6.0
+        "overall_score": 6.2
       },
-      "quality_score": 6.0
+      "quality_score": 6.2
     },
     {
       "id": "development.frontend",
@@ -628,21 +705,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "development.frontend",
         "documentation": 8.8,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.6,
-        "overall_score": 6.7
+        "overall_score": 6.9
       },
-      "quality_score": 6.7
+      "quality_score": 6.9
     },
     {
       "id": "development.git",
@@ -686,21 +770,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "development.git",
         "documentation": 8.9,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 6.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 4.2,
-        "overall_score": 6.2
+        "overall_score": 6.4
       },
-      "quality_score": 6.2
+      "quality_score": 6.4
     },
     {
       "id": "development.github",
@@ -743,21 +834,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "development.github",
         "documentation": 8.2,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 6.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 4.1,
-        "overall_score": 6.0
+        "overall_score": 6.2
       },
-      "quality_score": 6.0
+      "quality_score": 6.2
     },
     {
       "id": "development.performance-optimization",
@@ -796,21 +894,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "development.performance-optimization",
         "documentation": 8.2,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.7,
-        "overall_score": 6.5
+        "overall_score": 6.7
       },
-      "quality_score": 6.5
+      "quality_score": 6.7
     },
     {
       "id": "development.refactoring",
@@ -850,21 +955,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "development.refactoring",
         "documentation": 9.0,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.9,
-        "overall_score": 6.7
+        "overall_score": 6.9
       },
-      "quality_score": 6.7
+      "quality_score": 6.9
     },
     {
       "id": "development.tdd",
@@ -899,21 +1011,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "development.tdd",
         "documentation": 8.5,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 2.7,
-        "overall_score": 6.5
+        "overall_score": 6.7
       },
-      "quality_score": 6.5
+      "quality_score": 6.7
     },
     {
       "id": "development.testing",
@@ -955,21 +1074,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "development.testing",
         "documentation": 8.3,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 4.5,
-        "overall_score": 6.7
+        "overall_score": 6.9
       },
-      "quality_score": 6.7
+      "quality_score": 6.9
     },
     {
       "id": "documents.csv",
@@ -1005,21 +1131,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "documents.csv",
         "documentation": 8.3,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.0,
-        "overall_score": 6.5
+        "overall_score": 6.7
       },
-      "quality_score": 6.5
+      "quality_score": 6.7
     },
     {
       "id": "documents.docx",
@@ -1054,21 +1187,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "documents.docx",
         "documentation": 9.0,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 2.8,
-        "overall_score": 6.6
+        "overall_score": 6.8
       },
-      "quality_score": 6.6
+      "quality_score": 6.8
     },
     {
       "id": "documents.markdown",
@@ -1105,21 +1245,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "documents.markdown",
         "documentation": 8.6,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.2,
-        "overall_score": 6.6
+        "overall_score": 6.8
       },
-      "quality_score": 6.6
+      "quality_score": 6.8
     },
     {
       "id": "documents.pdf",
@@ -1162,6 +1309,8 @@
         "summarize",
         "generate-pdf"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "pdf_file"
       ],
@@ -1230,21 +1379,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "documents.pptx",
         "documentation": 8.3,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.1,
-        "overall_score": 6.5
+        "overall_score": 6.7
       },
-      "quality_score": 6.5
+      "quality_score": 6.7
     },
     {
       "id": "documents.xlsx",
@@ -1280,21 +1436,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "documents.xlsx",
         "documentation": 8.7,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.0,
-        "overall_score": 6.5
+        "overall_score": 6.7
       },
-      "quality_score": 6.5
+      "quality_score": 6.7
     },
     {
       "id": "productivity.adhd",
@@ -1345,6 +1508,8 @@
         "reminder",
         "external-structure"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "attention-state",
@@ -1429,6 +1594,8 @@
         "pomodoro",
         "break-structure"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "duration",
         "distraction-source"
@@ -1501,21 +1668,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "productivity.planning",
         "documentation": 8.6,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 4.1,
-        "overall_score": 6.7
+        "overall_score": 6.9
       },
-      "quality_score": 6.7
+      "quality_score": 6.9
     },
     {
       "id": "productivity.prioritization",
@@ -1556,21 +1730,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "productivity.prioritization",
         "documentation": 8.6,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 4.1,
-        "overall_score": 6.7
+        "overall_score": 6.9
       },
-      "quality_score": 6.7
+      "quality_score": 6.9
     },
     {
       "id": "productivity.task-decomposition",
@@ -1614,21 +1795,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "productivity.task-decomposition",
         "documentation": 8.8,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 4.9,
-        "overall_score": 6.8
+        "overall_score": 7.0
       },
-      "quality_score": 6.8
+      "quality_score": 7.0
     },
     {
       "id": "productivity.time-management",
@@ -1668,21 +1856,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "productivity.time-management",
         "documentation": 8.7,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 4.1,
-        "overall_score": 6.7
+        "overall_score": 6.9
       },
-      "quality_score": 6.7
+      "quality_score": 6.9
     },
     {
       "id": "productivity.unlazy",
@@ -1735,6 +1930,8 @@
         "anti-procrastination",
         "body-doubling"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "stuck-duration",
@@ -1807,21 +2004,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "research.academic-research",
         "documentation": 8.0,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.6,
-        "overall_score": 6.5
+        "overall_score": 6.7
       },
-      "quality_score": 6.5
+      "quality_score": 6.7
     },
     {
       "id": "research.competitive-analysis",
@@ -1857,21 +2061,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "research.competitive-analysis",
         "documentation": 8.6,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.0,
-        "overall_score": 6.5
+        "overall_score": 6.7
       },
-      "quality_score": 6.5
+      "quality_score": 6.7
     },
     {
       "id": "research.data-analysis",
@@ -1911,21 +2122,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "research.data-analysis",
         "documentation": 8.3,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.9,
-        "overall_score": 6.6
+        "overall_score": 6.8
       },
-      "quality_score": 6.6
+      "quality_score": 6.8
     },
     {
       "id": "research.deep-research",
@@ -1963,21 +2181,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "research.deep-research",
         "documentation": 8.7,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.4,
-        "overall_score": 6.6
+        "overall_score": 6.8
       },
-      "quality_score": 6.6
+      "quality_score": 6.8
     },
     {
       "id": "research.fact-checking",
@@ -2015,21 +2240,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "research.fact-checking",
         "documentation": 8.7,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.4,
-        "overall_score": 6.6
+        "overall_score": 6.8
       },
-      "quality_score": 6.6
+      "quality_score": 6.8
     },
     {
       "id": "research.source-verification",
@@ -2065,21 +2297,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "research.source-verification",
         "documentation": 8.1,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.0,
-        "overall_score": 6.4
+        "overall_score": 6.6
       },
-      "quality_score": 6.4
+      "quality_score": 6.6
     },
     {
       "id": "research.web-research",
@@ -2118,21 +2357,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "research.web-research",
         "documentation": 8.7,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.6,
-        "overall_score": 6.6
+        "overall_score": 6.8
       },
-      "quality_score": 6.6
+      "quality_score": 6.8
     },
     {
       "id": "security.dependency-audit",
@@ -2173,21 +2419,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "security.dependency-audit",
         "documentation": 8.6,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 4.1,
-        "overall_score": 6.7
+        "overall_score": 6.9
       },
-      "quality_score": 6.7
+      "quality_score": 6.9
     },
     {
       "id": "security.prompt-injection-defense",
@@ -2224,21 +2477,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "security.prompt-injection-defense",
         "documentation": 8.5,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 6.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.2,
-        "overall_score": 5.9
+        "overall_score": 6.1
       },
-      "quality_score": 5.9
+      "quality_score": 6.1
     },
     {
       "id": "security.secret-detection",
@@ -2276,21 +2536,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "security.secret-detection",
         "documentation": 8.2,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 6.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.4,
-        "overall_score": 5.9
+        "overall_score": 6.1
       },
-      "quality_score": 5.9
+      "quality_score": 6.1
     },
     {
       "id": "security.secure-coding",
@@ -2337,21 +2604,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "security.secure-coding",
         "documentation": 9.0,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 6.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 5.3,
-        "overall_score": 6.3
+        "overall_score": 6.5
       },
-      "quality_score": 6.3
+      "quality_score": 6.5
     },
     {
       "id": "utilities.automation",
@@ -2387,21 +2661,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "utilities.automation",
         "documentation": 8.5,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 6.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.0,
-        "overall_score": 5.9
+        "overall_score": 6.1
       },
-      "quality_score": 5.9
+      "quality_score": 6.1
     },
     {
       "id": "utilities.documentation",
@@ -2437,21 +2718,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "utilities.documentation",
         "documentation": 8.2,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.0,
-        "overall_score": 6.4
+        "overall_score": 6.6
       },
-      "quality_score": 6.4
+      "quality_score": 6.6
     },
     {
       "id": "utilities.file-management",
@@ -2489,21 +2777,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "utilities.file-management",
         "documentation": 8.4,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 6.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.4,
-        "overall_score": 5.9
+        "overall_score": 6.1
       },
-      "quality_score": 5.9
+      "quality_score": 6.1
     },
     {
       "id": "utilities.image",
@@ -2540,21 +2835,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "utilities.image",
         "documentation": 7.7,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.2,
-        "overall_score": 6.4
+        "overall_score": 6.6
       },
-      "quality_score": 6.4
+      "quality_score": 6.6
     },
     {
       "id": "utilities.summarization",
@@ -2590,21 +2892,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "utilities.summarization",
         "documentation": 8.6,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.0,
-        "overall_score": 6.5
+        "overall_score": 6.7
       },
-      "quality_score": 6.5
+      "quality_score": 6.7
     },
     {
       "id": "utilities.text-processing",
@@ -2640,21 +2949,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "utilities.text-processing",
         "documentation": 8.3,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 2.9,
-        "overall_score": 6.4
+        "overall_score": 6.6
       },
-      "quality_score": 6.4
+      "quality_score": 6.6
     },
     {
       "id": "utilities.writing",
@@ -2691,21 +3007,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "utilities.writing",
         "documentation": 8.4,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.2,
-        "overall_score": 6.5
+        "overall_score": 6.7
       },
-      "quality_score": 6.5
+      "quality_score": 6.7
     },
     {
       "id": "web.accessibility",
@@ -2744,21 +3067,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "web.accessibility",
         "documentation": 8.6,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.6,
-        "overall_score": 6.6
+        "overall_score": 6.8
       },
-      "quality_score": 6.6
+      "quality_score": 6.8
     },
     {
       "id": "web.browser-automation",
@@ -2801,21 +3131,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "web.browser-automation",
         "documentation": 9.0,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 6.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 4.1,
-        "overall_score": 6.2
+        "overall_score": 6.4
       },
-      "quality_score": 6.2
+      "quality_score": 6.4
     },
     {
       "id": "web.seo",
@@ -2853,21 +3190,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "web.seo",
         "documentation": 8.9,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.3,
-        "overall_score": 6.6
+        "overall_score": 6.8
       },
-      "quality_score": 6.6
+      "quality_score": 6.8
     },
     {
       "id": "web.web-extraction",
@@ -2902,21 +3246,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "web.web-extraction",
         "documentation": 9.0,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 2.8,
-        "overall_score": 6.6
+        "overall_score": 6.8
       },
-      "quality_score": 6.6
+      "quality_score": 6.8
     },
     {
       "id": "web.web-scraping",
@@ -2954,21 +3305,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "web.web-scraping",
         "documentation": 8.7,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 6.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.4,
-        "overall_score": 6.0
+        "overall_score": 6.2
       },
-      "quality_score": 6.0
+      "quality_score": 6.2
     },
     {
       "id": "web.website-testing",
@@ -3007,21 +3365,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "web.website-testing",
         "documentation": 8.4,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.2,
-        "overall_score": 6.5
+        "overall_score": 6.7
       },
-      "quality_score": 6.5
+      "quality_score": 6.7
     },
     {
       "id": "development.brainstorming",
@@ -3056,21 +3421,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "development.brainstorming",
         "documentation": 8.1,
         "maintenance": 10.0,
         "reliability": 8.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 2.2,
-        "overall_score": 7.3
+        "overall_score": 7.5
       },
-      "quality_score": 7.3
+      "quality_score": 7.5
     },
     {
       "id": "development.git-worktrees",
@@ -3107,21 +3479,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "development.git-worktrees",
         "documentation": 8.5,
         "maintenance": 10.0,
         "reliability": 8.0,
         "security": 6.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 2.2,
-        "overall_score": 6.7
+        "overall_score": 6.9
       },
-      "quality_score": 6.7
+      "quality_score": 6.9
     },
     {
       "id": "development.mcp-server-development",
@@ -3157,21 +3536,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "development.mcp-server-development",
         "documentation": 8.2,
         "maintenance": 10.0,
         "reliability": 8.0,
         "security": 6.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 2.4,
-        "overall_score": 6.7
+        "overall_score": 6.9
       },
-      "quality_score": 6.7
+      "quality_score": 6.9
     },
     {
       "id": "development.receiving-code-review",
@@ -3205,21 +3591,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "development.receiving-code-review",
         "documentation": 8.2,
         "maintenance": 10.0,
         "reliability": 8.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 2.2,
-        "overall_score": 7.3
+        "overall_score": 7.5
       },
-      "quality_score": 7.3
+      "quality_score": 7.5
     },
     {
       "id": "development.requesting-code-review",
@@ -3254,21 +3647,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "development.requesting-code-review",
         "documentation": 7.9,
         "maintenance": 10.0,
         "reliability": 8.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 2.2,
-        "overall_score": 7.2
+        "overall_score": 7.4
       },
-      "quality_score": 7.2
+      "quality_score": 7.4
     },
     {
       "id": "development.verification-before-completion",
@@ -3304,21 +3704,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "development.verification-before-completion",
         "documentation": 8.2,
         "maintenance": 10.0,
         "reliability": 8.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 2.4,
-        "overall_score": 7.3
+        "overall_score": 7.5
       },
-      "quality_score": 7.3
+      "quality_score": 7.5
     },
     {
       "id": "utilities.parallel-agents",
@@ -3352,21 +3759,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "utilities.parallel-agents",
         "documentation": 8.1,
         "maintenance": 10.0,
         "reliability": 8.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 2.2,
-        "overall_score": 7.3
+        "overall_score": 7.5
       },
-      "quality_score": 7.3
+      "quality_score": 7.5
     },
     {
       "id": "development.mcp-builder",
@@ -3413,21 +3827,28 @@
       "version": "1.1.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "development.mcp-builder",
         "documentation": 9.0,
         "maintenance": 10.0,
         "reliability": 8.0,
         "security": 6.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.6,
-        "overall_score": 7.0
+        "overall_score": 7.2
       },
-      "quality_score": 7.0
+      "quality_score": 7.2
     },
     {
       "id": "productivity.brainstorming",
@@ -3470,21 +3891,28 @@
       "version": "1.0.0",
       "lifecycle": "enabled",
       "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [],
       "outputs": [],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "productivity.brainstorming",
         "documentation": 9.0,
         "maintenance": 10.0,
         "reliability": 8.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.4,
-        "overall_score": 7.6
+        "overall_score": 7.8
       },
-      "quality_score": 7.6
+      "quality_score": 7.8
     },
     {
       "id": "design.avatar-creator",
@@ -3527,6 +3955,8 @@
         "avatar-creator",
         "design"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "context"
@@ -3536,18 +3966,23 @@
         "report"
       ],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "design.avatar-creator",
         "documentation": 8.1,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.9,
-        "overall_score": 6.6
+        "overall_score": 6.8
       },
-      "quality_score": 6.6
+      "quality_score": 6.8
     },
     {
       "id": "design.image-gen",
@@ -3591,6 +4026,8 @@
         "image-gen",
         "design"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "context"
@@ -3600,18 +4037,23 @@
         "report"
       ],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "design.image-gen",
         "documentation": 8.2,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 4.1,
-        "overall_score": 6.6
+        "overall_score": 6.8
       },
-      "quality_score": 6.6
+      "quality_score": 6.8
     },
     {
       "id": "design.remotion-best-practices",
@@ -3656,6 +4098,8 @@
         "remotion-best-practices",
         "design"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "context"
@@ -3665,18 +4109,23 @@
         "report"
       ],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "design.remotion-best-practices",
         "documentation": 8.3,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 4.1,
-        "overall_score": 6.6
+        "overall_score": 6.8
       },
-      "quality_score": 6.6
+      "quality_score": 6.8
     },
     {
       "id": "design.veo-video-generator",
@@ -3718,6 +4167,8 @@
         "veo-video-generator",
         "design"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "context"
@@ -3727,18 +4178,23 @@
         "report"
       ],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "design.veo-video-generator",
         "documentation": 8.2,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 6.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.7,
-        "overall_score": 5.9
+        "overall_score": 6.1
       },
-      "quality_score": 5.9
+      "quality_score": 6.1
     },
     {
       "id": "development.api-mock-generator",
@@ -3783,6 +4239,8 @@
         "api-mock-generator",
         "development"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "context"
@@ -3792,18 +4250,23 @@
         "report"
       ],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "development.api-mock-generator",
         "documentation": 8.5,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 4.6,
-        "overall_score": 6.7
+        "overall_score": 6.9
       },
-      "quality_score": 6.7
+      "quality_score": 6.9
     },
     {
       "id": "development.autoreview",
@@ -3839,6 +4302,8 @@
         "autoreview",
         "development"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "context"
@@ -3848,18 +4313,23 @@
         "report"
       ],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "development.autoreview",
         "documentation": 8.5,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 2.2,
-        "overall_score": 6.4
+        "overall_score": 6.6
       },
-      "quality_score": 6.4
+      "quality_score": 6.6
     },
     {
       "id": "development.behavior-validator",
@@ -3893,6 +4363,8 @@
         "behavior-validator",
         "development"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "context"
@@ -3902,18 +4374,23 @@
         "report"
       ],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "development.behavior-validator",
         "documentation": 8.5,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 2.2,
-        "overall_score": 6.4
+        "overall_score": 6.6
       },
-      "quality_score": 6.4
+      "quality_score": 6.6
     },
     {
       "id": "development.cf-worker-deploy",
@@ -3955,6 +4432,8 @@
         "cf-worker-deploy",
         "development"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "context"
@@ -3964,18 +4443,23 @@
         "report"
       ],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "development.cf-worker-deploy",
         "documentation": 8.1,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 3.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.7,
-        "overall_score": 5.3
+        "overall_score": 5.5
       },
-      "quality_score": 5.3
+      "quality_score": 5.5
     },
     {
       "id": "development.coding-agent",
@@ -4022,6 +4506,8 @@
         "coding-agent",
         "development"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "context"
@@ -4031,18 +4517,23 @@
         "report"
       ],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "development.coding-agent",
         "documentation": 8.5,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 6.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 4.9,
-        "overall_score": 6.2
+        "overall_score": 6.4
       },
-      "quality_score": 6.2
+      "quality_score": 6.4
     },
     {
       "id": "development.crabbox",
@@ -4078,6 +4569,8 @@
         "crabbox",
         "development"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "context"
@@ -4087,18 +4580,23 @@
         "report"
       ],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "development.crabbox",
         "documentation": 8.6,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 2.2,
-        "overall_score": 6.4
+        "overall_score": 6.6
       },
-      "quality_score": 6.4
+      "quality_score": 6.6
     },
     {
       "id": "development.cursor-agent",
@@ -4142,6 +4640,8 @@
         "cursor-agent",
         "development"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "context"
@@ -4151,18 +4651,23 @@
         "report"
       ],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "development.cursor-agent",
         "documentation": 8.2,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 6.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 4.1,
-        "overall_score": 6.0
+        "overall_score": 6.2
       },
-      "quality_score": 6.0
+      "quality_score": 6.2
     },
     {
       "id": "development.db-inspector",
@@ -4209,6 +4714,8 @@
         "db-inspector",
         "development"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "context"
@@ -4218,18 +4725,23 @@
         "report"
       ],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "development.db-inspector",
         "documentation": 8.4,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 6.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 5.0,
-        "overall_score": 6.2
+        "overall_score": 6.4
       },
-      "quality_score": 6.2
+      "quality_score": 6.4
     },
     {
       "id": "development.docker-manager",
@@ -4276,6 +4788,8 @@
         "docker-manager",
         "development"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "context"
@@ -4285,18 +4799,23 @@
         "report"
       ],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "development.docker-manager",
         "documentation": 8.3,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 3.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 4.9,
-        "overall_score": 5.5
+        "overall_score": 5.7
       },
-      "quality_score": 5.5
+      "quality_score": 5.7
     },
     {
       "id": "development.dokploy",
@@ -4338,6 +4857,8 @@
         "dokploy",
         "development"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "context"
@@ -4347,18 +4868,23 @@
         "report"
       ],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "development.dokploy",
         "documentation": 8.4,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 3.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.5,
-        "overall_score": 5.4
+        "overall_score": 5.6
       },
-      "quality_score": 5.4
+      "quality_score": 5.6
     },
     {
       "id": "development.git-workflow",
@@ -4404,6 +4930,8 @@
         "git-workflow",
         "development"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "context"
@@ -4413,18 +4941,23 @@
         "report"
       ],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "development.git-workflow",
         "documentation": 8.2,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 6.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 4.5,
-        "overall_score": 6.1
+        "overall_score": 6.3
       },
-      "quality_score": 6.1
+      "quality_score": 6.3
     },
     {
       "id": "development.github-cli",
@@ -4469,6 +5002,8 @@
         "github-cli",
         "development"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "context"
@@ -4478,18 +5013,23 @@
         "report"
       ],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "development.github-cli",
         "documentation": 8.4,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 6.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 4.1,
-        "overall_score": 6.0
+        "overall_score": 6.2
       },
-      "quality_score": 6.0
+      "quality_score": 6.2
     },
     {
       "id": "development.summarize-repo",
@@ -4531,6 +5071,8 @@
         "summarize-repo",
         "development"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "context"
@@ -4540,18 +5082,23 @@
         "report"
       ],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "development.summarize-repo",
         "documentation": 8.5,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 4.1,
-        "overall_score": 6.7
+        "overall_score": 6.9
       },
-      "quality_score": 6.7
+      "quality_score": 6.9
     },
     {
       "id": "documents.expense-parser",
@@ -4595,6 +5142,8 @@
         "expense-parser",
         "documents"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "context"
@@ -4604,18 +5153,23 @@
         "report"
       ],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "documents.expense-parser",
         "documentation": 8.5,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 4.3,
-        "overall_score": 6.7
+        "overall_score": 6.9
       },
-      "quality_score": 6.7
+      "quality_score": 6.9
     },
     {
       "id": "productivity.adhd-task-breakdown",
@@ -4660,6 +5214,8 @@
         "adhd-task-breakdown",
         "productivity"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "context"
@@ -4669,18 +5225,23 @@
         "report"
       ],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "productivity.adhd-task-breakdown",
         "documentation": 8.2,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 4.7,
-        "overall_score": 6.7
+        "overall_score": 6.9
       },
-      "quality_score": 6.7
+      "quality_score": 6.9
     },
     {
       "id": "productivity.calendar-assistant",
@@ -4722,6 +5283,8 @@
         "calendar-assistant",
         "productivity"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "context"
@@ -4731,18 +5294,23 @@
         "report"
       ],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "productivity.calendar-assistant",
         "documentation": 8.3,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 6.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.6,
-        "overall_score": 6.0
+        "overall_score": 6.2
       },
-      "quality_score": 6.0
+      "quality_score": 6.2
     },
     {
       "id": "productivity.context-summarize",
@@ -4784,6 +5352,8 @@
         "context-summarize",
         "productivity"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "context"
@@ -4793,18 +5363,23 @@
         "report"
       ],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "productivity.context-summarize",
         "documentation": 8.0,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.9,
-        "overall_score": 6.5
+        "overall_score": 6.7
       },
-      "quality_score": 6.5
+      "quality_score": 6.7
     },
     {
       "id": "productivity.daily-journal",
@@ -4850,6 +5425,8 @@
         "daily-journal",
         "productivity"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "context"
@@ -4859,18 +5436,23 @@
         "report"
       ],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "productivity.daily-journal",
         "documentation": 8.3,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 5.2,
-        "overall_score": 6.8
+        "overall_score": 7.0
       },
-      "quality_score": 6.8
+      "quality_score": 7.0
     },
     {
       "id": "productivity.email-inbox-zero",
@@ -4913,6 +5495,8 @@
         "email-inbox-zero",
         "productivity"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "context"
@@ -4922,18 +5506,23 @@
         "report"
       ],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "productivity.email-inbox-zero",
         "documentation": 8.3,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 6.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.9,
-        "overall_score": 6.0
+        "overall_score": 6.2
       },
-      "quality_score": 6.0
+      "quality_score": 6.2
     },
     {
       "id": "productivity.focus-guard",
@@ -4977,6 +5566,8 @@
         "focus-guard",
         "productivity"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "context"
@@ -4986,18 +5577,23 @@
         "report"
       ],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "productivity.focus-guard",
         "documentation": 8.5,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 6.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 4.7,
-        "overall_score": 6.2
+        "overall_score": 6.4
       },
-      "quality_score": 6.2
+      "quality_score": 6.4
     },
     {
       "id": "productivity.meeting-action-extractor",
@@ -5037,6 +5633,8 @@
         "meeting-action-extractor",
         "productivity"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "context"
@@ -5046,18 +5644,23 @@
         "report"
       ],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "productivity.meeting-action-extractor",
         "documentation": 8.2,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.6,
-        "overall_score": 6.5
+        "overall_score": 6.7
       },
-      "quality_score": 6.5
+      "quality_score": 6.7
     },
     {
       "id": "productivity.obsidian-sync",
@@ -5103,6 +5706,8 @@
         "obsidian-sync",
         "productivity"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "context"
@@ -5112,18 +5717,23 @@
         "report"
       ],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "productivity.obsidian-sync",
         "documentation": 8.2,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 6.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 4.7,
-        "overall_score": 6.1
+        "overall_score": 6.3
       },
-      "quality_score": 6.1
+      "quality_score": 6.3
     },
     {
       "id": "productivity.time-blocking",
@@ -5164,6 +5774,8 @@
         "time-blocking",
         "productivity"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "context"
@@ -5173,18 +5785,23 @@
         "report"
       ],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "productivity.time-blocking",
         "documentation": 8.2,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.5,
-        "overall_score": 6.5
+        "overall_score": 6.7
       },
-      "quality_score": 6.5
+      "quality_score": 6.7
     },
     {
       "id": "productivity.voice-to-action",
@@ -5228,6 +5845,8 @@
         "voice-to-action",
         "productivity"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "context"
@@ -5237,18 +5856,23 @@
         "report"
       ],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "productivity.voice-to-action",
         "documentation": 8.1,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 4.1,
-        "overall_score": 6.6
+        "overall_score": 6.8
       },
-      "quality_score": 6.6
+      "quality_score": 6.8
     },
     {
       "id": "research.search-synthesizer",
@@ -5290,6 +5914,8 @@
         "search-synthesizer",
         "research"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "context"
@@ -5299,18 +5925,23 @@
         "report"
       ],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "research.search-synthesizer",
         "documentation": 8.2,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.5,
-        "overall_score": 6.5
+        "overall_score": 6.7
       },
-      "quality_score": 6.5
+      "quality_score": 6.7
     },
     {
       "id": "security.cmd-safety-check",
@@ -5354,6 +5985,8 @@
         "cmd-safety-check",
         "security"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "context"
@@ -5363,18 +5996,23 @@
         "report"
       ],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "security.cmd-safety-check",
         "documentation": 8.1,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 6.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 4.8,
-        "overall_score": 6.1
+        "overall_score": 6.3
       },
-      "quality_score": 6.1
+      "quality_score": 6.3
     },
     {
       "id": "security.npm-auditor",
@@ -5423,6 +6061,8 @@
         "npm-auditor",
         "security"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "context"
@@ -5432,18 +6072,23 @@
         "report"
       ],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "security.npm-auditor",
         "documentation": 8.2,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 6.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 5.4,
-        "overall_score": 6.2
+        "overall_score": 6.4
       },
-      "quality_score": 6.2
+      "quality_score": 6.4
     },
     {
       "id": "security.security-scanner",
@@ -5485,6 +6130,8 @@
         "security-scanner",
         "security"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "context"
@@ -5494,18 +6141,23 @@
         "report"
       ],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "security.security-scanner",
         "documentation": 8.3,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 6.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.5,
-        "overall_score": 5.9
+        "overall_score": 6.1
       },
-      "quality_score": 5.9
+      "quality_score": 6.1
     },
     {
       "id": "utilities.agent-transcript",
@@ -5542,6 +6194,8 @@
         "agent-transcript",
         "utilities"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "context"
@@ -5551,18 +6205,23 @@
         "report"
       ],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "utilities.agent-transcript",
         "documentation": 8.0,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 2.2,
-        "overall_score": 6.3
+        "overall_score": 6.5
       },
-      "quality_score": 6.3
+      "quality_score": 6.5
     },
     {
       "id": "utilities.audio-transcribe",
@@ -5602,6 +6261,8 @@
         "audio-transcribe",
         "utilities"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "context"
@@ -5611,18 +6272,23 @@
         "report"
       ],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "utilities.audio-transcribe",
         "documentation": 8.1,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.1,
-        "overall_score": 6.4
+        "overall_score": 6.6
       },
-      "quality_score": 6.4
+      "quality_score": 6.6
     },
     {
       "id": "utilities.beam",
@@ -5659,6 +6325,8 @@
         "beam",
         "utilities"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "context"
@@ -5668,18 +6336,23 @@
         "report"
       ],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "utilities.beam",
         "documentation": 8.1,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 2.2,
-        "overall_score": 6.3
+        "overall_score": 6.5
       },
-      "quality_score": 6.3
+      "quality_score": 6.5
     },
     {
       "id": "utilities.handoff",
@@ -5715,6 +6388,8 @@
         "handoff",
         "utilities"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "context"
@@ -5724,18 +6399,23 @@
         "report"
       ],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "utilities.handoff",
         "documentation": 7.8,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 2.2,
-        "overall_score": 6.2
+        "overall_score": 6.4
       },
-      "quality_score": 6.2
+      "quality_score": 6.4
     },
     {
       "id": "utilities.readme-standard",
@@ -5769,6 +6449,8 @@
         "readme-standard",
         "utilities"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "context"
@@ -5778,18 +6460,23 @@
         "report"
       ],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "utilities.readme-standard",
         "documentation": 8.2,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 2.2,
-        "overall_score": 6.3
+        "overall_score": 6.5
       },
-      "quality_score": 6.3
+      "quality_score": 6.5
     },
     {
       "id": "utilities.slack-synthesizer",
@@ -5829,6 +6516,8 @@
         "slack-synthesizer",
         "utilities"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "context"
@@ -5838,18 +6527,23 @@
         "report"
       ],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "utilities.slack-synthesizer",
         "documentation": 8.1,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.1,
-        "overall_score": 6.4
+        "overall_score": 6.6
       },
-      "quality_score": 6.4
+      "quality_score": 6.6
     },
     {
       "id": "utilities.sonos-cli",
@@ -5891,6 +6585,8 @@
         "sonos-cli",
         "utilities"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "context"
@@ -5900,18 +6596,23 @@
         "report"
       ],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "utilities.sonos-cli",
         "documentation": 8.4,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.7,
-        "overall_score": 6.6
+        "overall_score": 6.8
       },
-      "quality_score": 6.6
+      "quality_score": 6.8
     },
     {
       "id": "utilities.system-monitor",
@@ -5957,6 +6658,8 @@
         "system-monitor",
         "utilities"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "context"
@@ -5966,18 +6669,23 @@
         "report"
       ],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "utilities.system-monitor",
         "documentation": 8.2,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 4.7,
-        "overall_score": 6.7
+        "overall_score": 6.9
       },
-      "quality_score": 6.7
+      "quality_score": 6.9
     },
     {
       "id": "utilities.telegram-actions",
@@ -6019,6 +6727,8 @@
         "telegram-actions",
         "utilities"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "context"
@@ -6028,18 +6738,23 @@
         "report"
       ],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "utilities.telegram-actions",
         "documentation": 8.1,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 6.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.7,
-        "overall_score": 5.9
+        "overall_score": 6.1
       },
-      "quality_score": 5.9
+      "quality_score": 6.1
     },
     {
       "id": "utilities.unit-converter",
@@ -6082,6 +6797,8 @@
         "unit-converter",
         "utilities"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "context"
@@ -6091,18 +6808,23 @@
         "report"
       ],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "utilities.unit-converter",
         "documentation": 8.4,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 4.1,
-        "overall_score": 6.6
+        "overall_score": 6.8
       },
-      "quality_score": 6.6
+      "quality_score": 6.8
     },
     {
       "id": "utilities.weather-now",
@@ -6143,6 +6865,8 @@
         "weather-now",
         "utilities"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "context"
@@ -6152,18 +6876,23 @@
         "report"
       ],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "utilities.weather-now",
         "documentation": 8.3,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.5,
-        "overall_score": 6.5
+        "overall_score": 6.7
       },
-      "quality_score": 6.5
+      "quality_score": 6.7
     },
     {
       "id": "utilities.whatsapp-router",
@@ -6202,6 +6931,8 @@
         "whatsapp-router",
         "utilities"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "context"
@@ -6211,18 +6942,23 @@
         "report"
       ],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "utilities.whatsapp-router",
         "documentation": 8.2,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 3.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.0,
-        "overall_score": 5.2
+        "overall_score": 5.4
       },
-      "quality_score": 5.2
+      "quality_score": 5.4
     },
     {
       "id": "web.agent-browser",
@@ -6264,6 +7000,8 @@
         "agent-browser",
         "web"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "context"
@@ -6273,18 +7011,23 @@
         "report"
       ],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "web.agent-browser",
         "documentation": 8.3,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 6.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.3,
-        "overall_score": 5.9
+        "overall_score": 6.1
       },
-      "quality_score": 5.9
+      "quality_score": 6.1
     },
     {
       "id": "web.form-filler",
@@ -6326,6 +7069,8 @@
         "form-filler",
         "web"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "context"
@@ -6335,18 +7080,23 @@
         "report"
       ],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "web.form-filler",
         "documentation": 8.2,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 3.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.7,
-        "overall_score": 5.3
+        "overall_score": 5.5
       },
-      "quality_score": 5.3
+      "quality_score": 5.5
     },
     {
       "id": "web.media-downloader",
@@ -6389,6 +7139,8 @@
         "media-downloader",
         "web"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "context"
@@ -6398,18 +7150,23 @@
         "report"
       ],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "web.media-downloader",
         "documentation": 8.2,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 6.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.9,
-        "overall_score": 6.0
+        "overall_score": 6.2
       },
-      "quality_score": 6.0
+      "quality_score": 6.2
     },
     {
       "id": "web.web-scraper",
@@ -6452,6 +7209,8 @@
         "web-scraper",
         "web"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "task",
         "context"
@@ -6461,18 +7220,23 @@
         "report"
       ],
       "permissions": {},
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "web.web-scraper",
         "documentation": 8.3,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.0,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 3.9,
-        "overall_score": 6.6
+        "overall_score": 6.8
       },
-      "quality_score": 6.6
+      "quality_score": 6.8
     },
     {
       "id": "productivity.adhd-divergent-brainstorm",
@@ -6516,6 +7280,8 @@
         "tree-of-thought-exploration",
         "block-bypassing"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "problem",
         "domain",
@@ -6532,18 +7298,23 @@
         "shell": "none",
         "secrets": "none"
       },
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "productivity.adhd-divergent-brainstorm",
         "documentation": 8.9,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.5,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 4.5,
-        "overall_score": 6.9
+        "overall_score": 7.1
       },
-      "quality_score": 6.9
+      "quality_score": 7.1
     },
     {
       "id": "productivity.adhd-output-style",
@@ -6587,6 +7358,8 @@
         "visual-chunking",
         "bluf-synthesis"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "text",
         "task",
@@ -6602,18 +7375,23 @@
         "shell": "none",
         "secrets": "none"
       },
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "productivity.adhd-output-style",
         "documentation": 9.0,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.5,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 4.5,
-        "overall_score": 6.9
+        "overall_score": 7.1
       },
-      "quality_score": 6.9
+      "quality_score": 7.1
     },
     {
       "id": "productivity.executive-summary",
@@ -6658,6 +7436,8 @@
         "working-backwards-framework",
         "mece-structuring"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "project_details",
         "proposal",
@@ -6674,18 +7454,23 @@
         "shell": "none",
         "secrets": "none"
       },
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "productivity.executive-summary",
         "documentation": 8.9,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.5,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 4.9,
-        "overall_score": 7.0
+        "overall_score": 7.2
       },
-      "quality_score": 7.0
+      "quality_score": 7.2
     },
     {
       "id": "productivity.first-principles-reasoning",
@@ -6728,6 +7513,8 @@
         "5-whys-root-cause",
         "assumption-testing"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "problem",
         "assumptions",
@@ -6744,18 +7531,23 @@
         "shell": "none",
         "secrets": "none"
       },
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "productivity.first-principles-reasoning",
         "documentation": 9.0,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.5,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 4.3,
-        "overall_score": 6.9
+        "overall_score": 7.1
       },
-      "quality_score": 6.9
+      "quality_score": 7.1
     },
     {
       "id": "development.ci-cd-pipeline",
@@ -6801,6 +7593,8 @@
         "matrix-testing",
         "secret-isolation"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "project_tech_stack",
         "test_commands",
@@ -6817,18 +7611,23 @@
         "shell": "none",
         "secrets": "none"
       },
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "development.ci-cd-pipeline",
         "documentation": 9.0,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.5,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 4.9,
-        "overall_score": 7.0
+        "overall_score": 7.2
       },
-      "quality_score": 7.0
+      "quality_score": 7.2
     },
     {
       "id": "development.issue-triage",
@@ -6872,6 +7671,8 @@
         "reproduction-verification",
         "priority-routing"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "issue_body",
         "labels",
@@ -6889,18 +7690,23 @@
         "shell": "none",
         "secrets": "none"
       },
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "development.issue-triage",
         "documentation": 8.7,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.5,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 4.5,
-        "overall_score": 6.9
+        "overall_score": 7.1
       },
-      "quality_score": 6.9
+      "quality_score": 7.1
     },
     {
       "id": "development.pr-splitter",
@@ -6944,6 +7750,8 @@
         "diff-decomposition",
         "atomic-branching"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "git_diff",
         "branch",
@@ -6960,18 +7768,23 @@
         "shell": "none",
         "secrets": "none"
       },
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "development.pr-splitter",
         "documentation": 8.4,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.5,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 4.5,
-        "overall_score": 6.8
+        "overall_score": 7.0
       },
-      "quality_score": 6.8
+      "quality_score": 7.0
     },
     {
       "id": "development.release-management",
@@ -7016,6 +7829,8 @@
         "release-orchestration",
         "rollback-readiness"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "commits",
         "current_version",
@@ -7033,18 +7848,23 @@
         "shell": "none",
         "secrets": "none"
       },
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "development.release-management",
         "documentation": 9.0,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.5,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 4.7,
-        "overall_score": 7.0
+        "overall_score": 7.2
       },
-      "quality_score": 7.0
+      "quality_score": 7.2
     },
     {
       "id": "productivity.kaizen-continuous-improvement",
@@ -7088,6 +7908,8 @@
         "pdca-cycle-execution",
         "workflow-streamlining"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "workflow_description",
         "recurring_friction",
@@ -7104,18 +7926,23 @@
         "shell": "none",
         "secrets": "none"
       },
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "productivity.kaizen-continuous-improvement",
         "documentation": 9.0,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.5,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 4.5,
-        "overall_score": 6.9
+        "overall_score": 7.1
       },
-      "quality_score": 6.9
+      "quality_score": 7.1
     },
     {
       "id": "productivity.session-analytics",
@@ -7160,6 +7987,8 @@
         "bottleneck-detection",
         "time-auditing"
       ],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
       "inputs": [
         "session_log",
         "command_history",
@@ -7177,18 +8006,152 @@
         "shell": "none",
         "secrets": "none"
       },
-      "compatibility": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
       "quality": {
         "skill_id": "productivity.session-analytics",
         "documentation": 9.0,
         "maintenance": 5.0,
         "reliability": 7.0,
         "security": 9.5,
-        "compatibility": 4.0,
+        "compatibility": 6.0,
         "usefulness": 4.7,
-        "overall_score": 7.0
+        "overall_score": 7.2
       },
-      "quality_score": 7.0
+      "quality_score": 7.2
+    },
+    {
+      "id": "architecture.architecture-decision-records",
+      "name": "architecture-decision-records",
+      "category": "architecture",
+      "description": "Comprehensive patterns for creating, maintaining, and managing Architecture Decision Records (ADRs) that capture technical context, rationale, and consequences.",
+      "path": "architecture/architecture-decision-records",
+      "aliases": [
+        "adr",
+        "architecture-decisions"
+      ],
+      "triggers": [
+        "adr",
+        "architecture decision record",
+        "architecture decision",
+        "draft an adr",
+        "write an adr",
+        "document architecture decision",
+        "draft architecture trade-off",
+        "create architecture decision record",
+        "record technology choice"
+      ],
+      "keywords": [
+        "adr",
+        "architecture decision",
+        "decision record",
+        "madr",
+        "trade-off",
+        "technology choice",
+        "rationale",
+        "consequences"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": null,
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
+      "quality": {
+        "skill_id": "architecture.architecture-decision-records",
+        "documentation": 9.0,
+        "maintenance": 3.0,
+        "reliability": 9.0,
+        "security": 9.0,
+        "compatibility": 6.0,
+        "usefulness": 4.1,
+        "overall_score": 7.1
+      },
+      "quality_score": 7.1
+    },
+    {
+      "id": "healthcare.health-economist",
+      "name": "health-economist",
+      "category": "healthcare",
+      "description": "Expert health economics methodologies, cost-effectiveness analysis (CEA), cost-utility analysis (CUA), ICER calculations, and QALY/DALY evaluation.",
+      "path": "healthcare/health-economist",
+      "aliases": [
+        "health-econ",
+        "heor"
+      ],
+      "triggers": [
+        "icer",
+        "qaly",
+        "cost effectiveness",
+        "cost-effectiveness analysis",
+        "calculate icer",
+        "evaluate cost effectiveness",
+        "health technology assessment",
+        "qaly calculation",
+        "markov health model",
+        "cost utility analysis"
+      ],
+      "keywords": [
+        "health economics",
+        "cost-effectiveness",
+        "cost effectiveness",
+        "icer",
+        "qaly",
+        "daly",
+        "hta",
+        "budget impact",
+        "markov model",
+        "willingness to pay"
+      ],
+      "dependencies": [],
+      "composes_with": [],
+      "suggests_after": [],
+      "source": null,
+      "enabled": true,
+      "risk": "low",
+      "version": "1.0.0",
+      "lifecycle": "enabled",
+      "capabilities": [],
+      "forbidden": [],
+      "trust_tier": "T2_SCANNED",
+      "inputs": [],
+      "outputs": [],
+      "permissions": {},
+      "compatibility": {
+        "claude-code": ">=1.0",
+        "skillhub": "*",
+        "cursor": ">=0.40",
+        "codex": "*"
+      },
+      "quality": {
+        "skill_id": "healthcare.health-economist",
+        "documentation": 9.0,
+        "maintenance": 3.0,
+        "reliability": 9.0,
+        "security": 9.0,
+        "compatibility": 6.0,
+        "usefulness": 4.7,
+        "overall_score": 7.2
+      },
+      "quality_score": 7.2
     }
   ]
 }

@@ -1,157 +1,157 @@
 {
   "version": 1,
-  "generated_at": "2026-09-21T16:14:55.557707+00:00",
+  "generated_at": "2026-09-25T16:34:18.394160+00:00",
   "generator": "all-skills-lock v1.0.0",
   "total_skills": 196,
   "skills": {
     "accessibility-compliance-accessibility-audit": {
       "version": "1.0.0",
-      "sha256": "bd9b1bb8525878c339568630f65ff9f475a4ca76ceec2f576a7dfd872f1e7f96",
+      "sha256": "d510d3e1d1803547bc2b6f6fa876bc03cf1a134540cbf1925b22c292e085a147",
       "category": "active-harness",
       "files": [
-        "resources/implementation-playbook.md",
-        "SKILL.md"
+        "SKILL.md",
+        "resources/implementation-playbook.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
-      "risk": "safe"
+      "verified_at": "2026-09-25",
+      "risk": "low"
     },
     "agent-evaluation": {
       "version": "1.0.0",
-      "sha256": "685e63fa0c064f9cbb267a6542d287e403887dbb8057757ba9f1b3735904ef31",
+      "sha256": "4ed5cb1a2aafd8673145d875db6e13c03c299010f279c5d65ac78c6f4d5708c8",
       "category": "active-harness",
       "files": [
-        "references/architecture-sketches.md",
-        "SKILL.md"
+        "SKILL.md",
+        "references/architecture-sketches.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
-      "risk": "safe"
+      "verified_at": "2026-09-25",
+      "risk": "low"
     },
     "agent-memory": {
       "version": "1.0.0",
-      "sha256": "fac7626b871fe0e54fbb126c2f2944e4799ac75b326ff5f1c6cd4e1bb1f1ab30",
+      "sha256": "0cb0839bdf5ff5c1f3e9c79f9d8132289c589fc30f5ff57a549055c5bb44be17",
       "category": "active-harness",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "critical"
     },
     "agent-memory-systems": {
       "version": "1.0.0",
-      "sha256": "e292cf59125a96ed8c4192ede3b8b90cfbc181d52d91c1d5d9c74ab4a54c9393",
+      "sha256": "192a7e3dc59c1dd661875313b6909898d4b336828ea7805a4b277b7b85fa28c9",
       "category": "active-harness",
       "files": [
-        "references/detailed-guide.md",
-        "SKILL.md"
+        "SKILL.md",
+        "references/detailed-guide.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
-      "risk": "safe"
+      "verified_at": "2026-09-25",
+      "risk": "low"
     },
     "agent-tool-builder": {
       "version": "1.0.0",
-      "sha256": "310706ae94e601c7c2909a90126eea9ec074a4eecd5752d13099537926fd7fe6",
+      "sha256": "6827d7495e891c4241ce40cecedf60aef378f4f0af32966032e1c1a74c6846a1",
       "category": "active-harness",
       "files": [
-        "references/detailed-guide.md",
-        "SKILL.md"
+        "SKILL.md",
+        "references/detailed-guide.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "critical"
     },
     "ai-engineer": {
       "version": "1.0.0",
-      "sha256": "72f1917c84ce460f07f3d08a3bb3e5838904ac4833321c25c268788a365ce773",
+      "sha256": "1ef5bc9d4c902aadfcfecf49f9e4902e4367e489d2c6097c5e2f32dbc93600f1",
       "category": "active-harness",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "critical"
     },
     "ai-engineering-toolkit": {
       "version": "1.0.0",
-      "sha256": "1bb1da9a7b257dd7cc595a6f66889e0337adb055268f97461179b5f51ce4c3c0",
+      "sha256": "cb2dd3ff30fd3acb8a1cbdacd73598b0b34ce7123fded7978830d9bb4e85dfde",
       "category": "data-ai",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
-      "risk": "offensive"
+      "verified_at": "2026-09-25",
+      "risk": "high"
     },
     "analytics-product": {
       "version": "1.0.0",
-      "sha256": "8ef957044ce7af35ff0d1531af2515d39262091f33647639bad58196c60eb39a",
+      "sha256": "af4781d99ff7cc89bd365523e0d9256086429638394ab1025bdcc19445101c4d",
       "category": "active-harness",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
-      "risk": "none"
+      "verified_at": "2026-09-25",
+      "risk": "low"
     },
     "angular-state-management": {
       "version": "1.0.0",
-      "sha256": "c387aece88d649ccdb34b603695edd70ca19aa347e2247c830641b9a906b601d",
+      "sha256": "0dd335992038de71f99e13fd311140d80f4db3725b20ca8e883927e9968d178e",
       "category": "active-harness",
       "files": [
-        "metadata.json",
         "README.md",
-        "references/detailed-guide.md",
-        "SKILL.md"
+        "SKILL.md",
+        "metadata.json",
+        "references/detailed-guide.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
-      "risk": "safe"
+      "verified_at": "2026-09-25",
+      "risk": "low"
     },
     "api-and-interface-design": {
       "version": "1.0.0",
-      "sha256": "4abd190b5a2c122ada266e8274b1f34d7ec4f07813ad6500bd63726b4ceddce8",
+      "sha256": "6b17bcb74d1c3ddeb8a53530e6247b7de4a79fb869d86f3a535027dd8022cc6e",
       "category": "active-harness",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
-      "risk": "none"
+      "verified_at": "2026-09-25",
+      "risk": "low"
     },
     "api-designer": {
       "version": "1.0.0",
-      "sha256": "b6daad9ebc99f5e3158b3bd6398c55f7c40e97cec43c7547bfc6259d1057d209",
+      "sha256": "ab11989d51ad74e6bdd13ffc1ce846e459982016f3f1a9f51ae003f2507dd89c",
       "category": "active-harness",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
-      "risk": "safe"
+      "verified_at": "2026-09-25",
+      "risk": "low"
     },
     "api-documentation": {
       "version": "1.0.0",
-      "sha256": "7bae993029634c12cca9ad7bc589ef05d6b9708542fa233fa9b4559fd9252056",
+      "sha256": "3e8e443aa845bbd28f564a344812cc9fab98e3d1f091bac9d9a88b6d78a30014",
       "category": "granular-workflow-bundle",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
-      "risk": "safe"
+      "verified_at": "2026-09-25",
+      "risk": "low"
     },
     "architecture-decision-records": {
       "version": "1.0.0",
-      "sha256": "990af84bbcfba498e8b881e1881b45bbb61e12cc36ab07b46a707cf19ab31ead",
+      "sha256": "754857aabe0b073f35c9da416e01dda8c13667c4b65072bbd60823ccf74b4128",
       "category": "architecture",
       "files": [
-        "examples/bad-adr-example.md",
-        "examples/good-adr-example.md",
         "README.md",
         "SKILL.md",
+        "examples/bad-adr-example.md",
+        "examples/good-adr-example.md",
         "templates/deprecation-template.md",
         "templates/lightweight-template.md",
         "templates/madr-template.md",
@@ -159,332 +159,333 @@
         "tests/test_adr_format.py"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "ast-code-transformation": {
       "version": "1.0.0",
-      "sha256": "c1b7659512afb37a1a201f47a07270e101682e8f3a0b3a869a74caf75a848321",
+      "sha256": "61105f942969542b17c5f0cdd3557a518b4cc700d301dda8ec344ae01490d5a2",
       "category": "development",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "aws-serverless": {
       "version": "1.0.0",
-      "sha256": "8a6f1a10b98b11fd5e2d743df31ea412881b309404ab3cc7f77c6a88926299a6",
+      "sha256": "2d5eb982bbeaf2fa81b94f11e4a655f8ffa70d48ec97cd5ec23326719094de31",
       "category": "active-harness",
       "files": [
-        "references/detailed-guide.md",
-        "SKILL.md"
+        "SKILL.md",
+        "references/detailed-guide.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "critical"
     },
     "brainstorming": {
       "version": "1.0.0",
-      "sha256": "9b29bd35f705e20773f06fe6946317bf20b91937f0e64cf51f2b2d007dfd574d",
+      "sha256": "8dfc24df42d27ca4d38dff833289d652051159500a142574454dd9f6832c4f03",
       "category": "active-harness",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "critical"
     },
     "browser-act": {
       "version": "1.0.0",
-      "sha256": "30bebc93f44dc86a77768ed980a0b8801e9916cd56cb7930adf71b8ed2543613",
+      "sha256": "e57f9a5793f1dd61eef4cc5c5a4cc04a0abad0bd74c6d35042cf92c5ef387eeb",
       "category": "browser-automation",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "critical"
     },
     "browser-automation": {
       "version": "1.0.0",
-      "sha256": "596991262354decae173e911fbb44ed6c68d52d495b1bda73a5c1ad3961ea38f",
+      "sha256": "7a631a664c4b09b8d947bddeed60e40a299dd20a5ddea834201748ed5a739cf6",
       "category": "active-harness",
       "files": [
-        "references/detailed-guide.md",
-        "SKILL.md"
+        "SKILL.md",
+        "references/detailed-guide.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "critical"
     },
     "changelog-automation": {
       "version": "1.0.0",
-      "sha256": "de638a606524f5ad71345b03691351103e4202b5920843a754a1b566e7a4588f",
+      "sha256": "490b4878be34046c553db113a07915ced15a9af1dbdac11bfa8a0036c5b90072",
       "category": "active-harness",
       "files": [
-        "resources/implementation-playbook.md",
-        "SKILL.md"
+        "SKILL.md",
+        "resources/implementation-playbook.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "critical"
     },
     "ci-cd-and-automation": {
       "version": "1.0.0",
-      "sha256": "ca6a87051cd91ada1884c74502c8b71d1ea38116862f1cc657e414944a6b0626",
+      "sha256": "1e80f081c7537c66a0c488e6797cc14b20cd2d0a767a3952c5b058b7ae37e78e",
       "category": "active-harness",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "critical"
     },
     "cloud-devops": {
       "version": "1.0.0",
-      "sha256": "3d84ff62a8af092dae0f27a7d8fe16ec22e3c7ca19b795177a1796d054d313ea",
+      "sha256": "9b7a52e8475c7c7c2428bedb566ce6fa6d5551c61f01f06eb589ff7683683ad8",
       "category": "workflow-bundle",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
-      "risk": "safe"
+      "verified_at": "2026-09-25",
+      "risk": "low"
     },
     "code-review-excellence": {
       "version": "1.0.0",
-      "sha256": "1aae446a37b9cf57ca1cbe2d2e5cd6c84155c1a3334e7df232d50c0eb614ad24",
+      "sha256": "f6a1c44480243fc33f977420b1e193ecaecc866baa0a70a1cade49eb0325e38f",
       "category": "active-harness",
       "files": [
-        "resources/implementation-playbook.md",
-        "SKILL.md"
+        "SKILL.md",
+        "resources/implementation-playbook.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
-      "risk": "safe"
+      "verified_at": "2026-09-25",
+      "risk": "low"
     },
     "code-reviewer": {
       "version": "1.0.0",
-      "sha256": "28a2074793d4c1704f221fe33e3ded649820a630766bcc9004efab96247b3fe1",
+      "sha256": "39e803ba9e29b1cfd4eaab28cc670ee8532ae353c48e811161a4e519950ecd37",
       "category": "active-harness",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "critical"
     },
     "code-showcase-systematic-debugging": {
       "version": "1.0.0",
-      "sha256": "f9131ba0592290b645da337178681be3add882cc6f832f4c47627a90bc05d426",
+      "sha256": "4c588a2f440623cc4860dcbe845947ca6dff96a1d09a2b0753070c7be9deaefe",
       "category": "active-harness",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "critical"
     },
     "concise-planning": {
       "version": "1.0.0",
-      "sha256": "4d0ae162566077ecb48e73f67c57b825e0f1182b4034cbf28d3d5a72a41a0367",
+      "sha256": "a257846201ce98d648fcf055e3fb8a12c9d5d1a139e51bc23b9e3dfa315d3b85",
       "category": "active-harness",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
-      "risk": "safe"
+      "verified_at": "2026-09-25",
+      "risk": "low"
     },
     "context-budget-and-pruning": {
       "version": "1.0.0",
-      "sha256": "9b87465a699129f9a11d7050ded2bab724e2513a9459a04acd2e8049983ea4e3",
+      "sha256": "2d6c51f831d146f65aba3a9becb202a7fe345479fb4942845e66b26a64a67213",
       "category": "workflow",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "context-window-management": {
       "version": "1.0.0",
-      "sha256": "24ea302b952a92e2099e67667053a4b5f097ce31f31efd0e7ed2832b5d001342",
+      "sha256": "29d33b59936b035c9b98bfe72c0581582c4b2dd60158f15fb868c66cd04d1786",
       "category": "active-harness",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "critical"
     },
     "copywriting": {
       "version": "1.0.0",
-      "sha256": "c0f2afefbd8b58b1fc1f4f9f83d19f605b83b12d09845647ccd81d9971ef1ead",
+      "sha256": "f25833c5b6c15f6f86c6bd0ab1c6ecbd074eae3a4f8f6f5bf6cd7838488749be",
       "category": "active-harness",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
-      "risk": "none"
+      "verified_at": "2026-09-25",
+      "risk": "low"
     },
     "database-design": {
       "version": "1.0.0",
-      "sha256": "347a2c63b532c3ec79d3cb78b12f63f33fdcb02e408d330b215097ec66dbfc56",
+      "sha256": "34061cc803f394dfd84e4af0f7cd379b56ba03aee8b9b84f9c8c276eae3c4b76",
       "category": "active-harness",
       "files": [
+        "SKILL.md",
         "database-selection.md",
         "indexing.md",
         "migrations.md",
         "optimization.md",
         "orm-selection.md",
         "schema-design.md",
-        "scripts/schema_validator.py",
-        "SKILL.md"
+        "scripts/schema_validator.py"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
-      "risk": "safe"
+      "verified_at": "2026-09-25",
+      "risk": "low"
     },
     "database-migration": {
       "version": "1.0.0",
-      "sha256": "77138a4a94633d707a418a1079e3259e9e6163b638263286076eff836cd56799",
+      "sha256": "87fa80141f56c970aad39b3d2373faa214485813779725ba752c7df5b5cddccb",
       "category": "active-harness",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "critical"
     },
     "design-system": {
       "version": "1.0.0",
-      "sha256": "8a61c52700fea7ccb0f2a7c74a0fa1a6d65e935b75850b6521a12d83700d03e0",
+      "sha256": "eb84e843d446d276245a28adce4b0d0931bb80e2e3d2033744b2c652666baec7",
       "category": "active-harness",
       "files": [
-        "references/motion-choreography.md",
-        "SKILL.md"
+        "SKILL.md",
+        "references/motion-choreography.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "critical"
     },
     "dispatching-parallel-agents": {
       "version": "1.0.0",
-      "sha256": "d83ae24d581a7727247297f26fe4b8c8b5195b4c70f773370591edca5dcb76bd",
+      "sha256": "9d52cb7b928f13d8ca48fa4382191ddd48109901c509cc9e64100dda801ac41f",
       "category": "active-harness",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "critical"
     },
     "drizzle-orm-expert": {
       "version": "1.0.0",
-      "sha256": "c103e0cbd42628226bc7c04fb856e136691aedb0c23cfd039de3c2de581bb711",
+      "sha256": "24366a467282df071d0765d23482300313005dfeacee7780238a230f90ca3072",
       "category": "active-harness",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
-      "risk": "safe"
+      "verified_at": "2026-09-25",
+      "risk": "low"
     },
     "email-sequence": {
       "version": "1.0.0",
-      "sha256": "5b1c9829f2cdd9a30f8e1e462783743a989e33c1bede364a964a004f91f898ce",
+      "sha256": "a1e0278d05c5680741817e92cd7a73b7753d86b84e746b428817f42c93200ecc",
       "category": "active-harness",
       "files": [
-        "references/detailed-guide.md",
-        "SKILL.md"
+        "SKILL.md",
+        "references/detailed-guide.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
-      "risk": "none"
+      "verified_at": "2026-09-25",
+      "risk": "low"
     },
     "executing-plans": {
       "version": "1.0.0",
-      "sha256": "d8d544f4a9529f5811a7378b1ba32ff6215f95755898ab392561637a49756fbc",
+      "sha256": "93912a169b4b7dfc47b1091755014059b11ea93a5074aafc616cced1ae9fe0fa",
       "category": "active-harness",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "critical"
     },
     "health-economist": {
       "version": "1.0.0",
-      "sha256": "e3c6e38b1c899c7e167d532fc0fd1a6261cb64479be96d86a22cd3f375ce4519",
+      "sha256": "7eec50a9718ea8f8b2a357923fed157d3bc96148b43257b1fbd8c4f9cc7d2b85",
       "category": "healthcare",
       "files": [
+        "README.md",
+        "SKILL.md",
         "examples/bad-vs-good-economic-model.md",
         "examples/good-cea-report.md",
-        "README.md",
         "references/cea-cua-guidelines.md",
         "references/icer-calculations.md",
         "references/qaly-daly-framework.md",
-        "SKILL.md",
         "tests/test_health_eval.py"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "kubernetes-architect": {
       "version": "1.0.0",
-      "sha256": "3f5829ed073b59c60ee4641e027d38784b5f834c8f80c53a142769ec2e713a38",
+      "sha256": "586300cfb276f555b8e93d594aa595864b52b81567f96d1bae112db15207d2fa",
       "category": "active-harness",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "critical"
     },
     "kubernetes-deployment": {
       "version": "1.0.0",
-      "sha256": "02708fd757d18d030451fa751e9f41ce0620edad788d9b79318beb14e16dc4ef",
+      "sha256": "0cc11056a4653da71cdb435edd706e7c29ecce007947f940c5b82235d2c7afe1",
       "category": "granular-workflow-bundle",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
-      "risk": "safe"
+      "verified_at": "2026-09-25",
+      "risk": "low"
     },
     "llm-prompt-optimizer": {
       "version": "1.0.0",
-      "sha256": "6059139f573c77b99c727b030a266efcf78cdb29a7baf798a4111fc9e30bac59",
+      "sha256": "cfe324df00d856303cfc2213a55a9b06b8713706997b2d91da48e56d2a905293",
       "category": "active-harness",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
-      "risk": "safe"
+      "verified_at": "2026-09-25",
+      "risk": "low"
     },
     "marketplace-rbac-audit": {
       "version": "1.0.0",
-      "sha256": "9fec53172c7799785801a6a4b6b4d68d304af64bc623c9b0c1fd2758f24d001b",
+      "sha256": "62c322d17d60a97e9da18faefa22af764826136ca30f466737d668604ebf916c",
       "category": "security",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
-      "risk": "safe"
+      "verified_at": "2026-09-25",
+      "risk": "low"
     },
     "mcp-builder": {
       "version": "1.0.0",
-      "sha256": "c4e265c7656efb2e0b9be95452b1444cee3ee2e2d8c561a96af62acb279697bc",
+      "sha256": "a472614fe519b5200ae574a61b4bbe91083e9b23dffe2485fb051f87d567c883",
       "category": "active-harness",
       "files": [
         "LICENSE.txt",
+        "SKILL.md",
         "reference/evaluation.md",
         "reference/mcp_best_practices.md",
         "reference/node_mcp_server.md",
@@ -492,76 +493,76 @@
         "scripts/connections.py",
         "scripts/evaluation.py",
         "scripts/example_evaluation.xml",
-        "scripts/requirements.txt",
-        "SKILL.md"
+        "scripts/requirements.txt"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "critical"
     },
     "mcp-tool-developer": {
       "version": "1.0.0",
-      "sha256": "0fb211bf8dc86b12337c3e47eaa1dbf0c1feff38d9a59e877ed4ea05ec1b9f56",
+      "sha256": "7fd911e680c06ec70b88cd49490d4c41f44182f441691c0d081fbdcd057d7928",
       "category": "developer-tools",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
-      "risk": "safe"
+      "verified_at": "2026-09-25",
+      "risk": "low"
     },
     "micro-saas-launcher": {
       "version": "1.0.0",
-      "sha256": "4e7fc20095f284c2a5f09bc521950bcc2533a07f0362a44c26500a35a7a6e4ad",
+      "sha256": "62f99d8449dc49b2a0bf3be8e983795813572cc42b9cd57368db6853419d004c",
       "category": "active-harness",
       "files": [
-        "references/detailed-guide.md",
-        "SKILL.md"
+        "SKILL.md",
+        "references/detailed-guide.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "critical"
     },
     "multi-agent-architect": {
       "version": "1.0.0",
-      "sha256": "025b0297d6ba9e5b45b4e2497f9b4c27b31cb53a86bd7e99a7d64d187788db1c",
+      "sha256": "da2517df5c642a3b94b49e4837f4c124db1891e05ba5507ca1b79a1e3b9690df",
       "category": "active-harness",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
-      "risk": "safe"
+      "verified_at": "2026-09-25",
+      "risk": "low"
     },
     "multi-agent-brainstorming": {
       "version": "1.0.0",
-      "sha256": "7b4424697354318c92b1f3e775a1ea378f318a547c1318c1d8447b8f6009d7ff",
+      "sha256": "21966d49cd00d3dfbc83624bfaf9f65ff9832bb8f4b277f8e1ce590f4ad90a73",
       "category": "active-harness",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
-      "risk": "none"
+      "verified_at": "2026-09-25",
+      "risk": "low"
     },
     "multi-agent-patterns": {
       "version": "1.0.0",
-      "sha256": "439fc25c207f76a2b88c28b79beb68ab56e615cda397f9f2a4ed7be6e009543e",
+      "sha256": "dd52940c33b559d5fe45100f091be4f17939daaa6dab30fcda4cc6ba79fad39d",
       "category": "active-harness",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "critical"
     },
     "pdf-official": {
       "version": "1.0.0",
-      "sha256": "dc123fc97633a562e67078d4d21b48e03a1f7379065f3fb172282b4dad0b1ce0",
+      "sha256": "6f8063959c7c371788274a786c75dc22df2cd6e7401fbbbc3801f15cce40fbf9",
       "category": "active-harness",
       "files": [
-        "forms.md",
         "LICENSE.txt",
+        "SKILL.md",
+        "forms.md",
         "reference.md",
         "scripts/check_bounding_boxes.py",
         "scripts/check_bounding_boxes_test.py",
@@ -570,324 +571,323 @@
         "scripts/create_validation_image.py",
         "scripts/extract_form_field_info.py",
         "scripts/fill_fillable_fields.py",
-        "scripts/fill_pdf_form_with_annotations.py",
-        "SKILL.md"
+        "scripts/fill_pdf_form_with_annotations.py"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "critical"
     },
     "performance-profiling": {
       "version": "1.0.0",
-      "sha256": "997b24f79315f621ece74eba484a9b2739c7c80225a6ade0a812df9ae0177688",
+      "sha256": "f317f45147fbb82d0b59c2a00371ae0383b23eace5f6b34a36ed3f89baae1c2d",
       "category": "active-harness",
       "files": [
-        "scripts/lighthouse_audit.py",
-        "SKILL.md"
+        "SKILL.md",
+        "scripts/lighthouse_audit.py"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "critical"
     },
     "playwright-skill": {
       "version": "1.0.0",
-      "sha256": "7d225952a420d06693787054ad8fef1a984cbf87fb3f2f500f040fae88cfc6a2",
+      "sha256": "d80696719365143a9a0862923de783e094be71b247db43667c787e2499066e55",
       "category": "active-harness",
       "files": [
         "API_REFERENCE.md",
+        "SKILL.md",
         "lib/helpers.js",
         "package.json",
-        "run.js",
-        "SKILL.md"
+        "run.js"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "critical"
     },
     "prisma-expert": {
       "version": "1.0.0",
-      "sha256": "10d1772eb6bcf3fc7335b33660682e5d10e7c10f7dc705f36bce999be2451b36",
+      "sha256": "8652dd531d2f030ddf4f4fb500b7eaa8ee43016a3affb72f7088a1a0b6522840",
       "category": "active-harness",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "critical"
     },
     "react-state-management": {
       "version": "1.0.0",
-      "sha256": "eac3f98d44d90698293b4ef8f2e0c645516dbdba47a4d2bdb5f6185d89296bc4",
+      "sha256": "82ac2e99665f433994a5846af3393585f9a7062c7ab9b475c64a8854ec77202c",
       "category": "active-harness",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "critical"
     },
     "receiving-code-review": {
       "version": "1.0.0",
-      "sha256": "0fa9c97b92df7417c3b1b18ea2208867f5b899d51b6a66f6b5b193d6956b0414",
+      "sha256": "e6e8cfae2cecb60fd51dc818dcd6e07f0ea5cc61f26b97fc6f13299264ce2f7c",
       "category": "active-harness",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "critical"
     },
     "red-team-tactics": {
       "version": "1.0.0",
-      "sha256": "2eda6cb66139cafb0f81f6ec146813bdb230a1087b7542e962da3d79c7a4cf87",
+      "sha256": "47624d1b91f59e1534a0492175ef50b062382a2715aebb1e98fc7fd0aa1c8123",
       "category": "active-harness",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
-      "risk": "offensive"
+      "verified_at": "2026-09-25",
+      "risk": "high"
     },
     "redis-cli": {
       "version": "1.0.0",
-      "sha256": "32d776db3e722bbb749d734d2e74ade0b21b3e84e527e743cb181b28ab05d18e",
+      "sha256": "292611085cf1428c669539c8ba25deac6c0149fedb6e9383744824ea131dec13",
       "category": "active-harness",
       "files": [
+        "SKILL.md",
         "references/advanced-features.md",
         "references/connection-and-options.md",
         "references/data-query-commands.md",
         "references/inspection-and-monitoring.md",
         "references/key-management.md",
         "references/module-data-types.md",
-        "references/server-administration.md",
-        "SKILL.md"
+        "references/server-administration.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "critical"
     },
     "requesting-code-review": {
       "version": "1.0.0",
-      "sha256": "fa155caf635272adade6676baed647181bb370db2506bf7021c7bc186e99280e",
+      "sha256": "1c491ee41a5c600766775e923139b7d952c7584a5af47bfd2e8ba30955bbffba",
       "category": "active-harness",
       "files": [
-        "code-reviewer.md",
-        "SKILL.md"
+        "SKILL.md",
+        "code-reviewer.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "critical"
     },
     "review-and-simplify-changes": {
       "version": "1.0.0",
-      "sha256": "973306c5b7dbaac217ffb2e161e4c41a8e3aa765560c36d9e4bc628bcf8efaca",
+      "sha256": "7998a3bd41d6d0ed9e2be81ddc3503fac8c20a79c14be639ec0b76d4b8f0d60e",
       "category": "active-harness",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "critical"
     },
     "saas-mvp-launcher": {
       "version": "1.0.0",
-      "sha256": "50b10f5c530e8f6c49fd871b7b8b201862defdb2e26b4853c03cf112f326109a",
+      "sha256": "41272c6d1733be74c9e93ca22cdf6770bef900723da30b1e76e738960b68f95d",
       "category": "active-harness",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
-      "risk": "safe"
+      "verified_at": "2026-09-25",
+      "risk": "low"
     },
     "sast-configuration": {
       "version": "1.0.0",
-      "sha256": "54dae671b19e90496a6e0cafba1e42933de4346bf1228fb03666653beed9729d",
+      "sha256": "01ee3b1bd59ae9cddc9f4d6d0b462ba802a045d0df63c1e8b6648f4698abacb5",
       "category": "active-harness",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "critical"
     },
     "secrets-management": {
       "version": "1.0.0",
-      "sha256": "fd4a9e9afc0874a44c0ba01ad8a624291dd51a9804f364eb8a2c1ff42d5e02f1",
+      "sha256": "069c25b8a8f1c4360b3867d2e5e1f015799765044ff0431001f64945099b0ed5",
       "category": "active-harness",
       "files": [
+        "SKILL.md",
         "references/github-secrets.md",
-        "references/vault-setup.md",
-        "SKILL.md"
+        "references/vault-setup.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "critical"
     },
     "security-sandboxing-guardrails": {
       "version": "1.0.0",
-      "sha256": "acefd8d86e7d691f07fe767ec5e8976e40b8ff73a74373c6832b58fd3e1e6b72",
+      "sha256": "142d88dafe148aa87d1ad0af29d81bea83bd353554e5dc2e97906ccd3b4789ea",
       "category": "security",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "security-scanning-security-sast": {
       "version": "1.0.0",
-      "sha256": "123fa9259bdb8ec1736ebefc61f0597f51b3aba4b46fca2eb8b7a1f53ed483d3",
+      "sha256": "84b0b712f5f4b6f38379cc75ade091da955b5ee4fd4aa93a0e3f849847a8ad0d",
       "category": "active-harness",
       "files": [
-        "references/detailed-guide.md",
-        "SKILL.md"
+        "SKILL.md",
+        "references/detailed-guide.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
-      "risk": "low"
+      "verified_at": "2026-09-25",
+      "risk": "critical"
     },
     "seo-geo": {
       "version": "1.0.0",
-      "sha256": "e33d62687a0b4b1d23efede018cbccb80dc32512c75ca2453d82d9300c67193a",
+      "sha256": "4f2332f18148080d0382445ff03af114b8996faf4eef60fe898f5645765bc756",
       "category": "active-harness",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "critical"
     },
     "subagent-driven-development": {
       "version": "1.0.0",
-      "sha256": "729a23df0b46ccbfae5029d5f768b7beec4a54a41e508028e8a8f08d6d995ca6",
+      "sha256": "70919284b7277c98dfc03a4bfd6b3feadc2cd025c584c90d60e1f613939d7e06",
       "category": "active-harness",
       "files": [
+        "SKILL.md",
         "code-quality-reviewer-prompt.md",
         "implementer-prompt.md",
-        "SKILL.md",
         "spec-reviewer-prompt.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "critical"
     },
     "tailwind-design-system": {
       "version": "1.0.0",
-      "sha256": "3268322f3c80311b5d31199544fc236ac764b1e41373feb34218daeb03967451",
+      "sha256": "a0c2ee7100e1bf340fa297628084dcf4169067c3298526f30eb93142d12b3fef",
       "category": "active-harness",
       "files": [
-        "resources/implementation-playbook.md",
-        "SKILL.md"
+        "SKILL.md",
+        "resources/implementation-playbook.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
-      "risk": "safe"
+      "verified_at": "2026-09-25",
+      "risk": "low"
     },
     "tdd": {
       "version": "1.0.0",
-      "sha256": "63b03002ce117fea61a5203670fdf05adebe48bb9d2872e03dbd0f44431e08b1",
+      "sha256": "ddd55874678ad985fa620bea23557c221c8add99fffcfdf2279ba668e4d8a918",
       "category": "development",
       "files": [
+        "SKILL.md",
         "mocking.md",
         "refactoring.md",
-        "SKILL.md",
         "tests.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
-      "risk": "safe"
+      "verified_at": "2026-09-25",
+      "risk": "low"
     },
     "terraform-infrastructure": {
       "version": "1.0.0",
-      "sha256": "24e223cdf9b8b234ce53e175d3b3b26921a6657bbd304f06aebecfed22173571",
+      "sha256": "4c8dc202f7d8e066130bae806fe7f358e588dc070600c8e5b52e0c8457d3f704",
       "category": "granular-workflow-bundle",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
-      "risk": "safe"
+      "verified_at": "2026-09-25",
+      "risk": "low"
     },
     "top-web-vulnerabilities": {
       "version": "1.0.0",
-      "sha256": "fc0f36eaa0451e74bbca3a0bc57041cee3915c6597b89cceabe98a509142c75c",
+      "sha256": "7e8cd743c91d00226273d7530c8f30a523cce902cb0d1c3cc66b6c7c36f30647",
       "category": "active-harness",
       "files": [
-        "references/detailed-guide.md",
-        "SKILL.md"
+        "SKILL.md",
+        "references/detailed-guide.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
-      "risk": "offensive"
+      "verified_at": "2026-09-25",
+      "risk": "high"
     },
     "using-git-worktrees": {
       "version": "1.0.0",
-      "sha256": "64605394b222cc72fba3a9d59492d544cb37392e7081300d0d7d98ac53bf749a",
+      "sha256": "635e5d20f4585866b044c32a152d76a7982b5e1af90f9b4bac7568d31c2f080e",
       "category": "active-harness",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "critical"
     },
     "verification-before-completion": {
       "version": "1.0.0",
-      "sha256": "38a0178f9c44a7059991148126d2aa3ee0cad8efcdc0d929bf57aae4f3ab5c7e",
+      "sha256": "a71c7086f11bc0dd1a4834628f32207002d5c4cd51fce49ba977e38f546ff0cb",
       "category": "active-harness",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "critical"
     },
     "vulnerability-scanner": {
       "version": "1.0.0",
-      "sha256": "d8fc3bc15fbdf4d6a9b8219f7897fc19d2ff41cc8eff891471637d25ef0d2e51",
+      "sha256": "2d9e569a8a1ee272da718aad8f65f59b9a479c443afd011666a970f4cc7d3011",
       "category": "active-harness",
       "files": [
+        "SKILL.md",
         "checklists.md",
-        "scripts/security_scan.py",
-        "SKILL.md"
+        "scripts/security_scan.py"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "critical"
     },
     "wcag-audit-patterns": {
       "version": "1.0.0",
-      "sha256": "4ea63bd0a8aa3f932ce5cd0c26ada975927d954af19ab1fd55bc8476427bf3a0",
+      "sha256": "10beac513bc829bea30a5cfcc722497343ccfaa045dc38f70ae6bc3efaab0379",
       "category": "active-harness",
       "files": [
-        "resources/implementation-playbook.md",
-        "SKILL.md"
+        "SKILL.md",
+        "resources/implementation-playbook.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
-      "risk": "safe"
+      "verified_at": "2026-09-25",
+      "risk": "low"
     },
     "which-skill": {
       "version": "1.0.0",
-      "sha256": "485c7e3f0a221fd60749a2b1f2e05f9d76ca16bed1db331c5692c99cfe3fc3d3",
+      "sha256": "da85399f791150037f9be86570f3d471f605bda3fc1f9bdee97e4161f676ab0b",
       "category": "workflow",
       "files": [
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "architecture.architecture-decision-records": {
       "version": "1.0.0",
-      "sha256": "990af84bbcfba498e8b881e1881b45bbb61e12cc36ab07b46a707cf19ab31ead",
+      "sha256": "5845241bc8b255e8fbccf233af21012ccfeb9134e010303d837df00d98ea3644",
       "category": "architecture",
       "files": [
-        "examples/bad-adr-example.md",
-        "examples/good-adr-example.md",
         "README.md",
         "SKILL.md",
+        "examples/bad-adr-example.md",
+        "examples/good-adr-example.md",
         "templates/deprecation-template.md",
         "templates/lightweight-template.md",
         "templates/madr-template.md",
@@ -895,428 +895,467 @@
         "tests/test_adr_format.py"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "design.avatar-creator": {
       "version": "1.0.0",
-      "sha256": "b86616a904ecb247fba4b4982ce78ff804ea7e99a341aa2fbc8b345b8ef51792",
+      "sha256": "ce0fe0a14c618560d3eff8dc60f48b32b1a610690d6100ec2d77391e0d8c9f41",
       "category": "design",
       "files": [
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
-      "verified_at": "2026-09-21",
+      "dependencies": [
+        "optional:image-generator"
+      ],
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "design.branding": {
       "version": "1.0.0",
-      "sha256": "cdb89f4c4a099eed355ad76908408a2025bf8c78e718474a1d73c1f911147c9a",
+      "sha256": "d6f0cfdf109eb5be6dbf5baa23b393197ad60e313141fae15a75eedcc8da56fc",
       "category": "design",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "design.frontend-design": {
       "version": "1.0.0",
-      "sha256": "c68af69fcbd8d3d901657a6e72de8a4c83754a1524ed6c2f1a68c61a58b85e78",
+      "sha256": "f7711b4a222834e8785d7f2c240231bd061c8994dd69cca33566593c755330a2",
       "category": "design",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "design.image-gen": {
       "version": "1.0.0",
-      "sha256": "7ca92ab844c6f06296216ac610f472e518d640d89a100243949ec32fb9951945",
+      "sha256": "950058f165e2ea41be02060d8b06afb611aa8db814eab4678ec7266424dcdcde",
       "category": "design",
       "files": [
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
-      "verified_at": "2026-09-21",
+      "dependencies": [
+        "optional:image-generator"
+      ],
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "design.presentations": {
       "version": "1.0.0",
-      "sha256": "4c93feefa2d361fde36e0430c5e250d958452beb28bff6c470d6823a59d0e9b5",
+      "sha256": "8637207f9234315352ac5c01dfc0d70233f9e93caaf737920564aecfe01f530a",
       "category": "design",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "design.remotion-best-practices": {
       "version": "1.0.0",
-      "sha256": "4644687c18ee7a4dc675f64d081289b1a7bd3796fb7d7bd84ca698c0414211eb",
+      "sha256": "4cb8ca37d82a7046b20729365fc61cd58be00853bce65c99128a2ad937f25671",
       "category": "design",
       "files": [
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
-      "verified_at": "2026-09-21",
+      "dependencies": [
+        "optional:node",
+        "optional:remotion"
+      ],
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "design.ui-ux": {
       "version": "1.0.0",
-      "sha256": "3a8fe4ae9e7af7a13064a160405e201f3d7629f8a687d0c48a3e6a60036eb47e",
+      "sha256": "3e63167fc0d78f521f624fc7024682928213e8f12c108e9464738b65c61a98f6",
       "category": "design",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "design.veo-video-generator": {
       "version": "1.0.0",
-      "sha256": "575c91c41b52c03aa698582c66b3f794fb721c9f9966ba5360746ed1b3681d8e",
+      "sha256": "4f6cf4e8882ad336580a90c858997ffdd19b53817c30f2c853051b5eff83398a",
       "category": "design",
       "files": [
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
-      "verified_at": "2026-09-21",
+      "dependencies": [
+        "optional:GOOGLE_API_KEY"
+      ],
+      "verified_at": "2026-09-25",
       "risk": "medium"
     },
     "development.api-mock-generator": {
       "version": "1.0.0",
-      "sha256": "c865c4e734b36b4d6e459426b5d5e6c548be0317b7887cec934eb99c18f57eb7",
+      "sha256": "0dd55f266e7ce2c3517da21dd111f4d4fca609035792de19c2924e18485028b0",
       "category": "development",
       "files": [
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
-      "verified_at": "2026-09-21",
+      "dependencies": [
+        "optional:test-framework"
+      ],
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "development.architecture": {
       "version": "1.0.0",
-      "sha256": "69b60a1021462f6f487c3fc3710e9f82b3e715b777a1f537da4d466fac3c25b0",
+      "sha256": "661df7a98d7da9c178c8aba389538df9276481c515125730718da631c9082b2e",
       "category": "development",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "development.autoreview": {
       "version": "1.0.0",
-      "sha256": "f0daf0c42b05185ad0b68587ac0fd5927aca8607662cd09b6c80abb5fbb2e679",
+      "sha256": "1cef371284a55db3e63001949b05afd8bddaff130eef6f11d7657d44f80b5a7f",
       "category": "development",
       "files": [
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
-      "verified_at": "2026-09-21",
+      "dependencies": [
+        "optional:codex-or-claude-cli"
+      ],
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "development.backend": {
       "version": "1.0.0",
-      "sha256": "660018e29a82a31afec4dc65bf0ea8806685389fc21d7a9417343cca058a209a",
+      "sha256": "4b7ff1c38fc2ec4034d21d8258d883527efa4347a803e9e0bd918834d1f1db8e",
       "category": "development",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "development.behavior-validator": {
       "version": "1.0.0",
-      "sha256": "ffd052c3c9024b9939de01541c48c6eda4a0345e20ba33aef1274a436a4f520f",
+      "sha256": "dd6bd0d404640e0dc5511e25b9462609e5225bd4a0ac196bb27745e521919ecd",
       "category": "development",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "development.brainstorming": {
       "version": "1.0.0",
-      "sha256": "ab174a302f6899a9a662550a7a7ae76b111aab69ddb07484ec2d17c9f12bdef8",
+      "sha256": "a17df5110de5586d9f18683fbd21552a1ce9932e3f82b8ecbe7393289e1f15fe",
       "category": "development",
       "files": [
         "LICENSE",
         "README.md",
-        "references/upstream-SKILL.md",
-        "SKILL.md"
+        "SKILL.md",
+        "references/upstream-SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "development.cf-worker-deploy": {
       "version": "1.0.0",
-      "sha256": "1d25b4d910726097cb997a31115f4973d7088dcac01411b54229de2d9a8a74c1",
+      "sha256": "f34d802bb010ebd5062752ab6ac2ecb3e4cc109aafafde9f5b11cbdc7c622187",
       "category": "development",
       "files": [
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
-      "verified_at": "2026-09-21",
+      "dependencies": [
+        "optional:wrangler"
+      ],
+      "verified_at": "2026-09-25",
       "risk": "high"
     },
     "development.ci-cd-pipeline": {
       "version": "1.0.0",
-      "sha256": "02473cb5fbcb231a8b5366ac81fde20692de5a496e6bd2d6a006246b38ecc6dd",
+      "sha256": "3d3c088763197916e4335c6205bae27048a70d1ca8132c6ba95967da2398410d",
       "category": "development",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "development.code-review": {
       "version": "1.0.0",
-      "sha256": "6c1e9a73a9596a99e12ba684620c810a3045258cfb93b85e77c02c95d99f6c42",
+      "sha256": "297a8311c8a14095d8dbe61a3ad94454932134ad160ed9aff091c1e903122d8b",
       "category": "development",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "development.coding": {
       "version": "1.0.0",
-      "sha256": "aad25c9ecefc4ebedee96e95415ef16c6a8b2497d74d6baaa57e252ed3ad3e44",
+      "sha256": "64dc4b610eed9de4bc0e3b10371e25e0593e790acab839b93a6de2e5d25c7760",
       "category": "development",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "development.coding-agent": {
       "version": "1.0.0",
-      "sha256": "680bef09d6a177ae95390fe20d97933da6f799e7f6c52c367b13ad0af529211c",
+      "sha256": "d108912194370d0d4d11e41d2adbca429b931e7183cd7e2fd8b728534787672c",
       "category": "development",
       "files": [
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
-      "verified_at": "2026-09-21",
+      "dependencies": [
+        "optional:codex-or-claude-cli"
+      ],
+      "verified_at": "2026-09-25",
       "risk": "medium"
     },
     "development.crabbox": {
       "version": "1.0.0",
-      "sha256": "00b9feffd6bf446bb66b7df86202886cd0fbfde6dffe43146c3ce337ba02defb",
+      "sha256": "8bc8fe838e983a9f3bc302fd7df691880f8191a92dffd3c242f250a25df7de51",
       "category": "development",
       "files": [
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
-      "verified_at": "2026-09-21",
+      "dependencies": [
+        "optional:crabbox"
+      ],
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "development.cursor-agent": {
       "version": "1.0.0",
-      "sha256": "bed000d135f337d295bf579f49e971de269084677256721590752615302b2970",
+      "sha256": "c9e77f647c54c95de8f030247b1003529255b388c6004ba9352f09f32ab2fc51",
       "category": "development",
       "files": [
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
-      "verified_at": "2026-09-21",
+      "dependencies": [
+        "optional:cursor-agent"
+      ],
+      "verified_at": "2026-09-25",
       "risk": "medium"
     },
     "development.databases": {
       "version": "1.0.0",
-      "sha256": "a36ea789df4f897ab786b54e1e368242970c978a6b35ed4c7cad658da8152bf5",
+      "sha256": "4ed09e131e592b977538ecc3aca0540c2fefdcb09e96aef84f60f142af037cba",
       "category": "development",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "medium"
     },
     "development.db-inspector": {
       "version": "1.0.0",
-      "sha256": "1093a1fdc3497ba9bdde69a2ef72b31e1a661a9d66c404c43942492c456995e8",
+      "sha256": "12d8ee7299fcf17b62a16605fa27cd349f3c7d3d10cf4f055e0d91c46010f4d9",
       "category": "development",
       "files": [
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
-      "verified_at": "2026-09-21",
+      "dependencies": [
+        "optional:database-client"
+      ],
+      "verified_at": "2026-09-25",
       "risk": "medium"
     },
     "development.debugging": {
       "version": "1.0.0",
-      "sha256": "bb53d58c4305881f3f73f542665397a04503ef501ebc825b5603f4a741ccef7f",
+      "sha256": "f3eaa21d739540bd13083fe31117fa4bbb5943a6bffd701b99a440a6a33a4a42",
       "category": "development",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "development.devops": {
       "version": "1.0.0",
-      "sha256": "31d70e9764338d5066c773c3641b08c653403779074cbdadbedca6798451c3b6",
+      "sha256": "346d8787e0527cbce14fc202700eb337d654eb3ebc0816a08071e6cc7df771fa",
       "category": "development",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "medium"
     },
     "development.docker-manager": {
       "version": "1.0.0",
-      "sha256": "3bf3510f4815db9d6de30d189c9f3d7140d40715a5bf25112dac67a29e7fb7ba",
+      "sha256": "b545b69e374cafb04f08951a32aebb75af5f71525714ebb6ab43e909672a84a6",
       "category": "development",
       "files": [
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
-      "verified_at": "2026-09-21",
+      "dependencies": [
+        "optional:docker"
+      ],
+      "verified_at": "2026-09-25",
       "risk": "high"
     },
     "development.dokploy": {
       "version": "1.0.0",
-      "sha256": "b6a48550a2727bbacd4d3ad512642947353e7717791161f3deefaf9117499ebf",
+      "sha256": "38b8d56328dfe486503476814db572e74c3bb1a2a3ec2c8e1f8c82c37e8f092b",
       "category": "development",
       "files": [
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
-      "verified_at": "2026-09-21",
+      "dependencies": [
+        "optional:DOKPLOY_API_KEY"
+      ],
+      "verified_at": "2026-09-25",
       "risk": "high"
     },
     "development.frontend": {
       "version": "1.0.0",
-      "sha256": "4ec074e4d02e8de3649e44c68c0c257d714f39eb4d67e0a4d06adb5e1900c58b",
+      "sha256": "e95fdf69d067c63a4e6a477d61775eada7247e71cbae102d349a0994db64e795",
       "category": "development",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "development.git": {
       "version": "1.0.0",
-      "sha256": "f4977c646c9f835c768e42eb09b91b1c049c6721e661d4e3bc464a64af2938f0",
+      "sha256": "e24fa3524081ad008c5d3fe4421fff62762c13c4c889643e57b229707bcf990c",
       "category": "development",
       "files": [
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
-      "verified_at": "2026-09-21",
+      "dependencies": [
+        "git"
+      ],
+      "verified_at": "2026-09-25",
       "risk": "medium"
     },
     "development.git-workflow": {
       "version": "1.0.0",
-      "sha256": "dd5ddc4879e677597b2fefadefe2c13780b6611d46d8296ca13774ede06db1b5",
+      "sha256": "793cdbf8d6ddaec91896cdf4feefba70df98e0501ee9f85bf66bddb1c06d0180",
       "category": "development",
       "files": [
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
-      "verified_at": "2026-09-21",
+      "dependencies": [
+        "git"
+      ],
+      "verified_at": "2026-09-25",
       "risk": "medium"
     },
     "development.git-worktrees": {
       "version": "1.0.0",
-      "sha256": "86a80a6a43af407b766b6eb01ac33619a6596a5bc0600d442b2aa1b0f85b441d",
+      "sha256": "3898c0f1279adbf398aab89fe357acd5cfc89c1ce528d3df28c03498b2db3de4",
       "category": "development",
       "files": [
         "LICENSE",
         "README.md",
-        "references/upstream-SKILL.md",
-        "SKILL.md"
+        "SKILL.md",
+        "references/upstream-SKILL.md"
       ],
-      "dependencies": [],
-      "verified_at": "2026-09-21",
+      "dependencies": [
+        "git"
+      ],
+      "verified_at": "2026-09-25",
       "risk": "medium"
     },
     "development.github": {
       "version": "1.0.0",
-      "sha256": "17f91241dd35273d46bbfeb815f3ef26f00fd7235e80a2eb7253e2f93f20ddd3",
+      "sha256": "6b5e192a637dada6d7d2223d092b99d2ef4fa2cd2d2f563e530e52248221a57c",
       "category": "development",
       "files": [
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
-      "verified_at": "2026-09-21",
+      "dependencies": [
+        "git",
+        "gh-cli-optional"
+      ],
+      "verified_at": "2026-09-25",
       "risk": "medium"
     },
     "development.github-cli": {
       "version": "1.0.0",
-      "sha256": "a37028ab31df9e2e32d5b984d8f4a654677d4e2e620692510432bdfbcc5dd508",
+      "sha256": "c7928824184e3f6aece64906cf2b76e861d2ea3594aaac4ed9c85fac8f344ed7",
       "category": "development",
       "files": [
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
-      "verified_at": "2026-09-21",
+      "dependencies": [
+        "optional:gh"
+      ],
+      "verified_at": "2026-09-25",
       "risk": "medium"
     },
     "development.issue-triage": {
       "version": "1.0.0",
-      "sha256": "326e654d153e186d577eaa6be0b0da90b7027e516998f2bcca3f44c075e5ed0f",
+      "sha256": "de0b8c98212cd3410a1ba2bf536e8fe411c0b9df5d828bfd69f6ddcc612d0c2a",
       "category": "development",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "development.mcp-builder": {
       "version": "1.1.0",
-      "sha256": "89bb3345e22da69ee7e6904751cc70bcff5e0ccfd98354af533693ff2c02a570",
+      "sha256": "ae0d3b55f1f2fa114a36787ee8b143d3922f0fd9639893a4b7540e7e04e9fcf7",
       "category": "development",
       "files": [
         "LICENSE",
         "README.md",
+        "SKILL.md",
         "reference/evaluation.md",
         "reference/mcp_best_practices.md",
         "reference/node_mcp_server.md",
@@ -1325,20 +1364,22 @@
         "references/mcp_best_practices.md",
         "references/node_mcp_server.md",
         "references/python_mcp_server.md",
-        "references/upstream-SKILL.md",
-        "SKILL.md"
+        "references/upstream-SKILL.md"
       ],
-      "dependencies": [],
-      "verified_at": "2026-09-21",
+      "dependencies": [
+        "python-or-node"
+      ],
+      "verified_at": "2026-09-25",
       "risk": "medium"
     },
     "development.mcp-server-development": {
       "version": "1.0.0",
-      "sha256": "f5d27507991db65406066c4f26ff40fe4b0c1eb9d4f29e451c65e58e8ea870dd",
+      "sha256": "5cb6b61bccc8caf8f9eac53d2e2d5609a55647b0e5b8d0d0555a101617aae8f4",
       "category": "development",
       "files": [
         "LICENSE",
         "README.md",
+        "SKILL.md",
         "references/evaluation.md",
         "references/mcp_best_practices.md",
         "references/node_mcp_server.md",
@@ -1347,1072 +1388,1123 @@
         "references/reference/mcp_best_practices.md",
         "references/reference/node_mcp_server.md",
         "references/reference/python_mcp_server.md",
-        "references/upstream-SKILL.md",
-        "SKILL.md"
+        "references/upstream-SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "medium"
     },
     "development.performance-optimization": {
       "version": "1.0.0",
-      "sha256": "cf7b1e1679a3dc7d14a744c0660db29ff62300077df9c2e8f9fb79566c1fcc27",
+      "sha256": "8db368c4fcbbf9165c23fa2a0f9b9430c01834a04bad67613c112ec07358fd9b",
       "category": "development",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "development.pr-splitter": {
       "version": "1.0.0",
-      "sha256": "e68d5ce4ce9d34ec433669a88c52986e0e70f4132d019104985030fce4987b54",
+      "sha256": "66f71017fe2391a73c0af2db7bc46fae9525a5c20cd8fbc5e7b2517d17fb6ddd",
       "category": "development",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "development.receiving-code-review": {
       "version": "1.0.0",
-      "sha256": "cedb085d5b0225ee6250078c7214e1ecb3ac737a4ae1e2da251802777dfdea20",
+      "sha256": "3c42f403e8ccae07d9fdbb6f773fb097710bae685eac5398d67181c6f9d4b0e1",
       "category": "development",
       "files": [
         "LICENSE",
         "README.md",
-        "references/upstream-SKILL.md",
-        "SKILL.md"
+        "SKILL.md",
+        "references/upstream-SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "development.refactoring": {
       "version": "1.0.0",
-      "sha256": "4826b617baa9341139d525ea169143c8dd67afb3df7eb516666d16ff68455a61",
+      "sha256": "8cc1e1919112a9ade9e3e68a7370d67b51f9800fbb60eb6a12d70ac8ecd4bc37",
       "category": "development",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "development.release-management": {
       "version": "1.0.0",
-      "sha256": "dc26dcc325f75b36eee5c3503b9d9ffaaeb4ee1e45fc2fa3a00ca1a82cd0f20f",
+      "sha256": "1bac1a0a385deb75202e461a38c99ae54be93931fa42d57220a16efb60f1588d",
       "category": "development",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "development.requesting-code-review": {
       "version": "1.0.0",
-      "sha256": "8ae76e36f78a566c511a43eb5f02c913ad1a82c4c8ef9232aa18b2ae3401b002",
+      "sha256": "dc385eb5c0c274b7926ac12db96d78e078af64870c651a8f3197dad9e96fbf79",
       "category": "development",
       "files": [
         "LICENSE",
         "README.md",
+        "SKILL.md",
         "references/code-reviewer.md",
-        "references/upstream-SKILL.md",
-        "SKILL.md"
+        "references/upstream-SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "development.summarize-repo": {
       "version": "1.0.0",
-      "sha256": "853037e192ec93fc074f6a42c1aaa4d1c8c977675d4b35eb46a9f0a929b0be2e",
+      "sha256": "b23e9a64be0901a0d3068b20571ef6fee33636a9f1d4876494e0693172b46e48",
       "category": "development",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "development.tdd": {
       "version": "1.0.0",
-      "sha256": "8d08efef15d428757a8038d869071afdaad2c152a1bcbede837a6273a9ab8da7",
+      "sha256": "5488f6abbe39c8e74f33278bab161ce949bf02edb7b92a8d348252311e37e1f3",
       "category": "development",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "development.testing": {
       "version": "1.0.0",
-      "sha256": "7edb01bc27853e64256c64cca254101f44c94a1db5f4d2f3f7e8d274f66f00bf",
+      "sha256": "f4ca04a96f2cf82f8ae65de5dee13618b4cbb09f3048678eeff554e4760f7ea6",
       "category": "development",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "development.verification-before-completion": {
       "version": "1.0.0",
-      "sha256": "13891906734746ce99d2dd4da7993f3fdc5b47aab191223e6ed6ebc4cb8aa404",
+      "sha256": "14df394ef2037349cbfa1a806fc70e3ed872e6bcbfbe6f056220313da9b2d29d",
       "category": "development",
       "files": [
         "LICENSE",
         "README.md",
-        "references/upstream-SKILL.md",
-        "SKILL.md"
+        "SKILL.md",
+        "references/upstream-SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "documents.csv": {
       "version": "1.0.0",
-      "sha256": "d83caf0909069e61a0c9789c9c6240f27dc590c035d0939573aaa77950a1a75a",
+      "sha256": "f24a06e1efa789b20a6282fe2bdab5b1836703b301ab072a99be365b5e1f5b52",
       "category": "documents",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "documents.docx": {
       "version": "1.0.0",
-      "sha256": "32210f7c97799512a511ddb1492c28e5f0603c1ac4b8d2298d082df0c7dac5db",
+      "sha256": "833c7273bf9288df7723bbbd5f455ac155adf296eef2c7243dc97a32204f3829",
       "category": "documents",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "documents.expense-parser": {
       "version": "1.0.0",
-      "sha256": "827dcb61cfc525c45d6c37eac1eb7e504d6fdd870416676540fed769de955003",
+      "sha256": "6f8b39d1c31fb2eed38d7389f970c7ab21d8434e9e43c0e3ff0b1c49765f81bd",
       "category": "documents",
       "files": [
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
-      "verified_at": "2026-09-21",
+      "dependencies": [
+        "optional:ocr"
+      ],
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "documents.markdown": {
       "version": "1.0.0",
-      "sha256": "9ca849c844cdbbf438076d30fccd85597abbd474b0f620cc942d89a4e30a95fa",
+      "sha256": "343c9f8b0bd243a226ce394fc5498fcd705795e6fb4877e3a0d86c95a47a82a3",
       "category": "documents",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "documents.pdf": {
       "version": "1.0.0",
-      "sha256": "49db2dbcbf999473c239486182ca3fe9af45d97e27ecf1d1d793d271602a46c1",
+      "sha256": "89867d523692d41f1fbcf865e375438b5361ceb4642b45a56929fb7f1e46d614",
       "category": "documents",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "documents.pptx": {
       "version": "1.0.0",
-      "sha256": "61ce7a33f07ec811a8156e9fbd3c9c22956f6bed22854f49e4d1ba056a4fa4b7",
+      "sha256": "a7a0eb766ebff862109d129d374e7d282ff810a5537f07a2bfad40546a9fd620",
       "category": "documents",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "documents.xlsx": {
       "version": "1.0.0",
-      "sha256": "6a49f31449e23a96cb1ffbee057fc03664be63e5595595dd051068a0ffb101e8",
+      "sha256": "e935ba542bf706b9fae9c585c628fdd4feaec84b62992a4c27bfcbd641f71c1c",
       "category": "documents",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "healthcare.health-economist": {
       "version": "1.0.0",
-      "sha256": "e3c6e38b1c899c7e167d532fc0fd1a6261cb64479be96d86a22cd3f375ce4519",
+      "sha256": "50b3687f023ac80bd21a6d2b06dadd922e9c8df4de925d933cbcac10397c6151",
       "category": "healthcare",
       "files": [
+        "README.md",
+        "SKILL.md",
         "examples/bad-vs-good-economic-model.md",
         "examples/good-cea-report.md",
-        "README.md",
         "references/cea-cua-guidelines.md",
         "references/icer-calculations.md",
         "references/qaly-daly-framework.md",
-        "SKILL.md",
         "tests/test_health_eval.py"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "productivity.adhd": {
       "version": "1.0.0",
-      "sha256": "d541840399891385201a00950785a6306dffe8c12b0e94f2733dade077f98a39",
+      "sha256": "67dd98405e56716bf32e09714b8b1f38088456facc71d11e34d8a757b32cad74",
       "category": "productivity",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "productivity.adhd-divergent-brainstorm": {
       "version": "1.0.0",
-      "sha256": "d38040be042fd57065ccacd3a01ad281dc4e351ba3bf8d25d68bf0b8cf3b6ad1",
+      "sha256": "4d09b30e7488be89ecec7f68e37632791fba8c1b82005a57e602b72b9fc6cf7f",
       "category": "productivity",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "productivity.adhd-output-style": {
       "version": "1.0.0",
-      "sha256": "18b057d17bfba376367da2902e5f295f7b2f83942408be2a510901282b0b5417",
+      "sha256": "c145973845ebbe508383c05b4371e4ed1bfa310b69314d3faa40e920839dfb63",
       "category": "productivity",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "productivity.adhd-task-breakdown": {
       "version": "1.0.0",
-      "sha256": "a670cb241fe431f2f2ba9b8fe5d80e70a8f2efcf05c713da9bf2ab1f28611165",
+      "sha256": "ba709320485f20aefa4ae658be83755e485b81bf603aba0226a12a6094fa9149",
       "category": "productivity",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "productivity.brainstorming": {
       "version": "1.0.0",
-      "sha256": "2847898f53ce1bd35839c31eae1552e87da25d053caeaeedef117395a580fd3c",
+      "sha256": "a24297c11db7da3d43e70a842398871b12ed64d738c06f84819e5b302daea555",
       "category": "productivity",
       "files": [
         "LICENSE",
         "README.md",
-        "references/upstream-SKILL.md",
-        "SKILL.md"
+        "SKILL.md",
+        "references/upstream-SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "productivity.calendar-assistant": {
       "version": "1.0.0",
-      "sha256": "c99d199626748b93d61f20029f8b48dde9f385d4069fa903c9ca66331f35f4b3",
+      "sha256": "265d616c8c18fb00e5735ec2ebae7ed8754a9f59e533303a9800ba1b2d95ca2e",
       "category": "productivity",
       "files": [
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
-      "verified_at": "2026-09-21",
+      "dependencies": [
+        "optional:calendar-access"
+      ],
+      "verified_at": "2026-09-25",
       "risk": "medium"
     },
     "productivity.context-summarize": {
       "version": "1.0.0",
-      "sha256": "6d698ec9f5140c99f41d9e2ce29562f8d5a0e3b4aa2644b67fc8aa334aff1c94",
+      "sha256": "6c962cb880412bcd520d91d7f24370673826d895644980591655fc0cad11c4be",
       "category": "productivity",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "productivity.daily-journal": {
       "version": "1.0.0",
-      "sha256": "c79acc4d3843dab1c6cac695378f96db4329b6d26c7ca961e91be0727bd8eb4c",
+      "sha256": "46084b6363c8b3c67020c8317cd72308064a858c9e6072647c8da893de543edf",
       "category": "productivity",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "productivity.email-inbox-zero": {
       "version": "1.0.0",
-      "sha256": "0252738b9d018cf373c3466189941f30ef9ef0554da40ac2e2bbb85a59e1f2c0",
+      "sha256": "2b46e62a2d5a880ca64b242c76ca3fcd2a1616956d1c1e17a22cb24fdb3ac741",
       "category": "productivity",
       "files": [
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
-      "verified_at": "2026-09-21",
+      "dependencies": [
+        "optional:email-access"
+      ],
+      "verified_at": "2026-09-25",
       "risk": "medium"
     },
     "productivity.executive-summary": {
       "version": "1.0.0",
-      "sha256": "c295e65355cda7c448000d1823aa95ebf1ccfc2b69ff4115f9946449b0c64c15",
+      "sha256": "42a24c7626174268ee394ff52f0c560b2e619e57b94cfd7934da40c80b934114",
       "category": "productivity",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "productivity.first-principles-reasoning": {
       "version": "1.0.0",
-      "sha256": "3073efb8c843d2a520dc501335ae898c237d9afc68b6ab941276534f0edbea01",
+      "sha256": "8ce90fa68373bf5cbb49646814dc29941f12933b7f360df51a52d53d92b4ccc3",
       "category": "productivity",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "productivity.focus": {
       "version": "1.0.0",
-      "sha256": "821ab01ab189f810795ffab4e53b99e09b98db23188196ecfc074caa3f10fc88",
+      "sha256": "8134d62a939fba7c61194cf92e972b606a1520789c4eff3ab8e1fd47e7622c66",
       "category": "productivity",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "productivity.focus-guard": {
       "version": "1.0.0",
-      "sha256": "431c0ef883c43c8e9fb01fce07ef9edf3dbfbb8d96e24a1fa0c7012de315e1c1",
+      "sha256": "aa231d685abf66cbf1e03ee7110c1d9c14458dd5215f1371b21168a40d8beedd",
       "category": "productivity",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "medium"
     },
     "productivity.kaizen-continuous-improvement": {
       "version": "1.0.0",
-      "sha256": "a11cb0942b370bd37bc21c809e2e3a8efd073500388ea11d935b61e272b105b8",
+      "sha256": "f48c498f2da1e746afabab5337006b06943bb034f87bf4fa637e9c9dbf169420",
       "category": "productivity",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "productivity.meeting-action-extractor": {
       "version": "1.0.0",
-      "sha256": "24a844ef46c71cd95956c0391eac75f546e16cf9f634f51dd0535b07bb80cf1d",
+      "sha256": "3e9973962ab003156091c2ec6359953a052b8312321827e22d8b9a21e98e648d",
       "category": "productivity",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "productivity.obsidian-sync": {
       "version": "1.0.0",
-      "sha256": "5515505c85d863ed25a942939243f7cdf5cb481292c51022550fed96bca2f636",
+      "sha256": "1ef4dc9d24b36c9acf98add6d13f0cd822c1e3630bdfb2caa77b729afa698795",
       "category": "productivity",
       "files": [
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
-      "verified_at": "2026-09-21",
+      "dependencies": [
+        "optional:obsidian"
+      ],
+      "verified_at": "2026-09-25",
       "risk": "medium"
     },
     "productivity.planning": {
       "version": "1.0.0",
-      "sha256": "172cfb4caa1e4aba6922474b23009e8c91875f906191a6463ce44511375f5d44",
+      "sha256": "b428244b9eafc7d6065fa37c9c6a08eb2b707e8038edbe29513686dbbe6d330e",
       "category": "productivity",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "productivity.prioritization": {
       "version": "1.0.0",
-      "sha256": "4a73766ce5dc5fee68b68609f545c82f3ee157833316f2d34863a64c071071a0",
+      "sha256": "478bf9104a1b186b061c65c414175fdc60691590b8e43fb162b8078df4f64be6",
       "category": "productivity",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "productivity.session-analytics": {
       "version": "1.0.0",
-      "sha256": "027f6261162d29e59d150a1c95a29508b883905c5396ce0e6069f73b361ee57d",
+      "sha256": "0edd00c638ad50fd3776f1abbab533c5616695f082d41ea3de5d07eb35ec1f1f",
       "category": "productivity",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "productivity.task-decomposition": {
       "version": "1.0.0",
-      "sha256": "b608eb6ca301605ac4fadd50434e16d226da399705c564f2bef8be04436de905",
+      "sha256": "eac0ef5b8168cdb557e950a7010c030aa6f60f32048e18706b8c9548c4c73879",
       "category": "productivity",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "productivity.time-blocking": {
       "version": "1.0.0",
-      "sha256": "f458b8cab20d23ccf27c497b4872300f8a2355953043a9ae34acd8cc5e3abfea",
+      "sha256": "ea310fe4b08f655673d0399ae0bc5e67488788a41c5db3f223b71c0a931317f3",
       "category": "productivity",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "productivity.time-management": {
       "version": "1.0.0",
-      "sha256": "30192c959ecd116acf4c2d3a9ea4541c2ef65a91e736b066d3916ab4b0b2189e",
+      "sha256": "2ff2a1024b29fc31db672f25212677e29a52dd9e5f1da6ee429cdcd1abffb900",
       "category": "productivity",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "productivity.unlazy": {
       "version": "1.0.0",
-      "sha256": "105fdcd65f0d7f3007edd55b32508a0d5816139e3b81e7a4eaf18a6da1f966ee",
+      "sha256": "d5cb0dac44edd5a0e3986c0d2225d6fb9a62ff1c7b8e2ecb99da710407acb5cc",
       "category": "productivity",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "productivity.voice-to-action": {
       "version": "1.0.0",
-      "sha256": "d6fb056d42993130cf92c493f848ddd6078c98b326149c5e8ecbfd0c44b5a384",
+      "sha256": "ae45061260eafcb93db32b13dbea5f1200ddfd56c3b2e5a12d68cc4974c58fe3",
       "category": "productivity",
       "files": [
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
-      "verified_at": "2026-09-21",
+      "dependencies": [
+        "optional:transcript"
+      ],
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "research.academic-research": {
       "version": "1.0.0",
-      "sha256": "18c2ae4b805b5eb91cdfa9b60ad15059e6ce698207872fa663f74906130f35f0",
+      "sha256": "3b3ec8d1eb52bca4e8b6ce54fb6f25ef1dc499bcca6d3960d46fd978e3eb7212",
       "category": "research",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "research.competitive-analysis": {
       "version": "1.0.0",
-      "sha256": "de97004afe19fcd0c92ff81dbac113dd742a69a22a01a6bf1f0ee4fd5a5b7ae7",
+      "sha256": "b9dff838699359cc73154dd8ba8be7d92b98f47c010c7cd689f8851bd1ead81a",
       "category": "research",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "research.data-analysis": {
       "version": "1.0.0",
-      "sha256": "f6834a65f30e37dc20d1dd93118231ebaa7032489d15e2752f15905dcf014e60",
+      "sha256": "49bb34ec55512d37869dd5c96c0887ad618b07589f986a9e8094cc1435bb7820",
       "category": "research",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "research.deep-research": {
       "version": "1.0.0",
-      "sha256": "b313660b5faaa27d0dca3cd73f4666ced8b0cdd9135478b406982a89c5bc3a75",
+      "sha256": "37512ebde36cdb5fae2579d8effbe9e4f9a8a4a556680d178b4ad0e63d585b71",
       "category": "research",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "research.fact-checking": {
       "version": "1.0.0",
-      "sha256": "43ce341e02ca8b8a0d81fc3f44f786489ea0b6700dfb39e93066516501175466",
+      "sha256": "3520ca871763f7828f66cc9a7d0590ad937cac5b816d7d037112db534e2b4ebf",
       "category": "research",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "research.search-synthesizer": {
       "version": "1.0.0",
-      "sha256": "9b3cd0667ef97be76940ed533529afd8e7c8f47c902a5a29325fe0631ecf39eb",
+      "sha256": "d57dcbc3bce105408886610c779f00f23ce76a5a097a36d451f8e252f638ae4d",
       "category": "research",
       "files": [
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
-      "verified_at": "2026-09-21",
+      "dependencies": [
+        "optional:web-search"
+      ],
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "research.source-verification": {
       "version": "1.0.0",
-      "sha256": "e55d70532856060d11f1b9f15781dc31c41b3b351467e91c87b67307b25769bd",
+      "sha256": "0e3f76f811d7eba8086f420494b134d655691ce49d6986f4eae67dd7981e4eb8",
       "category": "research",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "research.web-research": {
       "version": "1.0.0",
-      "sha256": "476a57223295f475cc9add100e97e078d01cda881a15c6b3cbf214e7f06ce8ae",
+      "sha256": "baa4bf40bd912e1692fe0a22cd28ce287009bb3a1157253c9d92c153c8c6cd61",
       "category": "research",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "security.cmd-safety-check": {
       "version": "1.0.0",
-      "sha256": "172f9b252f2ef8f15bfe1a7bd652554434b311ede235ec4bf0d2a13c3045188e",
+      "sha256": "fbde704308a451e98662699f55690cc83197bb93c98269e3d3de79c7a85a5bf7",
       "category": "security",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "medium"
     },
     "security.dependency-audit": {
       "version": "1.0.0",
-      "sha256": "af7f4a4610f2d272c4d59d644e75eadec0bb83fff229b5885c69e2f947489a4d",
+      "sha256": "5e51590e2f10a08be11cc55315afa06346ef8faa73375e818b82748834dde02e",
       "category": "security",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "security.npm-auditor": {
       "version": "1.0.0",
-      "sha256": "43390af28014aea98d829d2e924aa87fe2a9d0f80baa09a39b56986589d11d6a",
+      "sha256": "c685d98ef171ce691ee9064eca5646086905a94bfae94e52d28019622d1c8404",
       "category": "security",
       "files": [
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
-      "verified_at": "2026-09-21",
+      "dependencies": [
+        "optional:npm"
+      ],
+      "verified_at": "2026-09-25",
       "risk": "medium"
     },
     "security.prompt-injection-defense": {
       "version": "1.0.0",
-      "sha256": "aacf62714a0c81cb6478e5f6e2a4db3bbfa1a421ce27a492fd8e826059a8cd3b",
+      "sha256": "66cdcd61a85808e62485c512051411b97393286e8fc6262af9fabff2609a0352",
       "category": "security",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "medium"
     },
     "security.secret-detection": {
       "version": "1.0.0",
-      "sha256": "f1783e501d1c3aa5bf4f7fd3103c5bd891cd50eb5690740b2e224ad35bcaf70e",
+      "sha256": "e788a5b70343e98783b7e8de9ec8626441498fe900470ca5551f55612d43d9d9",
       "category": "security",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "medium"
     },
     "security.secure-coding": {
       "version": "1.0.0",
-      "sha256": "705c9e10f7a38990ead429fe920ed2ab4d203ab9b65def29139533ca7ea16811",
+      "sha256": "b81a0392a1abb06733058bf9df22d490663623505b042b65bc26e89d922ba801",
       "category": "security",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "medium"
     },
     "security.security-scanner": {
       "version": "1.0.0",
-      "sha256": "0f3a8113f11485fb8834141fd96433d8e939acd15a3128c80dcf6c4cb2781727",
+      "sha256": "233a42bd0f5ce52cd8c78a0fef888bfb2a64509ea7d7ccb573aaf5b5445bae18",
       "category": "security",
       "files": [
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
-      "verified_at": "2026-09-21",
+      "dependencies": [
+        "optional:security-scanners"
+      ],
+      "verified_at": "2026-09-25",
       "risk": "medium"
     },
     "utilities.agent-transcript": {
       "version": "1.0.0",
-      "sha256": "13a9873e2dd1c30aca792c590623f5e350e1cc9a20d42fdfc48969caccb0e20f",
+      "sha256": "cbdf9c16045e3fab635bc80a031723346e585178ba368303329ef2cded3d108d",
       "category": "utilities",
       "files": [
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
-      "verified_at": "2026-09-21",
+      "dependencies": [
+        "optional:node",
+        "optional:gh"
+      ],
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "utilities.audio-transcribe": {
       "version": "1.0.0",
-      "sha256": "5c0fb7a330fa85ed89d6f6a23743e5ac5dd4f5e8081cad480e0d0b517bac6a44",
+      "sha256": "450b9cf62bef70ad4b7f08664094fd536246709e4c5c17687786e35563ac2c1c",
       "category": "utilities",
       "files": [
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
-      "verified_at": "2026-09-21",
+      "dependencies": [
+        "optional:transcription-engine"
+      ],
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "utilities.automation": {
       "version": "1.0.0",
-      "sha256": "31af8c3f6f0510898a882de7e05ac157639a6ceed26332c3955aad41c80b5411",
+      "sha256": "101f2d7a347d591da50b1b7ac0c4b538c06ea67b2f20b2d30810f7bd62a8933c",
       "category": "utilities",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "medium"
     },
     "utilities.beam": {
       "version": "1.0.0",
-      "sha256": "0e8774573cca9e9625dd50ad167a36c5291ee687c20bd905dab8109bedea5489",
+      "sha256": "850edc29fee3d7a2552dbb1c21882db435acd9f555bf175533d6d8589c6b31c2",
       "category": "utilities",
       "files": [
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
-      "verified_at": "2026-09-21",
+      "dependencies": [
+        "optional:node",
+        "optional:BEAM_ACCESS_TOKEN"
+      ],
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "utilities.documentation": {
       "version": "1.0.0",
-      "sha256": "9f3f060359a80c31116adecf639fb16c5bb0dcdba32c74e0acb41615bc9809e3",
+      "sha256": "483369f0e27b25ab4cd67733c19b928998c392babfec0f2fdf1ad39428a6b37d",
       "category": "utilities",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "utilities.file-management": {
       "version": "1.0.0",
-      "sha256": "a045145f7953e2910794859e67fec69884ebf5add8f14ebf7c942b30d5acebd9",
+      "sha256": "fa197f4aa568857ba6ace08c66b949875cfa65d2485d692a8a303ef4f42c55b3",
       "category": "utilities",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "medium"
     },
     "utilities.handoff": {
       "version": "1.0.0",
-      "sha256": "1e436bd6f26a35440b4a7834f2e33b4efe946f8e1c7d6262920fd16c2bc455b4",
+      "sha256": "bcfc0661b01b260064ba7d225d95085ea3281faaa69ee2950574d48346ab5f30",
       "category": "utilities",
       "files": [
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
-      "verified_at": "2026-09-21",
+      "dependencies": [
+        "optional:clipboard-tool"
+      ],
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "utilities.image": {
       "version": "1.0.0",
-      "sha256": "48a9d2293c72fcd65b2787c74de6a10ffa4a30e1be952aa7136f677022a81cd2",
+      "sha256": "39a9dccfc5507711de07f76c0767903bf21aa3950b95a922b498668ba2d4d8dc",
       "category": "utilities",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "utilities.parallel-agents": {
       "version": "1.0.0",
-      "sha256": "17ca5db9271b1c82a6b747909346391bbec4ff4c51c620bf96fc65fe793c4ea3",
+      "sha256": "5bbe449c801a66777fce5673f172d2513a6f9d47ede391e5329128e9932ef4e1",
       "category": "utilities",
       "files": [
         "LICENSE",
         "README.md",
-        "references/upstream-SKILL.md",
-        "SKILL.md"
+        "SKILL.md",
+        "references/upstream-SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "utilities.readme-standard": {
       "version": "1.0.0",
-      "sha256": "9188b10383605678035150840bb6687174eb1500bb939f381d5a6b7b1185449a",
+      "sha256": "99304b300006dd60d2c26f434807fad30a6b0461ab6c91064d2b8b5da64accca",
       "category": "utilities",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "utilities.slack-synthesizer": {
       "version": "1.0.0",
-      "sha256": "8efc67951872e62574f175cfdc2d91be4580d2fef039ccb2e2be20cb9689a3e0",
+      "sha256": "9aec654ee1d86849f7d725f66748692457fd92b14a1e2dd9befcded223a3db2a",
       "category": "utilities",
       "files": [
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
-      "verified_at": "2026-09-21",
+      "dependencies": [
+        "optional:slack-access"
+      ],
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "utilities.sonos-cli": {
       "version": "1.0.0",
-      "sha256": "820b849f12765b4e5148cf44fc2f934f32ee3d5e6c86c81e8b839e2d7fd61851",
+      "sha256": "1756d3f5545c2d67341bac19d6fbf0e01b6e5da14bd623c2609bf694fda4a98b",
       "category": "utilities",
       "files": [
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
-      "verified_at": "2026-09-21",
+      "dependencies": [
+        "optional:sonos-cli"
+      ],
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "utilities.summarization": {
       "version": "1.0.0",
-      "sha256": "c872e8483b3309ce7f6b70b73ca1f0c6f4c094865f14e49748439856a98d9d4e",
+      "sha256": "41f59464e8f1d58d168ee568153f2248f27b313de44fb334c34ff770df8e269d",
       "category": "utilities",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "utilities.system-monitor": {
       "version": "1.0.0",
-      "sha256": "4267fa600486204213a44a3dadc36a8c37ac69cb6640e3b256bee79b81e5336f",
+      "sha256": "f1bb2b82a4c478e451b4d0a9d81df84590de16a84fe06638aff966320b63f249",
       "category": "utilities",
       "files": [
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
-      "verified_at": "2026-09-21",
+      "dependencies": [
+        "optional:system-tools"
+      ],
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "utilities.telegram-actions": {
       "version": "1.0.0",
-      "sha256": "9cba60ff15b5ace6ed32cdee7eb0b2de5ace9eadba1719a6b5f94c0e95620a14",
+      "sha256": "ebfe313a9dd4d7ae98897f0bacf5c2e23bf9bf3e48fd1b8bca9aa62f46b05536",
       "category": "utilities",
       "files": [
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
-      "verified_at": "2026-09-21",
+      "dependencies": [
+        "optional:TELEGRAM_BOT_TOKEN"
+      ],
+      "verified_at": "2026-09-25",
       "risk": "medium"
     },
     "utilities.text-processing": {
       "version": "1.0.0",
-      "sha256": "d105980b140733d20757373bf40022c95660ae638a6c0f200cf3e60d66ffb141",
+      "sha256": "1aa3ff58ff05281c43eade06f599973d74faeab864c959f879e28a949211e967",
       "category": "utilities",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "utilities.unit-converter": {
       "version": "1.0.0",
-      "sha256": "4443bc780a3f9c29d71678c13a2210e47050b35d8d02f552672015b928ce0bec",
+      "sha256": "ba3f3bd5604e67adb20d5ec7b77b63a9706b9899110344c1d93fbe1edcc38ff4",
       "category": "utilities",
       "files": [
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
-      "verified_at": "2026-09-21",
+      "dependencies": [
+        "optional:exchange-rate-source"
+      ],
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "utilities.weather-now": {
       "version": "1.0.0",
-      "sha256": "fbb0e1df91976cc48f3c40ff0cd541f43cf89a5ff8d3589db22c48124cac07d4",
+      "sha256": "b868c495891642ea535b6815b2703f1706d03e4d80e35988e1f80d3b95a93b81",
       "category": "utilities",
       "files": [
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
-      "verified_at": "2026-09-21",
+      "dependencies": [
+        "optional:weather-api"
+      ],
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "utilities.whatsapp-router": {
       "version": "1.0.0",
-      "sha256": "28177031020c685b4336e8c11c44a7bad012791a88269dec2cb0d9a09402c211",
+      "sha256": "d5ee7068459d4750e01324bc0c771b7099157889ae3dd6b77875e6c8696460b2",
       "category": "utilities",
       "files": [
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
-      "verified_at": "2026-09-21",
+      "dependencies": [
+        "optional:whatsapp-api"
+      ],
+      "verified_at": "2026-09-25",
       "risk": "high"
     },
     "utilities.writing": {
       "version": "1.0.0",
-      "sha256": "06ab2a5867b79578ec44c1e70fa76212eaa010be680b7c1995a9d443eb0a9242",
+      "sha256": "65744c2686054a13b90c9fd8426a0aa0efd2809558d3b305e600dad19116ba92",
       "category": "utilities",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "web.accessibility": {
       "version": "1.0.0",
-      "sha256": "215790b35e7c679d82ae17badab0d56af60be4b4f37c9376b4996bec652508ee",
+      "sha256": "50e2d0dd650ddfbb6e23b51447dfad5d66f43006937d2480cf3040019f952184",
       "category": "web",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "web.agent-browser": {
       "version": "1.0.0",
-      "sha256": "9f7bc7f7e1a642efe21f1bdd192f2a8512b11ef51473b1fcc7a14989f8581eec",
+      "sha256": "ec4ab93526f6d8502d38d999d2c2e55546fa3b62c42cfbc885c375093bb4648b",
       "category": "web",
       "files": [
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
-      "verified_at": "2026-09-21",
+      "dependencies": [
+        "optional:agent-browser"
+      ],
+      "verified_at": "2026-09-25",
       "risk": "medium"
     },
     "web.browser-automation": {
       "version": "1.0.0",
-      "sha256": "ac20294e1c1e79b6625f0649dc0e21c44eba29b2d83e38ba6bb2450369369d57",
+      "sha256": "34c9a43c89303d2c07a3f20755b9c54d3e1c2594daf6d8b7e9e3ece60f7443ea",
       "category": "web",
       "files": [
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
-      "verified_at": "2026-09-21",
+      "dependencies": [
+        "optional:playwright-or-similar"
+      ],
+      "verified_at": "2026-09-25",
       "risk": "medium"
     },
     "web.form-filler": {
       "version": "1.0.0",
-      "sha256": "d4d2e51e4fcf9972ec2316e3c0a1511dc19bd251ce8ffd3eb29ae9bc1c8acc92",
+      "sha256": "62b7dfd22a1efcfd37a5640805150108a2c246ef6cdc1ac9cdc6dfb980756ca8",
       "category": "web",
       "files": [
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
-      "verified_at": "2026-09-21",
+      "dependencies": [
+        "optional:browser-automation"
+      ],
+      "verified_at": "2026-09-25",
       "risk": "high"
     },
     "web.media-downloader": {
       "version": "1.0.0",
-      "sha256": "0a98cc3e76e210194347f443e117ea88e29dfb7bdaee8241d0ba3bcde5c02afc",
+      "sha256": "578620d3d70de27ffcf5bc035bc218a53ea1b7cfc40b782472783ae896a9c8c3",
       "category": "web",
       "files": [
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
-      "verified_at": "2026-09-21",
+      "dependencies": [
+        "optional:media-downloader"
+      ],
+      "verified_at": "2026-09-25",
       "risk": "medium"
     },
     "web.seo": {
       "version": "1.0.0",
-      "sha256": "ea19ec8a9d29bcff9acdabbacb1b16f3876e9b03b44bd486094aa4ae8bd3fb82",
+      "sha256": "3227a19a6bd4a57e95ced21e6f5502afaa16eb1e1b8802265d6d5996fe53569b",
       "category": "web",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "web.web-extraction": {
       "version": "1.0.0",
-      "sha256": "c43d2b639b660cf6dea0bc0463fa5c53857bf938aeec4705ed11620fede36a4c",
+      "sha256": "6a9d401fe23a30be074748f6cfc8107719c9c8283f4aada8d3fee8dff1c1478a",
       "category": "web",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "web.web-scraper": {
       "version": "1.0.0",
-      "sha256": "b44e6afb651482632cd82f2a4e762c483ae9aff31ac77792008851f9ac67de56",
+      "sha256": "c909dea1818525db081105baaa87a7c727a40aa1e9a8bcce50b970d6b90456ca",
       "category": "web",
       "files": [
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
-      "verified_at": "2026-09-21",
+      "dependencies": [
+        "optional:http-client"
+      ],
+      "verified_at": "2026-09-25",
       "risk": "low"
     },
     "web.web-scraping": {
       "version": "1.0.0",
-      "sha256": "a15221587d20e8f7f3f8a9080adfb6f407063069c53d3cc13daa3b26196cedf7",
+      "sha256": "b02e300489d73842f690d75e713f4270b09680173fd6af28f6200b7e2e10e90a",
       "category": "web",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-21",
+      "verified_at": "2026-09-25",
       "risk": "medium"
     },
     "web.website-testing": {
       "version": "1.0.0",
-      "sha256": "5f72fcbea87bc0cae8fb4fbd5ee152d807fbd50a696b2163652f650f07749de0",
+      "sha256": "bb7f0a5c9b4c608b519ac7c7eca4168a78f922450d720f121304ac73c6fa90d2",
       "category": "web",
       "files": [
         "README.md",
         "SKILL.md"
       ],
-      "dependencies": [],
-      "verified_at": "2026-09-21",
+      "dependencies": [
+        "optional:playwright-or-cypress"
+      ],
+      "verified_at": "2026-09-25",
       "risk": "low"
     }
   }

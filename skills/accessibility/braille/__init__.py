@@ -1,1 +1,2 @@
-from .braille_translate import BrailleTranslator\n__all__ = ['BrailleTranslator']\n
+from .braille_translate import BrailleTranslator
+__all__ = ['BrailleTranslator']

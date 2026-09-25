@@ -1,1 +1,2 @@
-from .vcard_contacts import VCardContactsManager\n__all__ = ['VCardContactsManager']\n
+from .vcard_contacts import VCardContactsManager
+__all__ = ['VCardContactsManager']

@@ -1,1 +1,2 @@
-from .recipe_gen import RecipeGenerator\n__all__ = ['RecipeGenerator']\n
+from .recipe_gen import RecipeGenerator
+__all__ = ['RecipeGenerator']

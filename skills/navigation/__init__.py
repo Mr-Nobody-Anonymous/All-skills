@@ -1,1 +1,1 @@
-"""All-Skills Category: navigation"""\n
+"""All-Skills Category: navigation"""

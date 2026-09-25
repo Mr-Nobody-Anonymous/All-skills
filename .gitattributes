@@ -1,0 +1,33 @@
+# Store LF in the repository and check out LF on every platform, so file
+# contents — and the digests in skills.lock / awesome_skills.lock — are
+# identical on Windows, macOS and Linux.
+* text=auto eol=lf
+
+# Windows batch scripts need CRLF to run reliably under cmd.exe
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Binary assets (never touched by line-ending conversion)
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+*.webp binary
+*.pdf  binary
+*.ttf  binary
+*.woff binary
+*.woff2 binary
+*.mp3  binary
+*.gz   binary
+*.zip  binary
+*.nc   binary
+
+# Machine-generated files: collapsed in GitHub diffs and excluded from stats.
+# Regenerate them with the scripts instead of editing by hand.
+skills.lock              linguist-generated=true
+awesome_skills.lock      linguist-generated=true
+skills/registry.json     linguist-generated=true
+skills/dependencies.json linguist-generated=true
+stats.json               linguist-generated=true
+baselines/**             linguist-generated=true

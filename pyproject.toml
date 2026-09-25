@@ -1,12 +1,49 @@
 [build-system]
-requires = ["setuptools>=68"]
+# setuptools>=77 is required for PEP 639 SPDX `license` strings and `license-files`.
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
+# ──────────────────────────────────────────────────────────────────────────────
+# Project metadata (PEP 621) — this file is the single source of truth.
+# `setup.py` is only a thin compatibility shim; do not add metadata there.
+# ──────────────────────────────────────────────────────────────────────────────
 [project]
 name = "all-skills"
+# Keep in sync with VERSION, package.json and src/skills/_version.py
+# (enforced by scripts/verify_registry_integrity.py).
 version = "3.0.0"
 description = "Universal AI Agent Skill Operating System & Execution Runtime"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Mr-Nobody-Anonymous" }]
+maintainers = [{ name = "Mr-Nobody-Anonymous" }]
 requires-python = ">=3.10"
+keywords = [
+    "ai-agents",
+    "agent-skills",
+    "claude-code",
+    "cursor",
+    "codex",
+    "mcp",
+    "model-context-protocol",
+    "prompt-engineering",
+    "developer-tools",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
 dependencies = [
     "pyyaml>=6.0",
     "rich>=13.0.0",
@@ -16,43 +53,126 @@ dependencies = [
     "python-dotenv>=1.0.0",
     "attrs>=23.1.0",
     "networkx>=3.1",
+    "jsonschema>=4.18",
 ]
 
 [project.optional-dependencies]
 test = [
     "pytest>=7",
-    "pytest-cov",
+    "pytest-cov>=4",
+    # Reports failing tests as GitHub annotations (no-op outside GitHub Actions)
+    "pytest-github-actions-annotate-failures>=0.2",
 ]
 dev = [
-    "pytest>=7",
-    "pytest-cov",
-    "black",
-    "ruff",
-    "mypy",
+    "all-skills[test]",
+    "ruff>=0.6",
+    "mypy>=1.10",
+    "types-PyYAML",
+    "types-requests",
+    "pre-commit>=3.5",
 ]
+# Distribution tooling used by CI's package job and the release workflow.
+release = [
+    "build>=1.2",
+    "twine>=6",
+]
+
+[project.urls]
+Homepage = "https://github.com/Mr-Nobody-Anonymous/All-skills"
+Repository = "https://github.com/Mr-Nobody-Anonymous/All-skills"
+Issues = "https://github.com/Mr-Nobody-Anonymous/All-skills/issues"
+Changelog = "https://github.com/Mr-Nobody-Anonymous/All-skills/blob/main/CHANGELOG.md"
+Security = "https://github.com/Mr-Nobody-Anonymous/All-skills/security/policy"
 
 [project.scripts]
 all-skills = "skills.cli:main"
 agent-skills = "skills.cli:main"
 
+# ──────────────────────────────────────────────────────────────────────────────
+# setuptools
+# ──────────────────────────────────────────────────────────────────────────────
 [tool.setuptools]
-package-dir = {"" = "src", "scratch_priority_import" = "scratch_priority_import"}
+# Explicit package list: the repository root contains thousands of skill
+# directories, so automatic discovery must never scan it.
+package-dir = { "" = "src", "scratch_priority_import" = "scratch_priority_import" }
+packages = ["skills", "scratch_priority_import"]
 
-[tool.setuptools.packages.find]
-where = ["src", "."]
-
-[tool.black]
-line-length = 100
-target-version = ['py39', 'py310']
-
+# ──────────────────────────────────────────────────────────────────────────────
+# Ruff — linting (replaces flake8/isort/pyupgrade)
+# ──────────────────────────────────────────────────────────────────────────────
 [tool.ruff]
 line-length = 100
+target-version = "py310"
+extend-exclude = [
+    # Large imported / generated skill libraries — linted by their upstreams.
+    "awesome_skills",
+    "agent_skills",
+    "scratch",
+    "upstream",
+    "quarantine",
+]
 
+[tool.ruff.lint]
+# Correctness-focused baseline enforced in CI (currently 0 violations):
+#   E9/F63/F7/F82  syntax errors, invalid comparisons, undefined names
+#   F601/F811      duplicate dict keys, redefined-while-unused
+#   B006/B017/B023/B904  mutable defaults, blind assertRaises, loop closures,
+#                  exception chaining
+#   E711/E712/E721 comparisons to None/True/type
+#   W605           invalid escape sequences
+#   PLE            pylint errors
+#   S102/S307      no exec()/eval() in first-party code
+#   RUF006         dangling asyncio tasks
+# Style-only rules (unused imports, f-strings, formatting) are intentionally not
+# enforced yet so this baseline does not require a repository-wide rewrite.
+select = [
+    "E9", "F63", "F7", "F82",
+    "F601", "F811",
+    "B006", "B017", "B023", "B904",
+    "E711", "E712", "E721",
+    "W605",
+    "PLE",
+    "S102", "S307",
+    "RUF006",
+]
+
+[tool.ruff.format]
+# Black-compatible formatting; run `ruff format <paths>` on files you touch.
+quote-style = "double"
+line-ending = "lf"
+
+# ──────────────────────────────────────────────────────────────────────────────
+# mypy — static typing for the core runtime package
+# ──────────────────────────────────────────────────────────────────────────────
 [tool.mypy]
 python_version = "3.10"
+files = ["src/skills"]
 warn_return_any = true
 warn_unused_configs = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+no_implicit_optional = true
+check_untyped_defs = true
+ignore_missing_imports = true
 
+# ──────────────────────────────────────────────────────────────────────────────
+# pytest / coverage
+# ──────────────────────────────────────────────────────────────────────────────
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+addopts = "-ra"
 
+[tool.coverage.run]
+source = ["src/skills"]
+branch = true
+
+[tool.coverage.report]
+# CI fails if coverage of src/skills drops below this floor (currently ~77%).
+fail_under = 75
+show_missing = true
+skip_empty = true
+exclude_also = [
+    "if __name__ == .__main__.:",
+    "if TYPE_CHECKING:",
+    "raise NotImplementedError",
+]

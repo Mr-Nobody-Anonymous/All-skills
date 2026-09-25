@@ -1,1 +1,2 @@
-from .apscheduler_tasks import APSchedulerManager\n__all__ = ['APSchedulerManager']\n
+from .apscheduler_tasks import APSchedulerManager
+__all__ = ['APSchedulerManager']

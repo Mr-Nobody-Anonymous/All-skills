@@ -1,1 +1,2 @@
-from .coingecko_crypto import CoingeckoCrypto\n__all__ = ['CoingeckoCrypto']\n
+from .coingecko_crypto import CoingeckoCrypto
+__all__ = ['CoingeckoCrypto']

@@ -1,1 +1,1 @@
-"""All-Skills Category: smart_home"""\n
+"""All-Skills Category: smart_home"""

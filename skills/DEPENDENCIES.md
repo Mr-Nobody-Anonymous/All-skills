@@ -1,10 +1,10 @@
 # Skill Dependencies
 
-_Generated: 2026-09-19T17:27:27+00:00_
+_Generated: 2026-09-25T16:19:25+00:00_
 
-**Total skills:** 122
+**Total skills:** 124
 **Skills with declared dependencies:** 44
-**Skills with no dependencies:** 78
+**Skills with no dependencies:** 80
 
 ## Policy
 
@@ -66,6 +66,7 @@ Built-in capabilities (no install required):
 
 | Skill | Dependency | Required/Optional | Installation command | Platform | Status |
 |---|---|---|---|---|---|
+| `architecture.architecture-decision-records` | — | built-in | — | all | available |
 | `design.avatar-creator` | `optional:image-generator` | optional | Install `image-generator` per vendor documentation | all | missing |
 | `design.branding` | — | built-in | — | all | available |
 | `design.frontend-design` | — | built-in | — | all | available |
@@ -92,7 +93,7 @@ Built-in capabilities (no install required):
 | `development.db-inspector` | `optional:database-client` | optional | Install `database-client` per vendor documentation | all | missing |
 | `development.debugging` | — | built-in | — | all | available |
 | `development.devops` | — | built-in | — | all | available |
-| `development.docker-manager` | `optional:docker` | optional | Install `docker` per vendor documentation | all | available |
+| `development.docker-manager` | `optional:docker` | optional | Install `docker` per vendor documentation | all | missing |
 | `development.dokploy` | `optional:DOKPLOY_API_KEY` | optional | Install `DOKPLOY_API_KEY` per vendor documentation | all | missing |
 | `development.frontend` | — | built-in | — | all | available |
 | `development.git` | `git` | required | Install Git from https://git-scm.com/downloads | all | available |
@@ -121,6 +122,7 @@ Built-in capabilities (no install required):
 | `documents.pdf` | — | built-in | — | all | available |
 | `documents.pptx` | — | built-in | — | all | available |
 | `documents.xlsx` | — | built-in | — | all | available |
+| `healthcare.health-economist` | — | built-in | — | all | available |
 | `productivity.adhd` | — | built-in | — | all | available |
 | `productivity.adhd-divergent-brainstorm` | — | built-in | — | all | available |
 | `productivity.adhd-output-style` | — | built-in | — | all | available |

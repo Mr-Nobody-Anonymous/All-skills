@@ -1,1 +1,2 @@
-from .mediapipe_pose import MediaPipePoseEstimator\n__all__ = ['MediaPipePoseEstimator']\n
+from .mediapipe_pose import MediaPipePoseEstimator
+__all__ = ['MediaPipePoseEstimator']

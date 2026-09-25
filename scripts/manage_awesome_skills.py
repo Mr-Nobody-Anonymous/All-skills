@@ -29,12 +29,18 @@ if hasattr(sys.stderr, "reconfigure"):
 import argparse
 import json
 import os
+import re
 import shutil
+from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 AWESOME_DIR = ROOT / "awesome_skills"
 DEFAULT_AGENTS_DIR = ROOT / ".agents" / "skills"
+# Existing installs replaced with --force are moved here first (git-ignored).
+INSTALL_BACKUP_DIR = ROOT / "scratch" / "install_backups"
+# Skill IDs, category names and bundle members are single path components.
+SAFE_NAME = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._-]*$")
 CATALOG_PATH = AWESOME_DIR / "skills_index.json"
 
 BUNDLES = {
@@ -110,6 +116,8 @@ def load_catalog() -> list[dict]:
 
 
 def find_skill_on_disk(skill_id: str) -> tuple[Path | None, str | None]:
+    if not SAFE_NAME.match(skill_id):
+        return None, None
     for cat in os.listdir(AWESOME_DIR):
         cat_dir = AWESOME_DIR / cat
         if not cat_dir.is_dir():
@@ -196,7 +204,7 @@ def cmd_search(args: argparse.Namespace) -> None:
     print()
 
 
-def cmd_info(args: argparse.Namespace) -> None:
+def cmd_info(args: argparse.Namespace) -> int:
     skill_id = args.skill_id.strip()
     skill_path, category = find_skill_on_disk(skill_id)
 
@@ -206,7 +214,7 @@ def cmd_info(args: argparse.Namespace) -> None:
 
     if not skill_path:
         print(f"Skill '{skill_id}' not found in awesome_skills.", file=sys.stderr)
-        return
+        return 1
 
     skill_md = skill_path / "SKILL.md"
     content = skill_md.read_text(encoding="utf-8") if skill_md.exists() else ""
@@ -220,6 +228,62 @@ def cmd_info(args: argparse.Namespace) -> None:
     for line in content.splitlines()[:25]:
         print(" ", line)
     print("\n----------------------------------------\n")
+    return 0
+
+
+def _display(path: Path) -> str:
+    """Repository-relative path when possible (``--path`` may point anywhere)."""
+    try:
+        return path.resolve().relative_to(ROOT).as_posix()
+    except ValueError:
+        return str(path)
+
+
+def _unique_dirs(dirs: list[Path]) -> list[Path]:
+    """Drop destinations that resolve to the same directory (harness links)."""
+    seen: set[str] = set()
+    unique = []
+    for d in dirs:
+        key = os.path.normcase(os.path.realpath(d))
+        if key not in seen:
+            seen.add(key)
+            unique.append(d)
+    return unique
+
+
+def _backup_root(dest_dir: Path) -> Path:
+    stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%fZ")
+    return INSTALL_BACKUP_DIR / stamp / re.sub(r"[^A-Za-z0-9._-]+", "_", _display(dest_dir)).strip("_")
+
+
+def install_skill_dir(src: Path, dst: Path, force: bool, backup_root: Path) -> str:
+    """Copy one skill package without ever silently destroying what is already there.
+
+    Returns ``"installed"``; ``"skipped"`` when ``dst`` exists and ``force`` is
+    false; or ``"replaced"`` when forced — the previous copy is first moved
+    under ``backup_root`` so a mistaken overwrite can be undone.
+    """
+    if dst.exists() or dst.is_symlink():
+        if not force:
+            return "skipped"
+        backup = backup_root / dst.name
+        backup.parent.mkdir(parents=True, exist_ok=True)
+        shutil.move(str(dst), str(backup))
+        shutil.copytree(src, dst)
+        return "replaced"
+    shutil.copytree(src, dst)
+    return "installed"
+
+
+def _report(dest_dir: Path, outcomes: dict[str, list[str]], backup_root: Path) -> None:
+    installed, replaced, skipped = outcomes["installed"], outcomes["replaced"], outcomes["skipped"]
+    print(f"  {len(installed)} installed, {len(replaced)} replaced, {len(skipped)} already present "
+          f"in {_display(dest_dir)}.")
+    if replaced:
+        print(f"  Previous copies were backed up to {_display(backup_root)}.")
+    if skipped:
+        shown = ", ".join(skipped[:10]) + (" ..." if len(skipped) > 10 else "")
+        print(f"  Left unchanged (use --force to replace; old copies are backed up): {shown}")
 
 
 def resolve_dest_dirs(args: argparse.Namespace) -> list[Path]:
@@ -241,7 +305,7 @@ def resolve_dest_dirs(args: argparse.Namespace) -> list[Path]:
             ROOT / ".cursor" / "skills",
             ROOT / ".codex" / "skills",
         ]
-    return dirs if dirs else [DEFAULT_AGENTS_DIR]
+    return _unique_dirs(dirs) if dirs else [DEFAULT_AGENTS_DIR]
 
 
 def cmd_status(args: argparse.Namespace) -> None:
@@ -260,77 +324,73 @@ def cmd_status(args: argparse.Namespace) -> None:
         print()
 
 
-def cmd_install(args: argparse.Namespace) -> None:
+def cmd_install(args: argparse.Namespace) -> int:
     target = args.target.strip()
-    dest_dirs = resolve_dest_dirs(args)
+    force = getattr(args, "force", False)
+    if not SAFE_NAME.match(target):
+        print(f"Error: '{target}' is not a valid skill ID or category name.", file=sys.stderr)
+        return 1
 
-    for dest_dir in dest_dirs:
-        dest_dir.mkdir(parents=True, exist_ok=True)
-        cat_dir = AWESOME_DIR / target.lower()
-        if cat_dir.is_dir():
-            skills = [s for s in os.listdir(cat_dir) if (cat_dir / s).is_dir()]
-            print(f"Installing {len(skills)} skills from category '{target}' into {dest_dir.relative_to(ROOT)}...")
-            for s in skills:
-                src = cat_dir / s
-                dst = dest_dir / s
-                if dst.exists():
-                    shutil.rmtree(dst)
-                shutil.copytree(src, dst)
-            print(f"Successfully installed {len(skills)} skills.")
-            continue
-
+    cat_dir = AWESOME_DIR / target.lower()
+    if cat_dir.is_dir():
+        sources = sorted((s, cat_dir / s) for s in os.listdir(cat_dir) if (cat_dir / s / "SKILL.md").is_file())
+        label = f"{len(sources)} skills from category '{target}'"
+    else:
         skill_path, category = find_skill_on_disk(target)
-        if skill_path:
-            dst = dest_dir / target
-            if dst.exists():
-                shutil.rmtree(dst)
-            shutil.copytree(skill_path, dst)
-            print(f"Successfully installed '{target}' ({category}) into {dest_dir.relative_to(ROOT)}.")
-            continue
+        if not skill_path:
+            print(f"Error: '{target}' was not found as a skill ID or category.", file=sys.stderr)
+            return 1
+        sources = [(target, skill_path)]
+        label = f"'{target}' ({category})"
 
-        print(f"Error: '{target}' was not found as a skill ID or category.", file=sys.stderr)
-        sys.exit(1)
+    for dest_dir in resolve_dest_dirs(args):
+        dest_dir.mkdir(parents=True, exist_ok=True)
+        backup_root = _backup_root(dest_dir)
+        print(f"Installing {label} into {_display(dest_dir)}...")
+        outcomes: dict[str, list[str]] = {"installed": [], "replaced": [], "skipped": []}
+        for name, src in sources:
+            outcomes[install_skill_dir(src, dest_dir / name, force, backup_root)].append(name)
+        _report(dest_dir, outcomes, backup_root)
+    return 0
 
 
-def cmd_install_bundle(args: argparse.Namespace) -> None:
+def cmd_install_bundle(args: argparse.Namespace) -> int:
     bundle_name = args.bundle.strip().lower()
     if bundle_name not in BUNDLES:
         print(f"Unknown bundle '{bundle_name}'. Available bundles:", file=sys.stderr)
         for b in BUNDLES:
             print(f"  - {b} ({len(BUNDLES[b])} skills)", file=sys.stderr)
-        sys.exit(1)
+        return 1
 
-    dest_dirs = resolve_dest_dirs(args)
+    force = getattr(args, "force", False)
     skill_list = BUNDLES[bundle_name]
+    found = [(s_id, find_skill_on_disk(s_id)[0]) for s_id in skill_list]
+    missing = [s_id for s_id, path in found if path is None]
 
-    for dest_dir in dest_dirs:
+    for dest_dir in resolve_dest_dirs(args):
         dest_dir.mkdir(parents=True, exist_ok=True)
-        print(f"Installing bundle '{bundle_name}' ({len(skill_list)} skills) into {dest_dir.relative_to(ROOT)}...")
-        installed = 0
-        missing = []
+        backup_root = _backup_root(dest_dir)
+        print(f"Installing bundle '{bundle_name}' ({len(skill_list)} skills) into {_display(dest_dir)}...")
+        outcomes: dict[str, list[str]] = {"installed": [], "replaced": [], "skipped": []}
+        for s_id, skill_path in found:
+            if skill_path is not None:
+                outcomes[install_skill_dir(skill_path, dest_dir / s_id, force, backup_root)].append(s_id)
+        _report(dest_dir, outcomes, backup_root)
 
-        for s_id in skill_list:
-            skill_path, _ = find_skill_on_disk(s_id)
-            if skill_path:
-                dst = dest_dir / s_id
-                if dst.exists():
-                    shutil.rmtree(dst)
-                shutil.copytree(skill_path, dst)
-                installed += 1
-            else:
-                missing.append(s_id)
-
-        print(f"Installed {installed} skills successfully into {dest_dir.relative_to(ROOT)}.")
-        if missing:
-            print(f"Warning: {len(missing)} skills could not be found: {', '.join(missing)}")
+    if missing:
+        print(f"Error: {len(missing)} bundle skill(s) could not be found: {', '.join(missing)}", file=sys.stderr)
+        return 1
+    return 0
 
 
-def cmd_setup_tools(args: argparse.Namespace) -> None:
+def cmd_setup_tools(args: argparse.Namespace) -> int:
     try:
         from setup_tools import cmd_setup
-        cmd_setup(include_global=getattr(args, "is_global", False))
+        result = cmd_setup(include_global=getattr(args, "is_global", False))
     except Exception as e:
         print(f"Error during harness setup: {e}", file=sys.stderr)
+        return 1
+    return result if isinstance(result, int) else 0
 
 
 def main() -> None:
@@ -367,6 +427,8 @@ def main() -> None:
     p_install.add_argument("--codex", action="store_true", help="Target .codex/skills")
     p_install.add_argument("--antigravity", action="store_true", help="Target .agents/skills")
     p_install.add_argument("--all-tools", action="store_true", help="Target all connected harnesses")
+    p_install.add_argument("--force", action="store_true",
+                           help="Replace skills that are already installed (old copies are backed up)")
 
     # install-bundle
     p_bundle = subparsers.add_parser("install-bundle", help="Install a pre-configured skill bundle")
@@ -377,6 +439,8 @@ def main() -> None:
     p_bundle.add_argument("--codex", action="store_true", help="Target .codex/skills")
     p_bundle.add_argument("--antigravity", action="store_true", help="Target .agents/skills")
     p_bundle.add_argument("--all-tools", action="store_true", help="Target all connected harnesses")
+    p_bundle.add_argument("--force", action="store_true",
+                          help="Replace skills that are already installed (old copies are backed up)")
 
     args = parser.parse_args()
 
@@ -385,15 +449,15 @@ def main() -> None:
     elif args.command == "search":
         cmd_search(args)
     elif args.command == "info":
-        cmd_info(args)
+        sys.exit(cmd_info(args))
     elif args.command == "status":
         cmd_status(args)
     elif args.command == "setup-tools":
-        cmd_setup_tools(args)
+        sys.exit(cmd_setup_tools(args))
     elif args.command == "install":
-        cmd_install(args)
+        sys.exit(cmd_install(args))
     elif args.command == "install-bundle":
-        cmd_install_bundle(args)
+        sys.exit(cmd_install_bundle(args))
 
 
 if __name__ == "__main__":

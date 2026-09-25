@@ -1,1 +1,2 @@
-from .textstat_analyze import TextstatAnalyzer\n__all__ = ['TextstatAnalyzer']\n
+from .textstat_analyze import TextstatAnalyzer
+__all__ = ['TextstatAnalyzer']

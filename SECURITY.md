@@ -16,9 +16,9 @@ The security of autonomous agent instructions, tools, and execution environments
 
 If you discover a security vulnerability, prompt injection bypass, or malicious skill payload:
 
-1. **Do NOT open a public GitHub issue.**
-2. Report via **GitHub Private Security Advisory**: [Submit Advisory](https://github.com/Mr-Nobody-Anonymous/All-skills/security/advisories/new)
-3. Or email our security maintainers directly: **`security@allskills.dev`**
+1. **Do NOT open a public GitHub issue** with vulnerability details.
+2. Report privately via **GitHub Private Vulnerability Reporting**: [Report a vulnerability](https://github.com/Mr-Nobody-Anonymous/All-skills/security/advisories/new).
+3. If that form is unavailable, open an issue titled **"Security contact request"** containing **no technical details**, and the maintainer will arrange a private channel.
 4. Please provide:
    - Skill name, category, and exact file path.
    - Attack vector classification (e.g. prompt injection, command injection, path traversal, credential theft).
@@ -35,9 +35,13 @@ If you discover a security vulnerability, prompt injection bypass, or malicious 
 
 ## 🛑 Automated Security Gates & Pipeline
 
-Every commit and pull request is strictly verified across multi-layer security gates:
+Every commit and pull request is verified by multi-layer security gates
+([`security.yml`](.github/workflows/security.yml), [`codeql.yml`](.github/workflows/codeql.yml)):
 - **Static & AST Analysis**: Inspected via `src/skills/security.py` and `scripts/scan_skills_security.py`
 - **Prompt Injection Defense**: Validated against `evals/adversarial/` benchmark suite
+- **Code Scanning**: GitHub CodeQL for Python, JavaScript and GitHub Actions workflows
+- **Secret Scanning**: Gitleaks on every push and pull request (configuration: [`.gitleaks.toml`](.gitleaks.toml))
+- **Dependency Review & Updates**: Vulnerable dependencies are blocked on pull requests (requires the repository's Dependency graph to be enabled); Dependabot keeps Actions, Python and Docker dependencies current
 - **Fail-Closed Lifecycle Hooks**: Required hooks enforce non-zero failure exits
 - **Kill-Switch Enforcement**: Instant revocation lookup via `registry/revocations.json`
 - **Network Egress Constraints**: Outbound filtering per `docs/security/network-security.md`

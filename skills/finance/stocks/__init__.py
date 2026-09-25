@@ -1,1 +1,2 @@
-from .yfinance_stocks import YFinanceStocks\n__all__ = ['YFinanceStocks']\n
+from .yfinance_stocks import YFinanceStocks
+__all__ = ['YFinanceStocks']

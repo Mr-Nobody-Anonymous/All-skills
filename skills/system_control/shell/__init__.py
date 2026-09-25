@@ -1,1 +1,2 @@
-from .sh_execute import ShellExecutor\n__all__ = ['ShellExecutor']\n
+from .sh_execute import ShellExecutor
+__all__ = ['ShellExecutor']

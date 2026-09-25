@@ -1,1 +1,3 @@
-from .watchdog_monitor import WatchdogMonitor\nfrom .file_operations import FileOperations\n__all__ = ['WatchdogMonitor', 'FileOperations']\n
+from .watchdog_monitor import WatchdogMonitor
+from .file_operations import FileOperations
+__all__ = ['WatchdogMonitor', 'FileOperations']

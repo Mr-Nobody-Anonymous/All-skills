@@ -1,1 +1,2 @@
-from .presidio_detect import PresidioPIIDetector\n__all__ = ['PresidioPIIDetector']\n
+from .presidio_detect import PresidioPIIDetector
+__all__ = ['PresidioPIIDetector']

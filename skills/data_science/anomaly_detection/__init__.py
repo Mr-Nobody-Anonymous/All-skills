@@ -1,1 +1,2 @@
-from .pyod_anomaly import PyodAnomalyDetector\n__all__ = ['PyodAnomalyDetector']\n
+from .pyod_anomaly import PyodAnomalyDetector
+__all__ = ['PyodAnomalyDetector']

@@ -1,1 +1,2 @@
-from .geopy_geocode import GeopyGeocoder\n__all__ = ['GeopyGeocoder']\n
+from .geopy_geocode import GeopyGeocoder
+__all__ = ['GeopyGeocoder']

@@ -2,7 +2,7 @@
 name: tailwind-design-system
 description: Build production-ready design systems with Tailwind CSS, including design tokens, component variants, responsive patterns, and accessibility.
 disable-model-invocation: false
-risk: safe
+risk: low
 source: community
 date_added: '2026-02-27'
 version: 1.0.0

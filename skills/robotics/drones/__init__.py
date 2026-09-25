@@ -1,1 +1,2 @@
-from .dronekit_fly import DroneKitFlightController\n__all__ = ['DroneKitFlightController']\n
+from .dronekit_fly import DroneKitFlightController
+__all__ = ['DroneKitFlightController']

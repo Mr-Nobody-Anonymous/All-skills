@@ -1,1 +1,2 @@
-from .bandwidth_monitor import BandwidthMonitor\n__all__ = ['BandwidthMonitor']\n
+from .bandwidth_monitor import BandwidthMonitor
+__all__ = ['BandwidthMonitor']

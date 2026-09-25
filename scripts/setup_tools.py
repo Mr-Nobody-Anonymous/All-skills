@@ -16,10 +16,14 @@ platform adapters defined in platforms/platforms.yaml and adapters/*.yaml:
   - Block Goose (.goose/skills)
 
 Safety invariants (hub-and-spoke architecture):
-  1. A real (non-link) directory is NEVER touched — only managed links/junctions.
-  2. --replace-managed-links only removes entries present in state/managed_harnesses.json.
-  3. shutil.rmtree() is never called on any path.
-  4. Every created link is recorded in state/managed_harnesses.json.
+  1. Unmanaged links and real directories are refused, never modified. The only
+     real directories ever changed are copies this tool created itself (the
+     fallback when a link cannot be made) and recorded in the ledger as such.
+  2. --replace-managed-links and --unlink only act on entries recorded in
+     state/managed_harnesses.json.
+  3. shutil.rmtree() is only called on those ledger-recorded copies; links and
+     junctions are removed as links, without following them into their targets.
+  4. Every created link or copy is recorded in state/managed_harnesses.json.
 
 Usage:
     python scripts/setup_tools.py                        # Set up local workspace harnesses
@@ -34,6 +38,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import stat
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -161,16 +166,15 @@ def is_link_or_junction(path: Path) -> bool:
     if path.is_symlink():
         return True
     if os.name == "nt":
-        # Detect Windows junction via reparse point tag
+        # Junctions are reparse points. os.lstat() exposes the attribute bits
+        # without following the link. (A previous ctypes GetFileAttributesW call
+        # used the default signed return type, so INVALID_FILE_ATTRIBUTES came
+        # back as -1 and every *missing* path was reported as a junction.)
         try:
-            import ctypes
-            import ctypes.wintypes
-            FILE_ATTRIBUTE_REPARSE_POINT = 0x0400
-            attrs = ctypes.windll.kernel32.GetFileAttributesW(str(path))
-            if attrs != 0xFFFFFFFF and (attrs & FILE_ATTRIBUTE_REPARSE_POINT):
-                return True
-        except Exception:
-            pass
+            attrs = getattr(os.lstat(path), "st_file_attributes", 0)
+        except OSError:
+            return False
+        return bool(attrs & stat.FILE_ATTRIBUTE_REPARSE_POINT)
     return False
 
 
@@ -474,33 +478,85 @@ def cmd_unlink() -> None:
     print("\nDone. Source canonical harness remains untouched.\n")
 
 
-def cmd_verify() -> None:
+def _tree_hashes(root: Path) -> Dict[str, str]:
+    """Content hash of every skill folder directly under ``root``."""
+    sys.path.insert(0, str(ROOT / "src"))
+    from skills.lock import compute_skill_tree_hash
+
+    return {
+        d.name: compute_skill_tree_hash(d)[0]
+        for d in sorted(root.iterdir())
+        if d.is_dir() and not d.name.startswith(".")
+    }
+
+
+def cmd_verify(strict: bool = False) -> int:
+    """Verify every harness; return the number of errors (0 = healthy).
+
+    - The source harness must exist and every skill folder must contain SKILL.md.
+    - A target marked ``required: true`` in platforms.yaml (or any target with
+      ``--strict``) must exist.
+    - Linked targets must resolve to the source harness.
+    - Copied targets (no symlink support) must match the source content hashes.
+    """
     source_skills, local_targets, _ = get_platform_targets()
     print("\n🔬 Verifying Platform Harness Integrity…\n")
     errors = 0
-    if not source_skills.exists():
+    if not source_skills.is_dir():
         print(f"  ❌ Source harness missing at {source_skills}")
+        return 1
+    skill_dirs = [d for d in sorted(source_skills.iterdir()) if d.is_dir() and not d.name.startswith(".")]
+    no_manifest = [d.name for d in skill_dirs if not (d / "SKILL.md").is_file()]
+    if no_manifest:
+        print(f"  ❌ Source harness: {len(no_manifest)} skill folder(s) without SKILL.md: {', '.join(no_manifest[:5])}")
         errors += 1
     else:
-        print(f"  ✅ Source canonical harness verified ({len(os.listdir(source_skills))} skills)")
+        print(f"  ✅ Source harness verified ({len(skill_dirs)} skills, every folder has SKILL.md)")
 
+    source_hashes: Optional[Dict[str, str]] = None
     for item in local_targets:
         name = item["name"]
         path = item["path"]
-        if not path.exists():
+        if item.get("is_source") or path.resolve() == source_skills.resolve() and not is_link_or_junction(path):
             continue
-        skill_files = list(path.glob("*/SKILL.md"))
-        if len(skill_files) == 0:
-            print(f"  ⚠️  {name:30}: Target exists but no SKILL.md files found")
+        required = strict or bool(item.get("required"))
+        if not path.exists() and not is_link_or_junction(path):
+            if required:
+                print(f"  ❌ {name:30}: required target missing at {path}")
+                errors += 1
+            else:
+                print(f"  ·  {name:30}: not linked (optional)")
+            continue
+        if is_link_or_junction(path):
+            try:
+                target = path.resolve(strict=True)
+            except (OSError, RuntimeError) as exc:
+                print(f"  ❌ {name:30}: broken link ({exc})")
+                errors += 1
+                continue
+            if target != source_skills.resolve():
+                print(f"  ❌ {name:30}: link points to {target}, expected {source_skills}")
+                errors += 1
+            else:
+                print(f"  ✅ {name:30}: linked to the source harness")
+            continue
+        if source_hashes is None:
+            source_hashes = _tree_hashes(source_skills)
+        target_hashes = _tree_hashes(path)
+        drift = sorted(k for k in set(source_hashes) | set(target_hashes)
+                       if source_hashes.get(k) != target_hashes.get(k))
+        if drift:
+            print(f"  ❌ {name:30}: copy out of sync with the source ({len(drift)} skill(s), e.g. {', '.join(drift[:3])})")
             errors += 1
         else:
-            print(f"  ✅ {name:30}: Verified ({len(skill_files)} readable SKILL.md manifests)")
+            print(f"  ✅ {name:30}: copy matches the source ({len(target_hashes)} skills, hashes verified)")
 
     print()
     if errors == 0:
-        print("  🎉 All active harnesses verified with 100% integrity!\n")
+        print("  🎉 All harnesses verified.\n")
     else:
-        print(f"  ⚠️  Verification completed with {errors} warnings/errors.\n")
+        print(f"  ❌ Verification failed with {errors} error(s).\n")
+    return errors
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -529,6 +585,7 @@ Examples:
     parser.add_argument("--replace-managed-links", action="store_true", help="Replace existing managed links/junctions (safe — ledger-checked)")
     parser.add_argument("--unlink",                action="store_true", help="Remove managed workspace harnesses (ledger-safe)")
     parser.add_argument("--verify",                action="store_true", help="Verify integrity of all harnesses (read-only)")
+    parser.add_argument("--strict",                action="store_true", help="With --verify: every configured target is required")
     args = parser.parse_args()
 
     if args.status:
@@ -536,7 +593,7 @@ Examples:
     elif args.unlink:
         cmd_unlink()
     elif args.verify:
-        cmd_verify()
+        sys.exit(1 if cmd_verify(strict=args.strict) else 0)
     elif args.replace_managed_links:
         cmd_setup(include_global=args.is_global, replace_managed=True)
     else:
