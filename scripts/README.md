@@ -43,6 +43,20 @@ python scripts/generate_baselines.py                                  # baseline
 | `python scripts/build_catalog.py` | Rebuild `awesome_skills/skills_index.json` and `CATALOG.md` |
 | `python scripts/build_marketplace.py` | Rebuild the static web marketplace in `marketplace/` |
 
-Import and maintenance scripts (`import_*`, `sync_*`, `normalize_*`, `synthesize_*`,
-`clone_*`) change catalog content in bulk — review their docstrings and run them on a
-branch. Each script supports `--help`.
+### Importing upstream skills
+
+`python scripts/sync_sources.py` (also `allskills sync`) imports skills from the sources in
+`sources/registry.yaml`. It copies whole skill packages, preserves upstream frontmatter,
+records full commit SHAs, detected licenses (never assumed) and content hashes in
+`sources/imports.lock.json`, and never overwrites existing imports silently:
+
+```bash
+python scripts/sync_sources.py --source superpowers      # import new skills
+python scripts/sync_sources.py --update                  # review upstream changes (no writes)
+python scripts/sync_sources.py --update --apply          # apply them, with a backup
+python scripts/sync_sources.py --rollback <backup-id>    # restore the backup
+```
+
+Other import and maintenance scripts (`import_*`, `normalize_*`, `synthesize_*`, `clone_*`)
+change catalog content in bulk — review their docstrings and run them on a branch. Each
+script supports `--help`.
