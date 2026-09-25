@@ -342,6 +342,11 @@
       },
       "description": "Explicit side effects caused by executing this skill."
     },
+    "execution_mode": {
+      "type": "string",
+      "enum": ["agentic", "advisory"],
+      "description": "agentic (default): the agent performs the workflow within the declared permissions. advisory: the skill only recommends changes for a human to make, so instructions such as 'fix the code' do not require write access."
+    },
     "network_access": {
       "type": "boolean",
       "description": "Declares whether the skill requires outbound network connectivity."

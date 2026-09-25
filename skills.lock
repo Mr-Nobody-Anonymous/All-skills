@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-09-25T16:32:14.233020+00:00",
+  "generated_at": "2026-09-25T16:34:18.394160+00:00",
   "generator": "all-skills-lock v1.0.0",
   "total_skills": 196,
   "skills": {
@@ -18,7 +18,7 @@
     },
     "agent-evaluation": {
       "version": "1.0.0",
-      "sha256": "44d859b8fe35201112ca1ca86e1c884f7297c8e4455b6b08ff8740d2730a9aef",
+      "sha256": "4ed5cb1a2aafd8673145d875db6e13c03c299010f279c5d65ac78c6f4d5708c8",
       "category": "active-harness",
       "files": [
         "SKILL.md",
@@ -65,7 +65,7 @@
     },
     "ai-engineer": {
       "version": "1.0.0",
-      "sha256": "f505d83839d4747ac1feeddec0df01073971e3ffffb8c2dff0985637cb61354a",
+      "sha256": "1ef5bc9d4c902aadfcfecf49f9e4902e4367e489d2c6097c5e2f32dbc93600f1",
       "category": "active-harness",
       "files": [
         "SKILL.md"
@@ -145,7 +145,7 @@
     },
     "architecture-decision-records": {
       "version": "1.0.0",
-      "sha256": "5a982dc4f9afb944057bcdac36fe6145285b9043a914c49eee74985f2b5435ef",
+      "sha256": "754857aabe0b073f35c9da416e01dda8c13667c4b65072bbd60823ccf74b4128",
       "category": "architecture",
       "files": [
         "README.md",
@@ -164,7 +164,7 @@
     },
     "ast-code-transformation": {
       "version": "1.0.0",
-      "sha256": "f7abe2613cfa519767cd39dd91d2e0a4c102d1e72eedcd998f3c373e3cc16682",
+      "sha256": "61105f942969542b17c5f0cdd3557a518b4cc700d301dda8ec344ae01490d5a2",
       "category": "development",
       "files": [
         "SKILL.md"
@@ -187,7 +187,7 @@
     },
     "brainstorming": {
       "version": "1.0.0",
-      "sha256": "6fae9e7979a0ba0029929d40a924f5800c31388af20e39b6b832608514033917",
+      "sha256": "8dfc24df42d27ca4d38dff833289d652051159500a142574454dd9f6832c4f03",
       "category": "active-harness",
       "files": [
         "SKILL.md"
@@ -278,7 +278,7 @@
     },
     "code-showcase-systematic-debugging": {
       "version": "1.0.0",
-      "sha256": "d946820f0c17e83d873a28266b22dc89423d2f29eb891706a6da2af0bdf486a9",
+      "sha256": "4c588a2f440623cc4860dcbe845947ca6dff96a1d09a2b0753070c7be9deaefe",
       "category": "active-harness",
       "files": [
         "SKILL.md"
@@ -300,7 +300,7 @@
     },
     "context-budget-and-pruning": {
       "version": "1.0.0",
-      "sha256": "749e2571ac75c5680aa2b8fe8a5bb80ad35ace73422151ca746bc6a7df18d70b",
+      "sha256": "2d6c51f831d146f65aba3a9becb202a7fe345479fb4942845e66b26a64a67213",
       "category": "workflow",
       "files": [
         "SKILL.md"
@@ -408,7 +408,7 @@
     },
     "executing-plans": {
       "version": "1.0.0",
-      "sha256": "ac8acd0109d41e9d1a8cf157a39f5543950d96dda4f2c111f23163230bd8428d",
+      "sha256": "93912a169b4b7dfc47b1091755014059b11ea93a5074aafc616cced1ae9fe0fa",
       "category": "active-harness",
       "files": [
         "SKILL.md"
@@ -419,7 +419,7 @@
     },
     "health-economist": {
       "version": "1.0.0",
-      "sha256": "57c1c8d27e8125d3f8fa318dad2d4d29846111fc0ff78157259410d0fb105a6e",
+      "sha256": "7eec50a9718ea8f8b2a357923fed157d3bc96148b43257b1fbd8c4f9cc7d2b85",
       "category": "healthcare",
       "files": [
         "README.md",
@@ -481,7 +481,7 @@
     },
     "mcp-builder": {
       "version": "1.0.0",
-      "sha256": "ab87bf4222f5d4055463a39160fbc4c01bde57f6cf68dad57a753a93405a1eae",
+      "sha256": "a472614fe519b5200ae574a61b4bbe91083e9b23dffe2485fb051f87d567c883",
       "category": "active-harness",
       "files": [
         "LICENSE.txt",
@@ -591,7 +591,7 @@
     },
     "playwright-skill": {
       "version": "1.0.0",
-      "sha256": "f39080ec470520e972c8f3217199e99b7604721855118a515ee582c801ff29bb",
+      "sha256": "d80696719365143a9a0862923de783e094be71b247db43667c787e2499066e55",
       "category": "active-harness",
       "files": [
         "API_REFERENCE.md",
@@ -702,7 +702,7 @@
     },
     "sast-configuration": {
       "version": "1.0.0",
-      "sha256": "9dea720ca5c698291c24b5522cb28d8c1a10518d8ca6ffdb68b5b43a8a42cb97",
+      "sha256": "01ee3b1bd59ae9cddc9f4d6d0b462ba802a045d0df63c1e8b6648f4698abacb5",
       "category": "active-harness",
       "files": [
         "SKILL.md"
@@ -749,7 +749,7 @@
     },
     "seo-geo": {
       "version": "1.0.0",
-      "sha256": "29850916cbcc67280e403b5c569db0bbe088a026b2c9757c98bb78f81a63a427",
+      "sha256": "4f2332f18148080d0382445ff03af114b8996faf4eef60fe898f5645765bc756",
       "category": "active-harness",
       "files": [
         "SKILL.md"
@@ -786,7 +786,7 @@
     },
     "tdd": {
       "version": "1.0.0",
-      "sha256": "8479ad5c19e2ab01382656fc2f01062470d2250a6be7ce71c11b058c0c5272c4",
+      "sha256": "ddd55874678ad985fa620bea23557c221c8add99fffcfdf2279ba668e4d8a918",
       "category": "development",
       "files": [
         "SKILL.md",
@@ -800,7 +800,7 @@
     },
     "terraform-infrastructure": {
       "version": "1.0.0",
-      "sha256": "81e07bfb90b0eb4d469daca0359924afa9d2a05c2897e04433a5916bceafed78",
+      "sha256": "4c8dc202f7d8e066130bae806fe7f358e588dc070600c8e5b52e0c8457d3f704",
       "category": "granular-workflow-bundle",
       "files": [
         "SKILL.md"
@@ -823,7 +823,7 @@
     },
     "using-git-worktrees": {
       "version": "1.0.0",
-      "sha256": "814b189df4c8bfe3b1630480f2d058b60e23ad70216dc5c2b0d6f47c5894d5ee",
+      "sha256": "635e5d20f4585866b044c32a152d76a7982b5e1af90f9b4bac7568d31c2f080e",
       "category": "active-harness",
       "files": [
         "SKILL.md"
@@ -881,7 +881,7 @@
     },
     "architecture.architecture-decision-records": {
       "version": "1.0.0",
-      "sha256": "c92c9dceddf7a02f71a13251559eecdc7d4264c9919e0de3365fc72997f16589",
+      "sha256": "5845241bc8b255e8fbccf233af21012ccfeb9134e010303d837df00d98ea3644",
       "category": "architecture",
       "files": [
         "README.md",
@@ -1121,7 +1121,7 @@
     },
     "development.coding": {
       "version": "1.0.0",
-      "sha256": "20baffd9c65eb142ff93512af03da95720f3466fded3561efbb4c0d19cec2ed4",
+      "sha256": "64dc4b610eed9de4bc0e3b10371e25e0593e790acab839b93a6de2e5d25c7760",
       "category": "development",
       "files": [
         "README.md",
@@ -1201,7 +1201,7 @@
     },
     "development.debugging": {
       "version": "1.0.0",
-      "sha256": "6e279b8bd91660616343b982b423e28d2679abdb40aacb72e1ffffe2cb6ecb3c",
+      "sha256": "f3eaa21d739540bd13083fe31117fa4bbb5943a6bffd701b99a440a6a33a4a42",
       "category": "development",
       "files": [
         "README.md",
@@ -1350,7 +1350,7 @@
     },
     "development.mcp-builder": {
       "version": "1.1.0",
-      "sha256": "54512acfa30175bc3cb4ecc69daac74401ef5c3ec67970142b29f65cdad6aa9d",
+      "sha256": "ae0d3b55f1f2fa114a36787ee8b143d3922f0fd9639893a4b7540e7e04e9fcf7",
       "category": "development",
       "files": [
         "LICENSE",
@@ -1396,7 +1396,7 @@
     },
     "development.performance-optimization": {
       "version": "1.0.0",
-      "sha256": "68936edaad33ea6317fa1327f5a2e4eab9c3d37645b2fad4d68dca561f15cd8d",
+      "sha256": "8db368c4fcbbf9165c23fa2a0f9b9430c01834a04bad67613c112ec07358fd9b",
       "category": "development",
       "files": [
         "README.md",
@@ -1485,7 +1485,7 @@
     },
     "development.tdd": {
       "version": "1.0.0",
-      "sha256": "ec2f5315516aa442667bb481b42eca5da3dfb7aeda55640d15da8d1533bd817f",
+      "sha256": "5488f6abbe39c8e74f33278bab161ce949bf02edb7b92a8d348252311e37e1f3",
       "category": "development",
       "files": [
         "README.md",
@@ -1497,7 +1497,7 @@
     },
     "development.testing": {
       "version": "1.0.0",
-      "sha256": "31e5db099e59e16963bd7901a9178cdfaa47e6036c7f2b04796577c5822e3210",
+      "sha256": "f4ca04a96f2cf82f8ae65de5dee13618b4cbb09f3048678eeff554e4760f7ea6",
       "category": "development",
       "files": [
         "README.md",
@@ -1609,7 +1609,7 @@
     },
     "healthcare.health-economist": {
       "version": "1.0.0",
-      "sha256": "9f11ee50cacff83387977c121e3279852d3591b1a47133fa4f8f2a670a4b94e3",
+      "sha256": "50b3687f023ac80bd21a6d2b06dadd922e9c8df4de925d933cbcac10397c6151",
       "category": "healthcare",
       "files": [
         "README.md",
@@ -1675,7 +1675,7 @@
     },
     "productivity.brainstorming": {
       "version": "1.0.0",
-      "sha256": "b7542777c60412ac13d6cf04b30cd4a19f7df2f6884d1ba8591fd298821b216d",
+      "sha256": "a24297c11db7da3d43e70a842398871b12ed64d738c06f84819e5b302daea555",
       "category": "productivity",
       "files": [
         "LICENSE",
@@ -2179,7 +2179,7 @@
     },
     "utilities.file-management": {
       "version": "1.0.0",
-      "sha256": "8e52c7739d4b1728dcc2aa9184bf676d934c7741ba3b44ff1226c112687a79ea",
+      "sha256": "fa197f4aa568857ba6ace08c66b949875cfa65d2485d692a8a303ef4f42c55b3",
       "category": "utilities",
       "files": [
         "README.md",

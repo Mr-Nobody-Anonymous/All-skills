@@ -7,8 +7,10 @@ approximation of it.
 
 Tiers
 - canonical (``skills/``) and active harness (``.agents/skills/``): must pass the
-  full schema plus tier rules — ``name`` equals the directory name and
-  ``tools`` holds agent tools, not agent names. Any error fails the run.
+  full schema plus tier rules — ``name`` equals the directory name, ``tools``
+  holds agent tools (not agent names), and the declared execution contract
+  matches the skill's tools and instructions (see ``skills.contracts``).
+  Any error fails the run.
 - catalog (``awesome_skills/``, with ``--catalog``): minimum requirements are a
   YAML mapping with ``name`` and ``description``; the report also shows how
   many catalog skills pass the full schema. ``--max-catalog-errors N`` fails
@@ -40,6 +42,9 @@ except ImportError:  # pragma: no cover - dependency declared in pyproject.toml
     sys.exit(2)
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(REPO_ROOT / "src"))
+from skills.contracts import check_contract  # noqa: E402
+
 SCHEMA_PATH = REPO_ROOT / "schemas" / "skill-frontmatter.schema.json"
 FRONTMATTER_RE = re.compile(r"^---\s*\n(.*?)\n---\s*(?:\n|$)", re.DOTALL)
 AGENT_NAMES = {"antigravity", "claude", "claude-code", "cline", "codex", "codex-cli", "copilot", "cursor",
@@ -95,6 +100,8 @@ def validate_library_skill(path: Path, validator: Any) -> List[str]:
     agents_as_tools = sorted(set(meta.get("tools") or []) & AGENT_NAMES) if isinstance(meta.get("tools"), list) else []
     if agents_as_tools:
         errors.append(f"tools: {agents_as_tools} are agent names, not tools (use 'platforms')")
+    body = FRONTMATTER_RE.sub("", path.read_text(encoding="utf-8", errors="replace"), count=1)
+    errors += [f"contract/{issue.field}: {issue.message}" for issue in check_contract(meta, body)]
     return errors
 
 
