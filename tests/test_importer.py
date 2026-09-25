@@ -164,6 +164,31 @@ class TestImporter(unittest.TestCase):
         self.assertEqual(skill_md.read_text(encoding="utf-8"), original)
         self.assertFalse((skill_md.parent / "scripts" / "new.py").exists())
 
+    def test_repository_license_and_notice_travel_with_the_package(self):
+        upstream = make_upstream(self.root, "noticed",
+                                 license_text="MIT License\n\nPermission is hereby granted, free of charge, ...\n")
+        (upstream / "NOTICE").write_text("Demo project NOTICE\n", encoding="utf-8")
+        git(upstream, "-c", "user.email=t@example.com", "-c", "user.name=t", "add", "-A")
+        git(upstream, "-c", "user.email=t@example.com", "-c", "user.name=t", "commit", "-q", "-m", "notice")
+        self.sync(upstream)
+
+        skill_md = self.installed()[0]
+        self.assertIn("MIT License", (skill_md.parent / "LICENSE").read_text(encoding="utf-8"),
+                      "a repository-level licence must be redistributed with the package")
+        self.assertEqual((skill_md.parent / "NOTICE").read_text(encoding="utf-8"), "Demo project NOTICE\n")
+        src = frontmatter(skill_md)["source"]
+        self.assertEqual((src["license"], src["license_source"]), ("MIT", "repository LICENSE file"))
+        self.assertEqual(src["license_files"], ["LICENSE", "NOTICE"])
+
+        self.assertIn("1 unchanged, 0 with updates", self.sync(upstream, update=True),
+                      "copied notices must not look like an upstream change")
+
+        (upstream / "LICENSE").write_text("Apache License, Version 2.0, January 2004\n", encoding="utf-8")
+        git(upstream, "-c", "user.email=t@example.com", "-c", "user.name=t", "commit", "-q", "-am", "relicense")
+        review = self.sync(upstream, update=True)
+        self.assertIn("1 with updates to review", review, "an upstream licence change is an update to review")
+        self.assertIn("~ LICENSE", review)
+
     def test_same_named_skills_from_different_sources_are_not_conflated(self):
         self.sync(make_upstream(self.root, "first"))
         self.sync(make_upstream(self.root, "second"))

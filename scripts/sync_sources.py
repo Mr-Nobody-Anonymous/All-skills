@@ -8,9 +8,13 @@ Guarantees
   and every other field); the importer only adds ``category`` when missing and a
   ``source`` provenance record: repository, path, full commit SHA, license,
   real import timestamp and the package's content SHA-256.
-- Licenses are never assumed: package LICENSE file, then repository LICENSE,
-  then the license explicitly declared for the source in ``sources/registry.yaml``,
-  otherwise ``NOASSERTION``.
+- Licenses are never assumed: the nearest LICENSE file (the package's own, then
+  its parent directories up to the repository root), then the license explicitly
+  declared for the source in ``sources/registry.yaml``, otherwise ``NOASSERTION``.
+- Notices travel with the code: when a package has no LICENSE/NOTICE of its own,
+  the nearest upstream ones are copied into it (recorded as ``license_files``),
+  and they are part of the content hash, so an upstream licence change shows up
+  as an update to review.
 - Identities are namespaced by (repository, path). A different upstream skill
   whose name collides with an existing one is imported as ``<slug>--<owner>``
   instead of being skipped or merged into the wrong skill.
@@ -33,6 +37,7 @@ from __future__ import annotations
 
 import argparse
 import difflib
+import hashlib
 import json
 import os
 import re
@@ -43,7 +48,7 @@ import sys
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Optional, Sequence, Tuple
 
 import yaml
 
@@ -139,26 +144,59 @@ _LICENSE_PATTERNS = [
 ]
 
 
+LICENSE_NAMES = ("LICENSE", "LICENSE.md", "LICENSE.txt", "LICENCE", "COPYING")
+NOTICE_NAMES = ("NOTICE", "NOTICE.md", "NOTICE.txt")
+
+
+def _license_from_path(path: Path) -> str:
+    text = path.read_text(encoding="utf-8", errors="ignore")[:4000]
+    for pattern, spdx in _LICENSE_PATTERNS:
+        if pattern.search(text):
+            return spdx
+    return "LicenseRef-see-LICENSE"
+
+
 def _license_from_file(folder: Path) -> Optional[str]:
-    for name in ("LICENSE", "LICENSE.md", "LICENSE.txt", "LICENCE", "COPYING"):
-        f = folder / name
-        if f.is_file():
-            text = f.read_text(encoding="utf-8", errors="ignore")[:4000]
-            for pattern, spdx in _LICENSE_PATTERNS:
-                if pattern.search(text):
-                    return spdx
-            return "LicenseRef-see-LICENSE"
+    for name in LICENSE_NAMES:
+        if (folder / name).is_file():
+            return _license_from_path(folder / name)
     return None
+
+
+def nearest_file(package_dir: Path, checkout: Path, names: Tuple[str, ...]) -> Optional[Path]:
+    """The first of ``names`` in ``package_dir`` or its parents, up to the repository root."""
+    root = checkout.resolve()
+    current = package_dir.resolve()
+    while True:
+        for name in names:
+            if (current / name).is_file():
+                return current / name
+        if current == root or root not in current.parents:
+            return None
+        current = current.parent
+
+
+def notice_files(package_dir: Path, checkout: Path) -> List[Path]:
+    """Upstream LICENSE/NOTICE files that apply to a package but live outside it."""
+    found = []
+    for names in (LICENSE_NAMES, NOTICE_NAMES):
+        path = nearest_file(package_dir, checkout, names)
+        if path is not None and path.parent != package_dir.resolve():
+            found.append(path)
+    return found
 
 
 def detect_license(package_dir: Path, checkout: Path, declared: Optional[str]) -> Tuple[str, str]:
     """Return (license, how it was determined). Never assumes a license."""
-    found = _license_from_file(package_dir)
-    if found:
-        return found, "package LICENSE file"
-    found = _license_from_file(checkout)
-    if found:
-        return found, "repository LICENSE file"
+    path = nearest_file(package_dir, checkout, LICENSE_NAMES)
+    if path is not None:
+        if path.parent == package_dir.resolve():
+            how = "package LICENSE file"
+        elif path.parent == checkout.resolve():
+            how = "repository LICENSE file"
+        else:
+            how = f"LICENSE file in {path.parent.relative_to(checkout.resolve()).as_posix()}/"
+        return _license_from_path(path), how
     if declared:
         return str(declared), "declared in sources/registry.yaml"
     return "NOASSERTION", "no license information found"
@@ -234,9 +272,13 @@ def merge_frontmatter(skill_md_text: str, slug: str, category: str, provenance: 
     return f"---\n{dumped}---\n{body if body.startswith(chr(10)) else chr(10) + body}"
 
 
-def install_package(package_dir: Path, dest: Path, slug: str, category: str, provenance: Dict[str, Any]) -> None:
-    """Copy the full package, then rewrite only SKILL.md's frontmatter."""
+def install_package(package_dir: Path, dest: Path, slug: str, category: str, provenance: Dict[str, Any],
+                    notices: Sequence[Path] = ()) -> None:
+    """Copy the full package (plus applicable upstream notices), then rewrite only SKILL.md's frontmatter."""
     shutil.copytree(package_dir, dest, ignore=_ignore)
+    for notice in notices:
+        if not (dest / notice.name).exists():
+            shutil.copy2(notice, dest / notice.name)
     skill_md = dest / "SKILL.md"
     skill_md.write_text(merge_frontmatter(skill_md.read_text(encoding="utf-8", errors="replace"),
                                           slug, category, provenance), encoding="utf-8")
@@ -253,6 +295,7 @@ class PlanItem:
     dest: Path
     content_sha256: str
     details: List[str] = field(default_factory=list)
+    notices: List[Path] = field(default_factory=list)
 
 
 def load_lock(path: Optional[Path] = None) -> Dict[str, Any]:
@@ -305,17 +348,18 @@ def plan_source(repository: str, checkout: Path, skill_paths: Optional[List[str]
     items: List[PlanItem] = []
     claimed: set[Path] = set()
     for package_dir, rel in discover_packages(checkout, skill_paths):
-        digest, _ = compute_skill_tree_hash(package_dir)
+        notices = notice_files(package_dir, checkout)
+        digest = package_digest(package_dir, notices)
         identity = (repository, rel)
         if identity in by_identity:
             dest = by_identity[identity]
             locked = lock["imports"][dest.relative_to(awesome_dir.parent).as_posix()]
             action = "unchanged" if locked.get("content_sha256") == digest else "changed"
-            items.append(PlanItem(action, repository, rel, package_dir, dest, digest))
+            items.append(PlanItem(action, repository, rel, package_dir, dest, digest, notices=notices))
             continue
         if identity in legacy:
             items.append(PlanItem("legacy", repository, rel, package_dir, legacy[identity], digest,
-                                  ["imported before sources/imports.lock.json existed; unpinned"]))
+                                  ["imported before sources/imports.lock.json existed; unpinned"], notices=notices))
             continue
         slug = slugify(package_dir.name)
         target_category = slugify(category) if category else infer_category(repository, rel, slug)
@@ -323,8 +367,17 @@ def plan_source(repository: str, checkout: Path, skill_paths: Optional[List[str]
         if dest.exists() or dest in claimed:
             dest = awesome_dir / target_category / f"{slug}--{owner}"
         claimed.add(dest)
-        items.append(PlanItem("new", repository, rel, package_dir, dest, digest))
+        items.append(PlanItem("new", repository, rel, package_dir, dest, digest, notices=notices))
     return items
+
+
+def package_digest(package_dir: Path, notices: Sequence[Path] = ()) -> str:
+    """SHA-256 of the package tree plus the upstream notices that ship with it."""
+    digest, _ = compute_skill_tree_hash(package_dir)
+    if not notices:
+        return digest
+    parts = [digest] + [f"{n.name}:{hashlib.sha256(n.read_bytes()).hexdigest()}" for n in notices]
+    return hashlib.sha256("\n".join(parts).encode("utf-8")).hexdigest()
 
 
 def describe_changes(item: PlanItem, limit: int = 40) -> List[str]:
@@ -333,6 +386,8 @@ def describe_changes(item: PlanItem, limit: int = 40) -> List[str]:
         return {p.relative_to(root).as_posix(): p.read_bytes() for p in root.rglob("*")
                 if p.is_file() and not IGNORED_PARTS & set(p.relative_to(root).parts)}
     local, upstream = files(item.dest), files(item.package_dir)
+    for notice in item.notices:
+        upstream.setdefault(notice.name, notice.read_bytes())
     lines = [f"  + {f}" for f in sorted(set(upstream) - set(local))]
     lines += [f"  - {f}" for f in sorted(set(local) - set(upstream))]
     lines += [f"  ~ {f}" for f in sorted(set(local) & set(upstream)) if f != "SKILL.md" and local[f] != upstream[f]]
@@ -372,7 +427,10 @@ def apply_items(items: List[PlanItem], commit: str, checkout: Path, declared_lic
                 backup.parent.mkdir(parents=True, exist_ok=True)
                 shutil.move(str(item.dest), str(backup))
             prov = provenance_for(item, commit, checkout, declared_license)
-            install_package(item.package_dir, item.dest, slugify(item.dest.name), item.dest.parent.name, prov)
+            if item.notices:
+                prov["license_files"] = [n.relative_to(checkout.resolve()).as_posix() for n in item.notices]
+            install_package(item.package_dir, item.dest, slugify(item.dest.name), item.dest.parent.name, prov,
+                            item.notices)
             lock["imports"][item.dest.relative_to(AWESOME_DIR.parent).as_posix()] = prov
             counts["imported" if item.action == "new" else "updated"] += 1
     if counts["updated"]:
