@@ -22,7 +22,7 @@ from __future__ import annotations
 import re
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Optional, Tuple
 
 from .dependencies import check_dependency
 from .registry import Registry, SkillEntry
@@ -339,17 +339,17 @@ class Router:
             score += cap_score
 
         # 7. Token overlap (fallback)
-        q_tokens = [t for t in _WORD_RE.findall(q) if t not in _STOPWORDS]
-        if q_tokens:
+        q_token_list = [t for t in _WORD_RE.findall(q) if t not in _STOPWORDS]
+        if q_token_list:
             hay_tokens: set[str] = set()
             hay_tokens.update(_WORD_RE.findall(entry.name.lower()))
             hay_tokens.update(_WORD_RE.findall(entry.description.lower()))
-            for s in entry.aliases + entry.triggers + entry.keywords + entry.capabilities + entry.outputs:
-                hay_tokens.update(_WORD_RE.findall(s.lower()))
+            for phrase in entry.aliases + entry.triggers + entry.keywords + entry.capabilities + entry.outputs:
+                hay_tokens.update(_WORD_RE.findall(phrase.lower()))
             hay_tokens -= _STOPWORDS
-            overlap = sum(1 for t in q_tokens if t in hay_tokens)
+            overlap = sum(1 for t in q_token_list if t in hay_tokens)
             if overlap > 0:
-                token_score = (overlap / len(q_tokens)) * 25.0
+                token_score = (overlap / len(q_token_list)) * 25.0
                 signals["token"] = round(token_score, 1)
                 score += token_score
 

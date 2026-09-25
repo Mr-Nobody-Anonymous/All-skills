@@ -4,7 +4,8 @@ from __future__ import annotations
 import importlib.util
 import shutil
 from dataclasses import dataclass
-from typing import Iterable, List
+from pathlib import Path
+from typing import Dict, Iterable, List
 
 from .registry import SkillEntry
 
@@ -96,7 +97,7 @@ def structured_dependency_status(entry: SkillEntry) -> dict:
     {"required": [...], "optional": [...], "system": [...], "python": [...],
      "api": [...], "missing_required": [...], "missing_optional": [...]}
     """
-    result = {
+    result: Dict[str, List[str]] = {
         "required": [], "optional": [], "system": [], "python": [], "api": [],
         "missing_required": [], "missing_optional": [],
     }

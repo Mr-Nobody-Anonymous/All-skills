@@ -160,7 +160,7 @@ class Registry:
                 raise ValueError(
                     f"Corrupted or invalid registry file '{registry_path}': {e}. "
                     "Fail-closed policy requires repairing or rebuilding the registry."
-                )
+                ) from e
         # Merge entries from disk that are not already present
         existing_ids = {e.id for e in reg.entries}
         for skill_md in skills_root.rglob("SKILL.md"):
@@ -178,7 +178,7 @@ class Registry:
             if not meta.get("name"):
                 continue
             entry = SkillEntry(
-                id=meta.get("name") if meta.get("name") and "." in str(meta.get("name")) else sid_guess,
+                id=str(meta["name"]) if meta.get("name") and "." in str(meta.get("name")) else sid_guess,
                 name=meta.get("name", rel.name),
                 category=meta.get("category", rel.parts[0] if rel.parts else "utilities"),
                 description=meta.get("description", ""),
@@ -249,8 +249,8 @@ class Registry:
         if entry.lifecycle == "quarantined":
             return TrustTier.T0_UNKNOWN
         raw_tier = getattr(entry, "trust_tier", "T5_CURATED")
-        if isinstance(raw_tier, str) and hasattr(TrustTier, raw_tier):
-            return getattr(TrustTier, raw_tier)
+        if isinstance(raw_tier, str) and isinstance(getattr(TrustTier, raw_tier, None), TrustTier):
+            return TrustTier[raw_tier]
         if entry.category in {"development", "devops", "security", "ai-engineering"}:
             return TrustTier.T6_PRODUCTION
         return TrustTier.T5_CURATED

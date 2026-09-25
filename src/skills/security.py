@@ -10,7 +10,7 @@ from __future__ import annotations
 import re
 from dataclasses import dataclass
 from pathlib import Path
-from typing import List
+from typing import Any, Dict, List
 
 from .registry import Registry, SkillEntry
 
@@ -194,7 +194,7 @@ def quarantine_skill(
 
     # Update skills/revocations.json
     revocations_path = root / "skills" / "revocations.json"
-    revocations_data = {"version": "1.0.0", "revocations": []}
+    revocations_data: Dict[str, Any] = {"version": "1.0.0", "revocations": []}
     if revocations_path.exists():
         try:
             revocations_data = json.loads(revocations_path.read_text(encoding="utf-8"))

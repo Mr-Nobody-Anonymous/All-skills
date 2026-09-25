@@ -242,7 +242,7 @@ class PolicyEngine:
         ]
 
         # Check negative capabilities (forbidden)
-        forbidden_caps = []
+        forbidden_caps: List[str] = []
         try:
             from .registry import load_registry
             reg = load_registry(self.workspace_root)

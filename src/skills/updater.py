@@ -5,7 +5,7 @@ import json
 import subprocess
 from dataclasses import dataclass
 from pathlib import Path
-from typing import List
+from typing import Dict, List
 
 
 @dataclass(frozen=True)
@@ -19,7 +19,7 @@ class UpdateStatus:
 
 def check_updates(workspace_root: Path, timeout: int = 20) -> List[UpdateStatus]:
     manifest = json.loads((workspace_root / "skills" / "SOURCES.json").read_text(encoding="utf-8"))
-    repositories = {}
+    repositories: Dict[str, str] = {}
     for source in manifest.get("skills", []):
         repo, commit = source.get("repository"), source.get("commit")
         if repo and commit:

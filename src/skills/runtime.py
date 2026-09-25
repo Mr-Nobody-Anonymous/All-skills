@@ -76,7 +76,7 @@ class ExecutionRuntime:
             revoked_map = data.get("revoked_skills", {})
             if skill_id in revoked_map:
                 entry = revoked_map[skill_id]
-                return entry.get("reason", "Revoked by security policy")
+                return str(entry.get("reason", "Revoked by security policy"))
         except Exception:
             pass
         return None
@@ -118,7 +118,7 @@ class ExecutionRuntime:
             import sys
             print(f"[AUDIT ERROR] Failed writing audit log to {self.audit_log_path}: {exc}", file=sys.stderr)
             if status in {"blocked", "quarantined"}:
-                raise RuntimeError(f"Audit log failure during security boundary event: {exc}")
+                raise RuntimeError(f"Audit log failure during security boundary event: {exc}") from exc
 
     def execute(
         self,

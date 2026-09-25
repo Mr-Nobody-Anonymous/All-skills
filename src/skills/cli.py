@@ -126,12 +126,11 @@ def _run_native_cli() -> None:
         sys.exit(0 if res.status == "completed" else 1)
 
     elif args.cmd == "doctor":
-        v = Validator(workspace / "skills")
-        res = v.validate_all(reg)
+        validation = Validator(reg, workspace / "skills").validate_all()
         print(f"Doctor Diagnostic: {len(reg.entries)} registered skills.")
-        print(f"Validation Errors: {len(res.errors)}")
-        print(f"Validation Warnings: {len(res.warnings)}")
-        sys.exit(0 if not res.errors else 1)
+        print(f"Validation Errors: {len(validation.errors)}")
+        print(f"Validation Warnings: {len(validation.warnings)}")
+        sys.exit(0 if not validation.errors else 1)
 
     elif args.cmd == "scan":
         findings = scan_all(reg, workspace / "skills")
