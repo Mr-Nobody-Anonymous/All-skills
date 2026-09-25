@@ -14,12 +14,18 @@ from typing import Any, Dict, List, Optional, Tuple
 
 
 def compute_file_sha256(file_path: Path) -> str:
-    """Compute SHA-256 hex digest of a single file."""
-    h = hashlib.sha256()
-    with open(file_path, "rb") as f:
-        while chunk := f.read(65536):
-            h.update(chunk)
-    return h.hexdigest()
+    """Compute a platform-independent SHA-256 hex digest of a single file.
+
+    Text files are hashed with normalised LF line endings so the digest is
+    identical on Windows (``core.autocrlf`` CRLF checkouts) and POSIX systems;
+    otherwise a lockfile generated on one OS reports every skill as "tampered"
+    on another. Binary files (containing NUL bytes, the same heuristic Git
+    uses) are hashed byte-for-byte.
+    """
+    data = file_path.read_bytes()
+    if b"\0" not in data:
+        data = data.replace(b"\r\n", b"\n")
+    return hashlib.sha256(data).hexdigest()
 
 
 def compute_skill_tree_hash(skill_dir: Path) -> Tuple[str, List[str]]:
@@ -28,14 +34,21 @@ def compute_skill_tree_hash(skill_dir: Path) -> Tuple[str, List[str]]:
         return "", []
 
     file_entries: List[Tuple[str, str]] = []
-    rel_files: List[str] = []
 
-    for path in sorted(skill_dir.rglob("*")):
-        if path.is_file() and not path.name.startswith("."):
-            rel = str(path.relative_to(skill_dir)).replace("\\", "/")
-            fhash = compute_file_sha256(path)
-            file_entries.append((rel, fhash))
-            rel_files.append(rel)
+    for path in skill_dir.rglob("*"):
+        rel_parts = path.relative_to(skill_dir).parts
+        # Skip dotfiles, hidden directories and interpreter caches so the hash
+        # only reflects version-controlled skill content.
+        if any(part.startswith(".") or part == "__pycache__" for part in rel_parts):
+            continue
+        if path.is_file():
+            file_entries.append(("/".join(rel_parts), compute_file_sha256(path)))
+
+    # Sort by POSIX-style relative path (case-sensitive) rather than by Path
+    # objects: Windows paths compare case-insensitively with "\" separators,
+    # which would otherwise change the order — and the digest — per OS.
+    file_entries.sort(key=lambda entry: entry[0])
+    rel_files = [rel for rel, _ in file_entries]
 
     # Combine all relative paths and hashes in sorted order
     manifest_str = "\n".join(f"{r}:{h}" for r, h in file_entries)
@@ -63,7 +76,7 @@ class SkillLockManager:
                     sid = sdir.name
                     tree_hash, files = compute_skill_tree_hash(sdir)
                     skill_md = sdir / "SKILL.md"
-                    meta = {}
+                    meta: Dict[str, Any] = {}
                     if skill_md.exists():
                         try:
                             from .frontmatter import parse_frontmatter
@@ -125,7 +138,8 @@ class SkillLockManager:
         if not self.lock_path.exists():
             return None
         try:
-            return json.loads(self.lock_path.read_text(encoding="utf-8"))
+            data = json.loads(self.lock_path.read_text(encoding="utf-8"))
+            return data if isinstance(data, dict) else None
         except Exception:
             return None
 

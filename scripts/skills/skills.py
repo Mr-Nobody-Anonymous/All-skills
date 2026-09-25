@@ -1166,7 +1166,8 @@ def cmd_lock(args, _parser):
         print(f"Lockfile verification: {res['passed']}/{res['total']} skills verified successfully.")
         return 0 if res['failed'] == 0 else 1
     out_file = mgr.save_lockfile()
-    print(f"Successfully generated skills.lock with 192 cryptographically pinned skills ({out_file}).")
+    total = (mgr.load_lockfile() or {}).get("total_skills", 0)
+    print(f"Successfully generated skills.lock with {total} cryptographically pinned skills ({out_file}).")
     return 0
 
 
