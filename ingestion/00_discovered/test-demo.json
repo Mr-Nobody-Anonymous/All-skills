@@ -1,0 +1,9 @@
+{
+  "source_id": "test-demo",
+  "repo_url": "https://github.com/example/demo",
+  "commit_target": "main",
+  "license": "MIT",
+  "tier": "community",
+  "discovered_at": "2026-09-22T05:48:48.090920+00:00",
+  "status": "ready_to_fetch"
+}

@@ -1,0 +1,164 @@
+{
+  "total_queries": 12,
+  "precision_at_1": 0.8333,
+  "precision_at_3": 1.0,
+  "precision_at_5": 1.0,
+  "mrr": 0.9167,
+  "avg_latency_ms": 9.86,
+  "details": [
+    {
+      "query": "build android jetpack compose reactive state",
+      "expected": "android-compose",
+      "matched": [
+        "android-compose",
+        "stream-processing",
+        "frontend",
+        "android-development",
+        "flutter"
+      ],
+      "rank": 1,
+      "latency_ms": 21.28
+    },
+    {
+      "query": "apache kafka event streaming consumer group partition",
+      "expected": "apache-kafka",
+      "matched": [
+        "apache-kafka",
+        "stream-processing",
+        "apache-spark",
+        "batch-processing",
+        "cdc"
+      ],
+      "rank": 1,
+      "latency_ms": 9.52
+    },
+    {
+      "query": "bioinformatics genomic sequence alignment blast fasta",
+      "expected": "bioinformatics",
+      "matched": [
+        "bioinformatics",
+        "graphic-design",
+        "c-fundamentals"
+      ],
+      "rank": 1,
+      "latency_ms": 8.29
+    },
+    {
+      "query": "gdpr compliance data protection impact assessment dpia",
+      "expected": "gdpr",
+      "matched": [
+        "data-governance",
+        "gdpr",
+        "apache-airflow",
+        "dagster",
+        "data-catalog"
+      ],
+      "rank": 2,
+      "latency_ms": 8.56
+    },
+    {
+      "query": "esp32 freertos wifi ble firmware development",
+      "expected": "esp32",
+      "matched": [
+        "esp32",
+        "pyside",
+        "tdd",
+        "arduino",
+        "embedded-testing"
+      ],
+      "rank": 1,
+      "latency_ms": 8.96
+    },
+    {
+      "query": "unreal engine 5 c++ gameplay nanite lumen",
+      "expected": "unreal-engine",
+      "matched": [
+        "unreal-engine",
+        "gcp-architecture",
+        "bigquery",
+        "profiling",
+        "seo"
+      ],
+      "rank": 1,
+      "latency_ms": 7.61
+    },
+    {
+      "query": "tauri lightweight desktop app rust webview",
+      "expected": "tauri",
+      "matched": [
+        "tauri",
+        "desktop-security",
+        "tkinter",
+        "azure-architecture",
+        "app-packaging"
+      ],
+      "rank": 1,
+      "latency_ms": 9.23
+    },
+    {
+      "query": "linux kernel loadable module character device driver",
+      "expected": "linux-kernel",
+      "matched": [
+        "linux-kernel",
+        "device-drivers",
+        "embedded-linux",
+        "windows-internals",
+        "creative-writing"
+      ],
+      "rank": 1,
+      "latency_ms": 9.04
+    },
+    {
+      "query": "wireshark deep packet inspection tls handshake",
+      "expected": "wireshark",
+      "matched": [
+        "tcp-ip",
+        "wireshark",
+        "esp32",
+        "mqtt",
+        "mobile-navigation"
+      ],
+      "rank": 2,
+      "latency_ms": 9.54
+    },
+    {
+      "query": "kubernetes pod cost allocation opencost kubecost",
+      "expected": "kubernetes-cost",
+      "matched": [
+        "kubernetes-cost",
+        "model-selection",
+        "gcp-architecture",
+        "batch-processing",
+        "azure-cost-optimization"
+      ],
+      "rank": 1,
+      "latency_ms": 7.8
+    },
+    {
+      "query": "retrieval augmented generation document chunking vector embeddings",
+      "expected": "rag",
+      "matched": [
+        "rag",
+        "hybrid-search",
+        "embeddings",
+        "reranking",
+        "vector-database"
+      ],
+      "rank": 1,
+      "latency_ms": 8.45
+    },
+    {
+      "query": "prometheus metrics promql query alertmanager rules",
+      "expected": "prometheus",
+      "matched": [
+        "prometheus",
+        "embeddings",
+        "data-governance",
+        "data-warehouse",
+        "schema-evolution"
+      ],
+      "rank": 1,
+      "latency_ms": 10.07
+    }
+  ]
+}
