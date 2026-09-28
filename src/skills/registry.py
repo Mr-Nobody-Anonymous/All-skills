@@ -27,13 +27,13 @@ class SkillIdentity:
     version: str
     schema_version: str = "1.0.0"
     source: Dict[str, Any] = field(default_factory=dict)
-    trust_tier: TrustTier = TrustTier.T5_CURATED
-    trust_status: str = "verified"
-    availability: str = "active"
-    review_status: str = "automated"
-    security_status: str = "scanned_clean"
-    behavior_status: str = "eval_passed"
-    production_status: str = "approved"
+    trust_tier: TrustTier = TrustTier.T0_UNKNOWN
+    trust_status: str = "unverified"
+    availability: str = "discovered"
+    review_status: str = "pending"
+    security_status: str = "unscanned"
+    behavior_status: str = "unevaluated"
+    production_status: str = "not_approved"
     capabilities: List[str] = field(default_factory=list)
     forbidden: List[str] = field(default_factory=list)
     permissions: Dict[str, Any] = field(default_factory=dict)
@@ -92,6 +92,9 @@ class SkillEntry:
     compatibility: Optional[Dict[str, Any]] = None
     quality: Optional[Dict[str, float]] = None
     quality_score: float = 0.0
+    type: str = "procedural"  # procedural | knowledge | tool-backed | workflow | evaluator | policy | agent
+    provenance: Optional[Dict[str, Any]] = None
+    sources: List[Dict[str, Any]] = field(default_factory=list)
 
     def to_dict(self) -> dict:
         d = dc_asdict(self)
@@ -102,6 +105,8 @@ class SkillEntry:
             d["quality"] = {}
         if d.get("quality_score") is None:
             d["quality_score"] = 0.0
+        if not d.get("sources"):
+            d["sources"] = []
         return d
 
     @classmethod
@@ -135,6 +140,9 @@ class SkillEntry:
         clean.setdefault("compatibility", None)
         clean.setdefault("quality", None)
         clean.setdefault("quality_score", 0.0)
+        clean.setdefault("type", "procedural")
+        clean.setdefault("provenance", None)
+        clean.setdefault("sources", [])
         return cls(**clean)
 
 
@@ -153,8 +161,25 @@ class Registry:
         if registry_path.exists():
             try:
                 data = json.loads(registry_path.read_text(encoding="utf-8"))
-                for raw in data.get("skills", []):
-                    reg.entries.append(SkillEntry.from_dict(raw))
+                raw_skills = []
+                if isinstance(data, list):
+                    raw_skills = data
+                elif isinstance(data, dict):
+                    skills_val = data.get("skills", [])
+                    if isinstance(skills_val, dict):
+                        for sid, val in skills_val.items():
+                            if isinstance(val, dict):
+                                if not val.get("id"):
+                                    val["id"] = sid
+                                raw_skills.append(val)
+                    elif isinstance(skills_val, list):
+                        raw_skills = skills_val
+                for raw in raw_skills:
+                    if isinstance(raw, dict):
+                        p = raw.get("path", "")
+                        if p.startswith("skills/"):
+                            raw["path"] = p[len("skills/"):]
+                        reg.entries.append(SkillEntry.from_dict(raw))
             except Exception as e:
                 # Corrupted registry — fail closed in production
                 raise ValueError(
@@ -248,12 +273,15 @@ class Registry:
             return TrustTier.T0_UNKNOWN
         if entry.lifecycle == "quarantined":
             return TrustTier.T0_UNKNOWN
-        raw_tier = getattr(entry, "trust_tier", "T5_CURATED")
+        raw_tier = getattr(entry, "trust_tier", None)
         if isinstance(raw_tier, str) and hasattr(TrustTier, raw_tier):
             return getattr(TrustTier, raw_tier)
-        if entry.category in {"development", "devops", "security", "ai-engineering"}:
-            return TrustTier.T6_PRODUCTION
-        return TrustTier.T5_CURATED
+        if isinstance(raw_tier, TrustTier):
+            return raw_tier
+        # Canonical vetted skills with verified tests are curated
+        if entry.enabled and (entry.source == "canonical" or getattr(entry, "path", "").startswith("skills/")):
+            return TrustTier.T5_CURATED
+        return TrustTier.T1_DISCOVERED
 
     def get_identity(self, skill_id: str) -> Optional[SkillIdentity]:
         entry = self.get(skill_id)
@@ -283,13 +311,24 @@ class Registry:
         entry = self.get(skill_id)
         if not entry:
             return {"verified": False, "error": f"Skill '{skill_id}' not found"}
+        skill_dir = self.skills_root / Path(*entry.path.split("/"))
+        skill_file = skill_dir / "SKILL.md"
+        content_hash = ""
+        if skill_file.exists():
+            import hashlib
+            try:
+                content_hash = hashlib.sha256(skill_file.read_bytes()).hexdigest()
+            except Exception:
+                pass
+        tier = self.get_trust_tier(skill_id)
         return {
-            "verified": True,
+            "verified": bool(content_hash),
             "skill_id": entry.id,
             "version": entry.version,
             "source": entry.source or "canonical",
-            "trust_tier": self.get_trust_tier(skill_id).name,
-            "status": "valid",
+            "content_sha256": content_hash,
+            "trust_tier": tier.name,
+            "status": "valid" if content_hash else "missing_file",
         }
 
     def iter_all(self) -> Iterable[SkillEntry]:

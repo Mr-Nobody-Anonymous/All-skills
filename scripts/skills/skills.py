@@ -540,6 +540,7 @@ def cmd_test(args, _parser):
 
 
     sys.path.insert(0, str(ROOT / "tests"))
+    sys.path.insert(0, str(ROOT))
 
     loader = unittest.TestLoader()
 

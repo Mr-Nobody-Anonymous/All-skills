@@ -1,0 +1,9 @@
+{
+  "id": "community-superpowers",
+  "repository": "obra/superpowers",
+  "clone_url": "https://github.com/obra/superpowers",
+  "tier": "community",
+  "license": "MIT",
+  "description": "Process-oriented software engineering skills (systematic-debugging, planning, TDD).",
+  "target_directory": "sources\\community\\superpowers"
+}

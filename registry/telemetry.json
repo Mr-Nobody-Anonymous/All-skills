@@ -1,0 +1,118 @@
+{
+  "updated_at": "2026-09-24 12:42:05",
+  "total_records": 7,
+  "executions": [
+    {
+      "task_id": "test_run_001",
+      "query": "test query",
+      "skills_used": [
+        "databases.postgresql",
+        "design.frontend-design"
+      ],
+      "success": true,
+      "duration_ms": 120.5,
+      "token_cost": 1500,
+      "tool_calls": 3,
+      "hallucination_detected": false,
+      "user_feedback": null,
+      "error_summary": null,
+      "timestamp": 1790062502.1776707
+    },
+    {
+      "task_id": "test_run_001",
+      "query": "test query",
+      "skills_used": [
+        "databases.postgresql",
+        "design.frontend-design"
+      ],
+      "success": true,
+      "duration_ms": 120.5,
+      "token_cost": 1500,
+      "tool_calls": 3,
+      "hallucination_detected": false,
+      "user_feedback": null,
+      "error_summary": null,
+      "timestamp": 1790062821.7703736
+    },
+    {
+      "task_id": "test_run_001",
+      "query": "test query",
+      "skills_used": [
+        "databases.postgresql",
+        "design.frontend-design"
+      ],
+      "success": true,
+      "duration_ms": 120.5,
+      "token_cost": 1500,
+      "tool_calls": 3,
+      "hallucination_detected": false,
+      "user_feedback": null,
+      "error_summary": null,
+      "timestamp": 1790242634.57611
+    },
+    {
+      "task_id": "test_run_001",
+      "query": "test query",
+      "skills_used": [
+        "databases.postgresql",
+        "design.frontend-design"
+      ],
+      "success": true,
+      "duration_ms": 120.5,
+      "token_cost": 1500,
+      "tool_calls": 3,
+      "hallucination_detected": false,
+      "user_feedback": null,
+      "error_summary": null,
+      "timestamp": 1790242666.734624
+    },
+    {
+      "task_id": "test_run_001",
+      "query": "test query",
+      "skills_used": [
+        "databases.postgresql",
+        "design.frontend-design"
+      ],
+      "success": true,
+      "duration_ms": 120.5,
+      "token_cost": 1500,
+      "tool_calls": 3,
+      "hallucination_detected": false,
+      "user_feedback": null,
+      "error_summary": null,
+      "timestamp": 1790242667.6266496
+    },
+    {
+      "task_id": "test_run_001",
+      "query": "test query",
+      "skills_used": [
+        "databases.postgresql",
+        "design.frontend-design"
+      ],
+      "success": true,
+      "duration_ms": 120.5,
+      "token_cost": 1500,
+      "tool_calls": 3,
+      "hallucination_detected": false,
+      "user_feedback": null,
+      "error_summary": null,
+      "timestamp": 1790242855.0229545
+    },
+    {
+      "task_id": "test_run_001",
+      "query": "test query",
+      "skills_used": [
+        "databases.postgresql",
+        "design.frontend-design"
+      ],
+      "success": true,
+      "duration_ms": 120.5,
+      "token_cost": 1500,
+      "tool_calls": 3,
+      "hallucination_detected": false,
+      "user_feedback": null,
+      "error_summary": null,
+      "timestamp": 1790242925.9418502
+    }
+  ]
+}

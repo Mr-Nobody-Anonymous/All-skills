@@ -1,16 +1,27 @@
 {
-  "$schema": "https://json-schema.org/draft-07/schema#",
   "version": "1.0.0",
-  "last_updated": "2026-09-21",
-  "description": "Authoritative registry of revoked, compromised, or security-quarantined skills.",
-  "revoked_skills": [
+  "updated_at": "2026-09-22T05:19:51.646150+00:00",
+  "revoked_hashes": [],
+  "revoked_commits": [],
+  "revoked_sources": [
     {
-      "id": "security.malicious-demo",
-      "revoked_at": "2026-09-21T00:00:00Z",
-      "advisory_id": "AS-2026-0001",
-      "reason": "Test fixture demonstrating immediate router kill-switch and rejection",
-      "severity": "critical",
-      "replacement": null
+      "source": "openai/skills",
+      "status": "deprecated",
+      "reason": "Deprecated upstream by OpenAI in favor of openai/plugins and Agents SDK.",
+      "replacement": "openai/plugins"
+    },
+    {
+      "source": "obra/superpowers-skills",
+      "status": "archived",
+      "reason": "Standalone superpowers-skills archived in favor of main obra/superpowers repository.",
+      "replacement": "obra/superpowers"
     }
+  ],
+  "blacklisted_patterns": [
+    "curl * | sh",
+    "wget * | bash",
+    "rm -rf /",
+    "cat *id_rsa",
+    "grep *AWS_SECRET"
   ]
 }

@@ -151,7 +151,7 @@
     },
     {
       "id": "superpowers",
-      "name": "Obra Superpowers Engineering Workflows",
+      "name": "Superpowers Engineering Skills",
       "repo": "obra/superpowers",
       "url": "https://github.com/obra/superpowers",
       "branch": "main",
@@ -168,7 +168,16 @@
         "security_scan": "required",
         "license_policy": "allow-mit",
         "behavior_tested": true
-      }
+      },
+      "repository": "obra/superpowers",
+      "tier": "Tier-1-Community",
+      "type": "community",
+      "target_domains": [
+        "development",
+        "productivity",
+        "testing"
+      ],
+      "status": "active"
     },
     {
       "id": "github-awesome-copilot",
@@ -190,11 +199,20 @@
         "security_scan": "required",
         "license_policy": "allow-mit",
         "behavior_tested": true
-      }
+      },
+      "repository": "github/awesome-copilot",
+      "tier": "Tier-0-Official",
+      "type": "official",
+      "target_domains": [
+        "rules",
+        "agents",
+        "development"
+      ],
+      "status": "active"
     },
     {
       "id": "microsoft-skills",
-      "name": "Microsoft Agent Skills & MCP Servers",
+      "name": "Microsoft Skills",
       "repo": "microsoft/skills",
       "url": "https://github.com/microsoft/skills",
       "branch": "main",
@@ -211,7 +229,16 @@
         "security_scan": "required",
         "license_policy": "allow-mit",
         "behavior_tested": true
-      }
+      },
+      "repository": "microsoft/skills",
+      "tier": "Tier-0-Official",
+      "type": "official",
+      "target_domains": [
+        "cloud",
+        "databases",
+        "dotnet"
+      ],
+      "status": "active"
     },
     {
       "id": "dotnet-skills",
@@ -278,9 +305,9 @@
     },
     {
       "id": "kdense-scientific-skills",
-      "name": "K-Dense Scientific & Lab Agent Skills",
+      "name": "K-Dense Scientific Agent Skills",
       "repo": "K-Dense-AI/claude-scientific-skills",
-      "url": "https://github.com/K-Dense-AI/claude-scientific-skills",
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
       "branch": "main",
       "class": "specialized",
       "vendor": "k-dense",
@@ -296,11 +323,20 @@
         "security_scan": "required",
         "license_policy": "allow-mit",
         "behavior_tested": true
-      }
+      },
+      "repository": "K-Dense-AI/scientific-agent-skills",
+      "tier": "Tier-1-Community",
+      "type": "community",
+      "target_domains": [
+        "scientific",
+        "bioinformatics",
+        "gis"
+      ],
+      "status": "active"
     },
     {
       "id": "superpowers",
-      "name": "Superpowers Agentic Skills Framework",
+      "name": "Superpowers Engineering Skills",
       "repo": "obra/superpowers",
       "url": "https://github.com/obra/superpowers",
       "branch": "main",
@@ -317,7 +353,16 @@
         "security_scan": "required",
         "license_policy": "allow-mit",
         "behavior_tested": true
-      }
+      },
+      "repository": "obra/superpowers",
+      "tier": "Tier-1-Community",
+      "type": "community",
+      "target_domains": [
+        "development",
+        "productivity",
+        "testing"
+      ],
+      "status": "active"
     },
     {
       "id": "agentic-awesome-skills",
@@ -343,7 +388,7 @@
     },
     {
       "id": "composio-awesome-claude-skills",
-      "name": "Composio Awesome Claude Skills",
+      "name": "Composio Claude Skills",
       "repo": "ComposioHQ/awesome-claude-skills",
       "url": "https://github.com/ComposioHQ/awesome-claude-skills",
       "branch": "master",
@@ -360,7 +405,16 @@
         "security_scan": "required",
         "license_policy": "allow-apache",
         "behavior_tested": true
-      }
+      },
+      "repository": "ComposioHQ/awesome-claude-skills",
+      "tier": "Tier-2-Catalog",
+      "type": "catalog",
+      "target_domains": [
+        "integrations",
+        "business",
+        "tools"
+      ],
+      "status": "active"
     },
     {
       "id": "awesome-llm-skills",
@@ -490,9 +544,9 @@
     },
     {
       "id": "nvidia-skillevaluator",
-      "name": "NVIDIA SkillEvaluator",
+      "name": "NVIDIA SkillEvaluator Framework",
       "repo": "NVIDIA/SkillEvaluator",
-      "url": "https://github.com/NVIDIA/SkillEvaluator",
+      "url": "https://github.com/NVIDIA/skillevaluator",
       "branch": "main",
       "class": "evaluation",
       "vendor": "nvidia",
@@ -508,7 +562,16 @@
         "security_scan": "required",
         "license_policy": "allow-apache",
         "behavior_tested": true
-      }
+      },
+      "repository": "NVIDIA/SkillEvaluator",
+      "tier": "Tier-3-Vendor-Tool",
+      "type": "evaluator",
+      "target_domains": [
+        "evals",
+        "benchmarks",
+        "security"
+      ],
+      "status": "active"
     },
     {
       "id": "skilllens",
@@ -598,7 +661,7 @@
     },
     {
       "id": "sr-agents-sra-bench",
-      "name": "SR-Agents SRA-Bench",
+      "name": "SR-Agents Retrieval Benchmarks",
       "repo": "oneal2000/SR-Agents",
       "url": "https://github.com/oneal2000/SR-Agents",
       "branch": "main",
@@ -615,7 +678,16 @@
         "security_scan": "required",
         "license_policy": "allow-mit",
         "behavior_tested": true
-      }
+      },
+      "repository": "oneal2000/SR-Agents",
+      "tier": "Tier-3-Vendor-Tool",
+      "type": "benchmark",
+      "target_domains": [
+        "benchmarks",
+        "retrieval",
+        "routing"
+      ],
+      "status": "active"
     },
     {
       "id": "aakash-skillregistry",
@@ -661,7 +733,7 @@
     },
     {
       "id": "simota-agent-skills",
-      "name": "Simota Agent Skills & Nexus Orchestrator",
+      "name": "Simota Agent Skills & Orchestration",
       "repo": "simota/agent-skills",
       "url": "https://github.com/simota/agent-skills",
       "branch": "main",
@@ -679,7 +751,16 @@
         "security_scan": "required",
         "license_policy": "allow-mit",
         "behavior_tested": true
-      }
+      },
+      "repository": "simota/agent-skills",
+      "tier": "Tier-1-Community",
+      "type": "community",
+      "target_domains": [
+        "agents",
+        "workflows",
+        "orchestration"
+      ],
+      "status": "active"
     },
     {
       "id": "open-agent-craft-skills",
@@ -1016,6 +1097,94 @@
         "license_policy": "allow-apache",
         "behavior_tested": true
       }
+    },
+    {
+      "id": "anthropics-skills",
+      "name": "Anthropic Official Skills",
+      "repository": "anthropics/skills",
+      "url": "https://github.com/anthropics/skills",
+      "tier": "Tier-0-Official",
+      "type": "official",
+      "license": "MIT",
+      "target_domains": [
+        "documents",
+        "design",
+        "research"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "openai-plugins",
+      "name": "OpenAI Plugins & Skills",
+      "repository": "openai/plugins",
+      "url": "https://github.com/openai/plugins",
+      "tier": "Tier-0-Official",
+      "type": "official",
+      "license": "MIT",
+      "target_domains": [
+        "ai",
+        "development",
+        "documents"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "everything-claude-code",
+      "name": "Everything Claude Code",
+      "repository": "affaan-m/everything-claude-code",
+      "url": "https://github.com/affaan-m/everything-claude-code",
+      "tier": "Tier-1-Community",
+      "type": "community",
+      "license": "MIT",
+      "target_domains": [
+        "development",
+        "testing",
+        "architecture"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "sentry-skills",
+      "name": "Sentry Observability & Code Skills",
+      "repository": "getsentry/skills",
+      "url": "https://github.com/getsentry/skills",
+      "tier": "Tier-1-Community",
+      "type": "community",
+      "license": "MIT",
+      "target_domains": [
+        "observability",
+        "security",
+        "development"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "byhartvig-agent-skills-collection",
+      "name": "byhartvig Agent Skills Collection",
+      "repository": "byhartvig/agent-skills-collection",
+      "url": "https://github.com/byhartvig/agent-skills-collection",
+      "tier": "Tier-2-Catalog",
+      "type": "catalog",
+      "license": "MIT",
+      "target_domains": [
+        "catalog",
+        "discovery"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "open-agent-craft-awesome",
+      "name": "Open Agent Craft Skills Index",
+      "repository": "open-agent-craft/awesome-agent-skills",
+      "url": "https://github.com/open-agent-craft/awesome-agent-skills",
+      "tier": "Tier-2-Catalog",
+      "type": "catalog",
+      "license": "CC0-1.0",
+      "target_domains": [
+        "catalog",
+        "mapping"
+      ],
+      "status": "active"
     }
   ]
 }

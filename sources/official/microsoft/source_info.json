@@ -1,0 +1,9 @@
+{
+  "id": "official-microsoft",
+  "repository": "microsoft/skills",
+  "clone_url": "https://github.com/microsoft/skills",
+  "tier": "official",
+  "license": "MIT",
+  "description": "Microsoft Azure, Foundry, Cosmos DB, and Semantic Kernel skills.",
+  "target_directory": "sources\\official\\microsoft"
+}

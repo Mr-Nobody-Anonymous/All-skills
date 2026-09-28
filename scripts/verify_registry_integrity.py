@@ -41,7 +41,10 @@ def check_version_authority() -> tuple[bool, list[str]]:
         for line in content.splitlines():
             if line.strip().startswith("version ="):
                 py_ver = line.split("=", 1)[1].strip().strip('"').strip("'")
-                if py_ver != canonical_version:
+                if '{file = "VERSION"}' in py_ver or '{file="VERSION"}' in py_ver:
+                    # Dynamic setuptools version resolution pointing to VERSION file
+                    pass
+                elif py_ver != canonical_version:
                     errors.append(f"pyproject.toml version '{py_ver}' != VERSION '{canonical_version}'")
                 break
 
@@ -87,7 +90,18 @@ def check_version_authority() -> tuple[bool, list[str]]:
         for line in py_ver_content.splitlines():
             if line.strip().startswith("__version__ ="):
                 mod_ver = line.split("=", 1)[1].strip().strip('"').strip("'")
-                if mod_ver != canonical_version:
+                if mod_ver == "_resolve_version()":
+                    try:
+                        import importlib.util
+                        spec = importlib.util.spec_from_file_location("skills_version", py_version_file)
+                        mod = importlib.util.module_from_spec(spec)
+                        spec.loader.exec_module(mod)
+                        resolved = getattr(mod, "__version__", None)
+                        if resolved != canonical_version:
+                            errors.append(f"src/skills/_version.py resolved '{resolved}' != VERSION '{canonical_version}'")
+                    except Exception as e:
+                        errors.append(f"Failed to resolve src/skills/_version.py: {e}")
+                elif mod_ver != canonical_version:
                     errors.append(f"src/skills/_version.py '{mod_ver}' != VERSION '{canonical_version}'")
                 break
     else:

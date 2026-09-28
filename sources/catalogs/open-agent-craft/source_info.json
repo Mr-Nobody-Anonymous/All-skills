@@ -1,0 +1,9 @@
+{
+  "id": "catalogs-open-agent-craft",
+  "repository": "open-agent-craft/awesome-agent-skills",
+  "clone_url": "https://github.com/open-agent-craft/awesome-agent-skills",
+  "tier": "catalog",
+  "license": "CC0-1.0",
+  "description": "Universal ecosystem index and discovery catalog for AI agent skills.",
+  "target_directory": "sources\\catalogs\\open-agent-craft"
+}

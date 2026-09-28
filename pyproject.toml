@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "all-skills"
-version = "3.0.0"
+dynamic = ["version"]
 description = "Universal AI Agent Skill Operating System & Execution Runtime"
 requires-python = ">=3.10"
 dependencies = [
@@ -35,11 +35,12 @@ dev = [
 all-skills = "skills.cli:main"
 agent-skills = "skills.cli:main"
 
+[tool.setuptools.dynamic]
+version = {file = "VERSION"}
+
 [tool.setuptools]
 package-dir = {"" = "src", "scratch_priority_import" = "scratch_priority_import"}
-
-[tool.setuptools.packages.find]
-where = ["src", "."]
+packages = ["skills", "scratch_priority_import"]
 
 [tool.black]
 line-length = 100

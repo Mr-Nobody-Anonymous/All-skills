@@ -30,7 +30,7 @@ SLUG_PATTERN = re.compile(r"^[a-z0-9-_]+$")
 ALLOWED_TOOLS = {
     "bash", "terminal", "file_read", "file_write", "file_edit",
     "ast_grep", "read_url", "browser", "generate_image", "mcp_call", "manage_task",
-    "claude", "claude-code", "cursor", "gemini", "codex", "codex-cli", "windsurf", "copilot"
+    "claude", "claude-code", "cursor", "gemini", "gemini-cli", "antigravity", "codex", "codex-cli", "windsurf", "copilot"
 }
 
 

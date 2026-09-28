@@ -136,8 +136,10 @@ class Validator:
     # ---- internals -------------------------------------------------------
 
     def _validate_entry(self, entry: SkillEntry, result: ValidationResult) -> None:
-        # Path exists
-        skill_dir = self.skills_root / Path(*entry.path.split("/"))
+        parts = entry.path.replace("\\", "/").strip("/").split("/")
+        if parts and parts[0] == "skills":
+            parts = parts[1:]
+        skill_dir = self.skills_root / Path(*parts)
         if not skill_dir.exists():
             result.add_error(f"[{entry.id}] skill path does not exist: {skill_dir}")
             return

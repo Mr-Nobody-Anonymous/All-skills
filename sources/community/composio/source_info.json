@@ -1,0 +1,9 @@
+{
+  "id": "community-composio",
+  "repository": "ComposioHQ/awesome-claude-skills",
+  "clone_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+  "tier": "community",
+  "license": "Apache-2.0",
+  "description": "1000+ practical tool-backed Claude skills and integrations.",
+  "target_directory": "sources\\community\\composio"
+}

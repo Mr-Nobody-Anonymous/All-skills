@@ -14,9 +14,24 @@ from .lifecycle import (
     transition,
 )
 from .chains import ChainResolver, ChainStore, SkillChain, load_chains
-from .conflicts import ConflictRecord, ConflictStore, load_conflicts
+from .conflicts import ConflictRecord, ConflictStore, ConflictResolver, load_conflicts
 from .security import Finding, scan_all, scan_skill, high_severity
 from .runtime import ExecutionRuntime, ExecutionResult
+from .intent import IntentAnalyzer, IntentSpec, AnalyzedIntent, IntentRequirement
+from .composer import SkillComposer, SkillStack
+from .explain import (
+    ExplainabilityTracer,
+    ExplainabilityReport,
+    SelectedSkillRationale,
+    RejectedSkillRationale,
+)
+from .learning import LearningEngine, TaskExecutionRecord
+TraceRecord = ExplainabilityReport
+ExecutionTelemetry = TaskExecutionRecord
+from .package_manager import PackageManager, DependencyNode, AuditFinding
+from .freshness import FreshnessEngine, FreshnessReport
+from .supply_chain import SupplyChainSecurityEngine
+from .compatibility import CompatibilityMatrix
 
 __all__ = [
     "Registry",
@@ -48,6 +63,7 @@ __all__ = [
     "load_chains",
     "ConflictRecord",
     "ConflictStore",
+    "ConflictResolver",
     "load_conflicts",
     "Finding",
     "scan_all",
@@ -55,6 +71,21 @@ __all__ = [
     "high_severity",
     "ExecutionRuntime",
     "ExecutionResult",
+    "IntentAnalyzer",
+    "IntentSpec",
+    "SkillComposer",
+    "SkillStack",
+    "ExplainabilityTracer",
+    "TraceRecord",
+    "LearningEngine",
+    "ExecutionTelemetry",
+    "PackageManager",
+    "DependencyNode",
+    "AuditFinding",
+    "FreshnessEngine",
+    "FreshnessReport",
+    "SupplyChainSecurityEngine",
+    "CompatibilityMatrix",
     "__version__",
 ]
 

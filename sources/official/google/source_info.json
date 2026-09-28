@@ -1,0 +1,9 @@
+{
+  "id": "official-google",
+  "repository": "google/agent-skills",
+  "clone_url": "https://github.com/google/agent-skills",
+  "tier": "official",
+  "license": "Apache-2.0",
+  "description": "Google Antigravity and Gemini CLI official skills and tooling.",
+  "target_directory": "sources\\official\\google"
+}

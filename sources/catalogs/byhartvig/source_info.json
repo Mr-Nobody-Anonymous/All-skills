@@ -1,0 +1,9 @@
+{
+  "id": "catalogs-byhartvig",
+  "repository": "byhartvig/agent-skills-collection",
+  "clone_url": "https://github.com/byhartvig/agent-skills-collection",
+  "tier": "catalog",
+  "license": "MIT",
+  "description": "Large-scale multi-category skill collection with static analysis flags.",
+  "target_directory": "sources\\catalogs\\byhartvig"
+}

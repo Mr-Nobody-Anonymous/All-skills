@@ -1,0 +1,9 @@
+{
+  "id": "official-anthropics",
+  "repository": "anthropics/skills",
+  "clone_url": "https://github.com/anthropics/skills",
+  "tier": "official",
+  "license": "MIT",
+  "description": "Official Agent Skills reference specifications and templates.",
+  "target_directory": "sources\\official\\anthropics"
+}

@@ -1,0 +1,9 @@
+{
+  "id": "catalogs-awesome-agent-skills",
+  "repository": "awesome-skills-index/catalog",
+  "clone_url": "https://github.com/awesome-skills-index/catalog",
+  "tier": "catalog",
+  "license": "MIT",
+  "description": "Curated registry index of open agent capabilities.",
+  "target_directory": "sources\\catalogs\\awesome-agent-skills"
+}

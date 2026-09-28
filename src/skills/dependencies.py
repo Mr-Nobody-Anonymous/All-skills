@@ -43,7 +43,10 @@ def _check_candidate_cached(candidate: str) -> tuple[bool, str]:
     return res
 
 
-def check_dependency(skill_id: str, declaration: str) -> DependencyStatus:
+def check_dependency(skill_id: str, declaration: Any) -> DependencyStatus:
+    if isinstance(declaration, dict):
+        declaration = declaration.get("name") or declaration.get("id") or str(declaration)
+    declaration = str(declaration)
     optional = declaration.endswith("-optional") or declaration.startswith("optional:")
     name = declaration.removeprefix("optional:").removesuffix("-optional")
     alternatives = [part.strip() for part in name.split("-or-") if part.strip()]
@@ -77,6 +80,9 @@ def expand_declaration(declaration: str):
     Handles the ``optional:`` prefix, the ``-optional`` suffix, and ``-or-``
     alternatives (the primary alternative is used for the canonical name).
     """
+    if isinstance(declaration, dict):
+        declaration = declaration.get("name") or declaration.get("id") or str(declaration)
+    declaration = str(declaration)
     optional = declaration.endswith("-optional") or declaration.startswith("optional:")
     name = declaration.removeprefix("optional:").removesuffix("-optional")
     alternatives = [part.strip() for part in name.split("-or-") if part.strip()]
