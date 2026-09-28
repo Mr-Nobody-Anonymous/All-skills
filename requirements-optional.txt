@@ -1,101 +1,101 @@
 # Optional heavy dependencies - install per category as needed
 # NLP
-transformers>=4.36.0
+transformers>=5.17.0
 vaderSentiment>=3.3.2
-flair>=0.13.0
-argostranslate>=1.9.0
-symspellpy>=6.7.7
-lingua-language-detector>=2.0.0
-nltk>=3.8.1
-textstat>=0.7.3
+flair>=0.15.1
+argostranslate>=1.11.0
+symspellpy>=6.10.0
+lingua-language-detector>=2.1.1
+nltk>=3.10.3
+textstat>=0.7.13
 
 # Speech
-openai-whisper>=20231117
+openai-whisper>=20250625
 TTS>=0.22.0
-pvporcupine>=3.0.0
-silero-vad>=4.0
-speechbrain>=1.0.0
+pvporcupine>=4.0.3
+silero-vad>=6.2.3
+speechbrain>=1.1.1
 pydub>=0.25.1
 
 # Vision
-ultralytics>=8.0.0
-deepface>=0.0.89
-easyocr>=1.7.0
-mediapipe>=0.10.0
-Pillow>=10.0.0
+ultralytics>=8.4.163
+deepface>=0.0.101
+easyocr>=1.7.2
+mediapipe>=1.0.1
+Pillow>=12.3.0
 
 # Knowledge
 wikipedia>=1.4.0
-wolframalpha>=5.0.0
-scrapy>=2.11.0
-feedparser>=6.0.10
+wolframalpha>=5.1.3
+scrapy>=2.19.0
+feedparser>=6.0.14
 
 # System
 pyautogui>=0.9.54
-psutil>=5.9.0
-watchdog>=3.0.0
-pyperclip>=1.8.2
+psutil>=7.2.2
+watchdog>=6.0.0
+pyperclip>=1.11.0
 keyboard>=0.13.5
 
 # Smart Home
-paho-mqtt>=1.6.1
-zigpy>=0.59.0
+paho-mqtt>=2.1.0
+zigpy>=0.84.0
 
 # Communication
-yagmail>=0.15.293
-python-telegram-bot>=20.7
-discord.py>=2.3.2
-twilio>=8.10.0
+yagmail>=0.16.0
+python-telegram-bot>=22.8
+discord.py>=2.7.1
+twilio>=9.11.1
 
 # Data Science
-matplotlib>=3.8.0
-plotly>=5.18.0
-scipy>=1.11.0
-scikit-learn>=1.3.0
-pandas>=2.1.0
-prophet>=1.1.5
+matplotlib>=3.10.9
+plotly>=7.1.0
+scipy>=1.15.3
+scikit-learn>=1.7.2
+pandas>=2.3.3
+prophet>=1.4.0
 
 # Finance
-yfinance>=0.2.33
-pycoingecko>=3.1.0
-beancount>=3.0.0
+yfinance>=1.7.0
+pycoingecko>=3.2.0
+beancount>=3.2.3
 
 # Navigation
-geopy>=2.4.0
-pyowm>=3.3.0
-folium>=0.15.0
+geopy>=2.5.0
+pyowm>=3.5.0
+folium>=0.20.0
 
 # Memory & Vectors
-chromadb>=0.4.0
-faiss-cpu>=1.7.4
-sentence-transformers>=2.2.2
+chromadb>=1.5.9
+faiss-cpu>=1.15.1
+sentence-transformers>=6.1.0
 
 # Productivity
-python-docx>=1.1.0
-python-pptx>=0.6.23
-fpdf2>=2.7.6
-pypdf>=3.17.0
-openpyxl>=3.1.0
-sympy>=1.12
-pint>=0.23
+python-docx>=1.2.0
+python-pptx>=1.0.2
+fpdf2>=2.8.8
+pypdf>=6.19.0
+openpyxl>=3.1.5
+sympy>=1.14.0
+pint>=0.24.4
 
 # Security
 cryptography>=41.0.0
-presidio-analyzer>=2.2.354
-yara-python>=4.5.0
+presidio-analyzer>=2.2.364
+yara-python>=4.5.4
 
 # Reasoning/Agents
-langchain>=0.1.0
-autogen>=0.2.0
-prefect>=2.14.0
-kanren>=0.2.3
+langchain>=1.4.2
+autogen>=0.14.1
+prefect>=3.8.6
+kanren>=0.3.0
 
 # Simulation
-pybullet>=3.2.6
-pyvista>=0.43.0
-gymnasium>=0.29.0
+pybullet>=3.2.7
+pyvista>=0.49.0
+gymnasium>=1.3.0
 
 # Robotics
 pyFirmata>=1.1.0
-gpiozero>=2.0.1
+gpiozero>=2.0.1.post3
 dronekit>=2.9.2
