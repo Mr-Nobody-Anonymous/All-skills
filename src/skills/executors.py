@@ -32,6 +32,7 @@ from __future__ import annotations
 
 import json
 import os
+import shutil
 import signal
 import subprocess
 import sys
@@ -100,6 +101,17 @@ def _kill(proc: "subprocess.Popen[bytes]") -> None:
             return
         except (ProcessLookupError, PermissionError, OSError):
             pass
+    elif os.name == "nt":
+        try:
+            subprocess.run(
+                ["taskkill", "/F", "/T", "/PID", str(proc.pid)],
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.DEVNULL,
+                check=False,
+            )
+            return
+        except Exception:
+            pass
     proc.kill()
 
 
@@ -161,49 +173,52 @@ class SubprocessExecutor:
             default=str,
         ).encode("utf-8")
         name = os.path.basename(self.argv[0])
-        with tempfile.TemporaryDirectory(prefix="allskills-run-", ignore_cleanup_errors=True) as workdir, \
-                tempfile.TemporaryFile() as out, tempfile.TemporaryFile() as err:
-            popen_kwargs: Dict[str, Any] = {
-                "stdin": subprocess.PIPE, "stdout": out, "stderr": err,
-                "cwd": workdir, "env": self.environment(workdir),
-            }
-            if os.name == "posix":
-                popen_kwargs["start_new_session"] = True
-            else:
-                popen_kwargs["creationflags"] = getattr(subprocess, "CREATE_NEW_PROCESS_GROUP", 0)
-            cpu_before = _children_cpu_seconds()
-            started = time.perf_counter()
-            try:
-                proc = subprocess.Popen(self.command(), **popen_kwargs)
-            except OSError as exc:
-                raise ExecutorError(f"could not start {name}: {exc}") from exc
-            try:
-                proc.communicate(payload, timeout=self.limits.timeout_s)
-            except subprocess.TimeoutExpired:
-                _kill(proc)
-                proc.wait()
-                raise ExecutorError(f"{name} timed out after {self.limits.timeout_s:g}s and was killed") from None
-            wall_ms = (time.perf_counter() - started) * 1000
+        workdir = tempfile.mkdtemp(prefix="allskills-run-")
+        try:
+            with tempfile.TemporaryFile() as out, tempfile.TemporaryFile() as err:
+                popen_kwargs: Dict[str, Any] = {
+                    "stdin": subprocess.PIPE, "stdout": out, "stderr": err,
+                    "cwd": workdir, "env": self.environment(workdir),
+                }
+                if os.name == "posix":
+                    popen_kwargs["start_new_session"] = True
+                else:
+                    popen_kwargs["creationflags"] = getattr(subprocess, "CREATE_NEW_PROCESS_GROUP", 0)
+                cpu_before = _children_cpu_seconds()
+                started = time.perf_counter()
+                try:
+                    proc = subprocess.Popen(self.command(), **popen_kwargs)
+                except OSError as exc:
+                    raise ExecutorError(f"could not start {name}: {exc}") from exc
+                try:
+                    proc.communicate(payload, timeout=self.limits.timeout_s)
+                except subprocess.TimeoutExpired:
+                    _kill(proc)
+                    proc.wait()
+                    raise ExecutorError(f"{name} timed out after {self.limits.timeout_s:g}s and was killed") from None
+                wall_ms = (time.perf_counter() - started) * 1000
 
-            usage: Dict[str, Any] = {"wall_ms": round(wall_ms, 3), "exit_code": proc.returncode}
-            cpu_after = _children_cpu_seconds()
-            if cpu_before is not None and cpu_after is not None:
-                usage["cpu_s"] = round(max(cpu_after - cpu_before, 0.0), 6)
+                usage: Dict[str, Any] = {"wall_ms": round(wall_ms, 3), "exit_code": proc.returncode}
+                cpu_after = _children_cpu_seconds()
+                if cpu_before is not None and cpu_after is not None:
+                    usage["cpu_s"] = round(max(cpu_after - cpu_before, 0.0), 6)
 
-            err.seek(0)
-            stderr_tail = err.read().decode("utf-8", "replace").strip()[-_STDERR_TAIL:]
-            if proc.returncode != 0:
-                raise ExecutorError(f"{name} {_describe_exit(proc.returncode)}" + (f": {stderr_tail}" if stderr_tail else ""))
-            out.seek(0)
-            stdout = out.read(self.limits.max_output_bytes + 1)
-            if len(stdout) > self.limits.max_output_bytes:
-                raise ExecutorError(f"{name} printed more than {self.limits.max_output_bytes} bytes")
-            try:
-                result = json.loads(stdout.decode("utf-8"))
-            except (UnicodeDecodeError, ValueError) as exc:
-                raise ExecutorError(f"{name} did not print a JSON object on stdout ({exc})") from None
-            if not isinstance(result, dict):
-                raise ExecutorError(f"{name} printed JSON {type(result).__name__}, expected an object")
+                err.seek(0)
+                stderr_tail = err.read().decode("utf-8", "replace").strip()[-_STDERR_TAIL:]
+                if proc.returncode != 0:
+                    raise ExecutorError(f"{name} {_describe_exit(proc.returncode)}" + (f": {stderr_tail}" if stderr_tail else ""))
+                out.seek(0)
+                stdout = out.read(self.limits.max_output_bytes + 1)
+                if len(stdout) > self.limits.max_output_bytes:
+                    raise ExecutorError(f"{name} printed more than {self.limits.max_output_bytes} bytes")
+                try:
+                    result = json.loads(stdout.decode("utf-8"))
+                except (UnicodeDecodeError, ValueError) as exc:
+                    raise ExecutorError(f"{name} did not print a JSON object on stdout ({exc})") from None
+                if not isinstance(result, dict):
+                    raise ExecutorError(f"{name} printed JSON {type(result).__name__}, expected an object")
+        finally:
+            shutil.rmtree(workdir, ignore_errors=True)
 
         reported = result.get("usage")
         if isinstance(reported, Mapping):
