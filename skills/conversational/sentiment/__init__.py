@@ -1,1 +1,2 @@
-from .vader_sentiment import VaderSentimentAnalyzer\n__all__ = ['VaderSentimentAnalyzer']\n
+from .vader_sentiment import VaderSentimentAnalyzer
+__all__ = ['VaderSentimentAnalyzer']

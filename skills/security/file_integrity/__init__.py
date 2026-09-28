@@ -1,1 +1,2 @@
-from .integrity_monitor import IntegrityMonitor\n__all__ = ['IntegrityMonitor']\n
+from .integrity_monitor import IntegrityMonitor
+__all__ = ['IntegrityMonitor']

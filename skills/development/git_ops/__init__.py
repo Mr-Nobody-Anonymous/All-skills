@@ -1,1 +1,2 @@
-from .gitpython_ops import GitPythonOperations\n__all__ = ['GitPythonOperations']\n
+from .gitpython_ops import GitPythonOperations
+__all__ = ['GitPythonOperations']

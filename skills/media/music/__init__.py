@@ -1,1 +1,3 @@
-from .beets_library import BeetsMusicLibrary\nfrom .spotipy_control import SpotipyController\n__all__ = ['BeetsMusicLibrary', 'SpotipyController']\n
+from .beets_library import BeetsMusicLibrary
+from .spotipy_control import SpotipyController
+__all__ = ['BeetsMusicLibrary', 'SpotipyController']

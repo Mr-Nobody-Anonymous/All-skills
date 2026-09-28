@@ -1,1 +1,2 @@
-from .paho_mqtt import PahoMQTTClient\n__all__ = ['PahoMQTTClient']\n
+from .paho_mqtt import PahoMQTTClient
+__all__ = ['PahoMQTTClient']

@@ -1,1 +1,2 @@
-from .nmap_scan import NmapScanner\n__all__ = ['NmapScanner']\n
+from .nmap_scan import NmapScanner
+__all__ = ['NmapScanner']

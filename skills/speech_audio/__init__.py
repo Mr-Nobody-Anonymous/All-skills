@@ -1,1 +1,1 @@
-"""All-Skills Category: speech_audio"""\n
+"""All-Skills Category: speech_audio"""

@@ -1,1 +1,2 @@
-from .yolov8_detect import YOLOv8Detector\n__all__ = ['YOLOv8Detector']\n
+from .yolov8_detect import YOLOv8Detector
+__all__ = ['YOLOv8Detector']

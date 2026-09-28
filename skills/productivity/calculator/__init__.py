@@ -1,1 +1,2 @@
-from .sympy_calc import SympyCalculator\n__all__ = ['SympyCalculator']\n
+from .sympy_calc import SympyCalculator
+__all__ = ['SympyCalculator']

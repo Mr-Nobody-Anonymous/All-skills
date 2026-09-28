@@ -1,1 +1,2 @@
-from .pykeen_graph import PykeenKnowledgeGraph\n__all__ = ['PykeenKnowledgeGraph']\n
+from .pykeen_graph import PykeenKnowledgeGraph
+__all__ = ['PykeenKnowledgeGraph']

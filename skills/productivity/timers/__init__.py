@@ -1,1 +1,2 @@
-from .timer_alarm import TimerAlarmManager\n__all__ = ['TimerAlarmManager']\n
+from .timer_alarm import TimerAlarmManager
+__all__ = ['TimerAlarmManager']

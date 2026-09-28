@@ -1,1 +1,2 @@
-from .mediapipe_gesture import MediaPipeGestureRecognizer\n__all__ = ['MediaPipeGestureRecognizer']\n
+from .mediapipe_gesture import MediaPipeGestureRecognizer
+__all__ = ['MediaPipeGestureRecognizer']

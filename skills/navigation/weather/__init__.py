@@ -1,1 +1,2 @@
-from .pyowm_weather import PyowmWeatherClient\n__all__ = ['PyowmWeatherClient']\n
+from .pyowm_weather import PyowmWeatherClient
+__all__ = ['PyowmWeatherClient']

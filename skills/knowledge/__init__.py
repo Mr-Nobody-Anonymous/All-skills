@@ -1,1 +1,1 @@
-"""All-Skills Category: knowledge"""\n
+"""All-Skills Category: knowledge"""

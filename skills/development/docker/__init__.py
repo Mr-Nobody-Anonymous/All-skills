@@ -1,1 +1,2 @@
-from .docker_manage import DockerManager\n__all__ = ['DockerManager']\n
+from .docker_manage import DockerManager
+__all__ = ['DockerManager']

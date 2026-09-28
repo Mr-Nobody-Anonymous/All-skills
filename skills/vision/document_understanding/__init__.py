@@ -1,1 +1,2 @@
-from .layoutlm_doc import LayoutLMDocumentAI\n__all__ = ['LayoutLMDocumentAI']\n
+from .layoutlm_doc import LayoutLMDocumentAI
+__all__ = ['LayoutLMDocumentAI']

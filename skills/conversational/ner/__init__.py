@@ -1,1 +1,2 @@
-from .flair_ner import FlairNERExtractor\n__all__ = ['FlairNERExtractor']\n
+from .flair_ner import FlairNERExtractor
+__all__ = ['FlairNERExtractor']

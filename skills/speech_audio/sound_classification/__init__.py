@@ -1,1 +1,2 @@
-from .audioset_classify import AudiosetClassifier\n__all__ = ['AudiosetClassifier']\n
+from .audioset_classify import AudiosetClassifier
+__all__ = ['AudiosetClassifier']

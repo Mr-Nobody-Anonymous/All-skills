@@ -1,1 +1,2 @@
-from .feedparser_news import FeedparserNews\n__all__ = ['FeedparserNews']\n
+from .feedparser_news import FeedparserNews
+__all__ = ['FeedparserNews']

@@ -16,7 +16,7 @@ keywords:
 - fact
 - check
 - verify
-- true
+- 'true'
 - claim
 - accuracy
 - source

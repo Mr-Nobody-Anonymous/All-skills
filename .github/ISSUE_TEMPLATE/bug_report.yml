@@ -1,42 +1,71 @@
-name: Bug Report
-description: Report a broken skill, routing error, or harness incompatibility
+name: 🐛 Bug Report
+description: Report a broken skill, routing error, CLI failure or harness incompatibility
 title: "[Bug]: "
 labels: ["bug"]
 body:
   - type: markdown
     attributes:
       value: |
-        Please report issues with skill instructions, CLI commands, or multi-tool junctions.
+        Thanks for taking the time to report a problem! Please search [existing issues](https://github.com/Mr-Nobody-Anonymous/All-skills/issues) first.
+        **Security issues must be reported privately** — see [SECURITY.md](https://github.com/Mr-Nobody-Anonymous/All-skills/blob/main/SECURITY.md).
   - type: input
     id: skill-or-tool
     attributes:
-      label: Affected Skill or Script
-      description: e.g. `tdd`, `scripts/manage_state.py`, or `.claude/skills`
+      label: Affected skill, command or script
+      description: e.g. `tdd`, `all-skills route`, `scripts/manage_state.py`, or `.claude/skills`
     validations:
       required: true
   - type: textarea
     id: description
     attributes:
-      label: Describe the Bug
-      description: What unexpected behavior or failure did you encounter?
+      label: Describe the bug
+      description: What happened, and what did you expect to happen instead?
     validations:
       required: true
   - type: textarea
     id: reproduction
     attributes:
-      label: Steps to Reproduce
-      description: Exact CLI command or agent prompt.
+      label: Steps to reproduce
+      description: The exact CLI command(s) or agent prompt that trigger the problem.
+      placeholder: |
+        1. python scripts/skills/skills.py route "..."
+        2. ...
     validations:
       required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant output or logs
+      description: Paste error messages or tracebacks. This is rendered as code automatically.
+      render: shell
   - type: dropdown
     id: harness
     attributes:
-      label: Agent Harness Used
+      label: Agent harness
       options:
+        - Not applicable (CLI / scripts only)
         - Claude Code
         - Cursor
         - Codex CLI
         - Antigravity / Gemini CLI
+        - GitHub Copilot
         - Other
     validations:
       required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Operating system, Python version and All-Skills version (`all-skills --version` or `cat VERSION`).
+      placeholder: e.g. Windows 11, Python 3.12.4, All-Skills 3.0.0
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I ran `python scripts/allskills.py doctor --full` and included any failing layers above.
+          required: false
+        - label: I searched existing issues and this is not a duplicate.
+          required: true

@@ -2,7 +2,7 @@
 name: copywriting
 description: Write rigorous, conversion-focused marketing copy for landing pages and emails. Enforces brief confirmation and strict no-fabrication rules.
 disable-model-invocation: false
-risk: none
+risk: low
 source: community
 date_added: '2026-02-27'
 version: 1.0.0

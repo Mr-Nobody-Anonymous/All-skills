@@ -1,1 +1,2 @@
-from .folium_maps import FoliumMapGenerator\n__all__ = ['FoliumMapGenerator']\n
+from .folium_maps import FoliumMapGenerator
+__all__ = ['FoliumMapGenerator']

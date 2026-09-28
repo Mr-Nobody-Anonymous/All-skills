@@ -1,1 +1,1 @@
-"""All-Skills Category: communication"""\n
+"""All-Skills Category: communication"""

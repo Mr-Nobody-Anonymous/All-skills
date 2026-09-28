@@ -1,1 +1,3 @@
-from .vlc_control import VLCPlayerController\nfrom .moviepy_edit import MoviePyEditor\n__all__ = ['VLCPlayerController', 'MoviePyEditor']\n
+from .vlc_control import VLCPlayerController
+from .moviepy_edit import MoviePyEditor
+__all__ = ['VLCPlayerController', 'MoviePyEditor']

@@ -57,6 +57,7 @@ if hasattr(sys.stderr, "reconfigure"):
 import argparse
 
 import json
+import os
 
 import sys
 
@@ -99,8 +100,9 @@ from skills.security import scan_all  # noqa: E402
 
 
 def _workspace_root() -> Path:
-
-    return ROOT
+    """Workspace the command operates on (see skills.workspace for the resolution rule)."""
+    override = os.environ.get("ALL_SKILLS_WORKSPACE")
+    return Path(override).resolve() if override else ROOT
 
 
 
@@ -351,7 +353,10 @@ def cmd_execute(args, _parser):
             return 1
 
     tools = [t.strip() for t in args.tools.split(",")] if getattr(args, "tools", None) else None
-    res = runtime.execute(args.skill_id, input=input_data, tools=tools, dry_run=getattr(args, "dry_run", False))
+    from skills.runtime import approval_from_args, exit_code_for
+    approval = approval_from_args(getattr(args, "approval_id", None), getattr(args, "approved_by", None))
+    res = runtime.execute(args.skill_id, input=input_data, tools=tools,
+                          dry_run=getattr(args, "dry_run", False), approval=approval)
 
     if getattr(args, "json", False):
         print(json.dumps(res.to_dict(), indent=2))
@@ -366,8 +371,10 @@ def cmd_execute(args, _parser):
             print(f"Outputs: {json.dumps(res.outputs, indent=2)}")
         if res.verification:
             print(f"Verification: {json.dumps(res.verification)}")
+        if res.approval_request:
+            print(f"Approval required: re-run with --approval-id {res.approval_request['request_id']} --approved-by <name>")
 
-    return 0 if res.status == "completed" else 1
+    return exit_code_for(res.status)
 
 
 def _registry_path() -> Path:
@@ -1166,7 +1173,8 @@ def cmd_lock(args, _parser):
         print(f"Lockfile verification: {res['passed']}/{res['total']} skills verified successfully.")
         return 0 if res['failed'] == 0 else 1
     out_file = mgr.save_lockfile()
-    print(f"Successfully generated skills.lock with 192 cryptographically pinned skills ({out_file}).")
+    total = (mgr.load_lockfile() or {}).get("total_skills", 0)
+    print(f"Successfully generated skills.lock with {total} cryptographically pinned skills ({out_file}).")
     return 0
 
 
@@ -1230,6 +1238,7 @@ def cmd_policy(args, _parser):
 def main():
 
     p = argparse.ArgumentParser(prog="skills", description="Agent Skills CLI")
+    p.add_argument("--workspace", help="All-Skills workspace to operate on (default: this checkout)")
 
     sub = p.add_subparsers(dest="cmd", required=True)
 
@@ -1280,6 +1289,8 @@ def main():
         s.add_argument("--input", help="JSON string of execution inputs")
         s.add_argument("--tools", help="Comma-separated declared tools")
         s.add_argument("--dry-run", action="store_true", help="Simulate execution without modifying artifacts")
+        s.add_argument("--approval-id", help="request_id from an approval_required result")
+        s.add_argument("--approved-by", help="Name of the human approving an ASK capability")
         s.add_argument("--json", action="store_true", help="Print structured ExecutionResult as JSON")
         s.set_defaults(func=cmd_execute)
 
@@ -1427,9 +1438,14 @@ def main():
 
 
     args = p.parse_args()
-
+    if args.workspace:
+        from skills.workspace import WorkspaceNotFound, resolve_workspace
+        try:
+            os.environ["ALL_SKILLS_WORKSPACE"] = str(resolve_workspace(args.workspace))
+        except WorkspaceNotFound as exc:
+            print(f"Error: {exc}", file=sys.stderr)
+            sys.exit(2)
     rc = args.func(args, p) or 0
-
     sys.exit(rc)
 
 

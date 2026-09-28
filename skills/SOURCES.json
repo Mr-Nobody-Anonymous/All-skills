@@ -1,8 +1,23 @@
 {
   "version": 1,
-  "generated_at": "2026-09-19T17:27:27+00:00",
+  "generated_at": "2026-09-25T16:19:25+00:00",
   "note": "Imported skills are pinned to reviewed upstream commits. Custom skills are maintained locally. Third-party executables are not run during import.",
   "skills": [
+    {
+      "skill": "architecture.architecture-decision-records",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
     {
       "skill": "design.avatar-creator",
       "repository": null,
@@ -785,6 +800,21 @@
     },
     {
       "skill": "documents.xlsx",
+      "repository": null,
+      "source_path": null,
+      "commit": null,
+      "imported_at": null,
+      "license": null,
+      "original_author": "this-project",
+      "modified": true,
+      "version": "1.0.0",
+      "source": "custom",
+      "convention_referenced_from": [
+        "agentskills/agentskills"
+      ]
+    },
+    {
+      "skill": "healthcare.health-economist",
       "repository": null,
       "source_path": null,
       "commit": null,

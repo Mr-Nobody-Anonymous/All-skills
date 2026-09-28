@@ -1,1 +1,2 @@
-from .firmata_arduino import FirmataArduinoInterface\n__all__ = ['FirmataArduinoInterface']\n
+from .firmata_arduino import FirmataArduinoInterface
+__all__ = ['FirmataArduinoInterface']

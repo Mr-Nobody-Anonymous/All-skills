@@ -1,1 +1,2 @@
-from .google_calendar import GoogleCalendarManager\n__all__ = ['GoogleCalendarManager']\n
+from .google_calendar import GoogleCalendarManager
+__all__ = ['GoogleCalendarManager']

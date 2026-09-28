@@ -1,1 +1,1 @@
-"""All-Skills Category: system_control"""\n
+"""All-Skills Category: system_control"""

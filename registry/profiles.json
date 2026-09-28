@@ -1,15 +1,16 @@
 {
-  "_comment": "Profile → skill ID index. Maps each role profile to the skill IDs it activates. Source of truth for `allskills profile install <name>`.",
+  "_comment": "Profile → skill ID index. Maps each role profile to the skill IDs it activates. Source of truth for `allskills profile install <name>`. IDs under 'unavailable' are planned but not in the library; install reports them and continues.",
   "schema_version": "1.0.0",
   "profiles": {
     "universal": {
       "file": "profiles/universal.yaml",
       "description": "Minimal universal skill set active for all roles",
       "skills": [
-        "web-research", "summarization", "note-taking", "calculator",
-        "file-management", "code-review", "writing-assistant"
+        "web-research", "summarization",
+        "file-management", "code-review", "ai-writing-assistant"
       ],
-      "optional": []
+      "optional": [],
+      "unavailable": ["note-taking", "calculator"]
     },
     "software-engineer": {
       "file": "profiles/software-engineer.yaml",
@@ -67,7 +68,7 @@
         "ai-engineer", "ai-engineering-toolkit", "llm-prompt-optimizer",
         "agent-memory", "agent-memory-systems", "multi-agent-architect",
         "multi-agent-patterns", "mcp-builder", "mcp-tool-developer",
-        "agent-evaluation", "rag-pipeline"
+        "agent-evaluation", "ai-rag-pipeline"
       ],
       "optional": ["agent-evaluation", "multi-agent-brainstorming"]
     },

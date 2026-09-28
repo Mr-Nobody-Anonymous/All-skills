@@ -9,7 +9,7 @@ from __future__ import annotations
 import json
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Dict, List, Optional, Set
+from typing import Any, Dict, List, Optional, Set
 
 
 @dataclass
@@ -32,7 +32,7 @@ class ConflictEdge:
 
 
 # Standard domain dependency relationships connecting core agent skills
-CORE_SKILL_RELATIONSHIPS: Dict[str, Dict[str, list]] = {
+CORE_SKILL_RELATIONSHIPS: Dict[str, Dict[str, Any]] = {
     "nextjs": {
         "name": "Next.js Fullstack Platform",
         "category": "web-development",

@@ -33,3 +33,8 @@ class TerminalInterface:
                     print(out)
             except (KeyboardInterrupt, EOFError):
                 break
+
+
+if __name__ == "__main__":
+    # Run from the repository root:  python -m interfaces.cli.terminal_interface
+    TerminalInterface().repl()

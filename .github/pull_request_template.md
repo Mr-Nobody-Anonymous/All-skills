@@ -1,21 +1,27 @@
 ## Description
-Briefly describe the new skill, update, or bug fix introduced by this pull request.
+
+<!-- What does this pull request change, and why? Link related issues (e.g. "Closes #123"). -->
 
 ## Type of Change
-- [ ] New Skill (`skills/<name>` or `.agents/skills/<name>`)
-- [ ] Skill Specification Enhancement / Bug Fix
-- [ ] Auxiliary Templates / References / Examples Addition
-- [ ] Workflow or Platform Adapter Update
-- [ ] Documentation or Governance Improvement
 
-## Standards & Specification Checklist
-- [ ] `SKILL.md` includes valid YAML frontmatter matching `schemas/skill-frontmatter.schema.json`.
-- [ ] Frontmatter specifies: `name`, `version`, `description`, `author`, `tags`, `compatibility`.
-- [ ] Contains clear trigger conditions: `## Use this skill when` and `## Do not use this skill when`.
-- [ ] Contains `## Security & Sandboxing Boundaries` with prompt-injection defense directives.
-- [ ] Auxiliary directory provided: `README.md`, `references/` or `templates/`, `examples/`.
-- [ ] Ran `python scripts/validate_schema.py` (0 errors).
-- [ ] Ran `python scripts/validate_skillhub_spec.py` (0 errors).
-- [ ] Ran `python scripts/skills/skills.py test` (136/136 tests pass).
-- [ ] Ran `python scripts/scan_skills_security.py` (0 high-severity security findings).
-- [ ] Verified across agent harnesses (`Claude Code`, `Cursor`, `Codex CLI`, or `Antigravity`).
+- [ ] Bug fix (with a regression test under `tests/` — see `docs/NO_REGRESSION_POLICY.md` §3)
+- [ ] New skill (`skills/<category>/<name>` or `.agents/skills/<name>`)
+- [ ] Skill specification enhancement / fix
+- [ ] Platform code (CLI, router, runtime, adapters)
+- [ ] CI, tooling or documentation
+
+## Quality Checklist
+
+- [ ] `ruff check .` and `mypy` pass
+- [ ] `python scripts/skills/skills.py test` passes
+- [ ] `python scripts/validate_schema.py` and `python scripts/validate_skillhub_spec.py` report 0 errors
+- [ ] `python scripts/scan_skills_security.py` reports 0 high-severity findings
+- [ ] Generated files are refreshed if affected: `python scripts/refresh_registry.py`, `python scripts/compute_stats.py && python scripts/generate_readme_stats.py`
+- [ ] No secrets, credentials or `.env` files are included
+
+### For new or changed skills
+
+- [ ] `SKILL.md` frontmatter validates against `schemas/skill-frontmatter.schema.json`
+- [ ] Includes `## Use this skill when` / `## Do not use this skill when` trigger sections
+- [ ] Includes `## Security & Sandboxing Boundaries` with prompt-injection defenses
+- [ ] Verified in at least one agent harness (Claude Code, Cursor, Codex CLI, or Antigravity)

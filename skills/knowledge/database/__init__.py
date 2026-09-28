@@ -1,1 +1,2 @@
-from .sqlalchemy_db import SQLAlchemyDB\n__all__ = ['SQLAlchemyDB']\n
+from .sqlalchemy_db import SQLAlchemyDB
+__all__ = ['SQLAlchemyDB']

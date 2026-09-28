@@ -1,1 +1,2 @@
-from .searxng_search import SearXNGSearch\n__all__ = ['SearXNGSearch']\n
+from .searxng_search import SearXNGSearch
+__all__ = ['SearXNGSearch']

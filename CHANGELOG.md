@@ -7,6 +7,41 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [Unreleased]
+
+### Fixed
+- **CI was red on every workflow**: `pip install -e .` crashed in modern setuptools because `setup.py` duplicated metadata that the PEP 621 `[project]` table did not declare. `pyproject.toml` is now the single source of packaging metadata (readme, SPDX license, authors, URLs, classifiers) and `setup.py` is a thin shim.
+- **Missing catalog skill**: an unanchored `build/` rule in `.gitignore` kept `awesome_skills/automation/build/` out of Git, so catalog statistics could never verify on a fresh clone. Build-output rules are now root-anchored and the skill is restored byte-for-byte (verified against its `awesome_skills.lock` digest).
+- **Unimportable skill handlers**: 158 `skills/**/__init__.py` files contained literal `\n` escapes (`SyntaxError`) and all 142 `handler.py` modules subclassed `BaseSkill` before importing it (`NameError`). Every handler now imports and instantiates.
+- **Platform-dependent lockfile**: `skills.lock` digests changed with the OS (CRLF checkouts, `Path` sort order, `__pycache__` files), so a lock generated on Windows reported every skill as "tampered" on Linux. Hashing now normalises line endings and ordering; `skills.lock` is regenerated.
+- **Stale generated files**: `skills/registry.json` / `dependencies.json` were regenerated — two canonical skills (`architecture/architecture-decision-records`, `healthcare/health-economist`) were missing from the registry.
+- **Machine-dependent `dependencies.json`**: the committed index recorded which tools were installed where it was generated, so `refresh_registry.py --check` could only pass on that machine. It now records declared dependencies only (index `version: 2`); live availability stays in `skills.py doctor`.
+- **Python-version-dependent quality scores**: overall scores used float `sum()`, whose algorithm changed in Python 3.12, so boundary values (e.g. 6.45) rounded differently per interpreter. Scores now use exact decimal arithmetic, rounded half-up.
+- **Packaged CLI `doctor`** crashed with `TypeError` (wrong `Validator` call); `skills/_quarantine/` was missing from Git; `skills.py lock` printed a hard-coded skill count.
+- **Docker**: the image's default command crashed (`ModuleNotFoundError: core`), the compose service restart-looped, and the build context had no `.dockerignore` (copying `.git` and any local `.env`).
+- 60 mypy errors and 3 undefined names in first-party code.
+
+### Added
+- Consolidated **CI** workflow: Ruff, mypy, actionlint; tests with coverage on Python 3.10–3.12; library/registry/lockfile integrity; package build + wheel smoke test; Docker build (hadolint) + smoke test.
+- **Security** workflow (skill scans, Gitleaks secret scanning, dependency review), **CodeQL** code scanning and **Dependabot** (Actions, pip, Docker).
+- `tests/test_regressions.py` — permanent regression tests for every fix above (No-Regression Policy §3).
+- `.editorconfig`, `.gitattributes` (LF everywhere, CRLF for `.bat`), `.pre-commit-config.yaml`, `.gitleaks.toml`, `.dockerignore`.
+- Full Contributor Covenant 2.1, issue-template chooser with a feature-request form, refreshed PR template.
+- README table of contents, live status badges, Mermaid architecture diagrams, "Quick Start" and "Development, CI & Quality Gates" sections; how-to-run READMEs for `src/`, `scripts/`, `tests/`, `skills/`, `docker/`, `hooks/`, `evals/`, `adapters/`, `schemas/` and `docs/`.
+
+### Changed
+- All GitHub Actions upgraded to current Node 24 releases (pinned by commit SHA) on `ubuntu-24.04`; the release workflow now runs on tags or manual dispatch only and attaches built distributions.
+- Docker image runs as a non-root user on Python 3.12, exposes the `all-skills` CLI and makes audio libraries opt-in.
+
+### Security
+- Removed the `security@allskills.dev` contact from `SECURITY.md` — the domain is not registered, so reports would have been lost (or received by whoever registers it).
+- `.gitignore` now covers `.env.*` variants and `config/api_keys.yml`, which the setup docs instruct users to fill with real keys.
+
+### Removed
+- Redundant workflows `test.yml`, `validate.yml`, `validate-skills.yml`, `skill-integrity.yml` and `registry.yml` (every command they ran is now in `ci.yml`), and the duplicate `skill_request.yml` issue form (superseded by `skill_proposal.yml`).
+
+---
+
 ## [3.0.0] - 2026-09-21
 
 ### Added

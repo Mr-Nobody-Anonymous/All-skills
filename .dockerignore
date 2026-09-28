@@ -1,0 +1,73 @@
+# Keep the Docker build context small and free of secrets.
+# The image needs the source tree, skill library and catalog — nothing else.
+
+# VCS & CI metadata
+.git
+.gitattributes
+.github
+
+# Secrets — never bake credentials into an image; pass them at runtime instead
+# (docker run --env-file .env ...). Templates are safe to include.
+.env
+.env.*
+!.env.example
+config/api_keys.yml
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Python build artefacts, caches and virtual environments
+**/__pycache__
+**/*.py[cod]
+**/*.egg-info
+.eggs
+build
+dist
+.venv
+venv
+env
+.pytest_cache
+.mypy_cache
+.ruff_cache
+.tox
+.nox
+.coverage
+.coverage.*
+coverage.xml
+htmlcov
+
+# Node
+**/node_modules
+
+# Generated agent harness views (recreated by scripts/setup_tools.py)
+.claude
+.cursor
+.codex
+.cline
+.goose
+.opencode
+.roo
+.windsurf
+.gemini
+.vscode
+.idea
+.agents/state
+
+# Runtime logs, scratch space and local caches (tracked *.jsonl datasets inside
+# skills are intentionally kept, so only known log locations are excluded)
+*.log
+*.jsonl
+.agents/audit_log.jsonl
+quarantine/quarantine_log.jsonl
+logs
+tmp
+temp
+scratch
+upstream
+models/cache/*
+!models/cache/.gitkeep
+
+# Docker files themselves are not needed inside the image
+docker/docker-compose*.yml
+.dockerignore

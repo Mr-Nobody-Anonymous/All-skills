@@ -1,1 +1,2 @@
-from .nltk_wordnet import NLTKWordNetDictionary\n__all__ = ['NLTKWordNetDictionary']\n
+from .nltk_wordnet import NLTKWordNetDictionary
+__all__ = ['NLTKWordNetDictionary']

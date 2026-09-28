@@ -4,16 +4,38 @@ This document defines compatibility between **All Skills** and modern AI coding 
 
 ---
 
-## 📊 Compatibility Overview
+## 📊 Compatibility Evidence
 
-| AI Agent Harness | Workspace Skill Path | Global Skill Path | Frontmatter Ingestion | Symlink / Junction | Model Context Protocol (MCP) | Automated Hooks | State Sidecars (`aas-stack`) |
-| :--- | :--- | :--- | :---: | :---: | :---: | :---: | :---: |
-| **Claude Code** | `.claude/skills/` | `~/.claude/skills/` | ✅ Native | ✅ Native | ✅ Supported (`mcp_config.json`) | ✅ via `scripts/run_hook.py` | ✅ Native |
-| **Cursor** | `.cursor/skills/` | `~/.cursor/skills/` | ✅ Native | ✅ Native | ✅ Supported (`.cursor/mcp.json`) | ✅ via `scripts/run_hook.py` | ✅ Native |
-| **Codex CLI** | `.codex/skills/` | `~/.codex/skills/` | ✅ Native | ✅ Native | ✅ Supported | ✅ via `scripts/run_hook.py` | ✅ Native |
-| **Antigravity / Gemini CLI**| `.agents/skills/` | `~/.gemini/antigravity-cli/skills/` | ✅ Native | ✅ Native | ✅ Supported | ✅ Pre/Post Execution | ✅ Native |
-| **Kiro / OpenClaw** | `.agents/skills/` | `~/.kiro/skills/` | ✅ Native | ✅ Native | ✅ Supported | ✅ via `scripts/run_hook.py` | ✅ Native |
-| **Windsurf** | `.agents/skills/` | `~/.codeium/windsurf/skills/` | ✅ Native | ✅ Native | ✅ Supported | ✅ via `scripts/run_hook.py` | ✅ Native |
+Compatibility is recorded at four evidence levels, from weakest to strongest. The
+authoritative, machine-readable record is [`compatibility/matrix.json`](../compatibility/matrix.json);
+[`tests/test_agent_discovery.py`](../tests/test_agent_discovery.py) fails if it claims more than
+the evidence supports.
+
+| Level | Meaning | How it is verified |
+| :--- | :--- | :--- |
+| **Configured** | An adapter configuration exists and validates | Automated (`tests/test_adapters_conformance.py`) |
+| **Discoverable** | The agent's skills directory is linked to `.agents/skills` and every active `SKILL.md` meets the Agent Skills format | Automated (`tests/test_agent_discovery.py`) |
+| **Invocable** | The skill is listed and loads inside a named agent version | Manual — recorded in `manual_evidence` |
+| **Workflow completed** | An end-to-end task was completed with the skill in a named agent version | Manual — recorded in `manual_evidence` |
+
+| Agent | Skills directory | Configured | Discoverable | Invocable | Workflow completed |
+| :--- | :--- | :---: | :---: | :---: | :---: |
+| Antigravity / Gemini CLI | `.agents/skills/` (source) | ✅ | ✅ | not yet verified | not yet verified |
+| Claude Code | `.claude/skills/` | ✅ | ✅ | not yet verified | not yet verified |
+| Cursor | `.cursor/skills/` | ✅ | ✅ | not yet verified | not yet verified |
+| Codex CLI | `.codex/skills/` | ✅ | ✅ | not yet verified | not yet verified |
+| GitHub Copilot | `.github/skills/` | ✅ | ✅ | not yet verified | not yet verified |
+| VS Code Agent | `.vscode/skills/` | ✅ | ✅ | not yet verified | not yet verified |
+| Windsurf | `.windsurf/skills/` | ✅ | ✅ | not yet verified | not yet verified |
+| OpenCode | `.opencode/skills/` | ✅ | ✅ | not yet verified | not yet verified |
+| Cline | `.cline/skills/` | ✅ | ✅ | not yet verified | not yet verified |
+| Roo Code | `.roo/skills/` | ✅ | ✅ | not yet verified | not yet verified |
+| Block Goose | `.goose/skills/` | ✅ | ✅ | not yet verified | not yet verified |
+
+"Discoverable" means the files are where each agent documents that it looks for skills, in
+the expected format — not that the agent was run. To record a manual check, add an entry to
+`manual_evidence` in `compatibility/matrix.json` (agent version, date, who verified it and
+which skill) and set the corresponding level to `true`.
 
 ---
 

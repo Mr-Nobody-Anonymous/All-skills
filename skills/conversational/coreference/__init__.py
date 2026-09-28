@@ -1,1 +1,2 @@
-from .neuralcoref_resolve import NeuralCorefResolver\n__all__ = ['NeuralCorefResolver']\n
+from .neuralcoref_resolve import NeuralCorefResolver
+__all__ = ['NeuralCorefResolver']

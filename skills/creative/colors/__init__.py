@@ -1,1 +1,2 @@
-from .palette_gen import PaletteGenerator\n__all__ = ['PaletteGenerator']\n
+from .palette_gen import PaletteGenerator
+__all__ = ['PaletteGenerator']

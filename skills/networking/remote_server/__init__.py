@@ -1,1 +1,3 @@
-from .paramiko_ssh import ParamikoSSHClient\nfrom .fabric_admin import FabricAdmin\n__all__ = ['ParamikoSSHClient', 'FabricAdmin']\n
+from .paramiko_ssh import ParamikoSSHClient
+from .fabric_admin import FabricAdmin
+__all__ = ['ParamikoSSHClient', 'FabricAdmin']

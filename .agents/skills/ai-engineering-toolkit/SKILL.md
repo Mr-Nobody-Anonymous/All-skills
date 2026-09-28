@@ -3,7 +3,7 @@ name: ai-engineering-toolkit
 description: '6 production-ready AI engineering workflows: prompt evaluation (8-dimension scoring), context budget planning, RAG pipeline design, agent security audit (65-point checklist), eval harness building, and product sense coaching.'
 disable-model-invocation: false
 category: data-ai
-risk: offensive
+risk: high
 source: community
 date_added: '2026-03-15'
 author: viliawang-pm
@@ -14,7 +14,7 @@ tags:
 - evaluation
 - ai-engineering
 - llm
-tools:
+platforms:
 - claude
 - cursor
 - gemini

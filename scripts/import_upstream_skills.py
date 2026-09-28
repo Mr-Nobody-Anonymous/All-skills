@@ -126,36 +126,23 @@ def normalize_category(cat_raw: str) -> str:
     return slug or "general"
 
 
-def normalize_skill_frontmatter(md_text: str, skill_name: str, category: str) -> str:
-    """Ensure clean standardized YAML frontmatter conforming to schema."""
-    desc = f"Domain guidance and expert workflows for {skill_name.replace('-', ' ')}."
-    body = md_text
+def normalize_skill_frontmatter(md_text: str, skill_name: str, category: str, skill_dir: Path | None = None) -> str:
+    """Keep the upstream frontmatter; add category and provenance (never an assumed license).
 
-    if md_text.startswith("---"):
-        parts = md_text.split("---", 2)
-        if len(parts) >= 3:
-            fm_text = parts[1]
-            body = parts[2]
-            # extract description if present
-            m_desc = re.search(r"description:\s*\|?\s*([^\n\r]+(?:\n\s+[^\n\r]+)*)", fm_text)
-            if m_desc:
-                raw_d = m_desc.group(1).strip()
-                # Clean up multiline formatting
-                clean_d = " ".join(line.strip() for line in raw_d.splitlines() if line.strip())
-                if len(clean_d) >= 10:
-                    desc = clean_d.replace('"', "'")
+    Shares the merge and license-detection rules of scripts/sync_sources.py, the
+    importer to use for new sources.
+    """
+    from sync_sources import detect_license, merge_frontmatter, now_utc
 
-    clean_fm = f"""---
-name: {skill_name}
-description: "{desc[:300]}"
-disable-model-invocation: false
-category: {category}
-version: 1.0.0
-source: "https://github.com/Winbda/claude-skills-collection"
-license: "MIT"
----
-"""
-    return clean_fm + body.lstrip()
+    license_id, how = detect_license(skill_dir or SRC_SKILLS_DIR, SRC_SKILLS_DIR.parent, None)
+    provenance = {
+        "repository": "Winbda/claude-skills-collection",
+        "path": f"skills/{skill_name}",
+        "license": license_id,
+        "license_source": how,
+        "imported_at": now_utc(),
+    }
+    return merge_frontmatter(md_text, skill_name, category, provenance)
 
 
 def run_import(dry_run: bool = False, max_import: int | None = None) -> dict:
@@ -207,7 +194,7 @@ def run_import(dry_run: bool = False, max_import: int | None = None) -> dict:
                 dst_f = dest_dir / f
                 if src_f.is_file():
                     if f == "SKILL.md":
-                        norm_content = normalize_skill_frontmatter(txt, sname, norm_cat)
+                        norm_content = normalize_skill_frontmatter(txt, sname, norm_cat, skill_src)
                         dst_f.write_text(norm_content, encoding="utf-8")
                     else:
                         shutil.copy2(str(src_f), str(dst_f))

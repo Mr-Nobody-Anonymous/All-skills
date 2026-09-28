@@ -15,7 +15,7 @@ This contract establishes the architectural stability guarantees for the **All-S
 ## 2. Invariant Compatibility Guarantees
 
 ### 2.1. Skill Paths & File Hierarchy
-- **Canonical Skills**: All 122 canonical skills under `skills/<category>/<skill_name>/` maintain permanent paths and stable identifiers.
+- **Canonical Skills**: All 124 canonical skills under `skills/<category>/<skill_name>/` maintain permanent paths and stable identifiers.
 - **Active Agent Harness**: The 72 active skills under `.agents/skills/` (and their synchronized mirrors in `.claude/skills/`, `.cursor/skills/`, `.codex/skills/`) are guaranteed to remain discovered and executable.
 - **Awesome Skills Catalog**: The 14,855 catalog entries indexed in `awesome_skills/` retain their permanent category and domain placement.
 

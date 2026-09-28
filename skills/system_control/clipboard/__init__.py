@@ -1,1 +1,2 @@
-from .pyperclip_clip import PyperclipClipboard\n__all__ = ['PyperclipClipboard']\n
+from .pyperclip_clip import PyperclipClipboard
+__all__ = ['PyperclipClipboard']

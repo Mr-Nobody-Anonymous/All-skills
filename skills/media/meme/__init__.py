@@ -1,1 +1,2 @@
-from .meme_generate import MemeGenerator\n__all__ = ['MemeGenerator']\n
+from .meme_generate import MemeGenerator
+__all__ = ['MemeGenerator']

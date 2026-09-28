@@ -3,7 +3,7 @@
 Welcome to the **All-Skills Universal Voice Assistant & Multimodal Agent Operating System** documentation.
 
 This platform bridges two powerful paradigms:
-1. **Agent Skills Operating System**: A unified harness supporting 11 AI agent runtimes (Antigravity, Claude Code, Cursor, Codex, Windsurf, Roo Code, Cline, Goose, Kiro, OpenClaw, Gemini CLI) across 14,000+ domain skills.
+1. **Agent Skills Operating System**: A unified harness supporting 11 AI agent runtimes (Antigravity, Claude Code, Cursor, Codex, Windsurf, Roo Code, Cline, Goose, Kiro, OpenClaw, Gemini CLI) across 14,855 catalog entries (12,757 unique skills).
 2. **OpenVoiceOS (OVOS), Neon AI, and Mycroft Assistant Platform**: A voice and multimodal framework featuring 27 core categories, 714+ modeled skills, 405 built-in native skill implementations, and official OpenVoiceOS Skills Manager (OSM) synchronization.
 
 ---

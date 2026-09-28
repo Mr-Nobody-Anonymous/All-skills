@@ -1,1 +1,2 @@
-from .med_reminder import MedicationReminder\n__all__ = ['MedicationReminder']\n
+from .med_reminder import MedicationReminder
+__all__ = ['MedicationReminder']

@@ -52,7 +52,7 @@ compatibility:
   codex: '*'
 risk: low
 network_access: false
-filesystem_access: read
+filesystem_access: write
 credential_access: false
 destructive_operations: false
 ---

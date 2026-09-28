@@ -1,1 +1,2 @@
-from .crypto_encrypt import CryptoEncryptor\n__all__ = ['CryptoEncryptor']\n
+from .crypto_encrypt import CryptoEncryptor
+__all__ = ['CryptoEncryptor']

@@ -1,0 +1,17 @@
+# Gitleaks configuration — used by .github/workflows/security.yml and by
+# `gitleaks git` / `gitleaks dir` locally. Extends the default ruleset.
+# (Legacy [allowlist] syntax: compatible with the Gitleaks 8.24.x bundled by
+# gitleaks-action v3.)
+
+title = "All-Skills Gitleaks configuration"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Generated integrity artefacts that contain only SHA-256 digests"
+paths = [
+  '''(^|/)skills\.lock$''',
+  '''(^|/)awesome_skills\.lock$''',
+  '''(^|/)baselines/[^/]+/file_hashes\.json$''',
+]

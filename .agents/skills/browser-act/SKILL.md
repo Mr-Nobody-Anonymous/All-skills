@@ -15,7 +15,7 @@ tags:
 - ai-agents
 - cli
 - multi-session
-tools:
+platforms:
 - claude
 - codex
 - cursor

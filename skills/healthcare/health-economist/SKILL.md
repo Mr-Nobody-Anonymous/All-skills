@@ -18,14 +18,29 @@ compatibility:
   codex: '*'
 risk: low
 network_access: false
-filesystem_access: read
+filesystem_access: write
 credential_access: false
 destructive_operations: false
 disable-model-invocation: false
 tools:
 - file_read
 - file_write
+keywords:
+- health economics
+- cost-effectiveness
+- cost effectiveness
+- icer
+- qaly
+- daly
+- hta
+- budget impact
+- markov model
+- willingness to pay
 triggers:
+- icer
+- qaly
+- cost effectiveness
+- cost-effectiveness analysis
 - calculate icer
 - evaluate cost effectiveness
 - health technology assessment

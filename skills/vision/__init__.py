@@ -1,1 +1,1 @@
-"""All-Skills Category: vision"""\n
+"""All-Skills Category: vision"""

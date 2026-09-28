@@ -1,1 +1,2 @@
-from .notify_desktop import DesktopNotifier\n__all__ = ['DesktopNotifier']\n
+from .notify_desktop import DesktopNotifier
+__all__ = ['DesktopNotifier']

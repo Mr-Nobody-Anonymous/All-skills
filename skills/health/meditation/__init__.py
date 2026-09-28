@@ -1,1 +1,2 @@
-from .guided_meditation import GuidedMeditationCoach\n__all__ = ['GuidedMeditationCoach']\n
+from .guided_meditation import GuidedMeditationCoach
+__all__ = ['GuidedMeditationCoach']

@@ -2,7 +2,7 @@
 name: concise-planning
 description: Use when a user asks for a plan for a coding task, to generate a clear, actionable, and atomic checklist.
 disable-model-invocation: false
-risk: safe
+risk: low
 source: community
 date_added: '2026-02-27'
 version: 1.0.0

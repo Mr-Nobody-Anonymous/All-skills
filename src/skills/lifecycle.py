@@ -54,6 +54,16 @@ def is_active(state: str) -> bool:
     return (state or "").strip().lower() in _ACTIVE_STATES
 
 
+def permits_activation(state: str, enabled: bool) -> bool:
+    """Whether a skill may be routed or executed.
+
+    Both signals must agree: the lifecycle state must be active *and* the
+    ``enabled`` flag must be set. Contradictory combinations (for example
+    ``lifecycle: deprecated`` with ``enabled: true``) are refused.
+    """
+    return bool(enabled) is True and is_active(state)
+
+
 def can_transition(current: str, target: str) -> bool:
     """Whether a transition from ``current`` to ``target`` is permitted."""
     current = (current or "discovered").strip().lower()

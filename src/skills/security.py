@@ -7,10 +7,12 @@ third-party repositories are cloned, inspected, and only then imported — never
 """
 from __future__ import annotations
 
+import json
 import re
 from dataclasses import dataclass
+from datetime import datetime, timezone
 from pathlib import Path
-from typing import List
+from typing import Any, Dict, List
 
 from .registry import Registry, SkillEntry
 
@@ -29,7 +31,7 @@ PATTERNS = [
     (re.compile(r"powershell\s+-e(ncodedcommand)?\s+\S+", re.IGNORECASE), "powershell encoded command", "high"),
     (re.compile(r"-----BEGIN [A-Z ]*PRIVATE KEY-----"), "embedded private key", "high"),
     (re.compile(r"\b(AKIA|ASIA)[0-9A-Z]{16}\b"), "AWS access key", "high"),
-    (re.compile(r"eval\s*\(", re.IGNORECASE), "eval() call", "warn"),
+    (re.compile(r"\beval\s*\(", re.IGNORECASE), "eval() call", "warn"),
     (re.compile(r"\bexec\s*\(", re.IGNORECASE), "exec() call", "warn"),
     (re.compile(r"os\.system\s*\(", re.IGNORECASE), "os.system call", "warn"),
     (re.compile(r"subprocess\.(run|Popen|call|check_output)\([^)]*shell\s*=\s*True", re.IGNORECASE), "subprocess with shell=True", "warn"),
@@ -39,6 +41,8 @@ PATTERNS = [
 ]
 
 MAX_SCAN_FILE_SIZE = 2_000_000
+ALLOWLIST_RELPATH = Path("registry") / "security_allowlist.json"
+INCOMPLETE = "incomplete"  # severity of findings that mean "this file was not scanned"
 
 
 class ScanStatus:
@@ -61,35 +65,33 @@ class Finding:
 
 
 def scan_skill(entry: SkillEntry, skill_dir: Path) -> List[Finding]:
-    """Statically scan every readable file in one skill folder.
+    """Statically scan every file in one skill folder, including dotfiles.
 
-    Never bypasses findings based on content keywords in the inspected lines.
-    Only explicit file-level annotations ('# security-scan: ignore') or
-    audited test fixture paths are exempted.
+    Files cannot exempt themselves: content markers are ignored and exceptions
+    live only in the maintainer-controlled allowlist (see :func:`apply_allowlist`).
+    Files that could not be inspected produce ``incomplete`` findings, so an
+    unscanned package is never reported as clean.
     """
     findings: List[Finding] = []
     if not skill_dir.exists():
         return findings
-    for f in skill_dir.rglob("*"):
-        if not f.is_file() or f.name.startswith("."):
+    for f in sorted(skill_dir.rglob("*")):
+        rel_parts = f.relative_to(skill_dir).parts
+        if ".git" in rel_parts or "__pycache__" in rel_parts or not f.is_file():
             continue
-        rel = str(f.relative_to(skill_dir)).replace("\\", "/")
+        rel = "/".join(rel_parts)
         try:
             sz = f.stat().st_size
-            if sz > MAX_SCAN_FILE_SIZE:
-                findings.append(Finding(entry.id, rel, f"file exceeds max scan size ({sz} bytes) - status: {ScanStatus.UNSCANNABLE}", "warn"))
-                continue
         except OSError as exc:
-            findings.append(Finding(entry.id, rel, f"unreadable file ({exc}) - status: {ScanStatus.SCAN_FAILED}", "warn"))
+            findings.append(Finding(entry.id, rel, f"unreadable file ({exc}) - status: {ScanStatus.SCAN_FAILED}", INCOMPLETE))
+            continue
+        if sz > MAX_SCAN_FILE_SIZE:
+            findings.append(Finding(entry.id, rel, f"file exceeds max scan size ({sz} bytes) - status: {ScanStatus.UNSCANNABLE}", INCOMPLETE))
             continue
         try:
             content = f.read_text(encoding="utf-8", errors="ignore")
-        except Exception as exc:
-            findings.append(Finding(entry.id, rel, f"read failure ({exc}) - status: {ScanStatus.SCAN_FAILED}", "warn"))
-            continue
-
-        # File-level explicit exemption only
-        if content.startswith("# security-scan: ignore") or content.startswith("<!-- security-scan: ignore -->"):
+        except OSError as exc:
+            findings.append(Finding(entry.id, rel, f"read failure ({exc}) - status: {ScanStatus.SCAN_FAILED}", INCOMPLETE))
             continue
 
         for pattern, label, severity in PATTERNS:
@@ -137,6 +139,65 @@ def high_severity(findings: List[Finding]) -> List[Finding]:
     return [f for f in findings if f.severity == "high"]
 
 
+def scan_is_complete(findings: List[Finding]) -> bool:
+    """False if any file could not be inspected (unscannable or unreadable)."""
+    return not any(f.severity == INCOMPLETE for f in findings)
+
+
+def load_allowlist(workspace_root: Path) -> List[Dict[str, Any]]:
+    """Maintainer-reviewed scanner exceptions (``registry/security_allowlist.json``).
+
+    Every entry must name the skill, file, finding label, a reason and the
+    file's SHA-256 at review time; editing the file invalidates the exception.
+    """
+    path = Path(workspace_root) / ALLOWLIST_RELPATH
+    if not path.exists():
+        return []
+    data = json.loads(path.read_text(encoding="utf-8"))
+    entries = data.get("entries") if isinstance(data, dict) else None
+    if not isinstance(entries, list):
+        raise ValueError(f"{path}: 'entries' must be a list")
+    required = ("skill", "path", "label", "reason", "sha256")
+    for entry in entries:
+        if not isinstance(entry, dict) or any(not entry.get(k) for k in required):
+            raise ValueError(f"{path}: every entry needs {', '.join(required)}: {entry!r}")
+    return entries
+
+
+def apply_allowlist(
+    findings: List[Finding],
+    allowlist: List[Dict[str, Any]],
+    skill_dirs: Dict[str, Path],
+) -> tuple[List[Finding], List[Finding], List[Dict[str, Any]]]:
+    """Split findings into (active, suppressed) and report stale allowlist entries.
+
+    ``skill_dirs`` maps each finding's ``skill_id`` to its folder so the file
+    hash can be checked against the reviewed hash.
+    """
+    from .lock import compute_file_sha256
+
+    active: List[Finding] = []
+    suppressed: List[Finding] = []
+    used: set[int] = set()
+    for finding in findings:
+        match = None
+        for idx, entry in enumerate(allowlist):
+            if (entry["skill"], entry["path"], entry["label"]) != (finding.skill_id, finding.path, finding.label):
+                continue
+            skill_dir = skill_dirs.get(finding.skill_id)
+            file_path = skill_dir / finding.path if skill_dir else None
+            if file_path and file_path.is_file() and compute_file_sha256(file_path) == entry["sha256"]:
+                match = idx
+                break
+        if match is None:
+            active.append(finding)
+        else:
+            used.add(match)
+            suppressed.append(finding)
+    stale = [entry for idx, entry in enumerate(allowlist) if idx not in used]
+    return active, suppressed, stale
+
+
 INSTRUCTION_PATTERNS = [
     (re.compile(r"(?i)\bignore\s+(all\s+)?(previous|prior)\s+instructions\b"), "prompt injection: ignore previous instructions", "high"),
     (re.compile(r"(?i)\bdisregard\s+(all\s+)?(previous|above)\s+instructions\b"), "prompt injection: disregard instructions", "high"),
@@ -146,6 +207,19 @@ INSTRUCTION_PATTERNS = [
     (re.compile(r"(?i)\b(disable|turn\s+off|bypass)\s+.*(security|policy|guardrails?|sandbox)\b"), "prompt injection: security bypass", "high"),
     (re.compile(r"(?i)\bexecute\s+.*without\s+(any\s+)?(confirmation|approval|asking)\b"), "prompt injection: unconfirmed execution", "warn"),
     (re.compile(r"(?i)\bhide\s+this\s+(action|command|execution)\s+from\s+(the\s+)?user\b"), "prompt injection: covert execution", "high"),
+    # Dangerous requests: refuse even without injection phrasing.
+    (re.compile(r"(?i)\brm\s+-rf\s+/(\s|$)|--no-preserve-root"), "destructive command: recursive root deletion", "high"),
+    (re.compile(r"(?i)\b(curl|wget)\b[^|\n]*\|\s*(sudo\s+)?(sh|bash|zsh)\b"), "remote script piped to a shell", "high"),
+    (re.compile(r"(?i)\bmkfs(\.\w+)?\s+/dev/|\bdd\s+if=\S+\s+of=/dev/|\bformat\s+[a-z]:(\s|/|$)"), "destructive command: disk format/overwrite", "high"),
+    (re.compile(r"(?i)\b(print|show|cat|dump|reveal|display|export|post|send|upload|exfiltrate|leak)\b[^.\n]{0,80}"
+                r"(\.aws/credentials|aws\s+credentials|\.env\b|id_rsa|id_ed25519|private\s+keys?|ssh\s+keys?|"
+                r"database\s+password|db\s+password|api[_\s-]?keys|access\s+tokens)"), "credential disclosure or exfiltration", "high"),
+    (re.compile(r"(?i)\bforce[\s-]?push\b[^.\n]*\b(main|master|production|prod)\b|\bgit\s+push\s+(-f|--force)\b[^\n]*\b(main|master)\b"),
+     "destructive history rewrite of a protected branch", "high"),
+    (re.compile(r"(?i)\b(download|fetch)\b[^.\n]{0,60}\b(run|execute)\b[^.\n]{0,60}\b(binary|payload|executable)\b|\bwithout\s+(any\s+)?verification\b"),
+     "execution of an unverified binary", "high"),
+    (re.compile(r"(?i)\b(assistant|ai|model|agent)\s+(must|should|will|shall)\s+(now\s+)?(delete|remove|wipe|erase|exfiltrate|disable|ignore|grant)\b"),
+     "embedded instruction addressed to the assistant", "high"),
 ]
 
 
@@ -161,8 +235,11 @@ def scan_instructions(text: str) -> List[tuple[str, str]]:
     return findings
 
 
-import datetime
-import json
+from .revocations import add_revocation, get_revocation, remove_revocation
+
+
+def _utc_now() -> str:
+    return datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
 
 
 def quarantine_skill(
@@ -171,14 +248,18 @@ def quarantine_skill(
     reporter: str = "security_scanner",
     repo_root: Path | None = None,
 ) -> dict:
-    """Quarantine a skill, adding it to revocations.json and recording forensic evidence."""
+    """Quarantine a skill: revoke it in registry/revocations.json and record forensic evidence.
+
+    Uses the same revocation contract as the router and the execution runtime
+    (:mod:`skills.revocations`), so a quarantined skill can no longer be routed
+    or executed.
+    """
     root = repo_root or Path.cwd()
     quarantine_dir = root / "quarantine"
-    quarantine_dir.mkdir(parents=True, exist_ok=True)
     evidence_dir = quarantine_dir / "evidence"
     evidence_dir.mkdir(parents=True, exist_ok=True)
 
-    timestamp = datetime.datetime.utcnow().isoformat() + "Z"
+    timestamp = _utc_now()
     event = {
         "timestamp": timestamp,
         "action": "quarantine",
@@ -186,57 +267,24 @@ def quarantine_skill(
         "reason": reason,
         "reporter": reporter,
     }
-
-    # Append to quarantine log
-    log_path = quarantine_dir / "quarantine_log.jsonl"
-    with open(log_path, "a", encoding="utf-8") as f:
+    with open(quarantine_dir / "quarantine_log.jsonl", "a", encoding="utf-8") as f:
         f.write(json.dumps(event) + "\n")
 
-    # Update skills/revocations.json
-    revocations_path = root / "skills" / "revocations.json"
-    revocations_data = {"version": "1.0.0", "revocations": []}
-    if revocations_path.exists():
-        try:
-            revocations_data = json.loads(revocations_path.read_text(encoding="utf-8"))
-        except Exception:
-            pass
+    add_revocation(root, skill_id, reason, severity="high", reporter=reporter)
 
-    existing_ids = {r.get("skill_id") for r in revocations_data.get("revocations", [])}
-    if skill_id not in existing_ids:
-        revocations_data["revocations"].append({
-            "skill_id": skill_id,
-            "revoked_at": timestamp,
-            "reason": reason,
-            "severity": "high",
-        })
-        revocations_path.parent.mkdir(parents=True, exist_ok=True)
-        revocations_path.write_text(json.dumps(revocations_data, indent=2), encoding="utf-8")
-
-    # Save evidence file
     evidence_path = evidence_dir / f"{skill_id.replace('/', '_')}.json"
     evidence_path.write_text(json.dumps(event, indent=2), encoding="utf-8")
 
-    return {
-        "status": "quarantined",
-        "skill_id": skill_id,
-        "reason": reason,
-        "timestamp": timestamp,
-    }
+    return {"status": "quarantined", "skill_id": skill_id, "reason": reason, "timestamp": timestamp}
 
 
 def is_quarantined(skill_id: str, repo_root: Path | None = None) -> bool:
-    """Check whether a skill is currently in quarantine or revocation."""
-    root = repo_root or Path.cwd()
-    revocations_path = root / "skills" / "revocations.json"
-    if revocations_path.exists():
-        try:
-            data = json.loads(revocations_path.read_text(encoding="utf-8"))
-            for r in data.get("revocations", []):
-                if r.get("skill_id") == skill_id:
-                    return True
-        except Exception:
-            pass
-    return False
+    """Whether a skill is revoked or quarantined.
+
+    Raises :class:`skills.revocations.RevocationError` if the registry is
+    malformed — "unknown" must never be reported as "not quarantined".
+    """
+    return get_revocation(skill_id, repo_root or Path.cwd()) is not None
 
 
 def unquarantine_skill(
@@ -245,9 +293,9 @@ def unquarantine_skill(
     approver: str,
     repo_root: Path | None = None,
 ) -> dict:
-    """Reinstates a quarantined skill after formal remediation."""
+    """Reinstate a quarantined skill after formal remediation (records who approved it)."""
     root = repo_root or Path.cwd()
-    timestamp = datetime.datetime.utcnow().isoformat() + "Z"
+    timestamp = _utc_now()
     event = {
         "timestamp": timestamp,
         "action": "unquarantine",
@@ -255,19 +303,11 @@ def unquarantine_skill(
         "reason": reason,
         "approver": approver,
     }
-
-    log_path = root / "quarantine" / "quarantine_log.jsonl"
-    with open(log_path, "a", encoding="utf-8") as f:
+    (root / "quarantine").mkdir(parents=True, exist_ok=True)
+    with open(root / "quarantine" / "quarantine_log.jsonl", "a", encoding="utf-8") as f:
         f.write(json.dumps(event) + "\n")
 
-    revocations_path = root / "skills" / "revocations.json"
-    if revocations_path.exists():
-        try:
-            data = json.loads(revocations_path.read_text(encoding="utf-8"))
-            data["revocations"] = [r for r in data.get("revocations", []) if r.get("skill_id") != skill_id]
-            revocations_path.write_text(json.dumps(data, indent=2), encoding="utf-8")
-        except Exception:
-            pass
+    remove_revocation(root, skill_id)
 
     return {
         "status": "reinstated",

@@ -1,18 +1,21 @@
-version: "3.8"
+# All-Skills — containerised CLI
+#
+#   docker compose -f docker/docker-compose.yml up --build            # build + run `doctor`
+#   docker compose -f docker/docker-compose.yml run --rm all-skills search "kubernetes"
+#   docker compose -f docker/docker-compose.yml run --rm all-skills route "review my PR"
+#
+# Optional credentials for integrations are read from ../.env (copy .env.example).
+
+name: all-skills
 
 services:
-  all-skills-core:
+  all-skills:
     build:
       context: ..
       dockerfile: docker/Dockerfile
-    container_name: all-skills-runtime
-    restart: unless-stopped
-    ports:
-      - "8000:8000"
-      - "8080:8080"
-    volumes:
-      - ../data:/app/data
-      - ../config:/app/config
-    environment:
-      - PYTHONUNBUFFERED=1
-      - ALL_SKILLS_ENV=production
+    image: all-skills:local
+    env_file:
+      - path: ../.env
+        required: false
+    stdin_open: true
+    tty: true

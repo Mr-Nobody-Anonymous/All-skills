@@ -1,1 +1,2 @@
-from .starcoder_gen import StarcoderGenerator\n__all__ = ['StarcoderGenerator']\n
+from .starcoder_gen import StarcoderGenerator
+__all__ = ['StarcoderGenerator']

@@ -1,1 +1,3 @@
-from .openpyxl_excel import OpenpyxlExcelManager\nfrom .pandas_data import PandasDataProcessor\n__all__ = ['OpenpyxlExcelManager', 'PandasDataProcessor']\n
+from .openpyxl_excel import OpenpyxlExcelManager
+from .pandas_data import PandasDataProcessor
+__all__ = ['OpenpyxlExcelManager', 'PandasDataProcessor']

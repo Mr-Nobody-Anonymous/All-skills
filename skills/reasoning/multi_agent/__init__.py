@@ -1,1 +1,2 @@
-from .autogen_agents import AutogenAgentCoordinator\n__all__ = ['AutogenAgentCoordinator']\n
+from .autogen_agents import AutogenAgentCoordinator
+__all__ = ['AutogenAgentCoordinator']

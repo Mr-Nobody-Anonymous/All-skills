@@ -4,12 +4,42 @@ Thank you for contributing to **All Skills** — the universal Agent Skills ecos
 
 ---
 
+## 🛠️ Development Setup
+
+Requires **Python 3.10+** and Git. The steps are identical on Windows, macOS and Linux
+(on Windows use `.venv\Scripts\activate` instead of `source .venv/bin/activate`).
+
+```bash
+git clone https://github.com/Mr-Nobody-Anonymous/All-skills.git
+cd All-skills
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install -e ".[dev]"   # package + pytest, pytest-cov, ruff, mypy, pre-commit
+pre-commit install                  # optional: run lint & secret checks on every commit
+```
+
+Everyday commands:
+
+| Task | Command |
+| :--- | :--- |
+| Lint (correctness rules, see `pyproject.toml`) | `ruff check .` |
+| Type-check the core package | `mypy` |
+| Platform test suite | `python scripts/skills/skills.py test` |
+| Tests with coverage report | `pytest tests scratch_priority_import/tests --cov` |
+| Full platform diagnostics | `python scripts/allskills.py doctor --full` |
+| Run the CLI | `all-skills --help` |
+
+Line endings are normalised to LF by `.gitattributes`, and `.editorconfig` configures
+indentation for most editors automatically.
+
+---
+
 ## 🏛️ Repository Architecture
 
 When proposing or updating skills, note the hybrid architecture:
 1. **Active Harness Playbooks (`.agents/skills/`)**: Curated staff-engineer playbooks loaded into active contexts for Claude Code, Cursor, Codex CLI, Antigravity, and linked harnesses.
 2. **Canonical Engine (`skills/`)**: Routed, quality-scored skills with Python handlers and 100% unit test coverage.
-3. **Awesome Skills Catalog (`awesome_skills/`)**: Extended library of 14,855+ categorized skills across 251 functional domains.
+3. **Awesome Skills Catalog (`awesome_skills/`)**: Extended library of 14,855 catalog entries (12,757 unique skills) across 251 functional domains.
 4. **Agent Harnesses (`.claude/`, `.cursor/`, etc.)**: Generated runtime views created safely via `python scripts/setup_tools.py`.
 
 ---
@@ -120,9 +150,25 @@ python scripts/scan_skills_security.py
 # 6. Run behavioral and routing evals
 python scripts/run_evals.py
 
-# 7. Verify zero unintentional file deletions
+# 7. Lint, type-check and measure coverage
+ruff check .
+mypy
+pytest tests scratch_priority_import/tests --cov
+
+# 8. Verify zero unintentional file deletions
 git status
 git diff --diff-filter=D
+```
+
+### Regenerating generated files
+
+Several files are generated and verified in CI. Never edit them by hand — regenerate them:
+
+```bash
+python scripts/refresh_registry.py                                 # skills/registry.json + dependencies.json
+python scripts/skills/skills.py lock                               # skills.lock (platform-independent hashes)
+python scripts/compute_stats.py && python scripts/generate_readme_stats.py   # stats.json + README metrics
+python scripts/generate_baselines.py                               # baselines/v0-current (when test counts change)
 ```
 
 ---
@@ -133,4 +179,4 @@ git diff --diff-filter=D
 2. Implement your skill following the standard directory structure and frontmatter schema.
 3. Verify all local quality gates pass with 0 errors.
 4. Open a Pull Request using the [Pull Request Template](.github/pull_request_template.md).
-5. Ensure CI workflows (`.github/workflows/validate-skills.yml`) pass cleanly.
+5. Ensure the CI checks pass: [`CI`](.github/workflows/ci.yml) (lint, type-check, tests on Python 3.10–3.12, library validation, package and Docker builds), [`Security`](.github/workflows/security.yml) (skill scans, Gitleaks, dependency review) and [`CodeQL`](.github/workflows/codeql.yml).

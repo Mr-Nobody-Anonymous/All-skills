@@ -1,1 +1,1 @@
-"""All-Skills Category: development"""\n
+"""All-Skills Category: development"""

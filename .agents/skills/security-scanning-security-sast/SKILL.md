@@ -1,10 +1,7 @@
 ---
 name: security-scanning-security-sast
-description: 'Static Application Security Testing (SAST) for code vulnerability disable-model-invocation: false
-
-  analysis across multiple languages and frameworks
-
-  '
+description: 'Static Application Security Testing (SAST) for code vulnerability analysis across multiple languages and frameworks'
+disable-model-invocation: false
 risk: critical
 source: community
 date_added: '2026-02-27'

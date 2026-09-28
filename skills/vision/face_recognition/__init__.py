@@ -1,1 +1,2 @@
-from .deepface_recognize import DeepFaceRecognizer\n__all__ = ['DeepFaceRecognizer']\n
+from .deepface_recognize import DeepFaceRecognizer
+__all__ = ['DeepFaceRecognizer']

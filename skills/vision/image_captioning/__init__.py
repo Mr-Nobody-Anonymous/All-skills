@@ -1,1 +1,2 @@
-from .blip_caption import BLIPCaptioner\n__all__ = ['BLIPCaptioner']\n
+from .blip_caption import BLIPCaptioner
+__all__ = ['BLIPCaptioner']

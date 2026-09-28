@@ -27,13 +27,14 @@ class SkillIdentity:
     version: str
     schema_version: str = "1.0.0"
     source: Dict[str, Any] = field(default_factory=dict)
-    trust_tier: TrustTier = TrustTier.T5_CURATED
-    trust_status: str = "verified"
-    availability: str = "active"
-    review_status: str = "automated"
-    security_status: str = "scanned_clean"
-    behavior_status: str = "eval_passed"
-    production_status: str = "approved"
+    # Conservative defaults: nothing is trusted until evidence says otherwise.
+    trust_tier: TrustTier = TrustTier.T0_UNKNOWN
+    trust_status: str = "unverified"
+    availability: str = "catalog"
+    review_status: str = "not_reviewed"
+    security_status: str = "not_scanned"
+    behavior_status: str = "not_evaluated"
+    production_status: str = "not_approved"
     capabilities: List[str] = field(default_factory=list)
     forbidden: List[str] = field(default_factory=list)
     permissions: Dict[str, Any] = field(default_factory=dict)
@@ -85,7 +86,8 @@ class SkillEntry:
     lifecycle: str = "enabled"
     capabilities: List[str] = field(default_factory=list)
     forbidden: List[str] = field(default_factory=list)
-    trust_tier: str = "T5_CURATED"
+    # Evidence-derived tier (see skills.trust); unknown until assessed.
+    trust_tier: str = "T0_UNKNOWN"
     inputs: List[str] = field(default_factory=list)
     outputs: List[str] = field(default_factory=list)
     permissions: Optional[Dict[str, str]] = None
@@ -128,7 +130,7 @@ class SkillEntry:
         clean.setdefault("lifecycle", "enabled")
         clean.setdefault("capabilities", [])
         clean.setdefault("forbidden", [])
-        clean.setdefault("trust_tier", "T5_CURATED")
+        clean.setdefault("trust_tier", "T0_UNKNOWN")
         clean.setdefault("inputs", [])
         clean.setdefault("outputs", [])
         clean.setdefault("permissions", None)
@@ -143,6 +145,8 @@ class Registry:
 
     def __init__(self, entries: Optional[List[SkillEntry]] = None) -> None:
         self.entries: List[SkillEntry] = entries or []
+        # Set by Registry.load(); needed for evidence checks (trust, provenance).
+        self.workspace_root: Optional[Path] = None
 
     # ---- Loading ---------------------------------------------------------
 
@@ -160,7 +164,7 @@ class Registry:
                 raise ValueError(
                     f"Corrupted or invalid registry file '{registry_path}': {e}. "
                     "Fail-closed policy requires repairing or rebuilding the registry."
-                )
+                ) from e
         # Merge entries from disk that are not already present
         existing_ids = {e.id for e in reg.entries}
         for skill_md in skills_root.rglob("SKILL.md"):
@@ -178,7 +182,7 @@ class Registry:
             if not meta.get("name"):
                 continue
             entry = SkillEntry(
-                id=meta.get("name") if meta.get("name") and "." in str(meta.get("name")) else sid_guess,
+                id=str(meta["name"]) if meta.get("name") and "." in str(meta.get("name")) else sid_guess,
                 name=meta.get("name", rel.name),
                 category=meta.get("category", rel.parts[0] if rel.parts else "utilities"),
                 description=meta.get("description", ""),
@@ -204,6 +208,7 @@ class Registry:
             )
             reg.entries.append(entry)
             existing_ids.add(entry.id)
+        reg.workspace_root = skills_root.parent
         return reg
 
     # ---- Queries ---------------------------------------------------------
@@ -243,30 +248,50 @@ class Registry:
         return [e for e in self.entries if e.enabled]
 
     def get_trust_tier(self, skill_id: str) -> TrustTier:
+        """The recorded (evidence-derived) tier. Missing or invalid values are T0_UNKNOWN.
+
+        ``scripts/refresh_registry.py`` computes this field from evidence and
+        CI verifies it, so a hand-edited promotion fails the build.
+        """
         entry = self.get(skill_id)
-        if not entry:
+        if not entry or entry.lifecycle == "quarantined":
             return TrustTier.T0_UNKNOWN
-        if entry.lifecycle == "quarantined":
-            return TrustTier.T0_UNKNOWN
-        raw_tier = getattr(entry, "trust_tier", "T5_CURATED")
-        if isinstance(raw_tier, str) and hasattr(TrustTier, raw_tier):
-            return getattr(TrustTier, raw_tier)
-        if entry.category in {"development", "devops", "security", "ai-engineering"}:
-            return TrustTier.T6_PRODUCTION
-        return TrustTier.T5_CURATED
+        raw_tier = getattr(entry, "trust_tier", "")
+        if isinstance(raw_tier, str) and raw_tier in TrustTier.__members__:
+            return TrustTier[raw_tier]
+        return TrustTier.T0_UNKNOWN
 
     def get_identity(self, skill_id: str) -> Optional[SkillIdentity]:
         entry = self.get(skill_id)
         if not entry:
             return None
-        tier = self.get_trust_tier(skill_id)
+        evidence: Dict[str, Any] = {}
+        if self.workspace_root is not None:
+            from .trust import assess_trust
+
+            assessment = assess_trust(entry, self.workspace_root)
+            tier, evidence = assessment.tier, assessment.evidence
+        else:
+            tier = self.get_trust_tier(skill_id)
+        scan = evidence.get("security_scan")
+        if not scan:
+            security_status = "not_scanned"
+        elif not scan["complete"]:
+            security_status = "incomplete"
+        else:
+            security_status = "findings" if scan["high_findings"] else "scanned_clean"
+        quarantined = entry.lifecycle == "quarantined"
         return SkillIdentity(
             id=entry.id,
             version=entry.version,
             source={"source": entry.source} if entry.source else {},
             trust_tier=tier,
-            trust_status="quarantined" if entry.lifecycle == "quarantined" else ("verified" if tier >= TrustTier.T4_TESTED else "scanned"),
+            trust_status="quarantined" if quarantined else ("verified" if tier >= TrustTier.T4_TESTED else "unverified"),
             availability="active" if entry.enabled else "catalog",
+            review_status="reviewed" if tier >= TrustTier.T3_REVIEWED else "not_reviewed",
+            security_status=security_status,
+            behavior_status="tested" if tier >= TrustTier.T4_TESTED else "not_evaluated",
+            production_status="approved" if tier >= TrustTier.T6_PRODUCTION else "not_approved",
             capabilities=list(entry.capabilities),
             forbidden=list(entry.forbidden),
             permissions=dict(entry.permissions or {}),
@@ -280,17 +305,17 @@ class Registry:
         return [e for e in self.entries if self.get_trust_tier(e.id) >= min_tier]
 
     def verify_provenance(self, skill_id: str) -> Dict[str, Any]:
+        """Verify content against skills.lock and the source record (see skills.trust)."""
         entry = self.get(skill_id)
         if not entry:
             return {"verified": False, "error": f"Skill '{skill_id}' not found"}
-        return {
-            "verified": True,
-            "skill_id": entry.id,
-            "version": entry.version,
-            "source": entry.source or "canonical",
-            "trust_tier": self.get_trust_tier(skill_id).name,
-            "status": "valid",
-        }
+        if self.workspace_root is None:
+            return {"verified": False, "skill_id": entry.id, "error": "workspace unknown; load the registry with load_registry()"}
+        from .trust import verify_provenance
+
+        result = verify_provenance(entry, self.workspace_root)
+        result["trust_tier"] = self.get_trust_tier(skill_id).name
+        return result
 
     def iter_all(self) -> Iterable[SkillEntry]:
         return iter(self.entries)

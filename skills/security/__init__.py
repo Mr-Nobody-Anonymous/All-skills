@@ -1,1 +1,1 @@
-"""All-Skills Category: security"""\n
+"""All-Skills Category: security"""

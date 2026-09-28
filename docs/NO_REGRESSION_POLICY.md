@@ -18,11 +18,11 @@ Any capability, test assertion, security gate, or performance boundary currently
 Every code change proposed via Pull Request or direct commit must satisfy the following automated quality gates:
 
 ### Gate 1: Schema & Spec Validation
-- **Requirement:** 100% of `SKILL.md` frontmatters must strictly validate against `schemas/skill.schema.json`.
+- **Requirement:** 100% of `SKILL.md` frontmatters must strictly validate against `schemas/skill-frontmatter.schema.json`.
 - **Command:** `python scripts/validate_schema.py`
 
 ### Gate 2: Test Suite Inviolability
-- **Requirement:** All 150 platform unit and integration tests must pass cleanly.
+- **Requirement:** All platform unit and integration tests must pass cleanly (the current count is recorded in `stats.json`).
 - **Rule:** Tests may not be deleted, skipped with `@unittest.skip` (unless for explicitly documented, non-passing upstream platform defects), or downgraded.
 - **Command:** `python scripts/skills/skills.py test`
 

@@ -1,1 +1,1 @@
-"""All-Skills Category: accessibility"""\n
+"""All-Skills Category: accessibility"""

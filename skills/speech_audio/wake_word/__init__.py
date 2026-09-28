@@ -1,1 +1,3 @@
-from .porcupine_wake import PorcupineWakeDetector\nfrom .precise_wake import PreciseWakeDetector\n__all__ = ['PorcupineWakeDetector', 'PreciseWakeDetector']\n
+from .porcupine_wake import PorcupineWakeDetector
+from .precise_wake import PreciseWakeDetector
+__all__ = ['PorcupineWakeDetector', 'PreciseWakeDetector']

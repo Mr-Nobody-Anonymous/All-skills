@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import re
 from dataclasses import asdict, dataclass
+from decimal import ROUND_HALF_UP, Decimal
 from pathlib import Path
 from typing import Dict, Optional
 
@@ -142,9 +143,23 @@ def score_entry(entry: SkillEntry, skill_dir: Optional[Path] = None) -> QualityR
     useful += min(len(entry.capabilities) / 5.0, 2.0)
     report.usefulness = round(_cap(useful), 1)
 
-    overall = sum(getattr(report, axis) * WEIGHTS[axis] for axis in AXES)
-    report.overall_score = round(overall, 1)
+    report.overall_score = _weighted_overall(report)
     return report
+
+
+def _weighted_overall(report: QualityReport) -> float:
+    """Weighted average of the axis scores, rounded half-up to one decimal.
+
+    Uses exact decimal arithmetic: Python 3.12 changed the float ``sum()``
+    algorithm, so a score sitting exactly on a rounding boundary (e.g. 6.45)
+    rounded to 6.4 on older interpreters and 6.5 on newer ones, making the
+    generated registry depend on the Python version.
+    """
+    total = sum(
+        (Decimal(str(getattr(report, axis))) * Decimal(str(WEIGHTS[axis])) for axis in AXES),
+        Decimal(0),
+    )
+    return float(total.quantize(Decimal("0.1"), rounding=ROUND_HALF_UP))
 
 
 def score_all(registry: Registry, skills_root: Path) -> Dict[str, QualityReport]:

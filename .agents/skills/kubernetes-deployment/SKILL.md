@@ -3,7 +3,7 @@ name: kubernetes-deployment
 description: Kubernetes deployment workflow for container orchestration, Helm charts, service mesh, and production-ready K8s configurations.
 disable-model-invocation: false
 category: granular-workflow-bundle
-risk: safe
+risk: low
 triggers:
 - deploy to kubernetes
 - kubernetes helm

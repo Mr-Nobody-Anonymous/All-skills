@@ -1,7 +1,9 @@
-"""Authoritative Documentation & Statistics Synchronizer.
+"""Documentation count synchronizer (README.md and every other doc).
 
-Reads metrics from stats.json and updates README.md and documentation files
-to guarantee 100% agreement and eliminate manual documentation drift.
+A thin CLI over the single rule table in ``scripts/compute_stats.py``
+(``DOC_COUNT_RULES``), so there is exactly one definition of which documented
+numbers track ``stats.json`` — this script used to keep a second, diverging set
+of rules (including ones that re-inserted static "N/N passing" claims).
 
 Usage:
     python scripts/generate_readme_stats.py           # Update in place
@@ -12,13 +14,14 @@ from __future__ import annotations
 
 import argparse
 import json
-import re
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 STATS_PATH = ROOT / "stats.json"
-README_PATH = ROOT / "README.md"
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import compute_stats  # noqa: E402
 
 
 def load_authoritative_stats() -> dict:
@@ -29,86 +32,27 @@ def load_authoritative_stats() -> dict:
 
 
 def sync_readme(stats: dict, verify_only: bool = False) -> bool:
-    if not README_PATH.exists():
-        print(f"Error: {README_PATH} does not exist.")
-        return False
-
-    content = README_PATH.read_text(encoding="utf-8")
-    original = content
-
-    n_tests = stats.get("tests", 149)
-    n_canonical = stats.get("canonical_skills", 122)
-    n_catalog = stats.get("catalog_skills", 14855)
-    n_active = stats.get("active_harness_skills", 72)
-    n_categories = stats.get("categories", 251)
-    version = stats.get("platform_version", "3.0.0")
-
-    # 1. Badge replacements
-    content = re.sub(
-        r"tests-\d+%2F\d+%20Passing",
-        f"tests-{n_tests}%2F{n_tests}%20Passing",
-        content,
-    )
-    content = re.sub(
-        r'alt="\d+ Tests Passing"',
-        f'alt="{n_tests} Tests Passing"',
-        content,
-    )
-
-    # 2. Hero metrics table
-    content = re.sub(
-        r"\d+/\d+ Passing Unit Tests",
-        f"{n_tests}/{n_tests} Passing Unit Tests",
-        content,
-    )
-
-    # 3. Comment test references
-    content = re.sub(
-        r"# Run regression test suite \(\d+ tests\)",
-        f"# Run regression test suite ({n_tests} tests)",
-        content,
-    )
-    content = re.sub(
-        r"# Run full health diagnostics and \d+-test verification suite",
-        f"# Run full health diagnostics and {n_tests}-test verification suite",
-        content,
-    )
-    content = re.sub(
-        r"# 2\. Run the \d+ unit and integration tests",
-        f"# 2. Run the {n_tests} unit and integration tests",
-        content,
-    )
-    content = re.sub(
-        r"🧪 Unit & Integration Test Suite \(\d+ tests\)",
-        f"🧪 Unit & Integration Test Suite ({n_tests} tests)",
-        content,
-    )
-
-    # 4. Harness count
-    content = re.sub(
-        r"• \d+ Staff Engineer Skills",
-        f"• {n_active} Staff Engineer Skills",
-        content,
-    )
-
+    """Sync (or with ``verify_only`` check) every documented count; False on drift."""
     if verify_only:
-        if content != original:
-            print("[FAIL] README.md metrics are out of sync with stats.json!")
+        problems = compute_stats.verify_docs(stats, ROOT)
+        if problems:
+            print("[FAIL] Documentation counts are out of sync with stats.json:")
+            for problem in problems:
+                print(f"  - {problem}")
             return False
-        print("[PASS] README.md metrics are in 100% sync with stats.json.")
+        print("[PASS] Documentation counts (README.md, SKILLS.md, CONTRIBUTING.md, docs/) match stats.json.")
         return True
 
-    if content != original:
-        README_PATH.write_text(content, encoding="utf-8")
-        print(f"[SUCCESS] Synchronized README.md with authoritative stats ({n_tests} tests, {n_catalog:,} catalog skills).")
+    changed = compute_stats.sync_docs(stats, ROOT)
+    if changed:
+        print(f"[SUCCESS] Synchronized {', '.join(changed)} with stats.json.")
     else:
-        print("[INFO] README.md was already in sync with stats.json.")
-
+        print("[INFO] Documentation counts were already in sync with stats.json.")
     return True
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Synchronize README.md with stats.json")
+    parser = argparse.ArgumentParser(description="Synchronize documented counts with stats.json")
     parser.add_argument("--verify", action="store_true", help="Verify agreement without modifying")
     args = parser.parse_args()
 

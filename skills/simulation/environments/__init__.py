@@ -1,1 +1,2 @@
-from .gymnasium_env import GymnasiumEnvironment\n__all__ = ['GymnasiumEnvironment']\n
+from .gymnasium_env import GymnasiumEnvironment
+__all__ = ['GymnasiumEnvironment']

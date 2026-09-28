@@ -1,1 +1,2 @@
-from .garmin_fitness import GarminFitnessTracker\n__all__ = ['GarminFitnessTracker']\n
+from .garmin_fitness import GarminFitnessTracker
+__all__ = ['GarminFitnessTracker']

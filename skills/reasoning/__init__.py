@@ -1,1 +1,1 @@
-"""All-Skills Category: reasoning"""\n
+"""All-Skills Category: reasoning"""

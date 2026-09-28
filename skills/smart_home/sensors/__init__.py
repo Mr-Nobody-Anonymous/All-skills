@@ -1,1 +1,2 @@
-from .sensor_read import SensorReader\n__all__ = ['SensorReader']\n
+from .sensor_read import SensorReader
+__all__ = ['SensorReader']

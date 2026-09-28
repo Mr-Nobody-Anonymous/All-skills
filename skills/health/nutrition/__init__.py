@@ -1,1 +1,2 @@
-from .nutrition_lookup import NutritionLookup\n__all__ = ['NutritionLookup']\n
+from .nutrition_lookup import NutritionLookup
+__all__ = ['NutritionLookup']

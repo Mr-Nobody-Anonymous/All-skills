@@ -1,1 +1,1 @@
-"""All-Skills Category: networking"""\n
+"""All-Skills Category: networking"""

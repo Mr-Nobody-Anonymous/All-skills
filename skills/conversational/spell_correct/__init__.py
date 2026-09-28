@@ -1,1 +1,2 @@
-from .symspell_correct import SymSpellCorrector\n__all__ = ['SymSpellCorrector']\n
+from .symspell_correct import SymSpellCorrector
+__all__ = ['SymSpellCorrector']

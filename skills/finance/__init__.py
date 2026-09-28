@@ -1,1 +1,1 @@
-"""All-Skills Category: finance"""\n
+"""All-Skills Category: finance"""

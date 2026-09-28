@@ -11,7 +11,7 @@ echo =================================================================
 
 where python >nul 2>nul
 if %errorlevel% neq 0 (
-    echo Error: Python 3.9+ is required but not found in PATH.
+    echo Error: Python 3.10+ is required but not found in PATH.
     exit /b 1
 )
 

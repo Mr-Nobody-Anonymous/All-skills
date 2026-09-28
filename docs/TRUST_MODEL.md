@@ -49,7 +49,7 @@ graph TD
 5. **`T4_TESTED` (Rank 4)**
    - Passes behavioral intent evaluations, out-of-distribution rejection tests, and input/output contracts.
 6. **`T5_CURATED` (Rank 5)**
-   - Included in the 122 canonical skills or 72 active harness skills; verified across all 11 agent adapters.
+   - Included in the 124 canonical skills or 72 active harness skills; verified across all 11 agent adapters.
 7. **`T6_PRODUCTION` (Rank 6)**
    - Fully hardened with explicit least-privilege permissions, SSRF protection, isolated secret brokering, and fail-visible audit logging.
 

@@ -79,11 +79,13 @@ class ChainResolver:
         return [step for step in chain.steps if self.registry.get(step) is None]
 
     def resolve(self, chain: SkillChain) -> List[dict]:
-        return [
-            {"id": step, "description": self.registry.get(step).description}
-            for step in chain.steps
-            if self.registry.get(step) is not None
-        ]
+        # Unresolved steps are skipped (use unresolved_steps() to detect them).
+        resolved: List[dict] = []
+        for step in chain.steps:
+            entry = self.registry.get(step)
+            if entry is not None:
+                resolved.append({"id": step, "description": entry.description})
+        return resolved
 
     def permission_summary(self, chain: SkillChain) -> List[dict]:
         summary: List[dict] = []

@@ -3,7 +3,7 @@ name: terraform-infrastructure
 description: Terraform infrastructure as code workflow for provisioning cloud resources, creating reusable modules, and managing infrastructure at scale.
 disable-model-invocation: false
 category: granular-workflow-bundle
-risk: safe
+risk: low
 source: personal
 date_added: '2026-02-27'
 version: 1.0.0
@@ -18,7 +18,7 @@ compatibility:
   cursor: '>=0.40'
   codex: '*'
 network_access: false
-filesystem_access: read
+filesystem_access: write
 credential_access: false
 destructive_operations: false
 ---

@@ -1,37 +1,122 @@
 {
-  "version": "1.0.0",
-  "updated_at": "2026-09-20",
-  "platforms": [
-    "claude",
-    "codex",
-    "cursor",
-    "copilot",
-    "gemini",
-    "vscode",
-    "windsurf",
-    "opencode",
-    "cline",
-    "roo",
-    "goose"
-  ],
-  "compatibility_summary": {
-    "total_tested_skills": 70,
-    "compatible_skills": 70,
-    "degraded_skills": 0,
-    "incompatible_skills": 0,
-    "overall_score": 1.0
+  "version": "2.0.0",
+  "updated_at": "2026-09-25",
+  "description": "Compatibility evidence per agent. 'configured' and 'discoverable' are verified automatically (tests/test_adapters_conformance.py, tests/test_agent_discovery.py). 'invocable' and 'workflow_completed' require a manual check inside the named agent version and stay null until a matching entry is recorded in manual_evidence.",
+  "evidence_levels": {
+    "configured": "An adapter configuration exists and validates.",
+    "discoverable": "The agent's documented skills directory is linked to the source harness by scripts/setup_tools.py and every active SKILL.md meets the Agent Skills format (name, description).",
+    "invocable": "A maintainer confirmed, in a named agent version, that a skill is listed and loads.",
+    "workflow_completed": "A maintainer completed an end-to-end task with a skill in a named agent version."
   },
-  "default_platform_support": {
-    "claude": { "supported": true, "status": "verified", "notes": "Full SKILL.md and XML tag support" },
-    "codex": { "supported": true, "status": "verified", "notes": "Full markdown system instructions support" },
-    "cursor": { "supported": true, "status": "verified", "notes": "Full .cursorrules and agent skills integration" },
-    "copilot": { "supported": true, "status": "verified", "notes": "Full GitHub Copilot Agent skill discovery (.github/skills)" },
-    "gemini": { "supported": true, "status": "verified", "notes": "Native Antigravity IDE and Gemini CLI engine" },
-    "vscode": { "supported": true, "status": "verified", "notes": "VS Code Agent Customization schema compliant" },
-    "windsurf": { "supported": true, "status": "verified", "notes": "Full Windsurf cascade agent integration" },
-    "opencode": { "supported": true, "status": "verified", "notes": "Full OpenCode autonomous execution support" },
-    "cline": { "supported": true, "status": "verified", "notes": "Full Cline MCP and tool execution support" },
-    "roo": { "supported": true, "status": "verified", "notes": "Full Roo Code multi-mode support" },
-    "goose": { "supported": true, "status": "verified", "notes": "Full Block Goose extensions support" }
+  "platforms": {
+    "gemini": {
+      "display_name": "Antigravity / Gemini CLI",
+      "adapter": "adapters/gemini.yaml",
+      "discovery_path": ".agents/skills",
+      "configured": true,
+      "discoverable": true,
+      "invocable": null,
+      "workflow_completed": null
+    },
+    "claude-code": {
+      "display_name": "Claude Code",
+      "adapter": "adapters/claude.yaml",
+      "discovery_path": ".claude/skills",
+      "configured": true,
+      "discoverable": true,
+      "invocable": null,
+      "workflow_completed": null
+    },
+    "cursor": {
+      "display_name": "Cursor",
+      "adapter": "adapters/cursor.yaml",
+      "discovery_path": ".cursor/skills",
+      "configured": true,
+      "discoverable": true,
+      "invocable": null,
+      "workflow_completed": null
+    },
+    "codex-cli": {
+      "display_name": "Codex CLI",
+      "adapter": "adapters/codex.yaml",
+      "discovery_path": ".codex/skills",
+      "configured": true,
+      "discoverable": true,
+      "invocable": null,
+      "workflow_completed": null
+    },
+    "copilot": {
+      "display_name": "GitHub Copilot",
+      "adapter": "adapters/copilot.yaml",
+      "discovery_path": ".github/skills",
+      "configured": true,
+      "discoverable": true,
+      "invocable": null,
+      "workflow_completed": null
+    },
+    "vscode": {
+      "display_name": "VS Code Agent",
+      "adapter": "adapters/vscode.yaml",
+      "discovery_path": ".vscode/skills",
+      "configured": true,
+      "discoverable": true,
+      "invocable": null,
+      "workflow_completed": null
+    },
+    "windsurf": {
+      "display_name": "Windsurf",
+      "adapter": "adapters/windsurf.yaml",
+      "discovery_path": ".windsurf/skills",
+      "configured": true,
+      "discoverable": true,
+      "invocable": null,
+      "workflow_completed": null
+    },
+    "opencode": {
+      "display_name": "OpenCode",
+      "adapter": "adapters/opencode.yaml",
+      "discovery_path": ".opencode/skills",
+      "configured": true,
+      "discoverable": true,
+      "invocable": null,
+      "workflow_completed": null
+    },
+    "cline": {
+      "display_name": "Cline",
+      "adapter": "adapters/cline.yaml",
+      "discovery_path": ".cline/skills",
+      "configured": true,
+      "discoverable": true,
+      "invocable": null,
+      "workflow_completed": null
+    },
+    "roo": {
+      "display_name": "Roo Code",
+      "adapter": "adapters/roo.yaml",
+      "discovery_path": ".roo/skills",
+      "configured": true,
+      "discoverable": true,
+      "invocable": null,
+      "workflow_completed": null
+    },
+    "goose": {
+      "display_name": "Block Goose",
+      "adapter": "adapters/goose.yaml",
+      "discovery_path": ".goose/skills",
+      "configured": true,
+      "discoverable": true,
+      "invocable": null,
+      "workflow_completed": null
+    }
+  },
+  "manual_evidence": [],
+  "manual_evidence_format": {
+    "platform": "claude-code",
+    "level": "invocable | workflow_completed",
+    "agent_version": "x.y.z",
+    "date": "YYYY-MM-DD",
+    "verified_by": "github-handle",
+    "skill": "tdd",
+    "notes": "what was observed"
   }
 }
