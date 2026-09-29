@@ -8,6 +8,24 @@ sources:
   # ==========================================
   # Official / Vendor Repositories
   # ==========================================
+  - id: ecc
+    name: Everything Claude Code (ECC)
+    repo: affaan-m/ECC
+    url: https://github.com/affaan-m/ECC
+    branch: main
+    class: official
+    vendor: ecc
+    license: MIT
+    description: "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
+    skill_paths:
+      - skills
+    update_schedule: daily
+    trust_tier: Tier-1-Vendor
+    verification:
+      security_scan: required
+      license_policy: allow-mit
+      behavior_tested: true
+
   - id: anthropic-skills
     name: Anthropic Official Agent Skills
     repo: anthropics/skills

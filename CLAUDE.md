@@ -16,9 +16,17 @@ Welcome to the **All Skills** agent engineering workspace.
   python scripts/manage_awesome_skills.py install <skill-name> --claude
   ```
 
+### Everything Claude Code (ECC) Ecosystem
+- **Specialized Subagents**: 68 subagents available in `agents/` (`planner`, `architect`, `code-reviewer`, `security-reviewer`, `tdd-guide`, `loop-operator`, etc.). Inspect with `python scripts/allskills.py agents`.
+- **Slash Commands**: 94 slash-commands in `commands/` (`/plan`, `/code-review`, `/checkpoint`, `/evolve`, `/instinct-status`, etc.).
+- **Instincts & Continuous Learning v2**: Observe sessions, capture atomic instincts, and evolve into skills: `python scripts/allskills.py instincts [status|evolve|health]`.
+- **ECC Engine & CLI**: `node bin/ecc.js <command>` or `python scripts/allskills.py ecc <command>`.
+- **Dashboards**: Tkinter GUI (`python ecc_dashboard.py` or `python scripts/allskills.py dashboard`) and Web UI (`python scripts/allskills.py dashboard --web`).
+- **Rust Engine**: High-performance engine available in `ecc2/`.
+
 ### Development & Verification
 - Run tests: `python scripts/skills/skills.py test`
-- Run diagnostics: `python scripts/skills/skills.py doctor`
+- Run diagnostics: `python scripts/skills/skills.py doctor` or `python scripts/allskills.py doctor --full`
 - Validate skill schemas: `python scripts/validate_schema.py`
 - Run pre/post hooks: `python scripts/run_hook.py <pre|post> <skill_id>`
 

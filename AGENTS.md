@@ -53,3 +53,14 @@ Run lifecycle checks when executing autonomous workflows:
 - **One-Step Initializer**: Run `./setup.sh` (Linux/macOS) or `.\setup.bat` (Windows).
 - **Setup Command**: Use `/setup-skills` or `python scripts/setup_skills.py`.
 
+---
+
+## 6. Everything Claude Code (ECC) Capabilities & Engine
+
+- **Specialized Subagents**: 68 role-specific agents in `agents/` (`planner`, `architect`, `code-reviewer`, `security-reviewer`, `tdd-guide`, `loop-operator`, etc.). Route via `python scripts/allskills.py agents [name]`.
+- **Slash Commands**: 94 slash-command definitions in `commands/` (`/plan`, `/code-review`, `/checkpoint`, `/evolve`, `/instinct-status`, etc.).
+- **Instincts & Continuous Learning v2**: Automatic session observation, confidence scoring, and instinct evolution: `python scripts/allskills.py instincts [status|health|evolve]`.
+- **Harness & LifeCycle Hooks**: Unified Claude Code lifecycle hooks in `hooks/hooks.json` and Python security execution gates in `hooks/execution_hooks.json`.
+- **ECC Engine & Rust Core**: `node bin/ecc.js <cmd>`, `python scripts/allskills.py ecc <cmd>`, and native Rust core under `ecc2/`.
+- **Dashboards**: Tkinter GUI via `python ecc_dashboard.py` (or `python scripts/allskills.py dashboard`) and Web UI via `python scripts/allskills.py dashboard --web`.
+

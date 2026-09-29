@@ -19,7 +19,8 @@ if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-HOOKS_CONFIG = REPO_ROOT / "hooks" / "hooks.json"
+EXECUTION_HOOKS_CONFIG = REPO_ROOT / "hooks" / "execution_hooks.json"
+HOOKS_CONFIG = EXECUTION_HOOKS_CONFIG if EXECUTION_HOOKS_CONFIG.exists() else (REPO_ROOT / "hooks" / "hooks.json")
 
 
 def load_hooks_config() -> dict:

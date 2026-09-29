@@ -15,6 +15,10 @@ Every command exits non-zero on failure.
   sync             Import / update skills from upstream sources (scripts/sync_sources.py)
   profile          list | show <name> | install <name> [--dest DIR] [--dry-run]
   execute, run     Execute a skill through the governed runtime
+  ecc              Everything Claude Code (ECC) engine and CLI dispatch
+  instincts        Inspect and manage continuous learning instincts
+  dashboard        Launch ECC visual or web dashboard
+  agents           List and inspect specialized subagents
 """
 from __future__ import annotations
 
@@ -581,6 +585,20 @@ def main() -> int:
         s_exec.add_argument("--approval-id", help="request_id from an approval_required result")
         s_exec.add_argument("--approved-by", help="Name of the human approving an ASK capability")
 
+    s_ecc = subparsers.add_parser("ecc", help="ECC (Everything Claude Code) engine and CLI dispatch")
+    s_ecc.add_argument("ecc_args", nargs=argparse.REMAINDER, help="Arguments passed directly to ECC")
+
+    s_inst = subparsers.add_parser("instincts", help="Inspect and manage continuous learning instincts")
+    s_inst.add_argument("action", nargs="?", default="status", choices=["status", "health", "evolve", "list"], help="Instinct action")
+
+    s_dash = subparsers.add_parser("dashboard", help="Launch ECC dashboard (Tkinter or Web)")
+    s_dash.add_argument("--web", action="store_true", help="Launch web dashboard instead of Tkinter")
+    s_dash.add_argument("--port", type=int, default=3333, help="Web dashboard port (default: 3333)")
+
+    s_agents = subparsers.add_parser("agents", help="List and inspect specialized subagents")
+    s_agents.add_argument("name", nargs="?", help="Subagent name to inspect (e.g. planner, architect)")
+    s_agents.add_argument("--json", action="store_true", help="Output as JSON")
+
     args = parser.parse_args()
     global REPO_ROOT
     sys.path.insert(0, str(REPO_ROOT / "src"))
@@ -633,6 +651,54 @@ def main() -> int:
         return run_cmd(["scripts/sync_sources.py"])
     elif args.subcommand == "profile":
         return cmd_profile(args.action, args.name, dest=args.dest, dry_run=args.dry_run)
+    elif args.subcommand == "ecc":
+        ecc_bin = REPO_ROOT / "bin" / "ecc.js"
+        node_cmd = ["node", str(ecc_bin)] + (args.ecc_args or [])
+        return subprocess.run(node_cmd, cwd=REPO_ROOT).returncode
+    elif args.subcommand == "instincts":
+        if args.action == "health":
+            return subprocess.run(["node", str(REPO_ROOT / "scripts" / "skills-health.js")], cwd=REPO_ROOT).returncode
+        elif args.action == "evolve":
+            return subprocess.run(["node", str(REPO_ROOT / "bin" / "ecc.js"), "evolve"], cwd=REPO_ROOT).returncode
+        else:
+            return subprocess.run(["node", str(REPO_ROOT / "bin" / "ecc.js"), "status"], cwd=REPO_ROOT).returncode
+    elif args.subcommand == "dashboard":
+        if args.web:
+            return subprocess.run(["node", str(REPO_ROOT / "scripts" / "dashboard-web.js"), "--port", str(args.port)], cwd=REPO_ROOT).returncode
+        else:
+            return subprocess.run([sys.executable, str(REPO_ROOT / "ecc_dashboard.py")], cwd=REPO_ROOT).returncode
+    elif args.subcommand == "agents":
+        agents_dir = REPO_ROOT / "agents"
+        if not agents_dir.exists():
+            print("agents/ directory not found.")
+            return 1
+        agent_files = sorted(agents_dir.glob("*.md"))
+        if args.name:
+            target = agents_dir / f"{args.name}.md" if not args.name.endswith(".md") else agents_dir / args.name
+            if not target.exists():
+                print(f"Subagent '{args.name}' not found. Available subagents: {len(agent_files)}")
+                return 1
+            print(target.read_text(encoding="utf-8"))
+            return 0
+        agents_data = []
+        for af in agent_files:
+            text = af.read_text(encoding="utf-8")
+            title = af.stem
+            desc = ""
+            for line in text.splitlines():
+                if line.startswith("# "):
+                    title = line[2:].strip()
+                elif line.strip() and not line.startswith("#") and not desc:
+                    desc = line.strip()
+            agents_data.append({"slug": af.stem, "title": title, "file": af.name, "description": desc[:100]})
+        if getattr(args, "json", False):
+            print(json.dumps(agents_data, indent=2))
+        else:
+            print(f"Specialized Subagents ({len(agents_data)} available):")
+            for a in agents_data:
+                print(f"  • {a['slug']:<28} {a['title']}")
+            print("\nUse 'allskills agents <name>' to view an agent specification.")
+        return 0
     else:
         parser.print_help()
         return 0 if args.subcommand is None else 1

@@ -26,7 +26,13 @@
     "developer-tools"
   ],
   "bin": {
-    "allskills": "./bin/allskills.js"
+    "allskills": "./bin/allskills.js",
+    "ecc": "./bin/ecc.js",
+    "ecc-universal": "./bin/ecc.js",
+    "ecc-install": "./scripts/install-apply.js",
+    "ecc-control-pane": "./scripts/control-pane.js",
+    "ecc-memory-mcp": "./scripts/memory-mcp.mjs",
+    "ecc-plan-canvas": "./scripts/plan-canvas.js"
   },
   "scripts": {
     "test": "python scripts/skills/skills.py test",
@@ -38,7 +44,21 @@
     "setup": "python scripts/setup_skills.py",
     "baseline": "python scripts/generate_baselines.py",
     "baseline:verify": "python scripts/generate_baselines.py --verify",
-    "pack:check": "npm pack --dry-run"
+    "pack:check": "npm pack --dry-run",
+    "ecc": "node scripts/ecc.js",
+    "ecc:doctor": "node scripts/ecc.js doctor",
+    "dashboard": "python ./ecc_dashboard.py",
+    "dashboard:web": "node scripts/dashboard-web.js",
+    "control:pane": "node scripts/control-pane.js",
+    "harness:audit": "node scripts/harness-audit.js",
+    "harness:eval": "node scripts/eval-harness.js",
+    "test:ecc": "node tests/run-all.js"
+  },
+  "dependencies": {
+    "@iarna/toml": "2.2.5",
+    "ajv": "8.20.0",
+    "js-yaml": "4.3.2",
+    "sql.js": "1.14.2"
   },
   "engines": {
     "node": ">=18.0.0",
@@ -74,6 +94,26 @@
     "requirements-core.txt",
     "VERSION",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "manifests/",
+    "agents/",
+    "commands/",
+    "legacy-command-shims/",
+    "contexts/",
+    "ecc2/",
+    "rules/",
+    "scaffolds/",
+    "mcp-configs/",
+    ".claude-plugin/",
+    ".codex-plugin/",
+    ".gemini/",
+    ".zed/",
+    "the-longform-guide.md",
+    "the-shortform-guide.md",
+    "the-security-guide.md",
+    "COMMANDS-QUICK-REF.md",
+    "TROUBLESHOOTING.md",
+    "SOUL.md",
+    "ecc_dashboard.py"
   ]
 }
