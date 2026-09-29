@@ -199,7 +199,7 @@ Examples:
   ecc sessions
   ecc sessions session-active --json
   ecc work-items upsert linear-ecc-20 --source linear --source-id ECC-20 --title "Review control-plane contract" --status blocked
-  ecc work-items sync-github --repo affaan-m/ECC
+  ecc work-items sync-github --repo Mr-Nobody-Anonymous/All-skills
   ecc session-inspect claude:latest
   ecc loop-status --json
   ecc uninstall --target antigravity --dry-run

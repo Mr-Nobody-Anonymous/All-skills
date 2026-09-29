@@ -1,5 +1,5 @@
 /**
- * Regression test for https://github.com/affaan-m/ECC/issues/2822
+ * Regression test for https://github.com/Mr-Nobody-Anonymous/All-skills/issues/2822
  *
  * When ECC is installed through the Claude Code plugin marketplace, the
  * marketplace directory is a plain git clone: `npm install` never runs, so

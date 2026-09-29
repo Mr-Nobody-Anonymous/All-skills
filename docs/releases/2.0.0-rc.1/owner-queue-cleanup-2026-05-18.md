@@ -37,7 +37,7 @@ gh search issues --owner affaan-m --state open --json repository,number,title,ur
 - `affaan-m/zenith#4`: closed test/noise PR whose diff only added a
   non-actionable script comment.
 - `affaan-m/affaan-m#1`: closed stale/conflicting third-party README-card PR.
-- `affaan-m/affaanmustafa.com#1`: closed stale Cloudflare Worker-name PR with
+- `Mr-Nobody-Anonymous/All-skills#1`: closed stale Cloudflare Worker-name PR with
   requested changes.
 - `affaan-m/0em-payments-dashboard#11`: closed stale/conflicting Cloudflare
   Worker-name PR.

@@ -72,7 +72,7 @@ npm run scan -- --path "${TARGET_PATH:-.}" --format text
 強制ゲートのためにGitHub ActionsでAgentShieldを使用:
 
 ```yaml
-- uses: affaan-m/agentshield@v1
+- uses: Mr-Nobody-Anonymous/All-skills@v1
   with:
     path: "."
     min-severity: "medium"
@@ -83,7 +83,7 @@ npm run scan -- --path "${TARGET_PATH:-.}" --format text
 
 - スキル: `skills/security-scan/SKILL.md`
 - エージェント: `agents/security-reviewer.md`
-- スキャナー: <https://github.com/affaan-m/agentshield>
+- スキャナー: <https://github.com/Mr-Nobody-Anonymous/All-skills>
 
 ## 引数
 

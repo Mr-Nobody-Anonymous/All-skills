@@ -24,27 +24,27 @@ console.log('\nGitHub origin normalization');
 
 if (test('accepts only authenticated or TLS GitHub origins', () => {
   assert.strictEqual(
-    normalizeGitHubGitOrigin('https://github.com/affaan-m/ECC.git'),
-    'affaan-m/ecc'
+    normalizeGitHubGitOrigin('https://github.com/Mr-Nobody-Anonymous/All-skills.git'),
+    'mr-nobody-anonymous/all-skills'
   );
   assert.strictEqual(
-    normalizeGitHubGitOrigin('ssh://git@github.com/affaan-m/ECC/'),
-    'affaan-m/ecc'
+    normalizeGitHubGitOrigin('ssh://git@github.com/Mr-Nobody-Anonymous/All-skills/'),
+    'mr-nobody-anonymous/all-skills'
   );
   assert.strictEqual(
-    normalizeGitHubGitOrigin('git@github.com:affaan-m/ECC.git'),
-    'affaan-m/ecc'
+    normalizeGitHubGitOrigin('git@github.com:Mr-Nobody-Anonymous/All-skills.git'),
+    'mr-nobody-anonymous/all-skills'
   );
 })) passed++; else failed++;
 
 if (test('rejects shorthand and insecure or unrelated origins', () => {
-  assert.strictEqual(normalizeGitHubGitOrigin('affaan-m/ECC'), null);
+  assert.strictEqual(normalizeGitHubGitOrigin('Mr-Nobody-Anonymous/All-skills'), null);
   assert.strictEqual(
-    normalizeGitHubGitOrigin('http://github.com/affaan-m/ECC.git'),
+    normalizeGitHubGitOrigin('http://github.com/Mr-Nobody-Anonymous/All-skills.git'),
     null
   );
   assert.strictEqual(
-    normalizeGitHubGitOrigin('https://example.com/affaan-m/ECC.git'),
+    normalizeGitHubGitOrigin('https://example.com/Mr-Nobody-Anonymous/All-skills.git'),
     null
   );
   assert.strictEqual(normalizeGitHubGitOrigin(null), null);

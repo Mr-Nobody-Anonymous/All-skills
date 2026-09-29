@@ -39,5 +39,5 @@ ECCはClaude Code、Cursor、OpenCode、Codex app/CLIにまたがるオープン
 
 ## スポンサーになる
 
-- GitHub Sponsors: [https://github.com/sponsors/affaan-m](https://github.com/sponsors/affaan-m)
-- プロジェクトサイト: [https://ecc.tools](https://ecc.tools)
+- GitHub Sponsors: [https://github.com/sponsors/Mr-Nobody-Anonymous](https://github.com/sponsors/Mr-Nobody-Anonymous)
+- プロジェクトサイト: [https://github.com/Mr-Nobody-Anonymous/All-skills](https://github.com/Mr-Nobody-Anonymous/All-skills)

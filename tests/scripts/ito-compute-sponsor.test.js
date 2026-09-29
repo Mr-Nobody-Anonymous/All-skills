@@ -170,8 +170,8 @@ function main() {
       assert.strictEqual((primaryLinks.match(/<td\b/g) || []).length, 3);
       assert.ok(primaryLinks.includes('assets/images/community/ecc-tools-mark.svg'));
       assertExactHref(primaryLinks, 'https://github.com/apps/ecc-tools');
-      assertExactHref(primaryLinks, 'https://ecc.tools/pricing');
-      assertExactHref(primaryLinks, 'https://github.com/sponsors/affaan-m');
+      assertExactHref(primaryLinks, 'https://github.com/Mr-Nobody-Anonymous/All-skills/pricing');
+      assertExactHref(primaryLinks, 'https://github.com/sponsors/Mr-Nobody-Anonymous');
       assert.ok(primaryLinks.includes('assets/images/community/heart.svg'));
       assert.match(primaryLinks, /Fund the open-source project/);
       assert.doesNotMatch(primaryLinks, /From \$5\/mo/);

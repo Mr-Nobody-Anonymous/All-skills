@@ -49,7 +49,7 @@
 
 ```bash
 # 1. 포크 및 클론
-gh repo fork affaan-m/everything-claude-code --clone
+gh repo fork Mr-Nobody-Anonymous/All-skills --clone
 cd everything-claude-code
 
 # 2. 브랜치 생성
@@ -445,8 +445,8 @@ docs: improve contributing guide
 
 ## 질문이 있으신가요?
 
-- **이슈:** [github.com/affaan-m/everything-claude-code/issues](https://github.com/affaan-m/everything-claude-code/issues)
-- **X/Twitter:** [@affaanmustafa](https://x.com/affaanmustafa)
+- **이슈:** [github.com/Mr-Nobody-Anonymous/All-skills/issues](https://github.com/Mr-Nobody-Anonymous/All-skills/issues)
+- **X/Twitter:** [@Mr-Nobody-Anonymous](https://github.com/Mr-Nobody-Anonymous)
 
 ---
 

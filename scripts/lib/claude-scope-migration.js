@@ -284,7 +284,7 @@ function migrateClaudePluginScope(options = {}, dependencies = {}) {
   if (namedMarketplace && !isOfficialMarketplace(namedMarketplace)) {
     throw migrationError(
       'MARKETPLACE_COLLISION',
-      'Refusing the `ecc` marketplace collision because it is not the official affaan-m/ECC source.',
+      'Refusing the `ecc` marketplace collision because it is not the official Mr-Nobody-Anonymous/All-skills source.',
       {
         phase: 'marketplace-inventory',
         observedScopes: migration.observedScopes,

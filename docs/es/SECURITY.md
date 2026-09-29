@@ -43,7 +43,7 @@ Esta política cubre:
 - Scripts de hooks que se ejecutan en tu máquina
 - Scripts del ciclo de vida de instalación/desinstalación/reparación
 - Configuraciones de MCP incluidas con ECC
-- El escáner de seguridad AgentShield ([github.com/affaan-m/agentshield](https://github.com/affaan-m/agentshield))
+- El escáner de seguridad AgentShield ([github.com/Mr-Nobody-Anonymous/All-skills](https://github.com/Mr-Nobody-Anonymous/All-skills))
 
 ## Orientación Operacional
 

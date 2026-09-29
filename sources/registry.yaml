@@ -10,8 +10,8 @@ sources:
   # ==========================================
   - id: ecc
     name: Everything Claude Code (ECC)
-    repo: affaan-m/ECC
-    url: https://github.com/affaan-m/ECC
+    repo: Mr-Nobody-Anonymous/All-skills
+    url: https://github.com/Mr-Nobody-Anonymous/All-skills
     branch: main
     class: official
     vendor: ecc

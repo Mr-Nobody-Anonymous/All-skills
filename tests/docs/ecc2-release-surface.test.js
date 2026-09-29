@@ -110,8 +110,8 @@ test('business launch copy stays aligned with the rc.1 public surface', () => {
   const source = read('docs/business/social-launch-copy.md');
   assert.ok(source.includes('ECC v2.0.0-rc.1'), 'business launch copy should use the rc.1 release');
   assert.ok(source.includes('preview pack is ready for final release review'), 'business launch copy should stay pre-publication until release URLs exist');
-  assert.ok(source.includes('https://github.com/affaan-m/ECC'), 'business launch copy should include the public repo URL');
-  assert.ok(source.includes('https://github.com/affaan-m/ECC/blob/main/docs/releases/2.0.0-rc.1/release-notes.md'), 'business launch copy should link to the rc.1 release notes');
+  assert.ok(source.includes('https://github.com/Mr-Nobody-Anonymous/All-skills'), 'business launch copy should include the public repo URL');
+  assert.ok(source.includes('https://github.com/Mr-Nobody-Anonymous/All-skills/blob/main/docs/releases/2.0.0-rc.1/release-notes.md'), 'business launch copy should link to the rc.1 release notes');
   assert.ok(!source.includes('<repo-link>'), 'business launch copy should not contain repo placeholders');
   assert.ok(!source.includes('v1.8.0'), 'business launch copy should not stay pinned to v1.8.0');
 });
@@ -263,7 +263,7 @@ test('rc.1 quickstart gives a clone-to-cross-harness path', () => {
   for (const heading of ['Clone', 'Install', 'Verify', 'First Skill', 'Switch Harness']) {
     assert.ok(quickstart.includes(`## ${heading}`), `Missing ${heading} section`);
   }
-  assert.ok(quickstart.includes('git clone https://github.com/affaan-m/ECC.git'));
+  assert.ok(quickstart.includes('git clone https://github.com/Mr-Nobody-Anonymous/All-skills.git'));
   assert.ok(quickstart.includes('cd ECC'));
   assert.ok(quickstart.includes('node tests/run-all.js'));
   assert.ok(quickstart.includes('skills/hermes-imports/SKILL.md'));
@@ -461,10 +461,10 @@ test('release name and plugin publication checklist freezes rc.1 surfaces', () =
 
   for (const value of [
     'Ship `v2.0.0-rc.1` as **ECC**',
-    '`affaan-m/ECC`',
+    '`Mr-Nobody-Anonymous/All-skills`',
     '`ecc-universal`',
     '`ecc` on npm is occupied',
-    '`@affaan-m/ecc` is unclaimed on npm',
+    '`@mr-nobody-anonymous/all-skills` is unclaimed on npm',
     'Claude plugin',
     'Codex plugin',
     'do not claim official directory listing until OpenAI publishing path is available',

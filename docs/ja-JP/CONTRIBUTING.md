@@ -53,7 +53,7 @@
 
 ```bash
 # 1. Fork とクローン
-gh repo fork affaan-m/everything-claude-code --clone
+gh repo fork Mr-Nobody-Anonymous/All-skills --clone
 cd everything-claude-code
 
 # 2. ブランチを作成
@@ -422,8 +422,8 @@ docs: improve contributing guide
 
 ## 質問がありますか？
 
-- **Issues:** [github.com/affaan-m/everything-claude-code/issues](https://github.com/affaan-m/everything-claude-code/issues)
-- **X/Twitter:** [@affaanmustafa](https://x.com/affaanmustafa)
+- **Issues:** [github.com/Mr-Nobody-Anonymous/All-skills/issues](https://github.com/Mr-Nobody-Anonymous/All-skills/issues)
+- **X/Twitter:** [@Mr-Nobody-Anonymous](https://github.com/Mr-Nobody-Anonymous)
 
 ---
 

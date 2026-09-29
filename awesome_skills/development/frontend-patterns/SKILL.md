@@ -1,6 +1,6 @@
 ---name: frontend-patterns
 description: Frontend development patterns for React, Next.js, state management, performance optimization, and UI best practices.
-author: affaan-m
+author: Mr-Nobody-Anonymous
 version: "1.0"
 source: "https://github.com/liuchiawei/agent-skills"
 source_repository: "liuchiawei/agent-skills"

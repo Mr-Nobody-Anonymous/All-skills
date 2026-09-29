@@ -39,5 +39,5 @@ Para comandos exactos y un proceso de extracción repetible, consulta [`docs/bus
 
 ## Patrocina Aquí
 
-- GitHub Sponsors: [https://github.com/sponsors/affaan-m](https://github.com/sponsors/affaan-m)
-- Sitio del proyecto: [https://ecc.tools](https://ecc.tools)
+- GitHub Sponsors: [https://github.com/sponsors/Mr-Nobody-Anonymous](https://github.com/sponsors/Mr-Nobody-Anonymous)
+- Sitio del proyecto: [https://github.com/Mr-Nobody-Anonymous/All-skills](https://github.com/Mr-Nobody-Anonymous/All-skills)

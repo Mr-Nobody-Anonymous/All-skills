@@ -72,7 +72,7 @@ Return:
 Use AgentShield in GitHub Actions for enforced gates:
 
 ```yaml
-- uses: affaan-m/agentshield@v1
+- uses: Mr-Nobody-Anonymous/All-skills@v1
   with:
     path: "."
     min-severity: "medium"
@@ -83,7 +83,7 @@ Use AgentShield in GitHub Actions for enforced gates:
 
 - Skill: `skills/security-scan/SKILL.md`
 - Agent: `agents/security-reviewer.md`
-- Scanner: <https://github.com/affaan-m/agentshield>
+- Scanner: <https://github.com/Mr-Nobody-Anonymous/All-skills>
 
 ## Arguments
 

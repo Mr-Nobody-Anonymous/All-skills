@@ -26,13 +26,13 @@ to expose those primitives through governed cross-harness contracts and make
 promotion, merge, and policy decisions auditable.
 
 The first cross-harness knowledge-transfer slice is tracked in
-[PR #2581](https://github.com/affaan-m/ECC/pull/2581). It adds a file-first
+[PR #2581](https://github.com/Mr-Nobody-Anonymous/All-skills/pull/2581). It adds a file-first
 memory vault for Codex, Claude Code, OpenCode, Cursor, and Hermes-style agents,
 with Markdown as the portable source of truth and an optional MCP projection.
 Every new memory remains unreviewed until a later, explicit promotion system is
-implemented. [PR #2582](https://github.com/affaan-m/ECC/pull/2582) addresses
+implemented. [PR #2582](https://github.com/Mr-Nobody-Anonymous/All-skills/pull/2582) addresses
 Claude's flat skill-discovery layout, and
-[PR #2583](https://github.com/affaan-m/ECC/pull/2583) aligns Claude agent tool
+[PR #2583](https://github.com/Mr-Nobody-Anonymous/All-skills/pull/2583) aligns Claude agent tool
 frontmatter with the documented scalar format.
 
 Existing implementation anchors:
@@ -55,9 +55,9 @@ The execution sequence is deliberately read-only first and promotion-gated:
 1. **Distribution and knowledge-transfer correctness.** Land the memory,
    Claude skill-layout, and Claude agent-frontmatter fixes with their complete
    security and cross-platform matrices. Re-evaluate
-   [PR #2555](https://github.com/affaan-m/ECC/pull/2555),
-   [PR #2490](https://github.com/affaan-m/ECC/pull/2490), and
-   [PR #2578](https://github.com/affaan-m/ECC/pull/2578) after those bases are
+   [PR #2555](https://github.com/Mr-Nobody-Anonymous/All-skills/pull/2555),
+   [PR #2490](https://github.com/Mr-Nobody-Anonymous/All-skills/pull/2490), and
+   [PR #2578](https://github.com/Mr-Nobody-Anonymous/All-skills/pull/2578) after those bases are
    stable.
 2. **ECC2 MCP read plane.** Add an opt-in MCP server over existing ECC2
    stores with bounded, redacted `list_sessions`, `get_diff`,
@@ -114,7 +114,7 @@ The execution sequence is deliberately read-only first and promotion-gated:
 9. **AgentShield v2 enforcement.** Introduce a versioned allow/approve/block
    policy contract enforced by ECC2, followed by signed provenance, registry
    locks, and optional dual-engine scanning from
-   [issue #2415](https://github.com/affaan-m/ECC/issues/2415).
+   [issue #2415](https://github.com/Mr-Nobody-Anonymous/All-skills/issues/2415).
 10. **Distribution interop.** Add provenance-preserving npx-skills and ClawHub
    import/export only after the policy and promotion contracts plus
    AgentShield's signed-provenance and registry-lock verification are stable.
@@ -138,8 +138,8 @@ the next dependent lane begins.
 
 - The tracked platform audit is still green on May 20 with 0 open PRs,
   0 open issues, 0 discussion maintainer-touch gaps, 0 answerable Q&A gaps,
-  0 conflicting PRs, and 0 blocking dirty files across `affaan-m/ECC`,
-  `affaan-m/agentshield`, `affaan-m/JARVIS`, `ECC-Tools/ECC-Tools`, and
+  0 conflicting PRs, and 0 blocking dirty files across `Mr-Nobody-Anonymous/All-skills`,
+  `Mr-Nobody-Anonymous/All-skills`, `Mr-Nobody-Anonymous/All-skills`, `ECC-Tools/ECC-Tools`, and
   `ECC-Tools/ECC-website`.
 - The new #2015 setup-location Q&A was answered and marked accepted. The
   answer keeps install guidance conservative: do not install into `C:\`; use a
@@ -219,7 +219,7 @@ the next dependent lane begins.
 
 ## 2026-05-19 Delta
 
-- The public repo identity is now `affaan-m/ECC`; release, package, plugin,
+- The public repo identity is now `Mr-Nobody-Anonymous/All-skills`; release, package, plugin,
   workflow, and launch-copy surfaces should use that URL for current public
   links.
 - The late May 19 queue drain added the deterministic `release:approval-gate`
@@ -240,8 +240,8 @@ the next dependent lane begins.
 
 As of 2026-05-20:
 
-- GitHub queues are clean across `affaan-m/ECC`,
-  `affaan-m/agentshield`, `affaan-m/JARVIS`, `ECC-Tools/ECC-Tools`, and
+- GitHub queues are clean across `Mr-Nobody-Anonymous/All-skills`,
+  `Mr-Nobody-Anonymous/All-skills`, `Mr-Nobody-Anonymous/All-skills`, `ECC-Tools/ECC-Tools`, and
   `ECC-Tools/ECC-website`: the latest `platform-audit` sweep found 0 open PRs,
   0 open issues, 0 discussion maintainer-touch gaps, 0 answerable Q&A missing
   accepted answers, and 0 blocking dirty files. The current
@@ -256,7 +256,7 @@ As of 2026-05-20:
   now at 0 open PRs and 0 open issues by live `gh search`. Archived repos
   touched during closure were restored to archived state.
 - GitHub discussions are current across those tracked repos:
-  `affaan-m/ECC` has 60 total discussions and 0 without
+  `Mr-Nobody-Anonymous/All-skills` has 60 total discussions and 0 without
   maintainer touch after the May 19 #2003 AURA integration proposal was routed
   as an external-adapter proposal, not core wallet/escrow coupling, and the
   May 20 #2015 setup-location Q&A was answered and accepted; AgentShield,

@@ -4,9 +4,9 @@
 
 ![ECC - ایجنٹک کام کے لیے ہارنس-نیٹو آپریٹر سسٹم](../../assets/hero.png)
 
-[![GitHub stars](https://img.shields.io/github/stars/affaan-m/ECC?style=flat)](https://github.com/affaan-m/ECC)
-[![GitHub forks](https://img.shields.io/github/forks/affaan-m/ECC?style=flat)](https://github.com/affaan-m/ECC/forks)
-[![Contributors](https://img.shields.io/github/contributors/affaan-m/ECC?style=flat)](https://github.com/affaan-m/ECC/graphs/contributors)
+[![GitHub stars](https://img.shields.io/github/stars/Mr-Nobody-Anonymous/All-skills?style=flat)](https://github.com/Mr-Nobody-Anonymous/All-skills)
+[![GitHub forks](https://img.shields.io/github/forks/Mr-Nobody-Anonymous/All-skills?style=flat)](https://github.com/Mr-Nobody-Anonymous/All-skills/forks)
+[![Contributors](https://img.shields.io/github/contributors/Mr-Nobody-Anonymous/All-skills?style=flat)](https://github.com/Mr-Nobody-Anonymous/All-skills/graphs/contributors)
 [![npm ecc-universal](https://img.shields.io/npm/dw/ecc-universal?label=ecc-universal%20weekly%20downloads&logo=npm)](https://www.npmjs.com/package/ecc-universal)
 [![npm ecc-agentshield](https://img.shields.io/npm/dw/ecc-agentshield?label=ecc-agentshield%20weekly%20downloads&logo=npm)](https://www.npmjs.com/package/ecc-agentshield)
 [![GitHub App Install](https://img.shields.io/endpoint?url=https%3A%2F%2Fapi.ecc.tools%2Fbadge%2Finstalls&logo=github)](https://github.com/marketplace/ecc-tools)
@@ -46,19 +46,19 @@ ECC v2.0.0-rc.1 اس قابل استعمال پرت پر عوامی Hermes آپ�
 <table>
 <tr>
 <td width="25%" align="center">
-  <a href="https://ecc.tools/pricing">
+  <a href="https://github.com/Mr-Nobody-Anonymous/All-skills/pricing">
     <strong> ECC Pro</strong><br />
     <sub>نجی ریپوز · GitHub App · $19/نشست/ماہ</sub>
   </a>
 </td>
 <td width="25%" align="center">
-  <a href="https://github.com/sponsors/affaan-m">
+  <a href="https://github.com/sponsors/Mr-Nobody-Anonymous">
     <strong> اسپانسر</strong><br />
     <sub>OSS کو فنڈ کریں · $5/ماہ سے</sub>
   </a>
 </td>
 <td width="25%" align="center">
-  <a href="https://github.com/affaan-m/ECC/discussions">
+  <a href="https://github.com/Mr-Nobody-Anonymous/All-skills/discussions">
     <strong> کمیونٹی</strong>
     <br />
     <sub>Discussions · Q&amp;A · Show & Tell</sub>
@@ -73,7 +73,7 @@ ECC v2.0.0-rc.1 اس قابل استعمال پرت پر عوامی Hermes آپ�
 </tr>
 </table>
 
-<sub>**OSS مفت رہتا ہے۔** یہ ریپو ہمیشہ کے لیے MIT لائسنس یافتہ ہے۔ ECC Pro نجی ریپوز کے لیے ہوسٹڈ GitHub App ہے۔ <a href="https://github.com/sponsors/affaan-m">اسپانسرز</a> اور <a href="https://ecc.tools/pricing">Pro سبسکرائبرز</a> اس کام کو فنڈ کرتے ہیں۔</sub>
+<sub>**OSS مفت رہتا ہے۔** یہ ریپو ہمیشہ کے لیے MIT لائسنس یافتہ ہے۔ ECC Pro نجی ریپوز کے لیے ہوسٹڈ GitHub App ہے۔ <a href="https://github.com/sponsors/Mr-Nobody-Anonymous">اسپانسرز</a> اور <a href="https://github.com/Mr-Nobody-Anonymous/All-skills/pricing">Pro سبسکرائبرز</a> اس کام کو فنڈ کرتے ہیں۔</sub>
 
 ---
 
@@ -108,7 +108,7 @@ ECC v2.0.0-rc.1 اس قابل استعمال پرت پر عوامی Hermes آپ�
 
 ```bash
 # مارکیٹ پلیس شامل کریں
-/plugin marketplace add https://github.com/affaan-m/ECC
+/plugin marketplace add https://github.com/Mr-Nobody-Anonymous/All-skills
 
 # پلگ ان انسٹال کریں
 /plugin install ecc@ecc
@@ -118,7 +118,7 @@ ECC v2.0.0-rc.1 اس قابل استعمال پرت پر عوامی Hermes آپ�
 
 ```bash
 # ریپو کلون کریں
-git clone https://github.com/affaan-m/ECC.git
+git clone https://github.com/Mr-Nobody-Anonymous/All-skills.git
 cd ECC
 
 # ECC-owned نیم اسپیس میں rules کاپی کریں

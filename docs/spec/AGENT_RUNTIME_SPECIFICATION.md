@@ -278,7 +278,7 @@ Eliminates prompt bloat through automated workspace detection:
 
 ## 2. The Core 10 Ecosystem Reference Repositories
 
-For detailed architectural mapping, see the full [All-skills v2 Runtime Master Plan](file:///c:/Users/hp/Desktop/All%20skills/docs/spec/V2_RUNTIME_MASTER_PLAN.md).
+For detailed architectural mapping, see the full [All-skills v2 Runtime Master Plan](V2_RUNTIME_MASTER_PLAN.md).
 
 1. **`NVIDIA/SkillEvaluator`** — Deterministic 3-tier validation (Validation $\rightarrow$ Deduplication $\rightarrow$ Live Agent Eval), synthetic evals, and sandboxed benchmarking.
 2. **`zhengyanzhao1997/SkillRouter`** — Large-scale retrieval and neural reranking algorithms over 80,000+ skills.

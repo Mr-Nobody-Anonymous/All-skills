@@ -1,6 +1,6 @@
 # Everything Claude Code
 
-[![Stars](https://img.shields.io/github/stars/affaan-m/everything-claude-code?style=flat)](https://github.com/affaan-m/everything-claude-code/stargazers)
+[![Stars](https://img.shields.io/github/stars/Mr-Nobody-Anonymous/All-skills?style=flat)](https://github.com/Mr-Nobody-Anonymous/All-skills/stargazers)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 ![Shell](https://img.shields.io/badge/-Shell-4EAA25?logo=gnu-bash&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white)
@@ -32,12 +32,12 @@
 <table>
 <tr>
 <td width="50%">
-<a href="https://x.com/affaanmustafa/status/2012378465664745795">
+<a href="https://github.com/Mr-Nobody-Anonymous/status/2012378465664745795">
 <img src="https://github.com/user-attachments/assets/1a471488-59cc-425b-8345-5245c7efbcef" alt="Everything Claude Code 簡明指南" />
 </a>
 </td>
 <td width="50%">
-<a href="https://x.com/affaanmustafa/status/2014040193557471352">
+<a href="https://github.com/Mr-Nobody-Anonymous/status/2014040193557471352">
 <img src="https://github.com/user-attachments/assets/c9ca43bc-b149-427f-b551-af6840c368f0" alt="Everything Claude Code 完整指南" />
 </a>
 </td>
@@ -67,7 +67,7 @@
 
 ```bash
 # 新增市集
-/plugin marketplace add https://github.com/affaan-m/ECC
+/plugin marketplace add https://github.com/Mr-Nobody-Anonymous/All-skills
 
 # 安裝外掛程式
 /plugin install ecc@ecc
@@ -79,7 +79,7 @@
 
 ```bash
 # 首先複製儲存庫
-git clone https://github.com/affaan-m/everything-claude-code.git
+git clone https://github.com/Mr-Nobody-Anonymous/All-skills.git
 
 # 複製規則（應用於所有專案）
 cp -r everything-claude-code/rules/* ~/.claude/rules/
@@ -243,7 +243,7 @@ everything-claude-code/
 
 從您的儲存庫自動生成 Claude Code 技能。
 
-[安裝 GitHub App](https://github.com/apps/skill-creator) | [ecc.tools](https://ecc.tools)
+[安裝 GitHub App](https://github.com/apps/skill-creator) | [ecc.tools](https://github.com/Mr-Nobody-Anonymous/All-skills)
 
 分析您的儲存庫並建立：
 - **SKILL.md 檔案** - 可直接用於 Claude Code 的技能
@@ -267,7 +267,7 @@ everything-claude-code/
 
 ```bash
 # 將此儲存庫新增為市集
-/plugin marketplace add https://github.com/affaan-m/ECC
+/plugin marketplace add https://github.com/Mr-Nobody-Anonymous/All-skills
 
 # 安裝外掛程式
 /plugin install ecc@ecc
@@ -281,7 +281,7 @@ everything-claude-code/
     "ecc": {
       "source": {
         "source": "github",
-        "repo": "affaan-m/everything-claude-code"
+        "repo": "Mr-Nobody-Anonymous/All-skills"
       }
     }
   },
@@ -301,7 +301,7 @@ everything-claude-code/
 
 ```bash
 # 複製儲存庫
-git clone https://github.com/affaan-m/everything-claude-code.git
+git clone https://github.com/Mr-Nobody-Anonymous/All-skills.git
 
 # 將代理程式複製到您的 Claude 設定
 cp everything-claude-code/agents/*.md ~/.claude/agents/
@@ -459,15 +459,15 @@ node tests/hooks/hooks.test.js
 
 ## Star 歷史
 
-[![Star History Chart](https://api.star-history.com/svg?repos=affaan-m/everything-claude-code&type=Date)](https://star-history.com/#affaan-m/everything-claude-code&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=Mr-Nobody-Anonymous/All-skills&type=Date)](https://star-history.com/#Mr-Nobody-Anonymous/All-skills&Date)
 
 ---
 
 ## 連結
 
-- **簡明指南（從這裡開始）：** [Everything Claude Code 簡明指南](https://x.com/affaanmustafa/status/2012378465664745795)
-- **完整指南（進階）：** [Everything Claude Code 完整指南](https://x.com/affaanmustafa/status/2014040193557471352)
-- **追蹤：** [@affaanmustafa](https://x.com/affaanmustafa)
+- **簡明指南（從這裡開始）：** [Everything Claude Code 簡明指南](https://github.com/Mr-Nobody-Anonymous/status/2012378465664745795)
+- **完整指南（進階）：** [Everything Claude Code 完整指南](https://github.com/Mr-Nobody-Anonymous/status/2014040193557471352)
+- **追蹤：** [@Mr-Nobody-Anonymous](https://github.com/Mr-Nobody-Anonymous)
 - **zenith.chat：** [zenith.chat](https://zenith.chat)
 - **技能目錄：** awesome-agent-skills（社區維護的智能體技能目錄）
 

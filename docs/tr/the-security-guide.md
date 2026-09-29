@@ -414,7 +414,7 @@ Bir kural istiyorsanız: asla kolaylık katmanının izolasyon katmanını geçm
 
 Bu bir kural sizi şaşırtıcı derecede ileri götürür.
 
-Kurulumunuzu tarayın: [github.com/affaan-m/agentshield](https://github.com/affaan-m/agentshield)
+Kurulumunuzu tarayın: [github.com/Mr-Nobody-Anonymous/All-skills](https://github.com/Mr-Nobody-Anonymous/All-skills)
 
 ---
 
@@ -446,10 +446,10 @@ Kurulumunuzu tarayın: [github.com/affaan-m/agentshield](https://github.com/affa
 
 Önceki kılavuzları okumadıysanız, buradan başlayın:
 
-> [Claude Code'un Her Şeyine Dair Kısa Kılavuz](https://x.com/affaanmustafa/status/2012378465664745795)
+> [Claude Code'un Her Şeyine Dair Kısa Kılavuz](https://github.com/Mr-Nobody-Anonymous/status/2012378465664745795)
 >
-> [Claude Code'un Her Şeyine Dair Uzun Kılavuz](https://x.com/affaanmustafa/status/2014040193557471352)
+> [Claude Code'un Her Şeyine Dair Uzun Kılavuz](https://github.com/Mr-Nobody-Anonymous/status/2014040193557471352)
 
 gidip yapın ve ayrıca bu repo'ları kaydedin:
-- [github.com/affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code)
-- [github.com/affaan-m/agentshield](https://github.com/affaan-m/agentshield)
+- [github.com/Mr-Nobody-Anonymous/All-skills](https://github.com/Mr-Nobody-Anonymous/All-skills)
+- [github.com/Mr-Nobody-Anonymous/All-skills](https://github.com/Mr-Nobody-Anonymous/All-skills)

@@ -414,7 +414,7 @@ Si quieres una regla: nunca dejes que la capa de conveniencia supere a la capa d
 
 Esa regla única te lleva sorprendentemente lejos.
 
-Escanea tu configuración: [github.com/affaan-m/agentshield](https://github.com/affaan-m/agentshield)
+Escanea tu configuración: [github.com/Mr-Nobody-Anonymous/All-skills](https://github.com/Mr-Nobody-Anonymous/All-skills)
 
 ---
 
@@ -452,5 +452,5 @@ Si no has leído las guías anteriores, empieza aquí:
 > [La Guía Extendida de Everything Claude Code](./the-longform-guide.md)
 
 también guarda estos repositorios:
-- [github.com/affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code)
-- [github.com/affaan-m/agentshield](https://github.com/affaan-m/agentshield)
+- [github.com/Mr-Nobody-Anonymous/All-skills](https://github.com/Mr-Nobody-Anonymous/All-skills)
+- [github.com/Mr-Nobody-Anonymous/All-skills](https://github.com/Mr-Nobody-Anonymous/All-skills)

@@ -21,15 +21,15 @@
 
 <p align="center">
   <a href="https://discord.gg/36yGMHGFbR"><img src="https://img.shields.io/discord/1496644400590094540?logo=discord&logoColor=white&label=Discord&color=5865F2" alt="Discord" /></a>
-  <a href="https://ecc.tools"><img src="https://img.shields.io/badge/Website-ecc.tools-E07856?logo=googlechrome&logoColor=white" alt="Website" /></a>
+  <a href="https://github.com/Mr-Nobody-Anonymous/All-skills"><img src="https://img.shields.io/badge/Website-ecc.tools-E07856?logo=googlechrome&logoColor=white" alt="Website" /></a>
   <a href="https://github.com/apps/ecc-tools"><img src="https://img.shields.io/badge/GitHub%20App-ECC%20Tools-181717?logo=github&logoColor=white" alt="GitHub App" /></a>
   <a href="../../LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT license" /></a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/affaan-m/ECC"><img src="https://img.shields.io/github/stars/affaan-m/ECC?style=flat" alt="GitHub stars" /></a>
-  <a href="https://github.com/affaan-m/ECC/forks"><img src="https://img.shields.io/github/forks/affaan-m/ECC?style=flat" alt="GitHub forks" /></a>
-  <a href="https://github.com/affaan-m/ECC/graphs/contributors"><img src="https://img.shields.io/github/contributors/affaan-m/ECC?style=flat" alt="Contributors" /></a>
+  <a href="https://github.com/Mr-Nobody-Anonymous/All-skills"><img src="https://img.shields.io/github/stars/Mr-Nobody-Anonymous/All-skills?style=flat" alt="GitHub stars" /></a>
+  <a href="https://github.com/Mr-Nobody-Anonymous/All-skills/forks"><img src="https://img.shields.io/github/forks/Mr-Nobody-Anonymous/All-skills?style=flat" alt="GitHub forks" /></a>
+  <a href="https://github.com/Mr-Nobody-Anonymous/All-skills/graphs/contributors"><img src="https://img.shields.io/github/contributors/Mr-Nobody-Anonymous/All-skills?style=flat" alt="Contributors" /></a>
   <a href="https://github.com/marketplace/ecc-tools"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fapi.ecc.tools%2Fbadge%2Finstalls&logo=github" alt="GitHub App installs" /></a>
 </p>
 
@@ -49,14 +49,14 @@
 </p>
 
 > [!WARNING]
-> **Лише офіційні джерела.** Встановлюйте ECC виключно з перевірених каналів: репозиторій GitHub [github.com/affaan-m/ECC](https://github.com/affaan-m/ECC), пакети npm [`ecc-universal`](https://www.npmjs.com/package/ecc-universal) та [`ecc-agentshield`](https://www.npmjs.com/package/ecc-agentshield), [GitHub App](https://github.com/apps/ecc-tools), ідентифікатор плагіна `ecc@ecc`, та вебсайт проєкту [ecc.tools](https://ecc.tools). Сторонні перезавантаження та неофіційні дзеркала не підтримуються і не перевіряються проєктом та можуть містити шкідливе програмне забезпечення.
+> **Лише офіційні джерела.** Встановлюйте ECC виключно з перевірених каналів: репозиторій GitHub [github.com/Mr-Nobody-Anonymous/All-skills](https://github.com/Mr-Nobody-Anonymous/All-skills), пакети npm [`ecc-universal`](https://www.npmjs.com/package/ecc-universal) та [`ecc-agentshield`](https://www.npmjs.com/package/ecc-agentshield), [GitHub App](https://github.com/apps/ecc-tools), ідентифікатор плагіна `ecc@ecc`, та вебсайт проєкту [ecc.tools](https://github.com/Mr-Nobody-Anonymous/All-skills). Сторонні перезавантаження та неофіційні дзеркала не підтримуються і не перевіряються проєктом та можуть містити шкідливе програмне забезпечення.
 
 ## Встановлення через Claude Code
 
 Виконайте ці команди всередині Claude Code:
 
 ```text
-/plugin marketplace add https://github.com/affaan-m/ECC
+/plugin marketplace add https://github.com/Mr-Nobody-Anonymous/All-skills
 /plugin install ecc@ecc
 ```
 
@@ -69,14 +69,14 @@
 <table aria-label="Основні посилання ECC">
 <tr>
 <td width="33%" align="center">
-  <a href="https://ecc.tools/pricing">
+  <a href="https://github.com/Mr-Nobody-Anonymous/All-skills/pricing">
     <img src="../../assets/images/community/ecc-tools-mark.svg" height="42" alt="ECC Tools" /><br />
     <strong>ECC Pro + GitHub App</strong>
   </a><br />
-  <sub><a href="https://github.com/apps/ecc-tools">Безкоштовне встановлення</a> · <a href="https://ecc.tools/pricing">Приватні репозиторії від $19/місце/міс</a></sub>
+  <sub><a href="https://github.com/apps/ecc-tools">Безкоштовне встановлення</a> · <a href="https://github.com/Mr-Nobody-Anonymous/All-skills/pricing">Приватні репозиторії від $19/місце/міс</a></sub>
 </td>
 <td width="33%" align="center">
-  <a href="https://github.com/sponsors/affaan-m">
+  <a href="https://github.com/sponsors/Mr-Nobody-Anonymous">
     <img src="../../assets/images/community/heart.svg" height="42" alt="" /><br />
     <strong>Підтримати ECC</strong>
   </a><br />
@@ -94,7 +94,7 @@
 
 </div>
 
-<sub>**OSS залишається безкоштовним.** Цей репозиторій ліцензований за MIT назавжди. ECC Pro — розміщений GitHub App для приватних репозиторіїв. <a href="https://github.com/sponsors/affaan-m">Спонсори</a> та <a href="https://ecc.tools/pricing">Pro-підписники</a> фінансують роботу. Саме тому один розробник щотижня випускає оновлення для 7 оболонок.</sub>
+<sub>**OSS залишається безкоштовним.** Цей репозиторій ліцензований за MIT назавжди. ECC Pro — розміщений GitHub App для приватних репозиторіїв. <a href="https://github.com/sponsors/Mr-Nobody-Anonymous">Спонсори</a> та <a href="https://github.com/Mr-Nobody-Anonymous/All-skills/pricing">Pro-підписники</a> фінансують роботу. Саме тому один розробник щотижня випускає оновлення для 7 оболонок.</sub>
 
 <div align="center">
 
@@ -111,7 +111,7 @@
 
 <sub><strong>Спонсори спільноти:</strong> <a href="https://github.com/mikejmorgan-ai">Mike Morgan</a> · <a href="https://github.com/jasonwu513">@jasonwu513</a> · <a href="https://github.com/1anter">@1anter</a> · <a href="https://github.com/massimotodaro">@massimotodaro</a> · <a href="https://github.com/meadmccabe">@meadmccabe</a></sub>
 
-<sub><a href="https://github.com/sponsors/affaan-m"><strong>Стати спонсором</strong></a> · <a href="../../SPONSORS.md">Рівні спонсорства</a> · <a href="../../SPONSORING.md">Програма спонсорства</a></sub>
+<sub><a href="https://github.com/sponsors/Mr-Nobody-Anonymous"><strong>Стати спонсором</strong></a> · <a href="../../SPONSORS.md">Рівні спонсорства</a> · <a href="../../SPONSORING.md">Програма спонсорства</a></sub>
 
 </div>
 
@@ -162,7 +162,7 @@ ECC — це MIT-ліцензований open source. Найкраще прац
 
 Якщо ви вже наклали кілька встановлень і щось виглядає продубльованим, перейдіть одразу до [Скидання / видалення ECC](#скидання--видалення-ecc).
 
-**Проблеми зі встановленням?** Відкрийте коротку [форму проблеми встановлення чи виконання](https://github.com/affaan-m/ECC/issues/new?template=install-problem.yml) або запустіть `ecc feedback`. ECC ніколи автоматично не завантажує діагностику.
+**Проблеми зі встановленням?** Відкрийте коротку [форму проблеми встановлення чи виконання](https://github.com/Mr-Nobody-Anonymous/All-skills/issues/new?template=install-problem.yml) або запустіть `ecc feedback`. ECC ніколи автоматично не завантажує діагностику.
 
 ### Деталі для Claude Code
 
@@ -173,7 +173,7 @@ Claude Code володіє цими вбудованими командами, �
 Плагіни Claude Code не можуть розповсюджувати `rules`, тому додавайте лише ті пакети правил, які вам справді потрібні:
 
 ```bash
-git clone https://github.com/affaan-m/ECC.git
+git clone https://github.com/Mr-Nobody-Anonymous/All-skills.git
 cd ECC
 mkdir -p ~/.claude/rules/ecc
 cp -R rules/common ~/.claude/rules/ecc/
@@ -193,7 +193,7 @@ cp -R rules/typescript ~/.claude/rules/ecc/  # замініть на ваш ст
     "ecc": {
       "source": {
         "source": "github",
-        "repo": "affaan-m/ECC"
+        "repo": "Mr-Nobody-Anonymous/All-skills"
       }
     }
   },
@@ -207,11 +207,11 @@ cp -R rules/typescript ~/.claude/rules/ecc/  # замініть на ваш ст
 </details>
 
 <details>
-<summary><strong>Примітка щодо іменування та міграції (ecc@ecc, affaan-m/ECC, ecc-universal)</strong></summary>
+<summary><strong>Примітка щодо іменування та міграції (ecc@ecc, Mr-Nobody-Anonymous/All-skills, ecc-universal)</strong></summary>
 
 ECC має три публічних ідентифікатори, і вони не є взаємозамінними:
 
-- Вихідний репозиторій GitHub: `affaan-m/ECC`
+- Вихідний репозиторій GitHub: `Mr-Nobody-Anonymous/All-skills`
 - Ідентифікатор marketplace/плагіна Claude: `ecc@ecc`
 - Пакет npm: `ecc-universal`
 
@@ -227,7 +227,7 @@ ECC має три публічних ідентифікатори, і вони �
 Поточні релізи Codex можуть встановлювати ECC як нативний плагін репо-маркетплейсу. Запис маркетплейсу використовує корінь репозиторію, тому кеш Codex отримує маніфест разом з усіма навичками, конфігурацією MCP, середовищем виконання хуків, скриптами та ресурсами, на які є посилання:
 
 ```bash
-codex plugin marketplace add affaan-m/ECC
+codex plugin marketplace add Mr-Nobody-Anonymous/All-skills
 codex plugin add ecc@ecc
 codex plugin list --json
 node scripts/codex/check-plugin-cache.js
@@ -238,7 +238,7 @@ node scripts/codex/check-plugin-cache.js
 Старіший шлях `scripts/sync-ecc-to-codex.sh` залишається окремим варіантом сумісності для користувачів, які навмисно хочуть скопійовану та злиту конфігурацію в `~/.codex`; він не потрібен для нативного плагіна. Спочатку запустіть Codex один раз, щоб `~/.codex/config.toml` існував, потім:
 
 ```bash
-git clone https://github.com/affaan-m/ECC.git
+git clone https://github.com/Mr-Nobody-Anonymous/All-skills.git
 cd ECC
 npm install
 bash scripts/sync-ecc-to-codex.sh
@@ -256,7 +256,7 @@ bash scripts/sync-ecc-to-codex.sh
 Клонуйте ECC один раз, потім оберіть ціль, що відповідає вашій оболонці:
 
 ```bash
-git clone https://github.com/affaan-m/ECC.git
+git clone https://github.com/Mr-Nobody-Anonymous/All-skills.git
 cd ECC
 ```
 
@@ -387,7 +387,7 @@ cp -R /path/to/ECC/rules/typescript .claude/rules/ecc/
 Використовуйте це лише коли ви навмисно пропускаєте шлях плагіна:
 
 ```bash
-git clone https://github.com/affaan-m/ECC.git
+git clone https://github.com/Mr-Nobody-Anonymous/All-skills.git
 cd ECC
 ./install.sh --profile full
 ```
@@ -395,7 +395,7 @@ cd ECC
 Windows:
 
 ```powershell
-git clone https://github.com/affaan-m/ECC.git
+git clone https://github.com/Mr-Nobody-Anonymous/All-skills.git
 cd ECC
 .\install.ps1 --profile full
 ```
@@ -543,7 +543,7 @@ node scripts/uninstall.js --dry-run
 node scripts/uninstall.js
 ```
 
-Якщо ви йдете, команда видалення друкує опційну [20-секундну форму зворотного зв'язку](https://github.com/affaan-m/ECC/issues/new?template=quick-feedback.yml). Це публічний issue на GitHub, вона ніколи не блокує видалення, і ECC не завантажує діагностику. Ви також можете в будь-який час запустити `ecc feedback`, щоб побачити маршрути для проблем, зворотного зв'язку та пропозицій функцій.
+Якщо ви йдете, команда видалення друкує опційну [20-секундну форму зворотного зв'язку](https://github.com/Mr-Nobody-Anonymous/All-skills/issues/new?template=quick-feedback.yml). Це публічний issue на GitHub, вона ніколи не блокує видалення, і ECC не завантажує діагностику. Ви також можете в будь-який час запустити `ecc feedback`, щоб побачити маршрути для проблем, зворотного зв'язку та пропозицій функцій.
 
 Користувачі плагіна повинні видалити плагін з Claude Code, а потім видалити лише ті папки правил, які вони скопіювали вручну і більше не хочуть мати. ECC видаляє лише файли, записані в його стані встановлення. Він не претендує на непов'язані файли у ваших директоріях оболонки.
 
@@ -719,17 +719,17 @@ ECC також постачає розширені керовані адапте
 
 > [!IMPORTANT]
 > **НОВЕ В ECC 2.1: Plan Canvas · оболонка Kimi · самостійне обслуговування на GPU Itô.**
-> [Дивіться повні примітки до релізу →](https://github.com/affaan-m/ECC/blob/main/docs/releases/2.1.0/release-notes.md)
+> [Дивіться повні примітки до релізу →](https://github.com/Mr-Nobody-Anonymous/All-skills/blob/main/docs/releases/2.1.0/release-notes.md)
 
 ### Plan Canvas: переглядайте плани, вказуючи, а не передруковуючи
 
 Ваш агент пише план, потім відкриває його в браузерному канвасі, доступному лише локально. Клацніть частину, яку маєте на увазі, додайте пронумеровані анотації, спілкуйтесь з бічної панелі та натисніть **Схвалити план** чи **Запросити зміни**. Вердикт відображається безпосередньо на воротах CONFIRM команди `/plan`. Діаграми Mermaid відображаються наживо, а зміни в файлі плану перезавантажують сторінку.
 
-![Plan Canvas demo: reviewing an ECC plan in the browser, scrolling diagrams, attaching an anchored annotation, chatting with the agent, and approving the plan](https://raw.githubusercontent.com/affaan-m/ECC/main/docs/releases/2.1.0/assets/ecc-plan-canvas-demo.gif)
+![Plan Canvas demo: reviewing an ECC plan in the browser, scrolling diagrams, attaching an anchored annotation, chatting with the agent, and approving the plan](https://raw.githubusercontent.com/Mr-Nobody-Anonymous/All-skills/main/docs/releases/2.1.0/assets/ecc-plan-canvas-demo.gif)
 
 Це агностично до оболонки та моделі: простий CLI (`ecc-plan-canvas`), що говорить JSON, тому будь-який агент може ним керувати. Спробуйте: попросіть вашого агента виконати `/ecc:plan` щось, а потім переглядайте зі сторінки замість терміналу.
 
-[Відкрити план, використаний у цьому демо →](https://github.com/affaan-m/ECC/blob/main/docs/releases/2.1.0/plan-canvas-demo.plan.md)
+[Відкрити план, використаний у цьому демо →](https://github.com/Mr-Nobody-Anonymous/All-skills/blob/main/docs/releases/2.1.0/plan-canvas-demo.plan.md)
 
 ### Також у 2.1
 
@@ -747,18 +747,18 @@ ECC також постачає розширені керовані адапте
 
 | Версія | Основне |
 |---|---|
-| [v2.0.0](https://github.com/affaan-m/ECC/releases/tag/v2.0.0) | Операційна система агентних оболонок: крос-оболонкова градація, субстрат площини управління, оркестратори `orch-*`, Discord + бот ECC, політика єдиного конектора MCP |
-| [v1.10.0](https://github.com/affaan-m/ECC/releases/tag/v1.10.0) | Оновлення поверхні, оператори процеси, альфа-версія ECC 2.0 |
-| [v1.9.0](https://github.com/affaan-m/ECC/releases/tag/v1.9.0) | Вибіркове встановлення, ECC Tools Pro, 12 мовних екосистем |
-| [v1.8.0](https://github.com/affaan-m/ECC/releases/tag/v1.8.0) | Продуктивність оболонок та крос-платформна надійність |
-| [v1.7.0](https://github.com/affaan-m/ECC/releases/tag/v1.7.0) | Крос-платформне розширення та конструктор презентацій |
-| [v1.6.0](https://github.com/affaan-m/ECC/releases/tag/v1.6.0) | Codex Edition та ECC Tools GitHub App |
-| [v1.5.0](https://github.com/affaan-m/ECC/releases/tag/v1.5.0) | Universal Edition |
-| [v1.4.0](https://github.com/affaan-m/ECC/releases/tag/v1.4.0) | Мультимовні правила, майстер встановлення, оркестрація PM2 |
-| [v1.3.0](https://github.com/affaan-m/ECC/releases/tag/v1.3.0) | Повна підтримка плагіна OpenCode |
-| [v1.2.0](https://github.com/affaan-m/ECC/releases/tag/v1.2.0) | Уніфіковані команди та навички |
-| [v1.1.0](https://github.com/affaan-m/ECC/releases/tag/v1.1.0) | Крос-платформна підтримка та виправлення від спільноти |
-| [v1.0.0](https://github.com/affaan-m/ECC/releases/tag/v1.0.0) | Офіційний реліз плагіна |
+| [v2.0.0](https://github.com/Mr-Nobody-Anonymous/All-skills/releases/tag/v2.0.0) | Операційна система агентних оболонок: крос-оболонкова градація, субстрат площини управління, оркестратори `orch-*`, Discord + бот ECC, політика єдиного конектора MCP |
+| [v1.10.0](https://github.com/Mr-Nobody-Anonymous/All-skills/releases/tag/v1.10.0) | Оновлення поверхні, оператори процеси, альфа-версія ECC 2.0 |
+| [v1.9.0](https://github.com/Mr-Nobody-Anonymous/All-skills/releases/tag/v1.9.0) | Вибіркове встановлення, ECC Tools Pro, 12 мовних екосистем |
+| [v1.8.0](https://github.com/Mr-Nobody-Anonymous/All-skills/releases/tag/v1.8.0) | Продуктивність оболонок та крос-платформна надійність |
+| [v1.7.0](https://github.com/Mr-Nobody-Anonymous/All-skills/releases/tag/v1.7.0) | Крос-платформне розширення та конструктор презентацій |
+| [v1.6.0](https://github.com/Mr-Nobody-Anonymous/All-skills/releases/tag/v1.6.0) | Codex Edition та ECC Tools GitHub App |
+| [v1.5.0](https://github.com/Mr-Nobody-Anonymous/All-skills/releases/tag/v1.5.0) | Universal Edition |
+| [v1.4.0](https://github.com/Mr-Nobody-Anonymous/All-skills/releases/tag/v1.4.0) | Мультимовні правила, майстер встановлення, оркестрація PM2 |
+| [v1.3.0](https://github.com/Mr-Nobody-Anonymous/All-skills/releases/tag/v1.3.0) | Повна підтримка плагіна OpenCode |
+| [v1.2.0](https://github.com/Mr-Nobody-Anonymous/All-skills/releases/tag/v1.2.0) | Уніфіковані команди та навички |
+| [v1.1.0](https://github.com/Mr-Nobody-Anonymous/All-skills/releases/tag/v1.1.0) | Крос-платформна підтримка та виправлення від спільноти |
+| [v1.0.0](https://github.com/Mr-Nobody-Anonymous/All-skills/releases/tag/v1.0.0) | Офіційний реліз плагіна |
 
 </details>
 
@@ -823,7 +823,7 @@ ECC також постачає розширені керовані адапте
 
 ### v1.4.1: Виправлення помилки (лют. 2026)
 
-- **Виправлено втрату вмісту при імпорті інстинктів**: `parse_instinct_file()` мовчки відкидав увесь вміст після frontmatter (розділи Action, Evidence, Examples) під час `/instinct-import`. ([#148](https://github.com/affaan-m/ECC/issues/148), [#161](https://github.com/affaan-m/ECC/pull/161))
+- **Виправлено втрату вмісту при імпорті інстинктів**: `parse_instinct_file()` мовчки відкидав увесь вміст після frontmatter (розділи Action, Evidence, Examples) під час `/instinct-import`. ([#148](https://github.com/Mr-Nobody-Anonymous/All-skills/issues/148), [#161](https://github.com/Mr-Nobody-Anonymous/All-skills/pull/161))
 
 ### v1.4.0: Мультимовні правила, майстер встановлення та PM2 (лют. 2026)
 
@@ -847,7 +847,7 @@ ECC також постачає розширені керовані адапте
 - **Управління сесіями**: команда `/sessions` для історії сесій.
 - **Безперервне навчання v2**: навчання на основі інстинктів з оцінюванням довіри, імпортом/експортом, еволюцією.
 
-Повний журнал змін у [Releases](https://github.com/affaan-m/ECC/releases).
+Повний журнал змін у [Releases](https://github.com/Mr-Nobody-Anonymous/All-skills/releases).
 </details>
 
 ## Чому обрати ECC?
@@ -951,21 +951,21 @@ ecc memory doctor
 <img src="../../assets/images/guides/shorthand-guide.png" width="213" height="120" alt="Короткий посібник з ECC" /><br />
 <strong>Короткий посібник</strong>
 </a>
-<br /><sub>Налаштування, основи та використання з першого дня. <b>Читайте спочатку.</b> (<a href="https://x.com/affaan/status/2012378465664745795">нитка</a>)</sub>
+<br /><sub>Налаштування, основи та використання з першого дня. <b>Читайте спочатку.</b></sub>
 </td>
 <td width="33%" align="center">
 <a href="../../the-longform-guide.md">
 <img src="../../assets/images/guides/longform-guide.png" width="213" height="120" alt="Розширений посібник з ECC" /><br />
 <strong>Розширений посібник</strong>
 </a>
-<br /><sub>Економіка контексту, пам'ять, оцінки та паралельні агенти. (<a href="https://x.com/affaan/status/2014040193557471352">нитка</a>)</sub>
+<br /><sub>Економіка контексту, пам'ять, оцінки та паралельні агенти.</sub>
 </td>
 <td width="33%" align="center">
 <a href="../../the-security-guide.md">
 <img src="../../assets/images/guides/security-guide.png" width="213" height="120" alt="Посібник з безпеки ECC" /><br />
 <strong>Посібник з безпеки</strong>
 </a>
-<br /><sub>Ін'єкція промптів, хуки, MCP та AgentShield. (<a href="https://x.com/affaan/status/2033263813387223421">нитка</a>)</sub>
+<br /><sub>Ін'єкція промптів, хуки, MCP та AgentShield.</sub>
 </td>
 </tr>
 </table>
@@ -1047,7 +1047,7 @@ python3 ./ecc_dashboard.py
 
 Для розширених функцій (10k+ комітів, автоматичні PR, спільний доступ у команді):
 
-[Встановити ECC Tools GitHub App](https://github.com/apps/ecc-tools) | [ecc.tools](https://ecc.tools)
+[Встановити ECC Tools GitHub App](https://github.com/apps/ecc-tools) | [ecc.tools](https://github.com/Mr-Nobody-Anonymous/All-skills)
 
 ```bash
 # Коментуйте у будь-якому issue:
@@ -1087,9 +1087,9 @@ npx ecc-agentshield init
 
 **Формати виводу:** термінал (кольорова градація A-F), JSON (CI-конвеєри), Markdown, HTML. Код виходу 2 при критичних знахідках для воріт збирання.
 
-Використовуйте `/security-scan` у Claude Code для запуску, або додайте до CI через [GitHub Action](https://github.com/affaan-m/agentshield).
+Використовуйте `/security-scan` у Claude Code для запуску, або додайте до CI через [GitHub Action](https://github.com/Mr-Nobody-Anonymous/All-skills).
 
-[GitHub](https://github.com/affaan-m/agentshield) | [npm](https://www.npmjs.com/package/ecc-agentshield)
+[GitHub](https://github.com/Mr-Nobody-Anonymous/All-skills) | [npm](https://www.npmjs.com/package/ecc-agentshield)
 </details>
 
 <details>
@@ -1180,9 +1180,9 @@ rules/
 | Платформа | Статус | Поточне обмеження |
 |---|---|---|
 | Linux | Підтримується основний | Опційні функції можуть вимагати Bash, Python чи інструменти конкретного провайдера. |
-| macOS | Підтримується основний | Автономний шлях GAN shell не сумісний із системним Bash 3.2 і наразі має дефект розбору оцінок ([#2674](https://github.com/affaan-m/ECC/issues/2674)). |
+| macOS | Підтримується основний | Автономний шлях GAN shell не сумісний із системним Bash 3.2 і наразі має дефект розбору оцінок ([#2674](https://github.com/Mr-Nobody-Anonymous/All-skills/issues/2674)). |
 | Windows + WSL | Підтримується основний | WSL слідує шляхам Linux; інтеграції з хостом Windows все ще відрізняються залежно від оболонки. |
-| Windows нативний | Підтримується з обмеженнями | Демон спостерігача та записи сховища пам'яті continuous-learning v2 мають відкриті дефекти на нативному Windows ([#2489](https://github.com/affaan-m/ECC/issues/2489), [#2626](https://github.com/affaan-m/ECC/issues/2626)). Опційні функції на основі shell вимагають Git Bash/WSL чи недоступні. |
+| Windows нативний | Підтримується з обмеженнями | Демон спостерігача та записи сховища пам'яті continuous-learning v2 мають відкриті дефекти на нативному Windows ([#2489](https://github.com/Mr-Nobody-Anonymous/All-skills/issues/2489), [#2626](https://github.com/Mr-Nobody-Anonymous/All-skills/issues/2626)). Опційні функції на основі shell вимагають Git Bash/WSL чи недоступні. |
 
 Розглядайте `stable`, `beta`, `experimental` та `instruction-only` нижче як твердження про можливості, а не маркетингові рівні.
 
@@ -1278,7 +1278,7 @@ export ECC_AGENT_DATA_HOME="$HOME/.cursor/ecc"
 - `$ECC_AGENT_DATA_HOME/session-aliases.json`: псевдоніми сесій
 - `$ECC_AGENT_DATA_HOME/metrics/`: метрики витрат та активності
 
-Дивіться [affaan-m/ECC#2065](https://github.com/affaan-m/ECC/issues/2065).
+Дивіться [Mr-Nobody-Anonymous/All-skills#2065](https://github.com/Mr-Nobody-Anonymous/All-skills/issues/2065).
 </details>
 
 ## Підтримка платформ
@@ -1287,8 +1287,8 @@ export ECC_AGENT_DATA_HOME="$HOME/.cursor/ecc"
 |---|---|---|---|
 | Claude Code | Стабільна основна | Плагін чи вибірковий інсталятор | Плагін рекламує встановлений каталог моделі; використовуйте вибірковий/ручний профіль, коли важливий обсяг контексту. Опційні навички на основі shell не портативні на кожну ОС. |
 | Codex | Підтримувана синхронізація; маркетплейс експериментальний | Конфігурація репозиторію чи `sync-ecc-to-codex.sh` | Немає середовища виконання хуків ECC. Пакет маркетплейсу може пропускати спільний вміст репозиторію з кешу Codex; використовуйте синхронізацію для надійного шляху. |
-| Cursor | Бета-адаптер проєкту | Вибірковий інсталятор у `.cursor/` | Виявлення агентів залежить від збірки Cursor, а шляхи інсталятора ECC ще не показують ідентичні набори хуків ([#2419](https://github.com/affaan-m/ECC/issues/2419)). |
-| OpenCode | Бета зібраний плагін | Зберіть плагін, потім вибірковий інсталятор | ECC постачає підмножину каталогу, а еталонна конфігурація прив'язує моделі Anthropic; оберіть моделі, доступні вашому провайдеру ([#2617](https://github.com/affaan-m/ECC/issues/2617)). |
+| Cursor | Бета-адаптер проєкту | Вибірковий інсталятор у `.cursor/` | Виявлення агентів залежить від збірки Cursor, а шляхи інсталятора ECC ще не показують ідентичні набори хуків ([#2419](https://github.com/Mr-Nobody-Anonymous/All-skills/issues/2419)). |
+| OpenCode | Бета зібраний плагін | Зберіть плагін, потім вибірковий інсталятор | ECC постачає підмножину каталогу, а еталонна конфігурація прив'язує моделі Anthropic; оберіть моделі, доступні вашому провайдеру ([#2617](https://github.com/Mr-Nobody-Anonymous/All-skills/issues/2617)). |
 | GitHub Copilot | Лише інструкції | Закомічені інструкції та файли промптів | Немає хуків ECC, агентів часу виконання, делегування чи нативного виявлення навичок. |
 | Gemini, Zed, Antigravity, Qwen, Hermes, OpenClaw, Kimi, CodeBuddy, JoyCode | Експериментальні/мінімальні адаптери | Ціль вибіркова для оболонки | Розміщення файлів та портативність інструкцій перевірені; повний паритет функцій Claude не заявляється. |
 
@@ -1689,18 +1689,18 @@ Claude Code v2.1+ **автоматично завантажує** `hooks/hooks.j
 Duplicate hooks file detected: ./hooks/hooks.json resolves to already-loaded file
 ```
 
-**Передісторія:** Це спричинило повторювані цикли виправлення/відкату в цьому репозиторії ([#29](https://github.com/affaan-m/ECC/issues/29), [#52](https://github.com/affaan-m/ECC/issues/52), [#103](https://github.com/affaan-m/ECC/issues/103)). Поведінка змінювалася між версіями Claude Code, що призводило до плутанини. Тепер є регресійний тест для запобігання повторного введення цього.
+**Передісторія:** Це спричинило повторювані цикли виправлення/відкату в цьому репозиторії ([#29](https://github.com/Mr-Nobody-Anonymous/All-skills/issues/29), [#52](https://github.com/Mr-Nobody-Anonymous/All-skills/issues/52), [#103](https://github.com/Mr-Nobody-Anonymous/All-skills/issues/103)). Поведінка змінювалася між версіями Claude Code, що призводило до плутанини. Тепер є регресійний тест для запобігання повторного введення цього.
 </details>
 
 ## Безпека
 
 Встановлюйте ECC лише з офіційних джерел:
 
-- Репозиторій GitHub: <https://github.com/affaan-m/ECC>
+- Репозиторій GitHub: <https://github.com/Mr-Nobody-Anonymous/All-skills>
 - Плагін Claude Code: `ecc@ecc`
 - Пакети npm: [`ecc-universal`](https://www.npmjs.com/package/ecc-universal) та [`ecc-agentshield`](https://www.npmjs.com/package/ecc-agentshield)
 - GitHub App: <https://github.com/apps/ecc-tools>
-- Вебсайт: <https://ecc.tools>
+- Вебсайт: <https://github.com/Mr-Nobody-Anonymous/All-skills>
 
 Скануйте проєкт з AgentShield:
 
@@ -1750,7 +1750,7 @@ npx -y ecc-agentshield scan --path .
 <details>
 <summary><strong>Мої хуки не працюють / помилки "Duplicate hooks file"</strong></summary>
 
-**НЕ додавайте поле `"hooks"` до `.claude-plugin/plugin.json`.** Claude Code v2.1+ автоматично завантажує `hooks/hooks.json` зі встановлених плагінів. Явне оголошення спричиняє помилки виявлення дублікатів. Дивіться [#29](https://github.com/affaan-m/ECC/issues/29), [#52](https://github.com/affaan-m/ECC/issues/52), [#103](https://github.com/affaan-m/ECC/issues/103).
+**НЕ додавайте поле `"hooks"` до `.claude-plugin/plugin.json`.** Claude Code v2.1+ автоматично завантажує `hooks/hooks.json` зі встановлених плагінів. Явне оголошення спричиняє помилки виявлення дублікатів. Дивіться [#29](https://github.com/Mr-Nobody-Anonymous/All-skills/issues/29), [#52](https://github.com/Mr-Nobody-Anonymous/All-skills/issues/52), [#103](https://github.com/Mr-Nobody-Anonymous/All-skills/issues/103).
 </details>
 
 <details>
@@ -1762,7 +1762,7 @@ npx -y ecc-agentshield scan --path .
 node scripts/codex/check-plugin-cache.js
 ```
 
-Якщо повідомляється про невирішені батьківські посилання, використовуйте `bash scripts/sync-ecc-to-codex.sh`. Реєстрація в `codex plugin list` підтверджує запис маркетплейсу, а не те, що кожен файл, на який є посилання, досягнув кешу плагіна. Завантаження навичок під час виконання з локальних/репо-маркетплейсів все ще ненадійне вище за течією ([openai/codex#26037](https://github.com/openai/codex/issues/26037)); дивіться [#2128](https://github.com/affaan-m/ECC/issues/2128) для повного дослідження.
+Якщо повідомляється про невирішені батьківські посилання, використовуйте `bash scripts/sync-ecc-to-codex.sh`. Реєстрація в `codex plugin list` підтверджує запис маркетплейсу, а не те, що кожен файл, на який є посилання, досягнув кешу плагіна. Завантаження навичок під час виконання з локальних/репо-маркетплейсів все ще ненадійне вище за течією ([openai/codex#26037](https://github.com/openai/codex/issues/26037)); дивіться [#2128](https://github.com/Mr-Nobody-Anonymous/All-skills/issues/2128) для повного дослідження.
 </details>
 
 <details>
@@ -1812,7 +1812,7 @@ cp -r rules/common ~/.claude/rules/ecc/
 <details>
 <summary><strong>Моєї платформи немає в списку</strong></summary>
 
-Використовуйте [посібник з ручної адаптації](../../docs/MANUAL-ADAPTATION-GUIDE.md), чи відкрийте [обговорення GitHub](https://github.com/affaan-m/ECC/discussions) з назвою оболонки та форматами файлів, навичок, команд і хуків, які вона підтримує.
+Використовуйте [посібник з ручної адаптації](../../docs/MANUAL-ADAPTATION-GUIDE.md), чи відкрийте [обговорення GitHub](https://github.com/Mr-Nobody-Anonymous/All-skills/discussions) з назвою оболонки та форматами файлів, навичок, команд і хуків, які вона підтримує.
 </details>
 
 ## Запуск тестів
@@ -1846,14 +1846,14 @@ ECC Pro додає аналіз приватних репозиторіїв, а�
 
 <table>
 <tr>
-<td width="25%" align="center"><a href="https://ecc.tools/pricing"><strong>ECC Pro</strong><br /><sub>Розміщений GitHub App для приватних репозиторіїв</sub></a></td>
-<td width="25%" align="center"><a href="https://github.com/sponsors/affaan-m"><strong>Спонсорувати ECC</strong><br /><sub>Фінансувати OSS-роботу</sub></a></td>
-<td width="25%" align="center"><a href="https://github.com/affaan-m/ECC/discussions"><strong>Спільнота</strong><br /><sub>Питання, ідеї та Show and Tell</sub></a></td>
+<td width="25%" align="center"><a href="https://github.com/Mr-Nobody-Anonymous/All-skills/pricing"><strong>ECC Pro</strong><br /><sub>Розміщений GitHub App для приватних репозиторіїв</sub></a></td>
+<td width="25%" align="center"><a href="https://github.com/sponsors/Mr-Nobody-Anonymous"><strong>Спонсорувати ECC</strong><br /><sub>Фінансувати OSS-роботу</sub></a></td>
+<td width="25%" align="center"><a href="https://github.com/Mr-Nobody-Anonymous/All-skills/discussions"><strong>Спільнота</strong><br /><sub>Питання, ідеї та Show and Tell</sub></a></td>
 <td width="25%" align="center"><a href="https://github.com/apps/ecc-tools"><strong>GitHub App</strong><br /><sub>Аудити PR та розміщені процеси</sub></a></td>
 </tr>
 </table>
 
-[Стати спонсором](https://github.com/sponsors/affaan-m) | [Рівні спонсорства](../../SPONSORS.md) | [Програма спонсорства](../../SPONSORING.md)
+[Стати спонсором](https://github.com/sponsors/Mr-Nobody-Anonymous) | [Рівні спонсорства](../../SPONSORS.md) | [Програма спонсорства](../../SPONSORING.md)
 </details>
 
 <details>
@@ -1883,10 +1883,10 @@ ECC Pro додає аналіз приватних репозиторіїв, а�
 
 ## Посилання
 
-- **Короткий посібник (Почніть тут):** [Короткий посібник з ECC](https://x.com/affaan/status/2012378465664745795)
-- **Розширений посібник (Для досвідчених):** [Розширений посібник з ECC](https://x.com/affaan/status/2014040193557471352)
-- **Посібник з безпеки:** [Посібник з безпеки](../../the-security-guide.md) | [Нитка](https://x.com/affaan/status/2033263813387223421)
-- **Підписатись:** [@affaan](https://x.com/affaan)
+- **Короткий посібник (Почніть тут):** [Короткий посібник з ECC](https://github.com/Mr-Nobody-Anonymous/All-skills/blob/main/the-shortform-guide.md)
+- **Розширений посібник (Для досвідчених):** [Розширений посібник з ECC](https://github.com/Mr-Nobody-Anonymous/All-skills/blob/main/the-longform-guide.md)
+- **Посібник з безпеки:** [Посібник з безпеки](../../the-security-guide.md)
+- **Підписатись:** [@Mr-Nobody-Anonymous](https://github.com/Mr-Nobody-Anonymous)
 
 ## Ліцензія
 

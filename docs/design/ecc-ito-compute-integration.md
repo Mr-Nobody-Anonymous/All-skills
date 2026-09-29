@@ -2,7 +2,7 @@
 
 Status: **Implemented local CLI bridge; managed inference remains unavailable**
 
-Owner: Affaan Mustafa
+Owner: Mr-Nobody-Anonymous
 
 Updated: 2026-07-23
 

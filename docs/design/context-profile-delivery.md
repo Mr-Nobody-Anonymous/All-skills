@@ -80,7 +80,7 @@ Real execution requires an explicit flag and provider authentication. Codex uses
 
 ## Community integration
 
-Jeffrey Montoya's [#2788](https://github.com/affaan-m/ECC/pull/2788) informed whole-tree staging, ownership receipts and reversible generations. LovePlayCode's [#2844](https://github.com/affaan-m/ECC/pull/2844) informed deterministic grouping and explicit exclusion. Jeffrey's [#2945](https://github.com/affaan-m/ECC/pull/2945) informed bounded ID/description ranking and deterministic ties. Canonical source digests replace independent routing-cache authority. [#2740](https://github.com/affaan-m/ECC/pull/2740) remains aligned with native context meters and truthful measurement labels.
+Jeffrey Montoya's [#2788](https://github.com/Mr-Nobody-Anonymous/All-skills/pull/2788) informed whole-tree staging, ownership receipts and reversible generations. LovePlayCode's [#2844](https://github.com/Mr-Nobody-Anonymous/All-skills/pull/2844) informed deterministic grouping and explicit exclusion. Jeffrey's [#2945](https://github.com/Mr-Nobody-Anonymous/All-skills/pull/2945) informed bounded ID/description ranking and deterministic ties. Canonical source digests replace independent routing-cache authority. [#2740](https://github.com/Mr-Nobody-Anonymous/All-skills/pull/2740) remains aligned with native context meters and truthful measurement labels.
 
 These are attributed adaptations of concepts; contributor commits have not been silently relabeled as our implementation. Source PR disposition remains separate.
 

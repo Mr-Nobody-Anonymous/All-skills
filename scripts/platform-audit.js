@@ -11,9 +11,9 @@ const {
 
 const SCHEMA_VERSION = 'ecc.platform-audit.v1';
 const DEFAULT_REPOS = Object.freeze([
-  'affaan-m/ECC',
-  'affaan-m/agentshield',
-  'affaan-m/JARVIS',
+  'Mr-Nobody-Anonymous/All-skills',
+  'Mr-Nobody-Anonymous/All-skills',
+  'Mr-Nobody-Anonymous/All-skills',
   'ECC-Tools/ECC-Tools',
   'ECC-Tools/ECC-website',
 ]);

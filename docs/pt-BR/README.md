@@ -2,9 +2,9 @@
 
 # Everything Claude Code
 
-[![Stars](https://img.shields.io/github/stars/affaan-m/everything-claude-code?style=flat)](https://github.com/affaan-m/everything-claude-code/stargazers)
-[![Forks](https://img.shields.io/github/forks/affaan-m/everything-claude-code?style=flat)](https://github.com/affaan-m/everything-claude-code/network/members)
-[![Contributors](https://img.shields.io/github/contributors/affaan-m/everything-claude-code?style=flat)](https://github.com/affaan-m/everything-claude-code/graphs/contributors)
+[![Stars](https://img.shields.io/github/stars/Mr-Nobody-Anonymous/All-skills?style=flat)](https://github.com/Mr-Nobody-Anonymous/All-skills/stargazers)
+[![Forks](https://img.shields.io/github/forks/Mr-Nobody-Anonymous/All-skills?style=flat)](https://github.com/Mr-Nobody-Anonymous/All-skills/network/members)
+[![Contributors](https://img.shields.io/github/contributors/Mr-Nobody-Anonymous/All-skills?style=flat)](https://github.com/Mr-Nobody-Anonymous/All-skills/graphs/contributors)
 [![npm ecc-universal](https://img.shields.io/npm/dw/ecc-universal?label=ecc-universal%20weekly%20downloads&logo=npm)](https://www.npmjs.com/package/ecc-universal)
 [![npm ecc-agentshield](https://img.shields.io/npm/dw/ecc-agentshield?label=ecc-agentshield%20weekly%20downloads&logo=npm)](https://www.npmjs.com/package/ecc-agentshield)
 [![GitHub App Install](https://img.shields.io/endpoint?url=https%3A%2F%2Fapi.ecc.tools%2Fbadge%2Finstalls&logo=github)](https://github.com/marketplace/ecc-tools)
@@ -44,17 +44,17 @@ Este repositório contém apenas o código. Os guias explicam tudo.
 <table>
 <tr>
 <td width="33%">
-<a href="https://x.com/affaanmustafa/status/2012378465664745795">
+<a href="https://github.com/Mr-Nobody-Anonymous/status/2012378465664745795">
 <img src="../../assets/images/guides/shorthand-guide.png" alt="The Shorthand Guide to Everything Claude Code" />
 </a>
 </td>
 <td width="33%">
-<a href="https://x.com/affaanmustafa/status/2014040193557471352">
+<a href="https://github.com/Mr-Nobody-Anonymous/status/2014040193557471352">
 <img src="../../assets/images/guides/longform-guide.png" alt="The Longform Guide to Everything Claude Code" />
 </a>
 </td>
 <td width="33%">
-<a href="https://x.com/affaanmustafa/status/2033263813387223421">
+<a href="https://github.com/Mr-Nobody-Anonymous/status/2033263813387223421">
 <img src="../../assets/images/security/security-guide-header.png" alt="The Shorthand Guide to Everything Agentic Security" />
 </a>
 </td>
@@ -128,7 +128,7 @@ Comece em menos de 2 minutos:
 
 ```bash
 # Adicionar marketplace
-/plugin marketplace add https://github.com/affaan-m/ECC
+/plugin marketplace add https://github.com/Mr-Nobody-Anonymous/All-skills
 
 # Instalar plugin
 /plugin install ecc@ecc
@@ -140,7 +140,7 @@ Comece em menos de 2 minutos:
 
 ```bash
 # Clone o repositório primeiro
-git clone https://github.com/affaan-m/everything-claude-code.git
+git clone https://github.com/Mr-Nobody-Anonymous/All-skills.git
 cd everything-claude-code
 
 # Instalar dependências (escolha seu gerenciador de pacotes)
@@ -265,7 +265,7 @@ Use o comando `/skill-create` para análise local sem serviços externos:
 
 Para recursos avançados (10k+ commits, PRs automáticos, compartilhamento em equipe):
 
-[Instalar GitHub App](https://github.com/apps/skill-creator) | [ecc.tools](https://ecc.tools)
+[Instalar GitHub App](https://github.com/apps/skill-creator) | [ecc.tools](https://github.com/Mr-Nobody-Anonymous/All-skills)
 
 ### AgentShield — Auditor de Segurança
 
@@ -317,7 +317,7 @@ claude --version
 
 ```bash
 # Adicionar este repositório como marketplace
-/plugin marketplace add https://github.com/affaan-m/ECC
+/plugin marketplace add https://github.com/Mr-Nobody-Anonymous/All-skills
 
 # Instalar o plugin
 /plugin install ecc@ecc
@@ -331,7 +331,7 @@ Ou adicione diretamente ao seu `~/.claude/settings.json`:
     "ecc": {
       "source": {
         "source": "github",
-        "repo": "affaan-m/everything-claude-code"
+        "repo": "Mr-Nobody-Anonymous/All-skills"
       }
     }
   },
@@ -345,7 +345,7 @@ Ou adicione diretamente ao seu `~/.claude/settings.json`:
 >
 > ```bash
 > # Clone o repositório primeiro
-> git clone https://github.com/affaan-m/everything-claude-code.git
+> git clone https://github.com/Mr-Nobody-Anonymous/All-skills.git
 >
 > # Opção A: Regras no nível do usuário (aplica a todos os projetos)
 > mkdir -p ~/.claude/rules
@@ -363,7 +363,7 @@ Ou adicione diretamente ao seu `~/.claude/settings.json`:
 
 ```bash
 # Clonar o repositório
-git clone https://github.com/affaan-m/everything-claude-code.git
+git clone https://github.com/Mr-Nobody-Anonymous/All-skills.git
 
 # Copiar agentes para sua config Claude
 cp everything-claude-code/agents/*.md ~/.claude/agents/

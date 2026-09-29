@@ -104,17 +104,17 @@ async function runTests() {
           number: 12,
           title: 'Ship GitHub-native coordination',
           body: epicBody,
-          url: 'https://github.com/affaan-m/ECC/issues/12',
+          url: 'https://github.com/Mr-Nobody-Anonymous/All-skills/issues/12',
           state: 'OPEN',
           labels: [{ name: 'epic' }],
           author: { login: 'maintainer' },
           updatedAt: '2026-06-01T12:00:00Z'
         };
         const shim = writeGhShim(rootDir, {
-          'issue view 12 --repo affaan-m/ECC --json number,title,body,url,state,labels,author,updatedAt,assignees': issueView
+          'issue view 12 --repo Mr-Nobody-Anonymous/All-skills --json number,title,body,url,state,labels,author,updatedAt,assignees': issueView
         });
 
-        const result = run(['claim', '12', '--repo', 'affaan-m/ECC', '--actor', 'codex', '--db', dbPath, '--json'], {
+        const result = run(['claim', '12', '--repo', 'Mr-Nobody-Anonymous/All-skills', '--actor', 'codex', '--db', dbPath, '--json'], {
           cwd: rootDir,
           env: {
             ECC_GH_SHIM: shim.shimPath,
@@ -190,7 +190,7 @@ async function runTests() {
           number: 1,
           title: 'Release readiness',
           body: blockedBody,
-          url: 'https://github.com/affaan-m/ECC/issues/1',
+          url: 'https://github.com/Mr-Nobody-Anonymous/All-skills/issues/1',
           state: 'OPEN',
           labels: [{ name: 'epic' }, { name: 'coordination:blocked' }],
           author: { login: 'codex' },
@@ -200,18 +200,18 @@ async function runTests() {
           number: 2,
           title: 'Release prerequisite',
           body: '# Release prerequisite',
-          url: 'https://github.com/affaan-m/ECC/issues/2',
+          url: 'https://github.com/Mr-Nobody-Anonymous/All-skills/issues/2',
           state: 'CLOSED',
           labels: [{ name: 'blocked-by-release' }],
           author: { login: 'maintainer' },
           updatedAt: '2026-06-01T10:00:00Z'
         };
         const shim = writeGhShim(rootDir, {
-          'issue list --repo affaan-m/ECC --state all --limit 100 --json number,title,body,url,state,labels,author,updatedAt,assignees': [openIssue, closedDependency],
-          'issue view 1 --repo affaan-m/ECC --json number,title,body,url,state,labels,author,updatedAt,assignees': openIssue
+          'issue list --repo Mr-Nobody-Anonymous/All-skills --state all --limit 100 --json number,title,body,url,state,labels,author,updatedAt,assignees': [openIssue, closedDependency],
+          'issue view 1 --repo Mr-Nobody-Anonymous/All-skills --json number,title,body,url,state,labels,author,updatedAt,assignees': openIssue
         });
 
-        const result = run(['unblock', '--repo', 'affaan-m/ECC', '--db', dbPath, '--json'], {
+        const result = run(['unblock', '--repo', 'Mr-Nobody-Anonymous/All-skills', '--db', dbPath, '--json'], {
           cwd: rootDir,
           env: {
             ECC_GH_SHIM: shim.shimPath,
@@ -253,18 +253,18 @@ async function runTests() {
           number: 12,
           title: 'Ship GitHub-native coordination',
           body: '# Ship GitHub-native coordination',
-          url: 'https://github.com/affaan-m/ECC/issues/12',
+          url: 'https://github.com/Mr-Nobody-Anonymous/All-skills/issues/12',
           state: 'OPEN',
           labels: [{ name: 'epic' }],
           author: { login: 'maintainer' },
           updatedAt: '2026-06-01T12:00:00Z'
         };
         const shim = writeGhShim(rootDir, {
-          'issue list --repo affaan-m/ECC --state all --limit 100 --label epic --json number,title,body,url,state,labels,author,updatedAt,assignees': [epicIssue],
-          'issue list --repo affaan-m/ECC --state all --limit 100 --search in:body "ecc-coordination:start" --json number,title,body,url,state,labels,author,updatedAt,assignees': []
+          'issue list --repo Mr-Nobody-Anonymous/All-skills --state all --limit 100 --label epic --json number,title,body,url,state,labels,author,updatedAt,assignees': [epicIssue],
+          'issue list --repo Mr-Nobody-Anonymous/All-skills --state all --limit 100 --search in:body "ecc-coordination:start" --json number,title,body,url,state,labels,author,updatedAt,assignees': []
         });
 
-        const result = run(['sync', '--repo', 'affaan-m/ECC', '--db', dbPath, '--dry-run', '--json'], {
+        const result = run(['sync', '--repo', 'Mr-Nobody-Anonymous/All-skills', '--db', dbPath, '--dry-run', '--json'], {
           cwd: rootDir,
           env: {
             ECC_GH_SHIM: shim.shimPath,
@@ -293,18 +293,18 @@ async function runTests() {
           number: 13,
           title: 'Recover label drift',
           body: '<!-- ecc-coordination:start -->\n```json\n{}\n```\n<!-- ecc-coordination:end -->',
-          url: 'https://github.com/affaan-m/ECC/issues/13',
+          url: 'https://github.com/Mr-Nobody-Anonymous/All-skills/issues/13',
           state: 'OPEN',
           labels: [{ name: 'coordination:synced' }],
           author: { login: 'maintainer' },
           updatedAt: '2026-06-01T12:00:00Z'
         };
         const shim = writeGhShim(rootDir, {
-          'issue list --repo affaan-m/ECC --state all --limit 100 --label epic --json number,title,body,url,state,labels,author,updatedAt,assignees': [],
-          'issue list --repo affaan-m/ECC --state all --limit 100 --search in:body "ecc-coordination:start" --json number,title,body,url,state,labels,author,updatedAt,assignees': [driftedIssue]
+          'issue list --repo Mr-Nobody-Anonymous/All-skills --state all --limit 100 --label epic --json number,title,body,url,state,labels,author,updatedAt,assignees': [],
+          'issue list --repo Mr-Nobody-Anonymous/All-skills --state all --limit 100 --search in:body "ecc-coordination:start" --json number,title,body,url,state,labels,author,updatedAt,assignees': [driftedIssue]
         });
 
-        const result = run(['sync', '--repo', 'affaan-m/ECC', '--db', dbPath, '--dry-run', '--json'], {
+        const result = run(['sync', '--repo', 'Mr-Nobody-Anonymous/All-skills', '--db', dbPath, '--dry-run', '--json'], {
           cwd: rootDir,
           env: {
             ECC_GH_SHIM: shim.shimPath,
