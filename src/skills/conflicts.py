@@ -71,7 +71,7 @@ class ConflictResolver:
 
     def detect_conflicts(self, skill_ids: List[str]) -> List[Dict[str, Any]]:
         """Identify all conflict pairs among a candidate list of skills."""
-        detected = []
+        detected: List[Dict[str, Any]] = []
         skill_set = set(skill_ids)
 
         # 1. Check explicit conflict store records

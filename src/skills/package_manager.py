@@ -314,7 +314,7 @@ class PackageManager:
                 "name": entry.name if entry else skill_id,
                 "category": entry.category if entry else "general",
                 "source": (entry.source if entry and entry.source else "all-skills/canonical"),
-                "license": (entry.license if entry and entry.license else "MIT"),
+                "license": (getattr(entry, "license", None) if entry else None) or "MIT",
                 "sha256": "913ef9ca52065cdfbf818fd08bde39e346236f8822c872697f13b377316f9bcc",
                 "last_verified": "2026-09-22",
                 "trust": {"level": "T1_VERIFIED", "security_scan": "passed"},

@@ -125,6 +125,9 @@ class CompatibilityMatrix:
         if not self.matrix_file.exists():
             return {}
         try:
-            return json.loads(self.matrix_file.read_text(encoding="utf-8"))
+            data = json.loads(self.matrix_file.read_text(encoding="utf-8"))
+            if not isinstance(data, dict):
+                return {}
+            return {str(key): value for key, value in data.items()}
         except Exception:
             return {}
