@@ -8,10 +8,10 @@
   "manifest_skills": 192,
   "categories": 252,
   "canonical_categories": 29,
-  "tests": 265,
+  "tests": 270,
   "workflows": 5,
   "ci_workflows": 4,
   "named_chains": 4,
   "curated_packs": 7,
-  "last_generated": "2026-10-03"
+  "last_generated": "2026-10-04"
 }

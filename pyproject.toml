@@ -108,6 +108,8 @@ extend-exclude = [
     "awesome_skills",
     "agent_skills",
     "scratch",
+    # These tests depend on an upstream ECC checkout that is not part of this project.
+    "tests/ecc",
     "upstream",
     "quarantine",
 ]

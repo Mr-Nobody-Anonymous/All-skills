@@ -5,6 +5,7 @@ IntentAnalyzer, SkillComposer, ExplainabilityTracer, ConflictResolver, and Learn
 from __future__ import annotations
 
 import unittest
+import tempfile
 from pathlib import Path
 
 from src.skills.composer import SkillComposer, SkillStack
@@ -25,7 +26,9 @@ class TestClosedLoopOrchestration(unittest.TestCase):
         self.composer = SkillComposer(registry=self.registry, workspace_root=REPO_ROOT)
         self.intent_analyzer = IntentAnalyzer()
         self.conflict_resolver = ConflictResolver()
-        self.learning_engine = LearningEngine(workspace_root=REPO_ROOT)
+        self.telemetry_workspace = tempfile.TemporaryDirectory(prefix="all-skills-telemetry-")
+        self.addCleanup(self.telemetry_workspace.cleanup)
+        self.learning_engine = LearningEngine(workspace_root=Path(self.telemetry_workspace.name))
 
     def test_intent_analyzer_basic(self):
         query = "Build an e-commerce checkout with Stripe and PostgreSQL without mongodb"

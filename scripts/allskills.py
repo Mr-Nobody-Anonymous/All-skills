@@ -94,11 +94,28 @@ def _validate_provenance() -> tuple[bool, str]:
     from skills.registry import load_registry
 
     try:
-        records = json.loads((REPO_ROOT / "skills" / "SOURCES.json").read_text(encoding="utf-8")).get("skills", [])
-        recorded = {r.get("skill") for r in records}
-        missing = [e.id for e in load_registry(REPO_ROOT).entries if e.id not in recorded]
-        return not missing, (f"{len(records)} provenance records cover every canonical skill" if not missing
-                             else f"{len(missing)} skills without provenance record, e.g. {missing[:3]}")
+        manifest_path = REPO_ROOT / "registry" / "provenance.json"
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        records = manifest.get("canonical_skills", {})
+        expected = {entry.id for entry in load_registry(REPO_ROOT).entries}
+        missing = sorted(expected - records.keys())
+        invalid = []
+        for skill_id in expected & records.keys():
+            sources = records[skill_id].get("sources")
+            if not isinstance(sources, list) or not sources:
+                invalid.append(skill_id)
+                continue
+            if any(
+                not all(isinstance(source.get(field), str) and source[field] for field in ("source", "path", "sha256"))
+                for source in sources
+                if isinstance(source, dict)
+            ) or any(not isinstance(source, dict) for source in sources):
+                invalid.append(skill_id)
+
+        problems = missing + sorted(invalid)
+        if problems:
+            return False, f"{len(missing)} skills missing records and {len(invalid)} invalid records, e.g. {problems[:3]}"
+        return True, f"{len(records)} provenance records cover all {len(expected)} canonical skills"
     except Exception as exc:
         return False, str(exc)
 

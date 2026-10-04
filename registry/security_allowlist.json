@@ -97,6 +97,14 @@
       "reason": "Detection regex (r'exec\\s*\\(') in the skill's own static scanner; nothing is executed.",
       "sha256": "5a066b5ffeb57b29187aaa83f570279cb3b05f39521169a4ae407d19d37dc482",
       "reviewed_in": "PR #1 (initial audit \u2014 maintainer to confirm)"
+    },
+    {
+      "skill": "active.docker-patterns",
+      "path": "SKILL.md",
+      "label": "credential file reference",
+      "reason": "Docker security guidance uses a credential file example and explicitly says never to commit .env files or bake secrets into images.",
+      "sha256": "2a880cf2f6401874151daa9bcc0eacd10cf79f5f48b97f98e93a877a8f3fd12b",
+      "reviewed_in": "CI security scan review"
     }
   ]
 }

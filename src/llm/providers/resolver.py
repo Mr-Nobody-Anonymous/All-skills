@@ -65,8 +65,10 @@ def get_provider(provider_type: ProviderType | str | None = None, **kwargs: str)
     if isinstance(provider_type, str):
         try:
             provider_type = ProviderType(provider_type)
-        except ValueError:
-            raise ValueError(f"Unknown provider type: {provider_type}. Valid types: {[p.value for p in ProviderType]}")
+        except ValueError as err:
+            raise ValueError(
+                f"Unknown provider type: {provider_type}. Valid types: {[p.value for p in ProviderType]}"
+            ) from err
 
     provider_cls = _PROVIDER_MAP.get(provider_type)
     if not provider_cls:

@@ -89,7 +89,7 @@ jobs:
       # Fails below the coverage floor in pyproject.toml ([tool.coverage.report] fail_under).
       - name: pytest with coverage
         run: >-
-          python -m pytest tests scratch_priority_import/tests
+          python -m pytest tests scratch_priority_import/tests --ignore=tests/ecc
           --cov --cov-report=term --cov-report=xml
 
       - name: Platform test suite (No-Regression Gate 2)

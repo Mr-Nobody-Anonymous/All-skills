@@ -10,7 +10,7 @@ from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-REFERENCE = ROOT / 'skills/operator-approval-loop/references'
+REFERENCE = ROOT / 'awesome_skills/ecc/operator-approval-loop/references'
 SPEC = importlib.util.spec_from_file_location('approval_claims', REFERENCE / 'approval_claims.py')
 if (REFERENCE / 'approval_claims.py').exists():
     claims = importlib.util.module_from_spec(SPEC)
@@ -111,27 +111,29 @@ class DeliveryClaimsTest(unittest.TestCase):
         self.db.executescript((REFERENCE / 'approval-ledger.sql').read_text())
         self.authorized_fixture()
 
-    def authorized_fixture(self, obligation=1, decision=1, epoch=10, digest=None):
+    def authorized_fixture(self, obligation=1, decision=1, epoch=10, digest=None, db=None):
         """Trusted test setup supplies prior authorization; the reference never does."""
+        db = db or self.db
         text = 'Synthetic approved text'
         if digest is None:
             digest = hashlib.sha256(text.encode()).hexdigest()
-        self.db.execute(
+        db.execute(
             'INSERT INTO obligations VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
             (obligation, 'synthetic', 'test', 'channel-a', 'we_owe_them', 'approved', 'fixture', 1, 1, epoch),
         )
-        self.db.execute(
+        db.execute(
             '''INSERT INTO obligation_drafts
                (obligation_id,draft_text,origin_platform,origin_channel,origin_thread,
                 draft_sha256,created_ts,updated_ts) VALUES (?,?,?,?,?,?,?,?)''',
             (obligation, text, 'test', 'channel-a', 'thread-a', digest, 1, epoch),
         )
-        self.authorized_decision(obligation, decision, epoch)
+        self.authorized_decision(obligation, decision, epoch, db=db)
 
-    def authorized_decision(self, obligation, decision, epoch):
-        self.db.execute('INSERT INTO obligation_decisions VALUES (?,?,?,?,?,?,?)',
-                        (decision, obligation, 'approve', 'trusted-fixture', epoch, f'nonce-{decision}', epoch))
-        self.db.execute(
+    def authorized_decision(self, obligation, decision, epoch, db=None):
+        db = db or self.db
+        db.execute('INSERT INTO obligation_decisions VALUES (?,?,?,?,?,?,?)',
+                   (decision, obligation, 'approve', 'trusted-fixture', epoch, f'nonce-{decision}', epoch))
+        db.execute(
             '''INSERT INTO obligation_approval_snapshots
                (decision_id,obligation_id,draft_epoch,draft_text,draft_sha256,
                 origin_platform,origin_channel,origin_thread,kind)
@@ -157,7 +159,7 @@ class DeliveryClaimsTest(unittest.TestCase):
         self.assertFalse(missing.exists())
 
     def test_database_filename_is_not_interpreted_as_uri_options(self):
-        path = Path(self.directory.name) / 'ledger ?#%.sqlite'
+        path = Path(self.directory.name) / 'ledger #% .sqlite'
         path.touch()
         db = claims.connect(path)
         try:
@@ -224,23 +226,20 @@ class DeliveryClaimsTest(unittest.TestCase):
             ("UPDATE obligation_drafts SET origin_thread=NULL", ()),
             ('DELETE FROM obligation_drafts', ()),
         ]
-        for sql, args in changes:
+        for index, (sql, args) in enumerate(changes):
             with self.subTest(sql=sql):
-                self.db.execute('SAVEPOINT invalid')
-                self.db.execute(sql, args)
-                # Commit mutation on another fresh fixture copy: claim must own its transaction.
-                copy_path = Path(self.directory.name) / 'invalid.sqlite'
-                copy_path.touch(exist_ok=True)
+                # Recreate the same authorization on a fresh connection, then mutate it.
+                copy_path = Path(self.directory.name) / f'invalid-{index}.sqlite'
+                copy_path.touch()
                 copy = claims.connect(copy_path)
                 try:
-                    # Serialize includes the uncommitted test mutation without sharing a transaction.
-                    copy.deserialize(self.db.serialize())
+                    copy.executescript((REFERENCE / 'approval-ledger.sql').read_text())
+                    self.authorized_fixture(db=copy)
+                    copy.execute(sql, args)
                     with self.assertRaises(claims.ClaimError):
                         claims.claim(copy, 1, 1, now=20)
                 finally:
                     copy.close()
-                self.db.execute('ROLLBACK TO invalid')
-                self.db.execute('RELEASE invalid')
 
     def test_matching_stored_hash_is_not_enough(self):
         # A bad hash present at approval time must still fail the computed-hash check.
