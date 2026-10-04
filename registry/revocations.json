@@ -12,5 +12,28 @@
       "severity": "critical",
       "replacement": null
     }
+  ],
+  "revoked_hashes": [],
+  "revoked_commits": [],
+  "revoked_sources": [
+    {
+      "source": "openai/skills",
+      "status": "deprecated",
+      "reason": "Deprecated upstream by OpenAI in favor of openai/plugins and Agents SDK.",
+      "replacement": "openai/plugins"
+    },
+    {
+      "source": "obra/superpowers-skills",
+      "status": "archived",
+      "reason": "Standalone superpowers-skills archived in favor of main obra/superpowers repository.",
+      "replacement": "obra/superpowers"
+    }
+  ],
+  "blacklisted_patterns": [
+    "curl * | sh",
+    "wget * | bash",
+    "rm -rf /",
+    "cat *id_rsa",
+    "grep *AWS_SECRET"
   ]
 }

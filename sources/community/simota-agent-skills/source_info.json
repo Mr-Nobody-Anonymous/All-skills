@@ -1,0 +1,9 @@
+{
+  "id": "community-simota-agent-skills",
+  "repository": "simota/agent-skills",
+  "clone_url": "https://github.com/simota/agent-skills",
+  "tier": "community",
+  "license": "MIT",
+  "description": "Nexus orchestration, multi-agent recipes, and enterprise workflows.",
+  "target_directory": "sources\\community\\simota-agent-skills"
+}

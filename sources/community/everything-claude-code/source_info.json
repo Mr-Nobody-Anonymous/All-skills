@@ -1,0 +1,9 @@
+{
+  "id": "community-everything-claude-code",
+  "repository": "affaan-m/everything-claude-code",
+  "clone_url": "https://github.com/affaan-m/everything-claude-code",
+  "tier": "community",
+  "license": "MIT",
+  "description": "Comprehensive Claude Code agent workflows, TDD, and engineering hooks.",
+  "target_directory": "sources\\community\\everything-claude-code"
+}

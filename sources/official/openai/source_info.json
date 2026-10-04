@@ -1,0 +1,9 @@
+{
+  "id": "official-openai",
+  "repository": "openai/plugins",
+  "clone_url": "https://github.com/openai/plugins",
+  "tier": "official",
+  "license": "MIT",
+  "description": "OpenAI ChatGPT plugins and Codex developer skill specifications.",
+  "target_directory": "sources\\official\\openai"
+}

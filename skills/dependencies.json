@@ -1,6 +1,458 @@
 {
   "version": 2,
   "skills": {
+    "ai.embeddings": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "ai.fine-tuning": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "ai.hybrid-search": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "ai.model-evaluation": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "ai.model-selection": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "ai.multimodal": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "ai.prompt-engineering": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "ai.quantization": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "ai.rag": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "ai.reranking": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "ai.structured-output": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "ai.tool-calling": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "ai.vllm": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "architecture.architecture-decision-records": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "cloud.aws-compute": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "cloud.aws-networking": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "cloud.aws-security": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "cloud.azure-architecture": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "cloud.cloudflare-edge": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "cloud.gcp-architecture": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "cloud.vercel-deployment": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "creative.creative-writing": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "creative.figma": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "creative.graphic-design": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "creative.ui-design": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "data.apache-airflow": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "data.apache-flink": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "data.apache-kafka": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "data.apache-spark": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "data.batch-processing": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "data.cdc": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "data.dagster": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "data.data-catalog": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "data.data-contracts": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "data.data-governance": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "data.data-lineage": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "data.data-migration": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "data.data-observability": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "data.data-quality": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "data.data-warehouse": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "data.dbt": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "data.elt-pipeline-design": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "data.etl-pipeline-design": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "data.event-driven-data": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "data.feature-store": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "data.lakehouse": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "data.schema-evolution": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "data.stream-processing": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "data.vector-database": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "databases.bigquery": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "databases.clickhouse": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "databases.databricks": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "databases.duckdb": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "databases.elasticsearch": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "databases.mongodb": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "databases.mysql": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "databases.neo4j": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "databases.opensearch": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "databases.postgresql": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "databases.redis": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "databases.redshift": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "databases.snowflake": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "databases.sqlite": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "design.avatar-creator": {
+      "required": [],
+      "optional": [
+        "image-generator"
+      ],
+      "system": [],
+      "python": [],
+      "api": [
+        "image-generator"
+      ]
+    },
     "design.branding": {
       "required": [],
       "optional": [],
@@ -15,12 +467,37 @@
       "python": [],
       "api": []
     },
+    "design.image-gen": {
+      "required": [],
+      "optional": [
+        "image-generator"
+      ],
+      "system": [],
+      "python": [],
+      "api": [
+        "image-generator"
+      ]
+    },
     "design.presentations": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
       "api": []
+    },
+    "design.remotion-best-practices": {
+      "required": [],
+      "optional": [
+        "node",
+        "remotion"
+      ],
+      "system": [
+        "node"
+      ],
+      "python": [],
+      "api": [
+        "remotion"
+      ]
     },
     "design.ui-ux": {
       "required": [],
@@ -29,6 +506,126 @@
       "python": [],
       "api": []
     },
+    "design.veo-video-generator": {
+      "required": [],
+      "optional": [
+        "GOOGLE_API_KEY"
+      ],
+      "system": [],
+      "python": [],
+      "api": [
+        "GOOGLE_API_KEY"
+      ]
+    },
+    "desktop.app-packaging": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "desktop.auto-update": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "desktop.avalonia": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "desktop.cross-platform-desktop": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "desktop.desktop-security": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "desktop.electron": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "desktop.macos-native": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "desktop.pyqt": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "desktop.pyside": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "desktop.qt": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "desktop.tauri": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "desktop.tkinter": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "desktop.winui": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "desktop.wpf": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "development.api-mock-generator": {
+      "required": [],
+      "optional": [
+        "test-framework"
+      ],
+      "system": [],
+      "python": [],
+      "api": [
+        "test-framework"
+      ]
+    },
     "development.architecture": {
       "required": [],
       "optional": [],
@@ -36,7 +633,50 @@
       "python": [],
       "api": []
     },
+    "development.autoreview": {
+      "required": [],
+      "optional": [
+        "codex"
+      ],
+      "system": [],
+      "python": [],
+      "api": [
+        "codex"
+      ]
+    },
     "development.backend": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "development.behavior-validator": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "development.brainstorming": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "development.cf-worker-deploy": {
+      "required": [],
+      "optional": [
+        "wrangler"
+      ],
+      "system": [],
+      "python": [],
+      "api": [
+        "wrangler"
+      ]
+    },
+    "development.ci-cd-pipeline": {
       "required": [],
       "optional": [],
       "system": [],
@@ -56,512 +696,6 @@
       "system": [],
       "python": [],
       "api": []
-    },
-    "development.databases": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "development.debugging": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "development.devops": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "development.frontend": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "development.git": {
-      "required": [
-        "git"
-      ],
-      "optional": [],
-      "system": [
-        "git"
-      ],
-      "python": [],
-      "api": []
-    },
-    "development.github": {
-      "required": [
-        "git"
-      ],
-      "optional": [
-        "gh-cli"
-      ],
-      "system": [
-        "git",
-        "gh-cli"
-      ],
-      "python": [],
-      "api": []
-    },
-    "development.performance-optimization": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "development.refactoring": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "development.tdd": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "development.testing": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "documents.csv": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "documents.docx": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "documents.markdown": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "documents.pdf": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "documents.pptx": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "documents.xlsx": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "productivity.adhd": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "productivity.focus": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "productivity.planning": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "productivity.prioritization": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "productivity.task-decomposition": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "productivity.time-management": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "productivity.unlazy": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "research.academic-research": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "research.competitive-analysis": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "research.data-analysis": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "research.deep-research": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "research.fact-checking": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "research.source-verification": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "research.web-research": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "security.dependency-audit": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "security.prompt-injection-defense": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "security.secret-detection": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "security.secure-coding": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "utilities.automation": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "utilities.documentation": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "utilities.file-management": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "utilities.image": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "utilities.summarization": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "utilities.text-processing": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "utilities.writing": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "web.accessibility": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "web.browser-automation": {
-      "required": [],
-      "optional": [
-        "playwright"
-      ],
-      "system": [],
-      "python": [],
-      "api": [
-        "playwright"
-      ]
-    },
-    "web.seo": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "web.web-extraction": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "web.web-scraping": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "web.website-testing": {
-      "required": [],
-      "optional": [
-        "playwright"
-      ],
-      "system": [],
-      "python": [],
-      "api": [
-        "playwright"
-      ]
-    },
-    "development.brainstorming": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "development.git-worktrees": {
-      "required": [
-        "git"
-      ],
-      "optional": [],
-      "system": [
-        "git"
-      ],
-      "python": [],
-      "api": []
-    },
-    "development.mcp-server-development": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "development.receiving-code-review": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "development.requesting-code-review": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "development.verification-before-completion": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "utilities.parallel-agents": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "development.mcp-builder": {
-      "required": [
-        "python"
-      ],
-      "optional": [],
-      "system": [
-        "python"
-      ],
-      "python": [],
-      "api": []
-    },
-    "productivity.brainstorming": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "design.avatar-creator": {
-      "required": [],
-      "optional": [
-        "image-generator"
-      ],
-      "system": [],
-      "python": [],
-      "api": [
-        "image-generator"
-      ]
-    },
-    "design.image-gen": {
-      "required": [],
-      "optional": [
-        "image-generator"
-      ],
-      "system": [],
-      "python": [],
-      "api": [
-        "image-generator"
-      ]
-    },
-    "design.remotion-best-practices": {
-      "required": [],
-      "optional": [
-        "node",
-        "remotion"
-      ],
-      "system": [
-        "node"
-      ],
-      "python": [],
-      "api": [
-        "remotion"
-      ]
-    },
-    "design.veo-video-generator": {
-      "required": [],
-      "optional": [
-        "GOOGLE_API_KEY"
-      ],
-      "system": [],
-      "python": [],
-      "api": [
-        "GOOGLE_API_KEY"
-      ]
-    },
-    "development.api-mock-generator": {
-      "required": [],
-      "optional": [
-        "test-framework"
-      ],
-      "system": [],
-      "python": [],
-      "api": [
-        "test-framework"
-      ]
-    },
-    "development.autoreview": {
-      "required": [],
-      "optional": [
-        "codex"
-      ],
-      "system": [],
-      "python": [],
-      "api": [
-        "codex"
-      ]
-    },
-    "development.behavior-validator": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "development.cf-worker-deploy": {
-      "required": [],
-      "optional": [
-        "wrangler"
-      ],
-      "system": [],
-      "python": [],
-      "api": [
-        "wrangler"
-      ]
     },
     "development.coding-agent": {
       "required": [],
@@ -596,6 +730,13 @@
         "cursor-agent"
       ]
     },
+    "development.databases": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
     "development.db-inspector": {
       "required": [],
       "optional": [
@@ -606,6 +747,20 @@
       "api": [
         "database-client"
       ]
+    },
+    "development.debugging": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "development.devops": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
     },
     "development.docker-manager": {
       "required": [],
@@ -629,6 +784,24 @@
         "DOKPLOY_API_KEY"
       ]
     },
+    "development.frontend": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "development.git": {
+      "required": [
+        "git"
+      ],
+      "optional": [],
+      "system": [
+        "git"
+      ],
+      "python": [],
+      "api": []
+    },
     "development.git-workflow": {
       "required": [
         "git"
@@ -636,6 +809,31 @@
       "optional": [],
       "system": [
         "git"
+      ],
+      "python": [],
+      "api": []
+    },
+    "development.git-worktrees": {
+      "required": [
+        "git"
+      ],
+      "optional": [],
+      "system": [
+        "git"
+      ],
+      "python": [],
+      "api": []
+    },
+    "development.github": {
+      "required": [
+        "git"
+      ],
+      "optional": [
+        "gh-cli"
+      ],
+      "system": [
+        "git",
+        "gh-cli"
       ],
       "python": [],
       "api": []
@@ -651,7 +849,109 @@
       "python": [],
       "api": []
     },
+    "development.issue-triage": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "development.mcp-builder": {
+      "required": [
+        "python"
+      ],
+      "optional": [],
+      "system": [
+        "python"
+      ],
+      "python": [],
+      "api": []
+    },
+    "development.mcp-server-development": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "development.performance-optimization": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "development.pr-splitter": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "development.receiving-code-review": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "development.refactoring": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "development.release-management": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "development.requesting-code-review": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
     "development.summarize-repo": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "development.tdd": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "development.testing": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "development.verification-before-completion": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "documents.csv": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "documents.docx": {
       "required": [],
       "optional": [],
       "system": [],
@@ -669,7 +969,1085 @@
         "ocr"
       ]
     },
+    "documents.markdown": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "documents.pdf": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "documents.pptx": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "documents.xlsx": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "education.curriculum-design": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "education.quiz-generation": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "education.spaced-repetition": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "education.tutoring": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "embedded.arduino": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "embedded.bare-metal": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "embedded.can-bus": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "embedded.device-drivers": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "embedded.embedded-linux": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "embedded.embedded-security": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "embedded.embedded-testing": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "embedded.esp32": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "embedded.esp8266": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "embedded.firmware-analysis": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "embedded.freertos": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "embedded.i2c": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "embedded.modbus": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "embedded.mqtt": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "embedded.pcb-design": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "embedded.raspberry-pi": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "embedded.robotics": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "embedded.rp2040": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "embedded.sensor-integration": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "embedded.spi": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "embedded.stm32": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "embedded.uart": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "embedded.zephyr": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "finance.accounting": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "finance.financial-analysis": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "finance.financial-modeling": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "finops.ai-inference-cost": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "finops.aws-cost-optimization": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "finops.azure-cost-optimization": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "finops.cloud-cost-analysis": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "finops.gcp-cost-optimization": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "finops.idle-resource-detection": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "finops.kubernetes-cost": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "finops.rightsizing": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "game.asset-pipelines": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "game.directx": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "game.ecs": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "game.game-ai": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "game.game-testing": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "game.game-ui": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "game.gameplay-programming": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "game.godot": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "game.graphics-programming": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "game.multiplayer": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "game.netcode": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "game.opengl": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "game.optimization": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "game.physics": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "game.profiling": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "game.shaders": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "game.unity": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "game.unreal-engine": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "game.vulkan": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "healthcare.health-economist": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "legal.accessibility-compliance": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "legal.ai-governance": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "legal.ccpa": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "legal.contract-review": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "legal.data-retention": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "legal.gdpr": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "legal.license-compatibility": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "legal.nda-review": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "legal.open-source-license-selection": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "legal.privacy-policy-review": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "legal.records-management": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "legal.regulatory-research": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "legal.sbom-analysis": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "legal.security-compliance": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "legal.software-compliance": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "legal.terms-of-service": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "mobile.android-compose": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "mobile.android-development": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "mobile.app-store-deployment": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "mobile.expo": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "mobile.flutter": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "mobile.ios-development": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "mobile.kotlin-development": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "mobile.mobile-ci-cd": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "mobile.mobile-navigation": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "mobile.mobile-networking": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "mobile.mobile-performance": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "mobile.mobile-release": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "mobile.mobile-security": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "mobile.mobile-state-management": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "mobile.mobile-storage": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "mobile.mobile-testing": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "mobile.mobile-ui": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "mobile.play-store-deployment": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "mobile.react-native": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "mobile.swift-development": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "mobile.swiftui-development": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "networking.dns": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "networking.firewalls": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "networking.http": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "networking.http2": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "networking.http3": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "networking.load-balancing": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "networking.network-automation": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "networking.network-debugging": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "networking.network-performance": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "networking.packet-analysis": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "networking.proxies": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "networking.reverse-proxy": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "networking.routing": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "networking.service-mesh": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "networking.switching": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "networking.tcp-ip": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "networking.tls": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "networking.vpn": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "networking.wireshark": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "networking.zero-trust": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "observability.distributed-tracing": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "observability.grafana": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "observability.logging": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "observability.metrics": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "observability.opentelemetry": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "observability.postmortems": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "observability.prometheus": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "observability.slo-sli": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "os.bootloaders": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "os.containers": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "os.device-drivers": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "os.ebpf": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "os.filesystems": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "os.hypervisors": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "os.ipc": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "os.kernel-development": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "os.linux-kernel": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "os.networking-stack": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "os.operating-systems-fundamentals": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "os.processes-threads": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "os.schedulers": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "os.syscall-analysis": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "os.virtual-memory": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "os.virtualization": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "os.windows-internals": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "product.acceptance-criteria": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "product.experimentation": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "product.prioritization": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "product.product-metrics": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "product.requirements-engineering": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "product.user-stories": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "productivity.adhd": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "productivity.adhd-divergent-brainstorm": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "productivity.adhd-output-style": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
     "productivity.adhd-task-breakdown": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "productivity.brainstorming": {
       "required": [],
       "optional": [],
       "system": [],
@@ -712,7 +2090,35 @@
         "email-access"
       ]
     },
+    "productivity.executive-summary": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "productivity.first-principles-reasoning": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "productivity.focus": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
     "productivity.focus-guard": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "productivity.kaizen-continuous-improvement": {
       "required": [],
       "optional": [],
       "system": [],
@@ -737,7 +2143,49 @@
         "obsidian"
       ]
     },
+    "productivity.planning": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "productivity.prioritization": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "productivity.session-analytics": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "productivity.task-decomposition": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
     "productivity.time-blocking": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "productivity.time-management": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "productivity.unlazy": {
       "required": [],
       "optional": [],
       "system": [],
@@ -755,6 +2203,195 @@
         "transcript"
       ]
     },
+    "programming.bash-scripting": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "programming.c-fundamentals": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "programming.cpp-modern": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "programming.csharp-fundamentals": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "programming.go-concurrency": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "programming.go-fundamentals": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "programming.go-testing": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "programming.java-modern": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "programming.powershell-automation": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "programming.python-async": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "programming.python-fundamentals": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "programming.python-idiomatic-style": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "programming.python-security": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "programming.python-testing": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "programming.rust-async": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "programming.rust-fundamentals": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "programming.rust-testing": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "programming.solidity-smart-contracts": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "programming.sql-advanced": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "programming.typescript-fundamentals": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "programming.typescript-project-structure": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "programming.typescript-testing": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "research.academic-research": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "research.competitive-analysis": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "research.data-analysis": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "research.deep-research": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "research.fact-checking": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
     "research.search-synthesizer": {
       "required": [],
       "optional": [
@@ -766,7 +2403,210 @@
         "web-search"
       ]
     },
+    "research.source-verification": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "research.web-research": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "scientific.bioinformatics": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "scientific.cfd": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "scientific.computational-chemistry": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "scientific.computational-physics": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "scientific.experiment-design": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "scientific.fea": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "scientific.genomics": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "scientific.geospatial-analysis": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "scientific.gis": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "scientific.hpc": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "scientific.literature-review": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "scientific.medical-imaging": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "scientific.microscopy": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "scientific.numerical-methods": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "scientific.optimization": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "scientific.reproducible-research": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "scientific.scientific-database-research": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "scientific.scientific-visualization": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "scientific.scientific-writing": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "scientific.statistics": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "scientific.symbolic-math": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
     "security.cmd-safety-check": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "security.container-security": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "security.dast": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "security.dependency-audit": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "security.iam": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "security.incident-response": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "security.kubernetes-security": {
       "required": [],
       "optional": [],
       "system": [],
@@ -784,6 +2624,48 @@
       "python": [],
       "api": []
     },
+    "security.prompt-injection-defense": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "security.sast": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "security.secret-detection": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "security.secure-architecture": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "security.secure-code-review": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "security.secure-coding": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
     "security.security-scanner": {
       "required": [],
       "optional": [
@@ -794,6 +2676,20 @@
       "api": [
         "security-scanners"
       ]
+    },
+    "security.threat-modeling": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "security.zero-trust": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
     },
     "utilities.agent-transcript": {
       "required": [],
@@ -819,6 +2715,13 @@
         "transcription-engine"
       ]
     },
+    "utilities.automation": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
     "utilities.beam": {
       "required": [],
       "optional": [
@@ -833,6 +2736,20 @@
         "BEAM_ACCESS_TOKEN"
       ]
     },
+    "utilities.documentation": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "utilities.file-management": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
     "utilities.handoff": {
       "required": [],
       "optional": [
@@ -843,6 +2760,20 @@
       "api": [
         "clipboard-tool"
       ]
+    },
+    "utilities.image": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "utilities.parallel-agents": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
     },
     "utilities.readme-standard": {
       "required": [],
@@ -873,6 +2804,13 @@
         "sonos-cli"
       ]
     },
+    "utilities.summarization": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
     "utilities.system-monitor": {
       "required": [],
       "optional": [
@@ -894,6 +2832,13 @@
       "api": [
         "TELEGRAM_BOT_TOKEN"
       ]
+    },
+    "utilities.text-processing": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
     },
     "utilities.unit-converter": {
       "required": [],
@@ -928,6 +2873,20 @@
         "whatsapp-api"
       ]
     },
+    "utilities.writing": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "web.accessibility": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
     "web.agent-browser": {
       "required": [],
       "optional": [
@@ -937,6 +2896,17 @@
       "python": [],
       "api": [
         "agent-browser"
+      ]
+    },
+    "web.browser-automation": {
+      "required": [],
+      "optional": [
+        "playwright"
+      ],
+      "system": [],
+      "python": [],
+      "api": [
+        "playwright"
       ]
     },
     "web.form-filler": {
@@ -961,6 +2931,20 @@
         "media-downloader"
       ]
     },
+    "web.seo": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "web.web-extraction": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
     "web.web-scraper": {
       "required": [],
       "optional": [
@@ -972,89 +2956,23 @@
         "http-client"
       ]
     },
-    "productivity.adhd-divergent-brainstorm": {
+    "web.web-scraping": {
       "required": [],
       "optional": [],
       "system": [],
       "python": [],
       "api": []
     },
-    "productivity.adhd-output-style": {
+    "web.website-testing": {
       "required": [],
-      "optional": [],
+      "optional": [
+        "playwright"
+      ],
       "system": [],
       "python": [],
-      "api": []
-    },
-    "productivity.executive-summary": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "productivity.first-principles-reasoning": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "development.ci-cd-pipeline": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "development.issue-triage": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "development.pr-splitter": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "development.release-management": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "productivity.kaizen-continuous-improvement": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "productivity.session-analytics": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "architecture.architecture-decision-records": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
-    },
-    "healthcare.health-economist": {
-      "required": [],
-      "optional": [],
-      "system": [],
-      "python": [],
-      "api": []
+      "api": [
+        "playwright"
+      ]
     }
   }
 }

@@ -616,8 +616,8 @@ To ensure platform trustworthiness, all documentation, generated indexes, and CL
 | **Canonical Skills** | **122** | `skills/` | Validated, core engineering skills |
 | **Active Harness Skills** | **70** | `.agents/skills/` | Pre-loaded staff-engineer playbooks |
 | **Manifest Skills** | **192** | `manifest.json` | Fully tool-mapped and verified skills |
-| **Unique Skills** | **12,757** | `dependency_graph.json`, `stats.json` | Distinct capabilities across the platform |
-| **Catalog Records** | **14,855** | `awesome_skills/CATALOG.md` | Domain-categorized skill entries |
+| **Unique Skills** | **13,297** | `dependency_graph.json`, `stats.json` | Distinct capabilities across the platform |
+| **Catalog Records** | **15,146** | `awesome_skills/CATALOG.md` | Domain-categorized skill entries |
 | **Super-Domains** | **15** | `ontology/domains.json` | Top-level academic & industry domains |
 | **Sub-Domains** | **251** | `awesome_skills/`, `ontology/domains.json` | Specialized subject categories |
 | **Supported Platforms** | **11** | `platforms/platforms.yaml` | Claude, Cursor, Codex, Antigravity, etc. |

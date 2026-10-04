@@ -1,0 +1,9 @@
+{
+  "id": "community-kdense-scientific-skills",
+  "repository": "K-Dense-AI/scientific-agent-skills",
+  "clone_url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+  "tier": "community",
+  "license": "MIT",
+  "description": "166+ scientific research, computational biology, GIS, and modeling agent skills.",
+  "target_directory": "sources\\community\\kdense-scientific-skills"
+}

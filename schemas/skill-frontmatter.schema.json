@@ -18,6 +18,12 @@
       "minLength": 10,
       "description": "Detailed explanation of what the skill does and exact criteria for when the agent should load it."
     },
+    "type": {
+      "type": "string",
+      "enum": ["procedural", "knowledge", "tool-backed", "workflow", "evaluator", "policy", "agent"],
+      "default": "procedural",
+      "description": "The structural primitive type of the skill (procedural, knowledge, tool-backed, workflow, evaluator, policy, or agent)."
+    },
     "disable-model-invocation": {
       "type": "boolean",
       "default": false,
@@ -417,6 +423,26 @@
         }
       ],
       "description": "Provenance: a short label (e.g. 'custom', 'owner/repo') or a detailed repository record."
+    },
+    "provenance": {
+      "type": "object",
+      "properties": {
+        "source_repository": { "type": "string" },
+        "source_commit": { "type": "string" },
+        "source_path": { "type": "string" },
+        "imported_at": { "type": "string" },
+        "content_sha256": { "type": "string" },
+        "license": { "type": "string" },
+        "trust": {
+          "type": "object",
+          "properties": {
+            "level": { "type": ["string", "integer"] },
+            "security_scan": { "type": "string" },
+            "behavioral_eval": { "type": "string" }
+          }
+        }
+      },
+      "description": "Cryptographic and federated provenance record for tracking upstream origin and verification status."
     },
     "source_repo": {
       "type": "string",

@@ -1,0 +1,9 @@
+{
+  "id": "official-github",
+  "repository": "github/awesome-copilot",
+  "clone_url": "https://github.com/github/awesome-copilot",
+  "tier": "official",
+  "license": "MIT",
+  "description": "Curated GitHub Copilot instructions, skills, agents, and hooks.",
+  "target_directory": "sources\\official\\github"
+}

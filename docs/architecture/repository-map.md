@@ -14,7 +14,7 @@ To maintain platform clarity across autonomous agents, contributors, and package
 | **`src/skills/`** | Core Registry & Router Engine | Source | **Stable** | Canonical routing, validation, quality scoring, and security scanner. |
 | **`skills/`** | Canonical Skill Hierarchy | Source | **Stable** | 122 curated, tested skills organized into 8 canonical categories. |
 | **`.agents/skills/`** | Active Agent Harness | Source / Linked | **Stable** | 72 pre-loaded skills consumed by Claude Code, Cursor, Codex, and Antigravity. |
-| **`awesome_skills/`** | Universal Catalog Index | Source / Mirrored | **Stable** | 14,855 discovered skills across 251 domain categories with `CATALOG.md`. |
+| **`awesome_skills/`** | Universal Catalog Index | Source / Mirrored | **Stable** | 14,855 discovered skills across 252 domain categories with `CATALOG.md`. |
 | **`schemas/`** | JSON Schema Contracts | Source | **Stable** | Strict frontmatter and manifest validation schemas. |
 | **`adapters/`** | Agent Platform Translators | Source | **Stable** | 12 configuration adapters (Claude, Cursor, Codex, Windsurf, Copilot, etc.). |
 | **`profiles/`** | Multi-Role Engineering Profiles | Source | **Stable** | 20 role configurations (`software-engineer`, `security-auditor`, `devops`, etc.). |

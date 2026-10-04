@@ -103,13 +103,15 @@ def _kill(proc: "subprocess.Popen[bytes]") -> None:
             pass
     elif os.name == "nt":
         try:
-            subprocess.run(
+            result = subprocess.run(
                 ["taskkill", "/F", "/T", "/PID", str(proc.pid)],
                 stdout=subprocess.DEVNULL,
                 stderr=subprocess.DEVNULL,
                 check=False,
+                timeout=5,
             )
-            return
+            if result.returncode == 0 and proc.poll() is not None:
+                return
         except Exception:
             pass
     proc.kill()

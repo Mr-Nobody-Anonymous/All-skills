@@ -1,0 +1,9 @@
+{
+  "id": "community-sentry-skills",
+  "repository": "getsentry/skills",
+  "clone_url": "https://github.com/getsentry/skills",
+  "tier": "community",
+  "license": "MIT",
+  "description": "Sentry observability, Django security, code review, and simplification skills.",
+  "target_directory": "sources\\community\\sentry-skills"
+}

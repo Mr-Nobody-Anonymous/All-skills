@@ -101,7 +101,7 @@ class RetrievalBenchmark:
         self.repo_root = repo_root or REPO_ROOT
         from src.skills.registry import Registry
         from src.skills.router import Router
-        self.registry = Registry.load(self.repo_root / "manifest.json", self.repo_root / "skills")
+        self.registry = Registry.load(self.repo_root / "skills" / "registry.json", self.repo_root / "skills")
         self.router = Router(self.registry)
 
     def run_benchmark(self) -> BenchmarkResult:

@@ -8,6 +8,8 @@ aliases:
 - peer-review
 triggers:
 - review this code
+- review this python code
+- review this python code for security problems
 - review my PR
 - code review
 - look at this diff

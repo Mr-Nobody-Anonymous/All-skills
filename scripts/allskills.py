@@ -542,6 +542,73 @@ def cmd_verify() -> int:
     return 1 if failed else 0
 
 
+def cmd_compose(query: str) -> int:
+    from skills.composer import SkillComposer
+
+    stack = SkillComposer(workspace_root=REPO_ROOT).compose(query)
+    print(f"\nRecommended Skill Stack ({len(stack.skills)} skills):")
+    for skill_id in stack.skills:
+        print(f"  * {skill_id}")
+    print("\n" + stack.explainability.format_cli())
+    return 0
+
+
+def cmd_package(action: str, skill_id: str | None = None) -> int:
+    from skills.package_manager import PackageManager
+
+    manager = PackageManager(REPO_ROOT)
+    if action == "install":
+        result = manager.install(skill_id or "")
+        print(f"\nInstalled '{skill_id}' and dependencies:")
+        print(result.get("tree", ""))
+        print(f"\nSynchronized {result['total_skills']} skill(s) across "
+              f"{len(result['harnesses_updated'])} agent harnesses.")
+        return 0
+    if action == "why":
+        result = manager.why(skill_id or "")
+        print(f"\nWhy '{skill_id}' is in the workspace:")
+        for reason in result.get("why", []):
+            print(f"  * {reason}")
+        return 0
+    if action == "provenance":
+        result = manager.get_provenance(skill_id or "")
+        print(json.dumps(result, indent=2, ensure_ascii=False))
+        return 0
+    if action == "outdated":
+        items = manager.outdated()
+        if not items:
+            print("No outdated installed skills.")
+        for item in items:
+            print(f"{item['skill_id']}: {item['current']} -> {item['latest']}")
+        return 0
+    report = manager.audit()
+    print(json.dumps(report, indent=2, ensure_ascii=False))
+    return 0 if report.get("status") == "PASS" else 1
+
+
+def cmd_benchmark(action: str, skill_id: str) -> int:
+    if action == "real-world":
+        from benchmarks.real_world.runner import RealWorldBenchmarkRunner
+
+        report = RealWorldBenchmarkRunner(REPO_ROOT).run_benchmark()
+        print(report.format_cli())
+        return 0
+    from benchmarks.engine.evaluator import SkillBenchmarkEvaluator
+
+    report = SkillBenchmarkEvaluator(REPO_ROOT).evaluate_skill(skill_id)
+    print(report.summary_card())
+    return 0
+
+
+def cmd_matrix(skill_ids: list[str]) -> int:
+    from skills.compatibility import CompatibilityMatrix
+
+    default_ids = ["browser-automation", "postgresql-optimization-tuning",
+                   "react-state-management", "threat-modeling-stride-pasta"]
+    print(CompatibilityMatrix(REPO_ROOT).format_matrix_table(skill_ids or default_ids))
+    return 0
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(prog="allskills", description="All-skills Universal Operating System CLI")
     parser.add_argument("--workspace", help="All-Skills workspace (default: ALL_SKILLS_WORKSPACE, the current "
@@ -568,6 +635,21 @@ def main() -> int:
     subparsers.add_parser("sync", help="Synchronize upstream sources")
     s_lock = subparsers.add_parser("lock", help="Regenerate skills.lock (or --verify it)")
     s_lock.add_argument("--verify", action="store_true", help="Verify hashes instead of regenerating")
+
+    s_compose = subparsers.add_parser("compose", help="Compose a minimal skill stack for a request")
+    s_compose.add_argument("query", help="Natural-language request")
+    for command, help_text in (("install", "Install a skill and its dependencies"),
+                               ("why", "Explain a skill's dependency path"),
+                               ("provenance", "Show a skill's provenance")):
+        command_parser = subparsers.add_parser(command, help=help_text)
+        command_parser.add_argument("skill_id", help="Skill ID")
+    subparsers.add_parser("outdated", help="Check installed skills for updates")
+    subparsers.add_parser("audit", help="Audit package and supply-chain security")
+    s_bench = subparsers.add_parser("benchmark", help="Run a skill or real-world benchmark")
+    s_bench.add_argument("action", choices=["run", "real-world"])
+    s_bench.add_argument("skill_id", nargs="?", default="react-state-management")
+    s_matrix = subparsers.add_parser("matrix", help="Show skill and harness compatibility")
+    s_matrix.add_argument("skill_ids", nargs="*")
 
     s_prof = subparsers.add_parser("profile", help="Manage role profiles")
     s_prof.add_argument("action", choices=["list", "install", "show"])
@@ -619,6 +701,16 @@ def main() -> int:
         return run_cmd(setup) or run_cmd(["scripts/setup_tools.py", "--verify"])
     elif args.subcommand == "lock":
         return run_cmd(["scripts/skills/skills.py", "lock"] + (["--verify"] if args.verify else []))
+    elif args.subcommand == "compose":
+        return cmd_compose(args.query)
+    elif args.subcommand in {"install", "why", "provenance"}:
+        return cmd_package(args.subcommand, args.skill_id)
+    elif args.subcommand in {"outdated", "audit"}:
+        return cmd_package(args.subcommand)
+    elif args.subcommand == "benchmark":
+        return cmd_benchmark(args.action, args.skill_id)
+    elif args.subcommand == "matrix":
+        return cmd_matrix(args.skill_ids)
     elif args.subcommand in {"execute", "run"}:
         cmd = ["scripts/skills/skills.py", "execute", args.skill_id]
         if getattr(args, "input", None):

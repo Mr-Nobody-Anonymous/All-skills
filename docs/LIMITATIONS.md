@@ -10,19 +10,19 @@ A foundational distinction in All-skills is between **indexed discovery material
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│ 14,855 Catalog Records (Indexed across 251 categories)       │
+│ 15,146 Catalog Records (Indexed across 252 categories)       │
 ├─────────────────────────────────────────────────────────────┤
-│   ▼ 12,757 Unique Skill Identities                          │
+│   ▼ 13,297 Unique Skill Identities                          │
 ├─────────────────────────────────────────────────────────────┤
 │     ▼ 192 Manifest-Declared Specification Skills            │
 ├─────────────────────────────────────────────────────────────┤
 │       ▼ 122 Curated Canonical Engine Skills (skills/)       │
 ├─────────────────────────────────────────────────────────────┤
-│         ▼ 72 Active Harness Skills (.agents/skills/)        │
+│         ▼ 89 Active Harness Skills (.agents/skills/)        │
 └─────────────────────────────────────────────────────────────┘
 ```
 
-- **Catalog Records (14,855)**: Sourced from upstream repositories, domain taxonomies, and multi-agent indexes. These serve as discovery material, knowledge references, and search targets. They are not all independently unit-tested or guaranteed to have executable script backends.
+- **Catalog Records (15,146)**: Sourced from upstream repositories, domain taxonomies, and multi-agent indexes. These serve as discovery material, knowledge references, and search targets. They are not all independently unit-tested or guaranteed to have executable script backends.
 - **Canonical Skills (122)**: Maintained directly in `skills/`, verified against `schemas/skill-frontmatter.schema.json`, tested via regression suites, and governed by deterministic routing.
 - **Active Harness Skills (72)**: Symlinked or junctioned into agent platforms (`.agents/skills`, `.claude/skills`, `.cursor/skills`, `.codex/skills`) for immediate invocation.
 

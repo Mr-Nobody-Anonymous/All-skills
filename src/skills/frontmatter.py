@@ -86,7 +86,7 @@ def _parse_block(entries: List[Tuple[int, str]], i: int, indent: int) -> Tuple[D
             continue
         value = raw_value.strip()
         if value == "":
-            if i + 1 < n and entries[i + 1][0] > indent:
+            if i + 1 < n and (entries[i + 1][0] > indent or (entries[i + 1][0] == indent and entries[i + 1][1].startswith("- "))):
                 child_indent = entries[i + 1][0]
                 child: Any
                 if _is_list_item(entries[i + 1][1]):

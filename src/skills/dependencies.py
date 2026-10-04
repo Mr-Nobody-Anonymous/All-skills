@@ -44,7 +44,10 @@ def _check_candidate_cached(candidate: str) -> tuple[bool, str]:
     return res
 
 
-def check_dependency(skill_id: str, declaration: str) -> DependencyStatus:
+def check_dependency(skill_id: str, declaration: Any) -> DependencyStatus:
+    if isinstance(declaration, dict):
+        declaration = declaration.get("name") or declaration.get("id") or str(declaration)
+    declaration = str(declaration)
     optional = declaration.endswith("-optional") or declaration.startswith("optional:")
     name = declaration.removeprefix("optional:").removesuffix("-optional")
     alternatives = [part.strip() for part in name.split("-or-") if part.strip()]
@@ -82,6 +85,9 @@ def expand_declaration(declaration: str, *, probe_environment: bool = True):
     depends on the local environment; pass ``probe_environment=False`` for a
     deterministic classification (``system`` or ``api`` only).
     """
+    if isinstance(declaration, dict):
+        declaration = declaration.get("name") or declaration.get("id") or str(declaration)
+    declaration = str(declaration)
     optional = declaration.endswith("-optional") or declaration.startswith("optional:")
     name = declaration.removeprefix("optional:").removesuffix("-optional")
     alternatives = [part.strip() for part in name.split("-or-") if part.strip()]

@@ -17,11 +17,11 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/skills-12%2C757%2B%20Unique%20Skills-7c3aed?style=for-the-badge&logo=openai&logoColor=white" alt="12,757 Unique Skills" />
-  <img src="https://img.shields.io/badge/catalog-14%2C855%20Catalog%20Entries-0ea5e9?style=for-the-badge&logo=github&logoColor=white" alt="14,855 Catalog Entries" />
-  <img src="https://img.shields.io/badge/domains-251%20Categories-10b981?style=for-the-badge&logo=hubspot&logoColor=white" alt="251 Categories" />
+  <img src="https://img.shields.io/badge/skills-13%2C297%2B%20Unique%20Skills-7c3aed?style=for-the-badge&logo=openai&logoColor=white" alt="13,297 Unique Skills" />
+  <img src="https://img.shields.io/badge/catalog-15%2C146%20Catalog%20Entries-0ea5e9?style=for-the-badge&logo=github&logoColor=white" alt="15,146 Catalog Entries" />
+  <img src="https://img.shields.io/badge/domains-252%20Categories-10b981?style=for-the-badge&logo=hubspot&logoColor=white" alt="252 Categories" />
   <img src="https://img.shields.io/badge/platforms-11%20Agent%20Harnesses-ec4899?style=for-the-badge&logo=probot&logoColor=white" alt="11 Agent Harnesses" />
-  <img src="https://img.shields.io/badge/active--harness-72%20Pre--Loaded%20Skills-6366f1?style=for-the-badge&logo=lightning&logoColor=white" alt="72 Active Skills" />
+  <img src="https://img.shields.io/badge/active--harness-89%20Pre--Loaded%20Skills-6366f1?style=for-the-badge&logo=lightning&logoColor=white" alt="89 Active Skills" />
   <img src="https://img.shields.io/badge/skillhub-compatible-0ea5e9?style=for-the-badge&logo=npm&logoColor=white" alt="SkillHub Compatible" />
 </p>
 
@@ -30,7 +30,7 @@
 </p>
 
 <p align="center">
-  <a href="awesome_skills/CATALOG.md"><strong>Catalog (14,855)</strong></a> •
+  <a href="awesome_skills/CATALOG.md"><strong>Catalog (15,146)</strong></a> •
   <a href="docs/skill_catalog.md"><strong>Voice OS (27 Categories)</strong></a> •
   <a href="categories/"><strong>25 Major Categories</strong></a> •
   <a href="roadmaps/"><strong>Roadmaps</strong></a> •
@@ -51,7 +51,7 @@
 
 - **Overview** — [Why All Skills?](#-why-all-skills) · [Discovery & Runtime Pyramid](#-the-skill-discovery--runtime-pyramid) · [End-to-End Orchestration Flow](#️-end-to-end-capability-orchestration-pipeline) · [Multi-Platform Support](#-multi-platform-support-11-ai-coding-agents)
 - **Getting Started** — [Quick Start: One Recommended Path](#-quick-start-one-recommended-path) · [Installation & Agent Setup](#-installation--ai-agent-ecosystem-setup) · [Verification & Health Check](#-verification--health-check)
-- **Using All Skills** — [Universal CLI](#-universal-cli-allskills) · [Explainability Engine](#-explain-why-this-skill-was-selected) · [Safe Mode & Autonomy](#-safe-mode--explicit-approval) · [Active Harness Skills Index](#-active-harness-skills-index-72-skills) · [Pre-Loaded Harness Skills](#-pre-loaded-active-harness-skills-72-skills) · [Voice Assistant & Multimodal OS](#️-universal-voice-assistant--multimodal-os-ovos-neon-mycroft)
+- **Using All Skills** — [Universal CLI](#-universal-cli-allskills) · [Explainability Engine](#-explain-why-this-skill-was-selected) · [Safe Mode & Autonomy](#-safe-mode--explicit-approval) · [Active Harness Skills Index](#-active-harness-skills-index-89-skills) · [Pre-Loaded Harness Skills](#-pre-loaded-active-harness-skills-89-skills) · [Voice Assistant & Multimodal OS](#️-universal-voice-assistant--multimodal-os-ovos-neon-mycroft)
 - **Architecture & Reliability** — [8-Layer Defensive Security](#️-8-layer-defensive-security--sandboxing-architecture) · [Evidence-Based Quality Scores](#-evidence-based-quality-scores--reliability-cards) · [Real-World Retrieval Benchmark](#-real-world-retrieval--routing-benchmark) · [Skill Deduplication & Relationships](#-skill-deduplication--conflict-resolution) · [9-Stage Skill Lifecycle](#-9-stage-skill-lifecycle) · [Repository Architecture Map](#️-repository-directory-structure)
 - **Project** — [Development, CI & Quality Gates](#-development-ci--quality-gates) · [License](#-license)
 
@@ -71,11 +71,11 @@ When AI coding assistants are front-loaded with thousands of prompt instructions
 │          (skills/)            │        (awesome_skills/)        │     (.agents/ / .claude/ /    │
 │                               │                                 │     .cursor/ / .codex/)       │
 ├───────────────────────────────┼─────────────────────────────────┼───────────────────────────────┤
-│  • 124 Canonical Skills       │  • 14,855 Catalog Entries       │  • 72 Staff Engineer Skills   │
-│  • 9-Signal Layered Scoring   │  • 251 Functional Domain Dirs   │  • Pre-Loaded in Workspace    │
+│  • 398 Canonical Skills       │  • 15,146 Catalog Entries       │  • 89 Staff Engineer Skills   │
+│  • 9-Signal Layered Scoring   │  • 252 Functional Domain Dirs   │  • Pre-Loaded in Workspace    │
 │  • Deterministic Workflows    │  • Machine-Readable Index       │  • Native Multi-Tool Synced   │
 │  • 8-State Formal Lifecycle   │  • Complete CATALOG.md Reference│  • $O(1)$ Load-on-Demand      │
-│  • 264 CI-Gated Tests         │  • Dynamic Manager CLI          │  • Zero Prompt Bloat          │
+│  • 265 CI-Gated Tests         │  • Dynamic Manager CLI          │  • Zero Prompt Bloat          │
 └───────────────────────────────┴─────────────────────────────────┴───────────────────────────────┘
 ```
 
@@ -94,7 +94,7 @@ To eliminate ambiguity between broad catalog references and executable skills, A
 ┌───────────────────────────────────────────────────────────────────────────┐
 │                     SKILL DISCOVERY & RUNTIME PYRAMID                     │
 ├───────────────────────────────────────────────────────────────────────────┤
-│  14,855 Catalog Entries         Raw ecosystem & upstream catalog index    │
+│  15,146 Catalog Entries         Raw ecosystem & upstream catalog index    │
 │           ↓                                                               │
 │   3,200 Scanned & Vetted        AST verified, schema checked, trust-scored│
 │           ↓                                                               │
@@ -106,7 +106,7 @@ To eliminate ambiguity between broad catalog references and executable skills, A
 └───────────────────────────────────────────────────────────────────────────┘
 ```
 
-1. **14,855 Catalog Entries (`awesome_skills/`)**: Broad searchable reference library indexing external tools, community recipes, and ecosystem packages.
+1. **15,146 Catalog Entries (`awesome_skills/`)**: Broad searchable reference library indexing external tools, community recipes, and ecosystem packages.
 2. **3,200 Scanned & Vetted Skills**: Schema-checked and AST-verified skills with structured YAML frontmatter and security baseline scans.
 3. **500 Executable Handlers**: Skills equipped with operational runtime handlers (`handler.py`) and verified automated regression test cases.
 4. **124 Core Canonical Skills (`skills/`)**: Curated foundational skills with declared capabilities, policies, contracts, and full CI coverage.
@@ -237,7 +237,7 @@ npx all-skills setup
 Once installed, use the universal CLI to search, diagnose, explain, and execute:
 
 ```bash
-# 1. Search across 14,855 catalog entries with ranked routing
+# 1. Search across 15,146 catalog entries with ranked routing
 allskills search "build a REST API"
 
 # 2. Run comprehensive 11-layer health diagnostics
@@ -327,7 +327,7 @@ npx @mr-nobody-anonymous/all-skills search "health economist"
 
 ---
 
-## 📚 Active Harness Skills Index (72 Skills)
+## 📚 Active Harness Skills Index (89 Skills)
 
 Every skill below is pre-validated against `schemas/skill-frontmatter.schema.json`, includes strict prompt-injection defenses, and is immediately available across all 11 agent harnesses:
 
@@ -370,7 +370,7 @@ allskills profile install software-engineer            # --dest DIR, --dry-run
 allskills verify
 allskills lock --verify
 
-# Run regression test suite (264 tests)
+# Run regression test suite (265 tests)
 allskills test
 
 # Inspect upstream source registry and trust tiers
@@ -406,7 +406,7 @@ Beyond instruction text files, **All Skills** provides a complete execution, val
 
 ### 📋 Key Infrastructure Components:
 1. **Formal Frontmatter Schema**: [`schemas/skill-frontmatter.schema.json`](schemas/skill-frontmatter.schema.json) validates required properties (`name`, `description`, `category`, `disable-model-invocation`), triggers, aliases, and tool permissions via `python scripts/validate_schema.py`.
-2. **Master Intent Router (`which-skill`)**: [`.agents/skills/which-skill/SKILL.md`](.agents/skills/which-skill/SKILL.md) provides instant decision matrix mapping and CLI routing (`python scripts/skills/skills.py route`) across all 14,855 catalog entries.
+2. **Master Intent Router (`which-skill`)**: [`.agents/skills/which-skill/SKILL.md`](.agents/skills/which-skill/SKILL.md) provides instant decision matrix mapping and CLI routing (`python scripts/skills/skills.py route`) across all 15,146 catalog entries.
 3. **Multi-Step Execution Playbooks (`workflows/`)**: Complete chained workflows in [`workflows/`](workflows/) (`feature-development.md`, `bug-investigation-and-fix.md`, `fullstack-saas-launch.md`, etc.) for autonomous multi-step execution.
 4. **State Tracking & Stack Manifests (`aas-stack.json`)**: Structured sidecar schema ([`schemas/aas-stack.schema.json`](schemas/aas-stack.schema.json)) and CLI ([`scripts/manage_state.py`](scripts/manage_state.py)) for tracking phase progress, variables, and architectural decisions (ADRs) with auto-synced [`CONTEXT.md`](CONTEXT.md).
 5. **Central Tool-to-Skill Manifest**: [`manifest.json`](manifest.json) indexes all 192+ platform skills, mapping them to required tool permissions (`bash`, `file_edit`, `ast_grep`, `browser`), MCP servers (`filesystem`, `git`, `fetch`, `memory`), and lifecycle hooks.
@@ -463,7 +463,7 @@ All-Skills integrates a production-ready voice assistant and multimodal runtime 
 
 ---
 
-## 🚀 Pre-Loaded Active Harness Skills (72 Skills)
+## 🚀 Pre-Loaded Active Harness Skills (89 Skills)
 
 Your workspace comes pre-loaded with **70 staff-engineer and AI architect playbooks** in [`.agents/skills/`](.agents/skills/) (synced to `.claude/skills/`, `.cursor/skills/`, and `.codex/skills/`):
 
@@ -471,7 +471,7 @@ Your workspace comes pre-loaded with **70 staff-engineer and AI architect playbo
 <summary><strong>📋 View Pre-Loaded Skill Suites</strong></summary>
 
 ### 1. 🎯 Core Planning & Workflow Architecture
-- `which-skill` — Master agent intent router across all 14,855 catalog entries and workflows
+- `which-skill` — Master agent intent router across all 15,146 catalog entries and workflows
 - `brainstorming` — Socratic design refinement before implementation
 - `context-budget-and-pruning` — Token budget management, scratchpad offloading, and state distillation
 - `executing-plans` — Batch plan execution with verification checkpoints
@@ -565,17 +565,17 @@ Your workspace comes pre-loaded with **70 staff-engineer and AI architect playbo
 The repository includes two powerful CLI suites running on pure standard library with **zero external dependencies**:
 
 ### 1. Awesome Skills Manager (`scripts/manage_awesome_skills.py`)
-Interact with all 14,855 catalog entries (12,757 unique skills) in [`awesome_skills/`](awesome_skills/):
+Interact with all 15,146 catalog entries (13,297 unique skills) in [`awesome_skills/`](awesome_skills/):
 
 ```bash
-# List all 251 domain categories with skill counts
+# List all 252 domain categories with skill counts
 python scripts/manage_awesome_skills.py list
 
 # List all skills inside a specific category
 python scripts/manage_awesome_skills.py list --category ai-agents
 python scripts/manage_awesome_skills.py list --category security
 
-# Fuzzy search across all 14,855 catalog entries by keyword
+# Fuzzy search across all 15,146 catalog entries by keyword
 python scripts/manage_awesome_skills.py search "rag"
 python scripts/manage_awesome_skills.py search "prompt"
 python scripts/manage_awesome_skills.py search "kubernetes"
@@ -604,7 +604,7 @@ python scripts/manage_awesome_skills.py install-bundle saas-growth
 ---
 
 ### 2. Canonical Routing Engine (`scripts/skills/skills.py`)
-Run sub-millisecond natural language routing, quality audits, and workflow chains across the 124 canonical engine skills:
+Run sub-millisecond natural language routing, quality audits, and workflow chains across the 398 canonical engine skills:
 
 ```bash
 # Route a natural language goal to the optimal skill
@@ -622,7 +622,7 @@ python scripts/skills/skills.py chain deep-research --dry-run
 python scripts/skills/skills.py chain anti-procrastination --dry-run
 python scripts/skills/skills.py chain code-review-flow --dry-run
 
-# Run full health diagnostics and 264-test verification suite
+# Run full health diagnostics and 265-test verification suite
 python scripts/skills/skills.py doctor
 python scripts/skills/skills.py test
 
@@ -694,7 +694,7 @@ python -m http.server 3000 --directory marketplace
 
 ```
 All skills/
-├── .agents/skills/              # 🤖 Antigravity / Gemini CLI Active Harness (72 skills)
+├── .agents/skills/              # 🤖 Antigravity / Gemini CLI Active Harness (89 skills)
 ├── .claude/skills/              # 🤖 Claude Code Active Harness (synced via junction)
 ├── .cursor/skills/              # 🤖 Cursor Active Harness (synced via junction)
 ├── .codex/skills/               # 🤖 Codex CLI Active Harness (synced via junction)
@@ -709,7 +709,7 @@ All skills/
 │   ├── web-development/         # 65 skills  (Frontend, Fullstack)
 │   └── ...                      # 95 additional domain categories
 │
-├── skills/                      # ⚡ 124 Canonical Engine Skills (10 Categories)
+├── skills/                      # ⚡ 398 Canonical Engine Skills (10 Categories)
 │   ├── architecture/            # Architecture decision records
 │   ├── healthcare/              # Health economics
 │   ├── productivity/            # Focus, anti-procrastination, planning
@@ -747,7 +747,7 @@ All skills/
 │   ├── SECURITY.md              # Threat model & static inspection policy
 │   └── *.md                     # Per-category detailed reference guides
 │
-└── tests/skill_tests/           # 🧪 Unit & Integration Test Suite (264 tests)
+└── tests/skill_tests/           # 🧪 Unit & Integration Test Suite (265 tests)
 ```
 
 ---
@@ -885,7 +885,7 @@ Run complete test suites and diagnostic checks at any time:
 # 1. Check health of all canonical skills
 python scripts/skills/skills.py doctor
 
-# 2. Run the 264 unit and integration tests
+# 2. Run the 265 unit and integration tests
 python scripts/skills/skills.py test
 
 # 3. Verify multi-tool harness connections

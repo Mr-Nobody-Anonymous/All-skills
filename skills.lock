@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generated_at": "2026-09-25T16:34:18.394160+00:00",
+  "generated_at": "2026-10-04T10:20:21.989830+00:00",
   "generator": "all-skills-lock v1.0.0",
-  "total_skills": 196,
+  "total_skills": 487,
   "skills": {
     "accessibility-compliance-accessibility-audit": {
       "version": "1.0.0",
@@ -13,7 +13,7 @@
         "resources/implementation-playbook.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "agent-evaluation": {
@@ -25,7 +25,7 @@
         "references/architecture-sketches.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "agent-memory": {
@@ -36,7 +36,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "critical"
     },
     "agent-memory-systems": {
@@ -48,7 +48,7 @@
         "references/detailed-guide.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "agent-tool-builder": {
@@ -60,7 +60,7 @@
         "references/detailed-guide.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "critical"
     },
     "ai-engineer": {
@@ -71,7 +71,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "critical"
     },
     "ai-engineering-toolkit": {
@@ -82,7 +82,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "high"
     },
     "analytics-product": {
@@ -93,7 +93,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "angular-state-management": {
@@ -107,7 +107,7 @@
         "references/detailed-guide.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "api-and-interface-design": {
@@ -118,7 +118,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "api-designer": {
@@ -129,7 +129,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "api-documentation": {
@@ -140,7 +140,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "architecture-decision-records": {
@@ -159,7 +159,7 @@
         "tests/test_adr_format.py"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "ast-code-transformation": {
@@ -170,7 +170,18 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "autonomous-loops": {
+      "version": "1.0.0",
+      "sha256": "7c180224f6c2a70fb777a25c77ffb121d6155b0cd314ff39529b914edbd7b7de",
+      "category": "active-harness",
+      "files": [
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "aws-serverless": {
@@ -182,8 +193,19 @@
         "references/detailed-guide.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "critical"
+    },
+    "backend-patterns": {
+      "version": "1.0.0",
+      "sha256": "d75c9b64fe9162666f6dc5b519982d41a73a5f217a479c5fecc86acc6f2e5263",
+      "category": "active-harness",
+      "files": [
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
     },
     "brainstorming": {
       "version": "1.0.0",
@@ -193,7 +215,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "critical"
     },
     "browser-act": {
@@ -204,7 +226,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "critical"
     },
     "browser-automation": {
@@ -216,7 +238,7 @@
         "references/detailed-guide.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "critical"
     },
     "changelog-automation": {
@@ -228,7 +250,7 @@
         "resources/implementation-playbook.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "critical"
     },
     "ci-cd-and-automation": {
@@ -239,7 +261,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "critical"
     },
     "cloud-devops": {
@@ -250,7 +272,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "code-review-excellence": {
@@ -262,7 +284,7 @@
         "resources/implementation-playbook.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "code-reviewer": {
@@ -273,7 +295,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "critical"
     },
     "code-showcase-systematic-debugging": {
@@ -284,7 +306,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "critical"
     },
     "concise-planning": {
@@ -295,7 +317,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "context-budget-and-pruning": {
@@ -306,7 +328,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "context-window-management": {
@@ -317,8 +339,30 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "critical"
+    },
+    "continuous-learning-v2": {
+      "version": "1.0.0",
+      "sha256": "da05ee0c057a06f951c566e814d506976f3fe8b96c0e3b461fd192ef3cfbd8be",
+      "category": "active-harness",
+      "files": [
+        "SKILL.md",
+        "agents/observer-loop.sh",
+        "agents/observer.md",
+        "agents/session-guardian.sh",
+        "agents/start-observer.sh",
+        "config.json",
+        "hooks/observe.sh",
+        "scripts/detect-project.sh",
+        "scripts/instinct-cli.py",
+        "scripts/lib/homunculus-dir.sh",
+        "scripts/migrate-homunculus.sh",
+        "scripts/test_parse_instinct.py"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
     },
     "copywriting": {
       "version": "1.0.0",
@@ -328,7 +372,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "database-design": {
@@ -346,7 +390,7 @@
         "scripts/schema_validator.py"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "database-migration": {
@@ -357,8 +401,19 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "critical"
+    },
+    "database-migrations": {
+      "version": "1.0.0",
+      "sha256": "ec7220772a409af64dbb4938342494e215d64c63457a6d7b520c3104dd262a30",
+      "category": "active-harness",
+      "files": [
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
     },
     "design-system": {
       "version": "1.0.0",
@@ -369,7 +424,7 @@
         "references/motion-choreography.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "critical"
     },
     "dispatching-parallel-agents": {
@@ -380,8 +435,19 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "critical"
+    },
+    "docker-patterns": {
+      "version": "1.0.0",
+      "sha256": "7660eab2aa3b6b948743454451549f570bb03f192ed73641d8622c5cb8ddbdab",
+      "category": "active-harness",
+      "files": [
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
     },
     "drizzle-orm-expert": {
       "version": "1.0.0",
@@ -391,7 +457,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "email-sequence": {
@@ -403,7 +469,18 @@
         "references/detailed-guide.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "eval-harness": {
+      "version": "1.0.0",
+      "sha256": "7b8b2bc21ba3c68369dd2d4c7435a05e9971c46b1cff3c771a42be9d011e0c84",
+      "category": "active-harness",
+      "files": [
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "executing-plans": {
@@ -414,8 +491,19 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "critical"
+    },
+    "frontend-patterns": {
+      "version": "1.0.0",
+      "sha256": "15a8381ad0275e2b490b9b36b3b215cc0a0d39150a743319d36a61c90e306ddc",
+      "category": "active-harness",
+      "files": [
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
     },
     "health-economist": {
       "version": "1.0.0",
@@ -432,7 +520,7 @@
         "tests/test_health_eval.py"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "kubernetes-architect": {
@@ -443,7 +531,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "critical"
     },
     "kubernetes-deployment": {
@@ -454,7 +542,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "llm-prompt-optimizer": {
@@ -465,7 +553,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "marketplace-rbac-audit": {
@@ -476,7 +564,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "mcp-builder": {
@@ -496,7 +584,7 @@
         "scripts/requirements.txt"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "critical"
     },
     "mcp-tool-developer": {
@@ -507,7 +595,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "micro-saas-launcher": {
@@ -519,7 +607,7 @@
         "references/detailed-guide.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "critical"
     },
     "multi-agent-architect": {
@@ -530,7 +618,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "multi-agent-brainstorming": {
@@ -541,7 +629,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "multi-agent-patterns": {
@@ -552,7 +640,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "critical"
     },
     "pdf-official": {
@@ -574,7 +662,7 @@
         "scripts/fill_pdf_form_with_annotations.py"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "critical"
     },
     "performance-profiling": {
@@ -586,8 +674,19 @@
         "scripts/lighthouse_audit.py"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "critical"
+    },
+    "plankton-code-quality": {
+      "version": "1.0.0",
+      "sha256": "2f5c34e77e8d41f43b1656d0dcb2c50de4983537254e7f8390c6162ac7c259cb",
+      "category": "active-harness",
+      "files": [
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
     },
     "playwright-skill": {
       "version": "1.0.0",
@@ -601,7 +700,7 @@
         "run.js"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "critical"
     },
     "prisma-expert": {
@@ -612,7 +711,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "critical"
     },
     "react-state-management": {
@@ -623,7 +722,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "critical"
     },
     "receiving-code-review": {
@@ -634,7 +733,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "critical"
     },
     "red-team-tactics": {
@@ -645,7 +744,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "high"
     },
     "redis-cli": {
@@ -663,7 +762,7 @@
         "references/server-administration.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "critical"
     },
     "requesting-code-review": {
@@ -675,7 +774,7 @@
         "code-reviewer.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "critical"
     },
     "review-and-simplify-changes": {
@@ -686,7 +785,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "critical"
     },
     "saas-mvp-launcher": {
@@ -697,7 +796,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "sast-configuration": {
@@ -708,8 +807,19 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "critical"
+    },
+    "search-first": {
+      "version": "1.0.0",
+      "sha256": "a72f5a6461bad9e0869cb12a3c32b566b40fe050131cef9d5c7d1fdc9428375e",
+      "category": "active-harness",
+      "files": [
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
     },
     "secrets-management": {
       "version": "1.0.0",
@@ -721,7 +831,7 @@
         "references/vault-setup.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "critical"
     },
     "security-sandboxing-guardrails": {
@@ -732,7 +842,18 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "security-scan": {
+      "version": "1.0.0",
+      "sha256": "f2321b9b2f43fa258406122eadacaa9a37b0bf02ed08957611fa6eedd3224044",
+      "category": "active-harness",
+      "files": [
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "security-scanning-security-sast": {
@@ -744,7 +865,7 @@
         "references/detailed-guide.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "critical"
     },
     "seo-geo": {
@@ -755,8 +876,52 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "critical"
+    },
+    "source-command-add-language-rules": {
+      "version": "1.0.0",
+      "sha256": "905aec1075cb9401fb324d151f95b4b30364467318b0369467b207bd870697a6",
+      "category": "active-harness",
+      "files": [
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "source-command-database-migration": {
+      "version": "1.0.0",
+      "sha256": "6b15505ef7518b428a3fe6228b8f8a187630ed933220667c921d4003592dd87a",
+      "category": "active-harness",
+      "files": [
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "source-command-feature-development": {
+      "version": "1.0.0",
+      "sha256": "1f623eeb087edc0839e024fc34a0e135d50825f75567182cc7fbf1b54238b823",
+      "category": "active-harness",
+      "files": [
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "strategic-compact": {
+      "version": "1.0.0",
+      "sha256": "44a93fc3e023f880b6e4380e25e900395ebcbf2af530aa5942cb2a28a14b8787",
+      "category": "active-harness",
+      "files": [
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
     },
     "subagent-driven-development": {
       "version": "1.0.0",
@@ -769,7 +934,7 @@
         "spec-reviewer-prompt.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "critical"
     },
     "tailwind-design-system": {
@@ -781,7 +946,7 @@
         "resources/implementation-playbook.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "tdd": {
@@ -795,7 +960,7 @@
         "tests.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "terraform-infrastructure": {
@@ -806,7 +971,18 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "token-budget-advisor": {
+      "version": "1.0.0",
+      "sha256": "b21047ad35b8471436e1d360da8e3d69b77d6218d75edfa34725797b64be687f",
+      "category": "active-harness",
+      "files": [
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "top-web-vulnerabilities": {
@@ -818,8 +994,19 @@
         "references/detailed-guide.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "high"
+    },
+    "unified-memory": {
+      "version": "1.0.0",
+      "sha256": "26e87bf58bf55a8dc31b617bb82b91dc204c3b229457e9634204485b99d84998",
+      "category": "active-harness",
+      "files": [
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
     },
     "using-git-worktrees": {
       "version": "1.0.0",
@@ -829,7 +1016,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "critical"
     },
     "verification-before-completion": {
@@ -840,8 +1027,19 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "critical"
+    },
+    "verification-loop": {
+      "version": "1.0.0",
+      "sha256": "f141cb478b324f67d1db18a04c999e6fde3694b69c7cf2c4b861cf5910329979",
+      "category": "active-harness",
+      "files": [
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
     },
     "vulnerability-scanner": {
       "version": "1.0.0",
@@ -853,7 +1051,7 @@
         "scripts/security_scan.py"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "critical"
     },
     "wcag-audit-patterns": {
@@ -865,7 +1063,7 @@
         "resources/implementation-playbook.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "which-skill": {
@@ -876,7 +1074,163 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "ai.embeddings": {
+      "version": "1.0.0",
+      "sha256": "803050bc371f9847f46e83babbc8040e7146fd2b6ede667e43c2a8c5dd0579ae",
+      "category": "ai",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "ai.fine-tuning": {
+      "version": "1.0.0",
+      "sha256": "3415462083ef0f067fcaa4779d67565e13cc0006e174cf0aefa13e73fc992cde",
+      "category": "ai",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "ai.hybrid-search": {
+      "version": "1.0.0",
+      "sha256": "4dd5fbb524119e77fd7ba91ac8576f1806c2954c6e6304cfa280ee8859a2539f",
+      "category": "ai",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "ai.model-evaluation": {
+      "version": "1.0.0",
+      "sha256": "2fe0f53b944838d858e8cf49e6d9cd257ff5e71845947d726e481b462dc9ddd2",
+      "category": "ai",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "ai.model-selection": {
+      "version": "1.0.0",
+      "sha256": "aeda7388d32e5be97693d2df0528cd65eb9b34af51d98a5e79d7471b065754a8",
+      "category": "ai",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "ai.multimodal": {
+      "version": "1.0.0",
+      "sha256": "7597cb890fd11714f8f1ea26b3380c453f4df26dd6053b03f74de2eec59455e0",
+      "category": "ai",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "ai.prompt-engineering": {
+      "version": "1.0.0",
+      "sha256": "dc11fff2a81991fa29a413b11fb12dcc7623f376b0839586554679a49a82a256",
+      "category": "ai",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "ai.quantization": {
+      "version": "1.0.0",
+      "sha256": "978c07b734b3dcb28b0145139fc743a2de899f23e7b050dd1b8d3ad35741065d",
+      "category": "ai",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "ai.rag": {
+      "version": "1.0.0",
+      "sha256": "aae8299be63f3f5dbd235621f24b953828659087f58ff0f21f4e002632a776e7",
+      "category": "ai",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "ai.reranking": {
+      "version": "1.0.0",
+      "sha256": "75bd3cd89a5ca0b968252d90116e1b2669e4d10ffebc87517abed43635bcc0ea",
+      "category": "ai",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "ai.structured-output": {
+      "version": "1.0.0",
+      "sha256": "b770ca59f48e92aa182042183bf641a53e9c71a95d0262a5e34f2955c8ae4a20",
+      "category": "ai",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "ai.tool-calling": {
+      "version": "1.0.0",
+      "sha256": "115ac56a2b713504ab217aa680017e536108b3cb97cc49f866343ed61a7871bb",
+      "category": "ai",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "ai.vllm": {
+      "version": "1.0.0",
+      "sha256": "634c4884dd03e1b2a098852a8e2e3dc006d347d2256f598227816629e58aba8f",
+      "category": "ai",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "architecture.architecture-decision-records": {
@@ -895,7 +1249,595 @@
         "tests/test_adr_format.py"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "cloud.aws-compute": {
+      "version": "1.0.0",
+      "sha256": "aaa88b0d76634c65edb1d2b012f0d81e161c77be11c0ccc6c7f7c58669786e73",
+      "category": "cloud",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "cloud.aws-networking": {
+      "version": "1.0.0",
+      "sha256": "e5a00087a3804acc07d62cc5747ea4991e593f47258de08d2214ce3cfd915658",
+      "category": "cloud",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "cloud.aws-security": {
+      "version": "1.0.0",
+      "sha256": "cd613b71e46617ee8e5adae8b65c505da73cb957482ef7a070a9ccdfd430c050",
+      "category": "cloud",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "cloud.azure-architecture": {
+      "version": "1.0.0",
+      "sha256": "a843d3944f8a47428fd2f43c26eadba08f6b741cf13de6a71bedb94acde57669",
+      "category": "cloud",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "cloud.cloudflare-edge": {
+      "version": "1.0.0",
+      "sha256": "c1b5886bda20a95dd3b178e1c1c6cf0713507bd23232e5530ef45533f99e9eca",
+      "category": "cloud",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "cloud.gcp-architecture": {
+      "version": "1.0.0",
+      "sha256": "b10f165c06e85f5c745c12f179514a64af3db75222d62b4e822a645cf3b92da6",
+      "category": "cloud",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "cloud.vercel-deployment": {
+      "version": "1.0.0",
+      "sha256": "310ca1db426163e64eec5a59da19769a99a8d48ec3c9a89268a4dc714588ff03",
+      "category": "cloud",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "creative.creative-writing": {
+      "version": "1.0.0",
+      "sha256": "bb6a24e1c9167ecb6901ef356fc1f063e72be0a78a753a0b581c47911ad760a4",
+      "category": "creative",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "creative.figma": {
+      "version": "1.0.0",
+      "sha256": "30062f8ac8c52e38db1ae24aa9dc915e76185efaddcdd0737a34c75722a48a07",
+      "category": "creative",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "creative.graphic-design": {
+      "version": "1.0.0",
+      "sha256": "86e6b6d873140956dac027d38e3d222503c2ba5090fd593c35ed65c28d47d35f",
+      "category": "creative",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "creative.ui-design": {
+      "version": "1.0.0",
+      "sha256": "c0e0caa61505fa3f354dfa295452228559a975db1032cb7308a58dabb5eee8fb",
+      "category": "creative",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "data.apache-airflow": {
+      "version": "1.0.0",
+      "sha256": "310a1ea70721c232f35f6639e6b65fb78b8c03ec1aa0c2bbbb9cc72593a11ff4",
+      "category": "data",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "data.apache-flink": {
+      "version": "1.0.0",
+      "sha256": "f8fa33545b5df2506062d06a9f86fdb8a5491c6ddc3b8a6ab31c35381dd6942d",
+      "category": "data",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "data.apache-kafka": {
+      "version": "1.0.0",
+      "sha256": "bf8200467c4d4727776afd03b1448ccb988384db4056f12c10df51c4d537a6cb",
+      "category": "data",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "data.apache-spark": {
+      "version": "1.0.0",
+      "sha256": "e7b2bca2be82e15d49777ba677dda9b02f64b649beaf60e5ce4eff1624131bed",
+      "category": "data",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "data.batch-processing": {
+      "version": "1.0.0",
+      "sha256": "290d9e722214c24554b13c0a9da9b2984d6e6db62b758663fe2049123895c2da",
+      "category": "data",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "data.cdc": {
+      "version": "1.0.0",
+      "sha256": "b021c73d9a1c4054b8ccb4f90520872d09eee99e4ab0a62ffb67f6a682aa5e96",
+      "category": "data",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "data.dagster": {
+      "version": "1.0.0",
+      "sha256": "5e17c889229e6d924accb92fff9df4ec2459c81e1d08fea3b9d4223c2d913112",
+      "category": "data",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "data.data-catalog": {
+      "version": "1.0.0",
+      "sha256": "e0b0d4fb33a5dd448bad04e29eafd62357509698ff4f974215d4af87dfe457cb",
+      "category": "data",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "data.data-contracts": {
+      "version": "1.0.0",
+      "sha256": "de738519e0191f081fdf8cbe1c55ddcc7eb7133763fd1d8573712157173b29ec",
+      "category": "data",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "data.data-governance": {
+      "version": "1.0.0",
+      "sha256": "2e104f6f88deb3264eb31580297f468d6202922ff5e60cb11d4eeaecfd456f0f",
+      "category": "data",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "data.data-lineage": {
+      "version": "1.0.0",
+      "sha256": "f172a2160611657f738d2beed231f9c4b27827f73468330911be1dd8e61f2710",
+      "category": "data",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "data.data-migration": {
+      "version": "1.0.0",
+      "sha256": "2a33754abc7126f4f1904d312147dead4551e858d857d7c8cefdcc1b956037b4",
+      "category": "data",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "data.data-observability": {
+      "version": "1.0.0",
+      "sha256": "6b4e4ebecc9f08a343b7837649ad19b39bbbb2b87f7cac95b5d1a3f7400b2c7d",
+      "category": "data",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "data.data-quality": {
+      "version": "1.0.0",
+      "sha256": "56a081d6539eb6e60783b2c0484ed1035150518f7e923356b879230474a3e488",
+      "category": "data",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "data.data-warehouse": {
+      "version": "1.0.0",
+      "sha256": "3d81320a35472a88c17cc3b266a594ebe19d0057faf689b865e36d527d0939d3",
+      "category": "data",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "data.dbt": {
+      "version": "1.0.0",
+      "sha256": "0b65e458adcdad57ea3d3c3bede01340e29d09cf9fadc28222744fc88218a89c",
+      "category": "data",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "data.elt-pipeline-design": {
+      "version": "1.0.0",
+      "sha256": "b96dc63893626cc5fd1605549852941091c9e01bca46baa51d1404d866bfbb6c",
+      "category": "data",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "data.etl-pipeline-design": {
+      "version": "1.0.0",
+      "sha256": "bd3160758a4dd469fcb725667b6e916a01961b3dd94adebfa060ad929790e612",
+      "category": "data",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "data.event-driven-data": {
+      "version": "1.0.0",
+      "sha256": "02ca39f5c263fb711463dea0f05a9554494f7cecf9b9bc9c13c76f99a1de6973",
+      "category": "data",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "data.feature-store": {
+      "version": "1.0.0",
+      "sha256": "8398d9cc8a6690b044e8943c24a043a75a63cb8d951a4b2c48d192a5f317f332",
+      "category": "data",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "data.lakehouse": {
+      "version": "1.0.0",
+      "sha256": "a068a4f6a50165415f7c36057f638fe68c0561ff172f50d0851df3789bfe30aa",
+      "category": "data",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "data.schema-evolution": {
+      "version": "1.0.0",
+      "sha256": "f7143a7bffd973b0751bfdec2dacf663add1db5096318a1aee977fbd97485044",
+      "category": "data",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "data.stream-processing": {
+      "version": "1.0.0",
+      "sha256": "368a7f42f508567fcc1e5389c167f8cb91e714fbb3d5b2c3c211138270feb2e1",
+      "category": "data",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "data.vector-database": {
+      "version": "1.0.0",
+      "sha256": "57137749edfcac1425144bce019ce2b2f5c17cd383c504af7ae7866f90b05a7d",
+      "category": "data",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "databases.bigquery": {
+      "version": "1.0.0",
+      "sha256": "60dcfdba383dcc581515b468908714486a685dea932ddb6d0b3b28f13b22f066",
+      "category": "databases",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "databases.clickhouse": {
+      "version": "1.0.0",
+      "sha256": "488f2a787857937b22f5148e983cb6edcb128d766373bd9e3620163795490e92",
+      "category": "databases",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "databases.databricks": {
+      "version": "1.0.0",
+      "sha256": "bdca61fc96e8bff164b70393c2aef71a7cb879b2e15a93a6d62b13d860f11869",
+      "category": "databases",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "databases.duckdb": {
+      "version": "1.0.0",
+      "sha256": "7e2f7de08ffe516d3863af4a713a285bed14fc4910d3b19b62412c597e9e8d74",
+      "category": "databases",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "databases.elasticsearch": {
+      "version": "1.0.0",
+      "sha256": "cfbd55c2479d560f55750078fc8c90ee20cc0ab4b67674a0b60123f7e70a15d8",
+      "category": "databases",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "databases.mongodb": {
+      "version": "1.0.0",
+      "sha256": "a7dfde40ff0c75c2f5fe914ff8b0693a03e6e751a9fb18f58cfff66301ac4c7c",
+      "category": "databases",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "databases.mysql": {
+      "version": "1.0.0",
+      "sha256": "f6cf6be394832332574b82240cf14bb294d1555c13c858241b6a2821586b2a35",
+      "category": "databases",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "databases.neo4j": {
+      "version": "1.0.0",
+      "sha256": "4bdd68689412ba67b73f812890257bc7335f0b2786fa6e85aa44e11841bf452d",
+      "category": "databases",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "databases.opensearch": {
+      "version": "1.0.0",
+      "sha256": "1d0f9172354e3b1b9bface57c5d070a3748ffa055025ec63afae9489733c0f11",
+      "category": "databases",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "databases.postgresql": {
+      "version": "1.0.0",
+      "sha256": "8fa56c791208287fb2e55549096360056e88b2b4bfe80c7ddb84c466f83b8c06",
+      "category": "databases",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "databases.redis": {
+      "version": "1.0.0",
+      "sha256": "e660c627e4272ebe8f1de5cbbc4dabbb8c3a5354cce34b8c42322ce0bb19860c",
+      "category": "databases",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "databases.redshift": {
+      "version": "1.0.0",
+      "sha256": "c5dcedcf3582b3d6c050d827816344d4b197981a0745812f73de3494dd767914",
+      "category": "databases",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "databases.snowflake": {
+      "version": "1.0.0",
+      "sha256": "343372e57e8f5deceaad2081962e21ad6c52356e3ddd1b790e59dc5f5ab0c48c",
+      "category": "databases",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "databases.sqlite": {
+      "version": "1.0.0",
+      "sha256": "d67c4422e0425c321d18f920d79420ce83ef02a135b4a2e08b86b9ef7e518e7c",
+      "category": "databases",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "design.avatar-creator": {
@@ -909,7 +1851,7 @@
       "dependencies": [
         "optional:image-generator"
       ],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "design.branding": {
@@ -921,7 +1863,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "design.frontend-design": {
@@ -933,7 +1875,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "design.image-gen": {
@@ -947,7 +1889,7 @@
       "dependencies": [
         "optional:image-generator"
       ],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "design.presentations": {
@@ -959,7 +1901,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "design.remotion-best-practices": {
@@ -974,7 +1916,7 @@
         "optional:node",
         "optional:remotion"
       ],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "design.ui-ux": {
@@ -986,7 +1928,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "design.veo-video-generator": {
@@ -1000,8 +1942,176 @@
       "dependencies": [
         "optional:GOOGLE_API_KEY"
       ],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "medium"
+    },
+    "desktop.app-packaging": {
+      "version": "1.0.0",
+      "sha256": "d6466bde5c21d919d0b88fb708fd8bc8e2d1970d0d6dc773bcbfa78a756391aa",
+      "category": "desktop",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "desktop.auto-update": {
+      "version": "1.0.0",
+      "sha256": "e046722908fdfe6870b7d89424203923a5e7baf02fdb2413d66ee097b29db2c3",
+      "category": "desktop",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "desktop.avalonia": {
+      "version": "1.0.0",
+      "sha256": "c1b3c9b07f74ea081460a0270ece35de20fa462b0df2496fca17570f37b9a49f",
+      "category": "desktop",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "desktop.cross-platform-desktop": {
+      "version": "1.0.0",
+      "sha256": "7f8b7ade03af80753e864f96b7fa0c68c9818cda6f8d2df9291121d9226927e5",
+      "category": "desktop",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "desktop.desktop-security": {
+      "version": "1.0.0",
+      "sha256": "ed4ad8b73a12f10594e8a7857a213c2d2be489933426bdc0a78ae9a1e301cfc2",
+      "category": "desktop",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "desktop.electron": {
+      "version": "1.0.0",
+      "sha256": "2c487cebd941636cf8d03ab6b396aee1bd532637066f777887d4aff5ce109d7a",
+      "category": "desktop",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "desktop.macos-native": {
+      "version": "1.0.0",
+      "sha256": "284c8409c5fcbc904cd2484fc7a6298a522da9a4e7d462df144952eb9ffafb81",
+      "category": "desktop",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "desktop.pyqt": {
+      "version": "1.0.0",
+      "sha256": "c32524b786677b50bf201e317430deacfa2a68e81b9d64baf6dcda11e663432d",
+      "category": "desktop",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "desktop.pyside": {
+      "version": "1.0.0",
+      "sha256": "2c2895c3e9b55019573105d759b09284cea5fd8699bdf62a42b647965fce5ce8",
+      "category": "desktop",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "desktop.qt": {
+      "version": "1.0.0",
+      "sha256": "b8ea38309f4f309d64f8e99a9c3e5930a6652747fc0dfa69560820ad3a4a0ed3",
+      "category": "desktop",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "desktop.tauri": {
+      "version": "1.0.0",
+      "sha256": "87a84a9eec21f26550feb331e3cc8a644db698684f1e0aa3ea668d6d9c9f41fd",
+      "category": "desktop",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "desktop.tkinter": {
+      "version": "1.0.0",
+      "sha256": "42d4f10080c6f3f0168ea708221812390db116daa2f87fdb74cbfd69c5fddeda",
+      "category": "desktop",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "desktop.winui": {
+      "version": "1.0.0",
+      "sha256": "cab998e9eda9196756d595d3ce4463d6f77a5dc005905ea003f8574b55d5d528",
+      "category": "desktop",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "desktop.wpf": {
+      "version": "1.0.0",
+      "sha256": "340acab9c50d62b747a1cbbde6ec00edbcbf12f937c787c59183ea84cf4ce293",
+      "category": "desktop",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
     },
     "development.api-mock-generator": {
       "version": "1.0.0",
@@ -1014,7 +2124,7 @@
       "dependencies": [
         "optional:test-framework"
       ],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "development.architecture": {
@@ -1026,7 +2136,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "development.autoreview": {
@@ -1040,7 +2150,7 @@
       "dependencies": [
         "optional:codex-or-claude-cli"
       ],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "development.backend": {
@@ -1052,7 +2162,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "development.behavior-validator": {
@@ -1064,7 +2174,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "development.brainstorming": {
@@ -1078,7 +2188,7 @@
         "references/upstream-SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "development.cf-worker-deploy": {
@@ -1092,7 +2202,7 @@
       "dependencies": [
         "optional:wrangler"
       ],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "high"
     },
     "development.ci-cd-pipeline": {
@@ -1104,19 +2214,19 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "development.code-review": {
       "version": "1.0.0",
-      "sha256": "297a8311c8a14095d8dbe61a3ad94454932134ad160ed9aff091c1e903122d8b",
+      "sha256": "913f6a3f9034faeb4568ccda7822893d79742458e10bf56a4454b97716c7c712",
       "category": "development",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "development.coding": {
@@ -1128,7 +2238,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "development.coding-agent": {
@@ -1142,7 +2252,7 @@
       "dependencies": [
         "optional:codex-or-claude-cli"
       ],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "medium"
     },
     "development.crabbox": {
@@ -1156,7 +2266,7 @@
       "dependencies": [
         "optional:crabbox"
       ],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "development.cursor-agent": {
@@ -1170,7 +2280,7 @@
       "dependencies": [
         "optional:cursor-agent"
       ],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "medium"
     },
     "development.databases": {
@@ -1182,7 +2292,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "medium"
     },
     "development.db-inspector": {
@@ -1196,7 +2306,7 @@
       "dependencies": [
         "optional:database-client"
       ],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "medium"
     },
     "development.debugging": {
@@ -1208,7 +2318,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "development.devops": {
@@ -1220,7 +2330,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "medium"
     },
     "development.docker-manager": {
@@ -1234,7 +2344,7 @@
       "dependencies": [
         "optional:docker"
       ],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "high"
     },
     "development.dokploy": {
@@ -1248,7 +2358,7 @@
       "dependencies": [
         "optional:DOKPLOY_API_KEY"
       ],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "high"
     },
     "development.frontend": {
@@ -1260,7 +2370,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "development.git": {
@@ -1274,7 +2384,7 @@
       "dependencies": [
         "git"
       ],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "medium"
     },
     "development.git-workflow": {
@@ -1288,7 +2398,7 @@
       "dependencies": [
         "git"
       ],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "medium"
     },
     "development.git-worktrees": {
@@ -1304,7 +2414,7 @@
       "dependencies": [
         "git"
       ],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "medium"
     },
     "development.github": {
@@ -1319,7 +2429,7 @@
         "git",
         "gh-cli-optional"
       ],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "medium"
     },
     "development.github-cli": {
@@ -1333,7 +2443,7 @@
       "dependencies": [
         "optional:gh"
       ],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "medium"
     },
     "development.issue-triage": {
@@ -1345,7 +2455,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "development.mcp-builder": {
@@ -1369,7 +2479,7 @@
       "dependencies": [
         "python-or-node"
       ],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "medium"
     },
     "development.mcp-server-development": {
@@ -1391,7 +2501,7 @@
         "references/upstream-SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "medium"
     },
     "development.performance-optimization": {
@@ -1403,7 +2513,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "development.pr-splitter": {
@@ -1415,7 +2525,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "development.receiving-code-review": {
@@ -1429,7 +2539,7 @@
         "references/upstream-SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "development.refactoring": {
@@ -1441,7 +2551,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "development.release-management": {
@@ -1453,7 +2563,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "development.requesting-code-review": {
@@ -1468,7 +2578,7 @@
         "references/upstream-SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "development.summarize-repo": {
@@ -1480,7 +2590,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "development.tdd": {
@@ -1492,7 +2602,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "development.testing": {
@@ -1504,7 +2614,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "development.verification-before-completion": {
@@ -1518,7 +2628,7 @@
         "references/upstream-SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "documents.csv": {
@@ -1530,7 +2640,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "documents.docx": {
@@ -1542,7 +2652,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "documents.expense-parser": {
@@ -1556,7 +2666,7 @@
       "dependencies": [
         "optional:ocr"
       ],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "documents.markdown": {
@@ -1568,7 +2678,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "documents.pdf": {
@@ -1580,7 +2690,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "documents.pptx": {
@@ -1592,7 +2702,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "documents.xlsx": {
@@ -1604,7 +2714,691 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "education.curriculum-design": {
+      "version": "1.0.0",
+      "sha256": "8e30edb4f27b26701bd92d4799dc509579f1c765119eb02aea1210eac3bf2e8e",
+      "category": "education",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "education.quiz-generation": {
+      "version": "1.0.0",
+      "sha256": "f150d4c7002b47e40ed85da0115fd696b264b6d7c8773f610ed3962ce7f8bcd2",
+      "category": "education",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "education.spaced-repetition": {
+      "version": "1.0.0",
+      "sha256": "86ffaac7511f5503f78b3889c20a00531f0b1dac32c64c288dce2c2e27956ca4",
+      "category": "education",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "education.tutoring": {
+      "version": "1.0.0",
+      "sha256": "8559c9fe42b8fc352b8145fb449b11af8ade01b2eed79939d86d267979940819",
+      "category": "education",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "embedded.arduino": {
+      "version": "1.0.0",
+      "sha256": "d9a05ba14b6126857e4d6770678f764f6aa2016e29fee4a51773a52c8d25a023",
+      "category": "embedded",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "embedded.bare-metal": {
+      "version": "1.0.0",
+      "sha256": "68c590333412603ec87dac3c632f07c04adf547f06989dd3192fdc305580ca80",
+      "category": "embedded",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "embedded.can-bus": {
+      "version": "1.0.0",
+      "sha256": "20fcecd211918e0d13c38c3bba859285eb92d3bedc31bb6a05fb50a6a0e180a9",
+      "category": "embedded",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "embedded.device-drivers": {
+      "version": "1.0.0",
+      "sha256": "90148c42e299f1b0295d393ddffac19695c48b0202316a82d6fac6ce436665d8",
+      "category": "embedded",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "embedded.embedded-linux": {
+      "version": "1.0.0",
+      "sha256": "4187de039e8a64dc28a61416056ed491351b0921b9c4cce0c52afde568edaec5",
+      "category": "embedded",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "embedded.embedded-security": {
+      "version": "1.0.0",
+      "sha256": "f2e11e2337329f491aa53bdae7e846b08952062dc04a79ed97f9913b4e284777",
+      "category": "embedded",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "embedded.embedded-testing": {
+      "version": "1.0.0",
+      "sha256": "36e8a64c5798e677c5839ec8a1b960ac3c4e4ec2f3d875027e3cec46bebbe33e",
+      "category": "embedded",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "embedded.esp32": {
+      "version": "1.0.0",
+      "sha256": "1bd48dc8152ec67ee580e20256dbbfe0839d69da2f2f6f829712faa4286d3849",
+      "category": "embedded",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "embedded.esp8266": {
+      "version": "1.0.0",
+      "sha256": "756f92b2715372f4968cd64b7155ba5e21ea10b124a39cb02c00f53c39091718",
+      "category": "embedded",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "embedded.firmware-analysis": {
+      "version": "1.0.0",
+      "sha256": "a9ff13045d46da2c8ec0010c894acb29de622b749e55570fd6fbe67e058f60cc",
+      "category": "embedded",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "embedded.freertos": {
+      "version": "1.0.0",
+      "sha256": "56984531681ee8321ad5b12a427b0f9386a85b073fe29b01e5664e345c1f0585",
+      "category": "embedded",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "embedded.i2c": {
+      "version": "1.0.0",
+      "sha256": "a4aac896dae913cca64e7b5a75dde2d91ab0f10652a9abdd3c84e404522297a0",
+      "category": "embedded",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "embedded.modbus": {
+      "version": "1.0.0",
+      "sha256": "ab5ed5e5ffe7056df38262aa7e06fa80fc1a2491b278491e4d350b5b364656e1",
+      "category": "embedded",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "embedded.mqtt": {
+      "version": "1.0.0",
+      "sha256": "7a14bf68bb2291d3359c5b3ff01d8debd227e071fca7facd74f76837e1b29411",
+      "category": "embedded",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "embedded.pcb-design": {
+      "version": "1.0.0",
+      "sha256": "674e8635aea75121765416f3d08d6ecdf973e57e7b0b9227a441cec359c38184",
+      "category": "embedded",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "embedded.raspberry-pi": {
+      "version": "1.0.0",
+      "sha256": "34805cb802cb87050a0c2243aafe22d7ae9f8ba67a0870dd630e20ad46b81fe9",
+      "category": "embedded",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "embedded.robotics": {
+      "version": "1.0.0",
+      "sha256": "8cbeea12cf863db3ff195fb15f7de0efa37ad642a3fc18290c5b42d295f70263",
+      "category": "embedded",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "embedded.rp2040": {
+      "version": "1.0.0",
+      "sha256": "e6fac5dbb9ee385ffb988c76c80641ef31b68b42bf0a3b07bb7d318c99408396",
+      "category": "embedded",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "embedded.sensor-integration": {
+      "version": "1.0.0",
+      "sha256": "a3ce84fd130b78641f21bb3c28d35d0ff97b53a9689582493878b4e6c5baf3bb",
+      "category": "embedded",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "embedded.spi": {
+      "version": "1.0.0",
+      "sha256": "f5fc16f22bacdb4b95f8dea97da892ef38c4947b5d373b20ff0b03ece33fc0c5",
+      "category": "embedded",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "embedded.stm32": {
+      "version": "1.0.0",
+      "sha256": "ea6d0084194ca4f49ba1ed4dce938611a15aee539ee7e363c37e084730368aa0",
+      "category": "embedded",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "embedded.uart": {
+      "version": "1.0.0",
+      "sha256": "78c964756a8869ca741b5e2be50b7874f43daf0291d465bc68208e738c6c2170",
+      "category": "embedded",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "embedded.zephyr": {
+      "version": "1.0.0",
+      "sha256": "d5ab0aadbc021826461f401602800cb541e3ceb4f90e4c05084bc1da3d074fa3",
+      "category": "embedded",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "finance.accounting": {
+      "version": "1.0.0",
+      "sha256": "5bb799363155408c2b838f1dc7b0bde3f0fbee8f56ed0b99111b13b4ca4442d6",
+      "category": "finance",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "finance.financial-analysis": {
+      "version": "1.0.0",
+      "sha256": "f200f571070f38d47f2c05d2b5a7f29180fc6e03b9260e5e3c65f6c5bced1840",
+      "category": "finance",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "finance.financial-modeling": {
+      "version": "1.0.0",
+      "sha256": "2f821cafb82b348e868b8a86f735d4c15dfb2f9c4b1bcf788abfa33ba43273b1",
+      "category": "finance",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "finops.ai-inference-cost": {
+      "version": "1.0.0",
+      "sha256": "9ad825b51b6d270e6eb54a01a67c3baa22264ebc7ff4986b197cfa997a157a55",
+      "category": "finops",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "finops.aws-cost-optimization": {
+      "version": "1.0.0",
+      "sha256": "242a1245c2be98d5dfd254ba84968ae510e0b4a13edecb9b7755a88f8470a649",
+      "category": "finops",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "finops.azure-cost-optimization": {
+      "version": "1.0.0",
+      "sha256": "c9aab44ded47b79fa561b85e053e23560f0db4ac81f30c51e1b1347e006fd116",
+      "category": "finops",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "finops.cloud-cost-analysis": {
+      "version": "1.0.0",
+      "sha256": "7a0773f313732a4473bd57946cf3618fa361f9d0a8c450d0ff220e9d9e61626a",
+      "category": "finops",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "finops.gcp-cost-optimization": {
+      "version": "1.0.0",
+      "sha256": "f8e89a2b6ec9d026d12bcddcebc4cf984643b4bf70690a7a4ce21aad7531e782",
+      "category": "finops",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "finops.idle-resource-detection": {
+      "version": "1.0.0",
+      "sha256": "f394b3f71e48e5bb5d07e7c5a29b56311f901da58ee8b0ce84c6b31876eb1a6a",
+      "category": "finops",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "finops.kubernetes-cost": {
+      "version": "1.0.0",
+      "sha256": "34d812e682d0471cc994ed81a9da18aa75f0ee84e1dfff3a67a3a977ead949e9",
+      "category": "finops",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "finops.rightsizing": {
+      "version": "1.0.0",
+      "sha256": "97b47d1a48702dcc56f6e395569064f80ef11f40f6798a88fe90fd5b1f9c5d3e",
+      "category": "finops",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "game.asset-pipelines": {
+      "version": "1.0.0",
+      "sha256": "da1824bd27bea891c16a4c70dfbaa3ac3ae231a4a112755a7e8a98af0bb1c2b9",
+      "category": "game",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "game.directx": {
+      "version": "1.0.0",
+      "sha256": "d5f3d486e96e08866d9a159e39e232602900742e3a3c65fcd1ff5bdf14664409",
+      "category": "game",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "game.ecs": {
+      "version": "1.0.0",
+      "sha256": "61c8ef7ff9569ca87d5626a3b6d3dc558b2271c11c91d08fcf05514eae7af5dc",
+      "category": "game",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "game.game-ai": {
+      "version": "1.0.0",
+      "sha256": "d4c441455738104ca97ef707f506ad568b44260cc3a040faaa796f15c0a85075",
+      "category": "game",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "game.game-testing": {
+      "version": "1.0.0",
+      "sha256": "681d401c3aa1a13df07e1d5900261246cc997bf5fa17a3d5a271be5df16e888b",
+      "category": "game",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "game.game-ui": {
+      "version": "1.0.0",
+      "sha256": "d9dfddb29a599388f65bfefddc61ebe2159acc96f94f083e8b02329a5b6e1650",
+      "category": "game",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "game.gameplay-programming": {
+      "version": "1.0.0",
+      "sha256": "d91dd45a719bf9ded9471ea62ec1373c2cd4fef5ed4ae7e4a303a48a50398680",
+      "category": "game",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "game.godot": {
+      "version": "1.0.0",
+      "sha256": "b0bd57c9a7d2c15b34ca7ba7831883b5a9dad4fb0e92f8533d7f477a1ae62acc",
+      "category": "game",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "game.graphics-programming": {
+      "version": "1.0.0",
+      "sha256": "7d8c7ef7aaee1c4d0098208f8fa78bdd3cb88ec8d2ef1cb110459b6b65107fc4",
+      "category": "game",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "game.multiplayer": {
+      "version": "1.0.0",
+      "sha256": "dfd3ef66b6c675390e2bb27a96d9c2ef2af2ef7bfa409ad1d00bc1a5958a54b6",
+      "category": "game",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "game.netcode": {
+      "version": "1.0.0",
+      "sha256": "7657fde9a56211e6b067207e8f9361ea495ac7f4de3ebd2f8b09b6c6dcb6bff7",
+      "category": "game",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "game.opengl": {
+      "version": "1.0.0",
+      "sha256": "0aec73ac9b949955fc32c5c87e73524462e13fdec1b7d20fa37da3f7a2815c6e",
+      "category": "game",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "game.optimization": {
+      "version": "1.0.0",
+      "sha256": "257f10d419c3f30bcdc5418afa1eac99b4dfaed433325c292987cb7f0aa74d2b",
+      "category": "game",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "game.physics": {
+      "version": "1.0.0",
+      "sha256": "a6b08d095c8cd8608fb951228aae31258f6beb6a10b0798810b800607dff0b5f",
+      "category": "game",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "game.profiling": {
+      "version": "1.0.0",
+      "sha256": "5874b5ab35f37135ffcf06a867ff27eeac89c3db21cbe304653e62bb8e4ede23",
+      "category": "game",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "game.shaders": {
+      "version": "1.0.0",
+      "sha256": "905a6df7be2b73075cf3d975cb743ac02155c8366becbd1fe83e982b5695c99e",
+      "category": "game",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "game.unity": {
+      "version": "1.0.0",
+      "sha256": "90d2e2a3e1828a7116831723bf6e52a34582b61dce3aa0cbf1cbef85608b1024",
+      "category": "game",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "game.unreal-engine": {
+      "version": "1.0.0",
+      "sha256": "d26dc28ea723dee281f0879f516c3e8bbcaa2a1cc1974762355053782eca5db7",
+      "category": "game",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "game.vulkan": {
+      "version": "1.0.0",
+      "sha256": "15ca477b03e92f454c98fd475d9c0395a48fae200718540131d073207b2757e0",
+      "category": "game",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "healthcare.health-economist": {
@@ -1622,7 +3416,1066 @@
         "tests/test_health_eval.py"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "legal.accessibility-compliance": {
+      "version": "1.0.0",
+      "sha256": "180e9b03b1e25cb968decc3934c8e00a3cca7dffb624ea23e86a0b2e3f3a29e4",
+      "category": "legal",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "legal.ai-governance": {
+      "version": "1.0.0",
+      "sha256": "626a85698fd7f4dc9deccbbb52f6bb286d1f6c32b136bbdaa7337e384f03bea0",
+      "category": "legal",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "legal.ccpa": {
+      "version": "1.0.0",
+      "sha256": "10df70c08519ce62a5f63947d88a623de23fefdd43ca116cf55a7e10d2473552",
+      "category": "legal",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "legal.contract-review": {
+      "version": "1.0.0",
+      "sha256": "7746b76eefcb33016fc8ac2b177b053079c72c94e45e897236a687ca33313b9c",
+      "category": "legal",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "legal.data-retention": {
+      "version": "1.0.0",
+      "sha256": "8cc63e82e683eb90d58e731473c50f03dd29e5ccf469e213b7938c132385edd0",
+      "category": "legal",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "legal.gdpr": {
+      "version": "1.0.0",
+      "sha256": "83fe21b0ca76d1b2776ba4199e3cee3b66780ee821a315377bd901bc168fd068",
+      "category": "legal",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "legal.license-compatibility": {
+      "version": "1.0.0",
+      "sha256": "6c631b7f4531b224691b149d4ca0246cf5c38a72c9a5e822eb11920eb8ded596",
+      "category": "legal",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "legal.nda-review": {
+      "version": "1.0.0",
+      "sha256": "f505f295215d08a59e3d7bf4395521ff5e4ebf85d8a9c538cfab858a33a24578",
+      "category": "legal",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "legal.open-source-license-selection": {
+      "version": "1.0.0",
+      "sha256": "127d5a191dc88a493a042ca6d61b52265d57cecaadf6077bb9673499b0bdb163",
+      "category": "legal",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "legal.privacy-policy-review": {
+      "version": "1.0.0",
+      "sha256": "d616a2cc36233edf7f9c386d171aaf03e47329f376463d98a91bd8fa99dce6dc",
+      "category": "legal",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "legal.records-management": {
+      "version": "1.0.0",
+      "sha256": "b048b46faef5871936677ee204b8290234effddffcbb51ee811bed312409bf22",
+      "category": "legal",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "legal.regulatory-research": {
+      "version": "1.0.0",
+      "sha256": "50cb9b00e6e9ebf1790a267e48905523d3fdf6af7f2504fac2ed9a160a33ce16",
+      "category": "legal",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "legal.sbom-analysis": {
+      "version": "1.0.0",
+      "sha256": "d3748cdf58f6ffe9cc86f8905b29b6d79d90609c81b5dba5a224fe4fd8c4b5ad",
+      "category": "legal",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "legal.security-compliance": {
+      "version": "1.0.0",
+      "sha256": "81d9353284e959e5a2b84191517f7f87b382c0223ecfc06be609a73b3075e995",
+      "category": "legal",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "legal.software-compliance": {
+      "version": "1.0.0",
+      "sha256": "a6f8948961e80d1143767a3ebe89553ba00d9ce8dd7300945cb672595fb9dc44",
+      "category": "legal",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "legal.terms-of-service": {
+      "version": "1.0.0",
+      "sha256": "0f5b0485b642ea0a2057e3798773afb43e60c3f0223bb1a1e1ad5b8c9b60c844",
+      "category": "legal",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "mobile.android-compose": {
+      "version": "1.0.0",
+      "sha256": "2dfdad15db2b3c27d0af14a7743d8a9f4216e67b918aa1fadf6c1459a48e7309",
+      "category": "mobile",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "mobile.android-development": {
+      "version": "1.0.0",
+      "sha256": "b04eb6c523346f7f729c57368ab0600e4b54847bbb2233e77d643207877d655b",
+      "category": "mobile",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "mobile.app-store-deployment": {
+      "version": "1.0.0",
+      "sha256": "a7c03db2c2b400dc09603ace12a6c20435e21c3f085fc96bf19b7b93183faedd",
+      "category": "mobile",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "mobile.expo": {
+      "version": "1.0.0",
+      "sha256": "638742d3baaa36544f26c44ee024459da85c89b7128b38ad00c2599ea63f4a6e",
+      "category": "mobile",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "mobile.flutter": {
+      "version": "1.0.0",
+      "sha256": "38fd399718f8440c4f1acbda083270a5991a43b4ccf1b50a4afaf2b6ee42858f",
+      "category": "mobile",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "mobile.ios-development": {
+      "version": "1.0.0",
+      "sha256": "d5d6435a70ef28e97ce31ef35fbfbe5e7663b6d1c6d35f15ee793eecb613f539",
+      "category": "mobile",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "mobile.kotlin-development": {
+      "version": "1.0.0",
+      "sha256": "01112f068f40f51686e6ad1c66457e7242b747d952ccbf50bf3fb245c2e59391",
+      "category": "mobile",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "mobile.mobile-ci-cd": {
+      "version": "1.0.0",
+      "sha256": "c122c6131b65b8295ef7783866aca20563607bf7fdc26498a9a12b8879aec4c1",
+      "category": "mobile",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "mobile.mobile-navigation": {
+      "version": "1.0.0",
+      "sha256": "b461f65daa1f906aa99b841921b9f8564363230ba0a2e0a43ccdebef2f2e63fe",
+      "category": "mobile",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "mobile.mobile-networking": {
+      "version": "1.0.0",
+      "sha256": "10f1b30e5fd4d827dba9b81463d5d44a996bab48f697215e2c84e8eb0a48f869",
+      "category": "mobile",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "mobile.mobile-performance": {
+      "version": "1.0.0",
+      "sha256": "af72c071dfe6fee5e38ac34754c4a0ae02d16a043e3bb8bfc11ee3a324307494",
+      "category": "mobile",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "mobile.mobile-release": {
+      "version": "1.0.0",
+      "sha256": "954f8f1e26eaa5c3e7107796929e667eff1c1071c7d9814f42313d1cfd818a0e",
+      "category": "mobile",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "mobile.mobile-security": {
+      "version": "1.0.0",
+      "sha256": "5ea1c7f417e9f0c92daba162eb2c76bcbd70cd489b2209e415159f35642d8f24",
+      "category": "mobile",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "mobile.mobile-state-management": {
+      "version": "1.0.0",
+      "sha256": "132f2e6bcdc814b6f8d29f85aff80fbc0a7fba4285f9da60158834ae04b9702b",
+      "category": "mobile",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "mobile.mobile-storage": {
+      "version": "1.0.0",
+      "sha256": "5bfe1dd85687315e5d65b46a51505f0938b78fbeb7da6f96de10cb5f9f3b0895",
+      "category": "mobile",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "mobile.mobile-testing": {
+      "version": "1.0.0",
+      "sha256": "a3f840fd79a40fbb3461e9e95a3c1e2f0752f062f0629d1cb1ac6ba6188e768f",
+      "category": "mobile",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "mobile.mobile-ui": {
+      "version": "1.0.0",
+      "sha256": "8628cc738c116fa014cf8101aa4347f1d90f507fa198bed9d9d53c772d712ab4",
+      "category": "mobile",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "mobile.play-store-deployment": {
+      "version": "1.0.0",
+      "sha256": "905f985c77b5b33ab8f42c1b2bbefa00eaf160a043c05392319068879a14bb4e",
+      "category": "mobile",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "mobile.react-native": {
+      "version": "1.0.0",
+      "sha256": "65204d57e1c7110538364c3f63cf95a7acbb60674e9bf6bb5a67ea61f7645356",
+      "category": "mobile",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "mobile.swift-development": {
+      "version": "1.0.0",
+      "sha256": "69c679c0b99cb296cc5d703a5c09de4e03d71a71582393d1b118ad315c05850e",
+      "category": "mobile",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "mobile.swiftui-development": {
+      "version": "1.0.0",
+      "sha256": "9f39fb88cfd323a28abaed0595cae46a127dae3a15a0df42c608b63567377e7f",
+      "category": "mobile",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "networking.dns": {
+      "version": "1.0.0",
+      "sha256": "00471844831e5e9584226eef46d1aeefaba2ed05bb341f938b858d024b328261",
+      "category": "networking",
+      "files": [
+        "README.md",
+        "SKILL.md",
+        "__init__.py",
+        "handler.py",
+        "skill.yaml"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "networking.firewalls": {
+      "version": "1.0.0",
+      "sha256": "799fb56359510fb60f2fbdceb9ea7b0a4c31da33e223bc45bd41acc59e6300aa",
+      "category": "networking",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "networking.http": {
+      "version": "1.0.0",
+      "sha256": "de6568d42a4b61cf7a4120925e29a248b6971ae857b0ed33c7806ea173af6669",
+      "category": "networking",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "networking.http2": {
+      "version": "1.0.0",
+      "sha256": "eb78e13f7a5d7967bd22d4bd3246c19423f6fa3c91354ef76af4b9c1a585ca1d",
+      "category": "networking",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "networking.http3": {
+      "version": "1.0.0",
+      "sha256": "bbe500103e4837ef1df95b94de5d5474d5d3064ab357bad1bb047d3504af44e7",
+      "category": "networking",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "networking.load-balancing": {
+      "version": "1.0.0",
+      "sha256": "46615417bf4ccfd8229830b27824f4bda674456710ea1cb3ea0860dd0a6cb939",
+      "category": "networking",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "networking.network-automation": {
+      "version": "1.0.0",
+      "sha256": "46da87b161323809d6e3ed081215bc00280069a2ee77828b6fa5f1957cdb5472",
+      "category": "networking",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "networking.network-debugging": {
+      "version": "1.0.0",
+      "sha256": "e67cbf1ef7c3fd84c0fb290900ac0db736f03f7c7de6496583fdf7a442b3228f",
+      "category": "networking",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "networking.network-performance": {
+      "version": "1.0.0",
+      "sha256": "99e9c6017a303b4868c300852d978706c6f694d338b5a77845e231ac6edc91aa",
+      "category": "networking",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "networking.packet-analysis": {
+      "version": "1.0.0",
+      "sha256": "0f9b4e0d47f3b78e498dfdb05cfda974678960db5660850ffd37545a7dc2ce9a",
+      "category": "networking",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "networking.proxies": {
+      "version": "1.0.0",
+      "sha256": "b76eb1126ec5029c58ac3a027d635e4e8f83df8ac9bcd9ece2b61e6b24bbad7b",
+      "category": "networking",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "networking.reverse-proxy": {
+      "version": "1.0.0",
+      "sha256": "eb4c21918e050a35ba1e9261da21d81477e9ec47290b4e5b62be3a808be5b863",
+      "category": "networking",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "networking.routing": {
+      "version": "1.0.0",
+      "sha256": "7aaed4b3e65b2aefd430257ac99d0531e0a51e6b208dbd5f84e6587d676dd53d",
+      "category": "networking",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "networking.service-mesh": {
+      "version": "1.0.0",
+      "sha256": "4945eaf0834e086c29d8fec1353a3d1250d1dc3ae9b49ce62b0f2cb153eada03",
+      "category": "networking",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "networking.switching": {
+      "version": "1.0.0",
+      "sha256": "a024a1aae05a98e74dd2bf6e768d1c2e5c0312453bbe06f09e5cb89f529a76a8",
+      "category": "networking",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "networking.tcp-ip": {
+      "version": "1.0.0",
+      "sha256": "f9fbee962f14f38477b969c33fede2958a2621d71dd6db31de01eada97b11ed2",
+      "category": "networking",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "networking.tls": {
+      "version": "1.0.0",
+      "sha256": "2d7c41595926c1949deaaf8ccf99e66ae85272d5b15d4aa35e32c62cc189ee7b",
+      "category": "networking",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "networking.vpn": {
+      "version": "1.0.0",
+      "sha256": "51a7f928afbc3788544eb34f2b8d0cb591a3f33446e7b1e4163764f8113bfef9",
+      "category": "networking",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "networking.wireshark": {
+      "version": "1.0.0",
+      "sha256": "496d213131da5916d4bd7a87346f5b7f7a5b5234e811e747e09efd65a5334b56",
+      "category": "networking",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "networking.zero-trust": {
+      "version": "1.0.0",
+      "sha256": "b3e01dd7eda5a3332bb615ba24827b6fc96e6dd4884fe7748cb5f2ffef77c828",
+      "category": "networking",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "observability.distributed-tracing": {
+      "version": "1.0.0",
+      "sha256": "e6425a239b32a4433bd20e30dc7927d05b6842471a72523407fd9d6bcdf46d8a",
+      "category": "observability",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "observability.grafana": {
+      "version": "1.0.0",
+      "sha256": "b9ba4c578cd7efcce261012bd5ea9a4e6304e06f6cbbd5f49357904e34bf81c3",
+      "category": "observability",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "observability.logging": {
+      "version": "1.0.0",
+      "sha256": "594bbf38955dfeb720c5335cdeb3494de46ce066b047a1dd3c48f1eeef36a8d7",
+      "category": "observability",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "observability.metrics": {
+      "version": "1.0.0",
+      "sha256": "9ff824c7015e3b3c03bc57c8a331bba19cf53b214b1aafabb72458f3379ac700",
+      "category": "observability",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "observability.opentelemetry": {
+      "version": "1.0.0",
+      "sha256": "9da183ef699778d2c4c655a97f2b471f83f314767477f5bf67060ea92fa71801",
+      "category": "observability",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "observability.postmortems": {
+      "version": "1.0.0",
+      "sha256": "7c4ea24fd7019970740529d36cd9c3e910629bbcd4341d78535719e622699599",
+      "category": "observability",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "observability.prometheus": {
+      "version": "1.0.0",
+      "sha256": "0417bd2a9e5ad790b043294bbdf525dea7698623d91b40d4e4b07d1e502b4612",
+      "category": "observability",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "observability.slo-sli": {
+      "version": "1.0.0",
+      "sha256": "04052cb0a62c0229d034fca0b7b191578416f94ca23bc2faa5c3b63005f45664",
+      "category": "observability",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "os.bootloaders": {
+      "version": "1.0.0",
+      "sha256": "5c57715bbf10e98c6d4a53753bd2ecf6efb101c563a784232947dc177721fca7",
+      "category": "os",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "os.containers": {
+      "version": "1.0.0",
+      "sha256": "8356372800a1beb1ef877ec2b1ad0549a6e3685a4301844e1aed6e0b56be8e86",
+      "category": "os",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "os.device-drivers": {
+      "version": "1.0.0",
+      "sha256": "33d674d61bed5108a543725f9e304965054af3cc9ef5e16123b567cb7d66a105",
+      "category": "os",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "os.ebpf": {
+      "version": "1.0.0",
+      "sha256": "648937f801eb4c2522330d30edd32a65190b573ce283755b3e106cbcda9f5f79",
+      "category": "os",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "os.filesystems": {
+      "version": "1.0.0",
+      "sha256": "4da05eabf2270bba999d6552c98e09851473309ce466316ca222e44e9de28418",
+      "category": "os",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "os.hypervisors": {
+      "version": "1.0.0",
+      "sha256": "05bf551c0913535fb6a544ba07b31673813d7cc4c7a4ba1bdf4e5a78a55daa36",
+      "category": "os",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "os.ipc": {
+      "version": "1.0.0",
+      "sha256": "0a19bc90a17ac115ac59ae78e760682ca1987d670afddc9c88c11e6d9098a74f",
+      "category": "os",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "os.kernel-development": {
+      "version": "1.0.0",
+      "sha256": "8d9c30e91b345d592c1b129a722cc7e316b2cc554bfc844575b8e4cbcbee2bc1",
+      "category": "os",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "os.linux-kernel": {
+      "version": "1.0.0",
+      "sha256": "c316f2e527286a6ee4dc1eb2bf66089de33a430e267888e5cc3ecfdad6ff6831",
+      "category": "os",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "os.networking-stack": {
+      "version": "1.0.0",
+      "sha256": "b899ccec6463eae6a061939c60c7969bd515845d3ab149af6900caf3aa4176f7",
+      "category": "os",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "os.operating-systems-fundamentals": {
+      "version": "1.0.0",
+      "sha256": "f9bff3a7c0c021278d243380289026c4d8beb7e50973826e8499a2668cfd9170",
+      "category": "os",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "os.processes-threads": {
+      "version": "1.0.0",
+      "sha256": "92cc5795d605de0712ea44b4531b51879f5c276c7b57c31f569cf49cd6247a20",
+      "category": "os",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "os.schedulers": {
+      "version": "1.0.0",
+      "sha256": "f9ed291c4f5582ae3f807a24384ee14b587eba61959ce0d6b95b8ed5185141fd",
+      "category": "os",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "os.syscall-analysis": {
+      "version": "1.0.0",
+      "sha256": "ba2be7eac78f04253fd9d639e880a4d119c36bf9db8cc638258edd1fc2b17404",
+      "category": "os",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "os.virtual-memory": {
+      "version": "1.0.0",
+      "sha256": "75d54b4f9574ca71e89ae0be7ab6b4ec93a7191b772770a309189736104d6485",
+      "category": "os",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "os.virtualization": {
+      "version": "1.0.0",
+      "sha256": "44b3d9bf43bf900ed36b30b2409841ad1a3ea166fedf5a313f17fba7f400871e",
+      "category": "os",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "os.windows-internals": {
+      "version": "1.0.0",
+      "sha256": "d7c01655765e8d6b8e64f0f9884357ed1c6b5954c08a11566e027f6dd22c3a4d",
+      "category": "os",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "product.acceptance-criteria": {
+      "version": "1.0.0",
+      "sha256": "b1f116669a9b4b9ff23f75e1857eb57b268f9ea642208af83d39cbdb6124bece",
+      "category": "product",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "product.experimentation": {
+      "version": "1.0.0",
+      "sha256": "e95daeada5eb4f9a3f77cf0a5c856ec1be53c95319769af6545f6be7e1ff5663",
+      "category": "product",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "product.prioritization": {
+      "version": "1.0.0",
+      "sha256": "820c36b1192298a8704b8555812d3dc2dd29c7c79f6e35904abc890540cae756",
+      "category": "product",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "product.product-metrics": {
+      "version": "1.0.0",
+      "sha256": "7657e759cea70b585c658bc8c67b07a466e8288fad0f4ed0744a9129a1a08db2",
+      "category": "product",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "product.requirements-engineering": {
+      "version": "1.0.0",
+      "sha256": "42b7c51e2bd14ec2df000def2b580e9675dfa6b0d837de80823ce0e173d15c0e",
+      "category": "product",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "product.user-stories": {
+      "version": "1.0.0",
+      "sha256": "23d147fc490a33af6a540bc4ef2ab1e43f8b02fd75a73c29a0762177063a6363",
+      "category": "product",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "productivity.adhd": {
@@ -1634,7 +4487,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "productivity.adhd-divergent-brainstorm": {
@@ -1646,7 +4499,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "productivity.adhd-output-style": {
@@ -1658,7 +4511,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "productivity.adhd-task-breakdown": {
@@ -1670,7 +4523,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "productivity.brainstorming": {
@@ -1684,7 +4537,7 @@
         "references/upstream-SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "productivity.calendar-assistant": {
@@ -1698,7 +4551,7 @@
       "dependencies": [
         "optional:calendar-access"
       ],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "medium"
     },
     "productivity.context-summarize": {
@@ -1710,7 +4563,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "productivity.daily-journal": {
@@ -1722,7 +4575,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "productivity.email-inbox-zero": {
@@ -1736,7 +4589,7 @@
       "dependencies": [
         "optional:email-access"
       ],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "medium"
     },
     "productivity.executive-summary": {
@@ -1748,7 +4601,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "productivity.first-principles-reasoning": {
@@ -1760,7 +4613,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "productivity.focus": {
@@ -1772,7 +4625,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "productivity.focus-guard": {
@@ -1784,7 +4637,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "medium"
     },
     "productivity.kaizen-continuous-improvement": {
@@ -1796,7 +4649,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "productivity.meeting-action-extractor": {
@@ -1808,7 +4661,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "productivity.obsidian-sync": {
@@ -1822,7 +4675,7 @@
       "dependencies": [
         "optional:obsidian"
       ],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "medium"
     },
     "productivity.planning": {
@@ -1834,7 +4687,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "productivity.prioritization": {
@@ -1846,7 +4699,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "productivity.session-analytics": {
@@ -1858,7 +4711,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "productivity.task-decomposition": {
@@ -1870,7 +4723,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "productivity.time-blocking": {
@@ -1882,7 +4735,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "productivity.time-management": {
@@ -1894,7 +4747,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "productivity.unlazy": {
@@ -1906,7 +4759,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "productivity.voice-to-action": {
@@ -1920,7 +4773,271 @@
       "dependencies": [
         "optional:transcript"
       ],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "programming.bash-scripting": {
+      "version": "1.0.0",
+      "sha256": "d9afb66325333ce625f7c3c590c99b7400c66da15d8c0f827761cca0e42c35fc",
+      "category": "programming",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "programming.c-fundamentals": {
+      "version": "1.0.0",
+      "sha256": "83d65d2dc2a51fc64d45a10dda67bef784d5692958680a706e3ff3c8c43badf1",
+      "category": "programming",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "programming.cpp-modern": {
+      "version": "1.0.0",
+      "sha256": "b108c9800f0f3eb8c628d15711c4c9c4ea6b923b5ac285e8d93f113273d019ed",
+      "category": "programming",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "programming.csharp-fundamentals": {
+      "version": "1.0.0",
+      "sha256": "ccf47a11f37fa57c42d9192cfb406e70ea1af7e21e4fc0949cfb401a2bf20c47",
+      "category": "programming",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "programming.go-concurrency": {
+      "version": "1.0.0",
+      "sha256": "a57dc633bdedf32761bf7579f1c4916632df2b6910b1cb304f5c7eb641ab4e19",
+      "category": "programming",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "programming.go-fundamentals": {
+      "version": "1.0.0",
+      "sha256": "371695949e9dea4105190fc170477dd24db1a3341980ef8a0d379ba82575efe0",
+      "category": "programming",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "programming.go-testing": {
+      "version": "1.0.0",
+      "sha256": "ff9e7ccb43b6d1073266f1405bc9160f44104f55ca14436050df3e88198bb993",
+      "category": "programming",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "programming.java-modern": {
+      "version": "1.0.0",
+      "sha256": "7d69662aadf7bf1c7138827e8a01d95a3a1d8013858c89114eec853504a3aabd",
+      "category": "programming",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "programming.powershell-automation": {
+      "version": "1.0.0",
+      "sha256": "e91fde597c9d4fcf4d8655c0e5532c6819c8082c51a279d55f5b7a983db213fd",
+      "category": "programming",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "programming.python-async": {
+      "version": "1.0.0",
+      "sha256": "ed76cc9467a0300e0ba2411e9cd0ac88f473ce4387cd3b019ab7a7cdbdc59aeb",
+      "category": "programming",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "programming.python-fundamentals": {
+      "version": "1.0.0",
+      "sha256": "08b52339b033521daa4c53b7eef014df090dd582edce085b2473c6390ab6f856",
+      "category": "programming",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "programming.python-idiomatic-style": {
+      "version": "1.0.0",
+      "sha256": "7b544fd282c5cb72a56b09d8d4b8f42bfca62b7064e608e22bc49e08fa324521",
+      "category": "programming",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "programming.python-security": {
+      "version": "1.0.0",
+      "sha256": "075e01bad1ea3553b2a91389df510a2ed667cd704ad4e47a16ccf896d8db41d7",
+      "category": "programming",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "programming.python-testing": {
+      "version": "1.0.0",
+      "sha256": "303319bee53521c641e48f48fe2cb04440b13a5f724b57777660f10804a65412",
+      "category": "programming",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "programming.rust-async": {
+      "version": "1.0.0",
+      "sha256": "c0b9f1852b24a9d6ea85d17d973465120d5524dce2ea30ad62ffabc25ee4aab3",
+      "category": "programming",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "programming.rust-fundamentals": {
+      "version": "1.0.0",
+      "sha256": "7d5b5f5839c98715678ba15ce1400487790d4a2ff8844a331a4ea34e463e8487",
+      "category": "programming",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "programming.rust-testing": {
+      "version": "1.0.0",
+      "sha256": "da05c0e517e78dfbf10c8c3333081ad8aee4c6a9066adbb335e6cbe76414c305",
+      "category": "programming",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "programming.solidity-smart-contracts": {
+      "version": "1.0.0",
+      "sha256": "bf8ac8f1be548d894da942d6a9a54e969b8c8559c0495b48b0f04ef1db20397f",
+      "category": "programming",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "programming.sql-advanced": {
+      "version": "1.0.0",
+      "sha256": "b271d229954a8cb74d38d28ddc0c152d4fba95748e3417a38497c61011b29fa6",
+      "category": "programming",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "programming.typescript-fundamentals": {
+      "version": "1.0.0",
+      "sha256": "dedc80db10ed47f9e3c00c2dcbdb8fd01e0cce2d7aa2d9abdf41283ae0a17575",
+      "category": "programming",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "programming.typescript-project-structure": {
+      "version": "1.0.0",
+      "sha256": "71cc023cf9ff27530452f18ffa5d16ae60e0681244f1ad28d2d3efe03196d6cf",
+      "category": "programming",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "programming.typescript-testing": {
+      "version": "1.0.0",
+      "sha256": "eb63927392a11d6d56b81a42759ead154a4306773e62d268bd4672f8f1c622bc",
+      "category": "programming",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "research.academic-research": {
@@ -1932,7 +5049,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "research.competitive-analysis": {
@@ -1944,7 +5061,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "research.data-analysis": {
@@ -1956,7 +5073,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "research.deep-research": {
@@ -1968,7 +5085,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "research.fact-checking": {
@@ -1980,7 +5097,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "research.search-synthesizer": {
@@ -1994,7 +5111,7 @@
       "dependencies": [
         "optional:web-search"
       ],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "research.source-verification": {
@@ -2006,7 +5123,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "research.web-research": {
@@ -2018,7 +5135,259 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "scientific.bioinformatics": {
+      "version": "1.0.0",
+      "sha256": "8b479d3bcf7d9695f71ac9786a292cc415e18ae5f79f6825ce7de86006aa08d1",
+      "category": "scientific",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "scientific.cfd": {
+      "version": "1.0.0",
+      "sha256": "f036da4d5dfb3fc1ea44ec85f2c7318ef369ffabc57e6908bc770de9f76ffcbc",
+      "category": "scientific",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "scientific.computational-chemistry": {
+      "version": "1.0.0",
+      "sha256": "5b816c218d3090c065e10897da6a8bf4c523701e1bf8bf6eafad8d68665f8436",
+      "category": "scientific",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "scientific.computational-physics": {
+      "version": "1.0.0",
+      "sha256": "0a7d516f4efdbf7a9d1784527161293e4b109f7a9092d4f7e73cbc33583a0e64",
+      "category": "scientific",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "scientific.experiment-design": {
+      "version": "1.0.0",
+      "sha256": "b1026d1873ccacb386bcb3aabd3c4f495f92c776a9d4db2869a1fbcae909c480",
+      "category": "scientific",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "scientific.fea": {
+      "version": "1.0.0",
+      "sha256": "8739a0a8ddd759f859469a22ecf1c5b251e10e2193fecc779f5e059b66ce3d17",
+      "category": "scientific",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "scientific.genomics": {
+      "version": "1.0.0",
+      "sha256": "ec2a362d986e95850e93de9d9412d82d6a4bd86dada4628148932df256b0972b",
+      "category": "scientific",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "scientific.geospatial-analysis": {
+      "version": "1.0.0",
+      "sha256": "014c1dfa1f3b82baa0cb736ecd7948736e158fd0b21aa1a178b02b96a426eb68",
+      "category": "scientific",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "scientific.gis": {
+      "version": "1.0.0",
+      "sha256": "5f899730f6354f266fa4914a5c49f03af7183130f4d6423e3f549bfa40caab4a",
+      "category": "scientific",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "scientific.hpc": {
+      "version": "1.0.0",
+      "sha256": "e03d230fe2bc4a01a3762a2aa57b8b9d4c6dc15669470b4377c6109b115274a2",
+      "category": "scientific",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "scientific.literature-review": {
+      "version": "1.0.0",
+      "sha256": "24ce77fc893da923a89f8f9dd642f9361c8f5d7a604c973d01791dfb3b078bfb",
+      "category": "scientific",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "scientific.medical-imaging": {
+      "version": "1.0.0",
+      "sha256": "d19a4730d86d12396e245bd168e121137858b662b3548a48404fd04c7853b063",
+      "category": "scientific",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "scientific.microscopy": {
+      "version": "1.0.0",
+      "sha256": "66fb9eef92340e7c235c212404795febba8c40a20bacb61a96d14068704437ae",
+      "category": "scientific",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "scientific.numerical-methods": {
+      "version": "1.0.0",
+      "sha256": "b4bdb06c3d797fdc9ddc37c9f803daca6069cca16ea1514549b424c340cfe014",
+      "category": "scientific",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "scientific.optimization": {
+      "version": "1.0.0",
+      "sha256": "c6a9ee4e818bcc63136a10b26eaa05d690c760742c82caaf972e019389f67694",
+      "category": "scientific",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "scientific.reproducible-research": {
+      "version": "1.0.0",
+      "sha256": "2691419a027394f7aea5d88707da2de727068e62d7a1ea36fbb7662e38d8ba96",
+      "category": "scientific",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "scientific.scientific-database-research": {
+      "version": "1.0.0",
+      "sha256": "b8fe4126d5c7b8fcf81012b8ad963d614ca540f70bcb0ce56cef0aeaad83a21a",
+      "category": "scientific",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "scientific.scientific-visualization": {
+      "version": "1.0.0",
+      "sha256": "82dd33b1bcbd8e1217aa83569a01ce7e425b5ae72e9def1c8b0b0ffbd2adb1f4",
+      "category": "scientific",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "scientific.scientific-writing": {
+      "version": "1.0.0",
+      "sha256": "02e5a08596f64ec29914ac0454a631885415b208603e462e94cd3384a387753e",
+      "category": "scientific",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "scientific.statistics": {
+      "version": "1.0.0",
+      "sha256": "faa4779c907e9d1952b57e824744c804eec37429d8a581bbb82da2083f1b3a18",
+      "category": "scientific",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "scientific.symbolic-math": {
+      "version": "1.0.0",
+      "sha256": "e34d80deef7a30f0d4f455905e5fd0ffc6a09ddaf8c3ffed07d13fecfbc9ee12",
+      "category": "scientific",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "security.cmd-safety-check": {
@@ -2030,8 +5399,32 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "medium"
+    },
+    "security.container-security": {
+      "version": "1.0.0",
+      "sha256": "5ba451b56e2150586a1c664ecf5b0ce9f1add4c313f81f8b442029b878099dd0",
+      "category": "security",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "security.dast": {
+      "version": "1.0.0",
+      "sha256": "3875d681b499e3da07dc9642a2f3af5d3abbb7472ea0c7de1820c3744bc3e251",
+      "category": "security",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
     },
     "security.dependency-audit": {
       "version": "1.0.0",
@@ -2042,7 +5435,43 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "security.iam": {
+      "version": "1.0.0",
+      "sha256": "248d4925f2a2eea774b0deae1b8104271dde8624abf0947639daa32d64c01787",
+      "category": "security",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "security.incident-response": {
+      "version": "1.0.0",
+      "sha256": "e806885e0996013739d4728fbd80330c882f2c4faaab17a243571c30091094e4",
+      "category": "security",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "security.kubernetes-security": {
+      "version": "1.0.0",
+      "sha256": "bd9942842a43582e768fa37eaa9e08691fe5f57a735eccb587c3560e122f0441",
+      "category": "security",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "security.npm-auditor": {
@@ -2056,7 +5485,7 @@
       "dependencies": [
         "optional:npm"
       ],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "medium"
     },
     "security.prompt-injection-defense": {
@@ -2068,8 +5497,20 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "medium"
+    },
+    "security.sast": {
+      "version": "1.0.0",
+      "sha256": "41927454562ab439d866c6019b641e271223a44f2145fab821fac90d103f7fc0",
+      "category": "security",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
     },
     "security.secret-detection": {
       "version": "1.0.0",
@@ -2080,8 +5521,32 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "medium"
+    },
+    "security.secure-architecture": {
+      "version": "1.0.0",
+      "sha256": "26ca2b1bcb0d2e97c9dcffe86375ec4139a9488053669e6f90decd43f7ffbf8e",
+      "category": "security",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "security.secure-code-review": {
+      "version": "1.0.0",
+      "sha256": "3e3fb250b175c93f0566e7107d6db5195a8d1efb1dc5fa391fc5590b53b9793d",
+      "category": "security",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
     },
     "security.secure-coding": {
       "version": "1.0.0",
@@ -2092,7 +5557,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "medium"
     },
     "security.security-scanner": {
@@ -2106,8 +5571,32 @@
       "dependencies": [
         "optional:security-scanners"
       ],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "medium"
+    },
+    "security.threat-modeling": {
+      "version": "1.0.0",
+      "sha256": "70c4a9b554bc7ba472bc05dcb8bc7aba86630ca61961e84b1623958bdc4de9f9",
+      "category": "security",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
+    },
+    "security.zero-trust": {
+      "version": "1.0.0",
+      "sha256": "b1c5bbc97df2c4f9093c59a598d9b71a7fccdd69c7b7f5692f357469ccd417d1",
+      "category": "security",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-04",
+      "risk": "low"
     },
     "utilities.agent-transcript": {
       "version": "1.0.0",
@@ -2121,7 +5610,7 @@
         "optional:node",
         "optional:gh"
       ],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "utilities.audio-transcribe": {
@@ -2135,7 +5624,7 @@
       "dependencies": [
         "optional:transcription-engine"
       ],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "utilities.automation": {
@@ -2147,7 +5636,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "medium"
     },
     "utilities.beam": {
@@ -2162,7 +5651,7 @@
         "optional:node",
         "optional:BEAM_ACCESS_TOKEN"
       ],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "utilities.documentation": {
@@ -2174,7 +5663,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "utilities.file-management": {
@@ -2186,7 +5675,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "medium"
     },
     "utilities.handoff": {
@@ -2200,7 +5689,7 @@
       "dependencies": [
         "optional:clipboard-tool"
       ],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "utilities.image": {
@@ -2212,7 +5701,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "utilities.parallel-agents": {
@@ -2226,7 +5715,7 @@
         "references/upstream-SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "utilities.readme-standard": {
@@ -2238,7 +5727,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "utilities.slack-synthesizer": {
@@ -2252,7 +5741,7 @@
       "dependencies": [
         "optional:slack-access"
       ],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "utilities.sonos-cli": {
@@ -2266,7 +5755,7 @@
       "dependencies": [
         "optional:sonos-cli"
       ],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "utilities.summarization": {
@@ -2278,7 +5767,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "utilities.system-monitor": {
@@ -2292,7 +5781,7 @@
       "dependencies": [
         "optional:system-tools"
       ],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "utilities.telegram-actions": {
@@ -2306,7 +5795,7 @@
       "dependencies": [
         "optional:TELEGRAM_BOT_TOKEN"
       ],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "medium"
     },
     "utilities.text-processing": {
@@ -2318,7 +5807,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "utilities.unit-converter": {
@@ -2332,7 +5821,7 @@
       "dependencies": [
         "optional:exchange-rate-source"
       ],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "utilities.weather-now": {
@@ -2346,7 +5835,7 @@
       "dependencies": [
         "optional:weather-api"
       ],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "utilities.whatsapp-router": {
@@ -2360,7 +5849,7 @@
       "dependencies": [
         "optional:whatsapp-api"
       ],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "high"
     },
     "utilities.writing": {
@@ -2372,7 +5861,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "web.accessibility": {
@@ -2384,7 +5873,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "web.agent-browser": {
@@ -2398,7 +5887,7 @@
       "dependencies": [
         "optional:agent-browser"
       ],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "medium"
     },
     "web.browser-automation": {
@@ -2412,7 +5901,7 @@
       "dependencies": [
         "optional:playwright-or-similar"
       ],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "medium"
     },
     "web.form-filler": {
@@ -2426,7 +5915,7 @@
       "dependencies": [
         "optional:browser-automation"
       ],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "high"
     },
     "web.media-downloader": {
@@ -2440,7 +5929,7 @@
       "dependencies": [
         "optional:media-downloader"
       ],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "medium"
     },
     "web.seo": {
@@ -2452,7 +5941,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "web.web-extraction": {
@@ -2464,7 +5953,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "web.web-scraper": {
@@ -2478,7 +5967,7 @@
       "dependencies": [
         "optional:http-client"
       ],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     },
     "web.web-scraping": {
@@ -2490,7 +5979,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "medium"
     },
     "web.website-testing": {
@@ -2504,7 +5993,7 @@
       "dependencies": [
         "optional:playwright-or-cypress"
       ],
-      "verified_at": "2026-09-25",
+      "verified_at": "2026-10-04",
       "risk": "low"
     }
   }

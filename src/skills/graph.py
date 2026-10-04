@@ -153,8 +153,10 @@ class SkillGraph:
         self.conflicts: List[ConflictEdge] = []
         self._load_and_build()
 
-    def _normalize_id(self, skill_id: str) -> str:
-        s = skill_id.strip().lower()
+    def _normalize_id(self, skill_id: Any) -> str:
+        if isinstance(skill_id, dict):
+            skill_id = skill_id.get("id") or skill_id.get("name") or skill_id.get("optional") or str(skill_id)
+        s = str(skill_id).strip().lower()
         alias_map = {
             "reactjs": "react",
             "next": "nextjs",
