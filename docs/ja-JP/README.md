@@ -21,7 +21,7 @@
   <strong>Language:</strong>
   <a href="../../README.md">English</a> |
   <a href="../pt-BR/README.md">Português (Brasil)</a> |
-  <a href="../../README.zh-CN.md">简体中文</a> |
+  <a href="../zh-CN/README.md">简体中文</a> |
   <a href="../zh-TW/README.md">繁體中文</a> |
   <a href="README.md">日本語</a> |
   <a href="../ko-KR/README.md">한국어</a> |
@@ -116,7 +116,7 @@
 
 <sub><strong>コミュニティスポンサー:</strong> <a href="https://github.com/mikejmorgan-ai">Mike Morgan</a> · <a href="https://github.com/jasonwu513">@jasonwu513</a> · <a href="https://github.com/1anter">@1anter</a> · <a href="https://github.com/massimotodaro">@massimotodaro</a> · <a href="https://github.com/meadmccabe">@meadmccabe</a></sub>
 
-<sub><a href="https://github.com/sponsors/Mr-Nobody-Anonymous"><strong>スポンサーになる</strong></a> · <a href="../../SPONSORS.md">スポンサーティア</a> · <a href="../../SPONSORING.md">スポンサーシッププログラム</a></sub>
+<sub><a href="https://github.com/sponsors/Mr-Nobody-Anonymous"><strong>スポンサーになる</strong></a> · <a href="https://github.com/affaan-m/ECC/blob/main/SPONSORS.md">スポンサーティア</a> · <a href="https://github.com/affaan-m/ECC/blob/main/SPONSORING.md">スポンサーシッププログラム</a></sub>
 
 </div>
 
@@ -1930,7 +1930,7 @@ node scripts/codex/check-plugin-cache.js
 未解決の親参照が報告された場合は、`codex plugin marketplace upgrade ecc` でネイティブキャッシュを更新し、`codex plugin add ecc@ecc` を再度実行して、Codex を再起動してください。`codex plugin list` への登録はマーケットプレイスのエントリを確認するものであり、キャッシュチェックはインストール済みマニフェストがその skills、MCP 設定、アセットを解決できることを検証します。`bash scripts/sync-ecc-to-codex.sh` は、レガシーのコピー式設定による互換性パスが意図的に必要な場合にのみ使用してください。
 </details>
 
-さらなる回答：[TROUBLESHOOTING.md](../../TROUBLESHOOTING.md) はメモリ、hooks、インストール、パフォーマンス、よくあるエラーメッセージを扱っています。[docs/TROUBLESHOOTING.md](../TROUBLESHOOTING.md) は Claude Code の未解決バグに対する回避策を追跡しています。
+さらなる回答：[TROUBLESHOOTING.md](../../TROUBLESHOOTING.md) はメモリ、hooks、インストール、パフォーマンス、よくあるエラーメッセージを扱っています。[docs/TROUBLESHOOTING.md](../troubleshooting.md) は Claude Code の未解決バグに対する回避策を追跡しています。
 
 ## テストの実行
 
@@ -1957,7 +1957,7 @@ node tests/hooks/hooks.test.js
 <details>
 <summary><strong>スポンサーと ECC Pro</strong></summary>
 
-ECC が無料であり続けられるのは、スポンサーと Pro ユーザーが活動を支えてくれているからです。スポンサーのロゴはこの README の冒頭にあり、完全な一覧とティアは [SPONSORS.md](../../SPONSORS.md) にあります。
+ECC が無料であり続けられるのは、スポンサーと Pro ユーザーが活動を支えてくれているからです。スポンサーのロゴはこの README の冒頭にあり、完全な一覧とティアは [SPONSORS.md](https://github.com/affaan-m/ECC/blob/main/SPONSORS.md) にあります。
 
 ECC Pro は、ホスト型 GitHub App を通じて、プライベートリポジトリの分析、PR トリガーの監査、AgentShield ベースのスキャン、自動 push および PR チェック、チームでの共有利用枠、優先サポートを追加します。
 
@@ -1970,7 +1970,7 @@ ECC Pro は、ホスト型 GitHub App を通じて、プライベートリポジ
 </tr>
 </table>
 
-[スポンサーになる](https://github.com/sponsors/Mr-Nobody-Anonymous) | [スポンサーティア](../../SPONSORS.md) | [スポンサーシッププログラム](../../SPONSORING.md)
+[スポンサーになる](https://github.com/sponsors/Mr-Nobody-Anonymous) | [スポンサーティア](https://github.com/affaan-m/ECC/blob/main/SPONSORS.md) | [スポンサーシッププログラム](https://github.com/affaan-m/ECC/blob/main/SPONSORING.md)
 </details>
 
 <details>

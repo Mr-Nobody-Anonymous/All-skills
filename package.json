@@ -35,7 +35,8 @@
     "ecc-plan-canvas": "./scripts/plan-canvas.js"
   },
   "scripts": {
-    "test": "python scripts/skills/skills.py test",
+    "test": "python scripts/skills/skills.py test && node scripts/ci/validate-context-profiles.js",
+    "context-profiles:check": "node scripts/ci/validate-context-profiles.js",
     "validate": "python scripts/validate_schema.py && python scripts/validate_skillhub_spec.py",
     "verify:registry": "python scripts/verify_registry_integrity.py",
     "doctor": "python scripts/allskills.py doctor --full",
@@ -52,7 +53,13 @@
     "control:pane": "node scripts/control-pane.js",
     "harness:audit": "node scripts/harness-audit.js",
     "harness:eval": "node scripts/eval-harness.js",
-    "test:ecc": "node tests/run-all.js"
+    "test:ecc": "node tests/run-all.js",
+    "verify:awesome-lock": "python scripts/build_awesome_lock.py --verify",
+    "build:indexes": "python scripts/build_indexes.py",
+    "mcp:verify": "python scripts/mcp_catalog.py verify",
+    "mcp:generate": "python scripts/mcp_catalog.py generate",
+    "mcp:doctor": "python scripts/mcp_catalog.py doctor",
+    "verify:integration": "python scripts/generate_integration_skills.py --check"
   },
   "dependencies": {
     "@iarna/toml": "2.2.5",
@@ -106,7 +113,6 @@
     "mcp-configs/",
     ".claude-plugin/",
     ".codex-plugin/",
-    ".gemini/",
     ".zed/",
     "the-longform-guide.md",
     "the-shortform-guide.md",
@@ -114,6 +120,9 @@
     "COMMANDS-QUICK-REF.md",
     "TROUBLESHOOTING.md",
     "SOUL.md",
-    "ecc_dashboard.py"
+    "ecc_dashboard.py",
+    "mcps/",
+    "scripts/profile.js",
+    "README.zh-CN.md"
   ]
 }

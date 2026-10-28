@@ -1,6 +1,6 @@
 # ⚡ Agent Skills Specification & Platform Overview
 
-A unified, high-performance universal operating system of **13,297+ unique specialized Agent Skills** (**15,146 cataloged instances** across **252 domain categories** and **15 universal super-domains**) designed for modern AI coding assistants (Claude Code, Cursor, Codex CLI, GitHub Copilot, VS Code Agent, Antigravity, Gemini CLI, Windsurf, OpenCode, Cline, Roo Code, and Block Goose).
+A unified, high-performance universal operating system of **13,321+ unique specialized Agent Skills** (**15,146 cataloged instances** across **252 domain categories** and **15 universal super-domains**) designed for modern AI coding assistants (Claude Code, Cursor, Codex CLI, GitHub Copilot, VS Code Agent, Antigravity, Gemini CLI, Windsurf, OpenCode, Cline, Roo Code, and Block Goose).
 
 ---
 
@@ -143,7 +143,7 @@ python scripts/skills/skills.py chain deep-research --dry-run
 python scripts/skills/skills.py chain anti-procrastination --dry-run
 python scripts/skills/skills.py chain code-review-flow --dry-run
 
-# Run full health diagnostics and test suite (270 tests)
+# Run full health diagnostics and test suite (280 tests)
 python scripts/skills/skills.py doctor
 python scripts/skills/skills.py test
 ```
@@ -361,7 +361,7 @@ Unambiguous single-source-of-truth counts:
 - **Canonical Skills**: `122` tested foundational skills in `skills/`.
 - **Active Harness Skills**: `70` staff-engineer playbooks pre-loaded in `.agents/skills/`.
 - **Manifest Skills**: `192` tool-mapped skills in `manifest.json`.
-- **Unique Skills**: `13,297` distinct skill capabilities across the platform.
+- **Unique Skills**: `13,321` distinct skill capabilities across the platform.
 - **Catalog Skills**: `15,146` categorized implementations across 252 domains in `awesome_skills/`.
 - **Workflows**: `5` multi-step execution playbooks in `workflows/`.
 - **Named Chains**: `4` deterministic DAG chains in `skills/chains.json`.

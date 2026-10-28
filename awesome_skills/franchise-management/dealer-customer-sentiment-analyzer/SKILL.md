@@ -1,6 +1,7 @@
 ---
 name: dealer-customer-sentiment-analyzer
-description: "Analyze car dealership customer reviews across multiple dimensions and surface honest patterns, themes, and named-staff mentions. Use when the user asks to "analyze our reviews", "what are customers saying about us", "audit our Google reviews", "DealerRater sentiment analysis", "customer sentiment analysis", "review themes for my dealership", "what's our biggest customer complaint", "who's getting named in our reviews", "trend our review sentiment", "find which reviews need a response", or any request to evaluate, summarize, or extract insights from a dealer's customer reviews. Reads reviews from Google, DealerRater, Cars.com, Yelp, BBB, Facebook, or any pasted/exported source. Auto-detects input format (single review, batch paste, CSV export, URL-based fetch when agent has tools). Produces an honest sentiment report broken down by department (sales, service, F&I, parts), top recurring themes with quoted evidence, named-staff mentions (both positive and negative), trend analysis when time-series data is available, and a prioritized list of reviews that warrant a dealer response. Honest about negatives. Never inflates positive sentiment to make the picture look better than it is. Authored by Ariel Coro of Dealer AI Guy."
+description: >-
+  Analyze car dealership customer reviews across multiple dimensions and surface honest patterns, themes, and named-staff mentions. Use when the user asks to "analyze our reviews", "what are customers saying about us", "audit our Google reviews", "DealerRater sentiment analysis", "customer sentiment analysis", "review themes for my dealership", "what's our biggest customer complaint", "who's getting named in our reviews", "trend our review sentiment", "find which reviews need a response", or any request to evaluate, summarize, or extract insights from a dealer's customer reviews. Reads reviews from Google, DealerRater, Cars.com, Yelp, BBB, Facebook, or any pasted/exported source. Auto-detects input format (single review, batch paste, CSV export, URL-based fetch when agent has tools). Produces an honest sentiment report broken down by department (sales, service, F&I, parts), top recurring themes with quoted evidence, named-staff mentions (both positive and negative), trend analysis when time-series data is available, and a prioritized list of reviews that warrant a dealer response. Honest about negatives. Never inflates positive sentiment to make the picture look better than it is. Authored by Ariel Coro of Dealer AI Guy.
 category: franchise-management
 domain: franchise-management
 subdomain: general
@@ -20,8 +21,6 @@ platforms:
   - antigravity
   - copilot
 ---
-
-
 # Dealer Customer Sentiment Analyzer
 
 This skill reads car dealership customer reviews and produces an honest analysis of what customers are actually saying. It identifies department-level sentiment, recurring themes, named-staff mentions, trends over time, and reviews that warrant a response.

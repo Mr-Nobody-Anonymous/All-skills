@@ -2,10 +2,16 @@
 from __future__ import annotations
 
 import json
+import sys
 import unittest
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
+# The suite imports top-level repo packages (ingestion, vendor, benchmarks, src).
+# Put the repository root on sys.path explicitly so discovery works no matter
+# how the process was started (pytest, `python scripts/compute_stats.py`, ...).
+if str(REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT))
 
 from ingestion.pipeline import IngestionPipeline
 from vendor.nvidia_skillevaluator.evaluator import SkillEvaluator

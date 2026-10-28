@@ -1,4 +1,5 @@
----name: multiplayer-websocket
+---
+name: multiplayer-websocket
 description: Manages WebSocket-based real-time multiplayer in Tokyo Sounds. Use when modifying multiplayer sync, useMultiplayer hook, multiplayer-server, message protocol, or adding features that broadcast or receive player state over WebSocket.
 source: "https://github.com/liuchiawei/agent-skills"
 source_repository: "liuchiawei/agent-skills"

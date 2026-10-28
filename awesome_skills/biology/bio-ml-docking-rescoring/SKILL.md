@@ -1,6 +1,7 @@
 ---
 name: bio-ml-docking-rescoring
-description: Performs ML-based protein-ligand pose prediction and scoring using DiffDock-L (diffusion-based), Boltz-1 / Boltz-2 (foundation model with affinity), Chai-1, AlphaFold3 ligand, EquiBind, TANKBind, NeuralPLexer, and hybrid workflows (DiffDock pose + GNINA rescore + PoseBusters QC). Explicit handling of when ML beats classical docking, when classical beats ML, the PB-invalid pose problem, and rescoring as the standard production hybrid. Use when modern docking is needed: foundation-model ligand-pose prediction, AI rescoring of classical poses, or scaffold-hopping in cross-docking scenarios.
+description: >-
+  Performs ML-based protein-ligand pose prediction and scoring using DiffDock-L (diffusion-based), Boltz-1 / Boltz-2 (foundation model with affinity), Chai-1, AlphaFold3 ligand, EquiBind, TANKBind, NeuralPLexer, and hybrid workflows (DiffDock pose + GNINA rescore + PoseBusters QC). Explicit handling of when ML beats classical docking, when classical beats ML, the PB-invalid pose problem, and rescoring as the standard production hybrid. Use when modern docking is needed: foundation-model ligand-pose prediction, AI rescoring of classical poses, or scaffold-hopping in cross-docking scenarios.
 tool_type: python
 primary_tool: DiffDock
 source: "https://github.com/GPTomics/bioSkills"
@@ -9,7 +10,6 @@ source_path: "chemoinformatics/ml-docking-rescoring/SKILL.md"
 license: "MIT"
 imported_at: "2026-09-20"
 ---
-
 ## Version Compatibility
 
 Reference examples tested with: DiffDock-L (Corso et al. 2024), Boltz-1 1.0+, Boltz-2 (Passaro et al. 2025), Chai-1 0.4+, AlphaFold 3 (DeepMind), EquiBind, TANKBind, GNINA 1.1+, and PoseBusters 0.6+.

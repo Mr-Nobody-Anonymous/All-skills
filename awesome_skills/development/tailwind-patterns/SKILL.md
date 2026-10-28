@@ -1,4 +1,5 @@
----name: tailwind-patterns
+---
+name: tailwind-patterns
 description: Tailwind CSS v4 principles. CSS-first configuration, container queries, modern patterns, design token architecture.
 allowed-tools: Read, Write, Edit, Glob, Grep
 source: "https://github.com/liuchiawei/agent-skills"

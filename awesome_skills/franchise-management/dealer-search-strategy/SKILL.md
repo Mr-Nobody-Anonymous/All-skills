@@ -1,6 +1,7 @@
 ---
 name: dealer-search-strategy
-description: "Generate a comprehensive search strategy document for a car dealership covering SEO (Search Engine Optimization), AEO (Answer Engine Optimization), and GEO (Generative Engine Optimization). Use when the user asks to "build a search strategy", "SEO strategy for my dealership", "AEO strategy", "GEO strategy", "AI search strategy", "LLM SEO plan", "ChatGPT SEO strategy", "Perplexity strategy", "Gemini visibility", "comprehensive search plan", "organic search strategy", "dealer SEO plan", "dealer AEO plan", "dealer GEO plan", "how to rank in Google and ChatGPT", "search visibility strategy", "integrated search plan", "how to rank in AI search", "generative search optimization", or any request to plan the dealer's strategy for being found in both traditional search engines (Google, Bing) and AI answer engines (ChatGPT, Perplexity, Gemini, Claude, Copilot). Clarifies the difference between SEO, AEO, and GEO and produces a unified strategy that addresses all three. Pairs with dealer-aeo-audit, dealer-site-score, dealer-llms-txt-generator, and dealer-aeo-content-brief — the strategy points to these skills as the execution tools. Authored by Ariel Coro of Dealer AI Guy."
+description: >-
+  Generate a comprehensive search strategy document for a car dealership covering SEO (Search Engine Optimization), AEO (Answer Engine Optimization), and GEO (Generative Engine Optimization). Use when the user asks to "build a search strategy", "SEO strategy for my dealership", "AEO strategy", "GEO strategy", "AI search strategy", "LLM SEO plan", "ChatGPT SEO strategy", "Perplexity strategy", "Gemini visibility", "comprehensive search plan", "organic search strategy", "dealer SEO plan", "dealer AEO plan", "dealer GEO plan", "how to rank in Google and ChatGPT", "search visibility strategy", "integrated search plan", "how to rank in AI search", "generative search optimization", or any request to plan the dealer's strategy for being found in both traditional search engines (Google, Bing) and AI answer engines (ChatGPT, Perplexity, Gemini, Claude, Copilot). Clarifies the difference between SEO, AEO, and GEO and produces a unified strategy that addresses all three. Pairs with dealer-aeo-audit, dealer-site-score, dealer-llms-txt-generator, and dealer-aeo-content-brief — the strategy points to these skills as the execution tools. Authored by Ariel Coro of Dealer AI Guy.
 category: franchise-management
 domain: franchise-management
 subdomain: general
@@ -20,8 +21,6 @@ platforms:
   - antigravity
   - copilot
 ---
-
-
 # Dealer Search Strategy
 
 This skill produces a comprehensive search strategy document for a franchise or independent car dealership. The document covers SEO (Search Engine Optimization), AEO (Answer Engine Optimization), and GEO (Generative Engine Optimization) as a unified strategy — because most dealers need all three but treat them as separate disciplines (or confuse them entirely).

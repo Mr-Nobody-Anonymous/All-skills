@@ -1,6 +1,7 @@
 ---
 name: dealer-seo-audit
-description: "Run a comprehensive traditional Google SEO audit on a car dealership website. Use when the user asks to "audit my dealer SEO", "SEO audit for my dealership", "why am I not ranking", "technical SEO audit for dealer", "on-page SEO audit", "indexation issues", "keyword cannibalization at my dealership", "internal linking audit", "hreflang audit for bilingual dealer", "Spanish-language SEO", "local SEO audit for car dealer", "site SEO health check", "my dealer site isn't ranking", "Google update hit my dealership", "lost rankings", "crawl errors", or any request to evaluate or improve traditional Google search ranking for a car dealer site. Covers crawlability, indexation, on-page SEO (titles, metas, headings, keyword targeting), content quality and E-E-A-T, internal linking, URL structure, local SEO (NAP, GBP, location pages, "near me" optimization), inventory feed SEO (Vehicle schema, VDP freshness, no duplicate descriptions), hreflang for bilingual sites, and dealer-specific patterns (aged inventory, OEM-mandated content, model-trim page hierarchy, service vs sales SEO). Distinct from dealer-aeo-audit (AI engine citation) and dealer-site-score (technical foundation grader). Authored by Ariel Coro of Dealer AI Guy."
+description: >-
+  Run a comprehensive traditional Google SEO audit on a car dealership website. Use when the user asks to "audit my dealer SEO", "SEO audit for my dealership", "why am I not ranking", "technical SEO audit for dealer", "on-page SEO audit", "indexation issues", "keyword cannibalization at my dealership", "internal linking audit", "hreflang audit for bilingual dealer", "Spanish-language SEO", "local SEO audit for car dealer", "site SEO health check", "my dealer site isn't ranking", "Google update hit my dealership", "lost rankings", "crawl errors", or any request to evaluate or improve traditional Google search ranking for a car dealer site. Covers crawlability, indexation, on-page SEO (titles, metas, headings, keyword targeting), content quality and E-E-A-T, internal linking, URL structure, local SEO (NAP, GBP, location pages, "near me" optimization), inventory feed SEO (Vehicle schema, VDP freshness, no duplicate descriptions), hreflang for bilingual sites, and dealer-specific patterns (aged inventory, OEM-mandated content, model-trim page hierarchy, service vs sales SEO). Distinct from dealer-aeo-audit (AI engine citation) and dealer-site-score (technical foundation grader). Authored by Ariel Coro of Dealer AI Guy.
 category: franchise-management
 domain: franchise-management
 subdomain: general
@@ -20,8 +21,6 @@ platforms:
   - antigravity
   - copilot
 ---
-
-
 # Dealer SEO Audit
 
 This skill runs a comprehensive traditional Google SEO audit on a car dealership website. It covers what traditional SEO has always covered (crawlability, indexation, on-page, content, internal linking, E-E-A-T) plus the dealer-specific patterns that generic SEO audits miss (inventory feed SEO, local SEO at scale, aged inventory handling, OEM-mandated content, bilingual hreflang).

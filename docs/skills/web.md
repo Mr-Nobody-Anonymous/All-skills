@@ -1,10 +1,10 @@
 # Web Skills
 
-_Generated: 2026-09-19T17:27:28+00:00_
+_Generated: 2026-10-28T05:29:45+00:00_
 
 Skills that interact with the live web: browser automation, web scraping, web extraction, SEO audits, accessibility testing, and end-to-end website testing. These skills are wrappers around concrete tools (Playwright, Lighthouse-style checks, a11y linters) but the library itself is tooling-light — the skills describe the workflow.
 
-**10 skills in this category.**
+**13 skills in this category.**
 
 ## Skills
 
@@ -43,6 +43,24 @@ Operate an agent-browser CLI for auditable navigation, extraction, screenshots, 
 - **Version:** 1.0.0
 
 Operate a headless browser CLI (agent-browser) for AI agents to interact with websites. The skill enables navigation, clicking, typing, screenshot capture, and structured data extraction with full auditability.
+
+### `web.astro-sites`
+
+Build content-driven sites with Astro: islands architecture, content collections, SSR versus static output, and image optimization.
+
+- **Risk:** low
+- **Path:** `web/astro-sites`
+- **Aliases:** —
+- **Triggers:**
+  - astro islands architecture
+  - astro content collection
+  - astro ssr adapter
+  - astro build performance
+  - astro image optimization
+- **Source:** custom
+- **Version:** 1.0.0
+
+Build content-driven sites with Astro: islands architecture, content collections, SSR versus static output, and image optimization.
 
 ### `web.browser-automation`
 
@@ -114,6 +132,42 @@ Search engine optimization audits — on-page, technical, content, and link anal
 - **Version:** 1.0.0
 
 Audit a site or page for SEO: on-page elements, technical issues, content quality, and links. Produce a prioritized list of recommendations.
+
+### `web.svelte-development`
+
+Build SvelteKit applications: runes and reactivity, load functions, form actions, adapters and component testing with Vitest.
+
+- **Risk:** low
+- **Path:** `web/svelte-development`
+- **Aliases:** —
+- **Triggers:**
+  - sveltekit load function
+  - svelte runes state
+  - sveltekit form action
+  - svelte adapter deploy
+  - svelte component test
+- **Source:** custom
+- **Version:** 1.0.0
+
+Build SvelteKit applications: runes and reactivity, load functions, form actions, adapters and component testing with Vitest.
+
+### `web.vue-development`
+
+Build Vue 3 applications: Composition API, script setup, reactivity boundaries, Pinia state, routing and Vitest component tests.
+
+- **Risk:** low
+- **Path:** `web/vue-development`
+- **Aliases:** —
+- **Triggers:**
+  - vue 3 composition api
+  - pinia store design
+  - vue reactivity bug
+  - vue router guard
+  - vitest component test
+- **Source:** custom
+- **Version:** 1.0.0
+
+Build Vue 3 applications: Composition API, script setup, reactivity boundaries, Pinia state, routing and Vitest component tests.
 
 ### `web.web-extraction`
 

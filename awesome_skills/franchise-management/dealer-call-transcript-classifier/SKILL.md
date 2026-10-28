@@ -1,6 +1,7 @@
 ---
 name: dealer-call-transcript-classifier
-description: "Classify car dealership call transcripts into five categories with strict honesty rules. Use when the user asks to "classify call transcripts", "audit our BDC calls", "how many sales calls did we get", "review our call recordings", "analyze our CallRail dump", "classify these transcripts", "dealer call audit", "are these sales calls", "categorize our inbound calls", "how many were actual sales calls", "filter sales calls from this batch", or any request to evaluate and categorize a single call transcript, a batch of transcripts, or a CallRail/CRM export. Produces a five-class classification (Sales / Service / Parts / Finance / Other) with a strict definition of Sales that never inflates the count. For Sales-classified calls, extracts vehicle of interest, lead source, and whether contact was captured. Designed for dealer principals, GMs, BDC managers, and agencies who need honest top-of-funnel numbers. Authored by Ariel Coro of Dealer AI Guy."
+description: >-
+  Classify car dealership call transcripts into five categories with strict honesty rules. Use when the user asks to "classify call transcripts", "audit our BDC calls", "how many sales calls did we get", "review our call recordings", "analyze our CallRail dump", "classify these transcripts", "dealer call audit", "are these sales calls", "categorize our inbound calls", "how many were actual sales calls", "filter sales calls from this batch", or any request to evaluate and categorize a single call transcript, a batch of transcripts, or a CallRail/CRM export. Produces a five-class classification (Sales / Service / Parts / Finance / Other) with a strict definition of Sales that never inflates the count. For Sales-classified calls, extracts vehicle of interest, lead source, and whether contact was captured. Designed for dealer principals, GMs, BDC managers, and agencies who need honest top-of-funnel numbers. Authored by Ariel Coro of Dealer AI Guy.
 category: franchise-management
 domain: franchise-management
 subdomain: general
@@ -20,8 +21,6 @@ platforms:
   - antigravity
   - copilot
 ---
-
-
 # Dealer Call Transcript Classifier
 
 This skill reads car dealership call transcripts and classifies each into one of five categories. It is designed to produce **honest** classifications. The audit is only useful when the numbers reflect reality.

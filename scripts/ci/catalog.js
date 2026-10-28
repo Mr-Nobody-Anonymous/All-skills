@@ -47,17 +47,44 @@ function listMatchingFiles(root, relativeDir, matcher) {
     .sort();
 }
 
+// Canonical skills live at skills/<slug>/SKILL.md in the upstream ECC layout and
+// at skills/<category>/<slug>/SKILL.md in All-Skills. Count both, so the number
+// reported here is the real number of skills an agent can discover.
+function listSkillFiles(root = ROOT) {
+  const skillsRoot = path.join(root, 'skills');
+  if (!fs.existsSync(skillsRoot)) {
+    return [];
+  }
+
+  const found = [];
+  const walk = (relativeDir) => {
+    const absoluteDir = path.join(root, relativeDir);
+    for (const entry of fs.readdirSync(absoluteDir, { withFileTypes: true })) {
+      if (!entry.isDirectory() || entry.name.startsWith('.') || entry.name === '__pycache__') {
+        continue;
+      }
+      const childRelative = path.join(relativeDir, entry.name);
+      if (fs.existsSync(path.join(root, childRelative, 'SKILL.md'))) {
+        found.push(normalizePathSegments(path.join(childRelative, 'SKILL.md')));
+      } else {
+        walk(childRelative);
+      }
+    }
+  };
+
+  walk('skills');
+  return found.sort();
+}
+
 function buildCatalog(root = ROOT) {
   const agents = listMatchingFiles(root, 'agents', entry => entry.isFile() && entry.name.endsWith('.md'));
   const commands = listMatchingFiles(root, 'commands', entry => entry.isFile() && entry.name.endsWith('.md'));
-  const skills = listMatchingFiles(root, 'skills', entry => (
-    entry.isDirectory() && fs.existsSync(path.join(root, 'skills', entry.name, 'SKILL.md'))
-  )).map(skillDir => `${skillDir}/SKILL.md`);
+  const skills = listSkillFiles(root);
 
   return {
     agents: { count: agents.length, files: agents, glob: 'agents/*.md' },
     commands: { count: commands.length, files: commands, glob: 'commands/*.md' },
-    skills: { count: skills.length, files: skills, glob: 'skills/*/SKILL.md' }
+    skills: { count: skills.length, files: skills, glob: 'skills/**/SKILL.md' }
   };
 }
 
@@ -683,12 +710,17 @@ function renderMarkdown(result) {
   }
 }
 
+function existingDocumentSpecs(documentSpecs) {
+  // Every tracked document must exist: a missing one is a failure, not a skip.
+  return documentSpecs;
+}
+
 function runCatalogCheck(options = {}) {
   const root = options.root || ROOT;
   const writeMode = options.writeMode ?? WRITE_MODE;
-  const documentSpecs = options.documentSpecs || (
+  const documentSpecs = existingDocumentSpecs(options.documentSpecs || (
     root === ROOT ? DOCUMENT_SPECS : createDocumentSpecsForRoot(root)
-  );
+  ));
   const catalog = buildCatalog(root);
 
   if (writeMode) {
@@ -736,6 +768,8 @@ if (require.main === module) {
 
 module.exports = {
   buildCatalog,
+  existingDocumentSpecs,
+  listSkillFiles,
   createDocumentSpecs,
   createDocumentSpecsForRoot,
   evaluateExpectations,

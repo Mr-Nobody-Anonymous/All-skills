@@ -1,4 +1,5 @@
----name: code-review-checklist
+---
+name: code-review-checklist
 description: "Comprehensive checklist for conducting thorough code reviews covering functionality, security, performance, and maintainability"
 source: "https://github.com/liuchiawei/agent-skills"
 source_repository: "liuchiawei/agent-skills"

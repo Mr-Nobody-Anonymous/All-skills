@@ -6,7 +6,7 @@
   <strong>Мова:</strong>
   <a href="../../README.md">English</a> |
   <a href="../pt-BR/README.md">Português (Brasil)</a> |
-  <a href="../../README.zh-CN.md">简体中文</a> |
+  <a href="../zh-CN/README.md">简体中文</a> |
   <a href="../zh-TW/README.md">繁體中文</a> |
   <a href="../ja-JP/README.md">日本語</a> |
   <a href="../ko-KR/README.md">한국어</a> |
@@ -111,7 +111,7 @@
 
 <sub><strong>Спонсори спільноти:</strong> <a href="https://github.com/mikejmorgan-ai">Mike Morgan</a> · <a href="https://github.com/jasonwu513">@jasonwu513</a> · <a href="https://github.com/1anter">@1anter</a> · <a href="https://github.com/massimotodaro">@massimotodaro</a> · <a href="https://github.com/meadmccabe">@meadmccabe</a></sub>
 
-<sub><a href="https://github.com/sponsors/Mr-Nobody-Anonymous"><strong>Стати спонсором</strong></a> · <a href="../../SPONSORS.md">Рівні спонсорства</a> · <a href="../../SPONSORING.md">Програма спонсорства</a></sub>
+<sub><a href="https://github.com/sponsors/Mr-Nobody-Anonymous"><strong>Стати спонсором</strong></a> · <a href="https://github.com/affaan-m/ECC/blob/main/SPONSORS.md">Рівні спонсорства</a> · <a href="https://github.com/affaan-m/ECC/blob/main/SPONSORING.md">Програма спонсорства</a></sub>
 
 </div>
 
@@ -1840,7 +1840,7 @@ node tests/hooks/hooks.test.js
 <details>
 <summary><strong>Спонсори та ECC Pro</strong></summary>
 
-ECC залишається безкоштовним, тому що спонсори та Pro-користувачі фінансують роботу. Логотипи спонсорів вгорі цього README; повний список та рівні в [SPONSORS.md](../../SPONSORS.md).
+ECC залишається безкоштовним, тому що спонсори та Pro-користувачі фінансують роботу. Логотипи спонсорів вгорі цього README; повний список та рівні в [SPONSORS.md](https://github.com/affaan-m/ECC/blob/main/SPONSORS.md).
 
 ECC Pro додає аналіз приватних репозиторіїв, аудити, викликані PR, сканування на основі AgentShield, автоматичні перевірки push та PR, об'єднане командне використання та пріоритетну підтримку через розміщений GitHub App.
 
@@ -1853,7 +1853,7 @@ ECC Pro додає аналіз приватних репозиторіїв, а�
 </tr>
 </table>
 
-[Стати спонсором](https://github.com/sponsors/Mr-Nobody-Anonymous) | [Рівні спонсорства](../../SPONSORS.md) | [Програма спонсорства](../../SPONSORING.md)
+[Стати спонсором](https://github.com/sponsors/Mr-Nobody-Anonymous) | [Рівні спонсорства](https://github.com/affaan-m/ECC/blob/main/SPONSORS.md) | [Програма спонсорства](https://github.com/affaan-m/ECC/blob/main/SPONSORING.md)
 </details>
 
 <details>

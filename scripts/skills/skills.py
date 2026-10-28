@@ -356,7 +356,8 @@ def cmd_execute(args, _parser):
     from skills.runtime import approval_from_args, exit_code_for
     approval = approval_from_args(getattr(args, "approval_id", None), getattr(args, "approved_by", None))
     res = runtime.execute(args.skill_id, input=input_data, tools=tools,
-                          dry_run=getattr(args, "dry_run", False), approval=approval)
+                          dry_run=getattr(args, "dry_run", False), approval=approval,
+                          safe_mode=getattr(args, "safe", False))
 
     if getattr(args, "json", False):
         print(json.dumps(res.to_dict(), indent=2))
@@ -1290,6 +1291,9 @@ def main():
         s.add_argument("--input", help="JSON string of execution inputs")
         s.add_argument("--tools", help="Comma-separated declared tools")
         s.add_argument("--dry-run", action="store_true", help="Simulate execution without modifying artifacts")
+        s.add_argument("--safe", action="store_true",
+                       help="Safe mode: read-only analysis runs freely, mutating or external "
+                            "capabilities require explicit approval")
         s.add_argument("--approval-id", help="request_id from an approval_required result")
         s.add_argument("--approved-by", help="Name of the human approving an ASK capability")
         s.add_argument("--json", action="store_true", help="Print structured ExecutionResult as JSON")
@@ -1453,6 +1457,39 @@ def main():
 
 
 
-if __name__ == "__main__":
+def _silence_stdout() -> None:
+    """Point stdout at /dev/null so a closed pipe cannot fail interpreter shutdown."""
+    try:
+        devnull = os.open(os.devnull, os.O_WRONLY)
+        os.dup2(devnull, sys.stdout.fileno())
+    except (OSError, ValueError):
+        pass
 
-    main()
+
+def _run_cli(entry) -> None:
+    """Run ``entry`` and exit cleanly even when stdout is a closed pipe.
+
+    ``allskills sources | head`` and friends are normal shell usage; without this
+    guard CPython raises BrokenPipeError while flushing stdout at interpreter
+    shutdown, which produced a traceback and exit code 120.
+    """
+    code = 0
+    try:
+        result = entry()
+        if isinstance(result, int):
+            code = result
+    except SystemExit as exc:
+        code = exc.code if isinstance(exc.code, int) else (0 if exc.code is None else 1)
+    except BrokenPipeError:
+        _silence_stdout()
+        os._exit(0)
+    try:
+        sys.stdout.flush()
+    except BrokenPipeError:
+        _silence_stdout()
+        os._exit(0)
+    sys.exit(code)
+
+
+if __name__ == "__main__":
+    _run_cli(main)

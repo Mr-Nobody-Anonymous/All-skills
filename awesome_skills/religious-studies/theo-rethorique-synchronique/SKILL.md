@@ -1,6 +1,7 @@
 ---
 name: theo-rethorique-synchronique
-description: "Analyse socio-rhétorique des textes bibliques (méthode de Vernon Robbins). Utilisez ce skill lorsque l'utilisateur demande une analyse "synchronique", une "analyse socio-rhétorique", l'étude des "textures" du texte (interne, socio-culturelle, idéologique), ou cherche à comprendre comment la forme littéraire d'un récit biblique subvertit les normes sociales, religieuses et de pouvoir (honneur/honte, pureté)."
+description: >-
+  Analyse socio-rhétorique des textes bibliques (méthode de Vernon Robbins). Utilisez ce skill lorsque l'utilisateur demande une analyse "synchronique", une "analyse socio-rhétorique", l'étude des "textures" du texte (interne, socio-culturelle, idéologique), ou cherche à comprendre comment la forme littéraire d'un récit biblique subvertit les normes sociales, religieuses et de pouvoir (honneur/honte, pureté).
 category: religious-studies
 domain: religious-studies
 subdomain: general
@@ -20,8 +21,6 @@ platforms:
   - antigravity
   - copilot
 ---
-
-
 # Analyse Socio-Rhétorique (Socio-Rhetorical Criticism)
 
 ## Quand l'utiliser

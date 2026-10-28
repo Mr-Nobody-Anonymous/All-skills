@@ -1,4 +1,5 @@
----name: react-ui-patterns
+---
+name: react-ui-patterns
 description: Modern React UI patterns for loading states, error handling, and data fetching. Use when building UI components, handling async data, or managing UI states.
 source: "https://github.com/liuchiawei/agent-skills"
 source_repository: "liuchiawei/agent-skills"

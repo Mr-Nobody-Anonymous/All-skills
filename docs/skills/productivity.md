@@ -1,10 +1,10 @@
 # Productivity Skills
 
-_Generated: 2026-09-19T17:27:28+00:00_
+_Generated: 2026-10-28T05:29:45+00:00_
 
 Skills that help the user start, focus, plan, and finish — including ADHD-aware assistance, anti-procrastination, task decomposition, prioritization, and time management. The library intentionally leans on external, well-reviewed material (Cal Newport, James Clear, the Pomodoro technique, etc.) rather than inventing productivity philosophy from scratch.
 
-**24 skills in this category.**
+**26 skills in this category.**
 
 ## Skills
 
@@ -247,6 +247,42 @@ Protect a focus session by defining one outcome, blocking distractions, and hand
 - **Version:** 1.0.0
 
 Eliminate the digital distractions that break a deep-work session, using one reversible command. The skill is intentionally idempotent: it does not change *what* the user is working on, only what is competing for attention.
+
+### `productivity.google-calendar-automation`
+
+Automate Google Calendar: OAuth scopes, event creation with time zones and recurrence, free/busy queries, and safe updates across attendees.
+
+- **Risk:** medium
+- **Path:** `productivity/google-calendar-automation`
+- **Aliases:** —
+- **Triggers:**
+  - google calendar api event
+  - calendar freebusy query
+  - recurring event rrule
+  - calendar oauth scope
+  - schedule meeting automation
+- **Source:** custom
+- **Version:** 1.0.0
+
+Automate Google Calendar: OAuth scopes, event creation with time zones and recurrence, free/busy queries, and safe updates across attendees.
+
+### `productivity.google-sheets-automation`
+
+Automate Google Sheets: service-account auth, range and batch APIs, formulas versus computed values, and safe bulk writes.
+
+- **Risk:** medium
+- **Path:** `productivity/google-sheets-automation`
+- **Aliases:** —
+- **Triggers:**
+  - google sheets api write
+  - sheets service account
+  - sheets batch update
+  - sheets range a1 notation
+  - sheets automation script
+- **Source:** custom
+- **Version:** 1.0.0
+
+Automate Google Sheets: service-account auth, range and batch APIs, formulas versus computed values, and safe bulk writes.
 
 ### `productivity.kaizen-continuous-improvement`
 

@@ -1,6 +1,6 @@
 # OpenClaw の隠れた危険
 
-![タイトル：OpenClaw の隠れた危険――エージェント最前線からのセキュリティ教訓](../../assets/images/openclaw/01-header.png)
+![タイトル：OpenClaw の隠れた危険――エージェント最前線からのセキュリティ教訓](../../assets/images/longform/01-header.png)
 
 ***
 

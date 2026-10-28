@@ -29,7 +29,7 @@ origin: ECC
 ユーザーがガイドラインを提供しない場合は、新しい Angular プロジェクトを作成するときに、これらのデフォルトを使用してください。
 
 1. ユーザーが別途指定しない限り、Angular の最新の安定バージョンを使用してください。
-2. 対象の Angular バージョンがシグナル フォームをサポートしている場合のみ、新しいプロジェクトではシグナル フォームを優先してください。[詳細情報](references/signal-forms.md)を確認してください。
+2. 対象の Angular バージョンがシグナル フォームをサポートしている場合のみ、新しいプロジェクトではシグナル フォームを優先してください。[詳細情報](../../../../awesome_skills/ecc/angular-developer/references/signal-forms.md)を確認してください。
 
 **`ng new` の実行ルール:**
 新しい Angular プロジェクトを作成するよう求められたとき、以下の厳密な手順に従って正しい実行コマンドを決定する必要があります。
@@ -55,9 +55,9 @@ origin: ECC
 Angular コンポーネントで作業するとき、タスクに基づいて次のリファレンスを参照してください。
 
 - **基礎:** 解剖学、メタデータ、コア概念、およびテンプレート制御フロー（@if、@for、@switch）。[components.md](references/components.md) を読んでください。
-- **入力:** シグナルベースの入力、変換、およびモデル入力。[inputs.md](references/inputs.md) を読んでください。
-- **出力:** シグナルベースの出力とカスタム イベント ベストプラクティス。[outputs.md](references/outputs.md) を読んでください。
-- **ホスト要素:** ホスト バインディングとアトリビュート注入。[host-elements.md](references/host-elements.md) を読んでください。
+- **入力:** シグナルベースの入力、変換、およびモデル入力。[inputs.md](../../../../awesome_skills/ecc/angular-developer/references/inputs.md) を読んでください。
+- **出力:** シグナルベースの出力とカスタム イベント ベストプラクティス。[outputs.md](../../../../awesome_skills/ecc/angular-developer/references/outputs.md) を読んでください。
+- **ホスト要素:** ホスト バインディングとアトリビュート注入。[host-elements.md](../../../../awesome_skills/ecc/angular-developer/references/host-elements.md) を読んでください。
 
 より詳細なドキュメントが上記のリファレンスで見つからない場合は、`https://angular.dev/guide/components` のドキュメントを参照してください。
 
@@ -65,9 +65,9 @@ Angular コンポーネントで作業するとき、タスクに基づいて次
 
 状態とデータ反応性を管理する場合、Angular シグナルを使用し、次のリファレンスを参照してください。
 
-- **シグナル概要:** コア シグナル概念（`signal`、`computed`）、反応的コンテキスト、および `untracked`。[signals-overview.md](references/signals-overview.md) を読んでください。
-- **依存状態（`linkedSignal`）:** ソース シグナルにリンクされた書き込み可能な状態を作成します。[linked-signal.md](references/linked-signal.md) を読んでください。
-- **非同期反応性（`resource`）:** シグナル状態に非同期データを直接フェッチします。[resource.md](references/resource.md) を読んでください。
+- **シグナル概要:** コア シグナル概念（`signal`、`computed`）、反応的コンテキスト、および `untracked`。[signals-overview.md](../../../../awesome_skills/ecc/angular-developer/references/signals-overview.md) を読んでください。
+- **依存状態（`linkedSignal`）:** ソース シグナルにリンクされた書き込み可能な状態を作成します。[linked-signal.md](../../../../awesome_skills/ecc/angular-developer/references/linked-signal.md) を読んでください。
+- **非同期反応性（`resource`）:** シグナル状態に非同期データを直接フェッチします。[resource.md](../../../../awesome_skills/ecc/angular-developer/references/resource.md) を読んでください。
 - **副作用（`effect`）:** ロギング、サードパーティ DOM 操作（`afterRenderEffect`）、および副作用を使用しないテーム。[effects.md](references/effects.md) を読んでください。
 
 ## フォーム
@@ -77,39 +77,39 @@ Angular コンポーネントで作業するとき、タスクに基づいて次
 - アプリケーション バージョンがシグナル フォームをサポートしており、これが新しいフォームの場合、**シグナル フォームを優先してください**。
 - 古いアプリケーションまたは既存のフォーム については、アプリケーションの現在のフォーム戦略と一致させてください。
 
-- **シグナル フォーム:** フォーム状態管理用にシグナルを使用します。[signal-forms.md](references/signal-forms.md) を読んでください。
-- **テンプレート駆動フォーム:** シンプルなフォーム用に使用します。[template-driven-forms.md](references/template-driven-forms.md) を読んでください。
-- **リアクティブ フォーム:** 複雑なフォーム用に使用します。[reactive-forms.md](references/reactive-forms.md) を読んでください。
+- **シグナル フォーム:** フォーム状態管理用にシグナルを使用します。[signal-forms.md](../../../../awesome_skills/ecc/angular-developer/references/signal-forms.md) を読んでください。
+- **テンプレート駆動フォーム:** シンプルなフォーム用に使用します。[template-driven-forms.md](../../../../awesome_skills/ecc/angular-developer/references/template-driven-forms.md) を読んでください。
+- **リアクティブ フォーム:** 複雑なフォーム用に使用します。[reactive-forms.md](../../../../awesome_skills/ecc/angular-developer/references/reactive-forms.md) を読んでください。
 
 ## 依存性注入
 
 Angular に依存性注入を実装するときは、次のガイドラインに従ってください。
 
-- **基礎:** 依存性注入の概要、サービス、および `inject()` 関数。[di-fundamentals.md](references/di-fundamentals.md) を読んでください。
-- **サービスの作成と使用:** サービスの作成、`providedIn: 'root'` オプション、およびコンポーネントまたは他のサービスへの注入。[creating-services.md](references/creating-services.md) を読んでください。
-- **依存性プロバイダーの定義:** 自動と手動のプロビジョニング、`InjectionToken`、`useClass`、`useValue`、`useFactory`、およびスコープ。[defining-providers.md](references/defining-providers.md) を読んでください。
-- **注入コンテキスト:** `inject()` が許可される場所、`runInInjectionContext`、および `assertInInjectionContext`。[injection-context.md](references/injection-context.md) を読んでください。
-- **階層型インジェクター:** `EnvironmentInjector` と `ElementInjector`、解決ルール、修飾子（`optional`、`skipSelf`）、および `providers` と `viewProviders`。[hierarchical-injectors.md](references/hierarchical-injectors.md) を読んでください。
+- **基礎:** 依存性注入の概要、サービス、および `inject()` 関数。[di-fundamentals.md](../../../../awesome_skills/ecc/angular-developer/references/di-fundamentals.md) を読んでください。
+- **サービスの作成と使用:** サービスの作成、`providedIn: 'root'` オプション、およびコンポーネントまたは他のサービスへの注入。[creating-services.md](../../../../awesome_skills/ecc/angular-developer/references/creating-services.md) を読んでください。
+- **依存性プロバイダーの定義:** 自動と手動のプロビジョニング、`InjectionToken`、`useClass`、`useValue`、`useFactory`、およびスコープ。[defining-providers.md](../../../../awesome_skills/ecc/angular-developer/references/defining-providers.md) を読んでください。
+- **注入コンテキスト:** `inject()` が許可される場所、`runInInjectionContext`、および `assertInInjectionContext`。[injection-context.md](../../../../awesome_skills/ecc/angular-developer/references/injection-context.md) を読んでください。
+- **階層型インジェクター:** `EnvironmentInjector` と `ElementInjector`、解決ルール、修飾子（`optional`、`skipSelf`）、および `providers` と `viewProviders`。[hierarchical-injectors.md](../../../../awesome_skills/ecc/angular-developer/references/hierarchical-injectors.md) を読んでください。
 
 ## Angular Aria
 
 Accordion、Listbox、Combobox、Menu、Tabs、Toolbar、Tree、Grid などのパターン用のアクセシブルなカスタム コンポーネントを構築する場合は、次のリファレンスを参照してください。
 
-- **Angular Aria コンポーネント:** ヘッドレスで アクセシブルなコンポーネント（Accordion、Listbox、Combobox、Menu、Tabs、Toolbar、Tree、Grid）の構築と ARIA アトリビュートのスタイリング。[angular-aria.md](references/angular-aria.md) を読んでください。
+- **Angular Aria コンポーネント:** ヘッドレスで アクセシブルなコンポーネント（Accordion、Listbox、Combobox、Menu、Tabs、Toolbar、Tree、Grid）の構築と ARIA アトリビュートのスタイリング。[angular-aria.md](../../../../awesome_skills/ecc/angular-developer/references/angular-aria.md) を読んでください。
 
 ## ルーティング
 
 Angular にナビゲーションを実装する場合は、次のリファレンスを参照してください。
 
-- **ルートを定義:** URL パス、静的vs動的セグメント、ワイルドカード、およびリダイレクト。[define-routes.md](references/define-routes.md) を読んでください。
-- **ルート読み込み戦略:** 遅延ロードとコンテキスト対応読み込み。[loading-strategies.md](references/loading-strategies.md) を読んでください。
-- **ルートアウトレットで表示:** `<router-outlet>`、ネストされたアウトレット、および名前付きアウトレットの使用。[show-routes-with-outlets.md](references/show-routes-with-outlets.md) を読んでください。
-- **ルートにナビゲート:** `RouterLink` による宣言的ナビゲーションと `Router` による プログラマティック ナビゲーション。[navigate-to-routes.md](references/navigate-to-routes.md) を読んでください。
-- **ルート アクセスを制御:** `CanActivate`、`CanMatch` などのガードを実装してセキュリティを確保します。[route-guards.md](references/route-guards.md) を読んでください。
-- **データリソルバー:** `ResolveFn` によるルート有効化前のデータ プリフェッチ。[data-resolvers.md](references/data-resolvers.md) を読んでください。
-- **ルーター ライフサイクルとイベント:** ナビゲーション イベントの時間的順序とデバッグ。[router-lifecycle.md](references/router-lifecycle.md) を読んでください。
-- **レンダリング戦略:** CSR、SGG（プリレンダリング）、およびハイドレーションを備えた SSR。[rendering-strategies.md](references/rendering-strategies.md) を読んでください。
-- **ルート遷移アニメーション:** ビュー遷移 API の有効化とカスタマイズ。[route-animations.md](references/route-animations.md) を読んでください。
+- **ルートを定義:** URL パス、静的vs動的セグメント、ワイルドカード、およびリダイレクト。[define-routes.md](../../../../awesome_skills/ecc/angular-developer/references/define-routes.md) を読んでください。
+- **ルート読み込み戦略:** 遅延ロードとコンテキスト対応読み込み。[loading-strategies.md](../../../../awesome_skills/ecc/angular-developer/references/loading-strategies.md) を読んでください。
+- **ルートアウトレットで表示:** `<router-outlet>`、ネストされたアウトレット、および名前付きアウトレットの使用。[show-routes-with-outlets.md](../../../../awesome_skills/ecc/angular-developer/references/show-routes-with-outlets.md) を読んでください。
+- **ルートにナビゲート:** `RouterLink` による宣言的ナビゲーションと `Router` による プログラマティック ナビゲーション。[navigate-to-routes.md](../../../../awesome_skills/ecc/angular-developer/references/navigate-to-routes.md) を読んでください。
+- **ルート アクセスを制御:** `CanActivate`、`CanMatch` などのガードを実装してセキュリティを確保します。[route-guards.md](../../../../awesome_skills/ecc/angular-developer/references/route-guards.md) を読んでください。
+- **データリソルバー:** `ResolveFn` によるルート有効化前のデータ プリフェッチ。[data-resolvers.md](../../../../awesome_skills/ecc/angular-developer/references/data-resolvers.md) を読んでください。
+- **ルーター ライフサイクルとイベント:** ナビゲーション イベントの時間的順序とデバッグ。[router-lifecycle.md](../../../../awesome_skills/ecc/angular-developer/references/router-lifecycle.md) を読んでください。
+- **レンダリング戦略:** CSR、SGG（プリレンダリング）、およびハイドレーションを備えた SSR。[rendering-strategies.md](../../../../awesome_skills/ecc/angular-developer/references/rendering-strategies.md) を読んでください。
+- **ルート遷移アニメーション:** ビュー遷移 API の有効化とカスタマイズ。[route-animations.md](../../../../awesome_skills/ecc/angular-developer/references/route-animations.md) を読んでください。
 
 より詳細なドキュメントまたは詳細なコンテキストが必要な場合は、[公式 Angular ルーティング ガイド](https://angular.dev/guide/routing) をご覧ください。
 
@@ -117,18 +117,18 @@ Angular にナビゲーションを実装する場合は、次のリファレン
 
 Angular でスタイリングとアニメーションを実装する場合は、次のリファレンスを参照してください。
 
-- **Angular での Tailwind CSS の使用:** Angular プロジェクトへの Tailwind CSS 統合。[tailwind-css.md](references/tailwind-css.md) を読んでください。
-- **Angular アニメーション:** ネイティブ CSS（推奨）またはレガシー DSL を使用した動的エフェクト。[angular-animations.md](references/angular-animations.md) を読んでください。
-- **コンポーネント スタイリング:** コンポーネント スタイルとカプセル化のベスト プラクティス。[component-styling.md](references/component-styling.md) を読んでください。
+- **Angular での Tailwind CSS の使用:** Angular プロジェクトへの Tailwind CSS 統合。[tailwind-css.md](../../../../awesome_skills/ecc/angular-developer/references/tailwind-css.md) を読んでください。
+- **Angular アニメーション:** ネイティブ CSS（推奨）またはレガシー DSL を使用した動的エフェクト。[angular-animations.md](../../../../awesome_skills/ecc/angular-developer/references/angular-animations.md) を読んでください。
+- **コンポーネント スタイリング:** コンポーネント スタイルとカプセル化のベスト プラクティス。[component-styling.md](../../../../awesome_skills/ecc/angular-developer/references/component-styling.md) を読んでください。
 
 ## テスト
 
 テストを作成または更新するときは、タスクに基づいて次のリファレンスを参照してください。
 
-- **基礎:** ユニット テスト、非同期パターン、および `TestBed` のベスト プラクティス。[testing-fundamentals.md](references/testing-fundamentals.md) を読んでください。
-- **コンポーネント ハーネス:** コンポーネント操作の標準パターン。[component-harnesses.md](references/component-harnesses.md) を読んでください。
-- **ルーター テスト:** 信頼性の高いナビゲーション テストに `RouterTestingHarness` を使用します。[router-testing.md](references/router-testing.md) を読んでください。
-- **エンドツーエンド（E2E）テスト:** Cypress または Playwright を使用した E2E テストのベスト プラクティス。[e2e-testing.md](references/e2e-testing.md) を読んでください。
+- **基礎:** ユニット テスト、非同期パターン、および `TestBed` のベスト プラクティス。[testing-fundamentals.md](../../../../awesome_skills/ecc/angular-developer/references/testing-fundamentals.md) を読んでください。
+- **コンポーネント ハーネス:** コンポーネント操作の標準パターン。[component-harnesses.md](../../../../awesome_skills/ecc/angular-developer/references/component-harnesses.md) を読んでください。
+- **ルーター テスト:** 信頼性の高いナビゲーション テストに `RouterTestingHarness` を使用します。[router-testing.md](../../../../awesome_skills/ecc/angular-developer/references/router-testing.md) を読んでください。
+- **エンドツーエンド（E2E）テスト:** Cypress または Playwright を使用した E2E テストのベスト プラクティス。[e2e-testing.md](../../../../awesome_skills/ecc/angular-developer/references/e2e-testing.md) を読んでください。
 
 ## ツール
 

@@ -1,6 +1,7 @@
 ---
 name: blocknote
-description: "Work with BlockNote, a block-based rich text editor for React. Use when the user mentions "blocknote", "BlockNote editor", "block-based editor", "insertBlocks", "updateBlock", "removeBlocks", "replaceBlocks", "editor.document", "InlineContent", "StyledText", "nestBlock", "unnestBlock", "addStyles", "toggleStyles", "removeStyles", "createLink", "getTextCursorPosition", "setTextCursorPosition", "getSelection", "setSelection", "forEachBlock", "useCreateBlockNote", "BlockNoteView", "paragraph block", "heading block", "bulletListItem", "PartialBlock", or asks how to manipulate blocks, style text, insert content, or read document structure in BlockNote."
+description: >-
+  Work with BlockNote, a block-based rich text editor for React. Use when the user mentions "blocknote", "BlockNote editor", "block-based editor", "insertBlocks", "updateBlock", "removeBlocks", "replaceBlocks", "editor.document", "InlineContent", "StyledText", "nestBlock", "unnestBlock", "addStyles", "toggleStyles", "removeStyles", "createLink", "getTextCursorPosition", "setTextCursorPosition", "getSelection", "setSelection", "forEachBlock", "useCreateBlockNote", "BlockNoteView", "paragraph block", "heading block", "bulletListItem", "PartialBlock", or asks how to manipulate blocks, style text, insert content, or read document structure in BlockNote.
 category: developer-tools
 domain: developer-tools
 subdomain: general
@@ -20,8 +21,6 @@ platforms:
   - antigravity
   - copilot
 ---
-
-
 # BlockNote
 
 Skill for working with [BlockNote](https://www.blocknotejs.org/), a block-based rich text editor for React.

@@ -3,7 +3,7 @@
 
 Every command exits non-zero on failure.
 
-  init             Link the active skill harness into agent tools (scripts/setup_tools.py)
+  setup, init     Link the active skill harness into agent tools (scripts/setup_tools.py)
   search           Ranked search: canonical skills via the router, then the catalog
   doctor           Health check; --full validates 11 layers by content, not presence
   verify           Verify lockfile hashes, frontmatter schema and harness links
@@ -14,7 +14,8 @@ Every command exits non-zero on failure.
   sources          List registered upstream sources
   sync             Import / update skills from upstream sources (scripts/sync_sources.py)
   profile          list | show <name> | install <name> [--dest DIR] [--dry-run]
-  execute, run     Execute a skill through the governed runtime
+  explain          Explain why a skill was selected for a query (9-signal breakdown)
+  execute, run     Execute a skill through the governed runtime (--safe for approval-gated runs)
   ecc              Everything Claude Code (ECC) engine and CLI dispatch
   instincts        Inspect and manage continuous learning instincts
   dashboard        Launch ECC visual or web dashboard
@@ -539,11 +540,84 @@ def cmd_profile(action: str, name: str | None, dest: str | None = None, dry_run:
     return 0
 
 
+def cmd_bootstrap(harness: str | None, profile: str, scope: str, global_links: bool,
+                  dry_run: bool, all_harnesses: bool) -> int:
+    """One command: link skills into harnesses, install MCP connectors, verify."""
+    print("── 1/3  Linking the skill library into agent harnesses ─────", flush=True)
+    setup_cmd = ["scripts/setup_tools.py"] + (["--status"] if dry_run else [])
+    if not dry_run and global_links:
+        setup_cmd.append("--global")
+    run_cmd(setup_cmd)
+
+    print("\n── 2/3  MCP connectors ─────────────────────────────────────", flush=True)
+    harnesses = [harness or "claude"]
+    if all_harnesses:
+        sys.path.insert(0, str(REPO_ROOT / "src"))
+        from skills.mcp import Catalog, harness_names
+        harnesses = harness_names(Catalog.load(REPO_ROOT))
+    failures = 0
+    for target in harnesses:
+        sys.stdout.flush()
+        cmd = ["scripts/mcp_catalog.py", "install", "--harness", target,
+               "--profile", profile, "--scope", scope]
+        if dry_run:
+            cmd.append("--dry-run")
+        failures += 1 if run_cmd(cmd) else 0
+
+    print("\n── 3/3  Verification ───────────────────────────────────────", flush=True)
+    failed = 0
+    for label, cmd in (
+        ("Harness links", ["scripts/setup_tools.py", "--verify"]),
+        ("MCP catalog", ["scripts/mcp_catalog.py", "verify"]),
+        ("MCP credentials", ["scripts/mcp_catalog.py", "doctor"]),
+        ("Skill library", ["scripts/skills/skills.py", "validate"]),
+    ):
+        code = run_cmd(cmd)
+        _check(label, code == 0)
+        failed += 1 if code else 0
+
+    if failures or failed:
+        print(f"\n❌ Bootstrap finished with {failures + failed} failure(s).")
+        return 1
+    print("\n✅ Bootstrap complete — every harness is linked and your MCP profile is installed.")
+    if dry_run:
+        print("   (dry run — nothing was written)")
+    return 0
+
+
+def cmd_mcp(args) -> int:
+    """Forward to the MCP catalog CLI, keeping flags in one place."""
+    cmd = ["scripts/mcp_catalog.py", args.action]
+    if args.action == "profiles":
+        cmd = ["scripts/mcp_catalog.py", "list", "--json"]
+    if args.action in {"list", "install"}:
+        if getattr(args, "profile", None):
+            cmd.extend(["--profile", args.profile])
+        if getattr(args, "tier", None):
+            cmd.extend(["--tier", args.tier])
+        if getattr(args, "category", None):
+            cmd.extend(["--category", args.category])
+        if getattr(args, "json", False):
+            cmd.append("--json")
+    if args.action == "install":
+        if getattr(args, "harness", None):
+            cmd.extend(["--harness", args.harness])
+        cmd.extend(["--scope", args.scope])
+        if getattr(args, "servers", None):
+            cmd.extend(["--servers", *args.servers])
+        if getattr(args, "dry_run", False):
+            cmd.append("--dry-run")
+    if args.action == "generate" and getattr(args, "verify", False):
+        cmd.append("--verify")
+    return run_cmd(cmd)
+
+
 def cmd_verify() -> int:
     """Lockfile hashes + frontmatter schema + harness links; non-zero if any fails."""
     checks = [
         ("Lockfile hashes", ["scripts/skills/skills.py", "lock", "--verify"]),
-        ("Frontmatter schema", ["scripts/validate_schema.py"]),
+        ("Catalog lockfile", ["scripts/build_awesome_lock.py", "--verify"]),
+        ("Frontmatter schema", ["scripts/validate_schema.py", "--catalog", "--max-catalog-errors", "0"]),
         ("Harness links", ["scripts/setup_tools.py", "--verify"]),
     ]
     failed = []
@@ -626,14 +700,90 @@ def cmd_matrix(skill_ids: list[str]) -> int:
     return 0
 
 
+# ─────────────────────────────────────────────────────────────────────────────
+# EXPLAIN — why was this skill selected?
+# ─────────────────────────────────────────────────────────────────────────────
+
+def cmd_explain(skill_id: str, query: str, as_json: bool = False) -> int:
+    """Print the 9-signal routing rationale for ``skill_id`` against ``query``."""
+    sys.path.insert(0, str(REPO_ROOT / "src"))
+    from skills.explain import ExplainabilityTracer
+    from skills.registry import load_registry
+    from skills.router import Router
+
+    reg = load_registry(REPO_ROOT)
+    entry = reg.get(skill_id)
+    if entry is None:
+        print(f"Error: unknown skill '{skill_id}' (see 'allskills search <query>')", file=sys.stderr)
+        return 2
+
+    effective_query = query or entry.name
+    tracer = ExplainabilityTracer(query=effective_query)
+    matches = Router(reg).route(effective_query, top_k=5)
+    match = next((m for m in matches if m.skill.id == skill_id), None)
+
+    if match is not None:
+        primary = (match.matched_on or "keyword").strip()
+        signals = [f"{primary}_match", "nine_signal_score"]
+        if entry.quality:
+            signals.append("quality_boost")
+        confidence = max(0.0, min(1.0, match.score / 100.0))
+        rationale = f"primary signal: {primary}"
+    else:
+        signals = ["not_ranked_for_query"]
+        confidence = 0.0
+        rationale = (f"Scores below the router threshold for '{effective_query}'; "
+                     f"selected explicitly by ID instead")
+
+    tracer.record_selection(
+        skill_id=skill_id,
+        slot=entry.category,
+        confidence=confidence,
+        rationale=f"{rationale} (score={match.score:.1f})" if match else rationale,
+        matched_signals=[str(sig) for sig in signals],
+    )
+    for other in matches:
+        if other.skill.id == skill_id:
+            continue
+        tracer.record_rejection(
+            skill_id=other.skill.id,
+            slot=other.skill.category,
+            reason=f"lower 9-signal score ({other.score:.1f}) than {skill_id}",
+            rejection_type="suboptimal_score",
+            competing_selected=skill_id,
+        )
+    report = tracer.build()
+    if as_json:
+        print(json.dumps(report.to_dict(), indent=2))
+    else:
+        print(report.format_cli())
+        print("\nRELIABILITY & QUALITY:")
+        print(f"  • Category:           {entry.category}")
+        print(f"  • Lifecycle:          {entry.lifecycle or 'enabled'}")
+        print(f"  • Declared tools:     {', '.join(entry.permissions or {}) or 'none declared'}")
+        print(f"  • Declared risk:      {entry.risk}")
+        print(f"  • Trust tier:         {entry.trust_tier}")
+        print(f"  • Source:             {entry.source or 'all-skills/canonical'}")
+    return 0
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(prog="allskills", description="All-skills Universal Operating System CLI")
     parser.add_argument("--workspace", help="All-Skills workspace (default: ALL_SKILLS_WORKSPACE, the current "
                                             "directory tree, then this installation)")
     subparsers = parser.add_subparsers(dest="subcommand", help="Command to execute")
 
-    s_init = subparsers.add_parser("init", help="Link the active harness into agent tools, then verify")
-    s_init.add_argument("--global", dest="is_global", action="store_true", help="Also link global user directories")
+    for setup_alias in ("setup", "init"):
+        s_init = subparsers.add_parser(
+            setup_alias, help="Link the active harness into agent tools, then verify")
+        s_init.add_argument("--global", dest="is_global", action="store_true",
+                            help="Also link global user directories")
+
+    s_explain = subparsers.add_parser(
+        "explain", help="Explain why a skill was selected for a query")
+    s_explain.add_argument("skill_id", help="Canonical skill ID")
+    s_explain.add_argument("--query", "-q", default="", help="User intent or natural-language prompt")
+    s_explain.add_argument("--json", action="store_true", help="Machine-readable output")
     s_search = subparsers.add_parser("search", help="Ranked search across canonical skills and the catalog")
     s_search.add_argument("query", help="Keywords or functional phrase")
     s_search.add_argument("--limit", type=int, default=15, help="Results per page (default 15)")
@@ -680,6 +830,9 @@ def main() -> int:
         s_exec.add_argument("--input", help="JSON string of execution inputs")
         s_exec.add_argument("--tools", help="Comma-separated declared tools")
         s_exec.add_argument("--dry-run", action="store_true", help="Simulate execution without modifying artifacts")
+        s_exec.add_argument("--safe", action="store_true",
+                            help="Safe mode: read-only analysis runs freely, mutating or external "
+                                 "capabilities require explicit approval")
         s_exec.add_argument("--json", action="store_true", help="Print structured ExecutionResult as JSON")
         s_exec.add_argument("--approval-id", help="request_id from an approval_required result")
         s_exec.add_argument("--approved-by", help="Name of the human approving an ASK capability")
@@ -693,6 +846,32 @@ def main() -> int:
     s_dash = subparsers.add_parser("dashboard", help="Launch ECC dashboard (Tkinter or Web)")
     s_dash.add_argument("--web", action="store_true", help="Launch web dashboard instead of Tkinter")
     s_dash.add_argument("--port", type=int, default=3333, help="Web dashboard port (default: 3333)")
+
+    s_boot = subparsers.add_parser(
+        "bootstrap", help="One command: link skills into harnesses, install MCP connectors, verify")
+    s_boot.add_argument("--harness", help="Target harness for MCP (default: claude)")
+    s_boot.add_argument("--all", dest="all_harnesses", action="store_true",
+                        help="Install MCP into every supported harness")
+    s_boot.add_argument("--profile", default="core", choices=["core", "standard", "full"])
+    s_boot.add_argument("--scope", default="project", choices=["project", "user"])
+    s_boot.add_argument("--global", dest="global_links", action="store_true",
+                        help="Also link global user directories")
+    s_boot.add_argument("--dry-run", action="store_true")
+
+    s_mcp = subparsers.add_parser(
+        "mcp", help="List, verify or install Model Context Protocol servers into any harness")
+    s_mcp.add_argument("action", nargs="?", default="list",
+                       choices=["list", "verify", "doctor", "generate", "install", "profiles"],
+                       help="Catalog action (default: list)")
+    s_mcp.add_argument("--harness", help="Target harness for install (claude, cursor, codex, ...)")
+    s_mcp.add_argument("--scope", choices=["project", "user"], default="project")
+    s_mcp.add_argument("--profile", help="Install profile: core, standard, full")
+    s_mcp.add_argument("--servers", nargs="*", help="Explicit server ids")
+    s_mcp.add_argument("--tier", choices=["core", "standard", "full"])
+    s_mcp.add_argument("--category")
+    s_mcp.add_argument("--dry-run", action="store_true")
+    s_mcp.add_argument("--json", action="store_true")
+    s_mcp.add_argument("--verify", action="store_true", help="With generate: check for drift only")
 
     s_agents = subparsers.add_parser("agents", help="List and inspect specialized subagents")
     s_agents.add_argument("name", nargs="?", help="Subagent name to inspect (e.g. planner, architect)")
@@ -713,7 +892,7 @@ def main() -> int:
         return cmd_doctor(full=getattr(args, "full", False))
     elif args.subcommand == "search":
         return cmd_search(args.query, limit=args.limit, offset=args.offset, category=args.category, as_json=args.json)
-    elif args.subcommand == "init":
+    elif args.subcommand in {"setup", "init"}:
         setup = ["scripts/setup_tools.py"] + (["--global"] if args.is_global else [])
         return run_cmd(setup) or run_cmd(["scripts/setup_tools.py", "--verify"])
     elif args.subcommand == "lock":
@@ -736,11 +915,20 @@ def main() -> int:
             cmd.extend(["--tools", args.tools])
         if getattr(args, "dry_run", False):
             cmd.append("--dry-run")
+        if getattr(args, "safe", False):
+            cmd.append("--safe")
         if getattr(args, "json", False):
             cmd.append("--json")
         if getattr(args, "approval_id", None):
             cmd.extend(["--approval-id", args.approval_id, "--approved-by", args.approved_by or ""])
         return run_cmd(cmd)
+    elif args.subcommand == "explain":
+        return cmd_explain(args.skill_id, args.query, as_json=args.json)
+    elif args.subcommand == "mcp":
+        return cmd_mcp(args)
+    elif args.subcommand == "bootstrap":
+        return cmd_bootstrap(args.harness, args.profile, args.scope,
+                             args.global_links, args.dry_run, args.all_harnesses)
     elif args.subcommand == "verify":
         return cmd_verify()
     elif args.subcommand == "verify-registry":
@@ -812,5 +1000,39 @@ def main() -> int:
         parser.print_help()
         return 0 if args.subcommand is None else 1
 
+def _silence_stdout() -> None:
+    """Point stdout at /dev/null so a closed pipe cannot fail the interpreter exit."""
+    try:
+        devnull = os.open(os.devnull, os.O_WRONLY)
+        os.dup2(devnull, sys.stdout.fileno())
+    except (OSError, ValueError):
+        pass
+
+
+def _run_cli(entry) -> None:
+    """Run ``entry`` and exit cleanly even when stdout is a closed pipe.
+
+    ``allskills sources | head`` and friends are normal shell usage; without this
+    guard CPython raises BrokenPipeError while flushing stdout at interpreter
+    shutdown, which produced a traceback and exit code 120.
+    """
+    code = 0
+    try:
+        result = entry()
+        if isinstance(result, int):
+            code = result
+    except SystemExit as exc:
+        code = exc.code if isinstance(exc.code, int) else (0 if exc.code is None else 1)
+    except BrokenPipeError:
+        _silence_stdout()
+        os._exit(0)
+    try:
+        sys.stdout.flush()
+    except BrokenPipeError:
+        _silence_stdout()
+        os._exit(0)
+    sys.exit(code)
+
+
 if __name__ == "__main__":
-    sys.exit(main())
+    _run_cli(main)

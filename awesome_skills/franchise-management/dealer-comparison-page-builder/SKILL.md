@@ -1,6 +1,7 @@
 ---
 name: dealer-comparison-page-builder
-description: "Build one in-depth comparison page between a car dealership and a single named competitor for SEO, AEO, GEO, and sales enablement. Use when the user asks to "build a comparison page", "dealer vs dealer page", "compare my dealership to [Competitor]", "[Dealer A] vs [Dealer B]", "competitor comparison content", "build a comparison landing page", "dealership comparison page", "alternative-to page for a dealer", or any request to produce a comparison page between two car dealerships. Produces a complete, paste-ready landing page covering positioning, brand portfolio, inventory, service capabilities, pricing transparency, customer experience, F&I, and the fair-play side-by-side. Optimized for AI engine citation (AEO/GEO) and Google ranking on "[Dealer A] vs [Dealer B]" queries. Built around fair-play rules: honest comparison, no fabricated claims, named competitor gets accurate treatment. Pairs with dealer-aeo-content-brief (which produces individual content briefs) and dealer-store-positioning (which produces the positioning that informs the comparison). Authored by Ariel Coro of Dealer AI Guy."
+description: >-
+  Build one in-depth comparison page between a car dealership and a single named competitor for SEO, AEO, GEO, and sales enablement. Use when the user asks to "build a comparison page", "dealer vs dealer page", "compare my dealership to [Competitor]", "[Dealer A] vs [Dealer B]", "competitor comparison content", "build a comparison landing page", "dealership comparison page", "alternative-to page for a dealer", or any request to produce a comparison page between two car dealerships. Produces a complete, paste-ready landing page covering positioning, brand portfolio, inventory, service capabilities, pricing transparency, customer experience, F&I, and the fair-play side-by-side. Optimized for AI engine citation (AEO/GEO) and Google ranking on "[Dealer A] vs [Dealer B]" queries. Built around fair-play rules: honest comparison, no fabricated claims, named competitor gets accurate treatment. Pairs with dealer-aeo-content-brief (which produces individual content briefs) and dealer-store-positioning (which produces the positioning that informs the comparison). Authored by Ariel Coro of Dealer AI Guy.
 category: franchise-management
 domain: franchise-management
 subdomain: general
@@ -20,8 +21,6 @@ platforms:
   - antigravity
   - copilot
 ---
-
-
 # Dealer Comparison Page Builder
 
 This skill produces one in-depth comparison page between a car dealership and a single named competitor. The page is optimized for Google ranking on "[Dealer A] vs [Dealer B]" queries, for AI engine citation when buyers ask comparison questions, and for sales floor use when a customer is actively shopping both dealers.

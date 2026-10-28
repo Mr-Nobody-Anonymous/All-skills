@@ -121,7 +121,7 @@ For **explanatory / editorial / data-walkthrough** content, prefer **scroll-driv
 
 ## Spatial composition & layout
 
-Grid systems, the 8-point spacing scale, visual-weight balance, alignment, and the render-then-critique loop live in **design-spatial** ([../design-spatial/SKILL.md](../design-spatial/SKILL.md)) — the mechanical counterpart to this file's tokens/type/color. Load it whenever composing pages, dashboards, or components. (Direction nugget that belongs here: match composition ambition to the vision — maximalist earns elaborate/layered code; minimal/refined demands restraint and precise spacing.)
+Grid systems, the 8-point spacing scale, visual-weight balance, alignment, and the render-then-critique loop live in **design-spatial** ([../../../awesome_skills/design/design-spatial/SKILL.md](../../../awesome_skills/design/design-spatial/SKILL.md)) — the mechanical counterpart to this file's tokens/type/color. Load it whenever composing pages, dashboards, or components. (Direction nugget that belongs here: match composition ambition to the vision — maximalist earns elaborate/layered code; minimal/refined demands restraint and precise spacing.)
 
 ## Nested radii (only when one rounded element sits inside another)
 

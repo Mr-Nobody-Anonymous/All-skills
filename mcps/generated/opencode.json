@@ -1,0 +1,868 @@
+{
+  "mcp": {
+    "ableton": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "ableton-mcp"
+      ]
+    },
+    "airtable": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "airtable-mcp-server@latest"
+      ]
+    },
+    "apify": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@apify/actors-mcp-server@latest"
+      ]
+    },
+    "atlassian": {
+      "type": "http",
+      "url": "https://mcp.atlassian.com/v1/sse"
+    },
+    "autocad": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "autocad-mcp"
+      ]
+    },
+    "aws": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "awslabs.core-mcp-server@latest"
+      ]
+    },
+    "aws-docs": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "awslabs.aws-documentation-mcp-server@latest"
+      ]
+    },
+    "azure": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@azure/mcp",
+        "server",
+        "start"
+      ]
+    },
+    "bigquery": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@ergut/mcp-bigquery-server",
+        "--project",
+        "${BIGQUERY_PROJECT}",
+        "--location",
+        "${BIGQUERY_LOCATION}"
+      ]
+    },
+    "blender": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "blender-mcp"
+      ]
+    },
+    "brave-search": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-brave-search"
+      ]
+    },
+    "browserbase": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@browserbasehq/mcp"
+      ]
+    },
+    "chroma": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "chroma-mcp"
+      ]
+    },
+    "chrome-devtools": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "chrome-devtools-mcp@latest"
+      ]
+    },
+    "circleci": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@circleci/mcp-server-circleci@latest"
+      ]
+    },
+    "clickhouse": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "mcp-clickhouse"
+      ]
+    },
+    "clickup": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@taazkareem/clickup-mcp-server@latest"
+      ]
+    },
+    "cloudflare": {
+      "type": "http",
+      "url": "https://observability.mcp.cloudflare.com/mcp"
+    },
+    "code-sandbox": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "e2b-mcp-server"
+      ]
+    },
+    "confluence": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "mcp-confluence"
+      ]
+    },
+    "context7": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@upstash/context7-mcp"
+      ]
+    },
+    "davinci-resolve": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "davinci-resolve-mcp"
+      ]
+    },
+    "desktop-commander": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@wonderwhy-er/desktop-commander@latest"
+      ]
+    },
+    "digitalocean": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@digitalocean/mcp@latest"
+      ]
+    },
+    "discord": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "discord-mcp"
+      ]
+    },
+    "docker": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "docker-mcp"
+      ]
+    },
+    "duckdb": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "mcp-server-motherduck",
+        "--db-path",
+        "${DUCKDB_PATH}"
+      ]
+    },
+    "e2b": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@e2b/mcp-server@latest"
+      ]
+    },
+    "elasticsearch": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@elastic/mcp-server-elasticsearch"
+      ]
+    },
+    "elevenlabs": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "elevenlabs-mcp"
+      ]
+    },
+    "everything": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-everything"
+      ]
+    },
+    "exa": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "exa-mcp-server"
+      ]
+    },
+    "fetch": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "mcp-server-fetch"
+      ]
+    },
+    "fetch-docs": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "mcp-docs-server"
+      ]
+    },
+    "figma": {
+      "type": "http",
+      "url": "https://mcp.figma.com/mcp"
+    },
+    "filesystem": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-filesystem@0.6.2",
+        "."
+      ]
+    },
+    "firebase": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "firebase-tools",
+        "experimental:mcp"
+      ]
+    },
+    "firecrawl": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "firecrawl-mcp"
+      ]
+    },
+    "freecad": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "freecad-mcp"
+      ]
+    },
+    "gdal": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "--from",
+        "gdal-mcp",
+        "gdal",
+        "--transport",
+        "stdio"
+      ]
+    },
+    "geoserver": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "geoserver-mcp"
+      ]
+    },
+    "git": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "mcp-server-git",
+        "--repository",
+        "."
+      ]
+    },
+    "github": {
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "headers": {
+        "Authorization": "Bearer ${GITHUB_PERSONAL_ACCESS_TOKEN}"
+      }
+    },
+    "gitlab": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@zereight/mcp-gitlab"
+      ]
+    },
+    "gmail": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@gongrzhe/server-gmail-autoauth-mcp"
+      ]
+    },
+    "google-calendar": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@cocal/google-calendar-mcp@latest"
+      ]
+    },
+    "google-cloud-run": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "cloud-run-mcp@latest"
+      ]
+    },
+    "google-drive": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-gdrive"
+      ]
+    },
+    "google-maps": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-google-maps"
+      ]
+    },
+    "google-sheets": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "mcp-google-sheets"
+      ]
+    },
+    "grafana": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "mcp-grafana"
+      ]
+    },
+    "grasshopper": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "grasshopper-mcp"
+      ]
+    },
+    "heroku": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@heroku/mcp-server@latest"
+      ]
+    },
+    "hubspot": {
+      "type": "http",
+      "url": "https://mcp.hubspot.com"
+    },
+    "huggingface": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@huggingface/mcp-server"
+      ]
+    },
+    "ifc": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "ifc-mcp"
+      ]
+    },
+    "inkscape": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "inkscape-mcp"
+      ]
+    },
+    "jira": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "mcp-jira"
+      ]
+    },
+    "kicad": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "kicad-mcp"
+      ]
+    },
+    "kubernetes": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "mcp-server-kubernetes"
+      ]
+    },
+    "linear": {
+      "type": "http",
+      "url": "https://mcp.linear.app/mcp"
+    },
+    "mapbox": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@mapbox/mcp-server"
+      ]
+    },
+    "memory": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ]
+    },
+    "meshy": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "meshy-mcp-server"
+      ]
+    },
+    "microsoft-learn": {
+      "type": "http",
+      "url": "https://learn.microsoft.com/api/mcp"
+    },
+    "mongodb": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "mongodb-mcp-server"
+      ]
+    },
+    "mysql": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "mysql-mcp-server"
+      ]
+    },
+    "n8n": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "n8n-mcp@latest"
+      ]
+    },
+    "neo4j": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "mcp-neo4j-cypher"
+      ]
+    },
+    "neon": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@neondatabase/mcp-server-neon",
+        "start",
+        "${NEON_API_KEY}"
+      ]
+    },
+    "netlify": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@netlify/mcp@latest"
+      ]
+    },
+    "notion": {
+      "type": "http",
+      "url": "https://mcp.notion.com/mcp"
+    },
+    "obsidian": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "mcp-obsidian"
+      ]
+    },
+    "openai-docs": {
+      "type": "http",
+      "url": "https://developers.openai.com/mcp"
+    },
+    "openapi": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "openapi-mcp-server",
+        "${OPENAPI_SPEC_PATH}"
+      ]
+    },
+    "openscad": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "openscad-mcp"
+      ]
+    },
+    "paypal": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@paypal/mcp@latest"
+      ]
+    },
+    "perplexity": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "perplexity-mcp"
+      ]
+    },
+    "pinecone": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@pinecone-database/mcp@latest"
+      ]
+    },
+    "playwright": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@playwright/mcp@latest"
+      ]
+    },
+    "postgres": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-postgres",
+        "${POSTGRES_URL}"
+      ]
+    },
+    "postman": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@postman/postman-mcp-server@latest"
+      ]
+    },
+    "pulumi": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@pulumi/mcp-server@latest"
+      ]
+    },
+    "puppeteer": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-puppeteer"
+      ]
+    },
+    "qdrant": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "mcp-server-qdrant"
+      ]
+    },
+    "qgis": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "qgis-mcp@latest"
+      ]
+    },
+    "railway": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@railway/mcp-server"
+      ]
+    },
+    "redis": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-redis",
+        "${REDIS_URL}"
+      ]
+    },
+    "remote-fs": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "mcp-ssh-manager"
+      ]
+    },
+    "resend": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "resend-mcp@latest"
+      ]
+    },
+    "revit": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "revit-mcp"
+      ]
+    },
+    "salesforce": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@salesforce/mcp"
+      ]
+    },
+    "semgrep": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "semgrep-mcp"
+      ]
+    },
+    "sentry": {
+      "type": "http",
+      "url": "https://mcp.sentry.dev/mcp"
+    },
+    "sequential-thinking": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ]
+    },
+    "shopify": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@shopify/dev-mcp@latest"
+      ]
+    },
+    "sketchfab": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "sketchfab-mcp-server"
+      ]
+    },
+    "slack": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-slack"
+      ]
+    },
+    "snowflake": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "mcp-server-snowflake"
+      ]
+    },
+    "snyk": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "snyk-mcp"
+      ]
+    },
+    "sonarqube": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "sonarqube-mcp-server@latest"
+      ]
+    },
+    "spotify": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-spotify"
+      ]
+    },
+    "sqlite": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "mcp-server-sqlite",
+        "--db-path",
+        "${SQLITE_PATH}"
+      ]
+    },
+    "stripe": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@stripe/mcp",
+        "--api-key",
+        "${STRIPE_SECRET_KEY}"
+      ]
+    },
+    "supabase": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@supabase/mcp-server-supabase@latest",
+        "--access-token",
+        "${SUPABASE_ACCESS_TOKEN}"
+      ]
+    },
+    "tavily": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "tavily-mcp"
+      ]
+    },
+    "terraform": {
+      "type": "local",
+      "command": [
+        "docker",
+        "run",
+        "-i",
+        "--rm",
+        "hashicorp/terraform-mcp-server"
+      ]
+    },
+    "time": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "mcp-server-time"
+      ]
+    },
+    "todoist": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@abhiz123/todoist-mcp-server@latest"
+      ]
+    },
+    "trello": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@delorenj/mcp-server-trello@latest"
+      ]
+    },
+    "twilio": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@twilio-alpha/mcp",
+        "${TWILIO_ACCOUNT_SID}/${TWILIO_API_KEY}/${TWILIO_API_SECRET}"
+      ]
+    },
+    "vercel": {
+      "type": "http",
+      "url": "https://mcp.vercel.com"
+    },
+    "youtube": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@sinco-lab/mcp-youtube",
+        "--stdio"
+      ]
+    }
+  }
+}

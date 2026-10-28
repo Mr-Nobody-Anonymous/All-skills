@@ -255,6 +255,7 @@ class ExecutionRuntime:
         dry_run: bool = False,
         session_id: Optional[str] = None,
         approval: Optional[Mapping[str, str]] = None,
+        safe_mode: bool = False,
     ) -> ExecutionResult:
         """Run ``skill`` through the governed pipeline (see module docstring).
 
@@ -262,6 +263,11 @@ class ExecutionRuntime:
         must be ``{"request_id": <id from the approval_required result>,
         "approved_by": <who approved>}``; an approval for a different skill,
         capability set or input does not match.
+
+        ``safe_mode`` (CLI ``--safe``) escalates every mutating or externally
+        visible capability from ALLOW to ASK, so read-only analysis runs freely
+        while writes, shell commands, network calls and deployments need an
+        explicit human approval.
         """
         t0 = time.perf_counter()
         audit_id = str(uuid.uuid4())
@@ -297,7 +303,9 @@ class ExecutionRuntime:
                                 f"Skill lifecycle state '{lifecycle}' (enabled={entry.enabled}) does not permit execution")
 
         # ── 3. Capability policy, approval, SSRF & caller permissions ────────
-        pol_eval = self.policy_engine.evaluate_skill(skill, declared_tools=active_tools)
+        pol_eval = self.policy_engine.evaluate_skill(
+            skill, declared_tools=active_tools, safe_mode=safe_mode,
+        )
         if pol_eval.overall_verdict == PolicyVerdict.DENY:
             reasons_str = "; ".join(pol_eval.reasons) or "Restricted by capability security policy"
             return self._refuse("blocked", skill, t0, audit_id, session_id, "DENY",
@@ -335,6 +343,8 @@ class ExecutionRuntime:
             for tool_name in active_tools
         ]
         gates = ["revocation_check", "lifecycle_state", "security_policy", "ssrf_check", "caller_permissions"]
+        if safe_mode:
+            gates.append("safe_mode_escalation")
         if approved_by:
             gates.append("human_approval")
         verification: Dict[str, Any] = {
@@ -496,10 +506,12 @@ class ExecutionRuntime:
         skill: str,
         input: Optional[Dict[str, Any]] = None,
         permissions: Optional[Dict[str, str]] = None,
+        safe_mode: bool = False,
     ) -> Dict[str, Any]:
         """Evaluate every gate for ``skill`` without executing anything."""
-        res = self.execute(skill=skill, input=input, permissions=permissions, dry_run=True)
-        policy_eval = self.policy_engine.evaluate_skill(skill)
+        res = self.execute(skill=skill, input=input, permissions=permissions, dry_run=True,
+                           safe_mode=safe_mode)
+        policy_eval = self.policy_engine.evaluate_skill(skill, safe_mode=safe_mode)
         return {
             "skill": skill,
             "simulation_status": "would_succeed" if res.status == "simulated" else (

@@ -1,0 +1,868 @@
+{
+  "servers": {
+    "ableton": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "ableton-mcp"
+      ]
+    },
+    "airtable": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "airtable-mcp-server@latest"
+      ]
+    },
+    "apify": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server@latest"
+      ]
+    },
+    "atlassian": {
+      "type": "http",
+      "url": "https://mcp.atlassian.com/v1/sse"
+    },
+    "autocad": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "autocad-mcp"
+      ]
+    },
+    "aws": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "awslabs.core-mcp-server@latest"
+      ]
+    },
+    "aws-docs": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "awslabs.aws-documentation-mcp-server@latest"
+      ]
+    },
+    "azure": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@azure/mcp",
+        "server",
+        "start"
+      ]
+    },
+    "bigquery": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@ergut/mcp-bigquery-server",
+        "--project",
+        "${BIGQUERY_PROJECT}",
+        "--location",
+        "${BIGQUERY_LOCATION}"
+      ]
+    },
+    "blender": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "blender-mcp"
+      ]
+    },
+    "brave-search": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-brave-search"
+      ]
+    },
+    "browserbase": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@browserbasehq/mcp"
+      ]
+    },
+    "chroma": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "chroma-mcp"
+      ]
+    },
+    "chrome-devtools": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "chrome-devtools-mcp@latest"
+      ]
+    },
+    "circleci": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@circleci/mcp-server-circleci@latest"
+      ]
+    },
+    "clickhouse": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "mcp-clickhouse"
+      ]
+    },
+    "clickup": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@taazkareem/clickup-mcp-server@latest"
+      ]
+    },
+    "cloudflare": {
+      "type": "http",
+      "url": "https://observability.mcp.cloudflare.com/mcp"
+    },
+    "code-sandbox": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "e2b-mcp-server"
+      ]
+    },
+    "confluence": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-confluence"
+      ]
+    },
+    "context7": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@upstash/context7-mcp"
+      ]
+    },
+    "davinci-resolve": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "davinci-resolve-mcp"
+      ]
+    },
+    "desktop-commander": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@wonderwhy-er/desktop-commander@latest"
+      ]
+    },
+    "digitalocean": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@digitalocean/mcp@latest"
+      ]
+    },
+    "discord": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "discord-mcp"
+      ]
+    },
+    "docker": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "docker-mcp"
+      ]
+    },
+    "duckdb": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "mcp-server-motherduck",
+        "--db-path",
+        "${DUCKDB_PATH}"
+      ]
+    },
+    "e2b": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@e2b/mcp-server@latest"
+      ]
+    },
+    "elasticsearch": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@elastic/mcp-server-elasticsearch"
+      ]
+    },
+    "elevenlabs": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "elevenlabs-mcp"
+      ]
+    },
+    "everything": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-everything"
+      ]
+    },
+    "exa": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "exa-mcp-server"
+      ]
+    },
+    "fetch": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "mcp-server-fetch"
+      ]
+    },
+    "fetch-docs": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-docs-server"
+      ]
+    },
+    "figma": {
+      "type": "http",
+      "url": "https://mcp.figma.com/mcp"
+    },
+    "filesystem": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem@0.6.2",
+        "."
+      ]
+    },
+    "firebase": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "firebase-tools",
+        "experimental:mcp"
+      ]
+    },
+    "firecrawl": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "firecrawl-mcp"
+      ]
+    },
+    "freecad": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "freecad-mcp"
+      ]
+    },
+    "gdal": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "--from",
+        "gdal-mcp",
+        "gdal",
+        "--transport",
+        "stdio"
+      ]
+    },
+    "geoserver": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "geoserver-mcp"
+      ]
+    },
+    "git": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "mcp-server-git",
+        "--repository",
+        "."
+      ]
+    },
+    "github": {
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "headers": {
+        "Authorization": "Bearer ${GITHUB_PERSONAL_ACCESS_TOKEN}"
+      }
+    },
+    "gitlab": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@zereight/mcp-gitlab"
+      ]
+    },
+    "gmail": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@gongrzhe/server-gmail-autoauth-mcp"
+      ]
+    },
+    "google-calendar": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@cocal/google-calendar-mcp@latest"
+      ]
+    },
+    "google-cloud-run": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "cloud-run-mcp@latest"
+      ]
+    },
+    "google-drive": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-gdrive"
+      ]
+    },
+    "google-maps": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-google-maps"
+      ]
+    },
+    "google-sheets": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "mcp-google-sheets"
+      ]
+    },
+    "grafana": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "mcp-grafana"
+      ]
+    },
+    "grasshopper": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "grasshopper-mcp"
+      ]
+    },
+    "heroku": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@heroku/mcp-server@latest"
+      ]
+    },
+    "hubspot": {
+      "type": "http",
+      "url": "https://mcp.hubspot.com"
+    },
+    "huggingface": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@huggingface/mcp-server"
+      ]
+    },
+    "ifc": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "ifc-mcp"
+      ]
+    },
+    "inkscape": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "inkscape-mcp"
+      ]
+    },
+    "jira": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-jira"
+      ]
+    },
+    "kicad": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "kicad-mcp"
+      ]
+    },
+    "kubernetes": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-server-kubernetes"
+      ]
+    },
+    "linear": {
+      "type": "http",
+      "url": "https://mcp.linear.app/mcp"
+    },
+    "mapbox": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@mapbox/mcp-server"
+      ]
+    },
+    "memory": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ]
+    },
+    "meshy": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "meshy-mcp-server"
+      ]
+    },
+    "microsoft-learn": {
+      "type": "http",
+      "url": "https://learn.microsoft.com/api/mcp"
+    },
+    "mongodb": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "mongodb-mcp-server"
+      ]
+    },
+    "mysql": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "mysql-mcp-server"
+      ]
+    },
+    "n8n": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "n8n-mcp@latest"
+      ]
+    },
+    "neo4j": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "mcp-neo4j-cypher"
+      ]
+    },
+    "neon": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@neondatabase/mcp-server-neon",
+        "start",
+        "${NEON_API_KEY}"
+      ]
+    },
+    "netlify": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@netlify/mcp@latest"
+      ]
+    },
+    "notion": {
+      "type": "http",
+      "url": "https://mcp.notion.com/mcp"
+    },
+    "obsidian": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-obsidian"
+      ]
+    },
+    "openai-docs": {
+      "type": "http",
+      "url": "https://developers.openai.com/mcp"
+    },
+    "openapi": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "openapi-mcp-server",
+        "${OPENAPI_SPEC_PATH}"
+      ]
+    },
+    "openscad": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "openscad-mcp"
+      ]
+    },
+    "paypal": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@paypal/mcp@latest"
+      ]
+    },
+    "perplexity": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "perplexity-mcp"
+      ]
+    },
+    "pinecone": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@pinecone-database/mcp@latest"
+      ]
+    },
+    "playwright": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@playwright/mcp@latest"
+      ]
+    },
+    "postgres": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-postgres",
+        "${POSTGRES_URL}"
+      ]
+    },
+    "postman": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@postman/postman-mcp-server@latest"
+      ]
+    },
+    "pulumi": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@pulumi/mcp-server@latest"
+      ]
+    },
+    "puppeteer": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-puppeteer"
+      ]
+    },
+    "qdrant": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "mcp-server-qdrant"
+      ]
+    },
+    "qgis": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "qgis-mcp@latest"
+      ]
+    },
+    "railway": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@railway/mcp-server"
+      ]
+    },
+    "redis": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-redis",
+        "${REDIS_URL}"
+      ]
+    },
+    "remote-fs": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-ssh-manager"
+      ]
+    },
+    "resend": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "resend-mcp@latest"
+      ]
+    },
+    "revit": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "revit-mcp"
+      ]
+    },
+    "salesforce": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@salesforce/mcp"
+      ]
+    },
+    "semgrep": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "semgrep-mcp"
+      ]
+    },
+    "sentry": {
+      "type": "http",
+      "url": "https://mcp.sentry.dev/mcp"
+    },
+    "sequential-thinking": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ]
+    },
+    "shopify": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@shopify/dev-mcp@latest"
+      ]
+    },
+    "sketchfab": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "sketchfab-mcp-server"
+      ]
+    },
+    "slack": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-slack"
+      ]
+    },
+    "snowflake": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "mcp-server-snowflake"
+      ]
+    },
+    "snyk": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "snyk-mcp"
+      ]
+    },
+    "sonarqube": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "sonarqube-mcp-server@latest"
+      ]
+    },
+    "spotify": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-spotify"
+      ]
+    },
+    "sqlite": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "mcp-server-sqlite",
+        "--db-path",
+        "${SQLITE_PATH}"
+      ]
+    },
+    "stripe": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@stripe/mcp",
+        "--api-key",
+        "${STRIPE_SECRET_KEY}"
+      ]
+    },
+    "supabase": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@supabase/mcp-server-supabase@latest",
+        "--access-token",
+        "${SUPABASE_ACCESS_TOKEN}"
+      ]
+    },
+    "tavily": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "tavily-mcp"
+      ]
+    },
+    "terraform": {
+      "type": "stdio",
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "hashicorp/terraform-mcp-server"
+      ]
+    },
+    "time": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "mcp-server-time"
+      ]
+    },
+    "todoist": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@abhiz123/todoist-mcp-server@latest"
+      ]
+    },
+    "trello": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@delorenj/mcp-server-trello@latest"
+      ]
+    },
+    "twilio": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@twilio-alpha/mcp",
+        "${TWILIO_ACCOUNT_SID}/${TWILIO_API_KEY}/${TWILIO_API_SECRET}"
+      ]
+    },
+    "vercel": {
+      "type": "http",
+      "url": "https://mcp.vercel.com"
+    },
+    "youtube": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@sinco-lab/mcp-youtube",
+        "--stdio"
+      ]
+    }
+  }
+}

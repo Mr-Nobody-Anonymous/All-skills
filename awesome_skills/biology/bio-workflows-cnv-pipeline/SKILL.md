@@ -1,6 +1,7 @@
 ---
 name: bio-workflows-cnv-pipeline
-description: Orchestrates the copy-number pipeline from BAM to segmented, integer-called, annotated CNVs, forking on germline-vs-somatic - CNVkit (somatic exome/panel: coverage -> assay-matched reference/PoN -> fix -> segment -> purity/ploidy-aware call), GATK gCNV (germline rare-CNV cohort), and allele-specific callers (ASCAT/FACETS/PURPLE) for purity/ploidy. Use when committing the build + target/access BED + PoN once (assay-matched), building the reference from normals BEFORE segmenting, fitting purity/ploidy BEFORE integer calls in tumors, centering on the true (non-diploid) mode before GISTIC2 recurrence, or routing cfDNA to ichorCNA. Hands mechanism to the copy-number component skills; not a re-teach of any single step.
+description: >-
+  Orchestrates the copy-number pipeline from BAM to segmented, integer-called, annotated CNVs, forking on germline-vs-somatic - CNVkit (somatic exome/panel: coverage -> assay-matched reference/PoN -> fix -> segment -> purity/ploidy-aware call), GATK gCNV (germline rare-CNV cohort), and allele-specific callers (ASCAT/FACETS/PURPLE) for purity/ploidy. Use when committing the build + target/access BED + PoN once (assay-matched), building the reference from normals BEFORE segmenting, fitting purity/ploidy BEFORE integer calls in tumors, centering on the true (non-diploid) mode before GISTIC2 recurrence, or routing cfDNA to ichorCNA. Hands mechanism to the copy-number component skills; not a re-teach of any single step.
 tool_type: mixed
 primary_tool: CNVkit
 goal_approach_exempt: true
@@ -24,7 +25,6 @@ source_path: "workflows/cnv-pipeline/SKILL.md"
 license: "MIT"
 imported_at: "2026-09-20"
 ---
-
 ## Version Compatibility
 
 Reference examples tested with: CNVkit 0.9.10+, GATK 4.5+ (gCNV / ModelSegments), ASCAT/FACETS/PURPLE (allele-specific), GISTIC2 2.0.23 (recurrent), ichorCNA 0.5+ (cfDNA)

@@ -178,6 +178,50 @@ class TestExecutionRuntime(unittest.TestCase):
         self.assertEqual(d["audit_id"], "abc-123")
         self.assertEqual(d["outputs"]["out"], 1)
 
+    # ── Safe mode (--safe) ──────────────────────────────────────────────────
+
+    def test_safe_mode_escalates_mutating_capability_to_approval(self):
+        """`--safe` turns an ALLOWed shell capability into a human-approval gate."""
+        result = self.runtime.execute(
+            skill="development.code-review", tools=["bash"], safe_mode=True,
+        )
+        self.assertEqual(result.status, "approval_required")
+        self.assertIsNotNone(result.approval_request)
+        self.assertIn("shell.execute", result.error or "")
+        self.assertIn("shell.execute", result.approval_request["capabilities"])
+        self.assertTrue(any("Safe mode" in r for r in result.approval_request["reasons"]))
+
+    def test_safe_mode_does_not_block_read_only_analysis(self):
+        """Read-only capabilities keep running freely under `--safe`."""
+        result = self.runtime.execute(
+            skill="development.code-review", tools=["file_read"], dry_run=True, safe_mode=True,
+        )
+        self.assertEqual(result.status, "simulated")
+        self.assertEqual(result.verification["policy_verdict"], "ALLOW")
+        self.assertIn("safe_mode_escalation", result.verification["gates_passed"])
+
+    def test_safe_mode_accepts_explicit_approval(self):
+        """A matching approval id lets a safe-mode run proceed."""
+        first = self.runtime.execute(
+            skill="development.code-review", tools=["bash"], safe_mode=True,
+        )
+        request_id = first.approval_request["request_id"]
+        approved = self.runtime.execute(
+            skill="development.code-review", tools=["bash"], safe_mode=True, dry_run=True,
+            approval={"request_id": request_id, "approved_by": "maintainer"},
+        )
+        self.assertEqual(approved.status, "simulated")
+        self.assertEqual(approved.verification["approved_by"], "maintainer")
+
+    def test_safe_mode_never_relaxes_a_deny(self):
+        """Safe mode may only make policy stricter, never more permissive."""
+        from skills.policy import PolicyVerdict, RiskLevel, apply_safe_mode
+
+        self.assertEqual(apply_safe_mode(PolicyVerdict.DENY, RiskLevel.CRITICAL), PolicyVerdict.DENY)
+        self.assertEqual(apply_safe_mode(PolicyVerdict.ASK, RiskLevel.HIGH_RISK), PolicyVerdict.ASK)
+        self.assertEqual(apply_safe_mode(PolicyVerdict.ALLOW, RiskLevel.SAFE), PolicyVerdict.ALLOW)
+        self.assertEqual(apply_safe_mode(PolicyVerdict.ALLOW, RiskLevel.MEDIUM_RISK), PolicyVerdict.ASK)
+
 
 if __name__ == "__main__":
     unittest.main()

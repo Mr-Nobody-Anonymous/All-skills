@@ -1,4 +1,5 @@
----name: analytics-tracking
+---
+name: analytics-tracking
 description: >
   Design, audit, and improve analytics tracking systems that produce reliable,
   decision-ready data. Use when the user wants to set up, fix, or evaluate

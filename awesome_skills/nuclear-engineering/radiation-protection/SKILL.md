@@ -1,6 +1,7 @@
 ---
 name: radiation-protection
-description: "Health Physics & Radiological Shielding: ALARA principles, linear no-threshold (LNT) models, point-kernel gamma/neutron attenuation ($I = I_0 e^{-\mu x}$), and dosimetry."
+description: >-
+  Health Physics & Radiological Shielding: ALARA principles, linear no-threshold (LNT) models, point-kernel gamma/neutron attenuation ($I = I_0 e^{-\mu x}$), and dosimetry.
 category: nuclear-engineering
 domain: nuclear-engineering
 subdomain: engineering
@@ -15,7 +16,6 @@ platforms:
   - antigravity
   - copilot
 ---
-
 # Health Physics & Radiological Shielding
 
 ALARA principles, linear no-threshold (LNT) models, point-kernel gamma/neutron attenuation ($I = I_0 e^{-\mu x}$), and dosimetry.

@@ -1,6 +1,7 @@
 ---
 name: priv-differential-privacy-gdpr-dpia
-description: "Quantify privacy loss with $(\epsilon, \delta)$-differential privacy mechanisms and perform rigorous General Data Protection Regulation Data Protection Impact Assessments."
+description: >-
+  Quantify privacy loss with $(\epsilon, \delta)$-differential privacy mechanisms and perform rigorous General Data Protection Regulation Data Protection Impact Assessments.
 category: privacy
 author: AAS Platform
 version: 1.0.0
@@ -15,7 +16,6 @@ tags:
   - compliance
   - data-protection
 ---
-
 # Differential Privacy Epsilon Budgeting and GDPR DPIA Auditing
 
 ## Overview & Core Principles

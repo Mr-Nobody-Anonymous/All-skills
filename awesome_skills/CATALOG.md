@@ -1,6 +1,6 @@
 # 📚 Awesome Skills Catalog
 
-Complete categorized index of **14,855 Agent Skills** across **251 domain categories**.
+Complete categorized index of **15,146 Agent Skills** across **252 domain categories**.
 
 Every skill contains a standardized, load-on-demand `SKILL.md` instruction playbook with YAML frontmatter, compatible across Claude Code, Cursor, Codex CLI, Antigravity, and Gemini CLI.
 
@@ -90,6 +90,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 - [Documents](#documents) (2 skills)
 - [E Learning](#e-learning) (14 skills)
 - [Earth Science](#earth-science) (18 skills)
+- [Ecc](#ecc) (291 skills)
 - [Ecommerce](#ecommerce) (145 skills)
 - [Economics](#economics) (21 skills)
 - [Education](#education) (157 skills)
@@ -258,7 +259,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 - [Wellness](#wellness) (100 skills)
 - [Writing](#writing) (19 skills)
 
-*Total skills indexed: 14,855 across 251 categories*
+*Total skills indexed: 15,146 across 252 categories*
 
 ---
 
@@ -2751,7 +2752,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [bio-long-read-sequencing-long-read-qc](biology/bio-long-read-sequencing-long-read-qc/SKILL.md) | `bio-long-read-sequencing-long-read-qc` | `low` | Assesses Oxford Nanopore and PacBio long-read quality with NanoPlot, cramino, NanoComp, pycoQC/toulligQC, and seqkit, and filte... |
 | [bio-long-read-sequencing-nanopore-methylation](biology/bio-long-read-sequencing-nanopore-methylation/SKILL.md) | `bio-long-read-sequencing-nanopore-methylation` | `low` | Calls DNA base modifications (5mC, 5hmC, 6mA, 4mC) directly from Oxford Nanopore and PacBio HiFi long reads encoded as MM/ML SA... |
 | [bio-long-read-sequencing-structural-variants](biology/bio-long-read-sequencing-structural-variants/SKILL.md) | `bio-long-read-sequencing-structural-variants` | `low` | Detects structural variants (deletions, insertions, inversions, duplications, translocations) from Oxford Nanopore and PacBio l... |
-| [bio-long-read-splicing](biology/bio-long-read-splicing/SKILL.md) | `bio-long-read-splicing` | `low` | Analyzes alternative splicing from PacBio Iso-Seq (HiFi, Kinnex/MAS-Iso-seq) and Oxford Nanopore (direct cDNA, direct RNA, R10.... |
+| [bio-long-read-splicing](biology/bio-long-read-splicing/SKILL.md) | `bio-long-read-splicing` | `low` | Specialized instructions for bio long read splicing. |
 | [bio-longitudinal-monitoring](biology/bio-longitudinal-monitoring/SKILL.md) | `bio-longitudinal-monitoring` | `low` | Tracks ctDNA across serial liquid-biopsy timepoints for molecular residual disease (MRD) and treatment-response monitoring, tre... |
 | [bio-machine-learning-atlas-mapping](biology/bio-machine-learning-atlas-mapping/SKILL.md) | `bio-machine-learning-atlas-mapping` | `low` | Maps query single-cell data onto reference atlases and transfers cell-type labels using scArches surgery (scVI/scANVI), Symphon... |
 | [bio-machine-learning-biomarker-discovery](biology/bio-machine-learning-biomarker-discovery/SKILL.md) | `bio-machine-learning-biomarker-discovery` | `low` | Selects biomarker features from high-dimensional omics data using Boruta all-relevant selection, mRMR, LASSO/elastic-net, and s... |
@@ -2777,21 +2778,21 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [bio-metagenomics-strain-tracking](biology/bio-metagenomics-strain-tracking/SKILL.md) | `bio-metagenomics-strain-tracking` | `low` | Resolves and compares bacterial strains below the species level from shotgun metagenomes with inStrain (popANI/conANI microdive... |
 | [bio-metagenomics-visualization](biology/bio-metagenomics-visualization/SKILL.md) | `bio-metagenomics-visualization` | `low` | Turns a shotgun profiler table (MetaPhlAn relative abundance, Bracken counts, HUMAnN function tables) into honest figures and d... |
 | [bio-methylation-array-preprocessing](biology/bio-methylation-array-preprocessing/SKILL.md) | `bio-methylation-array-preprocessing` | `low` | Turns raw Illumina Infinium methylation BeadChip IDATs (450K, EPIC, EPICv2) into a defensible beta/M matrix with sesame (openSe... |
-| [bio-methylation-array-qc-filtering](biology/bio-methylation-array-qc-filtering/SKILL.md) | `bio-methylation-array-qc-filtering` | `low` | Performs probe filtering and sample-level QC on Illumina Infinium methylation arrays (450K / EPIC / EPICv2) to decide which pro... |
+| [bio-methylation-array-qc-filtering](biology/bio-methylation-array-qc-filtering/SKILL.md) | `bio-methylation-array-qc-filtering` | `low` | Specialized instructions for bio methylation array qc filtering. |
 | [bio-methylation-based-detection](biology/bio-methylation-based-detection/SKILL.md) | `bio-methylation-based-detection` | `low` | Detects cancer and infers tissue-of-origin from cfDNA methylation by choosing conversion chemistry (bisulfite vs EM-seq vs TAPS... |
 | [bio-methylation-bismark-alignment](biology/bio-methylation-bismark-alignment/SKILL.md) | `bio-methylation-bismark-alignment` | `low` | Aligns bisulfite-converted (WGBS, RRBS, PBAT) and enzymatic (EM-seq) short reads to an in-silico C->T/G->A-converted reference ... |
 | [bio-methylation-calling](biology/bio-methylation-calling/SKILL.md) | `bio-methylation-calling` | `low` | Extracts per-cytosine methylation calls from aligned bisulfite/EM-seq reads with bismark_methylation_extractor (Bismark BAM) or... |
 | [bio-methylation-cell-type-deconvolution](biology/bio-methylation-cell-type-deconvolution/SKILL.md) | `bio-methylation-cell-type-deconvolution` | `low` | Estimates cell-type composition from bulk DNA methylation and uses it to defuse the single biggest EWAS confounder. Covers refe... |
 | [bio-methylation-differential-cpg](biology/bio-methylation-differential-cpg/SKILL.md) | `bio-methylation-differential-cpg` | `low` | Tests individual CpG sites for differential methylation (DMC/DMP) from bisulfite sequencing counts or array/continuous beta-val... |
 | [bio-methylation-dmr-detection](biology/bio-methylation-dmr-detection/SKILL.md) | `bio-methylation-dmr-detection` | `low` | Detects differentially methylated regions (DMRs) from short-read bisulfite (WGBS/RRBS), array, and long-read methylation count ... |
-| [bio-methylation-epigenetic-clocks](biology/bio-methylation-epigenetic-clocks/SKILL.md) | `bio-methylation-epigenetic-clocks` | `low` | Computes DNA methylation age (DNAm age) and pace of aging by applying frozen elastic-net epigenetic clocks to a clean beta matr... |
-| [bio-methylation-methylkit](biology/bio-methylation-methylkit/SKILL.md) | `bio-methylation-methylkit` | `low` | Imports Bismark coverage or cytosine-report files into the methylKit object model, then runs the import-to-results spine - filt... |
+| [bio-methylation-epigenetic-clocks](biology/bio-methylation-epigenetic-clocks/SKILL.md) | `bio-methylation-epigenetic-clocks` | `low` | Specialized instructions for bio methylation epigenetic clocks. |
+| [bio-methylation-methylkit](biology/bio-methylation-methylkit/SKILL.md) | `bio-methylation-methylkit` | `low` | Specialized instructions for bio methylation methylkit. |
 | [bio-microbiome-amplicon-processing](biology/bio-microbiome-amplicon-processing/SKILL.md) | `bio-microbiome-amplicon-processing` | `low` | Infers exact amplicon sequence variants (ASVs) from demultiplexed 16S rRNA or ITS amplicon FASTQ with DADA2 - removing primers ... |
 | [bio-microbiome-differential-abundance](biology/bio-microbiome-differential-abundance/SKILL.md) | `bio-microbiome-differential-abundance` | `low` | Tests which individual taxa differ between groups on an amplicon ASV/feature table (phyloseq) using compositionally-aware metho... |
 | [bio-microbiome-diversity-analysis](biology/bio-microbiome-diversity-analysis/SKILL.md) | `bio-microbiome-diversity-analysis` | `low` | Alpha and beta diversity of an amplicon (16S/ITS) ASV/OTU community table - observed features, Shannon, Pielou evenness, Faith ... |
 | [bio-microbiome-functional-prediction](biology/bio-microbiome-functional-prediction/SKILL.md) | `bio-microbiome-functional-prediction` | `low` | Predicts community functional POTENTIAL from 16S/ITS amplicon ASVs with PICRUSt2 (or q2-picrust2) by phylogenetic interpolation... |
 | [bio-microbiome-qiime2-workflow](biology/bio-microbiome-qiime2-workflow/SKILL.md) | `bio-microbiome-qiime2-workflow` | `low` | Operates the QIIME2 framework as the glue for an amplicon analysis - the .qza/.qzv artifact model, semantic types (FeatureTable... |
-| [bio-ml-docking-rescoring](biology/bio-ml-docking-rescoring/SKILL.md) | `bio-ml-docking-rescoring` | `low` | Performs ML-based protein-ligand pose prediction and scoring using DiffDock-L (diffusion-based), Boltz-1 / Boltz-2 (foundation ... |
+| [bio-ml-docking-rescoring](biology/bio-ml-docking-rescoring/SKILL.md) | `bio-ml-docking-rescoring` | `low` | Specialized instructions for bio ml docking rescoring. |
 | [bio-molecular-descriptors](biology/bio-molecular-descriptors/SKILL.md) | `bio-molecular-descriptors` | `low` | Calculates molecular fingerprints (ECFP/Morgan, FCFP, MACCS, RDKit, AtomPair, TopologicalTorsion, Avalon, MAP4, MHFP6) and phys... |
 | [bio-molecular-io](biology/bio-molecular-io/SKILL.md) | `bio-molecular-io` | `low` | Reads, writes, and converts molecular file formats (SMILES, InChI, SDF V2000/V3000, MOL2, PDB, and BinaryCIF) using RDKit and O... |
 | [bio-molecular-standardization](biology/bio-molecular-standardization/SKILL.md) | `bio-molecular-standardization` | `low` | Standardizes molecular structures using the ChEMBL structure pipeline for normalization and parent selection plus RDKit rdMolSt... |
@@ -2824,12 +2825,12 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [bio-phylo-tree-manipulation](biology/bio-phylo-tree-manipulation/SKILL.md) | `bio-phylo-tree-manipulation` | `low` | Edit phylogenetic tree structure with Biopython Bio.Phylo, and treat rooting as a separate statistical inference rather than a ... |
 | [bio-phylo-tree-visualization](biology/bio-phylo-tree-visualization/SKILL.md) | `bio-phylo-tree-visualization` | `low` | Draw and export phylogenetic trees with Bio.Phylo plus matplotlib, and route rich figures to ggtree, ETE4, or iTOL. Covers why ... |
 | [bio-pileup-generation](biology/bio-pileup-generation/SKILL.md) | `bio-pileup-generation` | `low` | Generate pileup data for variant calling using samtools mpileup and pysam. Use when preparing data for variant calling, analyzi... |
-| [bio-population-genetics-association-testing](biology/bio-population-genetics-association-testing/SKILL.md) | `bio-population-genetics-association-testing` | `low` | Single-variant common-variant GWAS with plink2 --glm (linear/logistic, Firth) and the linear mixed models GEMMA, BOLT-LMM, SAIG... |
+| [bio-population-genetics-association-testing](biology/bio-population-genetics-association-testing/SKILL.md) | `bio-population-genetics-association-testing` | `low` | Specialized instructions for bio population genetics association testing. |
 | [bio-population-genetics-linkage-disequilibrium](biology/bio-population-genetics-linkage-disequilibrium/SKILL.md) | `bio-population-genetics-linkage-disequilibrium` | `low` | Computes linkage disequilibrium (r2, D', composite Rogers-Huff r2), prunes correlated variants, clumps GWAS summary statistics ... |
-| [bio-population-genetics-plink-basics](biology/bio-population-genetics-plink-basics/SKILL.md) | `bio-population-genetics-plink-basics` | `low` | Manages PLINK genotype filesets - format conversion (VCF, BED/BIM/FAM, PED/MAP, pgen/pvar/psam) and sample/variant QC (missingn... |
-| [bio-population-genetics-population-structure](biology/bio-population-genetics-population-structure/SKILL.md) | `bio-population-genetics-population-structure` | `low` | Infers and describes population structure with PCA (plink2 --pca, smartpca/EIGENSOFT, FlashPCA2), model-based clustering (ADMIX... |
+| [bio-population-genetics-plink-basics](biology/bio-population-genetics-plink-basics/SKILL.md) | `bio-population-genetics-plink-basics` | `low` | Specialized instructions for bio population genetics plink basics. |
+| [bio-population-genetics-population-structure](biology/bio-population-genetics-population-structure/SKILL.md) | `bio-population-genetics-population-structure` | `low` | Specialized instructions for bio population genetics population structure. |
 | [bio-population-genetics-rare-variant-association](biology/bio-population-genetics-rare-variant-association/SKILL.md) | `bio-population-genetics-rare-variant-association` | `low` | Gene and region-based rare-variant aggregation - burden/collapsing, SKAT, SKAT-O, ACAT-V/ACAT-O, annotation-weighted STAAR - wi... |
-| [bio-population-genetics-scikit-allel-analysis](biology/bio-population-genetics-scikit-allel-analysis/SKILL.md) | `bio-population-genetics-scikit-allel-analysis` | `low` | In-memory Python population genetics with scikit-allel - GenotypeArray/HaplotypeArray/AlleleCountsArray, diversity (pi, theta, ... |
+| [bio-population-genetics-scikit-allel-analysis](biology/bio-population-genetics-scikit-allel-analysis/SKILL.md) | `bio-population-genetics-scikit-allel-analysis` | `low` | Specialized instructions for bio population genetics scikit allel analysis. |
 | [bio-population-genetics-selection-statistics](biology/bio-population-genetics-selection-statistics/SKILL.md) | `bio-population-genetics-selection-statistics` | `low` | Scans genomes for natural selection with SFS tests (Tajima's D, Fay & Wu H, Zeng E, SweepFinder2 CLR), haplotype tests (iHS, nS... |
 | [bio-pose-validation](biology/bio-pose-validation/SKILL.md) | `bio-pose-validation` | `low` | Validates docked / generated protein-ligand poses using PoseBusters physical-validity tests, strain energy quantification, geom... |
 | [bio-protac-degraders](biology/bio-protac-degraders/SKILL.md) | `bio-protac-degraders` | `low` | Designs PROTACs, molecular glues, and bivalent degraders with explicit handling of E3 ligase choice (VHL, CRBN, IAP, MDM2, KEAP... |
@@ -2953,7 +2954,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [bio-systems-biology-model-curation](biology/bio-systems-biology-model-curation/SKILL.md) | `bio-systems-biology-model-curation` | `low` | Validates, gap-fills, and standardizes genome-scale metabolic models using memote for consistency and annotation scoring and CO... |
 | [bio-systems-biology-strain-design](biology/bio-systems-biology-strain-design/SKILL.md) | `bio-systems-biology-strain-design` | `low` | Computes metabolic-engineering strain designs on genome-scale models with StrainDesign (OptKnock, RobustKnock, minimal cut sets... |
 | [bio-tcr-bcr-analysis-immcantation-analysis](biology/bio-tcr-bcr-analysis-immcantation-analysis/SKILL.md) | `bio-tcr-bcr-analysis-immcantation-analysis` | `low` | Reconstructs B-cell clonal families, quantifies somatic hypermutation and selection, and builds antibody lineage trees with the... |
-| [bio-tcr-bcr-analysis-mixcr-analysis](biology/bio-tcr-bcr-analysis-mixcr-analysis/SKILL.md) | `bio-tcr-bcr-analysis-mixcr-analysis` | `low` | Align V(D)J reads and assemble TCR/BCR clonotypes with MiXCR, driven by a chemistry-matched preset. Use when choosing/auditing ... |
+| [bio-tcr-bcr-analysis-mixcr-analysis](biology/bio-tcr-bcr-analysis-mixcr-analysis/SKILL.md) | `bio-tcr-bcr-analysis-mixcr-analysis` | `low` | Specialized instructions for bio tcr bcr analysis mixcr analysis. |
 | [bio-tcr-bcr-analysis-repertoire-visualization](biology/bio-tcr-bcr-analysis-repertoire-visualization/SKILL.md) | `bio-tcr-bcr-analysis-repertoire-visualization` | `low` | Draws TCR/BCR repertoire figures - V-J chord/circos, CDR3 spectratype, clonal-space stratification, clonal tracking across time... |
 | [bio-tcr-bcr-analysis-scirpy-analysis](biology/bio-tcr-bcr-analysis-scirpy-analysis/SKILL.md) | `bio-tcr-bcr-analysis-scirpy-analysis` | `low` | Integrates single-cell paired TCR/BCR (10x VDJ, AIRR, dandelion, BD Rhapsody) with gene expression in an AnnData/MuData object ... |
 | [bio-tcr-bcr-analysis-specificity-annotation](biology/bio-tcr-bcr-analysis-specificity-annotation/SKILL.md) | `bio-tcr-bcr-analysis-specificity-annotation` | `low` | Maps TCR/BCR receptor sequences toward candidate antigen specificity and clusters repertoires by shared-specificity signal, whi... |
@@ -2963,9 +2964,9 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [bio-temporal-genomics-periodicity-detection](biology/bio-temporal-genomics-periodicity-detection/SKILL.md) | `bio-temporal-genomics-periodicity-detection` | `low` | Discovers a periodic signal of UNKNOWN period in time-series omics data and puts a defensible significance on it, especially wh... |
 | [bio-temporal-genomics-temporal-clustering](biology/bio-temporal-genomics-temporal-clustering/SKILL.md) | `bio-temporal-genomics-temporal-clustering` | `low` | Clusters temporally variable genes by expression-profile SHAPE (not significance) using Mfuzz fuzzy c-means, TCseq, DEGreport d... |
 | [bio-temporal-genomics-temporal-grn](biology/bio-temporal-genomics-temporal-grn/SKILL.md) | `bio-temporal-genomics-temporal-grn` | `low` | Infers directed, time-delayed gene regulatory edges from BULK time-series expression using Granger causality (statsmodels VAR F... |
-| [bio-temporal-genomics-trajectory-modeling](biology/bio-temporal-genomics-trajectory-modeling/SKILL.md) | `bio-temporal-genomics-trajectory-modeling` | `low` | Models continuous temporal trajectories from BULK or time-resolved omics where the x-axis is measured experimental time: penali... |
+| [bio-temporal-genomics-trajectory-modeling](biology/bio-temporal-genomics-trajectory-modeling/SKILL.md) | `bio-temporal-genomics-trajectory-modeling` | `low` | Specialized instructions for bio temporal genomics trajectory modeling. |
 | [bio-transcription-translation](biology/bio-transcription-translation/SKILL.md) | `bio-transcription-translation` | `low` | Transcribe DNA to RNA and translate to protein using Biopython, with NCBI codon-table selection, CDS validation, and six-frame ... |
-| [bio-tumor-fraction-estimation](biology/bio-tumor-fraction-estimation/SKILL.md) | `bio-tumor-fraction-estimation` | `low` | Estimates tumor fraction (the genome-wide proportion of cfDNA molecules that are tumor-derived, the cfDNA analogue of bulk-tumo... |
+| [bio-tumor-fraction-estimation](biology/bio-tumor-fraction-estimation/SKILL.md) | `bio-tumor-fraction-estimation` | `low` | Specialized instructions for bio tumor fraction estimation. |
 | [bio-uniprot-access](biology/bio-uniprot-access/SKILL.md) | `bio-uniprot-access` | `low` | Query UniProt's REST API (post-2022 endpoint at rest.uniprot.org) for protein sequences, annotations, GO terms, cross-reference... |
 | [bio-variant-annotation](biology/bio-variant-annotation/SKILL.md) | `bio-variant-annotation` | `low` | Annotates VCF variants with functional consequences, population frequencies, and pathogenicity scores using bcftools annotate/c... |
 | [bio-variant-calling](biology/bio-variant-calling/SKILL.md) | `bio-variant-calling` | `low` | Call germline SNPs and indels from a BAM/CRAM with bcftools mpileup and call, and select the right calling engine for the job. ... |
@@ -3118,7 +3119,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [browser-harness](browser-automation/browser-harness/SKILL.md) | `browser-harness` | `critical` | Drive an existing browser through CDP for authenticated, visual, or interactive web automation. |
 | [browser-to-api](browser-automation/browser-to-api/SKILL.md) | `browser-to-api` | `low` | Turn a website's observable HTTP traffic into a best-effort OpenAPI 3.1 spec by analyzing a `browser-trace` capture. Use when t... |
 | [browser-trace](browser-automation/browser-trace/SKILL.md) | `browser-trace` | `low` | Capture a full DevTools-protocol trace of any browser automation — CDP firehose, screenshots, and DOM dumps — then bisect the s... |
-| [browser-use-to-stagehand](browser-automation/browser-use-to-stagehand/SKILL.md) | `browser-use-to-stagehand` | `low` | Migrate browser-use (Python) browser-automation scripts to Stagehand v3 (TypeScript) on Browserbase. Use when the user wants to... |
+| [browser-use-to-stagehand](browser-automation/browser-use-to-stagehand/SKILL.md) | `browser-use-to-stagehand` | `low` | Specialized instructions for browser use to stagehand. |
 | [company-research](browser-automation/company-research/SKILL.md) | `company-research` | `low` | Specialized instructions for company research. |
 | [competitor-analysis](browser-automation/competitor-analysis/SKILL.md) | `competitor-analysis` | `low` | Specialized instructions for competitor analysis. |
 | [cookie-sync](browser-automation/cookie-sync/SKILL.md) | `cookie-sync` | `low` | Sync cookies from local Chrome to a Browserbase persistent context so the browse CLI can access authenticated sites. Use when t... |
@@ -3930,7 +3931,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 | Skill ID | Name | Risk | Description |
 | :--- | :--- | :---: | :--- |
-| [algorithm-analysis](computer-science/algorithm-analysis/SKILL.md) | `algorithm-analysis` | `low` | Asymptotic Analysis & Amortized Complexity: Big-$O$, Big-$\Omega$, Big-$\Theta$ notations, master theorem for recurrences, amor... |
+| [algorithm-analysis](computer-science/algorithm-analysis/SKILL.md) | `algorithm-analysis` | `low` | Specialized instructions for algorithm analysis. |
 | [algorithms](computer-science/algorithms/SKILL.md) | `algorithms` | `low` | Fundamental & Advanced Algorithmic Paradigms: Divide and conquer, dynamic programming (memoization/tabulation), greedy approach... |
 | [automata-theory](computer-science/automata-theory/SKILL.md) | `automata-theory` | `low` | Formal Languages, Grammars & Computability: Deterministic and non-deterministic finite automata (DFA/NFA), regular expressions,... |
 | [competitive-programming](computer-science/competitive-programming/SKILL.md) | `competitive-programming` | `low` | High-Performance Competitive Problem Solving: Sub-second optimization, bitmask DP, segment trees with lazy propagation, Fenwick... |
@@ -5724,18 +5725,18 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | :--- | :--- | :---: | :--- |
 | [agents-generator](developer-tools/agents-generator/SKILL.md) | `agents-generator` | `critical` | Generate project-specific AGENTS.md and companion rules by analyzing a codebase. Supports full, minimal, update, and dry-run mo... |
 | [android-cli](developer-tools/android-cli/SKILL.md) | `android-cli` | `critical` | Orchestrates Android development tasks including project creation, deployment, SDK management, and environment diagnostics usin... |
-| [blocknote](developer-tools/blocknote/SKILL.md) | `blocknote` | `low` | Work with BlockNote, a block-based rich text editor for React. Use when the user mentions "blocknote", "BlockNote editor", "blo... |
+| [blocknote](developer-tools/blocknote/SKILL.md) | `blocknote` | `low` | Specialized instructions for blocknote. |
 | [clarvia-aeo-check](developer-tools/clarvia-aeo-check/SKILL.md) | `clarvia-aeo-check` | `safe` | Score any MCP server, API, or CLI for agent-readiness using Clarvia AEO (Agent Experience Optimization). Search 15,400+ indexed... |
 | [gh-attach](developer-tools/gh-attach/SKILL.md) | `gh-attach` | `critical` | Upload and download GitHub user-attachments (screenshots, PDFs, zips, videos) from the terminal; use when asked to attach or em... |
 | [gh-image](developer-tools/gh-image/SKILL.md) | `gh-image` | `critical` | Upload local images to GitHub and get canonical user-attachments embed URLs; use when asked to attach a screenshot to a PR, iss... |
-| [heavy-planner](developer-tools/heavy-planner/SKILL.md) | `heavy-planner` | `low` | Creates high-clarity product and technical specifications by interrogating requirements before planning. Use when the user asks... |
+| [heavy-planner](developer-tools/heavy-planner/SKILL.md) | `heavy-planner` | `low` | Specialized instructions for heavy planner. |
 | [mcp-tool-developer](developer-tools/mcp-tool-developer/SKILL.md) | `mcp-tool-developer` | `safe` | Build Model Context Protocol (MCP) servers and tools from scratch. Full-stack MCP development with TypeScript/Python, testing, ... |
-| [namecheap-domains](developer-tools/namecheap-domains/SKILL.md) | `namecheap-domains` | `low` | Manage domains through the Namecheap API — register, renew, transfer, configure DNS, and manage nameservers. Use when the user ... |
-| [sharp](developer-tools/sharp/SKILL.md) | `sharp` | `low` | Process images with the Sharp library for Node.js — resize, convert formats, composite, apply effects, and manage metadata. Use... |
-| [skill-builder](developer-tools/skill-builder/SKILL.md) | `skill-builder` | `low` | Interactive guide for creating new agent skills from scratch. Use this skill when the user wants to create a skill, write a SKI... |
+| [namecheap-domains](developer-tools/namecheap-domains/SKILL.md) | `namecheap-domains` | `low` | Specialized instructions for namecheap domains. |
+| [sharp](developer-tools/sharp/SKILL.md) | `sharp` | `low` | Specialized instructions for sharp. |
+| [skill-builder](developer-tools/skill-builder/SKILL.md) | `skill-builder` | `low` | Specialized instructions for skill builder. |
 | [skill-porter](developer-tools/skill-porter/SKILL.md) | `skill-porter` | `critical` | Preview conservative tool-name translations and copy complete local skill bundles for manual adaptation to Google Antigravity. |
 | [tokenwise](developer-tools/tokenwise/SKILL.md) | `tokenwise` | `critical` | Measurement-driven model router for Claude Code. Routes Haiku/Sonnet/Opus per task class, logs every routed task with real $ nu... |
-| [workflow-orchestration](developer-tools/workflow-orchestration/SKILL.md) | `workflow-orchestration` | `low` | Orchestrates structured task execution with planning, progress tracking, self-improvement, and verification gates. Use at the s... |
+| [workflow-orchestration](developer-tools/workflow-orchestration/SKILL.md) | `workflow-orchestration` | `low` | Specialized instructions for workflow orchestration. |
 
 ---
 
@@ -6761,6 +6762,304 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [soil-science](earth-science/soil-science/SKILL.md) | `soil-science` | `low` | Soil pedogenesis, horizons, soil physics, chemistry, taxonomy, soil mechanics, and nutrient cycling |
 | [tectonics](earth-science/tectonics/SKILL.md) | `tectonics` | `low` | Plate kinematics, mantle convection, convergent, divergent, and transform boundaries, and orogeny |
 | [volcanology](earth-science/volcanology/SKILL.md) | `volcanology` | `low` | Magma rheology, eruptive styles, pyroclastic deposits, volcanic hazard assessment, and volcano monitoring |
+
+---
+
+## <a id="ecc"></a>📁 Ecc (291 skills)
+
+| Skill ID | Name | Risk | Description |
+| :--- | :--- | :---: | :--- |
+| [agent-architecture-audit](ecc/agent-architecture-audit/SKILL.md) | `agent-architecture-audit` | `low` | Full-stack diagnostic for agent and LLM applications. Audits the 12-layer |
+| [agent-eval](ecc/agent-eval/SKILL.md) | `agent-eval` | `low` | Head-to-head comparison of coding agents (Claude Code, Aider, Codex, |
+| [agent-harness-construction](ecc/agent-harness-construction/SKILL.md) | `agent-harness-construction` | `low` | Design and optimize AI agent action spaces, tool definitions, and observation formatting for higher completion rates. Use when ... |
+| [agent-introspection-debugging](ecc/agent-introspection-debugging/SKILL.md) | `agent-introspection-debugging` | `low` | Structured self-debugging workflow for AI agent failures using capture, diagnosis, contained recovery, and introspection report... |
+| [agent-payment-x402](ecc/agent-payment-x402/SKILL.md) | `agent-payment-x402` | `low` | Add x402 payment execution to AI agents with per-task budgets, spending controls, and non-custodial wallets. Supports Base thro... |
+| [agent-self-evaluation](ecc/agent-self-evaluation/SKILL.md) | `agent-self-evaluation` | `low` | Use after completing any non-trivial task. The agent self-rates its output on 5 axes — accuracy, completeness, clarity, actiona... |
+| [agent-sort](ecc/agent-sort/SKILL.md) | `agent-sort` | `low` | Build an evidence-backed ECC install plan for a specific repo by sorting skills, commands, rules, hooks, and extras into DAILY ... |
+| [agentic-engineering](ecc/agentic-engineering/SKILL.md) | `agentic-engineering` | `low` | Operate as an agentic engineer using eval-first execution, decomposition, and cost-aware model routing. Use when planning or ex... |
+| [agentic-os](ecc/agentic-os/SKILL.md) | `agentic-os` | `low` | Build persistent multi-agent operating systems on Claude Code. Covers kernel architecture, specialist agents, slash commands, f... |
+| [ai-first-engineering](ecc/ai-first-engineering/SKILL.md) | `ai-first-engineering` | `low` | Engineering operating model for teams where AI agents generate a large share of implementation output. Use when setting team pr... |
+| [ai-regression-testing](ecc/ai-regression-testing/SKILL.md) | `ai-regression-testing` | `low` | Regression testing strategies for AI-assisted development. Sandbox-mode API testing without database dependencies, automated bu... |
+| [android-clean-architecture](ecc/android-clean-architecture/SKILL.md) | `android-clean-architecture` | `low` | Clean Architecture patterns for Android and Kotlin Multiplatform projects — module structure, dependency rules, UseCases, Repos... |
+| [angular-developer](ecc/angular-developer/SKILL.md) | `angular-developer` | `low` | Generates Angular code and provides architectural guidance. Trigger when creating projects, components, or services, or for bes... |
+| [api-connector-builder](ecc/api-connector-builder/SKILL.md) | `api-connector-builder` | `low` | Build a new API connector or provider by matching the target repo's existing integration pattern exactly. Use when adding one m... |
+| [api-design](ecc/api-design/SKILL.md) | `api-design` | `low` | REST API design patterns including resource naming, status codes, pagination, filtering, error responses, versioning, and rate ... |
+| [architecture-decision-records](ecc/architecture-decision-records/SKILL.md) | `architecture-decision-records` | `low` | Capture architectural decisions as numbered ADR markdown files in docs/adr/ with context, alternatives considered, consequences... |
+| [article-writing](ecc/article-writing/SKILL.md) | `article-writing` | `low` | Write articles, guides, blog posts, tutorials, newsletter issues, and other long-form content in a distinctive voice derived fr... |
+| [automation-audit-ops](ecc/automation-audit-ops/SKILL.md) | `automation-audit-ops` | `low` | Evidence-first automation inventory and overlap audit workflow for ECC. Use when the user wants to know which jobs, hooks, conn... |
+| [autonomous-agent-harness](ecc/autonomous-agent-harness/SKILL.md) | `autonomous-agent-harness` | `low` | Transform Claude Code into a fully autonomous agent system with persistent memory, scheduled operations, computer use, and task... |
+| [autonomous-loops](ecc/autonomous-loops/SKILL.md) | `autonomous-loops` | `low` | Patterns and architectures for autonomous Claude Code loops — from simple sequential pipelines to RFC-driven multi-agent DAG sy... |
+| [backend-patterns](ecc/backend-patterns/SKILL.md) | `backend-patterns` | `low` | Backend architecture patterns, API design, database optimization, and server-side best practices for Node.js, Express, and Next... |
+| [benchmark](ecc/benchmark/SKILL.md) | `benchmark` | `low` | Measure performance baselines and detect regressions across browser Core Web Vitals (LCP, INP, CLS, page weight), API endpoint ... |
+| [benchmark-methodology](ecc/benchmark-methodology/SKILL.md) | `benchmark-methodology` | `low` | Score a scoped competitor set into comparable profile cards: nine weighted dimensions (positioning, voice, visual craft, offer ... |
+| [benchmark-optimization-loop](ecc/benchmark-optimization-loop/SKILL.md) | `benchmark-optimization-loop` | `low` | Convert 'make it faster' requests into a bounded measured optimization\ |
+| [blender-motion-state-inspection](ecc/blender-motion-state-inspection/SKILL.md) | `blender-motion-state-inspection` | `low` | Use this skill when inspecting Blender characters, rigs, poses, animation |
+| [blueprint](ecc/blueprint/SKILL.md) | `blueprint` | `low` | Turn a one-line objective into a step-by-step construction plan for multi-session, multi-agent engineering projects: one-PR-siz... |
+| [brand-discovery](ecc/brand-discovery/SKILL.md) | `brand-discovery` | `low` | Run a structured, resumable multi-session brand identity interview across 8 modules (purpose, positioning, audience, personalit... |
+| [brand-voice](ecc/brand-voice/SKILL.md) | `brand-voice` | `low` | Build a source-derived writing style profile from real posts, essays, launch notes, docs, or site copy, then reuse that profile... |
+| [browser-qa](ecc/browser-qa/SKILL.md) | `browser-qa` | `low` | Run automated post-deploy UI verification with a browser automation MCP (claude-in-chrome, Playwright, or Puppeteer): console-e... |
+| [bun-runtime](ecc/bun-runtime/SKILL.md) | `bun-runtime` | `low` | Bun as runtime, package manager, bundler, and test runner. When to choose Bun vs Node, migration notes, and Vercel support. |
+| [canary-watch](ecc/canary-watch/SKILL.md) | `canary-watch` | `low` | Use this skill to monitor and verify a deployed URL after releases — checks HTTP endpoints, SSE streams, static assets, console... |
+| [carrier-relationship-management](ecc/carrier-relationship-management/SKILL.md) | `carrier-relationship-management` | `low` | Manage truckload, LTL, and intermodal carrier portfolios: sourcing and FMCSA vetting, freight rate and fuel-surcharge negotiati... |
+| [cisco-ios-patterns](ecc/cisco-ios-patterns/SKILL.md) | `cisco-ios-patterns` | `low` | Cisco IOS and IOS-XE review patterns for show commands, config hierarchy, wildcard masks, ACL placement, interface hygiene, and... |
+| [ck](ecc/ck/SKILL.md) | `ck` | `low` | Persistent per-project memory for Claude Code (Context Keeper) driven by deterministic Node.js /ck commands: init, save, resume... |
+| [claude-devfleet](ecc/claude-devfleet/SKILL.md) | `claude-devfleet` | `low` | Orchestrate multi-agent coding tasks via Claude DevFleet — plan projects, dispatch parallel agents in isolated worktrees, monit... |
+| [click-path-audit](ecc/click-path-audit/SKILL.md) | `click-path-audit` | `low` | Trace every user-facing button/touchpoint through its full state change sequence to find bugs where functions individually work... |
+| [clickhouse-io](ecc/clickhouse-io/SKILL.md) | `clickhouse-io` | `low` | ClickHouse database patterns, query optimization, analytics, and data engineering best practices for high-performance analytica... |
+| [code-tour](ecc/code-tour/SKILL.md) | `code-tour` | `low` | Create CodeTour `.tour` files — persona-targeted, step-by-step walkthroughs with real file and line anchors. Use for onboarding... |
+| [codebase-onboarding](ecc/codebase-onboarding/SKILL.md) | `codebase-onboarding` | `low` | Analyze an unfamiliar codebase and generate a structured onboarding guide with architecture map, key entry points, conventions,... |
+| [codehealth-mcp](ecc/codehealth-mcp/SKILL.md) | `codehealth-mcp` | `low` | Real-time structural Code Health via CodeScene MCP — review before edits, verify score deltas after changes, gate commits and P... |
+| [coding-standards](ecc/coding-standards/SKILL.md) | `coding-standards` | `low` | Baseline cross-project coding conventions for naming, readability, immutability, and code-quality review. Use detailed frontend... |
+| [competitive-platform-analysis](ecc/competitive-platform-analysis/SKILL.md) | `competitive-platform-analysis` | `low` | Use when scoping a competitive landscape — identifying, categorising, and score-filtering a competitor set before any benchmark... |
+| [competitive-report-structure](ecc/competitive-report-structure/SKILL.md) | `competitive-report-structure` | `low` | Assemble scored competitor profile cards (from benchmark-methodology) into a decision-grade competitive report with landscape m... |
+| [compose-multiplatform-patterns](ecc/compose-multiplatform-patterns/SKILL.md) | `compose-multiplatform-patterns` | `low` | Compose Multiplatform and Jetpack Compose patterns for KMP projects — state management, navigation, theming, performance, and p... |
+| [config-gc](ecc/config-gc/SKILL.md) | `config-gc` | `low` | Garbage collection for your Claude Code configuration. Periodically scans ~/.claude (skills, memory, hooks, permissions, MCP se... |
+| [configure-ecc](ecc/configure-ecc/SKILL.md) | `configure-ecc` | `low` | Run the conversational ECC setup wizard inside the current harness: inventory the install, collect scope (user/project/local) a... |
+| [connections-optimizer](ecc/connections-optimizer/SKILL.md) | `connections-optimizer` | `low` | Reorganize the user's X and LinkedIn network with review-first pruning, add/follow recommendations, and channel-specific warm o... |
+| [content-engine](ecc/content-engine/SKILL.md) | `content-engine` | `low` | Create platform-native content systems for X, LinkedIn, TikTok, YouTube, newsletters, and repurposed multi-platform campaigns. ... |
+| [content-hash-cache-pattern](ecc/content-hash-cache-pattern/SKILL.md) | `content-hash-cache-pattern` | `low` | Cache expensive file processing results using SHA-256 content hashes — path-independent, auto-invalidating, with service layer ... |
+| [context-budget](ecc/context-budget/SKILL.md) | `context-budget` | `low` | Audits Claude Code context window consumption across agents, skills, MCP servers, and rules. Identifies bloat, redundant compon... |
+| [continuous-agent-loop](ecc/continuous-agent-loop/SKILL.md) | `continuous-agent-loop` | `low` | Patterns for continuous autonomous agent loops with quality gates, evals, and recovery controls. Use when running an agent loop... |
+| [continuous-learning](ecc/continuous-learning/SKILL.md) | `continuous-learning` | `low` | [DEPRECATED - use continuous-learning-v2] Legacy v1 stop-hook skill extractor. v2 is a strict superset with instinct-based, pro... |
+| [continuous-learning-v2](ecc/continuous-learning-v2/SKILL.md) | `continuous-learning-v2` | `low` | Instinct-based learning system that observes sessions via hooks, creates atomic instincts with confidence scoring, and evolves ... |
+| [contract-first](ecc/contract-first/SKILL.md) | `contract-first` | `low` | Coordinate frontend/backend or service-to-service work through one authoritative machine-checkable contract (OpenAPI, AsyncAPI,... |
+| [cost-aware-llm-pipeline](ecc/cost-aware-llm-pipeline/SKILL.md) | `cost-aware-llm-pipeline` | `low` | Cost optimization patterns for LLM API usage — model routing by task complexity, budget tracking, retry logic, and prompt cachi... |
+| [cost-tracking](ecc/cost-tracking/SKILL.md) | `cost-tracking` | `low` | Track and report Claude Code token usage, spending, and budgets from the local ECC cost-tracker metrics log. Use when the user ... |
+| [council](ecc/council/SKILL.md) | `council` | `low` | Convene a four-voice council for ambiguous decisions, tradeoffs, and go/no-go calls. Use when multiple valid paths exist and yo... |
+| [council-multi-model](ecc/council-multi-model/SKILL.md) | `council-multi-model` | `low` | Add one optional external Codex critique after the existing council has produced a decision draft. Use when an ambiguous, high-... |
+| [counterparty-channel-discipline](ecc/counterparty-channel-discipline/SKILL.md) | `counterparty-channel-discipline` | `low` | Per-channel strict prompts, mention gating, silent observation, and a communication autonomy policy for agents that sit in shar... |
+| [cpp-coding-standards](ecc/cpp-coding-standards/SKILL.md) | `cpp-coding-standards` | `low` | C++ coding standards based on the C++ Core Guidelines (isocpp.github.io). Use when writing, reviewing, or refactoring C++ code ... |
+| [cpp-testing](ecc/cpp-testing/SKILL.md) | `cpp-testing` | `low` | Use only when writing/updating/fixing C++ tests, configuring GoogleTest/CTest, diagnosing failing or flaky tests, or adding cov... |
+| [crosspost](ecc/crosspost/SKILL.md) | `crosspost` | `low` | Multi-platform content distribution across X, LinkedIn, Threads, and Bluesky. Adapts content per platform using content-engine ... |
+| [csharp-testing](ecc/csharp-testing/SKILL.md) | `csharp-testing` | `low` | C# and .NET testing patterns with xUnit, FluentAssertions, mocking, integration tests, and test organization best practices. Us... |
+| [customer-billing-ops](ecc/customer-billing-ops/SKILL.md) | `customer-billing-ops` | `low` | Operate customer billing workflows such as subscriptions, refunds, churn triage, billing-portal recovery, and plan analysis usi... |
+| [customs-trade-compliance](ecc/customs-trade-compliance/SKILL.md) | `customs-trade-compliance` | `low` | Codified customs and trade compliance expertise — HS/HTS tariff classification with GRI rules, commercial invoices and entry do... |
+| [dart-flutter-patterns](ecc/dart-flutter-patterns/SKILL.md) | `dart-flutter-patterns` | `low` | Production-ready Dart and Flutter patterns covering null safety, immutable state with Freezed, async composition, widget archit... |
+| [dashboard-builder](ecc/dashboard-builder/SKILL.md) | `dashboard-builder` | `low` | Build monitoring dashboards that answer real operator questions for Grafana, SigNoz, and similar platforms. Use when turning me... |
+| [data-scraper-agent](ecc/data-scraper-agent/SKILL.md) | `data-scraper-agent` | `low` | Build a fully automated AI-powered data collection agent for any public source — job boards, prices, news, GitHub, sports, anyt... |
+| [data-throughput-accelerator](ecc/data-throughput-accelerator/SKILL.md) | `data-throughput-accelerator` | `low` | Diagnose and accelerate large data movement \u2014 ingestion, backfill,\ |
+| [database-migrations](ecc/database-migrations/SKILL.md) | `database-migrations` | `low` | Safe, reversible database migration patterns: forward-only production changes, expand-contract zero-downtime renames, concurren... |
+| [deep-research](ecc/deep-research/SKILL.md) | `deep-research` | `low` | Produce cited research reports from multiple web sources using firecrawl and exa MCP tools — plan sub-questions, search and dee... |
+| [defi-amm-security](ecc/defi-amm-security/SKILL.md) | `defi-amm-security` | `low` | Security checklist for Solidity AMM contracts, liquidity pools, and swap flows. Covers reentrancy, CEI ordering, donation or in... |
+| [delivery-gate](ecc/delivery-gate/SKILL.md) | `delivery-gate` | `low` | Stop hook that blocks Claude from finishing until quality checks pass. Detects rationalization patterns (surface text heuristic... |
+| [deployment-patterns](ecc/deployment-patterns/SKILL.md) | `deployment-patterns` | `low` | Deployment workflows, CI/CD pipeline patterns, Docker containerization, health checks, rollback strategies, and production read... |
+| [design-system](ecc/design-system/SKILL.md) | `design-system` | `low` | Generate a design system from an existing codebase or audit one for visual consistency: extract tokens (colors, typography, spa... |
+| [dev-team](ecc/dev-team/SKILL.md) | `dev-team` | `low` | Simulate a collaborative dev team session where multiple role-based personas (PM, Architect, Developer, QA) respond to the same... |
+| [django-celery](ecc/django-celery/SKILL.md) | `django-celery` | `low` | Django + Celery async task patterns — configuration, task design, beat scheduling, retries, canvas workflows, monitoring, and t... |
+| [django-patterns](ecc/django-patterns/SKILL.md) | `django-patterns` | `low` | Django architecture patterns, REST API design with DRF, ORM best practices, caching, signals, middleware, and production-grade ... |
+| [django-security](ecc/django-security/SKILL.md) | `django-security` | `low` | Django security best practices, authentication, authorization, CSRF protection, SQL injection prevention, XSS prevention, and s... |
+| [django-tdd](ecc/django-tdd/SKILL.md) | `django-tdd` | `low` | Django testing strategies with pytest-django, TDD methodology, factory_boy, mocking, coverage, and testing Django REST Framewor... |
+| [django-verification](ecc/django-verification/SKILL.md) | `django-verification` | `low` | Run the full Django verification loop — environment check, mypy/ruff/black linting, migration safety, pytest with coverage targ... |
+| [dmux-workflows](ecc/dmux-workflows/SKILL.md) | `dmux-workflows` | `low` | Multi-agent orchestration using dmux (tmux pane manager for AI agents). Patterns for parallel agent workflows across Claude Cod... |
+| [docker-patterns](ecc/docker-patterns/SKILL.md) | `docker-patterns` | `low` | Docker and Docker Compose patterns for local development, hardened CLI installer harnesses, container security, networking, vol... |
+| [documentation-lookup](ecc/documentation-lookup/SKILL.md) | `documentation-lookup` | `low` | Use up-to-date library and framework docs via Context7 MCP instead of training data. Activates for setup questions, API referen... |
+| [dotnet-patterns](ecc/dotnet-patterns/SKILL.md) | `dotnet-patterns` | `low` | Idiomatic C# and .NET patterns, conventions, dependency injection, async/await, and best practices for building robust, maintai... |
+| [dynamic-workflow-mode](ecc/dynamic-workflow-mode/SKILL.md) | `dynamic-workflow-mode` | `low` | Design task-local harnesses, eval gates, and reusable skill extraction for Claude dynamic workflow mode and other adaptive agen... |
+| [e2e-testing](ecc/e2e-testing/SKILL.md) | `e2e-testing` | `low` | Playwright E2E testing patterns, Page Object Model, configuration, CI/CD integration, artifact management, and flaky test strat... |
+| [ecc-guide](ecc/ecc-guide/SKILL.md) | `ecc-guide` | `low` | Answer questions about Everything Claude Code by reading the live repo surface — agents, skills, commands, hooks, rules, instal... |
+| [ecc-recipes](ecc/ecc-recipes/SKILL.md) | `ecc-recipes` | `low` | Map a described workflow to the right ECC command group with run-order and stop condition, or browse all command-group recipe f... |
+| [ecc-tools-cost-audit](ecc/ecc-tools-cost-audit/SKILL.md) | `ecc-tools-cost-audit` | `low` | Evidence-first ECC Tools burn and billing audit workflow. Use when investigating runaway PR creation, quota bypass, premium-mod... |
+| [email-ops](ecc/email-ops/SKILL.md) | `email-ops` | `low` | Evidence-first mailbox triage, drafting, send verification, and sent-mail-safe follow-up workflow for ECC. Use when the user wa... |
+| [energy-procurement](ecc/energy-procurement/SKILL.md) | `energy-procurement` | `low` | Procure electricity and natural gas for commercial and industrial facilities: tariff and rate-schedule optimization, demand-cha... |
+| [enterprise-agent-ops](ecc/enterprise-agent-ops/SKILL.md) | `enterprise-agent-ops` | `low` | Operational controls for long-lived or cloud-hosted agent systems — runtime lifecycle (start, pause, stop, restart), observabil... |
+| [error-handling](ecc/error-handling/SKILL.md) | `error-handling` | `low` | Patterns for robust error handling across TypeScript, Python, and Go. Covers typed errors, error boundaries, retries, circuit b... |
+| [esign-field-placement](ecc/esign-field-placement/SKILL.md) | `esign-field-placement` | `low` | Deterministic method for placing signature, date, and text fields in a web e-signature composer through a browser automation se... |
+| [eval-harness](ecc/eval-harness/SKILL.md) | `eval-harness` | `low` | Eval-driven development (EDD) framework for AI coding sessions — define capability and regression evals before coding, grade wi... |
+| [evm-token-decimals](ecc/evm-token-decimals/SKILL.md) | `evm-token-decimals` | `low` | Prevent silent decimal mismatch bugs across EVM chains. Covers runtime decimal lookup, chain-aware caching, bridged-token preci... |
+| [exa-search](ecc/exa-search/SKILL.md) | `exa-search` | `low` | Neural search via Exa MCP for web, code, and company research. Use when the user needs web search, code examples, company intel... |
+| [fal-ai-media](ecc/fal-ai-media/SKILL.md) | `fal-ai-media` | `low` | Unified media generation via fal.ai MCP — image, video, and audio. Covers text-to-image (Nano Banana), text/image-to-video (See... |
+| [fastapi-patterns](ecc/fastapi-patterns/SKILL.md) | `fastapi-patterns` | `low` | FastAPI best practices covering project structure, Pydantic v2 schemas, dependency injection, async handlers, authentication, a... |
+| [finance-billing-ops](ecc/finance-billing-ops/SKILL.md) | `finance-billing-ops` | `low` | Evidence-first revenue, pricing, refunds, team-billing, and billing-model truth workflow for ECC. Use when the user wants a sal... |
+| [flox-environments](ecc/flox-environments/SKILL.md) | `flox-environments` | `low` | Create reproducible, cross-platform (macOS/Linux) development environments with Flox, a declarative Nix-based environment manag... |
+| [flutter-dart-code-review](ecc/flutter-dart-code-review/SKILL.md) | `flutter-dart-code-review` | `low` | Library-agnostic Flutter/Dart code review checklist covering widget best practices, state management patterns (BLoC, Riverpod, ... |
+| [foundation-models-on-device](ecc/foundation-models-on-device/SKILL.md) | `foundation-models-on-device` | `low` | Apple FoundationModels framework for on-device LLM — text generation, guided generation with @Generable, tool calling, and snap... |
+| [frontend-a11y](ecc/frontend-a11y/SKILL.md) | `frontend-a11y` | `low` | Accessibility patterns for React and Next.js — semantic HTML, ARIA attributes, form labeling, keyboard navigation, focus manage... |
+| [frontend-design-direction](ecc/frontend-design-direction/SKILL.md) | `frontend-design-direction` | `low` | Set an ECC-specific frontend design direction for production UI work. Use when building or improving websites, dashboards, appl... |
+| [frontend-patterns](ecc/frontend-patterns/SKILL.md) | `frontend-patterns` | `low` | Frontend development patterns for React, Next.js, state management, performance optimization, and UI best practices. Use when b... |
+| [frontend-slides](ecc/frontend-slides/SKILL.md) | `frontend-slides` | `low` | Create stunning, animation-rich HTML presentations from scratch or by converting PowerPoint files. Use when the user wants to b... |
+| [fsharp-testing](ecc/fsharp-testing/SKILL.md) | `fsharp-testing` | `low` | F# testing patterns with xUnit, FsUnit, Unquote, FsCheck property-based testing, integration tests, and test organization best ... |
+| [gan-style-harness](ecc/gan-style-harness/SKILL.md) | `gan-style-harness` | `low` | GAN-inspired Generator-Evaluator agent harness for building high-quality |
+| [gateguard](ecc/gateguard/SKILL.md) | `gateguard` | `low` | PreToolUse fact-forcing gate that denies the first Edit/Write/Bash (including MultiEdit) attempt until the agent presents concr... |
+| [generating-python-installer](ecc/generating-python-installer/SKILL.md) | `generating-python-installer` | `low` | Commercial-grade Python installer expert for Windows: Nuitka extreme compilation, dist slimming, DLL footprint analysis, and In... |
+| [git-workflow](ecc/git-workflow/SKILL.md) | `git-workflow` | `low` | Git workflow patterns including branching strategies, commit conventions, keeping history clean and readable, tidying local com... |
+| [github-ops](ecc/github-ops/SKILL.md) | `github-ops` | `low` | GitHub repository operations, automation, and management. Issue triage, PR management, CI/CD operations, release management, an... |
+| [golang-patterns](ecc/golang-patterns/SKILL.md) | `golang-patterns` | `low` | Idiomatic Go patterns, best practices, and conventions for building robust, efficient, and maintainable Go applications. Use wh... |
+| [golang-testing](ecc/golang-testing/SKILL.md) | `golang-testing` | `low` | Go testing patterns including table-driven tests, subtests, benchmarks, fuzzing, and test coverage. Follows TDD methodology wit... |
+| [google-workspace-ops](ecc/google-workspace-ops/SKILL.md) | `google-workspace-ops` | `low` | Operate across Google Drive, Docs, Sheets, and Slides as one workflow surface for plans, trackers, decks, and shared documents.... |
+| [growth-log](ecc/growth-log/SKILL.md) | `growth-log` | `low` | Write growth log entries that extract reusable patterns from completed work — root cause, transferable rule, and a recognizable... |
+| [healthcare-cdss-patterns](ecc/healthcare-cdss-patterns/SKILL.md) | `healthcare-cdss-patterns` | `low` | Clinical Decision Support System (CDSS) development patterns. Drug interaction checking, dose validation, clinical scoring (NEW... |
+| [healthcare-emr-patterns](ecc/healthcare-emr-patterns/SKILL.md) | `healthcare-emr-patterns` | `low` | EMR/EHR development patterns for healthcare applications. Clinical safety, encounter workflows, prescription generation, clinic... |
+| [healthcare-eval-harness](ecc/healthcare-eval-harness/SKILL.md) | `healthcare-eval-harness` | `low` | Patient safety evaluation harness for healthcare application deployments. Automated test suites for CDSS accuracy, PHI exposure... |
+| [healthcare-phi-compliance](ecc/healthcare-phi-compliance/SKILL.md) | `healthcare-phi-compliance` | `low` | Protected Health Information (PHI) and PII compliance patterns for healthcare applications: data classification, row-level acce... |
+| [hermes-imports](ecc/hermes-imports/SKILL.md) | `hermes-imports` | `low` | Convert local Hermes operator workflows into sanitized ECC skills and release-pack artifacts. Use when preparing a Hermes workf... |
+| [hexagonal-architecture](ecc/hexagonal-architecture/SKILL.md) | `hexagonal-architecture` | `low` | Design, implement, and refactor Ports & Adapters systems with clear domain boundaries, dependency inversion, and testable use-c... |
+| [hipaa-compliance](ecc/hipaa-compliance/SKILL.md) | `hipaa-compliance` | `low` | HIPAA-specific entrypoint for healthcare privacy and security work. Use when a task is explicitly framed around HIPAA, PHI hand... |
+| [homelab-network-readiness](ecc/homelab-network-readiness/SKILL.md) | `homelab-network-readiness` | `low` | Readiness checklist for homelab VLAN segmentation, local DNS filtering (Pi-hole, AdGuard Home), and WireGuard-style remote acce... |
+| [homelab-network-setup](ecc/homelab-network-setup/SKILL.md) | `homelab-network-setup` | `low` | Practical home and homelab network planning for gateways, switches, access points, IP ranges, DHCP reservations, DNS, cabling, ... |
+| [homelab-pihole-dns](ecc/homelab-pihole-dns/SKILL.md) | `homelab-pihole-dns` | `low` | Pi-hole installation, blocklist management, DNS-over-HTTPS setup, DHCP integration, local DNS records, and troubleshooting brok... |
+| [homelab-vlan-segmentation](ecc/homelab-vlan-segmentation/SKILL.md) | `homelab-vlan-segmentation` | `low` | Segmenting home networks into VLANs for IoT, guest, trusted, and server traffic using UniFi, pfSense/OPNsense, and MikroTik — i... |
+| [homelab-wireguard-vpn](ecc/homelab-wireguard-vpn/SKILL.md) | `homelab-wireguard-vpn` | `low` | WireGuard VPN server setup, peer configuration, key generation, split tunneling vs full tunnel routing, and remote access to a ... |
+| [hookify-rules](ecc/hookify-rules/SKILL.md) | `hookify-rules` | `low` | Create and configure hookify rules — markdown files with YAML frontmatter that match bash, file, prompt, or stop events by rege... |
+| [inherit-legacy-style](ecc/inherit-legacy-style/SKILL.md) | `inherit-legacy-style` | `low` | Prevent AI style drift on legacy projects by scanning the codebase for implicit conventions, resolving conflicts with the opera... |
+| [intent-driven-development](ecc/intent-driven-development/SKILL.md) | `intent-driven-development` | `low` | Turn ambiguous or high-impact product and engineering changes into scoped, verifiable acceptance criteria before or alongside i... |
+| [inventory-demand-planning](ecc/inventory-demand-planning/SKILL.md) | `inventory-demand-planning` | `low` | Codified demand planning expertise for multi-location retailers: demand forecasting method selection, ABC/XYZ segmentation, saf... |
+| [investor-materials](ecc/investor-materials/SKILL.md) | `investor-materials` | `low` | Create and update pitch decks, one-pagers, investor memos, accelerator applications, financial models, and fundraising material... |
+| [investor-outreach](ecc/investor-outreach/SKILL.md) | `investor-outreach` | `low` | Draft cold emails, warm intro blurbs, follow-ups, update emails, and investor communications for fundraising. Use when the user... |
+| [ios-icon-gen](ecc/ios-icon-gen/SKILL.md) | `ios-icon-gen` | `low` | Generate iOS app icons as PNG imagesets for Xcode asset catalogs from SF Symbols (5000+ Apple-native) or Iconify API (275k+ ope... |
+| [iterative-retrieval](ecc/iterative-retrieval/SKILL.md) | `iterative-retrieval` | `low` | Pattern for progressively refining context retrieval to solve the subagent context problem. Use when a subagent lacks the conte... |
+| [ito-baskets](ecc/ito-baskets/SKILL.md) | `ito-baskets` | `low` | Read-only Itô basket and prediction-market data skill. Index the live basket catalog, compare a basket against user-supplied re... |
+| [ito-compute](ecc/ito-compute/SKILL.md) | `ito-compute` | `low` | Query live GPU inventory, submit an authenticated Itô fixed-rate RFQ, inspect RFQ or procurement status, revoke device credenti... |
+| [ito-inference](ecc/ito-inference/SKILL.md) | `ito-inference` | `low` | Inspect the availability of model serving on a completed Itô compute booking and, when the canonical backend becomes available,... |
+| [ito-training](ecc/ito-training/SKILL.md) | `ito-training` | `low` | Inspect the availability of ML training on a completed Itô compute booking and, when the canonical backend becomes available, h... |
+| [java-coding-standards](ecc/java-coding-standards/SKILL.md) | `java-coding-standards` | `low` | Java coding standards for Spring Boot and Quarkus services: naming, immutability, Optional usage, streams, exceptions, generics... |
+| [jira-integration](ecc/jira-integration/SKILL.md) | `jira-integration` | `low` | Use this skill when retrieving Jira tickets, analyzing requirements, updating ticket status, adding comments, or transitioning ... |
+| [jpa-patterns](ecc/jpa-patterns/SKILL.md) | `jpa-patterns` | `low` | JPA/Hibernate patterns for entity design, relationships, query optimization, transactions, auditing, indexing, pagination, and ... |
+| [knowledge-ops](ecc/knowledge-ops/SKILL.md) | `knowledge-ops` | `low` | Knowledge base management, ingestion, sync, and retrieval across multiple storage layers (local files, MCP memory, vector store... |
+| [kotlin-coroutines-flows](ecc/kotlin-coroutines-flows/SKILL.md) | `kotlin-coroutines-flows` | `low` | Kotlin Coroutines and Flow patterns for Android and KMP — structured concurrency, Flow operators, StateFlow, error handling, an... |
+| [kotlin-exposed-patterns](ecc/kotlin-exposed-patterns/SKILL.md) | `kotlin-exposed-patterns` | `low` | JetBrains Exposed ORM patterns including DSL queries, DAO pattern, transactions, HikariCP connection pooling, Flyway migrations... |
+| [kotlin-ktor-patterns](ecc/kotlin-ktor-patterns/SKILL.md) | `kotlin-ktor-patterns` | `low` | Ktor server patterns including routing DSL, plugins, authentication, Koin DI, kotlinx.serialization, WebSockets, and testApplic... |
+| [kotlin-patterns](ecc/kotlin-patterns/SKILL.md) | `kotlin-patterns` | `low` | Idiomatic Kotlin patterns, best practices, and conventions for building robust, efficient, and maintainable Kotlin applications... |
+| [kotlin-testing](ecc/kotlin-testing/SKILL.md) | `kotlin-testing` | `low` | Kotlin testing patterns with Kotest, MockK, coroutine testing, property-based testing, and Kover coverage. Follows TDD methodol... |
+| [kubernetes-patterns](ecc/kubernetes-patterns/SKILL.md) | `kubernetes-patterns` | `low` | Kubernetes workload patterns, resource management, RBAC, probes, autoscaling, ConfigMap/Secret handling, and kubectl debugging ... |
+| [laravel-patterns](ecc/laravel-patterns/SKILL.md) | `laravel-patterns` | `low` | Laravel architecture patterns, routing/controllers, Eloquent ORM, service layers, queues, events, caching, and API resources fo... |
+| [laravel-plugin-discovery](ecc/laravel-plugin-discovery/SKILL.md) | `laravel-plugin-discovery` | `low` | Discover and evaluate Laravel packages via LaraPlugins.io MCP. Use when the user wants to find plugins, check package health, o... |
+| [laravel-security](ecc/laravel-security/SKILL.md) | `laravel-security` | `low` | Laravel security best practices — authentication, authorization, Eloquent safety, CSRF, XSS prevention, API security, and secur... |
+| [laravel-tdd](ecc/laravel-tdd/SKILL.md) | `laravel-tdd` | `low` | Laravel testing strategies with PHPUnit, Pest, model factories, HTTP tests, Sanctum authentication testing, mocking, and covera... |
+| [laravel-verification](ecc/laravel-verification/SKILL.md) | `laravel-verification` | `low` | Verification loop for Laravel projects: env checks, linting, static analysis, tests with coverage, security scans, and deployme... |
+| [latency-critical-systems](ecc/latency-critical-systems/SKILL.md) | `latency-critical-systems` | `low` | Optimize and verify latency-sensitive systems \u2014 realtime dashboards,\ |
+| [lead-intelligence](ecc/lead-intelligence/SKILL.md) | `lead-intelligence` | `low` | AI-native lead intelligence and outreach pipeline. Replaces Apollo, Clay, and ZoomInfo with agent-powered signal scoring, mutua... |
+| [liquid-glass-design](ecc/liquid-glass-design/SKILL.md) | `liquid-glass-design` | `low` | iOS 26 Liquid Glass design system — dynamic glass material with blur, reflection, and interactive morphing for SwiftUI, UIKit, ... |
+| [living-docs-governance](ecc/living-docs-governance/SKILL.md) | `living-docs-governance` | `low` | Keep a long-lived project's documentation from rotting by assigning existing project docs clear constitution, map, status, and ... |
+| [llm-trading-agent-security](ecc/llm-trading-agent-security/SKILL.md) | `llm-trading-agent-security` | `low` | Security patterns for autonomous trading agents with wallet or transaction authority. Covers prompt injection, spend limits, pr... |
+| [logistics-exception-management](ecc/logistics-exception-management/SKILL.md) | `logistics-exception-management` | `low` | Codified freight-exception handling expertise for shipment delays, damages, losses, shortages, and carrier disputes, with escal... |
+| [loop-design-check](ecc/loop-design-check/SKILL.md) | `loop-design-check` | `low` | Design a goal-oriented agent loop or review one for failure modes: spinning, Goodhart-gaming the verifier, or running a wrong a... |
+| [mailtrap-email-integration](ecc/mailtrap-email-integration/SKILL.md) | `mailtrap-email-integration` | `low` | Guides agents through integrating transactional email sending via Mailtrap's Email API, including sandbox testing, domain verif... |
+| [make-interfaces-feel-better](ecc/make-interfaces-feel-better/SKILL.md) | `make-interfaces-feel-better` | `low` | Apply concrete design-engineering details that make interfaces feel polished. Use when reviewing or improving UI spacing, typog... |
+| [manim-video](ecc/manim-video/SKILL.md) | `manim-video` | `low` | Build reusable Manim explainers for technical concepts, graphs, system diagrams, and product walkthroughs, then hand off to the... |
+| [market-research](ecc/market-research/SKILL.md) | `market-research` | `low` | Conduct market research, competitive analysis, investor due diligence, and industry intelligence with source attribution and de... |
+| [marketing-campaign](ecc/marketing-campaign/SKILL.md) | `marketing-campaign` | `low` | End-to-end marketing campaign planning and execution. Covers audience research, positioning, campaign angle definition, landing... |
+| [master-agreement-generator](ecc/master-agreement-generator/SKILL.md) | `master-agreement-generator` | `low` | Generate review drafts of counterparty master agreements from one template plus a JSON spec, with role-selected clauses and a S... |
+| [mcp-server-patterns](ecc/mcp-server-patterns/SKILL.md) | `mcp-server-patterns` | `low` | Build MCP servers with Node/TypeScript SDK — tools, resources, prompts, Zod validation, stdio vs Streamable HTTP. Use Context7 ... |
+| [messages-ops](ecc/messages-ops/SKILL.md) | `messages-ops` | `low` | Evidence-first live messaging workflow for ECC. Use when the user wants to read texts or DMs, recover a recent one-time code, i... |
+| [ml-adoption-playbook](ecc/ml-adoption-playbook/SKILL.md) | `ml-adoption-playbook` | `low` | End-to-end methodology for AI agents and software engineers to add machine learning algorithms to existing non-ML codebases. Co... |
+| [mle-workflow](ecc/mle-workflow/SKILL.md) | `mle-workflow` | `low` | Production machine-learning engineering workflow for data contracts, reproducible training, model evaluation, deployment, monit... |
+| [motion-advanced](ecc/motion-advanced/SKILL.md) | `motion-advanced` | `low` | Advanced motion patterns for React / Next.js — drag & drop, gestures, text animations, SVG path drawing, custom hooks, imperati... |
+| [motion-foundations](ecc/motion-foundations/SKILL.md) | `motion-foundations` | `low` | Motion tokens, spring presets, performance rules, device adaptation, accessibility enforcement, and SSR safety for React / Next... |
+| [motion-patterns](ecc/motion-patterns/SKILL.md) | `motion-patterns` | `low` | Production-ready animation patterns for React / Next.js — button, modal, toast, stagger, page transitions, exit animations, scr... |
+| [mysql-patterns](ecc/mysql-patterns/SKILL.md) | `mysql-patterns` | `low` | MySQL and MariaDB schema, query, indexing, transaction, replication, and connection-pool patterns for production backends. Use ... |
+| [nanoclaw-repl](ecc/nanoclaw-repl/SKILL.md) | `nanoclaw-repl` | `low` | Operate and extend NanoClaw, ECC's zero-dependency session-aware REPL, with persistent markdown-backed sessions and slash comma... |
+| [nasiko-control-plane](ecc/nasiko-control-plane/SKILL.md) | `nasiko-control-plane` | `low` | Manage the experimental Nasiko CLI lifecycle through ECC — read-only status checks, consent-gated install of the pinned qualifi... |
+| [nestjs-patterns](ecc/nestjs-patterns/SKILL.md) | `nestjs-patterns` | `low` | NestJS architecture patterns for modules, controllers, providers, DTO validation, guards, interceptors, config, and production-... |
+| [netmiko-ssh-automation](ecc/netmiko-ssh-automation/SKILL.md) | `netmiko-ssh-automation` | `low` | Safe Python Netmiko patterns for read-only collection, bounded batch SSH, TextFSM parsing, guarded config changes, timeouts, an... |
+| [network-bgp-diagnostics](ecc/network-bgp-diagnostics/SKILL.md) | `network-bgp-diagnostics` | `low` | Diagnostics-only BGP troubleshooting patterns for neighbor state, route exchange, prefix policy, AS path inspection, and safe e... |
+| [network-config-validation](ecc/network-config-validation/SKILL.md) | `network-config-validation` | `low` | Pre-deployment checks for router and switch configuration, including dangerous commands, duplicate addresses, subnet overlaps, ... |
+| [network-interface-health](ecc/network-interface-health/SKILL.md) | `network-interface-health` | `low` | Diagnose interface errors, drops, CRCs, duplex mismatches, flapping, speed negotiation issues, and counter trends on routers, s... |
+| [nextjs-turbopack](ecc/nextjs-turbopack/SKILL.md) | `nextjs-turbopack` | `low` | Next.js 16+ and Turbopack guidance — incremental Rust bundling, file-system caching, faster dev startup and HMR, Turbopack vs w... |
+| [nodejs-keccak256](ecc/nodejs-keccak256/SKILL.md) | `nodejs-keccak256` | `low` | Prevent Ethereum hashing bugs in JavaScript and TypeScript. Node's sha3-256 is NIST SHA3, not Ethereum Keccak-256, and silently... |
+| [nutrient-document-processing](ecc/nutrient-document-processing/SKILL.md) | `nutrient-document-processing` | `low` | Process, convert, OCR, extract, redact, sign, and fill documents using the Nutrient DWS API. Works with PDFs, DOCX, XLSX, PPTX,... |
+| [nuxt4-patterns](ecc/nuxt4-patterns/SKILL.md) | `nuxt4-patterns` | `low` | Nuxt 4 app patterns for hydration safety, performance, route rules, lazy loading, and SSR-safe data fetching with useFetch and ... |
+| [openclaw-persona-forge](ecc/openclaw-persona-forge/SKILL.md) | `openclaw-persona-forge` | `low` | 为 OpenClaw AI Agent 锻造完整的龙虾灵魂方案。根据用户偏好或随机抽卡， 输出身份定位、灵魂描述(SOUL.md)、角色化底线规则、名字和头像生图提示词。 如当前环境提供已审核的生图 skill，可自动生成统一风格头像图片。 当用户需要创... |
+| [opensource-pipeline](ecc/opensource-pipeline/SKILL.md) | `opensource-pipeline` | `low` | Open-source pipeline: fork, sanitize, and package private projects for safe public release. Chains 3 agents (forker, sanitizer,... |
+| [operator-approval-loop](ecc/operator-approval-loop/SKILL.md) | `operator-approval-loop` | `low` | Operator approval contract with internal filing notices for agent-drafted outbound messages, hashed drafts, epoch-keyed decisio... |
+| [orch-add-feature](ecc/orch-add-feature/SKILL.md) | `orch-add-feature` | `low` | Orchestrate building a brand-new feature end to end — research, plan, TDD implementation, review, and gated commit — by delegat... |
+| [orch-build-mvp](ecc/orch-build-mvp/SKILL.md) | `orch-build-mvp` | `low` | Orchestrate bootstrapping a working MVP from a design or spec document — ingest the SDD/PRD, plan thin vertical slices, scaffol... |
+| [orch-change-feature](ecc/orch-change-feature/SKILL.md) | `orch-change-feature` | `low` | Orchestrate altering an existing, working feature to new desired behavior — update its tests to the new spec, change the implem... |
+| [orch-fix-defect](ecc/orch-fix-defect/SKILL.md) | `orch-fix-defect` | `low` | Orchestrate fixing a bug — reproduce it as a failing regression test, fix to green, review, and gated commit — by delegating ea... |
+| [orch-pipeline](ecc/orch-pipeline/SKILL.md) | `orch-pipeline` | `low` | Shared orchestration engine behind the orch-* skill family — the gated Research-Plan-TDD-Review-Commit pipeline, size classifie... |
+| [orch-refine-code](ecc/orch-refine-code/SKILL.md) | `orch-refine-code` | `low` | Orchestrate a behavior-preserving refactor — confirm tests are green, restructure without changing behavior, keep tests green, ... |
+| [parallel-execution-optimizer](ecc/parallel-execution-optimizer/SKILL.md) | `parallel-execution-optimizer` | `low` | Speed up a task by turning it into a dependency graph of parallel lanes |
+| [perl-patterns](ecc/perl-patterns/SKILL.md) | `perl-patterns` | `low` | Modern Perl 5.36+ idioms, best practices, and conventions for building robust, maintainable Perl applications. Use when writing... |
+| [perl-security](ecc/perl-security/SKILL.md) | `perl-security` | `low` | Comprehensive Perl security covering taint mode, input validation, safe process execution, DBI parameterized queries, web secur... |
+| [perl-testing](ecc/perl-testing/SKILL.md) | `perl-testing` | `low` | Perl testing patterns using Test2::V0, Test::More, prove runner, mocking, coverage with Devel::Cover, and TDD methodology. Use ... |
+| [plan-canvas](ecc/plan-canvas/SKILL.md) | `plan-canvas` | `low` | Open plans and HTML artifacts in a local browser canvas where the human annotates elements, chats, and approves or requests cha... |
+| [plan-orchestrate](ecc/plan-orchestrate/SKILL.md) | `plan-orchestrate` | `low` | Read a plan document, decompose it into steps, design a per-step agent chain from the ECC catalogue, and emit ready-to-paste /o... |
+| [plankton-code-quality](ecc/plankton-code-quality/SKILL.md) | `plankton-code-quality` | `low` | Write-time code quality enforcement using Plankton — auto-formatting, linting, and Claude-powered fixes on every file edit via ... |
+| [postgres-patterns](ecc/postgres-patterns/SKILL.md) | `postgres-patterns` | `low` | PostgreSQL database patterns for query optimization, schema design, indexing, and security. Based on Supabase best practices. U... |
+| [prediction-market-oracle-research](ecc/prediction-market-oracle-research/SKILL.md) | `prediction-market-oracle-research` | `low` | Research prediction markets as data sources or oracle signals for products, agents, dashboards, and corporate decision intellig... |
+| [prediction-market-risk-review](ecc/prediction-market-risk-review/SKILL.md) | `prediction-market-risk-review` | `low` | Review prediction-market, basket, oracle, and trading-agent workflows for compliance, safety, data-quality, privacy, and execut... |
+| [prisma-patterns](ecc/prisma-patterns/SKILL.md) | `prisma-patterns` | `low` | Prisma ORM patterns for TypeScript backends — schema design, query optimization, transactions, pagination, and critical traps l... |
+| [product-capability](ecc/product-capability/SKILL.md) | `product-capability` | `low` | Translate PRD intent, roadmap asks, or product discussions into an implementation-ready capability plan that exposes constraint... |
+| [product-lens](ecc/product-lens/SKILL.md) | `product-lens` | `low` | Validate the why before building through four product diagnostics — a YC-style product diagnostic that produces PRODUCT-BRIEF.m... |
+| [production-audit](ecc/production-audit/SKILL.md) | `production-audit` | `low` | Local-evidence production readiness audit for shipped apps, pre-launch reviews, post-merge checks, and "what breaks in prod?" q... |
+| [production-scheduling](ecc/production-scheduling/SKILL.md) | `production-scheduling` | `low` | Codified expertise for production scheduling, job sequencing, line balancing, changeover optimization, and bottleneck resolutio... |
+| [project-flow-ops](ecc/project-flow-ops/SKILL.md) | `project-flow-ops` | `low` | Operate execution flow across GitHub and Linear by triaging issues and pull requests, linking active work, and keeping GitHub p... |
+| [prompt-optimizer](ecc/prompt-optimizer/SKILL.md) | `prompt-optimizer` | `low` | Analyze draft prompts, detect intent and missing context, match ECC commands, skills, and agents, and output a ready-to-paste o... |
+| [python-patterns](ecc/python-patterns/SKILL.md) | `python-patterns` | `low` | Pythonic idioms, PEP 8 standards, type hints, and best practices for building robust, efficient, and maintainable Python applic... |
+| [python-testing](ecc/python-testing/SKILL.md) | `python-testing` | `low` | Python testing strategies using pytest, TDD methodology, fixtures, mocking, parametrization, and coverage requirements. Use whe... |
+| [pytorch-patterns](ecc/pytorch-patterns/SKILL.md) | `pytorch-patterns` | `low` | PyTorch deep learning patterns and best practices for building robust, efficient, and reproducible training pipelines, model ar... |
+| [quality-nonconformance](ecc/quality-nonconformance/SKILL.md) | `quality-nonconformance` | `low` | Quality control and non-conformance management for regulated manufacturing (FDA 21 CFR 820, IATF 16949, AS9100): NCR lifecycle ... |
+| [quarkus-patterns](ecc/quarkus-patterns/SKILL.md) | `quarkus-patterns` | `low` | Quarkus 3.x LTS architecture patterns with Camel for messaging, RESTful API design, CDI services, data access with Panache, and... |
+| [quarkus-security](ecc/quarkus-security/SKILL.md) | `quarkus-security` | `low` | Quarkus security implementation patterns: JWT and OIDC authentication, @RolesAllowed RBAC and SecurityIdentity checks, Bean Val... |
+| [quarkus-tdd](ecc/quarkus-tdd/SKILL.md) | `quarkus-tdd` | `low` | Test-driven development for Quarkus 3.x LTS using JUnit 5, Mockito, REST Assured, Camel testing, and JaCoCo. Use when adding fe... |
+| [quarkus-verification](ecc/quarkus-verification/SKILL.md) | `quarkus-verification` | `low` | Verification loop for Quarkus projects: build, static analysis (Checkstyle, PMD, SpotBugs), tests with JaCoCo coverage, OWASP d... |
+| [rails-patterns](ecc/rails-patterns/SKILL.md) | `rails-patterns` | `low` | Ruby on Rails framework patterns for Rails 7.1+ and 8.x apps. Covers the directory contract, skinny controllers with service ob... |
+| [ralphinho-rfc-pipeline](ecc/ralphinho-rfc-pipeline/SKILL.md) | `ralphinho-rfc-pipeline` | `low` | Split an RFC into a multi-agent execution DAG — decompose into work units with dependencies and acceptance tests, run research,... |
+| [react-native-patterns](ecc/react-native-patterns/SKILL.md) | `react-native-patterns` | `low` | React Native and Expo app patterns — Expo Router navigation, state separation (server/client/route/form), TanStack Query data f... |
+| [react-patterns](ecc/react-patterns/SKILL.md) | `react-patterns` | `low` | React 18/19 patterns including hooks discipline, server/client component boundaries, Suspense + error boundaries, form actions,... |
+| [react-performance](ecc/react-performance/SKILL.md) | `react-performance` | `low` | React and Next.js performance optimization patterns adapted from Vercel Engineering's React Best Practices (https://github.com/... |
+| [react-testing](ecc/react-testing/SKILL.md) | `react-testing` | `low` | React component testing with React Testing Library, Vitest/Jest, MSW for network mocking, accessibility assertions with axe, an... |
+| [recsys-pipeline-architect](ecc/recsys-pipeline-architect/SKILL.md) | `recsys-pipeline-architect` | `low` | Design composable recommendation, ranking, and feed pipelines using the six-stage Source→Hydrator→Filter→Scorer→Selector→SideEf... |
+| [recursive-decision-ledger](ecc/recursive-decision-ledger/SKILL.md) | `recursive-decision-ledger` | `low` | Run repeated rollouts ("Prime Gauss" style recursive prompting) while |
+| [redis-patterns](ecc/redis-patterns/SKILL.md) | `redis-patterns` | `low` | Redis data structure patterns, caching strategies, distributed locks, rate limiting, pub/sub, and connection management for pro... |
+| [regex-vs-llm-structured-text](ecc/regex-vs-llm-structured-text/SKILL.md) | `regex-vs-llm-structured-text` | `low` | Decision framework for parsing structured text (quizzes, forms, invoices, receipts, tables) with a hybrid regex-first pipeline ... |
+| [remotion-video-creation](ecc/remotion-video-creation/SKILL.md) | `remotion-video-creation` | `low` | Best practices for Remotion - Video creation in React. 29 domain-specific rules covering 3D, animations, audio, captions, chart... |
+| [repo-scan](ecc/repo-scan/SKILL.md) | `repo-scan` | `low` | Bootstrap pointer that installs the external repo-scan skill from a pinned, reviewable commit. Use when repo-scan must be insta... |
+| [research-ops](ecc/research-ops/SKILL.md) | `research-ops` | `low` | Evidence-first current-state research workflow for ECC. Use when the user wants fresh facts, comparisons, enrichment, or a reco... |
+| [returns-reverse-logistics](ecc/returns-reverse-logistics/SKILL.md) | `returns-reverse-logistics` | `low` | Codified expertise for returns authorization, receipt and inspection, disposition decisions, refund processing, fraud detection... |
+| [rules-distill](ecc/rules-distill/SKILL.md) | `rules-distill` | `low` | Scan skills to extract cross-cutting principles and distill them into rules — append, revise, or create new rule files. Use whe... |
+| [rust-patterns](ecc/rust-patterns/SKILL.md) | `rust-patterns` | `low` | Idiomatic Rust patterns, ownership, error handling, traits, concurrency, and best practices for building safe, performant appli... |
+| [rust-testing](ecc/rust-testing/SKILL.md) | `rust-testing` | `low` | Rust testing patterns including unit tests, integration tests, async testing, property-based testing, mocking, and coverage. Fo... |
+| [safety-guard](ecc/safety-guard/SKILL.md) | `safety-guard` | `low` | Guard against destructive operations with three modes: Careful intercepts dangerous commands (rm -rf, git push --force, DROP TA... |
+| [santa-method](ecc/santa-method/SKILL.md) | `santa-method` | `low` | Multi-agent adversarial verification: two independent reviewers with the same rubric must both pass before output ships, with a... |
+| [scientific-db-pubmed-database](ecc/scientific-db-pubmed-database/SKILL.md) | `scientific-db-pubmed-database` | `low` | Direct PubMed and NCBI E-utilities search workflows for biomedical literature, |
+| [scientific-db-uspto-database](ecc/scientific-db-uspto-database/SKILL.md) | `scientific-db-uspto-database` | `low` | USPTO patent and trademark data workflow for official record lookup, |
+| [scientific-pkg-gget](ecc/scientific-pkg-gget/SKILL.md) | `scientific-pkg-gget` | `low` | gget CLI and Python workflow for quick genomic database queries, sequence |
+| [scientific-thinking-literature-review](ecc/scientific-thinking-literature-review/SKILL.md) | `scientific-thinking-literature-review` | `low` | Systematic literature-review workflow for academic, biomedical, technical, |
+| [scientific-thinking-scholar-evaluation](ecc/scientific-thinking-scholar-evaluation/SKILL.md) | `scientific-thinking-scholar-evaluation` | `low` | Structured scholarly-work evaluation for papers, proposals, literature\ |
+| [search-first](ecc/search-first/SKILL.md) | `search-first` | `low` | Research-before-coding workflow: search npm/PyPI, MCP servers, skills, and GitHub for existing tools before writing custom code... |
+| [security-bounty-hunter](ecc/security-bounty-hunter/SKILL.md) | `security-bounty-hunter` | `low` | Hunt for exploitable, bounty-worthy security issues in repositories. Focuses on remotely reachable vulnerabilities that qualify... |
+| [security-review](ecc/security-review/SKILL.md) | `security-review` | `low` | Use this skill when adding authentication, handling user input, working with secrets, creating API endpoints, or implementing p... |
+| [security-scan](ecc/security-scan/SKILL.md) | `security-scan` | `low` | Scan your Claude Code configuration (.claude/ directory) for security vulnerabilities, misconfigurations, and injection risks u... |
+| [seo](ecc/seo/SKILL.md) | `seo` | `low` | Audit, plan, and implement SEO improvements across technical SEO, on-page optimization, structured data, Core Web Vitals, and c... |
+| [skill-comply](ecc/skill-comply/SKILL.md) | `skill-comply` | `low` | Visualize whether skills, rules, and agent definitions are actually\ |
+| [skill-scout](ecc/skill-scout/SKILL.md) | `skill-scout` | `low` | Search existing local, marketplace, GitHub, and web skill sources before creating a new skill. Use when the user wants to creat... |
+| [skill-stocktake](ecc/skill-stocktake/SKILL.md) | `skill-stocktake` | `low` | Use when auditing Claude skills and commands for quality. Supports Quick Scan (changed skills only) and Full Stocktake modes wi... |
+| [social-graph-ranker](ecc/social-graph-ranker/SKILL.md) | `social-graph-ranker` | `low` | Weighted social-graph ranking for warm intro discovery, bridge scoring, and network gap analysis across X and LinkedIn. Use whe... |
+| [social-publisher](ecc/social-publisher/SKILL.md) | `social-publisher` | `low` | Agent-driven scheduling and publishing of social media posts across 13 platforms via SocialClaw. Use when the user wants to pub... |
+| [springboot-patterns](ecc/springboot-patterns/SKILL.md) | `springboot-patterns` | `low` | Spring Boot architecture patterns, REST API design, layered services, data access, caching, async processing, and logging. Use ... |
+| [springboot-security](ecc/springboot-security/SKILL.md) | `springboot-security` | `low` | Spring Security best practices for authn/authz, validation, CSRF, secrets, headers, rate limiting, and dependency security in J... |
+| [springboot-tdd](ecc/springboot-tdd/SKILL.md) | `springboot-tdd` | `low` | Test-driven development for Spring Boot using JUnit 5, Mockito, MockMvc, Testcontainers, and JaCoCo. Use when adding features, ... |
+| [springboot-verification](ecc/springboot-verification/SKILL.md) | `springboot-verification` | `low` | Run the full Spring Boot verification loop — Maven or Gradle build, SpotBugs, PMD, and Checkstyle static analysis, unit and Tes... |
+| [strategic-compact](ecc/strategic-compact/SKILL.md) | `strategic-compact` | `low` | Suggests manual context compaction at logical intervals to preserve context through task phases rather than arbitrary auto-comp... |
+| [swift-actor-persistence](ecc/swift-actor-persistence/SKILL.md) | `swift-actor-persistence` | `low` | Thread-safe data persistence in Swift using actors — in-memory cache with file-backed storage, eliminating data races by design... |
+| [swift-concurrency-6-2](ecc/swift-concurrency-6-2/SKILL.md) | `swift-concurrency-6-2` | `low` | Swift 6.2 Approachable Concurrency — single-threaded by default, @concurrent for explicit background offloading, isolated confo... |
+| [swift-protocol-di-testing](ecc/swift-protocol-di-testing/SKILL.md) | `swift-protocol-di-testing` | `low` | Protocol-based dependency injection for testable Swift code — mock file system, network, and external APIs using focused protoc... |
+| [swiftui-patterns](ecc/swiftui-patterns/SKILL.md) | `swiftui-patterns` | `low` | SwiftUI architecture patterns, state management with @Observable, view composition, navigation, performance optimization, and m... |
+| [taste](ecc/taste/SKILL.md) | `taste` | `low` | Creative-direction layer for music videos and short-form edits in the angelcore / cloud-trance / hyperpop family — a named-genr... |
+| [taste-application](ecc/taste-application/SKILL.md) | `taste-application` | `low` | Generate new video against a distilled style pack and cut it into a finished piece - plan takes from the reference's cut rhythm... |
+| [taste-distillation](ecc/taste-distillation/SKILL.md) | `taste-distillation` | `low` | Measure a set of reference videos into a reusable style pack - colour grade as a 3D LUT, cut rhythm as a shot-length distributi... |
+| [tasteforge-video](ecc/tasteforge-video/SKILL.md) | `tasteforge-video` | `low` | Use for file-driven multimodal image, video, and 3D-asset discovery; taste interviews; distill or apply workflows; style-pack v... |
+| [tdd-workflow](ecc/tdd-workflow/SKILL.md) | `tdd-workflow` | `low` | Test-driven development workflow: write a failing test first, watch it fail, implement the smallest change to green, then refac... |
+| [team-agent-orchestration](ecc/team-agent-orchestration/SKILL.md) | `team-agent-orchestration` | `low` | Run team-based orchestration for agent squads: work items with owners and scope, agent Kanban state, branch isolation, control ... |
+| [team-builder](ecc/team-builder/SKILL.md) | `team-builder` | `low` | Interactive picker that discovers available agent personas via the claude agents command and agents/ markdown globs, groups the... |
+| [terminal-opener](ecc/terminal-opener/SKILL.md) | `terminal-opener` | `low` | Open an executable and its argument array in a visible terminal window through a reusable, shell-free launch plan with dry-run,... |
+| [terminal-ops](ecc/terminal-ops/SKILL.md) | `terminal-ops` | `low` | Evidence-first repo execution workflow for ECC. Use when the user wants a command run, a repo checked, a CI failure debugged, o... |
+| [tinystruct-patterns](ecc/tinystruct-patterns/SKILL.md) | `tinystruct-patterns` | `low` | Expert guidance for developing with the tinystruct Java framework. Use when working on the tinystruct codebase or any project b... |
+| [token-budget-advisor](ecc/token-budget-advisor/SKILL.md) | `token-budget-advisor` | `low` | Offer a choice of response depth (25%/50%/75%/100%) with token estimates before answering, then answer at that level. Use when ... |
+| [ui-demo](ecc/ui-demo/SKILL.md) | `ui-demo` | `low` | Record polished UI demo videos using Playwright. Use when the user asks to create a demo, walkthrough, screen recording, or tut... |
+| [ui-to-vue](ecc/ui-to-vue/SKILL.md) | `ui-to-vue` | `low` | Use when the user has UI screenshots or design exports that need batch conversion into Vue 3 components, especially with Vant, ... |
+| [uncloud](ecc/uncloud/SKILL.md) | `uncloud` | `low` | Use when managing an Uncloud cluster — deploying services, configuring Caddy ingress, adding static proxy routes for non-cluste... |
+| [unified-memory](ecc/unified-memory/SKILL.md) | `unified-memory` | `low` | Share durable, inspectable context and handoffs between Claude, Codex, Hermes, Cursor, OpenCode, and other agents through the l... |
+| [unified-notifications-ops](ecc/unified-notifications-ops/SKILL.md) | `unified-notifications-ops` | `low` | Operate notifications as one ECC-native workflow across GitHub, Linear, desktop alerts, hooks, and connected communication surf... |
+| [verification-loop](ecc/verification-loop/SKILL.md) | `verification-loop` | `low` | Run a six-phase verification of a Claude Code session's work — build, type check, lint, tests with coverage, security grep, and... |
+| [video-editing](ecc/video-editing/SKILL.md) | `video-editing` | `low` | AI-assisted video editing workflows for cutting, structuring, and augmenting real footage. Covers the full pipeline from raw ca... |
+| [videodb](ecc/videodb/SKILL.md) | `videodb` | `low` | Ingest, index, search, edit, and monitor video and audio with the VideoDB Python SDK — upload from files, URLs, or RTSP feeds, ... |
+| [visa-doc-translate](ecc/visa-doc-translate/SKILL.md) | `visa-doc-translate` | `low` | Translate visa document images (bank deposit, employment, income, and retirement certificates; HEIC, PNG, or JPG) into English ... |
+| [vite-patterns](ecc/vite-patterns/SKILL.md) | `vite-patterns` | `low` | Vite build tool patterns including config, plugins, HMR, env variables, proxy setup, SSR, library mode, dependency pre-bundling... |
+| [vue-patterns](ecc/vue-patterns/SKILL.md) | `vue-patterns` | `low` | Vue.js 3 Composition API patterns, component architecture, reactivity best practices, Pinia state management, Vue Router naviga... |
+| [windows-desktop-e2e](ecc/windows-desktop-e2e/SKILL.md) | `windows-desktop-e2e` | `low` | E2E testing for Windows native desktop apps (WPF, WinForms, Win32/MFC, Qt) using pywinauto and Windows UI Automation. Use when ... |
+| [workspace-surface-audit](ecc/workspace-surface-audit/SKILL.md) | `workspace-surface-audit` | `low` | Audit the active repo, MCP servers, plugins, connectors, env surfaces, and harness setup, then recommend the highest-value ECC-... |
+| [x-api](ecc/x-api/SKILL.md) | `x-api` | `low` | X/Twitter API integration for posting tweets, threads, reading timelines, search, and analytics. Covers OAuth auth patterns, ra... |
 
 ---
 
@@ -8933,27 +9232,27 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | :--- | :--- | :---: | :--- |
 | [dealer-aeo-audit](franchise-management/dealer-aeo-audit/SKILL.md) | `dealer-aeo-audit` | `low` | Specialized instructions for dealer aeo audit. |
 | [dealer-aeo-content-brief](franchise-management/dealer-aeo-content-brief/SKILL.md) | `dealer-aeo-content-brief` | `low` | Specialized instructions for dealer aeo content brief. |
-| [dealer-ai-readiness-audit](franchise-management/dealer-ai-readiness-audit/SKILL.md) | `dealer-ai-readiness-audit` | `low` | Run the 75-point Dealer AI Readiness Audit on a franchise or independent car dealership. Use when the user asks to "audit deale... |
-| [dealer-ai-referral-analytics](franchise-management/dealer-ai-referral-analytics/SKILL.md) | `dealer-ai-referral-analytics` | `low` | Audit a car dealership's AI-referrer traffic across GA4, Google Search Console, and server logs. Use when the user asks to "aud... |
-| [dealer-ai-sentiment-monitor](franchise-management/dealer-ai-sentiment-monitor/SKILL.md) | `dealer-ai-sentiment-monitor` | `low` | Audit how AI search engines (ChatGPT, Perplexity, Gemini, Claude, Google AI Mode, Copilot) describe and characterize a car deal... |
+| [dealer-ai-readiness-audit](franchise-management/dealer-ai-readiness-audit/SKILL.md) | `dealer-ai-readiness-audit` | `low` | Specialized instructions for dealer ai readiness audit. |
+| [dealer-ai-referral-analytics](franchise-management/dealer-ai-referral-analytics/SKILL.md) | `dealer-ai-referral-analytics` | `low` | Specialized instructions for dealer ai referral analytics. |
+| [dealer-ai-sentiment-monitor](franchise-management/dealer-ai-sentiment-monitor/SKILL.md) | `dealer-ai-sentiment-monitor` | `low` | Specialized instructions for dealer ai sentiment monitor. |
 | [dealer-ai-visibility](franchise-management/dealer-ai-visibility/SKILL.md) | `dealer-ai-visibility` | `low` | Specialized instructions for dealer ai visibility. |
-| [dealer-bilingual-seo](franchise-management/dealer-bilingual-seo/SKILL.md) | `dealer-bilingual-seo` | `low` | Build, audit, or remediate a Spanish-language SEO presence for a US car dealership targeting Hispanic buyers. Use when the user... |
+| [dealer-bilingual-seo](franchise-management/dealer-bilingual-seo/SKILL.md) | `dealer-bilingual-seo` | `low` | Specialized instructions for dealer bilingual seo. |
 | [dealer-call-tracking-audit](franchise-management/dealer-call-tracking-audit/SKILL.md) | `dealer-call-tracking-audit` | `low` | Specialized instructions for dealer call tracking audit. |
-| [dealer-call-transcript-classifier](franchise-management/dealer-call-transcript-classifier/SKILL.md) | `dealer-call-transcript-classifier` | `low` | Classify car dealership call transcripts into five categories with strict honesty rules. Use when the user asks to "classify ca... |
-| [dealer-comparison-page-builder](franchise-management/dealer-comparison-page-builder/SKILL.md) | `dealer-comparison-page-builder` | `low` | Build one in-depth comparison page between a car dealership and a single named competitor for SEO, AEO, GEO, and sales enableme... |
+| [dealer-call-transcript-classifier](franchise-management/dealer-call-transcript-classifier/SKILL.md) | `dealer-call-transcript-classifier` | `low` | Specialized instructions for dealer call transcript classifier. |
+| [dealer-comparison-page-builder](franchise-management/dealer-comparison-page-builder/SKILL.md) | `dealer-comparison-page-builder` | `low` | Specialized instructions for dealer comparison page builder. |
 | [dealer-cta-audit](franchise-management/dealer-cta-audit/SKILL.md) | `dealer-cta-audit` | `low` | Specialized instructions for dealer cta audit. |
 | [dealer-customer-sentiment-analyzer](franchise-management/dealer-customer-sentiment-analyzer/SKILL.md) | `dealer-customer-sentiment-analyzer` | `low` | Specialized instructions for dealer customer sentiment analyzer. |
 | [dealer-email-flows](franchise-management/dealer-email-flows/SKILL.md) | `dealer-email-flows` | `low` | Specialized instructions for dealer email flows. |
-| [dealer-equity-mining-campaign-builder](franchise-management/dealer-equity-mining-campaign-builder/SKILL.md) | `dealer-equity-mining-campaign-builder` | `low` | Build a complete equity mining campaign for a car dealership. Use when the user asks to "build an equity mining campaign", "des... |
-| [dealer-ga4-tracking-audit](franchise-management/dealer-ga4-tracking-audit/SKILL.md) | `dealer-ga4-tracking-audit` | `low` | Audit a car dealership's GA4 and Google Ads conversion tracking stack end-to-end. Use when the user asks to "audit my GA4," "au... |
-| [dealer-gbp-audit](franchise-management/dealer-gbp-audit/SKILL.md) | `dealer-gbp-audit` | `low` | Audit a car dealership's Google Business Profile (GBP) for local SEO and local pack performance. Use when the user asks to "aud... |
-| [dealer-llms-txt-generator](franchise-management/dealer-llms-txt-generator/SKILL.md) | `dealer-llms-txt-generator` | `low` | Generate a curated llms.txt file for a car dealership website to improve AEO (Answer Engine Optimization), GEO (Generative Engi... |
+| [dealer-equity-mining-campaign-builder](franchise-management/dealer-equity-mining-campaign-builder/SKILL.md) | `dealer-equity-mining-campaign-builder` | `low` | Specialized instructions for dealer equity mining campaign builder. |
+| [dealer-ga4-tracking-audit](franchise-management/dealer-ga4-tracking-audit/SKILL.md) | `dealer-ga4-tracking-audit` | `low` | Specialized instructions for dealer ga4 tracking audit. |
+| [dealer-gbp-audit](franchise-management/dealer-gbp-audit/SKILL.md) | `dealer-gbp-audit` | `low` | Specialized instructions for dealer gbp audit. |
+| [dealer-llms-txt-generator](franchise-management/dealer-llms-txt-generator/SKILL.md) | `dealer-llms-txt-generator` | `low` | Specialized instructions for dealer llms txt generator. |
 | [dealer-new-customer-onboarding](franchise-management/dealer-new-customer-onboarding/SKILL.md) | `dealer-new-customer-onboarding` | `low` | Specialized instructions for dealer new customer onboarding. |
 | [dealer-search-strategy](franchise-management/dealer-search-strategy/SKILL.md) | `dealer-search-strategy` | `low` | Specialized instructions for dealer search strategy. |
 | [dealer-seo-audit](franchise-management/dealer-seo-audit/SKILL.md) | `dealer-seo-audit` | `low` | Specialized instructions for dealer seo audit. |
-| [dealer-site-score](franchise-management/dealer-site-score/SKILL.md) | `dealer-site-score` | `low` | Run Dealer Site Score, the dealer website grader, on a franchise or independent car dealership site. Use when the user asks to ... |
-| [dealer-store-positioning](franchise-management/dealer-store-positioning/SKILL.md) | `dealer-store-positioning` | `low` | Generate a comprehensive positioning and brand content kit for a car dealership. Use when the user asks to "position my dealers... |
-| [dealer-vdp-merchandising-review](franchise-management/dealer-vdp-merchandising-review/SKILL.md) | `dealer-vdp-merchandising-review` | `low` | Review a sample of Vehicle Detail Pages (VDPs) on a car dealership website for merchandising quality. Use when the user asks to... |
+| [dealer-site-score](franchise-management/dealer-site-score/SKILL.md) | `dealer-site-score` | `low` | Specialized instructions for dealer site score. |
+| [dealer-store-positioning](franchise-management/dealer-store-positioning/SKILL.md) | `dealer-store-positioning` | `low` | Specialized instructions for dealer store positioning. |
+| [dealer-vdp-merchandising-review](franchise-management/dealer-vdp-merchandising-review/SKILL.md) | `dealer-vdp-merchandising-review` | `low` | Specialized instructions for dealer vdp merchandising review. |
 
 ---
 
@@ -13415,10 +13714,10 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [nuclear-materials](nuclear-engineering/nuclear-materials/SKILL.md) | `nuclear-materials` | `low` | Irradiation Effects in Structural Materials: Neutron embrittlement of RPV steels, zirconium alloy cladding oxidation/hydriding,... |
 | [nuclear-regulation](nuclear-engineering/nuclear-regulation/SKILL.md) | `nuclear-regulation` | `low` | Nuclear Licensing & Regulatory Compliance: NRC 10 CFR 50/52 regulatory requirements, Final Safety Analysis Reports (FSAR), tech... |
 | [nuclear-waste](nuclear-engineering/nuclear-waste/SKILL.md) | `nuclear-waste` | `low` | Spent Fuel Storage & Geologic Disposal: Wet spent fuel pools, dry storage casks, vitrification of high-level waste (HLW), deep ... |
-| [radiation-protection](nuclear-engineering/radiation-protection/SKILL.md) | `radiation-protection` | `low` | Health Physics & Radiological Shielding: ALARA principles, linear no-threshold (LNT) models, point-kernel gamma/neutron attenua... |
+| [radiation-protection](nuclear-engineering/radiation-protection/SKILL.md) | `radiation-protection` | `low` | Specialized instructions for radiation protection. |
 | [reactor-control](nuclear-engineering/reactor-control/SKILL.md) | `reactor-control` | `low` | Reactivity Control & Xenon Oscillation Dynamics: Control rod worth curves, chemical shim (soluble boron), xenon-135/samarium-14... |
 | [reactor-design](nuclear-engineering/reactor-design/SKILL.md) | `reactor-design` | `low` | Nuclear Core & Pressure Vessel Thermal Design: Fuel assembly geometric lattices, control rod cluster positioning, pressure vess... |
-| [reactor-physics](nuclear-engineering/reactor-physics/SKILL.md) | `reactor-physics` | `low` | Nuclear Reactor Physics & Core Neutronics: Multi-group neutron diffusion equation, four-factor formula ($k_\infty = \epsilon p ... |
+| [reactor-physics](nuclear-engineering/reactor-physics/SKILL.md) | `reactor-physics` | `low` | Specialized instructions for reactor physics. |
 | [reactor-safety](nuclear-engineering/reactor-safety/SKILL.md) | `reactor-safety` | `low` | Defense-in-Depth & Emergency Core Cooling: Loss-of-Coolant Accident (LOCA) mitigation, ECCS passive injection, containment isol... |
 | [thermal-hydraulics](nuclear-engineering/thermal-hydraulics/SKILL.md) | `thermal-hydraulics` | `low` | Nuclear Heat Transfer & Two-Phase Flow: Critical Heat Flux (CHF) and Departure from Nucleate Boiling Ratio (DNBR), RELAP5/TRACE... |
 
@@ -14167,11 +14466,11 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [data-minimization](privacy/data-minimization/SKILL.md) | `data-minimization` | `low` | Enforce strict need-to-know data collection boundaries, tokenization, and purpose-bound schema pruning. |
 | [data-retention](privacy/data-retention/SKILL.md) | `data-retention` | `low` | Implement scheduled database purging, soft-delete cascades, and cryptographic data shredding across backups. |
 | [data-subject-rights](privacy/data-subject-rights/SKILL.md) | `data-subject-rights` | `low` | Automate Right of Access, Rectification, and Right to be Forgotten (Erasure) workflows across disparate systems. |
-| [differential-privacy](privacy/differential-privacy/SKILL.md) | `differential-privacy` | `low` | Inject calibrated Laplace and Gaussian noise into analytics queries to guarantee $(\epsilon, \delta)$-differential privacy bounds. |
+| [differential-privacy](privacy/differential-privacy/SKILL.md) | `differential-privacy` | `low` | Specialized instructions for differential privacy. |
 | [dsar](privacy/dsar/SKILL.md) | `dsar` | `low` | Authenticate data subject identities securely and redact third-party PII from document disclosures. |
 | [managing-privacy-breach-response](privacy/managing-privacy-breach-response/SKILL.md) | `managing-privacy-breach-response` | `low` | Guides HIPAA breach investigation with risk assessment, notification requirements, and remediation documentation. Use when mana... |
 | [pii-detection](privacy/pii-detection/SKILL.md) | `pii-detection` | `low` | Detect personally identifiable information (PII) in code, data, and agent outputs before processing or storage. Multi-language,... |
-| [priv-differential-privacy-gdpr-dpia](privacy/priv-differential-privacy-gdpr-dpia/SKILL.md) | `priv-differential-privacy-gdpr-dpia` | `low` | Quantify privacy loss with $(\epsilon, \delta)$-differential privacy mechanisms and perform rigorous General Data Protection Re... |
+| [priv-differential-privacy-gdpr-dpia](privacy/priv-differential-privacy-gdpr-dpia/SKILL.md) | `priv-differential-privacy-gdpr-dpia` | `low` | Specialized instructions for priv differential privacy gdpr dpia. |
 | [privacy-auditing](privacy/privacy-auditing/SKILL.md) | `privacy-auditing` | `low` | Audit vendor Data Processing Agreements (DPA), Standard Contractual Clauses (SCC), and Schrems II transfer risks. |
 | [privacy-by-design](privacy/privacy-by-design/SKILL.md) | `privacy-by-design` | `low` | Operationalize Ann Cavoukian's 7 Foundational Principles of Privacy by Design into software development lifecycles. |
 | [privacy-engineering](privacy/privacy-engineering/SKILL.md) | `privacy-engineering` | `low` | Conduct systematic privacy threat modeling across Linkability, Identifiability, Non-repudiation, and Disclosure. |
@@ -14470,7 +14769,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [cirq](quantum/cirq/SKILL.md) | `cirq` | `low` | Cirq Quantum Development Architecture: Google Cirq primitives, grid qubit geometries, scheduled circuits, noise modeling (densi... |
 | [pennylane](quantum/pennylane/SKILL.md) | `pennylane` | `low` | PennyLane Hybrid Quantum-Classical Computing: Differentiable quantum computing, parameter-shift rule for analytic gradients, Py... |
 | [qiskit](quantum/qiskit/SKILL.md) | `qiskit` | `low` | Qiskit Quantum Programming Framework: IBM Qiskit SDK, QuantumCircuit construction, Transpiler passes, Aer statevector simulator... |
-| [quantum-algorithms](quantum/quantum-algorithms/SKILL.md) | `quantum-algorithms` | `low` | Core Quantum Algorithms & Complexity: Shor's factoring algorithm, Grover's search algorithm ($O(\sqrt{N})$), Quantum Fourier Tr... |
+| [quantum-algorithms](quantum/quantum-algorithms/SKILL.md) | `quantum-algorithms` | `low` | Specialized instructions for quantum algorithms. |
 | [quantum-circuits](quantum/quantum-circuits/SKILL.md) | `quantum-circuits` | `low` | Quantum Circuit Synthesis & Gate Decompositions: Clifford + T universal gate set, CNOT and Toffoli decomposition, circuit depth... |
 | [quantum-cryptography](quantum/quantum-cryptography/SKILL.md) | `quantum-cryptography` | `low` | Quantum Key Distribution & Post-Quantum Cryptography: BB84 protocol, decoy-state QKD, quantum random number generation (QRNG), ... |
 | [quantum-error-correction](quantum/quantum-error-correction/SKILL.md) | `quantum-error-correction` | `low` | Quantum Error Correction & Fault-Tolerant Architecture: Surface codes, Shor code, stabilizer formalisms, syndrome measurement, ... |
@@ -14640,8 +14939,8 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | Skill ID | Name | Risk | Description |
 | :--- | :--- | :---: | :--- |
 | [theo-exegese-juive-pardes](religious-studies/theo-exegese-juive-pardes/SKILL.md) | `theo-exegese-juive-pardes` | `low` | Orchestre une exégèse juive multicouche des textes bibliques en utilisant la méthode traditionnelle du PaRDeS (acronyme formali... |
-| [theo-rethorique-semitique](religious-studies/theo-rethorique-semitique/SKILL.md) | `theo-rethorique-semitique` | `low` | Analyse des textes bibliques et sémitiques selon la méthode de l'analyse rhétorique (Roland Meynet). Utilisez cette compétence ... |
-| [theo-rethorique-synchronique](religious-studies/theo-rethorique-synchronique/SKILL.md) | `theo-rethorique-synchronique` | `low` | Analyse socio-rhétorique des textes bibliques (méthode de Vernon Robbins). Utilisez ce skill lorsque l'utilisateur demande une ... |
+| [theo-rethorique-semitique](religious-studies/theo-rethorique-semitique/SKILL.md) | `theo-rethorique-semitique` | `low` | Specialized instructions for theo rethorique semitique. |
+| [theo-rethorique-synchronique](religious-studies/theo-rethorique-synchronique/SKILL.md) | `theo-rethorique-synchronique` | `low` | Specialized instructions for theo rethorique synchronique. |
 | [theo-robert-alter-analyse](religious-studies/theo-robert-alter-analyse/SKILL.md) | `theo-robert-alter-analyse` | `low` | Analyse des textes bibliques selon la méthode littéraire et les principes de traduction de Robert Alter. À utiliser pour examin... |
 
 ---
@@ -14738,7 +15037,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [robotics-project-plan](robotics/robotics-project-plan/SKILL.md) | `robotics-project-plan` | `low` | Plan robotics projects. TRIGGERS - Use when user needs help with robotics-project-plan related tasks. |
 | [robotics-safety-plan](robotics/robotics-safety-plan/SKILL.md) | `robotics-safety-plan` | `low` | Design robotics safety plans. TRIGGERS - Use when user needs help with robotics-safety-plan related tasks. |
 | [robotics-scientist](robotics/robotics-scientist/SKILL.md) | `agents` | `low` | Imported from K-Dense-AI/scientific-agents |
-| [ros2-fundamentals](robotics/ros2-fundamentals/SKILL.md) | `ros2-fundamentals` | `low` | Use when designing, writing, or debugging ROS2 systems — choosing between topics/services/actions, configuring QoS profiles, fi... |
+| [ros2-fundamentals](robotics/ros2-fundamentals/SKILL.md) | `ros2-fundamentals` | `low` | Specialized instructions for ros2 fundamentals. |
 | [rtos-realtime](robotics/rtos-realtime/SKILL.md) | `rtos-realtime` | `low` | Use when writing or reviewing real-time firmware for robots — FreeRTOS task architecture, control-loop scheduling, ISR design, ... |
 | [sensor-fusion-kalman](robotics/sensor-fusion-kalman/SKILL.md) | `sensor-fusion-kalman` | `low` | Use when fusing noisy sensors (IMU, GPS, wheel odometry, vision) into a state estimate, implementing or debugging a Kalman filt... |
 | [servos](robotics/servos/SKILL.md) | `servos` | `low` | Use when controlling hobby servos (SG90, MG90S, MG996R, DS3218) or continuous-rotation servos from Arduino, ESP32, Pico, or any... |
@@ -15602,7 +15901,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [skill-find](skill-governance/skill-find/SKILL.md) | `skill-find` | `low` | Specialized instructions for skill find. |
 | [summarize-doc](skill-governance/summarize-doc/SKILL.md) | `summarize-doc` | `low` | Converts a document into a summary. Use when the user asks about the document thing. |
 | [td-skill](skill-governance/td-skill/SKILL.md) | `td-skill` | `low` | Creates a thing and validates it. Use when the frontmatter tier must be mirrored by the library.json entry for the mirroring test. |
-| [templates](skill-governance/templates/SKILL.md) | `replace-with-kebab-case-name-matching-this-directory` | `low` | REPLACE - state what the skill does AND when to use it, with concrete trigger keywords. One to two sentences. Third person. Avo... |
+| [templates](skill-governance/templates/SKILL.md) | `replace-with-kebab-case-name-matching-this-directory` | `low` | Specialized instructions for templates. |
 | [vague](skill-governance/vague/SKILL.md) | `vague` | `low` | Helps with stuff. |
 | [wrong-name](skill-governance/wrong-name/SKILL.md) | `totally-different` | `low` | Renders a Markdown document to PDF. Use when the user asks to export or convert notes to PDF. |
 
@@ -16301,7 +16600,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [technical-training](training/technical-training/SKILL.md) | `technical-training` | `low` | Design sandbox coding environments, architectural katas, and guided lab exercises for software engineers. |
 | [train-kirkpatrick-curriculum-design](training/train-kirkpatrick-curriculum-design/SKILL.md) | `train-kirkpatrick-curriculum-design` | `low` | Develop corporate technical training programs and measure business impact across reaction, learning, behavior transfer, and org... |
 | [train-the-trainer](training/train-the-trainer/SKILL.md) | `train-the-trainer` | `low` | Coach subject matter experts (SMEs) to become effective classroom facilitators and peer mentors. |
-| [training-evaluation](training/training-evaluation/SKILL.md) | `training-evaluation` | `low` | Measure monetary ROI of training interventions: $ROI = \frac{\text{Net Benefits}}{\text{Training Costs}} \times 100\%$. |
+| [training-evaluation](training/training-evaluation/SKILL.md) | `training-evaluation` | `low` | Specialized instructions for training evaluation. |
 | [training-needs-analysis](training/training-needs-analysis/SKILL.md) | `training-needs-analysis` | `low` | Conduct organizational, task, and individual level needs analysis to identify genuine training vs systemic performance gaps. |
 | [tut-socratic-pedagogy-worked-examples](training/tut-socratic-pedagogy-worked-examples/SKILL.md) | `tut-socratic-pedagogy-worked-examples` | `low` | Design instructional learning dialogues using cognitive apprenticeship, Socratic diagnostic questioning, and faded worked-examp... |
 
@@ -16865,7 +17164,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [fiction-manuscript-guide](writing/fiction-manuscript-guide/SKILL.md) | `fiction-manuscript-guide` | `low` | Specialized instructions for fiction manuscript guide. |
 | [grant-writing-guide](writing/grant-writing-guide/SKILL.md) | `grant-writing-guide` | `low` | Specialized instructions for grant writing guide. |
 | [memoir-writing-guide](writing/memoir-writing-guide/SKILL.md) | `memoir-writing-guide` | `low` | Specialized instructions for memoir writing guide. |
-| [murakami-style-writing](writing/murakami-style-writing/SKILL.md) | `murakami-style-writing` | `low` | Generates or revises prose in the style of Haruki Murakami (村上春樹): short sentences, rhythm, mundane details, first-person detac... |
+| [murakami-style-writing](writing/murakami-style-writing/SKILL.md) | `murakami-style-writing` | `low` | Specialized instructions for murakami style writing. |
 | [nonfiction-manuscript-guide](writing/nonfiction-manuscript-guide/SKILL.md) | `nonfiction-manuscript-guide` | `low` | Specialized instructions for nonfiction manuscript guide. |
 | [self-publishing-plan](writing/self-publishing-plan/SKILL.md) | `self-publishing-plan` | `low` | Specialized instructions for self publishing plan. |
 | [writing-group-facilitation](writing/writing-group-facilitation/SKILL.md) | `writing-group-facilitation` | `low` | Specialized instructions for writing group facilitation. |

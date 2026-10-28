@@ -271,7 +271,7 @@ Eliminates prompt bloat through automated workspace detection:
 - **Canonical Skills**: `122` tested foundational skills in `skills/`.
 - **Active Harness Skills**: `70` staff-engineer playbooks pre-loaded in `.agents/skills/`.
 - **Manifest Skills**: `192` tool-mapped skills in `manifest.json`.
-- **Unique Skills**: `13,297` distinct skill capabilities across the platform.
+- **Unique Skills**: `13,321` distinct skill capabilities across the platform.
 - **Catalog Skills**: `15,146` categorized implementations across 252 domains in `awesome_skills/`.
 
 ---

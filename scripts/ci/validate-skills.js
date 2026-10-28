@@ -33,6 +33,9 @@ const DOCS_DIR = path.join(__dirname, '../../docs');
 
 const STRICT = process.argv.includes('--strict') || process.env.CI_STRICT_SKILLS === '1';
 
+// Totals for the run summary (nested category traversal).
+const skillDirStats = { validated: 0, skipped: 0 };
+
 /**
  * Parse the leading YAML frontmatter of a markdown document.
  *
@@ -204,9 +207,59 @@ function inspectFrontmatter(lines) {
  * @param {(msg: string) => void} reportFrontmatterFinding
  * @returns {{fatal: boolean}}
  */
-function validateSkillDir(dir, skillsDir, reportFrontmatterFinding) {
+function hasExecutableArtifacts(directory) {
+  return fs.readdirSync(directory, { withFileTypes: true }).some(entry => (
+    entry.isFile() && (
+      entry.name === 'skill.yaml'
+      || entry.name === 'skill.yml'
+      || entry.name === 'skill.py'
+      || entry.name === 'manifest.yml'
+      || entry.name === 'handler.py'
+      || entry.name.endsWith('.py')
+    )
+  ));
+}
+
+function validateSkillDir(dir, skillsDir, reportFrontmatterFinding, depth = 0) {
   const skillMd = path.join(skillsDir, dir, 'SKILL.md');
-  return validateSkillFile(skillMd, `${dir}/SKILL.md`, reportFrontmatterFinding, { requireFrontmatter: false });
+  const label = `${dir}/SKILL.md`;
+
+  if (fs.existsSync(skillMd)) {
+    return validateSkillFile(skillMd, label, reportFrontmatterFinding, { requireFrontmatter: false });
+  }
+
+  // Executable, code-backed skills (skill.yaml / skill.py / handler.py and
+  // friends) are validated by the Python registry, not by this markdown
+  // validator. Only a directory with neither a SKILL.md nor any code artifact
+  // is a real structural defect.
+  if (depth > 0 && hasExecutableArtifacts(path.join(skillsDir, dir))) {
+    return { fatal: false, validated: 0, skipped: 1 };
+  }
+
+  // All-Skills groups canonical skills one level deeper than the upstream ECC
+  // layout (skills/<category>/<slug>/SKILL.md). A directory with no SKILL.md of
+  // its own is a category only at the top level; below that, a missing SKILL.md
+  // is a real defect and is reported as such.
+  const nestedDirs = depth === 0
+    ? fs.readdirSync(path.join(skillsDir, dir), { withFileTypes: true })
+      .filter(entry => entry.isDirectory() && !entry.name.startsWith('.') && entry.name !== '__pycache__')
+      .map(entry => entry.name)
+    : [];
+
+  if (nestedDirs.length === 0) {
+    return validateSkillFile(skillMd, label, reportFrontmatterFinding, { requireFrontmatter: false });
+  }
+
+  let fatal = false;
+  let validated = 0;
+  let skipped = 0;
+  for (const nested of nestedDirs) {
+    const result = validateSkillDir(path.join(dir, nested), skillsDir, reportFrontmatterFinding, depth + 1);
+    fatal = fatal || result.fatal;
+    validated += result.validated || 0;
+    skipped += result.skipped || 0;
+  }
+  return { fatal, validated, skipped };
 }
 
 /**
@@ -347,15 +400,21 @@ function validateSkills() {
 
   if (curatedExists) {
     const entries = fs.readdirSync(SKILLS_DIR, { withFileTypes: true });
-    const dirs = entries.filter(e => e.isDirectory() && !e.name.startsWith('.')).map(e => e.name);
+    // `_`-prefixed directories are platform boundaries (e.g. _quarantine), not skills.
+    const dirs = entries
+      .filter(e => e.isDirectory() && !e.name.startsWith('.') && !e.name.startsWith('_'))
+      .map(e => e.name);
 
     for (const dir of dirs) {
-      const { fatal } = validateSkillDir(dir, SKILLS_DIR, reportFrontmatterFinding);
+      const { fatal, validated, skipped } = validateSkillDir(dir, SKILLS_DIR, reportFrontmatterFinding);
       if (fatal) {
         hasErrors = true;
         continue;
       }
-      validCount++;
+      validCount += validated === undefined ? 1 : validated;
+      if (skipped) {
+        skillDirStats.skipped += skipped;
+      }
     }
   }
 
@@ -375,6 +434,9 @@ function validateSkills() {
   let msg = `Validated ${validCount} skill directories`;
   if (warnCount > 0) {
     msg += ` (${warnCount} warning${warnCount === 1 ? '' : 's'})`;
+  }
+  if (skillDirStats.skipped > 0) {
+    msg += ` [${skillDirStats.skipped} code-backed skill(s) validated by the Python registry]`;
   }
   console.log(msg);
 }

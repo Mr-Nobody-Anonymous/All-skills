@@ -9,7 +9,7 @@ Exhaustive index of all 27 voice & multimodal capability categories, verified up
 ### A. Curated Official Catalog Manager
 - **Repository**: [OpenVoiceOS/ovos-skill-manager](https://github.com/OpenVoiceOS/ovos-skill-manager)
 - **Manifest Source**: [OpenVoiceOS/ovos-skills-manager](https://github.com/OpenVoiceOS/ovos-skills-manager)
-- **Sync Tool**: [`scripts/sync_osm_skills.py`](file:///scripts/sync_osm_skills.py)
+- **Sync Tool**: [`scripts/sync_osm_skills.py`](../scripts/sync_osm_skills.py)
 
 ### B. Verified OpenVoiceOS Upstream Repositories (39 Active)
 | Repository | Description | Status |

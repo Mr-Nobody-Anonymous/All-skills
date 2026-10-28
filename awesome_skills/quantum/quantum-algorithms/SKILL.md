@@ -1,6 +1,7 @@
 ---
 name: quantum-algorithms
-description: "Core Quantum Algorithms & Complexity: Shor's factoring algorithm, Grover's search algorithm ($O(\sqrt{N})$), Quantum Fourier Transform (QFT), and Phase Estimation."
+description: >-
+  Core Quantum Algorithms & Complexity: Shor's factoring algorithm, Grover's search algorithm ($O(\sqrt{N})$), Quantum Fourier Transform (QFT), and Phase Estimation.
 category: quantum
 domain: quantum
 subdomain: engineering
@@ -15,7 +16,6 @@ platforms:
   - antigravity
   - copilot
 ---
-
 # Core Quantum Algorithms & Complexity
 
 Shor's factoring algorithm, Grover's search algorithm ($O(\sqrt{N})$), Quantum Fourier Transform (QFT), and Phase Estimation.

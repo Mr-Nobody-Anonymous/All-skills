@@ -220,9 +220,16 @@ test('ancestor replacement during open fails before reading redirected resource 
 test('real repository registry covers current curated skills and every install target plus Pi', () => {
   const root = path.resolve(__dirname, '../..');
   const registry = loadContextRegistry({ repoRoot: root });
-  const ids = fs.readdirSync(path.join(root, 'skills'), { withFileTypes: true })
-    .filter(entry => entry.isDirectory() && fs.existsSync(path.join(root, 'skills', entry.name, 'SKILL.md')))
-    .map(entry => `skill:${entry.name}`).sort();
+  // Follow the declared inventory root (flat or category-nested) instead of
+  // assuming a hardcoded layout: every directory carrying a SKILL.md is a skill.
+  const { inventory } = JSON.parse(fs.readFileSync(
+    path.join(root, 'manifests/context-packs/skill-registry@1.json'), 'utf8'));
+  const walk = relative => fs.readdirSync(path.join(root, relative), { withFileTypes: true }).flatMap(entry => {
+    const child = `${relative}/${entry.name}`;
+    if (!entry.isDirectory() || entry.name.startsWith('.') || entry.name.startsWith('_')) return [];
+    return fs.existsSync(path.join(root, child, 'SKILL.md')) ? [child] : walk(child);
+  });
+  const ids = walk(inventory.skillsRoot).map(dir => `skill:${dir.split('/').pop()}`).sort();
   assert.deepEqual(registry.entries.map(entry => entry.id), ids);
   assert.deepEqual(registry.targets, [...new Set([...SUPPORTED_INSTALL_TARGETS, 'pi'])].sort());
   assert.ok(registry.targets.includes('claude-project'));

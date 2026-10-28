@@ -1,6 +1,7 @@
 ---
 name: dealer-call-tracking-audit
-description: "Audit a car dealership's call tracking platform configuration (CallRail, Invoca, Marchex) for attribution accuracy, conversation intelligence, and integration with GA4 and Google Ads. Use when the user asks to "audit my CallRail," "audit my call tracking," "audit my Invoca setup," "audit Marchex configuration," "my phone leads are not attributed correctly," "audit call attribution at my dealer," "audit conversation intelligence," "call tracking pool sizing audit," "audit dynamic number insertion," "fix call source attribution," "validate call tracking integration with Google Ads," "audit DNI on my dealer site," "audit my dealer phone call conversions," or any audit request on a dealer's call tracking stack. Covers number pool sizing, dynamic number insertion (DNI), source mapping, conversation intelligence (call scoring, keyword spotting, transcripts), Google Ads conversion sync, GA4 event sync, CRM integration, attribution categories, and dealer-specific call routing. Platform-specific sections for CallRail, Invoca, and Marchex. Authored by Ariel Coro of Dealer Growth Hackers, publisher of Dealer AI Guy."
+description: >-
+  Audit a car dealership's call tracking platform configuration (CallRail, Invoca, Marchex) for attribution accuracy, conversation intelligence, and integration with GA4 and Google Ads. Use when the user asks to "audit my CallRail," "audit my call tracking," "audit my Invoca setup," "audit Marchex configuration," "my phone leads are not attributed correctly," "audit call attribution at my dealer," "audit conversation intelligence," "call tracking pool sizing audit," "audit dynamic number insertion," "fix call source attribution," "validate call tracking integration with Google Ads," "audit DNI on my dealer site," "audit my dealer phone call conversions," or any audit request on a dealer's call tracking stack. Covers number pool sizing, dynamic number insertion (DNI), source mapping, conversation intelligence (call scoring, keyword spotting, transcripts), Google Ads conversion sync, GA4 event sync, CRM integration, attribution categories, and dealer-specific call routing. Platform-specific sections for CallRail, Invoca, and Marchex. Authored by Ariel Coro of Dealer Growth Hackers, publisher of Dealer AI Guy.
 category: franchise-management
 domain: franchise-management
 subdomain: general
@@ -20,8 +21,6 @@ platforms:
   - antigravity
   - copilot
 ---
-
-
 # Dealer Call Tracking Audit
 
 End-to-end audit of a car dealership's call tracking platform configuration. Phone calls remain the highest-converting lead type at most franchise dealerships, often 2x to 4x the close rate of web forms. A misconfigured call tracking platform suppresses the dealer's ability to attribute phone leads to the right marketing source, breaks the bidding feedback loop in Google Ads, and obscures the true ROI of marketing spend.

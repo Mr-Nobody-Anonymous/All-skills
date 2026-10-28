@@ -14,7 +14,7 @@ Use this page when you are specifically debugging:
 - hook edits that do not hot-reload
 - repeated `529 Overloaded` responses under heavy hook/tool pressure
 
-For the fuller ECC troubleshooting surface, use [TROUBLESHOOTING.md](./TROUBLESHOOTING.md).
+For the fuller ECC troubleshooting surface, use [TROUBLESHOOTING.md](../TROUBLESHOOTING.md).
 
 ## High-Signal Workarounds
 
@@ -68,7 +68,7 @@ What helps:
 
 ## Related ECC Docs
 
-- [TROUBLESHOOTING.md](./TROUBLESHOOTING.md)
+- [TROUBLESHOOTING.md](../TROUBLESHOOTING.md)
 - [token-optimization.md](./token-optimization.md)
 - [hooks/README.md](../hooks/README.md)
 - [issue #644](https://github.com/Mr-Nobody-Anonymous/All-skills/issues/644)

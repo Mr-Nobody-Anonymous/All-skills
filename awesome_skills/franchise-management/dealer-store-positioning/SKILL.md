@@ -1,6 +1,7 @@
 ---
 name: dealer-store-positioning
-description: "Generate a comprehensive positioning and brand content kit for a car dealership. Use when the user asks to "position my dealership", "build a positioning brief", "dealer brand positioning", "dealership USP", "what makes my dealership different", "competitive positioning for my dealer", "dealer brand strategy", "marketing content kit for my dealership", "voice and tone for my dealer", "dealer value proposition", "dealership tagline", "brand bible for my dealership", or any request to define or document a car dealership's positioning, target customer, differentiation, voice, or brand content assets. Produces a complete positioning brief plus marketing-team-ready content kit: boilerplate language, tagline options, social media bios, email signatures, value proposition variants, "we are / we are not" boundaries, and competitor differentiation. Foundational skill: every other dealer marketing skill in the marketplace references the positioning output as input. Authored by Ariel Coro of Dealer AI Guy."
+description: >-
+  Generate a comprehensive positioning and brand content kit for a car dealership. Use when the user asks to "position my dealership", "build a positioning brief", "dealer brand positioning", "dealership USP", "what makes my dealership different", "competitive positioning for my dealer", "dealer brand strategy", "marketing content kit for my dealership", "voice and tone for my dealer", "dealer value proposition", "dealership tagline", "brand bible for my dealership", or any request to define or document a car dealership's positioning, target customer, differentiation, voice, or brand content assets. Produces a complete positioning brief plus marketing-team-ready content kit: boilerplate language, tagline options, social media bios, email signatures, value proposition variants, "we are / we are not" boundaries, and competitor differentiation. Foundational skill: every other dealer marketing skill in the marketplace references the positioning output as input. Authored by Ariel Coro of Dealer AI Guy.
 category: franchise-management
 domain: franchise-management
 subdomain: general
@@ -20,8 +21,6 @@ platforms:
   - antigravity
   - copilot
 ---
-
-
 # Dealer Store Positioning
 
 This skill produces a comprehensive positioning and brand content kit for a car dealership. The output is foundational: every other marketing skill in the marketplace (content briefs, email flows, comparison pages, onboarding programs) references the positioning output as input.

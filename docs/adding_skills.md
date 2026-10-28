@@ -40,7 +40,7 @@ class MyCustomSkill:
 
 ## 2. Registering in the Priority Manifest
 
-Add your skill to [`scratch_priority_import/skill_manifest.yaml`](file:///scratch_priority_import/skill_manifest.yaml):
+Add your skill to [`scratch_priority_import/skill_manifest.yaml`](../scratch_priority_import/skill_manifest.yaml):
 
 ```yaml
 my_custom_skill:

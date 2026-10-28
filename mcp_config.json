@@ -1,6 +1,14 @@
 {
   "$schema": "https://raw.githubusercontent.com/modelcontextprotocol/specification/main/schema/mcp-config.schema.json",
   "mcpServers": {
+    "fetch": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-fetch>=0.6.0"
+      ],
+      "env": {},
+      "description": "HTTP and documentation retrieval"
+    },
     "filesystem": {
       "command": "npx",
       "args": [
@@ -10,14 +18,6 @@
       ],
       "env": {},
       "description": "Safe filesystem access constrained to workspace boundary"
-    },
-    "fetch": {
-      "command": "uvx",
-      "args": [
-        "mcp-server-fetch>=0.6.0"
-      ],
-      "env": {},
-      "description": "HTTP and documentation retrieval"
     },
     "git": {
       "command": "uvx",
@@ -37,6 +37,13 @@
       ],
       "env": {},
       "description": "Persistent cross-session knowledge graph and agent memory"
+    },
+    "time": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-time"
+      ],
+      "description": "Current time and timezone conversion for scheduling and deadlines."
     }
   }
 }

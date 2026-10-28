@@ -1,4 +1,5 @@
----name: next-intl-app-router
+---
+name: next-intl-app-router
 description: Configures and uses next-intl for Next.js App Router with locale-based routing. Use when adding or changing i18n, locale routing, translations, next-intl plugin, middleware/proxy, or message files in Next.js App Router projects.
 source: "https://github.com/liuchiawei/agent-skills"
 source_repository: "liuchiawei/agent-skills"

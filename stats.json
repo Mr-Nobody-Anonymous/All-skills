@@ -1,17 +1,17 @@
 {
   "platform_version": "3.0.0",
-  "total_unique_skills": 13297,
+  "total_unique_skills": 13321,
   "catalog_skills": 15146,
-  "catalog_index_records": 14855,
-  "canonical_skills": 398,
+  "catalog_index_records": 15146,
+  "canonical_skills": 492,
   "active_harness_skills": 89,
-  "manifest_skills": 192,
+  "manifest_skills": 492,
   "categories": 252,
-  "canonical_categories": 29,
-  "tests": 270,
+  "canonical_categories": 44,
+  "tests": 280,
   "workflows": 5,
   "ci_workflows": 4,
   "named_chains": 4,
   "curated_packs": 7,
-  "last_generated": "2026-10-04"
+  "last_generated": "2026-10-28"
 }

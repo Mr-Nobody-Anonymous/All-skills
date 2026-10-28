@@ -1,6 +1,7 @@
 ---
 name: sharp
-description: "Process images with the Sharp library for Node.js — resize, convert formats, composite, apply effects, and manage metadata. Use when the user mentions "sharp", "image processing", "resize image", "convert image", "image format", "jpeg quality", "png compression", "webp", "avif", "image thumbnail", "crop image", "watermark", "overlay image", "blur image", "sharpen image", "image metadata", "EXIF", "ICC profile", "colour space", "alpha channel", "animated gif", "image pipeline", or asks how to manipulate images in Node.js/TypeScript. Also use for "sharp constructor", "sharp cache", "sharp concurrency", "toFile", "toBuffer", or any Sharp API method."
+description: >-
+  Process images with the Sharp library for Node.js — resize, convert formats, composite, apply effects, and manage metadata. Use when the user mentions "sharp", "image processing", "resize image", "convert image", "image format", "jpeg quality", "png compression", "webp", "avif", "image thumbnail", "crop image", "watermark", "overlay image", "blur image", "sharpen image", "image metadata", "EXIF", "ICC profile", "colour space", "alpha channel", "animated gif", "image pipeline", or asks how to manipulate images in Node.js/TypeScript. Also use for "sharp constructor", "sharp cache", "sharp concurrency", "toFile", "toBuffer", or any Sharp API method.
 category: developer-tools
 domain: developer-tools
 subdomain: general
@@ -20,8 +21,6 @@ platforms:
   - antigravity
   - copilot
 ---
-
-
 # Sharp
 
 Skill for image processing with the [Sharp](https://sharp.pixelplumbing.com/) library in Node.js. Sharp is a high-performance image pipeline built on libvips.

@@ -1,6 +1,7 @@
 ---
 name: differential-privacy
-description: "Inject calibrated Laplace and Gaussian noise into analytics queries to guarantee $(\epsilon, \delta)$-differential privacy bounds."
+description: >-
+  Inject calibrated Laplace and Gaussian noise into analytics queries to guarantee $(\epsilon, \delta)$-differential privacy bounds.
 category: privacy
 author: AAS Platform
 version: 1.0.0
@@ -13,7 +14,6 @@ tags:
   - laplace
   - privacy-budget
 ---
-
 # Local and Global Differential Privacy Mechanisms
 
 ## Overview & Core Principles

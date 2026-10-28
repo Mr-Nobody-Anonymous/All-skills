@@ -1,6 +1,7 @@
 ---
 name: namecheap-domains
-description: "Manage domains through the Namecheap API — register, renew, transfer, configure DNS, and manage nameservers. Use when the user mentions "namecheap", "register domain", "domain DNS", "nameservers", "domain transfer", "renew domain", "check domain availability", "DNS records", "email forwarding", "WHOIS", or any domain registrar operations. Also use when managing A records, CNAME, MX records, or TXT records for Namecheap domains."
+description: >-
+  Manage domains through the Namecheap API — register, renew, transfer, configure DNS, and manage nameservers. Use when the user mentions "namecheap", "register domain", "domain DNS", "nameservers", "domain transfer", "renew domain", "check domain availability", "DNS records", "email forwarding", "WHOIS", or any domain registrar operations. Also use when managing A records, CNAME, MX records, or TXT records for Namecheap domains.
 category: developer-tools
 domain: developer-tools
 subdomain: general
@@ -20,8 +21,6 @@ platforms:
   - antigravity
   - copilot
 ---
-
-
 # Namecheap Domains
 
 Skill for managing domains through the Namecheap API. Covers domain registration, DNS configuration, nameserver management, and domain transfers.

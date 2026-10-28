@@ -1,6 +1,7 @@
 ---
 name: dealer-llms-txt-generator
-description: "Generate a curated llms.txt file for a car dealership website to improve AEO (Answer Engine Optimization), GEO (Generative Engine Optimization), and AI search visibility. Use when the user asks to "generate llms.txt", "create an llms.txt for a dealer", "make an llms.txt", "write llms.txt for my dealership", "build llms.txt", "fix my llms.txt", "audit my llms.txt", "dealer llms.txt", "llms.txt for car dealer", "AEO infrastructure", "GEO infrastructure", "AI search file", "ChatGPT crawler map", "LLM SEO file", or any request to produce or improve the llms.txt file at the root of a car dealer site. Also activates when discussing how AI engines crawl dealer websites, what llms.txt is for, generative engine optimization for car dealers, or how to make a dealership AI-readable for ChatGPT, Perplexity, Gemini, Claude, and Copilot. Pairs naturally with the dealer-aeo-audit skill: that audit finds the gap, this skill closes it. Authored by Ariel Coro of Dealer AI Guy."
+description: >-
+  Generate a curated llms.txt file for a car dealership website to improve AEO (Answer Engine Optimization), GEO (Generative Engine Optimization), and AI search visibility. Use when the user asks to "generate llms.txt", "create an llms.txt for a dealer", "make an llms.txt", "write llms.txt for my dealership", "build llms.txt", "fix my llms.txt", "audit my llms.txt", "dealer llms.txt", "llms.txt for car dealer", "AEO infrastructure", "GEO infrastructure", "AI search file", "ChatGPT crawler map", "LLM SEO file", or any request to produce or improve the llms.txt file at the root of a car dealer site. Also activates when discussing how AI engines crawl dealer websites, what llms.txt is for, generative engine optimization for car dealers, or how to make a dealership AI-readable for ChatGPT, Perplexity, Gemini, Claude, and Copilot. Pairs naturally with the dealer-aeo-audit skill: that audit finds the gap, this skill closes it. Authored by Ariel Coro of Dealer AI Guy.
 category: franchise-management
 domain: franchise-management
 subdomain: general
@@ -20,8 +21,6 @@ platforms:
   - antigravity
   - copilot
 ---
-
-
 # Dealer llms.txt Generator
 
 This skill produces a curated llms.txt file for a franchise or independent car dealership website. The output is a complete, paste-ready text file that the user can place at the root of their domain (e.g., `https://[domain]/llms.txt`).

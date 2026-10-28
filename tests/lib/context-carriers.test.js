@@ -325,7 +325,14 @@ test('real canonical inventory projects every selected bundled resource without 
   assert.deepEqual(carrier.selectedIds, registry.entries.map(entry => entry.id));
   assert.equal(carrier.files.filter(file => file.kind === 'copy').length,
     registry.entries.reduce((count, entry) => count + entry.resources.length, 0));
-  assert.ok(carrier.files.every(file => file.kind !== 'copy' || file.sourcePath.startsWith('skills/')));
-  assert.ok(carrier.files.some(file => file.destinationPath === '.opencode/skills/gget/SKILL.md'
-    && file.skillId === 'skill:scientific-pkg-gget'));
+  // The inventory root comes from the registry manifest, so the check follows
+  // the declared tree instead of assuming one hardcoded directory name.
+  const { inventory } = JSON.parse(fs.readFileSync(
+    path.join(REPO_ROOT, 'manifests/context-packs/skill-registry@1.json'), 'utf8'));
+  assert.ok(carrier.files.every(file => file.kind !== 'copy'
+    || file.sourcePath.startsWith(`${inventory.skillsRoot}/`)));
+  // Destination names come from the skill's own portable name metadata.
+  const gget = registry.entries.find(entry => entry.id === 'skill:scientific-pkg-gget');
+  assert.ok(gget && carrier.files.some(file => file.skillId === gget.id
+    && file.destinationPath === `.opencode/skills/${gget.name}/SKILL.md`));
 });

@@ -1,5 +1,7 @@
----name: murakami-style-writing
-description: Generates or revises prose in the style of Haruki Murakami (村上春樹): short sentences, rhythm, mundane details, first-person detached narrator, loneliness and memory, unexpected similes. Use when the user asks for Murakami-style writing, 村上春樹風格, or to write like Murakami.
+---
+name: murakami-style-writing
+description: >-
+  Generates or revises prose in the style of Haruki Murakami (村上春樹): short sentences, rhythm, mundane details, first-person detached narrator, loneliness and memory, unexpected similes. Use when the user asks for Murakami-style writing, 村上春樹風格, or to write like Murakami.
 source: "https://github.com/liuchiawei/agent-skills"
 source_repository: "liuchiawei/agent-skills"
 source_path: "skills/writing/murakami-style-writing/SKILL.md"
@@ -7,7 +9,6 @@ license: "MIT"
 imported_at: "2026-09-20"
 category: writing
 ---
-
 # Murakami-Style Writing
 
 ## When to Apply

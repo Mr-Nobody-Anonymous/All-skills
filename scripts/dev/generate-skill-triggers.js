@@ -15,6 +15,12 @@
 //     [--model gpt-5.6-sol] [--executable /path/to/codex] [--batch 25] [--dry-run]
 //   node scripts/dev/generate-skill-triggers.js --provider claude \
 //     [--model claude-sonnet-5] [--executable /path/to/claude] [--batch 40] [--dry-run]
+//   node scripts/dev/generate-skill-triggers.js --refresh-digests
+//
+// --refresh-digests is the offline maintenance path: it keeps the curated
+// trigger phrases, drops keys for skills that no longer exist, and rewrites
+// the registry/triggers digests and coverage counters. Use it after the
+// inventory root or the skill tree changes (never leave a stale digest).
 //
 // Codex requires an isolated executable and a dedicated subscription login
 // home (the same lease rules as the outcome evaluator: never the user's own
@@ -26,7 +32,20 @@ const fs = require('node:fs');
 const os = require('node:os');
 const path = require('node:path');
 const { loadContextRegistry } = require('../lib/context-pack-registry');
-const { createAuthLease, parseCodexJsonl, parseClaudeJson, providerFamily, readClaudeKeychainToken } = require('../../docker/context-profiles/ai-eval-lib');
+// The provider plumbing lives in the development-only evaluation harness
+// (docker/context-profiles/ai-eval-lib.js), which is not part of the published
+// package. Load it lazily so offline modes (--dry-run, --refresh-digests) and
+// argument validation keep working in a source-only checkout.
+let evalLib = null;
+function loadEvalLib() {
+  if (evalLib) return evalLib;
+  try {
+    evalLib = require('../../docker/context-profiles/ai-eval-lib');
+  } catch (error) {
+    throw new Error(`Provider generation is unavailable: docker/context-profiles/ai-eval-lib.js is missing (${error.message}). Use --refresh-digests for offline digest maintenance.`);
+  }
+  return evalLib;
+}
 const { digestObject, stableStringify } = require('../lib/context-profile-support');
 
 const MANIFEST_PATH = 'manifests/context-packs/skill-triggers@1.json';
@@ -39,6 +58,7 @@ function parseFlags(argv) {
   for (let index = 2; index < argv.length; index += 1) {
     const arg = argv[index];
     if (arg === '--dry-run') flags.dryRun = true;
+    else if (arg === '--refresh-digests') flags.refreshDigests = true;
     else if (['--auth-home', '--model', '--executable', '--batch', '--provider'].includes(arg)) {
       flags[arg.slice(2).replace(/-([a-z])/g, (_, c) => c.toUpperCase())] = argv[index += 1];
     } else throw new Error(`Unknown flag: ${arg}`);
@@ -79,13 +99,39 @@ function main() {
   const repoRoot = path.join(__dirname, '..', '..');
   const registry = loadContextRegistry({ repoRoot });
   const entries = registry.entries.filter(entry => entry.id.startsWith('skill:'));
+  if (flags.refreshDigests) {
+    const file = path.join(repoRoot, MANIFEST_PATH);
+    if (!fs.existsSync(file)) throw new Error(`Cannot refresh digests: ${MANIFEST_PATH} does not exist`);
+    const existing = JSON.parse(fs.readFileSync(file, 'utf8'));
+    if (!existing || typeof existing.triggers !== 'object' || !existing.triggers) {
+      throw new Error(`Cannot refresh digests: ${MANIFEST_PATH} has no triggers object`);
+    }
+    const known = new Set(entries.map(entry => entry.id));
+    const triggers = {};
+    for (const [id, list] of Object.entries(existing.triggers)) {
+      if (!known.has(id)) continue;
+      const cleaned = cleanTriggers(list);
+      if (cleaned.length) triggers[id] = cleaned;
+    }
+    const manifest = { schemaVersion: 1, id: 'skill-triggers@1', registryDigest: registry.registryDigest,
+      model: existing.model || { id: 'hand-seeded', effort: null, source: 'manual-curation' },
+      generatedAt: new Date().toISOString(),
+      coverage: { skills: entries.length, withTriggers: Object.keys(triggers).length },
+      triggers,
+      triggersDigest: digestObject(triggers) };
+    fs.mkdirSync(path.dirname(file), { recursive: true });
+    fs.writeFileSync(file, `${stableStringify(manifest)}\n`);
+    console.log(`refreshed ${MANIFEST_PATH}: ${manifest.coverage.withTriggers}/${manifest.coverage.skills} skills, registryDigest ${registry.registryDigest.slice(0, 12)}`);
+    return;
+  }
   const executable = flags.executable || (flags.provider === 'claude' ? 'claude' : `${process.env.HOME}/.ecc-eval/codex/node_modules/.bin/codex`);
-  const family = flags.provider || providerFamily(executable);
+  const family = flags.provider || loadEvalLib().providerFamily(executable);
   const model = flags.model || DEFAULT_MODEL[family];
   if (flags.dryRun) {
     console.log(`would generate triggers for ${entries.length} skills via ${family} (${model}) in ${Math.ceil(entries.length / flags.batch)} provider calls`);
     return;
   }
+  const { createAuthLease, parseCodexJsonl, parseClaudeJson, readClaudeKeychainToken } = loadEvalLib();
   if (family === 'codex' && (!flags.authHome || !path.isAbsolute(flags.authHome))) throw new Error('--auth-home with an absolute dedicated login home is required for Codex');
   const lease = family === 'codex' ? createAuthLease(flags.authHome) : null;
   const claudeToken = () => process.env.CLAUDE_CODE_OAUTH_TOKEN || readClaudeKeychainToken();

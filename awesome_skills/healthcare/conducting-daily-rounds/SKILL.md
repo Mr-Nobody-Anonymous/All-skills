@@ -1,4 +1,5 @@
----name: conducting-daily-rounds
+---
+name: conducting-daily-rounds
 language: en
 description: Structures systematic rounding documentation with overnight events, assessment, and plan updates. Use when documenting daily rounds, updating inpatient plans, or preparing rounding notes.
 tags:

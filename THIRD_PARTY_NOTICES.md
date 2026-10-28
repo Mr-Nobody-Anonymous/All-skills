@@ -54,4 +54,9 @@ This project incorporates skills, playbooks, tools, and documentation derived fr
 ---
 
 ## ⚖️ Open Source License Texts
-Full texts of MIT, Apache-2.0, BSD-2-Clause, BSD-3-Clause, and CC-BY licenses are archived under [`provenance/licenses/`](provenance/licenses/).
+Every component records an SPDX license identifier in [`registry/provenance.json`](registry/provenance.json)
+and [`registry/sbom.json`](registry/sbom.json) (CycloneDX 1.5). The MIT, Apache-2.0,
+BSD-2-Clause, BSD-3-Clause and CC-BY texts are **not** duplicated in this repository:
+each entry links to the upstream project that publishes the canonical text, so the
+license in force is always the one its author maintains. See
+[`provenance/README.md`](provenance/README.md) for the record layout.
