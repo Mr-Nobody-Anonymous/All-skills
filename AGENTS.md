@@ -1,6 +1,6 @@
 # Agent Runtime Directives & Standards
 
-This workspace is an advanced multi-agent engineering platform supporting **Antigravity**, **Claude Code**, **Cursor**, **Codex CLI** and 14 further harnesses. It is a production-ready AI coding plugin providing 68 specialized agents, 492 skills, 94 commands, and a 96-connector MCP catalog that installs into any harness with one command.
+This workspace is an advanced multi-agent engineering platform supporting **Antigravity**, **Claude Code**, **Cursor**, **Codex CLI** and 14 further harnesses. It is a production-ready AI coding plugin providing 68 specialized agents, 504 skills, 94 commands, and a 96-connector MCP catalog that installs into any harness with one command.
 
 ```
 agents/          — 68 specialized subagents

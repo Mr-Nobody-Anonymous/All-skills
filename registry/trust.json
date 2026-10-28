@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "updated_at": "2026-10-28T05:30:00.452450+00:00",
+  "updated_at": "2026-10-28T05:34:44.346471+00:00",
   "ladder": {
     "T0_UNKNOWN": {
       "rank": 0,
@@ -54,6 +54,7 @@
     "architecture.architecture-decision-records": "T5_CURATED",
     "architecture.architectural-design-workflow": "T5_CURATED",
     "architecture.interior-space-planning": "T5_CURATED",
+    "architecture.construction-documents-specifications": "T5_CURATED",
     "cloud.aws-compute": "T5_CURATED",
     "cloud.aws-networking": "T5_CURATED",
     "cloud.aws-security": "T5_CURATED",
@@ -118,6 +119,11 @@
     "design.presentations": "T5_CURATED",
     "design.remotion-best-practices": "T5_CURATED",
     "design.veo-video-generator": "T5_CURATED",
+    "design.vector-illustration-svg": "T5_CURATED",
+    "design.typography-and-type-systems": "T5_CURATED",
+    "design.print-production-prepress": "T5_CURATED",
+    "design.editorial-layout-design": "T5_CURATED",
+    "design.iconography-systems": "T5_CURATED",
     "desktop.app-packaging": "T5_CURATED",
     "desktop.auto-update": "T5_CURATED",
     "desktop.pyqt": "T5_CURATED",
@@ -508,6 +514,8 @@
     "cad.rhino-grasshopper": "T5_CURATED",
     "cad.bim-ifc-coordination": "T5_CURATED",
     "cad.technical-drawing-gdt": "T5_CURATED",
+    "cad.cnc-machining-fabrication": "T5_CURATED",
+    "cad.laser-cutting-engraving": "T5_CURATED",
     "3d.blender-modeling-topology": "T5_CURATED",
     "3d.blender-sculpting-retopology": "T5_CURATED",
     "3d.blender-rigging-animation": "T5_CURATED",
@@ -525,11 +533,15 @@
     "audio.sound-design-foley": "T5_CURATED",
     "audio.audio-mixing-mastering": "T5_CURATED",
     "audio.podcast-production": "T5_CURATED",
+    "audio.music-notation-engraving": "T5_CURATED",
+    "audio.live-sound-reinforcement": "T5_CURATED",
     "video.video-editing-workflow": "T5_CURATED",
     "video.color-grading": "T5_CURATED",
     "video.motion-graphics": "T5_CURATED",
     "video.video-encoding-delivery": "T5_CURATED",
-    "photography.photography-raw-workflow": "T5_CURATED"
+    "video.live-streaming-broadcast": "T5_CURATED",
+    "photography.photography-raw-workflow": "T5_CURATED",
+    "photography.studio-lighting-color-management": "T5_CURATED"
   },
   "skills": {}
 }

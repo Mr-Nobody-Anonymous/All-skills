@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "updated_at": "2026-10-28T05:30:00.452450+00:00",
+  "updated_at": "2026-10-28T05:34:44.346471+00:00",
   "spdx_approved_licenses": [
     "MIT",
     "Apache-2.0",
@@ -89,6 +89,7 @@
     "architecture.architecture-decision-records": "MIT",
     "architecture.architectural-design-workflow": "MIT",
     "architecture.interior-space-planning": "MIT",
+    "architecture.construction-documents-specifications": "MIT",
     "cloud.aws-compute": "MIT",
     "cloud.aws-networking": "MIT",
     "cloud.aws-security": "MIT",
@@ -153,6 +154,11 @@
     "design.presentations": "MIT",
     "design.remotion-best-practices": "MIT",
     "design.veo-video-generator": "MIT",
+    "design.vector-illustration-svg": "MIT",
+    "design.typography-and-type-systems": "MIT",
+    "design.print-production-prepress": "MIT",
+    "design.editorial-layout-design": "MIT",
+    "design.iconography-systems": "MIT",
     "desktop.app-packaging": "MIT",
     "desktop.auto-update": "MIT",
     "desktop.pyqt": "MIT",
@@ -543,6 +549,8 @@
     "cad.rhino-grasshopper": "MIT",
     "cad.bim-ifc-coordination": "MIT",
     "cad.technical-drawing-gdt": "MIT",
+    "cad.cnc-machining-fabrication": "MIT",
+    "cad.laser-cutting-engraving": "MIT",
     "3d.blender-modeling-topology": "MIT",
     "3d.blender-sculpting-retopology": "MIT",
     "3d.blender-rigging-animation": "MIT",
@@ -560,10 +568,14 @@
     "audio.sound-design-foley": "MIT",
     "audio.audio-mixing-mastering": "MIT",
     "audio.podcast-production": "MIT",
+    "audio.music-notation-engraving": "MIT",
+    "audio.live-sound-reinforcement": "MIT",
     "video.video-editing-workflow": "MIT",
     "video.color-grading": "MIT",
     "video.motion-graphics": "MIT",
     "video.video-encoding-delivery": "MIT",
-    "photography.photography-raw-workflow": "MIT"
+    "video.live-streaming-broadcast": "MIT",
+    "photography.photography-raw-workflow": "MIT",
+    "photography.studio-lighting-color-management": "MIT"
   }
 }

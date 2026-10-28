@@ -2,7 +2,7 @@
   "$schema": "./schemas/skill-frontmatter.schema.json",
   "schema_version": "1.1.0",
   "platform_version": "3.0.0",
-  "generated_at": "2026-10-28T05:30:00.452450+00:00",
+  "generated_at": "2026-10-28T05:34:44.346471+00:00",
   "system_defaults": {
     "default_mcp_servers": [
       "filesystem",
@@ -322,6 +322,25 @@
       "type": "procedural",
       "license": "MIT",
       "path": "architecture/interior-space-planning",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "architecture.construction-documents-specifications": {
+      "id": "architecture.construction-documents-specifications",
+      "name": "construction-documents-specifications",
+      "category": "architecture",
+      "description": "Produce construction documents: drawing set structure, sheet numbering, dimensioning, schedules, specifications and revision control.",
+      "version": "1.0.0",
+      "risk": "high",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "architecture/construction-documents-specifications",
       "tools": [],
       "platforms": [
         "claude",
@@ -1538,6 +1557,101 @@
       "type": "procedural",
       "license": "MIT",
       "path": "design/veo-video-generator",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "design.vector-illustration-svg": {
+      "id": "design.vector-illustration-svg",
+      "name": "vector-illustration-svg",
+      "category": "design",
+      "description": "Author clean, editable vector artwork and SVG: paths and boolean operations, stroke-to-outline, Inkscape CLI automation, and web-safe SVG export.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "design/vector-illustration-svg",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "design.typography-and-type-systems": {
+      "id": "design.typography-and-type-systems",
+      "name": "typography-and-type-systems",
+      "category": "design",
+      "description": "Design and specify type: type scales, pairing, vertical rhythm, variable fonts, OpenType features, licensing and cross-platform rendering.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "design/typography-and-type-systems",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "design.print-production-prepress": {
+      "id": "design.print-production-prepress",
+      "name": "print-production-prepress",
+      "category": "design",
+      "description": "Take artwork from screen to press: CMYK and spot colour, bleed and trim, overprint, imposition, PDF/X export and a printer checklist.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "design/print-production-prepress",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "design.editorial-layout-design": {
+      "id": "design.editorial-layout-design",
+      "name": "editorial-layout-design",
+      "category": "design",
+      "description": "Lay out multi-page documents: grid systems, masters and styles, flowing long copy, tables, footnotes and accessible PDF output.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "design/editorial-layout-design",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "design.iconography-systems": {
+      "id": "design.iconography-systems",
+      "name": "iconography-systems",
+      "category": "design",
+      "description": "Build an icon system: consistent optical grid, stroke and corner radii, naming, SVG sprite delivery and accessibility.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "design/iconography-systems",
       "tools": [],
       "platforms": [
         "claude",
@@ -8960,6 +9074,44 @@
         "copilot"
       ]
     },
+    "cad.cnc-machining-fabrication": {
+      "id": "cad.cnc-machining-fabrication",
+      "name": "cnc-machining-fabrication",
+      "category": "cad",
+      "description": "Go from a solid model to machined parts: DFM review, toolpath strategy, workholding, feeds and speeds, and a G-code sanity check.",
+      "version": "1.0.0",
+      "risk": "high",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "cad/cnc-machining-fabrication",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "cad.laser-cutting-engraving": {
+      "id": "cad.laser-cutting-engraving",
+      "name": "laser-cutting-engraving",
+      "category": "cad",
+      "description": "Prepare files for laser cutting and engraving: kerf compensation, cut order, material settings, nesting and safe operation.",
+      "version": "1.0.0",
+      "risk": "high",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "cad/laser-cutting-engraving",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
     "3d.blender-modeling-topology": {
       "id": "3d.blender-modeling-topology",
       "name": "blender-modeling-topology",
@@ -9283,6 +9435,44 @@
         "copilot"
       ]
     },
+    "audio.music-notation-engraving": {
+      "id": "audio.music-notation-engraving",
+      "name": "music-notation-engraving",
+      "category": "audio",
+      "description": "Engrave readable scores: notation entry, layout spacing, parts extraction, transposition and MusicXML interchange for MuseScore and LilyPond.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "audio/music-notation-engraving",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "audio.live-sound-reinforcement": {
+      "id": "audio.live-sound-reinforcement",
+      "name": "live-sound-reinforcement",
+      "category": "audio",
+      "description": "Run live sound: gain structure, system EQ and feedback control, monitor mixes, dynamics and a repeatable soundcheck.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "audio/live-sound-reinforcement",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
     "video.video-editing-workflow": {
       "id": "video.video-editing-workflow",
       "name": "video-editing-workflow",
@@ -9359,6 +9549,25 @@
         "copilot"
       ]
     },
+    "video.live-streaming-broadcast": {
+      "id": "video.live-streaming-broadcast",
+      "name": "live-streaming-broadcast",
+      "category": "video",
+      "description": "Produce a reliable live stream: encoder settings, scene and audio routing, bitrate ladder, latency targets and failure recovery.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "video/live-streaming-broadcast",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
     "photography.photography-raw-workflow": {
       "id": "photography.photography-raw-workflow",
       "name": "photography-raw-workflow",
@@ -9369,6 +9578,25 @@
       "type": "procedural",
       "license": "MIT",
       "path": "photography/photography-raw-workflow",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "photography.studio-lighting-color-management": {
+      "id": "photography.studio-lighting-color-management",
+      "name": "studio-lighting-color-management",
+      "category": "photography",
+      "description": "Light and colour-manage a shoot: modifier choice and ratios, white balance, profiling the display, soft-proofing and export for print or web.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "photography/studio-lighting-color-management",
       "tools": [],
       "platforms": [
         "claude",

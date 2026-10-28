@@ -25,10 +25,11 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import add_missing_skills as base  # noqa: E402
 import domain_skills_geo as geo  # noqa: E402
+import domain_skills_craft as craft  # noqa: E402
 import domain_skills_media as media  # noqa: E402
 
 FORCE = "--force" in sys.argv
-TITLES = {**geo.TITLES, **media.TITLES}
+TITLES = {**geo.TITLES, **media.TITLES, **craft.TITLES}
 SWITCHED: list[str] = []
 
 
@@ -43,7 +44,7 @@ def main() -> int:
 
     existing = {path.parent.name for path in base.SKILLS.rglob("SKILL.md")}
     written, skipped = [], []
-    for data in [*geo.SKILLS, *media.SKILLS]:
+    for data in [*geo.SKILLS, *media.SKILLS, *craft.SKILLS]:
         if data["name"] in existing and not FORCE:
             skipped.append(data["name"])
             continue

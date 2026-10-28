@@ -3631,6 +3631,90 @@
       "system": [],
       "python": [],
       "api": []
+    },
+    "architecture.construction-documents-specifications": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "design.vector-illustration-svg": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "design.typography-and-type-systems": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "design.print-production-prepress": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "design.editorial-layout-design": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "design.iconography-systems": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "cad.cnc-machining-fabrication": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "cad.laser-cutting-engraving": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "audio.music-notation-engraving": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "audio.live-sound-reinforcement": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "video.live-streaming-broadcast": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "photography.studio-lighting-color-management": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
     }
   }
 }

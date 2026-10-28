@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generated_at": "2026-10-28T05:30:06.764943+00:00",
+  "generated_at": "2026-10-28T05:34:50.562729+00:00",
   "generator": "all-skills-lock v1.0.0",
-  "total_skills": 581,
+  "total_skills": 593,
   "skills": {
     "accessibility-compliance-accessibility-audit": {
       "version": "1.0.0",
@@ -1420,6 +1420,18 @@
       "verified_at": "2026-10-28",
       "risk": "low"
     },
+    "architecture.construction-documents-specifications": {
+      "version": "1.0.0",
+      "sha256": "ba390c31be4c1eca7f27c656606ea0b68bb367befac2358e6a859bb0d14f3824",
+      "category": "architecture",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-28",
+      "risk": "high"
+    },
     "architecture.interior-space-planning": {
       "version": "1.0.0",
       "sha256": "e74dda7a9cd8479a0f1cc9f0fbc71dc299daa86d3dbfbade11e41a86a2d6b0e6",
@@ -1435,6 +1447,30 @@
     "audio.audio-mixing-mastering": {
       "version": "1.0.0",
       "sha256": "02939d6c1bf8ad5f89583d0747a03bc7b719adc418a84cfdeebb8fea9f9979f9",
+      "category": "audio",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-28",
+      "risk": "low"
+    },
+    "audio.live-sound-reinforcement": {
+      "version": "1.0.0",
+      "sha256": "edfbb9d6612ea1dc5d8af587fad924cf036f7e49831027e635d2f5632567a192",
+      "category": "audio",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-28",
+      "risk": "medium"
+    },
+    "audio.music-notation-engraving": {
+      "version": "1.0.0",
+      "sha256": "a2dd768d7901dfeeaee6984d753bb12bd0d2c1961e2a979de637053a89b152c0",
       "category": "audio",
       "files": [
         "README.md",
@@ -1516,6 +1552,18 @@
       "verified_at": "2026-10-28",
       "risk": "medium"
     },
+    "cad.cnc-machining-fabrication": {
+      "version": "1.0.0",
+      "sha256": "fb4005968cb878cab920a2c37576881339b51b7886fc4eeb9af08a220238c7bc",
+      "category": "cad",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-28",
+      "risk": "high"
+    },
     "cad.dxf-dwg-interchange": {
       "version": "1.0.0",
       "sha256": "2fce4932a4dfd04c7160eef747effedab4ce648bda2c8916a125089de3b4c670",
@@ -1551,6 +1599,18 @@
       "dependencies": [],
       "verified_at": "2026-10-28",
       "risk": "low"
+    },
+    "cad.laser-cutting-engraving": {
+      "version": "1.0.0",
+      "sha256": "3ed607324974b32e1e4957d6d96aacfc377155837c69f7fd6e2c47bde4c81cd5",
+      "category": "cad",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-28",
+      "risk": "high"
     },
     "cad.openscad-programmatic-cad": {
       "version": "1.0.0",
@@ -2274,9 +2334,33 @@
       "verified_at": "2026-10-28",
       "risk": "low"
     },
+    "design.editorial-layout-design": {
+      "version": "1.0.0",
+      "sha256": "cbfdd466211736bf80c10f1b74f6e01965b452ebc7faa09c87521ad2c692192e",
+      "category": "design",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-28",
+      "risk": "low"
+    },
     "design.frontend-design": {
       "version": "1.0.0",
       "sha256": "f7711b4a222834e8785d7f2c240231bd061c8994dd69cca33566593c755330a2",
+      "category": "design",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-28",
+      "risk": "low"
+    },
+    "design.iconography-systems": {
+      "version": "1.0.0",
+      "sha256": "312407ed68054d5e8e89e0734823ff0ca7ed904828d5ff160a7c1d64d77f3008",
       "category": "design",
       "files": [
         "README.md",
@@ -2312,6 +2396,18 @@
       "verified_at": "2026-10-28",
       "risk": "low"
     },
+    "design.print-production-prepress": {
+      "version": "1.0.0",
+      "sha256": "48fc5887c905455aabd98187425af2e33caf70de7a180a782b4eb6d628f46d78",
+      "category": "design",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-28",
+      "risk": "medium"
+    },
     "design.remotion-best-practices": {
       "version": "1.0.0",
       "sha256": "4cb8ca37d82a7046b20729365fc61cd58be00853bce65c99128a2ad937f25671",
@@ -2327,9 +2423,33 @@
       "verified_at": "2026-10-28",
       "risk": "low"
     },
+    "design.typography-and-type-systems": {
+      "version": "1.0.0",
+      "sha256": "e5d1726a5fe3dc9ceced2a06e4145f8413bebf1b5248bd44d95a5ccaf048d9e1",
+      "category": "design",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-28",
+      "risk": "low"
+    },
     "design.ui-ux": {
       "version": "1.0.0",
       "sha256": "3e63167fc0d78f521f624fc7024682928213e8f12c108e9464738b65c61a98f6",
+      "category": "design",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-28",
+      "risk": "low"
+    },
+    "design.vector-illustration-svg": {
+      "version": "1.0.0",
+      "sha256": "c85f9d5b928d1903532527fa517223548e9ea6da476ee15a6f2f3316649f185a",
       "category": "design",
       "files": [
         "README.md",
@@ -4201,7 +4321,7 @@
     },
     "integration.universal-skill-discovery": {
       "version": "1.0.0",
-      "sha256": "4a8cb207f620af20977aaf67ae86b111d7a04fc65006cfe73dba0b16efd23791",
+      "sha256": "41de712ae91e4a65f96c1e318cacacf3ac741edfbb0be63ea7f56a735581a6ee",
       "category": "integration",
       "files": [
         "README.md",
@@ -5249,6 +5369,18 @@
     "photography.photography-raw-workflow": {
       "version": "1.0.0",
       "sha256": "4156410674eb9ac6bde38c073a31f6db794fc117fab74a96da3a34064830abdd",
+      "category": "photography",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-28",
+      "risk": "low"
+    },
+    "photography.studio-lighting-color-management": {
+      "version": "1.0.0",
+      "sha256": "4563eb47156366114cb77cd0347e5afec276bd3cd9b6bf3217e485614531d951",
       "category": "photography",
       "files": [
         "README.md",
@@ -6919,6 +7051,18 @@
       "dependencies": [],
       "verified_at": "2026-10-28",
       "risk": "low"
+    },
+    "video.live-streaming-broadcast": {
+      "version": "1.0.0",
+      "sha256": "a358b2e05df1ff838b0f41f2165e381c71bfc53d869e0df413ae0c558c404f06",
+      "category": "video",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-28",
+      "risk": "medium"
     },
     "video.motion-graphics": {
       "version": "1.0.0",

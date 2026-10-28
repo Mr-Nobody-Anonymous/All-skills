@@ -1,10 +1,10 @@
 # Architecture Skills
 
-_Generated: 2026-10-28T05:29:45+00:00_
+_Generated: 2026-10-28T05:33:42+00:00_
 
 
 
-**3 skills in this category.**
+**4 skills in this category.**
 
 ## Skills
 
@@ -47,6 +47,24 @@ Comprehensive patterns for creating, maintaining, and managing Architecture Deci
 - **Version:** 1.0.0
 
 Comprehensive patterns for creating, maintaining, and managing Architecture Decision Records (ADRs) that capture technical context, rationale, trade-offs, and consequences behind significant architectural choices.
+
+### `architecture.construction-documents-specifications`
+
+Produce construction documents: drawing set structure, sheet numbering, dimensioning, schedules, specifications and revision control.
+
+- **Risk:** high
+- **Path:** `architecture/construction-documents-specifications`
+- **Aliases:** `construction-docs`
+- **Triggers:**
+  - construction drawing set
+  - sheet numbering convention
+  - specification section writing
+  - revision control drawings
+  - door and window schedule
+- **Source:** custom
+- **Version:** 1.0.0
+
+Produce construction documents: drawing set structure, sheet numbering, dimensioning, schedules, specifications and revision control.
 
 ### `architecture.interior-space-planning`
 

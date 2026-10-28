@@ -1,10 +1,10 @@
 # Video Skills
 
-_Generated: 2026-10-28T05:29:45+00:00_
+_Generated: 2026-10-28T05:33:42+00:00_
 
 
 
-**4 skills in this category.**
+**5 skills in this category.**
 
 ## Skills
 
@@ -25,6 +25,24 @@ Grade video: colour-managed workflows, primary and secondary correction, shot ma
 - **Version:** 1.0.0
 
 Grade video: colour-managed workflows, primary and secondary correction, shot matching, LUT discipline, scopes-based verification and grade delivery.
+
+### `video.live-streaming-broadcast`
+
+Produce a reliable live stream: encoder settings, scene and audio routing, bitrate ladder, latency targets and failure recovery.
+
+- **Risk:** medium
+- **Path:** `video/live-streaming-broadcast`
+- **Aliases:** `obs`, `livestream`
+- **Triggers:**
+  - set up obs stream
+  - twitch youtube stream settings
+  - stream bitrate and keyframe
+  - live stream audio delay
+  - rtmp srt ingest
+- **Source:** custom
+- **Version:** 1.0.0
+
+Produce a reliable live stream: encoder settings, scene and audio routing, bitrate ladder, latency targets and failure recovery.
 
 ### `video.motion-graphics`
 

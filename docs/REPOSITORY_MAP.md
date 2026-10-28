@@ -9,7 +9,7 @@ This authoritative map documents every top-level directory and artifact in the *
 | Directory / Path | Primary Role | Source of Truth? | Generated? | Safe to Edit? | Notes & Constraints |
 | :--- | :--- | :---: | :---: | :---: | :--- |
 | **`skills/`** | Canonical runtime skills | **Yes** | No | **Yes** | 398 validated, human-curated skills across 29 categories with strict schema enforcement. |
-| **`awesome_skills/`** | Large-scale knowledge library | **Yes** | Partly | **Yes** | Physical storage of the 15,146 catalog entries (13,321 unique skills) organized across 252 functional domains. |
+| **`awesome_skills/`** | Large-scale knowledge library | **Yes** | Partly | **Yes** | Physical storage of the 15,146 catalog entries (13,333 unique skills) organized across 252 functional domains. |
 | **`catalog/`** | Virtual taxonomy & multi-dimensional indexes | **Yes** | Partly | **Yes** | Maps physical skills to 15 super-domains, tasks, maturity tiers, and agent platforms without file moves. |
 | **`.agents/skills/`** | Active agent runtime harness | No | **Yes** | **No** | Auto-synchronized symlink/mirror harness for Antigravity, Gemini, Kiro, and OpenClaw. |
 | **`.claude/skills/`** | Claude Code agent harness | No | **Yes** | **No** | Auto-synchronized runtime mirror targeting Claude Code CLI. |

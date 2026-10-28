@@ -1,10 +1,10 @@
 # Photography Skills
 
-_Generated: 2026-10-28T05:29:45+00:00_
+_Generated: 2026-10-28T05:33:42+00:00_
 
 
 
-**1 skills in this category.**
+**2 skills in this category.**
 
 ## Skills
 
@@ -25,4 +25,22 @@ Manage a RAW photography workflow: import and catalogue structure, non-destructi
 - **Version:** 1.0.0
 
 Manage a RAW photography workflow: import and catalogue structure, non-destructive develop settings, colour management and soft proofing, and export presets per use.
+
+### `photography.studio-lighting-color-management`
+
+Light and colour-manage a shoot: modifier choice and ratios, white balance, profiling the display, soft-proofing and export for print or web.
+
+- **Risk:** low
+- **Path:** `photography/studio-lighting-color-management`
+- **Aliases:** `studio-lighting`, `colour-management`
+- **Triggers:**
+  - studio lighting setup
+  - three point lighting ratios
+  - colour management workflow
+  - monitor calibration for photography
+  - soft proof for print
+- **Source:** custom
+- **Version:** 1.0.0
+
+Light and colour-manage a shoot: modifier choice and ratios, white balance, profiling the display, soft-proofing and export for print or web.
 

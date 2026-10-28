@@ -57,7 +57,7 @@ destructive_operations: false
 
 ## Purpose
 
-There are three layers to search — 398 canonical skills, the active harness set, and a 15k catalog of imported skills — and they answer different questions. This skill routes a task, explains why a skill won, and installs it with its provenance and license intact.
+There are three layers to search — 504 canonical skills, the active harness set, and a 15k catalog of imported skills — and they answer different questions. This skill routes a task, explains why a skill won, and installs it with its provenance and license intact.
 
 ## When to Use
 

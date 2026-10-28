@@ -35,7 +35,7 @@ What it does, in order:
 
 | Layer | Where it lives | Installed by |
 | :--- | :--- | :--- |
-| **Skills** (492 canonical, 89 preloaded) | `skills/` → linked into `.claude/skills`, `.cursor/skills`, `.agents/skills`, … | `scripts/setup_tools.py` |
+| **Skills** (504 canonical, 89 preloaded) | `skills/` → linked into `.claude/skills`, `.cursor/skills`, `.agents/skills`, … | `scripts/setup_tools.py` |
 | **Catalog** (15k searchable skills) | `awesome_skills/` | nothing to install — searched via `allskills search` |
 | **MCP connectors** (113 servers) | `mcps/catalog.json` → merged into each harness config | `scripts/mcp_catalog.py` |
 | **Agents & commands** (68 / 94) | `agents/`, `commands/` | read natively by Claude Code and mirrored for others |
@@ -91,7 +91,7 @@ Install profiles select *skills and assets* (a different axis from the MCP profi
 | :--- | :--- |
 | `minimal` / `core` | rules, agents, commands and the quality workflow baseline |
 | `developer` | adds the framework/language, database and orchestration modules |
-| `library` | core baseline **plus all 492 curated `skills/` skills** (`canonical-library`) |
+| `library` | core baseline **plus all 504 curated `skills/` skills** (`canonical-library`) |
 | `full` | every module: all skills, all agent packs, MCP conventions and domain packs |
 
 ```bash

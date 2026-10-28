@@ -1,10 +1,10 @@
 # Cad Skills
 
-_Generated: 2026-10-28T05:29:45+00:00_
+_Generated: 2026-10-28T05:33:42+00:00_
 
 
 
-**8 skills in this category.**
+**10 skills in this category.**
 
 ## Skills
 
@@ -43,6 +43,24 @@ Coordinate building models: IFC schema and exports, Revit/ArchiCAD workflows, cl
 - **Version:** 1.0.0
 
 Coordinate building models: IFC schema and exports, Revit/ArchiCAD workflows, clash detection, LOD/LOI expectations and model federation.
+
+### `cad.cnc-machining-fabrication`
+
+Go from a solid model to machined parts: DFM review, toolpath strategy, workholding, feeds and speeds, and a G-code sanity check.
+
+- **Risk:** high
+- **Path:** `cad/cnc-machining-fabrication`
+- **Aliases:** `cnc`, `milling`
+- **Triggers:**
+  - cnc toolpath setup
+  - feeds and speeds aluminium
+  - gcode verification
+  - fixture and workholding plan
+  - design for machining
+- **Source:** custom
+- **Version:** 1.0.0
+
+Go from a solid model to machined parts: DFM review, toolpath strategy, workholding, feeds and speeds, and a G-code sanity check.
 
 ### `cad.dxf-dwg-interchange`
 
@@ -97,6 +115,24 @@ Model production parts in Fusion 360 or SolidWorks: feature-based history, desig
 - **Version:** 1.0.0
 
 Model production parts in Fusion 360 or SolidWorks: feature-based history, design intent, assemblies and joints, sheet metal and manufacturing exports.
+
+### `cad.laser-cutting-engraving`
+
+Prepare files for laser cutting and engraving: kerf compensation, cut order, material settings, nesting and safe operation.
+
+- **Risk:** high
+- **Path:** `cad/laser-cutting-engraving`
+- **Aliases:** `lasercut`
+- **Triggers:**
+  - laser cut file preparation
+  - kerf offset tolerance
+  - laser settings for plywood
+  - nest parts on sheet
+  - laser engraving raster settings
+- **Source:** custom
+- **Version:** 1.0.0
+
+Prepare files for laser cutting and engraving: kerf compensation, cut order, material settings, nesting and safe operation.
 
 ### `cad.openscad-programmatic-cad`
 
