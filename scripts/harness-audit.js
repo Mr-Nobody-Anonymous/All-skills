@@ -413,6 +413,14 @@ function getRepoChecks(rootDir) {
   const packageJson = safeParseJson(safeRead(rootDir, 'package.json'));
   const commandPrimary = safeRead(rootDir, 'commands/harness-audit.md').trim();
   const commandParity = safeRead(rootDir, '.opencode/commands/harness-audit.md').trim();
+  // `.opencode/` is install output: scripts/setup_tools.py writes it per machine
+  // and .gitignore excludes the whole tree, so in a fresh clone (and on every
+  // CI runner) the OpenCode mirror cannot exist. Absence is therefore PASS —
+  // only a *present but divergent* mirror is a finding. Requiring the file made
+  // this check unsatisfiable for anyone who had not run an install.
+  const opencodeMirrorPresent = fs.existsSync(
+    path.join(rootDir, '.opencode', 'commands', 'harness-audit.md'),
+  );
   const hooksJson = safeRead(rootDir, 'hooks/hooks.json');
 
   return [
@@ -463,8 +471,11 @@ function getRepoChecks(rootDir) {
       scopes: ['repo', 'commands'],
       path: '.opencode/commands/harness-audit.md',
       description: 'Harness-audit command parity exists between primary and OpenCode command docs',
-      pass: commandPrimary.length > 0 && commandPrimary === commandParity,
-      fix: 'Sync commands/harness-audit.md and .opencode/commands/harness-audit.md.',
+      pass: commandPrimary.length > 0 && (!opencodeMirrorPresent || commandPrimary === commandParity),
+      detail: opencodeMirrorPresent
+        ? 'installed OpenCode mirror compared against the primary command doc'
+        : 'no .opencode mirror installed (generated per machine, gitignored)',
+      fix: 'Run `python scripts/setup_tools.py` to regenerate .opencode/, then re-run the audit; a divergent mirror means the install is stale.',
     },
     {
       id: 'context-strategic-compact',

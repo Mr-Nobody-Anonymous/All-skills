@@ -14,7 +14,7 @@ A foundational distinction in All-skills is between **indexed discovery material
 ├─────────────────────────────────────────────────────────────┤
 │   ▼ 13,362 Unique Skill Identities                          │
 ├─────────────────────────────────────────────────────────────┤
-│     ▼ 504 Manifest-Declared Specification Skills            │
+│     ▼ 533 Manifest-Declared Specification Skills            │
 ├─────────────────────────────────────────────────────────────┤
 │       ▼ 504 Curated Canonical Engine Skills (skills/)       │
 ├─────────────────────────────────────────────────────────────┤
@@ -23,7 +23,7 @@ A foundational distinction in All-skills is between **indexed discovery material
 ```
 
 - **Catalog Records (15,146)**: Sourced from upstream repositories, domain taxonomies, and multi-agent indexes. These serve as discovery material, knowledge references, and search targets. They are not all independently unit-tested or guaranteed to have executable script backends.
-- **Canonical Skills (504)**: Maintained directly in `skills/`, verified against `schemas/skill-frontmatter.schema.json`, tested via regression suites, and governed by deterministic routing.
+- **Canonical Skills (533)**: Maintained directly in `skills/`, verified against `schemas/skill-frontmatter.schema.json`, tested via regression suites, and governed by deterministic routing.
 - **Active Harness Skills (89)**: Symlinked or junctioned into agent platforms (`.agents/skills`, `.claude/skills`, `.cursor/skills`, `.codex/skills`) for immediate invocation.
 
 ---
@@ -105,6 +105,15 @@ repository layout differs from this one:
   `python scripts/run_evals.py` and `python scripts/allskills.py doctor --full`.
 - Treat `tests/run-all.js` as a migration tracker: a failing file marks an ECC feature that
   has not been ported to the categorised layout yet, not a regression in the platform CLI.
+- Measured state (2026-10-29, `node tests/run-all.js`): **4,333 assertions pass, 328 fail across
+  93 of 317 files**. Almost every failure is a *path* assertion against a tree that no longer
+  exists here — `skills/<name>/…` (the pre-categorisation flat layout), `.codex/AGENTS.md`,
+  `.github/workflows/release.yml`, `examples/evaluator-rag-prototype` — or an ECC surface that
+  was never ported (Itô baskets/compute/training, Nasiko control plane, fusion bundles). A
+  mechanical `skills/<name>` → `.agents/skills/<name>` rewrite was tried and moved the failure
+  count by four, which confirms the remaining work is per-surface porting, not a rename.
+  Fixing it means teaching each adapter and fixture about the categorised layout; until then
+  the suite stays out of CI and `npm test` runs the gated Python suite instead.
 
 ---
 
@@ -130,3 +139,21 @@ and do not affect `allskills bootstrap`, `allskills install`, `node scripts/inst
 an `awesome_skills/ecc/<name> → skills/<name>` rewrite to each adapter — tracked as installer
 work, not a documentation gap.
 
+---
+
+## 10. `scripts/harness-audit.js` Rubric Item `quality-ci-validations`
+
+The deterministic harness audit scores 30 of 31 checks. The remaining one asks that
+`package.json`'s `test` script run the validator chain *and* `tests/run-all.js`.
+
+It is deliberately not satisfied: `tests/run-all.js` is red for the reasons in §8, so wiring it
+into `npm test` would either break the documented command or require the suite to be listed as
+"expected to fail" — a green badge over a red suite. `npm test` therefore runs the gated checks
+(`python scripts/skills/skills.py test`, `node scripts/ci/validate-context-profiles.js`), and the
+rubric item stays open until §8 is closed.
+
+The other harness-audit check that used to fail, `tool-command-parity`, compared
+`commands/harness-audit.md` with `.opencode/commands/harness-audit.md`. That mirror is install
+output — `scripts/setup_tools.py` writes it per machine and `.gitignore` excludes `.opencode/` —
+so it cannot exist in a fresh clone or on a CI runner. The check now passes when the mirror is
+absent and only reports a finding when an installed mirror has drifted from the primary command.

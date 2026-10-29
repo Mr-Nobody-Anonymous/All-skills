@@ -1,6 +1,6 @@
 # ⚡ Agent Skills Specification & Platform Overview
 
-A unified, high-performance universal operating system of **13,362+ unique specialized Agent Skills** (**15,146 cataloged instances** across **252 domain categories**) plus a first-party **504-skill canonical engine** and a **113-server MCP catalog**, designed for modern AI coding assistants (Claude Code, Cursor, Codex CLI, GitHub Copilot, VS Code Agent, Antigravity, Gemini CLI, Windsurf, OpenCode, Cline, Roo Code, and Block Goose).
+A unified, high-performance universal operating system of **13,362+ unique specialized Agent Skills** (**15,146 cataloged instances** across **252 domain categories**) plus a first-party **533-skill canonical engine** and a **117-server MCP catalog**, designed for modern AI coding assistants (Claude Code, Cursor, Codex CLI, GitHub Copilot, VS Code Agent, Antigravity, Gemini CLI, Windsurf, OpenCode, Cline, Roo Code, and Block Goose).
 
 ---
 

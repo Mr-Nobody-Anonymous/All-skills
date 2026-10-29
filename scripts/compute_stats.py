@@ -315,6 +315,15 @@ DOC_COUNT_RULES: list[tuple[re.Pattern[str], str, str]] = [
     _rule(rf"(?<=Servers, ){_N}(?= Role Profiles)", "mcp_role_profiles"),
     _rule(rf"{_N}(?= install profiles\b)", "mcp_profiles"),
     _rule(rf"(?<=drives ){_N}(?= harnesses)", "mcp_harnesses"),
+    # One-line summaries (SKILLS.md intro) and the LIMITATIONS.md stack diagram
+    # quote the same totals in yet another wording; they had drifted to 504/113.
+    _rule(rf"{_N}(?=-skill canonical engine)", "canonical_skills"),
+    _rule(rf"{_N}(?=-server MCP catalog)", "mcp_servers"),
+    _rule(rf"{_N}(?= Manifest-Declared Specification Skills)", "manifest_skills"),
+    _rule(rf"\*\*Canonical Skills \({_N}\)\*\*", "canonical_skills"),
+    _rule(rf"\*\*Active Harness Skills \({_N}\)\*\*", "active_harness_skills"),
+    _rule(rf"(?<=Catalog Records \(Indexed across ){_N}(?= categories\))", "categories"),
+    _rule(rf"{_N}(?= Unique Skill Identities)", "total_unique_skills"),
 ]
 
 _STYLES = {
