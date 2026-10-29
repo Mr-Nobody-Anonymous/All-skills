@@ -8,6 +8,7 @@ Can optionally synchronize README.md and SKILLS.md.
 from __future__ import annotations
 
 import argparse
+import ast
 import datetime
 import json
 import os
@@ -23,6 +24,49 @@ if hasattr(sys.stderr, "reconfigure"):
 
 def get_repo_root() -> Path:
     return Path(__file__).resolve().parent.parent
+
+
+def count_test_cases(repo_root: Path | None = None) -> int:
+    """Count the tests this repository actually runs, without importing them.
+
+    The suites are ``tests/`` and ``scratch_priority_import/tests/``, minus
+    ``tests/ecc/`` — exactly the selection the CI job runs
+    (``pytest tests scratch_priority_import/tests --ignore=tests/ecc``), because
+    the ECC tree needs the optional ``llm`` package and never runs in CI.
+
+    The count comes from the AST rather than from unittest discovery. Discovery
+    imports every module, so its result depends on which optional packages are
+    installed: the same commit reported 280 tests with the ``[test]`` extra and
+    281 without it, because a pytest-only module failed to import and was
+    counted as a failure. A documented platform metric must be a property of the
+    repository, not of the machine that measured it, so this parses the source:
+    deterministic, offline, identical on every OS and Python version.
+
+    Counted: module-level ``test_*`` functions and ``test_*`` methods declared
+    directly on a class. Nested helper functions are not separate tests.
+    """
+    repo_root = repo_root or get_repo_root()
+    total = 0
+    for suite in (repo_root / "tests", repo_root / "scratch_priority_import" / "tests"):
+        if not suite.exists():
+            continue
+        for path in sorted(suite.rglob("test_*.py")):
+            if "ecc" in path.relative_to(repo_root).parts:
+                continue
+            try:
+                tree = ast.parse(path.read_text(encoding="utf-8"))
+            except (SyntaxError, UnicodeDecodeError, OSError):
+                continue
+            for node in tree.body:
+                if isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef)):
+                    total += node.name.startswith("test_")
+                elif isinstance(node, ast.ClassDef):
+                    total += sum(
+                        1 for child in node.body
+                        if isinstance(child, (ast.FunctionDef, ast.AsyncFunctionDef))
+                        and child.name.startswith("test_")
+                    )
+    return total
 
 
 def compute_platform_stats(repo_root: Path | None = None) -> dict:
@@ -127,15 +171,7 @@ def compute_platform_stats(repo_root: Path | None = None) -> dict:
         | set(manifest_skills.keys())
     )
 
-    # Count unit test methods dynamically
-    try:
-        import unittest
-        sys.path.insert(0, str(repo_root / "tests"))
-        sys.path.insert(0, str(repo_root / "src"))
-        suite = unittest.TestLoader().discover(str(repo_root / "tests"), pattern="test_*.py")
-        test_count = suite.countTestCases()
-    except Exception:
-        test_count = 94
+    test_count = count_test_cases(repo_root)
 
     version_file = repo_root / "VERSION"
     platform_version = version_file.read_text(encoding="utf-8").strip() if version_file.exists() else "3.0.0"

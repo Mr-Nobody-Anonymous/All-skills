@@ -15,7 +15,6 @@ import argparse
 import json
 import os
 import sys
-import unittest
 from pathlib import Path
 
 if hasattr(sys.stdout, "reconfigure"):
@@ -186,16 +185,15 @@ def check_stats_consistency() -> tuple[bool, list[str]]:
     if stored.get("ci_workflows") is not None and stored.get("ci_workflows") != len(ci_workflows):
         errors.append(f"CI workflows mismatch: stats.json has {stored.get('ci_workflows')}, found {len(ci_workflows)}")
 
-    # 6. Unit tests
+    # 6. Unit tests — counted from the AST by compute_stats.count_test_cases, so
+    # the number cannot change with the set of optional packages installed.
     try:
-        sys.path.insert(0, str(REPO_ROOT / "tests"))
-        sys.path.insert(0, str(REPO_ROOT / "src"))
-        suite = unittest.TestLoader().discover(str(REPO_ROOT / "tests"), pattern="test_*.py")
-        test_count = suite.countTestCases()
+        from compute_stats import count_test_cases
+        test_count = count_test_cases(REPO_ROOT)
         if stored.get("tests") != test_count:
-            errors.append(f"Tests count mismatch: stats.json has {stored.get('tests')}, discovered {test_count}")
+            errors.append(f"Tests count mismatch: stats.json has {stored.get('tests')}, found {test_count}")
     except Exception as e:
-        errors.append(f"Could not discover tests: {e}")
+        errors.append(f"Could not count tests: {e}")
 
     # 7. README.md documentation sync
     try:

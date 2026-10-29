@@ -1,6 +1,6 @@
 # Legal Skills
 
-_Generated: 2026-10-29T14:02:53+00:00_
+_Generated: 2026-10-29T16:21:14+00:00_
 
 
 

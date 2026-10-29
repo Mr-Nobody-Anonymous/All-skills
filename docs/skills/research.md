@@ -1,6 +1,6 @@
 # Research Skills
 
-_Generated: 2026-10-29T14:02:53+00:00_
+_Generated: 2026-10-29T16:21:14+00:00_
 
 Skills for finding, evaluating, and synthesizing information. Web research, deep research, academic research, fact checking, source verification, competitive analysis, and data analysis. All emphasize source diversification and citation discipline.
 

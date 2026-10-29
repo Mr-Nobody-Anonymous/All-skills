@@ -1,6 +1,6 @@
 # Security Skills
 
-_Generated: 2026-10-29T14:02:53+00:00_
+_Generated: 2026-10-29T16:21:14+00:00_
 
 Defensive security skills only: secure coding review, dependency auditing, secret detection, and prompt-injection defense. The library does not include any offensive security tooling.
 

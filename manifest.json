@@ -2,7 +2,7 @@
   "$schema": "./schemas/skill-frontmatter.schema.json",
   "schema_version": "1.1.0",
   "platform_version": "3.0.0",
-  "generated_at": "2026-10-29T14:02:42.234964+00:00",
+  "generated_at": "2026-10-29T16:19:36.640545+00:00",
   "system_defaults": {
     "default_mcp_servers": [
       "filesystem",
@@ -271,25 +271,6 @@
         "copilot"
       ]
     },
-    "ai.rag-evaluation": {
-      "id": "ai.rag-evaluation",
-      "name": "rag-evaluation",
-      "category": "ai",
-      "description": "Evaluate retrieval-augmented generation honestly: golden sets, retrieval metrics, groundedness and citation checks, and regression gates that survive model changes.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "ai/rag-evaluation",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
     "ai.mlops": {
       "id": "ai.mlops",
       "name": "mlops",
@@ -319,6 +300,25 @@
       "type": "procedural",
       "license": "MIT",
       "path": "ai/model-drift-monitoring",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "ai.rag-evaluation": {
+      "id": "ai.rag-evaluation",
+      "name": "rag-evaluation",
+      "category": "ai",
+      "description": "Evaluate retrieval-augmented generation honestly: golden sets, retrieval metrics, groundedness and citation checks, and regression gates that survive model changes.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "ai/rag-evaluation",
       "tools": [],
       "platforms": [
         "claude",
@@ -540,6 +540,25 @@
         "copilot"
       ]
     },
+    "cloud.cloudflare-workers": {
+      "id": "cloud.cloudflare-workers",
+      "name": "cloudflare-workers",
+      "category": "cloud",
+      "description": "Build on Cloudflare Workers: the isolate runtime and its limits, KV/D1/R2/Durable Objects choice, caching and edge middleware, and local testing with Wrangler.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "cloud/cloudflare-workers",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
     "cloud.pulumi-iac": {
       "id": "cloud.pulumi-iac",
       "name": "pulumi-iac",
@@ -578,16 +597,16 @@
         "copilot"
       ]
     },
-    "cloud.cloudflare-workers": {
-      "id": "cloud.cloudflare-workers",
-      "name": "cloudflare-workers",
-      "category": "cloud",
-      "description": "Build on Cloudflare Workers: the isolate runtime and its limits, KV/D1/R2/Durable Objects choice, caching and edge middleware, and local testing with Wrangler.",
+    "communication.customer-support-automation": {
+      "id": "communication.customer-support-automation",
+      "name": "customer-support-automation",
+      "category": "communication",
+      "description": "Automate support without damaging trust: triage and routing, deflection where it works, AI drafting with human review, escalation policy and quality measurement.",
       "version": "1.0.0",
       "risk": "medium",
       "type": "procedural",
       "license": "MIT",
-      "path": "cloud/cloudflare-workers",
+      "path": "communication/customer-support-automation",
       "tools": [],
       "platforms": [
         "claude",
@@ -626,25 +645,6 @@
       "type": "procedural",
       "license": "MIT",
       "path": "communication/transactional-email",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "communication.customer-support-automation": {
-      "id": "communication.customer-support-automation",
-      "name": "customer-support-automation",
-      "category": "communication",
-      "description": "Automate support without damaging trust: triage and routing, deflection where it works, AI drafting with human review, escalation policy and quality measurement.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "communication/customer-support-automation",
       "tools": [],
       "platforms": [
         "claude",
@@ -1452,6 +1452,25 @@
         "copilot"
       ]
     },
+    "databases.database-query-optimization": {
+      "id": "databases.database-query-optimization",
+      "name": "database-query-optimization",
+      "category": "databases",
+      "description": "Optimise query patterns across engines: N+1 elimination, set-based rewrites, pagination that scales, join strategy, and measurement before and after.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "databases/database-query-optimization",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
     "databases.oracle": {
       "id": "databases.oracle",
       "name": "oracle",
@@ -1462,25 +1481,6 @@
       "type": "procedural",
       "license": "MIT",
       "path": "databases/oracle",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "databases.sql-server": {
-      "id": "databases.sql-server",
-      "name": "sql-server",
-      "category": "databases",
-      "description": "Operate and tune Microsoft SQL Server: execution plans, indexing strategy, isolation levels, tempdb contention, backup/restore and migration safety.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "databases/sql-server",
       "tools": [],
       "platforms": [
         "claude",
@@ -1509,16 +1509,16 @@
         "copilot"
       ]
     },
-    "databases.database-query-optimization": {
-      "id": "databases.database-query-optimization",
-      "name": "database-query-optimization",
+    "databases.sql-server": {
+      "id": "databases.sql-server",
+      "name": "sql-server",
       "category": "databases",
-      "description": "Optimise query patterns across engines: N+1 elimination, set-based rewrites, pagination that scales, join strategy, and measurement before and after.",
+      "description": "Operate and tune Microsoft SQL Server: execution plans, indexing strategy, isolation levels, tempdb contention, backup/restore and migration safety.",
       "version": "1.0.0",
       "risk": "medium",
       "type": "procedural",
       "license": "MIT",
-      "path": "databases/database-query-optimization",
+      "path": "databases/sql-server",
       "tools": [],
       "platforms": [
         "claude",
@@ -1775,16 +1775,16 @@
         "copilot"
       ]
     },
-    "audio.audio-mixing-mastering": {
-      "id": "audio.audio-mixing-mastering",
-      "name": "audio-mixing-mastering",
-      "category": "audio",
-      "description": "Mix and master audio: gain staging and bus structure, EQ and compression decisions, stereo image, loudness targets (LUFS/true peak) and delivery specs per platform.",
+    "agents.agent-observability": {
+      "id": "agents.agent-observability",
+      "name": "agent-observability",
+      "category": "agents",
+      "description": "Instrument agent runs: trace structure for tool calls and model turns, token and cost accounting, latency budgets, and searchable logs that explain a bad answer.",
       "version": "1.0.0",
       "risk": "low",
       "type": "procedural",
       "license": "MIT",
-      "path": "audio/audio-mixing-mastering",
+      "path": "agents/agent-observability",
       "tools": [],
       "platforms": [
         "claude",
@@ -1794,16 +1794,16 @@
         "copilot"
       ]
     },
-    "audio.live-sound-reinforcement": {
-      "id": "audio.live-sound-reinforcement",
-      "name": "live-sound-reinforcement",
-      "category": "audio",
-      "description": "Run live sound: gain structure, system EQ and feedback control, monitor mixes, dynamics and a repeatable soundcheck.",
+    "agents.agent-reliability": {
+      "id": "agents.agent-reliability",
+      "name": "agent-reliability",
+      "category": "agents",
+      "description": "Make agents reliable under failure: retries with jitter, timeouts per tool, idempotency, checkpointing, loop detection and graceful degradation.",
       "version": "1.0.0",
       "risk": "medium",
       "type": "procedural",
       "license": "MIT",
-      "path": "audio/live-sound-reinforcement",
+      "path": "agents/agent-reliability",
       "tools": [],
       "platforms": [
         "claude",
@@ -1813,16 +1813,16 @@
         "copilot"
       ]
     },
-    "audio.music-notation-engraving": {
-      "id": "audio.music-notation-engraving",
-      "name": "music-notation-engraving",
-      "category": "audio",
-      "description": "Engrave readable scores: notation entry, layout spacing, parts extraction, transposition and MusicXML interchange for MuseScore and LilyPond.",
+    "agents.human-in-the-loop-design": {
+      "id": "agents.human-in-the-loop-design",
+      "name": "human-in-the-loop-design",
+      "category": "agents",
+      "description": "Design human approval into agent workflows: risk-tiered gates, reviewable diffs, timeout and escalation policy, audit trail and reversible actions.",
       "version": "1.0.0",
-      "risk": "low",
+      "risk": "medium",
       "type": "procedural",
       "license": "MIT",
-      "path": "audio/music-notation-engraving",
+      "path": "agents/human-in-the-loop-design",
       "tools": [],
       "platforms": [
         "claude",
@@ -1832,54 +1832,16 @@
         "copilot"
       ]
     },
-    "audio.music-production-daw": {
-      "id": "audio.music-production-daw",
-      "name": "music-production-daw",
-      "category": "audio",
-      "description": "Produce music in a DAW: session setup and gain staging, MIDI and audio recording, arrangement, editing and comping, and project hygiene for collaboration.",
+    "agents.mcp-integration-testing": {
+      "id": "agents.mcp-integration-testing",
+      "name": "mcp-integration-testing",
+      "category": "agents",
+      "description": "Test MCP servers and their integrations: tool-schema contracts, transport handshakes, failure and timeout behaviour, permission scoping and end-to-end agent runs.",
       "version": "1.0.0",
-      "risk": "low",
+      "risk": "medium",
       "type": "procedural",
       "license": "MIT",
-      "path": "audio/music-production-daw",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "audio.podcast-production": {
-      "id": "audio.podcast-production",
-      "name": "podcast-production",
-      "category": "audio",
-      "description": "Produce a podcast end to end: recording setup and remote capture, editing and cleanup, loudness-normalised delivery, chapters, transcripts and distribution.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "audio/podcast-production",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "audio.sound-design-foley": {
-      "id": "audio.sound-design-foley",
-      "name": "sound-design-foley",
-      "category": "audio",
-      "description": "Create sound design and foley: field and studio recording technique, layering and editing, sync to picture, and sound-effect library metadata.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "audio/sound-design-foley",
+      "path": "agents/mcp-integration-testing",
       "tools": [],
       "platforms": [
         "claude",
@@ -3124,6 +3086,25 @@
         "copilot"
       ]
     },
+    "development.fastapi-expert": {
+      "id": "development.fastapi-expert",
+      "name": "fastapi-expert",
+      "category": "development",
+      "description": "Build production FastAPI services: dependency injection, Pydantic v2 models, async database sessions, background tasks and OpenAPI that tells the truth.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "development/fastapi-expert",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
     "development.feature-flag-management": {
       "id": "development.feature-flag-management",
       "name": "feature-flag-management",
@@ -3200,44 +3181,6 @@
         "copilot"
       ]
     },
-    "development.websocket-realtime": {
-      "id": "development.websocket-realtime",
-      "name": "websocket-realtime",
-      "category": "development",
-      "description": "Build realtime features with WebSockets and SSE: connection lifecycle, fan-out and rooms, backpressure, reconnection and horizontal scaling.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "development/websocket-realtime",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "development.fastapi-expert": {
-      "id": "development.fastapi-expert",
-      "name": "fastapi-expert",
-      "category": "development",
-      "description": "Build production FastAPI services: dependency injection, Pydantic v2 models, async database sessions, background tasks and OpenAPI that tells the truth.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "development/fastapi-expert",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
     "development.nestjs-expert": {
       "id": "development.nestjs-expert",
       "name": "nestjs-expert",
@@ -3248,6 +3191,25 @@
       "type": "procedural",
       "license": "MIT",
       "path": "development/nestjs-expert",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "development.websocket-realtime": {
+      "id": "development.websocket-realtime",
+      "name": "websocket-realtime",
+      "category": "development",
+      "description": "Build realtime features with WebSockets and SSE: connection lifecycle, fan-out and rooms, backpressure, reconnection and horizontal scaling.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "development/websocket-realtime",
       "tools": [],
       "platforms": [
         "claude",
@@ -6224,44 +6186,6 @@
         "copilot"
       ]
     },
-    "product.user-research": {
-      "id": "product.user-research",
-      "name": "user-research",
-      "category": "product",
-      "description": "Run user research that changes decisions: question framing, the right method, recruiting, interview craft, synthesis and reporting so findings get acted on.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "product/user-research",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "product.product-analytics": {
-      "id": "product.product-analytics",
-      "name": "product-analytics",
-      "category": "product",
-      "description": "Instrument and read product analytics: event taxonomy, funnel and retention definitions, cohort analysis, experiment measurement and warehouse-grade data quality.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "product/product-analytics",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
     "product.conversion-rate-optimization": {
       "id": "product.conversion-rate-optimization",
       "name": "conversion-rate-optimization",
@@ -6291,6 +6215,44 @@
       "type": "procedural",
       "license": "MIT",
       "path": "product/pricing-strategy",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "product.product-analytics": {
+      "id": "product.product-analytics",
+      "name": "product-analytics",
+      "category": "product",
+      "description": "Instrument and read product analytics: event taxonomy, funnel and retention definitions, cohort analysis, experiment measurement and warehouse-grade data quality.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "product/product-analytics",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "product.user-research": {
+      "id": "product.user-research",
+      "name": "user-research",
+      "category": "product",
+      "description": "Run user research that changes decisions: question framing, the right method, recruiting, interview craft, synthesis and reporting so findings get acted on.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "product/user-research",
       "tools": [],
       "platforms": [
         "claude",
@@ -7364,16 +7326,111 @@
         "copilot"
       ]
     },
-    "automation.n8n-workflow-automation": {
-      "id": "automation.n8n-workflow-automation",
-      "name": "n8n-workflow-automation",
-      "category": "automation",
-      "description": "Build n8n automations: node contracts, expression syntax, error workflows, credentials handling and versioned export/import.",
+    "audio.audio-mixing-mastering": {
+      "id": "audio.audio-mixing-mastering",
+      "name": "audio-mixing-mastering",
+      "category": "audio",
+      "description": "Mix and master audio: gain staging and bus structure, EQ and compression decisions, stereo image, loudness targets (LUFS/true peak) and delivery specs per platform.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "audio/audio-mixing-mastering",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "audio.live-sound-reinforcement": {
+      "id": "audio.live-sound-reinforcement",
+      "name": "live-sound-reinforcement",
+      "category": "audio",
+      "description": "Run live sound: gain structure, system EQ and feedback control, monitor mixes, dynamics and a repeatable soundcheck.",
       "version": "1.0.0",
       "risk": "medium",
       "type": "procedural",
       "license": "MIT",
-      "path": "automation/n8n-workflow-automation",
+      "path": "audio/live-sound-reinforcement",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "audio.music-notation-engraving": {
+      "id": "audio.music-notation-engraving",
+      "name": "music-notation-engraving",
+      "category": "audio",
+      "description": "Engrave readable scores: notation entry, layout spacing, parts extraction, transposition and MusicXML interchange for MuseScore and LilyPond.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "audio/music-notation-engraving",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "audio.music-production-daw": {
+      "id": "audio.music-production-daw",
+      "name": "music-production-daw",
+      "category": "audio",
+      "description": "Produce music in a DAW: session setup and gain staging, MIDI and audio recording, arrangement, editing and comping, and project hygiene for collaboration.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "audio/music-production-daw",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "audio.podcast-production": {
+      "id": "audio.podcast-production",
+      "name": "podcast-production",
+      "category": "audio",
+      "description": "Produce a podcast end to end: recording setup and remote capture, editing and cleanup, loudness-normalised delivery, chapters, transcripts and distribution.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "audio/podcast-production",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "audio.sound-design-foley": {
+      "id": "audio.sound-design-foley",
+      "name": "sound-design-foley",
+      "category": "audio",
+      "description": "Create sound design and foley: field and studio recording technique, layering and editing, sync to picture, and sound-effect library metadata.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "audio/sound-design-foley",
       "tools": [],
       "platforms": [
         "claude",
@@ -8276,6 +8333,25 @@
         "copilot"
       ]
     },
+    "security.api-security-testing": {
+      "id": "security.api-security-testing",
+      "name": "api-security-testing",
+      "category": "security",
+      "description": "Test APIs for real vulnerabilities: authentication and authorisation bypass, object-level access control, injection, rate limits and mass assignment.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "security/api-security-testing",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
     "security.oauth2-oidc-integration": {
       "id": "security.oauth2-oidc-integration",
       "name": "oauth2-oidc-integration",
@@ -8324,25 +8400,6 @@
       "type": "procedural",
       "license": "MIT",
       "path": "security/sonarqube-quality-gates",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "security.api-security-testing": {
-      "id": "security.api-security-testing",
-      "name": "api-security-testing",
-      "category": "security",
-      "description": "Test APIs for real vulnerabilities: authentication and authorisation bypass, object-level access control, injection, rate limits and mass assignment.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "security/api-security-testing",
       "tools": [],
       "platforms": [
         "claude",
@@ -8941,44 +8998,6 @@
         "copilot"
       ]
     },
-    "web.svelte-development": {
-      "id": "web.svelte-development",
-      "name": "svelte-development",
-      "category": "web",
-      "description": "Build SvelteKit applications: runes and reactivity, load functions, form actions, adapters and component testing with Vitest.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "web/svelte-development",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "web.vue-development": {
-      "id": "web.vue-development",
-      "name": "vue-development",
-      "category": "web",
-      "description": "Build Vue 3 applications: Composition API, script setup, reactivity boundaries, Pinia state, routing and Vitest component tests.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "web/vue-development",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
     "web.nextjs-app-router": {
       "id": "web.nextjs-app-router",
       "name": "nextjs-app-router",
@@ -9017,6 +9036,25 @@
         "copilot"
       ]
     },
+    "web.svelte-development": {
+      "id": "web.svelte-development",
+      "name": "svelte-development",
+      "category": "web",
+      "description": "Build SvelteKit applications: runes and reactivity, load functions, form actions, adapters and component testing with Vitest.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "web/svelte-development",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
     "web.typescript-advanced": {
       "id": "web.typescript-advanced",
       "name": "typescript-advanced",
@@ -9027,6 +9065,44 @@
       "type": "procedural",
       "license": "MIT",
       "path": "web/typescript-advanced",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "web.vue-development": {
+      "id": "web.vue-development",
+      "name": "vue-development",
+      "category": "web",
+      "description": "Build Vue 3 applications: Composition API, script setup, reactivity boundaries, Pinia state, routing and Vitest component tests.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "web/vue-development",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "automation.n8n-workflow-automation": {
+      "id": "automation.n8n-workflow-automation",
+      "name": "n8n-workflow-automation",
+      "category": "automation",
+      "description": "Build n8n automations: node contracts, expression syntax, error workflows, credentials handling and versioned export/import.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "automation/n8n-workflow-automation",
       "tools": [],
       "platforms": [
         "claude",
@@ -9245,25 +9321,6 @@
         "copilot"
       ]
     },
-    "devops.platform-engineering": {
-      "id": "devops.platform-engineering",
-      "name": "platform-engineering",
-      "category": "devops",
-      "description": "Run an internal platform: golden paths, self-service templates, paved-road CI, tenant isolation and measuring developer experience.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "devops/platform-engineering",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
     "devops.disaster-recovery": {
       "id": "devops.disaster-recovery",
       "name": "disaster-recovery",
@@ -9274,6 +9331,25 @@
       "type": "procedural",
       "license": "MIT",
       "path": "devops/disaster-recovery",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "devops.platform-engineering": {
+      "id": "devops.platform-engineering",
+      "name": "platform-engineering",
+      "category": "devops",
+      "description": "Run an internal platform: golden paths, self-service templates, paved-road CI, tenant isolation and measuring developer experience.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "devops/platform-engineering",
       "tools": [],
       "platforms": [
         "claude",
@@ -9853,92 +9929,16 @@
         "copilot"
       ]
     },
-    "testing.load-testing": {
-      "id": "testing.load-testing",
-      "name": "load-testing",
+    "testing.accessibility-automation": {
+      "id": "testing.accessibility-automation",
+      "name": "accessibility-automation",
       "category": "testing",
-      "description": "Plan and run load tests: SLO-derived targets, k6 scenarios, ramp profiles, percentile analysis and bottleneck attribution.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "testing/load-testing",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "testing.postman-api-testing": {
-      "id": "testing.postman-api-testing",
-      "name": "postman-api-testing",
-      "category": "testing",
-      "description": "Build API test suites with Postman and Newman: collection structure, environment layering, pre-request auth, assertions and CI runs.",
+      "description": "Automate accessibility verification: axe in component and E2E tests, keyboard and focus checks, CI gates, and the issues automation cannot catch.",
       "version": "1.0.0",
       "risk": "low",
       "type": "procedural",
       "license": "MIT",
-      "path": "testing/postman-api-testing",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "testing.component-testing": {
-      "id": "testing.component-testing",
-      "name": "component-testing",
-      "category": "testing",
-      "description": "Test UI components as users use them: Testing Library queries, behaviour over implementation, network mocking, and a strategy that survives refactors.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "testing/component-testing",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "testing.visual-regression-testing": {
-      "id": "testing.visual-regression-testing",
-      "name": "visual-regression-testing",
-      "category": "testing",
-      "description": "Catch unintended UI change with screenshot tests: deterministic fixtures, stable rendering, thresholds, baseline management and triage of real diffs.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "testing/visual-regression-testing",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "testing.mutation-testing": {
-      "id": "testing.mutation-testing",
-      "name": "mutation-testing",
-      "category": "testing",
-      "description": "Measure test-suite strength with mutation testing: pick operators, scope runs, read survivors and raise the mutation score without chasing 100%.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "testing/mutation-testing",
+      "path": "testing/accessibility-automation",
       "tools": [],
       "platforms": [
         "claude",
@@ -9967,16 +9967,92 @@
         "copilot"
       ]
     },
-    "testing.accessibility-automation": {
-      "id": "testing.accessibility-automation",
-      "name": "accessibility-automation",
+    "testing.component-testing": {
+      "id": "testing.component-testing",
+      "name": "component-testing",
       "category": "testing",
-      "description": "Automate accessibility verification: axe in component and E2E tests, keyboard and focus checks, CI gates, and the issues automation cannot catch.",
+      "description": "Test UI components as users use them: Testing Library queries, behaviour over implementation, network mocking, and a strategy that survives refactors.",
       "version": "1.0.0",
       "risk": "low",
       "type": "procedural",
       "license": "MIT",
-      "path": "testing/accessibility-automation",
+      "path": "testing/component-testing",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "testing.load-testing": {
+      "id": "testing.load-testing",
+      "name": "load-testing",
+      "category": "testing",
+      "description": "Plan and run load tests: SLO-derived targets, k6 scenarios, ramp profiles, percentile analysis and bottleneck attribution.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "testing/load-testing",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "testing.mutation-testing": {
+      "id": "testing.mutation-testing",
+      "name": "mutation-testing",
+      "category": "testing",
+      "description": "Measure test-suite strength with mutation testing: pick operators, scope runs, read survivors and raise the mutation score without chasing 100%.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "testing/mutation-testing",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "testing.postman-api-testing": {
+      "id": "testing.postman-api-testing",
+      "name": "postman-api-testing",
+      "category": "testing",
+      "description": "Build API test suites with Postman and Newman: collection structure, environment layering, pre-request auth, assertions and CI runs.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "testing/postman-api-testing",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "testing.visual-regression-testing": {
+      "id": "testing.visual-regression-testing",
+      "name": "visual-regression-testing",
+      "category": "testing",
+      "description": "Catch unintended UI change with screenshot tests: deterministic fixtures, stable rendering, thresholds, baseline management and triage of real diffs.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "testing/visual-regression-testing",
       "tools": [],
       "platforms": [
         "claude",
@@ -10072,82 +10148,6 @@
       "type": "procedural",
       "license": "MIT",
       "path": "video/video-encoding-delivery",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "agents.mcp-integration-testing": {
-      "id": "agents.mcp-integration-testing",
-      "name": "mcp-integration-testing",
-      "category": "agents",
-      "description": "Test MCP servers and their integrations: tool-schema contracts, transport handshakes, failure and timeout behaviour, permission scoping and end-to-end agent runs.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "agents/mcp-integration-testing",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "agents.agent-observability": {
-      "id": "agents.agent-observability",
-      "name": "agent-observability",
-      "category": "agents",
-      "description": "Instrument agent runs: trace structure for tool calls and model turns, token and cost accounting, latency budgets, and searchable logs that explain a bad answer.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "agents/agent-observability",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "agents.agent-reliability": {
-      "id": "agents.agent-reliability",
-      "name": "agent-reliability",
-      "category": "agents",
-      "description": "Make agents reliable under failure: retries with jitter, timeouts per tool, idempotency, checkpointing, loop detection and graceful degradation.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "agents/agent-reliability",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "agents.human-in-the-loop-design": {
-      "id": "agents.human-in-the-loop-design",
-      "name": "human-in-the-loop-design",
-      "category": "agents",
-      "description": "Design human approval into agent workflows: risk-tiered gates, reviewable diffs, timeout and escalation policy, audit trail and reversible actions.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "agents/human-in-the-loop-design",
       "tools": [],
       "platforms": [
         "claude",

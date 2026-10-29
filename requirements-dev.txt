@@ -17,7 +17,7 @@ backports-tarfile==1.2.0 ; python_full_version < '3.12' and platform_machine != 
     # via jaraco-context
 build==1.6.1
     # via all-skills (pyproject.toml)
-certifi==2026.7.22
+certifi==2026.10.23
     # via
     #   httpcore
     #   httpx
@@ -46,7 +46,7 @@ exceptiongroup==1.3.1 ; python_full_version < '3.11'
     # via
     #   anyio
     #   pytest
-filelock==4.0.3
+filelock==4.2.4
     # via
     #   python-discovery
     #   virtualenv
@@ -211,7 +211,7 @@ urllib3==2.8.0
     #   requests
     #   twine
     #   types-requests
-virtualenv==21.12.1
+virtualenv==21.15.1
     # via pre-commit
 zipp==4.1.0 ; (python_full_version < '3.10.2' and platform_machine == 'ppc64le') or (python_full_version < '3.10.2' and platform_machine == 's390x') or (python_full_version < '3.12' and platform_machine != 'ppc64le' and platform_machine != 's390x')
     # via importlib-metadata

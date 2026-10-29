@@ -4,9 +4,15 @@ from __future__ import annotations
 
 import json
 import sys
+import unittest
 from pathlib import Path
 
-import pytest
+try:
+    import pytest
+except ModuleNotFoundError:  # minimal install: only the dev/test extra provides it
+    # unittest discovery (`scripts/skills/skills.py test`) imports every test
+    # module; without pytest this one used to surface as a collection failure.
+    raise unittest.SkipTest("test_mcp_catalog needs pytest (install the 'test' extra)")
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
