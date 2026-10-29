@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "updated_at": "2026-10-29T16:26:14.613145+00:00",
+  "updated_at": "2026-10-29T16:37:10.257811+00:00",
   "total_canonical_skills": 533,
   "canonical_skills": {
     "ai.embeddings": {
@@ -25,7 +25,7 @@
           "sha256": "ade6109c44f21a320302f47c0bbd8310b79d968e2c581a7e02452a40556304e8"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "ai.fine-tuning": {
       "canonical_id": "ai.fine-tuning",
@@ -49,7 +49,7 @@
           "sha256": "ba80eabd9eb080d5108253a715d1c66b09c2c071f6f0d3e541730d03070da4b5"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "ai.rag": {
       "canonical_id": "ai.rag",
@@ -73,7 +73,7 @@
           "sha256": "d870fc3a0b4a4e883c6a0ced5de58ae6e5bf7aa5248cefa8fa22eac5edcbd833"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "ai.hybrid-search": {
       "canonical_id": "ai.hybrid-search",
@@ -97,7 +97,7 @@
           "sha256": "c5f8e5aa1df3afdb5863ce152f7696d65e4d09f25f91c1480e236e28c21f9ffe"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "ai.model-evaluation": {
       "canonical_id": "ai.model-evaluation",
@@ -121,7 +121,7 @@
           "sha256": "49c4429ea8ab70890d9a22cdb2fd7c7b4a64d769d00c5a4e20b2d20ac13b6959"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "ai.model-selection": {
       "canonical_id": "ai.model-selection",
@@ -145,7 +145,7 @@
           "sha256": "fba1e3a8d68eddac27729922660177e5190ac8ae5d4f280814cf3cbc361b1480"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "ai.multimodal": {
       "canonical_id": "ai.multimodal",
@@ -169,7 +169,7 @@
           "sha256": "070825b9e12bf53c69c36b2b77fdccea8687915b3bc4d3540d27c3f0a38e9e67"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "ai.prompt-engineering": {
       "canonical_id": "ai.prompt-engineering",
@@ -193,7 +193,7 @@
           "sha256": "2b25dcaf2ee54739d7691347951c6bf2e6d97cbf3f1cc19efc44de87f1af0ebd"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "ai.quantization": {
       "canonical_id": "ai.quantization",
@@ -217,7 +217,7 @@
           "sha256": "e8fe541f222eeb09615def60270c87f85bd55f21806e2762fe56265b2a6c3b75"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "ai.reranking": {
       "canonical_id": "ai.reranking",
@@ -241,7 +241,7 @@
           "sha256": "f3e6fdad825dbc7060e1ffc6a7add1c4f90ef9c7d60b860a39a611605f703130"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "ai.structured-output": {
       "canonical_id": "ai.structured-output",
@@ -265,7 +265,7 @@
           "sha256": "84321d1fb722d725eba2c477ced59da22bc414f42d27e35deb214603b40e6597"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "ai.tool-calling": {
       "canonical_id": "ai.tool-calling",
@@ -289,7 +289,7 @@
           "sha256": "5c8de4b4d33222edc1368ea3823a56653eba83987722bd19ce9e996a6eaaeed1"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "ai.vllm": {
       "canonical_id": "ai.vllm",
@@ -313,7 +313,7 @@
           "sha256": "36d5d0de85d9c33043af8bc9f37bd60659979d161197b7a241a3fbb03bccd987"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "ai.mlops": {
       "canonical_id": "ai.mlops",
@@ -337,7 +337,7 @@
           "sha256": "cdf508e5c0b21a70fa1b4879669ff097bb835f0fb8f34ebdc06bdb1af133b7d9"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "ai.model-drift-monitoring": {
       "canonical_id": "ai.model-drift-monitoring",
@@ -361,7 +361,7 @@
           "sha256": "ce97901e7025bcb8fb3a9bcb638c0916d42539cb895d74b6f941f317fa1e7c4c"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "ai.rag-evaluation": {
       "canonical_id": "ai.rag-evaluation",
@@ -385,7 +385,7 @@
           "sha256": "d76f1a290fa56f97a727b81549a35b780603bb8e0e747166895456a14cf2b529"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "architecture.architecture-decision-records": {
       "canonical_id": "architecture.architecture-decision-records",
@@ -409,7 +409,7 @@
           "sha256": "e996750ef05a90a1c28b36320767893ddc5e7806fa124e53a6f2b3deb855b9f1"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "architecture.architectural-design-workflow": {
       "canonical_id": "architecture.architectural-design-workflow",
@@ -433,7 +433,7 @@
           "sha256": "c3cc4016c62e2dad1aa86495f9a70a04c363ed2365b3156191c730239cfbb893"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "architecture.construction-documents-specifications": {
       "canonical_id": "architecture.construction-documents-specifications",
@@ -457,7 +457,7 @@
           "sha256": "d230aa68c8b61176f74e442309b1c15634fe8ade46e4de7816f7e3dc99ea155b"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "architecture.interior-space-planning": {
       "canonical_id": "architecture.interior-space-planning",
@@ -481,7 +481,7 @@
           "sha256": "77d08d2f7dacbfd91cbbd10c5e4a6483001994e83167a0f5bae0c3d633f30906"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "cloud.aws-compute": {
       "canonical_id": "cloud.aws-compute",
@@ -505,7 +505,7 @@
           "sha256": "7061955f998e17f98b3052de992674d47ca6abd1060779124ee664bd321298d7"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "cloud.aws-networking": {
       "canonical_id": "cloud.aws-networking",
@@ -529,7 +529,7 @@
           "sha256": "07e2cdfb074f7cc4396bd90a77019a91b199960702822f0b2db754f74656b18d"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "cloud.aws-security": {
       "canonical_id": "cloud.aws-security",
@@ -553,7 +553,7 @@
           "sha256": "b2f65e86af598d673b56d3b21f451a568bcdbc52eb3bcc0b33d8040048c41a9b"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "cloud.azure-architecture": {
       "canonical_id": "cloud.azure-architecture",
@@ -577,7 +577,7 @@
           "sha256": "c003809064328a3ed583bb39534ecb0c1c3d74e7088e6bbc80b3e044ffdcf858"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "cloud.cloudflare-edge": {
       "canonical_id": "cloud.cloudflare-edge",
@@ -601,7 +601,7 @@
           "sha256": "43c4f33dd15a54d9b0e62d2589a8bd7b64e61792a00cb2d73c95556ca24296d7"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "cloud.gcp-architecture": {
       "canonical_id": "cloud.gcp-architecture",
@@ -625,7 +625,7 @@
           "sha256": "f3ee85f7b24aa28cefcf764a6950b1b91996104a14306d762a9539674c5a04a9"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "cloud.vercel-deployment": {
       "canonical_id": "cloud.vercel-deployment",
@@ -649,7 +649,7 @@
           "sha256": "d66a55a44617ee73cbbeb59a81126b6ed35e8f4e4894c1c25a0a440c3b780084"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "cloud.cloudflare-workers": {
       "canonical_id": "cloud.cloudflare-workers",
@@ -673,7 +673,7 @@
           "sha256": "8552ef94a38afd9eff09d758ec1ad911f6af2bd9e61ca55551e3401427e651f4"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "cloud.pulumi-iac": {
       "canonical_id": "cloud.pulumi-iac",
@@ -697,7 +697,7 @@
           "sha256": "fa3767f51a605f327d87c0f4c00149108e988f555b6d32be3dad6e9aff6284a1"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "cloud.terraform-iac": {
       "canonical_id": "cloud.terraform-iac",
@@ -721,7 +721,7 @@
           "sha256": "9ed7f36d46b2c561ff89ff61f905867e640a4694ec6f518669745493976e5525"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "communication.customer-support-automation": {
       "canonical_id": "communication.customer-support-automation",
@@ -745,7 +745,7 @@
           "sha256": "e6167597e64c22196f97d6c909b02372b67b87491fac24b7319fd097d37b64cc"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "communication.sms-messaging": {
       "canonical_id": "communication.sms-messaging",
@@ -769,7 +769,7 @@
           "sha256": "a9f34a754402bf87d9db2a3d2937aa9e6b32fb215b46dfa2cc971e77ed60c0ba"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "communication.transactional-email": {
       "canonical_id": "communication.transactional-email",
@@ -793,7 +793,7 @@
           "sha256": "7de6512df6ead53375827791972761cf80aa72c8abff45c74fd36f92f212980d"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "creative.creative-writing": {
       "canonical_id": "creative.creative-writing",
@@ -817,7 +817,7 @@
           "sha256": "a88b7d789c23da7a489ba38b3567d8caa629973d6fc0598b7f487b8d5fd79b56"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "creative.figma": {
       "canonical_id": "creative.figma",
@@ -841,7 +841,7 @@
           "sha256": "344fcdbd9aaddec9d303fc2194eb197c3635e94a2334c1d7a91535a268cb3406"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "creative.graphic-design": {
       "canonical_id": "creative.graphic-design",
@@ -865,7 +865,7 @@
           "sha256": "5ce86b06eaf9a77246154e9bf6547dcf60683a47846505db446f0ecc92bcae6a"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "creative.ui-design": {
       "canonical_id": "creative.ui-design",
@@ -889,7 +889,7 @@
           "sha256": "b26e391f8df8a99dd8dccb47075a953cbe80797d351c4a0ec2701f73ec303257"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "data.apache-airflow": {
       "canonical_id": "data.apache-airflow",
@@ -913,7 +913,7 @@
           "sha256": "b58723d4b2500c1a371b5dbe5122ab9a0ec0fd0ebaaf025ee1af89616466fb5e"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "data.apache-flink": {
       "canonical_id": "data.apache-flink",
@@ -937,7 +937,7 @@
           "sha256": "46e4a4ae756587a6600df87783da190139a06200e47478e05f25b86535a24e0d"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "data.cdc": {
       "canonical_id": "data.cdc",
@@ -961,7 +961,7 @@
           "sha256": "9b0115cdc5c1194b60eb876f17328e0121a14f39880c4af2b734eeee08a63d38"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "data.apache-kafka": {
       "canonical_id": "data.apache-kafka",
@@ -985,7 +985,7 @@
           "sha256": "16d4876a846bba6d1579cca3220a942dbcfeb130d2e37af0a726eff660ac8707"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "data.apache-spark": {
       "canonical_id": "data.apache-spark",
@@ -1009,7 +1009,7 @@
           "sha256": "99a20c735cb6fc729c62d336b49c24db83ce9979d7e8fcc2930cf357ffa4cf1c"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "data.batch-processing": {
       "canonical_id": "data.batch-processing",
@@ -1033,7 +1033,7 @@
           "sha256": "29f49474b6ceca48d44890bf24269a67968fe2746fe441d4add543ffff2e27d6"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "data.dagster": {
       "canonical_id": "data.dagster",
@@ -1057,7 +1057,7 @@
           "sha256": "d9d41771229b0fea4bcc0eb1fc7f9bd79821630fe4cfa5671648aaed411573c6"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "data.data-catalog": {
       "canonical_id": "data.data-catalog",
@@ -1081,7 +1081,7 @@
           "sha256": "3ecc921496fd85652c78a0035ec3a63aaa856fdee96a38edd8b7b4aeb0f57b7f"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "data.data-contracts": {
       "canonical_id": "data.data-contracts",
@@ -1105,7 +1105,7 @@
           "sha256": "bfca295ec22a06ca3b106bfe8efd8e4bfde90da0c92449524fc430f921dd0eb4"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "data.data-governance": {
       "canonical_id": "data.data-governance",
@@ -1129,7 +1129,7 @@
           "sha256": "583513b5c9871df6a7df32542023eb029765e23a2638cb9a5600bb724a28aba6"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "data.data-lineage": {
       "canonical_id": "data.data-lineage",
@@ -1153,7 +1153,7 @@
           "sha256": "607e66325fae55f2d4149b304a19d7e23d55ed3b723084b7113e34aac2aed20b"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "data.data-migration": {
       "canonical_id": "data.data-migration",
@@ -1177,7 +1177,7 @@
           "sha256": "6cd1fca9e40226f679ab8795e18c19c147ef6e290163610543c2d36196a8db40"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "data.data-observability": {
       "canonical_id": "data.data-observability",
@@ -1201,7 +1201,7 @@
           "sha256": "ba563d0e0197c6ddb72c44f2c4e6e77ebc3eccdf8e44f88ffbe348c015c98f5a"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "data.data-quality": {
       "canonical_id": "data.data-quality",
@@ -1225,7 +1225,7 @@
           "sha256": "abd45e8125f1878774f615923bedf9fc366a710f9a8b517cb47f8f5375ec15f0"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "data.data-warehouse": {
       "canonical_id": "data.data-warehouse",
@@ -1249,7 +1249,7 @@
           "sha256": "4aa8451ba901ac735b5ae9dab47ef979b946fa9fbe24432c923ac9a84ea19cdc"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "data.dbt": {
       "canonical_id": "data.dbt",
@@ -1273,7 +1273,7 @@
           "sha256": "23edf5631a6fa417063e55669456d54c49b8c0e1cab0e2c82771151a456f6a8f"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "data.elt-pipeline-design": {
       "canonical_id": "data.elt-pipeline-design",
@@ -1297,7 +1297,7 @@
           "sha256": "2fb565695670cbb5ac648202b3eb85b7479d0ce56e06437e8ccd9e54bbf8133b"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "data.etl-pipeline-design": {
       "canonical_id": "data.etl-pipeline-design",
@@ -1321,7 +1321,7 @@
           "sha256": "36e032f3e7c3f537d3ca2a9f37e36769888387cc99e3e73fd791055bbd4b894e"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "data.event-driven-data": {
       "canonical_id": "data.event-driven-data",
@@ -1345,7 +1345,7 @@
           "sha256": "c33bbe5c421ab1a9b88fc71a1f4f65e7007b4dc9eb0b75c6200b483214b5c806"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "data.feature-store": {
       "canonical_id": "data.feature-store",
@@ -1369,7 +1369,7 @@
           "sha256": "1c02a9b3754acc977b3346358feb2d107f6a6655becdeb39cf867c73fb42eb5b"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "data.lakehouse": {
       "canonical_id": "data.lakehouse",
@@ -1393,7 +1393,7 @@
           "sha256": "c5f61034b0695103bb136da592df8a6d9266fbdee06a5d40ef5728795882c722"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "data.schema-evolution": {
       "canonical_id": "data.schema-evolution",
@@ -1417,7 +1417,7 @@
           "sha256": "8635be81851de09a14a56410bd57116afba0955bc435f2378548c15395bc3d68"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "data.stream-processing": {
       "canonical_id": "data.stream-processing",
@@ -1441,7 +1441,7 @@
           "sha256": "5e2a43f636f335dc686b5ad5975089ed21d67f53eddc22f3c0df90f5290e7ea0"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "data.vector-database": {
       "canonical_id": "data.vector-database",
@@ -1465,7 +1465,7 @@
           "sha256": "77b098333d442b8e6965a111712fb4665a441fc654fddf9dea0ecc94868c5817"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "databases.bigquery": {
       "canonical_id": "databases.bigquery",
@@ -1489,7 +1489,7 @@
           "sha256": "51d51dea944f0a026ef7a0a902e347a4ff80cb1f7cc93986a8aced4129424994"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "databases.clickhouse": {
       "canonical_id": "databases.clickhouse",
@@ -1513,7 +1513,7 @@
           "sha256": "957dc3c0b1bf832f62939174966cfa6bbf8afd4d401462a189a422e3777f7f4c"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "databases.databricks": {
       "canonical_id": "databases.databricks",
@@ -1537,7 +1537,7 @@
           "sha256": "aafc3a996eaa5824b50a93ac6f2b00405d0fa7ce59086036347eef63fb6ddd09"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "databases.duckdb": {
       "canonical_id": "databases.duckdb",
@@ -1561,7 +1561,7 @@
           "sha256": "23a7912534e487923dd9ff564a4a59a786c3e42fae006138f7976ebd9aaa6e08"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "databases.elasticsearch": {
       "canonical_id": "databases.elasticsearch",
@@ -1585,7 +1585,7 @@
           "sha256": "56b3497b2cb786172859c827628141d6f250c14745b553147450d2c656b5d6cc"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "databases.mongodb": {
       "canonical_id": "databases.mongodb",
@@ -1609,7 +1609,7 @@
           "sha256": "1b5803541aeb64ba54558e84a634e6bd0ba3466833be2574073b6cbaadbd2165"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "databases.mysql": {
       "canonical_id": "databases.mysql",
@@ -1633,7 +1633,7 @@
           "sha256": "485068e046dfbdd41989cd10a4467f221de9d41786dc7fcffbb8856cf2860e41"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "databases.neo4j": {
       "canonical_id": "databases.neo4j",
@@ -1657,7 +1657,7 @@
           "sha256": "8493fb5a3ca71488842ccf76ffa47aa1b2e0cfa3f1b0a99b0776219009c8f525"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "databases.opensearch": {
       "canonical_id": "databases.opensearch",
@@ -1681,7 +1681,7 @@
           "sha256": "b562515e9c00cdfbc041cf0f13b9803b162b6c4955fd3f0ca55edab7b82b0fee"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "databases.postgresql": {
       "canonical_id": "databases.postgresql",
@@ -1705,7 +1705,7 @@
           "sha256": "3fb2118f22fea2a64112994826356c11b5d4d855e8fae206fa37e3f066bf8906"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "databases.redis": {
       "canonical_id": "databases.redis",
@@ -1729,7 +1729,7 @@
           "sha256": "b4cf3b133dff0f475228329ceb7cb8ade4e020c8f05e338a0db23143dc9e92a3"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "databases.redshift": {
       "canonical_id": "databases.redshift",
@@ -1753,7 +1753,7 @@
           "sha256": "1ffe206ed2868098cd03c4770b97c31d805575ee15fef87b2f46bdba02b99a8b"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "databases.snowflake": {
       "canonical_id": "databases.snowflake",
@@ -1777,7 +1777,7 @@
           "sha256": "0aab488e0a17ed580bf2f0f6dab1bc6d5b9f5a26ef83ea975ee2b2541aad3d97"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "databases.sqlite": {
       "canonical_id": "databases.sqlite",
@@ -1801,7 +1801,7 @@
           "sha256": "cc620b664e28a95060bd4ba9262c98ffafe39ddcf6fbe39ffc5c535fd9d47bdd"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "databases.database-query-optimization": {
       "canonical_id": "databases.database-query-optimization",
@@ -1825,7 +1825,7 @@
           "sha256": "8fd543a71283b54efaa91a0fa8d0713c6eb6456ed794a6b64345a97e78ae0e59"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "databases.oracle": {
       "canonical_id": "databases.oracle",
@@ -1849,7 +1849,7 @@
           "sha256": "2810c9288e7203a868f1ff3597e5ef7dd69de5b6f03cbb525da3816f1a6a3635"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "databases.postgresql-performance": {
       "canonical_id": "databases.postgresql-performance",
@@ -1873,7 +1873,7 @@
           "sha256": "81f1ec1fb6e716386e1d9f0e787ada51bde3330edbcc5118964f2a1a0a1a4346"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "databases.sql-server": {
       "canonical_id": "databases.sql-server",
@@ -1897,7 +1897,7 @@
           "sha256": "85fc809a9aa500d6cc4b65ece2be1f4ca77cd58fa27cf76fbe4e9827d7a0f172"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "3d.blender-geometry-nodes": {
       "canonical_id": "3d.blender-geometry-nodes",
@@ -1921,7 +1921,7 @@
           "sha256": "ef364d8beb8650720d44015ebc91accd89ec47de44c5eefb914ac1c4b5563b63"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "3d.vfx-compositing": {
       "canonical_id": "3d.vfx-compositing",
@@ -1945,7 +1945,7 @@
           "sha256": "f7a020fce24f9e5b1bd856538072a86ad7a65ce0a19a88398e772739e2e566c6"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "3d.blender-modeling-topology": {
       "canonical_id": "3d.blender-modeling-topology",
@@ -1969,7 +1969,7 @@
           "sha256": "d586649b5fd4c3764191c2835f1cd2fa45bdefa1cfa038fce723d47820f74250"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "3d.blender-python-scripting": {
       "canonical_id": "3d.blender-python-scripting",
@@ -1993,7 +1993,7 @@
           "sha256": "c60b2f13d93b8c77ae9864fd273213a7bfa7357f18d7b52223837c9cb2e15eb3"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "3d.blender-rendering-lighting": {
       "canonical_id": "3d.blender-rendering-lighting",
@@ -2017,7 +2017,7 @@
           "sha256": "ac78abfee3051d2815ac77144f7dd23d03f1e2ac411bf5b36a2cd129ccaff9a6"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "3d.blender-rigging-animation": {
       "canonical_id": "3d.blender-rigging-animation",
@@ -2041,7 +2041,7 @@
           "sha256": "27571bf5ecfe15481746418348d78f494365df88b72c027444ab08161679ab12"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "3d.blender-sculpting-retopology": {
       "canonical_id": "3d.blender-sculpting-retopology",
@@ -2065,7 +2065,7 @@
           "sha256": "4de389310cf37d762af4e83c777285ca84edf69eae36f6506364892d21de7005"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "3d.blender-shading-materials": {
       "canonical_id": "3d.blender-shading-materials",
@@ -2089,7 +2089,7 @@
           "sha256": "2aba137296f213f2916e40c022695405bc3e80644a6f8076fa5e379b38cad71d"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "3d.character-animation-principles": {
       "canonical_id": "3d.character-animation-principles",
@@ -2113,7 +2113,7 @@
           "sha256": "4880ce4b06d0a294f5bf536beb504bc65f0dc59537259665a6f6d1e02ea12de7"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "3d.houdini-procedural-vfx": {
       "canonical_id": "3d.houdini-procedural-vfx",
@@ -2137,7 +2137,7 @@
           "sha256": "e20c22b12309aa89d047f55efe4a5ad71710046be9acc883122f0d2484cd9b0a"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "3d.mesh-repair-printing": {
       "canonical_id": "3d.mesh-repair-printing",
@@ -2161,7 +2161,7 @@
           "sha256": "4b7bd879e22da5fef0f2c7719865f9fea973d360e2fbc78a605c58199e8b8a63"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "3d.pbr-texture-authoring": {
       "canonical_id": "3d.pbr-texture-authoring",
@@ -2185,7 +2185,7 @@
           "sha256": "1862de6be055303e03cbc532d5d34725a566cf61f71fba8c38602c131f12fde1"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "3d.three-d-asset-pipeline": {
       "canonical_id": "3d.three-d-asset-pipeline",
@@ -2209,7 +2209,7 @@
           "sha256": "be68a8e542d583898d53c4443cd0b76734279646e19b14739cb16dc0dcd7f736"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "agents.agent-observability": {
       "canonical_id": "agents.agent-observability",
@@ -2233,7 +2233,7 @@
           "sha256": "ce5876d2b77ab90621b173564ae1e8ec9e136f9b4b97d75d4123c7d7b65b06c0"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "agents.agent-reliability": {
       "canonical_id": "agents.agent-reliability",
@@ -2257,7 +2257,7 @@
           "sha256": "db50351922656f224e8e72dc57c9f1186fe500288b1b061bbbc808ed00b7f8f5"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "agents.human-in-the-loop-design": {
       "canonical_id": "agents.human-in-the-loop-design",
@@ -2281,7 +2281,7 @@
           "sha256": "0dc9e0a9825ac19a6b0af464d5d1b12edaf13c34e14c898297e301fc46df8ecf"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "agents.mcp-integration-testing": {
       "canonical_id": "agents.mcp-integration-testing",
@@ -2305,7 +2305,7 @@
           "sha256": "9c412205a018946074c19db0cc694709f43537b1fd86a3b2f7622ab96ecf5a93"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "design.avatar-creator": {
       "canonical_id": "design.avatar-creator",
@@ -2329,7 +2329,7 @@
           "sha256": "bafdc537b3793291837af24a6f21fd0e8eac05f5860b1f64042b1d4715b2870b"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "design.branding": {
       "canonical_id": "design.branding",
@@ -2353,7 +2353,7 @@
           "sha256": "4eea06a5df67e4d3cee135839cea058139a82d5e73c78061900e26dbb8dded90"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "design.ui-ux": {
       "canonical_id": "design.ui-ux",
@@ -2377,7 +2377,7 @@
           "sha256": "ae3358c094e8a585e5605c9a4960e7f7fe75c99f33adde892a5d0d74c7b71ce7"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "design.frontend-design": {
       "canonical_id": "design.frontend-design",
@@ -2401,7 +2401,7 @@
           "sha256": "5e8eae0fb7f89e2dd7f6622d4681624b94c07b519cb26839b0278ca9c5e8f3a4"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "design.image-gen": {
       "canonical_id": "design.image-gen",
@@ -2425,7 +2425,7 @@
           "sha256": "a78c415911467e5af51f18f47071cac55de42e5c511e011cfd730ed5245bcc73"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "design.presentations": {
       "canonical_id": "design.presentations",
@@ -2449,7 +2449,7 @@
           "sha256": "db7790ecaf4256c1391bc2bdab0ba78b13918b3f33d44c97a2be74ff1657aaf6"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "design.remotion-best-practices": {
       "canonical_id": "design.remotion-best-practices",
@@ -2473,7 +2473,7 @@
           "sha256": "b96682567fd2cb8c427eac8cdfc32713eec55de8551348077596e35645b0f47f"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "design.veo-video-generator": {
       "canonical_id": "design.veo-video-generator",
@@ -2497,7 +2497,7 @@
           "sha256": "cc725ba7daa1a40f1d9f17d23bbf195805fcf2179371b44ca47ce2c6873c7a39"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "design.editorial-layout-design": {
       "canonical_id": "design.editorial-layout-design",
@@ -2521,7 +2521,7 @@
           "sha256": "58ee11f73f907b03764eee6b670579f228dccdc8bbb3be69f1d6e3fa302e3d27"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "design.iconography-systems": {
       "canonical_id": "design.iconography-systems",
@@ -2545,7 +2545,7 @@
           "sha256": "8581e236fbd354a05d5a9b516fb9df5d69e5f0f7996656557f91398795450183"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "design.print-production-prepress": {
       "canonical_id": "design.print-production-prepress",
@@ -2569,7 +2569,7 @@
           "sha256": "6dcd25b8395ef213d44ad75f0a5a20b7fd597dd71794d5f331db0dcfb23b9003"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "design.typography-and-type-systems": {
       "canonical_id": "design.typography-and-type-systems",
@@ -2593,7 +2593,7 @@
           "sha256": "63c13b0748039e5c7f881ddc8b2c669aab1b0ec32ac13905baee56071b83fe1a"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "design.vector-illustration-svg": {
       "canonical_id": "design.vector-illustration-svg",
@@ -2617,7 +2617,7 @@
           "sha256": "97be77ad9715bdcb2d9a60458428a6366aa54544d5b9db26eafc09d9f94be314"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "desktop.app-packaging": {
       "canonical_id": "desktop.app-packaging",
@@ -2641,7 +2641,7 @@
           "sha256": "a2be0761085bf9d0100c2023d5df8860de22fe470096c16b28bc13043016cac0"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "desktop.auto-update": {
       "canonical_id": "desktop.auto-update",
@@ -2665,7 +2665,7 @@
           "sha256": "1d2a0762cc79f69bdeb446eebc81132a54f987eacb1f08f115dbc8a9e85d10cc"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "desktop.pyqt": {
       "canonical_id": "desktop.pyqt",
@@ -2689,7 +2689,7 @@
           "sha256": "4f59e0f47974c8c2db39af0ba6382a2639be9875f8425bf41d7f6ee56c9828df"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "desktop.avalonia": {
       "canonical_id": "desktop.avalonia",
@@ -2713,7 +2713,7 @@
           "sha256": "c8426976cde9fdf404dced56acf3c148274613540a91602629f9952a8a0b829d"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "desktop.cross-platform-desktop": {
       "canonical_id": "desktop.cross-platform-desktop",
@@ -2737,7 +2737,7 @@
           "sha256": "51a88ca6eece43ee26bfeb922787c93ea3f4c216000306f4cb9625e4f9078451"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "desktop.desktop-security": {
       "canonical_id": "desktop.desktop-security",
@@ -2761,7 +2761,7 @@
           "sha256": "fdf0763e4aa195861b2b12096a972a196b4975e6d52c8417b6c5e0c3b99caefe"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "desktop.electron": {
       "canonical_id": "desktop.electron",
@@ -2785,7 +2785,7 @@
           "sha256": "6d357aff049beb01db82d117e455e162279eaaf022080b8421a732e13ff92019"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "desktop.macos-native": {
       "canonical_id": "desktop.macos-native",
@@ -2809,7 +2809,7 @@
           "sha256": "de1402e8dc95b4ef72ccd06731038765095000d3613fbe748e00e714896888a6"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "desktop.pyside": {
       "canonical_id": "desktop.pyside",
@@ -2833,7 +2833,7 @@
           "sha256": "8997b14fb7b43bff26add41378db76c10e573ae9328009fd793cdc929bab0bd0"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "desktop.qt": {
       "canonical_id": "desktop.qt",
@@ -2857,7 +2857,7 @@
           "sha256": "13370421c38e2588b52af23dc2099ebb0710df52c60a6cdd800ad1110ecdfcf0"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "desktop.tauri": {
       "canonical_id": "desktop.tauri",
@@ -2881,7 +2881,7 @@
           "sha256": "567aad658f5d7650a0343b666754c58c278a272e5f215fcf9137b2218d927ba5"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "desktop.tkinter": {
       "canonical_id": "desktop.tkinter",
@@ -2905,7 +2905,7 @@
           "sha256": "0acecb71a4baa6c9d422da0f85955fd05c81ab3ac53a3ef5b063f69a31e46173"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "desktop.winui": {
       "canonical_id": "desktop.winui",
@@ -2929,7 +2929,7 @@
           "sha256": "10bc27c631bcdce2ec3279505bea1b7bef64886dd5b15ae86789c5c5e3201f84"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "desktop.wpf": {
       "canonical_id": "desktop.wpf",
@@ -2953,7 +2953,7 @@
           "sha256": "8685f6bf504ec38a18f9e215005fa4d52f1cff40854b1e451cc439cebdbb817e"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "development.api-mock-generator": {
       "canonical_id": "development.api-mock-generator",
@@ -2977,7 +2977,7 @@
           "sha256": "6611efd8f6c3a1571b7bc3b560ea335aee9598b55e177310193aca8d8ebedf41"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "development.architecture": {
       "canonical_id": "development.architecture",
@@ -3001,7 +3001,7 @@
           "sha256": "05e992158015eeeba2324ae3aa126abf42f7717a14aa6a0e8427a6a090219496"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "development.autoreview": {
       "canonical_id": "development.autoreview",
@@ -3025,7 +3025,7 @@
           "sha256": "30eb30ae8d898045cca17d80f9bb3dd721f387dc55190267ca305d1c70d80364"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "development.backend": {
       "canonical_id": "development.backend",
@@ -3049,7 +3049,7 @@
           "sha256": "b8a3c39b308d0227e40ea1d9c95c37538854c41329ac86b26a1028de07c99302"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "development.behavior-validator": {
       "canonical_id": "development.behavior-validator",
@@ -3073,7 +3073,7 @@
           "sha256": "7581261d8dcd66492a09b592a4a838ceac30e0d84461d920feacc81dbcf38824"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "development.brainstorming": {
       "canonical_id": "development.brainstorming",
@@ -3097,7 +3097,7 @@
           "sha256": "cf6ef6133796cb5d4089fb441c30ffb0acf195b2f0449eb99eee83440c36c179"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "development.cf-worker-deploy": {
       "canonical_id": "development.cf-worker-deploy",
@@ -3121,7 +3121,7 @@
           "sha256": "ea51175f60fff6e0169e5665820276ba9eeb5ad57be7a942c40b4349e74c65d9"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "development.ci-cd-pipeline": {
       "canonical_id": "development.ci-cd-pipeline",
@@ -3145,7 +3145,7 @@
           "sha256": "2484d9deddc2e946aba4cdf2b880fc4f3be561bac23c87503c35aae49cbda806"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "development.code-review": {
       "canonical_id": "development.code-review",
@@ -3169,7 +3169,7 @@
           "sha256": "e83a5f91049eaaf0509369269dd479cdde98d1d55585120dd57cbafe4508b694"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "development.coding-agent": {
       "canonical_id": "development.coding-agent",
@@ -3193,7 +3193,7 @@
           "sha256": "6511008be3e12f430accc8dbfc3b8acb297f58fbdf227b073adf4a56bbec4dd3"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "development.coding": {
       "canonical_id": "development.coding",
@@ -3217,7 +3217,7 @@
           "sha256": "8b7a49e19dece58e55482bf79e76b492537fd2695450554588de99d5f474f8b3"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "development.crabbox": {
       "canonical_id": "development.crabbox",
@@ -3241,7 +3241,7 @@
           "sha256": "e337f8850845032aa16937f7a1daf70f961b493aa239c8d411a1521e9dcefca2"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "development.cursor-agent": {
       "canonical_id": "development.cursor-agent",
@@ -3265,7 +3265,7 @@
           "sha256": "e6a2a200fe793f32c98394ee7c84ec6c242fd293136e478a3b6913cef79d9a10"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "development.databases": {
       "canonical_id": "development.databases",
@@ -3289,7 +3289,7 @@
           "sha256": "3c43819469707314e22ecd13828e6d23ce5bcc74031549592f0bfb0d6a77365a"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "development.db-inspector": {
       "canonical_id": "development.db-inspector",
@@ -3313,7 +3313,7 @@
           "sha256": "4e932167be4a1d6c7dc50b9b212ce79dc7ea33a03bb49da63f1f53c545f78fdb"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "development.debugging": {
       "canonical_id": "development.debugging",
@@ -3337,7 +3337,7 @@
           "sha256": "bf6ea868310bc0c874dba9aad4e1460122b96415370f71c4b13f2d02254eb2e6"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "development.devops": {
       "canonical_id": "development.devops",
@@ -3361,7 +3361,7 @@
           "sha256": "b6e621e316bf076e68d3aad8c7e9c3dcc84fadde042339d2c4db0dc24ee23206"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "development.docker-manager": {
       "canonical_id": "development.docker-manager",
@@ -3385,7 +3385,7 @@
           "sha256": "399cd454d3eee5afde3fa97ef606d6bef35efe301b40e4265b9cdec54fb1898e"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "development.dokploy": {
       "canonical_id": "development.dokploy",
@@ -3409,7 +3409,7 @@
           "sha256": "02a5fa75560dda3d1531dfceea0b887cf8b7bbaca8a5c299ac10863369bf432f"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "development.frontend": {
       "canonical_id": "development.frontend",
@@ -3433,7 +3433,7 @@
           "sha256": "26af386210070ae3403ea85c6edc12de16c4ac97050d9947ef1cb334e43e8a16"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "development.git-workflow": {
       "canonical_id": "development.git-workflow",
@@ -3457,7 +3457,7 @@
           "sha256": "3c88c57a401fb73ab61cbc835493dee83f8832bd1375501d9fbb44ce9d22e7bb"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "development.git-worktrees": {
       "canonical_id": "development.git-worktrees",
@@ -3481,7 +3481,7 @@
           "sha256": "434216883cd83214ae9888312b0d8fab30778d866649caafb3ab17c03ad5c93a"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "development.git": {
       "canonical_id": "development.git",
@@ -3505,7 +3505,7 @@
           "sha256": "21b66bee020cdb5fac434bd212094874370a9c11350f3cab527333480459724f"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "development.github-cli": {
       "canonical_id": "development.github-cli",
@@ -3529,7 +3529,7 @@
           "sha256": "5367565d694a6c93db428afd808ec0edc64e460ef9933f5812c2f6bbd712951a"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "development.github": {
       "canonical_id": "development.github",
@@ -3553,7 +3553,7 @@
           "sha256": "54628c6d2bcd7dc1d80487893e004bd5e091ad4a84060a5427805643e3d073b5"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "development.issue-triage": {
       "canonical_id": "development.issue-triage",
@@ -3577,7 +3577,7 @@
           "sha256": "c01459eaa5e75b609145324788de3d093d3f90ceb9e79303578b7436500b5965"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "development.mcp-builder": {
       "canonical_id": "development.mcp-builder",
@@ -3601,7 +3601,7 @@
           "sha256": "a2aad92ecc1795f253000032f94349343ee1929cf141c4dd365aceacf55b3cee"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "development.mcp-server-development": {
       "canonical_id": "development.mcp-server-development",
@@ -3625,7 +3625,7 @@
           "sha256": "2796898fd8e4d8872065cbed4bc5addb5ee6f3aa4199bc9366ed3ea1df7e3a28"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "development.performance-optimization": {
       "canonical_id": "development.performance-optimization",
@@ -3649,7 +3649,7 @@
           "sha256": "936ebd3076fd8fb77f7858e5968d75b4dd093a43f517fb48f6ff954943427675"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "development.pr-splitter": {
       "canonical_id": "development.pr-splitter",
@@ -3673,7 +3673,7 @@
           "sha256": "13f6365a2f1ca14c44af9357991d367cf126671638a4a408d8eeb41fd64733b8"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "development.receiving-code-review": {
       "canonical_id": "development.receiving-code-review",
@@ -3697,7 +3697,7 @@
           "sha256": "e9f6be260a8df7e893475f560d4b7356882fd54e8c18e7f64f5259f22a657f05"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "development.refactoring": {
       "canonical_id": "development.refactoring",
@@ -3721,7 +3721,7 @@
           "sha256": "cbbb0a873c45ad4074d6dedccf97f2a83c354d649e9af0396c5dd55427002dc4"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "development.release-management": {
       "canonical_id": "development.release-management",
@@ -3745,7 +3745,7 @@
           "sha256": "e35e2d35580edefe3713dc011b661597fcd64e5d4bfb299fe5c4930a654239a9"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "development.requesting-code-review": {
       "canonical_id": "development.requesting-code-review",
@@ -3769,7 +3769,7 @@
           "sha256": "678799832e58609c72c891ebbcfa57ba2eef1befc920606a07ec811611ad2a73"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "development.summarize-repo": {
       "canonical_id": "development.summarize-repo",
@@ -3793,7 +3793,7 @@
           "sha256": "7658306481fdd471bfb22c0674e3e0bad77eba7d2e31b577726082a6b7f6d081"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "development.tdd": {
       "canonical_id": "development.tdd",
@@ -3817,7 +3817,7 @@
           "sha256": "6683c7a7e3fa5db5b1b5e01bba1c2cf68979f57c1c142967fd422a38e5c0928d"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "development.testing": {
       "canonical_id": "development.testing",
@@ -3841,7 +3841,7 @@
           "sha256": "df6928839ad6aa09521eb0c14ab05b04eb38825ec82540b99ae5d231fc668a71"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "development.verification-before-completion": {
       "canonical_id": "development.verification-before-completion",
@@ -3865,7 +3865,7 @@
           "sha256": "bfb51e4313ef5760c6bd86f6fed794b02324cb16eb943a87e52805eb0fe23273"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "development.fastapi-expert": {
       "canonical_id": "development.fastapi-expert",
@@ -3889,7 +3889,7 @@
           "sha256": "c9e9af9a29b4fc69f1ff6ab1742520f1d8b5d093ae16a83cb27d50ace6236d8e"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "development.feature-flag-management": {
       "canonical_id": "development.feature-flag-management",
@@ -3913,7 +3913,7 @@
           "sha256": "a59e82854f098939cbf4860afe4c473f9822014624a42a87ba56098d0c33f086"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "development.graphql-api-design": {
       "canonical_id": "development.graphql-api-design",
@@ -3937,7 +3937,7 @@
           "sha256": "a8e4355428ae5e2f48f6b806c524ab8a3a21535f92557176d8eed61aaa30818e"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "development.grpc-service-design": {
       "canonical_id": "development.grpc-service-design",
@@ -3961,7 +3961,7 @@
           "sha256": "1304b17854686cfa8cb9e637e61cadd41e1b4f8dcd29359ce552ac47383509e4"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "development.monorepo-management": {
       "canonical_id": "development.monorepo-management",
@@ -3985,7 +3985,7 @@
           "sha256": "423affd4ae833d8ea970fd1dfd25034a37f888dfbea7105adec1a8c6dfbd1804"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "development.nestjs-expert": {
       "canonical_id": "development.nestjs-expert",
@@ -4009,7 +4009,7 @@
           "sha256": "e7843cb037a3e6f63d7ed77b9c0236f6445df7fa10bd9eda33cd099b32a81c28"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "development.websocket-realtime": {
       "canonical_id": "development.websocket-realtime",
@@ -4033,7 +4033,7 @@
           "sha256": "94207ab465a1ed74b80a0ce4f259f91b4f1a603645e224d0f8d4d98422c30704"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "documents.csv": {
       "canonical_id": "documents.csv",
@@ -4057,7 +4057,7 @@
           "sha256": "eeb8a4a909494521921192842216c83e4fda66350def4dd4ccccb658fa791acf"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "documents.docx": {
       "canonical_id": "documents.docx",
@@ -4081,7 +4081,7 @@
           "sha256": "22d69cb7d832d7aab73383b914325c52da995b7111f190057cf73f0eb00fdb50"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "documents.expense-parser": {
       "canonical_id": "documents.expense-parser",
@@ -4105,7 +4105,7 @@
           "sha256": "e41f0f0fd1fd395fbc00857b9fc9b7a0499633fef0e2ad1a632823ef0a3c9283"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "documents.markdown": {
       "canonical_id": "documents.markdown",
@@ -4129,7 +4129,7 @@
           "sha256": "8adb7b1ab650ded30b06d81f57adaab598a1ae2347ed13051db66417d2dbab27"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "documents.pdf": {
       "canonical_id": "documents.pdf",
@@ -4153,7 +4153,7 @@
           "sha256": "aa3c5724712c494881e044ad0446c0fd41ef054ffbccb2b5e167d23efad8e893"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "documents.pptx": {
       "canonical_id": "documents.pptx",
@@ -4177,7 +4177,7 @@
           "sha256": "61a9fd668a105472b19ab9edd9a4b70c089d756ec6306eaa4dc8e43d0d55610e"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "documents.xlsx": {
       "canonical_id": "documents.xlsx",
@@ -4201,7 +4201,7 @@
           "sha256": "a3e845f07a16eea8c4848ed2a7daa977103fd805f5d730f8c3c492b39f27d6d8"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "education.curriculum-design": {
       "canonical_id": "education.curriculum-design",
@@ -4225,7 +4225,7 @@
           "sha256": "492e2c96bee338f09ae30377dec07aa3b1b535590ed88c1d22ae16c519e154ae"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "education.quiz-generation": {
       "canonical_id": "education.quiz-generation",
@@ -4249,7 +4249,7 @@
           "sha256": "99a1b0da9c3ce16fb5262901dddaa4b0c45d320194b7dc407258d0ba8f051c73"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "education.spaced-repetition": {
       "canonical_id": "education.spaced-repetition",
@@ -4273,7 +4273,7 @@
           "sha256": "7491e0ab04556146b43f588be1e217772a09713ed621a7e80e5b03d6554a7865"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "education.tutoring": {
       "canonical_id": "education.tutoring",
@@ -4297,7 +4297,7 @@
           "sha256": "68ff35b7008ad2cabb1567faae3a65540fd669c18459db4d13888ff30b30764b"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "embedded.arduino": {
       "canonical_id": "embedded.arduino",
@@ -4321,7 +4321,7 @@
           "sha256": "70508091af36340e55fc6e4a672c5098d46dedb92c7aadb45ca52fc8a851322f"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "embedded.bare-metal": {
       "canonical_id": "embedded.bare-metal",
@@ -4345,7 +4345,7 @@
           "sha256": "dd955ef6075d3a378043eea7c1fd62349ea031829741288637618e1319cc6069"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "embedded.can-bus": {
       "canonical_id": "embedded.can-bus",
@@ -4369,7 +4369,7 @@
           "sha256": "1e4476d3fdf3b078576de17ef634a85d3f696f7d3b50bf5ccb64b9b4c8e0b8e3"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "embedded.device-drivers": {
       "canonical_id": "embedded.device-drivers",
@@ -4393,7 +4393,7 @@
           "sha256": "01dfa2898cd2e5f8a471db47b4af34f0bc38622e99c5c5bae5a2345baf088e9a"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "embedded.embedded-linux": {
       "canonical_id": "embedded.embedded-linux",
@@ -4417,7 +4417,7 @@
           "sha256": "cbbd191b1f67791db84da612a96f8c31380c9cd25638e7a45c888e6306ff4f0d"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "embedded.embedded-security": {
       "canonical_id": "embedded.embedded-security",
@@ -4441,7 +4441,7 @@
           "sha256": "e319e00d37631dc4730f92f4fbd4c004fd6d95842c5212a196a4f8de3add35cc"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "embedded.embedded-testing": {
       "canonical_id": "embedded.embedded-testing",
@@ -4465,7 +4465,7 @@
           "sha256": "a5b46e66cba4db3c74a9d6488656829a901380f72b4dcc12a0258b68ba6e39cd"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "embedded.esp32": {
       "canonical_id": "embedded.esp32",
@@ -4489,7 +4489,7 @@
           "sha256": "685e90ded3205b00ab7a6dedfbc0a0815313275652b9c767b00313f45ba6f6db"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "embedded.esp8266": {
       "canonical_id": "embedded.esp8266",
@@ -4513,7 +4513,7 @@
           "sha256": "75267e142f2c333ee917f30400742f01e47f306ccc34a4fa1c2d9558efcb7bb7"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "embedded.firmware-analysis": {
       "canonical_id": "embedded.firmware-analysis",
@@ -4537,7 +4537,7 @@
           "sha256": "1d3a0b4b374eaaebacb332a60b84e5cf8a1abef83d7c6858f543b9568332674c"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "embedded.freertos": {
       "canonical_id": "embedded.freertos",
@@ -4561,7 +4561,7 @@
           "sha256": "add3ae937dab96f775aa859f16c95f1f9077a79eba6be223349f13f5469059aa"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "embedded.i2c": {
       "canonical_id": "embedded.i2c",
@@ -4585,7 +4585,7 @@
           "sha256": "174e41a369dc92a3dbc37f0e448a4ff68b50d66387ebd545f6b99a13c00a9a13"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "embedded.modbus": {
       "canonical_id": "embedded.modbus",
@@ -4609,7 +4609,7 @@
           "sha256": "d001b03730842c37da046686a6c661bb1156a6b2f829bf103c2dac108b1ef8d1"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "embedded.mqtt": {
       "canonical_id": "embedded.mqtt",
@@ -4633,7 +4633,7 @@
           "sha256": "df826111d35efd93800d49635431e177fc81927da5704a9daaa9f7f4a2d978f6"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "embedded.pcb-design": {
       "canonical_id": "embedded.pcb-design",
@@ -4657,7 +4657,7 @@
           "sha256": "b08497bf0af45605c6804c8d249b31ebe24b64acbba6eb15b107195c56697337"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "embedded.raspberry-pi": {
       "canonical_id": "embedded.raspberry-pi",
@@ -4681,7 +4681,7 @@
           "sha256": "1086ebdb1c3af7d230c9d0048578484087a65940b4d97b82f218f59a633a028f"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "embedded.robotics": {
       "canonical_id": "embedded.robotics",
@@ -4705,7 +4705,7 @@
           "sha256": "3f6e163538d04029379fbb18dbe36406a62403e7f5828737ce2c44a1d07db4f0"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "embedded.rp2040": {
       "canonical_id": "embedded.rp2040",
@@ -4729,7 +4729,7 @@
           "sha256": "c0d95cc572418fd5a2f01cbc903d16bc00c3d4fbc321e353e53d8535a640e368"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "embedded.sensor-integration": {
       "canonical_id": "embedded.sensor-integration",
@@ -4753,7 +4753,7 @@
           "sha256": "b02c0888cdd9bf52ead00ed97a6dc67432f8cf22262a38ffa4cc2e9c011f3427"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "embedded.spi": {
       "canonical_id": "embedded.spi",
@@ -4777,7 +4777,7 @@
           "sha256": "2e2c30fd1187d4f8c2fb52bb3a1be5d9270627cff50c8aec6474b584422e9130"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "embedded.stm32": {
       "canonical_id": "embedded.stm32",
@@ -4801,7 +4801,7 @@
           "sha256": "13636c5457082b5c2f315e966380c101240bd06cd2969f6a4f30e01009aef6ac"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "embedded.uart": {
       "canonical_id": "embedded.uart",
@@ -4825,7 +4825,7 @@
           "sha256": "6409ef86b2003351fb27c4ade56fc76faa7742e5a65b06a8430d70c9b4bd0480"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "embedded.zephyr": {
       "canonical_id": "embedded.zephyr",
@@ -4849,7 +4849,7 @@
           "sha256": "f4b0a0e755c65788ab78cbe1705135d26aa30ca6f33dc1f31b85e3516f753bf2"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "finance.accounting": {
       "canonical_id": "finance.accounting",
@@ -4873,7 +4873,7 @@
           "sha256": "6be4ecd1e6a01f6b3f7acae9ef2572d3e24ad3a59a80d12f597b53111d134ca1"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "finance.financial-analysis": {
       "canonical_id": "finance.financial-analysis",
@@ -4897,7 +4897,7 @@
           "sha256": "07e45368a1db7303d56195c658a0f55bdeb1e26fb2abc7429615771d6e8a7e5f"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "finance.financial-modeling": {
       "canonical_id": "finance.financial-modeling",
@@ -4921,7 +4921,7 @@
           "sha256": "34336fa870970127785e644e912b7757f5bf37707d264d2a0883208e1abc4603"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "finops.ai-inference-cost": {
       "canonical_id": "finops.ai-inference-cost",
@@ -4945,7 +4945,7 @@
           "sha256": "9e4a4a52426506e0b8d83ef35d0f569996c3a1ef92115aeaec616c94e38e0424"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "finops.cloud-cost-analysis": {
       "canonical_id": "finops.cloud-cost-analysis",
@@ -4969,7 +4969,7 @@
           "sha256": "60787c325a64ebbb1d319431933ef6c9bfaa7e7249d1238a1e691ab620d875cd"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "finops.aws-cost-optimization": {
       "canonical_id": "finops.aws-cost-optimization",
@@ -4993,7 +4993,7 @@
           "sha256": "68af598045a726c090bcb17d7d56713c0f22c6d8e2eeebf43686e357783f12fb"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "finops.azure-cost-optimization": {
       "canonical_id": "finops.azure-cost-optimization",
@@ -5017,7 +5017,7 @@
           "sha256": "ae534bc68453f3e5e48e39ad3d46665b3fdb7889aa95a9dd4b0b7782dce9110c"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "finops.gcp-cost-optimization": {
       "canonical_id": "finops.gcp-cost-optimization",
@@ -5041,7 +5041,7 @@
           "sha256": "675827730ac67f9f077e19010262a1ac7fc32a4b162d7870e6caf8e42eedff9a"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "finops.idle-resource-detection": {
       "canonical_id": "finops.idle-resource-detection",
@@ -5065,7 +5065,7 @@
           "sha256": "d90323cef2ef7482d2cdd598d3e472f883bd3deaada24f2f39fc7d168b7d661f"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "finops.kubernetes-cost": {
       "canonical_id": "finops.kubernetes-cost",
@@ -5089,7 +5089,7 @@
           "sha256": "cc113045a6d019f3f4809ea5d2c31842f9871bb7ebad0f8735ce0fbd6a65dbd8"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "finops.rightsizing": {
       "canonical_id": "finops.rightsizing",
@@ -5113,7 +5113,7 @@
           "sha256": "b05769b2414dc386b89853801d5578827b4ffdaea125b0d6b294f85ebc60f67f"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "game.asset-pipelines": {
       "canonical_id": "game.asset-pipelines",
@@ -5137,7 +5137,7 @@
           "sha256": "e7133783881056d9336f192e1b79dd651401b2971d28c22349485fc1a7614aac"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "game.directx": {
       "canonical_id": "game.directx",
@@ -5161,7 +5161,7 @@
           "sha256": "364e5e6a5f11362fab0fec6012ff2984563a8bc65f35ad52ed0567dcbbd777da"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "game.ecs": {
       "canonical_id": "game.ecs",
@@ -5185,7 +5185,7 @@
           "sha256": "c3661c70eeb7cfbe5c080ad36539fc04db9267e4c2c0f90ceeb1babf011da39b"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "game.game-ai": {
       "canonical_id": "game.game-ai",
@@ -5209,7 +5209,7 @@
           "sha256": "b972ef3c8297f9e4a68e90155b4e6b7403937aba93dc3718e2a8ee39db9db29a"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "game.game-testing": {
       "canonical_id": "game.game-testing",
@@ -5233,7 +5233,7 @@
           "sha256": "a50cc37834e8619ecc1a9226598accbe19775cc15bcc07899c750c334b2e5560"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "game.game-ui": {
       "canonical_id": "game.game-ui",
@@ -5257,7 +5257,7 @@
           "sha256": "d0b801d888365deaa0cd2b2448bedfac8e2e7cdf69cae7c32ce1c83003e5091c"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "game.gameplay-programming": {
       "canonical_id": "game.gameplay-programming",
@@ -5281,7 +5281,7 @@
           "sha256": "dc64b477e1cb34107ec2e9f85c267aab255f241b500a279178108fcc77ea1dbc"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "game.godot": {
       "canonical_id": "game.godot",
@@ -5305,7 +5305,7 @@
           "sha256": "fbbe4c54c0371f815d82b91e3831eded9b7b8f62834e9181c323f16689ea97f3"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "game.graphics-programming": {
       "canonical_id": "game.graphics-programming",
@@ -5329,7 +5329,7 @@
           "sha256": "bcfb3ac750776dcce8077bd80386993031033e48c8ff83dd5d1d7371635d7e1a"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "game.multiplayer": {
       "canonical_id": "game.multiplayer",
@@ -5353,7 +5353,7 @@
           "sha256": "b9781a73abc5325a1779b8d54d6be65d6b65e7de101161dc329537b1365263f1"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "game.netcode": {
       "canonical_id": "game.netcode",
@@ -5377,7 +5377,7 @@
           "sha256": "afd06894770edd41886b2e702aeae16c7c761876079faa4922303721482138ea"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "game.opengl": {
       "canonical_id": "game.opengl",
@@ -5401,7 +5401,7 @@
           "sha256": "948d72f67a07fc1878d7882053c48b2b54c14b17fa026993c63cf866e13e4699"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "game.optimization": {
       "canonical_id": "game.optimization",
@@ -5425,7 +5425,7 @@
           "sha256": "8a2b810b4d4e075e983dab92943b83d052e1e30d1fbb30987ca11d80e00c4b3f"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "game.physics": {
       "canonical_id": "game.physics",
@@ -5449,7 +5449,7 @@
           "sha256": "705c3d809ff4214b1018295975c06144015cf68fd9012f2cec0dbe3ebba2e0ac"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "game.profiling": {
       "canonical_id": "game.profiling",
@@ -5473,7 +5473,7 @@
           "sha256": "3ec0c6dff15fc04a7a469890ff6efaffd3bb2d5c033db2180648cfbf44c000a8"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "game.shaders": {
       "canonical_id": "game.shaders",
@@ -5497,7 +5497,7 @@
           "sha256": "2e33c1328b5d755f637fb0420089cb60ac41a230480460e3dd4d9c663b270054"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "game.unity": {
       "canonical_id": "game.unity",
@@ -5521,7 +5521,7 @@
           "sha256": "232120e931d0e58e96f485961f44b71422d7ed8c98a8fc4ecfa52e1674cda3f1"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "game.unreal-engine": {
       "canonical_id": "game.unreal-engine",
@@ -5545,7 +5545,7 @@
           "sha256": "d6eb8c45af6d097938439bdfca96066915e3b82ce65a03a0a895bf7e368c2d0e"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "game.vulkan": {
       "canonical_id": "game.vulkan",
@@ -5569,7 +5569,7 @@
           "sha256": "9e2321eb5aa0d42aefe3ae8954f4737c3d484b05c8a313240fa9c28d4941543f"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "healthcare.health-economist": {
       "canonical_id": "healthcare.health-economist",
@@ -5593,7 +5593,7 @@
           "sha256": "f8eff67656fb09ed83c38375dd8f2b105e7cf45887845fa4314241d98f013333"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "knowledge.airtable-workflows": {
       "canonical_id": "knowledge.airtable-workflows",
@@ -5617,7 +5617,7 @@
           "sha256": "09134a90918b3319c4376951d220f6d3d68a81218a931e7e5eec0bda46e234a4"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "legal.accessibility-compliance": {
       "canonical_id": "legal.accessibility-compliance",
@@ -5641,7 +5641,7 @@
           "sha256": "ddda7c5f880b402102b881c8c053e41a267530353c234c06518ed6c104958858"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "legal.ai-governance": {
       "canonical_id": "legal.ai-governance",
@@ -5665,7 +5665,7 @@
           "sha256": "1c26ea1aae24f657d6ce0312069c55c43465e9bb2847c23699d8ef3b6240ea8a"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "legal.ccpa": {
       "canonical_id": "legal.ccpa",
@@ -5689,7 +5689,7 @@
           "sha256": "4972e839f66ef43cab6346fc07281c83dea861236b7c56d355c07727d27f7f4c"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "legal.contract-review": {
       "canonical_id": "legal.contract-review",
@@ -5713,7 +5713,7 @@
           "sha256": "cd8357abef45e4d7dc4f74e2025ff7e8bc8950b26f8cc0d2c661ad7d8e24b862"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "legal.data-retention": {
       "canonical_id": "legal.data-retention",
@@ -5737,7 +5737,7 @@
           "sha256": "ad37e3d094d3573fdb076588f69dca55af84088cada2d817d3a77f02c6c73394"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "legal.gdpr": {
       "canonical_id": "legal.gdpr",
@@ -5761,7 +5761,7 @@
           "sha256": "17de9326eef96ce857de28e647a59c69cb307c5e4714172fbdc5dd0b22fcfd08"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "legal.license-compatibility": {
       "canonical_id": "legal.license-compatibility",
@@ -5785,7 +5785,7 @@
           "sha256": "16b9d07f3fa529f93c2ad488a992ac1c536556fb39704d1aa67e53ca7cf81ac7"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "legal.nda-review": {
       "canonical_id": "legal.nda-review",
@@ -5809,7 +5809,7 @@
           "sha256": "33613a8ee3a578814f0ef7b5a3f87ccc09f3e3a1dda23d3eb5fd32d6589fc283"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "legal.open-source-license-selection": {
       "canonical_id": "legal.open-source-license-selection",
@@ -5833,7 +5833,7 @@
           "sha256": "f43a63b3e95ddb15b8abb10c1de44c32ffc882c78bab12de5f266b139a2b5a53"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "legal.privacy-policy-review": {
       "canonical_id": "legal.privacy-policy-review",
@@ -5857,7 +5857,7 @@
           "sha256": "0ed8130d94faa98fdb28a3f9bc45909f908bf9215d5edf7d5c5068b9e7018c1f"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "legal.records-management": {
       "canonical_id": "legal.records-management",
@@ -5881,7 +5881,7 @@
           "sha256": "41e44cf497887640ec10731015f6df0261b6f506135b6533cf3857d458385a20"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "legal.regulatory-research": {
       "canonical_id": "legal.regulatory-research",
@@ -5905,7 +5905,7 @@
           "sha256": "d46e2719a62310362da66a8af777fec2f96f5d1aa6a6ea530119198e91b526e5"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "legal.sbom-analysis": {
       "canonical_id": "legal.sbom-analysis",
@@ -5929,7 +5929,7 @@
           "sha256": "547740bbf3e2deb41761582c014c6e4be41f82f569742b053898338466f23e79"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "legal.security-compliance": {
       "canonical_id": "legal.security-compliance",
@@ -5953,7 +5953,7 @@
           "sha256": "2add814a68b53f87d5af448762b3ef80f3ac024fb1b0922d67f8daa331e1c136"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "legal.software-compliance": {
       "canonical_id": "legal.software-compliance",
@@ -5977,7 +5977,7 @@
           "sha256": "f54dd69f311f70f16b4a2d00af19b1a7a918f58b6586af1a348c1c20a1ae673d"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "legal.terms-of-service": {
       "canonical_id": "legal.terms-of-service",
@@ -6001,7 +6001,7 @@
           "sha256": "476fd9e3cd53c30cca9975b489bd2379ae23456081b26a5df2ee0ed5a6ac4504"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "media.text-to-speech-production": {
       "canonical_id": "media.text-to-speech-production",
@@ -6025,7 +6025,7 @@
           "sha256": "edb6e53448ae934d7e384cd8fa61b5b877d2e82e186325113bedd13babbbc0a2"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "mobile.android-compose": {
       "canonical_id": "mobile.android-compose",
@@ -6049,7 +6049,7 @@
           "sha256": "94b6504d20a53496576054dabef0a938ec8f8345c4bc804a727cba1104bc0c4b"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "mobile.android-development": {
       "canonical_id": "mobile.android-development",
@@ -6073,7 +6073,7 @@
           "sha256": "7a6ff20a4cbeb82f26012606a40930a16f8145850bb432053f82eabb090e6fa5"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "mobile.app-store-deployment": {
       "canonical_id": "mobile.app-store-deployment",
@@ -6097,7 +6097,7 @@
           "sha256": "3bcc0d46eeef68b53d5160e9288d9863f93e279414f607d58861e7d74d103aed"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "mobile.expo": {
       "canonical_id": "mobile.expo",
@@ -6121,7 +6121,7 @@
           "sha256": "f56d992513ac04ef3128c74c58380be2f7a39b87f8552e981485def8bf0ae3cc"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "mobile.flutter": {
       "canonical_id": "mobile.flutter",
@@ -6145,7 +6145,7 @@
           "sha256": "9e7baf0a682a5cf0ac8c2bc96a2328a57a26c59c62bedecff21acb903a7c0105"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "mobile.ios-development": {
       "canonical_id": "mobile.ios-development",
@@ -6169,7 +6169,7 @@
           "sha256": "c25ce6567daee3bbb5e1d5eb11ce12647f756d74a91008be3a8fe7feaca1da7a"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "mobile.kotlin-development": {
       "canonical_id": "mobile.kotlin-development",
@@ -6193,7 +6193,7 @@
           "sha256": "d3077cf91d1b62d1e87c7392010a2b97fb3d5494b2a6d03aa79335238246b534"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "mobile.mobile-ci-cd": {
       "canonical_id": "mobile.mobile-ci-cd",
@@ -6217,7 +6217,7 @@
           "sha256": "99e47e77d721459050578f796f367360c200be6ad3afd37f5803552bf583f4b4"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "mobile.mobile-navigation": {
       "canonical_id": "mobile.mobile-navigation",
@@ -6241,7 +6241,7 @@
           "sha256": "de3cfc4314350713eaf4be4a886e65aa82cb0ca10581fb1a88a8530797066b23"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "mobile.mobile-networking": {
       "canonical_id": "mobile.mobile-networking",
@@ -6265,7 +6265,7 @@
           "sha256": "79b35f9cfbd4cca7fecc5e93274c4a1def7786856adf41f3df0d01695263d583"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "mobile.mobile-performance": {
       "canonical_id": "mobile.mobile-performance",
@@ -6289,7 +6289,7 @@
           "sha256": "d65dc803806cc025b33576164610203ba872745b8cdf82be1641e9aeeadb228f"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "mobile.mobile-release": {
       "canonical_id": "mobile.mobile-release",
@@ -6313,7 +6313,7 @@
           "sha256": "00fd0789643be24e8f7dffce3d9301b88f8cba00e864c548eece02904f65a4e2"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "mobile.mobile-security": {
       "canonical_id": "mobile.mobile-security",
@@ -6337,7 +6337,7 @@
           "sha256": "1e101d80da11a9be58e21121839aed6754c3eee271524a02295b98f7ac9442c7"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "mobile.mobile-state-management": {
       "canonical_id": "mobile.mobile-state-management",
@@ -6361,7 +6361,7 @@
           "sha256": "897737cd60514fa96fe3e25a6e34f87994181be00d0fc388af6f0ebe658d5d1f"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "mobile.mobile-storage": {
       "canonical_id": "mobile.mobile-storage",
@@ -6385,7 +6385,7 @@
           "sha256": "22e4b169b5777b0f634f6ca449ba5af423f0434681062e221b481c31d6a75aaf"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "mobile.mobile-testing": {
       "canonical_id": "mobile.mobile-testing",
@@ -6409,7 +6409,7 @@
           "sha256": "2714ff27e10da91ed7db0967335b0820f0a572c3f1795cf6af96e189f2c5c2f9"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "mobile.mobile-ui": {
       "canonical_id": "mobile.mobile-ui",
@@ -6433,7 +6433,7 @@
           "sha256": "e30c8615ce3a8563616ecb64065c1090adb2ffb026d940763f74a4123cfe0140"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "mobile.play-store-deployment": {
       "canonical_id": "mobile.play-store-deployment",
@@ -6457,7 +6457,7 @@
           "sha256": "10d7a535ae81bacf767b4af67ad39394fee6f4bc257ec21c401aae2cec0cb6fe"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "mobile.react-native": {
       "canonical_id": "mobile.react-native",
@@ -6481,7 +6481,7 @@
           "sha256": "94f749d6dbea2ccc8f0743d4f70ab547ad22af57c16081990c5c43dcd14ac5ab"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "mobile.swift-development": {
       "canonical_id": "mobile.swift-development",
@@ -6505,7 +6505,7 @@
           "sha256": "9a2e0a3e75600a2031f278f3ee99c8ed4ca94aa6794ee1f1dd3c43c7ccd0fd44"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "mobile.swiftui-development": {
       "canonical_id": "mobile.swiftui-development",
@@ -6529,7 +6529,7 @@
           "sha256": "0f0f4f48f8421d5fc0ec6d3830422b7547f005c120c7530637712e16dcbd7752"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "networking.dns": {
       "canonical_id": "networking.dns",
@@ -6553,7 +6553,7 @@
           "sha256": "8ff9b88a4dc684778f118b8e3fa9b2266d84ab6b54b3cbb28c17ebfee135fbe6"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "networking.firewalls": {
       "canonical_id": "networking.firewalls",
@@ -6577,7 +6577,7 @@
           "sha256": "568958c5158e731c4c69a4d331e572f9862d072c0c8834e7b62953c97cbe3d9e"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "networking.http": {
       "canonical_id": "networking.http",
@@ -6601,7 +6601,7 @@
           "sha256": "20857091a2c8052b4757eb4dc7af11cae411209463751cd30fec0880b25ba698"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "networking.http2": {
       "canonical_id": "networking.http2",
@@ -6625,7 +6625,7 @@
           "sha256": "bdb8acc4876299cd442fbda149ba51b36a3d3a0cf1d4335115c0ae7d88638708"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "networking.http3": {
       "canonical_id": "networking.http3",
@@ -6649,7 +6649,7 @@
           "sha256": "913596523c9f23ac6ded361d150a4131ca406a4c17207daf0e53dd2e6d78ad96"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "networking.load-balancing": {
       "canonical_id": "networking.load-balancing",
@@ -6673,7 +6673,7 @@
           "sha256": "02c6e68be3f51fed267cf1e6d7684a19b775e3d3b0e3de9687050aeff5fc89de"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "networking.network-automation": {
       "canonical_id": "networking.network-automation",
@@ -6697,7 +6697,7 @@
           "sha256": "1767e187069d0a6ed3d81840aa95c0630c0551d25bc489fc6106d0429ee6d28d"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "networking.network-debugging": {
       "canonical_id": "networking.network-debugging",
@@ -6721,7 +6721,7 @@
           "sha256": "e20a8aecf3ac6d67a4ba225b2afd30065a9d5ada4b9347658de3f567ab65d5e3"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "networking.network-performance": {
       "canonical_id": "networking.network-performance",
@@ -6745,7 +6745,7 @@
           "sha256": "a8b0c453ab97dc243eb45898b114c12a8879eb025e2f1b553fbc89f64d90846b"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "networking.packet-analysis": {
       "canonical_id": "networking.packet-analysis",
@@ -6769,7 +6769,7 @@
           "sha256": "b725d172c7e0b1fe074de1bc633d3fe081d9118a733a6914f6e78656040868b1"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "networking.proxies": {
       "canonical_id": "networking.proxies",
@@ -6793,7 +6793,7 @@
           "sha256": "afee0157c5218adb0f21bc9f365d3b4e108d1d86a013ce0f913a3649db797333"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "networking.reverse-proxy": {
       "canonical_id": "networking.reverse-proxy",
@@ -6817,7 +6817,7 @@
           "sha256": "9ac963232d6eaff8c482493a5b9b0e7955b83df6413d1a00111da8ccdf384e12"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "networking.routing": {
       "canonical_id": "networking.routing",
@@ -6841,7 +6841,7 @@
           "sha256": "f5043342545f26c287c13e11c63a7f824840189b56b755b9333df292d2365940"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "networking.service-mesh": {
       "canonical_id": "networking.service-mesh",
@@ -6865,7 +6865,7 @@
           "sha256": "f6c9d3f221ffe68c0bff1fcbc2fa6609c1314216e15655d1bce1733c6b4d18f3"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "networking.switching": {
       "canonical_id": "networking.switching",
@@ -6889,7 +6889,7 @@
           "sha256": "b1f0ec7015f56ea0f2972ee75506280e94687d2683a16e9be8e11d32af5b93d8"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "networking.tcp-ip": {
       "canonical_id": "networking.tcp-ip",
@@ -6913,7 +6913,7 @@
           "sha256": "75cb404b0dc6154ef1521aaa20c2a37e546714b349f5e06c09ad2954d77d57f9"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "networking.tls": {
       "canonical_id": "networking.tls",
@@ -6937,7 +6937,7 @@
           "sha256": "adb0a568d38a1c231144dc5bfbcd36db1efd656312c7141cc1e4eee03fc37363"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "networking.vpn": {
       "canonical_id": "networking.vpn",
@@ -6961,7 +6961,7 @@
           "sha256": "f51064b6608b6ff6862fab9b1368da137b9240bd3ca0298b3068a2af6b7dec53"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "networking.wireshark": {
       "canonical_id": "networking.wireshark",
@@ -6985,7 +6985,7 @@
           "sha256": "5f3d9a9dee02c179da68a59d3d9bd1252fada46f6ad5580d1306a87954e23fa8"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "networking.zero-trust": {
       "canonical_id": "networking.zero-trust",
@@ -7009,7 +7009,7 @@
           "sha256": "96554e2b4fe53686ad07aed681ea439bf1cf0c121a298bab91e180dfc4b002df"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "networking.api-gateway-patterns": {
       "canonical_id": "networking.api-gateway-patterns",
@@ -7033,7 +7033,7 @@
           "sha256": "c21eeeeaa2393df822be0ddd93eb8c9797722ace9debb892f5cbd906cedda240"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "observability.distributed-tracing": {
       "canonical_id": "observability.distributed-tracing",
@@ -7057,7 +7057,7 @@
           "sha256": "f973278d912ad0aa0d00c0e9049dcafee5b9968837389eaad88fa1265ca723bc"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "observability.grafana": {
       "canonical_id": "observability.grafana",
@@ -7081,7 +7081,7 @@
           "sha256": "4684a5c366873f274a052efef3aa7e29b4abb5a06cd84945970f13b222c25b02"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "observability.logging": {
       "canonical_id": "observability.logging",
@@ -7105,7 +7105,7 @@
           "sha256": "1eadb9f54c992dde83f7303393d271b143dc0e1129f57590043e245cd752a31e"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "observability.metrics": {
       "canonical_id": "observability.metrics",
@@ -7129,7 +7129,7 @@
           "sha256": "ffd3f4c68e79e82834b70eb8b2f961fd598e77e55d302f192c4d24f7f51887f6"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "observability.opentelemetry": {
       "canonical_id": "observability.opentelemetry",
@@ -7153,7 +7153,7 @@
           "sha256": "8965402eb14f3d68abea6b9cd9a92208f4b90bd38d293214796d824d80d6c954"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "observability.postmortems": {
       "canonical_id": "observability.postmortems",
@@ -7177,7 +7177,7 @@
           "sha256": "974845555e573df2248ea7ff3d19ef0a5b3f50861dc48bf0da2b88253cb9ff52"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "observability.prometheus": {
       "canonical_id": "observability.prometheus",
@@ -7201,7 +7201,7 @@
           "sha256": "a94ffa480f0ebe8417f6c132dda822f332d52134d3123fdd67a6be7430e97878"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "observability.slo-sli": {
       "canonical_id": "observability.slo-sli",
@@ -7225,7 +7225,7 @@
           "sha256": "2922ef13edf31c49b0563039c3270402ceafb6a5f3d3dfff7596547fb3e929ce"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "os.bootloaders": {
       "canonical_id": "os.bootloaders",
@@ -7249,7 +7249,7 @@
           "sha256": "ea2c9374fc42498f96c1bc4dfbfcb4a6f4588bee0dd70548e0fb80ee00f8c8b6"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "os.containers": {
       "canonical_id": "os.containers",
@@ -7273,7 +7273,7 @@
           "sha256": "c943b4a7f13a5d8a558f6eaf2e6949af862ff64729a886783ecce5f6e0c16f8b"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "os.ebpf": {
       "canonical_id": "os.ebpf",
@@ -7297,7 +7297,7 @@
           "sha256": "814d0fd6973d76080adb6eee55bac523fab0b4e4fcb73329c54d7a7931c6b223"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "os.device-drivers": {
       "canonical_id": "os.device-drivers",
@@ -7321,7 +7321,7 @@
           "sha256": "835d14e4d861c72e4bc956e90c5b397c8b467d49b2e1171c9e1e7de40fdf1cf9"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "os.filesystems": {
       "canonical_id": "os.filesystems",
@@ -7345,7 +7345,7 @@
           "sha256": "a40d27b89ce1570d2ae305fc8cbc03ad3e87646d114f3eeb9a23f6609094c3be"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "os.hypervisors": {
       "canonical_id": "os.hypervisors",
@@ -7369,7 +7369,7 @@
           "sha256": "750b4ef006baf14ef081476805b63fa34cd674cba7e3048d015b955f2600f4d8"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "os.ipc": {
       "canonical_id": "os.ipc",
@@ -7393,7 +7393,7 @@
           "sha256": "4efdeb869675577d4fd3bac495b382e09e2b70892058a5245e71d033096db531"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "os.kernel-development": {
       "canonical_id": "os.kernel-development",
@@ -7417,7 +7417,7 @@
           "sha256": "2ac2d5cb7b72beea3c741f96cd21c8347dba1730a314230e7377ade5ec9c3f2c"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "os.linux-kernel": {
       "canonical_id": "os.linux-kernel",
@@ -7441,7 +7441,7 @@
           "sha256": "f8e88a71d54f3464c1b53507436e76f3e519c785bbaafadee9cbe1c25de1c6d4"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "os.networking-stack": {
       "canonical_id": "os.networking-stack",
@@ -7465,7 +7465,7 @@
           "sha256": "a193c5aaaf4dc36f07e88a6da5ef94898d1138305a29f01dc3aedc8aea293a3b"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "os.operating-systems-fundamentals": {
       "canonical_id": "os.operating-systems-fundamentals",
@@ -7489,7 +7489,7 @@
           "sha256": "3a7e6d8c245c3391ddf490e73b21accf036b27cec4919c2d9f3b96ee729c0277"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "os.processes-threads": {
       "canonical_id": "os.processes-threads",
@@ -7513,7 +7513,7 @@
           "sha256": "94b3eba7886595182b5ec951ddf63a9b519b0ae939ac5532288f027f62f56faa"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "os.schedulers": {
       "canonical_id": "os.schedulers",
@@ -7537,7 +7537,7 @@
           "sha256": "b8d7bad6b70a6d3392dedbe766b0a8b1289005d4e2c405df02d8a3764edb4f60"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "os.syscall-analysis": {
       "canonical_id": "os.syscall-analysis",
@@ -7561,7 +7561,7 @@
           "sha256": "eb0792beada1e6d8d6da6bd60357c829906fbe0c8758468bc74e0e8d762d7a9b"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "os.virtual-memory": {
       "canonical_id": "os.virtual-memory",
@@ -7585,7 +7585,7 @@
           "sha256": "eb603a8d42bf415a320fac2af83131793fcfa2d4a282fe206995b37352967ba2"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "os.virtualization": {
       "canonical_id": "os.virtualization",
@@ -7609,7 +7609,7 @@
           "sha256": "6d0e9eb2b603c153210410a4170780b2dee40c0669749a9f0cd224bbc7a4d7bd"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "os.windows-internals": {
       "canonical_id": "os.windows-internals",
@@ -7633,7 +7633,7 @@
           "sha256": "3b9e9325cecb2ffc9417c3bd89832e66dfec7940a62d3ce16bb1e8b17576a5c9"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "product.acceptance-criteria": {
       "canonical_id": "product.acceptance-criteria",
@@ -7657,7 +7657,7 @@
           "sha256": "7e0aec4f88ca35892137765539167be743a11ec0fb4c57bad716da5645bea9d1"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "product.experimentation": {
       "canonical_id": "product.experimentation",
@@ -7681,7 +7681,7 @@
           "sha256": "16483e9c0b977665198803f58b8422a38fc3e2039ec48eaa274898b7ed79ff6a"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "product.prioritization": {
       "canonical_id": "product.prioritization",
@@ -7705,7 +7705,7 @@
           "sha256": "dae2a7c1db460384bb3b18f7edf4f3509f91419f74c6192d0ff352e1bf21f66e"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "product.product-metrics": {
       "canonical_id": "product.product-metrics",
@@ -7729,7 +7729,7 @@
           "sha256": "33c47bbb9d78643e77f2746113dd7e59c80b8f3d0ffe394b6d5a5a9b3a1ace2e"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "product.requirements-engineering": {
       "canonical_id": "product.requirements-engineering",
@@ -7753,7 +7753,7 @@
           "sha256": "fb3cbfe2887b44cff915c68eb69f5c59b66eeb77cfe2910ef207264f8e242206"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "product.user-stories": {
       "canonical_id": "product.user-stories",
@@ -7777,7 +7777,7 @@
           "sha256": "93301f73a3137fe96a37b758d68cf64bd3c371d1d61471b24e72000e206f9440"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "product.conversion-rate-optimization": {
       "canonical_id": "product.conversion-rate-optimization",
@@ -7801,7 +7801,7 @@
           "sha256": "0656e57d35e42f8c2966dfcd986c49669fb1300ee579f19fec8f45ec55a373c6"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "product.pricing-strategy": {
       "canonical_id": "product.pricing-strategy",
@@ -7825,7 +7825,7 @@
           "sha256": "13c0971a6951726186b9c09671441adb63214a0ba5f64b6a1b11734edb9f89b2"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "product.product-analytics": {
       "canonical_id": "product.product-analytics",
@@ -7849,7 +7849,7 @@
           "sha256": "416d3be5492a1f6589ce70373f58b64899a1d8eaee1adba968eac2c6e83da428"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "product.user-research": {
       "canonical_id": "product.user-research",
@@ -7873,7 +7873,7 @@
           "sha256": "b26d8879e8e177341a319d9ada62493b81fbec028018cdb4c61991ebbfea4658"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "productivity.adhd-divergent-brainstorm": {
       "canonical_id": "productivity.adhd-divergent-brainstorm",
@@ -7897,7 +7897,7 @@
           "sha256": "c035abaf59bae1bc8e99912a78e26464b94e01e372b069088a3d2cf7c1f2ec57"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "productivity.adhd-output-style": {
       "canonical_id": "productivity.adhd-output-style",
@@ -7921,7 +7921,7 @@
           "sha256": "386afdc7f7470287987e678f3e7f8a0b04f365f7601dc58adfe8327ccc06449b"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "productivity.adhd-task-breakdown": {
       "canonical_id": "productivity.adhd-task-breakdown",
@@ -7945,7 +7945,7 @@
           "sha256": "54d4797d6fc292e0d01621252e8f26326f5a936a9f29b2cb06c5e6026098852e"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "productivity.adhd": {
       "canonical_id": "productivity.adhd",
@@ -7969,7 +7969,7 @@
           "sha256": "384e3adcaf6e906ffefbeccf2a1b097e322ea1a355c105fb852584c62424f449"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "productivity.brainstorming": {
       "canonical_id": "productivity.brainstorming",
@@ -7993,7 +7993,7 @@
           "sha256": "acccb42308f2f2ee626d0a1a09841d453af4456a3c56d9462fd1b1eec0dee1ca"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "productivity.calendar-assistant": {
       "canonical_id": "productivity.calendar-assistant",
@@ -8017,7 +8017,7 @@
           "sha256": "f3da8e8512aa8cebc76d8c4b390f95aba7f8cb7d5d1cba987a7ab3a099b9ab41"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "productivity.context-summarize": {
       "canonical_id": "productivity.context-summarize",
@@ -8041,7 +8041,7 @@
           "sha256": "f7b3844b502ceea2daccec8d453c08dd9b5139b22a0787e89cbd47be28be84bf"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "productivity.daily-journal": {
       "canonical_id": "productivity.daily-journal",
@@ -8065,7 +8065,7 @@
           "sha256": "7f92d7ebe81cf4c34dacb2175498b394f31ccb5837d3a4cacc1596104a772e70"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "productivity.email-inbox-zero": {
       "canonical_id": "productivity.email-inbox-zero",
@@ -8089,7 +8089,7 @@
           "sha256": "f002c2ccd508353d10b0007eae4d316c3038832813a71e3bac75b44f5eb6b433"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "productivity.executive-summary": {
       "canonical_id": "productivity.executive-summary",
@@ -8113,7 +8113,7 @@
           "sha256": "1f6dd6a5c7facb40da9149691251fb99bbf57a0cf7e386e200ec7e816dd6e187"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "productivity.first-principles-reasoning": {
       "canonical_id": "productivity.first-principles-reasoning",
@@ -8137,7 +8137,7 @@
           "sha256": "e35be1dadb993b7eae19159ee700eeec74abe5bc2ce663a286ffe59158427209"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "productivity.focus-guard": {
       "canonical_id": "productivity.focus-guard",
@@ -8161,7 +8161,7 @@
           "sha256": "3edaec155dc7fed7ef36b0be9e8d3cb8158ac8b89bd965be5271787595ec52b6"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "productivity.focus": {
       "canonical_id": "productivity.focus",
@@ -8185,7 +8185,7 @@
           "sha256": "323cfa6931429f2c9175851294f62d0ec076fc43bed32db912f24cd156582000"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "productivity.kaizen-continuous-improvement": {
       "canonical_id": "productivity.kaizen-continuous-improvement",
@@ -8209,7 +8209,7 @@
           "sha256": "7827ebad88bca364901aa471bcd49822e4dc9f97c0e03461c63cb48e1aa4ac57"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "productivity.meeting-action-extractor": {
       "canonical_id": "productivity.meeting-action-extractor",
@@ -8233,7 +8233,7 @@
           "sha256": "ec9fcbe55f789861f3a5df094a88f629ea221234e26b8ac58836f0407a4b5c21"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "productivity.obsidian-sync": {
       "canonical_id": "productivity.obsidian-sync",
@@ -8257,7 +8257,7 @@
           "sha256": "5895c7e7e104b0003459ebaee9da04423c1bd8d767ca56ea8fd85a0f649b5785"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "productivity.planning": {
       "canonical_id": "productivity.planning",
@@ -8281,7 +8281,7 @@
           "sha256": "46e480d9c02c580417415340fb281879f86a72171401b5d66bc1f9ff84d1ac3e"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "productivity.prioritization": {
       "canonical_id": "productivity.prioritization",
@@ -8305,7 +8305,7 @@
           "sha256": "72f6b6bb1f8ac8032ba8156fc9fd0c49076d96191ed651f233137408338f5694"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "productivity.session-analytics": {
       "canonical_id": "productivity.session-analytics",
@@ -8329,7 +8329,7 @@
           "sha256": "43be82028e84e8183ca6fa4398029f1c99a7e2ae066fddfe07401acae7162bab"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "productivity.task-decomposition": {
       "canonical_id": "productivity.task-decomposition",
@@ -8353,7 +8353,7 @@
           "sha256": "25871b31375ace88493d3af685fc31cfa0eec3b6775c71d86bf5fdb1316fa72b"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "productivity.time-blocking": {
       "canonical_id": "productivity.time-blocking",
@@ -8377,7 +8377,7 @@
           "sha256": "38208a91ce7fa503e90c1c2cb2702ce21d4d6a9c15de75134ef113d946d046b4"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "productivity.time-management": {
       "canonical_id": "productivity.time-management",
@@ -8401,7 +8401,7 @@
           "sha256": "6d4cd3d83eb6384d015cbf5fea732fdfa78c4c66a2d98e33de569d7fe4eab120"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "productivity.unlazy": {
       "canonical_id": "productivity.unlazy",
@@ -8425,7 +8425,7 @@
           "sha256": "74242612cb89c3781559b55f137f3a0e2086e51f113804975e5cf4d52b082a68"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "productivity.voice-to-action": {
       "canonical_id": "productivity.voice-to-action",
@@ -8449,7 +8449,7 @@
           "sha256": "5f14508578ef94c882a135a560173594f6985936650b547eb73a6335788d7fef"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "productivity.google-calendar-automation": {
       "canonical_id": "productivity.google-calendar-automation",
@@ -8473,7 +8473,7 @@
           "sha256": "b530c675bbf4f4c4d0181514faab0bdc6571ddc9e79c57b0b8e3062bc551bd2c"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "productivity.google-sheets-automation": {
       "canonical_id": "productivity.google-sheets-automation",
@@ -8497,7 +8497,7 @@
           "sha256": "7e9e3d13d429259d34494581e7697cc4c7751d2dda29e662b416a3aa42ee309c"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "programming.bash-scripting": {
       "canonical_id": "programming.bash-scripting",
@@ -8521,7 +8521,7 @@
           "sha256": "1e4acf882a44819d049df0480e0e6da9b8dd7a6446f3dededc687b9cd6240be8"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "programming.c-fundamentals": {
       "canonical_id": "programming.c-fundamentals",
@@ -8545,7 +8545,7 @@
           "sha256": "3c5d8d75975f548c253193ec5f07a5b144b0275cdaeca0525d5a9fb660466207"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "programming.cpp-modern": {
       "canonical_id": "programming.cpp-modern",
@@ -8569,7 +8569,7 @@
           "sha256": "210293202e52c6ada0bb1eebdc98294ca8883dd8e4e0306d0d2b422b336e36ee"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "programming.csharp-fundamentals": {
       "canonical_id": "programming.csharp-fundamentals",
@@ -8593,7 +8593,7 @@
           "sha256": "794e91fe657b7b566426ab358a02a52392a6aca076b096fe6b71b76c7b4ced7c"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "programming.go-concurrency": {
       "canonical_id": "programming.go-concurrency",
@@ -8617,7 +8617,7 @@
           "sha256": "bdc2ba04a1561de66786b1f80105f00bd7d6af0b5b658b88c5f620853b18d7aa"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "programming.go-fundamentals": {
       "canonical_id": "programming.go-fundamentals",
@@ -8641,7 +8641,7 @@
           "sha256": "fe21cb538fc5fe495c21c6b3722cf81373fc31fa6efc9a56040f297dcfdc6136"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "programming.go-testing": {
       "canonical_id": "programming.go-testing",
@@ -8665,7 +8665,7 @@
           "sha256": "329ffc375268fd7b43f842ea5379f04bab5a328c1777101c83ad0eddb212aa3a"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "programming.java-modern": {
       "canonical_id": "programming.java-modern",
@@ -8689,7 +8689,7 @@
           "sha256": "334d077219ef2b1e495a06448d5eafbb1241f447e6b7602ace2347c3e83f2005"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "programming.powershell-automation": {
       "canonical_id": "programming.powershell-automation",
@@ -8713,7 +8713,7 @@
           "sha256": "56890111d8e87af22e092c607367952538a78df19641eb387888dfc0b782febb"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "programming.python-async": {
       "canonical_id": "programming.python-async",
@@ -8737,7 +8737,7 @@
           "sha256": "318fee1987a3c291481339244cfc131d1694af87c26c6f222202babff3cc53f3"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "programming.python-fundamentals": {
       "canonical_id": "programming.python-fundamentals",
@@ -8761,7 +8761,7 @@
           "sha256": "b6b62ffc72afa960b8ac12f53261fdcba9466075cb5f850e54221da5c0b2bc82"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "programming.python-idiomatic-style": {
       "canonical_id": "programming.python-idiomatic-style",
@@ -8785,7 +8785,7 @@
           "sha256": "f58528f30cab16932540566588f10a076b8a95721f28b8dfce93abc7ba464c61"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "programming.python-security": {
       "canonical_id": "programming.python-security",
@@ -8809,7 +8809,7 @@
           "sha256": "55fc88c02e9a33d009cdb8c72789f09b95d9d8d4c9e7b864c800d84cee0069be"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "programming.python-testing": {
       "canonical_id": "programming.python-testing",
@@ -8833,7 +8833,7 @@
           "sha256": "4be73ec6c8f8e59424c24b79d9369367392cc2cfe76d1af27ee28999413e802a"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "programming.rust-async": {
       "canonical_id": "programming.rust-async",
@@ -8857,7 +8857,7 @@
           "sha256": "8ce7168ca18ff4f3fe4516881f534af66140889e8d3bbfab28f815ea3ca7414e"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "programming.rust-fundamentals": {
       "canonical_id": "programming.rust-fundamentals",
@@ -8881,7 +8881,7 @@
           "sha256": "df693d5281407d7327361c7f8b03f88f3521e6b89e3769ff922c63e35df67329"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "programming.rust-testing": {
       "canonical_id": "programming.rust-testing",
@@ -8905,7 +8905,7 @@
           "sha256": "fdc1cf0553b08699a878f810ad0fbd43dffe35d1a1e85086d991e368b34c008f"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "programming.solidity-smart-contracts": {
       "canonical_id": "programming.solidity-smart-contracts",
@@ -8929,7 +8929,7 @@
           "sha256": "7507d3b1aa37502eea9f13e777b30f01be5e05c680f8561e7dd377fa815c4ead"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "programming.sql-advanced": {
       "canonical_id": "programming.sql-advanced",
@@ -8953,7 +8953,7 @@
           "sha256": "fc412d3a3769e51a0f8135b1d4e16e3802111eb1ac95fd6794395c2b542a96d0"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "programming.typescript-fundamentals": {
       "canonical_id": "programming.typescript-fundamentals",
@@ -8977,7 +8977,7 @@
           "sha256": "9d7f1c821d7df3e72b005481d8a3921decee819aed7ca78959e07504e940fa33"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "programming.typescript-project-structure": {
       "canonical_id": "programming.typescript-project-structure",
@@ -9001,7 +9001,7 @@
           "sha256": "efd40722116cc37288f7fe0be87c5f958514eed8a071821e08951cea3bb33a39"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "programming.typescript-testing": {
       "canonical_id": "programming.typescript-testing",
@@ -9025,7 +9025,7 @@
           "sha256": "3e709909f657e40d90d84cb069867ef0ec4a357655ee5aca4d310f160833353c"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "programming.elixir-otp": {
       "canonical_id": "programming.elixir-otp",
@@ -9049,7 +9049,7 @@
           "sha256": "622ba6812c6d744c57e47010ec6c8220b19add27c4523877577ef8a65ef892dd"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "programming.haskell-fundamentals": {
       "canonical_id": "programming.haskell-fundamentals",
@@ -9073,7 +9073,7 @@
           "sha256": "2a1ba9b6d3981337866b5fd00fc6f33e26048d04b14a570d775ff5ea7a1b10c7"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "programming.julia-scientific-computing": {
       "canonical_id": "programming.julia-scientific-computing",
@@ -9097,7 +9097,7 @@
           "sha256": "fcfcdde202ee2da858c93c81f218419dde6032cd659cb94c9e231cccb1af1b9a"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "programming.lua-scripting": {
       "canonical_id": "programming.lua-scripting",
@@ -9121,7 +9121,7 @@
           "sha256": "7718cc4423b9e4afa30b055a162cbedcf780c069e6393198664596cf99869a1d"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "programming.php-modern": {
       "canonical_id": "programming.php-modern",
@@ -9145,7 +9145,7 @@
           "sha256": "f7e195f5c2245965ac17092a90c530c79fceb240cf3afbceabdc7c7ff44027b7"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "programming.r-statistical-programming": {
       "canonical_id": "programming.r-statistical-programming",
@@ -9169,7 +9169,7 @@
           "sha256": "c578ad2dbc8c25ae381bff1728fce3aa7026ecd12aafec8550854b501081e0ea"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "programming.ruby-rails": {
       "canonical_id": "programming.ruby-rails",
@@ -9193,7 +9193,7 @@
           "sha256": "e12a51fd5e8a3c8df27acaf9b95a372282fa55717d988ab57e5bb457a0510412"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "programming.scala-fundamentals": {
       "canonical_id": "programming.scala-fundamentals",
@@ -9217,7 +9217,7 @@
           "sha256": "1ef46a3b27eb06eecd7457026bac66c08bb1bc2fad57ade6f0efaeb176be28b9"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "audio.audio-mixing-mastering": {
       "canonical_id": "audio.audio-mixing-mastering",
@@ -9241,7 +9241,7 @@
           "sha256": "f2c7666559426bf8092e590970e2119168fed67ee11e0c8c3882f319ddde7524"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "audio.live-sound-reinforcement": {
       "canonical_id": "audio.live-sound-reinforcement",
@@ -9265,7 +9265,7 @@
           "sha256": "6ea6d8e4598e03c11b76d76cf0dece19657fcaf2eb1e2f5c231ac05205ae8717"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "audio.music-notation-engraving": {
       "canonical_id": "audio.music-notation-engraving",
@@ -9289,7 +9289,7 @@
           "sha256": "ab70c32a0117ce8ec584adc2e07f0f4a5fc49152e09b9376064d45d1eb2b3c21"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "audio.music-production-daw": {
       "canonical_id": "audio.music-production-daw",
@@ -9313,7 +9313,7 @@
           "sha256": "821d05e5506d33140418cec5f372e231a17564bd4b80a677990adda189c8f403"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "audio.podcast-production": {
       "canonical_id": "audio.podcast-production",
@@ -9337,7 +9337,7 @@
           "sha256": "52ed0bded559c3cf6ce11b67486adc26bc5077418754e3e4087105d4399fe7b3"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "audio.sound-design-foley": {
       "canonical_id": "audio.sound-design-foley",
@@ -9361,7 +9361,7 @@
           "sha256": "e3dc8e344be4e9973a95cce07f9dacdccc222ffef193411d2d4c63dbb2b01762"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "research.academic-research": {
       "canonical_id": "research.academic-research",
@@ -9385,7 +9385,7 @@
           "sha256": "ec4362f4780a5a9b4e5424e59868d5bd685f07c5bda16e2031a574f4fb7a736e"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "research.competitive-analysis": {
       "canonical_id": "research.competitive-analysis",
@@ -9409,7 +9409,7 @@
           "sha256": "11462775caec966dbac59b6d27c9a4756765bb60d003a90a5de79b5cfffa452b"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "research.data-analysis": {
       "canonical_id": "research.data-analysis",
@@ -9433,7 +9433,7 @@
           "sha256": "8ebe6a32dba1504e5f574b5d96b3bd0643731cb72d530d919bb8d165a5005b55"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "research.deep-research": {
       "canonical_id": "research.deep-research",
@@ -9457,7 +9457,7 @@
           "sha256": "b2d759dc4f16fe21f43b3a61c51c35fed83a810be89ae896e17c9d131078205c"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "research.fact-checking": {
       "canonical_id": "research.fact-checking",
@@ -9481,7 +9481,7 @@
           "sha256": "992d8161ae32967816110710ceb7c652bd816590f3c5bf6b5e7916151b11938c"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "research.search-synthesizer": {
       "canonical_id": "research.search-synthesizer",
@@ -9505,7 +9505,7 @@
           "sha256": "3775b6db02d9e9f2b1fc73858c1ef819ae308e28b98efebd89ac90d786c2e2a5"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "research.source-verification": {
       "canonical_id": "research.source-verification",
@@ -9529,7 +9529,7 @@
           "sha256": "b6edab8768cc454f12b264677ca046055fb2a0361eb3d111bf9d9cabfde4a724"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "research.web-research": {
       "canonical_id": "research.web-research",
@@ -9553,7 +9553,7 @@
           "sha256": "3170082dad98733a13f2c2c9bf068b1b199aa6d5fe9525f1ef7b5728ff259166"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "scientific.bioinformatics": {
       "canonical_id": "scientific.bioinformatics",
@@ -9577,7 +9577,7 @@
           "sha256": "e30483add22a483376530c982b04ec3359e1862ceaa77abb9b72c4bebc996403"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "scientific.cfd": {
       "canonical_id": "scientific.cfd",
@@ -9601,7 +9601,7 @@
           "sha256": "ae4ddc39cfe3ee71d234e61e30c5e028f89556eb6ecd2918ebceecb155c78293"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "scientific.fea": {
       "canonical_id": "scientific.fea",
@@ -9625,7 +9625,7 @@
           "sha256": "e4fdf12f676a2523481318a523ff4593848a5d7904f47849296c98cf2e01ef2b"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "scientific.computational-chemistry": {
       "canonical_id": "scientific.computational-chemistry",
@@ -9649,7 +9649,7 @@
           "sha256": "8152d8cb92536bfc988ca1786ad2eb105b3fc3f05ca5cf1b059141b33fa160aa"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "scientific.computational-physics": {
       "canonical_id": "scientific.computational-physics",
@@ -9673,7 +9673,7 @@
           "sha256": "40af76031ad640a5a3a898bdb549e89b256fb4e2800d56927b0623bb1a8a90e3"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "scientific.experiment-design": {
       "canonical_id": "scientific.experiment-design",
@@ -9697,7 +9697,7 @@
           "sha256": "52882a4bb53901c723170d206b7bfbdcf11a90e2b10905baa199d58058c4562b"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "scientific.genomics": {
       "canonical_id": "scientific.genomics",
@@ -9721,7 +9721,7 @@
           "sha256": "26dd5eb83af9a51a766b2c7e04bc1843d7dae6e3e432241177ba36cf0ae1f088"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "scientific.geospatial-analysis": {
       "canonical_id": "scientific.geospatial-analysis",
@@ -9745,7 +9745,7 @@
           "sha256": "5cb4ce77dd7e388e93072e3eb3619797e258e96c7659bc53aec2e25613a96781"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "scientific.gis": {
       "canonical_id": "scientific.gis",
@@ -9769,7 +9769,7 @@
           "sha256": "d5a3e6378cad9c70ba5c6c403584a88f7797b0f61a4ca0209ae3f84040075c87"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "scientific.hpc": {
       "canonical_id": "scientific.hpc",
@@ -9793,7 +9793,7 @@
           "sha256": "f7d90c7256597a1de8b754731bd1d5fcf16649a31ec1ffcf66107e166585c555"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "scientific.literature-review": {
       "canonical_id": "scientific.literature-review",
@@ -9817,7 +9817,7 @@
           "sha256": "d5a0b50105c0f57f1d808a1c8d82ccff45abfb548aca4cf911706cc2bb6690b1"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "scientific.medical-imaging": {
       "canonical_id": "scientific.medical-imaging",
@@ -9841,7 +9841,7 @@
           "sha256": "608d43ebcc5dfb6b0e84e6ce2f299efde7fd0a6f328d4b98ad9713065b2afe51"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "scientific.microscopy": {
       "canonical_id": "scientific.microscopy",
@@ -9865,7 +9865,7 @@
           "sha256": "69cce1d3b54b83136fe3f38ae762de212f5e516a0920853e48573ed7103c951b"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "scientific.numerical-methods": {
       "canonical_id": "scientific.numerical-methods",
@@ -9889,7 +9889,7 @@
           "sha256": "91408befaa71d4f9c74df55f878fbf21d2de235949e50f7d6c5585d7cc0f874d"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "scientific.optimization": {
       "canonical_id": "scientific.optimization",
@@ -9913,7 +9913,7 @@
           "sha256": "0f1fba5a6fd26ccd7ac182674667572faebc573ea5f91d4d2443ce152c5ef799"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "scientific.reproducible-research": {
       "canonical_id": "scientific.reproducible-research",
@@ -9937,7 +9937,7 @@
           "sha256": "ebba06ca24b2c72a2eb09d4420226a82286597980649c9bd09c11252d10f6723"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "scientific.scientific-database-research": {
       "canonical_id": "scientific.scientific-database-research",
@@ -9961,7 +9961,7 @@
           "sha256": "7e94381c09150f8d90d6406ffe2cc45c0441928fe391926844ba607c42d3da44"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "scientific.scientific-visualization": {
       "canonical_id": "scientific.scientific-visualization",
@@ -9985,7 +9985,7 @@
           "sha256": "b48331901d3143f0adafa8847c38e29ae63a6cde70251f6b89fe0eafd5bfd067"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "scientific.scientific-writing": {
       "canonical_id": "scientific.scientific-writing",
@@ -10009,7 +10009,7 @@
           "sha256": "cea50c12d18e764b17e47f2e7ff45631ea1e1088a80ac416c336e0cf9dac139b"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "scientific.statistics": {
       "canonical_id": "scientific.statistics",
@@ -10033,7 +10033,7 @@
           "sha256": "41f51cf27b0a7867fed0015af7ceb823b97223c1dac7c6b7934322ca2d58de54"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "scientific.symbolic-math": {
       "canonical_id": "scientific.symbolic-math",
@@ -10057,7 +10057,7 @@
           "sha256": "3c05cfe1b6604c6816d9d28e2e9ac423ca66924f8d1219f47c12ae898085f8c9"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "scientific.causal-inference": {
       "canonical_id": "scientific.causal-inference",
@@ -10081,7 +10081,7 @@
           "sha256": "118cc3b8af4a536d813c79001cfb1fbe8d631464bbd37c7773b97907e711edc9"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "security.cmd-safety-check": {
       "canonical_id": "security.cmd-safety-check",
@@ -10105,7 +10105,7 @@
           "sha256": "d0535bf1ad366e85930ae6859be1b710fd3642ebf0e75f2781f34246acc7912f"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "security.dast": {
       "canonical_id": "security.dast",
@@ -10129,7 +10129,7 @@
           "sha256": "6c79ada37d0ed06b1d0bcbf8429e0ec61ade51370b9d68c3ab543eaa0e71b1dc"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "security.container-security": {
       "canonical_id": "security.container-security",
@@ -10153,7 +10153,7 @@
           "sha256": "9fb6dfa33f2bc13ee6da5bad8d83c9b3ec01dd197245a93f2988d9737eee0dc2"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "security.dependency-audit": {
       "canonical_id": "security.dependency-audit",
@@ -10177,7 +10177,7 @@
           "sha256": "70d04a0280e44f8bd8d5ce1aaffbe7569b8fb72c174889b3f42e7e3548eb0f10"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "security.iam": {
       "canonical_id": "security.iam",
@@ -10201,7 +10201,7 @@
           "sha256": "6ea3e77041c80226ddad8c782aa6b06db0d9a26c7b984e81a447b62c9c596a3d"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "security.incident-response": {
       "canonical_id": "security.incident-response",
@@ -10225,7 +10225,7 @@
           "sha256": "0116067565a94638046271d2223fd61f9548d9083028535b5c5802472ef4ceb0"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "security.kubernetes-security": {
       "canonical_id": "security.kubernetes-security",
@@ -10249,7 +10249,7 @@
           "sha256": "88846ed7d93ea092697337bd7ec6812d7dff7936697a3e0e2ca2c1ab34037abc"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "security.npm-auditor": {
       "canonical_id": "security.npm-auditor",
@@ -10273,7 +10273,7 @@
           "sha256": "916d5aaf80ad22be4968b78bff11371d49658a2aa5f84b000b7d9ea887988a1a"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "security.prompt-injection-defense": {
       "canonical_id": "security.prompt-injection-defense",
@@ -10297,7 +10297,7 @@
           "sha256": "1d7c6058bf78c177825977230f806be904a25032b5c8dfbab645938ef6606946"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "security.sast": {
       "canonical_id": "security.sast",
@@ -10321,7 +10321,7 @@
           "sha256": "d15c884929c31e69ceca836109a70032b0e161a29063e778ee56dab88632ef04"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "security.secret-detection": {
       "canonical_id": "security.secret-detection",
@@ -10345,7 +10345,7 @@
           "sha256": "1a8aaabd46ab6af4f9fabdfce75b02a25010313e4810551a2e60cb499e3d26c5"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "security.secure-architecture": {
       "canonical_id": "security.secure-architecture",
@@ -10369,7 +10369,7 @@
           "sha256": "af2d62818f85c1fb36fff68cf91890de600b62ede3ddcae8ca6796fb4f16af07"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "security.secure-code-review": {
       "canonical_id": "security.secure-code-review",
@@ -10393,7 +10393,7 @@
           "sha256": "198f4885712fbc953b55219884c09a371e319aee97b5fff910b3e5629430ede4"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "security.secure-coding": {
       "canonical_id": "security.secure-coding",
@@ -10417,7 +10417,7 @@
           "sha256": "c569ebb72be38479a879e826f12e3d200eb8a06dc4ad942b271c0dd98c747c29"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "security.security-scanner": {
       "canonical_id": "security.security-scanner",
@@ -10441,7 +10441,7 @@
           "sha256": "7de88ec89406c26507cc79c4d719eca4225165404386f9eebf4a5731fea4d543"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "security.threat-modeling": {
       "canonical_id": "security.threat-modeling",
@@ -10465,7 +10465,7 @@
           "sha256": "dd84ec2d3b2b7511eb76b275b4b1c4a534266ea779a35de4ead584fd898bb7a9"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "security.zero-trust": {
       "canonical_id": "security.zero-trust",
@@ -10489,7 +10489,7 @@
           "sha256": "ced36b43a256495d1a4d6904999c99b9d306684dff976459f3d81ca6cae6dd35"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "security.api-security-testing": {
       "canonical_id": "security.api-security-testing",
@@ -10513,7 +10513,7 @@
           "sha256": "e9cf76a26deeb545c61114bdc5f1096e2418300ae829ecc5e07aa130ba409dea"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "security.oauth2-oidc-integration": {
       "canonical_id": "security.oauth2-oidc-integration",
@@ -10537,7 +10537,7 @@
           "sha256": "da608c98437281545a128d8d7265a8a355418f6c822992224292b44c13c4de4f"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "security.secrets-management": {
       "canonical_id": "security.secrets-management",
@@ -10561,7 +10561,7 @@
           "sha256": "f0e0f4ff9ceee5a3b66f83ccbbe0bba18b6548b7c03d713b4aebe564d5991be5"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "security.sonarqube-quality-gates": {
       "canonical_id": "security.sonarqube-quality-gates",
@@ -10585,7 +10585,7 @@
           "sha256": "752c04c23a4d1c61d8caf23662d3e448ac2573d1e5a05c67dcc2acb79142397a"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "utilities.agent-transcript": {
       "canonical_id": "utilities.agent-transcript",
@@ -10609,7 +10609,7 @@
           "sha256": "a5e5228fe2fe88d17cf72a2470a33295bc5ec68a73de3e17805328492222b296"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "utilities.audio-transcribe": {
       "canonical_id": "utilities.audio-transcribe",
@@ -10633,7 +10633,7 @@
           "sha256": "95134443049096a56e98c019809180380545a626acdd74da5a8bc357da66a730"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "utilities.automation": {
       "canonical_id": "utilities.automation",
@@ -10657,7 +10657,7 @@
           "sha256": "e606b6e54cbf79ce28c7035b7f1ea317df19fdb60dd74345af8177e2617ebf78"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "utilities.beam": {
       "canonical_id": "utilities.beam",
@@ -10681,7 +10681,7 @@
           "sha256": "f015b2a2f33d129e4cf24c5be3b37d7a558183de2ea8dad8b2012c83edf2c6dc"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "utilities.documentation": {
       "canonical_id": "utilities.documentation",
@@ -10705,7 +10705,7 @@
           "sha256": "075abd9f478c47381064415213c9b5b05c0baf36eece301be6b839f878c88c21"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "utilities.file-management": {
       "canonical_id": "utilities.file-management",
@@ -10729,7 +10729,7 @@
           "sha256": "18e3e6b2baab04521e64cb430842f06bc3a205c0056fc5f1835aab0b07f856df"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "utilities.handoff": {
       "canonical_id": "utilities.handoff",
@@ -10753,7 +10753,7 @@
           "sha256": "b300795658ff62c5d8f467683d5b16ffa1e376e8e4f5e1e5902a2797027e346c"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "utilities.image": {
       "canonical_id": "utilities.image",
@@ -10777,7 +10777,7 @@
           "sha256": "b9d0603467ac06bd6d722eca23086934b193ccf02d1f926d708a766f2f4fbf0d"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "utilities.parallel-agents": {
       "canonical_id": "utilities.parallel-agents",
@@ -10801,7 +10801,7 @@
           "sha256": "a1abdab0da9a8d8be4645c867a5765356b6539bfc01e05bcd958d9f2a0d7de59"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "utilities.readme-standard": {
       "canonical_id": "utilities.readme-standard",
@@ -10825,7 +10825,7 @@
           "sha256": "098546bc3f3969208ba03fc856c42ac4e68a2aaac053aee206238f72ebe7dcae"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "utilities.slack-synthesizer": {
       "canonical_id": "utilities.slack-synthesizer",
@@ -10849,7 +10849,7 @@
           "sha256": "1bdcbe531853330fdb8bdafdf65fd1f61768af386ea4dc12740a87720182d11a"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "utilities.sonos-cli": {
       "canonical_id": "utilities.sonos-cli",
@@ -10873,7 +10873,7 @@
           "sha256": "df8baf8b9158a098cd68c7f267f2df2be1fb75a2071e3f8aa47ebd0aeae6bcd1"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "utilities.summarization": {
       "canonical_id": "utilities.summarization",
@@ -10897,7 +10897,7 @@
           "sha256": "07b664115ba335c98de936ffc9b8d099b099d625b1f190bf848e298053956c88"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "utilities.system-monitor": {
       "canonical_id": "utilities.system-monitor",
@@ -10921,7 +10921,7 @@
           "sha256": "e8b387e5015c00f689790ea5fd95c9c8724a7be47f7aa222d1516f8055628a4b"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "utilities.telegram-actions": {
       "canonical_id": "utilities.telegram-actions",
@@ -10945,7 +10945,7 @@
           "sha256": "5f5df19a2fc458bf0daa455d7617a649ac49e4b2951c7c5b91367079aa06dc41"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "utilities.text-processing": {
       "canonical_id": "utilities.text-processing",
@@ -10969,7 +10969,7 @@
           "sha256": "3d18f1320bcb64ec011b2d080c97a2f8a7c7ff96582512780d058394164ccd78"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "utilities.unit-converter": {
       "canonical_id": "utilities.unit-converter",
@@ -10993,7 +10993,7 @@
           "sha256": "379c1e38a5c7fd762d770bc9622fe4fc7ffcce9013b20cc0948507c1e0414fc8"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "utilities.weather-now": {
       "canonical_id": "utilities.weather-now",
@@ -11017,7 +11017,7 @@
           "sha256": "2ff7851f43b1194194abee78f8a4d5db27f178938f0efa43f1b762b0770da899"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "utilities.whatsapp-router": {
       "canonical_id": "utilities.whatsapp-router",
@@ -11041,7 +11041,7 @@
           "sha256": "65b05f117929f8ff4146d77e16bdd9513fd443dfa40084fe76abdf01ecd4c01f"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "utilities.writing": {
       "canonical_id": "utilities.writing",
@@ -11065,7 +11065,7 @@
           "sha256": "93711a212f5dbd01cfc1ea044a72653abf85d827498d3255976264de5d79fd30"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "web.accessibility": {
       "canonical_id": "web.accessibility",
@@ -11089,7 +11089,7 @@
           "sha256": "f2a9110ebb8578a3c71b21796e124a16f167c0a3db4f6844c7e444c65a4d2c04"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "web.agent-browser": {
       "canonical_id": "web.agent-browser",
@@ -11113,7 +11113,7 @@
           "sha256": "1233dd6411713f1644f92790291c46f09079a72a947e03da5ccfdaacdfe3ee6b"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "web.browser-automation": {
       "canonical_id": "web.browser-automation",
@@ -11137,7 +11137,7 @@
           "sha256": "fa1c434fef2883adec434c5dc9bdf4bd8206c1907444b083819e105398587f5c"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "web.form-filler": {
       "canonical_id": "web.form-filler",
@@ -11161,7 +11161,7 @@
           "sha256": "ebf81beb89c9f32b01009d3383e9d2a8af681ca10f59507fb076614d5cd8ae31"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "web.media-downloader": {
       "canonical_id": "web.media-downloader",
@@ -11185,7 +11185,7 @@
           "sha256": "8834f56c0b50090a15719fb69e60570784b9b7398ba3bdca8912f8b6586ea93d"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "web.seo": {
       "canonical_id": "web.seo",
@@ -11209,7 +11209,7 @@
           "sha256": "769193ca9c98728c79b031650eba12c4b40b1ad9ed2c2bd7d2253227a7dfedfc"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "web.web-extraction": {
       "canonical_id": "web.web-extraction",
@@ -11233,7 +11233,7 @@
           "sha256": "068bf30f77559591b445dc07da79199e2e53e5465541876233257491788ca637"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "web.web-scraper": {
       "canonical_id": "web.web-scraper",
@@ -11257,7 +11257,7 @@
           "sha256": "a23c026914ee6c165d8e4a5e52cf8f12344bf7a2a1fad106dd39e58c53397b03"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "web.web-scraping": {
       "canonical_id": "web.web-scraping",
@@ -11281,7 +11281,7 @@
           "sha256": "4d54d0aec730dd25a644fd6e3ce346cdcbb05c6fb9d2e4c8187b3317c1647970"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "web.website-testing": {
       "canonical_id": "web.website-testing",
@@ -11305,7 +11305,7 @@
           "sha256": "112145bfdeb5d8406be4609d042c1be42bca393f03de8cdd4c123041c7d0fcc5"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "web.astro-sites": {
       "canonical_id": "web.astro-sites",
@@ -11329,7 +11329,7 @@
           "sha256": "46ad2f20a4536abae90722d19aaadd780526029a81bead11b3d26385aba7b648"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "web.nextjs-app-router": {
       "canonical_id": "web.nextjs-app-router",
@@ -11353,7 +11353,7 @@
           "sha256": "57a1ac04eda504fc52e96ee6c52b1c804d4cd124576949d8829e68b736fb97a3"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "web.react-performance": {
       "canonical_id": "web.react-performance",
@@ -11377,7 +11377,7 @@
           "sha256": "9b726b71fc32fa0dea6bc447ac02c6808a69a9f4b31bef73e678864cdde32cca"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "web.svelte-development": {
       "canonical_id": "web.svelte-development",
@@ -11401,7 +11401,7 @@
           "sha256": "af4e93db7e8becfd66827bb59167fed9465df32d26c63e7922c947b7c966692e"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "web.typescript-advanced": {
       "canonical_id": "web.typescript-advanced",
@@ -11425,7 +11425,7 @@
           "sha256": "d7915eeaf5a114a77a68ba24084a454a0563770e9b2b22e55fb02f7112059f86"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "web.vue-development": {
       "canonical_id": "web.vue-development",
@@ -11449,7 +11449,7 @@
           "sha256": "c5a2ab3a9527d5819181748d9b0a104c295a4f2c96f5e5c6e71fb8616d72855a"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "automation.n8n-workflow-automation": {
       "canonical_id": "automation.n8n-workflow-automation",
@@ -11473,7 +11473,7 @@
           "sha256": "0a43fd4c20cd2c2a1a5da553311b512e291f13205da45559c0352f38493c0fb0"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "cad.autocad-drafting": {
       "canonical_id": "cad.autocad-drafting",
@@ -11497,7 +11497,7 @@
           "sha256": "12ff40ad6c0d822b7a75d0ddfecb0c9ac6cef92b967c3a57620863b2acb87711"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "cad.bim-ifc-coordination": {
       "canonical_id": "cad.bim-ifc-coordination",
@@ -11521,7 +11521,7 @@
           "sha256": "d71feb236446b171dc433059bf64a3fee6d9f62d74ce3a0f52c3463aa4f24c18"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "cad.cnc-machining-fabrication": {
       "canonical_id": "cad.cnc-machining-fabrication",
@@ -11545,7 +11545,7 @@
           "sha256": "87d2a6ad6ab9eb2f29695dd2ef891d4fab3d2f10b4d6bb663b19cccf6e6859ce"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "cad.dxf-dwg-interchange": {
       "canonical_id": "cad.dxf-dwg-interchange",
@@ -11569,7 +11569,7 @@
           "sha256": "d64d82785cfd4596c3a3b2213b5ed0b64e80843d709d4676f291af492009bfc2"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "cad.freecad-parametric-modeling": {
       "canonical_id": "cad.freecad-parametric-modeling",
@@ -11593,7 +11593,7 @@
           "sha256": "379d011f20882d47bf9af14aa7cd5537a2a0fa7e83cfea703f8efdbbf5ec9e76"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "cad.fusion360-solid-modeling": {
       "canonical_id": "cad.fusion360-solid-modeling",
@@ -11617,7 +11617,7 @@
           "sha256": "9a66668493cf407498af313b6ba66b0abdf747b7aa21e1b7ef2d56792c665dfe"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "cad.laser-cutting-engraving": {
       "canonical_id": "cad.laser-cutting-engraving",
@@ -11641,7 +11641,7 @@
           "sha256": "444dbb17e4ec20675799b046afa29791c64f03bf404a194917fee670a21f696c"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "cad.openscad-programmatic-cad": {
       "canonical_id": "cad.openscad-programmatic-cad",
@@ -11665,7 +11665,7 @@
           "sha256": "3486fa2cf7bd086e7265bb394215de3c3678cc4ca9f4c7da5115f4b5137236d5"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "cad.rhino-grasshopper": {
       "canonical_id": "cad.rhino-grasshopper",
@@ -11689,7 +11689,7 @@
           "sha256": "8bf1380c5e97ef0c8f42c7171caf43a3fce78fba917253093a7783cb5137f1a8"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "cad.technical-drawing-gdt": {
       "canonical_id": "cad.technical-drawing-gdt",
@@ -11713,7 +11713,7 @@
           "sha256": "ed338f999e1922cd4fa870cd17cdf47b93b9397a1e506a1b4016b83ffcad843c"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "devops.circleci-pipelines": {
       "canonical_id": "devops.circleci-pipelines",
@@ -11737,7 +11737,7 @@
           "sha256": "a69622a065b11f83cf178f03b7888d7ea06839e1df961a484af5b05e3e8a44e6"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "devops.disaster-recovery": {
       "canonical_id": "devops.disaster-recovery",
@@ -11761,7 +11761,7 @@
           "sha256": "01b6981a54a2256c7c8004e2d556145b2e3c8ff77083b276468fb1a76deaf018"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "devops.platform-engineering": {
       "canonical_id": "devops.platform-engineering",
@@ -11785,7 +11785,7 @@
           "sha256": "2143e143fc915ccc2e68130c61a6421aa7720d2805fe023ee1b5827a9ee60005"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "execution.sandboxed-code-execution": {
       "canonical_id": "execution.sandboxed-code-execution",
@@ -11809,7 +11809,7 @@
           "sha256": "173dd5672f8a43a3729850b633da804aaf8831564142d3383fa48e09815dd5cb"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "geospatial.cartographic-design": {
       "canonical_id": "geospatial.cartographic-design",
@@ -11833,7 +11833,7 @@
           "sha256": "a26762685c0b3a81c5a0b5f2e022597892a70a770bdd8b83d56dc5012311a3a9"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "geospatial.drone-photogrammetry": {
       "canonical_id": "geospatial.drone-photogrammetry",
@@ -11857,7 +11857,7 @@
           "sha256": "2ca55a7179071a99e708cd2824983e27602f99415da67334fb9784be81d09839"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "geospatial.gdal-ogr-pipelines": {
       "canonical_id": "geospatial.gdal-ogr-pipelines",
@@ -11881,7 +11881,7 @@
           "sha256": "0cc8445ab0a8fcdc7e196857e82dd6fba27b62b139e6ad2910ef6e462ee67862"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "geospatial.geocoding-address-matching": {
       "canonical_id": "geospatial.geocoding-address-matching",
@@ -11905,7 +11905,7 @@
           "sha256": "b06de999d229c029610780b33d3c37f357a682360f8c754233f8d430166ae5d6"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "geospatial.lidar-point-clouds": {
       "canonical_id": "geospatial.lidar-point-clouds",
@@ -11929,7 +11929,7 @@
           "sha256": "a6ccb646590f63eb59e2c50de89fea50a20a6702d748543830192a61f7bbca96"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "geospatial.openstreetmap-data": {
       "canonical_id": "geospatial.openstreetmap-data",
@@ -11953,7 +11953,7 @@
           "sha256": "3ff295a9fc32218ea8f2b05d2905f22c32fa442b98a4f5c02005cef8abfd010e"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "geospatial.postgis-spatial-sql": {
       "canonical_id": "geospatial.postgis-spatial-sql",
@@ -11977,7 +11977,7 @@
           "sha256": "5c14ff718369bcd23cb52d9dfdfda44bf34bfbc455ca9ab47287000ddd50bb60"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "geospatial.qgis-map-production": {
       "canonical_id": "geospatial.qgis-map-production",
@@ -12001,7 +12001,7 @@
           "sha256": "7a6417d38c863b574049c121d575a3968bd1c70607e10547110c10b14822b613"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "geospatial.remote-sensing-indices": {
       "canonical_id": "geospatial.remote-sensing-indices",
@@ -12025,7 +12025,7 @@
           "sha256": "fe644b6c6e648aa92bf7427bbf54a0c81adc62ffb4e9911acbe2a1a6793620db"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "geospatial.spatial-reference-systems": {
       "canonical_id": "geospatial.spatial-reference-systems",
@@ -12049,7 +12049,7 @@
           "sha256": "f1e656b84b223436116c647ea05f1f6906a7c20d062b6013696f9396de73be40"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "geospatial.spatial-statistics": {
       "canonical_id": "geospatial.spatial-statistics",
@@ -12073,7 +12073,7 @@
           "sha256": "5a4f79eae12cadcbfe1ee28f0187ed0cd0bee9f8bfca9afdce029156aa45ade1"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "geospatial.vector-tile-web-maps": {
       "canonical_id": "geospatial.vector-tile-web-maps",
@@ -12097,7 +12097,7 @@
           "sha256": "c72f01c9a2041bb58e8dfd2fb3ddfd78d101dd6e7e24f0af0405173cd8ea9e97"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "integration.agent-harness-onboarding": {
       "canonical_id": "integration.agent-harness-onboarding",
@@ -12121,7 +12121,7 @@
           "sha256": "dc2f771888e70827de88ef80f292ee72703c5afaaa898c17c7ff357fc28f4512"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "integration.connector-github": {
       "canonical_id": "integration.connector-github",
@@ -12145,7 +12145,7 @@
           "sha256": "15e6bd31b73865ef7d2fd3b3175e2b686601e58530934d0928e294dc629490e4"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "integration.connector-browser-automation": {
       "canonical_id": "integration.connector-browser-automation",
@@ -12169,7 +12169,7 @@
           "sha256": "1c15ea1f19344ea428ceea986aadfabd192017c4eee7d8528a8f1589fc81c995"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "integration.connector-cloud-infrastructure": {
       "canonical_id": "integration.connector-cloud-infrastructure",
@@ -12193,7 +12193,7 @@
           "sha256": "0945cd79a93ed7d3c374ddc91b1b458c5a1fe6f0d9f86e686d536d0057d066f0"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "integration.connector-databases": {
       "canonical_id": "integration.connector-databases",
@@ -12217,7 +12217,7 @@
           "sha256": "116faec3393d5b7251f145f447d3123dbd67f38c0b120a45a3f5943923c0b019"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "integration.connector-observability": {
       "canonical_id": "integration.connector-observability",
@@ -12241,7 +12241,7 @@
           "sha256": "c60d3feb9f159e7b67340eaf1bb3711dbaf10c8c48afdb6a71c81857e4996760"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "integration.mcp-gateway": {
       "canonical_id": "integration.mcp-gateway",
@@ -12265,7 +12265,7 @@
           "sha256": "310c59d2280a607558c6c94b499684a2b9dac64f48aff1bea64c2f2b6a98290c"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "integration.mcp-security-review": {
       "canonical_id": "integration.mcp-security-review",
@@ -12289,7 +12289,7 @@
           "sha256": "aaff504509157995e1f80ee4ab4f0cdcd22b049e6db741fc3b43a9f159d5fcef"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "integration.mcp-server-author": {
       "canonical_id": "integration.mcp-server-author",
@@ -12313,7 +12313,7 @@
           "sha256": "c8971e15a48db50131cc509db305e6559bcaf653aecd9049dc0f76fd76aefd2c"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "integration.mcp-server-install": {
       "canonical_id": "integration.mcp-server-install",
@@ -12337,7 +12337,7 @@
           "sha256": "c4c758774bd904efc20ab699ce8ff0615829e9e89d1e3da75c16077d0065fa7d"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "integration.skill-pack-install": {
       "canonical_id": "integration.skill-pack-install",
@@ -12361,7 +12361,7 @@
           "sha256": "1c2dce997dfa348e407bcb30222ab49ee58d897a2f56b35c05c3bfbdb60a84ce"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "integration.third-party-api-resilience": {
       "canonical_id": "integration.third-party-api-resilience",
@@ -12385,7 +12385,7 @@
           "sha256": "c8223535ad54947b5209f02824db9bbea741a8b344191e15d0108d30e5a321f0"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "integration.universal-skill-discovery": {
       "canonical_id": "integration.universal-skill-discovery",
@@ -12409,7 +12409,7 @@
           "sha256": "a4bc41057b115c5aad54f884e343c05b058385a50a4b027ef6b5aff882555de3"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "integration.webhook-delivery-design": {
       "canonical_id": "integration.webhook-delivery-design",
@@ -12433,7 +12433,7 @@
           "sha256": "4fa92faca916e992845f4237dbcbfac96ee294ccde8e6ad5a0c998d53e867cc1"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "photography.photography-raw-workflow": {
       "canonical_id": "photography.photography-raw-workflow",
@@ -12457,7 +12457,7 @@
           "sha256": "11801f7489e7e30bae32a0cd978872eb114fe0b0336ab800df0d2357b29d3ef3"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "photography.studio-lighting-color-management": {
       "canonical_id": "photography.studio-lighting-color-management",
@@ -12481,7 +12481,7 @@
           "sha256": "2c357b6c90db988da7e9fcc0946b2bc373c002c740c5d8580abc5e60df2da94b"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "project-management.clickup-workflows": {
       "canonical_id": "project-management.clickup-workflows",
@@ -12505,7 +12505,7 @@
           "sha256": "9345a1bdc8e8b207b04deea7dd6f103aacb4c568913ac78ceb3a2f05a3d9aedb"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "testing.accessibility-automation": {
       "canonical_id": "testing.accessibility-automation",
@@ -12529,7 +12529,7 @@
           "sha256": "1685818a8c8df2f4eb87e5afdab45e567e3db9c7d84b08bbbd86f50f7bc307b3"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "testing.contract-testing": {
       "canonical_id": "testing.contract-testing",
@@ -12553,7 +12553,7 @@
           "sha256": "242e2dff5818459b0846327c3908678f7e0d1f8bea1ce87feae014cd879f6b48"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "testing.component-testing": {
       "canonical_id": "testing.component-testing",
@@ -12577,7 +12577,7 @@
           "sha256": "daaff48149a6eb1c5cd5dd1505567f820e5bcbfa2c90b7d9581d7a143198cf6b"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "testing.load-testing": {
       "canonical_id": "testing.load-testing",
@@ -12601,7 +12601,7 @@
           "sha256": "48e357e7a9d01eee10df74cbc110ffe8079c5082458b9409c2c23c9f7366d564"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "testing.mutation-testing": {
       "canonical_id": "testing.mutation-testing",
@@ -12625,7 +12625,7 @@
           "sha256": "196bf8bc532047e7f37b1850a2e57fd9da5fd38095947435700c98604ca01e22"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "testing.postman-api-testing": {
       "canonical_id": "testing.postman-api-testing",
@@ -12649,7 +12649,7 @@
           "sha256": "d1094a1db9ccfb24c7ccb0f2c5d09e247cdc6cdf15cebd77511a0eb34978ef8d"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "testing.visual-regression-testing": {
       "canonical_id": "testing.visual-regression-testing",
@@ -12673,7 +12673,7 @@
           "sha256": "ebb32b265a97b8c5e4ecd0bb6b8a3d9eaaa02ff0e0e86b4f117e88c34387df95"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "video.color-grading": {
       "canonical_id": "video.color-grading",
@@ -12697,7 +12697,7 @@
           "sha256": "c8cbf72c02a9297ef4c65f6bbe6c42e8783d0040e48348e306dc05557ecfb09b"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "video.live-streaming-broadcast": {
       "canonical_id": "video.live-streaming-broadcast",
@@ -12721,7 +12721,7 @@
           "sha256": "e2bc37882867274f38d6509a0fec694a5a7edbebd49ede2c891a02af3dd38c78"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "video.motion-graphics": {
       "canonical_id": "video.motion-graphics",
@@ -12745,7 +12745,7 @@
           "sha256": "79f9dbcb900cadbe808a4c938d1c32beaa25410110baf6477c1b3acdc25d26fa"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "video.video-editing-workflow": {
       "canonical_id": "video.video-editing-workflow",
@@ -12769,7 +12769,7 @@
           "sha256": "b472bac845243a463ac9b46cea115e6685e9a72adaba2221cb100294abb35612"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     },
     "video.video-encoding-delivery": {
       "canonical_id": "video.video-encoding-delivery",
@@ -12793,7 +12793,7 @@
           "sha256": "4f7028018a83ff41809a3dff5077f3283cdef789b9349cb8ca9c26672e527ff0"
         }
       ],
-      "last_verified": "2026-10-29T16:26:14.613145+00:00"
+      "last_verified": "2026-10-29T16:37:10.257811+00:00"
     }
   }
 }

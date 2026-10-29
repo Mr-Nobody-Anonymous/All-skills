@@ -181,6 +181,19 @@ jobs:
       - name: Integration skill suite is current
         run: python scripts/generate_integration_skills.py --check
 
+      # The layout gates below are Node scripts that import js-yaml and ajv,
+      # so the toolchain has to be installed in *this* job too — the install was
+      # missing here, which made the step impossible to pass (it was masked while
+      # an earlier step failed). Versions are pinned by package-lock.json.
+      - name: Set up Node.js
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install Node toolchain (pinned by package-lock.json)
+        run: npm ci --ignore-scripts --no-audit --no-fund
+
       - name: Documentation counts & skill layout (catalog, skills, install manifests)
         run: |
           node scripts/ci/catalog.js --text

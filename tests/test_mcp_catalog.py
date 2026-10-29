@@ -9,10 +9,10 @@ from pathlib import Path
 
 try:
     import pytest
-except ModuleNotFoundError:  # minimal install: only the dev/test extra provides it
+except ModuleNotFoundError as exc:  # minimal install: only the [test] extra provides it
     # unittest discovery (`scripts/skills/skills.py test`) imports every test
     # module; without pytest this one used to surface as a collection failure.
-    raise unittest.SkipTest("test_mcp_catalog needs pytest (install the 'test' extra)")
+    raise unittest.SkipTest("test_mcp_catalog needs pytest (install the 'test' extra)") from exc
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))

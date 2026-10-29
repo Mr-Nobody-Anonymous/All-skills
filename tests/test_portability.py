@@ -105,5 +105,67 @@ class TestTestCountIsEnvironmentIndependent(unittest.TestCase):
         self.assertIn("scratch_priority_import", block)
 
 
+class TestCIJobsInstallWhatTheyRun(unittest.TestCase):
+    """A job that runs a Node gate must install the Node dependencies first.
+
+    The "Documentation counts & skill layout" step shells out to
+    ``scripts/ci/validate-skills.js`` (needs js-yaml) and
+    ``scripts/ci/validate-install-manifests.js`` (needs ajv). The validate job
+    never ran ``npm ci``, so the step could not pass on a clean runner — it went
+    unnoticed only because an earlier step failed first and skipped it. This
+    test catches the whole class: any job that invokes a Node gate needing a
+    third-party module must install it earlier in the same job.
+    """
+
+    WORKFLOWS = ROOT / ".github" / "workflows"
+    INSTALL_HINTS = ("npm ci", "npm install")
+
+    def jobs(self) -> dict[str, list[str]]:
+        import yaml
+
+        jobs: dict[str, list[str]] = {}
+        for path in sorted(self.WORKFLOWS.glob("*.yml")):
+            data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+            for name, job in (data.get("jobs") or {}).items():
+                runs = [
+                    str(step.get("run", ""))
+                    for step in (job.get("steps") or [])
+                    if isinstance(step, dict)
+                ]
+                jobs[f"{path.name}:{name}"] = runs
+        return jobs
+
+    def test_node_gate_steps_are_preceded_by_an_install(self) -> None:
+        try:
+            import yaml  # noqa: F401
+        except ModuleNotFoundError:
+            self.skipTest("pyyaml unavailable")
+
+        offenders = []
+        for job, runs in self.jobs().items():
+            installed = False
+            for command in runs:
+                if any(hint in command for hint in self.INSTALL_HINTS):
+                    installed = True
+                uses_node_gate = "scripts/ci/" in command and "node " in command
+                if uses_node_gate and not installed:
+                    offenders.append(f"{job}: {command.strip().splitlines()[0]}")
+        self.assertEqual(
+            offenders, [],
+            "these jobs run a Node gate without installing its dependencies:\n  "
+            + "\n  ".join(offenders),
+        )
+
+    def test_every_node_gate_in_ci_exists(self) -> None:
+        referenced = set()
+        for runs in self.jobs().values():
+            for command in runs:
+                for token in command.replace("|", " ").split():
+                    if token.startswith("scripts/ci/") and token.endswith(".js"):
+                        referenced.add(token)
+        missing = sorted(path for path in referenced if not (ROOT / path).exists())
+        self.assertEqual(missing, [], f"CI references gates that do not exist: {missing}")
+
+
 if __name__ == "__main__":
     unittest.main()
