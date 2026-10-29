@@ -22,6 +22,8 @@ keywords:
   - remesh
   - baking
   - normals
+mcp_servers:
+  - blender
 source: custom
 enabled: true
 ---
@@ -82,6 +84,15 @@ Sculpt high-frequency detail in Blender and bring it back to a usable asset: dyn
 - Baking without an adequate cage ray distance produces gaps and artefacts at UV seams.
 - Very dense meshes exhaust memory during remesh — decimate in stages.
 - Never ship a sculpt as a rig target: deformation needs retopology.
+
+## MCP Requirements
+
+| Server | Transport | Tier | Risk | Required env |
+| :--- | :--- | :--- | :--- | :--- |
+| `blender` | stdio | standard | medium | `BLENDER_HOST`, `BLENDER_PORT` |
+
+Install the connectors above with `allskills mcp install --harness <harness> --profile full`,
+or list the same ids in your harness config. Full detail per server: [`docs/MCP-CATALOG.md`](MCP-CATALOG.md) and [`mcp/registry.json`](../mcp/registry.json).
 
 ## Source
 

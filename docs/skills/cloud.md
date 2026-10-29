@@ -1,10 +1,10 @@
 # Cloud Skills
 
-_Generated: 2026-10-28T05:33:42+00:00_
+_Generated: 2026-10-29T14:02:53+00:00_
 
 
 
-**9 skills in this category.**
+**10 skills in this category.**
 
 ## Skills
 
@@ -82,6 +82,24 @@ Build edge applications using Cloudflare Workers, KV, D1 SQL database, R2 object
 - **Version:** 1.0.0
 
 Build edge applications using Cloudflare Workers, KV, D1 SQL database, R2 object storage, and Zero Trust.
+
+### `cloud.cloudflare-workers`
+
+Build on Cloudflare Workers: the isolate runtime and its limits, KV/D1/R2/Durable Objects choice, caching and edge middleware, and local testing with Wrangler.
+
+- **Risk:** medium
+- **Path:** `cloud/cloudflare-workers`
+- **Aliases:** `workers`
+- **Triggers:**
+  - cloudflare worker limits
+  - wrangler dev deploy
+  - durable objects vs kv
+  - worker cpu time limit
+  - edge middleware cloudflare
+- **Source:** custom
+- **Version:** 1.0.0
+
+Build on Cloudflare Workers: the isolate runtime and its limits, KV/D1/R2/Durable Objects choice, caching and edge middleware, and local testing with Wrangler.
 
 ### `cloud.gcp-architecture`
 

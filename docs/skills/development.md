@@ -1,10 +1,10 @@
 # Development Skills
 
-_Generated: 2026-10-28T05:33:42+00:00_
+_Generated: 2026-10-29T14:02:53+00:00_
 
 Skills for software engineering work — coding, debugging, refactoring, code review, testing, TDD, architecture, frontend, backend, databases, Git, GitHub, performance optimization, and DevOps. These skills produce structured output (checklists, prompts, plans) rather than execute code.
 
-**43 skills in this category.**
+**45 skills in this category.**
 
 ## Skills
 
@@ -339,6 +339,24 @@ Inspect and manage Dokploy deployments through its API with explicit confirmatio
 
 Drive a **Dokploy** instance (self-hosted PaaS) through its REST API: list, create, update, deploy, and roll back projects, applications, and domains. The skill is careful to surface every destructive operation and never assume a default environment.
 
+### `development.fastapi-expert`
+
+Build production FastAPI services: dependency injection, Pydantic v2 models, async database sessions, background tasks and OpenAPI that tells the truth.
+
+- **Risk:** low
+- **Path:** `development/fastapi-expert`
+- **Aliases:** `fastapi`
+- **Triggers:**
+  - fastapi dependency injection
+  - pydantic v2 validator
+  - fastapi async sqlalchemy session
+  - fastapi background task
+  - fastapi openapi schema
+- **Source:** custom
+- **Version:** 1.0.0
+
+Build production FastAPI services: dependency injection, Pydantic v2 models, async database sessions, background tasks and OpenAPI that tells the truth.
+
 ### `development.feature-flag-management`
 
 Roll out changes safely with feature flags: flag taxonomy, targeting, kill switches, stale-flag hygiene and experiment-safe evaluation.
@@ -567,6 +585,24 @@ Operate a monorepo: package boundaries, workspace tooling, affected-only CI, ver
 - **Version:** 1.0.0
 
 Operate a monorepo: package boundaries, workspace tooling, affected-only CI, versioning strategy and safe incremental builds.
+
+### `development.nestjs-expert`
+
+Structure NestJS services: modules and providers, dependency injection scopes, guards and interceptors, validation pipes and testing with a real DI graph.
+
+- **Risk:** low
+- **Path:** `development/nestjs-expert`
+- **Aliases:** `nestjs`
+- **Triggers:**
+  - nestjs module structure
+  - nestjs guard interceptor
+  - nestjs dependency injection scope
+  - nestjs validation pipe
+  - nestjs testing module
+- **Source:** custom
+- **Version:** 1.0.0
+
+Structure NestJS services: modules and providers, dependency injection scopes, guards and interceptors, validation pipes and testing with a real DI graph.
 
 ### `development.performance-optimization`
 

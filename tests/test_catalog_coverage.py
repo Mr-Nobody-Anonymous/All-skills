@@ -145,3 +145,73 @@ def test_optin_connector_file_covers_the_catalog() -> None:
     servers = set(optin.get("mcpServers", {}))
     catalog = {server.id for server in Catalog.load(ROOT).servers}
     assert catalog <= servers, f"opt-in file is missing: {sorted(catalog - servers)[:5]}"
+
+
+# ─── One inventory, not two ──────────────────────────────────────────────────
+# The repo used to ship a hand-maintained `mcp/` tree next to `mcps/catalog.json`
+# and they disagreed (12 servers vs 113). These tests make a second inventory
+# impossible: `mcp/` is generated, and regeneration is compared byte for byte.
+
+
+def test_generated_mcp_tree_matches_the_catalog() -> None:
+    """`mcp/` must be a projection of `mcps/catalog.json`, never a sibling copy."""
+    sys.path.insert(0, str(ROOT / "scripts" / "dev"))
+    import generate_mcp_registry  # noqa: PLC0415
+
+    files = generate_mcp_registry.render()
+    stale = [
+        path.relative_to(ROOT).as_posix()
+        for path, text in files.items()
+        if not path.exists() or path.read_text(encoding="utf-8") != text
+    ]
+    assert stale == [], (
+        "mcp/ is out of date with mcps/catalog.json; run "
+        f"python scripts/dev/generate_mcp_registry.py ({stale[:5]})"
+    )
+
+
+def test_generated_mcp_tree_has_no_orphan_servers() -> None:
+    catalog = {server.id for server in Catalog.load(ROOT).servers}
+    on_disk = {path.stem for path in (ROOT / "mcp" / "servers").glob("*.json")}
+    assert on_disk == catalog, f"orphan stubs: {sorted(on_disk - catalog)[:5]}"
+
+
+def test_mcp_registry_declares_the_real_counts() -> None:
+    registry = json.loads((ROOT / "mcp" / "registry.json").read_text(encoding="utf-8"))
+    servers = Catalog.load(ROOT).servers
+    assert registry["servers_count"] == len(servers)
+    assert registry["categories_count"] == len({server.category for server in servers})
+    assert registry["generated_from"] == "mcps/catalog.json"
+
+
+def test_every_skill_mcp_declaration_resolves() -> None:
+    """A skill must not require a server that is not installable."""
+    servers = {server.id for server in Catalog.load(ROOT).servers}
+    problems = []
+    for path in sorted(CURATED.glob("*/*/SKILL.md")):
+        text = path.read_text(encoding="utf-8")
+        front = re.match(r"^---\n([\s\S]*?)\n---", text)
+        if not front:
+            continue
+        block = re.search(r"^mcp_servers:\n((?:\s+-\s+\S+\n?)+)", front.group(1), re.MULTILINE)
+        if not block:
+            continue
+        declared = re.findall(r"-\s+(\S+)", block.group(1))
+        unknown = [name for name in declared if name not in servers]
+        if unknown:
+            problems.append(f"{path.relative_to(ROOT)}: unknown servers {unknown}")
+    assert problems == [], problems[:5]
+
+
+def test_skill_mcp_map_is_current() -> None:
+    """`registry/skill-mcp-map.json` documents the dependency graph; keep it true."""
+    mapping = json.loads((ROOT / "registry" / "skill-mcp-map.json").read_text(encoding="utf-8"))
+    catalog = {server.id for server in Catalog.load(ROOT).servers}
+    assert set(mapping["servers"]) == catalog
+    declared_servers = {
+        name for record in mapping["skills"].values() for name in record["declared"]
+    }
+    assert declared_servers <= catalog
+    assert mapping["counts"]["skills_with_declared_servers"] >= 50, (
+        "skills stopped declaring their connectors; the map is only useful if it is used"
+    )

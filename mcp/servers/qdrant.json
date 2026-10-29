@@ -1,0 +1,47 @@
+{
+  "id": "qdrant",
+  "name": "Qdrant",
+  "description": "Semantic memory over a Qdrant collection: store, recall and search vectorized notes.",
+  "category": "database",
+  "tier": "standard",
+  "transport": "stdio",
+  "vendor": "qdrant",
+  "official": true,
+  "command": "uvx",
+  "args": [
+    "mcp-server-qdrant"
+  ],
+  "required_env": [
+    "QDRANT_URL",
+    "QDRANT_API_KEY",
+    "COLLECTION_NAME"
+  ],
+  "risk": "medium",
+  "license": "Apache-2.0",
+  "docs": "https://github.com/qdrant/mcp-server-qdrant",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

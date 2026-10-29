@@ -256,6 +256,14 @@
       ],
       "description": "Automate DaVinci Resolve: timeline assembly, media pool operations, rendering and project inspection."
     },
+    "deepwiki": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "deepwiki-mcp@latest"
+      ],
+      "description": "Ask questions about an unfamiliar public repository and get answers grounded in its wiki-style documentation."
+    },
     "desktop-commander": {
       "command": "npx",
       "args": [
@@ -866,6 +874,17 @@
       ],
       "description": "Render and measure OpenSCAD models, check assemblies and export meshes from parametric scripts."
     },
+    "opentelemetry": {
+      "command": "uvx",
+      "args": [
+        "opentelemetry-mcp"
+      ],
+      "description": "Query distributed traces from an OpenTelemetry backend (Jaeger, Phoenix, Traceloop) to explain latency and failures across services and LLM calls.",
+      "env": {
+        "BACKEND_TYPE": "YOUR_BACKEND_TYPE_HERE",
+        "BACKEND_URL": "YOUR_BACKEND_URL_HERE"
+      }
+    },
     "parallel-search": {
       "type": "http",
       "url": "https://search.parallel.ai/mcp",
@@ -936,6 +955,16 @@
       "description": "Browse Postman collections, run API requests and inspect mock servers and workspaces.",
       "env": {
         "POSTMAN_API_KEY": "YOUR_POSTMAN_API_KEY_HERE"
+      }
+    },
+    "prometheus": {
+      "command": "uvx",
+      "args": [
+        "prometheus-mcp-server"
+      ],
+      "description": "Run PromQL against a Prometheus server: query metrics, inspect targets and labels, and pull range data for triage.",
+      "env": {
+        "PROMETHEUS_URL": "YOUR_PROMETHEUS_URL_HERE"
       }
     },
     "pulumi": {
@@ -1065,6 +1094,16 @@
         "@modelcontextprotocol/server-sequential-thinking"
       ],
       "description": "Chain-of-thought reasoning"
+    },
+    "serena": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "serena-agent",
+        "serena",
+        "start-mcp-server"
+      ],
+      "description": "Symbol-aware code intelligence: find and edit by symbol instead of by text, across many languages, with semantic retrieval over a repository."
     },
     "shopify": {
       "command": "npx",

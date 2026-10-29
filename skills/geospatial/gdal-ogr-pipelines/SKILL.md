@@ -25,6 +25,8 @@ keywords:
   - cog
   - warp
   - mosaic
+mcp_servers:
+  - gdal
 source: custom
 enabled: true
 ---
@@ -86,6 +88,15 @@ Build reproducible raster and vector pipelines with GDAL/OGR: format conversion,
 - `-r near` on continuous data (elevation, temperature) creates staircase artefacts.
 - Overwriting inputs in place (`ogr2ogr` onto its own source) destroys data — always write to a new path.
 - Large uncompressed rasters exhaust disk; check size and use compression plus overviews.
+
+## MCP Requirements
+
+| Server | Transport | Tier | Risk | Required env |
+| :--- | :--- | :--- | :--- | :--- |
+| `gdal` | stdio | full | medium | — |
+
+Install the connectors above with `allskills mcp install --harness <harness> --profile full`,
+or list the same ids in your harness config. Full detail per server: [`docs/MCP-CATALOG.md`](MCP-CATALOG.md) and [`mcp/registry.json`](../mcp/registry.json).
 
 ## Source
 

@@ -1,0 +1,46 @@
+{
+  "id": "gmail",
+  "name": "Gmail",
+  "description": "Draft, search and read email in a Gmail account.",
+  "category": "communication",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "google",
+  "official": true,
+  "command": "npx",
+  "args": [
+    "-y",
+    "@gongrzhe/server-gmail-autoauth-mcp"
+  ],
+  "required_env": [
+    "GMAIL_CREDENTIALS_PATH"
+  ],
+  "risk": "high",
+  "license": "MIT",
+  "docs": "https://github.com/GongRzhe/Gmail-MCP-Server",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

@@ -1,12 +1,30 @@
 # Security Skills
 
-_Generated: 2026-10-28T05:33:42+00:00_
+_Generated: 2026-10-29T14:02:53+00:00_
 
 Defensive security skills only: secure coding review, dependency auditing, secret detection, and prompt-injection defense. The library does not include any offensive security tooling.
 
-**20 skills in this category.**
+**21 skills in this category.**
 
 ## Skills
+
+### `security.api-security-testing`
+
+Test APIs for real vulnerabilities: authentication and authorisation bypass, object-level access control, injection, rate limits and mass assignment.
+
+- **Risk:** medium
+- **Path:** `security/api-security-testing`
+- **Aliases:** `api-sec`, `bola`
+- **Triggers:**
+  - api security testing
+  - broken object level authorization
+  - bola idor api
+  - mass assignment vulnerability
+  - api rate limit bypass
+- **Source:** custom
+- **Version:** 1.0.0
+
+Test APIs for real vulnerabilities: authentication and authorisation bypass, object-level access control, injection, rate limits and mass assignment.
 
 ### `security.cmd-safety-check`
 

@@ -1,0 +1,43 @@
+{
+  "id": "kicad",
+  "name": "KiCad",
+  "description": "Work with KiCad projects: inspect schematics and PCBs, place components and check design rules.",
+  "category": "cad",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "kicad-mcp",
+  "official": false,
+  "command": "uvx",
+  "args": [
+    "kicad-mcp"
+  ],
+  "required_env": [],
+  "risk": "medium",
+  "license": "Unknown",
+  "docs": "https://pypi.org/project/kicad-mcp/",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

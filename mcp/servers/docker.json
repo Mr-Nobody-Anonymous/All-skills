@@ -1,0 +1,44 @@
+{
+  "id": "docker",
+  "name": "Docker",
+  "description": "List and inspect containers, images, volumes and networks.",
+  "category": "infrastructure",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "docker",
+  "official": false,
+  "command": "npx",
+  "args": [
+    "-y",
+    "docker-mcp"
+  ],
+  "required_env": [],
+  "risk": "high",
+  "license": "MIT",
+  "docs": "https://github.com/ckreiling/mcp-server-docker",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

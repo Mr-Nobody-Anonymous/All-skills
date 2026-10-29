@@ -1,9 +1,0 @@
-{
-  "id": "browser",
-  "command": "npx",
-  "args": [
-    "-y",
-    "@modelcontextprotocol/server-puppeteer"
-  ],
-  "category": "development"
-}

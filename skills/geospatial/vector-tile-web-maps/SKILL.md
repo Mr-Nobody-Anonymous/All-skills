@@ -23,6 +23,8 @@ keywords:
   - leaflet
   - tileserver
   - map-style
+mcp_servers:
+  - mapbox
 source: custom
 enabled: true
 ---
@@ -83,6 +85,15 @@ Publish web maps with vector tiles: MVT/PMTiles generation, style specification,
 - High zoom levels multiply tile count; estimate storage before generating z18 nationwide.
 - Attribute bloat at every zoom makes tiles huge — strip fields you do not render.
 - Never ship tiles whose licence forbids redistribution or caching.
+
+## MCP Requirements
+
+| Server | Transport | Tier | Risk | Required env |
+| :--- | :--- | :--- | :--- | :--- |
+| `mapbox` | stdio | full | medium | `MAPBOX_ACCESS_TOKEN` |
+
+Install the connectors above with `allskills mcp install --harness <harness> --profile full`,
+or list the same ids in your harness config. Full detail per server: [`docs/MCP-CATALOG.md`](MCP-CATALOG.md) and [`mcp/registry.json`](../mcp/registry.json).
 
 ## Source
 

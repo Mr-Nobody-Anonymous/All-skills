@@ -22,6 +22,8 @@ keywords:
   - massing
   - drawings
   - code
+mcp_servers:
+  - ifc
 source: custom
 enabled: true
 ---
@@ -82,6 +84,15 @@ Develop an architectural design: brief and constraints, site analysis, concept m
 - Zoning and code requirements are jurisdiction-specific; verify with the authority, never assume.
 - Skipping the site survey invalidates massing and later drawing work.
 - Unlogged consultant changes cause clashes later in the project.
+
+## MCP Requirements
+
+| Server | Transport | Tier | Risk | Required env |
+| :--- | :--- | :--- | :--- | :--- |
+| `ifc` | stdio | full | low | — |
+
+Install the connectors above with `allskills mcp install --harness <harness> --profile full`,
+or list the same ids in your harness config. Full detail per server: [`docs/MCP-CATALOG.md`](MCP-CATALOG.md) and [`mcp/registry.json`](../mcp/registry.json).
 
 ## Source
 

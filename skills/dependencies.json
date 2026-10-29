@@ -3715,6 +3715,209 @@
       "system": [],
       "python": [],
       "api": []
+    },
+    "ai.rag-evaluation": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "ai.mlops": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "ai.model-drift-monitoring": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "cloud.cloudflare-workers": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "communication.customer-support-automation": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "databases.postgresql-performance": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "databases.database-query-optimization": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "development.fastapi-expert": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "development.nestjs-expert": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "product.user-research": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "product.product-analytics": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "product.conversion-rate-optimization": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "product.pricing-strategy": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "scientific.causal-inference": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "security.api-security-testing": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "web.nextjs-app-router": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "web.react-performance": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "web.typescript-advanced": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "devops.platform-engineering": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "devops.disaster-recovery": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "testing.component-testing": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "testing.visual-regression-testing": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "testing.mutation-testing": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "testing.contract-testing": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "testing.accessibility-automation": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "agents.mcp-integration-testing": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "agents.agent-observability": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "agents.agent-reliability": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "agents.human-in-the-loop-design": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
     }
   }
 }

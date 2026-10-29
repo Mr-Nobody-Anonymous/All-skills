@@ -1195,7 +1195,7 @@ La configuración se detecta automáticamente desde `.opencode/opencode.json`.
 |----------------|---------------------|----------|--------|
 | Agentes | 63 agentes | 12 agentes | **Claude Code lidera** |
 | Comandos | 79 comandos | 35 comandos | **Claude Code lidera** |
-| Skills | 249 skills | 37 skills | **Claude Code lidera** |
+| Skills | 533 skills | 37 skills | **Claude Code lidera** |
 | Hooks | 8 tipos de eventos | 11 eventos | **¡OpenCode tiene más!** |
 | Reglas | 29 reglas | 13 instrucciones | **Claude Code lidera** |
 | Servidores MCP | 14 servidores | Completo | **Paridad completa** |

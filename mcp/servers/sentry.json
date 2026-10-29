@@ -1,9 +1,42 @@
 {
   "id": "sentry",
-  "command": "npx",
-  "args": [
-    "-y",
-    "@modelcontextprotocol/server-sentry"
+  "name": "Sentry",
+  "description": "Read Sentry issues, stack traces and releases to debug production errors.",
+  "category": "observability",
+  "tier": "standard",
+  "transport": "http",
+  "vendor": "sentry",
+  "official": true,
+  "url": "https://mcp.sentry.dev/mcp",
+  "required_env": [
+    "SENTRY_ACCESS_TOKEN"
   ],
-  "category": "observability"
+  "risk": "medium",
+  "license": "Apache-2.0",
+  "docs": "https://docs.sentry.io/product/sentry-mcp/",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
 }

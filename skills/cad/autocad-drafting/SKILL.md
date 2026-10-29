@@ -23,6 +23,8 @@ keywords:
   - viewport
   - plot
   - annotative
+mcp_servers:
+  - autocad
 source: custom
 enabled: true
 ---
@@ -83,6 +85,15 @@ Draft in AutoCAD with production discipline: layers and standards, model versus 
 - Never edit geometry through a locked viewport or with the wrong layer current.
 - Unbound xrefs sent to a client arrive as missing references.
 - Plot scale errors are silent — always verify with a dimensioned check.
+
+## MCP Requirements
+
+| Server | Transport | Tier | Risk | Required env |
+| :--- | :--- | :--- | :--- | :--- |
+| `autocad` | stdio | full | high | `AUTOCAD_BACKEND_URL` |
+
+Install the connectors above with `allskills mcp install --harness <harness> --profile full`,
+or list the same ids in your harness config. Full detail per server: [`docs/MCP-CATALOG.md`](MCP-CATALOG.md) and [`mcp/registry.json`](../mcp/registry.json).
 
 ## Source
 

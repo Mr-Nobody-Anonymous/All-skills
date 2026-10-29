@@ -1,0 +1,43 @@
+{
+  "id": "davinci-resolve",
+  "name": "DaVinci Resolve",
+  "description": "Automate DaVinci Resolve: timeline assembly, media pool operations, rendering and project inspection.",
+  "category": "video",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "flowsai",
+  "official": false,
+  "command": "uvx",
+  "args": [
+    "davinci-resolve-mcp"
+  ],
+  "required_env": [],
+  "risk": "medium",
+  "license": "MIT",
+  "docs": "https://github.com/flowsai/davinci-resolve-mcp",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

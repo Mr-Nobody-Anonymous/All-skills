@@ -22,6 +22,8 @@ These run in [`.github/workflows/ci.yml`](../.github/workflows/ci.yml) and
 | `python scripts/run_evals.py` | Behavioral, routing and adversarial evals (`evals/`) |
 | `python scripts/scan_skills_security.py` | Security & prompt-injection scanner |
 | `python scripts/allskills.py doctor --full` | 11-layer platform diagnostic |
+| `python scripts/dev/generate_mcp_registry.py --check` | `mcp/` is a projection of `mcps/catalog.json` (no second inventory) |
+| `python scripts/dev/generate_skill_mcp_map.py --check` | every declared skill → server edge resolves, and `registry/skill-mcp-map.json` is current |
 
 ## Regenerating generated files
 
@@ -33,6 +35,26 @@ python scripts/mcp_catalog.py generate                               # docs/MCP-
 python scripts/mcp_catalog.py install --harness claude --profile core  # wire MCP into a harness
 python scripts/compute_stats.py && python scripts/generate_readme_stats.py   # stats.json + README numbers
 python scripts/generate_baselines.py                                  # baselines/v0-current
+python scripts/dev/generate_mcp_registry.py                           # mcp/ (servers, registry, role profiles)
+python scripts/dev/generate_skill_mcp_map.py                          # skill → MCP map + per-skill requirements
+python scripts/generate_category_docs.py                              # docs/skills/<category>.md
+node scripts/dev/generate-skill-triggers.js --refresh-digests         # manifests/context-packs
+```
+
+### Adding a skill or a connector
+
+Both are data, not files: edit the module and regenerate, so the derived artifacts stay consistent.
+
+```bash
+# skills: a TITLES dict + skill(...) calls, imported by add_domain_skills.py
+python scripts/dev/add_domain_skills.py --force     # skills/ + per-skill README.md
+python scripts/dev/generate_skill_mcp_map.py        # requirements table + map
+
+# connectors: verify the package first (PyPI/npm, console script, licence), then
+python scripts/dev/add_missing_servers.py           # mcps/catalog.json
+python scripts/mcp_catalog.py verify && python scripts/mcp_catalog.py generate
+python scripts/mcp_catalog.py sync-optin
+python scripts/dev/generate_mcp_registry.py
 ```
 
 ## Everyday tools

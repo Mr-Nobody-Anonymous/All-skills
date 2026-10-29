@@ -1,0 +1,5792 @@
+{
+  "version": "1.0.0",
+  "generated_by": "scripts/dev/generate_skill_mcp_map.py",
+  "generated_from": [
+    "mcps/catalog.json",
+    "skills/*/*/SKILL.md"
+  ],
+  "note": "'declared' comes from frontmatter mcp_servers and is a contract; 'mentioned' is a text match and is informational only.",
+  "counts": {
+    "skills": 533,
+    "skills_with_declared_servers": 63,
+    "servers": 117,
+    "servers_with_declared_skills": 37
+  },
+  "skills": {
+    "3d/blender-geometry-nodes": {
+      "category": "3d",
+      "name": "blender-geometry-nodes",
+      "declared": [
+        "blender"
+      ],
+      "mentioned": [
+        "memory"
+      ]
+    },
+    "3d/blender-modeling-topology": {
+      "category": "3d",
+      "name": "blender-modeling-topology",
+      "declared": [
+        "blender"
+      ],
+      "mentioned": []
+    },
+    "3d/blender-python-scripting": {
+      "category": "3d",
+      "name": "blender-python-scripting",
+      "declared": [
+        "blender"
+      ],
+      "mentioned": []
+    },
+    "3d/blender-rendering-lighting": {
+      "category": "3d",
+      "name": "blender-rendering-lighting",
+      "declared": [
+        "blender"
+      ],
+      "mentioned": []
+    },
+    "3d/blender-rigging-animation": {
+      "category": "3d",
+      "name": "blender-rigging-animation",
+      "declared": [
+        "blender"
+      ],
+      "mentioned": []
+    },
+    "3d/blender-sculpting-retopology": {
+      "category": "3d",
+      "name": "blender-sculpting-retopology",
+      "declared": [
+        "blender"
+      ],
+      "mentioned": [
+        "memory"
+      ]
+    },
+    "3d/blender-shading-materials": {
+      "category": "3d",
+      "name": "blender-shading-materials",
+      "declared": [
+        "blender"
+      ],
+      "mentioned": []
+    },
+    "3d/character-animation-principles": {
+      "category": "3d",
+      "name": "character-animation-principles",
+      "declared": [],
+      "mentioned": [
+        "blender"
+      ]
+    },
+    "3d/houdini-procedural-vfx": {
+      "category": "3d",
+      "name": "houdini-procedural-vfx",
+      "declared": [],
+      "mentioned": [
+        "blender"
+      ]
+    },
+    "3d/mesh-repair-printing": {
+      "category": "3d",
+      "name": "mesh-repair-printing",
+      "declared": [],
+      "mentioned": [
+        "blender"
+      ]
+    },
+    "3d/pbr-texture-authoring": {
+      "category": "3d",
+      "name": "pbr-texture-authoring",
+      "declared": [],
+      "mentioned": [
+        "blender"
+      ]
+    },
+    "3d/three-d-asset-pipeline": {
+      "category": "3d",
+      "name": "three-d-asset-pipeline",
+      "declared": [],
+      "mentioned": [
+        "blender",
+        "time"
+      ]
+    },
+    "3d/vfx-compositing": {
+      "category": "3d",
+      "name": "vfx-compositing",
+      "declared": [],
+      "mentioned": [
+        "davinci-resolve"
+      ]
+    },
+    "agents/agent-observability": {
+      "category": "agents",
+      "name": "agent-observability",
+      "declared": [
+        "opentelemetry",
+        "grafana",
+        "sentry"
+      ],
+      "mentioned": [
+        "prometheus"
+      ]
+    },
+    "agents/agent-reliability": {
+      "category": "agents",
+      "name": "agent-reliability",
+      "declared": [
+        "filesystem",
+        "github"
+      ],
+      "mentioned": [
+        "opentelemetry"
+      ]
+    },
+    "agents/human-in-the-loop-design": {
+      "category": "agents",
+      "name": "human-in-the-loop-design",
+      "declared": [
+        "filesystem",
+        "github",
+        "slack"
+      ],
+      "mentioned": []
+    },
+    "agents/mcp-integration-testing": {
+      "category": "agents",
+      "name": "mcp-integration-testing",
+      "declared": [
+        "filesystem",
+        "github",
+        "playwright"
+      ],
+      "mentioned": []
+    },
+    "ai/embeddings": {
+      "category": "ai",
+      "name": "embeddings",
+      "declared": [],
+      "mentioned": []
+    },
+    "ai/fine-tuning": {
+      "category": "ai",
+      "name": "fine-tuning",
+      "declared": [],
+      "mentioned": [
+        "huggingface"
+      ]
+    },
+    "ai/hybrid-search": {
+      "category": "ai",
+      "name": "hybrid-search",
+      "declared": [],
+      "mentioned": []
+    },
+    "ai/mlops": {
+      "category": "ai",
+      "name": "mlops",
+      "declared": [
+        "github",
+        "kubernetes"
+      ],
+      "mentioned": []
+    },
+    "ai/model-drift-monitoring": {
+      "category": "ai",
+      "name": "model-drift-monitoring",
+      "declared": [
+        "grafana",
+        "prometheus",
+        "postgres"
+      ],
+      "mentioned": []
+    },
+    "ai/model-evaluation": {
+      "category": "ai",
+      "name": "model-evaluation",
+      "declared": [],
+      "mentioned": []
+    },
+    "ai/model-selection": {
+      "category": "ai",
+      "name": "model-selection",
+      "declared": [],
+      "mentioned": []
+    },
+    "ai/multimodal": {
+      "category": "ai",
+      "name": "multimodal",
+      "declared": [],
+      "mentioned": []
+    },
+    "ai/prompt-engineering": {
+      "category": "ai",
+      "name": "prompt-engineering",
+      "declared": [],
+      "mentioned": []
+    },
+    "ai/quantization": {
+      "category": "ai",
+      "name": "quantization",
+      "declared": [],
+      "mentioned": []
+    },
+    "ai/rag": {
+      "category": "ai",
+      "name": "rag",
+      "declared": [],
+      "mentioned": []
+    },
+    "ai/rag-evaluation": {
+      "category": "ai",
+      "name": "rag-evaluation",
+      "declared": [
+        "filesystem",
+        "github"
+      ],
+      "mentioned": []
+    },
+    "ai/reranking": {
+      "category": "ai",
+      "name": "reranking",
+      "declared": [],
+      "mentioned": []
+    },
+    "ai/structured-output": {
+      "category": "ai",
+      "name": "structured-output",
+      "declared": [],
+      "mentioned": []
+    },
+    "ai/tool-calling": {
+      "category": "ai",
+      "name": "tool-calling",
+      "declared": [],
+      "mentioned": []
+    },
+    "ai/vllm": {
+      "category": "ai",
+      "name": "vllm",
+      "declared": [],
+      "mentioned": []
+    },
+    "architecture/architectural-design-workflow": {
+      "category": "architecture",
+      "name": "architectural-design-workflow",
+      "declared": [
+        "ifc"
+      ],
+      "mentioned": [
+        "qgis",
+        "revit"
+      ]
+    },
+    "architecture/architecture-decision-records": {
+      "category": "architecture",
+      "name": "architecture-decision-records",
+      "declared": [],
+      "mentioned": [
+        "mongodb"
+      ]
+    },
+    "architecture/construction-documents-specifications": {
+      "category": "architecture",
+      "name": "construction-documents-specifications",
+      "declared": [
+        "ifc",
+        "revit"
+      ],
+      "mentioned": []
+    },
+    "architecture/interior-space-planning": {
+      "category": "architecture",
+      "name": "interior-space-planning",
+      "declared": [
+        "ifc"
+      ],
+      "mentioned": [
+        "revit"
+      ]
+    },
+    "audio/audio-mixing-mastering": {
+      "category": "audio",
+      "name": "audio-mixing-mastering",
+      "declared": [],
+      "mentioned": [
+        "spotify"
+      ]
+    },
+    "audio/live-sound-reinforcement": {
+      "category": "audio",
+      "name": "live-sound-reinforcement",
+      "declared": [
+        "ableton"
+      ],
+      "mentioned": [
+        "everything"
+      ]
+    },
+    "audio/music-notation-engraving": {
+      "category": "audio",
+      "name": "music-notation-engraving",
+      "declared": [
+        "filesystem"
+      ],
+      "mentioned": []
+    },
+    "audio/music-production-daw": {
+      "category": "audio",
+      "name": "music-production-daw",
+      "declared": [
+        "ableton"
+      ],
+      "mentioned": []
+    },
+    "audio/podcast-production": {
+      "category": "audio",
+      "name": "podcast-production",
+      "declared": [],
+      "mentioned": [
+        "youtube"
+      ]
+    },
+    "audio/sound-design-foley": {
+      "category": "audio",
+      "name": "sound-design-foley",
+      "declared": [],
+      "mentioned": []
+    },
+    "automation/n8n-workflow-automation": {
+      "category": "automation",
+      "name": "n8n-workflow-automation",
+      "declared": [],
+      "mentioned": [
+        "git",
+        "n8n"
+      ]
+    },
+    "cad/autocad-drafting": {
+      "category": "cad",
+      "name": "autocad-drafting",
+      "declared": [
+        "autocad"
+      ],
+      "mentioned": []
+    },
+    "cad/bim-ifc-coordination": {
+      "category": "cad",
+      "name": "bim-ifc-coordination",
+      "declared": [
+        "ifc",
+        "revit"
+      ],
+      "mentioned": []
+    },
+    "cad/cnc-machining-fabrication": {
+      "category": "cad",
+      "name": "cnc-machining-fabrication",
+      "declared": [
+        "freecad",
+        "openscad"
+      ],
+      "mentioned": []
+    },
+    "cad/dxf-dwg-interchange": {
+      "category": "cad",
+      "name": "dxf-dwg-interchange",
+      "declared": [],
+      "mentioned": [
+        "qgis"
+      ]
+    },
+    "cad/freecad-parametric-modeling": {
+      "category": "cad",
+      "name": "freecad-parametric-modeling",
+      "declared": [
+        "freecad"
+      ],
+      "mentioned": []
+    },
+    "cad/fusion360-solid-modeling": {
+      "category": "cad",
+      "name": "fusion360-solid-modeling",
+      "declared": [],
+      "mentioned": []
+    },
+    "cad/laser-cutting-engraving": {
+      "category": "cad",
+      "name": "laser-cutting-engraving",
+      "declared": [
+        "inkscape"
+      ],
+      "mentioned": []
+    },
+    "cad/openscad-programmatic-cad": {
+      "category": "cad",
+      "name": "openscad-programmatic-cad",
+      "declared": [
+        "openscad"
+      ],
+      "mentioned": [
+        "time"
+      ]
+    },
+    "cad/rhino-grasshopper": {
+      "category": "cad",
+      "name": "rhino-grasshopper",
+      "declared": [
+        "grasshopper"
+      ],
+      "mentioned": [
+        "revit"
+      ]
+    },
+    "cad/technical-drawing-gdt": {
+      "category": "cad",
+      "name": "technical-drawing-gdt",
+      "declared": [],
+      "mentioned": []
+    },
+    "cloud/aws-compute": {
+      "category": "cloud",
+      "name": "aws-compute",
+      "declared": [],
+      "mentioned": [
+        "aws"
+      ]
+    },
+    "cloud/aws-networking": {
+      "category": "cloud",
+      "name": "aws-networking",
+      "declared": [],
+      "mentioned": [
+        "aws"
+      ]
+    },
+    "cloud/aws-security": {
+      "category": "cloud",
+      "name": "aws-security",
+      "declared": [],
+      "mentioned": [
+        "aws"
+      ]
+    },
+    "cloud/azure-architecture": {
+      "category": "cloud",
+      "name": "azure-architecture",
+      "declared": [],
+      "mentioned": [
+        "azure"
+      ]
+    },
+    "cloud/cloudflare-edge": {
+      "category": "cloud",
+      "name": "cloudflare-edge",
+      "declared": [],
+      "mentioned": [
+        "cloudflare"
+      ]
+    },
+    "cloud/cloudflare-workers": {
+      "category": "cloud",
+      "name": "cloudflare-workers",
+      "declared": [
+        "cloudflare",
+        "filesystem"
+      ],
+      "mentioned": [
+        "memory",
+        "time"
+      ]
+    },
+    "cloud/gcp-architecture": {
+      "category": "cloud",
+      "name": "gcp-architecture",
+      "declared": [],
+      "mentioned": [
+        "kubernetes"
+      ]
+    },
+    "cloud/pulumi-iac": {
+      "category": "cloud",
+      "name": "pulumi-iac",
+      "declared": [],
+      "mentioned": [
+        "pulumi",
+        "terraform"
+      ]
+    },
+    "cloud/terraform-iac": {
+      "category": "cloud",
+      "name": "terraform-iac",
+      "declared": [],
+      "mentioned": [
+        "kubernetes",
+        "pulumi",
+        "terraform"
+      ]
+    },
+    "cloud/vercel-deployment": {
+      "category": "cloud",
+      "name": "vercel-deployment",
+      "declared": [],
+      "mentioned": [
+        "vercel"
+      ]
+    },
+    "communication/customer-support-automation": {
+      "category": "communication",
+      "name": "customer-support-automation",
+      "declared": [
+        "slack",
+        "notion",
+        "linear"
+      ],
+      "mentioned": [
+        "time"
+      ]
+    },
+    "communication/sms-messaging": {
+      "category": "communication",
+      "name": "sms-messaging",
+      "declared": [],
+      "mentioned": [
+        "twilio"
+      ]
+    },
+    "communication/transactional-email": {
+      "category": "communication",
+      "name": "transactional-email",
+      "declared": [],
+      "mentioned": [
+        "resend"
+      ]
+    },
+    "creative/creative-writing": {
+      "category": "creative",
+      "name": "creative-writing",
+      "declared": [],
+      "mentioned": []
+    },
+    "creative/figma": {
+      "category": "creative",
+      "name": "figma",
+      "declared": [],
+      "mentioned": [
+        "figma"
+      ]
+    },
+    "creative/graphic-design": {
+      "category": "creative",
+      "name": "graphic-design",
+      "declared": [],
+      "mentioned": []
+    },
+    "creative/ui-design": {
+      "category": "creative",
+      "name": "ui-design",
+      "declared": [],
+      "mentioned": []
+    },
+    "data/apache-airflow": {
+      "category": "data",
+      "name": "apache-airflow",
+      "declared": [],
+      "mentioned": []
+    },
+    "data/apache-flink": {
+      "category": "data",
+      "name": "apache-flink",
+      "declared": [],
+      "mentioned": []
+    },
+    "data/apache-kafka": {
+      "category": "data",
+      "name": "apache-kafka",
+      "declared": [],
+      "mentioned": []
+    },
+    "data/apache-spark": {
+      "category": "data",
+      "name": "apache-spark",
+      "declared": [],
+      "mentioned": []
+    },
+    "data/batch-processing": {
+      "category": "data",
+      "name": "batch-processing",
+      "declared": [],
+      "mentioned": [
+        "memory"
+      ]
+    },
+    "data/cdc": {
+      "category": "data",
+      "name": "cdc",
+      "declared": [],
+      "mentioned": []
+    },
+    "data/dagster": {
+      "category": "data",
+      "name": "dagster",
+      "declared": [],
+      "mentioned": []
+    },
+    "data/data-catalog": {
+      "category": "data",
+      "name": "data-catalog",
+      "declared": [],
+      "mentioned": []
+    },
+    "data/data-contracts": {
+      "category": "data",
+      "name": "data-contracts",
+      "declared": [],
+      "mentioned": []
+    },
+    "data/data-governance": {
+      "category": "data",
+      "name": "data-governance",
+      "declared": [],
+      "mentioned": []
+    },
+    "data/data-lineage": {
+      "category": "data",
+      "name": "data-lineage",
+      "declared": [],
+      "mentioned": []
+    },
+    "data/data-migration": {
+      "category": "data",
+      "name": "data-migration",
+      "declared": [],
+      "mentioned": []
+    },
+    "data/data-observability": {
+      "category": "data",
+      "name": "data-observability",
+      "declared": [],
+      "mentioned": []
+    },
+    "data/data-quality": {
+      "category": "data",
+      "name": "data-quality",
+      "declared": [],
+      "mentioned": []
+    },
+    "data/data-warehouse": {
+      "category": "data",
+      "name": "data-warehouse",
+      "declared": [],
+      "mentioned": [
+        "snowflake"
+      ]
+    },
+    "data/dbt": {
+      "category": "data",
+      "name": "dbt",
+      "declared": [],
+      "mentioned": []
+    },
+    "data/elt-pipeline-design": {
+      "category": "data",
+      "name": "elt-pipeline-design",
+      "declared": [],
+      "mentioned": []
+    },
+    "data/etl-pipeline-design": {
+      "category": "data",
+      "name": "etl-pipeline-design",
+      "declared": [],
+      "mentioned": []
+    },
+    "data/event-driven-data": {
+      "category": "data",
+      "name": "event-driven-data",
+      "declared": [],
+      "mentioned": []
+    },
+    "data/feature-store": {
+      "category": "data",
+      "name": "feature-store",
+      "declared": [],
+      "mentioned": [
+        "time"
+      ]
+    },
+    "data/lakehouse": {
+      "category": "data",
+      "name": "lakehouse",
+      "declared": [],
+      "mentioned": []
+    },
+    "data/schema-evolution": {
+      "category": "data",
+      "name": "schema-evolution",
+      "declared": [],
+      "mentioned": []
+    },
+    "data/stream-processing": {
+      "category": "data",
+      "name": "stream-processing",
+      "declared": [],
+      "mentioned": [
+        "time"
+      ]
+    },
+    "data/vector-database": {
+      "category": "data",
+      "name": "vector-database",
+      "declared": [],
+      "mentioned": [
+        "pinecone",
+        "qdrant"
+      ]
+    },
+    "databases/bigquery": {
+      "category": "databases",
+      "name": "bigquery",
+      "declared": [],
+      "mentioned": [
+        "bigquery"
+      ]
+    },
+    "databases/clickhouse": {
+      "category": "databases",
+      "name": "clickhouse",
+      "declared": [],
+      "mentioned": [
+        "clickhouse"
+      ]
+    },
+    "databases/database-query-optimization": {
+      "category": "databases",
+      "name": "database-query-optimization",
+      "declared": [
+        "postgres",
+        "github"
+      ],
+      "mentioned": []
+    },
+    "databases/databricks": {
+      "category": "databases",
+      "name": "databricks",
+      "declared": [],
+      "mentioned": []
+    },
+    "databases/duckdb": {
+      "category": "databases",
+      "name": "duckdb",
+      "declared": [],
+      "mentioned": [
+        "duckdb"
+      ]
+    },
+    "databases/elasticsearch": {
+      "category": "databases",
+      "name": "elasticsearch",
+      "declared": [],
+      "mentioned": [
+        "elasticsearch"
+      ]
+    },
+    "databases/mongodb": {
+      "category": "databases",
+      "name": "mongodb",
+      "declared": [],
+      "mentioned": [
+        "mongodb"
+      ]
+    },
+    "databases/mysql": {
+      "category": "databases",
+      "name": "mysql",
+      "declared": [],
+      "mentioned": [
+        "mysql"
+      ]
+    },
+    "databases/neo4j": {
+      "category": "databases",
+      "name": "neo4j",
+      "declared": [],
+      "mentioned": [
+        "neo4j"
+      ]
+    },
+    "databases/opensearch": {
+      "category": "databases",
+      "name": "opensearch",
+      "declared": [],
+      "mentioned": []
+    },
+    "databases/oracle": {
+      "category": "databases",
+      "name": "oracle",
+      "declared": [],
+      "mentioned": [
+        "mysql",
+        "opentelemetry",
+        "time"
+      ]
+    },
+    "databases/postgresql": {
+      "category": "databases",
+      "name": "postgresql",
+      "declared": [],
+      "mentioned": [
+        "postgres"
+      ]
+    },
+    "databases/postgresql-performance": {
+      "category": "databases",
+      "name": "postgresql-performance",
+      "declared": [
+        "postgres",
+        "filesystem"
+      ],
+      "mentioned": [
+        "time"
+      ]
+    },
+    "databases/redis": {
+      "category": "databases",
+      "name": "redis",
+      "declared": [],
+      "mentioned": [
+        "memory",
+        "redis"
+      ]
+    },
+    "databases/redshift": {
+      "category": "databases",
+      "name": "redshift",
+      "declared": [],
+      "mentioned": [
+        "aws"
+      ]
+    },
+    "databases/snowflake": {
+      "category": "databases",
+      "name": "snowflake",
+      "declared": [],
+      "mentioned": [
+        "snowflake"
+      ]
+    },
+    "databases/sql-server": {
+      "category": "databases",
+      "name": "sql-server",
+      "declared": [],
+      "mentioned": [
+        "azure",
+        "git",
+        "mysql",
+        "sqlite",
+        "time"
+      ]
+    },
+    "databases/sqlite": {
+      "category": "databases",
+      "name": "sqlite",
+      "declared": [],
+      "mentioned": [
+        "sqlite"
+      ]
+    },
+    "design/avatar-creator": {
+      "category": "design",
+      "name": "avatar-creator",
+      "declared": [],
+      "mentioned": []
+    },
+    "design/branding": {
+      "category": "design",
+      "name": "branding",
+      "declared": [],
+      "mentioned": []
+    },
+    "design/editorial-layout-design": {
+      "category": "design",
+      "name": "editorial-layout-design",
+      "declared": [],
+      "mentioned": []
+    },
+    "design/frontend-design": {
+      "category": "design",
+      "name": "frontend-design",
+      "declared": [],
+      "mentioned": []
+    },
+    "design/iconography-systems": {
+      "category": "design",
+      "name": "iconography-systems",
+      "declared": [
+        "figma",
+        "inkscape"
+      ],
+      "mentioned": []
+    },
+    "design/image-gen": {
+      "category": "design",
+      "name": "image-gen",
+      "declared": [],
+      "mentioned": []
+    },
+    "design/presentations": {
+      "category": "design",
+      "name": "presentations",
+      "declared": [],
+      "mentioned": []
+    },
+    "design/print-production-prepress": {
+      "category": "design",
+      "name": "print-production-prepress",
+      "declared": [],
+      "mentioned": []
+    },
+    "design/remotion-best-practices": {
+      "category": "design",
+      "name": "remotion-best-practices",
+      "declared": [],
+      "mentioned": []
+    },
+    "design/typography-and-type-systems": {
+      "category": "design",
+      "name": "typography-and-type-systems",
+      "declared": [
+        "figma"
+      ],
+      "mentioned": []
+    },
+    "design/ui-ux": {
+      "category": "design",
+      "name": "ui-ux",
+      "declared": [],
+      "mentioned": []
+    },
+    "design/vector-illustration-svg": {
+      "category": "design",
+      "name": "vector-illustration-svg",
+      "declared": [
+        "inkscape"
+      ],
+      "mentioned": []
+    },
+    "design/veo-video-generator": {
+      "category": "design",
+      "name": "veo-video-generator",
+      "declared": [],
+      "mentioned": []
+    },
+    "desktop/app-packaging": {
+      "category": "desktop",
+      "name": "app-packaging",
+      "declared": [],
+      "mentioned": []
+    },
+    "desktop/auto-update": {
+      "category": "desktop",
+      "name": "auto-update",
+      "declared": [],
+      "mentioned": []
+    },
+    "desktop/avalonia": {
+      "category": "desktop",
+      "name": "avalonia",
+      "declared": [],
+      "mentioned": []
+    },
+    "desktop/cross-platform-desktop": {
+      "category": "desktop",
+      "name": "cross-platform-desktop",
+      "declared": [],
+      "mentioned": [
+        "filesystem"
+      ]
+    },
+    "desktop/desktop-security": {
+      "category": "desktop",
+      "name": "desktop-security",
+      "declared": [],
+      "mentioned": []
+    },
+    "desktop/electron": {
+      "category": "desktop",
+      "name": "electron",
+      "declared": [],
+      "mentioned": [
+        "memory"
+      ]
+    },
+    "desktop/macos-native": {
+      "category": "desktop",
+      "name": "macos-native",
+      "declared": [],
+      "mentioned": []
+    },
+    "desktop/pyqt": {
+      "category": "desktop",
+      "name": "pyqt",
+      "declared": [],
+      "mentioned": []
+    },
+    "desktop/pyside": {
+      "category": "desktop",
+      "name": "pyside",
+      "declared": [],
+      "mentioned": []
+    },
+    "desktop/qt": {
+      "category": "desktop",
+      "name": "qt",
+      "declared": [],
+      "mentioned": []
+    },
+    "desktop/tauri": {
+      "category": "desktop",
+      "name": "tauri",
+      "declared": [],
+      "mentioned": []
+    },
+    "desktop/tkinter": {
+      "category": "desktop",
+      "name": "tkinter",
+      "declared": [],
+      "mentioned": []
+    },
+    "desktop/winui": {
+      "category": "desktop",
+      "name": "winui",
+      "declared": [],
+      "mentioned": []
+    },
+    "desktop/wpf": {
+      "category": "desktop",
+      "name": "wpf",
+      "declared": [],
+      "mentioned": []
+    },
+    "development/api-mock-generator": {
+      "category": "development",
+      "name": "api-mock-generator",
+      "declared": [],
+      "mentioned": [
+        "openapi"
+      ]
+    },
+    "development/architecture": {
+      "category": "development",
+      "name": "architecture",
+      "declared": [],
+      "mentioned": []
+    },
+    "development/autoreview": {
+      "category": "development",
+      "name": "autoreview",
+      "declared": [],
+      "mentioned": []
+    },
+    "development/backend": {
+      "category": "development",
+      "name": "backend",
+      "declared": [],
+      "mentioned": []
+    },
+    "development/behavior-validator": {
+      "category": "development",
+      "name": "behavior-validator",
+      "declared": [],
+      "mentioned": []
+    },
+    "development/brainstorming": {
+      "category": "development",
+      "name": "brainstorming",
+      "declared": [],
+      "mentioned": []
+    },
+    "development/cf-worker-deploy": {
+      "category": "development",
+      "name": "cf-worker-deploy",
+      "declared": [],
+      "mentioned": [
+        "cloudflare"
+      ]
+    },
+    "development/ci-cd-pipeline": {
+      "category": "development",
+      "name": "ci-cd-pipeline",
+      "declared": [],
+      "mentioned": [
+        "cloudflare",
+        "docker",
+        "filesystem",
+        "github",
+        "gitlab"
+      ]
+    },
+    "development/code-review": {
+      "category": "development",
+      "name": "code-review",
+      "declared": [],
+      "mentioned": []
+    },
+    "development/coding": {
+      "category": "development",
+      "name": "coding",
+      "declared": [],
+      "mentioned": [
+        "filesystem"
+      ]
+    },
+    "development/coding-agent": {
+      "category": "development",
+      "name": "coding-agent",
+      "declared": [],
+      "mentioned": [
+        "time"
+      ]
+    },
+    "development/crabbox": {
+      "category": "development",
+      "name": "crabbox",
+      "declared": [],
+      "mentioned": []
+    },
+    "development/cursor-agent": {
+      "category": "development",
+      "name": "cursor-agent",
+      "declared": [],
+      "mentioned": [
+        "time"
+      ]
+    },
+    "development/databases": {
+      "category": "development",
+      "name": "databases",
+      "declared": [],
+      "mentioned": [
+        "mongodb",
+        "mysql",
+        "postgres"
+      ]
+    },
+    "development/db-inspector": {
+      "category": "development",
+      "name": "db-inspector",
+      "declared": [],
+      "mentioned": [
+        "memory",
+        "mongodb",
+        "mysql",
+        "postgres"
+      ]
+    },
+    "development/debugging": {
+      "category": "development",
+      "name": "debugging",
+      "declared": [],
+      "mentioned": [
+        "git"
+      ]
+    },
+    "development/devops": {
+      "category": "development",
+      "name": "devops",
+      "declared": [],
+      "mentioned": [
+        "github"
+      ]
+    },
+    "development/docker-manager": {
+      "category": "development",
+      "name": "docker-manager",
+      "declared": [],
+      "mentioned": [
+        "docker",
+        "everything",
+        "kubernetes"
+      ]
+    },
+    "development/dokploy": {
+      "category": "development",
+      "name": "dokploy",
+      "declared": [],
+      "mentioned": [
+        "docker"
+      ]
+    },
+    "development/fastapi-expert": {
+      "category": "development",
+      "name": "fastapi-expert",
+      "declared": [
+        "filesystem",
+        "postgres",
+        "context7"
+      ],
+      "mentioned": [
+        "openapi"
+      ]
+    },
+    "development/feature-flag-management": {
+      "category": "development",
+      "name": "feature-flag-management",
+      "declared": [],
+      "mentioned": []
+    },
+    "development/frontend": {
+      "category": "development",
+      "name": "frontend",
+      "declared": [],
+      "mentioned": []
+    },
+    "development/git": {
+      "category": "development",
+      "name": "git",
+      "declared": [],
+      "mentioned": [
+        "git",
+        "github"
+      ]
+    },
+    "development/git-workflow": {
+      "category": "development",
+      "name": "git-workflow",
+      "declared": [],
+      "mentioned": [
+        "git"
+      ]
+    },
+    "development/git-worktrees": {
+      "category": "development",
+      "name": "git-worktrees",
+      "declared": [],
+      "mentioned": [
+        "git"
+      ]
+    },
+    "development/github": {
+      "category": "development",
+      "name": "github",
+      "declared": [],
+      "mentioned": [
+        "git",
+        "github"
+      ]
+    },
+    "development/github-cli": {
+      "category": "development",
+      "name": "github-cli",
+      "declared": [],
+      "mentioned": [
+        "git",
+        "github"
+      ]
+    },
+    "development/graphql-api-design": {
+      "category": "development",
+      "name": "graphql-api-design",
+      "declared": [],
+      "mentioned": [
+        "fetch"
+      ]
+    },
+    "development/grpc-service-design": {
+      "category": "development",
+      "name": "grpc-service-design",
+      "declared": [],
+      "mentioned": [
+        "memory"
+      ]
+    },
+    "development/issue-triage": {
+      "category": "development",
+      "name": "issue-triage",
+      "declared": [],
+      "mentioned": [
+        "filesystem",
+        "github"
+      ]
+    },
+    "development/mcp-builder": {
+      "category": "development",
+      "name": "mcp-builder",
+      "declared": [],
+      "mentioned": [
+        "fetch",
+        "time"
+      ]
+    },
+    "development/mcp-server-development": {
+      "category": "development",
+      "name": "mcp-server-development",
+      "declared": [],
+      "mentioned": []
+    },
+    "development/monorepo-management": {
+      "category": "development",
+      "name": "monorepo-management",
+      "declared": [],
+      "mentioned": [
+        "everything"
+      ]
+    },
+    "development/nestjs-expert": {
+      "category": "development",
+      "name": "nestjs-expert",
+      "declared": [
+        "filesystem",
+        "postgres",
+        "context7"
+      ],
+      "mentioned": []
+    },
+    "development/performance-optimization": {
+      "category": "development",
+      "name": "performance-optimization",
+      "declared": [],
+      "mentioned": [
+        "memory",
+        "time"
+      ]
+    },
+    "development/pr-splitter": {
+      "category": "development",
+      "name": "pr-splitter",
+      "declared": [],
+      "mentioned": [
+        "filesystem",
+        "git",
+        "linear"
+      ]
+    },
+    "development/receiving-code-review": {
+      "category": "development",
+      "name": "receiving-code-review",
+      "declared": [],
+      "mentioned": []
+    },
+    "development/refactoring": {
+      "category": "development",
+      "name": "refactoring",
+      "declared": [],
+      "mentioned": []
+    },
+    "development/release-management": {
+      "category": "development",
+      "name": "release-management",
+      "declared": [],
+      "mentioned": [
+        "filesystem",
+        "git"
+      ]
+    },
+    "development/requesting-code-review": {
+      "category": "development",
+      "name": "requesting-code-review",
+      "declared": [],
+      "mentioned": []
+    },
+    "development/summarize-repo": {
+      "category": "development",
+      "name": "summarize-repo",
+      "declared": [],
+      "mentioned": [
+        "filesystem",
+        "git"
+      ]
+    },
+    "development/tdd": {
+      "category": "development",
+      "name": "tdd",
+      "declared": [],
+      "mentioned": []
+    },
+    "development/testing": {
+      "category": "development",
+      "name": "testing",
+      "declared": [],
+      "mentioned": [
+        "time"
+      ]
+    },
+    "development/verification-before-completion": {
+      "category": "development",
+      "name": "verification-before-completion",
+      "declared": [],
+      "mentioned": []
+    },
+    "development/websocket-realtime": {
+      "category": "development",
+      "name": "websocket-realtime",
+      "declared": [],
+      "mentioned": [
+        "redis"
+      ]
+    },
+    "devops/circleci-pipelines": {
+      "category": "devops",
+      "name": "circleci-pipelines",
+      "declared": [],
+      "mentioned": [
+        "circleci",
+        "docker",
+        "github",
+        "gitlab"
+      ]
+    },
+    "devops/disaster-recovery": {
+      "category": "devops",
+      "name": "disaster-recovery",
+      "declared": [
+        "kubernetes",
+        "postgres",
+        "grafana"
+      ],
+      "mentioned": [
+        "terraform",
+        "time"
+      ]
+    },
+    "devops/platform-engineering": {
+      "category": "devops",
+      "name": "platform-engineering",
+      "declared": [
+        "kubernetes",
+        "terraform",
+        "github"
+      ],
+      "mentioned": []
+    },
+    "documents/csv": {
+      "category": "documents",
+      "name": "csv",
+      "declared": [],
+      "mentioned": []
+    },
+    "documents/docx": {
+      "category": "documents",
+      "name": "docx",
+      "declared": [],
+      "mentioned": []
+    },
+    "documents/expense-parser": {
+      "category": "documents",
+      "name": "expense-parser",
+      "declared": [],
+      "mentioned": []
+    },
+    "documents/markdown": {
+      "category": "documents",
+      "name": "markdown",
+      "declared": [],
+      "mentioned": []
+    },
+    "documents/pdf": {
+      "category": "documents",
+      "name": "pdf",
+      "declared": [],
+      "mentioned": [
+        "filesystem"
+      ]
+    },
+    "documents/pptx": {
+      "category": "documents",
+      "name": "pptx",
+      "declared": [],
+      "mentioned": []
+    },
+    "documents/xlsx": {
+      "category": "documents",
+      "name": "xlsx",
+      "declared": [],
+      "mentioned": []
+    },
+    "education/curriculum-design": {
+      "category": "education",
+      "name": "curriculum-design",
+      "declared": [],
+      "mentioned": []
+    },
+    "education/quiz-generation": {
+      "category": "education",
+      "name": "quiz-generation",
+      "declared": [],
+      "mentioned": []
+    },
+    "education/spaced-repetition": {
+      "category": "education",
+      "name": "spaced-repetition",
+      "declared": [],
+      "mentioned": [
+        "memory"
+      ]
+    },
+    "education/tutoring": {
+      "category": "education",
+      "name": "tutoring",
+      "declared": [],
+      "mentioned": []
+    },
+    "embedded/arduino": {
+      "category": "embedded",
+      "name": "arduino",
+      "declared": [],
+      "mentioned": []
+    },
+    "embedded/bare-metal": {
+      "category": "embedded",
+      "name": "bare-metal",
+      "declared": [],
+      "mentioned": [
+        "memory"
+      ]
+    },
+    "embedded/can-bus": {
+      "category": "embedded",
+      "name": "can-bus",
+      "declared": [],
+      "mentioned": []
+    },
+    "embedded/device-drivers": {
+      "category": "embedded",
+      "name": "device-drivers",
+      "declared": [],
+      "mentioned": []
+    },
+    "embedded/embedded-linux": {
+      "category": "embedded",
+      "name": "embedded-linux",
+      "declared": [],
+      "mentioned": []
+    },
+    "embedded/embedded-security": {
+      "category": "embedded",
+      "name": "embedded-security",
+      "declared": [],
+      "mentioned": []
+    },
+    "embedded/embedded-testing": {
+      "category": "embedded",
+      "name": "embedded-testing",
+      "declared": [],
+      "mentioned": []
+    },
+    "embedded/esp32": {
+      "category": "embedded",
+      "name": "esp32",
+      "declared": [],
+      "mentioned": []
+    },
+    "embedded/esp8266": {
+      "category": "embedded",
+      "name": "esp8266",
+      "declared": [],
+      "mentioned": []
+    },
+    "embedded/firmware-analysis": {
+      "category": "embedded",
+      "name": "firmware-analysis",
+      "declared": [],
+      "mentioned": [
+        "memory"
+      ]
+    },
+    "embedded/freertos": {
+      "category": "embedded",
+      "name": "freertos",
+      "declared": [],
+      "mentioned": []
+    },
+    "embedded/i2c": {
+      "category": "embedded",
+      "name": "i2c",
+      "declared": [],
+      "mentioned": []
+    },
+    "embedded/modbus": {
+      "category": "embedded",
+      "name": "modbus",
+      "declared": [],
+      "mentioned": []
+    },
+    "embedded/mqtt": {
+      "category": "embedded",
+      "name": "mqtt",
+      "declared": [],
+      "mentioned": []
+    },
+    "embedded/pcb-design": {
+      "category": "embedded",
+      "name": "pcb-design",
+      "declared": [],
+      "mentioned": [
+        "kicad"
+      ]
+    },
+    "embedded/raspberry-pi": {
+      "category": "embedded",
+      "name": "raspberry-pi",
+      "declared": [],
+      "mentioned": []
+    },
+    "embedded/robotics": {
+      "category": "embedded",
+      "name": "robotics",
+      "declared": [],
+      "mentioned": []
+    },
+    "embedded/rp2040": {
+      "category": "embedded",
+      "name": "rp2040",
+      "declared": [],
+      "mentioned": []
+    },
+    "embedded/sensor-integration": {
+      "category": "embedded",
+      "name": "sensor-integration",
+      "declared": [],
+      "mentioned": []
+    },
+    "embedded/spi": {
+      "category": "embedded",
+      "name": "spi",
+      "declared": [],
+      "mentioned": []
+    },
+    "embedded/stm32": {
+      "category": "embedded",
+      "name": "stm32",
+      "declared": [],
+      "mentioned": []
+    },
+    "embedded/uart": {
+      "category": "embedded",
+      "name": "uart",
+      "declared": [],
+      "mentioned": []
+    },
+    "embedded/zephyr": {
+      "category": "embedded",
+      "name": "zephyr",
+      "declared": [],
+      "mentioned": []
+    },
+    "execution/sandboxed-code-execution": {
+      "category": "execution",
+      "name": "sandboxed-code-execution",
+      "declared": [],
+      "mentioned": [
+        "e2b",
+        "filesystem",
+        "memory",
+        "time"
+      ]
+    },
+    "finance/accounting": {
+      "category": "finance",
+      "name": "accounting",
+      "declared": [],
+      "mentioned": []
+    },
+    "finance/financial-analysis": {
+      "category": "finance",
+      "name": "financial-analysis",
+      "declared": [],
+      "mentioned": []
+    },
+    "finance/financial-modeling": {
+      "category": "finance",
+      "name": "financial-modeling",
+      "declared": [],
+      "mentioned": []
+    },
+    "finops/ai-inference-cost": {
+      "category": "finops",
+      "name": "ai-inference-cost",
+      "declared": [],
+      "mentioned": []
+    },
+    "finops/aws-cost-optimization": {
+      "category": "finops",
+      "name": "aws-cost-optimization",
+      "declared": [],
+      "mentioned": [
+        "aws"
+      ]
+    },
+    "finops/azure-cost-optimization": {
+      "category": "finops",
+      "name": "azure-cost-optimization",
+      "declared": [],
+      "mentioned": [
+        "azure"
+      ]
+    },
+    "finops/cloud-cost-analysis": {
+      "category": "finops",
+      "name": "cloud-cost-analysis",
+      "declared": [],
+      "mentioned": []
+    },
+    "finops/gcp-cost-optimization": {
+      "category": "finops",
+      "name": "gcp-cost-optimization",
+      "declared": [],
+      "mentioned": [
+        "bigquery"
+      ]
+    },
+    "finops/idle-resource-detection": {
+      "category": "finops",
+      "name": "idle-resource-detection",
+      "declared": [],
+      "mentioned": []
+    },
+    "finops/kubernetes-cost": {
+      "category": "finops",
+      "name": "kubernetes-cost",
+      "declared": [],
+      "mentioned": [
+        "kubernetes"
+      ]
+    },
+    "finops/rightsizing": {
+      "category": "finops",
+      "name": "rightsizing",
+      "declared": [],
+      "mentioned": [
+        "memory"
+      ]
+    },
+    "game/asset-pipelines": {
+      "category": "game",
+      "name": "asset-pipelines",
+      "declared": [],
+      "mentioned": []
+    },
+    "game/directx": {
+      "category": "game",
+      "name": "directx",
+      "declared": [],
+      "mentioned": []
+    },
+    "game/ecs": {
+      "category": "game",
+      "name": "ecs",
+      "declared": [],
+      "mentioned": [
+        "memory"
+      ]
+    },
+    "game/game-ai": {
+      "category": "game",
+      "name": "game-ai",
+      "declared": [],
+      "mentioned": []
+    },
+    "game/game-testing": {
+      "category": "game",
+      "name": "game-testing",
+      "declared": [],
+      "mentioned": []
+    },
+    "game/game-ui": {
+      "category": "game",
+      "name": "game-ui",
+      "declared": [],
+      "mentioned": []
+    },
+    "game/gameplay-programming": {
+      "category": "game",
+      "name": "gameplay-programming",
+      "declared": [],
+      "mentioned": []
+    },
+    "game/godot": {
+      "category": "game",
+      "name": "godot",
+      "declared": [],
+      "mentioned": []
+    },
+    "game/graphics-programming": {
+      "category": "game",
+      "name": "graphics-programming",
+      "declared": [],
+      "mentioned": []
+    },
+    "game/multiplayer": {
+      "category": "game",
+      "name": "multiplayer",
+      "declared": [],
+      "mentioned": []
+    },
+    "game/netcode": {
+      "category": "game",
+      "name": "netcode",
+      "declared": [],
+      "mentioned": []
+    },
+    "game/opengl": {
+      "category": "game",
+      "name": "opengl",
+      "declared": [],
+      "mentioned": []
+    },
+    "game/optimization": {
+      "category": "game",
+      "name": "optimization",
+      "declared": [],
+      "mentioned": []
+    },
+    "game/physics": {
+      "category": "game",
+      "name": "physics",
+      "declared": [],
+      "mentioned": []
+    },
+    "game/profiling": {
+      "category": "game",
+      "name": "profiling",
+      "declared": [],
+      "mentioned": [
+        "memory"
+      ]
+    },
+    "game/shaders": {
+      "category": "game",
+      "name": "shaders",
+      "declared": [],
+      "mentioned": []
+    },
+    "game/unity": {
+      "category": "game",
+      "name": "unity",
+      "declared": [],
+      "mentioned": []
+    },
+    "game/unreal-engine": {
+      "category": "game",
+      "name": "unreal-engine",
+      "declared": [],
+      "mentioned": []
+    },
+    "game/vulkan": {
+      "category": "game",
+      "name": "vulkan",
+      "declared": [],
+      "mentioned": []
+    },
+    "geospatial/cartographic-design": {
+      "category": "geospatial",
+      "name": "cartographic-design",
+      "declared": [],
+      "mentioned": [
+        "qgis"
+      ]
+    },
+    "geospatial/drone-photogrammetry": {
+      "category": "geospatial",
+      "name": "drone-photogrammetry",
+      "declared": [
+        "gdal",
+        "qgis"
+      ],
+      "mentioned": [
+        "docker"
+      ]
+    },
+    "geospatial/gdal-ogr-pipelines": {
+      "category": "geospatial",
+      "name": "gdal-ogr-pipelines",
+      "declared": [
+        "gdal"
+      ],
+      "mentioned": [
+        "memory"
+      ]
+    },
+    "geospatial/geocoding-address-matching": {
+      "category": "geospatial",
+      "name": "geocoding-address-matching",
+      "declared": [],
+      "mentioned": [
+        "qgis"
+      ]
+    },
+    "geospatial/lidar-point-clouds": {
+      "category": "geospatial",
+      "name": "lidar-point-clouds",
+      "declared": [],
+      "mentioned": [
+        "gdal"
+      ]
+    },
+    "geospatial/openstreetmap-data": {
+      "category": "geospatial",
+      "name": "openstreetmap-data",
+      "declared": [
+        "gdal",
+        "postgres"
+      ],
+      "mentioned": []
+    },
+    "geospatial/postgis-spatial-sql": {
+      "category": "geospatial",
+      "name": "postgis-spatial-sql",
+      "declared": [
+        "postgres"
+      ],
+      "mentioned": [
+        "geoserver",
+        "qgis"
+      ]
+    },
+    "geospatial/qgis-map-production": {
+      "category": "geospatial",
+      "name": "qgis-map-production",
+      "declared": [
+        "qgis"
+      ],
+      "mentioned": [
+        "gdal"
+      ]
+    },
+    "geospatial/remote-sensing-indices": {
+      "category": "geospatial",
+      "name": "remote-sensing-indices",
+      "declared": [
+        "gdal"
+      ],
+      "mentioned": [
+        "fetch",
+        "time"
+      ]
+    },
+    "geospatial/spatial-reference-systems": {
+      "category": "geospatial",
+      "name": "spatial-reference-systems",
+      "declared": [],
+      "mentioned": [
+        "everything",
+        "gdal"
+      ]
+    },
+    "geospatial/spatial-statistics": {
+      "category": "geospatial",
+      "name": "spatial-statistics",
+      "declared": [],
+      "mentioned": [
+        "qgis"
+      ]
+    },
+    "geospatial/vector-tile-web-maps": {
+      "category": "geospatial",
+      "name": "vector-tile-web-maps",
+      "declared": [
+        "mapbox"
+      ],
+      "mentioned": []
+    },
+    "healthcare/health-economist": {
+      "category": "healthcare",
+      "name": "health-economist",
+      "declared": [],
+      "mentioned": [
+        "time"
+      ]
+    },
+    "integration/agent-harness-onboarding": {
+      "category": "integration",
+      "name": "agent-harness-onboarding",
+      "declared": [],
+      "mentioned": [
+        "filesystem"
+      ]
+    },
+    "integration/connector-browser-automation": {
+      "category": "integration",
+      "name": "connector-browser-automation",
+      "declared": [],
+      "mentioned": [
+        "browserbase",
+        "chrome-devtools",
+        "fetch",
+        "memory",
+        "playwright"
+      ]
+    },
+    "integration/connector-cloud-infrastructure": {
+      "category": "integration",
+      "name": "connector-cloud-infrastructure",
+      "declared": [],
+      "mentioned": [
+        "aws",
+        "cloudflare",
+        "kubernetes",
+        "railway",
+        "terraform",
+        "vercel"
+      ]
+    },
+    "integration/connector-databases": {
+      "category": "integration",
+      "name": "connector-databases",
+      "declared": [],
+      "mentioned": [
+        "clickhouse",
+        "mongodb",
+        "mysql",
+        "postgres",
+        "redis",
+        "sqlite"
+      ]
+    },
+    "integration/connector-github": {
+      "category": "integration",
+      "name": "connector-github",
+      "declared": [],
+      "mentioned": [
+        "github"
+      ]
+    },
+    "integration/connector-observability": {
+      "category": "integration",
+      "name": "connector-observability",
+      "declared": [],
+      "mentioned": [
+        "elasticsearch",
+        "grafana",
+        "sentry",
+        "time"
+      ]
+    },
+    "integration/mcp-gateway": {
+      "category": "integration",
+      "name": "mcp-gateway",
+      "declared": [],
+      "mentioned": []
+    },
+    "integration/mcp-security-review": {
+      "category": "integration",
+      "name": "mcp-security-review",
+      "declared": [],
+      "mentioned": []
+    },
+    "integration/mcp-server-author": {
+      "category": "integration",
+      "name": "mcp-server-author",
+      "declared": [],
+      "mentioned": []
+    },
+    "integration/mcp-server-install": {
+      "category": "integration",
+      "name": "mcp-server-install",
+      "declared": [],
+      "mentioned": [
+        "github",
+        "playwright",
+        "postgres"
+      ]
+    },
+    "integration/skill-pack-install": {
+      "category": "integration",
+      "name": "skill-pack-install",
+      "declared": [],
+      "mentioned": []
+    },
+    "integration/third-party-api-resilience": {
+      "category": "integration",
+      "name": "third-party-api-resilience",
+      "declared": [],
+      "mentioned": []
+    },
+    "integration/universal-skill-discovery": {
+      "category": "integration",
+      "name": "universal-skill-discovery",
+      "declared": [],
+      "mentioned": [
+        "kubernetes"
+      ]
+    },
+    "integration/webhook-delivery-design": {
+      "category": "integration",
+      "name": "webhook-delivery-design",
+      "declared": [],
+      "mentioned": [
+        "time"
+      ]
+    },
+    "knowledge/airtable-workflows": {
+      "category": "knowledge",
+      "name": "airtable-workflows",
+      "declared": [],
+      "mentioned": [
+        "airtable"
+      ]
+    },
+    "legal/accessibility-compliance": {
+      "category": "legal",
+      "name": "accessibility-compliance",
+      "declared": [],
+      "mentioned": []
+    },
+    "legal/ai-governance": {
+      "category": "legal",
+      "name": "ai-governance",
+      "declared": [],
+      "mentioned": []
+    },
+    "legal/ccpa": {
+      "category": "legal",
+      "name": "ccpa",
+      "declared": [],
+      "mentioned": []
+    },
+    "legal/contract-review": {
+      "category": "legal",
+      "name": "contract-review",
+      "declared": [],
+      "mentioned": []
+    },
+    "legal/data-retention": {
+      "category": "legal",
+      "name": "data-retention",
+      "declared": [],
+      "mentioned": []
+    },
+    "legal/gdpr": {
+      "category": "legal",
+      "name": "gdpr",
+      "declared": [],
+      "mentioned": []
+    },
+    "legal/license-compatibility": {
+      "category": "legal",
+      "name": "license-compatibility",
+      "declared": [],
+      "mentioned": []
+    },
+    "legal/nda-review": {
+      "category": "legal",
+      "name": "nda-review",
+      "declared": [],
+      "mentioned": []
+    },
+    "legal/open-source-license-selection": {
+      "category": "legal",
+      "name": "open-source-license-selection",
+      "declared": [],
+      "mentioned": []
+    },
+    "legal/privacy-policy-review": {
+      "category": "legal",
+      "name": "privacy-policy-review",
+      "declared": [],
+      "mentioned": []
+    },
+    "legal/records-management": {
+      "category": "legal",
+      "name": "records-management",
+      "declared": [],
+      "mentioned": []
+    },
+    "legal/regulatory-research": {
+      "category": "legal",
+      "name": "regulatory-research",
+      "declared": [],
+      "mentioned": []
+    },
+    "legal/sbom-analysis": {
+      "category": "legal",
+      "name": "sbom-analysis",
+      "declared": [],
+      "mentioned": []
+    },
+    "legal/security-compliance": {
+      "category": "legal",
+      "name": "security-compliance",
+      "declared": [],
+      "mentioned": []
+    },
+    "legal/software-compliance": {
+      "category": "legal",
+      "name": "software-compliance",
+      "declared": [],
+      "mentioned": []
+    },
+    "legal/terms-of-service": {
+      "category": "legal",
+      "name": "terms-of-service",
+      "declared": [],
+      "mentioned": []
+    },
+    "media/text-to-speech-production": {
+      "category": "media",
+      "name": "text-to-speech-production",
+      "declared": [],
+      "mentioned": [
+        "elevenlabs"
+      ]
+    },
+    "mobile/android-compose": {
+      "category": "mobile",
+      "name": "android-compose",
+      "declared": [],
+      "mentioned": []
+    },
+    "mobile/android-development": {
+      "category": "mobile",
+      "name": "android-development",
+      "declared": [],
+      "mentioned": []
+    },
+    "mobile/app-store-deployment": {
+      "category": "mobile",
+      "name": "app-store-deployment",
+      "declared": [],
+      "mentioned": []
+    },
+    "mobile/expo": {
+      "category": "mobile",
+      "name": "expo",
+      "declared": [],
+      "mentioned": []
+    },
+    "mobile/flutter": {
+      "category": "mobile",
+      "name": "flutter",
+      "declared": [],
+      "mentioned": []
+    },
+    "mobile/ios-development": {
+      "category": "mobile",
+      "name": "ios-development",
+      "declared": [],
+      "mentioned": []
+    },
+    "mobile/kotlin-development": {
+      "category": "mobile",
+      "name": "kotlin-development",
+      "declared": [],
+      "mentioned": []
+    },
+    "mobile/mobile-ci-cd": {
+      "category": "mobile",
+      "name": "mobile-ci-cd",
+      "declared": [],
+      "mentioned": [
+        "github"
+      ]
+    },
+    "mobile/mobile-navigation": {
+      "category": "mobile",
+      "name": "mobile-navigation",
+      "declared": [],
+      "mentioned": []
+    },
+    "mobile/mobile-networking": {
+      "category": "mobile",
+      "name": "mobile-networking",
+      "declared": [],
+      "mentioned": []
+    },
+    "mobile/mobile-performance": {
+      "category": "mobile",
+      "name": "mobile-performance",
+      "declared": [],
+      "mentioned": [
+        "memory",
+        "time"
+      ]
+    },
+    "mobile/mobile-release": {
+      "category": "mobile",
+      "name": "mobile-release",
+      "declared": [],
+      "mentioned": []
+    },
+    "mobile/mobile-security": {
+      "category": "mobile",
+      "name": "mobile-security",
+      "declared": [],
+      "mentioned": []
+    },
+    "mobile/mobile-state-management": {
+      "category": "mobile",
+      "name": "mobile-state-management",
+      "declared": [],
+      "mentioned": []
+    },
+    "mobile/mobile-storage": {
+      "category": "mobile",
+      "name": "mobile-storage",
+      "declared": [],
+      "mentioned": [
+        "sqlite"
+      ]
+    },
+    "mobile/mobile-testing": {
+      "category": "mobile",
+      "name": "mobile-testing",
+      "declared": [],
+      "mentioned": []
+    },
+    "mobile/mobile-ui": {
+      "category": "mobile",
+      "name": "mobile-ui",
+      "declared": [],
+      "mentioned": []
+    },
+    "mobile/play-store-deployment": {
+      "category": "mobile",
+      "name": "play-store-deployment",
+      "declared": [],
+      "mentioned": []
+    },
+    "mobile/react-native": {
+      "category": "mobile",
+      "name": "react-native",
+      "declared": [],
+      "mentioned": []
+    },
+    "mobile/swift-development": {
+      "category": "mobile",
+      "name": "swift-development",
+      "declared": [],
+      "mentioned": []
+    },
+    "mobile/swiftui-development": {
+      "category": "mobile",
+      "name": "swiftui-development",
+      "declared": [],
+      "mentioned": []
+    },
+    "networking/api-gateway-patterns": {
+      "category": "networking",
+      "name": "api-gateway-patterns",
+      "declared": [],
+      "mentioned": [
+        "aws",
+        "openapi",
+        "opentelemetry"
+      ]
+    },
+    "networking/dns": {
+      "category": "networking",
+      "name": "dns",
+      "declared": [],
+      "mentioned": []
+    },
+    "networking/firewalls": {
+      "category": "networking",
+      "name": "firewalls",
+      "declared": [],
+      "mentioned": []
+    },
+    "networking/http": {
+      "category": "networking",
+      "name": "http",
+      "declared": [],
+      "mentioned": []
+    },
+    "networking/http2": {
+      "category": "networking",
+      "name": "http2",
+      "declared": [],
+      "mentioned": []
+    },
+    "networking/http3": {
+      "category": "networking",
+      "name": "http3",
+      "declared": [],
+      "mentioned": []
+    },
+    "networking/load-balancing": {
+      "category": "networking",
+      "name": "load-balancing",
+      "declared": [],
+      "mentioned": []
+    },
+    "networking/network-automation": {
+      "category": "networking",
+      "name": "network-automation",
+      "declared": [],
+      "mentioned": []
+    },
+    "networking/network-debugging": {
+      "category": "networking",
+      "name": "network-debugging",
+      "declared": [],
+      "mentioned": []
+    },
+    "networking/network-performance": {
+      "category": "networking",
+      "name": "network-performance",
+      "declared": [],
+      "mentioned": []
+    },
+    "networking/packet-analysis": {
+      "category": "networking",
+      "name": "packet-analysis",
+      "declared": [],
+      "mentioned": []
+    },
+    "networking/proxies": {
+      "category": "networking",
+      "name": "proxies",
+      "declared": [],
+      "mentioned": []
+    },
+    "networking/reverse-proxy": {
+      "category": "networking",
+      "name": "reverse-proxy",
+      "declared": [],
+      "mentioned": []
+    },
+    "networking/routing": {
+      "category": "networking",
+      "name": "routing",
+      "declared": [],
+      "mentioned": []
+    },
+    "networking/service-mesh": {
+      "category": "networking",
+      "name": "service-mesh",
+      "declared": [],
+      "mentioned": []
+    },
+    "networking/switching": {
+      "category": "networking",
+      "name": "switching",
+      "declared": [],
+      "mentioned": []
+    },
+    "networking/tcp-ip": {
+      "category": "networking",
+      "name": "tcp-ip",
+      "declared": [],
+      "mentioned": []
+    },
+    "networking/tls": {
+      "category": "networking",
+      "name": "tls",
+      "declared": [],
+      "mentioned": []
+    },
+    "networking/vpn": {
+      "category": "networking",
+      "name": "vpn",
+      "declared": [],
+      "mentioned": []
+    },
+    "networking/wireshark": {
+      "category": "networking",
+      "name": "wireshark",
+      "declared": [],
+      "mentioned": []
+    },
+    "networking/zero-trust": {
+      "category": "networking",
+      "name": "zero-trust",
+      "declared": [],
+      "mentioned": []
+    },
+    "observability/distributed-tracing": {
+      "category": "observability",
+      "name": "distributed-tracing",
+      "declared": [],
+      "mentioned": []
+    },
+    "observability/grafana": {
+      "category": "observability",
+      "name": "grafana",
+      "declared": [],
+      "mentioned": [
+        "grafana"
+      ]
+    },
+    "observability/logging": {
+      "category": "observability",
+      "name": "logging",
+      "declared": [],
+      "mentioned": []
+    },
+    "observability/metrics": {
+      "category": "observability",
+      "name": "metrics",
+      "declared": [],
+      "mentioned": []
+    },
+    "observability/opentelemetry": {
+      "category": "observability",
+      "name": "opentelemetry",
+      "declared": [],
+      "mentioned": [
+        "opentelemetry"
+      ]
+    },
+    "observability/postmortems": {
+      "category": "observability",
+      "name": "postmortems",
+      "declared": [],
+      "mentioned": []
+    },
+    "observability/prometheus": {
+      "category": "observability",
+      "name": "prometheus",
+      "declared": [],
+      "mentioned": [
+        "prometheus"
+      ]
+    },
+    "observability/slo-sli": {
+      "category": "observability",
+      "name": "slo-sli",
+      "declared": [],
+      "mentioned": []
+    },
+    "os/bootloaders": {
+      "category": "os",
+      "name": "bootloaders",
+      "declared": [],
+      "mentioned": []
+    },
+    "os/containers": {
+      "category": "os",
+      "name": "containers",
+      "declared": [],
+      "mentioned": []
+    },
+    "os/device-drivers": {
+      "category": "os",
+      "name": "device-drivers",
+      "declared": [],
+      "mentioned": []
+    },
+    "os/ebpf": {
+      "category": "os",
+      "name": "ebpf",
+      "declared": [],
+      "mentioned": []
+    },
+    "os/filesystems": {
+      "category": "os",
+      "name": "filesystems",
+      "declared": [],
+      "mentioned": [
+        "filesystem"
+      ]
+    },
+    "os/hypervisors": {
+      "category": "os",
+      "name": "hypervisors",
+      "declared": [],
+      "mentioned": []
+    },
+    "os/ipc": {
+      "category": "os",
+      "name": "ipc",
+      "declared": [],
+      "mentioned": [
+        "memory"
+      ]
+    },
+    "os/kernel-development": {
+      "category": "os",
+      "name": "kernel-development",
+      "declared": [],
+      "mentioned": [
+        "memory"
+      ]
+    },
+    "os/linux-kernel": {
+      "category": "os",
+      "name": "linux-kernel",
+      "declared": [],
+      "mentioned": []
+    },
+    "os/networking-stack": {
+      "category": "os",
+      "name": "networking-stack",
+      "declared": [],
+      "mentioned": []
+    },
+    "os/operating-systems-fundamentals": {
+      "category": "os",
+      "name": "operating-systems-fundamentals",
+      "declared": [],
+      "mentioned": []
+    },
+    "os/processes-threads": {
+      "category": "os",
+      "name": "processes-threads",
+      "declared": [],
+      "mentioned": []
+    },
+    "os/schedulers": {
+      "category": "os",
+      "name": "schedulers",
+      "declared": [],
+      "mentioned": []
+    },
+    "os/syscall-analysis": {
+      "category": "os",
+      "name": "syscall-analysis",
+      "declared": [],
+      "mentioned": []
+    },
+    "os/virtual-memory": {
+      "category": "os",
+      "name": "virtual-memory",
+      "declared": [],
+      "mentioned": [
+        "memory"
+      ]
+    },
+    "os/virtualization": {
+      "category": "os",
+      "name": "virtualization",
+      "declared": [],
+      "mentioned": []
+    },
+    "os/windows-internals": {
+      "category": "os",
+      "name": "windows-internals",
+      "declared": [],
+      "mentioned": []
+    },
+    "photography/photography-raw-workflow": {
+      "category": "photography",
+      "name": "photography-raw-workflow",
+      "declared": [
+        "filesystem"
+      ],
+      "mentioned": [
+        "time"
+      ]
+    },
+    "photography/studio-lighting-color-management": {
+      "category": "photography",
+      "name": "studio-lighting-color-management",
+      "declared": [
+        "filesystem"
+      ],
+      "mentioned": []
+    },
+    "product/acceptance-criteria": {
+      "category": "product",
+      "name": "acceptance-criteria",
+      "declared": [],
+      "mentioned": []
+    },
+    "product/conversion-rate-optimization": {
+      "category": "product",
+      "name": "conversion-rate-optimization",
+      "declared": [
+        "postgres",
+        "playwright",
+        "bigquery"
+      ],
+      "mentioned": []
+    },
+    "product/experimentation": {
+      "category": "product",
+      "name": "experimentation",
+      "declared": [],
+      "mentioned": []
+    },
+    "product/pricing-strategy": {
+      "category": "product",
+      "name": "pricing-strategy",
+      "declared": [
+        "postgres",
+        "stripe",
+        "notion"
+      ],
+      "mentioned": []
+    },
+    "product/prioritization": {
+      "category": "product",
+      "name": "prioritization",
+      "declared": [],
+      "mentioned": []
+    },
+    "product/product-analytics": {
+      "category": "product",
+      "name": "product-analytics",
+      "declared": [
+        "postgres",
+        "bigquery",
+        "snowflake"
+      ],
+      "mentioned": []
+    },
+    "product/product-metrics": {
+      "category": "product",
+      "name": "product-metrics",
+      "declared": [],
+      "mentioned": []
+    },
+    "product/requirements-engineering": {
+      "category": "product",
+      "name": "requirements-engineering",
+      "declared": [],
+      "mentioned": []
+    },
+    "product/user-research": {
+      "category": "product",
+      "name": "user-research",
+      "declared": [
+        "notion",
+        "filesystem"
+      ],
+      "mentioned": []
+    },
+    "product/user-stories": {
+      "category": "product",
+      "name": "user-stories",
+      "declared": [],
+      "mentioned": []
+    },
+    "productivity/adhd": {
+      "category": "productivity",
+      "name": "adhd",
+      "declared": [],
+      "mentioned": [
+        "everything",
+        "filesystem",
+        "memory",
+        "time"
+      ]
+    },
+    "productivity/adhd-divergent-brainstorm": {
+      "category": "productivity",
+      "name": "adhd-divergent-brainstorm",
+      "declared": [],
+      "mentioned": [
+        "filesystem",
+        "linear"
+      ]
+    },
+    "productivity/adhd-output-style": {
+      "category": "productivity",
+      "name": "adhd-output-style",
+      "declared": [],
+      "mentioned": [
+        "filesystem"
+      ]
+    },
+    "productivity/adhd-task-breakdown": {
+      "category": "productivity",
+      "name": "adhd-task-breakdown",
+      "declared": [],
+      "mentioned": [
+        "stripe"
+      ]
+    },
+    "productivity/brainstorming": {
+      "category": "productivity",
+      "name": "brainstorming",
+      "declared": [],
+      "mentioned": [
+        "git",
+        "time"
+      ]
+    },
+    "productivity/calendar-assistant": {
+      "category": "productivity",
+      "name": "calendar-assistant",
+      "declared": [],
+      "mentioned": [
+        "fetch",
+        "google-calendar",
+        "time"
+      ]
+    },
+    "productivity/context-summarize": {
+      "category": "productivity",
+      "name": "context-summarize",
+      "declared": [],
+      "mentioned": [
+        "fetch",
+        "slack"
+      ]
+    },
+    "productivity/daily-journal": {
+      "category": "productivity",
+      "name": "daily-journal",
+      "declared": [],
+      "mentioned": [
+        "filesystem"
+      ]
+    },
+    "productivity/email-inbox-zero": {
+      "category": "productivity",
+      "name": "email-inbox-zero",
+      "declared": [],
+      "mentioned": [
+        "fetch",
+        "gmail"
+      ]
+    },
+    "productivity/executive-summary": {
+      "category": "productivity",
+      "name": "executive-summary",
+      "declared": [],
+      "mentioned": [
+        "filesystem"
+      ]
+    },
+    "productivity/first-principles-reasoning": {
+      "category": "productivity",
+      "name": "first-principles-reasoning",
+      "declared": [],
+      "mentioned": [
+        "filesystem"
+      ]
+    },
+    "productivity/focus": {
+      "category": "productivity",
+      "name": "focus",
+      "declared": [],
+      "mentioned": [
+        "filesystem",
+        "time"
+      ]
+    },
+    "productivity/focus-guard": {
+      "category": "productivity",
+      "name": "focus-guard",
+      "declared": [],
+      "mentioned": [
+        "everything",
+        "slack",
+        "time"
+      ]
+    },
+    "productivity/google-calendar-automation": {
+      "category": "productivity",
+      "name": "google-calendar-automation",
+      "declared": [],
+      "mentioned": [
+        "google-calendar",
+        "time"
+      ]
+    },
+    "productivity/google-sheets-automation": {
+      "category": "productivity",
+      "name": "google-sheets-automation",
+      "declared": [],
+      "mentioned": [
+        "google-sheets"
+      ]
+    },
+    "productivity/kaizen-continuous-improvement": {
+      "category": "productivity",
+      "name": "kaizen-continuous-improvement",
+      "declared": [],
+      "mentioned": [
+        "filesystem",
+        "time"
+      ]
+    },
+    "productivity/meeting-action-extractor": {
+      "category": "productivity",
+      "name": "meeting-action-extractor",
+      "declared": [],
+      "mentioned": []
+    },
+    "productivity/obsidian-sync": {
+      "category": "productivity",
+      "name": "obsidian-sync",
+      "declared": [],
+      "mentioned": [
+        "filesystem",
+        "git",
+        "obsidian"
+      ]
+    },
+    "productivity/planning": {
+      "category": "productivity",
+      "name": "planning",
+      "declared": [],
+      "mentioned": [
+        "time"
+      ]
+    },
+    "productivity/prioritization": {
+      "category": "productivity",
+      "name": "prioritization",
+      "declared": [],
+      "mentioned": [
+        "everything",
+        "time"
+      ]
+    },
+    "productivity/session-analytics": {
+      "category": "productivity",
+      "name": "session-analytics",
+      "declared": [],
+      "mentioned": [
+        "filesystem",
+        "git",
+        "time"
+      ]
+    },
+    "productivity/task-decomposition": {
+      "category": "productivity",
+      "name": "task-decomposition",
+      "declared": [],
+      "mentioned": [
+        "time"
+      ]
+    },
+    "productivity/time-blocking": {
+      "category": "productivity",
+      "name": "time-blocking",
+      "declared": [],
+      "mentioned": [
+        "slack",
+        "time"
+      ]
+    },
+    "productivity/time-management": {
+      "category": "productivity",
+      "name": "time-management",
+      "declared": [],
+      "mentioned": [
+        "time"
+      ]
+    },
+    "productivity/unlazy": {
+      "category": "productivity",
+      "name": "unlazy",
+      "declared": [],
+      "mentioned": [
+        "filesystem"
+      ]
+    },
+    "productivity/voice-to-action": {
+      "category": "productivity",
+      "name": "voice-to-action",
+      "declared": [],
+      "mentioned": [
+        "time"
+      ]
+    },
+    "programming/bash-scripting": {
+      "category": "programming",
+      "name": "bash-scripting",
+      "declared": [],
+      "mentioned": []
+    },
+    "programming/c-fundamentals": {
+      "category": "programming",
+      "name": "c-fundamentals",
+      "declared": [],
+      "mentioned": [
+        "memory"
+      ]
+    },
+    "programming/cpp-modern": {
+      "category": "programming",
+      "name": "cpp-modern",
+      "declared": [],
+      "mentioned": []
+    },
+    "programming/csharp-fundamentals": {
+      "category": "programming",
+      "name": "csharp-fundamentals",
+      "declared": [],
+      "mentioned": []
+    },
+    "programming/elixir-otp": {
+      "category": "programming",
+      "name": "elixir-otp",
+      "declared": [],
+      "mentioned": []
+    },
+    "programming/go-concurrency": {
+      "category": "programming",
+      "name": "go-concurrency",
+      "declared": [],
+      "mentioned": []
+    },
+    "programming/go-fundamentals": {
+      "category": "programming",
+      "name": "go-fundamentals",
+      "declared": [],
+      "mentioned": []
+    },
+    "programming/go-testing": {
+      "category": "programming",
+      "name": "go-testing",
+      "declared": [],
+      "mentioned": [
+        "memory"
+      ]
+    },
+    "programming/haskell-fundamentals": {
+      "category": "programming",
+      "name": "haskell-fundamentals",
+      "declared": [],
+      "mentioned": [
+        "memory"
+      ]
+    },
+    "programming/java-modern": {
+      "category": "programming",
+      "name": "java-modern",
+      "declared": [],
+      "mentioned": []
+    },
+    "programming/julia-scientific-computing": {
+      "category": "programming",
+      "name": "julia-scientific-computing",
+      "declared": [],
+      "mentioned": [
+        "time"
+      ]
+    },
+    "programming/lua-scripting": {
+      "category": "programming",
+      "name": "lua-scripting",
+      "declared": [],
+      "mentioned": [
+        "everything",
+        "redis"
+      ]
+    },
+    "programming/php-modern": {
+      "category": "programming",
+      "name": "php-modern",
+      "declared": [],
+      "mentioned": []
+    },
+    "programming/powershell-automation": {
+      "category": "programming",
+      "name": "powershell-automation",
+      "declared": [],
+      "mentioned": []
+    },
+    "programming/python-async": {
+      "category": "programming",
+      "name": "python-async",
+      "declared": [],
+      "mentioned": []
+    },
+    "programming/python-fundamentals": {
+      "category": "programming",
+      "name": "python-fundamentals",
+      "declared": [],
+      "mentioned": []
+    },
+    "programming/python-idiomatic-style": {
+      "category": "programming",
+      "name": "python-idiomatic-style",
+      "declared": [],
+      "mentioned": []
+    },
+    "programming/python-security": {
+      "category": "programming",
+      "name": "python-security",
+      "declared": [],
+      "mentioned": []
+    },
+    "programming/python-testing": {
+      "category": "programming",
+      "name": "python-testing",
+      "declared": [],
+      "mentioned": []
+    },
+    "programming/r-statistical-programming": {
+      "category": "programming",
+      "name": "r-statistical-programming",
+      "declared": [],
+      "mentioned": []
+    },
+    "programming/ruby-rails": {
+      "category": "programming",
+      "name": "ruby-rails",
+      "declared": [],
+      "mentioned": []
+    },
+    "programming/rust-async": {
+      "category": "programming",
+      "name": "rust-async",
+      "declared": [],
+      "mentioned": []
+    },
+    "programming/rust-fundamentals": {
+      "category": "programming",
+      "name": "rust-fundamentals",
+      "declared": [],
+      "mentioned": [
+        "memory"
+      ]
+    },
+    "programming/rust-testing": {
+      "category": "programming",
+      "name": "rust-testing",
+      "declared": [],
+      "mentioned": []
+    },
+    "programming/scala-fundamentals": {
+      "category": "programming",
+      "name": "scala-fundamentals",
+      "declared": [],
+      "mentioned": []
+    },
+    "programming/solidity-smart-contracts": {
+      "category": "programming",
+      "name": "solidity-smart-contracts",
+      "declared": [],
+      "mentioned": []
+    },
+    "programming/sql-advanced": {
+      "category": "programming",
+      "name": "sql-advanced",
+      "declared": [],
+      "mentioned": []
+    },
+    "programming/typescript-fundamentals": {
+      "category": "programming",
+      "name": "typescript-fundamentals",
+      "declared": [],
+      "mentioned": []
+    },
+    "programming/typescript-project-structure": {
+      "category": "programming",
+      "name": "typescript-project-structure",
+      "declared": [],
+      "mentioned": []
+    },
+    "programming/typescript-testing": {
+      "category": "programming",
+      "name": "typescript-testing",
+      "declared": [],
+      "mentioned": []
+    },
+    "project-management/clickup-workflows": {
+      "category": "project-management",
+      "name": "clickup-workflows",
+      "declared": [],
+      "mentioned": [
+        "clickup",
+        "github",
+        "jira"
+      ]
+    },
+    "research/academic-research": {
+      "category": "research",
+      "name": "academic-research",
+      "declared": [],
+      "mentioned": []
+    },
+    "research/competitive-analysis": {
+      "category": "research",
+      "name": "competitive-analysis",
+      "declared": [],
+      "mentioned": []
+    },
+    "research/data-analysis": {
+      "category": "research",
+      "name": "data-analysis",
+      "declared": [],
+      "mentioned": []
+    },
+    "research/deep-research": {
+      "category": "research",
+      "name": "deep-research",
+      "declared": [],
+      "mentioned": [
+        "everything"
+      ]
+    },
+    "research/fact-checking": {
+      "category": "research",
+      "name": "fact-checking",
+      "declared": [],
+      "mentioned": []
+    },
+    "research/search-synthesizer": {
+      "category": "research",
+      "name": "search-synthesizer",
+      "declared": [],
+      "mentioned": [
+        "fetch"
+      ]
+    },
+    "research/source-verification": {
+      "category": "research",
+      "name": "source-verification",
+      "declared": [],
+      "mentioned": []
+    },
+    "research/web-research": {
+      "category": "research",
+      "name": "web-research",
+      "declared": [],
+      "mentioned": []
+    },
+    "scientific/bioinformatics": {
+      "category": "scientific",
+      "name": "bioinformatics",
+      "declared": [],
+      "mentioned": []
+    },
+    "scientific/causal-inference": {
+      "category": "scientific",
+      "name": "causal-inference",
+      "declared": [
+        "filesystem",
+        "duckdb"
+      ],
+      "mentioned": []
+    },
+    "scientific/cfd": {
+      "category": "scientific",
+      "name": "cfd",
+      "declared": [],
+      "mentioned": []
+    },
+    "scientific/computational-chemistry": {
+      "category": "scientific",
+      "name": "computational-chemistry",
+      "declared": [],
+      "mentioned": []
+    },
+    "scientific/computational-physics": {
+      "category": "scientific",
+      "name": "computational-physics",
+      "declared": [],
+      "mentioned": []
+    },
+    "scientific/experiment-design": {
+      "category": "scientific",
+      "name": "experiment-design",
+      "declared": [],
+      "mentioned": []
+    },
+    "scientific/fea": {
+      "category": "scientific",
+      "name": "fea",
+      "declared": [],
+      "mentioned": []
+    },
+    "scientific/genomics": {
+      "category": "scientific",
+      "name": "genomics",
+      "declared": [],
+      "mentioned": []
+    },
+    "scientific/geospatial-analysis": {
+      "category": "scientific",
+      "name": "geospatial-analysis",
+      "declared": [],
+      "mentioned": [
+        "gdal"
+      ]
+    },
+    "scientific/gis": {
+      "category": "scientific",
+      "name": "gis",
+      "declared": [],
+      "mentioned": [
+        "qgis"
+      ]
+    },
+    "scientific/hpc": {
+      "category": "scientific",
+      "name": "hpc",
+      "declared": [],
+      "mentioned": []
+    },
+    "scientific/literature-review": {
+      "category": "scientific",
+      "name": "literature-review",
+      "declared": [],
+      "mentioned": []
+    },
+    "scientific/medical-imaging": {
+      "category": "scientific",
+      "name": "medical-imaging",
+      "declared": [],
+      "mentioned": []
+    },
+    "scientific/microscopy": {
+      "category": "scientific",
+      "name": "microscopy",
+      "declared": [],
+      "mentioned": []
+    },
+    "scientific/numerical-methods": {
+      "category": "scientific",
+      "name": "numerical-methods",
+      "declared": [],
+      "mentioned": [
+        "linear"
+      ]
+    },
+    "scientific/optimization": {
+      "category": "scientific",
+      "name": "optimization",
+      "declared": [],
+      "mentioned": [
+        "linear"
+      ]
+    },
+    "scientific/reproducible-research": {
+      "category": "scientific",
+      "name": "reproducible-research",
+      "declared": [],
+      "mentioned": [
+        "docker"
+      ]
+    },
+    "scientific/scientific-database-research": {
+      "category": "scientific",
+      "name": "scientific-database-research",
+      "declared": [],
+      "mentioned": []
+    },
+    "scientific/scientific-visualization": {
+      "category": "scientific",
+      "name": "scientific-visualization",
+      "declared": [],
+      "mentioned": []
+    },
+    "scientific/scientific-writing": {
+      "category": "scientific",
+      "name": "scientific-writing",
+      "declared": [],
+      "mentioned": []
+    },
+    "scientific/statistics": {
+      "category": "scientific",
+      "name": "statistics",
+      "declared": [],
+      "mentioned": []
+    },
+    "scientific/symbolic-math": {
+      "category": "scientific",
+      "name": "symbolic-math",
+      "declared": [],
+      "mentioned": []
+    },
+    "security/api-security-testing": {
+      "category": "security",
+      "name": "api-security-testing",
+      "declared": [
+        "postman",
+        "semgrep",
+        "github"
+      ],
+      "mentioned": [
+        "openapi"
+      ]
+    },
+    "security/cmd-safety-check": {
+      "category": "security",
+      "name": "cmd-safety-check",
+      "declared": [],
+      "mentioned": []
+    },
+    "security/container-security": {
+      "category": "security",
+      "name": "container-security",
+      "declared": [],
+      "mentioned": [
+        "docker"
+      ]
+    },
+    "security/dast": {
+      "category": "security",
+      "name": "dast",
+      "declared": [],
+      "mentioned": []
+    },
+    "security/dependency-audit": {
+      "category": "security",
+      "name": "dependency-audit",
+      "declared": [],
+      "mentioned": []
+    },
+    "security/iam": {
+      "category": "security",
+      "name": "iam",
+      "declared": [],
+      "mentioned": []
+    },
+    "security/incident-response": {
+      "category": "security",
+      "name": "incident-response",
+      "declared": [],
+      "mentioned": []
+    },
+    "security/kubernetes-security": {
+      "category": "security",
+      "name": "kubernetes-security",
+      "declared": [],
+      "mentioned": [
+        "kubernetes"
+      ]
+    },
+    "security/npm-auditor": {
+      "category": "security",
+      "name": "npm-auditor",
+      "declared": [],
+      "mentioned": []
+    },
+    "security/oauth2-oidc-integration": {
+      "category": "security",
+      "name": "oauth2-oidc-integration",
+      "declared": [],
+      "mentioned": [
+        "fetch"
+      ]
+    },
+    "security/prompt-injection-defense": {
+      "category": "security",
+      "name": "prompt-injection-defense",
+      "declared": [],
+      "mentioned": []
+    },
+    "security/sast": {
+      "category": "security",
+      "name": "sast",
+      "declared": [],
+      "mentioned": [
+        "semgrep",
+        "sonarqube"
+      ]
+    },
+    "security/secret-detection": {
+      "category": "security",
+      "name": "secret-detection",
+      "declared": [],
+      "mentioned": []
+    },
+    "security/secrets-management": {
+      "category": "security",
+      "name": "secrets-management",
+      "declared": [],
+      "mentioned": [
+        "aws"
+      ]
+    },
+    "security/secure-architecture": {
+      "category": "security",
+      "name": "secure-architecture",
+      "declared": [],
+      "mentioned": []
+    },
+    "security/secure-code-review": {
+      "category": "security",
+      "name": "secure-code-review",
+      "declared": [],
+      "mentioned": []
+    },
+    "security/secure-coding": {
+      "category": "security",
+      "name": "secure-coding",
+      "declared": [],
+      "mentioned": []
+    },
+    "security/security-scanner": {
+      "category": "security",
+      "name": "security-scanner",
+      "declared": [],
+      "mentioned": [
+        "aws",
+        "semgrep",
+        "snyk"
+      ]
+    },
+    "security/sonarqube-quality-gates": {
+      "category": "security",
+      "name": "sonarqube-quality-gates",
+      "declared": [],
+      "mentioned": [
+        "sonarqube"
+      ]
+    },
+    "security/threat-modeling": {
+      "category": "security",
+      "name": "threat-modeling",
+      "declared": [],
+      "mentioned": []
+    },
+    "security/zero-trust": {
+      "category": "security",
+      "name": "zero-trust",
+      "declared": [],
+      "mentioned": []
+    },
+    "testing/accessibility-automation": {
+      "category": "testing",
+      "name": "accessibility-automation",
+      "declared": [
+        "playwright",
+        "github",
+        "chrome-devtools"
+      ],
+      "mentioned": []
+    },
+    "testing/component-testing": {
+      "category": "testing",
+      "name": "component-testing",
+      "declared": [
+        "playwright",
+        "filesystem"
+      ],
+      "mentioned": [
+        "fetch"
+      ]
+    },
+    "testing/contract-testing": {
+      "category": "testing",
+      "name": "contract-testing",
+      "declared": [
+        "github",
+        "openapi",
+        "postman"
+      ],
+      "mentioned": [
+        "everything"
+      ]
+    },
+    "testing/load-testing": {
+      "category": "testing",
+      "name": "load-testing",
+      "declared": [],
+      "mentioned": [
+        "grafana",
+        "memory",
+        "prometheus"
+      ]
+    },
+    "testing/mutation-testing": {
+      "category": "testing",
+      "name": "mutation-testing",
+      "declared": [
+        "github",
+        "filesystem"
+      ],
+      "mentioned": [
+        "time"
+      ]
+    },
+    "testing/postman-api-testing": {
+      "category": "testing",
+      "name": "postman-api-testing",
+      "declared": [],
+      "mentioned": [
+        "postman"
+      ]
+    },
+    "testing/visual-regression-testing": {
+      "category": "testing",
+      "name": "visual-regression-testing",
+      "declared": [
+        "playwright",
+        "github"
+      ],
+      "mentioned": []
+    },
+    "utilities/agent-transcript": {
+      "category": "utilities",
+      "name": "agent-transcript",
+      "declared": [],
+      "mentioned": []
+    },
+    "utilities/audio-transcribe": {
+      "category": "utilities",
+      "name": "audio-transcribe",
+      "declared": [],
+      "mentioned": []
+    },
+    "utilities/automation": {
+      "category": "utilities",
+      "name": "automation",
+      "declared": [],
+      "mentioned": [
+        "time"
+      ]
+    },
+    "utilities/beam": {
+      "category": "utilities",
+      "name": "beam",
+      "declared": [],
+      "mentioned": []
+    },
+    "utilities/documentation": {
+      "category": "utilities",
+      "name": "documentation",
+      "declared": [],
+      "mentioned": []
+    },
+    "utilities/file-management": {
+      "category": "utilities",
+      "name": "file-management",
+      "declared": [],
+      "mentioned": [
+        "filesystem"
+      ]
+    },
+    "utilities/handoff": {
+      "category": "utilities",
+      "name": "handoff",
+      "declared": [],
+      "mentioned": []
+    },
+    "utilities/image": {
+      "category": "utilities",
+      "name": "image",
+      "declared": [],
+      "mentioned": []
+    },
+    "utilities/parallel-agents": {
+      "category": "utilities",
+      "name": "parallel-agents",
+      "declared": [],
+      "mentioned": []
+    },
+    "utilities/readme-standard": {
+      "category": "utilities",
+      "name": "readme-standard",
+      "declared": [],
+      "mentioned": []
+    },
+    "utilities/slack-synthesizer": {
+      "category": "utilities",
+      "name": "slack-synthesizer",
+      "declared": [],
+      "mentioned": [
+        "fetch",
+        "slack"
+      ]
+    },
+    "utilities/sonos-cli": {
+      "category": "utilities",
+      "name": "sonos-cli",
+      "declared": [],
+      "mentioned": []
+    },
+    "utilities/summarization": {
+      "category": "utilities",
+      "name": "summarization",
+      "declared": [],
+      "mentioned": []
+    },
+    "utilities/system-monitor": {
+      "category": "utilities",
+      "name": "system-monitor",
+      "declared": [],
+      "mentioned": [
+        "memory"
+      ]
+    },
+    "utilities/telegram-actions": {
+      "category": "utilities",
+      "name": "telegram-actions",
+      "declared": [],
+      "mentioned": []
+    },
+    "utilities/text-processing": {
+      "category": "utilities",
+      "name": "text-processing",
+      "declared": [],
+      "mentioned": []
+    },
+    "utilities/unit-converter": {
+      "category": "utilities",
+      "name": "unit-converter",
+      "declared": [],
+      "mentioned": [
+        "time"
+      ]
+    },
+    "utilities/weather-now": {
+      "category": "utilities",
+      "name": "weather-now",
+      "declared": [],
+      "mentioned": [
+        "fetch"
+      ]
+    },
+    "utilities/whatsapp-router": {
+      "category": "utilities",
+      "name": "whatsapp-router",
+      "declared": [],
+      "mentioned": []
+    },
+    "utilities/writing": {
+      "category": "utilities",
+      "name": "writing",
+      "declared": [],
+      "mentioned": []
+    },
+    "video/color-grading": {
+      "category": "video",
+      "name": "color-grading",
+      "declared": [
+        "davinci-resolve"
+      ],
+      "mentioned": [
+        "everything"
+      ]
+    },
+    "video/live-streaming-broadcast": {
+      "category": "video",
+      "name": "live-streaming-broadcast",
+      "declared": [],
+      "mentioned": [
+        "youtube"
+      ]
+    },
+    "video/motion-graphics": {
+      "category": "video",
+      "name": "motion-graphics",
+      "declared": [],
+      "mentioned": [
+        "blender",
+        "linear"
+      ]
+    },
+    "video/video-editing-workflow": {
+      "category": "video",
+      "name": "video-editing-workflow",
+      "declared": [
+        "davinci-resolve"
+      ],
+      "mentioned": []
+    },
+    "video/video-encoding-delivery": {
+      "category": "video",
+      "name": "video-encoding-delivery",
+      "declared": [],
+      "mentioned": []
+    },
+    "web/accessibility": {
+      "category": "web",
+      "name": "accessibility",
+      "declared": [],
+      "mentioned": []
+    },
+    "web/agent-browser": {
+      "category": "web",
+      "name": "agent-browser",
+      "declared": [],
+      "mentioned": []
+    },
+    "web/astro-sites": {
+      "category": "web",
+      "name": "astro-sites",
+      "declared": [],
+      "mentioned": []
+    },
+    "web/browser-automation": {
+      "category": "web",
+      "name": "browser-automation",
+      "declared": [],
+      "mentioned": [
+        "playwright",
+        "puppeteer"
+      ]
+    },
+    "web/form-filler": {
+      "category": "web",
+      "name": "form-filler",
+      "declared": [],
+      "mentioned": [
+        "playwright",
+        "puppeteer"
+      ]
+    },
+    "web/media-downloader": {
+      "category": "web",
+      "name": "media-downloader",
+      "declared": [],
+      "mentioned": [
+        "fetch",
+        "youtube"
+      ]
+    },
+    "web/nextjs-app-router": {
+      "category": "web",
+      "name": "nextjs-app-router",
+      "declared": [
+        "context7",
+        "filesystem"
+      ],
+      "mentioned": [
+        "fetch",
+        "playwright"
+      ]
+    },
+    "web/react-performance": {
+      "category": "web",
+      "name": "react-performance",
+      "declared": [
+        "playwright",
+        "chrome-devtools",
+        "context7"
+      ],
+      "mentioned": [
+        "memory",
+        "time"
+      ]
+    },
+    "web/seo": {
+      "category": "web",
+      "name": "seo",
+      "declared": [],
+      "mentioned": []
+    },
+    "web/svelte-development": {
+      "category": "web",
+      "name": "svelte-development",
+      "declared": [],
+      "mentioned": []
+    },
+    "web/typescript-advanced": {
+      "category": "web",
+      "name": "typescript-advanced",
+      "declared": [
+        "filesystem"
+      ],
+      "mentioned": []
+    },
+    "web/vue-development": {
+      "category": "web",
+      "name": "vue-development",
+      "declared": [],
+      "mentioned": []
+    },
+    "web/web-extraction": {
+      "category": "web",
+      "name": "web-extraction",
+      "declared": [],
+      "mentioned": []
+    },
+    "web/web-scraper": {
+      "category": "web",
+      "name": "web-scraper",
+      "declared": [],
+      "mentioned": [
+        "fetch"
+      ]
+    },
+    "web/web-scraping": {
+      "category": "web",
+      "name": "web-scraping",
+      "declared": [],
+      "mentioned": [
+        "sqlite"
+      ]
+    },
+    "web/website-testing": {
+      "category": "web",
+      "name": "website-testing",
+      "declared": [],
+      "mentioned": []
+    }
+  },
+  "servers": {
+    "ableton": {
+      "name": "Ableton Live",
+      "category": "audio",
+      "tier": "full",
+      "risk": "medium",
+      "required_env": [],
+      "transport": "stdio",
+      "declared_by": [
+        "audio/live-sound-reinforcement",
+        "audio/music-production-daw"
+      ],
+      "mentioned_by": []
+    },
+    "airtable": {
+      "name": "Airtable",
+      "category": "knowledge",
+      "tier": "standard",
+      "risk": "medium",
+      "required_env": [
+        "AIRTABLE_API_KEY"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": [
+        "knowledge/airtable-workflows"
+      ]
+    },
+    "apify": {
+      "name": "Apify",
+      "category": "automation",
+      "tier": "standard",
+      "risk": "high",
+      "required_env": [
+        "APIFY_TOKEN"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": []
+    },
+    "atlassian": {
+      "name": "Atlassian (Jira & Confluence)",
+      "category": "project-management",
+      "tier": "full",
+      "risk": "medium",
+      "required_env": [
+        "ATLASSIAN_ACCESS_TOKEN"
+      ],
+      "transport": "http",
+      "declared_by": [],
+      "mentioned_by": []
+    },
+    "autocad": {
+      "name": "AutoCAD",
+      "category": "cad",
+      "tier": "full",
+      "risk": "high",
+      "required_env": [
+        "AUTOCAD_BACKEND_URL"
+      ],
+      "transport": "stdio",
+      "declared_by": [
+        "cad/autocad-drafting"
+      ],
+      "mentioned_by": []
+    },
+    "aws": {
+      "name": "AWS",
+      "category": "cloud",
+      "tier": "full",
+      "risk": "high",
+      "required_env": [
+        "AWS_PROFILE"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": [
+        "cloud/aws-compute",
+        "cloud/aws-networking",
+        "cloud/aws-security",
+        "databases/redshift",
+        "finops/aws-cost-optimization",
+        "integration/connector-cloud-infrastructure",
+        "networking/api-gateway-patterns",
+        "security/secrets-management",
+        "security/security-scanner"
+      ]
+    },
+    "aws-docs": {
+      "name": "AWS Documentation",
+      "category": "documentation",
+      "tier": "full",
+      "risk": "low",
+      "required_env": [],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": []
+    },
+    "azure": {
+      "name": "Azure",
+      "category": "cloud",
+      "tier": "full",
+      "risk": "high",
+      "required_env": [],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": [
+        "cloud/azure-architecture",
+        "databases/sql-server",
+        "finops/azure-cost-optimization"
+      ]
+    },
+    "bigquery": {
+      "name": "BigQuery",
+      "category": "database",
+      "tier": "full",
+      "risk": "high",
+      "required_env": [
+        "BIGQUERY_PROJECT",
+        "BIGQUERY_LOCATION",
+        "GOOGLE_APPLICATION_CREDENTIALS"
+      ],
+      "transport": "stdio",
+      "declared_by": [
+        "product/conversion-rate-optimization",
+        "product/product-analytics"
+      ],
+      "mentioned_by": [
+        "databases/bigquery",
+        "finops/gcp-cost-optimization"
+      ]
+    },
+    "blender": {
+      "name": "Blender",
+      "category": "3d",
+      "tier": "standard",
+      "risk": "medium",
+      "required_env": [
+        "BLENDER_HOST",
+        "BLENDER_PORT"
+      ],
+      "transport": "stdio",
+      "declared_by": [
+        "3d/blender-geometry-nodes",
+        "3d/blender-modeling-topology",
+        "3d/blender-python-scripting",
+        "3d/blender-rendering-lighting",
+        "3d/blender-rigging-animation",
+        "3d/blender-sculpting-retopology",
+        "3d/blender-shading-materials"
+      ],
+      "mentioned_by": [
+        "3d/character-animation-principles",
+        "3d/houdini-procedural-vfx",
+        "3d/mesh-repair-printing",
+        "3d/pbr-texture-authoring",
+        "3d/three-d-asset-pipeline",
+        "video/motion-graphics"
+      ]
+    },
+    "brave-search": {
+      "name": "Brave Search",
+      "category": "search",
+      "tier": "standard",
+      "risk": "low",
+      "required_env": [
+        "BRAVE_API_KEY"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": []
+    },
+    "browserbase": {
+      "name": "Browserbase",
+      "category": "browser",
+      "tier": "full",
+      "risk": "medium",
+      "required_env": [
+        "BROWSERBASE_API_KEY",
+        "BROWSERBASE_PROJECT_ID"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": [
+        "integration/connector-browser-automation"
+      ]
+    },
+    "chroma": {
+      "name": "Chroma",
+      "category": "database",
+      "tier": "full",
+      "risk": "medium",
+      "required_env": [
+        "CHROMA_CLIENT_TYPE",
+        "CHROMA_API_KEY",
+        "CHROMA_TENANT",
+        "CHROMA_DATABASE"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": []
+    },
+    "chrome-devtools": {
+      "name": "Chrome DevTools",
+      "category": "browser",
+      "tier": "standard",
+      "risk": "medium",
+      "required_env": [],
+      "transport": "stdio",
+      "declared_by": [
+        "testing/accessibility-automation",
+        "web/react-performance"
+      ],
+      "mentioned_by": [
+        "integration/connector-browser-automation"
+      ]
+    },
+    "circleci": {
+      "name": "CircleCI",
+      "category": "ci-cd",
+      "tier": "full",
+      "risk": "medium",
+      "required_env": [
+        "CIRCLECI_TOKEN"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": [
+        "devops/circleci-pipelines"
+      ]
+    },
+    "clickhouse": {
+      "name": "ClickHouse",
+      "category": "database",
+      "tier": "full",
+      "risk": "medium",
+      "required_env": [
+        "CLICKHOUSE_HOST",
+        "CLICKHOUSE_USER",
+        "CLICKHOUSE_PASSWORD"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": [
+        "databases/clickhouse",
+        "integration/connector-databases"
+      ]
+    },
+    "clickup": {
+      "name": "ClickUp",
+      "category": "project-management",
+      "tier": "full",
+      "risk": "medium",
+      "required_env": [
+        "CLICKUP_API_KEY",
+        "CLICKUP_TEAM_ID"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": [
+        "project-management/clickup-workflows"
+      ]
+    },
+    "cloudflare": {
+      "name": "Cloudflare",
+      "category": "cloud",
+      "tier": "full",
+      "risk": "medium",
+      "required_env": [],
+      "transport": "http",
+      "declared_by": [
+        "cloud/cloudflare-workers"
+      ],
+      "mentioned_by": [
+        "cloud/cloudflare-edge",
+        "development/cf-worker-deploy",
+        "development/ci-cd-pipeline",
+        "integration/connector-cloud-infrastructure"
+      ]
+    },
+    "code-sandbox": {
+      "name": "Code Sandbox",
+      "category": "execution",
+      "tier": "full",
+      "risk": "high",
+      "required_env": [
+        "E2B_API_KEY"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": []
+    },
+    "confluence": {
+      "name": "Confluence",
+      "category": "knowledge",
+      "tier": "full",
+      "risk": "medium",
+      "required_env": [
+        "CONFLUENCE_URL",
+        "CONFLUENCE_TOKEN"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": []
+    },
+    "context7": {
+      "name": "Context7",
+      "category": "documentation",
+      "tier": "standard",
+      "risk": "low",
+      "required_env": [
+        "CONTEXT7_API_KEY"
+      ],
+      "transport": "stdio",
+      "declared_by": [
+        "development/fastapi-expert",
+        "development/nestjs-expert",
+        "web/nextjs-app-router",
+        "web/react-performance"
+      ],
+      "mentioned_by": []
+    },
+    "davinci-resolve": {
+      "name": "DaVinci Resolve",
+      "category": "video",
+      "tier": "full",
+      "risk": "medium",
+      "required_env": [],
+      "transport": "stdio",
+      "declared_by": [
+        "video/color-grading",
+        "video/video-editing-workflow"
+      ],
+      "mentioned_by": [
+        "3d/vfx-compositing"
+      ]
+    },
+    "deepwiki": {
+      "name": "DeepWiki",
+      "category": "knowledge",
+      "tier": "full",
+      "risk": "low",
+      "required_env": [],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": []
+    },
+    "desktop-commander": {
+      "name": "Desktop Commander",
+      "category": "execution",
+      "tier": "full",
+      "risk": "high",
+      "required_env": [],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": []
+    },
+    "digitalocean": {
+      "name": "DigitalOcean",
+      "category": "cloud",
+      "tier": "full",
+      "risk": "high",
+      "required_env": [
+        "DIGITALOCEAN_API_TOKEN"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": []
+    },
+    "discord": {
+      "name": "Discord",
+      "category": "communication",
+      "tier": "full",
+      "risk": "medium",
+      "required_env": [
+        "DISCORD_BOT_TOKEN"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": []
+    },
+    "docker": {
+      "name": "Docker",
+      "category": "infrastructure",
+      "tier": "full",
+      "risk": "high",
+      "required_env": [],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": [
+        "development/ci-cd-pipeline",
+        "development/docker-manager",
+        "development/dokploy",
+        "devops/circleci-pipelines",
+        "geospatial/drone-photogrammetry",
+        "scientific/reproducible-research",
+        "security/container-security"
+      ]
+    },
+    "duckdb": {
+      "name": "DuckDB / MotherDuck",
+      "category": "database",
+      "tier": "standard",
+      "risk": "medium",
+      "required_env": [
+        "MOTHERDUCK_TOKEN",
+        "DUCKDB_PATH"
+      ],
+      "transport": "stdio",
+      "declared_by": [
+        "scientific/causal-inference"
+      ],
+      "mentioned_by": [
+        "databases/duckdb"
+      ]
+    },
+    "e2b": {
+      "name": "E2B Sandbox",
+      "category": "execution",
+      "tier": "standard",
+      "risk": "high",
+      "required_env": [
+        "E2B_API_KEY"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": [
+        "execution/sandboxed-code-execution"
+      ]
+    },
+    "elasticsearch": {
+      "name": "Elasticsearch",
+      "category": "observability",
+      "tier": "full",
+      "risk": "medium",
+      "required_env": [
+        "ES_URL",
+        "ES_API_KEY"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": [
+        "databases/elasticsearch",
+        "integration/connector-observability"
+      ]
+    },
+    "elevenlabs": {
+      "name": "ElevenLabs",
+      "category": "media",
+      "tier": "standard",
+      "risk": "medium",
+      "required_env": [
+        "ELEVENLABS_API_KEY"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": [
+        "media/text-to-speech-production"
+      ]
+    },
+    "everything": {
+      "name": "Everything (test server)",
+      "category": "utilities",
+      "tier": "standard",
+      "risk": "low",
+      "required_env": [],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": [
+        "audio/live-sound-reinforcement",
+        "development/docker-manager",
+        "development/monorepo-management",
+        "geospatial/spatial-reference-systems",
+        "productivity/adhd",
+        "productivity/focus-guard",
+        "productivity/prioritization",
+        "programming/lua-scripting",
+        "research/deep-research",
+        "testing/contract-testing",
+        "video/color-grading"
+      ]
+    },
+    "exa": {
+      "name": "Exa Web Search",
+      "category": "search",
+      "tier": "standard",
+      "risk": "low",
+      "required_env": [
+        "EXA_API_KEY"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": []
+    },
+    "fetch": {
+      "name": "Fetch",
+      "category": "web",
+      "tier": "core",
+      "risk": "low",
+      "required_env": [],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": [
+        "development/graphql-api-design",
+        "development/mcp-builder",
+        "geospatial/remote-sensing-indices",
+        "integration/connector-browser-automation",
+        "productivity/calendar-assistant",
+        "productivity/context-summarize",
+        "productivity/email-inbox-zero",
+        "research/search-synthesizer",
+        "security/oauth2-oidc-integration",
+        "testing/component-testing",
+        "utilities/slack-synthesizer",
+        "utilities/weather-now",
+        "web/media-downloader",
+        "web/nextjs-app-router",
+        "web/web-scraper"
+      ]
+    },
+    "fetch-docs": {
+      "name": "Documentation Server",
+      "category": "documentation",
+      "tier": "full",
+      "risk": "low",
+      "required_env": [],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": []
+    },
+    "figma": {
+      "name": "Figma",
+      "category": "design",
+      "tier": "full",
+      "risk": "medium",
+      "required_env": [],
+      "transport": "http",
+      "declared_by": [
+        "design/iconography-systems",
+        "design/typography-and-type-systems"
+      ],
+      "mentioned_by": [
+        "creative/figma"
+      ]
+    },
+    "filesystem": {
+      "name": "Filesystem",
+      "category": "files",
+      "tier": "core",
+      "risk": "low",
+      "required_env": [],
+      "transport": "stdio",
+      "declared_by": [
+        "agents/agent-reliability",
+        "agents/human-in-the-loop-design",
+        "agents/mcp-integration-testing",
+        "ai/rag-evaluation",
+        "audio/music-notation-engraving",
+        "cloud/cloudflare-workers",
+        "databases/postgresql-performance",
+        "development/fastapi-expert",
+        "development/nestjs-expert",
+        "photography/photography-raw-workflow",
+        "photography/studio-lighting-color-management",
+        "product/user-research",
+        "scientific/causal-inference",
+        "testing/component-testing",
+        "testing/mutation-testing",
+        "web/nextjs-app-router",
+        "web/typescript-advanced"
+      ],
+      "mentioned_by": [
+        "desktop/cross-platform-desktop",
+        "development/ci-cd-pipeline",
+        "development/coding",
+        "development/issue-triage",
+        "development/pr-splitter",
+        "development/release-management",
+        "development/summarize-repo",
+        "documents/pdf",
+        "execution/sandboxed-code-execution",
+        "integration/agent-harness-onboarding",
+        "os/filesystems",
+        "productivity/adhd",
+        "productivity/adhd-divergent-brainstorm",
+        "productivity/adhd-output-style",
+        "productivity/daily-journal",
+        "productivity/executive-summary",
+        "productivity/first-principles-reasoning",
+        "productivity/focus",
+        "productivity/kaizen-continuous-improvement",
+        "productivity/obsidian-sync",
+        "productivity/session-analytics",
+        "productivity/unlazy",
+        "utilities/file-management"
+      ]
+    },
+    "firebase": {
+      "name": "Firebase",
+      "category": "cloud",
+      "tier": "full",
+      "risk": "high",
+      "required_env": [],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": []
+    },
+    "firecrawl": {
+      "name": "Firecrawl",
+      "category": "search",
+      "tier": "standard",
+      "risk": "low",
+      "required_env": [
+        "FIRECRAWL_API_KEY"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": []
+    },
+    "freecad": {
+      "name": "FreeCAD",
+      "category": "cad",
+      "tier": "full",
+      "risk": "medium",
+      "required_env": [],
+      "transport": "stdio",
+      "declared_by": [
+        "cad/cnc-machining-fabrication",
+        "cad/freecad-parametric-modeling"
+      ],
+      "mentioned_by": []
+    },
+    "gdal": {
+      "name": "GDAL",
+      "category": "geospatial",
+      "tier": "full",
+      "risk": "medium",
+      "required_env": [],
+      "transport": "stdio",
+      "declared_by": [
+        "geospatial/drone-photogrammetry",
+        "geospatial/gdal-ogr-pipelines",
+        "geospatial/openstreetmap-data",
+        "geospatial/remote-sensing-indices"
+      ],
+      "mentioned_by": [
+        "geospatial/lidar-point-clouds",
+        "geospatial/qgis-map-production",
+        "geospatial/spatial-reference-systems",
+        "scientific/geospatial-analysis"
+      ]
+    },
+    "geoserver": {
+      "name": "GeoServer",
+      "category": "geospatial",
+      "tier": "full",
+      "risk": "medium",
+      "required_env": [
+        "GEOSERVER_URL",
+        "GEOSERVER_USER",
+        "GEOSERVER_PASSWORD"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": [
+        "geospatial/postgis-spatial-sql"
+      ]
+    },
+    "git": {
+      "name": "Git",
+      "category": "source-control",
+      "tier": "core",
+      "risk": "low",
+      "required_env": [],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": [
+        "automation/n8n-workflow-automation",
+        "databases/sql-server",
+        "development/debugging",
+        "development/git",
+        "development/git-workflow",
+        "development/git-worktrees",
+        "development/github",
+        "development/github-cli",
+        "development/pr-splitter",
+        "development/release-management",
+        "development/summarize-repo",
+        "productivity/brainstorming",
+        "productivity/obsidian-sync",
+        "productivity/session-analytics"
+      ]
+    },
+    "github": {
+      "name": "GitHub",
+      "category": "source-control",
+      "tier": "standard",
+      "risk": "medium",
+      "required_env": [
+        "GITHUB_PERSONAL_ACCESS_TOKEN"
+      ],
+      "transport": "http",
+      "declared_by": [
+        "agents/agent-reliability",
+        "agents/human-in-the-loop-design",
+        "agents/mcp-integration-testing",
+        "ai/mlops",
+        "ai/rag-evaluation",
+        "databases/database-query-optimization",
+        "devops/platform-engineering",
+        "security/api-security-testing",
+        "testing/accessibility-automation",
+        "testing/contract-testing",
+        "testing/mutation-testing",
+        "testing/visual-regression-testing"
+      ],
+      "mentioned_by": [
+        "development/ci-cd-pipeline",
+        "development/devops",
+        "development/git",
+        "development/github",
+        "development/github-cli",
+        "development/issue-triage",
+        "devops/circleci-pipelines",
+        "integration/connector-github",
+        "integration/mcp-server-install",
+        "mobile/mobile-ci-cd",
+        "project-management/clickup-workflows"
+      ]
+    },
+    "gitlab": {
+      "name": "GitLab",
+      "category": "source-control",
+      "tier": "standard",
+      "risk": "medium",
+      "required_env": [
+        "GITLAB_PERSONAL_ACCESS_TOKEN"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": [
+        "development/ci-cd-pipeline",
+        "devops/circleci-pipelines"
+      ]
+    },
+    "gmail": {
+      "name": "Gmail",
+      "category": "communication",
+      "tier": "full",
+      "risk": "high",
+      "required_env": [
+        "GMAIL_CREDENTIALS_PATH"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": [
+        "productivity/email-inbox-zero"
+      ]
+    },
+    "google-calendar": {
+      "name": "Google Calendar",
+      "category": "productivity",
+      "tier": "full",
+      "risk": "medium",
+      "required_env": [
+        "GOOGLE_OAUTH_CREDENTIALS"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": [
+        "productivity/calendar-assistant",
+        "productivity/google-calendar-automation"
+      ]
+    },
+    "google-cloud-run": {
+      "name": "Google Cloud Run",
+      "category": "cloud",
+      "tier": "full",
+      "risk": "high",
+      "required_env": [],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": []
+    },
+    "google-drive": {
+      "name": "Google Drive",
+      "category": "documents",
+      "tier": "full",
+      "risk": "medium",
+      "required_env": [
+        "GDRIVE_CREDENTIALS_PATH"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": []
+    },
+    "google-maps": {
+      "name": "Google Maps",
+      "category": "geospatial",
+      "tier": "full",
+      "risk": "low",
+      "required_env": [
+        "GOOGLE_MAPS_API_KEY"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": []
+    },
+    "google-sheets": {
+      "name": "Google Sheets",
+      "category": "productivity",
+      "tier": "full",
+      "risk": "medium",
+      "required_env": [
+        "GOOGLE_APPLICATION_CREDENTIALS"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": [
+        "productivity/google-sheets-automation"
+      ]
+    },
+    "grafana": {
+      "name": "Grafana",
+      "category": "observability",
+      "tier": "full",
+      "risk": "medium",
+      "required_env": [
+        "GRAFANA_URL",
+        "GRAFANA_API_KEY"
+      ],
+      "transport": "stdio",
+      "declared_by": [
+        "agents/agent-observability",
+        "ai/model-drift-monitoring",
+        "devops/disaster-recovery"
+      ],
+      "mentioned_by": [
+        "integration/connector-observability",
+        "observability/grafana",
+        "testing/load-testing"
+      ]
+    },
+    "grasshopper": {
+      "name": "Rhino Grasshopper",
+      "category": "cad",
+      "tier": "full",
+      "risk": "medium",
+      "required_env": [],
+      "transport": "stdio",
+      "declared_by": [
+        "cad/rhino-grasshopper"
+      ],
+      "mentioned_by": []
+    },
+    "heroku": {
+      "name": "Heroku",
+      "category": "cloud",
+      "tier": "full",
+      "risk": "high",
+      "required_env": [
+        "HEROKU_API_KEY"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": []
+    },
+    "hubspot": {
+      "name": "HubSpot",
+      "category": "crm",
+      "tier": "full",
+      "risk": "medium",
+      "required_env": [],
+      "transport": "http",
+      "declared_by": [],
+      "mentioned_by": []
+    },
+    "huggingface": {
+      "name": "Hugging Face",
+      "category": "ai",
+      "tier": "full",
+      "risk": "low",
+      "required_env": [],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": [
+        "ai/fine-tuning"
+      ]
+    },
+    "ifc": {
+      "name": "IFC / BIM",
+      "category": "cad",
+      "tier": "full",
+      "risk": "low",
+      "required_env": [],
+      "transport": "stdio",
+      "declared_by": [
+        "architecture/architectural-design-workflow",
+        "architecture/construction-documents-specifications",
+        "architecture/interior-space-planning",
+        "cad/bim-ifc-coordination"
+      ],
+      "mentioned_by": []
+    },
+    "inkscape": {
+      "name": "Inkscape",
+      "category": "design",
+      "tier": "full",
+      "risk": "low",
+      "required_env": [],
+      "transport": "stdio",
+      "declared_by": [
+        "cad/laser-cutting-engraving",
+        "design/iconography-systems",
+        "design/vector-illustration-svg"
+      ],
+      "mentioned_by": []
+    },
+    "jira": {
+      "name": "Jira",
+      "category": "project-management",
+      "tier": "full",
+      "risk": "medium",
+      "required_env": [
+        "JIRA_URL",
+        "JIRA_EMAIL",
+        "JIRA_API_TOKEN"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": [
+        "project-management/clickup-workflows"
+      ]
+    },
+    "kicad": {
+      "name": "KiCad",
+      "category": "cad",
+      "tier": "full",
+      "risk": "medium",
+      "required_env": [],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": [
+        "embedded/pcb-design"
+      ]
+    },
+    "kubernetes": {
+      "name": "Kubernetes",
+      "category": "infrastructure",
+      "tier": "full",
+      "risk": "high",
+      "required_env": [
+        "KUBECONFIG"
+      ],
+      "transport": "stdio",
+      "declared_by": [
+        "ai/mlops",
+        "devops/disaster-recovery",
+        "devops/platform-engineering"
+      ],
+      "mentioned_by": [
+        "cloud/gcp-architecture",
+        "cloud/terraform-iac",
+        "development/docker-manager",
+        "finops/kubernetes-cost",
+        "integration/connector-cloud-infrastructure",
+        "integration/universal-skill-discovery",
+        "security/kubernetes-security"
+      ]
+    },
+    "linear": {
+      "name": "Linear",
+      "category": "project-management",
+      "tier": "standard",
+      "risk": "medium",
+      "required_env": [],
+      "transport": "http",
+      "declared_by": [
+        "communication/customer-support-automation"
+      ],
+      "mentioned_by": [
+        "development/pr-splitter",
+        "productivity/adhd-divergent-brainstorm",
+        "scientific/numerical-methods",
+        "scientific/optimization",
+        "video/motion-graphics"
+      ]
+    },
+    "mapbox": {
+      "name": "Mapbox",
+      "category": "geospatial",
+      "tier": "full",
+      "risk": "medium",
+      "required_env": [
+        "MAPBOX_ACCESS_TOKEN"
+      ],
+      "transport": "stdio",
+      "declared_by": [
+        "geospatial/vector-tile-web-maps"
+      ],
+      "mentioned_by": []
+    },
+    "memory": {
+      "name": "Knowledge Graph Memory",
+      "category": "memory",
+      "tier": "core",
+      "risk": "low",
+      "required_env": [],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": [
+        "3d/blender-geometry-nodes",
+        "3d/blender-sculpting-retopology",
+        "cloud/cloudflare-workers",
+        "data/batch-processing",
+        "databases/redis",
+        "desktop/electron",
+        "development/db-inspector",
+        "development/grpc-service-design",
+        "development/performance-optimization",
+        "education/spaced-repetition",
+        "embedded/bare-metal",
+        "embedded/firmware-analysis",
+        "execution/sandboxed-code-execution",
+        "finops/rightsizing",
+        "game/ecs",
+        "game/profiling",
+        "geospatial/gdal-ogr-pipelines",
+        "integration/connector-browser-automation",
+        "mobile/mobile-performance",
+        "os/ipc",
+        "os/kernel-development",
+        "os/virtual-memory",
+        "productivity/adhd",
+        "programming/c-fundamentals",
+        "programming/go-testing",
+        "programming/haskell-fundamentals",
+        "programming/rust-fundamentals",
+        "testing/load-testing",
+        "utilities/system-monitor",
+        "web/react-performance"
+      ]
+    },
+    "meshy": {
+      "name": "Meshy 3D",
+      "category": "3d",
+      "tier": "full",
+      "risk": "medium",
+      "required_env": [
+        "MESHY_API_KEY"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": []
+    },
+    "microsoft-learn": {
+      "name": "Microsoft Learn",
+      "category": "documentation",
+      "tier": "full",
+      "risk": "low",
+      "required_env": [],
+      "transport": "http",
+      "declared_by": [],
+      "mentioned_by": []
+    },
+    "mongodb": {
+      "name": "MongoDB",
+      "category": "database",
+      "tier": "full",
+      "risk": "medium",
+      "required_env": [
+        "MONGODB_URI"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": [
+        "architecture/architecture-decision-records",
+        "databases/mongodb",
+        "development/databases",
+        "development/db-inspector",
+        "integration/connector-databases"
+      ]
+    },
+    "mysql": {
+      "name": "MySQL",
+      "category": "database",
+      "tier": "standard",
+      "risk": "medium",
+      "required_env": [
+        "MYSQL_HOST",
+        "MYSQL_USER",
+        "MYSQL_PASSWORD",
+        "MYSQL_DATABASE"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": [
+        "databases/mysql",
+        "databases/oracle",
+        "databases/sql-server",
+        "development/databases",
+        "development/db-inspector",
+        "integration/connector-databases"
+      ]
+    },
+    "n8n": {
+      "name": "n8n",
+      "category": "automation",
+      "tier": "full",
+      "risk": "high",
+      "required_env": [
+        "N8N_API_URL",
+        "N8N_API_KEY"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": [
+        "automation/n8n-workflow-automation"
+      ]
+    },
+    "neo4j": {
+      "name": "Neo4j",
+      "category": "database",
+      "tier": "full",
+      "risk": "medium",
+      "required_env": [
+        "NEO4J_URL",
+        "NEO4J_USERNAME",
+        "NEO4J_PASSWORD"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": [
+        "databases/neo4j"
+      ]
+    },
+    "neon": {
+      "name": "Neon",
+      "category": "database",
+      "tier": "standard",
+      "risk": "high",
+      "required_env": [
+        "NEON_API_KEY"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": []
+    },
+    "netlify": {
+      "name": "Netlify",
+      "category": "cloud",
+      "tier": "full",
+      "risk": "high",
+      "required_env": [
+        "NETLIFY_PERSONAL_ACCESS_TOKEN"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": []
+    },
+    "notion": {
+      "name": "Notion",
+      "category": "knowledge",
+      "tier": "standard",
+      "risk": "medium",
+      "required_env": [],
+      "transport": "http",
+      "declared_by": [
+        "communication/customer-support-automation",
+        "product/pricing-strategy",
+        "product/user-research"
+      ],
+      "mentioned_by": []
+    },
+    "obsidian": {
+      "name": "Obsidian",
+      "category": "knowledge",
+      "tier": "full",
+      "risk": "low",
+      "required_env": [
+        "OBSIDIAN_VAULT_PATH"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": [
+        "productivity/obsidian-sync"
+      ]
+    },
+    "openai-docs": {
+      "name": "OpenAI Docs",
+      "category": "documentation",
+      "tier": "full",
+      "risk": "low",
+      "required_env": [],
+      "transport": "http",
+      "declared_by": [],
+      "mentioned_by": []
+    },
+    "openapi": {
+      "name": "OpenAPI",
+      "category": "integration",
+      "tier": "full",
+      "risk": "medium",
+      "required_env": [
+        "OPENAPI_SPEC_PATH"
+      ],
+      "transport": "stdio",
+      "declared_by": [
+        "testing/contract-testing"
+      ],
+      "mentioned_by": [
+        "development/api-mock-generator",
+        "development/fastapi-expert",
+        "networking/api-gateway-patterns",
+        "security/api-security-testing"
+      ]
+    },
+    "openscad": {
+      "name": "OpenSCAD",
+      "category": "cad",
+      "tier": "full",
+      "risk": "low",
+      "required_env": [],
+      "transport": "stdio",
+      "declared_by": [
+        "cad/cnc-machining-fabrication",
+        "cad/openscad-programmatic-cad"
+      ],
+      "mentioned_by": []
+    },
+    "opentelemetry": {
+      "name": "OpenTelemetry traces",
+      "category": "observability",
+      "tier": "full",
+      "risk": "medium",
+      "required_env": [
+        "BACKEND_TYPE",
+        "BACKEND_URL"
+      ],
+      "transport": "stdio",
+      "declared_by": [
+        "agents/agent-observability"
+      ],
+      "mentioned_by": [
+        "agents/agent-reliability",
+        "databases/oracle",
+        "networking/api-gateway-patterns",
+        "observability/opentelemetry"
+      ]
+    },
+    "paypal": {
+      "name": "PayPal",
+      "category": "payments",
+      "tier": "full",
+      "risk": "high",
+      "required_env": [
+        "PAYPAL_ACCESS_TOKEN",
+        "PAYPAL_ENVIRONMENT"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": []
+    },
+    "perplexity": {
+      "name": "Perplexity",
+      "category": "search",
+      "tier": "full",
+      "risk": "low",
+      "required_env": [
+        "PERPLEXITY_API_KEY"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": []
+    },
+    "pinecone": {
+      "name": "Pinecone",
+      "category": "database",
+      "tier": "standard",
+      "risk": "medium",
+      "required_env": [
+        "PINECONE_API_KEY"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": [
+        "data/vector-database"
+      ]
+    },
+    "playwright": {
+      "name": "Playwright",
+      "category": "browser",
+      "tier": "standard",
+      "risk": "medium",
+      "required_env": [],
+      "transport": "stdio",
+      "declared_by": [
+        "agents/mcp-integration-testing",
+        "product/conversion-rate-optimization",
+        "testing/accessibility-automation",
+        "testing/component-testing",
+        "testing/visual-regression-testing",
+        "web/react-performance"
+      ],
+      "mentioned_by": [
+        "integration/connector-browser-automation",
+        "integration/mcp-server-install",
+        "web/browser-automation",
+        "web/form-filler",
+        "web/nextjs-app-router"
+      ]
+    },
+    "postgres": {
+      "name": "PostgreSQL",
+      "category": "database",
+      "tier": "standard",
+      "risk": "medium",
+      "required_env": [
+        "POSTGRES_URL"
+      ],
+      "transport": "stdio",
+      "declared_by": [
+        "ai/model-drift-monitoring",
+        "databases/database-query-optimization",
+        "databases/postgresql-performance",
+        "development/fastapi-expert",
+        "development/nestjs-expert",
+        "devops/disaster-recovery",
+        "geospatial/openstreetmap-data",
+        "geospatial/postgis-spatial-sql",
+        "product/conversion-rate-optimization",
+        "product/pricing-strategy",
+        "product/product-analytics"
+      ],
+      "mentioned_by": [
+        "databases/postgresql",
+        "development/databases",
+        "development/db-inspector",
+        "integration/connector-databases",
+        "integration/mcp-server-install"
+      ]
+    },
+    "postman": {
+      "name": "Postman",
+      "category": "integration",
+      "tier": "full",
+      "risk": "medium",
+      "required_env": [
+        "POSTMAN_API_KEY"
+      ],
+      "transport": "stdio",
+      "declared_by": [
+        "security/api-security-testing",
+        "testing/contract-testing"
+      ],
+      "mentioned_by": [
+        "testing/postman-api-testing"
+      ]
+    },
+    "prometheus": {
+      "name": "Prometheus",
+      "category": "observability",
+      "tier": "full",
+      "risk": "medium",
+      "required_env": [
+        "PROMETHEUS_URL"
+      ],
+      "transport": "stdio",
+      "declared_by": [
+        "ai/model-drift-monitoring"
+      ],
+      "mentioned_by": [
+        "agents/agent-observability",
+        "observability/prometheus",
+        "testing/load-testing"
+      ]
+    },
+    "pulumi": {
+      "name": "Pulumi",
+      "category": "infrastructure",
+      "tier": "full",
+      "risk": "high",
+      "required_env": [
+        "PULUMI_ACCESS_TOKEN"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": [
+        "cloud/pulumi-iac",
+        "cloud/terraform-iac"
+      ]
+    },
+    "puppeteer": {
+      "name": "Puppeteer",
+      "category": "browser",
+      "tier": "full",
+      "risk": "medium",
+      "required_env": [],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": [
+        "web/browser-automation",
+        "web/form-filler"
+      ]
+    },
+    "qdrant": {
+      "name": "Qdrant",
+      "category": "database",
+      "tier": "standard",
+      "risk": "medium",
+      "required_env": [
+        "QDRANT_URL",
+        "QDRANT_API_KEY",
+        "COLLECTION_NAME"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": [
+        "data/vector-database"
+      ]
+    },
+    "qgis": {
+      "name": "QGIS",
+      "category": "geospatial",
+      "tier": "full",
+      "risk": "medium",
+      "required_env": [
+        "QGIS_MCP_PORT"
+      ],
+      "transport": "stdio",
+      "declared_by": [
+        "geospatial/drone-photogrammetry",
+        "geospatial/qgis-map-production"
+      ],
+      "mentioned_by": [
+        "architecture/architectural-design-workflow",
+        "cad/dxf-dwg-interchange",
+        "geospatial/cartographic-design",
+        "geospatial/geocoding-address-matching",
+        "geospatial/postgis-spatial-sql",
+        "geospatial/spatial-statistics",
+        "scientific/gis"
+      ]
+    },
+    "railway": {
+      "name": "Railway",
+      "category": "cloud",
+      "tier": "full",
+      "risk": "medium",
+      "required_env": [
+        "RAILWAY_API_TOKEN"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": [
+        "integration/connector-cloud-infrastructure"
+      ]
+    },
+    "redis": {
+      "name": "Redis",
+      "category": "database",
+      "tier": "full",
+      "risk": "medium",
+      "required_env": [
+        "REDIS_URL"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": [
+        "databases/redis",
+        "development/websocket-realtime",
+        "integration/connector-databases",
+        "programming/lua-scripting"
+      ]
+    },
+    "remote-fs": {
+      "name": "SSH Remote Filesystem",
+      "category": "files",
+      "tier": "full",
+      "risk": "high",
+      "required_env": [
+        "SSH_HOST",
+        "SSH_USER",
+        "SSH_KEY_PATH"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": []
+    },
+    "resend": {
+      "name": "Resend",
+      "category": "communication",
+      "tier": "full",
+      "risk": "high",
+      "required_env": [
+        "RESEND_API_KEY"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": [
+        "communication/transactional-email"
+      ]
+    },
+    "revit": {
+      "name": "Autodesk Revit",
+      "category": "cad",
+      "tier": "full",
+      "risk": "high",
+      "required_env": [],
+      "transport": "stdio",
+      "declared_by": [
+        "architecture/construction-documents-specifications",
+        "cad/bim-ifc-coordination"
+      ],
+      "mentioned_by": [
+        "architecture/architectural-design-workflow",
+        "architecture/interior-space-planning",
+        "cad/rhino-grasshopper"
+      ]
+    },
+    "salesforce": {
+      "name": "Salesforce",
+      "category": "crm",
+      "tier": "full",
+      "risk": "high",
+      "required_env": [
+        "SALESFORCE_INSTANCE_URL",
+        "SALESFORCE_ACCESS_TOKEN"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": []
+    },
+    "semgrep": {
+      "name": "Semgrep",
+      "category": "security",
+      "tier": "full",
+      "risk": "low",
+      "required_env": [],
+      "transport": "stdio",
+      "declared_by": [
+        "security/api-security-testing"
+      ],
+      "mentioned_by": [
+        "security/sast",
+        "security/security-scanner"
+      ]
+    },
+    "sentry": {
+      "name": "Sentry",
+      "category": "observability",
+      "tier": "standard",
+      "risk": "medium",
+      "required_env": [
+        "SENTRY_ACCESS_TOKEN"
+      ],
+      "transport": "http",
+      "declared_by": [
+        "agents/agent-observability"
+      ],
+      "mentioned_by": [
+        "integration/connector-observability"
+      ]
+    },
+    "sequential-thinking": {
+      "name": "Sequential Thinking",
+      "category": "reasoning",
+      "tier": "standard",
+      "risk": "low",
+      "required_env": [],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": []
+    },
+    "serena": {
+      "name": "Serena",
+      "category": "development",
+      "tier": "full",
+      "risk": "medium",
+      "required_env": [],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": []
+    },
+    "shopify": {
+      "name": "Shopify",
+      "category": "commerce",
+      "tier": "full",
+      "risk": "high",
+      "required_env": [
+        "SHOPIFY_ACCESS_TOKEN",
+        "SHOPIFY_STORE_DOMAIN"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": []
+    },
+    "sketchfab": {
+      "name": "Sketchfab",
+      "category": "3d",
+      "tier": "full",
+      "risk": "medium",
+      "required_env": [
+        "SKETCHFAB_API_KEY"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": []
+    },
+    "slack": {
+      "name": "Slack",
+      "category": "communication",
+      "tier": "full",
+      "risk": "medium",
+      "required_env": [
+        "SLACK_BOT_TOKEN",
+        "SLACK_TEAM_ID"
+      ],
+      "transport": "stdio",
+      "declared_by": [
+        "agents/human-in-the-loop-design",
+        "communication/customer-support-automation"
+      ],
+      "mentioned_by": [
+        "productivity/context-summarize",
+        "productivity/focus-guard",
+        "productivity/time-blocking",
+        "utilities/slack-synthesizer"
+      ]
+    },
+    "snowflake": {
+      "name": "Snowflake",
+      "category": "database",
+      "tier": "full",
+      "risk": "high",
+      "required_env": [
+        "SNOWFLAKE_ACCOUNT",
+        "SNOWFLAKE_USER",
+        "SNOWFLAKE_PASSWORD",
+        "SNOWFLAKE_WAREHOUSE",
+        "SNOWFLAKE_DATABASE"
+      ],
+      "transport": "stdio",
+      "declared_by": [
+        "product/product-analytics"
+      ],
+      "mentioned_by": [
+        "data/data-warehouse",
+        "databases/snowflake"
+      ]
+    },
+    "snyk": {
+      "name": "Snyk",
+      "category": "security",
+      "tier": "full",
+      "risk": "medium",
+      "required_env": [
+        "SNYK_TOKEN"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": [
+        "security/security-scanner"
+      ]
+    },
+    "sonarqube": {
+      "name": "SonarQube",
+      "category": "testing",
+      "tier": "full",
+      "risk": "medium",
+      "required_env": [
+        "SONARQUBE_URL",
+        "SONARQUBE_TOKEN"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": [
+        "security/sast",
+        "security/sonarqube-quality-gates"
+      ]
+    },
+    "spotify": {
+      "name": "Spotify",
+      "category": "media",
+      "tier": "full",
+      "risk": "low",
+      "required_env": [
+        "SPOTIFY_CLIENT_ID",
+        "SPOTIFY_CLIENT_SECRET"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": [
+        "audio/audio-mixing-mastering"
+      ]
+    },
+    "sqlite": {
+      "name": "SQLite",
+      "category": "database",
+      "tier": "standard",
+      "risk": "medium",
+      "required_env": [
+        "SQLITE_PATH"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": [
+        "databases/sql-server",
+        "databases/sqlite",
+        "integration/connector-databases",
+        "mobile/mobile-storage",
+        "web/web-scraping"
+      ]
+    },
+    "stripe": {
+      "name": "Stripe",
+      "category": "payments",
+      "tier": "full",
+      "risk": "high",
+      "required_env": [
+        "STRIPE_SECRET_KEY"
+      ],
+      "transport": "stdio",
+      "declared_by": [
+        "product/pricing-strategy"
+      ],
+      "mentioned_by": [
+        "productivity/adhd-task-breakdown"
+      ]
+    },
+    "supabase": {
+      "name": "Supabase",
+      "category": "database",
+      "tier": "full",
+      "risk": "high",
+      "required_env": [
+        "SUPABASE_ACCESS_TOKEN"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": []
+    },
+    "tavily": {
+      "name": "Tavily Search",
+      "category": "search",
+      "tier": "full",
+      "risk": "low",
+      "required_env": [
+        "TAVILY_API_KEY"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": []
+    },
+    "terraform": {
+      "name": "Terraform",
+      "category": "infrastructure",
+      "tier": "full",
+      "risk": "medium",
+      "required_env": [],
+      "transport": "stdio",
+      "declared_by": [
+        "devops/platform-engineering"
+      ],
+      "mentioned_by": [
+        "cloud/pulumi-iac",
+        "cloud/terraform-iac",
+        "devops/disaster-recovery",
+        "integration/connector-cloud-infrastructure"
+      ]
+    },
+    "time": {
+      "name": "Time",
+      "category": "utilities",
+      "tier": "core",
+      "risk": "low",
+      "required_env": [],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": [
+        "3d/three-d-asset-pipeline",
+        "cad/openscad-programmatic-cad",
+        "cloud/cloudflare-workers",
+        "communication/customer-support-automation",
+        "data/feature-store",
+        "data/stream-processing",
+        "databases/oracle",
+        "databases/postgresql-performance",
+        "databases/sql-server",
+        "development/coding-agent",
+        "development/cursor-agent",
+        "development/mcp-builder",
+        "development/performance-optimization",
+        "development/testing",
+        "devops/disaster-recovery",
+        "execution/sandboxed-code-execution",
+        "geospatial/remote-sensing-indices",
+        "healthcare/health-economist",
+        "integration/connector-observability",
+        "integration/webhook-delivery-design",
+        "mobile/mobile-performance",
+        "photography/photography-raw-workflow",
+        "productivity/adhd",
+        "productivity/brainstorming",
+        "productivity/calendar-assistant",
+        "productivity/focus",
+        "productivity/focus-guard",
+        "productivity/google-calendar-automation",
+        "productivity/kaizen-continuous-improvement",
+        "productivity/planning",
+        "productivity/prioritization",
+        "productivity/session-analytics",
+        "productivity/task-decomposition",
+        "productivity/time-blocking",
+        "productivity/time-management",
+        "productivity/voice-to-action",
+        "programming/julia-scientific-computing",
+        "testing/mutation-testing",
+        "utilities/automation",
+        "utilities/unit-converter",
+        "web/react-performance"
+      ]
+    },
+    "todoist": {
+      "name": "Todoist",
+      "category": "productivity",
+      "tier": "standard",
+      "risk": "medium",
+      "required_env": [
+        "TODOIST_API_TOKEN"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": []
+    },
+    "trello": {
+      "name": "Trello",
+      "category": "project-management",
+      "tier": "full",
+      "risk": "medium",
+      "required_env": [
+        "TRELLO_API_KEY",
+        "TRELLO_TOKEN"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": []
+    },
+    "twilio": {
+      "name": "Twilio",
+      "category": "communication",
+      "tier": "full",
+      "risk": "high",
+      "required_env": [
+        "TWILIO_ACCOUNT_SID",
+        "TWILIO_API_KEY",
+        "TWILIO_API_SECRET"
+      ],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": [
+        "communication/sms-messaging"
+      ]
+    },
+    "vercel": {
+      "name": "Vercel",
+      "category": "cloud",
+      "tier": "full",
+      "risk": "medium",
+      "required_env": [],
+      "transport": "http",
+      "declared_by": [],
+      "mentioned_by": [
+        "cloud/vercel-deployment",
+        "integration/connector-cloud-infrastructure"
+      ]
+    },
+    "youtube": {
+      "name": "YouTube",
+      "category": "media",
+      "tier": "full",
+      "risk": "low",
+      "required_env": [],
+      "transport": "stdio",
+      "declared_by": [],
+      "mentioned_by": [
+        "audio/podcast-production",
+        "video/live-streaming-broadcast",
+        "web/media-downloader"
+      ]
+    }
+  }
+}

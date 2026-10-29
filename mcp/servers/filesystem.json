@@ -1,10 +1,45 @@
 {
   "id": "filesystem",
+  "name": "Filesystem",
+  "description": "Read, write, move and search files inside an explicitly allowed workspace root.",
+  "category": "files",
+  "tier": "core",
+  "transport": "stdio",
+  "vendor": "modelcontextprotocol",
+  "official": true,
   "command": "npx",
   "args": [
     "-y",
-    "@modelcontextprotocol/server-filesystem",
-    "."
+    "@modelcontextprotocol/server-filesystem@0.6.2",
+    "${WORKSPACE}"
   ],
-  "category": "development"
+  "required_env": [],
+  "risk": "low",
+  "license": "MIT",
+  "docs": "https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
 }

@@ -1,12 +1,30 @@
 # Communication Skills
 
-_Generated: 2026-10-28T05:33:42+00:00_
+_Generated: 2026-10-29T14:02:53+00:00_
 
 
 
-**2 skills in this category.**
+**3 skills in this category.**
 
 ## Skills
+
+### `communication.customer-support-automation`
+
+Automate support without damaging trust: triage and routing, deflection where it works, AI drafting with human review, escalation policy and quality measurement.
+
+- **Risk:** medium
+- **Path:** `communication/customer-support-automation`
+- **Aliases:** `support-automation`, `helpdesk`
+- **Triggers:**
+  - support ticket triage automation
+  - ai support agent design
+  - support deflection rate
+  - escalation policy support
+  - csat automation
+- **Source:** custom
+- **Version:** 1.0.0
+
+Automate support without damaging trust: triage and routing, deflection where it works, AI drafting with human review, escalation policy and quality measurement.
 
 ### `communication.sms-messaging`
 

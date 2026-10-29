@@ -1,9 +1,48 @@
 {
   "id": "jira",
+  "name": "Jira",
+  "description": "Create, transition and search Jira issues.",
+  "category": "project-management",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "atlassian",
+  "official": false,
   "command": "npx",
   "args": [
     "-y",
-    "@modelcontextprotocol/server-jira"
+    "mcp-jira"
   ],
-  "category": "project_management"
+  "required_env": [
+    "JIRA_URL",
+    "JIRA_EMAIL",
+    "JIRA_API_TOKEN"
+  ],
+  "risk": "medium",
+  "license": "MIT",
+  "docs": "https://github.com/sooperset/mcp-atlassian",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
 }

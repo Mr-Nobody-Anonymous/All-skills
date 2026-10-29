@@ -1,0 +1,47 @@
+{
+  "id": "clickup",
+  "name": "ClickUp",
+  "description": "Tasks, lists, docs and comments in ClickUp workspaces.",
+  "category": "project-management",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "taazkareem",
+  "official": false,
+  "command": "npx",
+  "args": [
+    "-y",
+    "@taazkareem/clickup-mcp-server@latest"
+  ],
+  "required_env": [
+    "CLICKUP_API_KEY",
+    "CLICKUP_TEAM_ID"
+  ],
+  "risk": "medium",
+  "license": "Proprietary",
+  "docs": "https://github.com/taazkareem/clickup-mcp-server",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

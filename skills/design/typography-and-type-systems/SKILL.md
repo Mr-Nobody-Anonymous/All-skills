@@ -25,6 +25,8 @@ keywords:
   - kerning
   - variable-font
   - opentype
+mcp_servers:
+  - figma
 source: custom
 enabled: true
 ---
@@ -86,6 +88,15 @@ Design and specify type: type scales, pairing, vertical rhythm, variable fonts, 
 
 - Never ship a font you have not licensed for web embedding.
 - Do not disable zoom or user font scaling to protect a layout.
+
+## MCP Requirements
+
+| Server | Transport | Tier | Risk | Required env |
+| :--- | :--- | :--- | :--- | :--- |
+| `figma` | http | full | medium | — |
+
+Install the connectors above with `allskills mcp install --harness <harness> --profile full`,
+or list the same ids in your harness config. Full detail per server: [`docs/MCP-CATALOG.md`](MCP-CATALOG.md) and [`mcp/registry.json`](../mcp/registry.json).
 
 ## Source
 

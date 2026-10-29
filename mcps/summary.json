@@ -1,9 +1,9 @@
 {
   "version": "1.0.0",
-  "servers": 113,
+  "servers": 117,
   "by_tier": {
     "core": 5,
-    "full": 82,
+    "full": 86,
     "standard": 26
   },
   "by_category": {
@@ -20,6 +20,7 @@
     "crm": 2,
     "database": 15,
     "design": 2,
+    "development": 1,
     "documentation": 5,
     "documents": 1,
     "execution": 3,
@@ -27,10 +28,10 @@
     "geospatial": 5,
     "infrastructure": 4,
     "integration": 2,
-    "knowledge": 4,
+    "knowledge": 5,
     "media": 3,
     "memory": 1,
-    "observability": 3,
+    "observability": 5,
     "payments": 2,
     "productivity": 3,
     "project-management": 5,
@@ -45,9 +46,9 @@
   },
   "profiles": {
     "core": 5,
-    "full": 113,
+    "full": 117,
     "standard": 20
   },
   "harnesses": 18,
-  "generated_at": "2026-10-28"
+  "generated_at": "2026-10-29"
 }

@@ -57,6 +57,8 @@
     "verify:awesome-lock": "python scripts/build_awesome_lock.py --verify",
     "build:indexes": "python scripts/build_indexes.py",
     "mcp:verify": "python scripts/mcp_catalog.py verify",
+    "mcp:registry:check": "python scripts/dev/generate_mcp_registry.py --check",
+    "mcp:skill-map:check": "python scripts/dev/generate_skill_mcp_map.py --check",
     "mcp:generate": "python scripts/mcp_catalog.py generate",
     "mcp:doctor": "python scripts/mcp_catalog.py doctor",
     "verify:integration": "python scripts/generate_integration_skills.py --check"

@@ -22,6 +22,8 @@ keywords:
   - gist
   - st_intersects
   - spatial-index
+mcp_servers:
+  - postgres
 source: custom
 enabled: true
 ---
@@ -83,6 +85,15 @@ Run spatial SQL in PostGIS: geometry versus geography types, GiST indexes, ST_ s
 - `ST_Distance` on geometry in degrees returns degrees, not metres — transform first.
 - Unindexed spatial joins on large tables can lock the database for minutes.
 - Never assume SRID 4326: mixed SRIDs raise errors or silently mis-measure.
+
+## MCP Requirements
+
+| Server | Transport | Tier | Risk | Required env |
+| :--- | :--- | :--- | :--- | :--- |
+| `postgres` | stdio | standard | medium | `POSTGRES_URL` |
+
+Install the connectors above with `allskills mcp install --harness <harness> --profile full`,
+or list the same ids in your harness config. Full detail per server: [`docs/MCP-CATALOG.md`](MCP-CATALOG.md) and [`mcp/registry.json`](../mcp/registry.json).
 
 ## Source
 

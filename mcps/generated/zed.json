@@ -204,6 +204,16 @@
       },
       "settings": {}
     },
+    "deepwiki": {
+      "command": {
+        "path": "npx",
+        "args": [
+          "-y",
+          "deepwiki-mcp@latest"
+        ]
+      },
+      "settings": {}
+    },
     "desktop-commander": {
       "command": {
         "path": "npx",
@@ -692,6 +702,15 @@
       },
       "settings": {}
     },
+    "opentelemetry": {
+      "command": {
+        "path": "uvx",
+        "args": [
+          "opentelemetry-mcp"
+        ]
+      },
+      "settings": {}
+    },
     "paypal": {
       "command": {
         "path": "npx",
@@ -749,6 +768,15 @@
         "args": [
           "-y",
           "@postman/postman-mcp-server@latest"
+        ]
+      },
+      "settings": {}
+    },
+    "prometheus": {
+      "command": {
+        "path": "uvx",
+        "args": [
+          "prometheus-mcp-server"
         ]
       },
       "settings": {}
@@ -870,6 +898,18 @@
         "args": [
           "-y",
           "@modelcontextprotocol/server-sequential-thinking"
+        ]
+      },
+      "settings": {}
+    },
+    "serena": {
+      "command": {
+        "path": "uvx",
+        "args": [
+          "--from",
+          "serena-agent",
+          "serena",
+          "start-mcp-server"
         ]
       },
       "settings": {}

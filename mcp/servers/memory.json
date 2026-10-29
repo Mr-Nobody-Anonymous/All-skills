@@ -1,9 +1,44 @@
 {
   "id": "memory",
+  "name": "Knowledge Graph Memory",
+  "description": "Persistent entity/relation memory backed by a local JSON knowledge graph.",
+  "category": "memory",
+  "tier": "core",
+  "transport": "stdio",
+  "vendor": "modelcontextprotocol",
+  "official": true,
   "command": "npx",
   "args": [
     "-y",
     "@modelcontextprotocol/server-memory"
   ],
-  "category": "core"
+  "required_env": [],
+  "risk": "low",
+  "license": "MIT",
+  "docs": "https://github.com/modelcontextprotocol/servers/tree/main/src/memory",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
 }

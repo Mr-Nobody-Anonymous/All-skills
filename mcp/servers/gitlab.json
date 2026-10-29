@@ -1,0 +1,46 @@
+{
+  "id": "gitlab",
+  "name": "GitLab",
+  "description": "GitLab projects, merge requests, pipelines and issues over the official API.",
+  "category": "source-control",
+  "tier": "standard",
+  "transport": "stdio",
+  "vendor": "gitlab",
+  "official": true,
+  "command": "npx",
+  "args": [
+    "-y",
+    "@zereight/mcp-gitlab"
+  ],
+  "required_env": [
+    "GITLAB_PERSONAL_ACCESS_TOKEN"
+  ],
+  "risk": "medium",
+  "license": "MIT",
+  "docs": "https://github.com/zereight/gitlab-mcp",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

@@ -22,6 +22,8 @@ keywords:
   - materials
   - normal-map
   - color-space
+mcp_servers:
+  - blender
 source: custom
 enabled: true
 ---
@@ -82,6 +84,15 @@ Author Blender materials: Principled BSDF parameters, PBR texture wiring, colour
 - Normal/roughness/metallic maps must be Non-Color or they are gamma-corrected twice.
 - Unsupported shader nodes are dropped on glTF export, changing the look.
 - Over-bright albedo with high metallic produces physically implausible results.
+
+## MCP Requirements
+
+| Server | Transport | Tier | Risk | Required env |
+| :--- | :--- | :--- | :--- | :--- |
+| `blender` | stdio | standard | medium | `BLENDER_HOST`, `BLENDER_PORT` |
+
+Install the connectors above with `allskills mcp install --harness <harness> --profile full`,
+or list the same ids in your harness config. Full detail per server: [`docs/MCP-CATALOG.md`](MCP-CATALOG.md) and [`mcp/registry.json`](../mcp/registry.json).
 
 ## Source
 

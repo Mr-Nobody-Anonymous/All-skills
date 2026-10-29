@@ -1,0 +1,43 @@
+{
+  "id": "inkscape",
+  "name": "Inkscape",
+  "description": "Drive the Inkscape CLI: convert and clean vector art, trace bitmaps and export SVG/PNG at exact sizes.",
+  "category": "design",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "aravindev",
+  "official": false,
+  "command": "uvx",
+  "args": [
+    "inkscape-mcp"
+  ],
+  "required_env": [],
+  "risk": "low",
+  "license": "MIT",
+  "docs": "https://github.com/aravindev/inkscape_mcp",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

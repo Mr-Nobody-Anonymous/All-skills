@@ -1,10 +1,10 @@
 # Scientific Skills
 
-_Generated: 2026-10-28T05:33:42+00:00_
+_Generated: 2026-10-29T14:02:53+00:00_
 
 
 
-**21 skills in this category.**
+**22 skills in this category.**
 
 ## Skills
 
@@ -22,6 +22,24 @@ Process genomic FASTA/FASTQ files, sequence alignments, BLAST searches, and vari
 - **Version:** 1.0.0
 
 Process genomic FASTA/FASTQ files, sequence alignments, BLAST searches, and variant calling pipelines.
+
+### `scientific.causal-inference`
+
+Estimate causal effects from observational data: DAGs and confounding, matching and weighting, difference-in-differences, instrumental variables and honest sensitivity analysis.
+
+- **Risk:** medium
+- **Path:** `scientific/causal-inference`
+- **Aliases:** `causal`
+- **Triggers:**
+  - causal inference observational data
+  - difference in differences
+  - propensity score matching
+  - confounding variable dag
+  - instrumental variable analysis
+- **Source:** custom
+- **Version:** 1.0.0
+
+Estimate causal effects from observational data: DAGs and confounding, matching and weighting, difference-in-differences, instrumental variables and honest sensitivity analysis.
 
 ### `scientific.cfd`
 

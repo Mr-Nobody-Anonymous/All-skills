@@ -24,6 +24,9 @@ keywords:
   - schedules
   - revisions
   - tender
+mcp_servers:
+  - ifc
+  - revit
 source: custom
 enabled: true
 ---
@@ -85,6 +88,16 @@ Produce construction documents: drawing set structure, sheet numbering, dimensio
 
 - Never issue an unchecked set: a wrong dimension becomes a built defect.
 - Confirm local licensing requirements before signing or sealing anything.
+
+## MCP Requirements
+
+| Server | Transport | Tier | Risk | Required env |
+| :--- | :--- | :--- | :--- | :--- |
+| `ifc` | stdio | full | low | — |
+| `revit` | stdio | full | high | — |
+
+Install the connectors above with `allskills mcp install --harness <harness> --profile full`,
+or list the same ids in your harness config. Full detail per server: [`docs/MCP-CATALOG.md`](MCP-CATALOG.md) and [`mcp/registry.json`](../mcp/registry.json).
 
 ## Source
 

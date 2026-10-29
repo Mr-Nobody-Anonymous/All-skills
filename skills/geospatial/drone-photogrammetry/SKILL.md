@@ -23,6 +23,9 @@ keywords:
   - gcp
   - dsm
   - uav
+mcp_servers:
+  - gdal
+  - qgis
 source: custom
 enabled: true
 ---
@@ -83,6 +86,16 @@ Turn drone imagery into accurate products: flight planning and overlap, ground c
 - Flying without airspace authorisation is illegal in most jurisdictions.
 - GCP survey error propagates into every product; document the control accuracy.
 - Avoid publishing imagery of identifiable people or private property without consent.
+
+## MCP Requirements
+
+| Server | Transport | Tier | Risk | Required env |
+| :--- | :--- | :--- | :--- | :--- |
+| `gdal` | stdio | full | medium | — |
+| `qgis` | stdio | full | medium | `QGIS_MCP_PORT` |
+
+Install the connectors above with `allskills mcp install --harness <harness> --profile full`,
+or list the same ids in your harness config. Full detail per server: [`docs/MCP-CATALOG.md`](MCP-CATALOG.md) and [`mcp/registry.json`](../mcp/registry.json).
 
 ## Source
 

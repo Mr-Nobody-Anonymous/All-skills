@@ -1,0 +1,47 @@
+{
+  "id": "sqlite",
+  "name": "SQLite",
+  "description": "Query and inspect local SQLite databases with a safe read/write split.",
+  "category": "database",
+  "tier": "standard",
+  "transport": "stdio",
+  "vendor": "modelcontextprotocol",
+  "official": true,
+  "command": "uvx",
+  "args": [
+    "mcp-server-sqlite",
+    "--db-path",
+    "${SQLITE_PATH}"
+  ],
+  "required_env": [
+    "SQLITE_PATH"
+  ],
+  "risk": "medium",
+  "license": "MIT",
+  "docs": "https://github.com/modelcontextprotocol/servers/tree/main/src/sqlite",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

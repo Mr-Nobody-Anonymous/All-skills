@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generated_at": "2026-10-28T05:34:50.562729+00:00",
+  "generated_at": "2026-10-29T14:02:52.885331+00:00",
   "generator": "all-skills-lock v1.0.0",
-  "total_skills": 593,
+  "total_skills": 622,
   "skills": {
     "accessibility-compliance-accessibility-audit": {
       "version": "1.0.0",
@@ -13,7 +13,7 @@
         "resources/implementation-playbook.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "agent-evaluation": {
@@ -25,7 +25,7 @@
         "references/architecture-sketches.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "agent-memory": {
@@ -36,7 +36,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "critical"
     },
     "agent-memory-systems": {
@@ -48,7 +48,7 @@
         "references/detailed-guide.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "agent-tool-builder": {
@@ -60,7 +60,7 @@
         "references/detailed-guide.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "critical"
     },
     "ai-engineer": {
@@ -71,7 +71,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "critical"
     },
     "ai-engineering-toolkit": {
@@ -82,7 +82,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "high"
     },
     "analytics-product": {
@@ -93,7 +93,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "angular-state-management": {
@@ -107,7 +107,7 @@
         "references/detailed-guide.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "api-and-interface-design": {
@@ -118,7 +118,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "api-designer": {
@@ -129,7 +129,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "api-documentation": {
@@ -140,7 +140,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "architecture-decision-records": {
@@ -159,7 +159,7 @@
         "tests/test_adr_format.py"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "ast-code-transformation": {
@@ -170,7 +170,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "autonomous-loops": {
@@ -181,7 +181,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "aws-serverless": {
@@ -193,7 +193,7 @@
         "references/detailed-guide.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "critical"
     },
     "backend-patterns": {
@@ -204,7 +204,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "brainstorming": {
@@ -215,7 +215,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "critical"
     },
     "browser-act": {
@@ -226,7 +226,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "critical"
     },
     "browser-automation": {
@@ -238,7 +238,7 @@
         "references/detailed-guide.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "critical"
     },
     "changelog-automation": {
@@ -250,7 +250,7 @@
         "resources/implementation-playbook.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "critical"
     },
     "ci-cd-and-automation": {
@@ -261,7 +261,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "critical"
     },
     "cloud-devops": {
@@ -272,7 +272,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "code-review-excellence": {
@@ -284,7 +284,7 @@
         "resources/implementation-playbook.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "code-reviewer": {
@@ -295,7 +295,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "critical"
     },
     "code-showcase-systematic-debugging": {
@@ -306,7 +306,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "critical"
     },
     "concise-planning": {
@@ -317,7 +317,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "context-budget-and-pruning": {
@@ -328,7 +328,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "context-window-management": {
@@ -339,7 +339,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "critical"
     },
     "continuous-learning-v2": {
@@ -361,7 +361,7 @@
         "scripts/test_parse_instinct.py"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "copywriting": {
@@ -372,7 +372,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "database-design": {
@@ -390,7 +390,7 @@
         "scripts/schema_validator.py"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "database-migration": {
@@ -401,7 +401,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "critical"
     },
     "database-migrations": {
@@ -412,7 +412,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "design-system": {
@@ -424,7 +424,7 @@
         "references/motion-choreography.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "critical"
     },
     "dispatching-parallel-agents": {
@@ -435,7 +435,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "critical"
     },
     "docker-patterns": {
@@ -446,7 +446,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "drizzle-orm-expert": {
@@ -457,7 +457,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "email-sequence": {
@@ -469,7 +469,7 @@
         "references/detailed-guide.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "eval-harness": {
@@ -480,7 +480,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "executing-plans": {
@@ -491,7 +491,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "critical"
     },
     "frontend-patterns": {
@@ -502,7 +502,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "health-economist": {
@@ -520,7 +520,7 @@
         "tests/test_health_eval.py"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "kubernetes-architect": {
@@ -531,7 +531,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "critical"
     },
     "kubernetes-deployment": {
@@ -542,7 +542,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "llm-prompt-optimizer": {
@@ -553,7 +553,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "marketplace-rbac-audit": {
@@ -564,7 +564,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "mcp-builder": {
@@ -584,7 +584,7 @@
         "scripts/requirements.txt"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "critical"
     },
     "mcp-tool-developer": {
@@ -595,7 +595,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "micro-saas-launcher": {
@@ -607,7 +607,7 @@
         "references/detailed-guide.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "critical"
     },
     "multi-agent-architect": {
@@ -618,7 +618,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "multi-agent-brainstorming": {
@@ -629,7 +629,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "multi-agent-patterns": {
@@ -640,7 +640,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "critical"
     },
     "pdf-official": {
@@ -662,7 +662,7 @@
         "scripts/fill_pdf_form_with_annotations.py"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "critical"
     },
     "performance-profiling": {
@@ -674,7 +674,7 @@
         "scripts/lighthouse_audit.py"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "critical"
     },
     "plankton-code-quality": {
@@ -685,7 +685,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "playwright-skill": {
@@ -700,7 +700,7 @@
         "run.js"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "critical"
     },
     "prisma-expert": {
@@ -711,7 +711,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "critical"
     },
     "react-state-management": {
@@ -722,7 +722,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "critical"
     },
     "receiving-code-review": {
@@ -733,7 +733,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "critical"
     },
     "red-team-tactics": {
@@ -744,7 +744,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "high"
     },
     "redis-cli": {
@@ -762,7 +762,7 @@
         "references/server-administration.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "critical"
     },
     "requesting-code-review": {
@@ -774,7 +774,7 @@
         "code-reviewer.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "critical"
     },
     "review-and-simplify-changes": {
@@ -785,7 +785,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "critical"
     },
     "saas-mvp-launcher": {
@@ -796,7 +796,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "sast-configuration": {
@@ -807,7 +807,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "critical"
     },
     "search-first": {
@@ -818,7 +818,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "secrets-management": {
@@ -831,7 +831,7 @@
         "references/vault-setup.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "critical"
     },
     "security-sandboxing-guardrails": {
@@ -842,7 +842,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "security-scan": {
@@ -853,7 +853,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "security-scanning-security-sast": {
@@ -865,7 +865,7 @@
         "references/detailed-guide.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "critical"
     },
     "seo-geo": {
@@ -876,7 +876,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "critical"
     },
     "source-command-add-language-rules": {
@@ -887,7 +887,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "source-command-database-migration": {
@@ -898,7 +898,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "source-command-feature-development": {
@@ -909,7 +909,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "strategic-compact": {
@@ -920,7 +920,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "subagent-driven-development": {
@@ -934,7 +934,7 @@
         "spec-reviewer-prompt.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "critical"
     },
     "tailwind-design-system": {
@@ -946,7 +946,7 @@
         "resources/implementation-playbook.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "tdd": {
@@ -960,7 +960,7 @@
         "tests.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "terraform-infrastructure": {
@@ -971,7 +971,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "token-budget-advisor": {
@@ -982,7 +982,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "top-web-vulnerabilities": {
@@ -994,7 +994,7 @@
         "references/detailed-guide.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "high"
     },
     "unified-memory": {
@@ -1005,7 +1005,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "using-git-worktrees": {
@@ -1016,7 +1016,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "critical"
     },
     "verification-before-completion": {
@@ -1027,7 +1027,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "critical"
     },
     "verification-loop": {
@@ -1038,7 +1038,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "vulnerability-scanner": {
@@ -1051,7 +1051,7 @@
         "scripts/security_scan.py"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "critical"
     },
     "wcag-audit-patterns": {
@@ -1063,7 +1063,7 @@
         "resources/implementation-playbook.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "which-skill": {
@@ -1074,91 +1074,91 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "3d.blender-geometry-nodes": {
       "version": "1.0.0",
-      "sha256": "f764545011d80fdb52a8275b9de48dc9ea19235cc21c9abca8deaadac821ddf4",
+      "sha256": "dd216bb96f1b7fb26b3733dbd4cc0be3b13bb0bdab308cedbe6caab72d694688",
       "category": "3d",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "3d.blender-modeling-topology": {
       "version": "1.0.0",
-      "sha256": "b64809f4591c2b9459c365496ad4cb115a4731f57c4df221bb425a9dc7aa9826",
+      "sha256": "86128ebf98300655300bdbb5ba1e267516937110418070c4890c6d530dd39656",
       "category": "3d",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "3d.blender-python-scripting": {
       "version": "1.0.0",
-      "sha256": "762e5f091c39327f1f77b2948f33c08588187f2a3d924fb47f7e17302c6df13d",
+      "sha256": "17cc7a21623bfbfa84ba629d20718ce475d63ccf205347fb41d58b26402aa5fa",
       "category": "3d",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "3d.blender-rendering-lighting": {
       "version": "1.0.0",
-      "sha256": "ba40ec17bab1731e918d7e068adad0049cf0891c6067cc060127ce1a1445adee",
+      "sha256": "7fd063bafd78009453fae644e95db9163cbf8b43bfd1a8d944ab26eaf3c1cf02",
       "category": "3d",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "3d.blender-rigging-animation": {
       "version": "1.0.0",
-      "sha256": "f19ff68a73873511bccc8de0bc9febdae9a6d404b6d5a5b2821aa6f2244a5568",
+      "sha256": "bf38041c959b0d444b3be5e773a3d15f02613303e88a7150b1d1ad84f35a3981",
       "category": "3d",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "3d.blender-sculpting-retopology": {
       "version": "1.0.0",
-      "sha256": "25330d27aab89f865bf37d1e8fd3ec908892699436cf9700c0aca201affda481",
+      "sha256": "d4aa07bd585a2fcbc773f65c15b485a107bba4c8a6cb7668affaa139e609354d",
       "category": "3d",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "3d.blender-shading-materials": {
       "version": "1.0.0",
-      "sha256": "5b5fb8132238f490f73e91ca15fd26f3b63698f4001b9233c3d3665621354405",
+      "sha256": "42cef163f7e74437dac65f4e210a911c4021baf628c8e1dad972966dc87686df",
       "category": "3d",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "3d.character-animation-principles": {
@@ -1170,7 +1170,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "3d.houdini-procedural-vfx": {
@@ -1182,7 +1182,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "3d.mesh-repair-printing": {
@@ -1194,7 +1194,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "3d.pbr-texture-authoring": {
@@ -1206,7 +1206,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "3d.three-d-asset-pipeline": {
@@ -1218,7 +1218,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "3d.vfx-compositing": {
@@ -1230,8 +1230,56 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
+    },
+    "agents.agent-observability": {
+      "version": "1.0.0",
+      "sha256": "8cff2d3fc1d2cd0bbb6349a26e3f0f29237fd49c8dcfbe98f80c7e3c85dd1a43",
+      "category": "agents",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-29",
+      "risk": "low"
+    },
+    "agents.agent-reliability": {
+      "version": "1.0.0",
+      "sha256": "63d3245d03d3e7644ec24bb7a60d17af2aee7f4baf65911caf0a3ce170beb25c",
+      "category": "agents",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-29",
+      "risk": "medium"
+    },
+    "agents.human-in-the-loop-design": {
+      "version": "1.0.0",
+      "sha256": "890a2a75cb1849f79788dbab6adae4cff10d9a47b6b97c370e8a28b34f20a4da",
+      "category": "agents",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-29",
+      "risk": "medium"
+    },
+    "agents.mcp-integration-testing": {
+      "version": "1.0.0",
+      "sha256": "a432ed5f5eaecbbc39cf40c4d1cddd6ae5390f70df443791b2638071b12fa0d0",
+      "category": "agents",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-29",
+      "risk": "medium"
     },
     "ai.embeddings": {
       "version": "1.0.0",
@@ -1242,7 +1290,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "ai.fine-tuning": {
@@ -1254,7 +1302,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "ai.hybrid-search": {
@@ -1266,7 +1314,31 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
+      "risk": "low"
+    },
+    "ai.mlops": {
+      "version": "1.0.0",
+      "sha256": "28ae373da0a394f1e153f60c842775dfec51c3b63c9de66a2ea7ccfa4eafbff0",
+      "category": "ai",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-29",
+      "risk": "medium"
+    },
+    "ai.model-drift-monitoring": {
+      "version": "1.0.0",
+      "sha256": "9e69d55228671c990c786886d2a1fff3f6937ce352a4422361a6073db56a1503",
+      "category": "ai",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "ai.model-evaluation": {
@@ -1278,7 +1350,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "ai.model-selection": {
@@ -1290,7 +1362,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "ai.multimodal": {
@@ -1302,7 +1374,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "ai.prompt-engineering": {
@@ -1314,7 +1386,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "ai.quantization": {
@@ -1326,7 +1398,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "ai.rag": {
@@ -1338,7 +1410,19 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
+      "risk": "low"
+    },
+    "ai.rag-evaluation": {
+      "version": "1.0.0",
+      "sha256": "510582cdcec45587f3068cfc8b07b6fb12e32e0aa9d8901e8e364f2c8f873607",
+      "category": "ai",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "ai.reranking": {
@@ -1350,7 +1434,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "ai.structured-output": {
@@ -1362,7 +1446,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "ai.tool-calling": {
@@ -1374,7 +1458,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "ai.vllm": {
@@ -1386,19 +1470,19 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "architecture.architectural-design-workflow": {
       "version": "1.0.0",
-      "sha256": "ad651e918152306648c168784dd5d14d3b7a1a40684b71f487c7e6fafb998ec1",
+      "sha256": "cc3cbe10db0fac20d59e9367540ef8719c03abdac9eca7611ee1ee336a1facf1",
       "category": "architecture",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "architecture.architecture-decision-records": {
@@ -1417,31 +1501,31 @@
         "tests/test_adr_format.py"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "architecture.construction-documents-specifications": {
       "version": "1.0.0",
-      "sha256": "ba390c31be4c1eca7f27c656606ea0b68bb367befac2358e6a859bb0d14f3824",
+      "sha256": "9da0748e01db2293f7418aa258cb7995ff16f64e9fca42c151c9342bb18cd437",
       "category": "architecture",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "high"
     },
     "architecture.interior-space-planning": {
       "version": "1.0.0",
-      "sha256": "e74dda7a9cd8479a0f1cc9f0fbc71dc299daa86d3dbfbade11e41a86a2d6b0e6",
+      "sha256": "ce72392e7a5f1c8bfe5277f7a69feae95220deafae4df8f99b7e45391eea2f87",
       "category": "architecture",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "audio.audio-mixing-mastering": {
@@ -1453,43 +1537,43 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "audio.live-sound-reinforcement": {
       "version": "1.0.0",
-      "sha256": "edfbb9d6612ea1dc5d8af587fad924cf036f7e49831027e635d2f5632567a192",
+      "sha256": "af14fbd92e34a31e5da8a7bc4dc04845e1d662b2f04f201801827eb47b654d93",
       "category": "audio",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "audio.music-notation-engraving": {
       "version": "1.0.0",
-      "sha256": "a2dd768d7901dfeeaee6984d753bb12bd0d2c1961e2a979de637053a89b152c0",
+      "sha256": "8b3de19e97f713244262f01cc4b92794adf25cd49b7cdb6deafeca810492d45c",
       "category": "audio",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "audio.music-production-daw": {
       "version": "1.0.0",
-      "sha256": "dfc916e09c0306a897cfc3c0314ccae868fa784fe09936bf62a29249840ca064",
+      "sha256": "2b8a5fb7bb651e86efb366caf22fe9bd447266f156ec64aa7f91090560ddcf31",
       "category": "audio",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "audio.podcast-production": {
@@ -1501,7 +1585,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "audio.sound-design-foley": {
@@ -1513,7 +1597,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "automation.n8n-workflow-automation": {
@@ -1525,43 +1609,43 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "cad.autocad-drafting": {
       "version": "1.0.0",
-      "sha256": "66c7ddc0287f5a287ddb15645f0b0af2319e621d5f54637cf8ddd6ca33460a70",
+      "sha256": "f718e2cc9837d9db77819c262b806b363f1c553fadd45d05c6d3464b852131ee",
       "category": "cad",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "cad.bim-ifc-coordination": {
       "version": "1.0.0",
-      "sha256": "9c500e23c78eb62751340b81fab02a01e5b2a4ab7059656d4645cce5550d4c42",
+      "sha256": "12a558d1d38410fe320c74717f272cb09b2515459112a25d469e5c0e5b4f5df1",
       "category": "cad",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "cad.cnc-machining-fabrication": {
       "version": "1.0.0",
-      "sha256": "fb4005968cb878cab920a2c37576881339b51b7886fc4eeb9af08a220238c7bc",
+      "sha256": "bb733927c9aee832aa0c17c1a77dca9b96e54920539af29e2ec4ecc34232b0d7",
       "category": "cad",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "high"
     },
     "cad.dxf-dwg-interchange": {
@@ -1573,19 +1657,19 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "cad.freecad-parametric-modeling": {
       "version": "1.0.0",
-      "sha256": "48971fda53b3ce33ea460a9070741bdacfa36bbb1f0a46c0034829b3e5e87702",
+      "sha256": "934384bdec26b612f4210d333d21e487fb45a225d25d9544e7d3670f9cae5c9d",
       "category": "cad",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "cad.fusion360-solid-modeling": {
@@ -1597,43 +1681,43 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "cad.laser-cutting-engraving": {
       "version": "1.0.0",
-      "sha256": "3ed607324974b32e1e4957d6d96aacfc377155837c69f7fd6e2c47bde4c81cd5",
+      "sha256": "c29ee4605a9ad1ee92d0ecc21053230c9b713042ef0b464aa5e8ade86724a958",
       "category": "cad",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "high"
     },
     "cad.openscad-programmatic-cad": {
       "version": "1.0.0",
-      "sha256": "7fc53b737aa06dd79813e0a7267c41176079726fef3e3cdb8fd4972d5369c3be",
+      "sha256": "3ccbb970ee100b2cdec1e0fa60f64393eb542d43df36cf163be3fc0164c478ce",
       "category": "cad",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "cad.rhino-grasshopper": {
       "version": "1.0.0",
-      "sha256": "38ca854a08fa5516ab6707aa2f03146fc5dea370e5ee5ef86e9960e5baaafbef",
+      "sha256": "04355c54496fa65c01d0107f8a722c672a52a2b1523923afed99e8f01100365f",
       "category": "cad",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "cad.technical-drawing-gdt": {
@@ -1645,7 +1729,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "cloud.aws-compute": {
@@ -1657,7 +1741,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "cloud.aws-networking": {
@@ -1669,7 +1753,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "cloud.aws-security": {
@@ -1681,7 +1765,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "cloud.azure-architecture": {
@@ -1693,7 +1777,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "cloud.cloudflare-edge": {
@@ -1705,8 +1789,20 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
+    },
+    "cloud.cloudflare-workers": {
+      "version": "1.0.0",
+      "sha256": "1b1d67116cb70a968f991fc36fc02e7f24127615a0d67ff49c4671ede679cb30",
+      "category": "cloud",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-29",
+      "risk": "medium"
     },
     "cloud.gcp-architecture": {
       "version": "1.0.0",
@@ -1717,7 +1813,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "cloud.pulumi-iac": {
@@ -1729,7 +1825,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "high"
     },
     "cloud.terraform-iac": {
@@ -1741,7 +1837,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "high"
     },
     "cloud.vercel-deployment": {
@@ -1753,8 +1849,20 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
+    },
+    "communication.customer-support-automation": {
+      "version": "1.0.0",
+      "sha256": "e7fb58bdca0d4f6faaee27b714c87bf27eba7d48bb9736ffc3a1c258e51ca75a",
+      "category": "communication",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-29",
+      "risk": "medium"
     },
     "communication.sms-messaging": {
       "version": "1.0.0",
@@ -1765,7 +1873,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "high"
     },
     "communication.transactional-email": {
@@ -1777,7 +1885,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "creative.creative-writing": {
@@ -1789,7 +1897,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "creative.figma": {
@@ -1801,7 +1909,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "creative.graphic-design": {
@@ -1813,7 +1921,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "creative.ui-design": {
@@ -1825,7 +1933,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "data.apache-airflow": {
@@ -1837,7 +1945,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "data.apache-flink": {
@@ -1849,7 +1957,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "data.apache-kafka": {
@@ -1861,7 +1969,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "data.apache-spark": {
@@ -1873,7 +1981,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "data.batch-processing": {
@@ -1885,7 +1993,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "data.cdc": {
@@ -1897,7 +2005,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "data.dagster": {
@@ -1909,7 +2017,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "data.data-catalog": {
@@ -1921,7 +2029,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "data.data-contracts": {
@@ -1933,7 +2041,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "data.data-governance": {
@@ -1945,7 +2053,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "data.data-lineage": {
@@ -1957,7 +2065,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "data.data-migration": {
@@ -1969,7 +2077,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "data.data-observability": {
@@ -1981,7 +2089,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "data.data-quality": {
@@ -1993,7 +2101,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "data.data-warehouse": {
@@ -2005,7 +2113,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "data.dbt": {
@@ -2017,7 +2125,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "data.elt-pipeline-design": {
@@ -2029,7 +2137,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "data.etl-pipeline-design": {
@@ -2041,7 +2149,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "data.event-driven-data": {
@@ -2053,7 +2161,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "data.feature-store": {
@@ -2065,7 +2173,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "data.lakehouse": {
@@ -2077,7 +2185,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "data.schema-evolution": {
@@ -2089,7 +2197,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "data.stream-processing": {
@@ -2101,7 +2209,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "data.vector-database": {
@@ -2113,7 +2221,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "databases.bigquery": {
@@ -2125,7 +2233,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "databases.clickhouse": {
@@ -2137,8 +2245,20 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
+    },
+    "databases.database-query-optimization": {
+      "version": "1.0.0",
+      "sha256": "489d7e36741e277402d8acbb4824364a0a070c483268eb85167da782d722557f",
+      "category": "databases",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-29",
+      "risk": "medium"
     },
     "databases.databricks": {
       "version": "1.0.0",
@@ -2149,7 +2269,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "databases.duckdb": {
@@ -2161,7 +2281,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "databases.elasticsearch": {
@@ -2173,7 +2293,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "databases.mongodb": {
@@ -2185,7 +2305,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "databases.mysql": {
@@ -2197,7 +2317,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "databases.neo4j": {
@@ -2209,7 +2329,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "databases.opensearch": {
@@ -2221,7 +2341,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "databases.oracle": {
@@ -2233,7 +2353,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "databases.postgresql": {
@@ -2245,8 +2365,20 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
+    },
+    "databases.postgresql-performance": {
+      "version": "1.0.0",
+      "sha256": "2bb68d6148c65bff0fc5ab3c8bb88e123ec43da2d3b1a8d5b0e845ea860e1a75",
+      "category": "databases",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-29",
+      "risk": "medium"
     },
     "databases.redis": {
       "version": "1.0.0",
@@ -2257,7 +2389,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "databases.redshift": {
@@ -2269,7 +2401,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "databases.snowflake": {
@@ -2281,7 +2413,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "databases.sql-server": {
@@ -2293,7 +2425,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "databases.sqlite": {
@@ -2305,7 +2437,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "design.avatar-creator": {
@@ -2319,7 +2451,7 @@
       "dependencies": [
         "optional:image-generator"
       ],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "design.branding": {
@@ -2331,7 +2463,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "design.editorial-layout-design": {
@@ -2343,7 +2475,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "design.frontend-design": {
@@ -2355,19 +2487,19 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "design.iconography-systems": {
       "version": "1.0.0",
-      "sha256": "312407ed68054d5e8e89e0734823ff0ca7ed904828d5ff160a7c1d64d77f3008",
+      "sha256": "b5235d95811798ae6f3b6591a3986750e9ee9bcb901dd8eed58184ffae3ad883",
       "category": "design",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "design.image-gen": {
@@ -2381,7 +2513,7 @@
       "dependencies": [
         "optional:image-generator"
       ],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "design.presentations": {
@@ -2393,7 +2525,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "design.print-production-prepress": {
@@ -2405,7 +2537,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "design.remotion-best-practices": {
@@ -2420,19 +2552,19 @@
         "optional:node",
         "optional:remotion"
       ],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "design.typography-and-type-systems": {
       "version": "1.0.0",
-      "sha256": "e5d1726a5fe3dc9ceced2a06e4145f8413bebf1b5248bd44d95a5ccaf048d9e1",
+      "sha256": "d4dc4d4fac67d0ee08068e19fd2537dd684edd9142295189ab7f69d42230a8e3",
       "category": "design",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "design.ui-ux": {
@@ -2444,19 +2576,19 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "design.vector-illustration-svg": {
       "version": "1.0.0",
-      "sha256": "c85f9d5b928d1903532527fa517223548e9ea6da476ee15a6f2f3316649f185a",
+      "sha256": "a3b1b30215a5059a93a9bcad29578a415324fd2a5f9312a155d395f62f906ef7",
       "category": "design",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "design.veo-video-generator": {
@@ -2470,7 +2602,7 @@
       "dependencies": [
         "optional:GOOGLE_API_KEY"
       ],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "desktop.app-packaging": {
@@ -2482,7 +2614,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "desktop.auto-update": {
@@ -2494,7 +2626,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "desktop.avalonia": {
@@ -2506,7 +2638,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "desktop.cross-platform-desktop": {
@@ -2518,7 +2650,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "desktop.desktop-security": {
@@ -2530,7 +2662,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "desktop.electron": {
@@ -2542,7 +2674,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "desktop.macos-native": {
@@ -2554,7 +2686,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "desktop.pyqt": {
@@ -2566,7 +2698,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "desktop.pyside": {
@@ -2578,7 +2710,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "desktop.qt": {
@@ -2590,7 +2722,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "desktop.tauri": {
@@ -2602,7 +2734,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "desktop.tkinter": {
@@ -2614,7 +2746,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "desktop.winui": {
@@ -2626,7 +2758,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "desktop.wpf": {
@@ -2638,7 +2770,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "development.api-mock-generator": {
@@ -2652,7 +2784,7 @@
       "dependencies": [
         "optional:test-framework"
       ],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "development.architecture": {
@@ -2664,7 +2796,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "development.autoreview": {
@@ -2678,7 +2810,7 @@
       "dependencies": [
         "optional:codex-or-claude-cli"
       ],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "development.backend": {
@@ -2690,7 +2822,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "development.behavior-validator": {
@@ -2702,7 +2834,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "development.brainstorming": {
@@ -2716,7 +2848,7 @@
         "references/upstream-SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "development.cf-worker-deploy": {
@@ -2730,7 +2862,7 @@
       "dependencies": [
         "optional:wrangler"
       ],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "high"
     },
     "development.ci-cd-pipeline": {
@@ -2742,7 +2874,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "development.code-review": {
@@ -2754,7 +2886,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "development.coding": {
@@ -2766,7 +2898,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "development.coding-agent": {
@@ -2780,7 +2912,7 @@
       "dependencies": [
         "optional:codex-or-claude-cli"
       ],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "development.crabbox": {
@@ -2794,7 +2926,7 @@
       "dependencies": [
         "optional:crabbox"
       ],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "development.cursor-agent": {
@@ -2808,7 +2940,7 @@
       "dependencies": [
         "optional:cursor-agent"
       ],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "development.databases": {
@@ -2820,7 +2952,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "development.db-inspector": {
@@ -2834,7 +2966,7 @@
       "dependencies": [
         "optional:database-client"
       ],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "development.debugging": {
@@ -2846,7 +2978,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "development.devops": {
@@ -2858,7 +2990,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "development.docker-manager": {
@@ -2872,7 +3004,7 @@
       "dependencies": [
         "optional:docker"
       ],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "high"
     },
     "development.dokploy": {
@@ -2886,8 +3018,20 @@
       "dependencies": [
         "optional:DOKPLOY_API_KEY"
       ],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "high"
+    },
+    "development.fastapi-expert": {
+      "version": "1.0.0",
+      "sha256": "973a3063592c285367cf563e91bc50f94c934be6463fb8c9db7eeec8f5bd4130",
+      "category": "development",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-29",
+      "risk": "low"
     },
     "development.feature-flag-management": {
       "version": "1.0.0",
@@ -2898,7 +3042,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "development.frontend": {
@@ -2910,7 +3054,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "development.git": {
@@ -2924,7 +3068,7 @@
       "dependencies": [
         "git"
       ],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "development.git-workflow": {
@@ -2938,7 +3082,7 @@
       "dependencies": [
         "git"
       ],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "development.git-worktrees": {
@@ -2954,7 +3098,7 @@
       "dependencies": [
         "git"
       ],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "development.github": {
@@ -2969,7 +3113,7 @@
         "git",
         "gh-cli-optional"
       ],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "development.github-cli": {
@@ -2983,7 +3127,7 @@
       "dependencies": [
         "optional:gh"
       ],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "development.graphql-api-design": {
@@ -2995,7 +3139,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "development.grpc-service-design": {
@@ -3007,7 +3151,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "development.issue-triage": {
@@ -3019,7 +3163,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "development.mcp-builder": {
@@ -3043,7 +3187,7 @@
       "dependencies": [
         "python-or-node"
       ],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "development.mcp-server-development": {
@@ -3065,7 +3209,7 @@
         "references/upstream-SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "development.monorepo-management": {
@@ -3077,8 +3221,20 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
+    },
+    "development.nestjs-expert": {
+      "version": "1.0.0",
+      "sha256": "f2dc091d42c83724b761b190bc4ec6242925518b0ddfe19bd01873181c72470a",
+      "category": "development",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-29",
+      "risk": "low"
     },
     "development.performance-optimization": {
       "version": "1.0.0",
@@ -3089,7 +3245,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "development.pr-splitter": {
@@ -3101,7 +3257,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "development.receiving-code-review": {
@@ -3115,7 +3271,7 @@
         "references/upstream-SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "development.refactoring": {
@@ -3127,7 +3283,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "development.release-management": {
@@ -3139,7 +3295,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "development.requesting-code-review": {
@@ -3154,7 +3310,7 @@
         "references/upstream-SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "development.summarize-repo": {
@@ -3166,7 +3322,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "development.tdd": {
@@ -3178,7 +3334,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "development.testing": {
@@ -3190,7 +3346,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "development.verification-before-completion": {
@@ -3204,7 +3360,7 @@
         "references/upstream-SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "development.websocket-realtime": {
@@ -3216,7 +3372,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "devops.circleci-pipelines": {
@@ -3228,8 +3384,32 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
+    },
+    "devops.disaster-recovery": {
+      "version": "1.0.0",
+      "sha256": "a47717828a8204e222d997f0a2086e20ba6f7c5e7514d702b3df3df3aa7cc2ad",
+      "category": "devops",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-29",
+      "risk": "high"
+    },
+    "devops.platform-engineering": {
+      "version": "1.0.0",
+      "sha256": "1b5bc8ff0d11ae3ba7380636489eb5c06ea4c77def71b6f301f6b02ba73e6dee",
+      "category": "devops",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-29",
+      "risk": "medium"
     },
     "documents.csv": {
       "version": "1.0.0",
@@ -3240,7 +3420,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "documents.docx": {
@@ -3252,7 +3432,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "documents.expense-parser": {
@@ -3266,7 +3446,7 @@
       "dependencies": [
         "optional:ocr"
       ],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "documents.markdown": {
@@ -3278,7 +3458,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "documents.pdf": {
@@ -3290,7 +3470,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "documents.pptx": {
@@ -3302,7 +3482,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "documents.xlsx": {
@@ -3314,7 +3494,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "education.curriculum-design": {
@@ -3326,7 +3506,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "education.quiz-generation": {
@@ -3338,7 +3518,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "education.spaced-repetition": {
@@ -3350,7 +3530,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "education.tutoring": {
@@ -3362,7 +3542,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "embedded.arduino": {
@@ -3374,7 +3554,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "embedded.bare-metal": {
@@ -3386,7 +3566,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "embedded.can-bus": {
@@ -3398,7 +3578,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "embedded.device-drivers": {
@@ -3410,7 +3590,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "embedded.embedded-linux": {
@@ -3422,7 +3602,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "embedded.embedded-security": {
@@ -3434,7 +3614,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "embedded.embedded-testing": {
@@ -3446,7 +3626,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "embedded.esp32": {
@@ -3458,7 +3638,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "embedded.esp8266": {
@@ -3470,7 +3650,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "embedded.firmware-analysis": {
@@ -3482,7 +3662,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "embedded.freertos": {
@@ -3494,7 +3674,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "embedded.i2c": {
@@ -3506,7 +3686,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "embedded.modbus": {
@@ -3518,7 +3698,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "embedded.mqtt": {
@@ -3530,7 +3710,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "embedded.pcb-design": {
@@ -3542,7 +3722,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "embedded.raspberry-pi": {
@@ -3554,7 +3734,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "embedded.robotics": {
@@ -3566,7 +3746,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "embedded.rp2040": {
@@ -3578,7 +3758,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "embedded.sensor-integration": {
@@ -3590,7 +3770,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "embedded.spi": {
@@ -3602,7 +3782,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "embedded.stm32": {
@@ -3614,7 +3794,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "embedded.uart": {
@@ -3626,7 +3806,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "embedded.zephyr": {
@@ -3638,7 +3818,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "execution.sandboxed-code-execution": {
@@ -3650,7 +3830,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "high"
     },
     "finance.accounting": {
@@ -3662,7 +3842,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "finance.financial-analysis": {
@@ -3674,7 +3854,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "finance.financial-modeling": {
@@ -3686,7 +3866,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "finops.ai-inference-cost": {
@@ -3698,7 +3878,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "finops.aws-cost-optimization": {
@@ -3710,7 +3890,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "finops.azure-cost-optimization": {
@@ -3722,7 +3902,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "finops.cloud-cost-analysis": {
@@ -3734,7 +3914,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "finops.gcp-cost-optimization": {
@@ -3746,7 +3926,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "finops.idle-resource-detection": {
@@ -3758,7 +3938,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "finops.kubernetes-cost": {
@@ -3770,7 +3950,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "finops.rightsizing": {
@@ -3782,7 +3962,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "game.asset-pipelines": {
@@ -3794,7 +3974,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "game.directx": {
@@ -3806,7 +3986,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "game.ecs": {
@@ -3818,7 +3998,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "game.game-ai": {
@@ -3830,7 +4010,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "game.game-testing": {
@@ -3842,7 +4022,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "game.game-ui": {
@@ -3854,7 +4034,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "game.gameplay-programming": {
@@ -3866,7 +4046,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "game.godot": {
@@ -3878,7 +4058,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "game.graphics-programming": {
@@ -3890,7 +4070,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "game.multiplayer": {
@@ -3902,7 +4082,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "game.netcode": {
@@ -3914,7 +4094,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "game.opengl": {
@@ -3926,7 +4106,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "game.optimization": {
@@ -3938,7 +4118,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "game.physics": {
@@ -3950,7 +4130,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "game.profiling": {
@@ -3962,7 +4142,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "game.shaders": {
@@ -3974,7 +4154,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "game.unity": {
@@ -3986,7 +4166,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "game.unreal-engine": {
@@ -3998,7 +4178,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "game.vulkan": {
@@ -4010,7 +4190,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "geospatial.cartographic-design": {
@@ -4022,31 +4202,31 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "geospatial.drone-photogrammetry": {
       "version": "1.0.0",
-      "sha256": "d6c226fc92243c82eb7a0ff32f7c03470d3dd3363d0d02a7c63e8cc88b36cc16",
+      "sha256": "e09037599e339282522b8ca002a05eea4b6c18c5e6ef851b68515570af0e5242",
       "category": "geospatial",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "geospatial.gdal-ogr-pipelines": {
       "version": "1.0.0",
-      "sha256": "18ee08f8f31917b62019fb7f2acaada214303bff7990eddcb02e527794a6194b",
+      "sha256": "d08f6a56eb64768d2b3c9ff1626cfa3a4278ab5656913931ec0ef04f39d0ca14",
       "category": "geospatial",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "geospatial.geocoding-address-matching": {
@@ -4058,7 +4238,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "geospatial.lidar-point-clouds": {
@@ -4070,55 +4250,55 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "geospatial.openstreetmap-data": {
       "version": "1.0.0",
-      "sha256": "edd6497df43149ffe54ea19019fe252fc62aa6bdca0e9dee343659314a4d4007",
+      "sha256": "872e54a8edf1149bbeedfe98b5d16d9464eeff19f9428007fcc13781bb1080ae",
       "category": "geospatial",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "geospatial.postgis-spatial-sql": {
       "version": "1.0.0",
-      "sha256": "a19c41b57e6027c5e66a6aaf63ae53739935043e1ba170b782d832bb313cf4a9",
+      "sha256": "fe985a4fe7389c9f74a8da31263d06860a6ae6676bf9cc395afcad403b837921",
       "category": "geospatial",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "geospatial.qgis-map-production": {
       "version": "1.0.0",
-      "sha256": "b429b983fa9239e2d3fc2a2a08987fab3ffa613c6fc1c94a71df1a25c78f390e",
+      "sha256": "a8cd3335a71a7f11b9b28ae76138de9bdec73c2ab87f9f4558d94aab06bdd39e",
       "category": "geospatial",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "geospatial.remote-sensing-indices": {
       "version": "1.0.0",
-      "sha256": "f81d0ce2f1b2adf52161123a79fdf9a8d305bd0ab6c06d82559ca2c713ab4c4b",
+      "sha256": "96d68f2107369521126a59f5cc5eff9e40e6e81940806589d47c4f5c42a4bbb6",
       "category": "geospatial",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "geospatial.spatial-reference-systems": {
@@ -4130,7 +4310,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "geospatial.spatial-statistics": {
@@ -4142,19 +4322,19 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "geospatial.vector-tile-web-maps": {
       "version": "1.0.0",
-      "sha256": "4de4316913920ec7756f6479cebd88032a85ac91ad239d4d6c553b4744e073db",
+      "sha256": "494c2da022b749bf6a62953a035ca132e7d96b285d0c719c86c9e481758b4a23",
       "category": "geospatial",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "healthcare.health-economist": {
@@ -4172,7 +4352,7 @@
         "tests/test_health_eval.py"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "integration.agent-harness-onboarding": {
@@ -4184,7 +4364,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "integration.connector-browser-automation": {
@@ -4196,7 +4376,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "integration.connector-cloud-infrastructure": {
@@ -4208,7 +4388,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "high"
     },
     "integration.connector-databases": {
@@ -4220,7 +4400,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "high"
     },
     "integration.connector-github": {
@@ -4232,7 +4412,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "integration.connector-observability": {
@@ -4244,7 +4424,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "integration.mcp-gateway": {
@@ -4256,7 +4436,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "integration.mcp-security-review": {
@@ -4268,7 +4448,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "integration.mcp-server-author": {
@@ -4280,7 +4460,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "integration.mcp-server-install": {
@@ -4292,7 +4472,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "integration.skill-pack-install": {
@@ -4304,7 +4484,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "integration.third-party-api-resilience": {
@@ -4316,19 +4496,19 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "integration.universal-skill-discovery": {
       "version": "1.0.0",
-      "sha256": "41de712ae91e4a65f96c1e318cacacf3ac741edfbb0be63ea7f56a735581a6ee",
+      "sha256": "abdfbd9aff2b7d663f7be828f88224c5176f80467970aa407ef64e57ff7c119c",
       "category": "integration",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "integration.webhook-delivery-design": {
@@ -4340,7 +4520,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "knowledge.airtable-workflows": {
@@ -4352,7 +4532,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "legal.accessibility-compliance": {
@@ -4364,7 +4544,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "legal.ai-governance": {
@@ -4376,7 +4556,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "legal.ccpa": {
@@ -4388,7 +4568,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "legal.contract-review": {
@@ -4400,7 +4580,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "legal.data-retention": {
@@ -4412,7 +4592,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "legal.gdpr": {
@@ -4424,7 +4604,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "legal.license-compatibility": {
@@ -4436,7 +4616,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "legal.nda-review": {
@@ -4448,7 +4628,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "legal.open-source-license-selection": {
@@ -4460,7 +4640,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "legal.privacy-policy-review": {
@@ -4472,7 +4652,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "legal.records-management": {
@@ -4484,7 +4664,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "legal.regulatory-research": {
@@ -4496,7 +4676,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "legal.sbom-analysis": {
@@ -4508,7 +4688,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "legal.security-compliance": {
@@ -4520,7 +4700,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "legal.software-compliance": {
@@ -4532,7 +4712,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "legal.terms-of-service": {
@@ -4544,7 +4724,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "media.text-to-speech-production": {
@@ -4556,7 +4736,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "mobile.android-compose": {
@@ -4568,7 +4748,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "mobile.android-development": {
@@ -4580,7 +4760,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "mobile.app-store-deployment": {
@@ -4592,7 +4772,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "mobile.expo": {
@@ -4604,7 +4784,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "mobile.flutter": {
@@ -4616,7 +4796,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "mobile.ios-development": {
@@ -4628,7 +4808,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "mobile.kotlin-development": {
@@ -4640,7 +4820,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "mobile.mobile-ci-cd": {
@@ -4652,7 +4832,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "mobile.mobile-navigation": {
@@ -4664,7 +4844,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "mobile.mobile-networking": {
@@ -4676,7 +4856,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "mobile.mobile-performance": {
@@ -4688,7 +4868,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "mobile.mobile-release": {
@@ -4700,7 +4880,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "mobile.mobile-security": {
@@ -4712,7 +4892,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "mobile.mobile-state-management": {
@@ -4724,7 +4904,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "mobile.mobile-storage": {
@@ -4736,7 +4916,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "mobile.mobile-testing": {
@@ -4748,7 +4928,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "mobile.mobile-ui": {
@@ -4760,7 +4940,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "mobile.play-store-deployment": {
@@ -4772,7 +4952,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "mobile.react-native": {
@@ -4784,7 +4964,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "mobile.swift-development": {
@@ -4796,7 +4976,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "mobile.swiftui-development": {
@@ -4808,7 +4988,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "networking.api-gateway-patterns": {
@@ -4820,7 +5000,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "networking.dns": {
@@ -4835,7 +5015,7 @@
         "skill.yaml"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "networking.firewalls": {
@@ -4847,7 +5027,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "networking.http": {
@@ -4859,7 +5039,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "networking.http2": {
@@ -4871,7 +5051,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "networking.http3": {
@@ -4883,7 +5063,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "networking.load-balancing": {
@@ -4895,7 +5075,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "networking.network-automation": {
@@ -4907,7 +5087,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "networking.network-debugging": {
@@ -4919,7 +5099,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "networking.network-performance": {
@@ -4931,7 +5111,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "networking.packet-analysis": {
@@ -4943,7 +5123,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "networking.proxies": {
@@ -4955,7 +5135,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "networking.reverse-proxy": {
@@ -4967,7 +5147,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "networking.routing": {
@@ -4979,7 +5159,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "networking.service-mesh": {
@@ -4991,7 +5171,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "networking.switching": {
@@ -5003,7 +5183,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "networking.tcp-ip": {
@@ -5015,7 +5195,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "networking.tls": {
@@ -5027,7 +5207,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "networking.vpn": {
@@ -5039,7 +5219,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "networking.wireshark": {
@@ -5051,7 +5231,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "networking.zero-trust": {
@@ -5063,7 +5243,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "observability.distributed-tracing": {
@@ -5075,7 +5255,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "observability.grafana": {
@@ -5087,7 +5267,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "observability.logging": {
@@ -5099,7 +5279,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "observability.metrics": {
@@ -5111,7 +5291,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "observability.opentelemetry": {
@@ -5123,7 +5303,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "observability.postmortems": {
@@ -5135,7 +5315,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "observability.prometheus": {
@@ -5147,7 +5327,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "observability.slo-sli": {
@@ -5159,7 +5339,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "os.bootloaders": {
@@ -5171,7 +5351,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "os.containers": {
@@ -5183,7 +5363,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "os.device-drivers": {
@@ -5195,7 +5375,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "os.ebpf": {
@@ -5207,7 +5387,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "os.filesystems": {
@@ -5219,7 +5399,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "os.hypervisors": {
@@ -5231,7 +5411,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "os.ipc": {
@@ -5243,7 +5423,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "os.kernel-development": {
@@ -5255,7 +5435,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "os.linux-kernel": {
@@ -5267,7 +5447,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "os.networking-stack": {
@@ -5279,7 +5459,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "os.operating-systems-fundamentals": {
@@ -5291,7 +5471,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "os.processes-threads": {
@@ -5303,7 +5483,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "os.schedulers": {
@@ -5315,7 +5495,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "os.syscall-analysis": {
@@ -5327,7 +5507,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "os.virtual-memory": {
@@ -5339,7 +5519,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "os.virtualization": {
@@ -5351,7 +5531,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "os.windows-internals": {
@@ -5363,31 +5543,31 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "photography.photography-raw-workflow": {
       "version": "1.0.0",
-      "sha256": "4156410674eb9ac6bde38c073a31f6db794fc117fab74a96da3a34064830abdd",
+      "sha256": "05b893a07ac5e0da34c1cc0dd22e1f20c265b3ce3108dd636d67d3d4ac0dc0dc",
       "category": "photography",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "photography.studio-lighting-color-management": {
       "version": "1.0.0",
-      "sha256": "4563eb47156366114cb77cd0347e5afec276bd3cd9b6bf3217e485614531d951",
+      "sha256": "c07a28999384e6b97aaa38adbcc74d05adae272c1fe6fc4abf0f92cb73af907d",
       "category": "photography",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "product.acceptance-criteria": {
@@ -5399,7 +5579,19 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
+      "risk": "low"
+    },
+    "product.conversion-rate-optimization": {
+      "version": "1.0.0",
+      "sha256": "688f1297c980adf0a3162ad132bfd6b6bd6c20a33222ae2a063456f98c269d6d",
+      "category": "product",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "product.experimentation": {
@@ -5411,8 +5603,20 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
+    },
+    "product.pricing-strategy": {
+      "version": "1.0.0",
+      "sha256": "31966a35933fdf0bcd8311d328c02b9804f19c1a9184f1b524f2f0fee47738ab",
+      "category": "product",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-29",
+      "risk": "medium"
     },
     "product.prioritization": {
       "version": "1.0.0",
@@ -5423,7 +5627,19 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
+      "risk": "low"
+    },
+    "product.product-analytics": {
+      "version": "1.0.0",
+      "sha256": "41ac5677f054dba6d7b70bec4d41ea668bf21d69d6618b7155711d557f01ca76",
+      "category": "product",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "product.product-metrics": {
@@ -5435,7 +5651,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "product.requirements-engineering": {
@@ -5447,7 +5663,19 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
+      "risk": "low"
+    },
+    "product.user-research": {
+      "version": "1.0.0",
+      "sha256": "3139244113adfa02cf8ee5aeb238f2ec77e49a169af7ce1a27b70c542fea6029",
+      "category": "product",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "product.user-stories": {
@@ -5459,7 +5687,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "productivity.adhd": {
@@ -5471,7 +5699,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "productivity.adhd-divergent-brainstorm": {
@@ -5483,7 +5711,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "productivity.adhd-output-style": {
@@ -5495,7 +5723,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "productivity.adhd-task-breakdown": {
@@ -5507,7 +5735,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "productivity.brainstorming": {
@@ -5521,7 +5749,7 @@
         "references/upstream-SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "productivity.calendar-assistant": {
@@ -5535,7 +5763,7 @@
       "dependencies": [
         "optional:calendar-access"
       ],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "productivity.context-summarize": {
@@ -5547,7 +5775,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "productivity.daily-journal": {
@@ -5559,7 +5787,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "productivity.email-inbox-zero": {
@@ -5573,7 +5801,7 @@
       "dependencies": [
         "optional:email-access"
       ],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "productivity.executive-summary": {
@@ -5585,7 +5813,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "productivity.first-principles-reasoning": {
@@ -5597,7 +5825,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "productivity.focus": {
@@ -5609,7 +5837,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "productivity.focus-guard": {
@@ -5621,7 +5849,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "productivity.google-calendar-automation": {
@@ -5633,7 +5861,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "productivity.google-sheets-automation": {
@@ -5645,7 +5873,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "productivity.kaizen-continuous-improvement": {
@@ -5657,7 +5885,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "productivity.meeting-action-extractor": {
@@ -5669,7 +5897,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "productivity.obsidian-sync": {
@@ -5683,7 +5911,7 @@
       "dependencies": [
         "optional:obsidian"
       ],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "productivity.planning": {
@@ -5695,7 +5923,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "productivity.prioritization": {
@@ -5707,7 +5935,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "productivity.session-analytics": {
@@ -5719,7 +5947,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "productivity.task-decomposition": {
@@ -5731,7 +5959,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "productivity.time-blocking": {
@@ -5743,7 +5971,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "productivity.time-management": {
@@ -5755,7 +5983,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "productivity.unlazy": {
@@ -5767,7 +5995,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "productivity.voice-to-action": {
@@ -5781,7 +6009,7 @@
       "dependencies": [
         "optional:transcript"
       ],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "programming.bash-scripting": {
@@ -5793,7 +6021,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "programming.c-fundamentals": {
@@ -5805,7 +6033,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "programming.cpp-modern": {
@@ -5817,7 +6045,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "programming.csharp-fundamentals": {
@@ -5829,7 +6057,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "programming.elixir-otp": {
@@ -5841,7 +6069,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "programming.go-concurrency": {
@@ -5853,7 +6081,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "programming.go-fundamentals": {
@@ -5865,7 +6093,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "programming.go-testing": {
@@ -5877,7 +6105,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "programming.haskell-fundamentals": {
@@ -5889,7 +6117,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "programming.java-modern": {
@@ -5901,7 +6129,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "programming.julia-scientific-computing": {
@@ -5913,7 +6141,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "programming.lua-scripting": {
@@ -5925,7 +6153,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "programming.php-modern": {
@@ -5937,7 +6165,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "programming.powershell-automation": {
@@ -5949,7 +6177,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "programming.python-async": {
@@ -5961,7 +6189,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "programming.python-fundamentals": {
@@ -5973,7 +6201,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "programming.python-idiomatic-style": {
@@ -5985,7 +6213,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "programming.python-security": {
@@ -5997,7 +6225,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "programming.python-testing": {
@@ -6009,7 +6237,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "programming.r-statistical-programming": {
@@ -6021,7 +6249,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "programming.ruby-rails": {
@@ -6033,7 +6261,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "programming.rust-async": {
@@ -6045,7 +6273,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "programming.rust-fundamentals": {
@@ -6057,7 +6285,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "programming.rust-testing": {
@@ -6069,7 +6297,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "programming.scala-fundamentals": {
@@ -6081,7 +6309,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "programming.solidity-smart-contracts": {
@@ -6093,7 +6321,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "programming.sql-advanced": {
@@ -6105,7 +6333,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "programming.typescript-fundamentals": {
@@ -6117,7 +6345,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "programming.typescript-project-structure": {
@@ -6129,7 +6357,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "programming.typescript-testing": {
@@ -6141,7 +6369,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "project-management.clickup-workflows": {
@@ -6153,7 +6381,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "research.academic-research": {
@@ -6165,7 +6393,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "research.competitive-analysis": {
@@ -6177,7 +6405,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "research.data-analysis": {
@@ -6189,7 +6417,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "research.deep-research": {
@@ -6201,7 +6429,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "research.fact-checking": {
@@ -6213,7 +6441,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "research.search-synthesizer": {
@@ -6227,7 +6455,7 @@
       "dependencies": [
         "optional:web-search"
       ],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "research.source-verification": {
@@ -6239,7 +6467,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "research.web-research": {
@@ -6251,7 +6479,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "scientific.bioinformatics": {
@@ -6263,8 +6491,20 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
+    },
+    "scientific.causal-inference": {
+      "version": "1.0.0",
+      "sha256": "9b6e4cc584e35ef65caf31c0a7655c90a11661fe0a06dfa8b6a78fbc8b6fcb30",
+      "category": "scientific",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-29",
+      "risk": "medium"
     },
     "scientific.cfd": {
       "version": "1.0.0",
@@ -6275,7 +6515,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "scientific.computational-chemistry": {
@@ -6287,7 +6527,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "scientific.computational-physics": {
@@ -6299,7 +6539,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "scientific.experiment-design": {
@@ -6311,7 +6551,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "scientific.fea": {
@@ -6323,7 +6563,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "scientific.genomics": {
@@ -6335,7 +6575,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "scientific.geospatial-analysis": {
@@ -6347,7 +6587,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "scientific.gis": {
@@ -6359,7 +6599,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "scientific.hpc": {
@@ -6371,7 +6611,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "scientific.literature-review": {
@@ -6383,7 +6623,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "scientific.medical-imaging": {
@@ -6395,7 +6635,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "scientific.microscopy": {
@@ -6407,7 +6647,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "scientific.numerical-methods": {
@@ -6419,7 +6659,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "scientific.optimization": {
@@ -6431,7 +6671,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "scientific.reproducible-research": {
@@ -6443,7 +6683,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "scientific.scientific-database-research": {
@@ -6455,7 +6695,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "scientific.scientific-visualization": {
@@ -6467,7 +6707,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "scientific.scientific-writing": {
@@ -6479,7 +6719,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "scientific.statistics": {
@@ -6491,7 +6731,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "scientific.symbolic-math": {
@@ -6503,8 +6743,20 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
+    },
+    "security.api-security-testing": {
+      "version": "1.0.0",
+      "sha256": "9d9df8265d2b68b0e5009a2572a05890496c5d1dde9a564b67b4d2083b42e35c",
+      "category": "security",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-29",
+      "risk": "medium"
     },
     "security.cmd-safety-check": {
       "version": "1.0.0",
@@ -6515,7 +6767,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "security.container-security": {
@@ -6527,7 +6779,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "security.dast": {
@@ -6539,7 +6791,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "security.dependency-audit": {
@@ -6551,7 +6803,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "security.iam": {
@@ -6563,7 +6815,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "security.incident-response": {
@@ -6575,7 +6827,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "security.kubernetes-security": {
@@ -6587,7 +6839,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "security.npm-auditor": {
@@ -6601,7 +6853,7 @@
       "dependencies": [
         "optional:npm"
       ],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "security.oauth2-oidc-integration": {
@@ -6613,7 +6865,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "high"
     },
     "security.prompt-injection-defense": {
@@ -6625,7 +6877,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "security.sast": {
@@ -6637,7 +6889,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "security.secret-detection": {
@@ -6649,7 +6901,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "security.secrets-management": {
@@ -6661,7 +6913,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "high"
     },
     "security.secure-architecture": {
@@ -6673,7 +6925,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "security.secure-code-review": {
@@ -6685,7 +6937,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "security.secure-coding": {
@@ -6697,7 +6949,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "security.security-scanner": {
@@ -6711,7 +6963,7 @@
       "dependencies": [
         "optional:security-scanners"
       ],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "security.sonarqube-quality-gates": {
@@ -6723,7 +6975,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "security.threat-modeling": {
@@ -6735,7 +6987,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "security.zero-trust": {
@@ -6747,7 +6999,43 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
+      "risk": "low"
+    },
+    "testing.accessibility-automation": {
+      "version": "1.0.0",
+      "sha256": "a13b9bdb960abb436bf9c8a2246d68d94c077f345a4e1cd4326470fcc99c1481",
+      "category": "testing",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-29",
+      "risk": "low"
+    },
+    "testing.component-testing": {
+      "version": "1.0.0",
+      "sha256": "880e81547f264bf2e34f23e112675b319919f898ae059aed26ccd3e301cd0916",
+      "category": "testing",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-29",
+      "risk": "low"
+    },
+    "testing.contract-testing": {
+      "version": "1.0.0",
+      "sha256": "2e0503d041bbb08b2d5b25dc5b8219f93e855c54c4f9f612d3f71dbdcfd57688",
+      "category": "testing",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "testing.load-testing": {
@@ -6759,8 +7047,20 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
+    },
+    "testing.mutation-testing": {
+      "version": "1.0.0",
+      "sha256": "be9c60b87840896f042acd61a35540b6247fc36aad268188741df37f0d65861e",
+      "category": "testing",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-29",
+      "risk": "low"
     },
     "testing.postman-api-testing": {
       "version": "1.0.0",
@@ -6771,7 +7071,19 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
+      "risk": "low"
+    },
+    "testing.visual-regression-testing": {
+      "version": "1.0.0",
+      "sha256": "34dddc3c59204767b3de6ecd60fc1e4ef717015b82a004dc346a92c800067ed7",
+      "category": "testing",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "utilities.agent-transcript": {
@@ -6786,7 +7098,7 @@
         "optional:node",
         "optional:gh"
       ],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "utilities.audio-transcribe": {
@@ -6800,7 +7112,7 @@
       "dependencies": [
         "optional:transcription-engine"
       ],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "utilities.automation": {
@@ -6812,7 +7124,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "utilities.beam": {
@@ -6827,7 +7139,7 @@
         "optional:node",
         "optional:BEAM_ACCESS_TOKEN"
       ],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "utilities.documentation": {
@@ -6839,7 +7151,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "utilities.file-management": {
@@ -6851,7 +7163,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "utilities.handoff": {
@@ -6865,7 +7177,7 @@
       "dependencies": [
         "optional:clipboard-tool"
       ],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "utilities.image": {
@@ -6877,7 +7189,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "utilities.parallel-agents": {
@@ -6891,7 +7203,7 @@
         "references/upstream-SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "utilities.readme-standard": {
@@ -6903,7 +7215,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "utilities.slack-synthesizer": {
@@ -6917,7 +7229,7 @@
       "dependencies": [
         "optional:slack-access"
       ],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "utilities.sonos-cli": {
@@ -6931,7 +7243,7 @@
       "dependencies": [
         "optional:sonos-cli"
       ],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "utilities.summarization": {
@@ -6943,7 +7255,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "utilities.system-monitor": {
@@ -6957,7 +7269,7 @@
       "dependencies": [
         "optional:system-tools"
       ],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "utilities.telegram-actions": {
@@ -6971,7 +7283,7 @@
       "dependencies": [
         "optional:TELEGRAM_BOT_TOKEN"
       ],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "utilities.text-processing": {
@@ -6983,7 +7295,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "utilities.unit-converter": {
@@ -6997,7 +7309,7 @@
       "dependencies": [
         "optional:exchange-rate-source"
       ],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "utilities.weather-now": {
@@ -7011,7 +7323,7 @@
       "dependencies": [
         "optional:weather-api"
       ],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "utilities.whatsapp-router": {
@@ -7025,7 +7337,7 @@
       "dependencies": [
         "optional:whatsapp-api"
       ],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "high"
     },
     "utilities.writing": {
@@ -7037,19 +7349,19 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "video.color-grading": {
       "version": "1.0.0",
-      "sha256": "f1d365ddb99c513e24a9c9dac63914564fb4155e39a9898a2b86c03d0cec22cc",
+      "sha256": "4ea3dac3af857d399027fc04d702c91c4a2430b1b2a191a15f5ed6d00fa9c09a",
       "category": "video",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "video.live-streaming-broadcast": {
@@ -7061,7 +7373,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "video.motion-graphics": {
@@ -7073,19 +7385,19 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "video.video-editing-workflow": {
       "version": "1.0.0",
-      "sha256": "fd4adabd447b4417cc3923482a6af9f4efc5a85daeb3513d3744978ec7fca9d7",
+      "sha256": "cf22718e451996a2ec253a47aace4ab023cb699240c7c2f8d3460cbd15852382",
       "category": "video",
       "files": [
         "README.md",
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "video.video-encoding-delivery": {
@@ -7097,7 +7409,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "web.accessibility": {
@@ -7109,7 +7421,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "web.agent-browser": {
@@ -7123,7 +7435,7 @@
       "dependencies": [
         "optional:agent-browser"
       ],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "web.astro-sites": {
@@ -7135,7 +7447,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "web.browser-automation": {
@@ -7149,7 +7461,7 @@
       "dependencies": [
         "optional:playwright-or-similar"
       ],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "web.form-filler": {
@@ -7163,7 +7475,7 @@
       "dependencies": [
         "optional:browser-automation"
       ],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "high"
     },
     "web.media-downloader": {
@@ -7177,8 +7489,32 @@
       "dependencies": [
         "optional:media-downloader"
       ],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
+    },
+    "web.nextjs-app-router": {
+      "version": "1.0.0",
+      "sha256": "603f8b4c6fc22646039f889e0e0017734e8c9533773ff41b601fe742fa13d812",
+      "category": "web",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-29",
+      "risk": "low"
+    },
+    "web.react-performance": {
+      "version": "1.0.0",
+      "sha256": "0bdc6390cba6ffc99eedaac352e2f93b19d33e1179dfd2ada3bb504effbcf85e",
+      "category": "web",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-29",
+      "risk": "low"
     },
     "web.seo": {
       "version": "1.0.0",
@@ -7189,7 +7525,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "web.svelte-development": {
@@ -7201,7 +7537,19 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
+      "risk": "low"
+    },
+    "web.typescript-advanced": {
+      "version": "1.0.0",
+      "sha256": "b8d40e52fb65d95376c1abc9a1895f8c8e56edf4145af1b335b9acacec9156b9",
+      "category": "web",
+      "files": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "dependencies": [],
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "web.vue-development": {
@@ -7213,7 +7561,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "web.web-extraction": {
@@ -7225,7 +7573,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "web.web-scraper": {
@@ -7239,7 +7587,7 @@
       "dependencies": [
         "optional:http-client"
       ],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     },
     "web.web-scraping": {
@@ -7251,7 +7599,7 @@
         "SKILL.md"
       ],
       "dependencies": [],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "medium"
     },
     "web.website-testing": {
@@ -7265,7 +7613,7 @@
       "dependencies": [
         "optional:playwright-or-cypress"
       ],
-      "verified_at": "2026-10-28",
+      "verified_at": "2026-10-29",
       "risk": "low"
     }
   }

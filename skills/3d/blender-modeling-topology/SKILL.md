@@ -25,6 +25,8 @@ keywords:
   - uv
   - subdivision
   - retopology
+mcp_servers:
+  - blender
 source: custom
 enabled: true
 ---
@@ -85,6 +87,15 @@ Model clean assets in Blender: quad topology and edge flow, subdivision and crea
 - Boolean and bevel stacks that are unapplied can silently produce non-manifold geometry.
 - Inconsistent normals ruin shading and printability — recalculate outside.
 - Non-uniform object scale breaks modifiers and physics; apply scale first.
+
+## MCP Requirements
+
+| Server | Transport | Tier | Risk | Required env |
+| :--- | :--- | :--- | :--- | :--- |
+| `blender` | stdio | standard | medium | `BLENDER_HOST`, `BLENDER_PORT` |
+
+Install the connectors above with `allskills mcp install --harness <harness> --profile full`,
+or list the same ids in your harness config. Full detail per server: [`docs/MCP-CATALOG.md`](MCP-CATALOG.md) and [`mcp/registry.json`](../mcp/registry.json).
 
 ## Source
 

@@ -22,6 +22,8 @@ keywords:
   - parametric-design
   - datatree
   - computational-design
+mcp_servers:
+  - grasshopper
 source: custom
 enabled: true
 ---
@@ -82,6 +84,15 @@ Parametric design in Rhino and Grasshopper: NURBS modelling, definition structur
 - Flattening data trees silently destroys intended pairings.
 - NURBS surfaces with poor continuity fail fabrication and rendering.
 - Unbounded parametric ranges generate geometry no process can build.
+
+## MCP Requirements
+
+| Server | Transport | Tier | Risk | Required env |
+| :--- | :--- | :--- | :--- | :--- |
+| `grasshopper` | stdio | full | medium | — |
+
+Install the connectors above with `allskills mcp install --harness <harness> --profile full`,
+or list the same ids in your harness config. Full detail per server: [`docs/MCP-CATALOG.md`](MCP-CATALOG.md) and [`mcp/registry.json`](../mcp/registry.json).
 
 ## Source
 

@@ -1,0 +1,45 @@
+{
+  "id": "youtube",
+  "name": "YouTube",
+  "description": "Search videos, fetch transcripts and metadata.",
+  "category": "media",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "community",
+  "official": false,
+  "command": "npx",
+  "args": [
+    "-y",
+    "@sinco-lab/mcp-youtube",
+    "--stdio"
+  ],
+  "required_env": [],
+  "risk": "low",
+  "license": "MIT",
+  "docs": "https://github.com/sinco-lab/mcp-youtube",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

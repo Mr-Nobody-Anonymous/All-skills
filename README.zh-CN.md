@@ -1,6 +1,6 @@
 # All-Skills 中文入口
 
-**完成！** 你现在可以使用 68 个代理、504 个技能和 94 个命令（含 113 个 MCP 连接器）。
+**完成！** 你现在可以使用 68 个代理、533 个技能和 94 个命令（含 117 个 MCP 连接器）。
 
 本页是中文速查入口，完整的中文文档在 [docs/zh-CN/README.md](docs/zh-CN/README.md)，英文主文档在 [README.md](README.md)。
 
@@ -50,7 +50,7 @@ allskills mcp install --harness cursor --profile full --scope user
 
 | 配置文件 | 说明 |
 | :--- | :--- |
-| [`mcps/catalog.json`](mcps/catalog.json) | 113 个 MCP 服务器的唯一事实来源（含风险等级、所需环境变量） |
+| [`mcps/catalog.json`](mcps/catalog.json) | 117 个 MCP 服务器的唯一事实来源（含风险等级、所需环境变量） |
 | [`docs/MCP-CATALOG.md`](docs/MCP-CATALOG.md) | 自动生成的连接器总表 |
 | [`mcps/generated/`](mcps/generated/) | 各 harness 的原生配置片段（JSON / TOML / YAML） |
 

@@ -1,0 +1,44 @@
+{
+  "id": "puppeteer",
+  "name": "Puppeteer",
+  "description": "Local headless browser automation and screenshots.",
+  "category": "browser",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "modelcontextprotocol",
+  "official": true,
+  "command": "npx",
+  "args": [
+    "-y",
+    "@modelcontextprotocol/server-puppeteer"
+  ],
+  "required_env": [],
+  "risk": "medium",
+  "license": "MIT",
+  "docs": "https://github.com/modelcontextprotocol/servers/tree/main/src/puppeteer",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

@@ -22,6 +22,8 @@ keywords:
   - darktable
   - colour-management
   - catalog
+mcp_servers:
+  - filesystem
 source: custom
 enabled: true
 ---
@@ -82,6 +84,15 @@ Manage a RAW photography workflow: import and catalogue structure, non-destructi
 - A single-drive library is a data loss waiting to happen; use two copies plus offsite.
 - Exporting for print without the paper profile produces colour surprises.
 - Destructive edits lose the original latitude — keep raws untouched.
+
+## MCP Requirements
+
+| Server | Transport | Tier | Risk | Required env |
+| :--- | :--- | :--- | :--- | :--- |
+| `filesystem` | stdio | core | low | — |
+
+Install the connectors above with `allskills mcp install --harness <harness> --profile full`,
+or list the same ids in your harness config. Full detail per server: [`docs/MCP-CATALOG.md`](MCP-CATALOG.md) and [`mcp/registry.json`](../mcp/registry.json).
 
 ## Source
 

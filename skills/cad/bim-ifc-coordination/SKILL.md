@@ -23,6 +23,9 @@ keywords:
   - clash-detection
   - lod
   - federation
+mcp_servers:
+  - ifc
+  - revit
 source: custom
 enabled: true
 ---
@@ -83,6 +86,16 @@ Coordinate building models: IFC schema and exports, Revit/ArchiCAD workflows, cl
 - Mismatched project base points create thousands of false clashes.
 - An IFC export that looks right can lose property sets the client needs.
 - Never close a clash without a re-test after the model update.
+
+## MCP Requirements
+
+| Server | Transport | Tier | Risk | Required env |
+| :--- | :--- | :--- | :--- | :--- |
+| `ifc` | stdio | full | low | — |
+| `revit` | stdio | full | high | — |
+
+Install the connectors above with `allskills mcp install --harness <harness> --profile full`,
+or list the same ids in your harness config. Full detail per server: [`docs/MCP-CATALOG.md`](MCP-CATALOG.md) and [`mcp/registry.json`](../mcp/registry.json).
 
 ## Source
 

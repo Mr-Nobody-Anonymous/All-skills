@@ -1,0 +1,46 @@
+{
+  "id": "firecrawl",
+  "name": "Firecrawl",
+  "description": "Crawl, scrape and convert websites into clean markdown.",
+  "category": "search",
+  "tier": "standard",
+  "transport": "stdio",
+  "vendor": "firecrawl",
+  "official": false,
+  "command": "npx",
+  "args": [
+    "-y",
+    "firecrawl-mcp"
+  ],
+  "required_env": [
+    "FIRECRAWL_API_KEY"
+  ],
+  "risk": "low",
+  "license": "MIT",
+  "docs": "https://github.com/mendableai/firecrawl-mcp-server",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

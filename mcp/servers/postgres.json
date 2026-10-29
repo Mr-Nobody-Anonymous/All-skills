@@ -1,0 +1,47 @@
+{
+  "id": "postgres",
+  "name": "PostgreSQL",
+  "description": "Read-only SQL access with schema inspection for PostgreSQL databases.",
+  "category": "database",
+  "tier": "standard",
+  "transport": "stdio",
+  "vendor": "modelcontextprotocol",
+  "official": true,
+  "command": "npx",
+  "args": [
+    "-y",
+    "@modelcontextprotocol/server-postgres",
+    "${POSTGRES_URL}"
+  ],
+  "required_env": [
+    "POSTGRES_URL"
+  ],
+  "risk": "medium",
+  "license": "MIT",
+  "docs": "https://github.com/modelcontextprotocol/servers/tree/main/src/postgres",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

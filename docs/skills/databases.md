@@ -1,10 +1,10 @@
 # Databases Skills
 
-_Generated: 2026-10-28T05:33:42+00:00_
+_Generated: 2026-10-29T14:02:53+00:00_
 
 
 
-**16 skills in this category.**
+**18 skills in this category.**
 
 ## Skills
 
@@ -37,6 +37,24 @@ Execute billion-row analytical queries with sub-second latency using ClickHouse 
 - **Version:** 1.0.0
 
 Execute billion-row analytical queries with sub-second latency using ClickHouse MergeTree engines and materialized views.
+
+### `databases.database-query-optimization`
+
+Optimise query patterns across engines: N+1 elimination, set-based rewrites, pagination that scales, join strategy, and measurement before and after.
+
+- **Risk:** medium
+- **Path:** `databases/database-query-optimization`
+- **Aliases:** `query-tuning`
+- **Triggers:**
+  - n+1 query problem
+  - keyset pagination
+  - slow join query
+  - orm query optimization
+  - offset pagination slow
+- **Source:** custom
+- **Version:** 1.0.0
+
+Optimise query patterns across engines: N+1 elimination, set-based rewrites, pagination that scales, join strategy, and measurement before and after.
 
 ### `databases.databricks`
 
@@ -175,6 +193,24 @@ Master PostgreSQL index strategies, EXPLAIN ANALYZE tuning, MVCC concurrency, pa
 - **Version:** 1.0.0
 
 Master PostgreSQL index strategies, EXPLAIN ANALYZE tuning, MVCC concurrency, partition pruning, and HA setups.
+
+### `databases.postgresql-performance`
+
+Tune PostgreSQL with evidence: `EXPLAIN (ANALYZE, BUFFERS)`, index strategy, VACUUM and bloat, connection pooling, and configuration that matches the workload.
+
+- **Risk:** medium
+- **Path:** `databases/postgresql-performance`
+- **Aliases:** `postgres-perf`, `pg`
+- **Triggers:**
+  - postgres slow query
+  - explain analyze buffers
+  - postgres index strategy
+  - postgres vacuum bloat
+  - postgres connection pooling
+- **Source:** custom
+- **Version:** 1.0.0
+
+Tune PostgreSQL with evidence: `EXPLAIN (ANALYZE, BUFFERS)`, index strategy, VACUUM and bloat, connection pooling, and configuration that matches the workload.
 
 ### `databases.redis`
 

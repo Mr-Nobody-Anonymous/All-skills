@@ -25,6 +25,8 @@ keywords:
   - atlas
   - pyqgis
   - symbology
+mcp_servers:
+  - qgis
 source: custom
 enabled: true
 ---
@@ -86,6 +88,15 @@ Produce publication-ready maps in QGIS: project structure, layer styling and lab
 - Publishing a map in the wrong CRS misplaces features by hundreds of metres — verify with a known landmark.
 - Do not redistribute basemap tiles outside their licence; record attribution in the layout.
 - Sensitive locations (protected species, private addresses) need generalization before publication.
+
+## MCP Requirements
+
+| Server | Transport | Tier | Risk | Required env |
+| :--- | :--- | :--- | :--- | :--- |
+| `qgis` | stdio | full | medium | `QGIS_MCP_PORT` |
+
+Install the connectors above with `allskills mcp install --harness <harness> --profile full`,
+or list the same ids in your harness config. Full detail per server: [`docs/MCP-CATALOG.md`](MCP-CATALOG.md) and [`mcp/registry.json`](../mcp/registry.json).
 
 ## Source
 

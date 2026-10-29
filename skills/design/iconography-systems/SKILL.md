@@ -24,6 +24,9 @@ keywords:
   - svg
   - stroke
   - pixel-grid
+mcp_servers:
+  - figma
+  - inkscape
 source: custom
 enabled: true
 ---
@@ -84,6 +87,16 @@ Build an icon system: consistent optical grid, stroke and corner radii, naming, 
 
 - Do not use colour alone to convey icon state.
 - Keep icon-only buttons labelled for screen readers.
+
+## MCP Requirements
+
+| Server | Transport | Tier | Risk | Required env |
+| :--- | :--- | :--- | :--- | :--- |
+| `figma` | http | full | medium | — |
+| `inkscape` | stdio | full | low | — |
+
+Install the connectors above with `allskills mcp install --harness <harness> --profile full`,
+or list the same ids in your harness config. Full detail per server: [`docs/MCP-CATALOG.md`](MCP-CATALOG.md) and [`mcp/registry.json`](../mcp/registry.json).
 
 ## Source
 

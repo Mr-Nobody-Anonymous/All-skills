@@ -14,7 +14,7 @@ Counts come from `skills/*/*/SKILL.md` and `mcps/catalog.json`; regenerate the n
 
 ## 1. Covered domains
 
-**504 curated skills in 44 categories**, **113 MCP servers in 35 categories**.
+**504 curated skills in 45 categories**, **113 MCP servers in 35 categories**.
 
 | Domain | Skills | Connector(s) | Notes |
 | :--- | ---: | :--- | :--- |
@@ -27,7 +27,9 @@ Counts come from `skills/*/*/SKILL.md` and `mcps/catalog.json`; regenerate the n
 | **Photography** | 2 (`photography`) | `filesystem` | RAW pipeline, studio lighting, colour management, soft proofing |
 | **Architecture and interiors** | 4 (`architecture`) | `revit`, `ifc` | Design workflow, space planning, construction documents and specifications |
 | **Graphic and product design** | 13 (`design`) | `inkscape` | Vector/SVG, typography, prepress, editorial layout, icon systems, UI/UX, branding |
-| **Software engineering** | 300+ across `development`, `programming`, `web`, `mobile`, `data`, `databases`, `cloud`, `devops`, `security`, `testing`, `ai` | 90+ | The original core of the library |
+| **Software engineering** | 330+ across `development`, `programming`, `web`, `mobile`, `data`, `databases`, `cloud`, `devops`, `security`, `testing`, `ai` | 90+ | The original core of the library |
+| **Agent engineering** (`agents`) | 4 | `filesystem`, `github`, `slack`, `opentelemetry`, `grafana`, `sentry` | MCP integration testing, agent observability, reliability, human-in-the-loop |
+| **Product and growth** (`product`) | 10 | `postgres`, `bigquery`, `stripe`, `notion`, `playwright` | Research, analytics, CRO, pricing, support automation |
 | **Enterprise and back office** | 60+ across `legal`, `finance`, `finops`, `product`, `productivity`, `communication`, `documents`, `research`, `education`, `healthcare` | 20+ | Contracts, analysis, reporting, work tracking |
 
 Everything above is installable per skill (`allskills install <skill-id>`) and per profile
@@ -115,6 +117,11 @@ would actually take, so the next contributor knows where to start.
 ---
 
 ## 4. How to add the next domain
+
+Before adding anything, check the name **and** the meaning against the tree — 26 of the 55 skills an
+external audit proposed already existed under a different name (see
+[`AUDIT-RESPONSE.md`](AUDIT-RESPONSE.md) §4). `python scripts/skills/skills.py route "<task>"`
+answers "is this already covered?" faster than writing a new playbook.
 
 1. Write a data module under `scripts/dev/` following `domain_skills_geo.py` (a `TITLES` dict and a
    `SKILLS` list of `skill(...)` calls), and import it from `scripts/dev/add_domain_skills.py`.

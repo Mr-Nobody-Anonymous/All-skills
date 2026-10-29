@@ -1,6 +1,6 @@
 # Documents Skills
 
-_Generated: 2026-10-28T05:33:42+00:00_
+_Generated: 2026-10-29T14:02:53+00:00_
 
 Skills for working with common document formats: PDF, DOCX, XLSX, PPTX, Markdown, and CSV. They focus on reliable extraction, structured generation, and content-aware summarization rather than format-perfect output.
 

@@ -1,0 +1,43 @@
+{
+  "id": "openscad",
+  "name": "OpenSCAD",
+  "description": "Render and measure OpenSCAD models, check assemblies and export meshes from parametric scripts.",
+  "category": "cad",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "RobertCoop",
+  "official": false,
+  "command": "uvx",
+  "args": [
+    "openscad-mcp"
+  ],
+  "required_env": [],
+  "risk": "low",
+  "license": "MIT",
+  "docs": "https://github.com/RobertCoop/openscad-mcp",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

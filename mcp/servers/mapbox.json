@@ -1,0 +1,46 @@
+{
+  "id": "mapbox",
+  "name": "Mapbox",
+  "description": "Geocoding, isochrones, directions, matrix routing and static map imagery from the Mapbox APIs.",
+  "category": "geospatial",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "mapbox",
+  "official": true,
+  "command": "npx",
+  "args": [
+    "-y",
+    "@mapbox/mcp-server"
+  ],
+  "required_env": [
+    "MAPBOX_ACCESS_TOKEN"
+  ],
+  "risk": "medium",
+  "license": "MIT",
+  "docs": "https://github.com/mapbox/mcp-server",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "blender",
+  "name": "Blender",
+  "description": "Control Blender over a local socket: build and modify meshes, run Python, render and export assets.",
+  "category": "3d",
+  "tier": "standard",
+  "transport": "stdio",
+  "vendor": "ahujasid",
+  "official": false,
+  "command": "uvx",
+  "args": [
+    "blender-mcp"
+  ],
+  "required_env": [
+    "BLENDER_HOST",
+    "BLENDER_PORT"
+  ],
+  "risk": "medium",
+  "license": "MIT",
+  "docs": "https://github.com/ahujasid/mcp-for-blender",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

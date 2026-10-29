@@ -26,6 +26,8 @@ keywords:
   - musicxml
   - engraving
   - transposition
+mcp_servers:
+  - filesystem
 source: custom
 enabled: true
 ---
@@ -86,6 +88,15 @@ Engrave readable scores: notation entry, layout spacing, parts extraction, trans
 
 - Never hand-edit a rendered PDF; regenerate from the master.
 - Check copyright status before engraving or distributing a work.
+
+## MCP Requirements
+
+| Server | Transport | Tier | Risk | Required env |
+| :--- | :--- | :--- | :--- | :--- |
+| `filesystem` | stdio | core | low | — |
+
+Install the connectors above with `allskills mcp install --harness <harness> --profile full`,
+or list the same ids in your harness config. Full detail per server: [`docs/MCP-CATALOG.md`](MCP-CATALOG.md) and [`mcp/registry.json`](../mcp/registry.json).
 
 ## Source
 

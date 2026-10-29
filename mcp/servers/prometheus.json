@@ -1,0 +1,45 @@
+{
+  "id": "prometheus",
+  "name": "Prometheus",
+  "description": "Run PromQL against a Prometheus server: query metrics, inspect targets and labels, and pull range data for triage.",
+  "category": "observability",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "pab1it0",
+  "official": false,
+  "command": "uvx",
+  "args": [
+    "prometheus-mcp-server"
+  ],
+  "required_env": [
+    "PROMETHEUS_URL"
+  ],
+  "risk": "medium",
+  "license": "MIT",
+  "docs": "https://github.com/pab1it0/prometheus-mcp-server",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

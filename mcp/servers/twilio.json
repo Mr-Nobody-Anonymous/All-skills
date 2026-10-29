@@ -1,0 +1,49 @@
+{
+  "id": "twilio",
+  "name": "Twilio",
+  "description": "Send SMS and WhatsApp messages and inspect Twilio account resources.",
+  "category": "communication",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "twilio",
+  "official": false,
+  "command": "npx",
+  "args": [
+    "-y",
+    "@twilio-alpha/mcp",
+    "${TWILIO_ACCOUNT_SID}/${TWILIO_API_KEY}/${TWILIO_API_SECRET}"
+  ],
+  "required_env": [
+    "TWILIO_ACCOUNT_SID",
+    "TWILIO_API_KEY",
+    "TWILIO_API_SECRET"
+  ],
+  "risk": "high",
+  "license": "MIT",
+  "docs": "https://github.com/twilio-labs/mcp",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

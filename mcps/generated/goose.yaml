@@ -146,6 +146,13 @@ extensions:
     cmd: "uvx"
     args:
       - "davinci-resolve-mcp"
+  deepwiki:
+    enabled: true
+    type: stdio
+    cmd: "npx"
+    args:
+      - "-y"
+      - "deepwiki-mcp@latest"
   desktop-commander:
     enabled: true
     type: stdio
@@ -500,6 +507,12 @@ extensions:
     cmd: "uvx"
     args:
       - "openscad-mcp"
+  opentelemetry:
+    enabled: true
+    type: stdio
+    cmd: "uvx"
+    args:
+      - "opentelemetry-mcp"
   paypal:
     enabled: true
     type: stdio
@@ -543,6 +556,12 @@ extensions:
     args:
       - "-y"
       - "@postman/postman-mcp-server@latest"
+  prometheus:
+    enabled: true
+    type: stdio
+    cmd: "uvx"
+    args:
+      - "prometheus-mcp-server"
   pulumi:
     enabled: true
     type: stdio
@@ -629,6 +648,15 @@ extensions:
     args:
       - "-y"
       - "@modelcontextprotocol/server-sequential-thinking"
+  serena:
+    enabled: true
+    type: stdio
+    cmd: "uvx"
+    args:
+      - "--from"
+      - "serena-agent"
+      - "serena"
+      - "start-mcp-server"
   shopify:
     enabled: true
     type: stdio

@@ -1,0 +1,43 @@
+{
+  "id": "ableton",
+  "name": "Ableton Live",
+  "description": "Control an Ableton Live session: transport, tracks, clips and device parameters.",
+  "category": "audio",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "ahujasid",
+  "official": false,
+  "command": "uvx",
+  "args": [
+    "ableton-mcp"
+  ],
+  "required_env": [],
+  "risk": "medium",
+  "license": "MIT",
+  "docs": "https://github.com/ahujasid/ableton-mcp",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

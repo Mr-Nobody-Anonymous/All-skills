@@ -1,0 +1,46 @@
+{
+  "id": "exa",
+  "name": "Exa Web Search",
+  "description": "Neural web search with content extraction for research-heavy tasks.",
+  "category": "search",
+  "tier": "standard",
+  "transport": "stdio",
+  "vendor": "exa",
+  "official": false,
+  "command": "npx",
+  "args": [
+    "-y",
+    "exa-mcp-server"
+  ],
+  "required_env": [
+    "EXA_API_KEY"
+  ],
+  "risk": "low",
+  "license": "MIT",
+  "docs": "https://github.com/exa-labs/exa-mcp-server",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

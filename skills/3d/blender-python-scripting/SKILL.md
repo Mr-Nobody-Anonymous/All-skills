@@ -23,6 +23,8 @@ keywords:
   - addon
   - headless
   - batch
+mcp_servers:
+  - blender
 source: custom
 enabled: true
 ---
@@ -83,6 +85,15 @@ Automate Blender with Python: `bpy` data API, operators versus direct data acces
 - Operators depend on context; calling them headless often silently no-ops.
 - Scripts that overwrite source .blend files destroy work — always write copies.
 - API changes between Blender versions break add-ons; pin the version you support.
+
+## MCP Requirements
+
+| Server | Transport | Tier | Risk | Required env |
+| :--- | :--- | :--- | :--- | :--- |
+| `blender` | stdio | standard | medium | `BLENDER_HOST`, `BLENDER_PORT` |
+
+Install the connectors above with `allskills mcp install --harness <harness> --profile full`,
+or list the same ids in your harness config. Full detail per server: [`docs/MCP-CATALOG.md`](MCP-CATALOG.md) and [`mcp/registry.json`](../mcp/registry.json).
 
 ## Source
 

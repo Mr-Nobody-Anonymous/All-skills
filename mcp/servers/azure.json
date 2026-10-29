@@ -1,0 +1,46 @@
+{
+  "id": "azure",
+  "name": "Azure",
+  "description": "Azure resource management, diagnostics and service tooling through the official Azure MCP server.",
+  "category": "cloud",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "microsoft",
+  "official": true,
+  "command": "npx",
+  "args": [
+    "-y",
+    "@azure/mcp",
+    "server",
+    "start"
+  ],
+  "required_env": [],
+  "risk": "high",
+  "license": "MIT",
+  "docs": "https://github.com/microsoft/mcp/tree/main/servers/Azure.Mcp.Server",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

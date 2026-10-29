@@ -1,0 +1,47 @@
+{
+  "id": "elasticsearch",
+  "name": "Elasticsearch",
+  "description": "Search indices, mappings and aggregations in Elasticsearch.",
+  "category": "observability",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "elastic",
+  "official": true,
+  "command": "npx",
+  "args": [
+    "-y",
+    "@elastic/mcp-server-elasticsearch"
+  ],
+  "required_env": [
+    "ES_URL",
+    "ES_API_KEY"
+  ],
+  "risk": "medium",
+  "license": "Apache-2.0",
+  "docs": "https://github.com/elastic/mcp-server-elasticsearch",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "apify",
+  "name": "Apify",
+  "description": "Run Apify actors (scrapers, crawlers, extractors) and read their datasets.",
+  "category": "automation",
+  "tier": "standard",
+  "transport": "stdio",
+  "vendor": "apify",
+  "official": true,
+  "command": "npx",
+  "args": [
+    "-y",
+    "@apify/actors-mcp-server@latest"
+  ],
+  "required_env": [
+    "APIFY_TOKEN"
+  ],
+  "risk": "high",
+  "license": "MIT",
+  "docs": "https://github.com/apify/apify-mcp-server",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

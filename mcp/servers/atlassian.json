@@ -1,0 +1,42 @@
+{
+  "id": "atlassian",
+  "name": "Atlassian (Jira & Confluence)",
+  "description": "Jira issues, sprints and Confluence pages through Atlassian's hosted MCP endpoint.",
+  "category": "project-management",
+  "tier": "full",
+  "transport": "http",
+  "vendor": "atlassian",
+  "official": true,
+  "url": "https://mcp.atlassian.com/v1/sse",
+  "required_env": [
+    "ATLASSIAN_ACCESS_TOKEN"
+  ],
+  "risk": "medium",
+  "license": "Apache-2.0",
+  "docs": "https://github.com/atlassian/atlassian-mcp-server",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

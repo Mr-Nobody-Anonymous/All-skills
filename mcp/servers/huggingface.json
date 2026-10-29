@@ -1,0 +1,44 @@
+{
+  "id": "huggingface",
+  "name": "Hugging Face",
+  "description": "Search models, datasets and Spaces, and read model cards.",
+  "category": "ai",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "huggingface",
+  "official": true,
+  "command": "npx",
+  "args": [
+    "-y",
+    "@huggingface/mcp-server"
+  ],
+  "required_env": [],
+  "risk": "low",
+  "license": "Apache-2.0",
+  "docs": "https://huggingface.co/blog/hf-mcp-server",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

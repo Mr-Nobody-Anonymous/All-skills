@@ -25,6 +25,8 @@ keywords:
   - nesting
   - acrylic
   - plywood
+mcp_servers:
+  - inkscape
 source: custom
 enabled: true
 ---
@@ -85,6 +87,15 @@ Prepare files for laser cutting and engraving: kerf compensation, cut order, mat
 
 - Never cut PVC, polycarbonate or unknown plastics.
 - Know where the extinguisher is and keep the lid closed while cutting.
+
+## MCP Requirements
+
+| Server | Transport | Tier | Risk | Required env |
+| :--- | :--- | :--- | :--- | :--- |
+| `inkscape` | stdio | full | low | — |
+
+Install the connectors above with `allskills mcp install --harness <harness> --profile full`,
+or list the same ids in your harness config. Full detail per server: [`docs/MCP-CATALOG.md`](MCP-CATALOG.md) and [`mcp/registry.json`](../mcp/registry.json).
 
 ## Source
 

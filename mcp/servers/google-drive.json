@@ -1,0 +1,46 @@
+{
+  "id": "google-drive",
+  "name": "Google Drive",
+  "description": "Search and read Google Drive files and Docs.",
+  "category": "documents",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "google",
+  "official": true,
+  "command": "npx",
+  "args": [
+    "-y",
+    "@modelcontextprotocol/server-gdrive"
+  ],
+  "required_env": [
+    "GDRIVE_CREDENTIALS_PATH"
+  ],
+  "risk": "medium",
+  "license": "MIT",
+  "docs": "https://github.com/modelcontextprotocol/servers/tree/main/src/gdrive",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

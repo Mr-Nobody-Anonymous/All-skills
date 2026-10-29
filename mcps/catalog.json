@@ -902,6 +902,45 @@
       ]
     },
     {
+      "id": "deepwiki",
+      "name": "DeepWiki",
+      "description": "Ask questions about an unfamiliar public repository and get answers grounded in its wiki-style documentation.",
+      "vendor": "deepwiki",
+      "official": false,
+      "tier": "full",
+      "category": "knowledge",
+      "transport": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "deepwiki-mcp@latest"
+      ],
+      "required_env": [],
+      "risk": "low",
+      "license": "MIT",
+      "docs": "https://www.npmjs.com/package/deepwiki-mcp",
+      "harnesses": [
+        "claude",
+        "cursor",
+        "codex",
+        "vscode",
+        "gemini",
+        "windsurf",
+        "cline",
+        "roo",
+        "goose",
+        "opencode",
+        "zed",
+        "qwen",
+        "kimi",
+        "hermes",
+        "openclaw",
+        "trae",
+        "codebuddy",
+        "continue"
+      ]
+    },
+    {
       "id": "desktop-commander",
       "name": "Desktop Commander",
       "description": "Terminal control and file editing with configurable safety bounds.",
@@ -3053,6 +3092,47 @@
       ]
     },
     {
+      "id": "opentelemetry",
+      "name": "OpenTelemetry traces",
+      "description": "Query distributed traces from an OpenTelemetry backend (Jaeger, Phoenix, Traceloop) to explain latency and failures across services and LLM calls.",
+      "vendor": "traceloop",
+      "official": false,
+      "tier": "full",
+      "category": "observability",
+      "transport": "stdio",
+      "command": "uvx",
+      "args": [
+        "opentelemetry-mcp"
+      ],
+      "required_env": [
+        "BACKEND_TYPE",
+        "BACKEND_URL"
+      ],
+      "risk": "medium",
+      "license": "Apache-2.0",
+      "docs": "https://github.com/traceloop/opentelemetry-mcp-server",
+      "harnesses": [
+        "claude",
+        "cursor",
+        "codex",
+        "vscode",
+        "gemini",
+        "windsurf",
+        "cline",
+        "roo",
+        "goose",
+        "opencode",
+        "zed",
+        "qwen",
+        "kimi",
+        "hermes",
+        "openclaw",
+        "trae",
+        "codebuddy",
+        "continue"
+      ]
+    },
+    {
       "id": "paypal",
       "name": "PayPal",
       "description": "PayPal orders, payments, invoices and disputes for sandbox or live accounts.",
@@ -3277,6 +3357,46 @@
       "risk": "medium",
       "license": "Apache-2.0",
       "docs": "https://github.com/postmanlabs/postman-mcp-server",
+      "harnesses": [
+        "claude",
+        "cursor",
+        "codex",
+        "vscode",
+        "gemini",
+        "windsurf",
+        "cline",
+        "roo",
+        "goose",
+        "opencode",
+        "zed",
+        "qwen",
+        "kimi",
+        "hermes",
+        "openclaw",
+        "trae",
+        "codebuddy",
+        "continue"
+      ]
+    },
+    {
+      "id": "prometheus",
+      "name": "Prometheus",
+      "description": "Run PromQL against a Prometheus server: query metrics, inspect targets and labels, and pull range data for triage.",
+      "vendor": "pab1it0",
+      "official": false,
+      "tier": "full",
+      "category": "observability",
+      "transport": "stdio",
+      "command": "uvx",
+      "args": [
+        "prometheus-mcp-server"
+      ],
+      "required_env": [
+        "PROMETHEUS_URL"
+      ],
+      "risk": "medium",
+      "license": "MIT",
+      "docs": "https://github.com/pab1it0/prometheus-mcp-server",
       "harnesses": [
         "claude",
         "cursor",
@@ -3801,6 +3921,47 @@
       "risk": "low",
       "license": "MIT",
       "docs": "https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking",
+      "harnesses": [
+        "claude",
+        "cursor",
+        "codex",
+        "vscode",
+        "gemini",
+        "windsurf",
+        "cline",
+        "roo",
+        "goose",
+        "opencode",
+        "zed",
+        "qwen",
+        "kimi",
+        "hermes",
+        "openclaw",
+        "trae",
+        "codebuddy",
+        "continue"
+      ]
+    },
+    {
+      "id": "serena",
+      "name": "Serena",
+      "description": "Symbol-aware code intelligence: find and edit by symbol instead of by text, across many languages, with semantic retrieval over a repository.",
+      "vendor": "oraios",
+      "official": false,
+      "tier": "full",
+      "category": "development",
+      "transport": "stdio",
+      "command": "uvx",
+      "args": [
+        "--from",
+        "serena-agent",
+        "serena",
+        "start-mcp-server"
+      ],
+      "required_env": [],
+      "risk": "medium",
+      "license": "GPL-3.0-or-later",
+      "docs": "https://github.com/oraios/serena",
       "harnesses": [
         "claude",
         "cursor",

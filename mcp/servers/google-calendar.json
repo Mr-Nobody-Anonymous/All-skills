@@ -1,0 +1,46 @@
+{
+  "id": "google-calendar",
+  "name": "Google Calendar",
+  "description": "List, create and update Google Calendar events across accounts.",
+  "category": "productivity",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "nspady",
+  "official": false,
+  "command": "npx",
+  "args": [
+    "-y",
+    "@cocal/google-calendar-mcp@latest"
+  ],
+  "required_env": [
+    "GOOGLE_OAUTH_CREDENTIALS"
+  ],
+  "risk": "medium",
+  "license": "MIT",
+  "docs": "https://github.com/nspady/google-calendar-mcp",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

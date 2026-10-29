@@ -1,0 +1,47 @@
+{
+  "id": "shopify",
+  "name": "Shopify",
+  "description": "Admin API access to products, orders, customers and inventory.",
+  "category": "commerce",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "shopify",
+  "official": true,
+  "command": "npx",
+  "args": [
+    "-y",
+    "@shopify/dev-mcp@latest"
+  ],
+  "required_env": [
+    "SHOPIFY_ACCESS_TOKEN",
+    "SHOPIFY_STORE_DOMAIN"
+  ],
+  "risk": "high",
+  "license": "MIT",
+  "docs": "https://github.com/Shopify/dev-mcp",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

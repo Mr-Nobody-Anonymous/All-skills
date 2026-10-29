@@ -1,0 +1,47 @@
+{
+  "id": "openapi",
+  "name": "OpenAPI",
+  "description": "Expose any OpenAPI 3 document as MCP tools at runtime.",
+  "category": "integration",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "community",
+  "official": false,
+  "command": "npx",
+  "args": [
+    "-y",
+    "openapi-mcp-server",
+    "${OPENAPI_SPEC_PATH}"
+  ],
+  "required_env": [
+    "OPENAPI_SPEC_PATH"
+  ],
+  "risk": "medium",
+  "license": "MIT",
+  "docs": "https://github.com/janwilmake/openapi-mcp-server",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

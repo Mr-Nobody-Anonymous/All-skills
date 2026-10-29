@@ -1,0 +1,46 @@
+{
+  "id": "snyk",
+  "name": "Snyk",
+  "description": "Run dependency and container vulnerability scans.",
+  "category": "security",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "snyk",
+  "official": true,
+  "command": "npx",
+  "args": [
+    "-y",
+    "snyk-mcp"
+  ],
+  "required_env": [
+    "SNYK_TOKEN"
+  ],
+  "risk": "medium",
+  "license": "Apache-2.0",
+  "docs": "https://github.com/snyk/snyk-ls",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

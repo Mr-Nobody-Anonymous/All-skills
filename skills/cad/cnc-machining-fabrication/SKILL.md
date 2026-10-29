@@ -26,6 +26,9 @@ keywords:
   - feeds-speeds
   - fixture
   - dfm
+mcp_servers:
+  - freecad
+  - openscad
 source: custom
 enabled: true
 ---
@@ -87,6 +90,16 @@ Go from a solid model to machined parts: DFM review, toolpath strategy, workhold
 
 - Always dry-run; never trust a first-run path on a loaded machine.
 - Confirm units (mm vs inch) in both CAM and the post-processor.
+
+## MCP Requirements
+
+| Server | Transport | Tier | Risk | Required env |
+| :--- | :--- | :--- | :--- | :--- |
+| `freecad` | stdio | full | medium | — |
+| `openscad` | stdio | full | low | — |
+
+Install the connectors above with `allskills mcp install --harness <harness> --profile full`,
+or list the same ids in your harness config. Full detail per server: [`docs/MCP-CATALOG.md`](MCP-CATALOG.md) and [`mcp/registry.json`](../mcp/registry.json).
 
 ## Source
 

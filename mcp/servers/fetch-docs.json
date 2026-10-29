@@ -1,0 +1,44 @@
+{
+  "id": "fetch-docs",
+  "name": "Documentation Server",
+  "description": "Fetch and index official package documentation for offline lookup.",
+  "category": "documentation",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "community",
+  "official": false,
+  "command": "npx",
+  "args": [
+    "-y",
+    "mcp-docs-server"
+  ],
+  "required_env": [],
+  "risk": "low",
+  "license": "MIT",
+  "docs": "https://github.com/arabold/docs-mcp-server",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

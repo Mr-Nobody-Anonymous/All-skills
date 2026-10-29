@@ -1,12 +1,42 @@
 {
   "id": "github",
-  "command": "npx",
-  "args": [
-    "-y",
-    "@modelcontextprotocol/server-github"
+  "name": "GitHub",
+  "description": "Issues, pull requests, repositories, code search and Actions through the GitHub API.",
+  "category": "source-control",
+  "tier": "standard",
+  "transport": "http",
+  "vendor": "github",
+  "official": true,
+  "url": "https://api.githubcopilot.com/mcp/",
+  "required_env": [
+    "GITHUB_PERSONAL_ACCESS_TOKEN"
   ],
-  "env": {
-    "GITHUB_PERSONAL_ACCESS_TOKEN": ""
-  },
-  "category": "development"
+  "risk": "medium",
+  "license": "MIT",
+  "docs": "https://github.com/github/github-mcp-server",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
 }

@@ -1,0 +1,46 @@
+{
+  "id": "netlify",
+  "name": "Netlify",
+  "description": "Create and deploy Netlify sites, manage environment variables and read deploy logs.",
+  "category": "cloud",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "netlify",
+  "official": true,
+  "command": "npx",
+  "args": [
+    "-y",
+    "@netlify/mcp@latest"
+  ],
+  "required_env": [
+    "NETLIFY_PERSONAL_ACCESS_TOKEN"
+  ],
+  "risk": "high",
+  "license": "ISC",
+  "docs": "https://docs.netlify.com/welcome/build-with-ai/netlify-mcp-server/",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

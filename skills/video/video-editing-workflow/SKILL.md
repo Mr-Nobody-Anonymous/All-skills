@@ -23,6 +23,8 @@ keywords:
   - proxy
   - multicam
   - xml
+mcp_servers:
+  - davinci-resolve
 source: custom
 enabled: true
 ---
@@ -83,6 +85,15 @@ Edit video professionally: project and proxy setup, codec and timebase consisten
 - Mixing frame rates in one timeline causes judder and audio drift — conform first.
 - Never delete original media after generating proxies, and relink before export.
 - Variable-frame-rate phone footage must be transcoded to constant rate.
+
+## MCP Requirements
+
+| Server | Transport | Tier | Risk | Required env |
+| :--- | :--- | :--- | :--- | :--- |
+| `davinci-resolve` | stdio | full | medium | — |
+
+Install the connectors above with `allskills mcp install --harness <harness> --profile full`,
+or list the same ids in your harness config. Full detail per server: [`docs/MCP-CATALOG.md`](MCP-CATALOG.md) and [`mcp/registry.json`](../mcp/registry.json).
 
 ## Source
 

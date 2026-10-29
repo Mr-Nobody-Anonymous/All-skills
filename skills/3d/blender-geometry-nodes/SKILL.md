@@ -22,6 +22,8 @@ keywords:
   - fields
   - instancing
   - attributes
+mcp_servers:
+  - blender
 source: custom
 enabled: true
 ---
@@ -82,6 +84,15 @@ Build procedural systems in Blender Geometry Nodes: field evaluation, instances 
 - Realizing instances multiplies geometry and can exhaust memory on large counts.
 - Attribute name typos fail silently and produce empty results.
 - Procedural assets exported to engines must be baked or they lose their logic.
+
+## MCP Requirements
+
+| Server | Transport | Tier | Risk | Required env |
+| :--- | :--- | :--- | :--- | :--- |
+| `blender` | stdio | standard | medium | `BLENDER_HOST`, `BLENDER_PORT` |
+
+Install the connectors above with `allskills mcp install --harness <harness> --profile full`,
+or list the same ids in your harness config. Full detail per server: [`docs/MCP-CATALOG.md`](MCP-CATALOG.md) and [`mcp/registry.json`](../mcp/registry.json).
 
 ## Source
 

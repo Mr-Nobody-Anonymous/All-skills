@@ -1,10 +1,15 @@
 {
   "profile": "researcher",
   "servers": [
+    "brave-search",
+    "deepwiki",
+    "exa",
     "fetch",
-    "memory",
-    "docs",
-    "browser"
+    "filesystem",
+    "firecrawl",
+    "tavily"
   ],
-  "default_policy": "least-privilege"
+  "default_policy": "least-privilege",
+  "read_only_default": true,
+  "note": "Generated from mcps/catalog.json by scripts/dev/generate_mcp_registry.py."
 }

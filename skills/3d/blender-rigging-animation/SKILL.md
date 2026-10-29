@@ -23,6 +23,8 @@ keywords:
   - weights
   - ik
   - fcurves
+mcp_servers:
+  - blender
 source: custom
 enabled: true
 ---
@@ -83,6 +85,15 @@ Rig and animate in Blender: armatures and bone roll, weight painting, IK/FK chai
 - Bone roll errors cause mirrored axes and broken IK — set it once, verify visually.
 - Automatic weights on intersecting geometry create hidden bleeding.
 - Engine bone-name limits and scale conventions must be respected or clips break.
+
+## MCP Requirements
+
+| Server | Transport | Tier | Risk | Required env |
+| :--- | :--- | :--- | :--- | :--- |
+| `blender` | stdio | standard | medium | `BLENDER_HOST`, `BLENDER_PORT` |
+
+Install the connectors above with `allskills mcp install --harness <harness> --profile full`,
+or list the same ids in your harness config. Full detail per server: [`docs/MCP-CATALOG.md`](MCP-CATALOG.md) and [`mcp/registry.json`](../mcp/registry.json).
 
 ## Source
 

@@ -1,0 +1,46 @@
+{
+  "id": "serena",
+  "name": "Serena",
+  "description": "Symbol-aware code intelligence: find and edit by symbol instead of by text, across many languages, with semantic retrieval over a repository.",
+  "category": "development",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "oraios",
+  "official": false,
+  "command": "uvx",
+  "args": [
+    "--from",
+    "serena-agent",
+    "serena",
+    "start-mcp-server"
+  ],
+  "required_env": [],
+  "risk": "medium",
+  "license": "GPL-3.0-or-later",
+  "docs": "https://github.com/oraios/serena",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

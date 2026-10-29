@@ -489,7 +489,7 @@ SKILLS: List[Dict[str, Any]] = [
         "capabilities": ["ranked-search", "routing", "provenance-check", "skill-publication"],
         "inputs": ["task description or keywords", "target harness"],
         "outputs": ["ranked skill list", "routing explanation", "installed skill"],
-        "purpose": "There are three layers to search — 398 canonical skills, the active harness set, and a 15k catalog of imported skills — and they answer different questions. This skill routes a task, explains why a skill won, and installs it with its provenance and license intact.",
+        "purpose": "There are three layers to search — the curated canonical library, the active harness set, and a 15k catalog of imported skills — and they answer different questions. This skill routes a task, explains why a skill won, and installs it with its provenance and license intact.",
         "when": [
             "You are unsure whether a capability already exists in the library.",
             "You need the cheapest path to a capability before writing one from scratch.",

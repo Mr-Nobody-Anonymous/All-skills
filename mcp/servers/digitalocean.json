@@ -1,0 +1,46 @@
+{
+  "id": "digitalocean",
+  "name": "DigitalOcean",
+  "description": "Manage Droplets, App Platform apps, databases and Kubernetes clusters on DigitalOcean.",
+  "category": "cloud",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "digitalocean",
+  "official": true,
+  "command": "npx",
+  "args": [
+    "-y",
+    "@digitalocean/mcp@latest"
+  ],
+  "required_env": [
+    "DIGITALOCEAN_API_TOKEN"
+  ],
+  "risk": "high",
+  "license": "MIT",
+  "docs": "https://github.com/digitalocean-labs/mcp-digitalocean",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

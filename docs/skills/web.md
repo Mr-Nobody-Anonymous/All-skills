@@ -1,10 +1,10 @@
 # Web Skills
 
-_Generated: 2026-10-28T05:33:42+00:00_
+_Generated: 2026-10-29T14:02:53+00:00_
 
 Skills that interact with the live web: browser automation, web scraping, web extraction, SEO audits, accessibility testing, and end-to-end website testing. These skills are wrappers around concrete tools (Playwright, Lighthouse-style checks, a11y linters) but the library itself is tooling-light — the skills describe the workflow.
 
-**13 skills in this category.**
+**16 skills in this category.**
 
 ## Skills
 
@@ -115,6 +115,42 @@ Download user-authorized public media while respecting rights, terms, and safe f
 
 Download publicly available media files (videos, audio, images) from the web with proper respect for copyright, terms of service, and safe filename handling. The skill ensures users have appropriate rights before downloading and provides proper attribution.
 
+### `web.nextjs-app-router`
+
+Build Next.js App Router applications correctly: server versus client components, streaming and Suspense, route handlers, caching and revalidation, and metadata.
+
+- **Risk:** low
+- **Path:** `web/nextjs-app-router`
+- **Aliases:** `nextjs`
+- **Triggers:**
+  - nextjs app router
+  - server component vs client component
+  - nextjs caching revalidate
+  - route handler nextjs
+  - nextjs streaming suspense
+- **Source:** custom
+- **Version:** 1.0.0
+
+Build Next.js App Router applications correctly: server versus client components, streaming and Suspense, route handlers, caching and revalidation, and metadata.
+
+### `web.react-performance`
+
+Diagnose and fix React performance: render profiling, memoisation that pays, list virtualisation, bundle splitting and Core Web Vitals.
+
+- **Risk:** low
+- **Path:** `web/react-performance`
+- **Aliases:** `react-perf`
+- **Triggers:**
+  - react slow render
+  - react profiler flamegraph
+  - why does my component rerender
+  - react bundle size
+  - usememo usecallback worth it
+- **Source:** custom
+- **Version:** 1.0.0
+
+Diagnose and fix React performance: render profiling, memoisation that pays, list virtualisation, bundle splitting and Core Web Vitals.
+
 ### `web.seo`
 
 Search engine optimization audits — on-page, technical, content, and link analysis with prioritized recommendations.
@@ -150,6 +186,24 @@ Build SvelteKit applications: runes and reactivity, load functions, form actions
 - **Version:** 1.0.0
 
 Build SvelteKit applications: runes and reactivity, load functions, form actions, adapters and component testing with Vitest.
+
+### `web.typescript-advanced`
+
+Use advanced TypeScript deliberately: generics with constraints, conditional and mapped types, template literals, discriminated unions and safe module augmentation.
+
+- **Risk:** low
+- **Path:** `web/typescript-advanced`
+- **Aliases:** `ts-advanced`
+- **Triggers:**
+  - typescript generic constraints
+  - conditional type inference
+  - typescript mapped types
+  - template literal types
+  - typescript type error complex
+- **Source:** custom
+- **Version:** 1.0.0
+
+Use advanced TypeScript deliberately: generics with constraints, conditional and mapped types, template literals, discriminated unions and safe module augmentation.
 
 ### `web.vue-development`
 

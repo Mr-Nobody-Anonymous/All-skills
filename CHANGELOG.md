@@ -10,6 +10,48 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- **Round 4 — one inventory, not two; +29 skills, +4 connectors (504 → 533 skills, 44 → 45
+  categories; 113 → 117 servers, 35 → 36 categories).** Triggered by an external audit that found
+  the repository documenting two different inventories. Answer in full:
+  [`docs/AUDIT-RESPONSE.md`](docs/AUDIT-RESPONSE.md).
+  - **`mcp/` is now generated** from `mcps/catalog.json` by
+    `scripts/dev/generate_mcp_registry.py` (117 server files, real category index, 10 role profiles
+    validated against the catalog). It was a hand-maintained tree of 12 stubs whose `registry.json`
+    claimed 12 servers — including servers that never existed (`bitbucket`, `asana`, `monday`,
+    `canva`, `datadog`, `quickbooks`). Stale stubs are deleted on regeneration.
+  - **MCP counts are now computed, not typed.** `mcp_servers`, `mcp_categories`, `mcp_harnesses`,
+    `mcp_profiles`, `mcp_role_profiles` are part of `stats.json`, and `DOC_COUNT_RULES` syncs them
+    into `README.md`, `SKILLS.md` and `docs/` — the same mechanism that already guarded the skill
+    counts. `compute_stats --verify` fails on any disagreement.
+  - **`SKILLS.md` corrected**: it claimed 122 canonical skills, 70 active harness skills, 12 MCP
+    servers, 192 manifest skills and "94/94 tests passing", and described a `mcp/` layout that no
+    longer existed. Every number is now derived; the "passing" claim is gone (CI badges report
+    status, documents do not), and the fictional "15 universal super-domains" is replaced with the
+    structure that exists.
+  - **New: skill → connector dependency mapping.** Skills declare `mcp_servers:` in frontmatter; the
+    generator writes `registry/skill-mcp-map.json` (both directions), `docs/MCP-SKILL-MAP.md`, and an
+    `## MCP Requirements` table inside each declaring skill. 63 of 533 skills declare servers, 37 of
+    117 servers are required by at least one skill, and the remaining 80 are listed as backlog.
+  - **4 new connectors**: `serena` (symbol-aware code intelligence, `serena-agent`), `deepwiki`
+    (repository comprehension), `prometheus` (PromQL) and `opentelemetry` (distributed traces) —
+    each verified against PyPI/npm with the console-script name read from the wheel's
+    `entry_points.txt`. `zapier` was rejected: npm `zapier-mcp@0.0.1` is UNLICENSED with no repository.
+  - **29 new skills** for the gaps the audit correctly identified, after de-duplicating 26 proposals
+    that already existed under other names (`graphql-api-design`, `grpc-service-design`,
+    `websocket-realtime`, `data/dbt`, `ai/vllm`, `finops/ai-inference-cost`,
+    `integration/mcp-security-review`, `observability/slo-sli`, `mobile/react-native`,
+    `mobile/flutter`, `design/presentations`, …): `nextjs-app-router`, `react-performance`,
+    `typescript-advanced`, `component-testing`, `visual-regression-testing`, `fastapi-expert`,
+    `nestjs-expert`, `postgresql-performance`, `database-query-optimization`, `rag-evaluation`,
+    `mlops`, `model-drift-monitoring`, `causal-inference`, `cloudflare-workers`,
+    `platform-engineering`, `disaster-recovery`, `api-security-testing`, `mutation-testing`,
+    `contract-testing`, `accessibility-automation`, `user-research`, `product-analytics`,
+    `conversion-rate-optimization`, `pricing-strategy`, `customer-support-automation`, plus the new
+    `agents` category: `mcp-integration-testing`, `agent-observability`, `agent-reliability`,
+    `human-in-the-loop-design`.
+  - **Five new regression tests** pin the invariants: the generated `mcp/` tree must match the
+    catalog byte for byte, no orphan server stubs, registry counts must equal reality, every declared
+    server must be installable, and the map must stay current.
 - **56 new canonical skills and 17 MCP connectors for the non-software world (448 → 504 skills,
   30 → 44 categories; 96 → 113 servers, 31 → 35 categories).** The library covered engineering
   thoroughly and authoring not at all: an agent asked to make a map in QGIS, model a part in

@@ -26,6 +26,8 @@ keywords:
   - path
   - bezier
   - trace
+mcp_servers:
+  - inkscape
 source: custom
 enabled: true
 ---
@@ -87,6 +89,15 @@ Author clean, editable vector artwork and SVG: paths and boolean operations, str
 
 - Keep the untouched original; vector repair is destructive by nature.
 - Do not convert text to outlines before the copy is signed off — it becomes uneditable.
+
+## MCP Requirements
+
+| Server | Transport | Tier | Risk | Required env |
+| :--- | :--- | :--- | :--- | :--- |
+| `inkscape` | stdio | full | low | — |
+
+Install the connectors above with `allskills mcp install --harness <harness> --profile full`,
+or list the same ids in your harness config. Full detail per server: [`docs/MCP-CATALOG.md`](MCP-CATALOG.md) and [`mcp/registry.json`](../mcp/registry.json).
 
 ## Source
 

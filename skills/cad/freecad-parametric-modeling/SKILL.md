@@ -25,6 +25,8 @@ keywords:
   - part-design
   - techdraw
   - step
+mcp_servers:
+  - freecad
 source: custom
 enabled: true
 ---
@@ -85,6 +87,15 @@ Model parametrically in FreeCAD: sketches and constraints, Part Design bodies, s
 - Fillets applied before later features often break the model; add them last.
 - Unit mismatch (mm vs inch) in imported STEP silently scales parts.
 - Never trust a model without a drawing or measurement check against the spec.
+
+## MCP Requirements
+
+| Server | Transport | Tier | Risk | Required env |
+| :--- | :--- | :--- | :--- | :--- |
+| `freecad` | stdio | full | medium | — |
+
+Install the connectors above with `allskills mcp install --harness <harness> --profile full`,
+or list the same ids in your harness config. Full detail per server: [`docs/MCP-CATALOG.md`](MCP-CATALOG.md) and [`mcp/registry.json`](../mcp/registry.json).
 
 ## Source
 

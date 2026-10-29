@@ -166,6 +166,14 @@
         "davinci-resolve-mcp"
       ]
     },
+    "deepwiki": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "deepwiki-mcp@latest"
+      ]
+    },
     "desktop-commander": {
       "type": "local",
       "command": [
@@ -570,6 +578,13 @@
         "openscad-mcp"
       ]
     },
+    "opentelemetry": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "opentelemetry-mcp"
+      ]
+    },
     "paypal": {
       "type": "local",
       "command": [
@@ -617,6 +632,13 @@
         "npx",
         "-y",
         "@postman/postman-mcp-server@latest"
+      ]
+    },
+    "prometheus": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "prometheus-mcp-server"
       ]
     },
     "pulumi": {
@@ -715,6 +737,16 @@
         "npx",
         "-y",
         "@modelcontextprotocol/server-sequential-thinking"
+      ]
+    },
+    "serena": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "--from",
+        "serena-agent",
+        "serena",
+        "start-mcp-server"
       ]
     },
     "shopify": {

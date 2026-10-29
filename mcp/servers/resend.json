@@ -1,0 +1,46 @@
+{
+  "id": "resend",
+  "name": "Resend",
+  "description": "Send transactional email, manage audiences and inspect deliveries with Resend.",
+  "category": "communication",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "resend",
+  "official": true,
+  "command": "npx",
+  "args": [
+    "-y",
+    "resend-mcp@latest"
+  ],
+  "required_env": [
+    "RESEND_API_KEY"
+  ],
+  "risk": "high",
+  "license": "MIT",
+  "docs": "https://github.com/resend/resend-mcp",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

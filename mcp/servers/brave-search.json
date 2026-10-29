@@ -1,0 +1,46 @@
+{
+  "id": "brave-search",
+  "name": "Brave Search",
+  "description": "Independent web and local search index via the Brave Search API.",
+  "category": "search",
+  "tier": "standard",
+  "transport": "stdio",
+  "vendor": "brave",
+  "official": true,
+  "command": "npx",
+  "args": [
+    "-y",
+    "@modelcontextprotocol/server-brave-search"
+  ],
+  "required_env": [
+    "BRAVE_API_KEY"
+  ],
+  "risk": "low",
+  "license": "MIT",
+  "docs": "https://github.com/modelcontextprotocol/servers/tree/main/src/brave-search",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

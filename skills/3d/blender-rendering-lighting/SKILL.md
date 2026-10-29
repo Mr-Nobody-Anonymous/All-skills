@@ -23,6 +23,8 @@ keywords:
   - lighting
   - denoise
   - passes
+mcp_servers:
+  - blender
 source: custom
 enabled: true
 ---
@@ -83,6 +85,15 @@ Light and render in Blender: Cycles versus EEVEE trade-offs, sampling and denois
 - Denoising hides real sampling problems at the cost of detail — check with it off first.
 - High sample counts on CPU for an animation rarely finish; test one frame first.
 - Colour management changes make old and new renders incomparable.
+
+## MCP Requirements
+
+| Server | Transport | Tier | Risk | Required env |
+| :--- | :--- | :--- | :--- | :--- |
+| `blender` | stdio | standard | medium | `BLENDER_HOST`, `BLENDER_PORT` |
+
+Install the connectors above with `allskills mcp install --harness <harness> --profile full`,
+or list the same ids in your harness config. Full detail per server: [`docs/MCP-CATALOG.md`](MCP-CATALOG.md) and [`mcp/registry.json`](../mcp/registry.json).
 
 ## Source
 

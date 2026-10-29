@@ -22,6 +22,8 @@ keywords:
   - lighting
   - finishes
   - accessibility
+mcp_servers:
+  - ifc
 source: custom
 enabled: true
 ---
@@ -82,6 +84,15 @@ Plan interior spaces: programme and adjacencies, circulation and clearances, fur
 - Furniture placed without service clearances looks fine and fails in use.
 - Accessibility routes must be verified against the local standard, not memory.
 - Finish choices drive maintenance cost; confirm with the operator.
+
+## MCP Requirements
+
+| Server | Transport | Tier | Risk | Required env |
+| :--- | :--- | :--- | :--- | :--- |
+| `ifc` | stdio | full | low | — |
+
+Install the connectors above with `allskills mcp install --harness <harness> --profile full`,
+or list the same ids in your harness config. Full detail per server: [`docs/MCP-CATALOG.md`](MCP-CATALOG.md) and [`mcp/registry.json`](../mcp/registry.json).
 
 ## Source
 

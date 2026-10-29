@@ -22,6 +22,8 @@ keywords:
   - recording
   - arrangement
   - ableton
+mcp_servers:
+  - ableton
 source: custom
 enabled: true
 ---
@@ -82,6 +84,15 @@ Produce music in a DAW: session setup and gain staging, MIDI and audio recording
 - Recording without headroom clips the input and cannot be recovered.
 - Unnamed tracks and plugins make handoff sessions unusable.
 - Autosave and versioned copies protect against plugin crashes.
+
+## MCP Requirements
+
+| Server | Transport | Tier | Risk | Required env |
+| :--- | :--- | :--- | :--- | :--- |
+| `ableton` | stdio | full | medium | — |
+
+Install the connectors above with `allskills mcp install --harness <harness> --profile full`,
+or list the same ids in your harness config. Full detail per server: [`docs/MCP-CATALOG.md`](MCP-CATALOG.md) and [`mcp/registry.json`](../mcp/registry.json).
 
 ## Source
 

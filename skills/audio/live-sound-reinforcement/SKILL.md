@@ -26,6 +26,8 @@ keywords:
   - gain-staging
   - pa
   - soundcheck
+mcp_servers:
+  - ableton
 source: custom
 enabled: true
 ---
@@ -86,6 +88,15 @@ Run live sound: gain structure, system EQ and feedback control, monitor mixes, d
 
 - Protect hearing: limit SPL at the mix position and keep earplugs available.
 - Mute outputs before patching to avoid a full-level pop into the PA.
+
+## MCP Requirements
+
+| Server | Transport | Tier | Risk | Required env |
+| :--- | :--- | :--- | :--- | :--- |
+| `ableton` | stdio | full | medium | — |
+
+Install the connectors above with `allskills mcp install --harness <harness> --profile full`,
+or list the same ids in your harness config. Full detail per server: [`docs/MCP-CATALOG.md`](MCP-CATALOG.md) and [`mcp/registry.json`](../mcp/registry.json).
 
 ## Source
 

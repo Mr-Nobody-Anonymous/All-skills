@@ -171,6 +171,13 @@ jobs:
           python scripts/mcp_catalog.py generate
           git diff --exit-code -- mcps/ docs/MCP-CATALOG.md
 
+      # One inventory, not two: mcp/ is a projection of mcps/catalog.json, and
+      # every skill that declares a connector must declare one that exists.
+      - name: MCP registry & skill-to-server map are current
+        run: |
+          python scripts/dev/generate_mcp_registry.py --check
+          python scripts/dev/generate_skill_mcp_map.py --check
+
       - name: Integration skill suite is current
         run: python scripts/generate_integration_skills.py --check
 

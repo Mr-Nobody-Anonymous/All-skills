@@ -22,6 +22,9 @@ keywords:
   - odbl
   - tags
   - geofabrik
+mcp_servers:
+  - gdal
+  - postgres
 source: custom
 enabled: true
 ---
@@ -82,6 +85,16 @@ Work with OpenStreetMap data: Overpass queries, extracts, tag semantics, conflat
 - ODbL requires attribution and share-alike for derived databases; check before publishing.
 - OSM is crowd-sourced: verify critical geometry against an authoritative source.
 - Respect Overpass rate limits — heavy repeated queries get blocked.
+
+## MCP Requirements
+
+| Server | Transport | Tier | Risk | Required env |
+| :--- | :--- | :--- | :--- | :--- |
+| `gdal` | stdio | full | medium | — |
+| `postgres` | stdio | standard | medium | `POSTGRES_URL` |
+
+Install the connectors above with `allskills mcp install --harness <harness> --profile full`,
+or list the same ids in your harness config. Full detail per server: [`docs/MCP-CATALOG.md`](MCP-CATALOG.md) and [`mcp/registry.json`](../mcp/registry.json).
 
 ## Source
 

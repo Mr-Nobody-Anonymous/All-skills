@@ -25,6 +25,8 @@ keywords:
   - icc-profile
   - soft-proof
   - white-balance
+mcp_servers:
+  - filesystem
 source: custom
 enabled: true
 ---
@@ -86,6 +88,15 @@ Light and colour-manage a shoot: modifier choice and ratios, white balance, prof
 
 - Do not edit in the dark on an uncalibrated panel and promise accurate colour.
 - Deliver tagged files; untagged sRGB assumptions break lab printing.
+
+## MCP Requirements
+
+| Server | Transport | Tier | Risk | Required env |
+| :--- | :--- | :--- | :--- | :--- |
+| `filesystem` | stdio | core | low | — |
+
+Install the connectors above with `allskills mcp install --harness <harness> --profile full`,
+or list the same ids in your harness config. Full detail per server: [`docs/MCP-CATALOG.md`](MCP-CATALOG.md) and [`mcp/registry.json`](../mcp/registry.json).
 
 ## Source
 

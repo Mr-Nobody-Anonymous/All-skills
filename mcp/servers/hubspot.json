@@ -1,0 +1,40 @@
+{
+  "id": "hubspot",
+  "name": "HubSpot",
+  "description": "CRM contacts, companies, deals and tickets.",
+  "category": "crm",
+  "tier": "full",
+  "transport": "http",
+  "vendor": "hubspot",
+  "official": true,
+  "url": "https://mcp.hubspot.com",
+  "required_env": [],
+  "risk": "medium",
+  "license": "MIT",
+  "docs": "https://developers.hubspot.com/docs/guides/apps/mcp",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

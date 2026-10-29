@@ -1,0 +1,47 @@
+{
+  "id": "trello",
+  "name": "Trello",
+  "description": "Boards, lists and cards: read and update Trello workflows.",
+  "category": "project-management",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "delorenj",
+  "official": false,
+  "command": "npx",
+  "args": [
+    "-y",
+    "@delorenj/mcp-server-trello@latest"
+  ],
+  "required_env": [
+    "TRELLO_API_KEY",
+    "TRELLO_TOKEN"
+  ],
+  "risk": "medium",
+  "license": "MIT",
+  "docs": "https://github.com/delorenj/mcp-server-trello",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

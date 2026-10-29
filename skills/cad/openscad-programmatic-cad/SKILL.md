@@ -22,6 +22,8 @@ keywords:
   - scad
   - stl
   - 3d-printing
+mcp_servers:
+  - openscad
 source: custom
 enabled: true
 ---
@@ -82,6 +84,15 @@ Design parts in OpenSCAD: parametric modules, CSG operations, libraries, preview
 - `$fn` set globally on large models explodes render time and memory.
 - Preview can show geometry that full render rejects as non-manifold.
 - Non-manifold or zero-thickness walls fail in the slicer or the machine.
+
+## MCP Requirements
+
+| Server | Transport | Tier | Risk | Required env |
+| :--- | :--- | :--- | :--- | :--- |
+| `openscad` | stdio | full | low | — |
+
+Install the connectors above with `allskills mcp install --harness <harness> --profile full`,
+or list the same ids in your harness config. Full detail per server: [`docs/MCP-CATALOG.md`](MCP-CATALOG.md) and [`mcp/registry.json`](../mcp/registry.json).
 
 ## Source
 

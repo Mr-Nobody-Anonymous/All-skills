@@ -17,7 +17,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/skills-13%2C333%2B%20Unique%20Skills-7c3aed?style=for-the-badge&logo=openai&logoColor=white" alt="13,333 Unique Skills" />
+  <img src="https://img.shields.io/badge/skills-13%2C362%2B%20Unique%20Skills-7c3aed?style=for-the-badge&logo=openai&logoColor=white" alt="13,362 Unique Skills" />
   <img src="https://img.shields.io/badge/catalog-15%2C146%20Catalog%20Entries-0ea5e9?style=for-the-badge&logo=github&logoColor=white" alt="15,146 Catalog Entries" />
   <img src="https://img.shields.io/badge/domains-252%20Categories-10b981?style=for-the-badge&logo=hubspot&logoColor=white" alt="252 Categories" />
   <img src="https://img.shields.io/badge/platforms-11%20Agent%20Harnesses-ec4899?style=for-the-badge&logo=probot&logoColor=white" alt="11 Agent Harnesses" />
@@ -71,7 +71,7 @@ When AI coding assistants are front-loaded with thousands of prompt instructions
 │          (skills/)            │        (awesome_skills/)        │     (.agents/ / .claude/ /    │
 │                               │                                 │     .cursor/ / .codex/)       │
 ├───────────────────────────────┼─────────────────────────────────┼───────────────────────────────┤
-│  • 504 Canonical Skills       │  • 15,146 Catalog Entries       │  • 89 Staff Engineer Skills   │
+│  • 533 Canonical Skills       │  • 15,146 Catalog Entries       │  • 89 Staff Engineer Skills   │
 │  • 9-Signal Layered Scoring   │  • 252 Functional Domain Dirs   │  • Pre-Loaded in Workspace    │
 │  • Deterministic Workflows    │  • Machine-Readable Index       │  • Native Multi-Tool Synced   │
 │  • 8-State Formal Lifecycle   │  • Complete CATALOG.md Reference│  • $O(1)$ Load-on-Demand      │
@@ -100,7 +100,7 @@ To eliminate ambiguity between broad catalog references and executable skills, A
 │           ↓                     (12,304 pass the full JSON Schema)        │
 │     142 Executable Handlers     handler.py runtime handlers on disk       │
 │           ↓                                                               │
-│     504 Core Canonical Skills   Strictly curated, policy-gated suites     │
+│     533 Core Canonical Skills   Strictly curated, policy-gated suites     │
 │           ↓                                                               │
 │      89 Active Preloaded Skills Agent harness direct-context baseline     │
 └───────────────────────────────────────────────────────────────────────────┘
@@ -109,7 +109,7 @@ To eliminate ambiguity between broad catalog references and executable skills, A
 1. **15,146 Catalog Entries (`awesome_skills/`)**: Broad searchable reference library indexing external tools, community recipes, and ecosystem packages.
 2. **15,140 Schema-Vetted Skills**: Every catalog `SKILL.md` satisfies the mandatory `name` + `description` contract and 12,304 pass the full JSON Schema (`python scripts/validate_schema.py --catalog --max-catalog-errors 0`).
 3. **142 Executable Handlers**: Canonical skills equipped with an operational runtime handler (`handler.py`) that the execution runtime can drive.
-4. **504 Core Canonical Skills (`skills/`)**: Curated foundational skills with declared capabilities, policies, contracts, and full CI coverage.
+4. **533 Core Canonical Skills (`skills/`)**: Curated foundational skills with declared capabilities, policies, contracts, and full CI coverage.
 5. **89 Active Preloaded Skills (`.agents/skills/`)**: Lean prompt playbooks preloaded into agent workspaces for instant zero-bloat execution.
 
 ---
@@ -229,13 +229,13 @@ Counts are the inventory this repository ships (they are verified in CI against 
 | :--- | :--- | :--- | :--- | :--- |
 | Agents | 68 agents | Shared (AGENTS.md) | Shared (AGENTS.md) | Shared (AGENTS.md) |
 | Commands | 94 commands | Shared | Shared | Instruction-based |
-| Skills | 504 skills | Shared | Shared | Shared |
+| Skills | 533 skills | Shared | Shared | Shared |
 
 ---
 
 ## 🧩 MCP: One Command, Every Connector
 
-Skills teach an agent *how* to work; MCP connectors give it *access* to the systems it works on. All-Skills ships a curated, verified catalog of **113 MCP servers across 35 categories** and installs any of them into **18 agent harnesses** from one command — no per-harness config archaeology, no hand-edited JSON.
+Skills teach an agent *how* to work; MCP connectors give it *access* to the systems it works on. All-Skills ships a curated, verified catalog of **117 MCP servers across 36 categories** and installs any of them into **18 agent harnesses** from one command — no per-harness config archaeology, no hand-edited JSON.
 
 ```bash
 # See what is available, what it needs, and whether you already have the keys
@@ -254,7 +254,7 @@ allskills mcp install --harness vscode --servers github postgres playwright
 allskills mcp verify
 ```
 
-**Profiles** keep context cost honest: `core` (5 keyless servers), `standard` (20), `full` (all 113). **Harnesses** each get their native dialect — `opencode` gets `type: local` command arrays, `zed` gets `context_servers`, VS Code gets `type: stdio`, Codex gets a TOML fragment, Goose a YAML fragment — so nothing is ever corrupted by a JSON-shaped guess.
+**Profiles** keep context cost honest: `core` (5 keyless servers), `standard` (20), `full` (all 117). **Harnesses** each get their native dialect — `opencode` gets `type: local` command arrays, `zed` gets `context_servers`, VS Code gets `type: stdio`, Codex gets a TOML fragment, Goose a YAML fragment — so nothing is ever corrupted by a JSON-shaped guess.
 
 | Connector area | Servers |
 | :--- | :--- |
@@ -273,7 +273,7 @@ Every entry records `tier`, `category`, `risk`, `required_env` and official-vs-c
 
 ## ⚡ Quick Start: One Recommended Path
 
-Out of the box this repository gives every agent access to 68 agents, 504 skills, and 94 legacy command shims — plus a catalog of 15,146 searchable skills and a 113-connector MCP catalog you can install with one command.
+Out of the box this repository gives every agent access to 68 agents, 533 skills, and 94 legacy command shims — plus a catalog of 15,146 searchable skills and a 117-connector MCP catalog you can install with one command.
 
 Get started with All-Skills in seconds using either Python or Node:
 
@@ -446,7 +446,7 @@ Full harness-by-harness walkthrough: [`docs/INSTALL-ANY-AGENT.md`](docs/INSTALL-
 
 ### Skill coverage: what the library now answers
 
-The curated library covers **504 canonical skills in 44 categories**, and the newest expansion closed
+The curated library covers **533 canonical skills in 45 categories**, and the newest expansion closed
 the gaps that used to force an agent to improvise: languages, API styles, infrastructure-as-code,
 collaboration SaaS, quality gates, realtime and release safety, then the whole authoring world —
 GIS and cartography, CAD and BIM, 3D/Blender/VFX, audio, video, photography and architecture.
@@ -469,8 +469,10 @@ Every one of them is installable on its own: the whole curated tree is now owned
 node scripts/install-apply.js --profile library --target cursor --dry-run   # every curated skill
 node scripts/install-apply.js --profile full --target cursor --dry-run      # every skill + agent pack
 
-allskills mcp install --harness cursor --profile full   # every one of the 113 connectors
+allskills mcp install --harness cursor --profile full   # every one of the 117 connectors
 allskills bootstrap --harness cursor --profile full     # skills + connectors, verified end to end
+python scripts/dev/generate_mcp_registry.py --check      # mcp/ is a projection of the catalog
+python scripts/dev/generate_skill_mcp_map.py --check     # skill → connector map is current
 ```
 
 ### Domain coverage: the non-software world
@@ -496,6 +498,17 @@ studio lighting with colour management, and construction documents.
 Every connector above was checked against PyPI/npm before it shipped: the package resolves, the
 launch command comes from its own README, and token-gated servers (`mapbox`, `meshy`, `sketchfab`)
 are never installed by default — they are `full`-profile only and declare their required env var.
+
+Every skill that needs a connector now says so: `mcp_servers:` in the frontmatter, a generated
+`## MCP Requirements` table inside the skill, and a validated entry in
+[`registry/skill-mcp-map.json`](registry/skill-mcp-map.json) /
+[`docs/MCP-SKILL-MAP.md`](docs/MCP-SKILL-MAP.md). 63 skills declare servers, 37 servers are required
+by at least one skill, and the other 80 are listed as the backlog for future coverage — so an
+installer can answer "what does this skill need?" without guessing.
+
+**[`docs/AUDIT-RESPONSE.md`](docs/AUDIT-RESPONSE.md)** answers an external audit of this repository
+item by item: which proposed connectors already existed, which 26 proposed skills were duplicates of
+existing ones, what was genuinely missing and has now been added, and which gaps remain open.
 
 **[`docs/DOMAIN-COVERAGE.md`](docs/DOMAIN-COVERAGE.md)** is the full inventory: every domain that now
 has playbooks and connectors, and an explicit list of the domains that are *still* gaps (welding and
@@ -663,7 +676,7 @@ Beyond instruction text files, **All Skills** provides a complete execution, val
 2. **Master Intent Router (`which-skill`)**: [`.agents/skills/which-skill/SKILL.md`](.agents/skills/which-skill/SKILL.md) provides instant decision matrix mapping and CLI routing (`python scripts/skills/skills.py route`) across all 15,146 catalog entries.
 3. **Multi-Step Execution Playbooks (`workflows/`)**: Complete chained workflows in [`workflows/`](workflows/) (`feature-development.md`, `bug-investigation-and-fix.md`, `fullstack-saas-launch.md`, etc.) for autonomous multi-step execution.
 4. **State Tracking & Stack Manifests (`aas-stack.json`)**: Structured sidecar schema ([`schemas/aas-stack.schema.json`](schemas/aas-stack.schema.json)) and CLI ([`scripts/manage_state.py`](scripts/manage_state.py)) for tracking phase progress, variables, and architectural decisions (ADRs) with auto-synced [`CONTEXT.md`](CONTEXT.md).
-5. **Central Tool-to-Skill Manifest**: [`manifest.json`](manifest.json) indexes all 504 platform skills, mapping them to required tool permissions (`bash`, `file_edit`, `ast_grep`, `browser`), MCP servers (`filesystem`, `git`, `fetch`, `memory`), and lifecycle hooks.
+5. **Central Tool-to-Skill Manifest**: [`manifest.json`](manifest.json) indexes all 533 platform skills, mapping them to required tool permissions (`bash`, `file_edit`, `ast_grep`, `browser`), MCP servers (`filesystem`, `git`, `fetch`, `memory`), and lifecycle hooks.
 6. **Model Context Protocol (MCP)**: Native [`mcp_config.json`](mcp_config.json) configuring local MCP servers for Claude Code, Cursor, and Antigravity.
 7. **Lifecycle Hooks Engine**: Execute automated gates before and after skills run via [`scripts/run_hook.py`](scripts/run_hook.py):
    ```bash
@@ -819,7 +832,7 @@ Your workspace comes pre-loaded with **89 staff-engineer and AI architect playbo
 The repository includes two powerful CLI suites running on pure standard library with **zero external dependencies**:
 
 ### 1. Awesome Skills Manager (`scripts/manage_awesome_skills.py`)
-Interact with all 15,146 catalog entries (13,333 unique skills) in [`awesome_skills/`](awesome_skills/):
+Interact with all 15,146 catalog entries (13,362 unique skills) in [`awesome_skills/`](awesome_skills/):
 
 ```bash
 # List all 252 domain categories with skill counts
@@ -858,7 +871,7 @@ python scripts/manage_awesome_skills.py install-bundle saas-growth
 ---
 
 ### 2. Canonical Routing Engine (`scripts/skills/skills.py`)
-Run sub-millisecond natural language routing, quality audits, and workflow chains across the 504 canonical engine skills:
+Run sub-millisecond natural language routing, quality audits, and workflow chains across the 533 canonical engine skills:
 
 ```bash
 # Route a natural language goal to the optimal skill
@@ -950,8 +963,8 @@ python -m http.server 3000 --directory marketplace
 all-skills/
 |-- agents/           # 68 specialized subagents for delegation
 |-- commands/         # 94 slash commands (legacy shims preserved)
-|-- skills/           # 504 canonical skills across 30 categories
-|-- mcps/             # 113-connector MCP catalog + generated harness bundles
+|-- skills/           # 533 canonical skills across 45 categories
+|-- mcps/             # 117-connector MCP catalog + generated harness bundles
 |
 ├── .agents/skills/              # 🤖 Antigravity / Gemini CLI Active Harness (89 skills)
 ├── .claude/skills/              # 🤖 Claude Code Active Harness (synced via junction)
@@ -969,7 +982,7 @@ all-skills/
 │   ├── ai-ml/                   # 497 skills  (Prompting, RAG, Evals)
 │   └── ...                      # 246 additional domain categories
 │
-├── skills/                      # ⚡ 504 Canonical Engine Skills (30 Categories)
+├── skills/                      # ⚡ 533 Canonical Engine Skills (45 Categories)
 │   ├── architecture/            # Architecture decision records
 │   ├── healthcare/              # Health economics
 │   ├── productivity/            # Focus, anti-procrastination, planning

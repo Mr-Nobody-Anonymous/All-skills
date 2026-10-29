@@ -26,11 +26,63 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import add_missing_skills as base  # noqa: E402
 import domain_skills_geo as geo  # noqa: E402
 import domain_skills_craft as craft  # noqa: E402
+import domain_skills_eng as eng  # noqa: E402
 import domain_skills_media as media  # noqa: E402
 
 FORCE = "--force" in sys.argv
-TITLES = {**geo.TITLES, **media.TITLES, **craft.TITLES}
+TITLES = {**geo.TITLES, **media.TITLES, **craft.TITLES, **eng.TITLES}
 SWITCHED: list[str] = []
+
+# Playbooks whose connector the token match cannot see (the tool is a product
+# name, not a package id). Explicit intent beats guessing.
+EXPLICIT_SERVERS: dict[str, list[str]] = {
+    "color-grading": ["davinci-resolve"],
+    "video-editing-workflow": ["davinci-resolve"],
+    "music-production-daw": ["ableton"],
+    "music-notation-engraving": ["filesystem"],
+    "postgis-spatial-sql": ["postgres"],
+    "gdal-ogr-pipelines": ["gdal"],
+    "remote-sensing-indices": ["gdal"],
+    "vector-tile-web-maps": ["mapbox"],
+    "drone-photogrammetry": ["qgis", "gdal"],
+    "openstreetmap-data": ["gdal", "postgres"],
+    "architectural-design-workflow": ["ifc"],
+    "interior-space-planning": ["ifc"],
+    "studio-lighting-color-management": ["filesystem"],
+    "photography-raw-workflow": ["filesystem"],
+}
+
+
+def catalog_server_ids() -> set[str]:
+    """The MCP servers that actually exist, so a playbook cannot name a phantom."""
+    path = base.ROOT / "mcps" / "catalog.json"
+    if not path.exists():
+        return set()
+    import json
+    return {server["id"] for server in json.loads(path.read_text(encoding="utf-8"))["servers"]}
+
+
+def with_declared_servers(data: dict, known: set[str]) -> dict:
+    """Declare the MCP servers a playbook needs.
+
+    Explicit ``mcp=`` wins. Otherwise the servers are derived from tokens the
+    playbook names — its own name, aliases, keywords and identifier-shaped tools —
+    keeping only exact matches against ``mcps/catalog.json`` ids. So
+    ``qgis-map-production`` (keyword ``qgis``) declares the qgis connector, while
+    a playbook whose tools are plain CLI names (``ffmpeg``) declares nothing.
+    """
+    explicit = EXPLICIT_SERVERS.get(data["name"])
+    if explicit:
+        return {**data, "mcp": sorted(set(explicit) | set(data["mcp"]))}
+    if not data["mcp"]:
+        tokens: set[str] = set()
+        for field in ("name",):
+            tokens.update(str(data[field]).split("-"))
+        for field in ("aliases", "keywords"):
+            tokens.update(str(value).lower() for value in data[field])
+        tokens.update(str(value).lower() for value in data["tools"] if str(value).isidentifier())
+        data = {**data, "mcp": sorted(token for token in tokens if token in known)}
+    return data
 
 
 def main() -> int:
@@ -43,8 +95,10 @@ def main() -> int:
             SWITCHED.append(name)
 
     existing = {path.parent.name for path in base.SKILLS.rglob("SKILL.md")}
+    known = catalog_server_ids()
     written, skipped = [], []
-    for data in [*geo.SKILLS, *media.SKILLS, *craft.SKILLS]:
+    for data in [*geo.SKILLS, *media.SKILLS, *craft.SKILLS, *eng.SKILLS]:
+        data = with_declared_servers(data, known)
         if data["name"] in existing and not FORCE:
             skipped.append(data["name"])
             continue

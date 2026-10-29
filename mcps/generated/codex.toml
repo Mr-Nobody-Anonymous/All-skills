@@ -86,6 +86,10 @@ args = ["-y", "@upstash/context7-mcp"]
 command = "uvx"
 args = ["davinci-resolve-mcp"]
 
+[mcp_servers.deepwiki]
+command = "npx"
+args = ["-y", "deepwiki-mcp@latest"]
+
 [mcp_servers.desktop-commander]
 command = "npx"
 args = ["-y", "@wonderwhy-er/desktop-commander@latest"]
@@ -295,6 +299,10 @@ args = ["-y", "openapi-mcp-server", "${OPENAPI_SPEC_PATH}"]
 command = "uvx"
 args = ["openscad-mcp"]
 
+[mcp_servers.opentelemetry]
+command = "uvx"
+args = ["opentelemetry-mcp"]
+
 [mcp_servers.paypal]
 command = "npx"
 args = ["-y", "@paypal/mcp@latest"]
@@ -318,6 +326,10 @@ args = ["-y", "@modelcontextprotocol/server-postgres", "${POSTGRES_URL}"]
 [mcp_servers.postman]
 command = "npx"
 args = ["-y", "@postman/postman-mcp-server@latest"]
+
+[mcp_servers.prometheus]
+command = "uvx"
+args = ["prometheus-mcp-server"]
 
 [mcp_servers.pulumi]
 command = "npx"
@@ -369,6 +381,10 @@ url = "https://mcp.sentry.dev/mcp"
 [mcp_servers.sequential-thinking]
 command = "npx"
 args = ["-y", "@modelcontextprotocol/server-sequential-thinking"]
+
+[mcp_servers.serena]
+command = "uvx"
+args = ["--from", "serena-agent", "serena", "start-mcp-server"]
 
 [mcp_servers.shopify]
 command = "npx"

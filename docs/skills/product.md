@@ -1,10 +1,10 @@
 # Product Skills
 
-_Generated: 2026-10-28T05:33:42+00:00_
+_Generated: 2026-10-29T14:02:53+00:00_
 
 
 
-**6 skills in this category.**
+**10 skills in this category.**
 
 ## Skills
 
@@ -23,6 +23,24 @@ Formulate rigorous, testable acceptance criteria using Given-When-Then syntax an
 
 Formulate rigorous, testable acceptance criteria using Given-When-Then syntax and edge case definitions.
 
+### `product.conversion-rate-optimization`
+
+Improve conversion with evidence: funnel diagnosis, hypothesis prioritisation, A/B test design and analysis, and guarding against false wins.
+
+- **Risk:** low
+- **Path:** `product/conversion-rate-optimization`
+- **Aliases:** `cro`, `conversion`
+- **Triggers:**
+  - improve conversion rate
+  - ab test design sample size
+  - funnel drop off analysis
+  - cro hypothesis prioritization
+  - ab test significance
+- **Source:** custom
+- **Version:** 1.0.0
+
+Improve conversion with evidence: funnel diagnosis, hypothesis prioritisation, A/B test design and analysis, and guarding against false wins.
+
 ### `product.experimentation`
 
 Design statistically valid A/B experiments, determine sample sizes, and analyze conversion lift.
@@ -38,6 +56,24 @@ Design statistically valid A/B experiments, determine sample sizes, and analyze 
 
 Design statistically valid A/B experiments, determine sample sizes, and analyze conversion lift.
 
+### `product.pricing-strategy`
+
+Design pricing: value metrics, packaging and tiers, willingness-to-pay research, price-change mechanics and margin safety.
+
+- **Risk:** medium
+- **Path:** `product/pricing-strategy`
+- **Aliases:** `pricing`, `packaging`
+- **Triggers:**
+  - pricing strategy saas
+  - value based pricing
+  - packaging tiers design
+  - willingness to pay research
+  - price increase communication
+- **Source:** custom
+- **Version:** 1.0.0
+
+Design pricing: value metrics, packaging and tiers, willingness-to-pay research, price-change mechanics and margin safety.
+
 ### `product.prioritization`
 
 Evaluate roadmap features objectively using RICE scoring, Kano models, and MoSCoW prioritization.
@@ -52,6 +88,24 @@ Evaluate roadmap features objectively using RICE scoring, Kano models, and MoSCo
 - **Version:** 1.0.0
 
 Evaluate roadmap features objectively using RICE scoring, Kano models, and MoSCoW prioritization.
+
+### `product.product-analytics`
+
+Instrument and read product analytics: event taxonomy, funnel and retention definitions, cohort analysis, experiment measurement and warehouse-grade data quality.
+
+- **Risk:** low
+- **Path:** `product/product-analytics`
+- **Aliases:** `product-analytics`, `instrumentation`
+- **Triggers:**
+  - event tracking plan
+  - product funnel analysis
+  - retention cohort analysis
+  - define activation metric
+  - analytics instrumentation
+- **Source:** custom
+- **Version:** 1.0.0
+
+Instrument and read product analytics: event taxonomy, funnel and retention definitions, cohort analysis, experiment measurement and warehouse-grade data quality.
 
 ### `product.product-metrics`
 
@@ -82,6 +136,24 @@ Elicit, structure, and formalize technical and functional requirements into unam
 - **Version:** 1.0.0
 
 Elicit, structure, and formalize technical and functional requirements into unambiguous specifications.
+
+### `product.user-research`
+
+Run user research that changes decisions: question framing, the right method, recruiting, interview craft, synthesis and reporting so findings get acted on.
+
+- **Risk:** low
+- **Path:** `product/user-research`
+- **Aliases:** `uxr`, `research-ops`
+- **Triggers:**
+  - run user interviews
+  - usability testing plan
+  - research synthesis findings
+  - survey design bias
+  - recruit research participants
+- **Source:** custom
+- **Version:** 1.0.0
+
+Run user research that changes decisions: question framing, the right method, recruiting, interview craft, synthesis and reporting so findings get acted on.
 
 ### `product.user-stories`
 

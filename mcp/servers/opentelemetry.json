@@ -1,0 +1,46 @@
+{
+  "id": "opentelemetry",
+  "name": "OpenTelemetry traces",
+  "description": "Query distributed traces from an OpenTelemetry backend (Jaeger, Phoenix, Traceloop) to explain latency and failures across services and LLM calls.",
+  "category": "observability",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "traceloop",
+  "official": false,
+  "command": "uvx",
+  "args": [
+    "opentelemetry-mcp"
+  ],
+  "required_env": [
+    "BACKEND_TYPE",
+    "BACKEND_URL"
+  ],
+  "risk": "medium",
+  "license": "Apache-2.0",
+  "docs": "https://github.com/traceloop/opentelemetry-mcp-server",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

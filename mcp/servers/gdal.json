@@ -1,0 +1,47 @@
+{
+  "id": "gdal",
+  "name": "GDAL",
+  "description": "Python-native GDAL operations: raster and vector reprojection, conversion, clipping, mosaicking and format inspection.",
+  "category": "geospatial",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "JordanGunn",
+  "official": false,
+  "command": "uvx",
+  "args": [
+    "--from",
+    "gdal-mcp",
+    "gdal",
+    "--transport",
+    "stdio"
+  ],
+  "required_env": [],
+  "risk": "medium",
+  "license": "MIT",
+  "docs": "https://github.com/JordanGunn/gdal-mcp",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

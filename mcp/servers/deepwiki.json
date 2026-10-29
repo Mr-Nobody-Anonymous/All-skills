@@ -1,0 +1,44 @@
+{
+  "id": "deepwiki",
+  "name": "DeepWiki",
+  "description": "Ask questions about an unfamiliar public repository and get answers grounded in its wiki-style documentation.",
+  "category": "knowledge",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "deepwiki",
+  "official": false,
+  "command": "npx",
+  "args": [
+    "-y",
+    "deepwiki-mcp@latest"
+  ],
+  "required_env": [],
+  "risk": "low",
+  "license": "MIT",
+  "docs": "https://www.npmjs.com/package/deepwiki-mcp",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "grafana",
+  "name": "Grafana",
+  "description": "Query dashboards, Prometheus metrics and Loki logs through Grafana.",
+  "category": "observability",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "grafana",
+  "official": true,
+  "command": "uvx",
+  "args": [
+    "mcp-grafana"
+  ],
+  "required_env": [
+    "GRAFANA_URL",
+    "GRAFANA_API_KEY"
+  ],
+  "risk": "medium",
+  "license": "Apache-2.0",
+  "docs": "https://github.com/grafana/mcp-grafana",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

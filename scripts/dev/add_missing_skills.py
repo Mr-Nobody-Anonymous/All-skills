@@ -33,7 +33,7 @@ def skill(
     name, category, description, *, type_="procedural", domain=None, risk="low",
     level="intermediate", triggers=(), keywords=(), aliases=(),
     when=(), when_not=(), capabilities=(), inputs=(), workflow=(),
-    tools=(), examples=(), safety=(), notes=(), pairs=(),
+    tools=(), examples=(), safety=(), notes=(), pairs=(), mcp=(),
 ):
     return {
         "name": name, "category": category, "description": description,
@@ -43,6 +43,10 @@ def skill(
         "inputs": list(inputs), "workflow": list(workflow), "tools": list(tools),
         "examples": list(examples), "safety": list(safety), "notes": list(notes),
         "pairs": list(pairs),
+        # MCP servers this playbook needs at runtime. Rendered into the
+        # frontmatter ``mcp_servers`` field, validated against mcps/catalog.json
+        # by scripts/dev/generate_skill_mcp_map.py.
+        "mcp": list(mcp),
     }
 
 
@@ -1495,6 +1499,9 @@ def render(data) -> str:
         front += [f"  - {yaml_scalar(a)}" for a in data["aliases"]]
     front.append("keywords:")
     front += [f"  - {yaml_scalar(k)}" for k in data["keywords"]]
+    if data.get("mcp"):
+        front.append("mcp_servers:")
+        front += [f"  - {yaml_scalar(m)}" for m in data["mcp"]]
     front += ["source: custom", "enabled: true", "---", ""]
 
     title = TITLE_OVERRIDES.get(data["name"], data["name"].replace("-", " ").title())

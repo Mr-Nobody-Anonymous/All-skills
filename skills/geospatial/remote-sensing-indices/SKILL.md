@@ -22,6 +22,8 @@ keywords:
   - ndvi
   - ndwi
   - change-detection
+mcp_servers:
+  - gdal
 source: custom
 enabled: true
 ---
@@ -82,6 +84,15 @@ Analyse satellite imagery: Sentinel-2 and Landsat band selection, cloud masking,
 - Cloud-contaminated pixels bias indices strongly; never report an unmasked mean.
 - Different sensors and processing levels are not directly comparable without harmonization.
 - Do not present a classification as ground truth — report accuracy and confusion.
+
+## MCP Requirements
+
+| Server | Transport | Tier | Risk | Required env |
+| :--- | :--- | :--- | :--- | :--- |
+| `gdal` | stdio | full | medium | — |
+
+Install the connectors above with `allskills mcp install --harness <harness> --profile full`,
+or list the same ids in your harness config. Full detail per server: [`docs/MCP-CATALOG.md`](MCP-CATALOG.md) and [`mcp/registry.json`](../mcp/registry.json).
 
 ## Source
 

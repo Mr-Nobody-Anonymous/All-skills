@@ -1,6 +1,6 @@
 # Integration Skills
 
-_Generated: 2026-10-28T05:33:42+00:00_
+_Generated: 2026-10-29T14:02:53+00:00_
 
 
 
@@ -216,7 +216,7 @@ Find the right skill across canonical skills, the 15k-entry catalog and imported
 - **Source:** custom
 - **Version:** 1.0.0
 
-There are three layers to search — 504 canonical skills, the active harness set, and a 15k catalog of imported skills — and they answer different questions. This skill routes a task, explains why a skill won, and installs it with its provenance and license intact.
+There are three layers to search — the curated canonical library, the active harness set, and a 15k catalog of imported skills — and they answer different questions. This skill routes a task, explains why a skill won, and installs it with its provenance and license intact.
 
 ### `integration.webhook-delivery-design`
 

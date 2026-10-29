@@ -1,0 +1,47 @@
+{
+  "id": "n8n",
+  "name": "n8n",
+  "description": "Search, inspect and validate n8n workflow nodes and build automations from the catalog.",
+  "category": "automation",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "czlonkowski",
+  "official": false,
+  "command": "npx",
+  "args": [
+    "-y",
+    "n8n-mcp@latest"
+  ],
+  "required_env": [
+    "N8N_API_URL",
+    "N8N_API_KEY"
+  ],
+  "risk": "high",
+  "license": "MIT",
+  "docs": "https://github.com/czlonkowski/n8n-mcp",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

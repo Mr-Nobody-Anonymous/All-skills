@@ -1,0 +1,46 @@
+{
+  "id": "heroku",
+  "name": "Heroku",
+  "description": "Inspect and operate Heroku apps, dynos, add-ons and releases.",
+  "category": "cloud",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "heroku",
+  "official": true,
+  "command": "npx",
+  "args": [
+    "-y",
+    "@heroku/mcp-server@latest"
+  ],
+  "required_env": [
+    "HEROKU_API_KEY"
+  ],
+  "risk": "high",
+  "license": "Apache-2.0",
+  "docs": "https://github.com/heroku/heroku-mcp-server",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

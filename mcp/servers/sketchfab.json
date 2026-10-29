@@ -1,0 +1,46 @@
+{
+  "id": "sketchfab",
+  "name": "Sketchfab",
+  "description": "Search, inspect and publish 3D models on Sketchfab, including licence and metadata fields.",
+  "category": "3d",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "gregkop",
+  "official": false,
+  "command": "npx",
+  "args": [
+    "-y",
+    "sketchfab-mcp-server"
+  ],
+  "required_env": [
+    "SKETCHFAB_API_KEY"
+  ],
+  "risk": "medium",
+  "license": "NOASSERTION",
+  "docs": "https://github.com/gregkop/sketchfab-mcp-server",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

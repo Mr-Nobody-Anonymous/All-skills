@@ -1,10 +1,10 @@
 # Ai Skills
 
-_Generated: 2026-10-28T05:33:42+00:00_
+_Generated: 2026-10-29T14:02:53+00:00_
 
 
 
-**13 skills in this category.**
+**16 skills in this category.**
 
 ## Skills
 
@@ -52,6 +52,42 @@ Combine sparse keyword search (BM25) with dense vector embeddings using Reciproc
 - **Version:** 1.0.0
 
 Combine sparse keyword search (BM25) with dense vector embeddings using Reciprocal Rank Fusion (RRF).
+
+### `ai.mlops`
+
+Operate models in production: reproducible training, model and data versioning, deployment strategies, rollback and the feedback loop back into training.
+
+- **Risk:** medium
+- **Path:** `ai/mlops`
+- **Aliases:** `ml-ops`
+- **Triggers:**
+  - mlops pipeline
+  - model versioning deployment
+  - shadow deployment model
+  - retrain pipeline schedule
+  - feature store consistency
+- **Source:** custom
+- **Version:** 1.0.0
+
+Operate models in production: reproducible training, model and data versioning, deployment strategies, rollback and the feedback loop back into training.
+
+### `ai.model-drift-monitoring`
+
+Detect model degradation in production: data and prediction drift metrics, delayed-label evaluation, alert thresholds and a triage path that ends in a decision.
+
+- **Risk:** low
+- **Path:** `ai/model-drift-monitoring`
+- **Aliases:** `drift-monitoring`
+- **Triggers:**
+  - model drift detection
+  - data drift monitoring
+  - concept drift alert
+  - psi ks test features
+  - model performance degradation
+- **Source:** custom
+- **Version:** 1.0.0
+
+Detect model degradation in production: data and prediction drift metrics, delayed-label evaluation, alert thresholds and a triage path that ends in a decision.
 
 ### `ai.model-evaluation`
 
@@ -142,6 +178,24 @@ Architect production RAG systems with document chunking, semantic retrieval, con
 - **Version:** 1.0.0
 
 Architect production RAG systems with document chunking, semantic retrieval, context stuffing, and citation attribution.
+
+### `ai.rag-evaluation`
+
+Evaluate retrieval-augmented generation honestly: golden sets, retrieval metrics, groundedness and citation checks, and regression gates that survive model changes.
+
+- **Risk:** low
+- **Path:** `ai/rag-evaluation`
+- **Aliases:** `rag-eval`
+- **Triggers:**
+  - evaluate rag pipeline
+  - rag retrieval metrics
+  - hallucination evaluation rag
+  - golden dataset for rag
+  - rag regression test
+- **Source:** custom
+- **Version:** 1.0.0
+
+Evaluate retrieval-augmented generation honestly: golden sets, retrieval metrics, groundedness and citation checks, and regression gates that survive model changes.
 
 ### `ai.reranking`
 

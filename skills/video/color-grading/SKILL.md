@@ -23,6 +23,8 @@ keywords:
   - aces
   - rec709
   - hdr
+mcp_servers:
+  - davinci-resolve
 source: custom
 enabled: true
 ---
@@ -83,6 +85,15 @@ Grade video: colour-managed workflows, primary and secondary correction, shot ma
 - Grading on an uncalibrated display produces work that fails on other screens.
 - A creative LUT applied before primary balance hides exposure problems.
 - Missing colour tags cause players to render the file with wrong gamma.
+
+## MCP Requirements
+
+| Server | Transport | Tier | Risk | Required env |
+| :--- | :--- | :--- | :--- | :--- |
+| `davinci-resolve` | stdio | full | medium | — |
+
+Install the connectors above with `allskills mcp install --harness <harness> --profile full`,
+or list the same ids in your harness config. Full detail per server: [`docs/MCP-CATALOG.md`](MCP-CATALOG.md) and [`mcp/registry.json`](../mcp/registry.json).
 
 ## Source
 

@@ -1,0 +1,40 @@
+{
+  "id": "vercel",
+  "name": "Vercel",
+  "description": "Deployments, projects and build logs for Vercel.",
+  "category": "cloud",
+  "tier": "full",
+  "transport": "http",
+  "vendor": "vercel",
+  "official": true,
+  "url": "https://mcp.vercel.com",
+  "required_env": [],
+  "risk": "medium",
+  "license": "MIT",
+  "docs": "https://vercel.com/docs/mcp",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}
