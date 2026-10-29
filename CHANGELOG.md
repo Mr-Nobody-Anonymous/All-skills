@@ -9,6 +9,34 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+- **CI red across every runner, for three unrelated reasons — all reproduced locally and fixed.**
+  - `Tests` (Ubuntu, macOS, Windows × Python 3.10/3.11/3.12) failed in
+    `test_cli_contracts::test_verify_and_lock_pass_on_a_consistent_checkout` because
+    `.github/skills` was committed as a **symlink to `/home/user/All-skills/.agents/skills`**. Git
+    stores a symlink as its target path, so the link resolved on exactly one machine and
+    `allskills verify` reported `link points to /home/user/... expected /home/runner/...` on every
+    runner. The link is machine-local output of `scripts/setup_tools.py` and was already in
+    `.gitignore` — but a trailing-slash pattern (`.github/skills/`) does not match a symlink. Now
+    untracked, deleted from the tree, and the pattern fixed. New `tests/test_portability.py` and the
+    previously-unwired `scripts/ci/validate-no-personal-paths.js` (now in CI) reject any tracked
+    symlink with an absolute target or one escaping the repository.
+  - `Validate library & integrity` failed with `Tests count mismatch: stats.json has 280, discovered
+    281`. The count came from unittest discovery, which **imports** every test module, so it changed
+    with the installed extras: the validate job installs `-e .` without `[test]`, `pytest` was
+    absent, `tests/test_mcp_catalog.py` failed to import and was counted as one extra `_FailedTest`.
+    `compute_stats.count_test_cases()` now counts from the AST over exactly the CI selection
+    (`tests/` + `scratch_priority_import/tests`, minus `tests/ecc`, which needs the optional `llm`
+    package): **372 tests**, identical on every OS and Python version, and
+    `verify_registry_integrity.py` shares that function instead of duplicating the logic.
+    `tests/test_mcp_catalog.py` now raises `unittest.SkipTest` rather than an import error when
+    pytest is absent.
+  - `Security / Dependency vulnerability audit (pip-audit)` reported **27 advisories** in three
+    pinned dev dependencies: `certifi 2026.7.22` (PYSEC-2026-4320), `filelock 4.0.3`
+    (14 × CVE-2026-1128xx–1129xx) and `virtualenv 21.12.1` (11 × CVE-2026-1137xx). Bumped to
+    `certifi 2026.10.23`, `filelock 4.2.4` and `virtualenv 21.15.1`;
+    `pip-audit -r requirements.txt -r requirements-dev.txt` now reports **no known vulnerabilities**.
+
 ### Added
 - **Round 4 — one inventory, not two; +29 skills, +4 connectors (504 → 533 skills, 44 → 45
   categories; 113 → 117 servers, 35 → 36 categories).** Triggered by an external audit that found
