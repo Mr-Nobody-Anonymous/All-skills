@@ -1,0 +1,40 @@
+{
+  "id": "cloudflare",
+  "name": "Cloudflare",
+  "description": "Workers, KV, R2, D1 and observability operations on Cloudflare.",
+  "category": "cloud",
+  "tier": "full",
+  "transport": "http",
+  "vendor": "cloudflare",
+  "official": true,
+  "url": "https://observability.mcp.cloudflare.com/mcp",
+  "required_env": [],
+  "risk": "medium",
+  "license": "MIT",
+  "docs": "https://developers.cloudflare.com/agents/model-context-protocol/",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

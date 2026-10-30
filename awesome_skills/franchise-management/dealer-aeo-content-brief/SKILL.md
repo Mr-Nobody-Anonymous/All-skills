@@ -1,6 +1,7 @@
 ---
 name: dealer-aeo-content-brief
-description: "Generate an Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO) content brief for a car dealership page or post. Use when the user asks to "write an AEO brief", "write a GEO brief", "create a content brief for my dealership", "AEO content brief", "GEO content brief", "what should I write to get cited by ChatGPT", "help me rank in Perplexity for [query]", "AI search content brief", "LLM SEO content brief", "ChatGPT SEO brief", "Perplexity SEO brief", "Gemini SEO brief", "blog post brief for a dealer", "model guide brief", "service page brief", "buying help content brief", "generate a brief for [topic]", "content plan for AI visibility", "generative search content plan", or any request to produce a structured brief that, when executed, gets the dealership cited in AI engine answers and generative search results. Outputs a complete, paste-ready brief with target query, page type, URL slug, title, meta, opening answer, section outline, required Q&A, internal links, schema spec, image specs, and the AI extraction sentences that should appear verbatim. Pairs with dealer-aeo-audit: that audit finds the gap, this skill writes the prescription. Note: AEO and GEO are functionally synonymous — both refer to optimization for AI engine citation; this skill handles both. Authored by Ariel Coro of Dealer AI Guy."
+description: >-
+  Generate an Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO) content brief for a car dealership page or post. Use when the user asks to "write an AEO brief", "write a GEO brief", "create a content brief for my dealership", "AEO content brief", "GEO content brief", "what should I write to get cited by ChatGPT", "help me rank in Perplexity for [query]", "AI search content brief", "LLM SEO content brief", "ChatGPT SEO brief", "Perplexity SEO brief", "Gemini SEO brief", "blog post brief for a dealer", "model guide brief", "service page brief", "buying help content brief", "generate a brief for [topic]", "content plan for AI visibility", "generative search content plan", or any request to produce a structured brief that, when executed, gets the dealership cited in AI engine answers and generative search results. Outputs a complete, paste-ready brief with target query, page type, URL slug, title, meta, opening answer, section outline, required Q&A, internal links, schema spec, image specs, and the AI extraction sentences that should appear verbatim. Pairs with dealer-aeo-audit: that audit finds the gap, this skill writes the prescription. Note: AEO and GEO are functionally synonymous — both refer to optimization for AI engine citation; this skill handles both. Authored by Ariel Coro of Dealer AI Guy.
 category: franchise-management
 domain: franchise-management
 subdomain: general
@@ -20,8 +21,6 @@ platforms:
   - antigravity
   - copilot
 ---
-
-
 # Dealer AEO Content Brief
 
 This skill produces a complete content brief for a car dealership page or blog post, optimized for citation by AI engines (ChatGPT, Perplexity, Gemini, Claude, Copilot). The brief is the prescription. The dealer or their content team executes it.

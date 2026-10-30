@@ -1,4 +1,4 @@
-**语言：** [English](../../README.md) | [Português (Brasil)](../pt-BR/README.md) | [简体中文](../../README.zh-CN.md) | [繁體中文](../zh-TW/README.md) | [日本語](../ja-JP/README.md) | [한국어](../ko-KR/README.md) | [Türkçe](../tr/README.md) | [Русский](../ru/README.md) | [Tiếng Việt](../vi-VN/README.md) | [ไทย](../th/README.md) | [Українська](../uk-UA/README.md)
+**语言：** [English](../../README.md) | [Português (Brasil)](../pt-BR/README.md) | [简体中文](README.md) | [繁體中文](../zh-TW/README.md) | [日本語](../ja-JP/README.md) | [한국어](../ko-KR/README.md) | [Türkçe](../tr/README.md) | [Русский](../ru/README.md) | [Tiếng Việt](../vi-VN/README.md) | [ไทย](../th/README.md) | [Українська](../uk-UA/README.md)
 
 # Everything Claude Code
 
@@ -25,7 +25,7 @@
 
 **语言 / Language / 語言 / Dil / Язык / Ngôn ngữ**
 
-[**English**](../../README.md) | [Português (Brasil)](../pt-BR/README.md) | [简体中文](../../README.zh-CN.md) | [繁體中文](../zh-TW/README.md) | [日本語](../ja-JP/README.md) | [한국어](../ko-KR/README.md) | [Türkçe](../tr/README.md) | [Русский](../ru/README.md) | [Tiếng Việt](../vi-VN/README.md) | [ไทย](../th/README.md) | [Українська](../uk-UA/README.md)
+[**English**](../../README.md) | [Português (Brasil)](../pt-BR/README.md) | [简体中文](README.md) | [繁體中文](../zh-TW/README.md) | [日本語](../ja-JP/README.md) | [한국어](../ko-KR/README.md) | [Türkçe](../tr/README.md) | [Русский](../ru/README.md) | [Tiếng Việt](../vi-VN/README.md) | [ไทย](../th/README.md) | [Українська](../uk-UA/README.md)
 
 </div>
 
@@ -87,7 +87,7 @@
 
 ### v2.1.0 — 智能体 Harness 操作系统（2026年6月）
 
-2.0 主线稳定版：261 个技能、control-pane 基底（会话适配器 + MCP 清单）、worktree 生命周期服务，以及 [ECC Discord 社区](https://discord.gg/36yGMHGFbR)。
+2.0 主线稳定版：533 个技能、control-pane 基底（会话适配器 + MCP 清单）、worktree 生命周期服务，以及 [ECC Discord 社区](https://discord.gg/36yGMHGFbR)。
 
 ### v2.0.0-rc.1 — 表面同步、运营工作流与 ECC 2.0 Alpha（2026年4月）
 
@@ -152,7 +152,7 @@
 
 ### v1.3.0 — OpenCode 插件支持 (2026年2月)
 
-* **完整的 OpenCode 集成** — 12 个智能体，24 个命令，16 个技能，通过 OpenCode 的插件系统支持钩子 (20+ 种事件类型)
+* **完整的 OpenCode 集成** — 12 个智能体，24 个命令，533 个技能，通过 OpenCode 的插件系统支持钩子 (20+ 种事件类型)
 * **3 个原生自定义工具** — run-tests, check-coverage, security-audit
 * **LLM 文档** — `llms.txt` 用于获取全面的 OpenCode 文档
 
@@ -260,7 +260,7 @@ Copy-Item -Recurse rules/typescript "$HOME/.claude/rules/"
 /plugin list ecc@ecc
 ```
 
-**搞定！** 你现在可以使用 68 个智能体、292 项技能和 94 个命令了。
+**搞定！** 你现在可以使用 68 个智能体、533 项技能和 94 个命令了。
 
 ***
 
@@ -1174,7 +1174,7 @@ opencode
 |---------|---------------|----------|--------|
 | 智能体 | PASS: 68 个    | PASS: 12 个 | **Claude Code 领先** |
 | 命令 | PASS: 94 个    | PASS: 35 个 | **Claude Code 领先** |
-| 技能 | PASS: 292 项   | PASS: 37 项 | **Claude Code 领先** |
+| 技能 | 533 项 | 37 项 | **Claude Code 领先** |
 | 钩子 | PASS: 8 种事件类型 | PASS: 11 种事件 | **OpenCode 更多！** |
 | 规则 | PASS: 29 条    | PASS: 13 条指令 | **Claude Code 领先** |
 | MCP 服务器 | PASS: 14 个    | PASS: 完整 | **完全对等** |
@@ -1282,7 +1282,7 @@ ECC 是**第一个最大化利用每个主要 AI 编码工具的插件**。以�
 |---------|-----------------------|------------|-----------|----------|
 | **智能体** | 68                    | 共享 (AGENTS.md) | 共享 (AGENTS.md) | 12 |
 | **命令** | 94                    | 共享 | 基于指令 | 35 |
-| **技能** | 292                   | 共享 | 10 (原生格式) | 37 |
+| **技能** | 533                   | 共享 | 10 (原生格式) | 37 |
 | **钩子事件** | 8 种类型                 | 15 种类型 | SessionStart（1 种类型） | 11 种类型 |
 | **钩子脚本** | 20+ 个脚本               | 16 个脚本 (DRY 适配器) | 1 个 SessionStart 引导脚本 | 插件钩子 |
 | **规则** | 34 (通用 + 语言)          | 34 (YAML 前页) | 基于指令 | 13 条指令 |

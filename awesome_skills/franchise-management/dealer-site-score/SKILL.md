@@ -1,6 +1,7 @@
 ---
 name: dealer-site-score
-description: "Run Dealer Site Score, the dealer website grader, on a franchise or independent car dealership site. Use when the user asks to "grade my dealer website", "score my dealership site", "run dealer site score", "audit my dealer website", "evaluate dealer site performance", "dealer website grader", "test my dealer site speed", "audit Core Web Vitals on my dealership", "check dealer hosting and schema", "third-party tag bloat audit", "is my dealer website fast enough", or any request to evaluate the technical health of a car dealership website. Produces a 100-point score across 10 dimensions: performance, hosting, crawlability, security, schema, mobile, accessibility, third-party bloat, conversion elements, and dealer-specific signals. Pairs with the dealer-aeo-audit (AI visibility) and the dealer-llms-txt-generator. Branded as Dealer Site Score, the free first-look dealer website evaluation tool from Dealer Growth Hackers. Authored by Ariel Coro of Dealer AI Guy."
+description: >-
+  Run Dealer Site Score, the dealer website grader, on a franchise or independent car dealership site. Use when the user asks to "grade my dealer website", "score my dealership site", "run dealer site score", "audit my dealer website", "evaluate dealer site performance", "dealer website grader", "test my dealer site speed", "audit Core Web Vitals on my dealership", "check dealer hosting and schema", "third-party tag bloat audit", "is my dealer website fast enough", or any request to evaluate the technical health of a car dealership website. Produces a 100-point score across 10 dimensions: performance, hosting, crawlability, security, schema, mobile, accessibility, third-party bloat, conversion elements, and dealer-specific signals. Pairs with the dealer-aeo-audit (AI visibility) and the dealer-llms-txt-generator. Branded as Dealer Site Score, the free first-look dealer website evaluation tool from Dealer Growth Hackers. Authored by Ariel Coro of Dealer AI Guy.
 category: franchise-management
 domain: franchise-management
 subdomain: general
@@ -20,8 +21,6 @@ platforms:
   - antigravity
   - copilot
 ---
-
-
 # Dealer Site Score
 
 The dealer website grader. Runs a 100-point evaluation across 10 dimensions of technical health on a franchise or independent car dealership website. Produces a numerical score, a letter grade, a dimension-by-dimension breakdown, and a prioritized fix list.

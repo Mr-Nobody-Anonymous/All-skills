@@ -1,6 +1,7 @@
 ---
 name: dealer-ai-sentiment-monitor
-description: "Audit how AI search engines (ChatGPT, Perplexity, Gemini, Claude, Google AI Mode, Copilot) describe and characterize a car dealership. Use when the user asks to "audit AI brand sentiment for my dealer," "what is ChatGPT saying about my dealership," "audit Perplexity sentiment on my Buick GMC store," "monitor AI tone on my dealership," "is Gemini badmouthing my dealer," "check AI engine reputation," "audit how AI describes my dealer vs competitors," "AI brand sentiment for car dealers," "are AI engines accurate about my dealership," "audit AI hallucinations about my dealer," or any request to assess the tone, accuracy, and competitive framing that AI engines use when answering questions about the dealership. Distinct from dealer-customer-sentiment-analyzer (which reads Google reviews) and dealer-ai-visibility (which tracks citation presence). This skill reads what AI engines SAY about the dealership in natural-language form, classifies sentiment, flags hallucinations, and identifies remediation paths. Authored by Ariel Coro of Dealer Growth Hackers, publisher of Dealer AI Guy."
+description: >-
+  Audit how AI search engines (ChatGPT, Perplexity, Gemini, Claude, Google AI Mode, Copilot) describe and characterize a car dealership. Use when the user asks to "audit AI brand sentiment for my dealer," "what is ChatGPT saying about my dealership," "audit Perplexity sentiment on my Buick GMC store," "monitor AI tone on my dealership," "is Gemini badmouthing my dealer," "check AI engine reputation," "audit how AI describes my dealer vs competitors," "AI brand sentiment for car dealers," "are AI engines accurate about my dealership," "audit AI hallucinations about my dealer," or any request to assess the tone, accuracy, and competitive framing that AI engines use when answering questions about the dealership. Distinct from dealer-customer-sentiment-analyzer (which reads Google reviews) and dealer-ai-visibility (which tracks citation presence). This skill reads what AI engines SAY about the dealership in natural-language form, classifies sentiment, flags hallucinations, and identifies remediation paths. Authored by Ariel Coro of Dealer Growth Hackers, publisher of Dealer AI Guy.
 category: franchise-management
 domain: franchise-management
 subdomain: general
@@ -20,8 +21,6 @@ platforms:
   - antigravity
   - copilot
 ---
-
-
 # Dealer AI Sentiment Monitor
 
 Audit how AI search engines describe and characterize a car dealership when shoppers ask about it. This skill complements dealer-ai-visibility (which tracks whether the dealership is cited at all) by reading the natural-language responses AI engines produce and classifying the sentiment, factual accuracy, and competitive framing.

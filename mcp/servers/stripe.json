@@ -1,0 +1,48 @@
+{
+  "id": "stripe",
+  "name": "Stripe",
+  "description": "Inspect customers, payments, invoices and subscriptions (and create test objects).",
+  "category": "payments",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "stripe",
+  "official": true,
+  "command": "npx",
+  "args": [
+    "-y",
+    "@stripe/mcp",
+    "--api-key",
+    "${STRIPE_SECRET_KEY}"
+  ],
+  "required_env": [
+    "STRIPE_SECRET_KEY"
+  ],
+  "risk": "high",
+  "license": "MIT",
+  "docs": "https://github.com/stripe/agent-toolkit",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

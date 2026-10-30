@@ -1,0 +1,46 @@
+{
+  "id": "airtable",
+  "name": "Airtable",
+  "description": "Read and write Airtable bases, tables, records and schema.",
+  "category": "knowledge",
+  "tier": "standard",
+  "transport": "stdio",
+  "vendor": "domdomegg",
+  "official": false,
+  "command": "npx",
+  "args": [
+    "-y",
+    "airtable-mcp-server@latest"
+  ],
+  "required_env": [
+    "AIRTABLE_API_KEY"
+  ],
+  "risk": "medium",
+  "license": "MIT",
+  "docs": "https://github.com/domdomegg/airtable-mcp-server",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

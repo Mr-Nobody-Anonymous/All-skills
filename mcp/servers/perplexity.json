@@ -1,0 +1,46 @@
+{
+  "id": "perplexity",
+  "name": "Perplexity",
+  "description": "Research-grade answer synthesis with citations.",
+  "category": "search",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "perplexity",
+  "official": false,
+  "command": "npx",
+  "args": [
+    "-y",
+    "perplexity-mcp"
+  ],
+  "required_env": [
+    "PERPLEXITY_API_KEY"
+  ],
+  "risk": "low",
+  "license": "MIT",
+  "docs": "https://github.com/perplexityai/modelcontextprotocol",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

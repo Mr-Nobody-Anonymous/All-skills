@@ -1,4 +1,4 @@
-**Idioma:** [English](../../README.md) | [Português (Brasil)](../pt-BR/README.md) | [简体中文](../../README.zh-CN.md) | [繁體中文](../zh-TW/README.md) | [日本語](../ja-JP/README.md) | [한국어](../ko-KR/README.md) | [Türkçe](../tr/README.md) | [Русский](../ru/README.md) | [Tiếng Việt](../vi-VN/README.md) | [ไทย](../th/README.md) | [Deutsch](../de-DE/README.md) | **Español** | [Українська](../uk-UA/README.md)
+**Idioma:** [English](../../README.md) | [Português (Brasil)](../pt-BR/README.md) | [简体中文](../zh-CN/README.md) | [繁體中文](../zh-TW/README.md) | [日本語](../ja-JP/README.md) | [한국어](../ko-KR/README.md) | [Türkçe](../tr/README.md) | [Русский](../ru/README.md) | [Tiếng Việt](../vi-VN/README.md) | [ไทย](../th/README.md) | [Deutsch](../de-DE/README.md) | **Español** | [Українська](../uk-UA/README.md)
 
 # ECC
 
@@ -27,7 +27,7 @@
 
 **Language / 语言 / 語言 / Dil / Язык / Ngôn ngữ / Idioma**
 
-[**English**](../../README.md) | [Português (Brasil)](../pt-BR/README.md) | [简体中文](../../README.zh-CN.md) | [繁體中文](../zh-TW/README.md) | [日本語](../ja-JP/README.md) | [한국어](../ko-KR/README.md)
+[**English**](../../README.md) | [Português (Brasil)](../pt-BR/README.md) | [简体中文](../zh-CN/README.md) | [繁體中文](../zh-TW/README.md) | [日本語](../ja-JP/README.md) | [한국어](../ko-KR/README.md)
  | [Türkçe](../tr/README.md) | [Русский](../ru/README.md) | [Tiếng Việt](../vi-VN/README.md) | [ไทย](../th/README.md) | [Deutsch](../de-DE/README.md) | **Español** | [Українська](../uk-UA/README.md)
 
 </div>
@@ -1195,7 +1195,7 @@ La configuración se detecta automáticamente desde `.opencode/opencode.json`.
 |----------------|---------------------|----------|--------|
 | Agentes | 63 agentes | 12 agentes | **Claude Code lidera** |
 | Comandos | 79 comandos | 35 comandos | **Claude Code lidera** |
-| Skills | 249 skills | 37 skills | **Claude Code lidera** |
+| Skills | 533 skills | 37 skills | **Claude Code lidera** |
 | Hooks | 8 tipos de eventos | 11 eventos | **¡OpenCode tiene más!** |
 | Reglas | 29 reglas | 13 instrucciones | **Claude Code lidera** |
 | Servidores MCP | 14 servidores | Completo | **Paridad completa** |

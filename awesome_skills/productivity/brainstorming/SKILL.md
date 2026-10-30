@@ -1,4 +1,5 @@
----name: brainstorming
+---
+name: brainstorming
 description: >
   Use this skill before any creative or constructive work
   (features, components, architecture, behavior changes, or functionality).

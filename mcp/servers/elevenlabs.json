@@ -1,0 +1,45 @@
+{
+  "id": "elevenlabs",
+  "name": "ElevenLabs",
+  "description": "Text-to-speech, voice design and audio generation with the ElevenLabs API.",
+  "category": "media",
+  "tier": "standard",
+  "transport": "stdio",
+  "vendor": "elevenlabs",
+  "official": true,
+  "command": "uvx",
+  "args": [
+    "elevenlabs-mcp"
+  ],
+  "required_env": [
+    "ELEVENLABS_API_KEY"
+  ],
+  "risk": "medium",
+  "license": "MIT",
+  "docs": "https://github.com/elevenlabs/elevenlabs-mcp",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

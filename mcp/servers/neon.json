@@ -1,0 +1,48 @@
+{
+  "id": "neon",
+  "name": "Neon",
+  "description": "Create and manage Neon Postgres projects, branches, and run SQL against them.",
+  "category": "database",
+  "tier": "standard",
+  "transport": "stdio",
+  "vendor": "neon",
+  "official": true,
+  "command": "npx",
+  "args": [
+    "-y",
+    "@neondatabase/mcp-server-neon",
+    "start",
+    "${NEON_API_KEY}"
+  ],
+  "required_env": [
+    "NEON_API_KEY"
+  ],
+  "risk": "high",
+  "license": "MIT",
+  "docs": "https://github.com/neondatabase/mcp-server-neon",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

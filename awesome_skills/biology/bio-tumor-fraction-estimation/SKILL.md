@@ -1,6 +1,7 @@
 ---
 name: bio-tumor-fraction-estimation
-description: Estimates tumor fraction (the genome-wide proportion of cfDNA molecules that are tumor-derived, the cfDNA analogue of bulk-tumor purity) from shallow whole-genome sequencing with ichorCNA, an HMM over 1 Mb bins that jointly EM-estimates tumor fraction, ploidy, and subclonal prevalence over a normal/ploidy grid. Encodes the load-bearing reframes: tumor fraction is the quantity that travels across assays and is NOT mutation VAF (clonal-het VAF approximately TF/2), CNA-based estimation has a hard ~3 percent limit-of-detection floor, and near-diploid or copy-neutral-LOH genomes return a falsely low value. Selects the estimator by data type (sWGS to ichorCNA, deep panel to max-VAF, methylation to deconvolution, sub-3 percent to fragmentomics or methylation). Use when quantifying tumor burden from a liquid biopsy, picking a tumor-fraction estimator for a given assay, or reconciling a TF estimate against a panel VAF.
+description: >-
+  Estimates tumor fraction (the genome-wide proportion of cfDNA molecules that are tumor-derived, the cfDNA analogue of bulk-tumor purity) from shallow whole-genome sequencing with ichorCNA, an HMM over 1 Mb bins that jointly EM-estimates tumor fraction, ploidy, and subclonal prevalence over a normal/ploidy grid. Encodes the load-bearing reframes: tumor fraction is the quantity that travels across assays and is NOT mutation VAF (clonal-het VAF approximately TF/2), CNA-based estimation has a hard ~3 percent limit-of-detection floor, and near-diploid or copy-neutral-LOH genomes return a falsely low value. Selects the estimator by data type (sWGS to ichorCNA, deep panel to max-VAF, methylation to deconvolution, sub-3 percent to fragmentomics or methylation). Use when quantifying tumor burden from a liquid biopsy, picking a tumor-fraction estimator for a given assay, or reconciling a TF estimate against a panel VAF.
 tool_type: r
 primary_tool: ichorCNA
 source: "https://github.com/GPTomics/bioSkills"
@@ -9,7 +10,6 @@ source_path: "liquid-biopsy/tumor-fraction-estimation/SKILL.md"
 license: "MIT"
 imported_at: "2026-09-20"
 ---
-
 ## Version Compatibility
 
 Reference examples tested with: ichorCNA 0.6.0+ (GavinHaLab fork), HMMcopy 1.40+, R 4.2+

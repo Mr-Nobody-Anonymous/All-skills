@@ -1,0 +1,46 @@
+{
+  "id": "tavily",
+  "name": "Tavily Search",
+  "description": "LLM-optimised search, extract and crawl endpoints.",
+  "category": "search",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "tavily",
+  "official": false,
+  "command": "npx",
+  "args": [
+    "-y",
+    "tavily-mcp"
+  ],
+  "required_env": [
+    "TAVILY_API_KEY"
+  ],
+  "risk": "low",
+  "license": "MIT",
+  "docs": "https://github.com/tavily-ai/tavily-mcp",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

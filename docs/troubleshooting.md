@@ -24,7 +24,7 @@ This verifies:
 
 If two skills trigger on the same voice utterance:
 1. Inspect the conflict resolver log in `data/logs/skill_logs/`.
-2. Check priority tiers in [`config/priority_config.yml`](file:///config/priority_config.yml). Higher priority tiers take precedence over lower tiers.
+2. Check priority tiers in [`config/priority_config.yml`](../config/priority_config.yml). Higher priority tiers take precedence over lower tiers.
 3. User pinning: You can pin a preferred skill for a domain by updating `intent_router.py` user preferences.
 
 ---

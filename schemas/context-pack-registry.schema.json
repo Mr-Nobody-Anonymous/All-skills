@@ -13,7 +13,10 @@
       "required": ["source", "skillsRoot"],
       "properties": {
         "source": { "const": "manifests/install-modules.json" },
-        "skillsRoot": { "const": "skills" }
+        "skillsRoot": {
+          "description": "Skill tree whose directories carry a SKILL.md; the install-owned flat tree or the category-nested catalog library.",
+          "enum": ["awesome_skills/ecc", "skills"]
+        }
       }
     },
     "overrides": {

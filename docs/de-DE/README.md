@@ -1,4 +1,4 @@
-**Sprache:** [English](../../README.md) | [Deutsch](README.md) | [Português (Brasil)](../pt-BR/README.md) | [简体中文](../../README.zh-CN.md) | [繁體中文](../zh-TW/README.md) | [日本語](../ja-JP/README.md) | [한국어](../ko-KR/README.md) | [Türkçe](../tr/README.md) | [Русский](../ru/README.md) | [Tiếng Việt](../vi-VN/README.md) | [ไทย](../th/README.md) | [Українська](../uk-UA/README.md)
+**Sprache:** [English](../../README.md) | [Deutsch](README.md) | [Português (Brasil)](../pt-BR/README.md) | [简体中文](../zh-CN/README.md) | [繁體中文](../zh-TW/README.md) | [日本語](../ja-JP/README.md) | [한국어](../ko-KR/README.md) | [Türkçe](../tr/README.md) | [Русский](../ru/README.md) | [Tiếng Việt](../vi-VN/README.md) | [ไทย](../th/README.md) | [Українська](../uk-UA/README.md)
 
 # ECC
 
@@ -27,7 +27,7 @@
 
 **Language / 语言 / 語言 / Dil / Язык / Ngôn ngữ**
 
-[English](../../README.md) | [**Deutsch**](README.md) | [Português (Brasil)](../pt-BR/README.md) | [简体中文](../../README.zh-CN.md) | [繁體中文](../zh-TW/README.md) | [日本語](../ja-JP/README.md) | [한국어](../ko-KR/README.md)
+[English](../../README.md) | [**Deutsch**](README.md) | [Português (Brasil)](../pt-BR/README.md) | [简体中文](../zh-CN/README.md) | [繁體中文](../zh-TW/README.md) | [日本語](../ja-JP/README.md) | [한국어](../ko-KR/README.md)
  | [Türkçe](../tr/README.md) | [Русский](../ru/README.md) | [Tiếng Việt](../vi-VN/README.md) | [ไทย](../th/README.md) | [Українська](../uk-UA/README.md)
 
 </div>
@@ -1735,7 +1735,7 @@ Etwas mit ECC gebaut? Öffne einen PR, um es hier hinzuzufügen.
 
 Dieses Projekt ist kostenlos und Open Source. Sponsoren helfen, es gepflegt und wachsend zu halten.
 
-[**Sponsor werden**](https://github.com/sponsors/Mr-Nobody-Anonymous) | [Sponsor-Stufen](../../SPONSORS.md) | [Sponsoring-Programm](../../SPONSORING.md)
+[**Sponsor werden**](https://github.com/sponsors/Mr-Nobody-Anonymous) | [Sponsor-Stufen](https://github.com/affaan-m/ECC/blob/main/SPONSORS.md) | [Sponsoring-Programm](https://github.com/affaan-m/ECC/blob/main/SPONSORING.md)
 
 ---
 

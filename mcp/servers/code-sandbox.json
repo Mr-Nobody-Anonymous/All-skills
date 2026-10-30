@@ -1,0 +1,45 @@
+{
+  "id": "code-sandbox",
+  "name": "Code Sandbox",
+  "description": "Execute untrusted code in an isolated microVM to verify agent output.",
+  "category": "execution",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "e2b",
+  "official": true,
+  "command": "uvx",
+  "args": [
+    "e2b-mcp-server"
+  ],
+  "required_env": [
+    "E2B_API_KEY"
+  ],
+  "risk": "high",
+  "license": "Apache-2.0",
+  "docs": "https://github.com/e2b-dev/mcp-server",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

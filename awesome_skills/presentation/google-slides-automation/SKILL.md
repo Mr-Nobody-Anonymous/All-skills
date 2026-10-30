@@ -1,4 +1,5 @@
----name: google-slides-automation
+---
+name: google-slides-automation
 description: "Read and edit Google Slides through an available authenticated connector or reviewed API integration, with scoped changes and read-back verification."
 license: Apache-2.0
 risk: critical

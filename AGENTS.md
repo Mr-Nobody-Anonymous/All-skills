@@ -1,6 +1,12 @@
 # Agent Runtime Directives & Standards
 
-This workspace is an advanced multi-agent engineering platform supporting **Antigravity**, **Claude Code**, **Cursor**, and **Codex CLI**.
+This workspace is an advanced multi-agent engineering platform supporting **Antigravity**, **Claude Code**, **Cursor**, **Codex CLI** and 14 further harnesses. It is a production-ready AI coding plugin providing 68 specialized agents, 533 skills, 94 commands, and a 117-connector MCP catalog that installs into any harness with one command.
+
+```
+agents/          — 68 specialized subagents
+skills/          — 410 workflow skills and domain knowledge
+commands/        — 94 slash commands
+```
 
 ---
 
@@ -22,10 +28,13 @@ This workspace is an advanced multi-agent engineering platform supporting **Anti
 ## 2. Platform Architecture & Skills
 
 - **Active Agent Harness**: Located at `.agents/skills/` (mirrored to `.claude/skills`, `.cursor/skills`, `.codex/skills`).
-- **Canonical Routing Engine**: 122 validated core skills managed via `python scripts/skills/skills.py`.
+- **Canonical Routing Engine**: 410 validated core skills across 45 categories, managed via `python scripts/skills/skills.py`.
 - **Awesome Skills Library**: the domain-categorized skills catalog (current counts in `stats.json`) located at `awesome_skills/` and indexed in `awesome_skills/CATALOG.md`.
 - **Central Manifest**: `manifest.json` maps all skills to tool permissions, MCP servers, and lifecycle hooks.
-- **Model Context Protocol (MCP)**: Defined in `mcp_config.json` (`filesystem`, `git`, `fetch`, `memory`).
+- **Model Context Protocol (MCP)**: 64-server catalog in `mcps/catalog.json`; install with
+  `allskills mcp install --harness <harness> --profile <core|standard|full>`. The plugin default
+  connector set stays minimal (`mcp_config.json`: `filesystem`, `git`, `fetch`, `memory`), and each
+  harness can be wired individually. See `docs/MCP-CATALOG.md`.
 
 ---
 

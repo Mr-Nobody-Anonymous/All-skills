@@ -1,0 +1,46 @@
+{
+  "id": "mongodb",
+  "name": "MongoDB",
+  "description": "Inspect collections, run aggregation pipelines and read documents.",
+  "category": "database",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "mongodb",
+  "official": true,
+  "command": "npx",
+  "args": [
+    "-y",
+    "mongodb-mcp-server"
+  ],
+  "required_env": [
+    "MONGODB_URI"
+  ],
+  "risk": "medium",
+  "license": "Apache-2.0",
+  "docs": "https://github.com/mongodb-js/mongodb-mcp-server",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

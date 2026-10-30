@@ -1,0 +1,46 @@
+{
+  "id": "todoist",
+  "name": "Todoist",
+  "description": "Tasks, projects, labels and comments in Todoist.",
+  "category": "productivity",
+  "tier": "standard",
+  "transport": "stdio",
+  "vendor": "abhiz123",
+  "official": false,
+  "command": "npx",
+  "args": [
+    "-y",
+    "@abhiz123/todoist-mcp-server@latest"
+  ],
+  "required_env": [
+    "TODOIST_API_TOKEN"
+  ],
+  "risk": "medium",
+  "license": "MIT",
+  "docs": "https://github.com/abhiz123/todoist-mcp-server",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

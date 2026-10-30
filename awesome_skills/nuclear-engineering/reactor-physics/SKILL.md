@@ -1,6 +1,7 @@
 ---
 name: reactor-physics
-description: "Nuclear Reactor Physics & Core Neutronics: Multi-group neutron diffusion equation, four-factor formula ($k_\infty = \epsilon p f \eta$), prompt critical margin, and reactivity feedback."
+description: >-
+  Nuclear Reactor Physics & Core Neutronics: Multi-group neutron diffusion equation, four-factor formula ($k_\infty = \epsilon p f \eta$), prompt critical margin, and reactivity feedback.
 category: nuclear-engineering
 domain: nuclear-engineering
 subdomain: engineering
@@ -15,7 +16,6 @@ platforms:
   - antigravity
   - copilot
 ---
-
 # Nuclear Reactor Physics & Core Neutronics
 
 Multi-group neutron diffusion equation, four-factor formula ($k_\infty = \epsilon p f \eta$), prompt critical margin, and reactivity feedback.

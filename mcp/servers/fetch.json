@@ -1,9 +1,43 @@
 {
   "id": "fetch",
-  "command": "npx",
+  "name": "Fetch",
+  "description": "Fetch a URL and convert HTML to markdown for documentation retrieval and research.",
+  "category": "web",
+  "tier": "core",
+  "transport": "stdio",
+  "vendor": "modelcontextprotocol",
+  "official": true,
+  "command": "uvx",
   "args": [
-    "-y",
-    "@modelcontextprotocol/server-fetch"
+    "mcp-server-fetch"
   ],
-  "category": "core"
+  "required_env": [],
+  "risk": "low",
+  "license": "MIT",
+  "docs": "https://github.com/modelcontextprotocol/servers/tree/main/src/fetch",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
 }

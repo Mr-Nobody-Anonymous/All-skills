@@ -1,4 +1,5 @@
----name: conducting-surgical-time-outs
+---
+name: conducting-surgical-time-outs
 language: en
 description: Structures WHO surgical safety checklist completion with sign-in, time-out, and sign-out documentation. Use when performing surgical time-outs, completing safety checklists, or documenting pre-incision verification.
 tags:

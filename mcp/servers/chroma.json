@@ -1,0 +1,48 @@
+{
+  "id": "chroma",
+  "name": "Chroma",
+  "description": "Vector search and document storage over a local, HTTP or Chroma Cloud collection.",
+  "category": "database",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "chroma-core",
+  "official": true,
+  "command": "uvx",
+  "args": [
+    "chroma-mcp"
+  ],
+  "required_env": [
+    "CHROMA_CLIENT_TYPE",
+    "CHROMA_API_KEY",
+    "CHROMA_TENANT",
+    "CHROMA_DATABASE"
+  ],
+  "risk": "medium",
+  "license": "Apache-2.0",
+  "docs": "https://github.com/chroma-core/chroma-mcp",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

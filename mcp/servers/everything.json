@@ -1,0 +1,44 @@
+{
+  "id": "everything",
+  "name": "Everything (test server)",
+  "description": "Reference MCP server exposing every protocol feature; used to verify a harness wiring.",
+  "category": "utilities",
+  "tier": "standard",
+  "transport": "stdio",
+  "vendor": "modelcontextprotocol",
+  "official": true,
+  "command": "npx",
+  "args": [
+    "-y",
+    "@modelcontextprotocol/server-everything"
+  ],
+  "required_env": [],
+  "risk": "low",
+  "license": "MIT",
+  "docs": "https://github.com/modelcontextprotocol/servers/tree/main/src/everything",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "aws",
+  "name": "AWS",
+  "description": "Inspect and operate AWS resources through the AWS MCP server suite.",
+  "category": "cloud",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "aws",
+  "official": true,
+  "command": "uvx",
+  "args": [
+    "awslabs.core-mcp-server@latest"
+  ],
+  "required_env": [
+    "AWS_PROFILE"
+  ],
+  "risk": "high",
+  "license": "Apache-2.0",
+  "docs": "https://github.com/awslabs/mcp",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

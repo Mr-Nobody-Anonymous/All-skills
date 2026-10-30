@@ -64,7 +64,7 @@ origin: ECC
 
 ## 可复用起点
 
-使用 [assets/network\_graph\_scene.py](../../../../skills/manim-video/assets/network_graph_scene.py) 作为网络图讲解的起点。
+使用 [assets/network\_graph\_scene.py](../../../../awesome_skills/ecc/manim-video/assets/network_graph_scene.py) 作为网络图讲解的起点。
 
 烟雾测试示例：
 

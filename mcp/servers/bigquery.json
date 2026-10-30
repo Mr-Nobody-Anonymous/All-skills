@@ -1,0 +1,52 @@
+{
+  "id": "bigquery",
+  "name": "BigQuery",
+  "description": "Query BigQuery datasets and inspect table metadata with the BigQuery SQL dialect.",
+  "category": "database",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "ergut",
+  "official": false,
+  "command": "npx",
+  "args": [
+    "-y",
+    "@ergut/mcp-bigquery-server",
+    "--project",
+    "${BIGQUERY_PROJECT}",
+    "--location",
+    "${BIGQUERY_LOCATION}"
+  ],
+  "required_env": [
+    "BIGQUERY_PROJECT",
+    "BIGQUERY_LOCATION",
+    "GOOGLE_APPLICATION_CREDENTIALS"
+  ],
+  "risk": "high",
+  "license": "MIT",
+  "docs": "https://github.com/ergut/mcp-bigquery-server",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

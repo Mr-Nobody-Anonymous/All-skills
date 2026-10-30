@@ -1,0 +1,46 @@
+{
+  "id": "pinecone",
+  "name": "Pinecone",
+  "description": "Create, upsert, query and inspect Pinecone indexes and their records.",
+  "category": "database",
+  "tier": "standard",
+  "transport": "stdio",
+  "vendor": "pinecone",
+  "official": true,
+  "command": "npx",
+  "args": [
+    "-y",
+    "@pinecone-database/mcp@latest"
+  ],
+  "required_env": [
+    "PINECONE_API_KEY"
+  ],
+  "risk": "medium",
+  "license": "Apache-2.0",
+  "docs": "https://docs.pinecone.io/guides/operations/mcp-server",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

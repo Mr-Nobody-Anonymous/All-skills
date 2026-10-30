@@ -1,6 +1,6 @@
 # Platform Configuration
 
-Configuration files reside under the [`config/`](file:///config/) directory.
+Configuration files reside under the [`config/`](../config) directory.
 
 ---
 
@@ -24,7 +24,7 @@ Configure external service credentials as needed:
 
 ## 2. Priority & Scheduling Configuration
 
-Priority tiers and execution limits are governed by [`config/priority_config.yml`](file:///config/priority_config.yml):
+Priority tiers and execution limits are governed by [`config/priority_config.yml`](../config/priority_config.yml):
 
 | Tier | Name | Latency Target | Description |
 | :--- | :--- | :--- | :--- |
@@ -40,7 +40,7 @@ Priority tiers and execution limits are governed by [`config/priority_config.yml
 
 ## 3. Core Engine Configuration
 
-[`config/default_config.yml`](file:///config/default_config.yml) defines default STT, TTS, wakeword, and audio pipeline plugins:
+[`config/default_config.yml`](../config/default_config.yml) defines default STT, TTS, wakeword, and audio pipeline plugins:
 
 ```yaml
 system:
@@ -55,4 +55,4 @@ system:
 
 ## 4. Logging Configuration
 
-Logging levels and rotations are managed in [`config/logging_config.yml`](file:///config/logging_config.yml). Logs are emitted to `data/logs/system_logs/` and `data/logs/skill_logs/`.
+Logging levels and rotations are managed in [`config/logging_config.yml`](../config/logging_config.yml). Logs are emitted to `data/logs/system_logs/` and `data/logs/skill_logs/`.

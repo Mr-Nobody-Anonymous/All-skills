@@ -8,6 +8,7 @@ Can optionally synchronize README.md and SKILLS.md.
 from __future__ import annotations
 
 import argparse
+import ast
 import datetime
 import json
 import os
@@ -23,6 +24,49 @@ if hasattr(sys.stderr, "reconfigure"):
 
 def get_repo_root() -> Path:
     return Path(__file__).resolve().parent.parent
+
+
+def count_test_cases(repo_root: Path | None = None) -> int:
+    """Count the tests this repository actually runs, without importing them.
+
+    The suites are ``tests/`` and ``scratch_priority_import/tests/``, minus
+    ``tests/ecc/`` — exactly the selection the CI job runs
+    (``pytest tests scratch_priority_import/tests --ignore=tests/ecc``), because
+    the ECC tree needs the optional ``llm`` package and never runs in CI.
+
+    The count comes from the AST rather than from unittest discovery. Discovery
+    imports every module, so its result depends on which optional packages are
+    installed: the same commit reported 280 tests with the ``[test]`` extra and
+    281 without it, because a pytest-only module failed to import and was
+    counted as a failure. A documented platform metric must be a property of the
+    repository, not of the machine that measured it, so this parses the source:
+    deterministic, offline, identical on every OS and Python version.
+
+    Counted: module-level ``test_*`` functions and ``test_*`` methods declared
+    directly on a class. Nested helper functions are not separate tests.
+    """
+    repo_root = repo_root or get_repo_root()
+    total = 0
+    for suite in (repo_root / "tests", repo_root / "scratch_priority_import" / "tests"):
+        if not suite.exists():
+            continue
+        for path in sorted(suite.rglob("test_*.py")):
+            if "ecc" in path.relative_to(repo_root).parts:
+                continue
+            try:
+                tree = ast.parse(path.read_text(encoding="utf-8"))
+            except (SyntaxError, UnicodeDecodeError, OSError):
+                continue
+            for node in tree.body:
+                if isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef)):
+                    total += node.name.startswith("test_")
+                elif isinstance(node, ast.ClassDef):
+                    total += sum(
+                        1 for child in node.body
+                        if isinstance(child, (ast.FunctionDef, ast.AsyncFunctionDef))
+                        and child.name.startswith("test_")
+                    )
+    return total
 
 
 def compute_platform_stats(repo_root: Path | None = None) -> dict:
@@ -74,6 +118,16 @@ def compute_platform_stats(repo_root: Path | None = None) -> dict:
         if (workflows_dir / w).is_file() and w.endswith(".md") and w.lower() != "readme.md"
     ] if workflows_dir.exists() else []
 
+    # Behavioural evaluation suites: the six independent dimensions run_evals.py
+    # enforces (behavioural, routing, OOD, adversarial, security, baseline).
+    evals_dir = repo_root / "evals"
+    evals = 0
+    if evals_dir.exists():
+        evals = sum(
+            1 for sub in ("behavioral", "routing", "adversarial", "security")
+            if (evals_dir / sub).exists() and any((evals_dir / sub).glob("*.json"))
+        ) + sum(2 for f in ("test_prompt.txt", "expected_output.md") if (evals_dir / f).exists())
+
     ci_workflows_dir = repo_root / ".github" / "workflows"
     ci_workflows = [
         w for w in os.listdir(ci_workflows_dir)
@@ -92,6 +146,24 @@ def compute_platform_stats(repo_root: Path | None = None) -> dict:
         with open(packs_file, "r", encoding="utf-8") as f:
             packs_count = len(json.load(f).get("packs", []))
 
+    # MCP inventory: mcps/catalog.json is the single source of truth, and these
+    # numbers are documented in prose all over the repo, so they belong here with
+    # every other count rather than being hand-maintained in three documents.
+    mcp_servers = mcp_categories = mcp_harnesses = mcp_profiles = 0
+    mcp_catalog_file = repo_root / "mcps" / "catalog.json"
+    if mcp_catalog_file.exists():
+        with open(mcp_catalog_file, "r", encoding="utf-8") as f:
+            mcp_catalog = json.load(f)
+        servers = mcp_catalog.get("servers", [])
+        mcp_servers = len(servers)
+        mcp_categories = len({s.get("category") for s in servers if s.get("category")})
+        mcp_harnesses = len(mcp_catalog.get("harnesses", {}))
+        mcp_profiles = len(mcp_catalog.get("profiles", {}))
+    mcp_role_profiles = 0
+    role_profiles_dir = repo_root / "mcp" / "profiles"
+    if role_profiles_dir.exists():
+        mcp_role_profiles = len([p for p in role_profiles_dir.glob("*.json") if p.is_file()])
+
     all_skill_ids = (
         set(catalog_skills)
         | set(canonical_skills)
@@ -99,15 +171,7 @@ def compute_platform_stats(repo_root: Path | None = None) -> dict:
         | set(manifest_skills.keys())
     )
 
-    # Count unit test methods dynamically
-    try:
-        import unittest
-        sys.path.insert(0, str(repo_root / "tests"))
-        sys.path.insert(0, str(repo_root / "src"))
-        suite = unittest.TestLoader().discover(str(repo_root / "tests"), pattern="test_*.py")
-        test_count = suite.countTestCases()
-    except Exception:
-        test_count = 94
+    test_count = count_test_cases(repo_root)
 
     version_file = repo_root / "VERSION"
     platform_version = version_file.read_text(encoding="utf-8").strip() if version_file.exists() else "3.0.0"
@@ -125,8 +189,14 @@ def compute_platform_stats(repo_root: Path | None = None) -> dict:
         "tests": test_count,
         "workflows": len(workflows),
         "ci_workflows": len(ci_workflows),
+        "evals": evals,
         "named_chains": chains_count,
         "curated_packs": packs_count,
+        "mcp_servers": mcp_servers,
+        "mcp_categories": mcp_categories,
+        "mcp_harnesses": mcp_harnesses,
+        "mcp_profiles": mcp_profiles,
+        "mcp_role_profiles": mcp_role_profiles,
         "last_generated": datetime.date.today().isoformat()
     }
     return stats
@@ -153,7 +223,14 @@ def save_stats(stats: dict, repo_root: Path | None = None) -> Path:
 # Wording matters as much as digits: catalog *entries* (catalog_skills) are not
 # unique skills (total_unique_skills), and no rule may assert "passing" or
 # "verified" — CI status comes from live badges, trust from recorded evidence.
-DOC_FILES = ("README.md", "SKILLS.md", "CONTRIBUTING.md", "docs/**/*.md")
+DOC_FILES = (
+    "README.md", "README.zh-CN.md", "SKILLS.md", "AGENTS.md", "CONTRIBUTING.md",
+    "docs/**/*.md", ".claude-plugin/*.json",
+)
+# Historical evidence must stay frozen: a release note that said "6 install
+# profiles" in April is not drift, it is a record of April.
+DOC_FROZEN = ("docs/releases/**/*.md", "docs/releases/*.md",
+              "docs/archive/**/*.md", "docs/archive/*.md", "CHANGELOG.md")
 _N = r"(?P<n>\d[\d,]*)"
 _NURL = r"(?P<n>\d+(?:%2C\d{3})*)"
 
@@ -197,6 +274,56 @@ DOC_COUNT_RULES: list[tuple[re.Pattern[str], str, str]] = [
     _rule(rf"`{_N}` distinct skill capabilities", "total_unique_skills"),
     _rule(rf"\*\*Unique Skills\*\* \| \*\*{_N}(?=\*\*)", "total_unique_skills"),
     _rule(rf"badge/skills-{_NURL}(?=%2B%20Unique%20Skills)", "total_unique_skills", "url"),
+    # SKILLS.md metrics block — same numbers, different wording, so they need
+    # their own patterns or the two documents drift apart (they did).
+    _rule(rf"`{_N}`(?= tested foundational skills)", "canonical_skills", "plain"),
+    _rule(rf"{_N}(?= (?:core |Core )?[Rr]outed [Ss]kills)", "canonical_skills"),
+    _rule(rf"`{_N}`(?= staff-engineer playbooks)", "active_harness_skills", "plain"),
+    _rule(rf"{_N}(?= pre-loaded staff[- ]engineer skills)", "active_harness_skills", flags=re.I),
+    _rule(rf"{_N}(?= tool-mapped skills)", "manifest_skills"),
+    _rule(rf"`{_N}`(?= multi-step execution playbooks)", "workflows", "plain"),
+    _rule(rf"`{_N}`(?= deterministic DAG chains)", "named_chains", "plain"),
+    _rule(rf"`{_N}`(?= unit tests in the suite)", "tests", "plain"),
+    _rule(rf"{_N}(?= core categories)", "canonical_categories"),
+    _rule(rf"(?<=skills in ){_N}(?= categories)", "canonical_categories"),
+    _rule(rf"(?<=skills across ){_N}(?= categories)", "canonical_categories"),
+    _rule(rf"(?<=Engine Skills \(){_N}(?= Categories\))", "canonical_categories"),
+    _rule(rf"{_N}(?= skills, and \d+ legacy)", "canonical_skills"),
+    _rule(rf"{_N}(?= Core Canonical Skills)", "canonical_skills"),
+    _rule(rf"(?<=\| Skills \| ){_N}(?= skills)", "canonical_skills", "plain"),
+    _rule(rf"(?<=indexes all ){_N}(?= platform skills)", "manifest_skills"),
+    # Translated surfaces and plugin metadata quote the same numbers in other
+    # words; they drifted for exactly that reason, so they get rules too.
+    _rule(rf"{_N}(?= skills, \d+ (?:legacy )?command shims)", "canonical_skills"),
+    _rule(rf"{_N}(?= skills, \d+ commands)", "canonical_skills"),
+    _rule(rf"{_N}(?= 项技能)", "canonical_skills", "plain"),
+    _rule(rf"{_N}(?= 个技能)", "canonical_skills", "plain"),
+    _rule(rf"{_N}(?= 个工作流技能)", "canonical_skills", "plain"),
+    _rule(rf"{_N}(?= 个 MCP 连接器)", "mcp_servers", "plain"),
+    _rule(rf"{_N}(?= 个 MCP 服务器)", "mcp_servers", "plain"),
+    _rule(rf"{_N}(?= behavioural evaluation suites| evaluation suites in)", "evals"),
+    _rule(rf"{_N}(?= CI-Gated Tests| gated tests)", "tests"),
+    # MCP inventory (mcps/catalog.json -> mcp/ generated view). Patterns stay
+    # narrow on purpose: "14 MCP servers (3 CLI-replaceable)" inside an example
+    # transcript is prose, not a platform claim, and must not be rewritten.
+    _rule(rf"{_N}(?= (?:catalogued |curated )?MCP servers across)", "mcp_servers"),
+    _rule(rf"(?<=MCP servers across ){_N}(?= (?:domain )?categories)", "mcp_categories"),
+    _rule(rf"{_N}(?=-connector MCP catalog| connectors across| catalogued MCP connectors)", "mcp_servers"),
+    _rule(rf"(?<=every one of the ){_N}(?= connectors)", "mcp_servers"),
+    _rule(rf"(?<=`full` \(all ){_N}(?=\))", "mcp_servers"),
+    _rule(rf"{_N}(?= Servers, \d+ Role Profiles)", "mcp_servers"),
+    _rule(rf"(?<=Servers, ){_N}(?= Role Profiles)", "mcp_role_profiles"),
+    _rule(rf"{_N}(?= install profiles\b)", "mcp_profiles"),
+    _rule(rf"(?<=drives ){_N}(?= harnesses)", "mcp_harnesses"),
+    # One-line summaries (SKILLS.md intro) and the LIMITATIONS.md stack diagram
+    # quote the same totals in yet another wording; they had drifted to 504/113.
+    _rule(rf"{_N}(?=-skill canonical engine)", "canonical_skills"),
+    _rule(rf"{_N}(?=-server MCP catalog)", "mcp_servers"),
+    _rule(rf"{_N}(?= Manifest-Declared Specification Skills)", "manifest_skills"),
+    _rule(rf"\*\*Canonical Skills \({_N}\)\*\*", "canonical_skills"),
+    _rule(rf"\*\*Active Harness Skills \({_N}\)\*\*", "active_harness_skills"),
+    _rule(rf"(?<=Catalog Records \(Indexed across ){_N}(?= categories\))", "categories"),
+    _rule(rf"{_N}(?= Unique Skill Identities)", "total_unique_skills"),
 ]
 
 _STYLES = {
@@ -246,7 +373,8 @@ def doc_files(repo_root: Path) -> list[Path]:
     files: set[Path] = set()
     for pattern in DOC_FILES:
         files.update(p for p in repo_root.glob(pattern) if p.is_file())
-    return sorted(files)
+    frozen = {p for pattern in DOC_FROZEN for p in repo_root.glob(pattern) if p.is_file()}
+    return sorted(files - frozen)
 
 
 def _sync_file(path: Path, stats: dict) -> bool:

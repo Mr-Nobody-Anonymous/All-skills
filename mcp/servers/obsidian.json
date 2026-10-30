@@ -1,0 +1,46 @@
+{
+  "id": "obsidian",
+  "name": "Obsidian",
+  "description": "Read and search a local Obsidian vault.",
+  "category": "knowledge",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "community",
+  "official": false,
+  "command": "npx",
+  "args": [
+    "-y",
+    "mcp-obsidian"
+  ],
+  "required_env": [
+    "OBSIDIAN_VAULT_PATH"
+  ],
+  "risk": "low",
+  "license": "MIT",
+  "docs": "https://github.com/MarkusPfundstein/mcp-obsidian",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

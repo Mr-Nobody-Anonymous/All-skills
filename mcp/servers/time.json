@@ -1,0 +1,43 @@
+{
+  "id": "time",
+  "name": "Time",
+  "description": "Current time and timezone conversion for scheduling and deadlines.",
+  "category": "utilities",
+  "tier": "core",
+  "transport": "stdio",
+  "vendor": "modelcontextprotocol",
+  "official": true,
+  "command": "uvx",
+  "args": [
+    "mcp-server-time"
+  ],
+  "required_env": [],
+  "risk": "low",
+  "license": "MIT",
+  "docs": "https://github.com/modelcontextprotocol/servers/tree/main/src/time",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

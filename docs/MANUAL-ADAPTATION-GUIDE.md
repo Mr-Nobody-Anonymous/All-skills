@@ -211,4 +211,4 @@ So the rule is simple:
 - [Issue #1186](https://github.com/Mr-Nobody-Anonymous/All-skills/issues/1186)
 - [Discussion #1077](https://github.com/Mr-Nobody-Anonymous/All-skills/discussions/1077)
 - [Antigravity Guide](./ANTIGRAVITY-GUIDE.md)
-- [Troubleshooting](./TROUBLESHOOTING.md)
+- [Troubleshooting](../TROUBLESHOOTING.md)

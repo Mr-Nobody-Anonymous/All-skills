@@ -1,6 +1,7 @@
 ---
 name: browser-use-to-stagehand
-description: "Migrate browser-use (Python) browser-automation scripts to Stagehand v3 (TypeScript) on Browserbase. Use when the user wants to convert, port, rewrite, or migrate a browser-use Agent script to Stagehand, map browser-use features/APIs to Stagehand primitives (act/extract/observe/agent), or move agentic browser automation onto Browserbase with more determinism. Triggers on "browser-use", "browser_use", or "Agent(task=...)"."
+description: >-
+  Migrate browser-use (Python) browser-automation scripts to Stagehand v3 (TypeScript) on Browserbase. Use when the user wants to convert, port, rewrite, or migrate a browser-use Agent script to Stagehand, map browser-use features/APIs to Stagehand primitives (act/extract/observe/agent), or move agentic browser automation onto Browserbase with more determinism. Triggers on "browser-use", "browser_use", or "Agent(task=...)".
 category: browser-automation
 domain: browser-automation
 subdomain: general
@@ -20,8 +21,6 @@ platforms:
   - antigravity
   - copilot
 ---
-
-
 # browser-use → Stagehand on Browserbase (`/browser-use-to-stagehand`)
 
 Convert a browser-use (Python) script into an idiomatic **Stagehand v3 (TypeScript)** script on

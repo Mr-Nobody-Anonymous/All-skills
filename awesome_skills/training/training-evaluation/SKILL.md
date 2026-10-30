@@ -1,6 +1,7 @@
 ---
 name: training-evaluation
-description: "Measure monetary ROI of training interventions: $ROI = \frac{\text{Net Benefits}}{\text{Training Costs}} \times 100\%$."
+description: >-
+  Measure monetary ROI of training interventions: $ROI = \frac{\text{Net Benefits}}{\text{Training Costs}} \times 100\%$.
 category: training
 author: AAS Platform
 version: 1.0.0
@@ -13,7 +14,6 @@ tags:
   - kirkpatrick
   - phillips-roi
 ---
-
 # Kirkpatrick and Phillips ROI Training Evaluation Methodology
 
 ## Overview & Core Principles

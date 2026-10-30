@@ -1,5 +1,6 @@
 # Automated dependency updates. Updates are grouped per ecosystem so each week
-# produces at most one pull request per ecosystem.
+# produces at most one pull request per ecosystem; security updates are grouped
+# separately so they can be reviewed and merged on their own cadence.
 version: 2
 updates:
   - package-ecosystem: github-actions
@@ -9,15 +10,40 @@ updates:
     groups:
       github-actions:
         patterns: ["*"]
+      github-actions-security:
+        applies-to: security-updates
+        patterns: ["*"]
     commit-message:
       prefix: ci
 
   - package-ecosystem: pip
     directory: /
+    # Never raise a minimum version that already works: Python 3.10+ is the
+    # supported floor and Dependabot opens PRs for security fixes regardless.
+    versioning-strategy: increase-if-necessary
     schedule:
       interval: weekly
     groups:
       python-dependencies:
+        applies-to: version-updates
+        patterns: ["*"]
+      python-security-updates:
+        applies-to: security-updates
+        patterns: ["*"]
+    commit-message:
+      prefix: deps
+
+  - package-ecosystem: npm
+    directory: /
+    versioning-strategy: increase-if-necessary
+    schedule:
+      interval: weekly
+    groups:
+      npm-dependencies:
+        applies-to: version-updates
+        patterns: ["*"]
+      npm-security-updates:
+        applies-to: security-updates
         patterns: ["*"]
     commit-message:
       prefix: deps
@@ -26,5 +52,8 @@ updates:
     directory: /docker
     schedule:
       interval: weekly
+    groups:
+      docker-dependencies:
+        patterns: ["*"]
     commit-message:
       prefix: docker

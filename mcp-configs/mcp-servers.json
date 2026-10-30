@@ -1,172 +1,118 @@
 {
   "mcpServers": {
-    "nexus": {
-      "command": "nexus",
-      "args": ["mcp"],
-      "description": "Local cost/privacy proxy - query your own usage & savings, route to the cheapest capable model, and mask secrets/PII before egress (nexus_stats, nexus_savings, nexus_recent, nexus_providers, nexus_cost_breakdown)"
-    },
-    "ito-compute": {
-      "command": "node",
-      "args": ["/absolute/path/to/ito-cloud-runtime/cli/ito-compute-cli/dist/bin/ito-mcp.js"],
-      "description": "Opt-in local Itô compute MCP. The canonical package is unpublished and must be built from Ito-Markets/ito-cloud-runtime/cli/ito-compute-cli. Exposes ito_auth, ito_find, ito_status, and ito_accept. ito_auth validates existing credentials; it does not start device login. Use ecc ito login [--no-browser] for device authorization, which stores tokens in macOS Keychain by default; explicit file fallback must retain owner-only settings. ECC itself performs no browser automation. ITO_API_KEY is forwarded directly to auth, find, status, and accept when configured; ITO_AUTH_MODE=legacy is not required."
-    },
-    "jira": {
+    "ableton": {
       "command": "uvx",
-      "args": ["mcp-atlassian==0.21.0"],
-      "env": {
-        "JIRA_URL": "YOUR_JIRA_URL_HERE",
-        "JIRA_EMAIL": "YOUR_JIRA_EMAIL_HERE",
-        "JIRA_API_TOKEN": "YOUR_JIRA_API_TOKEN_HERE"
-      },
-      "description": "Jira issue tracking — search, create, update, comment, transition issues"
+      "args": [
+        "ableton-mcp"
+      ],
+      "description": "Control an Ableton Live session: transport, tracks, clips and device parameters."
     },
-    "github": {
+    "airtable": {
       "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "args": [
+        "-y",
+        "airtable-mcp-server@latest"
+      ],
+      "description": "Read and write Airtable bases, tables, records and schema.",
       "env": {
-        "GITHUB_PERSONAL_ACCESS_TOKEN": "YOUR_GITHUB_PAT_HERE"
-      },
-      "description": "GitHub operations - PRs, issues, repos"
+        "AIRTABLE_API_KEY": "YOUR_AIRTABLE_API_KEY_HERE"
+      }
     },
-    "firecrawl": {
+    "apify": {
       "command": "npx",
-      "args": ["-y", "firecrawl-mcp"],
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server@latest"
+      ],
+      "description": "Run Apify actors (scrapers, crawlers, extractors) and read their datasets.",
       "env": {
-        "FIRECRAWL_API_KEY": "YOUR_FIRECRAWL_KEY_HERE"
-      },
-      "description": "Web scraping and crawling"
+        "APIFY_TOKEN": "YOUR_APIFY_TOKEN_HERE"
+      }
     },
-    "supabase": {
-      "command": "npx",
-      "args": ["-y", "@supabase/mcp-server-supabase@latest", "--project-ref=YOUR_PROJECT_REF"],
-      "description": "Supabase database operations"
-    },
-    "ecc-memory-vault": {
-      "command": "ecc-memory-mcp",
+    "atlassian": {
+      "type": "http",
+      "url": "https://mcp.atlassian.com/v1/sse",
+      "description": "Jira issues, sprints and Confluence pages through Atlassian's hosted MCP endpoint.",
       "env": {
-        "ECC_MEMORY_HARNESS": "YOUR_LOWERCASE_HARNESS_SLUG_HERE"
-      },
-      "description": "Opt-in local ECC Memory Vault shared by Claude, Codex, Hermes, Cursor, OpenCode, and other MCP clients. Replace ECC_MEMORY_HARNESS with this server's lowercase identity; callers cannot override it. Normal search recall is active project+team memory. To permit explicitly requested user scope, the operator may also set ECC_MEMORY_ALLOW_USER_SCOPE=1. Writes are create-only and always unreviewed. Install ECC globally or make its bin available on PATH. Not enabled by default."
+        "ATLASSIAN_ACCESS_TOKEN": "YOUR_ATLASSIAN_ACCESS_TOKEN_HERE"
+      }
     },
-    "memory": {
+    "autocad": {
       "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-memory"],
-      "description": "Persistent memory across sessions"
+      "args": [
+        "-y",
+        "autocad-mcp"
+      ],
+      "description": "Automate AutoCAD through its .NET backend: draw and modify entities, query drawings and export results.",
+      "env": {
+        "AUTOCAD_BACKEND_URL": "YOUR_AUTOCAD_BACKEND_URL_HERE"
+      }
     },
-    "omega-memory": {
+    "aws": {
       "command": "uvx",
-      "args": ["omega-memory", "serve"],
-      "description": "Persistent agent memory with semantic search, multi-agent coordination, and knowledge graphs — run via uvx (richer than the basic memory store)"
-    },
-    "longhand": {
-      "command": "longhand",
-      "args": ["mcp-server"],
-      "description": "Lossless Claude Code session history — indexes raw tool calls, file edits, and thinking blocks from ~/.claude/projects/*.jsonl into local SQLite + ChromaDB before Claude Code rotates them. Complements memory/omega-memory (synthesized) with verbatim recall. Install: pip install longhand && longhand setup"
-    },
-    "sequential-thinking": {
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"],
-      "description": "Chain-of-thought reasoning"
-    },
-    "vercel": {
-      "type": "http",
-      "url": "https://mcp.vercel.com",
-      "description": "Vercel deployments and projects"
-    },
-    "railway": {
-      "command": "npx",
-      "args": ["-y", "@railway/mcp-server"],
-      "description": "Railway deployments"
-    },
-    "cloudflare-docs": {
-      "type": "http",
-      "url": "https://docs.mcp.cloudflare.com/mcp",
-      "description": "Cloudflare documentation search"
-    },
-    "cloudflare-workers-builds": {
-      "type": "http",
-      "url": "https://builds.mcp.cloudflare.com/mcp",
-      "description": "Cloudflare Workers builds"
-    },
-    "cloudflare-workers-bindings": {
-      "type": "http",
-      "url": "https://bindings.mcp.cloudflare.com/mcp",
-      "description": "Cloudflare Workers bindings"
-    },
-    "cloudflare-observability": {
-      "type": "http",
-      "url": "https://observability.mcp.cloudflare.com/mcp",
-      "description": "Cloudflare observability/logs"
-    },
-    "clickhouse": {
-      "type": "http",
-      "url": "https://mcp.clickhouse.cloud/mcp",
-      "description": "ClickHouse analytics queries"
-    },
-    "exa-web-search": {
-      "command": "npx",
-      "args": ["-y", "exa-mcp-server"],
+      "args": [
+        "awslabs.core-mcp-server@latest"
+      ],
+      "description": "Inspect and operate AWS resources through the AWS MCP server suite.",
       "env": {
-        "EXA_API_KEY": "YOUR_EXA_API_KEY_HERE"
-      },
-      "description": "Web search, research, and data ingestion via Exa API — prefer task-scoped use for broader research after GitHub search and primary docs"
+        "AWS_PROFILE": "YOUR_AWS_PROFILE_HERE"
+      }
     },
-    "parallel-search": {
-      "type": "http",
-      "url": "https://search.parallel.ai/mcp",
-      "description": "Parallel Web Search — LLM-optimized web_search and web_fetch tools that take an objective + queries and return citation-backed excerpts in a single call (replaces multiple keyword searches). Works key-free for anonymous use. For higher rate limits, add a headers block: { \"Authorization\": \"Bearer YOUR_PARALLEL_API_KEY_HERE\" } using a key from platform.parallel.ai."
+    "aws-docs": {
+      "command": "uvx",
+      "args": [
+        "awslabs.aws-documentation-mcp-server@latest"
+      ],
+      "description": "Search AWS documentation and best-practice guidance."
     },
-    "context7": {
+    "azure": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp@latest"],
-      "description": "Live documentation lookup — use with /docs command and documentation-lookup skill (resolve-library-id, query-docs)."
+      "args": [
+        "-y",
+        "@azure/mcp",
+        "server",
+        "start"
+      ],
+      "description": "Azure resource management, diagnostics and service tooling through the official Azure MCP server."
     },
-    "codescene": {
+    "bigquery": {
       "command": "npx",
-      "args": ["-y", "@codescene/codehealth-mcp"],
+      "args": [
+        "-y",
+        "@ergut/mcp-bigquery-server",
+        "--project",
+        "${BIGQUERY_PROJECT}",
+        "--location",
+        "${BIGQUERY_LOCATION}"
+      ],
+      "description": "Query BigQuery datasets and inspect table metadata with the BigQuery SQL dialect.",
       "env": {
-        "CS_ACCESS_TOKEN": "YOUR_CS_ACCESS_TOKEN_HERE"
-      },
-      "description": "Optional. CodeScene Code Health MCP (community skill: codehealth-mcp). Not enabled by default — copy only if you opt in. Requires your own CS_ACCESS_TOKEN (no bundled credentials). See skills/codehealth-mcp/SKILL.md for data boundaries and failure behavior."
+        "BIGQUERY_PROJECT": "YOUR_BIGQUERY_PROJECT_HERE",
+        "BIGQUERY_LOCATION": "YOUR_BIGQUERY_LOCATION_HERE",
+        "GOOGLE_APPLICATION_CREDENTIALS": "YOUR_GOOGLE_APPLICATION_CREDENTIALS_HERE"
+      }
     },
-    "magic": {
-      "command": "npx",
-      "args": ["-y", "@magicuidesign/mcp@latest"],
-      "description": "Magic UI components"
-    },
-    "memxus": {
-      "type": "http",
-      "url": "https://mcp.memxus.com/mcp",
-      "headers": {
-        "Authorization": "Bearer YOUR_MEMXUS_API_KEY_HERE"
-      },
-      "description": "Universal persistent memory across Claude Code, Cursor, Gemini CLI and any AI tool — save context once, auto-recalled in every session. Note: review stored memories before use in production agents to avoid prompt-injection via memory-poisoning. Free at memxus.com"
-    },
-    "filesystem": {
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/path/to/your/projects"],
-      "description": "Filesystem operations (set your path)"
-    },
-    "playwright": {
-      "command": "npx",
-      "args": ["-y", "@playwright/mcp", "--browser", "chrome"],
-      "description": "Browser automation and testing via Playwright"
-    },
-    "fal-ai": {
-      "command": "npx",
-      "args": ["-y", "fal-ai-mcp-server"],
+    "blender": {
+      "command": "uvx",
+      "args": [
+        "blender-mcp"
+      ],
+      "description": "Control Blender over a local socket: build and modify meshes, run Python, render and export assets.",
       "env": {
-        "FAL_KEY": "YOUR_FAL_KEY_HERE"
-      },
-      "description": "AI image/video/audio generation via fal.ai models"
+        "BLENDER_HOST": "YOUR_BLENDER_HOST_HERE",
+        "BLENDER_PORT": "YOUR_BLENDER_PORT_HERE"
+      }
     },
-    "browserbase": {
+    "brave-search": {
       "command": "npx",
-      "args": ["-y", "@browserbasehq/mcp-server-browserbase"],
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-brave-search"
+      ],
+      "description": "Independent web and local search index via the Brave Search API.",
       "env": {
-        "BROWSERBASE_API_KEY": "YOUR_BROWSERBASE_KEY_HERE"
-      },
-      "description": "Cloud browser sessions via Browserbase"
+        "BRAVE_API_KEY": "YOUR_BRAVE_API_KEY_HERE"
+      }
     },
     "browser-use": {
       "type": "http",
@@ -176,38 +122,1193 @@
       },
       "description": "AI browser agent for web tasks"
     },
-    "devfleet": {
-      "type": "http",
-      "url": "http://localhost:18801/mcp",
-      "description": "Multi-agent orchestration — dispatch parallel Claude Code agents in isolated worktrees. Plan projects, auto-chain missions, read structured reports. Repo: https://github.com/LEC-AI/claude-devfleet"
-    },
-    "token-optimizer": {
+    "browserbase": {
       "command": "npx",
-      "args": ["-y", "token-optimizer-mcp"],
-      "description": "Token optimization for 95%+ context reduction via content deduplication and compression"
+      "args": [
+        "-y",
+        "@browserbasehq/mcp-server-browserbase"
+      ],
+      "env": {
+        "BROWSERBASE_API_KEY": "YOUR_BROWSERBASE_KEY_HERE"
+      },
+      "description": "Cloud browser sessions via Browserbase"
     },
-    "laraplugins": {
+    "chroma": {
+      "command": "uvx",
+      "args": [
+        "chroma-mcp"
+      ],
+      "description": "Vector search and document storage over a local, HTTP or Chroma Cloud collection.",
+      "env": {
+        "CHROMA_CLIENT_TYPE": "YOUR_CHROMA_CLIENT_TYPE_HERE",
+        "CHROMA_API_KEY": "YOUR_CHROMA_API_KEY_HERE",
+        "CHROMA_TENANT": "YOUR_CHROMA_TENANT_HERE",
+        "CHROMA_DATABASE": "YOUR_CHROMA_DATABASE_HERE"
+      }
+    },
+    "chrome-devtools": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "chrome-devtools-mcp@latest"
+      ],
+      "description": "Stateful Chrome DevTools Protocol session: live debugging, performance traces, console and network inspection."
+    },
+    "circleci": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@circleci/mcp-server-circleci@latest"
+      ],
+      "description": "Pipeline health, failed job logs and build configuration for CircleCI projects.",
+      "env": {
+        "CIRCLECI_TOKEN": "YOUR_CIRCLECI_TOKEN_HERE"
+      }
+    },
+    "clickhouse": {
       "type": "http",
-      "url": "https://laraplugins.io/mcp/plugins",
-      "description": "Laravel plugin discovery — search packages by keyword, health score, Laravel/PHP version compatibility. Use with laravel-plugin-discovery skill."
+      "url": "https://mcp.clickhouse.cloud/mcp",
+      "description": "ClickHouse analytics queries"
+    },
+    "clickup": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@taazkareem/clickup-mcp-server@latest"
+      ],
+      "description": "Tasks, lists, docs and comments in ClickUp workspaces.",
+      "env": {
+        "CLICKUP_API_KEY": "YOUR_CLICKUP_API_KEY_HERE",
+        "CLICKUP_TEAM_ID": "YOUR_CLICKUP_TEAM_ID_HERE"
+      }
+    },
+    "cloudflare": {
+      "type": "http",
+      "url": "https://observability.mcp.cloudflare.com/mcp",
+      "description": "Workers, KV, R2, D1 and observability operations on Cloudflare."
+    },
+    "cloudflare-docs": {
+      "type": "http",
+      "url": "https://docs.mcp.cloudflare.com/mcp",
+      "description": "Cloudflare documentation search"
+    },
+    "cloudflare-observability": {
+      "type": "http",
+      "url": "https://observability.mcp.cloudflare.com/mcp",
+      "description": "Cloudflare observability/logs"
+    },
+    "cloudflare-workers-bindings": {
+      "type": "http",
+      "url": "https://bindings.mcp.cloudflare.com/mcp",
+      "description": "Cloudflare Workers bindings"
+    },
+    "cloudflare-workers-builds": {
+      "type": "http",
+      "url": "https://builds.mcp.cloudflare.com/mcp",
+      "description": "Cloudflare Workers builds"
+    },
+    "code-sandbox": {
+      "command": "uvx",
+      "args": [
+        "e2b-mcp-server"
+      ],
+      "description": "Execute untrusted code in an isolated microVM to verify agent output.",
+      "env": {
+        "E2B_API_KEY": "YOUR_E2B_API_KEY_HERE"
+      }
+    },
+    "codescene": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@codescene/codehealth-mcp"
+      ],
+      "env": {
+        "CS_ACCESS_TOKEN": "YOUR_CS_ACCESS_TOKEN_HERE"
+      },
+      "description": "Optional. CodeScene Code Health MCP (community skill: codehealth-mcp). Not enabled by default \u2014 copy only if you opt in. Requires your own CS_ACCESS_TOKEN (no bundled credentials). See skills/codehealth-mcp/SKILL.md for data boundaries and failure behavior."
     },
     "confluence": {
       "command": "npx",
-      "args": ["-y", "confluence-mcp-server"],
+      "args": [
+        "-y",
+        "confluence-mcp-server"
+      ],
       "env": {
         "CONFLUENCE_BASE_URL": "YOUR_CONFLUENCE_URL_HERE",
         "CONFLUENCE_EMAIL": "YOUR_EMAIL_HERE",
         "CONFLUENCE_API_TOKEN": "YOUR_CONFLUENCE_TOKEN_HERE"
       },
-      "description": "Confluence Cloud integration — search pages, retrieve content, explore spaces"
+      "description": "Confluence Cloud integration \u2014 search pages, retrieve content, explore spaces"
+    },
+    "context7": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@upstash/context7-mcp@latest"
+      ],
+      "description": "Live documentation lookup \u2014 use with /docs command and documentation-lookup skill (resolve-library-id, query-docs)."
+    },
+    "davinci-resolve": {
+      "command": "uvx",
+      "args": [
+        "davinci-resolve-mcp"
+      ],
+      "description": "Automate DaVinci Resolve: timeline assembly, media pool operations, rendering and project inspection."
+    },
+    "deepwiki": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "deepwiki-mcp@latest"
+      ],
+      "description": "Ask questions about an unfamiliar public repository and get answers grounded in its wiki-style documentation."
+    },
+    "desktop-commander": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@wonderwhy-er/desktop-commander@latest"
+      ],
+      "description": "Terminal control and file editing with configurable safety bounds."
+    },
+    "devfleet": {
+      "type": "http",
+      "url": "http://localhost:18801/mcp",
+      "description": "Multi-agent orchestration \u2014 dispatch parallel Claude Code agents in isolated worktrees. Plan projects, auto-chain missions, read structured reports. Repo: https://github.com/LEC-AI/claude-devfleet"
+    },
+    "digitalocean": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@digitalocean/mcp@latest"
+      ],
+      "description": "Manage Droplets, App Platform apps, databases and Kubernetes clusters on DigitalOcean.",
+      "env": {
+        "DIGITALOCEAN_API_TOKEN": "YOUR_DIGITALOCEAN_API_TOKEN_HERE"
+      }
+    },
+    "discord": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "discord-mcp"
+      ],
+      "description": "Read channels and messages and post to Discord servers.",
+      "env": {
+        "DISCORD_BOT_TOKEN": "YOUR_DISCORD_BOT_TOKEN_HERE"
+      }
+    },
+    "docker": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "docker-mcp"
+      ],
+      "description": "List and inspect containers, images, volumes and networks."
+    },
+    "duckdb": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-motherduck",
+        "--db-path",
+        "${DUCKDB_PATH}"
+      ],
+      "description": "Local DuckDB files and MotherDuck databases: SQL, schema exploration and ad-hoc analytics.",
+      "env": {
+        "MOTHERDUCK_TOKEN": "YOUR_MOTHERDUCK_TOKEN_HERE",
+        "DUCKDB_PATH": "YOUR_DUCKDB_PATH_HERE"
+      }
+    },
+    "e2b": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@e2b/mcp-server@latest"
+      ],
+      "description": "Spin up disposable cloud sandboxes and run code inside them.",
+      "env": {
+        "E2B_API_KEY": "YOUR_E2B_API_KEY_HERE"
+      }
+    },
+    "ecc-memory-vault": {
+      "command": "ecc-memory-mcp",
+      "env": {
+        "ECC_MEMORY_HARNESS": "YOUR_LOWERCASE_HARNESS_SLUG_HERE"
+      },
+      "description": "Opt-in local ECC Memory Vault shared by Claude, Codex, Hermes, Cursor, OpenCode, and other MCP clients. Replace ECC_MEMORY_HARNESS with this server's lowercase identity; callers cannot override it. Normal search recall is active project+team memory. To permit explicitly requested user scope, the operator may also set ECC_MEMORY_ALLOW_USER_SCOPE=1. Writes are create-only and always unreviewed. Install ECC globally or make its bin available on PATH. Not enabled by default."
+    },
+    "elasticsearch": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@elastic/mcp-server-elasticsearch"
+      ],
+      "description": "Search indices, mappings and aggregations in Elasticsearch.",
+      "env": {
+        "ES_URL": "YOUR_ES_URL_HERE",
+        "ES_API_KEY": "YOUR_ES_API_KEY_HERE"
+      }
+    },
+    "elevenlabs": {
+      "command": "uvx",
+      "args": [
+        "elevenlabs-mcp"
+      ],
+      "description": "Text-to-speech, voice design and audio generation with the ElevenLabs API.",
+      "env": {
+        "ELEVENLABS_API_KEY": "YOUR_ELEVENLABS_API_KEY_HERE"
+      }
     },
     "evalview": {
       "command": "python3",
-      "args": ["-m", "evalview", "mcp", "serve"],
+      "args": [
+        "-m",
+        "evalview",
+        "mcp",
+        "serve"
+      ],
       "env": {
         "OPENAI_API_KEY": "YOUR_OPENAI_API_KEY_HERE"
       },
-      "description": "AI agent regression testing — snapshot behavior, detect regressions in tool calls and output quality. 8 tools: create_test, run_snapshot, run_check, list_tests, validate_skill, generate_skill_tests, run_skill_test, generate_visual_report. API key optional — deterministic checks (tool diff, output hash) work without it. Install: pip install \"evalview>=0.5,<1\""
+      "description": "AI agent regression testing \u2014 snapshot behavior, detect regressions in tool calls and output quality. 8 tools: create_test, run_snapshot, run_check, list_tests, validate_skill, generate_skill_tests, run_skill_test, generate_visual_report. API key optional \u2014 deterministic checks (tool diff, output hash) work without it. Install: pip install \"evalview>=0.5,<1\""
+    },
+    "everything": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-everything"
+      ],
+      "description": "Reference MCP server exposing every protocol feature; used to verify a harness wiring."
+    },
+    "exa": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "exa-mcp-server"
+      ],
+      "description": "Neural web search with content extraction for research-heavy tasks.",
+      "env": {
+        "EXA_API_KEY": "YOUR_EXA_API_KEY_HERE"
+      }
+    },
+    "exa-web-search": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "exa-mcp-server"
+      ],
+      "env": {
+        "EXA_API_KEY": "YOUR_EXA_API_KEY_HERE"
+      },
+      "description": "Web search, research, and data ingestion via Exa API \u2014 prefer task-scoped use for broader research after GitHub search and primary docs"
+    },
+    "fal-ai": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "fal-ai-mcp-server"
+      ],
+      "env": {
+        "FAL_KEY": "YOUR_FAL_KEY_HERE"
+      },
+      "description": "AI image/video/audio generation via fal.ai models"
+    },
+    "fetch": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-fetch"
+      ],
+      "description": "Fetch a URL and convert HTML to markdown for documentation retrieval and research."
+    },
+    "fetch-docs": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-docs-server"
+      ],
+      "description": "Fetch and index official package documentation for offline lookup."
+    },
+    "figma": {
+      "type": "http",
+      "url": "https://mcp.figma.com/mcp",
+      "description": "Inspect Figma files, components and design tokens from a remote MCP server."
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/path/to/your/projects"
+      ],
+      "description": "Filesystem operations (set your path)"
+    },
+    "firebase": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "firebase-tools",
+        "experimental:mcp"
+      ],
+      "description": "Firebase project tooling: Firestore, Auth, Hosting and emulator workflows via firebase-tools."
+    },
+    "firecrawl": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "firecrawl-mcp"
+      ],
+      "env": {
+        "FIRECRAWL_API_KEY": "YOUR_FIRECRAWL_KEY_HERE"
+      },
+      "description": "Web scraping and crawling"
+    },
+    "freecad": {
+      "command": "uvx",
+      "args": [
+        "freecad-mcp"
+      ],
+      "description": "Control a running FreeCAD instance: create and edit parametric models, run Python scripts and inspect document objects."
+    },
+    "gdal": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "gdal-mcp",
+        "gdal",
+        "--transport",
+        "stdio"
+      ],
+      "description": "Python-native GDAL operations: raster and vector reprojection, conversion, clipping, mosaicking and format inspection."
+    },
+    "geoserver": {
+      "command": "uvx",
+      "args": [
+        "geoserver-mcp"
+      ],
+      "description": "Publish and manage GeoServer workspaces, stores, layers and styles through its REST API.",
+      "env": {
+        "GEOSERVER_URL": "YOUR_GEOSERVER_URL_HERE",
+        "GEOSERVER_USER": "YOUR_GEOSERVER_USER_HERE",
+        "GEOSERVER_PASSWORD": "YOUR_GEOSERVER_PASSWORD_HERE"
+      }
+    },
+    "git": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-git",
+        "--repository",
+        "."
+      ],
+      "description": "Inspect status, diffs, logs and history of a local git repository without mutating it."
+    },
+    "github": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "YOUR_GITHUB_PAT_HERE"
+      },
+      "description": "GitHub operations - PRs, issues, repos"
+    },
+    "gitlab": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@zereight/mcp-gitlab"
+      ],
+      "description": "GitLab projects, merge requests, pipelines and issues over the official API.",
+      "env": {
+        "GITLAB_PERSONAL_ACCESS_TOKEN": "YOUR_GITLAB_PERSONAL_ACCESS_TOKEN_HERE"
+      }
+    },
+    "gmail": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@gongrzhe/server-gmail-autoauth-mcp"
+      ],
+      "description": "Draft, search and read email in a Gmail account.",
+      "env": {
+        "GMAIL_CREDENTIALS_PATH": "YOUR_GMAIL_CREDENTIALS_PATH_HERE"
+      }
+    },
+    "google-calendar": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@cocal/google-calendar-mcp@latest"
+      ],
+      "description": "List, create and update Google Calendar events across accounts.",
+      "env": {
+        "GOOGLE_OAUTH_CREDENTIALS": "YOUR_GOOGLE_OAUTH_CREDENTIALS_HERE"
+      }
+    },
+    "google-cloud-run": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "cloud-run-mcp@latest"
+      ],
+      "description": "Deploy container images to Cloud Run, read service logs and manage revisions."
+    },
+    "google-drive": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-gdrive"
+      ],
+      "description": "Search and read Google Drive files and Docs.",
+      "env": {
+        "GDRIVE_CREDENTIALS_PATH": "YOUR_GDRIVE_CREDENTIALS_PATH_HERE"
+      }
+    },
+    "google-maps": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-google-maps"
+      ],
+      "description": "Geocoding, directions, places and distance matrix lookups.",
+      "env": {
+        "GOOGLE_MAPS_API_KEY": "YOUR_GOOGLE_MAPS_API_KEY_HERE"
+      }
+    },
+    "google-sheets": {
+      "command": "uvx",
+      "args": [
+        "mcp-google-sheets"
+      ],
+      "description": "Read and write Google Sheets cells, sheets and Drive metadata.",
+      "env": {
+        "GOOGLE_APPLICATION_CREDENTIALS": "YOUR_GOOGLE_APPLICATION_CREDENTIALS_HERE"
+      }
+    },
+    "grafana": {
+      "command": "uvx",
+      "args": [
+        "mcp-grafana"
+      ],
+      "description": "Query dashboards, Prometheus metrics and Loki logs through Grafana.",
+      "env": {
+        "GRAFANA_URL": "YOUR_GRAFANA_URL_HERE",
+        "GRAFANA_API_KEY": "YOUR_GRAFANA_API_KEY_HERE"
+      }
+    },
+    "grasshopper": {
+      "command": "uvx",
+      "args": [
+        "grasshopper-mcp"
+      ],
+      "description": "Bridge to a running Rhino/Grasshopper definition: drive parameters, evaluate the canvas and read generated geometry."
+    },
+    "heroku": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@heroku/mcp-server@latest"
+      ],
+      "description": "Inspect and operate Heroku apps, dynos, add-ons and releases.",
+      "env": {
+        "HEROKU_API_KEY": "YOUR_HEROKU_API_KEY_HERE"
+      }
+    },
+    "hubspot": {
+      "type": "http",
+      "url": "https://mcp.hubspot.com",
+      "description": "CRM contacts, companies, deals and tickets."
+    },
+    "huggingface": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@huggingface/mcp-server"
+      ],
+      "description": "Search models, datasets and Spaces, and read model cards."
+    },
+    "ifc": {
+      "command": "uvx",
+      "args": [
+        "ifc-mcp"
+      ],
+      "description": "Query IFC building models: spaces, elements, property sets and quantities for coordination and take-offs."
+    },
+    "inkscape": {
+      "command": "uvx",
+      "args": [
+        "inkscape-mcp"
+      ],
+      "description": "Drive the Inkscape CLI: convert and clean vector art, trace bitmaps and export SVG/PNG at exact sizes."
+    },
+    "ito-compute": {
+      "command": "node",
+      "args": [
+        "/absolute/path/to/ito-cloud-runtime/cli/ito-compute-cli/dist/bin/ito-mcp.js"
+      ],
+      "description": "Opt-in local It\u00f4 compute MCP. The canonical package is unpublished and must be built from Ito-Markets/ito-cloud-runtime/cli/ito-compute-cli. Exposes ito_auth, ito_find, ito_status, and ito_accept. ito_auth validates existing credentials; it does not start device login. Use ecc ito login [--no-browser] for device authorization, which stores tokens in macOS Keychain by default; explicit file fallback must retain owner-only settings. ECC itself performs no browser automation. ITO_API_KEY is forwarded directly to auth, find, status, and accept when configured; ITO_AUTH_MODE=legacy is not required."
+    },
+    "jira": {
+      "command": "uvx",
+      "args": [
+        "mcp-atlassian==0.21.0"
+      ],
+      "env": {
+        "JIRA_URL": "YOUR_JIRA_URL_HERE",
+        "JIRA_EMAIL": "YOUR_JIRA_EMAIL_HERE",
+        "JIRA_API_TOKEN": "YOUR_JIRA_API_TOKEN_HERE"
+      },
+      "description": "Jira issue tracking \u2014 search, create, update, comment, transition issues"
+    },
+    "kicad": {
+      "command": "uvx",
+      "args": [
+        "kicad-mcp"
+      ],
+      "description": "Work with KiCad projects: inspect schematics and PCBs, place components and check design rules."
+    },
+    "kubernetes": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-server-kubernetes"
+      ],
+      "description": "Read cluster state, pods, events and logs, and apply manifests.",
+      "env": {
+        "KUBECONFIG": "YOUR_KUBECONFIG_HERE"
+      }
+    },
+    "laraplugins": {
+      "type": "http",
+      "url": "https://laraplugins.io/mcp/plugins",
+      "description": "Laravel plugin discovery \u2014 search packages by keyword, health score, Laravel/PHP version compatibility. Use with laravel-plugin-discovery skill."
+    },
+    "linear": {
+      "type": "http",
+      "url": "https://mcp.linear.app/mcp",
+      "description": "Create, triage and search Linear issues, projects and cycles."
+    },
+    "longhand": {
+      "command": "longhand",
+      "args": [
+        "mcp-server"
+      ],
+      "description": "Lossless Claude Code session history \u2014 indexes raw tool calls, file edits, and thinking blocks from ~/.claude/projects/*.jsonl into local SQLite + ChromaDB before Claude Code rotates them. Complements memory/omega-memory (synthesized) with verbatim recall. Install: pip install longhand && longhand setup"
+    },
+    "magic": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@magicuidesign/mcp@latest"
+      ],
+      "description": "Magic UI components"
+    },
+    "mapbox": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@mapbox/mcp-server"
+      ],
+      "description": "Geocoding, isochrones, directions, matrix routing and static map imagery from the Mapbox APIs.",
+      "env": {
+        "MAPBOX_ACCESS_TOKEN": "YOUR_MAPBOX_ACCESS_TOKEN_HERE"
+      }
+    },
+    "memory": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ],
+      "description": "Persistent memory across sessions"
+    },
+    "memxus": {
+      "type": "http",
+      "url": "https://mcp.memxus.com/mcp",
+      "headers": {
+        "Authorization": "Bearer YOUR_MEMXUS_API_KEY_HERE"
+      },
+      "description": "Universal persistent memory across Claude Code, Cursor, Gemini CLI and any AI tool \u2014 save context once, auto-recalled in every session. Note: review stored memories before use in production agents to avoid prompt-injection via memory-poisoning. Free at memxus.com"
+    },
+    "meshy": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "meshy-mcp-server"
+      ],
+      "description": "Generate 3D models and textures from text or image prompts through the Meshy API.",
+      "env": {
+        "MESHY_API_KEY": "YOUR_MESHY_API_KEY_HERE"
+      }
+    },
+    "microsoft-learn": {
+      "type": "http",
+      "url": "https://learn.microsoft.com/api/mcp",
+      "description": "Search Microsoft Learn and Azure documentation."
+    },
+    "mongodb": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mongodb-mcp-server"
+      ],
+      "description": "Inspect collections, run aggregation pipelines and read documents.",
+      "env": {
+        "MONGODB_URI": "YOUR_MONGODB_URI_HERE"
+      }
+    },
+    "mysql": {
+      "command": "uvx",
+      "args": [
+        "mysql-mcp-server"
+      ],
+      "description": "Inspect schemas and run read-only SQL against MySQL or MariaDB with an explicit use-case allowlist.",
+      "env": {
+        "MYSQL_HOST": "YOUR_MYSQL_HOST_HERE",
+        "MYSQL_USER": "YOUR_MYSQL_USER_HERE",
+        "MYSQL_PASSWORD": "YOUR_MYSQL_PASSWORD_HERE",
+        "MYSQL_DATABASE": "YOUR_MYSQL_DATABASE_HERE"
+      }
+    },
+    "n8n": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "n8n-mcp@latest"
+      ],
+      "description": "Search, inspect and validate n8n workflow nodes and build automations from the catalog.",
+      "env": {
+        "N8N_API_URL": "YOUR_N8N_API_URL_HERE",
+        "N8N_API_KEY": "YOUR_N8N_API_KEY_HERE"
+      }
+    },
+    "neo4j": {
+      "command": "uvx",
+      "args": [
+        "mcp-neo4j-cypher"
+      ],
+      "description": "Cypher queries, graph schema inspection and read-only analytics over a Neo4j database.",
+      "env": {
+        "NEO4J_URL": "YOUR_NEO4J_URL_HERE",
+        "NEO4J_USERNAME": "YOUR_NEO4J_USERNAME_HERE",
+        "NEO4J_PASSWORD": "YOUR_NEO4J_PASSWORD_HERE"
+      }
+    },
+    "neon": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@neondatabase/mcp-server-neon",
+        "start",
+        "${NEON_API_KEY}"
+      ],
+      "description": "Create and manage Neon Postgres projects, branches, and run SQL against them.",
+      "env": {
+        "NEON_API_KEY": "YOUR_NEON_API_KEY_HERE"
+      }
+    },
+    "netlify": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@netlify/mcp@latest"
+      ],
+      "description": "Create and deploy Netlify sites, manage environment variables and read deploy logs.",
+      "env": {
+        "NETLIFY_PERSONAL_ACCESS_TOKEN": "YOUR_NETLIFY_PERSONAL_ACCESS_TOKEN_HERE"
+      }
+    },
+    "nexus": {
+      "command": "nexus",
+      "args": [
+        "mcp"
+      ],
+      "description": "Local cost/privacy proxy - query your own usage & savings, route to the cheapest capable model, and mask secrets/PII before egress (nexus_stats, nexus_savings, nexus_recent, nexus_providers, nexus_cost_breakdown)"
+    },
+    "notion": {
+      "type": "http",
+      "url": "https://mcp.notion.com/mcp",
+      "description": "Read and write Notion pages, databases and knowledge bases."
+    },
+    "obsidian": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-obsidian"
+      ],
+      "description": "Read and search a local Obsidian vault.",
+      "env": {
+        "OBSIDIAN_VAULT_PATH": "YOUR_OBSIDIAN_VAULT_PATH_HERE"
+      }
+    },
+    "omega-memory": {
+      "command": "uvx",
+      "args": [
+        "omega-memory",
+        "serve"
+      ],
+      "description": "Persistent agent memory with semantic search, multi-agent coordination, and knowledge graphs \u2014 run via uvx (richer than the basic memory store)"
+    },
+    "openai-docs": {
+      "type": "http",
+      "url": "https://developers.openai.com/mcp",
+      "description": "Search the OpenAI developer documentation and API reference."
+    },
+    "openapi": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "openapi-mcp-server",
+        "${OPENAPI_SPEC_PATH}"
+      ],
+      "description": "Expose any OpenAPI 3 document as MCP tools at runtime.",
+      "env": {
+        "OPENAPI_SPEC_PATH": "YOUR_OPENAPI_SPEC_PATH_HERE"
+      }
+    },
+    "openscad": {
+      "command": "uvx",
+      "args": [
+        "openscad-mcp"
+      ],
+      "description": "Render and measure OpenSCAD models, check assemblies and export meshes from parametric scripts."
+    },
+    "opentelemetry": {
+      "command": "uvx",
+      "args": [
+        "opentelemetry-mcp"
+      ],
+      "description": "Query distributed traces from an OpenTelemetry backend (Jaeger, Phoenix, Traceloop) to explain latency and failures across services and LLM calls.",
+      "env": {
+        "BACKEND_TYPE": "YOUR_BACKEND_TYPE_HERE",
+        "BACKEND_URL": "YOUR_BACKEND_URL_HERE"
+      }
+    },
+    "parallel-search": {
+      "type": "http",
+      "url": "https://search.parallel.ai/mcp",
+      "description": "Parallel Web Search \u2014 LLM-optimized web_search and web_fetch tools that take an objective + queries and return citation-backed excerpts in a single call (replaces multiple keyword searches). Works key-free for anonymous use. For higher rate limits, add a headers block: { \"Authorization\": \"Bearer YOUR_PARALLEL_API_KEY_HERE\" } using a key from platform.parallel.ai."
+    },
+    "paypal": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@paypal/mcp@latest"
+      ],
+      "description": "PayPal orders, payments, invoices and disputes for sandbox or live accounts.",
+      "env": {
+        "PAYPAL_ACCESS_TOKEN": "YOUR_PAYPAL_ACCESS_TOKEN_HERE",
+        "PAYPAL_ENVIRONMENT": "YOUR_PAYPAL_ENVIRONMENT_HERE"
+      }
+    },
+    "perplexity": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "perplexity-mcp"
+      ],
+      "description": "Research-grade answer synthesis with citations.",
+      "env": {
+        "PERPLEXITY_API_KEY": "YOUR_PERPLEXITY_API_KEY_HERE"
+      }
+    },
+    "pinecone": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@pinecone-database/mcp@latest"
+      ],
+      "description": "Create, upsert, query and inspect Pinecone indexes and their records.",
+      "env": {
+        "PINECONE_API_KEY": "YOUR_PINECONE_API_KEY_HERE"
+      }
+    },
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@playwright/mcp",
+        "--browser",
+        "chrome"
+      ],
+      "description": "Browser automation and testing via Playwright"
+    },
+    "postgres": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-postgres",
+        "${POSTGRES_URL}"
+      ],
+      "description": "Read-only SQL access with schema inspection for PostgreSQL databases.",
+      "env": {
+        "POSTGRES_URL": "YOUR_POSTGRES_URL_HERE"
+      }
+    },
+    "postman": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@postman/postman-mcp-server@latest"
+      ],
+      "description": "Browse Postman collections, run API requests and inspect mock servers and workspaces.",
+      "env": {
+        "POSTMAN_API_KEY": "YOUR_POSTMAN_API_KEY_HERE"
+      }
+    },
+    "prometheus": {
+      "command": "uvx",
+      "args": [
+        "prometheus-mcp-server"
+      ],
+      "description": "Run PromQL against a Prometheus server: query metrics, inspect targets and labels, and pull range data for triage.",
+      "env": {
+        "PROMETHEUS_URL": "YOUR_PROMETHEUS_URL_HERE"
+      }
+    },
+    "pulumi": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@pulumi/mcp-server@latest"
+      ],
+      "description": "Inspect stacks, preview and apply infrastructure changes, and query Pulumi Cloud.",
+      "env": {
+        "PULUMI_ACCESS_TOKEN": "YOUR_PULUMI_ACCESS_TOKEN_HERE"
+      }
+    },
+    "puppeteer": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-puppeteer"
+      ],
+      "description": "Local headless browser automation and screenshots."
+    },
+    "qdrant": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-qdrant"
+      ],
+      "description": "Semantic memory over a Qdrant collection: store, recall and search vectorized notes.",
+      "env": {
+        "QDRANT_URL": "YOUR_QDRANT_URL_HERE",
+        "QDRANT_API_KEY": "YOUR_QDRANT_API_KEY_HERE",
+        "COLLECTION_NAME": "YOUR_COLLECTION_NAME_HERE"
+      }
+    },
+    "qgis": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "qgis-mcp@latest"
+      ],
+      "description": "Drive a running QGIS desktop session: add and style layers, run processing algorithms, export maps and inspect the project tree.",
+      "env": {
+        "QGIS_MCP_PORT": "YOUR_QGIS_MCP_PORT_HERE"
+      }
+    },
+    "railway": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@railway/mcp-server"
+      ],
+      "description": "Railway deployments"
+    },
+    "redis": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-redis",
+        "${REDIS_URL}"
+      ],
+      "description": "Inspect keys, streams and cache state in Redis.",
+      "env": {
+        "REDIS_URL": "YOUR_REDIS_URL_HERE"
+      }
+    },
+    "remote-fs": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-ssh-manager"
+      ],
+      "description": "Browse and edit files on a remote host over SSH.",
+      "env": {
+        "SSH_HOST": "YOUR_SSH_HOST_HERE",
+        "SSH_USER": "YOUR_SSH_USER_HERE",
+        "SSH_KEY_PATH": "YOUR_SSH_KEY_PATH_HERE"
+      }
+    },
+    "resend": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "resend-mcp@latest"
+      ],
+      "description": "Send transactional email, manage audiences and inspect deliveries with Resend.",
+      "env": {
+        "RESEND_API_KEY": "YOUR_RESEND_API_KEY_HERE"
+      }
+    },
+    "revit": {
+      "command": "uvx",
+      "args": [
+        "revit-mcp"
+      ],
+      "description": "Inspect and modify a Revit model: query elements and parameters, create families and run model checks."
+    },
+    "salesforce": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@salesforce/mcp"
+      ],
+      "description": "Query and update Salesforce objects with SOQL.",
+      "env": {
+        "SALESFORCE_INSTANCE_URL": "YOUR_SALESFORCE_INSTANCE_URL_HERE",
+        "SALESFORCE_ACCESS_TOKEN": "YOUR_SALESFORCE_ACCESS_TOKEN_HERE"
+      }
+    },
+    "semgrep": {
+      "command": "uvx",
+      "args": [
+        "semgrep-mcp"
+      ],
+      "description": "Static analysis and security rule scanning for source trees."
+    },
+    "sentry": {
+      "type": "http",
+      "url": "https://mcp.sentry.dev/mcp",
+      "description": "Read Sentry issues, stack traces and releases to debug production errors.",
+      "env": {
+        "SENTRY_ACCESS_TOKEN": "YOUR_SENTRY_ACCESS_TOKEN_HERE"
+      }
+    },
+    "sequential-thinking": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ],
+      "description": "Chain-of-thought reasoning"
+    },
+    "serena": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "serena-agent",
+        "serena",
+        "start-mcp-server"
+      ],
+      "description": "Symbol-aware code intelligence: find and edit by symbol instead of by text, across many languages, with semantic retrieval over a repository."
+    },
+    "shopify": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@shopify/dev-mcp@latest"
+      ],
+      "description": "Admin API access to products, orders, customers and inventory.",
+      "env": {
+        "SHOPIFY_ACCESS_TOKEN": "YOUR_SHOPIFY_ACCESS_TOKEN_HERE",
+        "SHOPIFY_STORE_DOMAIN": "YOUR_SHOPIFY_STORE_DOMAIN_HERE"
+      }
+    },
+    "sketchfab": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "sketchfab-mcp-server"
+      ],
+      "description": "Search, inspect and publish 3D models on Sketchfab, including licence and metadata fields.",
+      "env": {
+        "SKETCHFAB_API_KEY": "YOUR_SKETCHFAB_API_KEY_HERE"
+      }
+    },
+    "slack": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-slack"
+      ],
+      "description": "Search channels, read threads and post messages in Slack workspaces.",
+      "env": {
+        "SLACK_BOT_TOKEN": "YOUR_SLACK_BOT_TOKEN_HERE",
+        "SLACK_TEAM_ID": "YOUR_SLACK_TEAM_ID_HERE"
+      }
+    },
+    "snowflake": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-snowflake"
+      ],
+      "description": "Read-only SQL against Snowflake with warehouse, role and schema awareness; writes stay opt-in.",
+      "env": {
+        "SNOWFLAKE_ACCOUNT": "YOUR_SNOWFLAKE_ACCOUNT_HERE",
+        "SNOWFLAKE_USER": "YOUR_SNOWFLAKE_USER_HERE",
+        "SNOWFLAKE_PASSWORD": "YOUR_SNOWFLAKE_PASSWORD_HERE",
+        "SNOWFLAKE_WAREHOUSE": "YOUR_SNOWFLAKE_WAREHOUSE_HERE",
+        "SNOWFLAKE_DATABASE": "YOUR_SNOWFLAKE_DATABASE_HERE"
+      }
+    },
+    "snyk": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "snyk-mcp"
+      ],
+      "description": "Run dependency and container vulnerability scans.",
+      "env": {
+        "SNYK_TOKEN": "YOUR_SNYK_TOKEN_HERE"
+      }
+    },
+    "sonarqube": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "sonarqube-mcp-server@latest"
+      ],
+      "description": "Code quality gates, issues and coverage from a SonarQube or SonarCloud instance.",
+      "env": {
+        "SONARQUBE_URL": "YOUR_SONARQUBE_URL_HERE",
+        "SONARQUBE_TOKEN": "YOUR_SONARQUBE_TOKEN_HERE"
+      }
+    },
+    "spotify": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-spotify"
+      ],
+      "description": "Search tracks, manage playlists and inspect playback state.",
+      "env": {
+        "SPOTIFY_CLIENT_ID": "YOUR_SPOTIFY_CLIENT_ID_HERE",
+        "SPOTIFY_CLIENT_SECRET": "YOUR_SPOTIFY_CLIENT_SECRET_HERE"
+      }
+    },
+    "sqlite": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-sqlite",
+        "--db-path",
+        "${SQLITE_PATH}"
+      ],
+      "description": "Query and inspect local SQLite databases with a safe read/write split.",
+      "env": {
+        "SQLITE_PATH": "YOUR_SQLITE_PATH_HERE"
+      }
+    },
+    "stripe": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@stripe/mcp",
+        "--api-key",
+        "${STRIPE_SECRET_KEY}"
+      ],
+      "description": "Inspect customers, payments, invoices and subscriptions (and create test objects).",
+      "env": {
+        "STRIPE_SECRET_KEY": "YOUR_STRIPE_SECRET_KEY_HERE"
+      }
+    },
+    "supabase": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@supabase/mcp-server-supabase@latest",
+        "--project-ref=YOUR_PROJECT_REF"
+      ],
+      "description": "Supabase database operations"
+    },
+    "tavily": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "tavily-mcp"
+      ],
+      "description": "LLM-optimised search, extract and crawl endpoints.",
+      "env": {
+        "TAVILY_API_KEY": "YOUR_TAVILY_API_KEY_HERE"
+      }
+    },
+    "terraform": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "hashicorp/terraform-mcp-server"
+      ],
+      "description": "Inspect Terraform registry providers, modules and workspace state."
+    },
+    "time": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-time"
+      ],
+      "description": "Current time and timezone conversion for scheduling and deadlines."
+    },
+    "todoist": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@abhiz123/todoist-mcp-server@latest"
+      ],
+      "description": "Tasks, projects, labels and comments in Todoist.",
+      "env": {
+        "TODOIST_API_TOKEN": "YOUR_TODOIST_API_TOKEN_HERE"
+      }
+    },
+    "token-optimizer": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "token-optimizer-mcp"
+      ],
+      "description": "Token optimization for 95%+ context reduction via content deduplication and compression"
+    },
+    "trello": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@delorenj/mcp-server-trello@latest"
+      ],
+      "description": "Boards, lists and cards: read and update Trello workflows.",
+      "env": {
+        "TRELLO_API_KEY": "YOUR_TRELLO_API_KEY_HERE",
+        "TRELLO_TOKEN": "YOUR_TRELLO_TOKEN_HERE"
+      }
+    },
+    "twilio": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@twilio-alpha/mcp",
+        "${TWILIO_ACCOUNT_SID}/${TWILIO_API_KEY}/${TWILIO_API_SECRET}"
+      ],
+      "description": "Send SMS and WhatsApp messages and inspect Twilio account resources.",
+      "env": {
+        "TWILIO_ACCOUNT_SID": "YOUR_TWILIO_ACCOUNT_SID_HERE",
+        "TWILIO_API_KEY": "YOUR_TWILIO_API_KEY_HERE",
+        "TWILIO_API_SECRET": "YOUR_TWILIO_API_SECRET_HERE"
+      }
+    },
+    "vercel": {
+      "type": "http",
+      "url": "https://mcp.vercel.com",
+      "description": "Vercel deployments and projects"
+    },
+    "youtube": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@sinco-lab/mcp-youtube",
+        "--stdio"
+      ],
+      "description": "Search videos, fetch transcripts and metadata."
     }
   },
   "_comments": {

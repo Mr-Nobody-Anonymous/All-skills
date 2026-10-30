@@ -1,0 +1,46 @@
+{
+  "id": "railway",
+  "name": "Railway",
+  "description": "Railway projects, services, deployments and logs.",
+  "category": "cloud",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "railway",
+  "official": true,
+  "command": "npx",
+  "args": [
+    "-y",
+    "@railway/mcp-server"
+  ],
+  "required_env": [
+    "RAILWAY_API_TOKEN"
+  ],
+  "risk": "medium",
+  "license": "MIT",
+  "docs": "https://github.com/railwayapp/railway-mcp-server",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

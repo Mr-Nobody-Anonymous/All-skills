@@ -1,0 +1,43 @@
+{
+  "id": "aws-docs",
+  "name": "AWS Documentation",
+  "description": "Search AWS documentation and best-practice guidance.",
+  "category": "documentation",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "aws",
+  "official": true,
+  "command": "uvx",
+  "args": [
+    "awslabs.aws-documentation-mcp-server@latest"
+  ],
+  "required_env": [],
+  "risk": "low",
+  "license": "Apache-2.0",
+  "docs": "https://github.com/awslabs/mcp/tree/main/src/aws-documentation-mcp-server",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

@@ -1,6 +1,7 @@
 ---
 name: dealer-ai-referral-analytics
-description: "Audit a car dealership's AI-referrer traffic across GA4, Google Search Console, and server logs. Use when the user asks to "audit AI referral traffic for my dealer," "how much traffic am I getting from ChatGPT," "are dealers seeing ChatGPT traffic," "audit AI-engine referrals to my dealership," "set up AI referral tracking for my dealer," "audit AI Overview traffic," "audit Perplexity referrals," "are AI bots crawling my dealer site," "set up AI bot traffic reporting," "audit AI search traffic to my dealership," "AI referrer GA4 audit," "audit AI bot vs human traffic on my dealer site," or any request to measure traffic and engagement from AI search platforms. Distinct from dealer-aeo-audit (the cause side), dealer-ai-visibility (citation presence), and dealer-ai-sentiment-monitor (how engines describe). This skill measures what actually arrives on the dealer's site from AI engines and how those visitors engage. Authored by Ariel Coro of Dealer Growth Hackers, publisher of Dealer AI Guy."
+description: >-
+  Audit a car dealership's AI-referrer traffic across GA4, Google Search Console, and server logs. Use when the user asks to "audit AI referral traffic for my dealer," "how much traffic am I getting from ChatGPT," "are dealers seeing ChatGPT traffic," "audit AI-engine referrals to my dealership," "set up AI referral tracking for my dealer," "audit AI Overview traffic," "audit Perplexity referrals," "are AI bots crawling my dealer site," "set up AI bot traffic reporting," "audit AI search traffic to my dealership," "AI referrer GA4 audit," "audit AI bot vs human traffic on my dealer site," or any request to measure traffic and engagement from AI search platforms. Distinct from dealer-aeo-audit (the cause side), dealer-ai-visibility (citation presence), and dealer-ai-sentiment-monitor (how engines describe). This skill measures what actually arrives on the dealer's site from AI engines and how those visitors engage. Authored by Ariel Coro of Dealer Growth Hackers, publisher of Dealer AI Guy.
 category: franchise-management
 domain: franchise-management
 subdomain: general
@@ -20,8 +21,6 @@ platforms:
   - antigravity
   - copilot
 ---
-
-
 # Dealer AI Referral Analytics
 
 Audit a car dealership's AI-referrer traffic. Quantify how much actual website traffic arrives from AI search engines (ChatGPT, Perplexity, Gemini, Google AI Mode, Claude, Copilot), where those visitors land, how they engage, and whether they convert.

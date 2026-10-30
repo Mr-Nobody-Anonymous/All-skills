@@ -1,6 +1,7 @@
 ---
 name: dealer-ga4-tracking-audit
-description: "Audit a car dealership's GA4 and Google Ads conversion tracking stack end-to-end. Use when the user asks to "audit my GA4," "audit my Google Analytics," "audit my conversion tracking," "fix my GA4 setup," "my conversion count looks wrong," "audit my Enhanced Conversions," "set up offline conversion import for dealer," "audit GA4 events on my dealer site," "audit my Google Ads conversion tracking," "audit cross-domain tracking on my dealer site," "audit my GTM dealer setup," "GA4 attribution audit dealer," "Google Ads + GA4 integration audit," "why are my reported leads off," "my CRM lead count does not match GA4," or any measurement-stack audit request for a dealer. Covers GA4 property configuration, event taxonomy, key events, audiences, Enhanced Conversions configuration, GA4-to-Google-Ads import, offline conversion import from CRM, cross-domain tracking, server-side tagging assessment, GTM hygiene, and dealer-specific failure patterns. Authored by Ariel Coro of Dealer Growth Hackers, publisher of Dealer AI Guy."
+description: >-
+  Audit a car dealership's GA4 and Google Ads conversion tracking stack end-to-end. Use when the user asks to "audit my GA4," "audit my Google Analytics," "audit my conversion tracking," "fix my GA4 setup," "my conversion count looks wrong," "audit my Enhanced Conversions," "set up offline conversion import for dealer," "audit GA4 events on my dealer site," "audit my Google Ads conversion tracking," "audit cross-domain tracking on my dealer site," "audit my GTM dealer setup," "GA4 attribution audit dealer," "Google Ads + GA4 integration audit," "why are my reported leads off," "my CRM lead count does not match GA4," or any measurement-stack audit request for a dealer. Covers GA4 property configuration, event taxonomy, key events, audiences, Enhanced Conversions configuration, GA4-to-Google-Ads import, offline conversion import from CRM, cross-domain tracking, server-side tagging assessment, GTM hygiene, and dealer-specific failure patterns. Authored by Ariel Coro of Dealer Growth Hackers, publisher of Dealer AI Guy.
 category: franchise-management
 domain: franchise-management
 subdomain: general
@@ -20,8 +21,6 @@ platforms:
   - antigravity
   - copilot
 ---
-
-
 # Dealer GA4 and Conversion Tracking Audit
 
 End-to-end audit of a car dealership's measurement stack: GA4 configuration, Google Ads conversion tracking, the integration between them, offline conversion import from the CRM, and the cross-domain and tagging plumbing that makes it all work.

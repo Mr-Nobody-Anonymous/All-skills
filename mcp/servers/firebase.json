@@ -1,0 +1,45 @@
+{
+  "id": "firebase",
+  "name": "Firebase",
+  "description": "Firebase project tooling: Firestore, Auth, Hosting and emulator workflows via firebase-tools.",
+  "category": "cloud",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "firebase",
+  "official": true,
+  "command": "npx",
+  "args": [
+    "-y",
+    "firebase-tools",
+    "experimental:mcp"
+  ],
+  "required_env": [],
+  "risk": "high",
+  "license": "MIT",
+  "docs": "https://github.com/firebase/firebase-tools",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

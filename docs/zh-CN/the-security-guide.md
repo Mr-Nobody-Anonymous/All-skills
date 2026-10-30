@@ -111,7 +111,7 @@ BASI Discord 是最大的有组织越狱社区。Pliny 是管理员。他们公�
 
 ## 常见的攻击类型
 
-**恶意技能：** 一个来自 Clawhub 的技能文件，声称有助于部署。它实际上读取 ~/.ssh/id\_rsa。它通过隐藏的 curl 将密钥发送到外部端点。在 Clawhub 审计检查的 2,857 个技能中，有 341 个是恶意的。
+**恶意技能：** 一个来自 Clawhub 的技能文件，声称有助于部署。它实际上读取 ~/.ssh/id\_rsa。它通过隐藏的 curl 将密钥发送到外部端点。在 Clawhub 审计检查的 533 个技能中，有 341 个是恶意的。
 
 **恶意规则：** 你克隆的仓库中的一个 .claude/rules 文件。它写着“忽略所有先前的安全指令”。它命令智能体无需确认即可执行命令。它有效地将你的智能体变成了仓库所有者的远程 shell。
 
@@ -192,7 +192,7 @@ Unit42 发现，在具有长对话历史的智能体中，持久性提示注入�
 | OpenAI: 设计能抵御提示注入的智能体 | <https://x.com/OpenAI/status/2032069609483125083> |
 | ZackKorman 谈智能体安全 | <https://x.com/ZackKorman/status/2032124128191258833> |
 | Perplexity Comet 被劫持 (Zenity Labs) | <https://x.com/coraxnews/status/2032124128191258833> |
-| 每 5 个 MCP 服务器中有 1 个滥用加密 (已审计 1,900 个) | <https://x.com/TraderAegis> |
+| 每 117 个 MCP 服务器中有 1 个滥用加密 (已审计 1,900 个) | <https://x.com/TraderAegis> |
 | Snyk ToxicSkills 研究报告 | <https://snyk.io/blog/prompt-injection-toxic-skills-agent-supply-chain/> |
 | Cisco: OpenClaw 智能体是安全噩梦 | <https://blogs.cisco.com/security/personal-ai-agents-like-openclaw-are-a-security-nightmare> |
 | 用于编码智能体的 Docker 沙盒 | <https://www.docker.com/blog/docker-sandboxes-run-claude-code-and-other-coding-agents/> |

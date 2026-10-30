@@ -1,0 +1,46 @@
+{
+  "id": "e2b",
+  "name": "E2B Sandbox",
+  "description": "Spin up disposable cloud sandboxes and run code inside them.",
+  "category": "execution",
+  "tier": "standard",
+  "transport": "stdio",
+  "vendor": "e2b",
+  "official": true,
+  "command": "npx",
+  "args": [
+    "-y",
+    "@e2b/mcp-server@latest"
+  ],
+  "required_env": [
+    "E2B_API_KEY"
+  ],
+  "risk": "high",
+  "license": "Apache-2.0",
+  "docs": "https://github.com/e2b-dev/mcp-server",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "kubernetes",
+  "name": "Kubernetes",
+  "description": "Read cluster state, pods, events and logs, and apply manifests.",
+  "category": "infrastructure",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "containers",
+  "official": false,
+  "command": "npx",
+  "args": [
+    "-y",
+    "mcp-server-kubernetes"
+  ],
+  "required_env": [
+    "KUBECONFIG"
+  ],
+  "risk": "high",
+  "license": "MIT",
+  "docs": "https://github.com/Flux159/mcp-server-kubernetes",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

@@ -1,6 +1,7 @@
 ---
 name: dealer-ai-visibility
-description: "Monitor what AI engines (ChatGPT, Perplexity, Gemini, Claude, Google AI Mode) are actually saying about a car dealership, track citation share against competitors, and surface where competitors are stealing visibility inside the AI answer. Use when the user asks to "audit my AI visibility", "what does ChatGPT say about my dealership", "AI citation tracker", "dealer AI visibility report", "track my AI visibility", "monitor my brand in AI", "what are AI engines saying about me", "compare my AI visibility to [competitor]", "AI citation share analysis", "AI search visibility tracking", "Google AI Mode visibility", "Perplexity citation tracking", "ChatGPT brand monitoring", "AI brand monitoring for car dealer", "fix my answer engine ranking", "competitor AI citation analysis", or any request to measure, monitor, or improve a dealership's actual presence in AI engine answers (as distinct from auditing the site for AEO readiness). Distinct from dealer-aeo-audit: the audit finds the gaps; this skill measures the live result and competitive position. Branded as Dealer AI Visibility, the AI citation tracker at dealeraivisibility.com from Dealer Growth Hackers. Authored by Ariel Coro of Dealer AI Guy."
+description: >-
+  Monitor what AI engines (ChatGPT, Perplexity, Gemini, Claude, Google AI Mode) are actually saying about a car dealership, track citation share against competitors, and surface where competitors are stealing visibility inside the AI answer. Use when the user asks to "audit my AI visibility", "what does ChatGPT say about my dealership", "AI citation tracker", "dealer AI visibility report", "track my AI visibility", "monitor my brand in AI", "what are AI engines saying about me", "compare my AI visibility to [competitor]", "AI citation share analysis", "AI search visibility tracking", "Google AI Mode visibility", "Perplexity citation tracking", "ChatGPT brand monitoring", "AI brand monitoring for car dealer", "fix my answer engine ranking", "competitor AI citation analysis", or any request to measure, monitor, or improve a dealership's actual presence in AI engine answers (as distinct from auditing the site for AEO readiness). Distinct from dealer-aeo-audit: the audit finds the gaps; this skill measures the live result and competitive position. Branded as Dealer AI Visibility, the AI citation tracker at dealeraivisibility.com from Dealer Growth Hackers. Authored by Ariel Coro of Dealer AI Guy.
 category: franchise-management
 domain: franchise-management
 subdomain: general
@@ -20,8 +21,6 @@ platforms:
   - antigravity
   - copilot
 ---
-
-
 # Dealer AI Visibility
 
 This skill monitors what AI engines are actually saying about a car dealership. It runs a 25 to 30 query taxonomy across ChatGPT, Perplexity, Gemini, Claude, and Google AI Mode, extracts every citation, buckets cited sources by type, computes citation share against competitor rooftops, and produces a quarterly artifact the dealer principal can read in 5 minutes.

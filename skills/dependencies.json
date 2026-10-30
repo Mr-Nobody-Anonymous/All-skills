@@ -2973,6 +2973,951 @@
       "api": [
         "playwright"
       ]
+    },
+    "integration.mcp-server-install": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "integration.mcp-gateway": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "integration.mcp-server-author": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "integration.mcp-security-review": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "integration.agent-harness-onboarding": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "integration.skill-pack-install": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "integration.connector-github": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "integration.connector-databases": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "integration.connector-browser-automation": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "integration.connector-observability": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "integration.connector-cloud-infrastructure": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "integration.universal-skill-discovery": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "cloud.terraform-iac": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "cloud.pulumi-iac": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "communication.transactional-email": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "communication.sms-messaging": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "databases.sql-server": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "databases.oracle": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "development.graphql-api-design": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "development.grpc-service-design": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "development.monorepo-management": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "development.websocket-realtime": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "development.feature-flag-management": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "knowledge.airtable-workflows": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "media.text-to-speech-production": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "networking.api-gateway-patterns": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "productivity.google-sheets-automation": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "productivity.google-calendar-automation": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "programming.php-modern": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "programming.ruby-rails": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "programming.elixir-otp": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "programming.scala-fundamentals": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "programming.r-statistical-programming": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "programming.julia-scientific-computing": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "programming.haskell-fundamentals": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "programming.lua-scripting": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "integration.webhook-delivery-design": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "integration.third-party-api-resilience": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "security.oauth2-oidc-integration": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "security.secrets-management": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "security.sonarqube-quality-gates": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "web.vue-development": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "web.svelte-development": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "web.astro-sites": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "testing.load-testing": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "testing.postman-api-testing": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "devops.circleci-pipelines": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "project-management.clickup-workflows": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "automation.n8n-workflow-automation": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "execution.sandboxed-code-execution": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "architecture.architectural-design-workflow": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "architecture.interior-space-planning": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "geospatial.qgis-map-production": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "geospatial.postgis-spatial-sql": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "geospatial.spatial-reference-systems": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "geospatial.gdal-ogr-pipelines": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "geospatial.remote-sensing-indices": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "geospatial.vector-tile-web-maps": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "geospatial.openstreetmap-data": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "geospatial.lidar-point-clouds": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "geospatial.geocoding-address-matching": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "geospatial.cartographic-design": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "geospatial.drone-photogrammetry": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "geospatial.spatial-statistics": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "cad.freecad-parametric-modeling": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "cad.openscad-programmatic-cad": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "cad.dxf-dwg-interchange": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "cad.autocad-drafting": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "cad.fusion360-solid-modeling": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "cad.rhino-grasshopper": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "cad.bim-ifc-coordination": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "cad.technical-drawing-gdt": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "3d.blender-modeling-topology": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "3d.blender-sculpting-retopology": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "3d.blender-rigging-animation": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "3d.blender-geometry-nodes": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "3d.blender-shading-materials": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "3d.blender-rendering-lighting": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "3d.blender-python-scripting": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "3d.three-d-asset-pipeline": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "3d.mesh-repair-printing": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "3d.pbr-texture-authoring": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "3d.character-animation-principles": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "3d.houdini-procedural-vfx": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "3d.vfx-compositing": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "audio.music-production-daw": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "audio.sound-design-foley": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "audio.audio-mixing-mastering": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "audio.podcast-production": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "video.video-editing-workflow": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "video.color-grading": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "video.motion-graphics": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "video.video-encoding-delivery": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "photography.photography-raw-workflow": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "architecture.construction-documents-specifications": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "design.vector-illustration-svg": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "design.typography-and-type-systems": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "design.print-production-prepress": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "design.editorial-layout-design": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "design.iconography-systems": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "cad.cnc-machining-fabrication": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "cad.laser-cutting-engraving": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "audio.music-notation-engraving": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "audio.live-sound-reinforcement": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "video.live-streaming-broadcast": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "photography.studio-lighting-color-management": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "ai.rag-evaluation": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "ai.mlops": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "ai.model-drift-monitoring": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "cloud.cloudflare-workers": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "communication.customer-support-automation": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "databases.postgresql-performance": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "databases.database-query-optimization": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "development.fastapi-expert": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "development.nestjs-expert": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "product.user-research": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "product.product-analytics": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "product.conversion-rate-optimization": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "product.pricing-strategy": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "scientific.causal-inference": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "security.api-security-testing": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "web.nextjs-app-router": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "web.react-performance": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "web.typescript-advanced": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "devops.platform-engineering": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "devops.disaster-recovery": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "testing.component-testing": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "testing.visual-regression-testing": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "testing.mutation-testing": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "testing.contract-testing": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "testing.accessibility-automation": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "agents.mcp-integration-testing": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "agents.agent-observability": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "agents.agent-reliability": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "agents.human-in-the-loop-design": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
     }
   }
 }

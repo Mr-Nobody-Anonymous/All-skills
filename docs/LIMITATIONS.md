@@ -12,19 +12,19 @@ A foundational distinction in All-skills is between **indexed discovery material
 ┌─────────────────────────────────────────────────────────────┐
 │ 15,146 Catalog Records (Indexed across 252 categories)       │
 ├─────────────────────────────────────────────────────────────┤
-│   ▼ 13,297 Unique Skill Identities                          │
+│   ▼ 13,362 Unique Skill Identities                          │
 ├─────────────────────────────────────────────────────────────┤
-│     ▼ 192 Manifest-Declared Specification Skills            │
+│     ▼ 533 Manifest-Declared Specification Skills            │
 ├─────────────────────────────────────────────────────────────┤
-│       ▼ 122 Curated Canonical Engine Skills (skills/)       │
+│       ▼ 504 Curated Canonical Engine Skills (skills/)       │
 ├─────────────────────────────────────────────────────────────┤
 │         ▼ 89 Active Harness Skills (.agents/skills/)        │
 └─────────────────────────────────────────────────────────────┘
 ```
 
 - **Catalog Records (15,146)**: Sourced from upstream repositories, domain taxonomies, and multi-agent indexes. These serve as discovery material, knowledge references, and search targets. They are not all independently unit-tested or guaranteed to have executable script backends.
-- **Canonical Skills (122)**: Maintained directly in `skills/`, verified against `schemas/skill-frontmatter.schema.json`, tested via regression suites, and governed by deterministic routing.
-- **Active Harness Skills (72)**: Symlinked or junctioned into agent platforms (`.agents/skills`, `.claude/skills`, `.cursor/skills`, `.codex/skills`) for immediate invocation.
+- **Canonical Skills (533)**: Maintained directly in `skills/`, verified against `schemas/skill-frontmatter.schema.json`, tested via regression suites, and governed by deterministic routing.
+- **Active Harness Skills (89)**: Symlinked or junctioned into agent platforms (`.agents/skills`, `.claude/skills`, `.cursor/skills`, `.codex/skills`) for immediate invocation.
 
 ---
 
@@ -86,3 +86,74 @@ The built-in security scanner (`src/skills/security.py` / `scripts/scan_skills_s
 
 - All platform-wide components (package, CLI, manifest, schema, configuration) are unified under the canonical version specified in `VERSION` (currently `3.0.0`).
 - Individual skills declare functional frontmatter versions (`version: 1.0.0`), but independent per-skill package registry distribution is part of the v4 roadmap.
+
+---
+
+## 8. Vendored ECC Tooling & Its Test Suite
+
+The optional *Everything Claude Code* (ECC) tooling (`bin/ecc.js`, `scripts/profile.js`,
+`scripts/install-apply.js`, `tests/run-all.js`) is vendored from a separate project whose
+repository layout differs from this one:
+
+- ECC discovers skills as flat `skills/<skill-name>/SKILL.md` directories, while this
+  project's canonical library is categorised as `skills/<category>/<skill>/SKILL.md` and
+  its ECC-authored playbooks live under `.kiro/skills/` and `awesome_skills/ecc/`.
+- Because of that layout difference, `npm run test:ecc` (`node tests/run-all.js`) reports
+  failures for ECC surfaces that this repository does not contain (install-module
+  planning, OpenCode build output, Itô compute, Nasiko control plane, release workflows).
+  It is **not** part of CI; the gated suites are `pytest`, `python scripts/skills/skills.py test`,
+  `python scripts/run_evals.py` and `python scripts/allskills.py doctor --full`.
+- Treat `tests/run-all.js` as a migration tracker: a failing file marks an ECC feature that
+  has not been ported to the categorised layout yet, not a regression in the platform CLI.
+- Measured state (2026-10-29, `node tests/run-all.js`): **4,333 assertions pass, 328 fail across
+  93 of 317 files**. Almost every failure is a *path* assertion against a tree that no longer
+  exists here — `skills/<name>/…` (the pre-categorisation flat layout), `.codex/AGENTS.md`,
+  `.github/workflows/release.yml`, `examples/evaluator-rag-prototype` — or an ECC surface that
+  was never ported (Itô baskets/compute/training, Nasiko control plane, fusion bundles). A
+  mechanical `skills/<name>` → `.agents/skills/<name>` rewrite was tried and moved the failure
+  count by four, which confirms the remaining work is per-surface porting, not a rename.
+  Fixing it means teaching each adapter and fixture about the categorised layout; until then
+  the suite stays out of CI and `npm test` runs the gated Python suite instead.
+
+---
+
+## 9. Installer Source Mapping vs. the Categorised Library
+
+`manifests/install-modules.json` declares skill sources by their real paths —
+`awesome_skills/ecc/<name>` for the vendored ECC playbooks and
+`skills/<category>/<name>` for the curated library. Two subsystems read that manifest:
+
+- **`scripts/setup_tools.py` / `allskills bootstrap`** link the whole library into each
+  harness (`.claude/skills`, `.cursor/skills`, `.agents/skills`, …). This is the supported
+  install path and it handles every layout; `allskills bootstrap --dry-run` verifies it.
+- **`scripts/install-apply.js` and the `scripts/lib/install-targets/*` adapters** implement
+  the vendored ECC selective installer. Their destination mapping only rewrites sources that
+  start with `skills/` (flattening them to `skills/<name>` in the harness root); sources under
+  `awesome_skills/ecc/` are copied with their path preserved instead of being flattened.
+
+Consequence: `node tests/scripts/install-apply.test.js` asserts the flat ECC layout
+(`~/.claude/skills/tdd-workflow/SKILL.md`) and therefore fails for playbooks that now live
+under `awesome_skills/ecc/`. These failures pre-date the current change, are not part of CI,
+and do not affect `allskills bootstrap`, `allskills install`, `node scripts/install-apply.js
+--profile library|full` (both install correctly), or any Python gate. Closing it means adding
+an `awesome_skills/ecc/<name> → skills/<name>` rewrite to each adapter — tracked as installer
+work, not a documentation gap.
+
+---
+
+## 10. `scripts/harness-audit.js` Rubric Item `quality-ci-validations`
+
+The deterministic harness audit scores 30 of 31 checks. The remaining one asks that
+`package.json`'s `test` script run the validator chain *and* `tests/run-all.js`.
+
+It is deliberately not satisfied: `tests/run-all.js` is red for the reasons in §8, so wiring it
+into `npm test` would either break the documented command or require the suite to be listed as
+"expected to fail" — a green badge over a red suite. `npm test` therefore runs the gated checks
+(`python scripts/skills/skills.py test`, `node scripts/ci/validate-context-profiles.js`), and the
+rubric item stays open until §8 is closed.
+
+The other harness-audit check that used to fail, `tool-command-parity`, compared
+`commands/harness-audit.md` with `.opencode/commands/harness-audit.md`. That mirror is install
+output — `scripts/setup_tools.py` writes it per machine and `.gitignore` excludes `.opencode/` —
+so it cannot exist in a fresh clone or on a CI runner. The check now passes when the mirror is
+absent and only reports a finding when an installed mirror has drifted from the primary command.

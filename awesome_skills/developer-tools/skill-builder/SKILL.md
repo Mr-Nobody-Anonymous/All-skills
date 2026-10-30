@@ -1,6 +1,7 @@
 ---
 name: skill-builder
-description: "Interactive guide for creating new agent skills from scratch. Use this skill when the user wants to create a skill, write a SKILL.md, package a skill folder, or convert an existing workflow into a reusable skill. Also trigger when the user mentions "create skill", "new skill", "SKILL.md", "teach the agent", or wants to standardize a repeatable process into a skill."
+description: >-
+  Interactive guide for creating new agent skills from scratch. Use this skill when the user wants to create a skill, write a SKILL.md, package a skill folder, or convert an existing workflow into a reusable skill. Also trigger when the user mentions "create skill", "new skill", "SKILL.md", "teach the agent", or wants to standardize a repeatable process into a skill.
 category: developer-tools
 domain: developer-tools
 subdomain: general
@@ -20,8 +21,6 @@ platforms:
   - antigravity
   - copilot
 ---
-
-
 # Skill Builder
 
 Step-by-step guide for creating high-quality agent skills based on the open Agent Skills standard.

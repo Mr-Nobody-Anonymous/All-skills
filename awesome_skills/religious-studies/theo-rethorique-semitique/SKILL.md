@@ -1,6 +1,7 @@
 ---
 name: theo-rethorique-semitique
-description: "Analyse des textes bibliques et sémitiques selon la méthode de l'analyse rhétorique (Roland Meynet). Utilisez cette compétence lorsque l'utilisateur demande d'analyser la structure d'un texte biblique, d'étudier sa rhétorique sémitique, de faire une "réécriture" de Meynet, ou de trouver le centre (chiasme, composition concentrique) d'une péricope."
+description: >-
+  Analyse des textes bibliques et sémitiques selon la méthode de l'analyse rhétorique (Roland Meynet). Utilisez cette compétence lorsque l'utilisateur demande d'analyser la structure d'un texte biblique, d'étudier sa rhétorique sémitique, de faire une "réécriture" de Meynet, ou de trouver le centre (chiasme, composition concentrique) d'une péricope.
 category: religious-studies
 domain: religious-studies
 subdomain: general
@@ -20,8 +21,6 @@ platforms:
   - antigravity
   - copilot
 ---
-
-
 # Analyse Rhétorique Sémitique (Méthode Roland Meynet)
 
 Ce skill vous guide pour analyser la composition et l'architecture des textes bibliques (et plus largement sémitiques, comme les textes pharaoniques ou le Coran) selon la rhétorique hébraïque/sémitique. Cette méthode postule que la disposition du texte (sa forme) est la porte d'accès principale à son sens (l'interprétation théologique).

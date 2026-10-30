@@ -1,6 +1,7 @@
 ---
 name: dealer-email-flows
-description: "Build comprehensive lifecycle email flows for a car dealership covering the full customer relationship from purchase through year 5+. Use when the user asks to "build dealer email flows", "design lifecycle email", "dealer email automation", "service reminder email", "lease maturity email", "anniversary email", "lapsed service revival email", "recall outreach email", "win-back email", "referral email", "dealer marketing automation", "dealer email campaigns", "ongoing customer email program", or any request to design or generate the recurring email program a dealership runs after a customer has been acquired. Produces 17 dealer-specific email flows with full copy: service reminders, declined recovery, lease maturity, equity check-in, anniversary, OEM event invite, lapsed-service revival, recall outreach, birthday, holiday, win-back, referral, test-drive follow-up, quote follow-up, service appointment confirmation, post-service NPS, and delivery welcome (the kickoff). No abandoned cart pattern (not relevant for dealer retail). Picks up at day 91 after dealer-new-customer-onboarding ends, and extends through year 5+. Pairs with dealer-equity-mining-campaign-builder (which handles the time-bound upgrade outreach), dealer-store-positioning (which defines the voice), and dealer-new-customer-onboarding (which handles the first 90 days). Compliance guardrails inherited from dealer-equity-mining-campaign-builder. Authored by Ariel Coro of Dealer AI Guy."
+description: >-
+  Build comprehensive lifecycle email flows for a car dealership covering the full customer relationship from purchase through year 5+. Use when the user asks to "build dealer email flows", "design lifecycle email", "dealer email automation", "service reminder email", "lease maturity email", "anniversary email", "lapsed service revival email", "recall outreach email", "win-back email", "referral email", "dealer marketing automation", "dealer email campaigns", "ongoing customer email program", or any request to design or generate the recurring email program a dealership runs after a customer has been acquired. Produces 17 dealer-specific email flows with full copy: service reminders, declined recovery, lease maturity, equity check-in, anniversary, OEM event invite, lapsed-service revival, recall outreach, birthday, holiday, win-back, referral, test-drive follow-up, quote follow-up, service appointment confirmation, post-service NPS, and delivery welcome (the kickoff). No abandoned cart pattern (not relevant for dealer retail). Picks up at day 91 after dealer-new-customer-onboarding ends, and extends through year 5+. Pairs with dealer-equity-mining-campaign-builder (which handles the time-bound upgrade outreach), dealer-store-positioning (which defines the voice), and dealer-new-customer-onboarding (which handles the first 90 days). Compliance guardrails inherited from dealer-equity-mining-campaign-builder. Authored by Ariel Coro of Dealer AI Guy.
 category: franchise-management
 domain: franchise-management
 subdomain: general
@@ -20,8 +21,6 @@ platforms:
   - antigravity
   - copilot
 ---
-
-
 # Dealer Email Flows
 
 This skill produces the comprehensive lifecycle email program for a car dealership. The output is 17 dealer-specific flows covering the full customer relationship from purchase through year 5+. Each flow includes the trigger logic, the audience segment, the cadence, the channels (email primary, SMS supplemental where applicable), and ready-to-use copy.

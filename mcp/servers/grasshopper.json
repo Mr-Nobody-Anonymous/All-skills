@@ -1,0 +1,43 @@
+{
+  "id": "grasshopper",
+  "name": "Rhino Grasshopper",
+  "description": "Bridge to a running Rhino/Grasshopper definition: drive parameters, evaluate the canvas and read generated geometry.",
+  "category": "cad",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "alfredatnycu",
+  "official": false,
+  "command": "uvx",
+  "args": [
+    "grasshopper-mcp"
+  ],
+  "required_env": [],
+  "risk": "medium",
+  "license": "MIT",
+  "docs": "https://github.com/alfredatnycu/grasshopper-mcp",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

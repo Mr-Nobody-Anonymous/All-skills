@@ -1,91 +1,202 @@
 {
-  "version": "1.0.0",
+  "version": "2.0.0",
+  "generated_from": "mcps/catalog.json",
+  "generated_by": "scripts/dev/generate_mcp_registry.py",
+  "do_not_edit": "This file is generated. Change mcps/catalog.json and regenerate.",
+  "servers_count": 117,
+  "categories_count": 36,
+  "harnesses_count": 18,
+  "profiles_count": 3,
+  "role_profiles_count": 10,
   "categories": {
-    "development": [
-      "github",
-      "gitlab",
-      "bitbucket",
-      "npm",
-      "pypi",
-      "docker-registry",
-      "artifact-registry",
-      "package-search"
-    ],
-    "project_management": [
-      "jira",
-      "linear",
-      "asana",
-      "trello",
-      "monday",
-      "clickup"
-    ],
-    "communication": [
-      "gmail",
-      "outlook",
-      "slack",
-      "discord",
-      "teams",
-      "telegram"
-    ],
-    "documents": [
-      "google-drive",
-      "google-docs",
-      "google-sheets",
-      "google-slides",
-      "onedrive",
-      "sharepoint",
-      "notion",
-      "dropbox"
-    ],
-    "design": [
-      "figma",
-      "canva",
-      "adobe",
+    "3d": [
       "blender",
-      "cad",
-      "bim"
+      "meshy",
+      "sketchfab"
+    ],
+    "ai": [
+      "huggingface"
+    ],
+    "audio": [
+      "ableton"
+    ],
+    "automation": [
+      "apify",
+      "n8n"
+    ],
+    "browser": [
+      "browserbase",
+      "chrome-devtools",
+      "playwright",
+      "puppeteer"
+    ],
+    "cad": [
+      "autocad",
+      "freecad",
+      "grasshopper",
+      "ifc",
+      "kicad",
+      "openscad",
+      "revit"
+    ],
+    "ci-cd": [
+      "circleci"
     ],
     "cloud": [
       "aws",
       "azure",
-      "gcp",
       "cloudflare",
-      "vercel",
+      "digitalocean",
+      "firebase",
+      "google-cloud-run",
+      "heroku",
       "netlify",
-      "digitalocean"
+      "railway",
+      "vercel"
+    ],
+    "commerce": [
+      "shopify"
+    ],
+    "communication": [
+      "discord",
+      "gmail",
+      "resend",
+      "slack",
+      "twilio"
+    ],
+    "crm": [
+      "hubspot",
+      "salesforce"
+    ],
+    "database": [
+      "bigquery",
+      "chroma",
+      "clickhouse",
+      "duckdb",
+      "mongodb",
+      "mysql",
+      "neo4j",
+      "neon",
+      "pinecone",
+      "postgres",
+      "qdrant",
+      "redis",
+      "snowflake",
+      "sqlite",
+      "supabase"
+    ],
+    "design": [
+      "figma",
+      "inkscape"
+    ],
+    "development": [
+      "serena"
+    ],
+    "documentation": [
+      "aws-docs",
+      "context7",
+      "fetch-docs",
+      "microsoft-learn",
+      "openai-docs"
+    ],
+    "documents": [
+      "google-drive"
+    ],
+    "execution": [
+      "code-sandbox",
+      "desktop-commander",
+      "e2b"
+    ],
+    "files": [
+      "filesystem",
+      "remote-fs"
+    ],
+    "geospatial": [
+      "gdal",
+      "geoserver",
+      "google-maps",
+      "mapbox",
+      "qgis"
+    ],
+    "infrastructure": [
+      "docker",
+      "kubernetes",
+      "pulumi",
+      "terraform"
+    ],
+    "integration": [
+      "openapi",
+      "postman"
+    ],
+    "knowledge": [
+      "airtable",
+      "confluence",
+      "deepwiki",
+      "notion",
+      "obsidian"
+    ],
+    "media": [
+      "elevenlabs",
+      "spotify",
+      "youtube"
+    ],
+    "memory": [
+      "memory"
     ],
     "observability": [
-      "sentry",
-      "datadog",
+      "elasticsearch",
       "grafana",
+      "opentelemetry",
       "prometheus",
-      "new-relic",
-      "elastic",
-      "opentelemetry"
+      "sentry"
     ],
-    "databases": [
-      "postgres",
-      "mysql",
-      "mariadb",
-      "mongodb",
-      "redis",
-      "sqlite",
-      "clickhouse",
-      "snowflake",
-      "bigquery",
-      "redshift"
+    "payments": [
+      "paypal",
+      "stripe"
     ],
-    "business": [
-      "salesforce",
-      "hubspot",
-      "stripe",
-      "shopify",
-      "quickbooks",
-      "xero",
-      "sap",
-      "oracle"
+    "productivity": [
+      "google-calendar",
+      "google-sheets",
+      "todoist"
+    ],
+    "project-management": [
+      "atlassian",
+      "clickup",
+      "jira",
+      "linear",
+      "trello"
+    ],
+    "reasoning": [
+      "sequential-thinking"
+    ],
+    "search": [
+      "brave-search",
+      "exa",
+      "firecrawl",
+      "perplexity",
+      "tavily"
+    ],
+    "security": [
+      "semgrep",
+      "snyk"
+    ],
+    "source-control": [
+      "git",
+      "github",
+      "gitlab"
+    ],
+    "testing": [
+      "sonarqube"
+    ],
+    "utilities": [
+      "everything",
+      "time"
+    ],
+    "video": [
+      "davinci-resolve"
+    ],
+    "web": [
+      "fetch"
     ]
-  },
-  "servers_count": 12,
-  "profiles_count": 9
+  }
 }

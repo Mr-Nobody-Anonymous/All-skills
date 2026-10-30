@@ -17,7 +17,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/skills-13%2C297%2B%20Unique%20Skills-7c3aed?style=for-the-badge&logo=openai&logoColor=white" alt="13,297 Unique Skills" />
+  <img src="https://img.shields.io/badge/skills-13%2C362%2B%20Unique%20Skills-7c3aed?style=for-the-badge&logo=openai&logoColor=white" alt="13,362 Unique Skills" />
   <img src="https://img.shields.io/badge/catalog-15%2C146%20Catalog%20Entries-0ea5e9?style=for-the-badge&logo=github&logoColor=white" alt="15,146 Catalog Entries" />
   <img src="https://img.shields.io/badge/domains-252%20Categories-10b981?style=for-the-badge&logo=hubspot&logoColor=white" alt="252 Categories" />
   <img src="https://img.shields.io/badge/platforms-11%20Agent%20Harnesses-ec4899?style=for-the-badge&logo=probot&logoColor=white" alt="11 Agent Harnesses" />
@@ -50,8 +50,8 @@
 ## 📑 Table of Contents
 
 - **Overview** — [Why All Skills?](#-why-all-skills) · [Discovery & Runtime Pyramid](#-the-skill-discovery--runtime-pyramid) · [End-to-End Orchestration Flow](#️-end-to-end-capability-orchestration-pipeline) · [Multi-Platform Support](#-multi-platform-support-11-ai-coding-agents)
-- **Getting Started** — [Quick Start: One Recommended Path](#-quick-start-one-recommended-path) · [Installation & Agent Setup](#-installation--ai-agent-ecosystem-setup) · [Verification & Health Check](#-verification--health-check)
-- **Using All Skills** — [Universal CLI](#-universal-cli-allskills) · [Explainability Engine](#-explain-why-this-skill-was-selected) · [Safe Mode & Autonomy](#-safe-mode--explicit-approval) · [Active Harness Skills Index](#-active-harness-skills-index-89-skills) · [Pre-Loaded Harness Skills](#-pre-loaded-active-harness-skills-89-skills) · [Voice Assistant & Multimodal OS](#️-universal-voice-assistant--multimodal-os-ovos-neon-mycroft)
+- **Getting Started** — [MCP: One Command, Every Connector](#-mcp-one-command-every-connector) · [Quick Start: One Recommended Path](#-quick-start-one-recommended-path) · [Installation & Agent Setup](#-installation--ai-agent-ecosystem-setup) · [Verification & Health Check](#-verification--health-check)
+- **Using All Skills** — [Universal CLI](#-universal-cli-allskills) · [Explainability Engine](#-explain-why-this-skill-was-selected) · [Safe Mode & Autonomy](#-safe-mode--explicit-approval) · [Universal Integration Suite](#-universal-integration-suite-install-anything-connect-everything) · [Active Harness Skills Index](#-active-harness-skills-index-89-skills) · [Pre-Loaded Harness Skills](#-pre-loaded-active-harness-skills-89-skills) · [Voice Assistant & Multimodal OS](#️-universal-voice-assistant--multimodal-os-ovos-neon-mycroft)
 - **Architecture & Reliability** — [8-Layer Defensive Security](#️-8-layer-defensive-security--sandboxing-architecture) · [Evidence-Based Quality Scores](#-evidence-based-quality-scores--reliability-cards) · [Real-World Retrieval Benchmark](#-real-world-retrieval--routing-benchmark) · [Skill Deduplication & Relationships](#-skill-deduplication--conflict-resolution) · [9-Stage Skill Lifecycle](#-9-stage-skill-lifecycle) · [Repository Architecture Map](#️-repository-directory-structure)
 - **Project** — [Development, CI & Quality Gates](#-development-ci--quality-gates) · [License](#-license)
 
@@ -71,11 +71,11 @@ When AI coding assistants are front-loaded with thousands of prompt instructions
 │          (skills/)            │        (awesome_skills/)        │     (.agents/ / .claude/ /    │
 │                               │                                 │     .cursor/ / .codex/)       │
 ├───────────────────────────────┼─────────────────────────────────┼───────────────────────────────┤
-│  • 398 Canonical Skills       │  • 15,146 Catalog Entries       │  • 89 Staff Engineer Skills   │
+│  • 533 Canonical Skills       │  • 15,146 Catalog Entries       │  • 89 Staff Engineer Skills   │
 │  • 9-Signal Layered Scoring   │  • 252 Functional Domain Dirs   │  • Pre-Loaded in Workspace    │
 │  • Deterministic Workflows    │  • Machine-Readable Index       │  • Native Multi-Tool Synced   │
 │  • 8-State Formal Lifecycle   │  • Complete CATALOG.md Reference│  • $O(1)$ Load-on-Demand      │
-│  • 270 CI-Gated Tests         │  • Dynamic Manager CLI          │  • Zero Prompt Bloat          │
+│  • 374 CI-Gated Tests         │  • Dynamic Manager CLI          │  • Zero Prompt Bloat          │
 └───────────────────────────────┴─────────────────────────────────┴───────────────────────────────┘
 ```
 
@@ -96,21 +96,21 @@ To eliminate ambiguity between broad catalog references and executable skills, A
 ├───────────────────────────────────────────────────────────────────────────┤
 │  15,146 Catalog Entries         Raw ecosystem & upstream catalog index    │
 │           ↓                                                               │
-│   3,200 Scanned & Vetted        AST verified, schema checked, trust-scored│
+│  15,140 Schema-Vetted Skills    Meet the name + description contract      │
+│           ↓                     (12,304 pass the full JSON Schema)        │
+│     142 Executable Handlers     handler.py runtime handlers on disk       │
 │           ↓                                                               │
-│     500 Executable Handlers     Tested runtime handlers with test cases   │
+│     533 Core Canonical Skills   Strictly curated, policy-gated suites     │
 │           ↓                                                               │
-│     124 Core Canonical Skills   Strictly curated, policy-gated suites     │
-│           ↓                                                               │
-│      72 Active Preloaded Skills Agent harness direct-context baseline     │
+│      89 Active Preloaded Skills Agent harness direct-context baseline     │
 └───────────────────────────────────────────────────────────────────────────┘
 ```
 
 1. **15,146 Catalog Entries (`awesome_skills/`)**: Broad searchable reference library indexing external tools, community recipes, and ecosystem packages.
-2. **3,200 Scanned & Vetted Skills**: Schema-checked and AST-verified skills with structured YAML frontmatter and security baseline scans.
-3. **500 Executable Handlers**: Skills equipped with operational runtime handlers (`handler.py`) and verified automated regression test cases.
-4. **124 Core Canonical Skills (`skills/`)**: Curated foundational skills with declared capabilities, policies, contracts, and full CI coverage.
-5. **72 Active Preloaded Skills (`.agents/skills/`)**: Lean prompt playbooks preloaded into agent workspaces for instant zero-bloat execution.
+2. **15,140 Schema-Vetted Skills**: Every catalog `SKILL.md` satisfies the mandatory `name` + `description` contract and 12,304 pass the full JSON Schema (`python scripts/validate_schema.py --catalog --max-catalog-errors 0`).
+3. **142 Executable Handlers**: Canonical skills equipped with an operational runtime handler (`handler.py`) that the execution runtime can drive.
+4. **533 Core Canonical Skills (`skills/`)**: Curated foundational skills with declared capabilities, policies, contracts, and full CI coverage.
+5. **89 Active Preloaded Skills (`.agents/skills/`)**: Lean prompt playbooks preloaded into agent workspaces for instant zero-bloat execution.
 
 ---
 
@@ -221,22 +221,86 @@ Every active skill follows the open **Agent Skills** format (`SKILL.md` + YAML f
 
 ---
 
+### Surface parity across harnesses
+
+Counts are the inventory this repository ships (they are verified in CI against `agents/`, `commands/` and `skills/`):
+
+| Feature | Claude Code | Cursor IDE | Codex CLI | OpenCode |
+| :--- | :--- | :--- | :--- | :--- |
+| Agents | 68 agents | Shared (AGENTS.md) | Shared (AGENTS.md) | Shared (AGENTS.md) |
+| Commands | 94 commands | Shared | Shared | Instruction-based |
+| Skills | 533 skills | Shared | Shared | Shared |
+
+---
+
+## 🧩 MCP: One Command, Every Connector
+
+Skills teach an agent *how* to work; MCP connectors give it *access* to the systems it works on. All-Skills ships a curated, verified catalog of **117 MCP servers across 36 categories** and installs any of them into **18 agent harnesses** from one command — no per-harness config archaeology, no hand-edited JSON.
+
+```bash
+# See what is available, what it needs, and whether you already have the keys
+allskills mcp doctor
+allskills mcp list --profile core
+
+# Preview, then install — additive, idempotent, with a .bak before every write
+allskills mcp install --harness claude --profile standard --dry-run
+allskills mcp install --harness claude --profile standard
+
+# Give one agent everything, or pick exactly what the task needs
+allskills mcp install --harness cursor --profile full --scope user
+allskills mcp install --harness vscode --servers github postgres playwright
+
+# CI-mode catalog verification
+allskills mcp verify
+```
+
+**Profiles** keep context cost honest: `core` (5 keyless servers), `standard` (20), `full` (all 117). **Harnesses** each get their native dialect — `opencode` gets `type: local` command arrays, `zed` gets `context_servers`, VS Code gets `type: stdio`, Codex gets a TOML fragment, Goose a YAML fragment — so nothing is ever corrupted by a JSON-shaped guess.
+
+| Connector area | Servers |
+| :--- | :--- |
+| **Files & source control** | `filesystem` · `git` · `github` · `gitlab` · `remote-fs` · `postman` |
+| **Web, search & docs** | `fetch` · `playwright` · `chrome-devtools` · `browserbase` · `puppeteer` · `exa` · `brave-search` · `tavily` · `firecrawl` · `perplexity` · `context7` · `fetch-docs` · `openai-docs` · `microsoft-learn` · `aws-docs` |
+| **Databases & analytics** | `postgres` · `mysql` · `sqlite` · `duckdb` · `snowflake` · `bigquery` · `clickhouse` · `redshift` · `mongodb` · `neo4j` · `redis` · `elasticsearch` · `pinecone` · `qdrant` · `chroma` · `supabase` · `neon` · `databricks`-class APIs via `openapi` |
+| **Knowledge & work tracking** | `notion` · `linear` · `jira` · `confluence` · `atlassian` · `clickup` · `trello` · `airtable` · `todoist` · `obsidian` · `google-drive` · `google-sheets` · `google-calendar` · `gmail` · `slack` · `discord` · `twilio` · `resend` · `hubspot` · `salesforce` |
+| **Cloud & infrastructure** | `aws` · `azure` · `google-cloud-run` · `digitalocean` · `heroku` · `cloudflare` · `vercel` · `netlify` · `railway` · `kubernetes` · `docker` · `terraform` · `pulumi` · `firebase` |
+| **CI, quality & observability** | `circleci` · `sonarqube` · `sentry` · `grafana` · `semgrep` · `snyk` |
+| **Automation & execution** | `n8n` · `apify` · `e2b` · `code-sandbox` · `desktop-commander` · `elevenlabs` |
+| **AI & reasoning** | `huggingface` · `openai-docs` · `everything` · `time` · `memory` · `sequential-thinking` · `youtube` · `spotify` · `figma` · `google-maps` |
+
+Every entry records `tier`, `category`, `risk`, `required_env` and official-vs-community provenance, and `python scripts/mcp_catalog.py verify` fails CI on an incoherent catalog. The full matrix lives in [`docs/MCP-CATALOG.md`](docs/MCP-CATALOG.md); per-harness bundles are generated into [`mcps/generated/`](mcps/generated/). Defaults stay deliberately small — see [`docs/MCP-CONNECTOR-POLICY.md`](docs/MCP-CONNECTOR-POLICY.md) — and `--profile full` is the opt-in "give the agent everything" switch.
+
+---
+
 ## ⚡ Quick Start: One Recommended Path
+
+Out of the box this repository gives every agent access to 68 agents, 533 skills, and 94 legacy command shims — plus a catalog of 15,146 searchable skills and a 117-connector MCP catalog you can install with one command.
 
 Get started with All-Skills in seconds using either Python or Node:
 
-```bash
-# Recommended via pip
-pip install all-skills
-all-skills setup
+**The fastest path — one command links the skills, installs MCP connectors and verifies both:**
 
-# Or via npm/npx
-npx all-skills setup
+```bash
+allskills bootstrap --harness cursor --profile standard   # or --all for every harness
+```
+
+```bash
+# Recommended via pip — installs the all-skills CLI
+pip install all-skills
+
+# Or via npm/npx — installs the allskills CLI (Python >= 3.10 required)
+npx @mr-nobody-anonymous/all-skills --help
+
+# Link the active harness skills into every detected agent tool, then verify
+python scripts/setup_tools.py          # from a checkout
+allskills setup                        # or: allskills init (npm/CLI installs)
 ```
 
 Once installed, use the universal CLI to search, diagnose, explain, and execute:
 
 ```bash
+# 0. Bootstrap every harness: skills + MCP connectors + verification
+allskills bootstrap --all --profile standard
+
 # 1. Search across 15,146 catalog entries with ranked routing
 allskills search "build a REST API"
 
@@ -247,7 +311,7 @@ allskills doctor
 allskills explain development.code-review --query "Review PR for vulnerabilities"
 
 # 4. Execute a skill in safe mode (prohibits dangerous operations without approval)
-allskills run development.code-review --safe
+allskills run development.code-review --safe --dry-run
 ```
 
 ### Or run from source:
@@ -318,6 +382,10 @@ python scripts/setup_skills.py
 
 ### 5. Universal Node / npx Package
 ```bash
+# Show every command (the npm package is @mr-nobody-anonymous/all-skills,
+# while the installed binary is called `allskills`):
+npx @mr-nobody-anonymous/all-skills --help
+
 # Run doctor diagnostic:
 npx @mr-nobody-anonymous/all-skills doctor
 
@@ -347,6 +415,115 @@ Every skill below is pre-validated against `schemas/skill-frontmatter.schema.jso
 
 ---
 
+## 🧰 Universal Integration Suite (install anything, connect everything)
+
+Twelve canonical `integration` skills are the front door of the platform: they encode *how* to
+install All-Skills into a harness, *how* to wire every connector, and *how* to review the result.
+Each one is a real playbook (workflow, inputs, tools, safety) — not a link list.
+
+| Skill | What it does |
+| :--- | :--- |
+| [`mcp-server-install`](skills/integration/mcp-server-install/SKILL.md) | Install any catalog connector into any harness: preview, merge, verify. |
+| [`mcp-gateway`](skills/integration/mcp-gateway/SKILL.md) | Aggregate dozens of connectors behind one endpoint so tool schemas stop eating context. |
+| [`mcp-server-author`](skills/integration/mcp-server-author/SKILL.md) | Build a production MCP server: tool contracts, schemas, stdio tests, catalog entry. |
+| [`mcp-security-review`](skills/integration/mcp-security-review/SKILL.md) | Audit connectors for tool poisoning, over-broad scopes and unbounded execution. |
+| [`agent-harness-onboarding`](skills/integration/agent-harness-onboarding/SKILL.md) | Link the library into any harness and verify/undo the links safely. |
+| [`skill-pack-install`](skills/integration/skill-pack-install/SKILL.md) | Install role profiles and curated packs with dependency resolution. |
+| [`connector-github`](skills/integration/connector-github/SKILL.md) | GitHub access with least-privilege tokens; `gh` CLI vs MCP decided explicitly. |
+| [`connector-databases`](skills/integration/connector-databases/SKILL.md) | Postgres/SQLite/Mongo/Redis/ClickHouse with read-only defaults. |
+| [`connector-browser-automation`](skills/integration/connector-browser-automation/SKILL.md) | DevTools vs Playwright vs Browserbase — pick the right browser connector. |
+| [`connector-observability`](skills/integration/connector-observability/SKILL.md) | Sentry, Grafana and Elastic: investigate incidents from evidence. |
+| [`connector-cloud-infrastructure`](skills/integration/connector-cloud-infrastructure/SKILL.md) | AWS, Cloudflare, Vercel, Railway, Kubernetes, Terraform with approval gates. |
+| [`universal-skill-discovery`](skills/integration/universal-skill-discovery/SKILL.md) | Search, explain, install and publish skills across all three layers. |
+
+```bash
+allskills route "install MCP servers into cursor"     # → integration.mcp-server-install
+allskills explain integration.mcp-server-install --query "wire a connector"
+python scripts/generate_integration_skills.py --check  # CI: suite is current
+```
+
+Full harness-by-harness walkthrough: [`docs/INSTALL-ANY-AGENT.md`](docs/INSTALL-ANY-AGENT.md).
+
+### Skill coverage: what the library now answers
+
+The curated library covers **533 canonical skills in 45 categories**, and the newest expansion closed
+the gaps that used to force an agent to improvise: languages, API styles, infrastructure-as-code,
+collaboration SaaS, quality gates, realtime and release safety, then the whole authoring world —
+GIS and cartography, CAD and BIM, 3D/Blender/VFX, audio, video, photography and architecture.
+
+| Area | Added skills |
+| :--- | :--- |
+| **Languages** | [`php-modern`](skills/programming/php-modern/SKILL.md) · [`ruby-rails`](skills/programming/ruby-rails/SKILL.md) · [`elixir-otp`](skills/programming/elixir-otp/SKILL.md) · [`scala-fundamentals`](skills/programming/scala-fundamentals/SKILL.md) · [`r-statistical-programming`](skills/programming/r-statistical-programming/SKILL.md) · [`julia-scientific-computing`](skills/programming/julia-scientific-computing/SKILL.md) · [`haskell-fundamentals`](skills/programming/haskell-fundamentals/SKILL.md) · [`lua-scripting`](skills/programming/lua-scripting/SKILL.md) |
+| **Databases** | [`sql-server`](skills/databases/sql-server/SKILL.md) · [`oracle`](skills/databases/oracle/SKILL.md) |
+| **Web frameworks** | [`vue-development`](skills/web/vue-development/SKILL.md) · [`svelte-development`](skills/web/svelte-development/SKILL.md) · [`astro-sites`](skills/web/astro-sites/SKILL.md) |
+| **APIs & integration** | [`graphql-api-design`](skills/development/graphql-api-design/SKILL.md) · [`grpc-service-design`](skills/development/grpc-service-design/SKILL.md) · [`webhook-delivery-design`](skills/integration/webhook-delivery-design/SKILL.md) · [`third-party-api-resilience`](skills/integration/third-party-api-resilience/SKILL.md) · [`api-gateway-patterns`](skills/networking/api-gateway-patterns/SKILL.md) · [`websocket-realtime`](skills/development/websocket-realtime/SKILL.md) |
+| **Cloud & IaC** | [`terraform-iac`](skills/cloud/terraform-iac/SKILL.md) · [`pulumi-iac`](skills/cloud/pulumi-iac/SKILL.md) · [`circleci-pipelines`](skills/devops/circleci-pipelines/SKILL.md) |
+| **Security & quality** | [`secrets-management`](skills/security/secrets-management/SKILL.md) · [`oauth2-oidc-integration`](skills/security/oauth2-oidc-integration/SKILL.md) · [`sonarqube-quality-gates`](skills/security/sonarqube-quality-gates/SKILL.md) · [`load-testing`](skills/testing/load-testing/SKILL.md) · [`postman-api-testing`](skills/testing/postman-api-testing/SKILL.md) |
+| **Work apps & delivery** | [`google-sheets-automation`](skills/productivity/google-sheets-automation/SKILL.md) · [`google-calendar-automation`](skills/productivity/google-calendar-automation/SKILL.md) · [`airtable-workflows`](skills/knowledge/airtable-workflows/SKILL.md) · [`clickup-workflows`](skills/project-management/clickup-workflows/SKILL.md) · [`transactional-email`](skills/communication/transactional-email/SKILL.md) · [`sms-messaging`](skills/communication/sms-messaging/SKILL.md) · [`text-to-speech-production`](skills/media/text-to-speech-production/SKILL.md) · [`n8n-workflow-automation`](skills/automation/n8n-workflow-automation/SKILL.md) · [`sandboxed-code-execution`](skills/execution/sandboxed-code-execution/SKILL.md) · [`monorepo-management`](skills/development/monorepo-management/SKILL.md) · [`feature-flag-management`](skills/development/feature-flag-management/SKILL.md) |
+
+Every one of them is installable on its own: the whole curated tree is now owned by the
+`canonical-library` install module, and `--profile library` installs it with a core harness baseline.
+
+```bash
+# Install-profile installs are driven by the selective installer (the same one CI tests):
+node scripts/install-apply.js --profile library --target cursor --dry-run   # every curated skill
+node scripts/install-apply.js --profile full --target cursor --dry-run      # every skill + agent pack
+
+allskills mcp install --harness cursor --profile full   # every one of the 117 connectors
+allskills bootstrap --harness cursor --profile full     # skills + connectors, verified end to end
+python scripts/dev/generate_mcp_registry.py --check      # mcp/ is a projection of the catalog
+python scripts/dev/generate_skill_mcp_map.py --check     # skill → connector map is current
+```
+
+### Domain coverage: the non-software world
+
+An agent asked to make a map, model a part, rig a character or grade a cut used to have nowhere to
+look. That is now covered by **44 new playbooks in 7 new categories**, each paired with verified
+connectors so the agent can actually drive the tool, not just describe it.
+
+| Domain | Skills | Connectors |
+| :--- | :--- | :--- |
+| **GIS & cartography** (`geospatial`) | [`qgis-map-production`](skills/geospatial/qgis-map-production/SKILL.md) · [`spatial-reference-systems`](skills/geospatial/spatial-reference-systems/SKILL.md) · [`postgis-spatial-sql`](skills/geospatial/postgis-spatial-sql/SKILL.md) · [`gdal-ogr-pipelines`](skills/geospatial/gdal-ogr-pipelines/SKILL.md) · [`remote-sensing-indices`](skills/geospatial/remote-sensing-indices/SKILL.md) · [`vector-tile-web-maps`](skills/geospatial/vector-tile-web-maps/SKILL.md) · [`openstreetmap-data`](skills/geospatial/openstreetmap-data/SKILL.md) · [`lidar-point-clouds`](skills/geospatial/lidar-point-clouds/SKILL.md) · [`geocoding-address-matching`](skills/geospatial/geocoding-address-matching/SKILL.md) · [`cartographic-design`](skills/geospatial/cartographic-design/SKILL.md) · [`drone-photogrammetry`](skills/geospatial/drone-photogrammetry/SKILL.md) · [`spatial-statistics`](skills/geospatial/spatial-statistics/SKILL.md) | `qgis` · `gdal` · `geoserver` · `mapbox` |
+| **CAD & BIM** (`cad`) | [`freecad-parametric-modeling`](skills/cad/freecad-parametric-modeling/SKILL.md) · [`openscad-programmatic-cad`](skills/cad/openscad-programmatic-cad/SKILL.md) · [`dxf-dwg-interchange`](skills/cad/dxf-dwg-interchange/SKILL.md) · [`autocad-drafting`](skills/cad/autocad-drafting/SKILL.md) · [`fusion360-solid-modeling`](skills/cad/fusion360-solid-modeling/SKILL.md) · [`rhino-grasshopper`](skills/cad/rhino-grasshopper/SKILL.md) · [`bim-ifc-coordination`](skills/cad/bim-ifc-coordination/SKILL.md) · [`technical-drawing-gdt`](skills/cad/technical-drawing-gdt/SKILL.md) | `freecad` · `openscad` · `autocad` · `grasshopper` · `revit` · `ifc` · `kicad` |
+| **3D & VFX** (`3d`) | [`blender-modeling-topology`](skills/3d/blender-modeling-topology/SKILL.md) · [`blender-sculpting-retopology`](skills/3d/blender-sculpting-retopology/SKILL.md) · [`blender-rigging-animation`](skills/3d/blender-rigging-animation/SKILL.md) · [`blender-geometry-nodes`](skills/3d/blender-geometry-nodes/SKILL.md) · [`blender-shading-materials`](skills/3d/blender-shading-materials/SKILL.md) · [`blender-rendering-lighting`](skills/3d/blender-rendering-lighting/SKILL.md) · [`blender-python-scripting`](skills/3d/blender-python-scripting/SKILL.md) · [`three-d-asset-pipeline`](skills/3d/three-d-asset-pipeline/SKILL.md) · [`mesh-repair-printing`](skills/3d/mesh-repair-printing/SKILL.md) · [`pbr-texture-authoring`](skills/3d/pbr-texture-authoring/SKILL.md) · [`character-animation-principles`](skills/3d/character-animation-principles/SKILL.md) · [`houdini-procedural-vfx`](skills/3d/houdini-procedural-vfx/SKILL.md) · [`vfx-compositing`](skills/3d/vfx-compositing/SKILL.md) | `blender` · `meshy` · `sketchfab` |
+| **Audio** (`audio`) | [`music-production-daw`](skills/audio/music-production-daw/SKILL.md) · [`audio-mixing-mastering`](skills/audio/audio-mixing-mastering/SKILL.md) · [`sound-design-foley`](skills/audio/sound-design-foley/SKILL.md) · [`podcast-production`](skills/audio/podcast-production/SKILL.md) | `ableton` |
+| **Video** (`video`) | [`video-editing-workflow`](skills/video/video-editing-workflow/SKILL.md) · [`color-grading`](skills/video/color-grading/SKILL.md) · [`motion-graphics`](skills/video/motion-graphics/SKILL.md) · [`video-encoding-delivery`](skills/video/video-encoding-delivery/SKILL.md) | `davinci-resolve` |
+| **Photography** (`photography`) | [`photography-raw-workflow`](skills/photography/photography-raw-workflow/SKILL.md) | `filesystem` (local RAW library) |
+| **Architecture** (`architecture`) | [`architectural-design-workflow`](skills/architecture/architectural-design-workflow/SKILL.md) · [`interior-space-planning`](skills/architecture/interior-space-planning/SKILL.md) | `ifc` · `revit` |
+
+A third batch fills the remaining craft gaps: prepress and typography, editorial layout, vector
+illustration, icon systems, music notation, live sound, live streaming, CNC and laser fabrication,
+studio lighting with colour management, and construction documents.
+
+Every connector above was checked against PyPI/npm before it shipped: the package resolves, the
+launch command comes from its own README, and token-gated servers (`mapbox`, `meshy`, `sketchfab`)
+are never installed by default — they are `full`-profile only and declare their required env var.
+
+Every skill that needs a connector now says so: `mcp_servers:` in the frontmatter, a generated
+`## MCP Requirements` table inside the skill, and a validated entry in
+[`registry/skill-mcp-map.json`](registry/skill-mcp-map.json) /
+[`docs/MCP-SKILL-MAP.md`](docs/MCP-SKILL-MAP.md). 63 skills declare servers, 37 servers are required
+by at least one skill, and the other 80 are listed as the backlog for future coverage — so an
+installer can answer "what does this skill need?" without guessing.
+
+**[`docs/AUDIT-RESPONSE.md`](docs/AUDIT-RESPONSE.md)** answers an external audit of this repository
+item by item: which proposed connectors already existed, which 26 proposed skills were duplicates of
+existing ones, what was genuinely missing and has now been added, and which gaps remain open.
+
+**[`docs/DOMAIN-COVERAGE.md`](docs/DOMAIN-COVERAGE.md)** is the full inventory: every domain that now
+has playbooks and connectors, and an explicit list of the domains that are *still* gaps (welding and
+sheet metal, textiles, structural and MEP engineering, clinical documentation, agriculture, aviation,
+and the tooling that has no verified MCP server yet) with what it would take to close each one.
+
+```bash
+# The whole cartography stack for a map-making agent
+allskills mcp install --harness claude --profile full     # includes qgis, gdal, geoserver, mapbox
+allskills install qgis-map-production                     # then the playbook that uses them
+allskills install blender-rigging-animation
+```
+
+---
+
 ## 🚀 Universal CLI (`allskills`)
 
 Manage the entire skill ecosystem, verify harnesses, search capabilities, install role profiles, and run diagnostics directly from your terminal:
@@ -370,7 +547,7 @@ allskills profile install software-engineer            # --dest DIR, --dry-run
 allskills verify
 allskills lock --verify
 
-# Run regression test suite (270 tests)
+# Run regression test suite (374 tests)
 allskills test
 
 # Inspect upstream source registry and trust tiers
@@ -379,6 +556,96 @@ allskills sources
 # Synchronize skills from authoritative upstream repositories
 allskills sync
 ```
+
+---
+
+## 🔍 Explain why this skill was selected
+
+Every routing decision is inspectable. The 9-signal router records the signal that
+won, the score it produced, and the candidates it beat, so an agent (or a human)
+can audit *why* a playbook was loaded instead of guessing.
+
+| # | Signal | What it rewards |
+| :---: | :--- | :--- |
+| 1 | Exact ID | A verbatim `category.skill` mention |
+| 2 | Alias | A documented alias of the skill |
+| 3 | Category | Domain words that map to the skill's category |
+| 4 | Trigger phrase | Authored "when to use" phrases |
+| 5 | Keyword overlap | Shared domain keywords |
+| 6 | Capabilities / IO vocabulary | Declared capabilities, inputs and outputs |
+| 7 | Token overlap | Remaining lexical similarity |
+| 8 | Dependency availability | Dependencies resolvable in this workspace |
+| 9 | Quality boost | Evidence-based quality score |
+
+```bash
+# Full trace for one skill against a request (per-signal scores + rejected candidates)
+allskills explain development.code-review --query "Review PR for vulnerabilities"
+
+# Machine-readable report for agent orchestration
+allskills explain development.code-review --query "Review PR for vulnerabilities" --json
+
+# Fastest alternative: rank candidates first, then explain the winner
+python scripts/skills/skills.py route "review my pull request" --json
+python scripts/skills/skills.py explain "Review this code for vulnerabilities"
+
+# Preview a composed multi-skill chain without touching the workspace
+python scripts/skills/skills.py route --chain --dry-run "Break my project into tasks"
+```
+
+Example trace (abridged):
+
+```
+USER REQUEST: "Review PR for vulnerabilities"
+SELECTED SKILLS:
+  ✓ development.code-review  → primary signal: keyword (score=30.9) (development, 31%)
+REJECTED CANDIDATES:
+  ✗ development.pr-splitter      → lower 9-signal score (29.5) than development.code-review
+  ✗ security.secure-code-review  → lower 9-signal score (29.1) than development.code-review
+```
+
+Rejections are typed (`suboptimal_score`, `negative_constraint`, `conflict`,
+`redundant`), so a stack that skips a skill always carries a machine-readable
+reason. Reports are produced by [`src/skills/explain.py`](src/skills/explain.py)
+and never mutate the workspace.
+
+---
+
+## 🔒 Safe Mode & Explicit Approval
+
+Safe mode is the read-only-by-default contract: **analysing is free, acting is
+gated.** `--safe` escalates every capability that can mutate local state, run a
+command, reach the network or deploy from `ALLOW` to `ASK`, so the run stops and
+hands the decision back to a human. Policies only ever get *stricter* in safe
+mode — a `DENY` is never relaxed into an approval prompt.
+
+```bash
+# Read-only work is unaffected (filesystem.read / git.read stay ALLOW)
+allskills run development.code-review --safe --dry-run
+
+# A mutating capability now requires a human approval instead of running
+allskills run development.code-review --tools bash --safe
+#   Status: APPROVAL_REQUIRED
+#   Error: ... requires human approval for: shell.execute.
+#          Re-run with approval request_id=<id> and approved_by=<name>.
+
+# Approve that exact request (the id is bound to skill + capabilities + inputs)
+allskills run development.code-review --tools bash --safe \
+  --approval-id <request_id> --approved-by "release-manager"
+```
+
+| Verdict | Meaning | `--safe` behaviour |
+| :--- | :--- | :--- |
+| `ALLOW` | Capability is pre-authorized | Kept for `SAFE` / `LOW_RISK`, escalated to `ASK` for `MEDIUM_RISK` and above |
+| `ASK` | Human confirmation required | Unchanged — still requires `--approved-by` |
+| `DENY` | Forbidden by policy | Unchanged — refused, never approvable |
+
+Exit codes are stable for automation: `0` success/simulated, `2` approval
+required, `1` refused/failed. Capability policies live in
+[`policies/`](policies/) (verdict + risk per capability) and
+[`skills/policy.json`](skills/policy.json) (workspace overrides); the engine is
+[`src/skills/policy.py`](src/skills/policy.py) and the gate order is documented in
+[`src/skills/runtime.py`](src/skills/runtime.py). Autonomy levels L0–L4 are
+described in [5-Tier Autonomy Classification](#-5-tier-autonomy-classification-l0-to-l4).
 
 ---
 
@@ -409,7 +676,7 @@ Beyond instruction text files, **All Skills** provides a complete execution, val
 2. **Master Intent Router (`which-skill`)**: [`.agents/skills/which-skill/SKILL.md`](.agents/skills/which-skill/SKILL.md) provides instant decision matrix mapping and CLI routing (`python scripts/skills/skills.py route`) across all 15,146 catalog entries.
 3. **Multi-Step Execution Playbooks (`workflows/`)**: Complete chained workflows in [`workflows/`](workflows/) (`feature-development.md`, `bug-investigation-and-fix.md`, `fullstack-saas-launch.md`, etc.) for autonomous multi-step execution.
 4. **State Tracking & Stack Manifests (`aas-stack.json`)**: Structured sidecar schema ([`schemas/aas-stack.schema.json`](schemas/aas-stack.schema.json)) and CLI ([`scripts/manage_state.py`](scripts/manage_state.py)) for tracking phase progress, variables, and architectural decisions (ADRs) with auto-synced [`CONTEXT.md`](CONTEXT.md).
-5. **Central Tool-to-Skill Manifest**: [`manifest.json`](manifest.json) indexes all 192+ platform skills, mapping them to required tool permissions (`bash`, `file_edit`, `ast_grep`, `browser`), MCP servers (`filesystem`, `git`, `fetch`, `memory`), and lifecycle hooks.
+5. **Central Tool-to-Skill Manifest**: [`manifest.json`](manifest.json) indexes all 533 platform skills, mapping them to required tool permissions (`bash`, `file_edit`, `ast_grep`, `browser`), MCP servers (`filesystem`, `git`, `fetch`, `memory`), and lifecycle hooks.
 6. **Model Context Protocol (MCP)**: Native [`mcp_config.json`](mcp_config.json) configuring local MCP servers for Claude Code, Cursor, and Antigravity.
 7. **Lifecycle Hooks Engine**: Execute automated gates before and after skills run via [`scripts/run_hook.py`](scripts/run_hook.py):
    ```bash
@@ -448,14 +715,14 @@ All-Skills integrates a production-ready voice assistant and multimodal runtime 
 ├───────────────────────────────┼─────────────────────────────────┼───────────────────────────────┤
 │  • 405 Built-in Native Skills │  • Tier 0: Critical System      │  • 39 Verified Active OVOS    │
 │  • Intent / Dialog / Vocab    │  • Tier 1: Real-time Sensors    │  • 28 Verified Active Neon    │
-│  • 12 Full Language Packs     │  • Tier 2: Productivity/Media   │  • 22 Archived Mycroft Ref    │
+│  • en-US Locale Pack          │  • Tier 2: Productivity/Media   │  • 22 Archived Mycroft Ref    │
 │  • Manifests & Requirements   │  • Tier 3: Connected & Search   │  • Official OSM Catalog Sync  │
 │  • Automated Testing Tools    │  • Tier 4-6: Complex to Lazy    │  • Safe Disk Quota Protection │
 └───────────────────────────────┴─────────────────────────────────┴───────────────────────────────┘
 ```
 
 ### 🌟 Key Voice & Multimodal Features:
-1. **27 Capability Categories & 714+ Skills Modeled**: Covering Communication, Media, Smart Home, Productivity, Navigation, Weather, Health, Finance, Education, News, Automotive, Science, Emergency, and Fallback. Detailed in [`docs/skill_catalog.md`](docs/skill_catalog.md).
+1. **27 Capability Categories & 405 Native Skill Packages**: Covering Communication, Media, Smart Home, Productivity, Navigation, Weather, Health, Finance, Education, News, Automotive, Science, Emergency, and Fallback. Detailed in [`docs/skill_catalog.md`](docs/skill_catalog.md).
 2. **Deterministic Priority Importer**: [`scratch_priority_import/`](scratch_priority_import/) enforces millisecond latency budgets, circular dependency prevention, and memory-aware loading.
 3. **Official OSM Synchronization**: Query and sync with the curated OpenVoiceOS Skills Manager catalog via `python scripts/sync_osm_skills.py --stats`.
 4. **Verified Upstream Repositories**: Grounded upstream sources covering 39 active OpenVoiceOS repos, 28 Neon repos, and 22 archived Mycroft reference repositories. Run `python scripts/clone_all_repos.py --dry-run --verified-only` to inspect.
@@ -465,7 +732,7 @@ All-Skills integrates a production-ready voice assistant and multimodal runtime 
 
 ## 🚀 Pre-Loaded Active Harness Skills (89 Skills)
 
-Your workspace comes pre-loaded with **70 staff-engineer and AI architect playbooks** in [`.agents/skills/`](.agents/skills/) (synced to `.claude/skills/`, `.cursor/skills/`, and `.codex/skills/`):
+Your workspace comes pre-loaded with **89 staff-engineer and AI architect playbooks** in [`.agents/skills/`](.agents/skills/) (synced to `.claude/skills/`, `.cursor/skills/`, and `.codex/skills/`):
 
 <details open>
 <summary><strong>📋 View Pre-Loaded Skill Suites</strong></summary>
@@ -565,7 +832,7 @@ Your workspace comes pre-loaded with **70 staff-engineer and AI architect playbo
 The repository includes two powerful CLI suites running on pure standard library with **zero external dependencies**:
 
 ### 1. Awesome Skills Manager (`scripts/manage_awesome_skills.py`)
-Interact with all 15,146 catalog entries (13,297 unique skills) in [`awesome_skills/`](awesome_skills/):
+Interact with all 15,146 catalog entries (13,362 unique skills) in [`awesome_skills/`](awesome_skills/):
 
 ```bash
 # List all 252 domain categories with skill counts
@@ -604,7 +871,7 @@ python scripts/manage_awesome_skills.py install-bundle saas-growth
 ---
 
 ### 2. Canonical Routing Engine (`scripts/skills/skills.py`)
-Run sub-millisecond natural language routing, quality audits, and workflow chains across the 398 canonical engine skills:
+Run sub-millisecond natural language routing, quality audits, and workflow chains across the 533 canonical engine skills:
 
 ```bash
 # Route a natural language goal to the optimal skill
@@ -622,7 +889,7 @@ python scripts/skills/skills.py chain deep-research --dry-run
 python scripts/skills/skills.py chain anti-procrastination --dry-run
 python scripts/skills/skills.py chain code-review-flow --dry-run
 
-# Run full health diagnostics and 270-test verification suite
+# Run full health diagnostics and 374-test verification suite
 python scripts/skills/skills.py doctor
 python scripts/skills/skills.py test
 
@@ -693,7 +960,12 @@ python -m http.server 3000 --directory marketplace
 ## 🗂️ Repository Directory Structure
 
 ```
-All skills/
+all-skills/
+|-- agents/           # 68 specialized subagents for delegation
+|-- commands/         # 94 slash commands (legacy shims preserved)
+|-- skills/           # 533 canonical skills across 45 categories
+|-- mcps/             # 117-connector MCP catalog + generated harness bundles
+|
 ├── .agents/skills/              # 🤖 Antigravity / Gemini CLI Active Harness (89 skills)
 ├── .claude/skills/              # 🤖 Claude Code Active Harness (synced via junction)
 ├── .cursor/skills/              # 🤖 Cursor Active Harness (synced via junction)
@@ -701,15 +973,16 @@ All skills/
 │
 ├── awesome_skills/              # 🚀 Categorized skills catalog (counts: stats.json)
 │   ├── CATALOG.md               # Complete searchable markdown catalog
-│   ├── skills_index.json        # 14,855-item metadata database
-│   ├── development/             # 187 skills (Coding, Git, Refactoring)
-│   ├── cloud/                   # 146 skills (AWS, GCP, Azure, Terraform)
-│   ├── ai-ml/                   # 129 skills (Prompting, RAG, Evals)
-│   ├── security/                # 82 skills  (SAST, Secrets, RBAC)
-│   ├── web-development/         # 65 skills  (Frontend, Fullstack)
-│   └── ...                      # 95 additional domain categories
+│   ├── skills_index.json        # 15,146-item metadata database
+│   ├── legal/                   # 1,646 skills (Contracts, Compliance, IP)
+│   ├── finance/                 # 735 skills  (FP&A, Trading, Accounting)
+│   ├── biology/                 # 537 skills  (Genomics, Lab Workflows)
+│   ├── development/             # 504 skills  (Coding, Git, Refactoring)
+│   ├── engineering/             # 503 skills  (Systems, Hardware, QA)
+│   ├── ai-ml/                   # 497 skills  (Prompting, RAG, Evals)
+│   └── ...                      # 246 additional domain categories
 │
-├── skills/                      # ⚡ 398 Canonical Engine Skills (10 Categories)
+├── skills/                      # ⚡ 533 Canonical Engine Skills (45 Categories)
 │   ├── architecture/            # Architecture decision records
 │   ├── healthcare/              # Health economics
 │   ├── productivity/            # Focus, anti-procrastination, planning
@@ -720,17 +993,18 @@ All skills/
 │   ├── design/                  # UI/UX, presentations
 │   ├── security/                # Static scanning, secrets
 │   ├── utilities/               # File and system tools
+│   ├── integration/             # Universal install: MCP, harness, packs, connectors
 │   ├── _quarantine/             # Hardened quarantine boundary
 │   ├── registry.json            # 6-axis quality scores & lifecycle states
 │   └── chains.json              # Named deterministic multi-skill workflows
 │
-├── tools/                       # 🧰 Universal Tool Registry (14 capability domains)
+├── tools/                       # 🧰 Universal Tool Registry (18 capability domains)
 ├── auth/                        # 🔐 Zero-Secret Authentication Subsystem (OAuth, API keys, IAM)
 ├── provenance/                  # 📜 Provenance Tracking, Attributions & THIRD_PARTY_NOTICES.md
 ├── models/                      # 🧠 Provider & Model Capability Profiles (Claude, GPT, Gemini, Llama)
 ├── state/                       # 💾 Hierarchical Agent Memory (Session, Task, Episodic, Semantic)
 ├── observability/               # 📊 Telemetry, Routing Precision, and Latency Tracking
-├── adapters/                    # 🔌 Dynamic Multi-Agent Adapters (75+ agents supported)
+├── adapters/                    # 🔌 Dynamic Multi-Agent Adapters (12 harness adapters)
 ├── scratch_priority_import/     # 📥 7-Stage Federated Ingestion Pipeline (00_incoming to 07_evaluated)
 ├── schemas/                     # 📐 Extended JSON Schemas (Capability, Tool, Policy)
 ├── scripts/                     # 🛠️ Platform & Harness Tooling
@@ -740,6 +1014,11 @@ All skills/
 │   ├── compute_stats.py         # Single-source-of-truth platform metrics synchronizer
 │   └── skills/skills.py         # 9-signal router & CLI engine
 │
+├── mcps/                        # 🧩 MCP server catalog + generated per-harness bundles
+│   ├── catalog.json             # 113 servers, 35 categories, 18 harness dialects
+│   ├── summary.json             # Generated catalog counters
+│   └── generated/               # Per-harness config bundles (json/toml/yaml)
+│
 ├── docker/                      # 🐳 Dockerfile & compose files (see docker/README.md)
 ├── .github/workflows/           # ⚙️ CI, Security, CodeQL & Release pipelines
 ├── docs/skills/                 # 📚 Architecture, Security & Category Documentation
@@ -747,7 +1026,7 @@ All skills/
 │   ├── SECURITY.md              # Threat model & static inspection policy
 │   └── *.md                     # Per-category detailed reference guides
 │
-└── tests/skill_tests/           # 🧪 Unit & Integration Test Suite (270 tests)
+└── tests/skill_tests/           # 🧪 Unit & Integration Test Suite (374 tests)
 ```
 
 ---
@@ -885,7 +1164,7 @@ Run complete test suites and diagnostic checks at any time:
 # 1. Check health of all canonical skills
 python scripts/skills/skills.py doctor
 
-# 2. Run the 270 unit and integration tests
+# 2. Run the 374 unit and integration tests
 python scripts/skills/skills.py test
 
 # 3. Verify multi-tool harness connections

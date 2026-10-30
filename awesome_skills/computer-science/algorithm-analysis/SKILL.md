@@ -1,6 +1,7 @@
 ---
 name: algorithm-analysis
-description: "Asymptotic Analysis & Amortized Complexity: Big-$O$, Big-$\Omega$, Big-$\Theta$ notations, master theorem for recurrences, amortized analysis (aggregate, accounting, and potential methods), and worst-case bounds."
+description: >-
+  Asymptotic Analysis & Amortized Complexity: Big-$O$, Big-$\Omega$, Big-$\Theta$ notations, master theorem for recurrences, amortized analysis (aggregate, accounting, and potential methods), and worst-case bounds.
 category: computer-science
 domain: computer-science
 subdomain: core-systems
@@ -15,7 +16,6 @@ platforms:
   - antigravity
   - copilot
 ---
-
 # Asymptotic Analysis & Amortized Complexity
 
 Big-$O$, Big-$\Omega$, Big-$\Theta$ notations, master theorem for recurrences, amortized analysis (aggregate, accounting, and potential methods), and worst-case bounds.

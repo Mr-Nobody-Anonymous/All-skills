@@ -1,6 +1,7 @@
 ---
 name: dealer-new-customer-onboarding
-description: "Design a comprehensive 90-day post-sale customer onboarding program for a car dealership. Use when the user asks to "build a new customer onboarding program", "design post-sale follow-up", "90-day onboarding sequence", "sales-to-service handoff", "S2S handoff", "new vehicle owner onboarding", "post-delivery customer journey", "design our delivery process", "first service introduction program", "owner onboarding for a dealer", or any request to plan and document what happens with a customer in the first 90 days after they purchase or lease a vehicle. Produces a complete multi-channel program covering day 0 (delivery) through day 90 (first service intro), including email touchpoints, SMS sequences, in-person handoffs, OEM connected-services activation, review request timing, and the critical sales-to-service handoff that determines whether the customer returns for paid maintenance. Pairs with dealer-equity-mining-campaign-builder (which picks up at month 6+), dealer-email-flows (which covers the broader lifecycle email), and dealer-store-positioning (which defines the voice the program uses). Authored by Ariel Coro of Dealer AI Guy."
+description: >-
+  Design a comprehensive 90-day post-sale customer onboarding program for a car dealership. Use when the user asks to "build a new customer onboarding program", "design post-sale follow-up", "90-day onboarding sequence", "sales-to-service handoff", "S2S handoff", "new vehicle owner onboarding", "post-delivery customer journey", "design our delivery process", "first service introduction program", "owner onboarding for a dealer", or any request to plan and document what happens with a customer in the first 90 days after they purchase or lease a vehicle. Produces a complete multi-channel program covering day 0 (delivery) through day 90 (first service intro), including email touchpoints, SMS sequences, in-person handoffs, OEM connected-services activation, review request timing, and the critical sales-to-service handoff that determines whether the customer returns for paid maintenance. Pairs with dealer-equity-mining-campaign-builder (which picks up at month 6+), dealer-email-flows (which covers the broader lifecycle email), and dealer-store-positioning (which defines the voice the program uses). Authored by Ariel Coro of Dealer AI Guy.
 category: franchise-management
 domain: franchise-management
 subdomain: general
@@ -20,8 +21,6 @@ platforms:
   - antigravity
   - copilot
 ---
-
-
 # Dealer New Customer Onboarding
 
 This skill designs a comprehensive 90-day post-sale customer onboarding program for a car dealership. The output is a multi-channel program covering delivery through first service intro, including every touchpoint with channel, content, owner role, and trigger logic.

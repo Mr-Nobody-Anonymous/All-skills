@@ -1,6 +1,6 @@
 # ⚡ Agent Skills Specification & Platform Overview
 
-A unified, high-performance universal operating system of **13,297+ unique specialized Agent Skills** (**15,146 cataloged instances** across **252 domain categories** and **15 universal super-domains**) designed for modern AI coding assistants (Claude Code, Cursor, Codex CLI, GitHub Copilot, VS Code Agent, Antigravity, Gemini CLI, Windsurf, OpenCode, Cline, Roo Code, and Block Goose).
+A unified, high-performance universal operating system of **13,362+ unique specialized Agent Skills** (**15,146 cataloged instances** across **252 domain categories**) plus a first-party **533-skill canonical engine** and a **117-server MCP catalog**, designed for modern AI coding assistants (Claude Code, Cursor, Codex CLI, GitHub Copilot, VS Code Agent, Antigravity, Gemini CLI, Windsurf, OpenCode, Cline, Roo Code, and Block Goose).
 
 ---
 
@@ -14,19 +14,20 @@ All-skills/
 ├── sources/               # Upstream Source Registry (16 verified vendor & community sources) & Policies
 ├── ontology/              # Universal Multi-Dimensional Ontology (Domains, Capabilities, Tasks, Stacks)
 ├── policies/              # Security & High-Risk Human Approval Gates (READ, MODIFY, DELETE, PRODUCTION)
-├── mcp/                   # Scalable MCP Connector Architecture (12 Servers, 9 Role Profiles, Policies)
+├── mcps/                  # MCP catalog: single source of truth (113 servers, 18 harnesses, 3 profiles)
+├── mcp/                   # Generated MCP view (113 servers, 9 role profiles, policies) — do not hand-edit
 ├── adapters/              # Platform Adapter Contracts (Claude, Cursor, Codex, Copilot, Gemini, etc.)
 ├── platforms/             # Dynamic Platform Discovery Registry (platforms.yaml)
 ├── profiles/              # Role-Based Skill Collections (Software Engineer, Cybersecurity, AI, DevOps, etc.)
 ├── evals/                 # Evaluation Benchmarks (Routing, Security, Behavioral, Compatibility)
-├── skills/                # Canonical Engine (122 core routed skills, 8 core categories)
+├── skills/                # Canonical Engine (533 routed skills, 44 categories)
 ├── awesome_skills/        # Awesome Skills Library (15,146 catalog entries across 252 domain categories)
 │   └── execution/         # Dedicated 15-Skill Autonomous Execution Layer
-└── .agents/skills/        # Universal Active Agent Harness (70 pre-loaded staff engineer skills)
+└── .agents/skills/        # Universal Active Agent Harness (89 pre-loaded staff engineer skills)
 ```
 
-### 1. ⚡ Canonical Engine (`skills/`) — 122 Core Routed Skills
-- **8 Core Categories**: `productivity`, `development`, `research`, `web`, `documents`, `design`, `security`, `utilities`.
+### 1. ⚡ Canonical Engine (`skills/`) — 533 Core Routed Skills
+- **44 Categories** (languages, infrastructure, security, data, GIS, CAD, 3D, audio, video, product…): `productivity`, `development`, `research`, `web`, `documents`, `design`, `security`, `utilities`.
 - **9-Signal Scored Router**: Sub-millisecond natural language routing without reading file bodies upfront.
 - **Deterministic Chaining**: Multi-skill workflows defined in `skills/chains.json`.
 - **Quality & Security**: 6-axis quality scoring, static scanning, and quarantine isolation.
@@ -143,7 +144,7 @@ python scripts/skills/skills.py chain deep-research --dry-run
 python scripts/skills/skills.py chain anti-procrastination --dry-run
 python scripts/skills/skills.py chain code-review-flow --dry-run
 
-# Run full health diagnostics and test suite (270 tests)
+# Run full health diagnostics and test suite (374 tests)
 python scripts/skills/skills.py doctor
 python scripts/skills/skills.py test
 ```
@@ -358,14 +359,15 @@ Eliminates prompt bloat through automated workspace detection:
 
 ### 14. Authoritative Ecosystem Metrics & Terminology
 Unambiguous single-source-of-truth counts:
-- **Canonical Skills**: `122` tested foundational skills in `skills/`.
-- **Active Harness Skills**: `70` staff-engineer playbooks pre-loaded in `.agents/skills/`.
+- **Canonical Skills**: `533` tested foundational skills in `skills/`.
+- **Active Harness Skills**: `89` staff-engineer playbooks pre-loaded in `.agents/skills/`.
 - **Manifest Skills**: `192` tool-mapped skills in `manifest.json`.
-- **Unique Skills**: `13,297` distinct skill capabilities across the platform.
+- **Unique Skills**: `13,362` distinct skill capabilities across the platform.
 - **Catalog Skills**: `15,146` categorized implementations across 252 domains in `awesome_skills/`.
 - **Workflows**: `5` multi-step execution playbooks in `workflows/`.
 - **Named Chains**: `4` deterministic DAG chains in `skills/chains.json`.
-- **Passing Tests**: `94/94` unit tests passing.
+- **Tests**: `374` unit tests in the suite, plus `8` evaluation suites in `evals/`.
+- **MCP Servers**: `113` catalogued connectors across `35` categories, installable into `18` harnesses.
 
 ### 15. Universal Tool Registry, Authentication & Federated Ingestion Pipeline
 To establish an enterprise-grade agent operating system, All-skills provides eight unified infrastructure layers:

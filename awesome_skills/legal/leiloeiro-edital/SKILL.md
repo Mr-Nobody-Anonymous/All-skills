@@ -1,4 +1,5 @@
----name: leiloeiro-edital
+---
+name: leiloeiro-edital
 description: Analise e auditoria de editais de leilao judicial e extrajudicial. Riscos ocultos, clausulas perigosas, debitos, ocupante e classificacao da oportunidade.
 risk: safe
 source: community

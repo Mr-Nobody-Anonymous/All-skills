@@ -1,0 +1,46 @@
+{
+  "id": "postman",
+  "name": "Postman",
+  "description": "Browse Postman collections, run API requests and inspect mock servers and workspaces.",
+  "category": "integration",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "postman",
+  "official": true,
+  "command": "npx",
+  "args": [
+    "-y",
+    "@postman/postman-mcp-server@latest"
+  ],
+  "required_env": [
+    "POSTMAN_API_KEY"
+  ],
+  "risk": "medium",
+  "license": "Apache-2.0",
+  "docs": "https://github.com/postmanlabs/postman-mcp-server",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

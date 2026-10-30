@@ -98,7 +98,7 @@ JUnit 5 を使用して、アクションが `ActionRegistry` に登録されて
 詳細なガイドは `references/` ディレクトリにあります：
 
 - [アーキテクチャと設定](references/architecture.md) — 抽象化、パッケージマップ、プロパティ
-- [ルーティングと@Action](references/routing.md) — アノテーションの詳細、モード、パラメータ
-- [データ処理](references/data-handling.md) — JSONのためのネイティブ `Builder` の使用
-- [システムと使用方法](references/system-usage.md) — Context、セッション、イベント、CLI使用方法
+- [ルーティングと@Action](../../../../awesome_skills/ecc/tinystruct-patterns/references/routing.md) — アノテーションの詳細、モード、パラメータ
+- [データ処理](../../../../awesome_skills/ecc/tinystruct-patterns/references/data-handling.md) — JSONのためのネイティブ `Builder` の使用
+- [システムと使用方法](../../../../awesome_skills/ecc/tinystruct-patterns/references/system-usage.md) — Context、セッション、イベント、CLI使用方法
 - [テストパターン](references/testing.md) — JUnit 5 統合と ActionRegistry テスト

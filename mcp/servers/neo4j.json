@@ -1,0 +1,47 @@
+{
+  "id": "neo4j",
+  "name": "Neo4j",
+  "description": "Cypher queries, graph schema inspection and read-only analytics over a Neo4j database.",
+  "category": "database",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "neo4j-contrib",
+  "official": true,
+  "command": "uvx",
+  "args": [
+    "mcp-neo4j-cypher"
+  ],
+  "required_env": [
+    "NEO4J_URL",
+    "NEO4J_USERNAME",
+    "NEO4J_PASSWORD"
+  ],
+  "risk": "medium",
+  "license": "Apache-2.0",
+  "docs": "https://github.com/neo4j-contrib/mcp-neo4j",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

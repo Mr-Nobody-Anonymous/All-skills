@@ -48,6 +48,27 @@ AUTONOMY_ALLOWED_CAPABILITIES: Dict[AutonomyLevel, Set[str]] = {
 }
 
 
+# Safe mode (``--safe``): read-only analysis stays ALLOW, while every capability
+# that is able to mutate local state, execute commands or reach the outside world
+# is escalated to ASK so a human has to approve it explicitly.
+SAFE_MODE_ESCALATED_RISKS: frozenset[RiskLevel] = frozenset({
+    RiskLevel.MEDIUM_RISK,
+    RiskLevel.HIGH_RISK,
+    RiskLevel.CRITICAL,
+})
+
+
+def apply_safe_mode(verdict: PolicyVerdict, risk: RiskLevel) -> PolicyVerdict:
+    """Escalate an ``ALLOW`` verdict to ``ASK`` when safe mode is active.
+
+    ``DENY`` is never relaxed and ``ASK`` stays ``ASK``: safe mode can only make
+    the policy engine more conservative, never less.
+    """
+    if verdict == PolicyVerdict.ALLOW and risk in SAFE_MODE_ESCALATED_RISKS:
+        return PolicyVerdict.ASK
+    return verdict
+
+
 def enforce_autonomy(requested_level: AutonomyLevel, capabilities: List[str]) -> tuple[bool, str]:
     """Validate whether requested capabilities are within bounds of autonomy level."""
     allowed = AUTONOMY_ALLOWED_CAPABILITIES.get(requested_level, set())
@@ -197,6 +218,8 @@ class PolicyEvaluationResult:
     # The tools whose capabilities were evaluated (declared, from the manifest,
     # or the read/edit default); the runtime holds executors to this list.
     tools: List[str] = field(default_factory=list)
+    # True when the evaluation ran under ``--safe`` (escalated ALLOW -> ASK).
+    safe_mode: bool = False
 
     def to_dict(self) -> dict:
         return {
@@ -205,7 +228,8 @@ class PolicyEvaluationResult:
             "max_risk": self.max_risk.value,
             "capabilities_requested": self.capabilities_requested,
             "breakdown": self.breakdown,
-            "reasons": self.reasons
+            "reasons": self.reasons,
+            "safe_mode": self.safe_mode,
         }
 
 
@@ -248,8 +272,18 @@ class PolicyEngine:
                 "description": pdata.get("description", ""),
             }
 
-    def evaluate_skill(self, skill_id: str, declared_tools: Optional[List[str]] = None) -> PolicyEvaluationResult:
-        """Evaluate permissions required for a skill."""
+    def evaluate_skill(
+        self,
+        skill_id: str,
+        declared_tools: Optional[List[str]] = None,
+        safe_mode: bool = False,
+    ) -> PolicyEvaluationResult:
+        """Evaluate permissions required for a skill.
+
+        ``safe_mode`` escalates every mutating or externally visible capability
+        from ALLOW to ASK (DENY is never relaxed), implementing the documented
+        ``--safe`` read-only-by-default contract.
+        """
         # 1. Discover declared tools if not passed
         tools = list(declared_tools or [])
         if not tools:
@@ -326,6 +360,13 @@ class PolicyEngine:
             })
             verdict = policy["verdict"]
             risk = policy["risk"]
+            if safe_mode:
+                escalated = apply_safe_mode(verdict, risk)
+                if escalated != verdict:
+                    reasons.append(
+                        f"Safe mode: capability '{cap}' ({risk.value.lower()}) requires explicit USER confirmation."
+                    )
+                verdict = escalated
 
             breakdown[cap] = {
                 "verdict": verdict.value if isinstance(verdict, PolicyVerdict) else str(verdict),
@@ -356,6 +397,7 @@ class PolicyEngine:
             breakdown=breakdown,
             reasons=reasons,
             tools=[str(t) for t in tools],
+            safe_mode=safe_mode,
         )
 
     def evaluate_request(self, prompt: str) -> PolicyEvaluationResult:

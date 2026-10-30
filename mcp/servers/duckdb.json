@@ -1,0 +1,48 @@
+{
+  "id": "duckdb",
+  "name": "DuckDB / MotherDuck",
+  "description": "Local DuckDB files and MotherDuck databases: SQL, schema exploration and ad-hoc analytics.",
+  "category": "database",
+  "tier": "standard",
+  "transport": "stdio",
+  "vendor": "motherduck",
+  "official": true,
+  "command": "uvx",
+  "args": [
+    "mcp-server-motherduck",
+    "--db-path",
+    "${DUCKDB_PATH}"
+  ],
+  "required_env": [
+    "MOTHERDUCK_TOKEN",
+    "DUCKDB_PATH"
+  ],
+  "risk": "medium",
+  "license": "MIT",
+  "docs": "https://github.com/motherduckdb/mcp-server-motherduck",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

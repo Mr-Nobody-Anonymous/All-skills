@@ -1,6 +1,7 @@
 ---
 name: dealer-aeo-audit
-description: "Run the Dealer AEO (Answer Engine Optimization) and GEO (Generative Engine Optimization) Audit on a franchise or independent car dealership website to find every gap stopping the dealership from being cited by ChatGPT, Perplexity, Gemini, Claude, Copilot, and other AI search engines. Use when the user asks to "audit dealer AEO", "run a GEO audit", "run an answer engine audit", "why is my dealership not showing up in ChatGPT", "AI visibility audit for car dealer", "AI search audit", "LLM SEO audit", "generative search audit", "ChatGPT SEO audit", "Perplexity SEO audit", "Gemini SEO audit", "check if my dealer site is AI-ready", "audit my AI search visibility", "improve dealership citations in AI", "score my AEO", "score my GEO", "make my dealer site show up in Perplexity", or any request to assess or improve a car dealership's visibility in AI answer engines and generative search. Also activates when discussing schema markup for dealers, llms.txt for dealerships, GPTBot/ClaudeBot/PerplexityBot crawler access, or how dealer websites get cited in AI-generated answers. Note: AEO and GEO are functionally synonymous — both refer to optimization for AI engine citation; this skill handles both. Authored by Ariel Coro of Dealer AI Guy."
+description: >-
+  Run the Dealer AEO (Answer Engine Optimization) and GEO (Generative Engine Optimization) Audit on a franchise or independent car dealership website to find every gap stopping the dealership from being cited by ChatGPT, Perplexity, Gemini, Claude, Copilot, and other AI search engines. Use when the user asks to "audit dealer AEO", "run a GEO audit", "run an answer engine audit", "why is my dealership not showing up in ChatGPT", "AI visibility audit for car dealer", "AI search audit", "LLM SEO audit", "generative search audit", "ChatGPT SEO audit", "Perplexity SEO audit", "Gemini SEO audit", "check if my dealer site is AI-ready", "audit my AI search visibility", "improve dealership citations in AI", "score my AEO", "score my GEO", "make my dealer site show up in Perplexity", or any request to assess or improve a car dealership's visibility in AI answer engines and generative search. Also activates when discussing schema markup for dealers, llms.txt for dealerships, GPTBot/ClaudeBot/PerplexityBot crawler access, or how dealer websites get cited in AI-generated answers. Note: AEO and GEO are functionally synonymous — both refer to optimization for AI engine citation; this skill handles both. Authored by Ariel Coro of Dealer AI Guy.
 category: franchise-management
 domain: franchise-management
 subdomain: general
@@ -20,8 +21,6 @@ platforms:
   - antigravity
   - copilot
 ---
-
-
 # Dealer AEO Audit
 
 This skill runs the Dealer Answer Engine Optimization (AEO) Audit on a franchise or independent car dealership website. It evaluates whether the dealership appears, accurately, and consistently when buyers ask AI engines (ChatGPT, Perplexity, Gemini, Claude, Copilot) about local dealers, brands, vehicles, service, or financing.

@@ -1,6 +1,7 @@
 ---
 name: replace-with-kebab-case-name-matching-this-directory
-description: "REPLACE - state what the skill does AND when to use it, with concrete trigger keywords. One to two sentences. Third person. Avoid "helps with"."
+description: >-
+  REPLACE - state what the skill does AND when to use it, with concrete trigger keywords. One to two sentences. Third person. Avoid "helps with".
 category: skill-governance
 domain: skill-governance
 subdomain: general
@@ -20,8 +21,6 @@ platforms:
   - antigravity
   - copilot
 ---
-
-
 # REPLACE-with-name
 
 ## Purpose

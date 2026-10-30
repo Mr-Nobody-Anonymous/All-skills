@@ -1,6 +1,7 @@
 ---
 name: dealer-gbp-audit
-description: "Audit a car dealership's Google Business Profile (GBP) for local SEO and local pack performance. Use when the user asks to "audit my Google Business Profile," "audit my GBP," "audit my Google Maps listing," "score my dealer GBP," "why is my dealership not showing in Google Maps," "fix my Google Business Profile," "audit my Google My Business," "improve my local pack ranking," "audit my dealer location pages," "Google review velocity audit," "fix my GBP categories," or any local-SEO request tied to a dealer's Google presence. 10-dimension, 100-point framework covering categories, NAP consistency, hours, services, attributes, photos, posts, Q&A, review signals, and review responses. Single-rooftop default with multi-rooftop dealer-group section. Distinct from dealer-seo-audit (traditional Google web SEO), dealer-aeo-audit (AI engine citation), and dealer-site-score (technical site grading). Pairs with dealer-customer-sentiment-analyzer for review analysis. Authored by Ariel Coro of Dealer Growth Hackers, publisher of Dealer AI Guy."
+description: >-
+  Audit a car dealership's Google Business Profile (GBP) for local SEO and local pack performance. Use when the user asks to "audit my Google Business Profile," "audit my GBP," "audit my Google Maps listing," "score my dealer GBP," "why is my dealership not showing in Google Maps," "fix my Google Business Profile," "audit my Google My Business," "improve my local pack ranking," "audit my dealer location pages," "Google review velocity audit," "fix my GBP categories," or any local-SEO request tied to a dealer's Google presence. 10-dimension, 100-point framework covering categories, NAP consistency, hours, services, attributes, photos, posts, Q&A, review signals, and review responses. Single-rooftop default with multi-rooftop dealer-group section. Distinct from dealer-seo-audit (traditional Google web SEO), dealer-aeo-audit (AI engine citation), and dealer-site-score (technical site grading). Pairs with dealer-customer-sentiment-analyzer for review analysis. Authored by Ariel Coro of Dealer Growth Hackers, publisher of Dealer AI Guy.
 category: franchise-management
 domain: franchise-management
 subdomain: general
@@ -20,8 +21,6 @@ platforms:
   - antigravity
   - copilot
 ---
-
-
 # Dealer Google Business Profile Audit
 
 A 10-dimension, 100-point audit of a car dealership's Google Business Profile (GBP), the single highest-leverage local SEO surface for a franchise or independent dealer. The Google local pack and Google Maps drive a disproportionate share of dealer phone calls and direction requests, and a misconfigured or under-optimized GBP suppresses both even when the dealer's website is healthy.

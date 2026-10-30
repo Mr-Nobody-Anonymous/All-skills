@@ -1,6 +1,7 @@
 ---
 name: ros2-fundamentals
-description: "Use when designing, writing, or debugging ROS2 systems — choosing between topics/services/actions, configuring QoS profiles, fixing "no messages received" failures, DDS discovery on WiFi, executor deadlocks, node composition, parameters, and Python launch files. Provides production-grade ROS2 architecture knowledge for code that works on real robots the first time."
+description: >-
+  Use when designing, writing, or debugging ROS2 systems — choosing between topics/services/actions, configuring QoS profiles, fixing "no messages received" failures, DDS discovery on WiFi, executor deadlocks, node composition, parameters, and Python launch files. Provides production-grade ROS2 architecture knowledge for code that works on real robots the first time.
 category: robotics
 domain: robotics
 subdomain: general
@@ -20,8 +21,6 @@ platforms:
   - antigravity
   - copilot
 ---
-
-
 # ROS2 Fundamentals
 
 This skill covers the ROS2 knowledge that separates working demos from production robots:

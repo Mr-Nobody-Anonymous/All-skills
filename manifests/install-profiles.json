@@ -99,7 +99,19 @@
         "devops-infra",
         "machine-learning",
         "supply-chain-domain",
-        "document-processing"
+        "document-processing",
+        "canonical-library"
+      ]
+    },
+    "library": {
+      "description": "Core harness baseline plus the complete curated skills/ library; no hooks runtime, no vendor-specific agent packs.",
+      "modules": [
+        "rules-core",
+        "agents-core",
+        "commands-core",
+        "platform-configs",
+        "workflow-quality",
+        "canonical-library"
       ]
     }
   }

@@ -1,9 +1,47 @@
 {
   "id": "slack",
+  "name": "Slack",
+  "description": "Search channels, read threads and post messages in Slack workspaces.",
+  "category": "communication",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "slack",
+  "official": true,
   "command": "npx",
   "args": [
     "-y",
     "@modelcontextprotocol/server-slack"
   ],
-  "category": "communication"
+  "required_env": [
+    "SLACK_BOT_TOKEN",
+    "SLACK_TEAM_ID"
+  ],
+  "risk": "medium",
+  "license": "MIT",
+  "docs": "https://github.com/modelcontextprotocol/servers/tree/main/src/slack",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
 }

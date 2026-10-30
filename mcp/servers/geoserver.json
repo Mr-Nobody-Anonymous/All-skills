@@ -1,0 +1,47 @@
+{
+  "id": "geoserver",
+  "name": "GeoServer",
+  "description": "Publish and manage GeoServer workspaces, stores, layers and styles through its REST API.",
+  "category": "geospatial",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "geoserver-mcp",
+  "official": false,
+  "command": "uvx",
+  "args": [
+    "geoserver-mcp"
+  ],
+  "required_env": [
+    "GEOSERVER_URL",
+    "GEOSERVER_USER",
+    "GEOSERVER_PASSWORD"
+  ],
+  "risk": "medium",
+  "license": "MIT",
+  "docs": "https://pypi.org/project/geoserver-mcp/",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

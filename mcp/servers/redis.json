@@ -1,0 +1,47 @@
+{
+  "id": "redis",
+  "name": "Redis",
+  "description": "Inspect keys, streams and cache state in Redis.",
+  "category": "database",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "redis",
+  "official": true,
+  "command": "npx",
+  "args": [
+    "-y",
+    "@modelcontextprotocol/server-redis",
+    "${REDIS_URL}"
+  ],
+  "required_env": [
+    "REDIS_URL"
+  ],
+  "risk": "medium",
+  "license": "MIT",
+  "docs": "https://github.com/redis/mcp-redis",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

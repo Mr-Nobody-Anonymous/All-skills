@@ -1,6 +1,6 @@
 # OpenClaw 的隐藏危险
 
-![标题：OpenClaw 的隐藏危险——来自智能体前沿的安全教训](../../assets/images/openclaw/01-header.png)
+![标题：OpenClaw 的隐藏危险——来自智能体前沿的安全教训](../../assets/images/longform/01-header.png)
 
 ***
 

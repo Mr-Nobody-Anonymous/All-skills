@@ -95,7 +95,7 @@ Agent(
 
 `{ "verdict": "Keep"|"Improve"|"Update"|"Retire"|"Merge into [X]", "reason": "..." }`
 
-**分块指导：** 每个子代理调用处理约 20 个技能，以保持上下文可管理。在每个块之后将中间结果保存到 `results.json` (`status: "in_progress"`)。
+**分块指导：** 每个子代理调用处理约 533 个技能，以保持上下文可管理。在每个块之后将中间结果保存到 `results.json` (`status: "in_progress"`)。
 
 所有技能评估完成后：设置 `status: "completed"`，进入第 3 阶段。
 

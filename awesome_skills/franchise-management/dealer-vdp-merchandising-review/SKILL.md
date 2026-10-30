@@ -1,6 +1,7 @@
 ---
 name: dealer-vdp-merchandising-review
-description: "Review a sample of Vehicle Detail Pages (VDPs) on a car dealership website for merchandising quality. Use when the user asks to "audit my VDPs", "VDP merchandising review", "grade my VDPs", "are my vehicle listings good", "review my dealer inventory pages", "VDP audit", "check my used car listings", "audit my VDPs for conversion", "OEM compliance check on my VDPs", or any request to evaluate the merchandising quality of one or more vehicle detail pages on a dealer site. Audits photos, descriptions, pricing transparency, vehicle data completeness, schema markup, CTAs, trust signals, cross-sell elements, mobile UX, and OEM compliance. Brand-aware: applies OEM-specific photo standards and required content for GM, Ford, Stellantis, Toyota, Honda, and other major franchises. Produces per-VDP scorecards plus a summary headline and prioritized fix list. Authored by Ariel Coro of Dealer AI Guy."
+description: >-
+  Review a sample of Vehicle Detail Pages (VDPs) on a car dealership website for merchandising quality. Use when the user asks to "audit my VDPs", "VDP merchandising review", "grade my VDPs", "are my vehicle listings good", "review my dealer inventory pages", "VDP audit", "check my used car listings", "audit my VDPs for conversion", "OEM compliance check on my VDPs", or any request to evaluate the merchandising quality of one or more vehicle detail pages on a dealer site. Audits photos, descriptions, pricing transparency, vehicle data completeness, schema markup, CTAs, trust signals, cross-sell elements, mobile UX, and OEM compliance. Brand-aware: applies OEM-specific photo standards and required content for GM, Ford, Stellantis, Toyota, Honda, and other major franchises. Produces per-VDP scorecards plus a summary headline and prioritized fix list. Authored by Ariel Coro of Dealer AI Guy.
 category: franchise-management
 domain: franchise-management
 subdomain: general
@@ -20,8 +21,6 @@ platforms:
   - antigravity
   - copilot
 ---
-
-
 # Dealer VDP Merchandising Review
 
 This skill audits a sample of Vehicle Detail Pages (VDPs) on a car dealership website. It evaluates merchandising quality across up to 10 dimensions covering everything from photo standards to schema markup to OEM compliance. The output is per-VDP scorecards plus a summary headline and prioritized fix list.

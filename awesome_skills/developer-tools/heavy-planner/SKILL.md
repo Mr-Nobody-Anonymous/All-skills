@@ -1,6 +1,7 @@
 ---
 name: heavy-planner
-description: "Creates high-clarity product and technical specifications by interrogating requirements before planning. Use when the user asks to "crear especificaciones", "write a spec", "define requirements", "hacer el plan", "scope a project", or shares an idea that is still vague. This skill asks exhaustive follow-up questions first and only proposes a structured plan after unknowns are surfaced."
+description: >-
+  Creates high-clarity product and technical specifications by interrogating requirements before planning. Use when the user asks to "crear especificaciones", "write a spec", "define requirements", "hacer el plan", "scope a project", or shares an idea that is still vague. This skill asks exhaustive follow-up questions first and only proposes a structured plan after unknowns are surfaced.
 category: developer-tools
 domain: developer-tools
 subdomain: general
@@ -20,8 +21,6 @@ platforms:
   - antigravity
   - copilot
 ---
-
-
 # Specification Interrogator
 
 Use this skill to force clarity before implementation planning. The quality of a plan depends on the quality of the questions that precede it.

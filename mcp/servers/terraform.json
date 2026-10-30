@@ -1,0 +1,46 @@
+{
+  "id": "terraform",
+  "name": "Terraform",
+  "description": "Inspect Terraform registry providers, modules and workspace state.",
+  "category": "infrastructure",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "hashicorp",
+  "official": true,
+  "command": "docker",
+  "args": [
+    "run",
+    "-i",
+    "--rm",
+    "hashicorp/terraform-mcp-server"
+  ],
+  "required_env": [],
+  "risk": "medium",
+  "license": "MPL-2.0",
+  "docs": "https://github.com/hashicorp/terraform-mcp-server",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

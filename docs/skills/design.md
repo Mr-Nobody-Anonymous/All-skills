@@ -1,10 +1,10 @@
 # Design Skills
 
-_Generated: 2026-09-19T17:27:28+00:00_
+_Generated: 2026-10-29T16:21:14+00:00_
 
 Skills for design work — UI/UX, frontend design, presentations, and branding. These produce prose wireframes, design feedback, narrative arcs for talks, and naming/voice guidance.
 
-**8 skills in this category.**
+**13 skills in this category.**
 
 ## Skills
 
@@ -42,6 +42,24 @@ Brand identity work — voice, naming, visual language, and consistency.
 
 Help the user develop and apply brand identity: voice, naming, visual language, and consistency across touchpoints.
 
+### `design.editorial-layout-design`
+
+Lay out multi-page documents: grid systems, masters and styles, flowing long copy, tables, footnotes and accessible PDF output.
+
+- **Risk:** low
+- **Path:** `design/editorial-layout-design`
+- **Aliases:** `page-layout`
+- **Triggers:**
+  - layout a report
+  - indesign master pages
+  - grid system for magazine
+  - flow long text document
+  - accessible pdf report
+- **Source:** custom
+- **Version:** 1.0.0
+
+Lay out multi-page documents: grid systems, masters and styles, flowing long copy, tables, footnotes and accessible PDF output.
+
 ### `design.frontend-design`
 
 Design and implement frontend interfaces — HTML, CSS, layouts, and visual design for the web.
@@ -59,6 +77,24 @@ Design and implement frontend interfaces — HTML, CSS, layouts, and visual desi
 - **Version:** 1.0.0
 
 Design and implement frontend pages — semantic HTML, accessible CSS, responsive layouts, and component composition.
+
+### `design.iconography-systems`
+
+Build an icon system: consistent optical grid, stroke and corner radii, naming, SVG sprite delivery and accessibility.
+
+- **Risk:** low
+- **Path:** `design/iconography-systems`
+- **Aliases:** `icons`
+- **Triggers:**
+  - design icon set
+  - svg sprite icons
+  - icon grid and stroke width
+  - icon accessibility aria
+  - icon naming convention
+- **Source:** custom
+- **Version:** 1.0.0
+
+Build an icon system: consistent optical grid, stroke and corner radii, naming, SVG sprite delivery and accessibility.
 
 ### `design.image-gen`
 
@@ -95,6 +131,24 @@ Design and structure presentations — narrative arc, slide content, visual hier
 
 Help the user design and structure a presentation. Outline the narrative arc, draft slide content, and note visual / delivery considerations.
 
+### `design.print-production-prepress`
+
+Take artwork from screen to press: CMYK and spot colour, bleed and trim, overprint, imposition, PDF/X export and a printer checklist.
+
+- **Risk:** medium
+- **Path:** `design/print-production-prepress`
+- **Aliases:** `prepress`, `print-production`
+- **Triggers:**
+  - prepare file for printing
+  - pdf/x export
+  - bleed and crop marks
+  - cmyk conversion colour shift
+  - prepress checklist
+- **Source:** custom
+- **Version:** 1.0.0
+
+Take artwork from screen to press: CMYK and spot colour, bleed and trim, overprint, imposition, PDF/X export and a printer checklist.
+
 ### `design.remotion-best-practices`
 
 Design and implement maintainable Remotion video compositions with deterministic rendering.
@@ -112,6 +166,24 @@ Design and implement maintainable Remotion video compositions with deterministic
 
 Build Remotion projects that are correct, performant, and renderable in a CI-style pipeline. The skill encodes patterns for composition, asset loading, timing, preview, and headless render so an agent can write or modify a Remotion codebase without common pitfalls.
 
+### `design.typography-and-type-systems`
+
+Design and specify type: type scales, pairing, vertical rhythm, variable fonts, OpenType features, licensing and cross-platform rendering.
+
+- **Risk:** low
+- **Path:** `design/typography-and-type-systems`
+- **Aliases:** `type-design`
+- **Triggers:**
+  - choose fonts for a brand
+  - type scale design
+  - variable font setup
+  - line height and measure
+  - opentype features css
+- **Source:** custom
+- **Version:** 1.0.0
+
+Design and specify type: type scales, pairing, vertical rhythm, variable fonts, OpenType features, licensing and cross-platform rendering.
+
 ### `design.ui-ux`
 
 Design UI / UX — flows, screens, components, and interaction patterns. Produce wireframes-in-prose and design feedback.
@@ -128,6 +200,24 @@ Design UI / UX — flows, screens, components, and interaction patterns. Produce
 - **Version:** 1.0.0
 
 Help the user design a screen, flow, or interaction. Produce wireframes-in-prose, identify states, and give actionable design feedback.
+
+### `design.vector-illustration-svg`
+
+Author clean, editable vector artwork and SVG: paths and boolean operations, stroke-to-outline, Inkscape CLI automation, and web-safe SVG export.
+
+- **Risk:** low
+- **Path:** `design/vector-illustration-svg`
+- **Aliases:** `inkscape`, `svg-art`
+- **Triggers:**
+  - clean up svg file
+  - inkscape command line export
+  - convert logo to vector
+  - svg too large optimize
+  - trace bitmap to vector
+- **Source:** custom
+- **Version:** 1.0.0
+
+Author clean, editable vector artwork and SVG: paths and boolean operations, stroke-to-outline, Inkscape CLI automation, and web-safe SVG export.
 
 ### `design.veo-video-generator`
 

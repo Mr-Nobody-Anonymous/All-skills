@@ -1,9 +1,12 @@
 {
   "profile": "healthcare",
   "servers": [
-    "docs",
+    "fetch",
     "filesystem",
-    "fetch"
+    "memory",
+    "notion"
   ],
-  "default_policy": "least-privilege"
+  "default_policy": "least-privilege",
+  "read_only_default": true,
+  "note": "Generated from mcps/catalog.json by scripts/dev/generate_mcp_registry.py."
 }

@@ -33,7 +33,7 @@ Add to your `~/.claude/settings.json`:
 
 ### Community note on auto-compaction overrides
 
-Some recent Claude Code builds have community reports that `CLAUDE_AUTOCOMPACT_PCT_OVERRIDE` can only lower the compaction threshold, which means values below the default may compact earlier instead of later. If that happens in your setup, remove the override and rely on manual `/compact` plus ECC's `strategic-compact` guidance. See [Troubleshooting](./TROUBLESHOOTING.md).
+Some recent Claude Code builds have community reports that `CLAUDE_AUTOCOMPACT_PCT_OVERRIDE` can only lower the compaction threshold, which means values below the default may compact earlier instead of later. If that happens in your setup, remove the override and rely on manual `/compact` plus ECC's `strategic-compact` guidance. See [Troubleshooting](../TROUBLESHOOTING.md).
 
 ### Toggling extended thinking
 

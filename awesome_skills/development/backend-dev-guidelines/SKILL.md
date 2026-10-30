@@ -1,4 +1,5 @@
----name: backend-dev-guidelines
+---
+name: backend-dev-guidelines
 description: Opinionated backend development standards for Node.js + Express + TypeScript microservices. Covers layered architecture, BaseController pattern, dependency injection, Prisma repositories, Zod validation, unifiedConfig, Sentry error tracking, async safety, and testing discipline.
 source: "https://github.com/liuchiawei/agent-skills"
 source_repository: "liuchiawei/agent-skills"

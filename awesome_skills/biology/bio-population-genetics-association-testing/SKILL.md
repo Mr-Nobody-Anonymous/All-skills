@@ -1,6 +1,7 @@
 ---
 name: bio-population-genetics-association-testing
-description: Single-variant common-variant GWAS with plink2 --glm (linear/logistic, Firth) and the linear mixed models GEMMA, BOLT-LMM, SAIGE, regenie (SPA). A GWAS statistic is valid only when genotype is independent of unmodeled phenotype drivers after the chosen covariates and random effects, so the engine follows sample structure and case:control imbalance, not taste: PC covariates absorb continuous ancestry but cannot remove relatedness (a covariance structure needing an LMM), genomic inflation above 1 is mostly true polygenic signal not confounding (the LDSC intercept is the diagnostic), LOCO prevents proximal contamination, and SPA/Firth keep the tail calibrated at extreme imbalance and low MAC. Use when running single-variant GWAS, choosing between a GLM and a mixed model, or controlling stratification, relatedness, and case:control imbalance. For rare-variant aggregation (burden, SKAT, SKAT-O, ACAT) see rare-variant-association; fine-mapping and MR see causal-genomics; PRS see clinical-databases/polygenic-risk.
+description: >-
+  Single-variant common-variant GWAS with plink2 --glm (linear/logistic, Firth) and the linear mixed models GEMMA, BOLT-LMM, SAIGE, regenie (SPA). A GWAS statistic is valid only when genotype is independent of unmodeled phenotype drivers after the chosen covariates and random effects, so the engine follows sample structure and case:control imbalance, not taste: PC covariates absorb continuous ancestry but cannot remove relatedness (a covariance structure needing an LMM), genomic inflation above 1 is mostly true polygenic signal not confounding (the LDSC intercept is the diagnostic), LOCO prevents proximal contamination, and SPA/Firth keep the tail calibrated at extreme imbalance and low MAC. Use when running single-variant GWAS, choosing between a GLM and a mixed model, or controlling stratification, relatedness, and case:control imbalance. For rare-variant aggregation (burden, SKAT, SKAT-O, ACAT) see rare-variant-association; fine-mapping and MR see causal-genomics; PRS see clinical-databases/polygenic-risk.
 tool_type: cli
 primary_tool: plink2
 source: "https://github.com/GPTomics/bioSkills"
@@ -9,7 +10,6 @@ source_path: "population-genetics/association-testing/SKILL.md"
 license: "MIT"
 imported_at: "2026-09-20"
 ---
-
 ## Version Compatibility
 
 Reference examples tested with: PLINK 2.0 (alpha 6+), SAIGE 1.3+, regenie 3.4+, BOLT-LMM 2.4+, GEMMA 0.98+, numpy 1.26+, pandas 2.2+, scipy 1.12+.

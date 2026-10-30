@@ -1,6 +1,7 @@
 ---
 name: bio-population-genetics-population-structure
-description: Infers and describes population structure with PCA (plink2 --pca, smartpca/EIGENSOFT, FlashPCA2), model-based clustering (ADMIXTURE, fastSTRUCTURE), FST estimators (Weir-Cockerham vs Hudson), and f-statistics (f3/f4/D via AdmixTools/admixr), plus Python plotting of PCs and Q barplots. Every output is a model-conditioned description of variance, not truth: PCs conflate ancestry with LD/inversions/relatedness/batch, ADMIXTURE Q-values are panel- and K-dependent artifacts, and CV-minimum K is a guide not the true population count. FST must combine SNPs as a ratio of averages (sum numerators / sum denominators), never an average of per-SNP FST; negative per-SNP FST is normal and must not be clamped. f3/f4/D need a block jackknife or the significance is fake. Use when running PCA, ADMIXTURE, FST, or f-statistics on QC'd genotypes. For QC and KING relatedness see plink-basics; for LD pruning see linkage-disequilibrium; for array-based Python pipelines see scikit-allel-analysis.
+description: >-
+  Infers and describes population structure with PCA (plink2 --pca, smartpca/EIGENSOFT, FlashPCA2), model-based clustering (ADMIXTURE, fastSTRUCTURE), FST estimators (Weir-Cockerham vs Hudson), and f-statistics (f3/f4/D via AdmixTools/admixr), plus Python plotting of PCs and Q barplots. Every output is a model-conditioned description of variance, not truth: PCs conflate ancestry with LD/inversions/relatedness/batch, ADMIXTURE Q-values are panel- and K-dependent artifacts, and CV-minimum K is a guide not the true population count. FST must combine SNPs as a ratio of averages (sum numerators / sum denominators), never an average of per-SNP FST; negative per-SNP FST is normal and must not be clamped. f3/f4/D need a block jackknife or the significance is fake. Use when running PCA, ADMIXTURE, FST, or f-statistics on QC'd genotypes. For QC and KING relatedness see plink-basics; for LD pruning see linkage-disequilibrium; for array-based Python pipelines see scikit-allel-analysis.
 tool_type: mixed
 primary_tool: plink2
 source: "https://github.com/GPTomics/bioSkills"
@@ -9,7 +10,6 @@ source_path: "population-genetics/population-structure/SKILL.md"
 license: "MIT"
 imported_at: "2026-09-20"
 ---
-
 ## Version Compatibility
 
 Reference examples tested with: PLINK 2.0 (alpha 6+), ADMIXTURE 1.3+, EIGENSOFT 7.2+, scikit-allel 1.3+, numpy 1.26+, pandas 2.2+, matplotlib 3.8+.

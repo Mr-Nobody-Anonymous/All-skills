@@ -134,7 +134,8 @@ def _run_native_cli(workspace: Optional[Path] = None, argv: Optional[List[str]] 
         inp = json.loads(args.input) if getattr(args, "input", None) else {}
         tools = [t.strip() for t in args.tools.split(",")] if getattr(args, "tools", None) else None
         approval = approval_from_args(args.approval_id, args.approved_by)
-        res = runtime.execute(args.skill_id, input=inp, tools=tools, dry_run=args.dry_run, approval=approval)
+        res = runtime.execute(args.skill_id, input=inp, tools=tools, dry_run=args.dry_run,
+                              approval=approval, safe_mode=args.safe)
         if getattr(args, "json", False):
             print(json.dumps(res.to_dict(), indent=2))
         else:

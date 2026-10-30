@@ -1,4 +1,5 @@
----name: managing-surgical-site-infections
+---
+name: managing-surgical-site-infections
 language: en
 description: Classifies SSIs using CDC criteria with treatment protocols and reporting requirements. Use when identifying surgical infections, classifying SSI depth, or implementing SSI treatment.
 tags:

@@ -1,0 +1,44 @@
+{
+  "id": "chrome-devtools",
+  "name": "Chrome DevTools",
+  "description": "Stateful Chrome DevTools Protocol session: live debugging, performance traces, console and network inspection.",
+  "category": "browser",
+  "tier": "standard",
+  "transport": "stdio",
+  "vendor": "google",
+  "official": true,
+  "command": "npx",
+  "args": [
+    "-y",
+    "chrome-devtools-mcp@latest"
+  ],
+  "required_env": [],
+  "risk": "medium",
+  "license": "Apache-2.0",
+  "docs": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

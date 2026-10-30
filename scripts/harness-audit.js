@@ -135,6 +135,30 @@ function fileExists(rootDir, relativePath) {
   return fs.existsSync(path.join(rootDir, relativePath));
 }
 
+// A skill may live in the flat install-owned tree (skills/<name>), the
+// category-nested catalog library (skills/<category>/<name>) or the vendored
+// ECC tree (awesome_skills/ecc/<name>). Resolve against all of them so the
+// audit reports the skill's absence, not a stale directory convention.
+function skillFileCandidates(rootDir, name, relativePath = 'SKILL.md') {
+  const candidates = [`skills/${name}/${relativePath}`, `awesome_skills/ecc/${name}/${relativePath}`];
+  const skillsRoot = path.join(rootDir, 'skills');
+  if (fs.existsSync(skillsRoot)) {
+    for (const entry of fs.readdirSync(skillsRoot, { withFileTypes: true })) {
+      if (entry.isDirectory()) candidates.push(`skills/${entry.name}/${name}/${relativePath}`);
+    }
+  }
+  return [...new Set(candidates)];
+}
+
+function skillFileExists(rootDir, name, relativePath = 'SKILL.md') {
+  return skillFileCandidates(rootDir, name, relativePath).some(candidate => fileExists(rootDir, candidate));
+}
+
+function resolvedSkillFile(rootDir, name, relativePath = 'SKILL.md') {
+  return skillFileCandidates(rootDir, name, relativePath)
+    .find(candidate => fileExists(rootDir, candidate)) || `skills/${name}/${relativePath}`;
+}
+
 function readText(rootDir, relativePath) {
   return fs.readFileSync(path.join(rootDir, relativePath), 'utf8');
 }
@@ -389,6 +413,14 @@ function getRepoChecks(rootDir) {
   const packageJson = safeParseJson(safeRead(rootDir, 'package.json'));
   const commandPrimary = safeRead(rootDir, 'commands/harness-audit.md').trim();
   const commandParity = safeRead(rootDir, '.opencode/commands/harness-audit.md').trim();
+  // `.opencode/` is install output: scripts/setup_tools.py writes it per machine
+  // and .gitignore excludes the whole tree, so in a fresh clone (and on every
+  // CI runner) the OpenCode mirror cannot exist. Absence is therefore PASS —
+  // only a *present but divergent* mirror is a finding. Requiring the file made
+  // this check unsatisfiable for anyone who had not run an install.
+  const opencodeMirrorPresent = fs.existsSync(
+    path.join(rootDir, '.opencode', 'commands', 'harness-audit.md'),
+  );
   const hooksJson = safeRead(rootDir, 'hooks/hooks.json');
 
   return [
@@ -439,17 +471,20 @@ function getRepoChecks(rootDir) {
       scopes: ['repo', 'commands'],
       path: '.opencode/commands/harness-audit.md',
       description: 'Harness-audit command parity exists between primary and OpenCode command docs',
-      pass: commandPrimary.length > 0 && commandPrimary === commandParity,
-      fix: 'Sync commands/harness-audit.md and .opencode/commands/harness-audit.md.',
+      pass: commandPrimary.length > 0 && (!opencodeMirrorPresent || commandPrimary === commandParity),
+      detail: opencodeMirrorPresent
+        ? 'installed OpenCode mirror compared against the primary command doc'
+        : 'no .opencode mirror installed (generated per machine, gitignored)',
+      fix: 'Run `python scripts/setup_tools.py` to regenerate .opencode/, then re-run the audit; a divergent mirror means the install is stale.',
     },
     {
       id: 'context-strategic-compact',
       category: 'Context Efficiency',
       points: 3,
       scopes: ['repo', 'skills'],
-      path: 'skills/strategic-compact/SKILL.md',
+      path: resolvedSkillFile(rootDir, 'strategic-compact'),
       description: 'Strategic compaction guidance is present',
-      pass: fileExists(rootDir, 'skills/strategic-compact/SKILL.md'),
+      pass: skillFileExists(rootDir, 'strategic-compact'),
       fix: 'Add strategic context compaction guidance at skills/strategic-compact/SKILL.md.',
     },
     {
@@ -547,9 +582,9 @@ function getRepoChecks(rootDir) {
       category: 'Memory Persistence',
       points: 2,
       scopes: ['repo', 'skills'],
-      path: 'skills/continuous-learning-v2/SKILL.md',
+      path: resolvedSkillFile(rootDir, 'continuous-learning-v2'),
       description: 'Continuous learning v2 skill exists',
-      pass: fileExists(rootDir, 'skills/continuous-learning-v2/SKILL.md'),
+      pass: skillFileExists(rootDir, 'continuous-learning-v2'),
       fix: 'Add skills/continuous-learning-v2/SKILL.md for memory evolution flow.',
     },
     {
@@ -557,9 +592,9 @@ function getRepoChecks(rootDir) {
       category: 'Eval Coverage',
       points: 4,
       scopes: ['repo', 'skills'],
-      path: 'skills/eval-harness/SKILL.md',
+      path: resolvedSkillFile(rootDir, 'eval-harness'),
       description: 'Eval harness skill exists',
-      pass: fileExists(rootDir, 'skills/eval-harness/SKILL.md'),
+      pass: skillFileExists(rootDir, 'eval-harness'),
       fix: 'Add skills/eval-harness/SKILL.md for pass/fail regression evaluation.',
     },
     {
@@ -569,7 +604,7 @@ function getRepoChecks(rootDir) {
       scopes: ['repo', 'commands', 'skills'],
       path: 'commands/checkpoint.md',
       description: 'Checkpoint command and eval/verification skills exist',
-      pass: fileExists(rootDir, 'commands/checkpoint.md') && fileExists(rootDir, 'skills/eval-harness/SKILL.md') && fileExists(rootDir, 'skills/verification-loop/SKILL.md'),
+      pass: fileExists(rootDir, 'commands/checkpoint.md') && skillFileExists(rootDir, 'eval-harness') && skillFileExists(rootDir, 'verification-loop'),
       fix: 'Add checkpoint command plus eval-harness and verification-loop skills to standardize verification loops.',
     },
     {
@@ -587,9 +622,9 @@ function getRepoChecks(rootDir) {
       category: 'Security Guardrails',
       points: 3,
       scopes: ['repo', 'skills'],
-      path: 'skills/security-review/SKILL.md',
+      path: resolvedSkillFile(rootDir, 'security-review'),
       description: 'Security review skill exists',
-      pass: fileExists(rootDir, 'skills/security-review/SKILL.md'),
+      pass: skillFileExists(rootDir, 'security-review'),
       fix: 'Add skills/security-review/SKILL.md for security checklist coverage.',
     },
     {
@@ -627,9 +662,9 @@ function getRepoChecks(rootDir) {
       category: 'Cost Efficiency',
       points: 4,
       scopes: ['repo', 'skills'],
-      path: 'skills/cost-aware-llm-pipeline/SKILL.md',
+      path: resolvedSkillFile(rootDir, 'cost-aware-llm-pipeline'),
       description: 'Cost-aware LLM skill exists',
-      pass: fileExists(rootDir, 'skills/cost-aware-llm-pipeline/SKILL.md'),
+      pass: skillFileExists(rootDir, 'cost-aware-llm-pipeline'),
       fix: 'Add skills/cost-aware-llm-pipeline/SKILL.md for budget-aware routing.',
     },
     {

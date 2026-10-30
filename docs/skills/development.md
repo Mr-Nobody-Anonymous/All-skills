@@ -1,10 +1,10 @@
 # Development Skills
 
-_Generated: 2026-09-19T17:27:28+00:00_
+_Generated: 2026-10-29T16:21:14+00:00_
 
 Skills for software engineering work — coding, debugging, refactoring, code review, testing, TDD, architecture, frontend, backend, databases, Git, GitHub, performance optimization, and DevOps. These skills produce structured output (checklists, prompts, plans) rather than execute code.
 
-**38 skills in this category.**
+**45 skills in this category.**
 
 ## Skills
 
@@ -150,6 +150,8 @@ Review code for correctness, readability, design, tests, security, and style. Pr
 - **Aliases:** `review`, `pr-review`, `peer-review`
 - **Triggers:**
   - review this code
+  - review this python code
+  - review this python code for security problems
   - review my PR
   - code review
   - look at this diff
@@ -337,6 +339,42 @@ Inspect and manage Dokploy deployments through its API with explicit confirmatio
 
 Drive a **Dokploy** instance (self-hosted PaaS) through its REST API: list, create, update, deploy, and roll back projects, applications, and domains. The skill is careful to surface every destructive operation and never assume a default environment.
 
+### `development.fastapi-expert`
+
+Build production FastAPI services: dependency injection, Pydantic v2 models, async database sessions, background tasks and OpenAPI that tells the truth.
+
+- **Risk:** low
+- **Path:** `development/fastapi-expert`
+- **Aliases:** `fastapi`
+- **Triggers:**
+  - fastapi dependency injection
+  - pydantic v2 validator
+  - fastapi async sqlalchemy session
+  - fastapi background task
+  - fastapi openapi schema
+- **Source:** custom
+- **Version:** 1.0.0
+
+Build production FastAPI services: dependency injection, Pydantic v2 models, async database sessions, background tasks and OpenAPI that tells the truth.
+
+### `development.feature-flag-management`
+
+Roll out changes safely with feature flags: flag taxonomy, targeting, kill switches, stale-flag hygiene and experiment-safe evaluation.
+
+- **Risk:** medium
+- **Path:** `development/feature-flag-management`
+- **Aliases:** —
+- **Triggers:**
+  - feature flag rollout plan
+  - kill switch design
+  - flag targeting rules
+  - stale flag cleanup
+  - progressive delivery
+- **Source:** custom
+- **Version:** 1.0.0
+
+Roll out changes safely with feature flags: flag taxonomy, targeting, kill switches, stale-flag hygiene and experiment-safe evaluation.
+
 ### `development.frontend`
 
 Build frontend applications — frameworks, state management, routing, data fetching, and integration with APIs.
@@ -443,6 +481,42 @@ Use GitHub CLI for issues, pull requests, Actions, and API queries with confirma
 
 Run common GitHub operations through the `gh` CLI in a way that is safe, scriptable, and ergonomic for an agent. The skill wraps `gh issue`, `gh pr`, `gh run`, `gh release`, and `gh api` into named, audited operations.
 
+### `development.graphql-api-design`
+
+Design and evolve GraphQL APIs: schema modelling, nullability, pagination with connections, N+1 avoidance, and safe deprecation.
+
+- **Risk:** low
+- **Path:** `development/graphql-api-design`
+- **Aliases:** —
+- **Triggers:**
+  - graphql schema design
+  - graphql n+1 dataloader
+  - graphql pagination cursor
+  - graphql deprecation strategy
+  - graphql mutation design
+- **Source:** custom
+- **Version:** 1.0.0
+
+Design and evolve GraphQL APIs: schema modelling, nullability, pagination with connections, N+1 avoidance, and safe deprecation.
+
+### `development.grpc-service-design`
+
+Design gRPC services: protobuf evolution rules, streaming choices, deadlines and retries, error model, and load-balancing implications.
+
+- **Risk:** low
+- **Path:** `development/grpc-service-design`
+- **Aliases:** —
+- **Triggers:**
+  - protobuf field evolution
+  - grpc streaming design
+  - grpc deadline retry
+  - grpc error codes
+  - grpc load balancing
+- **Source:** custom
+- **Version:** 1.0.0
+
+Design gRPC services: protobuf evolution rules, streaming choices, deadlines and retries, error model, and load-balancing implications.
+
 ### `development.issue-triage`
 
 Classify, deduplicate, label, and prioritize incoming issues with reproduction checklists and routing rules.
@@ -493,6 +567,42 @@ Design and implement discoverable, safe Model Context Protocol servers and evalu
 - **Version:** 1.0.0
 
 Design and implement discoverable, safe Model Context Protocol servers and evaluations. The reviewed upstream workflow is preserved in `references/upstream-SKILL.md`.
+
+### `development.monorepo-management`
+
+Operate a monorepo: package boundaries, workspace tooling, affected-only CI, versioning strategy and safe incremental builds.
+
+- **Risk:** medium
+- **Path:** `development/monorepo-management`
+- **Aliases:** —
+- **Triggers:**
+  - monorepo structure design
+  - nx turborepo affected build
+  - workspace dependency graph
+  - monorepo versioning strategy
+  - monorepo ci caching
+- **Source:** custom
+- **Version:** 1.0.0
+
+Operate a monorepo: package boundaries, workspace tooling, affected-only CI, versioning strategy and safe incremental builds.
+
+### `development.nestjs-expert`
+
+Structure NestJS services: modules and providers, dependency injection scopes, guards and interceptors, validation pipes and testing with a real DI graph.
+
+- **Risk:** low
+- **Path:** `development/nestjs-expert`
+- **Aliases:** `nestjs`
+- **Triggers:**
+  - nestjs module structure
+  - nestjs guard interceptor
+  - nestjs dependency injection scope
+  - nestjs validation pipe
+  - nestjs testing module
+- **Source:** custom
+- **Version:** 1.0.0
+
+Structure NestJS services: modules and providers, dependency injection scopes, guards and interceptors, validation pipes and testing with a real DI graph.
 
 ### `development.performance-optimization`
 
@@ -664,4 +774,22 @@ Require fresh evidence before claiming that implementation work is complete or c
 - **Version:** 1.0.0
 
 Require fresh evidence before claiming that implementation work is complete or correct. The reviewed upstream workflow is preserved in `references/upstream-SKILL.md`.
+
+### `development.websocket-realtime`
+
+Build realtime features with WebSockets and SSE: connection lifecycle, fan-out and rooms, backpressure, reconnection and horizontal scaling.
+
+- **Risk:** medium
+- **Path:** `development/websocket-realtime`
+- **Aliases:** —
+- **Triggers:**
+  - websocket scaling design
+  - sse vs websocket
+  - realtime fanout rooms
+  - websocket reconnection strategy
+  - socket backpressure
+- **Source:** custom
+- **Version:** 1.0.0
+
+Build realtime features with WebSockets and SSE: connection lifecycle, fan-out and rooms, backpressure, reconnection and horizontal scaling.
 

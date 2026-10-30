@@ -1,6 +1,7 @@
 ---
 name: dealer-ai-readiness-audit
-description: "Run the 75-point Dealer AI Readiness Audit on a franchise or independent car dealership. Use when the user asks to "audit dealer AI readiness", "run the dealer readiness checklist", "is my dealership AI-ready", "score my dealership", "evaluate my dealership's preparedness for AI", "find AI gaps at my dealership", "what AI should I buy for my dealership", "do an AI assessment of our store", or any request to assess a car dealer's preparedness for buying, piloting, or scaling AI tools. Also activates when discussing dealership operational gaps, governance for AI vendors, FTC Safeguards readiness in the context of AI, or AI strategy for franchise auto retail. Authored by Ariel Coro of Dealer AI Guy."
+description: >-
+  Run the 75-point Dealer AI Readiness Audit on a franchise or independent car dealership. Use when the user asks to "audit dealer AI readiness", "run the dealer readiness checklist", "is my dealership AI-ready", "score my dealership", "evaluate my dealership's preparedness for AI", "find AI gaps at my dealership", "what AI should I buy for my dealership", "do an AI assessment of our store", or any request to assess a car dealer's preparedness for buying, piloting, or scaling AI tools. Also activates when discussing dealership operational gaps, governance for AI vendors, FTC Safeguards readiness in the context of AI, or AI strategy for franchise auto retail. Authored by Ariel Coro of Dealer AI Guy.
 category: franchise-management
 domain: franchise-management
 subdomain: general
@@ -20,8 +21,6 @@ platforms:
   - antigravity
   - copilot
 ---
-
-
 # Dealer AI Readiness Audit
 
 This skill runs the 75-point Dealer AI Readiness Audit on a franchise or independent car dealership. It produces a quantified readiness score across 17 sections of dealership operations, places the dealership in one of four bands, and outputs a sequenced remediation roadmap.

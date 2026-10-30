@@ -1,6 +1,7 @@
 ---
 name: workflow-orchestration
-description: "Orchestrates structured task execution with planning, progress tracking, self-improvement, and verification gates. Use at the start of any coding session, when given a non-trivial task (3+ steps or architectural decisions), when corrected by the user, when fixing bugs, or when the user mentions "plan", "todo", "track progress", "verify", "lessons learned", "fix this bug", or "task management". Applies to all coding workflows where structured methodology improves quality and reduces mistakes."
+description: >-
+  Orchestrates structured task execution with planning, progress tracking, self-improvement, and verification gates. Use at the start of any coding session, when given a non-trivial task (3+ steps or architectural decisions), when corrected by the user, when fixing bugs, or when the user mentions "plan", "todo", "track progress", "verify", "lessons learned", "fix this bug", or "task management". Applies to all coding workflows where structured methodology improves quality and reduces mistakes.
 category: developer-tools
 domain: developer-tools
 subdomain: general
@@ -20,8 +21,6 @@ platforms:
   - antigravity
   - copilot
 ---
-
-
 # Workflow Orchestration
 
 Skill for structured task execution across coding sessions. Ensures consistent planning, progress tracking, quality verification, and continuous self-improvement.

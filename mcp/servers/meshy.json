@@ -1,0 +1,46 @@
+{
+  "id": "meshy",
+  "name": "Meshy 3D",
+  "description": "Generate 3D models and textures from text or image prompts through the Meshy API.",
+  "category": "3d",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "gwizards",
+  "official": false,
+  "command": "npx",
+  "args": [
+    "-y",
+    "meshy-mcp-server"
+  ],
+  "required_env": [
+    "MESHY_API_KEY"
+  ],
+  "risk": "medium",
+  "license": "MIT",
+  "docs": "https://github.com/gwizards/meshy-mcp-server",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

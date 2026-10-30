@@ -1,0 +1,44 @@
+{
+  "id": "google-cloud-run",
+  "name": "Google Cloud Run",
+  "description": "Deploy container images to Cloud Run, read service logs and manage revisions.",
+  "category": "cloud",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "google",
+  "official": true,
+  "command": "npx",
+  "args": [
+    "-y",
+    "cloud-run-mcp@latest"
+  ],
+  "required_env": [],
+  "risk": "high",
+  "license": "Apache-2.0",
+  "docs": "https://github.com/GoogleCloudPlatform/cloud-run-mcp",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

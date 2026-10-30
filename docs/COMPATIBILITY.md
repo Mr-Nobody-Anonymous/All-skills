@@ -59,7 +59,20 @@ python scripts/setup_skills.py --status
 
 ## 🔌 Model Context Protocol (MCP) Support
 
-All Skills includes a standardized [`mcp_config.json`](../mcp_config.json):
+All Skills includes a standardized [`mcp_config.json`](../mcp_config.json) with the keyless
+`core` profile (`filesystem`, `git`, `fetch`, `memory`, `time`):
 - **Claude Code**: Reads `mcp_config.json` directly.
 - **Cursor**: Configure MCP under `Cursor Settings` ➔ `Features` ➔ `MCP` or link `mcp_config.json`.
 - **Antigravity**: Native MCP discovery via `mcp_config.json`.
+
+For anything beyond that baseline do not hand-edit the file — install from the catalog, which
+knows every harness's dialect and every server's credentials:
+
+```bash
+allskills mcp list --profile standard                 # 20 keyless/single-token connectors
+allskills mcp install --harness claude --profile full # all 113
+allskills mcp doctor                                  # which keys are still missing
+```
+
+The catalog lives in [`mcps/catalog.json`](../mcps/catalog.json); the full matrix (tier,
+category, risk, `required_env`) is regenerated into [`MCP-CATALOG.md`](MCP-CATALOG.md).

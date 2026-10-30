@@ -1,0 +1,47 @@
+{
+  "id": "clickhouse",
+  "name": "ClickHouse",
+  "description": "Run read-only analytical SQL against ClickHouse clusters.",
+  "category": "database",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "clickhouse",
+  "official": true,
+  "command": "uvx",
+  "args": [
+    "mcp-clickhouse"
+  ],
+  "required_env": [
+    "CLICKHOUSE_HOST",
+    "CLICKHOUSE_USER",
+    "CLICKHOUSE_PASSWORD"
+  ],
+  "risk": "medium",
+  "license": "Apache-2.0",
+  "docs": "https://github.com/ClickHouse/mcp-clickhouse",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

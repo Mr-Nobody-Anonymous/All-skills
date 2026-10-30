@@ -1,0 +1,47 @@
+{
+  "id": "sonarqube",
+  "name": "SonarQube",
+  "description": "Code quality gates, issues and coverage from a SonarQube or SonarCloud instance.",
+  "category": "testing",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "sapientpants",
+  "official": false,
+  "command": "npx",
+  "args": [
+    "-y",
+    "sonarqube-mcp-server@latest"
+  ],
+  "required_env": [
+    "SONARQUBE_URL",
+    "SONARQUBE_TOKEN"
+  ],
+  "risk": "medium",
+  "license": "MIT",
+  "docs": "https://github.com/SapientPants/sonarqube-mcp-server",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

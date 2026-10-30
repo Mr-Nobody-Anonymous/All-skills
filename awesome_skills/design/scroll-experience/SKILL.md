@@ -1,4 +1,5 @@
----name: scroll-experience
+---
+name: scroll-experience
 description: "Expert in building immersive scroll-driven experiences - parallax storytelling, scroll animations, interactive narratives, and cinematic web experiences. Like NY Times interactives, Apple product pages, and award-winning web experiences. Makes websites feel like experiences, not just pages. Use when: scroll animation, parallax, scroll storytelling, interactive story, **cinematic** website."
 source: "https://github.com/liuchiawei/agent-skills"
 source_repository: "liuchiawei/agent-skills"

@@ -1,4 +1,5 @@
----name: interpreting-surgical-pathology
+---
+name: interpreting-surgical-pathology
 language: en
 description: Structures surgical pathology reports with diagnosis, staging, margins, and prognostic markers. Use when interpreting biopsies, creating pathology reports, or documenting tissue diagnoses.
 tags:

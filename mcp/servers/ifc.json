@@ -1,0 +1,43 @@
+{
+  "id": "ifc",
+  "name": "IFC / BIM",
+  "description": "Query IFC building models: spaces, elements, property sets and quantities for coordination and take-offs.",
+  "category": "cad",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "imants",
+  "official": false,
+  "command": "uvx",
+  "args": [
+    "ifc-mcp"
+  ],
+  "required_env": [],
+  "risk": "low",
+  "license": "Unknown",
+  "docs": "https://pypi.org/project/ifc-mcp/",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

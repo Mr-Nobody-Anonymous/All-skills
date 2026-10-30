@@ -1,6 +1,7 @@
 ---
 name: dealer-cta-audit
-description: "Audit calls-to-action (CTAs) on car dealership website pages for conversion effectiveness. Use when the user asks to "audit my CTAs", "dealer CTA audit", "improve conversion on my dealer site", "why aren't customers clicking", "CTA visibility audit", "mobile CTA audit", "click-to-call audit", "lead form audit", "primary CTA hierarchy", "above-the-fold CTA check", "sticky CTA audit", or any request to evaluate or improve the call-to-action effectiveness on a car dealer website. Conversion-focused across 6 dimensions: visibility and prominence, hierarchy (primary vs secondary CTAs), mobile UX (touch targets, click-to-call, sticky CTAs), copy quality (specific action verbs, no "click here"), page-type fit (right CTAs for SRP, VDP, service, finance pages), and tracking (GA4 events, conversion tracking). Auto-detects input: single page deep-dive, sample of 5-10 pages, or full-site CTA sweep. Outputs per-page CTA inventory plus scorecard, summary headline, per-page detail, and prioritized fix list with specific recommendations for each issue. Pairs with dealer-vdp-merchandising-review (which audits VDP-level merchandising including some CTA elements) and dealer-site-score (which scores CTAs as one of 10 technical dimensions). Authored by Ariel Coro of Dealer AI Guy."
+description: >-
+  Audit calls-to-action (CTAs) on car dealership website pages for conversion effectiveness. Use when the user asks to "audit my CTAs", "dealer CTA audit", "improve conversion on my dealer site", "why aren't customers clicking", "CTA visibility audit", "mobile CTA audit", "click-to-call audit", "lead form audit", "primary CTA hierarchy", "above-the-fold CTA check", "sticky CTA audit", or any request to evaluate or improve the call-to-action effectiveness on a car dealer website. Conversion-focused across 6 dimensions: visibility and prominence, hierarchy (primary vs secondary CTAs), mobile UX (touch targets, click-to-call, sticky CTAs), copy quality (specific action verbs, no "click here"), page-type fit (right CTAs for SRP, VDP, service, finance pages), and tracking (GA4 events, conversion tracking). Auto-detects input: single page deep-dive, sample of 5-10 pages, or full-site CTA sweep. Outputs per-page CTA inventory plus scorecard, summary headline, per-page detail, and prioritized fix list with specific recommendations for each issue. Pairs with dealer-vdp-merchandising-review (which audits VDP-level merchandising including some CTA elements) and dealer-site-score (which scores CTAs as one of 10 technical dimensions). Authored by Ariel Coro of Dealer AI Guy.
 category: franchise-management
 domain: franchise-management
 subdomain: general
@@ -20,8 +21,6 @@ platforms:
   - antigravity
   - copilot
 ---
-
-
 # Dealer CTA Audit
 
 This skill audits calls-to-action (CTAs) on car dealership website pages for conversion effectiveness. The output names every CTA, scores it across 6 conversion-focused dimensions, and recommends specific fixes for each issue found.

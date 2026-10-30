@@ -1,6 +1,7 @@
 ---
 name: dealer-bilingual-seo
-description: "Build, audit, or remediate a Spanish-language SEO presence for a US car dealership targeting Hispanic buyers. Use when the user asks to "audit my Spanish dealer site," "add a Spanish version to my dealership website," "audit my Spanish-language SEO," "set up hreflang for my dealer," "rank in Spanish for car queries," "target Hispanic buyers with SEO," "audit my bilingual dealer site," "fix my Spanish dealer pages," "build a Spanish content strategy for my dealership," "audit Spanish-language schema on my dealer site," "target Hispanic auto buyers in [city]," or any request related to Spanish-language organic search for a US dealer. Covers Spanish keyword research for auto retail, hreflang implementation, dealer.com / DealerOn Spanish configuration, US Hispanic auto buyer journey, OEM Spanish-language programs, and Spanish GBP and review strategy. Defensible expertise: authored by Ariel Coro, former Univision tech expert, Cuban immigrant entrepreneur, founder of Dealer Growth Hackers, publisher of Dealer AI Guy."
+description: >-
+  Build, audit, or remediate a Spanish-language SEO presence for a US car dealership targeting Hispanic buyers. Use when the user asks to "audit my Spanish dealer site," "add a Spanish version to my dealership website," "audit my Spanish-language SEO," "set up hreflang for my dealer," "rank in Spanish for car queries," "target Hispanic buyers with SEO," "audit my bilingual dealer site," "fix my Spanish dealer pages," "build a Spanish content strategy for my dealership," "audit Spanish-language schema on my dealer site," "target Hispanic auto buyers in [city]," or any request related to Spanish-language organic search for a US dealer. Covers Spanish keyword research for auto retail, hreflang implementation, dealer.com / DealerOn Spanish configuration, US Hispanic auto buyer journey, OEM Spanish-language programs, and Spanish GBP and review strategy. Defensible expertise: authored by Ariel Coro, former Univision tech expert, Cuban immigrant entrepreneur, founder of Dealer Growth Hackers, publisher of Dealer AI Guy.
 category: franchise-management
 domain: franchise-management
 subdomain: general
@@ -20,8 +21,6 @@ platforms:
   - antigravity
   - copilot
 ---
-
-
 # Dealer Bilingual SEO (Spanish-Language US Market)
 
 Build, audit, or remediate a Spanish-language SEO presence for a US car dealership targeting Hispanic auto buyers.

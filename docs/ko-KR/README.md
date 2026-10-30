@@ -1,4 +1,4 @@
-**언어:** [English](../../README.md) | [Português (Brasil)](../pt-BR/README.md) | [简体中文](../../README.zh-CN.md) | [繁體中文](../zh-TW/README.md) | [日本語](../ja-JP/README.md) | 한국어 | [Türkçe](../tr/README.md) | [Русский](../ru/README.md) | [Tiếng Việt](../vi-VN/README.md) | [ไทย](../th/README.md) | [Deutsch](../de-DE/README.md) | [Українська](../uk-UA/README.md)
+**언어:** [English](../../README.md) | [Português (Brasil)](../pt-BR/README.md) | [简体中文](../zh-CN/README.md) | [繁體中文](../zh-TW/README.md) | [日本語](../ja-JP/README.md) | 한국어 | [Türkçe](../tr/README.md) | [Русский](../ru/README.md) | [Tiếng Việt](../vi-VN/README.md) | [ไทย](../th/README.md) | [Deutsch](../de-DE/README.md) | [Українська](../uk-UA/README.md)
 
 # Everything Claude Code
 
@@ -24,7 +24,7 @@
 
 **Language / 语言 / 語言 / 언어 / Dil / Язык / Ngôn ngữ**
 
-[**English**](../../README.md) | [Português (Brasil)](../pt-BR/README.md) | [简体中文](../../README.zh-CN.md) | [繁體中文](../zh-TW/README.md) | [日本語](../ja-JP/README.md) | [한국어](README.md) | [Türkçe](../tr/README.md) | [Русский](../ru/README.md) | [Tiếng Việt](../vi-VN/README.md) | [ไทย](../th/README.md) | [Deutsch](../de-DE/README.md) | [Українська](../uk-UA/README.md)
+[**English**](../../README.md) | [Português (Brasil)](../pt-BR/README.md) | [简体中文](../zh-CN/README.md) | [繁體中文](../zh-TW/README.md) | [日本語](../ja-JP/README.md) | [한국어](README.md) | [Türkçe](../tr/README.md) | [Русский](../ru/README.md) | [Tiếng Việt](../vi-VN/README.md) | [ไทย](../th/README.md) | [Deutsch](../de-DE/README.md) | [Українська](../uk-UA/README.md)
 
 </div>
 
@@ -703,7 +703,7 @@ Claude Code 사용 비용이 부담된다면 토큰 소비를 관리해야 합�
 
 이 프로젝트는 무료 오픈소스입니다. 스폰서의 지원으로 유지보수와 성장이 이루어집니다.
 
-[**스폰서 되기**](https://github.com/sponsors/Mr-Nobody-Anonymous) | [스폰서 티어](../../SPONSORS.md) | [스폰서십 프로그램](../../SPONSORING.md)
+[**스폰서 되기**](https://github.com/sponsors/Mr-Nobody-Anonymous) | [스폰서 티어](https://github.com/affaan-m/ECC/blob/main/SPONSORS.md) | [스폰서십 프로그램](https://github.com/affaan-m/ECC/blob/main/SPONSORING.md)
 
 ---
 

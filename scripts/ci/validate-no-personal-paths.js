@@ -100,8 +100,49 @@ for (const file of files) {
   }
 }
 
+// ── symlinks ───────────────────────────────────────────────────────────────
+// `git ls-files -s` reports symlinks with mode 120000; the blob content is the
+// link target, which is what `git show :<path>` prints.
+const { execFileSync } = require('child_process');
+
+function trackedSymlinks() {
+  let listing;
+  try {
+    listing = execFileSync('git', ['ls-files', '-s'], { cwd: ROOT, encoding: 'utf8' });
+  } catch {
+    return null; // not a git checkout (npm package / sdist): nothing to check
+  }
+  const links = [];
+  for (const line of listing.split('\n')) {
+    if (!line.trim()) continue;
+    const [meta, ...rest] = line.split('\t');
+    if (meta.split(/\s+/)[0] !== '120000') continue;
+    const file = rest.join('\t');
+    const target = execFileSync('git', ['show', `:${file}`], { cwd: ROOT, encoding: 'utf8' }).trim();
+    links.push({ file, target });
+  }
+  return links;
+}
+
+const links = trackedSymlinks();
+if (links) {
+  for (const { file, target } of links) {
+    if (path.isAbsolute(target)) {
+      console.error(`ERROR: symlink ${file} has an absolute target "${target}"`);
+      failures += 1;
+      continue;
+    }
+    const resolved = path.resolve(path.dirname(path.join(ROOT, file)), target);
+    const relative = path.relative(ROOT, resolved);
+    if (relative.startsWith('..') || path.isAbsolute(relative)) {
+      console.error(`ERROR: symlink ${file} points outside the repository "${target}"`);
+      failures += 1;
+    }
+  }
+}
+
 if (failures > 0) {
   process.exit(1);
 }
 
-console.log('Validated: no personal absolute paths in shipped docs/skills/commands');
+console.log('Validated: no personal absolute paths or machine-local symlinks in shipped files');

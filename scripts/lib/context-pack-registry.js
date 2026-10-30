@@ -27,14 +27,29 @@ function validateModules(document) {
 }
 
 function discoverSkills(reader, root) {
-  return reader.list(root).filter(name => {
-    const skillRoot = `${root}/${name}`;
-    if (isExcludedResource(skillRoot)) return false;
-    const absolute = reader.resolve(skillRoot);
-    if (!fs.statSync(absolute).isDirectory()) return false;
+  // A canonical skill is any directory below the inventory root that carries a
+  // SKILL.md. Both layouts are supported: the flat `root/<skill>` form used by
+  // the install-owned skill tree and the `root/<category>/<skill>` form used by
+  // the catalog library. The skill ID is the leaf directory name.
+  const found = new Map();
+  for (const { path: resourcePath } of reader.walk(root)) {
+    if (!resourcePath.endsWith('/SKILL.md')) continue;
+    const skillRoot = resourcePath.slice(0, -'/SKILL.md'.length);
+    if (isExcludedResource(skillRoot)) continue;
+    const name = path.posix.basename(skillRoot);
+    // Reserved/internal directories (e.g. `_quarantine`) are engineering
+    // boundaries rather than publishable skills; the Python loaders skip them
+    // the same way, so discovery must not reject them as malformed skill IDs.
+    if (/^[._]/.test(name)) continue;
     if (!ID_PATTERN.test(name)) throw new Error(`Invalid canonical skill ID: ${name}`);
-    return reader.list(skillRoot).includes('SKILL.md');
-  });
+    if (found.has(name)) {
+      throw new Error(`Duplicate canonical skill ID: ${name} (${found.get(name)} and ${skillRoot})`);
+    }
+    found.set(name, skillRoot);
+  }
+  return [...found.entries()]
+    .map(([name, dir]) => ({ name, dir }))
+    .sort((left, right) => (left.name < right.name ? -1 : left.name > right.name ? 1 : 0));
 }
 
 function parseMetadata(resource) {
@@ -78,8 +93,7 @@ function validateDependencies(entries) {
   entries.forEach(entry => visit(entry.id));
 }
 
-function buildEntry(reader, modules, root, name, override = {}) {
-  const skillRoot = `${root}/${name}`;
+function buildEntry(reader, modules, skillRoot, name, override = {}) {
   const sourcePath = `${skillRoot}/SKILL.md`;
   const owners = modules.filter(module => module.paths.some(source => sourcePath === source || sourcePath.startsWith(`${source}/`)));
   if (owners.length !== 1) throw new Error(`Skill ${name} requires exactly one owner; found ${owners.length}`);
@@ -109,9 +123,9 @@ function loadContextRegistry({ repoRoot = DEFAULT_REPO_ROOT } = {}) {
   const manifest = reader.json(REGISTRY_PATH);
   validateSchema(manifest, 'context-pack-registry.schema.json');
   const modules = validateModules(reader.json(manifest.inventory.source));
-  const names = discoverSkills(reader, manifest.inventory.skillsRoot);
-  const overrides = indexedOverrides(manifest.overrides, new Set(names.map(name => `skill:${name}`)));
-  const entries = names.map(name => buildEntry(reader, modules, manifest.inventory.skillsRoot, name, overrides.get(`skill:${name}`)));
+  const discovered = discoverSkills(reader, manifest.inventory.skillsRoot);
+  const overrides = indexedOverrides(manifest.overrides, new Set(discovered.map(skill => `skill:${skill.name}`)));
+  const entries = discovered.map(skill => buildEntry(reader, modules, skill.dir, skill.name, overrides.get(`skill:${skill.name}`)));
   validateDependencies(entries);
   const value = {
     schemaVersion: 'ecc.context-registry.v1', id: manifest.id,

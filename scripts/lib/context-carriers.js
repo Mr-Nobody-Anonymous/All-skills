@@ -39,8 +39,14 @@ function validateEntryResources(entry) {
   if (!Array.isArray(entry.resources) || !entry.resources.length || !Array.isArray(entry.requiredResources)) {
     throw new Error(`Missing resource inventory or required-resource metadata: ${entry.id}`);
   }
-  const sourceRoot = `skills/${entry.id.slice('skill:'.length)}`;
-  if (entry.sourcePath !== `${sourceRoot}/SKILL.md`) {
+  // The inventory root is declared by the registry manifest, not hardcoded:
+  // a checkout may enumerate the install-owned flat tree or the
+  // category-nested catalog library. The entrypoint must still be
+  // `<root>/.../<leaf>/SKILL.md` for the ID's leaf name.
+  const leaf = entry.id.slice('skill:'.length);
+  const sourceRoot = typeof entry.sourcePath === 'string' && entry.sourcePath.endsWith(`/${leaf}/SKILL.md`)
+    ? entry.sourcePath.slice(0, -'/SKILL.md'.length) : null;
+  if (!sourceRoot || !/^[A-Za-z0-9._-]+(?:\/[A-Za-z0-9._-]+)*$/.test(sourceRoot)) {
     throw new Error(`Source resource is not the canonical skill entrypoint: ${entry.id}`);
   }
   const resources = new Set();

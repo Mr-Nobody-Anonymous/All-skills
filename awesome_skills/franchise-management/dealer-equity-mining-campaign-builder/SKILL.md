@@ -1,6 +1,7 @@
 ---
 name: dealer-equity-mining-campaign-builder
-description: "Build a complete equity mining campaign for a car dealership. Use when the user asks to "build an equity mining campaign", "design a service-to-sales campaign", "create equity mining outreach", "S2S campaign", "lease return campaign", "mine my CRM for trade opportunities", "outreach for customers in positive equity", "design a multi-channel campaign for upgrades", "trade-up campaign", or any request to plan and write campaigns targeting current customers who could trade, upgrade, or buy their next vehicle. Outputs both a campaign blueprint (cadence, channels, gates, KPIs) and ready-to-use messaging templates (SMS, email, ringless voicemail) across the 3-channel cadence. Includes compliance guardrails (opt-in gates, suppression checks, frequency caps) baked into every touch. Authored by Ariel Coro of Dealer AI Guy."
+description: >-
+  Build a complete equity mining campaign for a car dealership. Use when the user asks to "build an equity mining campaign", "design a service-to-sales campaign", "create equity mining outreach", "S2S campaign", "lease return campaign", "mine my CRM for trade opportunities", "outreach for customers in positive equity", "design a multi-channel campaign for upgrades", "trade-up campaign", or any request to plan and write campaigns targeting current customers who could trade, upgrade, or buy their next vehicle. Outputs both a campaign blueprint (cadence, channels, gates, KPIs) and ready-to-use messaging templates (SMS, email, ringless voicemail) across the 3-channel cadence. Includes compliance guardrails (opt-in gates, suppression checks, frequency caps) baked into every touch. Authored by Ariel Coro of Dealer AI Guy.
 category: franchise-management
 domain: franchise-management
 subdomain: general
@@ -20,8 +21,6 @@ platforms:
   - antigravity
   - copilot
 ---
-
-
 # Dealer Equity Mining Campaign Builder
 
 This skill produces a complete equity mining campaign: the blueprint (cadence, channels, gates, success metrics) plus the messaging templates (SMS, email, ringless voicemail copy for every touch) ready to drop into the dealer's CRM or outreach stack.

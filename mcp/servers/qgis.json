@@ -1,0 +1,46 @@
+{
+  "id": "qgis",
+  "name": "QGIS",
+  "description": "Drive a running QGIS desktop session: add and style layers, run processing algorithms, export maps and inspect the project tree.",
+  "category": "geospatial",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "wiseman",
+  "official": false,
+  "command": "npx",
+  "args": [
+    "-y",
+    "qgis-mcp@latest"
+  ],
+  "required_env": [
+    "QGIS_MCP_PORT"
+  ],
+  "risk": "medium",
+  "license": "MIT",
+  "docs": "https://github.com/wiseman/qgis_mcp",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}

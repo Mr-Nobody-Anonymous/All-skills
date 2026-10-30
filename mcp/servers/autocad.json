@@ -1,0 +1,46 @@
+{
+  "id": "autocad",
+  "name": "AutoCAD",
+  "description": "Automate AutoCAD through its .NET backend: draw and modify entities, query drawings and export results.",
+  "category": "cad",
+  "tier": "full",
+  "transport": "stdio",
+  "vendor": "autocad-mcp",
+  "official": false,
+  "command": "npx",
+  "args": [
+    "-y",
+    "autocad-mcp"
+  ],
+  "required_env": [
+    "AUTOCAD_BACKEND_URL"
+  ],
+  "risk": "high",
+  "license": "MIT",
+  "docs": "https://www.npmjs.com/package/autocad-mcp",
+  "harnesses": [
+    "claude",
+    "cursor",
+    "codex",
+    "vscode",
+    "gemini",
+    "windsurf",
+    "cline",
+    "roo",
+    "goose",
+    "opencode",
+    "zed",
+    "qwen",
+    "kimi",
+    "hermes",
+    "openclaw",
+    "trae",
+    "codebuddy",
+    "continue"
+  ],
+  "policy": {
+    "policy": "least-privilege",
+    "read_only_default": true,
+    "require_approval_for_destructive": true
+  }
+}
