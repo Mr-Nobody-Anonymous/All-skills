@@ -181,6 +181,12 @@ jobs:
       - name: Integration skill suite is current
         run: python scripts/generate_integration_skills.py --check
 
+      # The multi-agent support table and registry/agents.json are rendered from
+      # platforms/platforms.yaml + compatibility/matrix.json, so a harness cannot
+      # be advertised without an adapter, and a tier cannot be typed by hand.
+      - name: Harness compatibility matrix is current
+        run: python scripts/generate_harness_matrix.py --check
+
       # The layout gates below are Node scripts that import js-yaml and ajv,
       # so the toolchain has to be installed in *this* job too — the install was
       # missing here, which made the step impossible to pass (it was masked while

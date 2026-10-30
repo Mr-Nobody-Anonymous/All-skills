@@ -37,5 +37,5 @@ Thank you for contributing to the **All-Skills Universal Platform**.
 
 1. Create a feature branch: `git checkout -b feat/add-my-skill`.
 2. Commit your changes with conventional commit messages: `feat(skills): add my-skill`.
-3. Run `allskills.bat doctor` to ensure all 11 platform harnesses are synchronized.
+3. Run `allskills.bat doctor` to ensure all 12 platform harnesses are synchronized.
 4. Submit the Pull Request for review.

@@ -10,6 +10,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Fixed
+- **The multi-agent compatibility table was wrong in both directions — and is now generated.**
+  - It claimed **Tier 4 Verified** for Claude Code, Cursor, Codex and Gemini, while
+    `compatibility/matrix.json` recorded `invocable: null` / `workflow_completed: null` for every
+    platform and held **zero** `manual_evidence` entries. Nothing backed the label.
+  - It listed **OpenClaw** (`.openclaw/skills/`) as Tier 3 Validated, but OpenClaw had no adapter,
+    no `registry/agents.json` entry and no `platforms/platforms.yaml` target — so `allskills doctor`
+    and `tests/test_agent_discovery.py` could not see it at all. It omitted **OpenCode**, which was
+    fully configured and shipping.
+  - Every row is now rendered from `compatibility/matrix.json` by the new
+    `scripts/generate_harness_matrix.py`, and the tier is *computed* from the recorded evidence:
+    Tier 4 needs `invocable` **and** `workflow_completed` backed by a `manual_evidence` entry,
+    Tier 3 needs `invocable`, Tier 2 is configured + discoverable. Current state: **12 harnesses,
+    all Tier 2 Scanned, 0 manual evidence** — which is what the data actually supports.
+  - `registry/agents.json` (11 → **12 agents**) is generated too, `adapters/openclaw.yaml` and the
+    `.openclaw/skills` link target were added, and `scripts/setup_tools.py` now links all 12.
+  - `scripts/verify_registry_integrity.py` cross-checks the three inventories: every agent in
+    `registry/agents.json` needs an existing adapter and a real `platforms.yaml` target, and every
+    adapter must be referenced by `platforms.yaml`. Its success line reported a hardcoded
+    "12 adapters … 11 agents" and now prints measured counts.
+  - `python scripts/generate_harness_matrix.py --check` runs in CI, and
+    `tests/test_portability.py::TestHarnessClaimsAreGenerated` fails if a tier outside the block
+    claims evidence that was never recorded.
+
 - **CI red across every runner, for three unrelated reasons — all reproduced locally and fixed.**
   - `Tests` (Ubuntu, macOS, Windows × Python 3.10/3.11/3.12) failed in
     `test_cli_contracts::test_verify_and_lock_pass_on_a_consistent_checkout` because

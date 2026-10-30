@@ -10,11 +10,13 @@ source_harness:
 
 local_targets:
   - id: antigravity
+    registry_id: gemini
     name: "Antigravity / Gemini CLI"
     path: ".agents/skills"
     adapter: "adapters/gemini.yaml"
     is_source: true
   - id: claude
+    registry_id: claude-code
     name: "Claude Code"
     path: ".claude/skills"
     adapter: "adapters/claude.yaml"
@@ -23,6 +25,7 @@ local_targets:
     path: ".cursor/skills"
     adapter: "adapters/cursor.yaml"
   - id: codex
+    registry_id: codex-cli
     name: "Codex CLI"
     path: ".codex/skills"
     adapter: "adapters/codex.yaml"
@@ -54,6 +57,13 @@ local_targets:
     name: "Block Goose"
     path: ".goose/skills"
     adapter: "adapters/goose.yaml"
+  # OpenClaw was advertised in README's compatibility table but had no adapter,
+  # no registry entry and no target here — so `allskills doctor` and
+  # `tests/test_agent_discovery.py` could not see it at all.
+  - id: openclaw
+    name: "OpenClaw"
+    path: ".openclaw/skills"
+    adapter: "adapters/openclaw.yaml"
 
 global_targets:
   - id: claude_global

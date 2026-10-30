@@ -1,7 +1,7 @@
 {
   "version": "2.0.0",
   "updated_at": "2026-09-25",
-  "description": "Compatibility evidence per agent. 'configured' and 'discoverable' are verified automatically (tests/test_adapters_conformance.py, tests/test_agent_discovery.py). 'invocable' and 'workflow_completed' require a manual check inside the named agent version and stay null until a matching entry is recorded in manual_evidence.",
+  "description": "Compatibility evidence per agent. 'configured' and 'discoverable' are verified automatically (tests/test_adapters_conformance.py, tests/test_agent_discovery.py). 'invocable' and 'workflow_completed' require a manual check inside the named agent version and stay null until a matching entry is recorded in manual_evidence. The README and docs/COMPATIBILITY.md tables are rendered from this file by scripts/generate_harness_matrix.py, so no tier label can be typed by hand.",
   "evidence_levels": {
     "configured": "An adapter configuration exists and validates.",
     "discoverable": "The agent's documented skills directory is linked to the source harness by scripts/setup_tools.py and every active SKILL.md meets the Agent Skills format (name, description).",
@@ -103,6 +103,15 @@
       "display_name": "Block Goose",
       "adapter": "adapters/goose.yaml",
       "discovery_path": ".goose/skills",
+      "configured": true,
+      "discoverable": true,
+      "invocable": null,
+      "workflow_completed": null
+    },
+    "openclaw": {
+      "display_name": "OpenClaw",
+      "adapter": "adapters/openclaw.yaml",
+      "discovery_path": ".openclaw/skills",
       "configured": true,
       "discoverable": true,
       "invocable": null,
