@@ -144,7 +144,7 @@ pytest-cov==7.1.0
     # via all-skills (pyproject.toml)
 pytest-github-actions-annotate-failures==0.4.2
     # via all-skills (pyproject.toml)
-python-discovery==1.6.4
+python-discovery==1.6.5
     # via virtualenv
 python-dotenv==1.2.4
     # via all-skills (pyproject.toml)
@@ -181,7 +181,7 @@ rpds-py==2026.6.3 ; python_full_version >= '3.11'
     # via
     #   jsonschema
     #   referencing
-ruff==0.17.2
+ruff==0.17.3
     # via all-skills (pyproject.toml)
 secretstorage==3.5.0 ; platform_machine != 'ppc64le' and platform_machine != 's390x' and sys_platform == 'linux'
     # via keyring
