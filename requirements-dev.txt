@@ -6,7 +6,7 @@
 # and restore this header. Dependabot keeps the pins current.
 anyio==4.15.1
     # via httpx
-ast-serialize==0.11.2
+ast-serialize==0.13.1
     # via mypy
 attrs==26.1.0
     # via
@@ -26,7 +26,7 @@ cffi==2.1.1 ; platform_machine != 'ppc64le' and platform_machine != 's390x' and 
     # via cryptography
 cfgv==3.5.0
     # via pre-commit
-charset-normalizer==3.5.1
+charset-normalizer==3.5.2
     # via requests
 click==8.5.0
     # via all-skills (pyproject.toml)
@@ -34,11 +34,11 @@ colorama==0.4.6 ; os_name == 'nt' or sys_platform == 'win32'
     # via
     #   build
     #   pytest
-coverage==7.16.1
+coverage==7.16.2
     # via pytest-cov
-cryptography==50.0.1 ; platform_machine != 'ppc64le' and platform_machine != 's390x' and sys_platform == 'linux'
+cryptography==50.0.2 ; platform_machine != 'ppc64le' and platform_machine != 's390x' and sys_platform == 'linux'
     # via secretstorage
-distlib==0.4.3
+distlib==0.4.4
     # via virtualenv
 docutils==0.23
     # via readme-renderer
@@ -46,7 +46,7 @@ exceptiongroup==1.3.1 ; python_full_version < '3.11'
     # via
     #   anyio
     #   pytest
-filelock==4.2.4
+filelock==4.2.4 ; python_version >= '3.11'
     # via
     #   python-discovery
     #   virtualenv
@@ -58,7 +58,7 @@ httpx==0.28.1
     # via all-skills (pyproject.toml)
 id==1.6.1
     # via twine
-identify==2.6.19
+identify==2.6.20
     # via pre-commit
 idna==3.20
     # via
@@ -69,7 +69,7 @@ importlib-metadata==9.0.1 ; (python_full_version < '3.10.2' and platform_machine
     # via
     #   build
     #   keyring
-iniconfig==2.3.0
+iniconfig==2.3.1
     # via pytest
 jaraco-classes==3.4.0 ; platform_machine != 'ppc64le' and platform_machine != 's390x'
     # via keyring
@@ -87,7 +87,7 @@ jsonschema-specifications==2025.9.1
     # via jsonschema
 keyring==25.7.0 ; platform_machine != 'ppc64le' and platform_machine != 's390x'
     # via twine
-librt==0.15.0 ; platform_python_implementation != 'PyPy'
+librt==0.16.0 ; platform_python_implementation != 'PyPy'
     # via mypy
 markdown-it-py==4.2.0
     # via rich
@@ -97,7 +97,7 @@ more-itertools==11.1.0 ; platform_machine != 'ppc64le' and platform_machine != '
     # via
     #   jaraco-classes
     #   jaraco-functools
-mypy==2.3.1
+mypy==2.4.0
     # via all-skills (pyproject.toml)
 mypy-extensions==1.1.0
     # via mypy
@@ -109,7 +109,7 @@ networkx==3.7 ; python_full_version >= '3.12'
     # via all-skills (pyproject.toml)
 nh3==0.3.7
     # via readme-renderer
-nodeenv==1.10.0
+nodeenv==1.11.0
     # via pre-commit
 packaging==26.3
     # via
@@ -118,15 +118,15 @@ packaging==26.3
     #   twine
 pathspec==1.1.1
     # via mypy
-platformdirs==4.11.13
+platformdirs==4.12.4
     # via virtualenv
-pluggy==1.6.0
+pluggy==1.7.0
     # via
     #   pytest
     #   pytest-cov
 pre-commit==4.6.2
     # via all-skills (pyproject.toml)
-pycparser==3.0 ; implementation_name != 'PyPy' and platform_machine != 'ppc64le' and platform_machine != 's390x' and platform_python_implementation != 'PyPy' and sys_platform == 'linux'
+pycparser==3.11 ; implementation_name != 'PyPy' and platform_machine != 'ppc64le' and platform_machine != 's390x' and platform_python_implementation != 'PyPy' and sys_platform == 'linux'
     # via cffi
 pygments==2.21.0
     # via
@@ -144,9 +144,9 @@ pytest-cov==7.1.0
     # via all-skills (pyproject.toml)
 pytest-github-actions-annotate-failures==0.4.2
     # via all-skills (pyproject.toml)
-python-discovery==1.6.1
+python-discovery==1.6.4
     # via virtualenv
-python-dotenv==1.2.3
+python-dotenv==1.2.4
     # via all-skills (pyproject.toml)
 pywin32-ctypes==0.2.3 ; platform_machine != 'ppc64le' and platform_machine != 's390x' and sys_platform == 'win32'
     # via keyring
@@ -181,7 +181,7 @@ rpds-py==2026.6.3 ; python_full_version >= '3.11'
     # via
     #   jsonschema
     #   referencing
-ruff==0.16.9
+ruff==0.17.2
     # via all-skills (pyproject.toml)
 secretstorage==3.5.0 ; platform_machine != 'ppc64le' and platform_machine != 's390x' and sys_platform == 'linux'
     # via keyring
@@ -195,7 +195,7 @@ twine==7.0.0
     # via all-skills (pyproject.toml)
 types-pyyaml==6.0.12.20260906
     # via all-skills (pyproject.toml)
-types-requests==2.33.0.20260906
+types-requests==2.33.0.20261006
     # via all-skills (pyproject.toml)
 typing-extensions==4.16.0
     # via
