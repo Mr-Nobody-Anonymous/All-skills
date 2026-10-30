@@ -9,9 +9,12 @@ title = "All-Skills Gitleaks configuration"
 useDefault = true
 
 [allowlist]
-description = "Generated integrity artefacts that contain only SHA-256 digests"
+description = "Generated integrity artefacts and historical test fixtures"
 paths = [
   '''(^|/)skills\.lock$''',
   '''(^|/)awesome_skills\.lock$''',
   '''(^|/)baselines/[^/]+/file_hashes\.json$''',
+]
+commits = [
+  "7854453571ca46e58823e2959cad7f63d41a4759",
 ]
