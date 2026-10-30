@@ -26,12 +26,17 @@ class TestAdaptersConformance(unittest.TestCase):
     def setUp(self):
         self.adapters_dir = _ROOT / "adapters"
 
-    def test_all_11_agent_configs_valid_yaml(self):
-        """All 11 agent configurations must exist and parse as valid YAML with required keys."""
-        agents = [
-            "claude", "cline", "codex", "copilot", "cursor",
-            "gemini", "goose", "opencode", "roo", "vscode", "windsurf"
-        ]
+    def test_every_agent_config_valid_yaml(self):
+        """Every harness adapter in adapters/ must parse as valid YAML with required keys.
+
+        Discovered from the directory instead of a frozen list: a hardcoded list of 11
+        meant a new adapter could be added (or an advertised harness stay missing)
+        without this test noticing.
+        """
+        agents = sorted(
+            p.stem for p in self.adapters_dir.glob("*.yaml") if p.stem != "agents"
+        )
+        self.assertTrue(len(agents) >= 11, f"expected at least 11 adapters, found {agents}")
         for agent in agents:
             config_file = self.adapters_dir / f"{agent}.yaml"
             self.assertTrue(config_file.exists(), f"Missing configuration file for agent: {agent}")

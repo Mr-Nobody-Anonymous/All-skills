@@ -17,6 +17,8 @@ import os
 import sys
 from pathlib import Path
 
+import yaml
+
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
 if hasattr(sys.stderr, "reconfigure"):
@@ -232,6 +234,30 @@ def check_lockfiles_and_schemas() -> tuple[bool, list[str]]:
         if len(adapters) < 11:
             errors.append(f"Expected at least 11 adapters, found {len(adapters)}")
 
+        # A harness advertised anywhere must be linked here, with an adapter that
+        # points at a directory platforms.yaml actually materialises. OpenClaw was
+        # in README's compatibility table with none of the three, so nothing could
+        # notice it was missing.
+        try:
+            registry = json.loads((REPO_ROOT / "registry" / "agents.json").read_text(encoding="utf-8"))
+            platforms = yaml.safe_load((REPO_ROOT / "platforms" / "platforms.yaml").read_text(encoding="utf-8")) or {}
+            targets = {t["path"]: t for t in platforms.get("local_targets", [])}
+            for key, agent in (registry.get("agents") or {}).items():
+                adapter_path = REPO_ROOT / str(agent.get("adapter", ""))
+                if not adapter_path.is_file():
+                    errors.append(f"agent {key}: adapter {agent.get('adapter')} does not exist")
+                    continue
+                if str(agent.get("workspace_path")) not in targets:
+                    errors.append(f"agent {key}: workspace_path {agent.get('workspace_path')} is not a platforms.yaml target")
+            declared = {str(a.get("adapter")) for a in targets.values()}
+            for adapter in sorted(p.name for p in adapters):
+                if adapter in ("agents.yaml",):
+                    continue  # ecosystem manifest, not a harness adapter
+                if f"adapters/{adapter}" not in declared:
+                    errors.append(f"adapters/{adapter} is not referenced by platforms/platforms.yaml")
+        except Exception as e:  # noqa: BLE001 - surface as a gate failure, not a traceback
+            errors.append(f"harness/platform inventory could not be cross-checked: {e}")
+
     # 3. Profiles
     prof_reg = REPO_ROOT / "registry" / "profiles.json"
     if not prof_reg.exists():
@@ -296,7 +322,11 @@ def main() -> int:
     l_ok, l_errs = check_lockfiles_and_schemas()
     if l_ok:
         passed_checks += 1
-        print("  [PASS] Integrity Checks: Lockfiles, 12 adapters, 20 profiles, 11 agents valid")
+        n_adapters = len(list((REPO_ROOT / "adapters").glob("*.yaml")))
+        n_profiles = len(json.loads((REPO_ROOT / "registry" / "profiles.json").read_text(encoding="utf-8")).get("profiles", []))
+        agents_reg = REPO_ROOT / "registry" / "agents.json"
+        n_agents = json.loads(agents_reg.read_text(encoding="utf-8")).get("total", 0) if agents_reg.exists() else 0
+        print(f"  [PASS] Integrity Checks: Lockfiles, {n_adapters} adapters, {n_profiles} profiles, {n_agents} agents valid")
     else:
         all_passed = False
         print("  [FAIL] Architectural Artifacts Drift:")

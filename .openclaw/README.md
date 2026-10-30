@@ -1,21 +1,28 @@
-# ECC for OpenClaw
+# OpenClaw harness
 
-This directory contains the ECC (Everything Claude Code) configuration for the OpenClaw harness.
+OpenClaw is one of the 12 agent harnesses this repository installs into.
 
-## What is installed
+## Skills
 
-- `rules/ecc/` — shared coding rules and guidelines
-- `skills/ecc/` — reusable skills
-- `commands/` — slash commands
-- `AGENTS.md` — agent instructions
-
-## Manual install
+`skills/` here is a **generated link** to the canonical harness source
+(`.agents/skills/`), created per machine:
 
 ```bash
-bash ./install.sh --target openclaw --profile minimal
+python scripts/setup_tools.py            # link every harness, including this one
+python scripts/setup_tools.py --status   # show link state per harness
 ```
 
-## Notes
+It is excluded from git (`.gitignore`) because it duplicates the whole skill
+library; the tracked source of truth is `.agents/skills/`.
 
-- OpenClaw config files (`openclaw.json`, `config.toml`, `.env`, etc.) are **not** touched by ECC install.
-- Use `npx ecc-universal doctor --target openclaw` to check install health.
+## MCP connectors
+
+```bash
+allskills mcp install --harness openclaw --profile standard
+```
+
+## Evidence level
+
+`compatibility/matrix.json` records this harness as configured + discoverable
+(verified automatically). Invocable and workflow-completed stay empty until
+someone records a manual check — see `docs/COMPATIBILITY.md`.

@@ -336,6 +336,7 @@ def get_platform_targets() -> Tuple[Path, List[Dict[str, Any]], List[Dict[str, A
             {"name": "Cline",                     "path": ROOT / ".cline" / "skills"},
             {"name": "Roo Code",                  "path": ROOT / ".roo" / "skills"},
             {"name": "Block Goose",               "path": ROOT / ".goose" / "skills"},
+            {"name": "OpenClaw",                  "path": ROOT / ".openclaw" / "skills"},
         ]
         glob = [
             {"name": "Claude Code (Global)",    "path": HOME / ".claude" / "skills"},

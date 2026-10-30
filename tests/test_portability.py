@@ -167,5 +167,72 @@ class TestCIJobsInstallWhatTheyRun(unittest.TestCase):
         self.assertEqual(missing, [], f"CI references gates that do not exist: {missing}")
 
 
+class TestHarnessClaimsAreGenerated(unittest.TestCase):
+    """No compatibility claim may be hand-typed.
+
+    README used to carry a hand-written table claiming "Tier 4 Verified" for four
+    harnesses while compatibility/matrix.json recorded zero manual evidence, and
+    listing OpenClaw — which had no adapter, no registry entry and no
+    platforms.yaml target — while omitting OpenCode, which shipped. The table is
+    now rendered by scripts/generate_harness_matrix.py; these tests keep it that
+    way.
+    """
+
+    README_BLOCK = "harness-compatibility"
+    # Only the evidence-tier vocabulary — README also has an unrelated "Tier 4-6"
+    # difficulty scale for skills, which is a different concept.
+    TIERS = (r"Tier \d (?:Verified|Validated|Scanned|Configured)",)
+
+    def test_generated_tables_are_current(self) -> None:
+        result = subprocess.run(
+            [sys.executable, "scripts/generate_harness_matrix.py", "--check"],
+            cwd=ROOT, capture_output=True, text=True, check=False,
+        )
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+
+    def test_readme_table_is_inside_a_generated_block(self) -> None:
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        self.assertIn(f"BEGIN GENERATED: {self.README_BLOCK}", readme)
+        doc = (ROOT / "docs" / "COMPATIBILITY.md").read_text(encoding="utf-8")
+        self.assertIn(f"BEGIN GENERATED: {self.README_BLOCK}", doc)
+        # The block must be the only place the tier vocabulary appears in the readme.
+        outside = readme.split(f"BEGIN GENERATED: {self.README_BLOCK}")[0] + \
+            readme.split(f"END GENERATED: {self.README_BLOCK}")[-1]
+        for tier in self.TIERS:
+            self.assertNotRegex(outside, tier, f"{tier} appears outside the generated table")
+
+    def test_no_tier_claims_evidence_that_was_never_recorded(self) -> None:
+        """A tier above 2 requires matching manual_evidence entries."""
+        matrix = json.loads((ROOT / "compatibility" / "matrix.json").read_text(encoding="utf-8"))
+        evidence = matrix.get("manual_evidence") or []
+        for key, claim in matrix["platforms"].items():
+            if claim.get("invocable"):
+                self.assertTrue(any(e["platform"] == key and e["level"] == "invocable" for e in evidence),
+                                f"{key} claims invocable with no recorded evidence")
+            if claim.get("workflow_completed"):
+                self.assertTrue(any(e["platform"] == key and e["level"] == "workflow_completed" for e in evidence),
+                                f"{key} claims workflow_completed with no recorded evidence")
+
+    def test_every_advertised_harness_is_fully_configured(self) -> None:
+        """Every row in the table must have adapter + platform target + registry entry."""
+        import yaml
+
+        matrix = json.loads((ROOT / "compatibility" / "matrix.json").read_text(encoding="utf-8"))
+        platforms = yaml.safe_load((ROOT / "platforms" / "platforms.yaml").read_text(encoding="utf-8"))
+        registry = json.loads((ROOT / "registry" / "agents.json").read_text(encoding="utf-8"))
+
+        targets = {str(t.get("registry_id") or t["id"]): t for t in platforms["local_targets"]}
+        self.assertEqual(set(matrix["platforms"]), set(targets), "matrix and platforms.yaml disagree")
+        self.assertEqual(set(matrix["platforms"]), set(registry["agents"]), "matrix and agents.json disagree")
+        self.assertEqual(registry["total"], len(registry["agents"]))
+
+        for key, target in targets.items():
+            adapter = ROOT / str(target["adapter"])
+            self.assertTrue(adapter.is_file(), f"{key}: adapter {target['adapter']} missing")
+            declared = yaml.safe_load(adapter.read_text(encoding="utf-8"))["discovery_paths"]["workspace"]
+            self.assertIn(str(target["path"]), declared,
+                          f"{key}: platforms.yaml path {target['path']} not in adapter discovery_paths")
+
+
 if __name__ == "__main__":
     unittest.main()

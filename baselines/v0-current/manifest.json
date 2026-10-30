@@ -2,7 +2,7 @@
   "$schema": "./schemas/skill-frontmatter.schema.json",
   "schema_version": "1.1.0",
   "platform_version": "3.0.0",
-  "generated_at": "2026-10-29T16:37:10.257811+00:00",
+  "generated_at": "2026-10-30T10:59:47.042765+00:00",
   "system_defaults": {
     "default_mcp_servers": [
       "filesystem",
@@ -24,6 +24,329 @@
     }
   },
   "skills": {
+    "3d.blender-geometry-nodes": {
+      "id": "3d.blender-geometry-nodes",
+      "name": "blender-geometry-nodes",
+      "category": "3d",
+      "description": "Build procedural systems in Blender Geometry Nodes: field evaluation, instances versus realized geometry, attribute flow, collection and curve inputs, and asset-ready node groups.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "3d/blender-geometry-nodes",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "3d.vfx-compositing": {
+      "id": "3d.vfx-compositing",
+      "name": "vfx-compositing",
+      "category": "3d",
+      "description": "Composite shots: multi-pass renders and AOVs, keying and rotoscoping, colour matching and grain, 2D tracking and cleanup, and delivery in the correct colour space.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "3d/vfx-compositing",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "3d.blender-modeling-topology": {
+      "id": "3d.blender-modeling-topology",
+      "name": "blender-modeling-topology",
+      "category": "3d",
+      "description": "Model clean assets in Blender: quad topology and edge flow, subdivision and creasing, non-destructive modifier stacks, UV unwrapping and scale discipline.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "3d/blender-modeling-topology",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "3d.blender-python-scripting": {
+      "id": "3d.blender-python-scripting",
+      "name": "blender-python-scripting",
+      "category": "3d",
+      "description": "Automate Blender with Python: `bpy` data API, operators versus direct data access, headless batch runs, add-on structure and exporting assets from a script.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "3d/blender-python-scripting",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "3d.blender-rendering-lighting": {
+      "id": "3d.blender-rendering-lighting",
+      "name": "blender-rendering-lighting",
+      "category": "3d",
+      "description": "Light and render in Blender: Cycles versus EEVEE trade-offs, sampling and denoising, HDRI and three-point lighting, render layers/passes and reproducible render settings.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "3d/blender-rendering-lighting",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "3d.blender-rigging-animation": {
+      "id": "3d.blender-rigging-animation",
+      "name": "blender-rigging-animation",
+      "category": "3d",
+      "description": "Rig and animate in Blender: armatures and bone roll, weight painting, IK/FK chains, drivers and constraints, actions and NLA, and export to game engines.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "3d/blender-rigging-animation",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "3d.blender-sculpting-retopology": {
+      "id": "3d.blender-sculpting-retopology",
+      "name": "blender-sculpting-retopology",
+      "category": "3d",
+      "description": "Sculpt high-frequency detail in Blender and bring it back to a usable asset: dyntopo and multires, remeshing, manual retopology, normal baking and detail projection.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "3d/blender-sculpting-retopology",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "3d.blender-shading-materials": {
+      "id": "3d.blender-shading-materials",
+      "name": "blender-shading-materials",
+      "category": "3d",
+      "description": "Author Blender materials: Principled BSDF parameters, PBR texture wiring, colour space handling, procedural textures, and material export compatibility.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "3d/blender-shading-materials",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "3d.character-animation-principles": {
+      "id": "3d.character-animation-principles",
+      "name": "character-animation-principles",
+      "category": "3d",
+      "description": "Animate characters convincingly: key poses and silhouette, timing and spacing, arcs, overlap and follow-through, weight and anticipation, and animation review criteria.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "3d/character-animation-principles",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "3d.houdini-procedural-vfx": {
+      "id": "3d.houdini-procedural-vfx",
+      "name": "houdini-procedural-vfx",
+      "category": "3d",
+      "description": "Build procedural effects in Houdini: SOP/DOP context, VEX, simulation caching, wedging parameters and exporting geometry or caches to other pipelines.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "3d/houdini-procedural-vfx",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "3d.mesh-repair-printing": {
+      "id": "3d.mesh-repair-printing",
+      "name": "mesh-repair-printing",
+      "category": "3d",
+      "description": "Prepare meshes for manufacturing: manifold repair, normals, wall thickness, overhangs and supports, slicer profiles and dimensional tolerance for 3D printing and CNC.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "3d/mesh-repair-printing",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "3d.pbr-texture-authoring": {
+      "id": "3d.pbr-texture-authoring",
+      "name": "pbr-texture-authoring",
+      "category": "3d",
+      "description": "Author PBR texture sets: UV/UDIM layout, base colour, roughness and metallic maps, height/normal baking, texel density and engine-correct export presets.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "3d/pbr-texture-authoring",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "3d.three-d-asset-pipeline": {
+      "id": "3d.three-d-asset-pipeline",
+      "name": "three-d-asset-pipeline",
+      "category": "3d",
+      "description": "Ship 3D assets correctly: glTF/USD/FBX interchange, scale and axis conventions, LOD generation, Draco/KTX2 compression, validation and engine import checks.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "3d/three-d-asset-pipeline",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "agents.agent-observability": {
+      "id": "agents.agent-observability",
+      "name": "agent-observability",
+      "category": "agents",
+      "description": "Instrument agent runs: trace structure for tool calls and model turns, token and cost accounting, latency budgets, and searchable logs that explain a bad answer.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "agents/agent-observability",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "agents.agent-reliability": {
+      "id": "agents.agent-reliability",
+      "name": "agent-reliability",
+      "category": "agents",
+      "description": "Make agents reliable under failure: retries with jitter, timeouts per tool, idempotency, checkpointing, loop detection and graceful degradation.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "agents/agent-reliability",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "agents.human-in-the-loop-design": {
+      "id": "agents.human-in-the-loop-design",
+      "name": "human-in-the-loop-design",
+      "category": "agents",
+      "description": "Design human approval into agent workflows: risk-tiered gates, reviewable diffs, timeout and escalation policy, audit trail and reversible actions.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "agents/human-in-the-loop-design",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "agents.mcp-integration-testing": {
+      "id": "agents.mcp-integration-testing",
+      "name": "mcp-integration-testing",
+      "category": "agents",
+      "description": "Test MCP servers and their integrations: tool-schema contracts, transport handshakes, failure and timeout behaviour, permission scoping and end-to-end agent runs.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "agents/mcp-integration-testing",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
     "ai.embeddings": {
       "id": "ai.embeddings",
       "name": "embeddings",
@@ -62,16 +385,16 @@
         "copilot"
       ]
     },
-    "ai.rag": {
-      "id": "ai.rag",
-      "name": "rag",
+    "ai.mlops": {
+      "id": "ai.mlops",
+      "name": "mlops",
       "category": "ai",
-      "description": "Architect production RAG systems with document chunking, semantic retrieval, context stuffing, and citation attribution.",
+      "description": "Operate models in production: reproducible training, model and data versioning, deployment strategies, rollback and the feedback loop back into training.",
       "version": "1.0.0",
-      "risk": "low",
+      "risk": "medium",
       "type": "procedural",
       "license": "MIT",
-      "path": "ai/rag",
+      "path": "ai/mlops",
       "tools": [],
       "platforms": [
         "claude",
@@ -91,6 +414,25 @@
       "type": "procedural",
       "license": "MIT",
       "path": "ai/hybrid-search",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "ai.model-drift-monitoring": {
+      "id": "ai.model-drift-monitoring",
+      "name": "model-drift-monitoring",
+      "category": "ai",
+      "description": "Detect model degradation in production: data and prediction drift metrics, delayed-label evaluation, alert thresholds and a triage path that ends in a decision.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "ai/model-drift-monitoring",
       "tools": [],
       "platforms": [
         "claude",
@@ -195,6 +537,44 @@
         "copilot"
       ]
     },
+    "ai.rag-evaluation": {
+      "id": "ai.rag-evaluation",
+      "name": "rag-evaluation",
+      "category": "ai",
+      "description": "Evaluate retrieval-augmented generation honestly: golden sets, retrieval metrics, groundedness and citation checks, and regression gates that survive model changes.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "ai/rag-evaluation",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "ai.rag": {
+      "id": "ai.rag",
+      "name": "rag",
+      "category": "ai",
+      "description": "Architect production RAG systems with document chunking, semantic retrieval, context stuffing, and citation attribution.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "ai/rag",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
     "ai.reranking": {
       "id": "ai.reranking",
       "name": "reranking",
@@ -271,54 +651,16 @@
         "copilot"
       ]
     },
-    "ai.mlops": {
-      "id": "ai.mlops",
-      "name": "mlops",
-      "category": "ai",
-      "description": "Operate models in production: reproducible training, model and data versioning, deployment strategies, rollback and the feedback loop back into training.",
+    "architecture.architectural-design-workflow": {
+      "id": "architecture.architectural-design-workflow",
+      "name": "architectural-design-workflow",
+      "category": "architecture",
+      "description": "Develop an architectural design: brief and constraints, site analysis, concept massing, drawing sets at each stage, code compliance checks and consultant coordination.",
       "version": "1.0.0",
       "risk": "medium",
       "type": "procedural",
       "license": "MIT",
-      "path": "ai/mlops",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "ai.model-drift-monitoring": {
-      "id": "ai.model-drift-monitoring",
-      "name": "model-drift-monitoring",
-      "category": "ai",
-      "description": "Detect model degradation in production: data and prediction drift metrics, delayed-label evaluation, alert thresholds and a triage path that ends in a decision.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "ai/model-drift-monitoring",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "ai.rag-evaluation": {
-      "id": "ai.rag-evaluation",
-      "name": "rag-evaluation",
-      "category": "ai",
-      "description": "Evaluate retrieval-augmented generation honestly: golden sets, retrieval metrics, groundedness and citation checks, and regression gates that survive model changes.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "ai/rag-evaluation",
+      "path": "architecture/architectural-design-workflow",
       "tools": [],
       "platforms": [
         "claude",
@@ -342,25 +684,6 @@
         "file_read",
         "file_write"
       ],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "architecture.architectural-design-workflow": {
-      "id": "architecture.architectural-design-workflow",
-      "name": "architectural-design-workflow",
-      "category": "architecture",
-      "description": "Develop an architectural design: brief and constraints, site analysis, concept massing, drawing sets at each stage, code compliance checks and consultant coordination.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "architecture/architectural-design-workflow",
-      "tools": [],
       "platforms": [
         "claude",
         "cursor",
@@ -398,6 +721,329 @@
       "type": "procedural",
       "license": "MIT",
       "path": "architecture/interior-space-planning",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "audio.audio-mixing-mastering": {
+      "id": "audio.audio-mixing-mastering",
+      "name": "audio-mixing-mastering",
+      "category": "audio",
+      "description": "Mix and master audio: gain staging and bus structure, EQ and compression decisions, stereo image, loudness targets (LUFS/true peak) and delivery specs per platform.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "audio/audio-mixing-mastering",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "audio.live-sound-reinforcement": {
+      "id": "audio.live-sound-reinforcement",
+      "name": "live-sound-reinforcement",
+      "category": "audio",
+      "description": "Run live sound: gain structure, system EQ and feedback control, monitor mixes, dynamics and a repeatable soundcheck.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "audio/live-sound-reinforcement",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "audio.music-notation-engraving": {
+      "id": "audio.music-notation-engraving",
+      "name": "music-notation-engraving",
+      "category": "audio",
+      "description": "Engrave readable scores: notation entry, layout spacing, parts extraction, transposition and MusicXML interchange for MuseScore and LilyPond.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "audio/music-notation-engraving",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "audio.music-production-daw": {
+      "id": "audio.music-production-daw",
+      "name": "music-production-daw",
+      "category": "audio",
+      "description": "Produce music in a DAW: session setup and gain staging, MIDI and audio recording, arrangement, editing and comping, and project hygiene for collaboration.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "audio/music-production-daw",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "audio.podcast-production": {
+      "id": "audio.podcast-production",
+      "name": "podcast-production",
+      "category": "audio",
+      "description": "Produce a podcast end to end: recording setup and remote capture, editing and cleanup, loudness-normalised delivery, chapters, transcripts and distribution.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "audio/podcast-production",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "audio.sound-design-foley": {
+      "id": "audio.sound-design-foley",
+      "name": "sound-design-foley",
+      "category": "audio",
+      "description": "Create sound design and foley: field and studio recording technique, layering and editing, sync to picture, and sound-effect library metadata.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "audio/sound-design-foley",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "automation.n8n-workflow-automation": {
+      "id": "automation.n8n-workflow-automation",
+      "name": "n8n-workflow-automation",
+      "category": "automation",
+      "description": "Build n8n automations: node contracts, expression syntax, error workflows, credentials handling and versioned export/import.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "automation/n8n-workflow-automation",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "cad.autocad-drafting": {
+      "id": "cad.autocad-drafting",
+      "name": "autocad-drafting",
+      "category": "cad",
+      "description": "Draft in AutoCAD with production discipline: layers and standards, model versus paper space, annotative scaling, xrefs, sheet sets and plotting to PDF.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "cad/autocad-drafting",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "cad.bim-ifc-coordination": {
+      "id": "cad.bim-ifc-coordination",
+      "name": "bim-ifc-coordination",
+      "category": "cad",
+      "description": "Coordinate building models: IFC schema and exports, Revit/ArchiCAD workflows, clash detection, LOD/LOI expectations and model federation.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "cad/bim-ifc-coordination",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "cad.cnc-machining-fabrication": {
+      "id": "cad.cnc-machining-fabrication",
+      "name": "cnc-machining-fabrication",
+      "category": "cad",
+      "description": "Go from a solid model to machined parts: DFM review, toolpath strategy, workholding, feeds and speeds, and a G-code sanity check.",
+      "version": "1.0.0",
+      "risk": "high",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "cad/cnc-machining-fabrication",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "cad.dxf-dwg-interchange": {
+      "id": "cad.dxf-dwg-interchange",
+      "name": "dxf-dwg-interchange",
+      "category": "cad",
+      "description": "Exchange CAD data reliably: DXF/DWG versions, units and layers, blocks and xrefs, round-trip validation and conversion with ODA/LibreDWG tooling.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "cad/dxf-dwg-interchange",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "cad.freecad-parametric-modeling": {
+      "id": "cad.freecad-parametric-modeling",
+      "name": "freecad-parametric-modeling",
+      "category": "cad",
+      "description": "Model parametrically in FreeCAD: sketches and constraints, Part Design bodies, spreadsheets and expressions, TechDraw drawing sheets and headless scripting.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "cad/freecad-parametric-modeling",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "cad.fusion360-solid-modeling": {
+      "id": "cad.fusion360-solid-modeling",
+      "name": "fusion360-solid-modeling",
+      "category": "cad",
+      "description": "Model production parts in Fusion 360 or SolidWorks: feature-based history, design intent, assemblies and joints, sheet metal and manufacturing exports.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "cad/fusion360-solid-modeling",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "cad.laser-cutting-engraving": {
+      "id": "cad.laser-cutting-engraving",
+      "name": "laser-cutting-engraving",
+      "category": "cad",
+      "description": "Prepare files for laser cutting and engraving: kerf compensation, cut order, material settings, nesting and safe operation.",
+      "version": "1.0.0",
+      "risk": "high",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "cad/laser-cutting-engraving",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "cad.openscad-programmatic-cad": {
+      "id": "cad.openscad-programmatic-cad",
+      "name": "openscad-programmatic-cad",
+      "category": "cad",
+      "description": "Design parts in OpenSCAD: parametric modules, CSG operations, libraries, preview versus render, and export for printing or machining.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "cad/openscad-programmatic-cad",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "cad.rhino-grasshopper": {
+      "id": "cad.rhino-grasshopper",
+      "name": "rhino-grasshopper",
+      "category": "cad",
+      "description": "Parametric design in Rhino and Grasshopper: NURBS modelling, definition structure, data trees, scripting with Python/C# and baking to Rhino geometry.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "cad/rhino-grasshopper",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "cad.technical-drawing-gdt": {
+      "id": "cad.technical-drawing-gdt",
+      "name": "technical-drawing-gdt",
+      "category": "cad",
+      "description": "Produce and read manufacturing drawings: projection views, dimensioning and tolerancing, GD&T symbols and datums, surface finish and title-block standards.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "cad/technical-drawing-gdt",
       "tools": [],
       "platforms": [
         "claude",
@@ -502,44 +1148,6 @@
         "copilot"
       ]
     },
-    "cloud.gcp-architecture": {
-      "id": "cloud.gcp-architecture",
-      "name": "gcp-architecture",
-      "category": "cloud",
-      "description": "Design GCP projects, VPC service controls, Compute Engine, Google Kubernetes Engine (GKE), and Cloud Run.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "cloud/gcp-architecture",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "cloud.vercel-deployment": {
-      "id": "cloud.vercel-deployment",
-      "name": "vercel-deployment",
-      "category": "cloud",
-      "description": "Deploy full-stack web applications with Vercel edge middleware, preview environments, and analytics.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "cloud/vercel-deployment",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
     "cloud.cloudflare-workers": {
       "id": "cloud.cloudflare-workers",
       "name": "cloudflare-workers",
@@ -550,6 +1158,25 @@
       "type": "procedural",
       "license": "MIT",
       "path": "cloud/cloudflare-workers",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "cloud.gcp-architecture": {
+      "id": "cloud.gcp-architecture",
+      "name": "gcp-architecture",
+      "category": "cloud",
+      "description": "Design GCP projects, VPC service controls, Compute Engine, Google Kubernetes Engine (GKE), and Cloud Run.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "cloud/gcp-architecture",
       "tools": [],
       "platforms": [
         "claude",
@@ -588,6 +1215,25 @@
       "type": "procedural",
       "license": "MIT",
       "path": "cloud/terraform-iac",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "cloud.vercel-deployment": {
+      "id": "cloud.vercel-deployment",
+      "name": "vercel-deployment",
+      "category": "cloud",
+      "description": "Deploy full-stack web applications with Vercel edge middleware, preview environments, and analytics.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "cloud/vercel-deployment",
       "tools": [],
       "platforms": [
         "claude",
@@ -1243,6 +1889,25 @@
         "copilot"
       ]
     },
+    "databases.database-query-optimization": {
+      "id": "databases.database-query-optimization",
+      "name": "database-query-optimization",
+      "category": "databases",
+      "description": "Optimise query patterns across engines: N+1 elimination, set-based rewrites, pagination that scales, join strategy, and measurement before and after.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "databases/database-query-optimization",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
     "databases.duckdb": {
       "id": "databases.duckdb",
       "name": "duckdb",
@@ -1357,6 +2022,44 @@
         "copilot"
       ]
     },
+    "databases.oracle": {
+      "id": "databases.oracle",
+      "name": "oracle",
+      "category": "databases",
+      "description": "Work with Oracle Database: AWR and ASH diagnosis, execution plans, tablespace and undo sizing, partitioning, RMAN backups and safe DDL.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "databases/oracle",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "databases.postgresql-performance": {
+      "id": "databases.postgresql-performance",
+      "name": "postgresql-performance",
+      "category": "databases",
+      "description": "Tune PostgreSQL with evidence: `EXPLAIN (ANALYZE, BUFFERS)`, index strategy, VACUUM and bloat, connection pooling, and configuration that matches the workload.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "databases/postgresql-performance",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
     "databases.postgresql": {
       "id": "databases.postgresql",
       "name": "postgresql",
@@ -1433,82 +2136,6 @@
         "copilot"
       ]
     },
-    "databases.sqlite": {
-      "id": "databases.sqlite",
-      "name": "sqlite",
-      "category": "databases",
-      "description": "High-performance embedded storage with SQLite WAL mode, PRAGMA tuning, full-text search (FTS5), and concurrency.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "databases/sqlite",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "databases.database-query-optimization": {
-      "id": "databases.database-query-optimization",
-      "name": "database-query-optimization",
-      "category": "databases",
-      "description": "Optimise query patterns across engines: N+1 elimination, set-based rewrites, pagination that scales, join strategy, and measurement before and after.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "databases/database-query-optimization",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "databases.oracle": {
-      "id": "databases.oracle",
-      "name": "oracle",
-      "category": "databases",
-      "description": "Work with Oracle Database: AWR and ASH diagnosis, execution plans, tablespace and undo sizing, partitioning, RMAN backups and safe DDL.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "databases/oracle",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "databases.postgresql-performance": {
-      "id": "databases.postgresql-performance",
-      "name": "postgresql-performance",
-      "category": "databases",
-      "description": "Tune PostgreSQL with evidence: `EXPLAIN (ANALYZE, BUFFERS)`, index strategy, VACUUM and bloat, connection pooling, and configuration that matches the workload.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "databases/postgresql-performance",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
     "databases.sql-server": {
       "id": "databases.sql-server",
       "name": "sql-server",
@@ -1528,320 +2155,16 @@
         "copilot"
       ]
     },
-    "3d.blender-geometry-nodes": {
-      "id": "3d.blender-geometry-nodes",
-      "name": "blender-geometry-nodes",
-      "category": "3d",
-      "description": "Build procedural systems in Blender Geometry Nodes: field evaluation, instances versus realized geometry, attribute flow, collection and curve inputs, and asset-ready node groups.",
+    "databases.sqlite": {
+      "id": "databases.sqlite",
+      "name": "sqlite",
+      "category": "databases",
+      "description": "High-performance embedded storage with SQLite WAL mode, PRAGMA tuning, full-text search (FTS5), and concurrency.",
       "version": "1.0.0",
       "risk": "low",
       "type": "procedural",
       "license": "MIT",
-      "path": "3d/blender-geometry-nodes",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "3d.vfx-compositing": {
-      "id": "3d.vfx-compositing",
-      "name": "vfx-compositing",
-      "category": "3d",
-      "description": "Composite shots: multi-pass renders and AOVs, keying and rotoscoping, colour matching and grain, 2D tracking and cleanup, and delivery in the correct colour space.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "3d/vfx-compositing",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "3d.blender-modeling-topology": {
-      "id": "3d.blender-modeling-topology",
-      "name": "blender-modeling-topology",
-      "category": "3d",
-      "description": "Model clean assets in Blender: quad topology and edge flow, subdivision and creasing, non-destructive modifier stacks, UV unwrapping and scale discipline.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "3d/blender-modeling-topology",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "3d.blender-python-scripting": {
-      "id": "3d.blender-python-scripting",
-      "name": "blender-python-scripting",
-      "category": "3d",
-      "description": "Automate Blender with Python: `bpy` data API, operators versus direct data access, headless batch runs, add-on structure and exporting assets from a script.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "3d/blender-python-scripting",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "3d.blender-rendering-lighting": {
-      "id": "3d.blender-rendering-lighting",
-      "name": "blender-rendering-lighting",
-      "category": "3d",
-      "description": "Light and render in Blender: Cycles versus EEVEE trade-offs, sampling and denoising, HDRI and three-point lighting, render layers/passes and reproducible render settings.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "3d/blender-rendering-lighting",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "3d.blender-rigging-animation": {
-      "id": "3d.blender-rigging-animation",
-      "name": "blender-rigging-animation",
-      "category": "3d",
-      "description": "Rig and animate in Blender: armatures and bone roll, weight painting, IK/FK chains, drivers and constraints, actions and NLA, and export to game engines.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "3d/blender-rigging-animation",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "3d.blender-sculpting-retopology": {
-      "id": "3d.blender-sculpting-retopology",
-      "name": "blender-sculpting-retopology",
-      "category": "3d",
-      "description": "Sculpt high-frequency detail in Blender and bring it back to a usable asset: dyntopo and multires, remeshing, manual retopology, normal baking and detail projection.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "3d/blender-sculpting-retopology",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "3d.blender-shading-materials": {
-      "id": "3d.blender-shading-materials",
-      "name": "blender-shading-materials",
-      "category": "3d",
-      "description": "Author Blender materials: Principled BSDF parameters, PBR texture wiring, colour space handling, procedural textures, and material export compatibility.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "3d/blender-shading-materials",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "3d.character-animation-principles": {
-      "id": "3d.character-animation-principles",
-      "name": "character-animation-principles",
-      "category": "3d",
-      "description": "Animate characters convincingly: key poses and silhouette, timing and spacing, arcs, overlap and follow-through, weight and anticipation, and animation review criteria.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "3d/character-animation-principles",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "3d.houdini-procedural-vfx": {
-      "id": "3d.houdini-procedural-vfx",
-      "name": "houdini-procedural-vfx",
-      "category": "3d",
-      "description": "Build procedural effects in Houdini: SOP/DOP context, VEX, simulation caching, wedging parameters and exporting geometry or caches to other pipelines.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "3d/houdini-procedural-vfx",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "3d.mesh-repair-printing": {
-      "id": "3d.mesh-repair-printing",
-      "name": "mesh-repair-printing",
-      "category": "3d",
-      "description": "Prepare meshes for manufacturing: manifold repair, normals, wall thickness, overhangs and supports, slicer profiles and dimensional tolerance for 3D printing and CNC.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "3d/mesh-repair-printing",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "3d.pbr-texture-authoring": {
-      "id": "3d.pbr-texture-authoring",
-      "name": "pbr-texture-authoring",
-      "category": "3d",
-      "description": "Author PBR texture sets: UV/UDIM layout, base colour, roughness and metallic maps, height/normal baking, texel density and engine-correct export presets.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "3d/pbr-texture-authoring",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "3d.three-d-asset-pipeline": {
-      "id": "3d.three-d-asset-pipeline",
-      "name": "three-d-asset-pipeline",
-      "category": "3d",
-      "description": "Ship 3D assets correctly: glTF/USD/FBX interchange, scale and axis conventions, LOD generation, Draco/KTX2 compression, validation and engine import checks.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "3d/three-d-asset-pipeline",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "agents.agent-observability": {
-      "id": "agents.agent-observability",
-      "name": "agent-observability",
-      "category": "agents",
-      "description": "Instrument agent runs: trace structure for tool calls and model turns, token and cost accounting, latency budgets, and searchable logs that explain a bad answer.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "agents/agent-observability",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "agents.agent-reliability": {
-      "id": "agents.agent-reliability",
-      "name": "agent-reliability",
-      "category": "agents",
-      "description": "Make agents reliable under failure: retries with jitter, timeouts per tool, idempotency, checkpointing, loop detection and graceful degradation.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "agents/agent-reliability",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "agents.human-in-the-loop-design": {
-      "id": "agents.human-in-the-loop-design",
-      "name": "human-in-the-loop-design",
-      "category": "agents",
-      "description": "Design human approval into agent workflows: risk-tiered gates, reviewable diffs, timeout and escalation policy, audit trail and reversible actions.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "agents/human-in-the-loop-design",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "agents.mcp-integration-testing": {
-      "id": "agents.mcp-integration-testing",
-      "name": "mcp-integration-testing",
-      "category": "agents",
-      "description": "Test MCP servers and their integrations: tool-schema contracts, transport handshakes, failure and timeout behaviour, permission scoping and end-to-end agent runs.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "agents/mcp-integration-testing",
+      "path": "databases/sqlite",
       "tools": [],
       "platforms": [
         "claude",
@@ -1908,6 +2231,25 @@
         "copilot"
       ]
     },
+    "design.editorial-layout-design": {
+      "id": "design.editorial-layout-design",
+      "name": "editorial-layout-design",
+      "category": "design",
+      "description": "Lay out multi-page documents: grid systems, masters and styles, flowing long copy, tables, footnotes and accessible PDF output.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "design/editorial-layout-design",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
     "design.frontend-design": {
       "id": "design.frontend-design",
       "name": "frontend-design",
@@ -1918,6 +2260,25 @@
       "type": "procedural",
       "license": "MIT",
       "path": "design/frontend-design",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "design.iconography-systems": {
+      "id": "design.iconography-systems",
+      "name": "iconography-systems",
+      "category": "design",
+      "description": "Build an icon system: consistent optical grid, stroke and corner radii, naming, SVG sprite delivery and accessibility.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "design/iconography-systems",
       "tools": [],
       "platforms": [
         "claude",
@@ -1965,82 +2326,6 @@
         "copilot"
       ]
     },
-    "design.remotion-best-practices": {
-      "id": "design.remotion-best-practices",
-      "name": "remotion-best-practices",
-      "category": "design",
-      "description": "Design and implement maintainable Remotion video compositions with deterministic rendering.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "design/remotion-best-practices",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "design.veo-video-generator": {
-      "id": "design.veo-video-generator",
-      "name": "veo-video-generator",
-      "category": "design",
-      "description": "Plan and generate Google Veo videos from approved prompts, assets, and output constraints.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "design/veo-video-generator",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "design.editorial-layout-design": {
-      "id": "design.editorial-layout-design",
-      "name": "editorial-layout-design",
-      "category": "design",
-      "description": "Lay out multi-page documents: grid systems, masters and styles, flowing long copy, tables, footnotes and accessible PDF output.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "design/editorial-layout-design",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "design.iconography-systems": {
-      "id": "design.iconography-systems",
-      "name": "iconography-systems",
-      "category": "design",
-      "description": "Build an icon system: consistent optical grid, stroke and corner radii, naming, SVG sprite delivery and accessibility.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "design/iconography-systems",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
     "design.print-production-prepress": {
       "id": "design.print-production-prepress",
       "name": "print-production-prepress",
@@ -2051,6 +2336,25 @@
       "type": "procedural",
       "license": "MIT",
       "path": "design/print-production-prepress",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "design.remotion-best-practices": {
+      "id": "design.remotion-best-practices",
+      "name": "remotion-best-practices",
+      "category": "design",
+      "description": "Design and implement maintainable Remotion video compositions with deterministic rendering.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "design/remotion-best-practices",
       "tools": [],
       "platforms": [
         "claude",
@@ -2089,6 +2393,25 @@
       "type": "procedural",
       "license": "MIT",
       "path": "design/vector-illustration-svg",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "design.veo-video-generator": {
+      "id": "design.veo-video-generator",
+      "name": "veo-video-generator",
+      "category": "design",
+      "description": "Plan and generate Google Veo videos from approved prompts, assets, and output constraints.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "design/veo-video-generator",
       "tools": [],
       "platforms": [
         "claude",
@@ -2725,6 +3048,44 @@
         "copilot"
       ]
     },
+    "development.fastapi-expert": {
+      "id": "development.fastapi-expert",
+      "name": "fastapi-expert",
+      "category": "development",
+      "description": "Build production FastAPI services: dependency injection, Pydantic v2 models, async database sessions, background tasks and OpenAPI that tells the truth.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "development/fastapi-expert",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "development.feature-flag-management": {
+      "id": "development.feature-flag-management",
+      "name": "feature-flag-management",
+      "category": "development",
+      "description": "Roll out changes safely with feature flags: flag taxonomy, targeting, kill switches, stale-flag hygiene and experiment-safe evaluation.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "development/feature-flag-management",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
     "development.frontend": {
       "id": "development.frontend",
       "name": "frontend",
@@ -2839,6 +3200,44 @@
         "copilot"
       ]
     },
+    "development.graphql-api-design": {
+      "id": "development.graphql-api-design",
+      "name": "graphql-api-design",
+      "category": "development",
+      "description": "Design and evolve GraphQL APIs: schema modelling, nullability, pagination with connections, N+1 avoidance, and safe deprecation.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "development/graphql-api-design",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "development.grpc-service-design": {
+      "id": "development.grpc-service-design",
+      "name": "grpc-service-design",
+      "category": "development",
+      "description": "Design gRPC services: protobuf evolution rules, streaming choices, deadlines and retries, error model, and load-balancing implications.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "development/grpc-service-design",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
     "development.issue-triage": {
       "id": "development.issue-triage",
       "name": "issue-triage",
@@ -2887,6 +3286,44 @@
       "type": "procedural",
       "license": "Apache-2.0",
       "path": "development/mcp-server-development",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "development.monorepo-management": {
+      "id": "development.monorepo-management",
+      "name": "monorepo-management",
+      "category": "development",
+      "description": "Operate a monorepo: package boundaries, workspace tooling, affected-only CI, versioning strategy and safe incremental builds.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "development/monorepo-management",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "development.nestjs-expert": {
+      "id": "development.nestjs-expert",
+      "name": "nestjs-expert",
+      "category": "development",
+      "description": "Structure NestJS services: modules and providers, dependency injection scopes, guards and interceptors, validation pipes and testing with a real DI graph.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "development/nestjs-expert",
       "tools": [],
       "platforms": [
         "claude",
@@ -3086,120 +3523,6 @@
         "copilot"
       ]
     },
-    "development.fastapi-expert": {
-      "id": "development.fastapi-expert",
-      "name": "fastapi-expert",
-      "category": "development",
-      "description": "Build production FastAPI services: dependency injection, Pydantic v2 models, async database sessions, background tasks and OpenAPI that tells the truth.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "development/fastapi-expert",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "development.feature-flag-management": {
-      "id": "development.feature-flag-management",
-      "name": "feature-flag-management",
-      "category": "development",
-      "description": "Roll out changes safely with feature flags: flag taxonomy, targeting, kill switches, stale-flag hygiene and experiment-safe evaluation.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "development/feature-flag-management",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "development.graphql-api-design": {
-      "id": "development.graphql-api-design",
-      "name": "graphql-api-design",
-      "category": "development",
-      "description": "Design and evolve GraphQL APIs: schema modelling, nullability, pagination with connections, N+1 avoidance, and safe deprecation.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "development/graphql-api-design",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "development.grpc-service-design": {
-      "id": "development.grpc-service-design",
-      "name": "grpc-service-design",
-      "category": "development",
-      "description": "Design gRPC services: protobuf evolution rules, streaming choices, deadlines and retries, error model, and load-balancing implications.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "development/grpc-service-design",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "development.monorepo-management": {
-      "id": "development.monorepo-management",
-      "name": "monorepo-management",
-      "category": "development",
-      "description": "Operate a monorepo: package boundaries, workspace tooling, affected-only CI, versioning strategy and safe incremental builds.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "development/monorepo-management",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "development.nestjs-expert": {
-      "id": "development.nestjs-expert",
-      "name": "nestjs-expert",
-      "category": "development",
-      "description": "Structure NestJS services: modules and providers, dependency injection scopes, guards and interceptors, validation pipes and testing with a real DI graph.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "development/nestjs-expert",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
     "development.websocket-realtime": {
       "id": "development.websocket-realtime",
       "name": "websocket-realtime",
@@ -3210,6 +3533,63 @@
       "type": "procedural",
       "license": "MIT",
       "path": "development/websocket-realtime",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "devops.circleci-pipelines": {
+      "id": "devops.circleci-pipelines",
+      "name": "circleci-pipelines",
+      "category": "devops",
+      "description": "Write CircleCI pipelines: orbs, executor and cache strategy, parallelism, workflow dependencies, and secure approval gates.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "devops/circleci-pipelines",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "devops.disaster-recovery": {
+      "id": "devops.disaster-recovery",
+      "name": "disaster-recovery",
+      "category": "devops",
+      "description": "Plan and prove recovery: RTO/RPO, backup strategy and restore drills, failover runbooks, dependency maps and game days that find the real gaps.",
+      "version": "1.0.0",
+      "risk": "high",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "devops/disaster-recovery",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "devops.platform-engineering": {
+      "id": "devops.platform-engineering",
+      "name": "platform-engineering",
+      "category": "devops",
+      "description": "Run an internal platform: golden paths, self-service templates, paved-road CI, tenant isolation and measuring developer experience.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "devops/platform-engineering",
       "tools": [],
       "platforms": [
         "claude",
@@ -3865,6 +4245,25 @@
         "copilot"
       ]
     },
+    "execution.sandboxed-code-execution": {
+      "id": "execution.sandboxed-code-execution",
+      "name": "sandboxed-code-execution",
+      "category": "execution",
+      "description": "Run generated or untrusted code safely: ephemeral sandboxes, resource and network limits, output capture and artifact handling.",
+      "version": "1.0.0",
+      "risk": "high",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "execution/sandboxed-code-execution",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
     "finance.accounting": {
       "id": "finance.accounting",
       "name": "accounting",
@@ -4435,6 +4834,234 @@
         "copilot"
       ]
     },
+    "geospatial.cartographic-design": {
+      "id": "geospatial.cartographic-design",
+      "name": "cartographic-design",
+      "category": "geospatial",
+      "description": "Design maps people can read: projection and scale choice, visual hierarchy, colour for classification, typography, generalization, legend and accessibility.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "geospatial/cartographic-design",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "geospatial.drone-photogrammetry": {
+      "id": "geospatial.drone-photogrammetry",
+      "name": "drone-photogrammetry",
+      "category": "geospatial",
+      "description": "Turn drone imagery into accurate products: flight planning and overlap, ground control points, OpenDroneMap/WebODM processing, orthomosaics, DSM and accuracy reports.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "geospatial/drone-photogrammetry",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "geospatial.gdal-ogr-pipelines": {
+      "id": "geospatial.gdal-ogr-pipelines",
+      "name": "gdal-ogr-pipelines",
+      "category": "geospatial",
+      "description": "Build reproducible raster and vector pipelines with GDAL/OGR: format conversion, warping, mosaicking, COG output, clipping and batch processing.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "geospatial/gdal-ogr-pipelines",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "geospatial.geocoding-address-matching": {
+      "id": "geospatial.geocoding-address-matching",
+      "name": "geocoding-address-matching",
+      "category": "geospatial",
+      "description": "Geocode addresses and match records across datasets: normalisation, fuzzy matching, rooftop versus centroid precision, and accuracy reporting.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "geospatial/geocoding-address-matching",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "geospatial.lidar-point-clouds": {
+      "id": "geospatial.lidar-point-clouds",
+      "name": "lidar-point-clouds",
+      "category": "geospatial",
+      "description": "Process LiDAR point clouds: LAS/LAZ structure, PDAL pipelines, ground classification, DEM/DSM generation, and point-cloud quality control.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "geospatial/lidar-point-clouds",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "geospatial.openstreetmap-data": {
+      "id": "geospatial.openstreetmap-data",
+      "name": "openstreetmap-data",
+      "category": "geospatial",
+      "description": "Work with OpenStreetMap data: Overpass queries, extracts, tag semantics, conflation with authoritative data, and ODbL attribution obligations.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "geospatial/openstreetmap-data",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "geospatial.postgis-spatial-sql": {
+      "id": "geospatial.postgis-spatial-sql",
+      "name": "postgis-spatial-sql",
+      "category": "geospatial",
+      "description": "Run spatial SQL in PostGIS: geometry versus geography types, GiST indexes, ST_ spatial predicates and constructors, tiling and query performance.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "geospatial/postgis-spatial-sql",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "geospatial.qgis-map-production": {
+      "id": "geospatial.qgis-map-production",
+      "name": "qgis-map-production",
+      "category": "geospatial",
+      "description": "Produce publication-ready maps in QGIS: project structure, layer styling and labelling, print layouts with atlases, expression-driven symbology and PyQGIS automation.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "geospatial/qgis-map-production",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "geospatial.remote-sensing-indices": {
+      "id": "geospatial.remote-sensing-indices",
+      "name": "remote-sensing-indices",
+      "category": "geospatial",
+      "description": "Analyse satellite imagery: Sentinel-2 and Landsat band selection, cloud masking, vegetation and water indices, temporal composites and change detection.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "geospatial/remote-sensing-indices",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "geospatial.spatial-reference-systems": {
+      "id": "geospatial.spatial-reference-systems",
+      "name": "spatial-reference-systems",
+      "category": "geospatial",
+      "description": "Choose and transform coordinate reference systems correctly: EPSG codes, datums, projected versus geographic units, grid shifts and area/distance error control.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "geospatial/spatial-reference-systems",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "geospatial.spatial-statistics": {
+      "id": "geospatial.spatial-statistics",
+      "name": "spatial-statistics",
+      "category": "geospatial",
+      "description": "Analyse spatial patterns statistically: spatial autocorrelation (Moran's I), hotspot detection, clustering, interpolation/kriging and the ecology of modifiable areal units.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "geospatial/spatial-statistics",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "geospatial.vector-tile-web-maps": {
+      "id": "geospatial.vector-tile-web-maps",
+      "name": "vector-tile-web-maps",
+      "category": "geospatial",
+      "description": "Publish web maps with vector tiles: MVT/PMTiles generation, style specification, MapLibre or Leaflet clients, attributions and cache strategy.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "geospatial/vector-tile-web-maps",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
     "healthcare.health-economist": {
       "id": "healthcare.health-economist",
       "name": "health-economist",
@@ -4449,6 +5076,272 @@
         "file_read",
         "file_write"
       ],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "integration.agent-harness-onboarding": {
+      "id": "integration.agent-harness-onboarding",
+      "name": "agent-harness-onboarding",
+      "category": "integration",
+      "description": "Install the All-Skills library into any supported agent harness (Claude Code, Cursor, Codex, Gemini, Copilot, VS Code, Windsurf, OpenCode, Cline, Roo, Goose and more) and verify the links.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "integration/agent-harness-onboarding",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "integration.connector-github": {
+      "id": "integration.connector-github",
+      "name": "connector-github",
+      "category": "integration",
+      "description": "Wire GitHub access into an agent (GitHub MCP server or the gh CLI skill) and run review, triage and release operations with least-privilege tokens.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "integration/connector-github",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "integration.connector-browser-automation": {
+      "id": "integration.connector-browser-automation",
+      "name": "connector-browser-automation",
+      "category": "integration",
+      "description": "Choose and wire the right browser connector \u2014 Chrome DevTools for live debugging, Playwright for scripted end-to-end checks, Browserbase for remote sessions \u2014 and keep context cost bounded.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "integration/connector-browser-automation",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "integration.connector-cloud-infrastructure": {
+      "id": "integration.connector-cloud-infrastructure",
+      "name": "connector-cloud-infrastructure",
+      "category": "integration",
+      "description": "Wire AWS, Cloudflare, Vercel, Railway, Kubernetes and Terraform connectors with least-privilege credentials, dry-run discipline and explicit approval gates for mutations.",
+      "version": "1.0.0",
+      "risk": "high",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "integration/connector-cloud-infrastructure",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "integration.connector-databases": {
+      "id": "integration.connector-databases",
+      "name": "connector-databases",
+      "category": "integration",
+      "description": "Connect an agent to PostgreSQL, SQLite, MySQL, MongoDB, Redis or ClickHouse through MCP, with read-only enforcement, schema discovery and cost-aware query habits.",
+      "version": "1.0.0",
+      "risk": "high",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "integration/connector-databases",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "integration.connector-observability": {
+      "id": "integration.connector-observability",
+      "name": "connector-observability",
+      "category": "integration",
+      "description": "Wire error tracking, metrics and log search into an agent session so incidents are investigated from evidence rather than speculation.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "integration/connector-observability",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "integration.mcp-gateway": {
+      "id": "integration.mcp-gateway",
+      "name": "mcp-gateway",
+      "category": "integration",
+      "description": "Aggregate a large MCP catalog behind a single gateway endpoint so an agent can reach every connector without loading dozens of tool schemas into every session.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "integration/mcp-gateway",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "integration.mcp-security-review": {
+      "id": "integration.mcp-security-review",
+      "name": "mcp-security-review",
+      "category": "integration",
+      "description": "Audit MCP servers and their tool contracts for tool poisoning, prompt injection, over-broad scopes, unbounded execution and credential exfiltration paths before enabling them.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "integration/mcp-security-review",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "integration.mcp-server-author": {
+      "id": "integration.mcp-server-author",
+      "name": "mcp-server-author",
+      "category": "integration",
+      "description": "Design and implement a new Model Context Protocol server with well-scoped tools, validated schemas, resource/prompt support and tests that exercise the protocol surface.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "integration/mcp-server-author",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "integration.mcp-server-install": {
+      "id": "integration.mcp-server-install",
+      "name": "mcp-server-install",
+      "category": "integration",
+      "description": "Install Model Context Protocol servers from the curated All-Skills catalog into any agent harness, with a preview, an idempotent merge and a verification step.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "integration/mcp-server-install",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "integration.skill-pack-install": {
+      "id": "integration.skill-pack-install",
+      "name": "skill-pack-install",
+      "category": "integration",
+      "description": "Install a role profile or curated skill pack with dependency resolution, destination control and a dry-run preview.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "integration/skill-pack-install",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "integration.third-party-api-resilience": {
+      "id": "integration.third-party-api-resilience",
+      "name": "third-party-api-resilience",
+      "category": "integration",
+      "description": "Harden integrations with external APIs: timeouts, retry budgets, circuit breaking, rate-limit awareness, caching and graceful degradation.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "integration/third-party-api-resilience",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "integration.universal-skill-discovery": {
+      "id": "integration.universal-skill-discovery",
+      "name": "universal-skill-discovery",
+      "category": "integration",
+      "description": "Find the right skill across canonical skills, the 15k-entry catalog and imported upstream sources, then install it or publish a new one with provenance intact.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "integration/universal-skill-discovery",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "integration.webhook-delivery-design": {
+      "id": "integration.webhook-delivery-design",
+      "name": "webhook-delivery-design",
+      "category": "integration",
+      "description": "Design reliable outbound webhooks: signed payloads, retries with backoff, idempotent consumers, replay and delivery observability.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "integration/webhook-delivery-design",
+      "tools": [],
       "platforms": [
         "claude",
         "cursor",
@@ -5198,6 +6091,25 @@
         "copilot"
       ]
     },
+    "networking.api-gateway-patterns": {
+      "id": "networking.api-gateway-patterns",
+      "name": "api-gateway-patterns",
+      "category": "networking",
+      "description": "Design API gateways: routing and path conventions, auth offload, rate limiting, request/response transformation, and observability at the edge.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "networking/api-gateway-patterns",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
     "networking.dns": {
       "id": "networking.dns",
       "name": "dns",
@@ -5569,25 +6481,6 @@
       "type": "procedural",
       "license": "MIT",
       "path": "networking/zero-trust",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "networking.api-gateway-patterns": {
-      "id": "networking.api-gateway-patterns",
-      "name": "api-gateway-patterns",
-      "category": "networking",
-      "description": "Design API gateways: routing and path conventions, auth offload, rate limiting, request/response transformation, and observability at the edge.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "networking/api-gateway-patterns",
       "tools": [],
       "platforms": [
         "claude",
@@ -6072,6 +6965,44 @@
         "copilot"
       ]
     },
+    "photography.photography-raw-workflow": {
+      "id": "photography.photography-raw-workflow",
+      "name": "photography-raw-workflow",
+      "category": "photography",
+      "description": "Manage a RAW photography workflow: import and catalogue structure, non-destructive develop settings, colour management and soft proofing, and export presets per use.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "photography/photography-raw-workflow",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "photography.studio-lighting-color-management": {
+      "id": "photography.studio-lighting-color-management",
+      "name": "studio-lighting-color-management",
+      "category": "photography",
+      "description": "Light and colour-manage a shoot: modifier choice and ratios, white balance, profiling the display, soft-proofing and export for print or web.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "photography/studio-lighting-color-management",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
     "product.acceptance-criteria": {
       "id": "product.acceptance-criteria",
       "name": "acceptance-criteria",
@@ -6101,82 +7032,6 @@
       "type": "procedural",
       "license": "MIT",
       "path": "product/experimentation",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "product.prioritization": {
-      "id": "product.prioritization",
-      "name": "prioritization",
-      "category": "product",
-      "description": "Evaluate roadmap features objectively using RICE scoring, Kano models, and MoSCoW prioritization.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "product/prioritization",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "product.product-metrics": {
-      "id": "product.product-metrics",
-      "name": "product-metrics",
-      "category": "product",
-      "description": "Define North Star metrics, activation funnels, retention cohorts, and feature engagement indicators.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "product/product-metrics",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "product.requirements-engineering": {
-      "id": "product.requirements-engineering",
-      "name": "requirements-engineering",
-      "category": "product",
-      "description": "Elicit, structure, and formalize technical and functional requirements into unambiguous specifications.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "product/requirements-engineering",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "product.user-stories": {
-      "id": "product.user-stories",
-      "name": "user-stories",
-      "category": "product",
-      "description": "Author actionable, value-driven user stories adhering to INVEST criteria with clear business context.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "product/user-stories",
       "tools": [],
       "platforms": [
         "claude",
@@ -6224,6 +7079,25 @@
         "copilot"
       ]
     },
+    "product.prioritization": {
+      "id": "product.prioritization",
+      "name": "prioritization",
+      "category": "product",
+      "description": "Evaluate roadmap features objectively using RICE scoring, Kano models, and MoSCoW prioritization.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "product/prioritization",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
     "product.product-analytics": {
       "id": "product.product-analytics",
       "name": "product-analytics",
@@ -6243,6 +7117,44 @@
         "copilot"
       ]
     },
+    "product.product-metrics": {
+      "id": "product.product-metrics",
+      "name": "product-metrics",
+      "category": "product",
+      "description": "Define North Star metrics, activation funnels, retention cohorts, and feature engagement indicators.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "product/product-metrics",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "product.requirements-engineering": {
+      "id": "product.requirements-engineering",
+      "name": "requirements-engineering",
+      "category": "product",
+      "description": "Elicit, structure, and formalize technical and functional requirements into unambiguous specifications.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "product/requirements-engineering",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
     "product.user-research": {
       "id": "product.user-research",
       "name": "user-research",
@@ -6253,6 +7165,25 @@
       "type": "procedural",
       "license": "MIT",
       "path": "product/user-research",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "product.user-stories": {
+      "id": "product.user-stories",
+      "name": "user-stories",
+      "category": "product",
+      "description": "Author actionable, value-driven user stories adhering to INVEST criteria with clear business context.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "product/user-stories",
       "tools": [],
       "platforms": [
         "claude",
@@ -6509,6 +7440,44 @@
         "copilot"
       ]
     },
+    "productivity.google-calendar-automation": {
+      "id": "productivity.google-calendar-automation",
+      "name": "google-calendar-automation",
+      "category": "productivity",
+      "description": "Automate Google Calendar: OAuth scopes, event creation with time zones and recurrence, free/busy queries, and safe updates across attendees.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "productivity/google-calendar-automation",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "productivity.google-sheets-automation": {
+      "id": "productivity.google-sheets-automation",
+      "name": "google-sheets-automation",
+      "category": "productivity",
+      "description": "Automate Google Sheets: service-account auth, range and batch APIs, formulas versus computed values, and safe bulk writes.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "productivity/google-sheets-automation",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
     "productivity.kaizen-continuous-improvement": {
       "id": "productivity.kaizen-continuous-improvement",
       "name": "kaizen-continuous-improvement",
@@ -6718,44 +7687,6 @@
         "copilot"
       ]
     },
-    "productivity.google-calendar-automation": {
-      "id": "productivity.google-calendar-automation",
-      "name": "google-calendar-automation",
-      "category": "productivity",
-      "description": "Automate Google Calendar: OAuth scopes, event creation with time zones and recurrence, free/busy queries, and safe updates across attendees.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "productivity/google-calendar-automation",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "productivity.google-sheets-automation": {
-      "id": "productivity.google-sheets-automation",
-      "name": "google-sheets-automation",
-      "category": "productivity",
-      "description": "Automate Google Sheets: service-account auth, range and batch APIs, formulas versus computed values, and safe bulk writes.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "productivity/google-sheets-automation",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
     "programming.bash-scripting": {
       "id": "programming.bash-scripting",
       "name": "bash-scripting",
@@ -6832,6 +7763,25 @@
         "copilot"
       ]
     },
+    "programming.elixir-otp": {
+      "id": "programming.elixir-otp",
+      "name": "elixir-otp",
+      "category": "programming",
+      "description": "Design Elixir and OTP systems: supervision trees, GenServer state ownership, Phoenix channels, Task concurrency and fault-tolerant releases.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "programming/elixir-otp",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
     "programming.go-concurrency": {
       "id": "programming.go-concurrency",
       "name": "go-concurrency",
@@ -6889,6 +7839,25 @@
         "copilot"
       ]
     },
+    "programming.haskell-fundamentals": {
+      "id": "programming.haskell-fundamentals",
+      "name": "haskell-fundamentals",
+      "category": "programming",
+      "description": "Write idiomatic Haskell: algebraic data types, type classes, monadic effects, laziness pitfalls, cabal projects and property-based testing.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "programming/haskell-fundamentals",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
     "programming.java-modern": {
       "id": "programming.java-modern",
       "name": "java-modern",
@@ -6899,6 +7868,63 @@
       "type": "procedural",
       "license": "MIT",
       "path": "programming/java-modern",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "programming.julia-scientific-computing": {
+      "id": "programming.julia-scientific-computing",
+      "name": "julia-scientific-computing",
+      "category": "programming",
+      "description": "Write performant Julia: type-stable functions, multiple dispatch, broadcasting, project environments, and benchmarking with BenchmarkTools.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "programming/julia-scientific-computing",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "programming.lua-scripting": {
+      "id": "programming.lua-scripting",
+      "name": "lua-scripting",
+      "category": "programming",
+      "description": "Write safe Lua for embedding and automation: tables and metatables, module layout, sandboxing untrusted chunks, and performance-conscious loops.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "programming/lua-scripting",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "programming.php-modern": {
+      "id": "programming.php-modern",
+      "name": "php-modern",
+      "category": "programming",
+      "description": "Write modern PHP 8: typed properties, enums, readonly classes, PSR-4 autoloading, Composer dependency hygiene, PSR-12 style and PHPUnit testing.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "programming/php-modern",
       "tools": [],
       "platforms": [
         "claude",
@@ -7022,6 +8048,44 @@
         "copilot"
       ]
     },
+    "programming.r-statistical-programming": {
+      "id": "programming.r-statistical-programming",
+      "name": "r-statistical-programming",
+      "category": "programming",
+      "description": "Analyse data in R: tidyverse workflows, statistical model fitting and diagnostics, reproducible R Markdown/Quarto reports and package-based project hygiene.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "programming/r-statistical-programming",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "programming.ruby-rails": {
+      "id": "programming.ruby-rails",
+      "name": "ruby-rails",
+      "category": "programming",
+      "description": "Build and maintain Ruby and Rails applications: idiomatic Ruby, ActiveRecord query hygiene, migrations with zero downtime, jobs, and RSpec coverage.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "programming/ruby-rails",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
     "programming.rust-async": {
       "id": "programming.rust-async",
       "name": "rust-async",
@@ -7070,6 +8134,25 @@
       "type": "procedural",
       "license": "MIT",
       "path": "programming/rust-testing",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "programming.scala-fundamentals": {
+      "id": "programming.scala-fundamentals",
+      "name": "scala-fundamentals",
+      "category": "programming",
+      "description": "Write idiomatic Scala 3: given/using type classes, opaque types, immutable collections, sbt builds and property-based testing with ScalaCheck.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "programming/scala-fundamentals",
       "tools": [],
       "platforms": [
         "claude",
@@ -7174,263 +8257,16 @@
         "copilot"
       ]
     },
-    "programming.elixir-otp": {
-      "id": "programming.elixir-otp",
-      "name": "elixir-otp",
-      "category": "programming",
-      "description": "Design Elixir and OTP systems: supervision trees, GenServer state ownership, Phoenix channels, Task concurrency and fault-tolerant releases.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "programming/elixir-otp",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "programming.haskell-fundamentals": {
-      "id": "programming.haskell-fundamentals",
-      "name": "haskell-fundamentals",
-      "category": "programming",
-      "description": "Write idiomatic Haskell: algebraic data types, type classes, monadic effects, laziness pitfalls, cabal projects and property-based testing.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "programming/haskell-fundamentals",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "programming.julia-scientific-computing": {
-      "id": "programming.julia-scientific-computing",
-      "name": "julia-scientific-computing",
-      "category": "programming",
-      "description": "Write performant Julia: type-stable functions, multiple dispatch, broadcasting, project environments, and benchmarking with BenchmarkTools.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "programming/julia-scientific-computing",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "programming.lua-scripting": {
-      "id": "programming.lua-scripting",
-      "name": "lua-scripting",
-      "category": "programming",
-      "description": "Write safe Lua for embedding and automation: tables and metatables, module layout, sandboxing untrusted chunks, and performance-conscious loops.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "programming/lua-scripting",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "programming.php-modern": {
-      "id": "programming.php-modern",
-      "name": "php-modern",
-      "category": "programming",
-      "description": "Write modern PHP 8: typed properties, enums, readonly classes, PSR-4 autoloading, Composer dependency hygiene, PSR-12 style and PHPUnit testing.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "programming/php-modern",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "programming.r-statistical-programming": {
-      "id": "programming.r-statistical-programming",
-      "name": "r-statistical-programming",
-      "category": "programming",
-      "description": "Analyse data in R: tidyverse workflows, statistical model fitting and diagnostics, reproducible R Markdown/Quarto reports and package-based project hygiene.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "programming/r-statistical-programming",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "programming.ruby-rails": {
-      "id": "programming.ruby-rails",
-      "name": "ruby-rails",
-      "category": "programming",
-      "description": "Build and maintain Ruby and Rails applications: idiomatic Ruby, ActiveRecord query hygiene, migrations with zero downtime, jobs, and RSpec coverage.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "programming/ruby-rails",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "programming.scala-fundamentals": {
-      "id": "programming.scala-fundamentals",
-      "name": "scala-fundamentals",
-      "category": "programming",
-      "description": "Write idiomatic Scala 3: given/using type classes, opaque types, immutable collections, sbt builds and property-based testing with ScalaCheck.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "programming/scala-fundamentals",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "audio.audio-mixing-mastering": {
-      "id": "audio.audio-mixing-mastering",
-      "name": "audio-mixing-mastering",
-      "category": "audio",
-      "description": "Mix and master audio: gain staging and bus structure, EQ and compression decisions, stereo image, loudness targets (LUFS/true peak) and delivery specs per platform.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "audio/audio-mixing-mastering",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "audio.live-sound-reinforcement": {
-      "id": "audio.live-sound-reinforcement",
-      "name": "live-sound-reinforcement",
-      "category": "audio",
-      "description": "Run live sound: gain structure, system EQ and feedback control, monitor mixes, dynamics and a repeatable soundcheck.",
+    "project-management.clickup-workflows": {
+      "id": "project-management.clickup-workflows",
+      "name": "clickup-workflows",
+      "category": "project-management",
+      "description": "Automate ClickUp: hierarchy (workspace, space, folder, list, task), custom fields, status transitions, and API-driven task hygiene.",
       "version": "1.0.0",
       "risk": "medium",
       "type": "procedural",
       "license": "MIT",
-      "path": "audio/live-sound-reinforcement",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "audio.music-notation-engraving": {
-      "id": "audio.music-notation-engraving",
-      "name": "music-notation-engraving",
-      "category": "audio",
-      "description": "Engrave readable scores: notation entry, layout spacing, parts extraction, transposition and MusicXML interchange for MuseScore and LilyPond.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "audio/music-notation-engraving",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "audio.music-production-daw": {
-      "id": "audio.music-production-daw",
-      "name": "music-production-daw",
-      "category": "audio",
-      "description": "Produce music in a DAW: session setup and gain staging, MIDI and audio recording, arrangement, editing and comping, and project hygiene for collaboration.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "audio/music-production-daw",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "audio.podcast-production": {
-      "id": "audio.podcast-production",
-      "name": "podcast-production",
-      "category": "audio",
-      "description": "Produce a podcast end to end: recording setup and remote capture, editing and cleanup, loudness-normalised delivery, chapters, transcripts and distribution.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "audio/podcast-production",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "audio.sound-design-foley": {
-      "id": "audio.sound-design-foley",
-      "name": "sound-design-foley",
-      "category": "audio",
-      "description": "Create sound design and foley: field and studio recording technique, layering and editing, sync to picture, and sound-effect library metadata.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "audio/sound-design-foley",
+      "path": "project-management/clickup-workflows",
       "tools": [],
       "platforms": [
         "claude",
@@ -7611,6 +8447,25 @@
         "copilot"
       ]
     },
+    "scientific.causal-inference": {
+      "id": "scientific.causal-inference",
+      "name": "causal-inference",
+      "category": "scientific",
+      "description": "Estimate causal effects from observational data: DAGs and confounding, matching and weighting, difference-in-differences, instrumental variables and honest sensitivity analysis.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "scientific/causal-inference",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
     "scientific.cfd": {
       "id": "scientific.cfd",
       "name": "cfd",
@@ -7621,25 +8476,6 @@
       "type": "procedural",
       "license": "MIT",
       "path": "scientific/cfd",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "scientific.fea": {
-      "id": "scientific.fea",
-      "name": "fea",
-      "category": "scientific",
-      "description": "Simulate structural stress, strain, thermal expansion, and mechanical deformation using finite element analysis.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "scientific/fea",
       "tools": [],
       "platforms": [
         "claude",
@@ -7697,6 +8533,25 @@
       "type": "procedural",
       "license": "MIT",
       "path": "scientific/experiment-design",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "scientific.fea": {
+      "id": "scientific.fea",
+      "name": "fea",
+      "category": "scientific",
+      "description": "Simulate structural stress, strain, thermal expansion, and mechanical deformation using finite element analysis.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "scientific/fea",
       "tools": [],
       "platforms": [
         "claude",
@@ -7991,16 +8846,16 @@
         "copilot"
       ]
     },
-    "scientific.causal-inference": {
-      "id": "scientific.causal-inference",
-      "name": "causal-inference",
-      "category": "scientific",
-      "description": "Estimate causal effects from observational data: DAGs and confounding, matching and weighting, difference-in-differences, instrumental variables and honest sensitivity analysis.",
+    "security.api-security-testing": {
+      "id": "security.api-security-testing",
+      "name": "api-security-testing",
+      "category": "security",
+      "description": "Test APIs for real vulnerabilities: authentication and authorisation bypass, object-level access control, injection, rate limits and mass assignment.",
       "version": "1.0.0",
       "risk": "medium",
       "type": "procedural",
       "license": "MIT",
-      "path": "scientific/causal-inference",
+      "path": "security/api-security-testing",
       "tools": [],
       "platforms": [
         "claude",
@@ -8029,25 +8884,6 @@
         "copilot"
       ]
     },
-    "security.dast": {
-      "id": "security.dast",
-      "name": "dast",
-      "category": "security",
-      "description": "Automate dynamic web vulnerability scanning using OWASP ZAP and Nuclei in CI/CD staging environments.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "security/dast",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
     "security.container-security": {
       "id": "security.container-security",
       "name": "container-security",
@@ -8058,6 +8894,25 @@
       "type": "procedural",
       "license": "MIT",
       "path": "security/container-security",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "security.dast": {
+      "id": "security.dast",
+      "name": "dast",
+      "category": "security",
+      "description": "Automate dynamic web vulnerability scanning using OWASP ZAP and Nuclei in CI/CD staging environments.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "security/dast",
       "tools": [],
       "platforms": [
         "claude",
@@ -8162,6 +9017,25 @@
         "copilot"
       ]
     },
+    "security.oauth2-oidc-integration": {
+      "id": "security.oauth2-oidc-integration",
+      "name": "oauth2-oidc-integration",
+      "category": "security",
+      "description": "Integrate OAuth 2.1 and OpenID Connect correctly: authorization code with PKCE, token validation, scope design, refresh rotation and logout.",
+      "version": "1.0.0",
+      "risk": "high",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "security/oauth2-oidc-integration",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
     "security.prompt-injection-defense": {
       "id": "security.prompt-injection-defense",
       "name": "prompt-injection-defense",
@@ -8210,6 +9084,25 @@
       "type": "procedural",
       "license": "MIT",
       "path": "security/secret-detection",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "security.secrets-management": {
+      "id": "security.secrets-management",
+      "name": "secrets-management",
+      "category": "security",
+      "description": "Handle application secrets correctly: vault and KMS-backed storage, rotation, least-privilege access, detection of leaks and emergency response.",
+      "version": "1.0.0",
+      "risk": "high",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "security/secrets-management",
       "tools": [],
       "platforms": [
         "claude",
@@ -8295,6 +9188,25 @@
         "copilot"
       ]
     },
+    "security.sonarqube-quality-gates": {
+      "id": "security.sonarqube-quality-gates",
+      "name": "sonarqube-quality-gates",
+      "category": "security",
+      "description": "Operate SonarQube/SonarCloud quality gates: gate conditions, coverage import, new-code focus, issue triage and false-positive policy.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "security/sonarqube-quality-gates",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
     "security.threat-modeling": {
       "id": "security.threat-modeling",
       "name": "threat-modeling",
@@ -8333,73 +9245,130 @@
         "copilot"
       ]
     },
-    "security.api-security-testing": {
-      "id": "security.api-security-testing",
-      "name": "api-security-testing",
-      "category": "security",
-      "description": "Test APIs for real vulnerabilities: authentication and authorisation bypass, object-level access control, injection, rate limits and mass assignment.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "security/api-security-testing",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "security.oauth2-oidc-integration": {
-      "id": "security.oauth2-oidc-integration",
-      "name": "oauth2-oidc-integration",
-      "category": "security",
-      "description": "Integrate OAuth 2.1 and OpenID Connect correctly: authorization code with PKCE, token validation, scope design, refresh rotation and logout.",
-      "version": "1.0.0",
-      "risk": "high",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "security/oauth2-oidc-integration",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "security.secrets-management": {
-      "id": "security.secrets-management",
-      "name": "secrets-management",
-      "category": "security",
-      "description": "Handle application secrets correctly: vault and KMS-backed storage, rotation, least-privilege access, detection of leaks and emergency response.",
-      "version": "1.0.0",
-      "risk": "high",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "security/secrets-management",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "security.sonarqube-quality-gates": {
-      "id": "security.sonarqube-quality-gates",
-      "name": "sonarqube-quality-gates",
-      "category": "security",
-      "description": "Operate SonarQube/SonarCloud quality gates: gate conditions, coverage import, new-code focus, issue triage and false-positive policy.",
+    "testing.accessibility-automation": {
+      "id": "testing.accessibility-automation",
+      "name": "accessibility-automation",
+      "category": "testing",
+      "description": "Automate accessibility verification: axe in component and E2E tests, keyboard and focus checks, CI gates, and the issues automation cannot catch.",
       "version": "1.0.0",
       "risk": "low",
       "type": "procedural",
       "license": "MIT",
-      "path": "security/sonarqube-quality-gates",
+      "path": "testing/accessibility-automation",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "testing.contract-testing": {
+      "id": "testing.contract-testing",
+      "name": "contract-testing",
+      "category": "testing",
+      "description": "Test service boundaries with contracts: consumer-driven pacts, provider verification, schema compatibility and versioning without coordination meetings.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "testing/contract-testing",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "testing.component-testing": {
+      "id": "testing.component-testing",
+      "name": "component-testing",
+      "category": "testing",
+      "description": "Test UI components as users use them: Testing Library queries, behaviour over implementation, network mocking, and a strategy that survives refactors.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "testing/component-testing",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "testing.load-testing": {
+      "id": "testing.load-testing",
+      "name": "load-testing",
+      "category": "testing",
+      "description": "Plan and run load tests: SLO-derived targets, k6 scenarios, ramp profiles, percentile analysis and bottleneck attribution.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "testing/load-testing",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "testing.mutation-testing": {
+      "id": "testing.mutation-testing",
+      "name": "mutation-testing",
+      "category": "testing",
+      "description": "Measure test-suite strength with mutation testing: pick operators, scope runs, read survivors and raise the mutation score without chasing 100%.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "testing/mutation-testing",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "testing.postman-api-testing": {
+      "id": "testing.postman-api-testing",
+      "name": "postman-api-testing",
+      "category": "testing",
+      "description": "Build API test suites with Postman and Newman: collection structure, environment layering, pre-request auth, assertions and CI runs.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "testing/postman-api-testing",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "testing.visual-regression-testing": {
+      "id": "testing.visual-regression-testing",
+      "name": "visual-regression-testing",
+      "category": "testing",
+      "description": "Catch unintended UI change with screenshot tests: deterministic fixtures, stable rendering, thresholds, baseline management and triage of real diffs.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "testing/visual-regression-testing",
       "tools": [],
       "platforms": [
         "claude",
@@ -8789,1279 +9758,6 @@
         "copilot"
       ]
     },
-    "web.accessibility": {
-      "id": "web.accessibility",
-      "name": "accessibility",
-      "category": "web",
-      "description": "Accessibility (a11y) testing \u2014 WCAG checks, keyboard navigation, screen-reader semantics, color contrast.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "web/accessibility",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "web.agent-browser": {
-      "id": "web.agent-browser",
-      "name": "agent-browser",
-      "category": "web",
-      "description": "Operate an agent-browser CLI for auditable navigation, extraction, screenshots, and UI checks.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "web/agent-browser",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "web.browser-automation": {
-      "id": "web.browser-automation",
-      "name": "browser-automation",
-      "category": "web",
-      "description": "Drive a headless browser to interact with web pages \u2014 fill forms, click, screenshot, scrape, test, and verify UI behavior.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "web/browser-automation",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "web.form-filler": {
-      "id": "web.form-filler",
-      "name": "form-filler",
-      "category": "web",
-      "description": "Fill web forms from user-approved data while requiring confirmation before submission.",
-      "version": "1.0.0",
-      "risk": "high",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "web/form-filler",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "web.media-downloader": {
-      "id": "web.media-downloader",
-      "name": "media-downloader",
-      "category": "web",
-      "description": "Download user-authorized public media while respecting rights, terms, and safe filenames.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "web/media-downloader",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "web.seo": {
-      "id": "web.seo",
-      "name": "seo",
-      "category": "web",
-      "description": "Search engine optimization audits \u2014 on-page, technical, content, and link analysis with prioritized recommendations.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "web/seo",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "web.web-extraction": {
-      "id": "web.web-extraction",
-      "name": "web-extraction",
-      "category": "web",
-      "description": "Extract specific information from a URL \u2014 main content, article text, structured fields \u2014 without full scraping infrastructure.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "web/web-extraction",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "web.web-scraper": {
-      "id": "web.web-scraper",
-      "name": "web-scraper",
-      "category": "web",
-      "description": "Extract permitted public web data with rate limits, provenance, and robots/terms awareness.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "web/web-scraper",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "web.web-scraping": {
-      "id": "web.web-scraping",
-      "name": "web-scraping",
-      "category": "web",
-      "description": "Extract structured data from websites \u2014 list pages, parse DOM, normalize records, and write to CSV / JSON.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "web/web-scraping",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "web.website-testing": {
-      "id": "web.website-testing",
-      "name": "website-testing",
-      "category": "web",
-      "description": "End-to-end testing of websites \u2014 happy paths, edge cases, browser matrix, and visual regressions.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "web/website-testing",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "web.astro-sites": {
-      "id": "web.astro-sites",
-      "name": "astro-sites",
-      "category": "web",
-      "description": "Build content-driven sites with Astro: islands architecture, content collections, SSR versus static output, and image optimization.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "web/astro-sites",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "web.nextjs-app-router": {
-      "id": "web.nextjs-app-router",
-      "name": "nextjs-app-router",
-      "category": "web",
-      "description": "Build Next.js App Router applications correctly: server versus client components, streaming and Suspense, route handlers, caching and revalidation, and metadata.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "web/nextjs-app-router",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "web.react-performance": {
-      "id": "web.react-performance",
-      "name": "react-performance",
-      "category": "web",
-      "description": "Diagnose and fix React performance: render profiling, memoisation that pays, list virtualisation, bundle splitting and Core Web Vitals.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "web/react-performance",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "web.svelte-development": {
-      "id": "web.svelte-development",
-      "name": "svelte-development",
-      "category": "web",
-      "description": "Build SvelteKit applications: runes and reactivity, load functions, form actions, adapters and component testing with Vitest.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "web/svelte-development",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "web.typescript-advanced": {
-      "id": "web.typescript-advanced",
-      "name": "typescript-advanced",
-      "category": "web",
-      "description": "Use advanced TypeScript deliberately: generics with constraints, conditional and mapped types, template literals, discriminated unions and safe module augmentation.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "web/typescript-advanced",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "web.vue-development": {
-      "id": "web.vue-development",
-      "name": "vue-development",
-      "category": "web",
-      "description": "Build Vue 3 applications: Composition API, script setup, reactivity boundaries, Pinia state, routing and Vitest component tests.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "web/vue-development",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "automation.n8n-workflow-automation": {
-      "id": "automation.n8n-workflow-automation",
-      "name": "n8n-workflow-automation",
-      "category": "automation",
-      "description": "Build n8n automations: node contracts, expression syntax, error workflows, credentials handling and versioned export/import.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "automation/n8n-workflow-automation",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "cad.autocad-drafting": {
-      "id": "cad.autocad-drafting",
-      "name": "autocad-drafting",
-      "category": "cad",
-      "description": "Draft in AutoCAD with production discipline: layers and standards, model versus paper space, annotative scaling, xrefs, sheet sets and plotting to PDF.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "cad/autocad-drafting",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "cad.bim-ifc-coordination": {
-      "id": "cad.bim-ifc-coordination",
-      "name": "bim-ifc-coordination",
-      "category": "cad",
-      "description": "Coordinate building models: IFC schema and exports, Revit/ArchiCAD workflows, clash detection, LOD/LOI expectations and model federation.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "cad/bim-ifc-coordination",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "cad.cnc-machining-fabrication": {
-      "id": "cad.cnc-machining-fabrication",
-      "name": "cnc-machining-fabrication",
-      "category": "cad",
-      "description": "Go from a solid model to machined parts: DFM review, toolpath strategy, workholding, feeds and speeds, and a G-code sanity check.",
-      "version": "1.0.0",
-      "risk": "high",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "cad/cnc-machining-fabrication",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "cad.dxf-dwg-interchange": {
-      "id": "cad.dxf-dwg-interchange",
-      "name": "dxf-dwg-interchange",
-      "category": "cad",
-      "description": "Exchange CAD data reliably: DXF/DWG versions, units and layers, blocks and xrefs, round-trip validation and conversion with ODA/LibreDWG tooling.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "cad/dxf-dwg-interchange",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "cad.freecad-parametric-modeling": {
-      "id": "cad.freecad-parametric-modeling",
-      "name": "freecad-parametric-modeling",
-      "category": "cad",
-      "description": "Model parametrically in FreeCAD: sketches and constraints, Part Design bodies, spreadsheets and expressions, TechDraw drawing sheets and headless scripting.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "cad/freecad-parametric-modeling",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "cad.fusion360-solid-modeling": {
-      "id": "cad.fusion360-solid-modeling",
-      "name": "fusion360-solid-modeling",
-      "category": "cad",
-      "description": "Model production parts in Fusion 360 or SolidWorks: feature-based history, design intent, assemblies and joints, sheet metal and manufacturing exports.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "cad/fusion360-solid-modeling",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "cad.laser-cutting-engraving": {
-      "id": "cad.laser-cutting-engraving",
-      "name": "laser-cutting-engraving",
-      "category": "cad",
-      "description": "Prepare files for laser cutting and engraving: kerf compensation, cut order, material settings, nesting and safe operation.",
-      "version": "1.0.0",
-      "risk": "high",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "cad/laser-cutting-engraving",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "cad.openscad-programmatic-cad": {
-      "id": "cad.openscad-programmatic-cad",
-      "name": "openscad-programmatic-cad",
-      "category": "cad",
-      "description": "Design parts in OpenSCAD: parametric modules, CSG operations, libraries, preview versus render, and export for printing or machining.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "cad/openscad-programmatic-cad",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "cad.rhino-grasshopper": {
-      "id": "cad.rhino-grasshopper",
-      "name": "rhino-grasshopper",
-      "category": "cad",
-      "description": "Parametric design in Rhino and Grasshopper: NURBS modelling, definition structure, data trees, scripting with Python/C# and baking to Rhino geometry.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "cad/rhino-grasshopper",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "cad.technical-drawing-gdt": {
-      "id": "cad.technical-drawing-gdt",
-      "name": "technical-drawing-gdt",
-      "category": "cad",
-      "description": "Produce and read manufacturing drawings: projection views, dimensioning and tolerancing, GD&T symbols and datums, surface finish and title-block standards.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "cad/technical-drawing-gdt",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "devops.circleci-pipelines": {
-      "id": "devops.circleci-pipelines",
-      "name": "circleci-pipelines",
-      "category": "devops",
-      "description": "Write CircleCI pipelines: orbs, executor and cache strategy, parallelism, workflow dependencies, and secure approval gates.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "devops/circleci-pipelines",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "devops.disaster-recovery": {
-      "id": "devops.disaster-recovery",
-      "name": "disaster-recovery",
-      "category": "devops",
-      "description": "Plan and prove recovery: RTO/RPO, backup strategy and restore drills, failover runbooks, dependency maps and game days that find the real gaps.",
-      "version": "1.0.0",
-      "risk": "high",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "devops/disaster-recovery",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "devops.platform-engineering": {
-      "id": "devops.platform-engineering",
-      "name": "platform-engineering",
-      "category": "devops",
-      "description": "Run an internal platform: golden paths, self-service templates, paved-road CI, tenant isolation and measuring developer experience.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "devops/platform-engineering",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "execution.sandboxed-code-execution": {
-      "id": "execution.sandboxed-code-execution",
-      "name": "sandboxed-code-execution",
-      "category": "execution",
-      "description": "Run generated or untrusted code safely: ephemeral sandboxes, resource and network limits, output capture and artifact handling.",
-      "version": "1.0.0",
-      "risk": "high",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "execution/sandboxed-code-execution",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "geospatial.cartographic-design": {
-      "id": "geospatial.cartographic-design",
-      "name": "cartographic-design",
-      "category": "geospatial",
-      "description": "Design maps people can read: projection and scale choice, visual hierarchy, colour for classification, typography, generalization, legend and accessibility.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "geospatial/cartographic-design",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "geospatial.drone-photogrammetry": {
-      "id": "geospatial.drone-photogrammetry",
-      "name": "drone-photogrammetry",
-      "category": "geospatial",
-      "description": "Turn drone imagery into accurate products: flight planning and overlap, ground control points, OpenDroneMap/WebODM processing, orthomosaics, DSM and accuracy reports.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "geospatial/drone-photogrammetry",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "geospatial.gdal-ogr-pipelines": {
-      "id": "geospatial.gdal-ogr-pipelines",
-      "name": "gdal-ogr-pipelines",
-      "category": "geospatial",
-      "description": "Build reproducible raster and vector pipelines with GDAL/OGR: format conversion, warping, mosaicking, COG output, clipping and batch processing.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "geospatial/gdal-ogr-pipelines",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "geospatial.geocoding-address-matching": {
-      "id": "geospatial.geocoding-address-matching",
-      "name": "geocoding-address-matching",
-      "category": "geospatial",
-      "description": "Geocode addresses and match records across datasets: normalisation, fuzzy matching, rooftop versus centroid precision, and accuracy reporting.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "geospatial/geocoding-address-matching",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "geospatial.lidar-point-clouds": {
-      "id": "geospatial.lidar-point-clouds",
-      "name": "lidar-point-clouds",
-      "category": "geospatial",
-      "description": "Process LiDAR point clouds: LAS/LAZ structure, PDAL pipelines, ground classification, DEM/DSM generation, and point-cloud quality control.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "geospatial/lidar-point-clouds",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "geospatial.openstreetmap-data": {
-      "id": "geospatial.openstreetmap-data",
-      "name": "openstreetmap-data",
-      "category": "geospatial",
-      "description": "Work with OpenStreetMap data: Overpass queries, extracts, tag semantics, conflation with authoritative data, and ODbL attribution obligations.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "geospatial/openstreetmap-data",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "geospatial.postgis-spatial-sql": {
-      "id": "geospatial.postgis-spatial-sql",
-      "name": "postgis-spatial-sql",
-      "category": "geospatial",
-      "description": "Run spatial SQL in PostGIS: geometry versus geography types, GiST indexes, ST_ spatial predicates and constructors, tiling and query performance.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "geospatial/postgis-spatial-sql",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "geospatial.qgis-map-production": {
-      "id": "geospatial.qgis-map-production",
-      "name": "qgis-map-production",
-      "category": "geospatial",
-      "description": "Produce publication-ready maps in QGIS: project structure, layer styling and labelling, print layouts with atlases, expression-driven symbology and PyQGIS automation.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "geospatial/qgis-map-production",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "geospatial.remote-sensing-indices": {
-      "id": "geospatial.remote-sensing-indices",
-      "name": "remote-sensing-indices",
-      "category": "geospatial",
-      "description": "Analyse satellite imagery: Sentinel-2 and Landsat band selection, cloud masking, vegetation and water indices, temporal composites and change detection.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "geospatial/remote-sensing-indices",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "geospatial.spatial-reference-systems": {
-      "id": "geospatial.spatial-reference-systems",
-      "name": "spatial-reference-systems",
-      "category": "geospatial",
-      "description": "Choose and transform coordinate reference systems correctly: EPSG codes, datums, projected versus geographic units, grid shifts and area/distance error control.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "geospatial/spatial-reference-systems",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "geospatial.spatial-statistics": {
-      "id": "geospatial.spatial-statistics",
-      "name": "spatial-statistics",
-      "category": "geospatial",
-      "description": "Analyse spatial patterns statistically: spatial autocorrelation (Moran's I), hotspot detection, clustering, interpolation/kriging and the ecology of modifiable areal units.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "geospatial/spatial-statistics",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "geospatial.vector-tile-web-maps": {
-      "id": "geospatial.vector-tile-web-maps",
-      "name": "vector-tile-web-maps",
-      "category": "geospatial",
-      "description": "Publish web maps with vector tiles: MVT/PMTiles generation, style specification, MapLibre or Leaflet clients, attributions and cache strategy.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "geospatial/vector-tile-web-maps",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "integration.agent-harness-onboarding": {
-      "id": "integration.agent-harness-onboarding",
-      "name": "agent-harness-onboarding",
-      "category": "integration",
-      "description": "Install the All-Skills library into any supported agent harness (Claude Code, Cursor, Codex, Gemini, Copilot, VS Code, Windsurf, OpenCode, Cline, Roo, Goose and more) and verify the links.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "integration/agent-harness-onboarding",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "integration.connector-github": {
-      "id": "integration.connector-github",
-      "name": "connector-github",
-      "category": "integration",
-      "description": "Wire GitHub access into an agent (GitHub MCP server or the gh CLI skill) and run review, triage and release operations with least-privilege tokens.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "integration/connector-github",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "integration.connector-browser-automation": {
-      "id": "integration.connector-browser-automation",
-      "name": "connector-browser-automation",
-      "category": "integration",
-      "description": "Choose and wire the right browser connector \u2014 Chrome DevTools for live debugging, Playwright for scripted end-to-end checks, Browserbase for remote sessions \u2014 and keep context cost bounded.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "integration/connector-browser-automation",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "integration.connector-cloud-infrastructure": {
-      "id": "integration.connector-cloud-infrastructure",
-      "name": "connector-cloud-infrastructure",
-      "category": "integration",
-      "description": "Wire AWS, Cloudflare, Vercel, Railway, Kubernetes and Terraform connectors with least-privilege credentials, dry-run discipline and explicit approval gates for mutations.",
-      "version": "1.0.0",
-      "risk": "high",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "integration/connector-cloud-infrastructure",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "integration.connector-databases": {
-      "id": "integration.connector-databases",
-      "name": "connector-databases",
-      "category": "integration",
-      "description": "Connect an agent to PostgreSQL, SQLite, MySQL, MongoDB, Redis or ClickHouse through MCP, with read-only enforcement, schema discovery and cost-aware query habits.",
-      "version": "1.0.0",
-      "risk": "high",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "integration/connector-databases",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "integration.connector-observability": {
-      "id": "integration.connector-observability",
-      "name": "connector-observability",
-      "category": "integration",
-      "description": "Wire error tracking, metrics and log search into an agent session so incidents are investigated from evidence rather than speculation.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "integration/connector-observability",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "integration.mcp-gateway": {
-      "id": "integration.mcp-gateway",
-      "name": "mcp-gateway",
-      "category": "integration",
-      "description": "Aggregate a large MCP catalog behind a single gateway endpoint so an agent can reach every connector without loading dozens of tool schemas into every session.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "integration/mcp-gateway",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "integration.mcp-security-review": {
-      "id": "integration.mcp-security-review",
-      "name": "mcp-security-review",
-      "category": "integration",
-      "description": "Audit MCP servers and their tool contracts for tool poisoning, prompt injection, over-broad scopes, unbounded execution and credential exfiltration paths before enabling them.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "integration/mcp-security-review",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "integration.mcp-server-author": {
-      "id": "integration.mcp-server-author",
-      "name": "mcp-server-author",
-      "category": "integration",
-      "description": "Design and implement a new Model Context Protocol server with well-scoped tools, validated schemas, resource/prompt support and tests that exercise the protocol surface.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "integration/mcp-server-author",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "integration.mcp-server-install": {
-      "id": "integration.mcp-server-install",
-      "name": "mcp-server-install",
-      "category": "integration",
-      "description": "Install Model Context Protocol servers from the curated All-Skills catalog into any agent harness, with a preview, an idempotent merge and a verification step.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "integration/mcp-server-install",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "integration.skill-pack-install": {
-      "id": "integration.skill-pack-install",
-      "name": "skill-pack-install",
-      "category": "integration",
-      "description": "Install a role profile or curated skill pack with dependency resolution, destination control and a dry-run preview.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "integration/skill-pack-install",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "integration.third-party-api-resilience": {
-      "id": "integration.third-party-api-resilience",
-      "name": "third-party-api-resilience",
-      "category": "integration",
-      "description": "Harden integrations with external APIs: timeouts, retry budgets, circuit breaking, rate-limit awareness, caching and graceful degradation.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "integration/third-party-api-resilience",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "integration.universal-skill-discovery": {
-      "id": "integration.universal-skill-discovery",
-      "name": "universal-skill-discovery",
-      "category": "integration",
-      "description": "Find the right skill across canonical skills, the 15k-entry catalog and imported upstream sources, then install it or publish a new one with provenance intact.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "integration/universal-skill-discovery",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "integration.webhook-delivery-design": {
-      "id": "integration.webhook-delivery-design",
-      "name": "webhook-delivery-design",
-      "category": "integration",
-      "description": "Design reliable outbound webhooks: signed payloads, retries with backoff, idempotent consumers, replay and delivery observability.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "integration/webhook-delivery-design",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "photography.photography-raw-workflow": {
-      "id": "photography.photography-raw-workflow",
-      "name": "photography-raw-workflow",
-      "category": "photography",
-      "description": "Manage a RAW photography workflow: import and catalogue structure, non-destructive develop settings, colour management and soft proofing, and export presets per use.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "photography/photography-raw-workflow",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "photography.studio-lighting-color-management": {
-      "id": "photography.studio-lighting-color-management",
-      "name": "studio-lighting-color-management",
-      "category": "photography",
-      "description": "Light and colour-manage a shoot: modifier choice and ratios, white balance, profiling the display, soft-proofing and export for print or web.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "photography/studio-lighting-color-management",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "project-management.clickup-workflows": {
-      "id": "project-management.clickup-workflows",
-      "name": "clickup-workflows",
-      "category": "project-management",
-      "description": "Automate ClickUp: hierarchy (workspace, space, folder, list, task), custom fields, status transitions, and API-driven task hygiene.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "project-management/clickup-workflows",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "testing.accessibility-automation": {
-      "id": "testing.accessibility-automation",
-      "name": "accessibility-automation",
-      "category": "testing",
-      "description": "Automate accessibility verification: axe in component and E2E tests, keyboard and focus checks, CI gates, and the issues automation cannot catch.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "testing/accessibility-automation",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "testing.contract-testing": {
-      "id": "testing.contract-testing",
-      "name": "contract-testing",
-      "category": "testing",
-      "description": "Test service boundaries with contracts: consumer-driven pacts, provider verification, schema compatibility and versioning without coordination meetings.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "testing/contract-testing",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "testing.component-testing": {
-      "id": "testing.component-testing",
-      "name": "component-testing",
-      "category": "testing",
-      "description": "Test UI components as users use them: Testing Library queries, behaviour over implementation, network mocking, and a strategy that survives refactors.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "testing/component-testing",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "testing.load-testing": {
-      "id": "testing.load-testing",
-      "name": "load-testing",
-      "category": "testing",
-      "description": "Plan and run load tests: SLO-derived targets, k6 scenarios, ramp profiles, percentile analysis and bottleneck attribution.",
-      "version": "1.0.0",
-      "risk": "medium",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "testing/load-testing",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "testing.mutation-testing": {
-      "id": "testing.mutation-testing",
-      "name": "mutation-testing",
-      "category": "testing",
-      "description": "Measure test-suite strength with mutation testing: pick operators, scope runs, read survivors and raise the mutation score without chasing 100%.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "testing/mutation-testing",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "testing.postman-api-testing": {
-      "id": "testing.postman-api-testing",
-      "name": "postman-api-testing",
-      "category": "testing",
-      "description": "Build API test suites with Postman and Newman: collection structure, environment layering, pre-request auth, assertions and CI runs.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "testing/postman-api-testing",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
-    "testing.visual-regression-testing": {
-      "id": "testing.visual-regression-testing",
-      "name": "visual-regression-testing",
-      "category": "testing",
-      "description": "Catch unintended UI change with screenshot tests: deterministic fixtures, stable rendering, thresholds, baseline management and triage of real diffs.",
-      "version": "1.0.0",
-      "risk": "low",
-      "type": "procedural",
-      "license": "MIT",
-      "path": "testing/visual-regression-testing",
-      "tools": [],
-      "platforms": [
-        "claude",
-        "cursor",
-        "gemini",
-        "codex",
-        "copilot"
-      ]
-    },
     "video.color-grading": {
       "id": "video.color-grading",
       "name": "color-grading",
@@ -10148,6 +9844,310 @@
       "type": "procedural",
       "license": "MIT",
       "path": "video/video-encoding-delivery",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "web.accessibility": {
+      "id": "web.accessibility",
+      "name": "accessibility",
+      "category": "web",
+      "description": "Accessibility (a11y) testing \u2014 WCAG checks, keyboard navigation, screen-reader semantics, color contrast.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "web/accessibility",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "web.agent-browser": {
+      "id": "web.agent-browser",
+      "name": "agent-browser",
+      "category": "web",
+      "description": "Operate an agent-browser CLI for auditable navigation, extraction, screenshots, and UI checks.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "web/agent-browser",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "web.astro-sites": {
+      "id": "web.astro-sites",
+      "name": "astro-sites",
+      "category": "web",
+      "description": "Build content-driven sites with Astro: islands architecture, content collections, SSR versus static output, and image optimization.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "web/astro-sites",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "web.browser-automation": {
+      "id": "web.browser-automation",
+      "name": "browser-automation",
+      "category": "web",
+      "description": "Drive a headless browser to interact with web pages \u2014 fill forms, click, screenshot, scrape, test, and verify UI behavior.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "web/browser-automation",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "web.form-filler": {
+      "id": "web.form-filler",
+      "name": "form-filler",
+      "category": "web",
+      "description": "Fill web forms from user-approved data while requiring confirmation before submission.",
+      "version": "1.0.0",
+      "risk": "high",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "web/form-filler",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "web.media-downloader": {
+      "id": "web.media-downloader",
+      "name": "media-downloader",
+      "category": "web",
+      "description": "Download user-authorized public media while respecting rights, terms, and safe filenames.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "web/media-downloader",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "web.nextjs-app-router": {
+      "id": "web.nextjs-app-router",
+      "name": "nextjs-app-router",
+      "category": "web",
+      "description": "Build Next.js App Router applications correctly: server versus client components, streaming and Suspense, route handlers, caching and revalidation, and metadata.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "web/nextjs-app-router",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "web.react-performance": {
+      "id": "web.react-performance",
+      "name": "react-performance",
+      "category": "web",
+      "description": "Diagnose and fix React performance: render profiling, memoisation that pays, list virtualisation, bundle splitting and Core Web Vitals.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "web/react-performance",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "web.seo": {
+      "id": "web.seo",
+      "name": "seo",
+      "category": "web",
+      "description": "Search engine optimization audits \u2014 on-page, technical, content, and link analysis with prioritized recommendations.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "web/seo",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "web.svelte-development": {
+      "id": "web.svelte-development",
+      "name": "svelte-development",
+      "category": "web",
+      "description": "Build SvelteKit applications: runes and reactivity, load functions, form actions, adapters and component testing with Vitest.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "web/svelte-development",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "web.typescript-advanced": {
+      "id": "web.typescript-advanced",
+      "name": "typescript-advanced",
+      "category": "web",
+      "description": "Use advanced TypeScript deliberately: generics with constraints, conditional and mapped types, template literals, discriminated unions and safe module augmentation.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "web/typescript-advanced",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "web.vue-development": {
+      "id": "web.vue-development",
+      "name": "vue-development",
+      "category": "web",
+      "description": "Build Vue 3 applications: Composition API, script setup, reactivity boundaries, Pinia state, routing and Vitest component tests.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "web/vue-development",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "web.web-extraction": {
+      "id": "web.web-extraction",
+      "name": "web-extraction",
+      "category": "web",
+      "description": "Extract specific information from a URL \u2014 main content, article text, structured fields \u2014 without full scraping infrastructure.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "web/web-extraction",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "web.web-scraper": {
+      "id": "web.web-scraper",
+      "name": "web-scraper",
+      "category": "web",
+      "description": "Extract permitted public web data with rate limits, provenance, and robots/terms awareness.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "web/web-scraper",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "web.web-scraping": {
+      "id": "web.web-scraping",
+      "name": "web-scraping",
+      "category": "web",
+      "description": "Extract structured data from websites \u2014 list pages, parse DOM, normalize records, and write to CSV / JSON.",
+      "version": "1.0.0",
+      "risk": "medium",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "web/web-scraping",
+      "tools": [],
+      "platforms": [
+        "claude",
+        "cursor",
+        "gemini",
+        "codex",
+        "copilot"
+      ]
+    },
+    "web.website-testing": {
+      "id": "web.website-testing",
+      "name": "website-testing",
+      "category": "web",
+      "description": "End-to-end testing of websites \u2014 happy paths, edge cases, browser matrix, and visual regressions.",
+      "version": "1.0.0",
+      "risk": "low",
+      "type": "procedural",
+      "license": "MIT",
+      "path": "web/website-testing",
       "tools": [],
       "platforms": [
         "claude",

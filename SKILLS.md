@@ -144,7 +144,7 @@ python scripts/skills/skills.py chain deep-research --dry-run
 python scripts/skills/skills.py chain anti-procrastination --dry-run
 python scripts/skills/skills.py chain code-review-flow --dry-run
 
-# Run full health diagnostics and test suite (374 tests)
+# Run full health diagnostics and test suite (378 tests)
 python scripts/skills/skills.py doctor
 python scripts/skills/skills.py test
 ```
@@ -366,7 +366,7 @@ Unambiguous single-source-of-truth counts:
 - **Catalog Skills**: `15,146` categorized implementations across 252 domains in `awesome_skills/`.
 - **Workflows**: `5` multi-step execution playbooks in `workflows/`.
 - **Named Chains**: `4` deterministic DAG chains in `skills/chains.json`.
-- **Tests**: `374` unit tests in the suite, plus `8` evaluation suites in `evals/`.
+- **Tests**: `378` unit tests in the suite, plus `8` evaluation suites in `evals/`.
 - **MCP Servers**: `113` catalogued connectors across `35` categories, installable into `18` harnesses.
 
 ### 15. Universal Tool Registry, Authentication & Federated Ingestion Pipeline

@@ -1,0 +1,16 @@
+# Platform Adapter: OpenClaw
+agent_id: openclaw
+display_name: "OpenClaw"
+vendor: OpenClaw
+discovery_paths:
+  workspace:
+    - ".openclaw/skills"
+  user_global:
+    - "~/.openclaw/skills"
+manifest_format: markdown_frontmatter
+frontmatter_standard: agent_skills_v1
+supported_features:
+  - progressive_disclosure
+  - mcp_support
+  - tool_broker
+reload_trigger: session_restart

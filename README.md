@@ -20,13 +20,13 @@
   <img src="https://img.shields.io/badge/skills-13%2C362%2B%20Unique%20Skills-7c3aed?style=for-the-badge&logo=openai&logoColor=white" alt="13,362 Unique Skills" />
   <img src="https://img.shields.io/badge/catalog-15%2C146%20Catalog%20Entries-0ea5e9?style=for-the-badge&logo=github&logoColor=white" alt="15,146 Catalog Entries" />
   <img src="https://img.shields.io/badge/domains-252%20Categories-10b981?style=for-the-badge&logo=hubspot&logoColor=white" alt="252 Categories" />
-  <img src="https://img.shields.io/badge/platforms-11%20Agent%20Harnesses-ec4899?style=for-the-badge&logo=probot&logoColor=white" alt="11 Agent Harnesses" />
+  <img src="https://img.shields.io/badge/platforms-12%20Agent%20Harnesses-ec4899?style=for-the-badge&logo=probot&logoColor=white" alt="12 Agent Harnesses" />
   <img src="https://img.shields.io/badge/active--harness-89%20Pre--Loaded%20Skills-6366f1?style=for-the-badge&logo=lightning&logoColor=white" alt="89 Active Skills" />
   <img src="https://img.shields.io/badge/skillhub-compatible-0ea5e9?style=for-the-badge&logo=npm&logoColor=white" alt="SkillHub Compatible" />
 </p>
 
 <p align="center">
-  <strong>The Universal Skill Operating System for Autonomous AI Agents — providing deterministic multi-stage routing, capability-based skill stacks, least-privilege capability policies with enforced human approval, and dynamic integration across Claude Code, Cursor, OpenAI Codex, GitHub Copilot, Gemini CLI, Antigravity, VS Code, Windsurf, OpenCode, Cline, Roo Code, and Block Goose.</strong>
+  <strong>The Universal Skill Operating System for Autonomous AI Agents — providing deterministic multi-stage routing, capability-based skill stacks, least-privilege capability policies with enforced human approval, and dynamic integration across Claude Code, Cursor, OpenAI Codex, GitHub Copilot, Gemini CLI, Antigravity, VS Code, Windsurf, OpenCode, Cline, Roo Code, Block Goose, and OpenClaw.</strong>
 </p>
 
 <p align="center">
@@ -49,7 +49,7 @@
 
 ## 📑 Table of Contents
 
-- **Overview** — [Why All Skills?](#-why-all-skills) · [Discovery & Runtime Pyramid](#-the-skill-discovery--runtime-pyramid) · [End-to-End Orchestration Flow](#️-end-to-end-capability-orchestration-pipeline) · [Multi-Platform Support](#-multi-platform-support-11-ai-coding-agents)
+- **Overview** — [Why All Skills?](#-why-all-skills) · [Discovery & Runtime Pyramid](#-the-skill-discovery--runtime-pyramid) · [End-to-End Orchestration Flow](#️-end-to-end-capability-orchestration-pipeline) · [Multi-Platform Support](#-multi-platform-support-12-ai-coding-agents)
 - **Getting Started** — [MCP: One Command, Every Connector](#-mcp-one-command-every-connector) · [Quick Start: One Recommended Path](#-quick-start-one-recommended-path) · [Installation & Agent Setup](#-installation--ai-agent-ecosystem-setup) · [Verification & Health Check](#-verification--health-check)
 - **Using All Skills** — [Universal CLI](#-universal-cli-allskills) · [Explainability Engine](#-explain-why-this-skill-was-selected) · [Safe Mode & Autonomy](#-safe-mode--explicit-approval) · [Universal Integration Suite](#-universal-integration-suite-install-anything-connect-everything) · [Active Harness Skills Index](#-active-harness-skills-index-89-skills) · [Pre-Loaded Harness Skills](#-pre-loaded-active-harness-skills-89-skills) · [Voice Assistant & Multimodal OS](#️-universal-voice-assistant--multimodal-os-ovos-neon-mycroft)
 - **Architecture & Reliability** — [8-Layer Defensive Security](#️-8-layer-defensive-security--sandboxing-architecture) · [Evidence-Based Quality Scores](#-evidence-based-quality-scores--reliability-cards) · [Real-World Retrieval Benchmark](#-real-world-retrieval--routing-benchmark) · [Skill Deduplication & Relationships](#-skill-deduplication--conflict-resolution) · [9-Stage Skill Lifecycle](#-9-stage-skill-lifecycle) · [Repository Architecture Map](#️-repository-directory-structure)
@@ -75,7 +75,7 @@ When AI coding assistants are front-loaded with thousands of prompt instructions
 │  • 9-Signal Layered Scoring   │  • 252 Functional Domain Dirs   │  • Pre-Loaded in Workspace    │
 │  • Deterministic Workflows    │  • Machine-Readable Index       │  • Native Multi-Tool Synced   │
 │  • 8-State Formal Lifecycle   │  • Complete CATALOG.md Reference│  • $O(1)$ Load-on-Demand      │
-│  • 374 CI-Gated Tests         │  • Dynamic Manager CLI          │  • Zero Prompt Bloat          │
+│  • 378 CI-Gated Tests         │  • Dynamic Manager CLI          │  • Zero Prompt Bloat          │
 └───────────────────────────────┴─────────────────────────────────┴───────────────────────────────┘
 ```
 
@@ -201,23 +201,28 @@ To ensure transparency across our single-source-of-truth metadata (`stats.json`)
 
 ---
 
-## 🤖 Multi-Platform Support: 11 AI Coding Agents
+## 🤖 Multi-Platform Support: 12 AI Coding Agents
 
 Every active skill follows the open **Agent Skills** format (`SKILL.md` + YAML frontmatter), and [`scripts/setup_tools.py`](scripts/setup_tools.py) links it into each agent's skills directory using adapter configurations under [`adapters/`](adapters/). We maintain a transparent compatibility matrix distinguishing between configuration, file discovery, execution, and full end-to-end integration:
 
-| AI Coding Agent | Workspace Path | Configured | Discovered | Executed | E2E Tested | Evidence Level |
-| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
-| **Claude Code** | `.claude/skills/` | ✓ | ✓ | ✓ | ✓ | Tier 4 Verified |
-| **Cursor** | `.cursor/skills/` | ✓ | ✓ | ✓ | ✓ | Tier 4 Verified |
-| **OpenAI Codex CLI** | `.codex/skills/` | ✓ | ✓ | ✓ | ✓ | Tier 4 Verified |
-| **Gemini / Antigravity** | `.agents/skills/` | ✓ | ✓ | ✓ | ✓ | Tier 4 Verified |
-| **OpenClaw** | `.openclaw/skills/` | ✓ | ✓ | ✓ | ⚠️ | Tier 3 Validated |
-| **GitHub Copilot** | `.github/skills/` | ✓ | ✓ | ⚠️ | ⚠️ | Tier 2 Scanned |
-| **VS Code Agent** | `.vscode/skills/` | ✓ | ✓ | ⚠️ | ⚠️ | Tier 2 Scanned |
-| **Codeium Windsurf** | `.windsurf/skills/` | ✓ | ✓ | ⚠️ | ⚠️ | Tier 2 Scanned |
-| **Cline** | `.cline/skills/` | ✓ | ✓ | ⚠️ | ⚠️ | Tier 2 Scanned |
-| **Roo Code** | `.roo/skills/` | ✓ | ✓ | ⚠️ | ⚠️ | Tier 2 Scanned |
-| **Block Goose** | `.goose/skills/` | ✓ | ✓ | ⚠️ | ⚠️ | Tier 2 Scanned |
+<!-- BEGIN GENERATED: harness-compatibility (scripts/generate_harness_matrix.py) -->
+| AI Coding Agent | Skills directory | Configured | Discoverable | Invocable | Workflow completed | Evidence level |
+| :--- | :--- | :---: | :---: | :---: | :---: | :--- |
+| **Antigravity / Gemini CLI** | `.agents/skills/` | ✓ | ✓ | — | — | Tier 2 Scanned |
+| **Claude Code** | `.claude/skills/` | ✓ | ✓ | — | — | Tier 2 Scanned |
+| **Cursor** | `.cursor/skills/` | ✓ | ✓ | — | — | Tier 2 Scanned |
+| **Codex CLI** | `.codex/skills/` | ✓ | ✓ | — | — | Tier 2 Scanned |
+| **GitHub Copilot** | `.github/skills/` | ✓ | ✓ | — | — | Tier 2 Scanned |
+| **VS Code Agent** | `.vscode/skills/` | ✓ | ✓ | — | — | Tier 2 Scanned |
+| **Windsurf** | `.windsurf/skills/` | ✓ | ✓ | — | — | Tier 2 Scanned |
+| **OpenCode** | `.opencode/skills/` | ✓ | ✓ | — | — | Tier 2 Scanned |
+| **Cline** | `.cline/skills/` | ✓ | ✓ | — | — | Tier 2 Scanned |
+| **Roo Code** | `.roo/skills/` | ✓ | ✓ | — | — | Tier 2 Scanned |
+| **Block Goose** | `.goose/skills/` | ✓ | ✓ | — | — | Tier 2 Scanned |
+| **OpenClaw** | `.openclaw/skills/` | ✓ | ✓ | — | — | Tier 2 Scanned |
+
+`✓` verified · `✗` not supported · `—` not recorded. 12 harnesses are configured and discoverable; **0 manual evidence entries** (named agent version, date, verifier, skill) are on record, so invocable and workflow-completed claims stay empty until someone records one in [`compatibility/matrix.json`](compatibility/matrix.json) — see [`docs/COMPATIBILITY.md`](docs/COMPATIBILITY.md) for the levels and how to add evidence.
+<!-- END GENERATED: harness-compatibility -->
 
 ---
 
@@ -397,7 +402,7 @@ npx @mr-nobody-anonymous/all-skills search "health economist"
 
 ## 📚 Active Harness Skills Index (89 Skills)
 
-Every skill below is pre-validated against `schemas/skill-frontmatter.schema.json`, includes strict prompt-injection defenses, and is immediately available across all 11 agent harnesses:
+Every skill below is pre-validated against `schemas/skill-frontmatter.schema.json`, includes strict prompt-injection defenses, and is immediately available across all 12 agent harnesses:
 
 | Category | Skills |
 | :--- | :--- |
@@ -547,7 +552,7 @@ allskills profile install software-engineer            # --dest DIR, --dry-run
 allskills verify
 allskills lock --verify
 
-# Run regression test suite (374 tests)
+# Run regression test suite (378 tests)
 allskills test
 
 # Inspect upstream source registry and trust tiers
@@ -889,7 +894,7 @@ python scripts/skills/skills.py chain deep-research --dry-run
 python scripts/skills/skills.py chain anti-procrastination --dry-run
 python scripts/skills/skills.py chain code-review-flow --dry-run
 
-# Run full health diagnostics and 374-test verification suite
+# Run full health diagnostics and 378-test verification suite
 python scripts/skills/skills.py doctor
 python scripts/skills/skills.py test
 
@@ -1026,7 +1031,7 @@ all-skills/
 │   ├── SECURITY.md              # Threat model & static inspection policy
 │   └── *.md                     # Per-category detailed reference guides
 │
-└── tests/skill_tests/           # 🧪 Unit & Integration Test Suite (374 tests)
+└── tests/skill_tests/           # 🧪 Unit & Integration Test Suite (378 tests)
 ```
 
 ---
@@ -1164,7 +1169,7 @@ Run complete test suites and diagnostic checks at any time:
 # 1. Check health of all canonical skills
 python scripts/skills/skills.py doctor
 
-# 2. Run the 374 unit and integration tests
+# 2. Run the 378 unit and integration tests
 python scripts/skills/skills.py test
 
 # 3. Verify multi-tool harness connections
