@@ -10,7 +10,7 @@
 # Optional audio/voice system libraries (only needed for voice skills that use
 # requirements-optional.txt):  --build-arg INSTALL_AUDIO_DEPS=true
 
-FROM python:3.12-slim
+FROM python:3.14-slim
 
 ARG INSTALL_AUDIO_DEPS=false
 
