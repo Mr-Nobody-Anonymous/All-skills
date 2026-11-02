@@ -97,7 +97,7 @@ more-itertools==11.1.0 ; platform_machine != 'ppc64le' and platform_machine != '
     # via
     #   jaraco-classes
     #   jaraco-functools
-mypy==2.4.0
+mypy==2.4.1
     # via all-skills (pyproject.toml)
 mypy-extensions==1.1.0
     # via mypy
@@ -109,7 +109,7 @@ networkx==3.7 ; python_full_version >= '3.12'
     # via all-skills (pyproject.toml)
 nh3==0.3.7
     # via readme-renderer
-nodeenv==1.11.0
+nodeenv==1.11.1
     # via pre-commit
 packaging==26.3
     # via
@@ -135,7 +135,7 @@ pygments==2.21.0
     #   rich
 pyproject-hooks==1.3.3
     # via build
-pytest==9.1.1
+pytest==9.2.0
     # via
     #   all-skills (pyproject.toml)
     #   pytest-cov
@@ -144,7 +144,7 @@ pytest-cov==7.1.0
     # via all-skills (pyproject.toml)
 pytest-github-actions-annotate-failures==0.4.2
     # via all-skills (pyproject.toml)
-python-discovery==1.6.5
+python-discovery==1.6.7
     # via virtualenv
 python-dotenv==1.2.4
     # via all-skills (pyproject.toml)
