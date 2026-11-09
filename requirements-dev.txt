@@ -4,7 +4,7 @@
 # Regenerate with uv:           uv pip compile pyproject.toml --extra dev --extra release --universal \
 #                                 --python-version 3.10 --no-header -o requirements-dev.txt
 # and restore this header. Dependabot keeps the pins current.
-anyio==4.15.1
+anyio==4.16.0
     # via httpx
 ast-serialize==0.13.1
     # via mypy
@@ -97,9 +97,9 @@ more-itertools==11.1.0 ; platform_machine != 'ppc64le' and platform_machine != '
     # via
     #   jaraco-classes
     #   jaraco-functools
-mypy==2.4.0
+mypy==2.4.1
     # via all-skills (pyproject.toml)
-mypy-extensions==1.1.0
+mypy-extensions==1.2.0
     # via mypy
 networkx==3.4.2 ; python_full_version < '3.11'
     # via all-skills (pyproject.toml)
@@ -109,7 +109,7 @@ networkx==3.7 ; python_full_version >= '3.12'
     # via all-skills (pyproject.toml)
 nh3==0.3.7
     # via readme-renderer
-nodeenv==1.11.0
+nodeenv==1.12.0
     # via pre-commit
 packaging==26.3
     # via
@@ -135,7 +135,7 @@ pygments==2.21.0
     #   rich
 pyproject-hooks==1.3.3
     # via build
-pytest==9.1.1
+pytest==9.2.0
     # via
     #   all-skills (pyproject.toml)
     #   pytest-cov
@@ -144,7 +144,7 @@ pytest-cov==7.1.0
     # via all-skills (pyproject.toml)
 pytest-github-actions-annotate-failures==0.4.2
     # via all-skills (pyproject.toml)
-python-discovery==1.6.5
+python-discovery==1.9.4
     # via virtualenv
 python-dotenv==1.2.4
     # via all-skills (pyproject.toml)
@@ -181,7 +181,7 @@ rpds-py==2026.6.3 ; python_full_version >= '3.11'
     # via
     #   jsonschema
     #   referencing
-ruff==0.17.3
+ruff==0.17.4
     # via all-skills (pyproject.toml)
 secretstorage==3.5.0 ; platform_machine != 'ppc64le' and platform_machine != 's390x' and sys_platform == 'linux'
     # via keyring
@@ -193,9 +193,9 @@ tomli==2.4.1 ; python_full_version <= '3.11'
     #   pytest
 twine==7.0.0
     # via all-skills (pyproject.toml)
-types-pyyaml==6.0.12.20260906
+types-pyyaml==6.0.12.20261103
     # via all-skills (pyproject.toml)
-types-requests==2.33.0.20261006
+types-requests==2.33.0.20261030
     # via all-skills (pyproject.toml)
 typing-extensions==4.16.0
     # via
@@ -211,7 +211,7 @@ urllib3==2.8.0
     #   requests
     #   twine
     #   types-requests
-virtualenv==21.15.1
+virtualenv==21.15.5
     # via pre-commit
 zipp==4.1.0 ; (python_full_version < '3.10.2' and platform_machine == 'ppc64le') or (python_full_version < '3.10.2' and platform_machine == 's390x') or (python_full_version < '3.12' and platform_machine != 'ppc64le' and platform_machine != 's390x')
     # via importlib-metadata
