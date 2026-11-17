@@ -99,7 +99,7 @@ The trust boundary is consistent across every adapter:
   never turns memory frontmatter into a self-asserted approval;
 - active execution state remains in GitHub or Linear, not only in memory.
 
-`skills/unified-memory/SKILL.md` owns this workflow. Codex and Cursor receive
+`awesome_skills/ecc/unified-memory/SKILL.md` owns this workflow. Codex and Cursor receive
 behavior-identical packaging copies under `.agents/skills/` and
 `.cursor/skills/`; Hermes can import the canonical skill. No harness owns a
 separate authoritative memory store.

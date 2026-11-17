@@ -64,9 +64,15 @@ def collect(servers: dict[str, dict]) -> tuple[dict, list[str], list[str], dict[
     skills: dict[str, dict] = {}
     rewrites: dict[Path, str] = {}
 
-    for path in sorted(SKILLS.glob("*/*/SKILL.md")):
-        category, name = path.parent.parent.name, path.parent.name
-        skill_id = f"{category}/{name}"
+    # Canonical skills: ``skills/<category>/<name>/`` and top-level ``skills/<name>/``.
+    skill_paths = sorted(SKILLS.glob("*/*/SKILL.md")) + sorted(SKILLS.glob("*/SKILL.md"))
+    for path in skill_paths:
+        rel_parts = path.parent.relative_to(SKILLS).parts
+        skill_id = "/".join(rel_parts)
+        if len(rel_parts) == 2:
+            category, name = rel_parts
+        else:
+            category, name = rel_parts[0], rel_parts[0]
         front, text = read_skill(path)
         declared = [str(s) for s in (front.get("mcp_servers") or [])]
 
@@ -161,7 +167,7 @@ def build_document(skills: dict[str, dict], servers: dict[str, dict]) -> dict:
     return {
         "version": "1.0.0",
         "generated_by": "scripts/dev/generate_skill_mcp_map.py",
-        "generated_from": ["mcps/catalog.json", "skills/*/*/SKILL.md"],
+        "generated_from": ["mcps/catalog.json", "skills/**/SKILL.md"],
         "note": "'declared' comes from frontmatter mcp_servers and is a contract; "
                 "'mentioned' is a text match and is informational only.",
         "counts": {

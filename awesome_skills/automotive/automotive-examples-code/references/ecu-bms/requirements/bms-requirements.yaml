@@ -148,7 +148,7 @@ functional_requirements:
         acceptance_criteria:
           - Detect stuck contactors
           - Monitor voltage across open contactors
-          - Threshold: > 5V indicates welding
+          - "Threshold: > 5V indicates welding"
           - Trigger fault code: DTC_CONTACTOR_WELD (0x120)
 
   # FR-005: CAN Communication
@@ -296,7 +296,7 @@ non_functional_requirements:
     - id: NFR-010
       description: System reliability
       requirements:
-        - MTBF: > 100,000 hours
+        - "MTBF: > 100,000 hours"
         - Software fault tolerance: Single fault tolerant
         - Watchdog coverage: 100% of critical tasks
         - ECC protection for RAM and Flash
@@ -324,7 +324,7 @@ non_functional_requirements:
       description: Software maintainability
       requirements:
         - MISRA C 2012 compliance
-        - Code coverage: > 95%
+        - "Code coverage: > 95%"
         - Static analysis: No critical warnings
         - Modular AUTOSAR architecture
 

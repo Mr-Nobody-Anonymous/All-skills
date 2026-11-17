@@ -3918,6 +3918,34 @@
       "system": [],
       "python": [],
       "api": []
+    },
+    "ito.ito-compute": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "ito.ito-inference": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "ito.ito-training": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
+    },
+    "ito.ito-baskets": {
+      "required": [],
+      "optional": [],
+      "system": [],
+      "python": [],
+      "api": []
     }
   }
 }

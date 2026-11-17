@@ -22,9 +22,16 @@ MODULES = json.loads((ROOT / "manifests" / "install-modules.json").read_text(enc
 PROFILES = json.loads((ROOT / "manifests" / "install-profiles.json").read_text(encoding="utf-8"))
 
 
+def curated_skill_files() -> list[Path]:
+    """Canonical ``SKILL.md`` files: ``skills/<category>/<name>/`` and top-level
+    ``skills/<name>/``."""
+    return sorted({*CURATED.glob("*/*/SKILL.md"), *CURATED.glob("*/SKILL.md")})
+
+
 def curated_skill_dirs() -> list[Path]:
-    """Every ``skills/<category>/<name>/SKILL.md`` directory."""
-    return sorted({path.parent for path in CURATED.glob("*/*/SKILL.md")})
+    """Every canonical skill directory under ``skills/`` — both the conventional
+    ``skills/<category>/<name>/`` layout and top-level ``skills/<name>/``."""
+    return sorted({path.parent for path in curated_skill_files()})
 
 
 def owned_paths() -> set[str]:
@@ -188,7 +195,7 @@ def test_every_skill_mcp_declaration_resolves() -> None:
     """A skill must not require a server that is not installable."""
     servers = {server.id for server in Catalog.load(ROOT).servers}
     problems = []
-    for path in sorted(CURATED.glob("*/*/SKILL.md")):
+    for path in curated_skill_files():
         text = path.read_text(encoding="utf-8")
         front = re.match(r"^---\n([\s\S]*?)\n---", text)
         if not front:

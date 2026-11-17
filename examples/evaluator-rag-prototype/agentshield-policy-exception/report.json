@@ -1,0 +1,25 @@
+{
+  "schema_version": "ecc.evaluator-rag.report.v1",
+  "scenario_id": "agentshield-policy-exception",
+  "read_only": true,
+  "summary": "Exceptions require SARIF evidence and live owner/expiry fields; blanket suppression of the policy pack is rejected.",
+  "scores": {
+    "evidence_coverage": 0.93,
+    "sarif_quality": 0.97,
+    "policy_gate_integrity": 1.0,
+    "recommended_confidence": 0.9
+  },
+  "evidence_coverage": {
+    "findings_reviewed": 3,
+    "exceptions_rejected_expired": 1,
+    "blocking_gaps": [
+      "one org-policy gate ships without an owner on file"
+    ]
+  },
+  "risks": [
+    "Blanket suppression would unmask every hook/MCP risk the pack gates.",
+    "Expired exceptions must not be silently honored."
+  ],
+  "recommended_next_action": "File time-boxed exceptions with owner/ticket/scope/expiry for the two evidenced findings; reject the expired one.",
+  "generated_at": "2026-05-14T09:11:42Z"
+}

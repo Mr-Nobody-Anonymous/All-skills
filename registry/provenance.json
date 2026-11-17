@@ -1,7 +1,7 @@
 {
   "version": "2.0.0",
-  "updated_at": "2026-10-30T11:01:39.268202+00:00",
-  "total_canonical_skills": 533,
+  "updated_at": "2026-11-16",
+  "total_canonical_skills": 537,
   "canonical_skills": {
     "3d.blender-geometry-nodes": {
       "canonical_id": "3d.blender-geometry-nodes",
@@ -12794,6 +12794,102 @@
         }
       ],
       "last_verified": "2026-10-30T11:01:39.268202+00:00"
+    },
+    "ito.ito-compute": {
+      "canonical_id": "ito.ito-compute",
+      "name": "ito-compute",
+      "category": "ito",
+      "type": "procedural",
+      "path": "skills/ito/ito-compute/SKILL.md",
+      "sha256": "1502b72603fcff71a3a64316b870c9a1f8cb9968417cb2906ae9c4acf50c33bd",
+      "license": "MIT",
+      "trust": {
+        "level": "T5_CURATED",
+        "security_scan": "passed",
+        "behavioral_eval": "passed"
+      },
+      "sources": [
+        {
+          "source": "all-skills/canonical",
+          "commit": "HEAD",
+          "path": "skills/ito/ito-compute/SKILL.md",
+          "license": "MIT",
+          "sha256": "1502b72603fcff71a3a64316b870c9a1f8cb9968417cb2906ae9c4acf50c33bd"
+        }
+      ],
+      "last_verified": "2026-11-16T19:06:15.519186+00:00"
+    },
+    "ito.ito-inference": {
+      "canonical_id": "ito.ito-inference",
+      "name": "ito-inference",
+      "category": "ito",
+      "type": "procedural",
+      "path": "skills/ito/ito-inference/SKILL.md",
+      "sha256": "a18314cdf0dcbc23fcc6ce441fef8510b1b73332285fb7b919da165a62ba44a9",
+      "license": "MIT",
+      "trust": {
+        "level": "T5_CURATED",
+        "security_scan": "passed",
+        "behavioral_eval": "passed"
+      },
+      "sources": [
+        {
+          "source": "all-skills/canonical",
+          "commit": "HEAD",
+          "path": "skills/ito/ito-inference/SKILL.md",
+          "license": "MIT",
+          "sha256": "a18314cdf0dcbc23fcc6ce441fef8510b1b73332285fb7b919da165a62ba44a9"
+        }
+      ],
+      "last_verified": "2026-11-16T19:06:15.519186+00:00"
+    },
+    "ito.ito-training": {
+      "canonical_id": "ito.ito-training",
+      "name": "ito-training",
+      "category": "ito",
+      "type": "procedural",
+      "path": "skills/ito/ito-training/SKILL.md",
+      "sha256": "a8af0b4328db89f085706fbd4d4b2225b6c4be24794ff2494a50dd3f38042178",
+      "license": "MIT",
+      "trust": {
+        "level": "T5_CURATED",
+        "security_scan": "passed",
+        "behavioral_eval": "passed"
+      },
+      "sources": [
+        {
+          "source": "all-skills/canonical",
+          "commit": "HEAD",
+          "path": "skills/ito/ito-training/SKILL.md",
+          "license": "MIT",
+          "sha256": "a8af0b4328db89f085706fbd4d4b2225b6c4be24794ff2494a50dd3f38042178"
+        }
+      ],
+      "last_verified": "2026-11-16T19:06:15.519186+00:00"
+    },
+    "ito.ito-baskets": {
+      "canonical_id": "ito.ito-baskets",
+      "name": "ito-baskets",
+      "category": "ito",
+      "type": "procedural",
+      "path": "skills/ito/ito-baskets/SKILL.md",
+      "sha256": "b1f9cb425d62dcac33d0dd100a81d7c0e0f20a08738122eda4d0e651d1321323",
+      "license": "MIT",
+      "trust": {
+        "level": "T5_CURATED",
+        "security_scan": "passed",
+        "behavioral_eval": "passed"
+      },
+      "sources": [
+        {
+          "source": "all-skills/canonical",
+          "commit": "HEAD",
+          "path": "skills/ito/ito-baskets/SKILL.md",
+          "license": "MIT",
+          "sha256": "b1f9cb425d62dcac33d0dd100a81d7c0e0f20a08738122eda4d0e651d1321323"
+        }
+      ],
+      "last_verified": "2026-11-16T19:06:15.519186+00:00"
     }
   }
 }

@@ -1,0 +1,45 @@
+{
+  "schema_version": "ecc.evaluator-rag.trace.v1",
+  "scenario_id": "harness-config-quality",
+  "read_only": true,
+  "started_at": "2026-05-14T09:00:00Z",
+  "finished_at": "2026-05-14T09:11:42Z",
+  "events": [
+    {
+      "seq": 1,
+      "phase": "observation",
+      "timestamp": "2026-05-14T09:00:00Z",
+      "detail": "Observed a setup guide draft claiming native hook parity for Codex and OpenCode without adapter evidence.",
+      "actor": "evaluator"
+    },
+    {
+      "seq": 2,
+      "phase": "retrieval",
+      "timestamp": "2026-05-14T09:02:17Z",
+      "detail": "Retrieved platforms/platforms.yaml, compatibility/matrix.json, mcps/generated/ bundles, and the harness-audit detection results.",
+      "actor": "evaluator"
+    },
+    {
+      "seq": 3,
+      "phase": "proposal",
+      "timestamp": "2026-05-14T09:05:03Z",
+      "detail": "Proposed two candidates: 'adapter-matrix-backed-drift-check' (matrix-backed recommendation) and 'unsupported-hook-parity-claim' (parity claim without evidence).",
+      "actor": "evaluator"
+    },
+    {
+      "seq": 4,
+      "phase": "verification",
+      "timestamp": "2026-05-14T09:08:31Z",
+      "detail": "Verifier checked adapter state, install/onramp path, verification command, and config-preservation behavior; the parity claim failed native support checks.",
+      "actor": "verifier"
+    },
+    {
+      "seq": 5,
+      "phase": "promotion",
+      "timestamp": "2026-05-14T09:11:42Z",
+      "detail": "Promoted 'adapter-matrix-backed-drift-check'; publication of packages or plugins stays blocked.",
+      "actor": "verifier",
+      "promoted_candidate_id": "adapter-matrix-backed-drift-check"
+    }
+  ]
+}

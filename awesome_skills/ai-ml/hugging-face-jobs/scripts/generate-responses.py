@@ -92,6 +92,10 @@ def create_dataset_card(
     max_model_len_used: Optional[int] = None,
 ) -> str:
     """Create a comprehensive dataset card documenting the generation process."""
+    if max_model_len_used:
+        max_model_len_flag = f" \\\n    --max-model-len {max_model_len_used}"
+    else:
+        max_model_len_flag = ""
     filtering_section = ""
     if num_skipped > 0:
         skip_percentage = (num_skipped / num_examples) * 100
@@ -160,7 +164,7 @@ uv run https://huggingface.co/datasets/uv-scripts/vllm/raw/main/generate-respons
     --temperature {sampling_params.temperature} \\
     --top-p {sampling_params.top_p} \\
     --top-k {sampling_params.top_k} \\
-    --max-tokens {sampling_params.max_tokens}{f" \\\\\\n    --max-model-len {max_model_len_used}" if max_model_len_used else ""}
+    --max-tokens {sampling_params.max_tokens}{max_model_len_flag}
 ```
 """
 

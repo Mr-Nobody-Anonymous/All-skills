@@ -708,13 +708,13 @@ function runLifecycle(options) {
       'installed ledger must include the Itô baskets module'
     );
     for (const relativePath of [
-      'skills/ito-baskets/SKILL.md',
-      'skills/ito-baskets/agents/openai.yaml',
-      'skills/ito-baskets/scripts/ito-baskets.js',
-      'skills/ito-compute/SKILL.md',
-      'skills/ito-compute/agents/openai.yaml',
-      'skills/ito-inference/SKILL.md',
-      'skills/ito-training/SKILL.md',
+      'skills/ito/ito-baskets/SKILL.md',
+      'skills/ito/ito-baskets/agents/openai.yaml',
+      'skills/ito/ito-baskets/scripts/ito-baskets.js',
+      'skills/ito/ito-compute/SKILL.md',
+      'skills/ito/ito-compute/agents/openai.yaml',
+      'skills/ito/ito-inference/SKILL.md',
+      'skills/ito/ito-training/SKILL.md',
     ]) {
       const installedPath = path.join(cursorRoot, relativePath);
       const installedStat = fs.lstatSync(installedPath);

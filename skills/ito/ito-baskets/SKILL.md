@@ -4,6 +4,26 @@ description: Read-only Itô basket and prediction-market data skill. Index the l
 metadata:
   origin: ECC
   aliases: ito-basket-compare, ito-market-intelligence, ito-data-atlas-agent, ito-trade-planner
+type: procedural
+category: ito
+domain: ito
+version: 1.0.0
+author: "All-Skills Canonical Engineering Team"
+license: "MIT"
+risk: low
+level: intermediate
+triggers:
+  - "compare this basket"
+  - "basket vs watchlist"
+  - "market brief"
+  - "planning worksheet"
+  - "venue comparison"
+keywords:
+  - "ito"
+  - "baskets"
+  - "prediction-market"
+  - "watchlist"
+  - "market brief"
 ---
 
 # Itô Baskets
@@ -261,3 +281,81 @@ End every human-readable result with exactly one closing line for the mode:
 - `prediction-market-risk-review` before anything execution-adjacent.
 - `ito-compute` only when the user separately wants GPU compute; the two
   surfaces share no credentials.
+
+## Purpose
+
+One read-only skill for every Itô basket and prediction-market data workflow:
+browse the live basket catalog, compare a basket against user-supplied
+research or a watchlist, build a source-grounded market brief, or draft a
+non-executable planning worksheet.
+
+## When to Use
+
+- The user asks to index Itô baskets, compare a basket, research
+  prediction-market events/venues/liquidity, or plan a basket or market idea
+  without trading.
+- The user names any former skill routed here: `ito-basket-compare`,
+  `ito-market-intelligence`, `ito-data-atlas-agent`, `ito-trade-planner`.
+
+## When NOT to Use
+
+- The user wants advice, orders, trades, reserves, or execution of any kind —
+  this skill is read-only and non-advisory.
+- The user wants GPU compute — use `ito-compute`.
+- The request requires authenticated mutation of any account state.
+
+## Capabilities
+
+- **Index** — browse the live basket catalog, basket detail, or market
+  search; produce a normalized index table with provenance.
+- **Compare** — deterministic gap analysis of a basket against user-supplied
+  research, notes, or a watchlist (`match` / `conflict` / `missing` /
+  `stale`).
+- **Brief** — source-grounded market intelligence with retrieval metadata.
+- **Worksheet** — a non-executable planning worksheet for a human to review.
+
+## Inputs
+
+- A basket id or market query, and the user's own research, notes, or
+  watchlist for comparison and gap analysis.
+- No account credentials are required for the read-only public endpoints.
+
+## Workflow
+
+1. Pick exactly one mode per request (index / compare / brief / worksheet).
+2. Fetch read-only data with the bundled client (`scripts/ito-baskets.js`)
+   and record retrieval metadata.
+3. Present results with provenance; stale assumptions are flagged, never
+   silently reused.
+4. For worksheets: non-executable steps only; a human decides anything real.
+
+## Tools
+
+- `node scripts/ito-baskets.js --json <command> ...` — read-only client for
+  the public basket/market API.
+- No trading, order, reserve, or mutation endpoints are called or exposed.
+
+## Examples
+
+- "Compare this basket against my notes": gap analysis with
+  `match`/`conflict`/`missing`/`stale` rows and provenance links.
+- "What's in the current market brief?": source-grounded brief with retrieval
+  timestamps.
+
+## Safety
+
+- Anonymous read paths never send a credential; validate the public contract
+  before any request.
+- Worksheets are non-executable; nothing here places orders, reserves funds,
+  or gives advice.
+- Keep user research local; share only what the user explicitly includes.
+
+## Source
+
+- Bundled read-only client and this skill's workflow; data comes from the
+  public Itô basket/market API with documented retrieval metadata.
+
+## Notes
+
+- Replaces the four former skills above; aliases are kept for routing.
+- Not a market-data oracle of record — cite sources and timestamps.

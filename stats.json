@@ -1,13 +1,13 @@
 {
   "platform_version": "3.0.0",
   "total_unique_skills": 13362,
-  "catalog_skills": 15146,
-  "catalog_index_records": 15146,
-  "canonical_skills": 533,
+  "catalog_skills": 15142,
+  "catalog_index_records": 15142,
+  "canonical_skills": 537,
   "active_harness_skills": 89,
-  "manifest_skills": 533,
+  "manifest_skills": 537,
   "categories": 252,
-  "canonical_categories": 45,
+  "canonical_categories": 46,
   "tests": 378,
   "workflows": 5,
   "ci_workflows": 4,
@@ -19,5 +19,5 @@
   "mcp_harnesses": 18,
   "mcp_profiles": 3,
   "mcp_role_profiles": 10,
-  "last_generated": "2026-10-30"
+  "last_generated": "2026-11-17"
 }
