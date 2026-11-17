@@ -61,7 +61,8 @@
     "mcp:skill-map:check": "python scripts/dev/generate_skill_mcp_map.py --check",
     "mcp:generate": "python scripts/mcp_catalog.py generate",
     "mcp:doctor": "python scripts/mcp_catalog.py doctor",
-    "verify:integration": "python scripts/generate_integration_skills.py --check"
+    "verify:integration": "python scripts/generate_integration_skills.py --check",
+    "prepack": "node scripts/prepack-clean.js"
   },
   "dependencies": {
     "@iarna/toml": "2.2.5",
@@ -78,6 +79,10 @@
     "scripts/",
     "src/",
     "skills/",
+    "skills/ito/ito-baskets/",
+    "skills/ito/ito-training/",
+    "skills/ito/ito-inference/",
+    "skills/ito/ito-compute/",
     ".agents/skills/",
     "registry/",
     "profiles/",

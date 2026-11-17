@@ -1,0 +1,45 @@
+{
+  "schema_version": "ecc.evaluator-rag.verifier.v1",
+  "scenario_id": "billing-marketplace-readiness",
+  "read_only": true,
+  "candidates": [
+    {
+      "candidate_id": "evidence-backed-billing-check",
+      "decision": "accepted",
+      "score": 8.7,
+      "reasons": [
+        "ties every launch claim to billing audit evidence and roadmap acceptance criteria",
+        "keeps Marketplace listing changes approval-gated",
+        "separates dry-run release evidence from live billing state",
+        "names the remaining entitlement reconciliation gap explicitly"
+      ],
+      "rollback_notes": [
+        "remove-before-publication markers keep draft copy from shipping early; revert by closing the checklist PR"
+      ]
+    },
+    {
+      "candidate_id": "announcement-first-billing-copy",
+      "decision": "rejected",
+      "score": 1.9,
+      "reasons": [
+        "claims live billing readiness from dry-run evidence alone",
+        "ignores roadmap acceptance criteria for the billing launch gate",
+        "would post announcement copy before Marketplace listing review",
+        "changes plan limits and entitlements without an audit trail"
+      ],
+      "rollback_notes": [
+        "not applicable: candidate must not land; restore draft state and re-verify after the billing audit closes"
+      ]
+    }
+  ],
+  "promoted_candidate_id": "evidence-backed-billing-check",
+  "rollback": {
+    "revert_plan": "revert the checklist document; no Marketplace or plan state was mutated",
+    "approval_required": [
+      "Marketplace listing publication",
+      "announcement copy",
+      "plan/entitlement changes"
+    ]
+  },
+  "decided_at": "2026-05-14T09:11:42Z"
+}

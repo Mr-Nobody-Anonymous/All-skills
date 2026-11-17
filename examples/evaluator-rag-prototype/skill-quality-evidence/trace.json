@@ -1,0 +1,45 @@
+{
+  "schema_version": "ecc.evaluator-rag.trace.v1",
+  "scenario_id": "skill-quality-evidence",
+  "read_only": true,
+  "started_at": "2026-05-14T09:00:00Z",
+  "finished_at": "2026-05-14T09:11:42Z",
+  "events": [
+    {
+      "seq": 1,
+      "phase": "observation",
+      "timestamp": "2026-05-14T09:00:00Z",
+      "detail": "Observed repeated agent failures invoking one skill (wrong trigger, missing example) across three reported runs.",
+      "actor": "evaluator"
+    },
+    {
+      "seq": 2,
+      "phase": "retrieval",
+      "timestamp": "2026-05-14T09:02:17Z",
+      "detail": "Retrieved docs/SKILL-DEVELOPMENT-GUIDE.md, the skill's SKILL.md, two user-feedback reports, and the output of node scripts/ci/validate-skills.js.",
+      "actor": "evaluator"
+    },
+    {
+      "seq": 3,
+      "phase": "proposal",
+      "timestamp": "2026-05-14T09:05:03Z",
+      "detail": "Proposed two candidates: 'evidence-backed-skill-amendment' (focused trigger/example fix) and 'vague-skill-rewrite' (broad rewrite without examples).",
+      "actor": "evaluator"
+    },
+    {
+      "seq": 4,
+      "phase": "verification",
+      "timestamp": "2026-05-14T09:08:31Z",
+      "detail": "Verifier checked scope, evidence, examples, and validation commands; the vague rewrite does not include working examples and duplicates a focused skill.",
+      "actor": "verifier"
+    },
+    {
+      "seq": 5,
+      "phase": "promotion",
+      "timestamp": "2026-05-14T09:11:42Z",
+      "detail": "Promoted 'evidence-backed-skill-amendment'; publication stays blocked until validation passes on the reference set.",
+      "actor": "verifier",
+      "promoted_candidate_id": "evidence-backed-skill-amendment"
+    }
+  ]
+}

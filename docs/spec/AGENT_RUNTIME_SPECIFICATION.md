@@ -268,11 +268,11 @@ Eliminates prompt bloat through automated workspace detection:
 ---
 
 ### Tenet 14: Authoritative Ecosystem Metrics & Terminology
-- **Canonical Skills**: `533` tested foundational skills in `skills/`.
+- **Canonical Skills**: `537` tested foundational skills in `skills/`.
 - **Active Harness Skills**: `89` staff-engineer playbooks pre-loaded in `.agents/skills/`.
 - **Manifest Skills**: `192` tool-mapped skills in `manifest.json`.
 - **Unique Skills**: `13,362` distinct skill capabilities across the platform.
-- **Catalog Skills**: `15,146` categorized implementations across 252 domains in `awesome_skills/`.
+- **Catalog Skills**: `15,142` categorized implementations across 252 domains in `awesome_skills/`.
 
 ---
 

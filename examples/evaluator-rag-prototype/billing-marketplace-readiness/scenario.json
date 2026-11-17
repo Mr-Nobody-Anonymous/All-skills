@@ -1,0 +1,30 @@
+{
+  "schema_version": "ecc.evaluator-rag.scenario.v1",
+  "scenario_id": "billing-marketplace-readiness",
+  "title": "Billing and Marketplace readiness before public launch claims",
+  "objective": "Verify billing, App, and Marketplace launch claims against dry-run release evidence and roadmap acceptance criteria before any public copy says they are live.",
+  "source_rule": "Launch claims must not outrun audited billing state; dry-run evidence is not live billing.",
+  "allowed_evidence": [
+    "release checklist and dry-run release evidence",
+    "GitHub Marketplace listing draft and review notes",
+    "billing audit: plans, seats, subscriptions, entitlements, overage, downgrade/cancel",
+    "docs/ECC-2.0-GA-ROADMAP.md launch gates",
+    "https://github.com/marketplace/ecc-tools listing state"
+  ],
+  "forbidden_actions": [
+    "creating or editing GitHub Marketplace listings",
+    "changing plan limits, subscriptions, seats, or entitlements",
+    "posting announcement copy",
+    "claiming live billing readiness from dry-run evidence alone"
+  ],
+  "acceptance_gates": [
+    "billing audit names plans, seats, subscription state, overage, downgrade, and failure modes",
+    "Marketplace listing is reviewed but not published from this run",
+    "launch copy distinguishes dry-run evidence from live billing state",
+    "roadmap acceptance criteria for billing are checked off explicitly"
+  ],
+  "read_only": true,
+  "created": "2026-05-14",
+  "owner": "maintainer",
+  "promotion": "verifier-gated"
+}

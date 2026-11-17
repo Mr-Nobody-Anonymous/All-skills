@@ -1,0 +1,26 @@
+{
+  "schema_version": "ecc.evaluator-rag.report.v1",
+  "scenario_id": "skill-quality-evidence",
+  "read_only": true,
+  "summary": "A focused, evidence-backed amendment to the trigger and example is promotable; the broad rewrite is indistinguishable from churn and is rejected.",
+  "scores": {
+    "evidence_coverage": 0.9,
+    "scope_focus": 0.95,
+    "reference_set_coverage": 0.8,
+    "duplicate_risk": 0.1,
+    "recommended_confidence": 0.89
+  },
+  "evidence_coverage": {
+    "observed_failures": 3,
+    "user_feedback_reports": 2,
+    "validation_commands": [
+      "node scripts/ci/validate-skills.js"
+    ]
+  },
+  "risks": [
+    "Broad rewrites erase hard-won trigger tuning and duplicate focused skills.",
+    "Copying operator context into a skill would leak private data."
+  ],
+  "recommended_next_action": "Land the focused amendment with an example and validation output; keep the broad rewrite in the backlog.",
+  "generated_at": "2026-05-14T09:11:42Z"
+}

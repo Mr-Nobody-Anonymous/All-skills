@@ -5,6 +5,23 @@ metadata:
   origin: ECC
   status: scaffold
   aliases: ito-serve, hosted-open-weights
+type: procedural
+category: ito
+domain: ito
+version: 1.0.0
+author: "All-Skills Canonical Engineering Team"
+license: "MIT"
+risk: low
+level: intermediate
+triggers:
+  - "hosted open weights"
+  - "ito serve"
+  - "openai-compatible endpoint on ito"
+keywords:
+  - "ito"
+  - "inference"
+  - "serving"
+  - "open-weights"
 ---
 
 # Itô Inference
@@ -117,3 +134,85 @@ These stages describe the future backend, not code that exists in ECC:
 
 Until every gate and lifecycle operation above exists in the canonical runtime,
 this skill remains a fail-closed availability check and documentation handoff.
+
+## Purpose
+
+Inspect the availability of model serving on a completed Itô compute booking
+and, when the canonical backend becomes available, hand off an explicitly
+confirmed serving manifest. This is the sole canonical ECC skill for inference
+serving on Itô compute; it implements no serving stack of its own.
+
+## When to Use
+
+- `ito-compute` has booked GPU nodes and the user asks for an
+  OpenAI-compatible endpoint, `ito-serve`, hosted Kimi, or self-hosted
+  open-weights inference.
+- The user asks whether serving is available on their completed booking.
+
+## When NOT to Use
+
+- The user wants capacity booked, quoted, reserved, or purchased — use
+  `ito-compute`; this skill never books, reserves, or spends.
+- The user wants a local or third-party serving substitute (local runner, SSH
+  helper, browser workflow, purchase endpoint) instead of the canonical path.
+- Serving is unavailable today — report the missing capability and return.
+
+## Capabilities
+
+- Availability inspection for model serving on a completed booking.
+- Gated handoff of an explicitly confirmed serving manifest (future, once the
+  canonical backend ships).
+- Fail-closed behavior: no `serve` verb exists today; naming one stops before
+  authentication or any command invocation.
+
+## Inputs
+
+- A server-verified completed booking id.
+- Fresh serving eligibility for the requested model/profile.
+- An absolute, reviewed serving manifest file.
+- An explicit single-use confirmation covering account, action, manifest, and
+  cost.
+
+## Workflow
+
+1. Confirm a server-verified completed booking exists; an RFQ reference alone
+   is not proof of entitlement — fail closed otherwise.
+2. Check fresh serving eligibility with the canonical backend; unavailable
+   today means stop before authentication or any command invocation.
+3. When the backend ships and the user confirms the manifest explicitly, hand
+   off the manifest with status, logs, metrics, cancel, and cleanup commands.
+4. Structured JSON results; ambiguous transports are treated as not served.
+
+## Tools
+
+- The separately installed canonical Itô CLI (serving eligibility and manifest
+  handoff) once available; no `serve` verb is currently exposed.
+- No local runner, scheduler, or browser tool is used or substituted.
+
+## Examples
+
+- "Book is done, serve Kimi on it": verify the completed booking, check
+  serving eligibility, and report that serving is unavailable today unless the
+  canonical handoff is confirmed.
+- "Is serving supported?": return the capability status and stop.
+
+## Safety
+
+- Never books, reserves, or spends. Authentication is identity, not workload
+  authority; a completed booking plus eligibility plus confirmation are all
+  required before any handoff.
+- Single-use confirmation with account, action, manifest, and cost;
+  idempotency keys on retries.
+- No credentials in arguments, logs, or chat; symlinked manifests are rejected
+  without being followed.
+
+## Source
+
+- Canonical upstream backend: the Itô cloud runtime (serving handoff ships
+  there); this skill is the ECC-side boundary and documentation surface.
+
+## Notes
+
+- `metadata.status: scaffold` — the skill is fail-closed until the canonical
+  serving backend is generally available.
+- Itô inference replaces nothing; `ito-compute` remains the only booking path.

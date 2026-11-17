@@ -14,7 +14,7 @@ Counts come from `skills/*/*/SKILL.md` and `mcps/catalog.json`; regenerate the n
 
 ## 1. Covered domains
 
-**504 curated skills in 45 categories**, **113 MCP servers in 35 categories**.
+**504 curated skills in 46 categories**, **113 MCP servers in 35 categories**.
 
 | Domain | Skills | Connector(s) | Notes |
 | :--- | ---: | :--- | :--- |

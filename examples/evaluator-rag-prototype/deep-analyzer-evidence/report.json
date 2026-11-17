@@ -1,0 +1,23 @@
+{
+  "schema_version": "ecc.evaluator-rag.report.v1",
+  "scenario_id": "deep-analyzer-evidence",
+  "read_only": true,
+  "summary": "Only the corpus-backed change survives verification; threshold tuning without expected-output comparison is rejected.",
+  "scores": {
+    "evidence_coverage": 0.94,
+    "corpus_coverage": 0.9,
+    "expected_output_match": 0.98,
+    "recommended_confidence": 0.91
+  },
+  "evidence_coverage": {
+    "corpus_cases": 17,
+    "expected_outputs_compared": 17,
+    "representative_histories": 2
+  },
+  "risks": [
+    "Suppressing the risk bucket without corpus evidence hides real Deep Analyzer Evidence gaps.",
+    "Threshold changes without expected-output comparison break golden traces silently."
+  ],
+  "recommended_next_action": "Add the corpus case and expected output, run the regression command, and only then revisit thresholds.",
+  "generated_at": "2026-05-14T09:11:42Z"
+}

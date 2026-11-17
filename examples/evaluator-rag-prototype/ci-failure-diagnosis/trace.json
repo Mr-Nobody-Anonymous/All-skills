@@ -1,0 +1,45 @@
+{
+  "schema_version": "ecc.evaluator-rag.trace.v1",
+  "scenario_id": "ci-failure-diagnosis",
+  "read_only": true,
+  "started_at": "2026-05-14T09:00:00Z",
+  "finished_at": "2026-05-14T09:11:42Z",
+  "events": [
+    {
+      "seq": 1,
+      "phase": "observation",
+      "timestamp": "2026-05-14T09:00:00Z",
+      "detail": "Observed nightly CI red on the validate job; two prior 'just rerun' attempts did not resolve it.",
+      "actor": "evaluator"
+    },
+    {
+      "seq": 2,
+      "phase": "retrieval",
+      "timestamp": "2026-05-14T09:02:17Z",
+      "detail": "Retrieved the failing run log excerpt, the changed-file list from the PR, and the local regression command for the validate script.",
+      "actor": "evaluator"
+    },
+    {
+      "seq": 3,
+      "phase": "proposal",
+      "timestamp": "2026-05-14T09:05:03Z",
+      "detail": "Proposed two candidates: 'log-backed-minimal-fix' (fix the named step after a local repro) and 'rerun-only-green-wait' (re-trigger the job and hope).",
+      "actor": "evaluator"
+    },
+    {
+      "seq": 4,
+      "phase": "verification",
+      "timestamp": "2026-05-14T09:08:31Z",
+      "detail": "Verifier checked for a captured failing log excerpt, changed-file scoping, and a named regression command; rerun-only had none of the three.",
+      "actor": "verifier"
+    },
+    {
+      "seq": 5,
+      "phase": "promotion",
+      "timestamp": "2026-05-14T09:11:42Z",
+      "detail": "Promoted 'log-backed-minimal-fix'; merging remains blocked until the full required GitHub Actions matrix is green.",
+      "actor": "verifier",
+      "promoted_candidate_id": "log-backed-minimal-fix"
+    }
+  ]
+}

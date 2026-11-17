@@ -1,0 +1,30 @@
+{
+  "schema_version": "ecc.evaluator-rag.scenario.v1",
+  "scenario_id": "deep-analyzer-evidence",
+  "title": "Deep-analyzer changes gated on corpus evidence",
+  "objective": "Require maintained analyzer corpus cases, expected-output comparisons, representative repository/commit histories, and regression commands before deep-analysis behavior can be promoted.",
+  "source_rule": "Corpus before code: no analyzer change without expected-output comparison.",
+  "allowed_evidence": [
+    "../ECC-Tools/src/analyzers/fixtures/deep-analyzer-corpus.ts corpus cases",
+    "expected analyzer outputs for each corpus case",
+    "representative repository shape and commit history",
+    "regression command for the analyzer suite"
+  ],
+  "forbidden_actions": [
+    "promoting repository, commit, architecture, or deep-analysis changes without analyzer corpus evidence",
+    "suppressing the Deep Analyzer Evidence risk bucket without co-located corpus, snapshot, fixture, or benchmark evidence",
+    "changing analyzer thresholds or classifications without expected-output comparison",
+    "posting PR comments, check runs, or Linear sync updates from this read-only evaluator run"
+  ],
+  "acceptance_gates": [
+    "changed analyzer surface is named",
+    "maintained corpus or reference-set path is included",
+    "expected analyzer outputs are compared",
+    "representative repository shape or commit history is described",
+    "regression command is named"
+  ],
+  "read_only": true,
+  "created": "2026-05-14",
+  "owner": "maintainer",
+  "promotion": "verifier-gated"
+}

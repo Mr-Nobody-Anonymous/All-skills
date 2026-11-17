@@ -1241,6 +1241,11 @@ def main():
 
     p = argparse.ArgumentParser(prog="skills", description="Agent Skills CLI")
     p.add_argument("--workspace", help="All-Skills workspace to operate on (default: this checkout)")
+    try:
+        from skills._version import __version__
+    except Exception:
+        __version__ = "0+unknown"
+    p.add_argument("--version", action="version", version=f"skills {__version__}")
 
     sub = p.add_subparsers(dest="cmd", required=True)
 

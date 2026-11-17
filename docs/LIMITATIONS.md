@@ -10,20 +10,20 @@ A foundational distinction in All-skills is between **indexed discovery material
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│ 15,146 Catalog Records (Indexed across 252 categories)       │
+│ 15,142 Catalog Records (Indexed across 252 categories)       │
 ├─────────────────────────────────────────────────────────────┤
 │   ▼ 13,362 Unique Skill Identities                          │
 ├─────────────────────────────────────────────────────────────┤
-│     ▼ 533 Manifest-Declared Specification Skills            │
+│     ▼ 537 Manifest-Declared Specification Skills            │
 ├─────────────────────────────────────────────────────────────┤
-│       ▼ 504 Curated Canonical Engine Skills (skills/)       │
+│       ▼ 537 Curated Canonical Engine Skills (skills/)       │
 ├─────────────────────────────────────────────────────────────┤
 │         ▼ 89 Active Harness Skills (.agents/skills/)        │
 └─────────────────────────────────────────────────────────────┘
 ```
 
-- **Catalog Records (15,146)**: Sourced from upstream repositories, domain taxonomies, and multi-agent indexes. These serve as discovery material, knowledge references, and search targets. They are not all independently unit-tested or guaranteed to have executable script backends.
-- **Canonical Skills (533)**: Maintained directly in `skills/`, verified against `schemas/skill-frontmatter.schema.json`, tested via regression suites, and governed by deterministic routing.
+- **Catalog Records (15,142)**: Sourced from upstream repositories, domain taxonomies, and multi-agent indexes. These serve as discovery material, knowledge references, and search targets. They are not all independently unit-tested or guaranteed to have executable script backends.
+- **Canonical Skills (537)**: Maintained directly in `skills/`, verified against `schemas/skill-frontmatter.schema.json`, tested via regression suites, and governed by deterministic routing.
 - **Active Harness Skills (89)**: Symlinked or junctioned into agent platforms (`.agents/skills`, `.claude/skills`, `.cursor/skills`, `.codex/skills`) for immediate invocation.
 
 ---
@@ -100,16 +100,20 @@ repository layout differs from this one:
   its ECC-authored playbooks live under `.kiro/skills/` and `awesome_skills/ecc/`.
 - Because of that layout difference, `npm run test:ecc` (`node tests/run-all.js`) reports
   failures for ECC surfaces that this repository does not contain (install-module
-  planning, OpenCode build output, Itô compute, Nasiko control plane, release workflows).
+  planning, OpenCode build output, Nasiko control plane, release workflows).
   It is **not** part of CI; the gated suites are `pytest`, `python scripts/skills/skills.py test`,
   `python scripts/run_evals.py` and `python scripts/allskills.py doctor --full`.
 - Treat `tests/run-all.js` as a migration tracker: a failing file marks an ECC feature that
   has not been ported to the categorised layout yet, not a regression in the platform CLI.
-- Measured state (2026-10-29, `node tests/run-all.js`): **4,333 assertions pass, 328 fail across
-  93 of 317 files**. Almost every failure is a *path* assertion against a tree that no longer
+- Measured state (2026-11-16, `node tests/run-all.js`): **4,352 assertions pass, 309 fail across
+  86 of 317 files**. The Itô surfaces are now ported: `skills/ito/ito-compute`, `skills/ito/ito-inference`,
+  `skills/ito/ito-training` and `skills/ito/ito-baskets` are canonical categorised skills under `skills/ito/`, ship in the npm
+  package, are wired into `manifests/install-modules.json`, and are pinned by `skills.lock`;
+  the former `awesome_skills/ecc/ito-*` copies are gone. `examples/evaluator-rag-prototype` is
+  present. Almost every remaining failure is a *path* assertion against a tree that no longer
   exists here — `skills/<name>/…` (the pre-categorisation flat layout), `.codex/AGENTS.md`,
-  `.github/workflows/release.yml`, `examples/evaluator-rag-prototype` — or an ECC surface that
-  was never ported (Itô baskets/compute/training, Nasiko control plane, fusion bundles). A
+  `.github/workflows/release.yml` — or an ECC surface that
+  has not been ported yet (Nasiko control plane, fusion bundles). A
   mechanical `skills/<name>` → `.agents/skills/<name>` rewrite was tried and moved the failure
   count by four, which confirms the remaining work is per-surface porting, not a rename.
   Fixing it means teaching each adapter and fixture about the categorised layout; until then
