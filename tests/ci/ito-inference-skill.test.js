@@ -34,7 +34,7 @@ console.log("\n=== Testing Itô inference skill lifecycle ===\n");
 
 const results = [
   test("uses the canonical serving trigger and fails closed while unavailable", () => {
-    const skill = read("skills/ito-inference/SKILL.md");
+    const skill = read("skills/ito/ito-inference/SKILL.md");
     assert.match(skill, /^name: ito-inference$/m);
     assert.match(skill, /self-host|serve a model|OpenAI-compatible endpoint/i);
     assert.match(skill, /requests naming .*ito-serve/i);
@@ -96,9 +96,9 @@ const results = [
     const module = modules.find((candidate) => candidate.id === "ito-compute");
     assert.ok(module, "ito-compute install module is missing");
     assert.deepStrictEqual(module.paths, [
-      "skills/ito-compute",
-      "skills/ito-inference",
-      "skills/ito-training",
+      "skills/ito/ito-compute",
+      "skills/ito/ito-inference",
+      "skills/ito/ito-training",
     ]);
     assert.deepStrictEqual(module.dependencies, ["platform-configs"]);
     assert.strictEqual(module.defaultInstall, false);
@@ -119,8 +119,8 @@ const results = [
     assert.ok(profiles.full.modules.includes("ito-compute"));
 
     const packageFiles = readJson("package.json").files;
-    assert.ok(packageFiles.includes("skills/ito-inference/"));
-    assert.ok(packageFiles.includes("skills/ito-training/"));
+    assert.ok(packageFiles.includes("skills/ito/ito-inference/"));
+    assert.ok(packageFiles.includes("skills/ito/ito-training/"));
   }),
 ];
 

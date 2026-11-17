@@ -1,0 +1,43 @@
+{
+  "schema_version": "ecc.evaluator-rag.verifier.v1",
+  "scenario_id": "harness-config-quality",
+  "read_only": true,
+  "candidates": [
+    {
+      "candidate_id": "adapter-matrix-backed-drift-check",
+      "decision": "accepted",
+      "score": 8.9,
+      "reasons": [
+        "retrieves adapter state from compatibility/matrix.json before recommending anything",
+        "names the install/onramp path and a verification command per harness",
+        "preserves existing user MCP/hook/plugin/command/rule config; merges, never overwrites",
+        "labels reference-only harnesses as reference-only instead of native"
+      ],
+      "rollback_notes": [
+        "drop the recommendation doc; no user config was mutated by the run"
+      ]
+    },
+    {
+      "candidate_id": "unsupported-hook-parity-claim",
+      "decision": "rejected",
+      "score": 2.2,
+      "reasons": [
+        "claims native support for harnesses the matrix marks as instruction-backed or reference-only",
+        "copies Claude hook semantics into Codex and OpenCode without adapter evidence",
+        "no config-preservation or verification command is named",
+        "would overwrite user config on install"
+      ],
+      "rollback_notes": [
+        "not applicable: candidate must not land; redo with matrix evidence and config-preservation notes"
+      ]
+    }
+  ],
+  "promoted_candidate_id": "adapter-matrix-backed-drift-check",
+  "rollback": {
+    "revert_plan": "revert the generated notes; nothing in user config was written",
+    "approval_required": [
+      "publishing packages or plugins"
+    ]
+  },
+  "decided_at": "2026-05-14T09:11:42Z"
+}

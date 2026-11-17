@@ -1,0 +1,43 @@
+{
+  "schema_version": "ecc.evaluator-rag.verifier.v1",
+  "scenario_id": "skill-quality-evidence",
+  "read_only": true,
+  "candidates": [
+    {
+      "candidate_id": "evidence-backed-skill-amendment",
+      "decision": "accepted",
+      "score": 8.8,
+      "reasons": [
+        "names the changed surface (trigger list and worked example) explicitly",
+        "records the observed skill-run failure and user-feedback evidence",
+        "names node scripts/ci/validate-skills.js as the validation command",
+        "attaches a worked example that fails before and passes after the amendment"
+      ],
+      "rollback_notes": [
+        "revert the amendment commit; SKILL.md returns to the locked digest"
+      ]
+    },
+    {
+      "candidate_id": "vague-skill-rewrite",
+      "decision": "rejected",
+      "score": 2.0,
+      "reasons": [
+        "does not include working examples for the new guidance",
+        "broad multi-domain scope duplicates two existing focused skills",
+        "no observed failure or reference-set gap is recorded",
+        "no regression command is named"
+      ],
+      "rollback_notes": [
+        "not applicable: candidate must not land; split into focused amendments with evidence"
+      ]
+    }
+  ],
+  "promoted_candidate_id": "evidence-backed-skill-amendment",
+  "rollback": {
+    "revert_plan": "revert the amendment; skills.lock digest returns to prior value",
+    "approval_required": [
+      "publishing the skill to any catalog"
+    ]
+  },
+  "decided_at": "2026-05-14T09:11:42Z"
+}

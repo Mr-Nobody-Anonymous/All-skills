@@ -1,0 +1,45 @@
+{
+  "schema_version": "ecc.evaluator-rag.trace.v1",
+  "scenario_id": "stale-pr-salvage-maintainer-branch",
+  "read_only": true,
+  "started_at": "2026-05-14T09:00:00Z",
+  "finished_at": "2026-05-14T09:11:42Z",
+  "events": [
+    {
+      "seq": 1,
+      "phase": "observation",
+      "timestamp": "2026-05-14T09:00:00Z",
+      "detail": "Observed 41 stale closed PRs from the May 2026 cleanup, 9 of which carried potentially useful work (docs, skills, CI hardening).",
+      "actor": "evaluator"
+    },
+    {
+      "seq": 2,
+      "phase": "retrieval",
+      "timestamp": "2026-05-14T09:02:17Z",
+      "detail": "Retrieved docs/stale-pr-salvage-ledger.md rows, prior maintainer salvage PRs (#1720-#1782), current catalog counts, and translator/manual-review flags on localization PRs.",
+      "actor": "evaluator"
+    },
+    {
+      "seq": 3,
+      "phase": "proposal",
+      "timestamp": "2026-05-14T09:05:03Z",
+      "detail": "Proposed two candidates: a maintainer-owned salvage branch with attribution ('maintainer-salvage-branch') and a wholesale cherry-pick of stale translation updates ('blind-cherry-pick-translations').",
+      "actor": "evaluator"
+    },
+    {
+      "seq": 4,
+      "phase": "verification",
+      "timestamp": "2026-05-14T09:08:31Z",
+      "detail": "Verifier checked attribution, privacy, localization risk, ledger updates, and validation gates for both candidates; the blind cherry-pick failed translator/manual review and stale-count checks.",
+      "actor": "verifier"
+    },
+    {
+      "seq": 5,
+      "phase": "promotion",
+      "timestamp": "2026-05-14T09:11:42Z",
+      "detail": "Promoted 'maintainer-salvage-branch' as the only playbook; release publication remains approval-gated and unrelated localization stays blocked pending review.",
+      "actor": "verifier",
+      "promoted_candidate_id": "maintainer-salvage-branch"
+    }
+  ]
+}

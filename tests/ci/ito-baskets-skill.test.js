@@ -9,10 +9,10 @@ const assert = require("assert");
 const fs = require("fs");
 const path = require("path");
 const { spawnSync } = require("child_process");
-const { parseArgs, run } = require("../../skills/ito-baskets/scripts/ito-baskets");
+const { parseArgs, run } = require("../../skills/ito/ito-baskets/scripts/ito-baskets");
 
 const REPO_ROOT = path.join(__dirname, "..", "..");
-const SKILL_DIR = path.join(REPO_ROOT, "skills", "ito-baskets");
+const SKILL_DIR = path.join(REPO_ROOT, "skills", "ito", "ito-baskets");
 const SKILL_PATH = path.join(SKILL_DIR, "SKILL.md");
 const CLIENT = path.join(SKILL_DIR, "scripts", "ito-baskets.js");
 
@@ -51,14 +51,14 @@ test("states that it replaces the four former skills and routes their requests",
   const modules = readJson("manifests/install-modules.json").modules;
   const module = modules.find((candidate) => candidate.id === "prediction-market-skills");
   assert.ok(module, "prediction-market-skills module is missing");
-  assert.ok(module.paths.includes("skills/ito-baskets"), "consolidated skill is not installed by the module");
+  assert.ok(module.paths.includes("skills/ito/ito-baskets"), "consolidated skill is not installed by the module");
   for (const removed of ["ito-basket-compare", "ito-market-intelligence", "ito-data-atlas-agent", "ito-trade-planner"]) {
     assert.ok(!module.paths.includes(`skills/${removed}`), `removed skill still in module: ${removed}`);
     assert.ok(!fs.existsSync(path.join(REPO_ROOT, "skills", removed)), `removed skill directory still exists: ${removed}`);
   }
   assert.strictEqual(module.defaultInstall, false);
   const packed = readJson("package.json").files;
-  assert.ok(packed.includes("skills/ito-baskets/"), "consolidated skill missing from npm files");
+  assert.ok(packed.includes("skills/ito/ito-baskets/"), "consolidated skill missing from npm files");
   for (const removed of ["ito-basket-compare", "ito-market-intelligence", "ito-data-atlas-agent", "ito-trade-planner"]) {
     assert.ok(!packed.includes(`skills/${removed}/`), `removed skill still packed: ${removed}`);
   }

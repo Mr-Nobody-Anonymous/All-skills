@@ -93,13 +93,21 @@ class SkillLockManager:
                         "risk": meta.get("risk", "low")
                     }
 
-        # 2. Canonical skills in skills/
+        # 2. Canonical skills in skills/ — both the conventional
+        # skills/<category>/<name>/ layout and any top-level skills/<name>/
+        # (e.g. the Itô bridge skills) that carries a SKILL.md.
         canonical_dir = self.workspace_root / "skills"
         if canonical_dir.exists():
-            for sdir in sorted(canonical_dir.glob("*/*")):
-                if sdir.is_dir() and not sdir.name.startswith("_") and (sdir / "SKILL.md").exists():
+            candidates = list(canonical_dir.glob("*/*")) + list(canonical_dir.glob("*"))
+            for sdir in sorted(candidates):
+                is_skill = sdir.is_dir() and not sdir.name.startswith(("_", ".")) \
+                    and (sdir / "SKILL.md").exists()
+                # A category directory has no direct SKILL.md, so the top-level
+                # glob only picks up genuine top-level skills.
+                if is_skill:
                     rel = str(sdir.relative_to(canonical_dir)).replace("\\", "/")
                     sid = rel.replace("/", ".")
+                    fallback_category = sdir.parent.name if rel != sdir.name else sdir.name
                     if sid not in locked_skills:
                         tree_hash, files = compute_skill_tree_hash(sdir)
                         meta = {}
@@ -111,7 +119,7 @@ class SkillLockManager:
                         locked_skills[sid] = {
                             "version": str(meta.get("version", "1.0.0")),
                             "sha256": tree_hash,
-                            "category": str(meta.get("category", sdir.parent.name)),
+                            "category": str(meta.get("category", fallback_category)),
                             "files": files,
                             "dependencies": meta.get("dependencies", []) or [],
                             "verified_at": meta.get("last_verified", now[:10]),

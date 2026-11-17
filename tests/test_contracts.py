@@ -48,7 +48,11 @@ class TestContractChecks(unittest.TestCase):
         self.assertEqual(check_contract(meta, body), [])
 
     def test_library_contracts_are_consistent(self):
-        files = sorted((_ROOT / "skills").glob("*/*/SKILL.md")) + sorted((_ROOT / ".agents" / "skills").glob("*/SKILL.md"))
+        files = (
+            sorted((_ROOT / "skills").glob("*/*/SKILL.md"))
+            + sorted((_ROOT / "skills").glob("*/SKILL.md"))
+            + sorted((_ROOT / ".agents" / "skills").glob("*/SKILL.md"))
+        )
         broken = []
         for path in files:
             meta, body = parse_frontmatter(path.read_text(encoding="utf-8"))

@@ -362,7 +362,7 @@ asset = CaptionAsset(
 )
 ```
 
-完整的 CaptionAsset 用法请见 [editor.md](../../../../../skills/videodb/reference/editor.md#caption-overlays) 中的编辑器 API。
+完整的 CaptionAsset 用法请见 [editor.md](../../../../../awesome_skills/ecc/videodb/reference/editor.md#caption-overlays) 中的编辑器 API。
 
 ## 视频搜索参数
 

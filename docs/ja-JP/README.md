@@ -771,7 +771,7 @@ Kimi Code はインストールされた `.kimi-code/AGENTS.md` の指示と `.k
 
 `ecc ito` は別途インストールされた正規の Itô クライアントに委譲します。ECC は 2 つ目の API クライアントを保守しません。`ecc ito login [--no-browser]` はデバイス認可を実行し、デフォルトで Itô の検証ページを開き、デバイストークンを macOS Keychain に保存します。`--no-browser` はページの引き渡しを抑制します。ECC 自体はブラウザ自動化を行いません。`ecc ito auth` は検証専用で、`--no-browser` を拒否します。利用可能な操作は `ecc ito login`、`ecc ito auth`、`ecc ito find`、`ecc ito status`、および別途ゲートされた `ecc ito evals` です。対応する MCP ツールは引き続き `ito_auth`、`ito_find`、`ito_status` です。`ito_auth` は既存の認証情報を検証し、ノード資格の確認は CLI 専用です。
 
-`ito-compute-cli` パッケージは現在未公開です。Itô ランタイムリポジトリ（デスクの堅牢化が進むまで非公開。デザインパートナーにはアクセス権が提供されます）の `cli/ito-compute-cli` からローカルでビルドし、`npm ci` と `npm run check` を実行してから、`ECC_ITO_CLI_EXECUTABLE` にそのビルドの `dist/bin/ito.js` の絶対パスを設定してください。login は `ITO_API_KEY` を決して継承しません。auth、find、status は設定されていれば `ITO_API_KEY` を直接転送し、`ITO_AUTH_MODE=legacy` は不要です。`ecc ito logout` は現在のデバイス認証情報を失効させ、リモートでの失効が確認できない場合はローカルコピーを保持します。デバイストークンはデフォルトで macOS Keychain を使用します。明示的なファイルフォールバックでは、所有者のみがアクセスできるディレクトリ/ファイルのパーミッションを維持する必要があります。ECC はこの認証情報を持つクライアントを `PATH` 経由で検出しません。RFQ の権限と MCP セットアップの契約の全容については [`ito-compute` skill](../../skills/ito-compute/SKILL.md) を参照してください。
+`ito-compute-cli` パッケージは現在未公開です。Itô ランタイムリポジトリ（デスクの堅牢化が進むまで非公開。デザインパートナーにはアクセス権が提供されます）の `cli/ito-compute-cli` からローカルでビルドし、`npm ci` と `npm run check` を実行してから、`ECC_ITO_CLI_EXECUTABLE` にそのビルドの `dist/bin/ito.js` の絶対パスを設定してください。login は `ITO_API_KEY` を決して継承しません。auth、find、status は設定されていれば `ITO_API_KEY` を直接転送し、`ITO_AUTH_MODE=legacy` は不要です。`ecc ito logout` は現在のデバイス認証情報を失効させ、リモートでの失効が確認できない場合はローカルコピーを保持します。デバイストークンはデフォルトで macOS Keychain を使用します。明示的なファイルフォールバックでは、所有者のみがアクセスできるディレクトリ/ファイルのパーミッションを維持する必要があります。ECC はこの認証情報を持つクライアントを `PATH` 経由で検出しません。RFQ の権限と MCP セットアップの契約の全容については [`ito-compute` skill](../../skills/ito/ito-compute/SKILL.md) を参照してください。
 
 `find` は認証済みのライブ RFQ を送信します。容量の予約は行いません。`evals` には `ITO_ENABLE_SIXTYTWO_LIVE=1` と `--live-sixtytwo` の両方、別途インストールされた `sixtytwo-cli==0.3.33`、明示的なノードリスト、および既存の絶対パスの設定ディレクトリが必要です。レンタル、起動、復旧、修復、購入はできません。ECC は見積もりロック、購入、ワークロード、推論のいずれの経路も公開せず、クライアントの欠如やライブ呼び出しの失敗をローカルの結果で置き換えることも決してありません。
 
@@ -1202,7 +1202,7 @@ ecc memory doctor
 
 メモリは未レビューのコンテキストであり、実行可能なポリシーではありません。重要な主張は権威ある情報源と照合して検証し、受け入れた知識は管理されたプロジェクトドキュメントに昇格させてください。オプションの `ecc-memory-mcp` サーバーは、デフォルトでは自身を有効化することなく、同じ範囲に限定された save、search、read、doctor の機能を公開します。
 
-[Unified Memory ワークフローを開く →](../../skills/unified-memory/SKILL.md)
+[Unified Memory ワークフローを開く →](../../awesome_skills/ecc/unified-memory/SKILL.md)
 
 <details>
 <summary><strong>Memory Vault の詳細：スコープ、引き継ぎ、信頼境界</strong></summary>
@@ -1237,7 +1237,7 @@ ecc memory doctor
 
 メモリ本文は `--stdin` または `--body-file` 経由でのみ受け付けられ、コマンドライン引数の値としては受け付けられません。最初のリリースでは、すべての vault エントリは未レビューかつ作成のみです。人間のレビューは、メモリの信頼度を変えるのではなく、受け入れた知識を管理されたプロジェクトドキュメントに昇格させます。通常の検索による呼び出しは、アクティブなプロジェクトメモリとチームメモリを返します。ID を直接指定した読み取りでは、非アクティブなエントリを検査できます。ユーザースコープの呼び出しは明示的に要求する必要があります。エージェントは重要な主張を権威ある情報源と照合して検証しなければならず、呼び出した本文を実行可能な指示やポリシーとして扱ってはなりません。
 
-オプトインの MCP アクセスには、[`mcp-configs/mcp-servers.json`](../../mcp-configs/mcp-servers.json) の `ecc-memory-vault` エントリを必要な各ハーネスに追加し、`ecc-memory-mcp` を実行してください。サーバーが公開するのは `memory_save`、`memory_search`、`memory_read`、`memory_doctor` のみです。各サーバーは小文字の `ECC_MEMORY_HARNESS` アイデンティティを指定して起動する必要があります。このアイデンティティはサーバーに束縛されており、ツール呼び出し側から指定することはできません。ユーザースコープにはさらに、オペレーターが管理する `ECC_MEMORY_ALLOW_USER_SCOPE=1` のオプトインが必要です。ワークフローと信頼境界については [`skills/unified-memory/SKILL.md`](../../skills/unified-memory/SKILL.md) を、機能契約については [`docs/design/ecc-memory-vault.md`](../design/ecc-memory-vault.md) を参照してください。
+オプトインの MCP アクセスには、[`mcp-configs/mcp-servers.json`](../../mcp-configs/mcp-servers.json) の `ecc-memory-vault` エントリを必要な各ハーネスに追加し、`ecc-memory-mcp` を実行してください。サーバーが公開するのは `memory_save`、`memory_search`、`memory_read`、`memory_doctor` のみです。各サーバーは小文字の `ECC_MEMORY_HARNESS` アイデンティティを指定して起動する必要があります。このアイデンティティはサーバーに束縛されており、ツール呼び出し側から指定することはできません。ユーザースコープにはさらに、オペレーターが管理する `ECC_MEMORY_ALLOW_USER_SCOPE=1` のオプトインが必要です。ワークフローと信頼境界については [`skills/unified-memory/SKILL.md`](../../awesome_skills/ecc/unified-memory/SKILL.md) を、機能契約については [`docs/design/ecc-memory-vault.md`](../design/ecc-memory-vault.md) を参照してください。
 </details>
 
 ## プラットフォームサポート
