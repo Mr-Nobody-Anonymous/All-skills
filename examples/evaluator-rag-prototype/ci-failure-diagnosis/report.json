@@ -1,0 +1,25 @@
+{
+  "schema_version": "ecc.evaluator-rag.report.v1",
+  "scenario_id": "ci-failure-diagnosis",
+  "read_only": true,
+  "summary": "The failure reproduces locally from a captured log excerpt; the minimal log-backed fix is promotable. Reruns alone are not a diagnosis.",
+  "scores": {
+    "evidence_coverage": 0.9,
+    "log_capture_quality": 0.95,
+    "repro_confidence": 0.9,
+    "flake_likelihood": 0.15,
+    "recommended_confidence": 0.9
+  },
+  "evidence_coverage": {
+    "failing_job": "validate",
+    "failing_step": "MCP catalog & generated harness bundles",
+    "log_excerpt_lines": 40,
+    "changed_files_in_scope": 3
+  },
+  "risks": [
+    "Rerun-only attempts mask a deterministic generator drift.",
+    "Weakening the failing step would hide a stale committed artifact."
+  ],
+  "recommended_next_action": "Apply the minimal fix, confirm the regression command passes locally, and require the Full required GitHub Actions matrix before merge.",
+  "generated_at": "2026-05-14T09:11:42Z"
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": "ecc.evaluator-rag.trace.v1",
+  "scenario_id": "agentshield-policy-exception",
+  "read_only": true,
+  "started_at": "2026-05-14T09:00:00Z",
+  "finished_at": "2026-05-14T09:11:42Z",
+  "events": [
+    {
+      "seq": 1,
+      "phase": "observation",
+      "timestamp": "2026-05-14T09:00:00Z",
+      "detail": "Observed three open AgentShield findings in the CI security gate; two had no exception records and one exception was expired.",
+      "actor": "evaluator"
+    },
+    {
+      "seq": 2,
+      "phase": "retrieval",
+      "timestamp": "2026-05-14T09:02:17Z",
+      "detail": "Retrieved the SARIF report, the agentshield-policy/* pack definitions, and the exception register with expiry states.",
+      "actor": "evaluator"
+    },
+    {
+      "seq": 3,
+      "phase": "proposal",
+      "timestamp": "2026-05-14T09:05:03Z",
+      "detail": "Proposed two candidates: 'sarif-backed-timeboxed-exception-review' (evidence-backed exception review) and 'blanket-policy-suppression' (disable the policy pack).",
+      "actor": "evaluator"
+    },
+    {
+      "seq": 4,
+      "phase": "verification",
+      "timestamp": "2026-05-14T09:08:31Z",
+      "detail": "Verifier checked SARIF evidence, owner/ticket/scope/expiry fields, expiry enforcement, and the remediation-vs-exception decision; blanket suppression failed all four.",
+      "actor": "verifier"
+    },
+    {
+      "seq": 5,
+      "phase": "promotion",
+      "timestamp": "2026-05-14T09:11:42Z",
+      "detail": "Promoted 'sarif-backed-timeboxed-exception-review'; the expired exception stays rejected until renewed with evidence.",
+      "actor": "verifier",
+      "promoted_candidate_id": "sarif-backed-timeboxed-exception-review"
+    }
+  ]
+}

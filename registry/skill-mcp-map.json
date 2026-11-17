@@ -3,11 +3,11 @@
   "generated_by": "scripts/dev/generate_skill_mcp_map.py",
   "generated_from": [
     "mcps/catalog.json",
-    "skills/*/*/SKILL.md"
+    "skills/**/SKILL.md"
   ],
   "note": "'declared' comes from frontmatter mcp_servers and is a contract; 'mentioned' is a text match and is informational only.",
   "counts": {
-    "skills": 533,
+    "skills": 537,
     "skills_with_declared_servers": 63,
     "servers": 117,
     "servers_with_declared_skills": 37
@@ -2118,6 +2118,42 @@
       "declared": [],
       "mentioned": [
         "time"
+      ]
+    },
+    "ito/ito-baskets": {
+      "category": "ito",
+      "name": "ito-baskets",
+      "declared": [],
+      "mentioned": [
+        "exa",
+        "fetch",
+        "github",
+        "time"
+      ]
+    },
+    "ito/ito-compute": {
+      "category": "ito",
+      "name": "ito-compute",
+      "declared": [],
+      "mentioned": [
+        "git"
+      ]
+    },
+    "ito/ito-inference": {
+      "category": "ito",
+      "name": "ito-inference",
+      "declared": [],
+      "mentioned": [
+        "fetch",
+        "memory"
+      ]
+    },
+    "ito/ito-training": {
+      "category": "ito",
+      "name": "ito-training",
+      "declared": [],
+      "mentioned": [
+        "memory"
       ]
     },
     "knowledge/airtable-workflows": {
@@ -4389,7 +4425,9 @@
       ],
       "transport": "stdio",
       "declared_by": [],
-      "mentioned_by": []
+      "mentioned_by": [
+        "ito/ito-baskets"
+      ]
     },
     "fetch": {
       "name": "Fetch",
@@ -4404,6 +4442,8 @@
         "development/mcp-builder",
         "geospatial/remote-sensing-indices",
         "integration/connector-browser-automation",
+        "ito/ito-baskets",
+        "ito/ito-inference",
         "productivity/calendar-assistant",
         "productivity/context-summarize",
         "productivity/email-inbox-zero",
@@ -4585,6 +4625,7 @@
         "development/pr-splitter",
         "development/release-management",
         "development/summarize-repo",
+        "ito/ito-compute",
         "productivity/brainstorming",
         "productivity/obsidian-sync",
         "productivity/session-analytics"
@@ -4623,6 +4664,7 @@
         "devops/circleci-pipelines",
         "integration/connector-github",
         "integration/mcp-server-install",
+        "ito/ito-baskets",
         "mobile/mobile-ci-cd",
         "project-management/clickup-workflows"
       ]
@@ -4926,6 +4968,8 @@
         "game/profiling",
         "geospatial/gdal-ogr-pipelines",
         "integration/connector-browser-automation",
+        "ito/ito-inference",
+        "ito/ito-training",
         "mobile/mobile-performance",
         "os/ipc",
         "os/kernel-development",
@@ -5697,6 +5741,7 @@
         "healthcare/health-economist",
         "integration/connector-observability",
         "integration/webhook-delivery-design",
+        "ito/ito-baskets",
         "mobile/mobile-performance",
         "photography/photography-raw-workflow",
         "productivity/adhd",

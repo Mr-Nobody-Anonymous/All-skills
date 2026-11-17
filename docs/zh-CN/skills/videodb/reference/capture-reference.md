@@ -8,7 +8,7 @@ VideoDB 捕获会话的代码级详情。工作流程指南请参阅 [capture.md
 
 来自捕获会话和 AI 流水线的实时事件。无需 webhook 或轮询。
 
-使用 [scripts/ws\_listener.py](../../../../../skills/videodb/scripts/ws_listener.py) 连接并将事件转储到 `${VIDEODB_EVENTS_DIR:-$HOME/.local/state/videodb}/videodb_events.jsonl`。
+使用 [scripts/ws\_listener.py](../../../../../awesome_skills/ecc/videodb/scripts/ws_listener.py) 连接并将事件转储到 `${VIDEODB_EVENTS_DIR:-$HOME/.local/state/videodb}/videodb_events.jsonl`。
 
 ### 事件通道
 

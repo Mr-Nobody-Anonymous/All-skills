@@ -16,6 +16,7 @@ Typical usage:
     if results['converged']:
         print(f"Total cost: {results['objective']}")
 ```
+"""
 
 import pypsa
 import pandas as pd

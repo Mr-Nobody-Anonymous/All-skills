@@ -112,7 +112,7 @@ model endpoint, deployed a workload, reserved capacity, or moved funds.
 
 ### Inference-serving contract
 
-`skills/ito-inference` is the only canonical serving skill; `ito-serve` is
+`skills/ito/ito-inference` is the only canonical serving skill; `ito-serve` is
 trigger language, not a second installed skill. The current ECC bridge has no
 `serve` verb and rejects it before resolving or spawning the canonical client.
 The canonical runtime documents `inference` only as an unsupported compatibility
@@ -140,7 +140,7 @@ serving scripts, browser automation, or an unreviewed purchase endpoint.
 
 ## Skill and install shape
 
-`skills/ito-compute/SKILL.md` is an opt-in workflow installed through:
+`skills/ito/ito-compute/SKILL.md` is an opt-in workflow installed through:
 
 - module: `ito-compute`
 - component: `capability:ito-compute`

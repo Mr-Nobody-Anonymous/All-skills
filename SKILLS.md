@@ -1,6 +1,6 @@
 # ⚡ Agent Skills Specification & Platform Overview
 
-A unified, high-performance universal operating system of **13,362+ unique specialized Agent Skills** (**15,146 cataloged instances** across **252 domain categories**) plus a first-party **533-skill canonical engine** and a **117-server MCP catalog**, designed for modern AI coding assistants (Claude Code, Cursor, Codex CLI, GitHub Copilot, VS Code Agent, Antigravity, Gemini CLI, Windsurf, OpenCode, Cline, Roo Code, and Block Goose).
+A unified, high-performance universal operating system of **13,362+ unique specialized Agent Skills** (**15,142 cataloged instances** across **252 domain categories**) plus a first-party **537-skill canonical engine** and a **117-server MCP catalog**, designed for modern AI coding assistants (Claude Code, Cursor, Codex CLI, GitHub Copilot, VS Code Agent, Antigravity, Gemini CLI, Windsurf, OpenCode, Cline, Roo Code, and Block Goose).
 
 ---
 
@@ -20,21 +20,21 @@ All-skills/
 ├── platforms/             # Dynamic Platform Discovery Registry (platforms.yaml)
 ├── profiles/              # Role-Based Skill Collections (Software Engineer, Cybersecurity, AI, DevOps, etc.)
 ├── evals/                 # Evaluation Benchmarks (Routing, Security, Behavioral, Compatibility)
-├── skills/                # Canonical Engine (533 routed skills, 44 categories)
-├── awesome_skills/        # Awesome Skills Library (15,146 catalog entries across 252 domain categories)
+├── skills/                # Canonical Engine (537 routed skills, 44 categories)
+├── awesome_skills/        # Awesome Skills Library (15,142 catalog entries across 252 domain categories)
 │   └── execution/         # Dedicated 15-Skill Autonomous Execution Layer
 └── .agents/skills/        # Universal Active Agent Harness (89 pre-loaded staff engineer skills)
 ```
 
-### 1. ⚡ Canonical Engine (`skills/`) — 533 Core Routed Skills
+### 1. ⚡ Canonical Engine (`skills/`) — 537 Core Routed Skills
 - **44 Categories** (languages, infrastructure, security, data, GIS, CAD, 3D, audio, video, product…): `productivity`, `development`, `research`, `web`, `documents`, `design`, `security`, `utilities`.
 - **9-Signal Scored Router**: Sub-millisecond natural language routing without reading file bodies upfront.
 - **Deterministic Chaining**: Multi-skill workflows defined in `skills/chains.json`.
 - **Quality & Security**: 6-axis quality scoring, static scanning, and quarantine isolation.
 
-### 2. 🚀 Awesome Skills Library (`awesome_skills/`) — 15,146 Catalog Entries
+### 2. 🚀 Awesome Skills Library (`awesome_skills/`) — 15,142 Catalog Entries
 - **252 Domain Categories**: Grouped into dedicated folders under 15 universal super-domains (`01-computer-science-and-software`, `04-ai-and-machine-learning`, `05-cybersecurity`, `06-cloud-and-infrastructure`, `07-systems-and-networking`, `10-engineering-and-architecture`, `11-healthcare-and-life-sciences`, etc.).
-- **Complete Catalog Reference**: [CATALOG.md](awesome_skills/CATALOG.md) lists all 15,146 catalog entries with descriptions, risk ratings, and direct links.
+- **Complete Catalog Reference**: [CATALOG.md](awesome_skills/CATALOG.md) lists all 15,142 catalog entries with descriptions, risk ratings, and direct links.
 - **Metadata Database**: [skills_index.json](awesome_skills/skills_index.json) provides structured records for programmatic tools and harnesses.
 - **Cryptographic Lockfile**: [awesome_skills.lock](awesome_skills.lock) tracks SHA-256 integrity hashes for all cataloged skills.
 
@@ -99,7 +99,7 @@ python scripts/setup_tools.py --global
 
 ### Awesome Skills Manager (`scripts/manage_awesome_skills.py`)
 ```bash
-# Search across all 15,146 catalog entries
+# Search across all 15,142 catalog entries
 python scripts/manage_awesome_skills.py search "rag"
 python scripts/manage_awesome_skills.py search "prompt"
 python scripts/manage_awesome_skills.py search "accessibility"
@@ -359,11 +359,11 @@ Eliminates prompt bloat through automated workspace detection:
 
 ### 14. Authoritative Ecosystem Metrics & Terminology
 Unambiguous single-source-of-truth counts:
-- **Canonical Skills**: `533` tested foundational skills in `skills/`.
+- **Canonical Skills**: `537` tested foundational skills in `skills/`.
 - **Active Harness Skills**: `89` staff-engineer playbooks pre-loaded in `.agents/skills/`.
 - **Manifest Skills**: `192` tool-mapped skills in `manifest.json`.
 - **Unique Skills**: `13,362` distinct skill capabilities across the platform.
-- **Catalog Skills**: `15,146` categorized implementations across 252 domains in `awesome_skills/`.
+- **Catalog Skills**: `15,142` categorized implementations across 252 domains in `awesome_skills/`.
 - **Workflows**: `5` multi-step execution playbooks in `workflows/`.
 - **Named Chains**: `4` deterministic DAG chains in `skills/chains.json`.
 - **Tests**: `378` unit tests in the suite, plus `8` evaluation suites in `evals/`.

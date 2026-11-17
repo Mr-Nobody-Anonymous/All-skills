@@ -54,7 +54,7 @@ origin: ECC
 
 Angular コンポーネントで作業するとき、タスクに基づいて次のリファレンスを参照してください。
 
-- **基礎:** 解剖学、メタデータ、コア概念、およびテンプレート制御フロー（@if、@for、@switch）。[components.md](references/components.md) を読んでください。
+- **基礎:** 解剖学、メタデータ、コア概念、およびテンプレート制御フロー（@if、@for、@switch）。[components.md](../../../../awesome_skills/ecc/angular-developer/references/components.md) を読んでください。
 - **入力:** シグナルベースの入力、変換、およびモデル入力。[inputs.md](../../../../awesome_skills/ecc/angular-developer/references/inputs.md) を読んでください。
 - **出力:** シグナルベースの出力とカスタム イベント ベストプラクティス。[outputs.md](../../../../awesome_skills/ecc/angular-developer/references/outputs.md) を読んでください。
 - **ホスト要素:** ホスト バインディングとアトリビュート注入。[host-elements.md](../../../../awesome_skills/ecc/angular-developer/references/host-elements.md) を読んでください。
@@ -68,7 +68,7 @@ Angular コンポーネントで作業するとき、タスクに基づいて次
 - **シグナル概要:** コア シグナル概念（`signal`、`computed`）、反応的コンテキスト、および `untracked`。[signals-overview.md](../../../../awesome_skills/ecc/angular-developer/references/signals-overview.md) を読んでください。
 - **依存状態（`linkedSignal`）:** ソース シグナルにリンクされた書き込み可能な状態を作成します。[linked-signal.md](../../../../awesome_skills/ecc/angular-developer/references/linked-signal.md) を読んでください。
 - **非同期反応性（`resource`）:** シグナル状態に非同期データを直接フェッチします。[resource.md](../../../../awesome_skills/ecc/angular-developer/references/resource.md) を読んでください。
-- **副作用（`effect`）:** ロギング、サードパーティ DOM 操作（`afterRenderEffect`）、および副作用を使用しないテーム。[effects.md](references/effects.md) を読んでください。
+- **副作用（`effect`）:** ロギング、サードパーティ DOM 操作（`afterRenderEffect`）、および副作用を使用しないテーム。[effects.md](../../../../awesome_skills/ecc/angular-developer/references/effects.md) を読んでください。
 
 ## フォーム
 
@@ -134,8 +134,8 @@ Angular でスタイリングとアニメーションを実装する場合は、
 
 Angular ツール作成で作業するときは、次のリファレンスを参照してください。
 
-- **Angular CLI:** アプリケーション、生成コード（コンポーネント、ルート、サービス）、提供、およびビルドの作成。[cli.md](references/cli.md) を読んでください。
-- **Angular MCP サーバー:** 利用可能なツール、構成、および実験的機能。[mcp.md](references/mcp.md) を読んでください。
+- **Angular CLI:** アプリケーション、生成コード（コンポーネント、ルート、サービス）、提供、およびビルドの作成。[cli.md](../../../../awesome_skills/ecc/angular-developer/references/cli.md) を読んでください。
+- **Angular MCP サーバー:** 利用可能なツール、構成、および実験的機能。[mcp.md](../../../../awesome_skills/ecc/angular-developer/references/mcp.md) を読んでください。
 
 ## アンチパターン
 

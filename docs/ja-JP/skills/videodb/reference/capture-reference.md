@@ -8,7 +8,7 @@ VideoDBキャプチャセッションのコードレベルの詳細。ワーク�
 
 キャプチャセッションとAIパイプラインからのリアルタイムイベント。WebhookやポーリングLiveEventを使用しない。
 
-[scripts/ws\_listener.py](../../../../../skills/videodb/scripts/ws_listener.py) を使用して接続し、イベントを `${VIDEODB_EVENTS_DIR:-$HOME/.local/state/videodb}/videodb_events.jsonl` にダンプする。
+[scripts/ws\_listener.py](../../../../../awesome_skills/ecc/videodb/scripts/ws_listener.py) を使用して接続し、イベントを `${VIDEODB_EVENTS_DIR:-$HOME/.local/state/videodb}/videodb_events.jsonl` にダンプする。
 
 ### イベントチャネル
 

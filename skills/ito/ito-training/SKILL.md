@@ -4,6 +4,24 @@ description: Inspect the availability of ML training on a completed Itô compute
 metadata:
   origin: ECC
   status: scaffold
+type: procedural
+category: ito
+domain: ito
+version: 1.0.0
+author: "All-Skills Canonical Engineering Team"
+license: "MIT"
+risk: low
+level: intermediate
+triggers:
+  - "pre-training on ito"
+  - "fine-tune on ito"
+  - "reinforcement learning on ito"
+keywords:
+  - "ito"
+  - "training"
+  - "pre-training"
+  - "fine-tuning"
+  - "rl"
 ---
 
 # Itô Training
@@ -121,3 +139,83 @@ bandwidth) so the desk prices training blocks honestly.
 
 Until every gate and lifecycle operation above exists in the canonical runtime,
 this skill remains a fail-closed availability check and documentation handoff.
+
+## Purpose
+
+Inspect the availability of ML training on a completed Itô compute booking
+and, when the canonical backend becomes available, hand off an explicitly
+confirmed training manifest. ECC never runs a trainer, scheduler, or data
+pipeline of its own.
+
+## When to Use
+
+- `ito-compute` has booked GPU nodes and the user wants pre-training,
+  fine-tuning, or RL on that metal.
+- The user asks whether training is available on their completed booking.
+
+## When NOT to Use
+
+- The user wants capacity booked, quoted, reserved, or purchased — use
+  `ito-compute`; this skill never books, reserves, trains, or spends.
+- The user wants a local or third-party training substitute (local trainer,
+  SSH helper, browser workflow, purchase endpoint).
+- Training is unavailable today — report the missing capability and return.
+
+## Capabilities
+
+- Availability inspection for ML training on a completed booking.
+- Gated handoff of an explicitly confirmed training manifest (future, once the
+  canonical backend ships).
+- Fail-closed behavior: no `train` verb exists today; naming one is rejected
+  before resolving or spawning anything.
+
+## Inputs
+
+- A server-verified completed booking id (`--booking <server-verified-booking-id>`).
+- An absolute, reviewed training manifest file (`--manifest <absolute-reviewed-json-file>`).
+- A stable retry key (`--idempotency-key <stable-retry-key>`).
+- A budget ceiling in USD and an explicit single-use confirmation.
+
+## Workflow
+
+1. Confirm a server-verified completed booking exists; an RFQ reference alone
+   is not proof of entitlement — fail closed otherwise.
+2. Check fresh training eligibility with the canonical backend; unavailable
+   today means stop before authentication or any command invocation.
+3. When the backend ships and the user confirms the manifest explicitly, hand
+   off the manifest with status, logs, metrics, cancel, and cleanup commands.
+4. Structured JSON results; ambiguous transports are treated as not trained.
+
+## Tools
+
+- The separately installed canonical Itô CLI (training eligibility and manifest
+  handoff) once available; no `train` verb is currently exposed.
+- No trainer, scheduler, data pipeline, or browser tool is used or substituted.
+
+## Examples
+
+- "Fine-tune Kimi on the nodes I booked": verify the completed booking, check
+  training eligibility, and report that training is unavailable today unless
+  the canonical handoff is confirmed.
+- "Can I pre-train here?": return the capability status and stop.
+
+## Safety
+
+- Never books, reserves, trains, or spends. Authentication is identity, not
+  workload authority; booking plus eligibility plus confirmation are all
+  required before any handoff.
+- Single-use confirmation with account, action, manifest, and cost;
+  idempotency keys on retries; budget ceiling required.
+- No credentials in arguments, logs, or chat; symlinked manifests are rejected
+  without being followed.
+
+## Source
+
+- Canonical upstream backend: the Itô cloud runtime (training handoff ships
+  there); this skill is the ECC-side boundary and documentation surface.
+
+## Notes
+
+- `metadata.status: scaffold` — the skill is fail-closed until the canonical
+  training backend is generally available.
+- Itô training replaces nothing; `ito-compute` remains the only booking path.

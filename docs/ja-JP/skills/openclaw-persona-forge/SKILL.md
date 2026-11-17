@@ -166,7 +166,7 @@ python3 ${SKILL_DIR}/gacha.py [次数]
 
 ## Step 6：输出完整方案 & 生成文件
 
-**完整输出模板**：见 [references/output-template.md](references/output-template.md)
+**完整输出模板**：见 [references/output-template.md](../../../../awesome_skills/ecc/openclaw-persona-forge/references/output-template.md)
 
 整合所有步骤为一份完整的龙虾灵魂方案，然后**主动引导用户生成实际文件**：
 

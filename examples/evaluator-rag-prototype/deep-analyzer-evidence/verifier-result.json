@@ -1,0 +1,43 @@
+{
+  "schema_version": "ecc.evaluator-rag.verifier.v1",
+  "scenario_id": "deep-analyzer-evidence",
+  "read_only": true,
+  "candidates": [
+    {
+      "candidate_id": "corpus-backed-analyzer-change",
+      "decision": "accepted",
+      "score": 9.1,
+      "reasons": [
+        "includes the maintained corpus path ../ECC-Tools/src/analyzers/fixtures/deep-analyzer-corpus.ts",
+        "compares expected analyzer outputs for every touched classification",
+        "describes two representative repository shapes and commit histories",
+        "names npm test -- src/analyzers/deep-analyzer-corpus.test.ts src/lib/analyzer.compare.test.ts as the regression command"
+      ],
+      "rollback_notes": [
+        "drop the corpus addition and revert the analyzer change together; golden traces stay stable"
+      ]
+    },
+    {
+      "candidate_id": "threshold-only-analyzer-rewrite",
+      "decision": "rejected",
+      "score": 1.8,
+      "reasons": [
+        "does not compare expected outputs for any corpus case",
+        "suppresses the Deep Analyzer Evidence risk bucket without corpus evidence",
+        "no representative repository shape or commit history is described",
+        "no regression command is named"
+      ],
+      "rollback_notes": [
+        "not applicable: candidate must not land; resubmit with corpus cases and expected outputs"
+      ]
+    }
+  ],
+  "promoted_candidate_id": "corpus-backed-analyzer-change",
+  "rollback": {
+    "revert_plan": "revert analyzer and corpus commits as a pair",
+    "approval_required": [
+      "posting PR comments, check runs, or Linear sync updates"
+    ]
+  },
+  "decided_at": "2026-05-14T09:11:42Z"
+}
