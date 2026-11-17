@@ -33,7 +33,7 @@ function main() {
 
   const tests = [
     ["documents only the real CLI commands and MCP tools", () => {
-      const skill = read("skills/ito-compute/SKILL.md");
+      const skill = read("skills/ito/ito-compute/SKILL.md");
       for (const command of [
         "ecc ito login",
         "ecc ito logout",
@@ -76,7 +76,7 @@ function main() {
       assert.doesNotMatch(skill, /npm link/);
       const frontmatter = skill.match(/^---\n([\s\S]*?)\n---/)[1];
       assert.doesNotMatch(frontmatter, /^metadata:/m);
-      const interfaceMetadata = read("skills/ito-compute/agents/openai.yaml");
+      const interfaceMetadata = read("skills/ito/ito-compute/agents/openai.yaml");
       assert.match(interfaceMetadata, /display_name: "Itô Compute"/);
       assert.match(interfaceMetadata, /default_prompt: .*\$ito-compute/);
     }],
@@ -100,9 +100,9 @@ function main() {
       const module = modules.find((candidate) => candidate.id === "ito-compute");
       assert.ok(module, "ito-compute install module is missing");
       assert.deepStrictEqual(module.paths, [
-        "skills/ito-compute",
-        "skills/ito-inference",
-        "skills/ito-training",
+        "skills/ito/ito-compute",
+        "skills/ito/ito-inference",
+        "skills/ito/ito-training",
       ]);
       assert.deepStrictEqual(module.dependencies, ["platform-configs"]);
       assert.strictEqual(module.defaultInstall, false);
@@ -127,7 +127,7 @@ function main() {
     ["publishes the skill but never bundles the Itô CLI", () => {
       const packageJson = readJson("package.json");
       for (const skill of ["ito-compute", "ito-inference", "ito-training"]) {
-        assert.ok(packageJson.files.includes(`skills/${skill}/`), `${skill} is missing from npm files`);
+        assert.ok(packageJson.files.includes(`skills/ito/${skill}/`), `${skill} is missing from npm files`);
       }
       assert.ok(!packageJson.dependencies?.["ito-compute-cli"]);
       assert.ok(!packageJson.optionalDependencies?.["ito-compute-cli"]);

@@ -1,0 +1,45 @@
+{
+  "schema_version": "ecc.evaluator-rag.trace.v1",
+  "scenario_id": "billing-marketplace-readiness",
+  "read_only": true,
+  "started_at": "2026-05-14T09:00:00Z",
+  "finished_at": "2026-05-14T09:11:42Z",
+  "events": [
+    {
+      "seq": 1,
+      "phase": "observation",
+      "timestamp": "2026-05-14T09:00:00Z",
+      "detail": "Observed roadmap launch items for ECC Tools billing/Marketplace still marked as dry-run; public copy drafts claimed general availability.",
+      "actor": "evaluator"
+    },
+    {
+      "seq": 2,
+      "phase": "retrieval",
+      "timestamp": "2026-05-14T09:02:17Z",
+      "detail": "Retrieved roadmap launch gates, the Marketplace listing draft, the billing audit checklist, and the dry-run release evidence pack.",
+      "actor": "evaluator"
+    },
+    {
+      "seq": 3,
+      "phase": "proposal",
+      "timestamp": "2026-05-14T09:05:03Z",
+      "detail": "Proposed two candidates: 'evidence-backed-billing-check' (audit-gated launch checklist) and 'announcement-first-billing-copy' (publish launch copy immediately).",
+      "actor": "evaluator"
+    },
+    {
+      "seq": 4,
+      "phase": "verification",
+      "timestamp": "2026-05-14T09:08:31Z",
+      "detail": "Verifier compared both against roadmap acceptance criteria, the billing audit, and the Marketplace listing state; announcement-first failed every gate.",
+      "actor": "verifier"
+    },
+    {
+      "seq": 5,
+      "phase": "promotion",
+      "timestamp": "2026-05-14T09:11:42Z",
+      "detail": "Promoted 'evidence-backed-billing-check'; publication of listing or announcement copy remains blocked pending audit sign-off.",
+      "actor": "verifier",
+      "promoted_candidate_id": "evidence-backed-billing-check"
+    }
+  ]
+}

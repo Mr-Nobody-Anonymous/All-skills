@@ -1,0 +1,28 @@
+{
+  "schema_version": "ecc.evaluator-rag.report.v1",
+  "scenario_id": "stale-pr-salvage-maintainer-branch",
+  "read_only": true,
+  "summary": "The maintainer-owned salvage branch recovers the useful subset of closed PR work with attribution and current-architecture wording; the blind cherry-pick would import unreviewed localization and stale claims.",
+  "scores": {
+    "evidence_coverage": 0.92,
+    "attribution_completeness": 1.0,
+    "privacy_risk": 0.05,
+    "localization_risk": 0.8,
+    "recommended_confidence": 0.9
+  },
+  "evidence_coverage": {
+    "ledger_rows_matched": 12,
+    "source_prs_reviewed": 9,
+    "candidates_verified": 2,
+    "blocking_gaps": [
+      "zh-CN localization residue still needs translator/manual review before import"
+    ]
+  },
+  "risks": [
+    "Blind cherry-pick would land stale catalog counts and untranslated machine output.",
+    "Release publication is out of scope and remains approval-gated.",
+    "Attribution must survive squash merges; keep source-PR backlinks in the ledger."
+  ],
+  "recommended_next_action": "Open the maintainer-owned salvage branch, port the accepted subset with attribution, update docs/stale-pr-salvage-ledger.md, and run git diff --check plus the normal validation gates before merge.",
+  "generated_at": "2026-05-14T09:11:42Z"
+}

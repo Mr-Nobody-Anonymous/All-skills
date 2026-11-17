@@ -1,0 +1,29 @@
+{
+  "schema_version": "ecc.evaluator-rag.scenario.v1",
+  "scenario_id": "ci-failure-diagnosis",
+  "title": "CI failure diagnosis before any fix playbook",
+  "objective": "Require failed-job logs, changed-file scope, and a named regression command before a CI fix playbook can be promoted.",
+  "source_rule": "Log-first diagnosis: no fix proposal without a captured failing excerpt.",
+  "allowed_evidence": [
+    "failing workflow run logs (gh run view <run-id> --log-failed)",
+    "changed-file context from the failing PR or commit",
+    "local reproduction or regression command",
+    "recent workflow history and flake annotations"
+  ],
+  "forbidden_actions": [
+    "rerunning CI until it passes without diagnosing the failure",
+    "pushing speculative fixes without a captured failing log excerpt",
+    "weakening or deleting tests to silence a failure",
+    "merging or publishing while required checks are red"
+  ],
+  "acceptance_gates": [
+    "failing job and step are named",
+    "captured log excerpt is linked or summarized",
+    "changed-file context is compared to the failing step",
+    "local reproduction or regression command is named"
+  ],
+  "read_only": true,
+  "created": "2026-05-14",
+  "owner": "maintainer",
+  "promotion": "verifier-gated"
+}

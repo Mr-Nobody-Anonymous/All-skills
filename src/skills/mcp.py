@@ -129,6 +129,10 @@ class Catalog:
     profiles: Dict[str, List[str]]
     harnesses: Dict[str, Dict[str, Any]]
     version: str = "1.0.0"
+    # Date the catalog content last changed (`updated_at` in the JSON). Used as the
+    # deterministic timestamp for generated artifacts so re-running the generator
+    # never produces a spurious diff.
+    updated_at: str = ""
 
     @classmethod
     def load(cls, root: Path) -> "Catalog":
@@ -144,6 +148,7 @@ class Catalog:
             profiles=dict(raw.get("profiles") or {}),
             harnesses=dict(raw.get("harnesses") or {}),
             version=str(raw.get("version") or "1.0.0"),
+            updated_at=str(raw.get("updated_at") or ""),
         )
 
     # ---- Queries ---------------------------------------------------------
@@ -465,5 +470,7 @@ def catalog_summary(catalog: Catalog) -> Dict[str, Any]:
         "by_category": dict(sorted(by_category.items())),
         "profiles": {name: (len(catalog.servers) if m == ["*"] else len(m)) for name, m in sorted(catalog.profiles.items())},
         "harnesses": len(catalog.harnesses),
-        "generated_at": date.today().isoformat(),
+        # Deterministic: derived from the catalog's own `updated_at` so a
+        # regenerated summary is byte-identical unless the catalog changed.
+        "generated_at": catalog.updated_at or date.today().isoformat(),
     }

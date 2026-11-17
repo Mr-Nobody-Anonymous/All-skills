@@ -258,13 +258,13 @@ test('packed lifecycle installs and verifies the opt-in Ito distribution surface
     assert.match(lifecycleRunnerSource, new RegExp(`moduleId === '${moduleId}'`));
   }
   for (const installedPath of [
-    'skills/ito-baskets/SKILL.md',
-    'skills/ito-baskets/agents/openai.yaml',
-    'skills/ito-baskets/scripts/ito-baskets.js',
-    'skills/ito-compute/SKILL.md',
-    'skills/ito-compute/agents/openai.yaml',
-    'skills/ito-inference/SKILL.md',
-    'skills/ito-training/SKILL.md',
+    'skills/ito/ito-baskets/SKILL.md',
+    'skills/ito/ito-baskets/agents/openai.yaml',
+    'skills/ito/ito-baskets/scripts/ito-baskets.js',
+    'skills/ito/ito-compute/SKILL.md',
+    'skills/ito/ito-compute/agents/openai.yaml',
+    'skills/ito/ito-inference/SKILL.md',
+    'skills/ito/ito-training/SKILL.md',
   ]) {
     assert.match(lifecycleRunnerSource, new RegExp(installedPath.replaceAll('.', '\\.')));
   }

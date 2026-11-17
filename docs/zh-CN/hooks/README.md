@@ -216,5 +216,5 @@ interface HookInput {
 ## 相关
 
 * [rules/common/hooks.md](../rules/common/hooks.md) —— 钩子架构指南
-* [skills/strategic-compact/](../../../skills/strategic-compact) —— 策略性压缩技能
+* [skills/strategic-compact/](../skills/strategic-compact/) —— 策略性压缩技能
 * [scripts/hooks/](../../../scripts/hooks) —— 钩子脚本实现

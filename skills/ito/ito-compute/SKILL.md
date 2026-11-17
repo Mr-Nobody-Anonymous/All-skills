@@ -1,6 +1,27 @@
 ---
 name: ito-compute
 description: Query live GPU inventory, submit an authenticated Itô fixed-rate RFQ, inspect RFQ or procurement status, revoke device credentials, and run explicitly gated node qualification through the separately installed canonical CLI. Use when a user asks to find H100/H200 capacity, request a fixed compute rate, check Itô compute status, validate GPU nodes, revoke Itô access, or rent or purchase GPU compute and needs the supported boundary explained.
+type: procedural
+category: ito
+domain: ito
+version: 1.0.0
+author: "All-Skills Canonical Engineering Team"
+license: "MIT"
+risk: medium
+level: intermediate
+triggers:
+  - "find H100 capacity"
+  - "request a fixed compute rate"
+  - "check ito compute status"
+  - "revoke ito access"
+  - "rent GPU compute"
+keywords:
+  - "ito"
+  - "gpu"
+  - "compute"
+  - "h100"
+  - "h200"
+  - "rfq"
 ---
 
 # Itô Compute
@@ -163,3 +184,92 @@ MCP server does not expose qualification; use the explicit CLI command above. Do
 not invent additional tools or a purchase path. Do not substitute a browser or
 fixture when the local CLI is missing or a live operation fails. Report the
 missing capability and stop.
+
+## Purpose
+
+Query live Itô GPU inventory, submit an authenticated fixed-rate RFQ, inspect
+RFQ or procurement status, revoke device credentials, and run explicitly gated
+node qualification through the separately installed canonical Itô CLI.
+
+## When to Use
+
+- The user asks to find H100/H200 (or similar) GPU capacity or request a fixed
+  compute rate.
+- The user asks to check Itô compute status, validate GPU nodes, revoke Itô
+  access, or rent or purchase GPU compute and needs the supported boundary
+  explained.
+- The user wants to log in, validate credentials, or sign out of Itô compute.
+
+## When NOT to Use
+
+- The user wants a parallel client, local simulation, reservation service,
+  workload runner, or inference server implemented in this repository.
+- The user wants a purchase, reservation, or capacity guarantee outside the
+  canonical RFQ flow. RFQs are not reserved capacity.
+- The user wants inference serving — use `ito-inference` after a booking.
+- The user wants training — use `ito-training` after a booking.
+
+## Capabilities
+
+- Device authorization and credential validation (`ecc ito login`,
+  `ecc ito auth`, `ecc ito logout`).
+- Live GPU inventory lookup and authenticated RFQ submission (`ecc ito find`).
+- RFQ and procurement status inspection (`ecc ito status`).
+- Desk handoff for approved quotes (`ecc ito accept <rfq_id>`).
+- Explicitly gated live node qualification (`ecc ito evals`).
+- MCP bridge: `ito_auth`, `ito_find`, `ito_status`, `ito_accept`.
+
+## Inputs
+
+- GPU type, node count, per-node GPUs, and total count (must satisfy
+  `count == nodes * gpus-per-node`).
+- Whole days, max rate, storage in TB, start window, form factor, contract
+  type, fabric and region constraints, and the split-fill decision.
+- For qualification: operator authorization, `ITO_ENABLE_SIXTYTWO_LIVE=1`,
+  `--live-sixtytwo`, an explicit node list, and an absolute config directory
+  containing `sixtytwo.yaml`.
+
+## Workflow
+
+1. `ecc ito login` (once), then `ecc ito auth` to validate credentials.
+2. Gather explicit buyer authority and every hard constraint.
+3. `ecc ito find` with the full constraint set; never derive topology.
+4. `ecc ito status` before repeating any ambiguous write.
+5. `ecc ito accept rfq_<id>` only after explicit buyer approval.
+6. `ecc ito logout` on explicit request.
+
+## Tools
+
+- Canonical CLI: `ecc ito {login,auth,logout,find,status,accept,evals}` via
+  `ECC_ITO_CLI_EXECUTABLE` (never discovered through `PATH`).
+- MCP server (stdio): tools `ito_auth`, `ito_find`, `ito_status`, `ito_accept`.
+- No parallel client, simulator, or browser automation is provided or permitted.
+
+## Examples
+
+- "Find 8x H200 for 30 days under $3.00/hr": gather constraints, run
+  `ecc ito find --gpu h200 --count 8 --nodes 1 --gpus-per-node 8 --days 30
+  --max-rate 3.00 ...`, poll `ecc ito status`.
+- "Revoke this device": `ecc ito logout`.
+
+## Safety
+
+- Never put a key or token in arguments, tracked files, MCP results, logs, or
+  chat. Device tokens live in macOS Keychain by default; file-token fallback
+  must stay owner-only (0700/0600).
+- `ecc ito auth` never starts login and rejects `--no-browser`.
+- `ITO_API_KEY` is forwarded only for `auth`, `find`, `status`; qualification
+  never receives it and no model/cloud credential is forwarded either.
+- Do not accept quotes without explicit buyer authority.
+
+## Source
+
+- Canonical upstream CLI: github.com/Ito-Markets/ito-cloud-runtime
+  (`cli/ito-compute-cli`). ECC ships no `ito-compute-cli` dependency and
+  discovers the executable only via `ECC_ITO_CLI_EXECUTABLE`.
+
+## Notes
+
+- Inventory prices are indicative. An RFQ is not reserved capacity. Treat a
+  rate as fixed only for non-null firm quotes in the canonical result.
+- The MCP server does not expose qualification; use the explicit CLI command.
