@@ -18,7 +18,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/skills-13%2C362%2B%20Unique%20Skills-7c3aed?style=for-the-badge&logo=openai&logoColor=white" alt="13,362 Unique Skills" />
-  <img src="https://img.shields.io/badge/catalog-15%2C146%20Catalog%20Entries-0ea5e9?style=for-the-badge&logo=github&logoColor=white" alt="15,146 Catalog Entries" />
+  <img src="https://img.shields.io/badge/catalog-15%2C142%20Catalog%20Entries-0ea5e9?style=for-the-badge&logo=github&logoColor=white" alt="15,142 Catalog Entries" />
   <img src="https://img.shields.io/badge/domains-252%20Categories-10b981?style=for-the-badge&logo=hubspot&logoColor=white" alt="252 Categories" />
   <img src="https://img.shields.io/badge/platforms-12%20Agent%20Harnesses-ec4899?style=for-the-badge&logo=probot&logoColor=white" alt="12 Agent Harnesses" />
   <img src="https://img.shields.io/badge/active--harness-89%20Pre--Loaded%20Skills-6366f1?style=for-the-badge&logo=lightning&logoColor=white" alt="89 Active Skills" />
@@ -30,7 +30,7 @@
 </p>
 
 <p align="center">
-  <a href="awesome_skills/CATALOG.md"><strong>Catalog (15,146)</strong></a> •
+  <a href="awesome_skills/CATALOG.md"><strong>Catalog (15,142)</strong></a> •
   <a href="docs/skill_catalog.md"><strong>Voice OS (27 Categories)</strong></a> •
   <a href="categories/"><strong>25 Major Categories</strong></a> •
   <a href="roadmaps/"><strong>Roadmaps</strong></a> •
@@ -71,7 +71,7 @@ When AI coding assistants are front-loaded with thousands of prompt instructions
 │          (skills/)            │        (awesome_skills/)        │     (.agents/ / .claude/ /    │
 │                               │                                 │     .cursor/ / .codex/)       │
 ├───────────────────────────────┼─────────────────────────────────┼───────────────────────────────┤
-│  • 533 Canonical Skills       │  • 15,146 Catalog Entries       │  • 89 Staff Engineer Skills   │
+│  • 537 Canonical Skills       │  • 15,142 Catalog Entries       │  • 89 Staff Engineer Skills   │
 │  • 9-Signal Layered Scoring   │  • 252 Functional Domain Dirs   │  • Pre-Loaded in Workspace    │
 │  • Deterministic Workflows    │  • Machine-Readable Index       │  • Native Multi-Tool Synced   │
 │  • 8-State Formal Lifecycle   │  • Complete CATALOG.md Reference│  • $O(1)$ Load-on-Demand      │
@@ -94,22 +94,22 @@ To eliminate ambiguity between broad catalog references and executable skills, A
 ┌───────────────────────────────────────────────────────────────────────────┐
 │                     SKILL DISCOVERY & RUNTIME PYRAMID                     │
 ├───────────────────────────────────────────────────────────────────────────┤
-│  15,146 Catalog Entries         Raw ecosystem & upstream catalog index    │
+│  15,142 Catalog Entries         Raw ecosystem & upstream catalog index    │
 │           ↓                                                               │
 │  15,140 Schema-Vetted Skills    Meet the name + description contract      │
 │           ↓                     (12,304 pass the full JSON Schema)        │
 │     142 Executable Handlers     handler.py runtime handlers on disk       │
 │           ↓                                                               │
-│     533 Core Canonical Skills   Strictly curated, policy-gated suites     │
+│     537 Core Canonical Skills   Strictly curated, policy-gated suites     │
 │           ↓                                                               │
 │      89 Active Preloaded Skills Agent harness direct-context baseline     │
 └───────────────────────────────────────────────────────────────────────────┘
 ```
 
-1. **15,146 Catalog Entries (`awesome_skills/`)**: Broad searchable reference library indexing external tools, community recipes, and ecosystem packages.
+1. **15,142 Catalog Entries (`awesome_skills/`)**: Broad searchable reference library indexing external tools, community recipes, and ecosystem packages.
 2. **15,140 Schema-Vetted Skills**: Every catalog `SKILL.md` satisfies the mandatory `name` + `description` contract and 12,304 pass the full JSON Schema (`python scripts/validate_schema.py --catalog --max-catalog-errors 0`).
 3. **142 Executable Handlers**: Canonical skills equipped with an operational runtime handler (`handler.py`) that the execution runtime can drive.
-4. **533 Core Canonical Skills (`skills/`)**: Curated foundational skills with declared capabilities, policies, contracts, and full CI coverage.
+4. **537 Core Canonical Skills (`skills/`)**: Curated foundational skills with declared capabilities, policies, contracts, and full CI coverage.
 5. **89 Active Preloaded Skills (`.agents/skills/`)**: Lean prompt playbooks preloaded into agent workspaces for instant zero-bloat execution.
 
 ---
@@ -234,7 +234,7 @@ Counts are the inventory this repository ships (they are verified in CI against 
 | :--- | :--- | :--- | :--- | :--- |
 | Agents | 68 agents | Shared (AGENTS.md) | Shared (AGENTS.md) | Shared (AGENTS.md) |
 | Commands | 94 commands | Shared | Shared | Instruction-based |
-| Skills | 533 skills | Shared | Shared | Shared |
+| Skills | 537 skills | Shared | Shared | Shared |
 
 ---
 
@@ -278,7 +278,7 @@ Every entry records `tier`, `category`, `risk`, `required_env` and official-vs-c
 
 ## ⚡ Quick Start: One Recommended Path
 
-Out of the box this repository gives every agent access to 68 agents, 533 skills, and 94 legacy command shims — plus a catalog of 15,146 searchable skills and a 117-connector MCP catalog you can install with one command.
+Out of the box this repository gives every agent access to 68 agents, 537 skills, and 94 legacy command shims — plus a catalog of 15,146 searchable skills and a 117-connector MCP catalog you can install with one command.
 
 Get started with All-Skills in seconds using either Python or Node:
 
@@ -306,7 +306,7 @@ Once installed, use the universal CLI to search, diagnose, explain, and execute:
 # 0. Bootstrap every harness: skills + MCP connectors + verification
 allskills bootstrap --all --profile standard
 
-# 1. Search across 15,146 catalog entries with ranked routing
+# 1. Search across 15,142 catalog entries with ranked routing
 allskills search "build a REST API"
 
 # 2. Run comprehensive 11-layer health diagnostics
@@ -398,6 +398,13 @@ npx @mr-nobody-anonymous/all-skills doctor
 npx @mr-nobody-anonymous/all-skills search "health economist"
 ```
 
+### Itô Compute CLI Bridge (opt-in)
+`ecc ito` delegates to the separately installed canonical Itô client. ECC does not maintain a second API client. `ecc ito login [--no-browser]` performs device authorization, opens the Itô verification page by default, and stores the device token in macOS Keychain; `--no-browser` suppresses the page handoff. ECC itself performs no browser automation. `ecc ito auth` is validation-only and rejects `--no-browser`. The commands are `ecc ito login`, `ecc ito auth`, `ecc ito find`, `ecc ito status`, and the separately gated `ecc ito evals`. The matching MCP tools remain `ito_auth`, `ito_find`, `ito_status`; `ito_auth` validates existing credentials, and node qualification stays CLI-only.
+
+`ito-compute-cli` is currently unpublished. Build it from the Itô runtime repository (private while the desk hardens; design partners get access) at `cli/ito-compute-cli`, run `npm ci` and `npm run check`, then set `ECC_ITO_CLI_EXECUTABLE` to the absolute path of the built `dist/bin/ito.js`. Login never inherits `ITO_API_KEY`; auth, find, and status forward `ITO_API_KEY` directly when set, and `ITO_AUTH_MODE=legacy` is not required. `ecc ito logout` revokes the current device credential and keeps the local copy when remote revocation cannot be confirmed. Device tokens use macOS Keychain by default; any explicit file fallback must keep owner-only directory and token permissions. ECC never discovers the client through `PATH`. For the full RFQ authority and MCP setup contract, see the [`ito-compute` skill](skills/ito/ito-compute/SKILL.md).
+
+`find` submits an authenticated live RFQ; it does not reserve capacity. `evals` requires both `ITO_ENABLE_SIXTYTWO_LIVE=1` and `--live-sixtytwo`, a separately installed `sixtytwo-cli==0.3.33`, an explicit node list, and an existing absolute config directory. It cannot rent, launch, recover, repair, or purchase; ECC exposes no quote-lock, purchase, workload, or inference path, and it never substitutes local results when the client is missing or a live call fails.
+
 ---
 
 ## 📚 Active Harness Skills Index (89 Skills)
@@ -451,7 +458,7 @@ Full harness-by-harness walkthrough: [`docs/INSTALL-ANY-AGENT.md`](docs/INSTALL-
 
 ### Skill coverage: what the library now answers
 
-The curated library covers **533 canonical skills in 45 categories**, and the newest expansion closed
+The curated library covers **537 canonical skills in 46 categories**, and the newest expansion closed
 the gaps that used to force an agent to improvise: languages, API styles, infrastructure-as-code,
 collaboration SaaS, quality gates, realtime and release safety, then the whole authoring world —
 GIS and cartography, CAD and BIM, 3D/Blender/VFX, audio, video, photography and architecture.
@@ -678,10 +685,10 @@ Beyond instruction text files, **All Skills** provides a complete execution, val
 
 ### 📋 Key Infrastructure Components:
 1. **Formal Frontmatter Schema**: [`schemas/skill-frontmatter.schema.json`](schemas/skill-frontmatter.schema.json) validates required properties (`name`, `description`, `category`, `disable-model-invocation`), triggers, aliases, and tool permissions via `python scripts/validate_schema.py`.
-2. **Master Intent Router (`which-skill`)**: [`.agents/skills/which-skill/SKILL.md`](.agents/skills/which-skill/SKILL.md) provides instant decision matrix mapping and CLI routing (`python scripts/skills/skills.py route`) across all 15,146 catalog entries.
+2. **Master Intent Router (`which-skill`)**: [`.agents/skills/which-skill/SKILL.md`](.agents/skills/which-skill/SKILL.md) provides instant decision matrix mapping and CLI routing (`python scripts/skills/skills.py route`) across all 15,142 catalog entries.
 3. **Multi-Step Execution Playbooks (`workflows/`)**: Complete chained workflows in [`workflows/`](workflows/) (`feature-development.md`, `bug-investigation-and-fix.md`, `fullstack-saas-launch.md`, etc.) for autonomous multi-step execution.
 4. **State Tracking & Stack Manifests (`aas-stack.json`)**: Structured sidecar schema ([`schemas/aas-stack.schema.json`](schemas/aas-stack.schema.json)) and CLI ([`scripts/manage_state.py`](scripts/manage_state.py)) for tracking phase progress, variables, and architectural decisions (ADRs) with auto-synced [`CONTEXT.md`](CONTEXT.md).
-5. **Central Tool-to-Skill Manifest**: [`manifest.json`](manifest.json) indexes all 533 platform skills, mapping them to required tool permissions (`bash`, `file_edit`, `ast_grep`, `browser`), MCP servers (`filesystem`, `git`, `fetch`, `memory`), and lifecycle hooks.
+5. **Central Tool-to-Skill Manifest**: [`manifest.json`](manifest.json) indexes all 537 platform skills, mapping them to required tool permissions (`bash`, `file_edit`, `ast_grep`, `browser`), MCP servers (`filesystem`, `git`, `fetch`, `memory`), and lifecycle hooks.
 6. **Model Context Protocol (MCP)**: Native [`mcp_config.json`](mcp_config.json) configuring local MCP servers for Claude Code, Cursor, and Antigravity.
 7. **Lifecycle Hooks Engine**: Execute automated gates before and after skills run via [`scripts/run_hook.py`](scripts/run_hook.py):
    ```bash
@@ -743,7 +750,7 @@ Your workspace comes pre-loaded with **89 staff-engineer and AI architect playbo
 <summary><strong>📋 View Pre-Loaded Skill Suites</strong></summary>
 
 ### 1. 🎯 Core Planning & Workflow Architecture
-- `which-skill` — Master agent intent router across all 15,146 catalog entries and workflows
+- `which-skill` — Master agent intent router across all 15,142 catalog entries and workflows
 - `brainstorming` — Socratic design refinement before implementation
 - `context-budget-and-pruning` — Token budget management, scratchpad offloading, and state distillation
 - `executing-plans` — Batch plan execution with verification checkpoints
@@ -837,7 +844,7 @@ Your workspace comes pre-loaded with **89 staff-engineer and AI architect playbo
 The repository includes two powerful CLI suites running on pure standard library with **zero external dependencies**:
 
 ### 1. Awesome Skills Manager (`scripts/manage_awesome_skills.py`)
-Interact with all 15,146 catalog entries (13,362 unique skills) in [`awesome_skills/`](awesome_skills/):
+Interact with all 15,142 catalog entries (13,362 unique skills) in [`awesome_skills/`](awesome_skills/):
 
 ```bash
 # List all 252 domain categories with skill counts
@@ -847,7 +854,7 @@ python scripts/manage_awesome_skills.py list
 python scripts/manage_awesome_skills.py list --category ai-agents
 python scripts/manage_awesome_skills.py list --category security
 
-# Fuzzy search across all 15,146 catalog entries by keyword
+# Fuzzy search across all 15,142 catalog entries by keyword
 python scripts/manage_awesome_skills.py search "rag"
 python scripts/manage_awesome_skills.py search "prompt"
 python scripts/manage_awesome_skills.py search "kubernetes"
@@ -876,7 +883,7 @@ python scripts/manage_awesome_skills.py install-bundle saas-growth
 ---
 
 ### 2. Canonical Routing Engine (`scripts/skills/skills.py`)
-Run sub-millisecond natural language routing, quality audits, and workflow chains across the 533 canonical engine skills:
+Run sub-millisecond natural language routing, quality audits, and workflow chains across the 537 canonical engine skills:
 
 ```bash
 # Route a natural language goal to the optimal skill
@@ -968,7 +975,7 @@ python -m http.server 3000 --directory marketplace
 all-skills/
 |-- agents/           # 68 specialized subagents for delegation
 |-- commands/         # 94 slash commands (legacy shims preserved)
-|-- skills/           # 533 canonical skills across 45 categories
+|-- skills/           # 537 canonical skills across 46 categories
 |-- mcps/             # 117-connector MCP catalog + generated harness bundles
 |
 ├── .agents/skills/              # 🤖 Antigravity / Gemini CLI Active Harness (89 skills)
@@ -978,7 +985,7 @@ all-skills/
 │
 ├── awesome_skills/              # 🚀 Categorized skills catalog (counts: stats.json)
 │   ├── CATALOG.md               # Complete searchable markdown catalog
-│   ├── skills_index.json        # 15,146-item metadata database
+│   ├── skills_index.json        # 15,142-item metadata database
 │   ├── legal/                   # 1,646 skills (Contracts, Compliance, IP)
 │   ├── finance/                 # 735 skills  (FP&A, Trading, Accounting)
 │   ├── biology/                 # 537 skills  (Genomics, Lab Workflows)
@@ -987,7 +994,7 @@ all-skills/
 │   ├── ai-ml/                   # 497 skills  (Prompting, RAG, Evals)
 │   └── ...                      # 246 additional domain categories
 │
-├── skills/                      # ⚡ 533 Canonical Engine Skills (45 Categories)
+├── skills/                      # ⚡ 537 Canonical Engine Skills (46 Categories)
 │   ├── architecture/            # Architecture decision records
 │   ├── healthcare/              # Health economics
 │   ├── productivity/            # Focus, anti-procrastination, planning

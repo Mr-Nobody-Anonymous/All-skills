@@ -910,9 +910,9 @@ npm run test:e2e
 
 - [CONTRIBUTING.md](CONTRIBUTING.md) - 通用贡献指南
 - [project-guidelines-template](../examples/project-guidelines-template.md) - 项目专属 Skill 模板
-- [coding-standards](../../skills/coding-standards/SKILL.md) - 标准 Skill 示例
-- [tdd-workflow](../../skills/tdd-workflow/SKILL.md) - 工作流 Skill 示例
-- [security-review](../../skills/security-review/SKILL.md) - 领域知识 Skill 示例
+- [coding-standards](../../skills/development/coding/SKILL.md) - 标准 Skill 示例
+- [tdd-workflow](../../skills/development/tdd/SKILL.md) - 工作流 Skill 示例
+- [security-review](../../skills/security/secure-code-review/SKILL.md) - 领域知识 Skill 示例
 
 ---
 

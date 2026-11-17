@@ -1,0 +1,34 @@
+{
+  "schema_version": "ecc.evaluator-rag.scenario.v1",
+  "scenario_id": "stale-pr-salvage-maintainer-branch",
+  "title": "Stale PR salvage via maintainer-owned branch",
+  "objective": "Recover useful closed-PR work through maintainer-owned branches with attribution and validation, without importing unsafe or unreviewed changes.",
+  "source_rule": "May 2026 stale-PR cleanup: stale closure is queue hygiene, not loss of useful work.",
+  "allowed_evidence": [
+    "docs/stale-pr-salvage-ledger.md",
+    "closed and merged PR diffs and review threads",
+    "maintainer salvage decisions recorded in the ledger",
+    "CI history and validation gates",
+    "git diff --check output for the candidate branch"
+  ],
+  "forbidden_actions": [
+    "closing, reopening, or commenting on PRs",
+    "merging PRs",
+    "creating release tags",
+    "publishing packages or plugins",
+    "copying private paths, secrets, or raw personal context",
+    "blindly cherry-picking bulk localization"
+  ],
+  "acceptance_gates": [
+    "source PR is credited in the salvage branch and the ledger",
+    "no private operator context is copied into the branch",
+    "stale bulk localization waits for translator/manual review",
+    "ledger row records the salvage state and result",
+    "validation gates run before merge",
+    "release and publication actions stay approval-gated"
+  ],
+  "read_only": true,
+  "created": "2026-05-14",
+  "owner": "maintainer",
+  "promotion": "verifier-gated"
+}

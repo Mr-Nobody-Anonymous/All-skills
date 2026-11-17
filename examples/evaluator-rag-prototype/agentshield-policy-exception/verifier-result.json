@@ -1,0 +1,43 @@
+{
+  "schema_version": "ecc.evaluator-rag.verifier.v1",
+  "scenario_id": "agentshield-policy-exception",
+  "read_only": true,
+  "candidates": [
+    {
+      "candidate_id": "sarif-backed-timeboxed-exception-review",
+      "decision": "accepted",
+      "score": 9.2,
+      "reasons": [
+        "names the SARIF report and rule IDs for each finding",
+        "records owner, ticket, scope, expiry for every exception",
+        "keeps expired exceptions rejected until renewed with fresh evidence",
+        "makes the remediation versus time-boxed exception decision explicit"
+      ],
+      "rollback_notes": [
+        "close the exception ticket; the org-policy gate re-enforces automatically at expiry"
+      ]
+    },
+    {
+      "candidate_id": "blanket-policy-suppression",
+      "decision": "rejected",
+      "score": 1.2,
+      "reasons": [
+        "blanket-suppresses the AgentShield policy pack and organization-policy gates",
+        "provides no SARIF or report evidence for any finding",
+        "has no owner, ticket, scope, or expiry fields",
+        "treats expired exceptions as active"
+      ],
+      "rollback_notes": [
+        "not applicable: candidate must not land; re-open with per-finding SARIF evidence"
+      ]
+    }
+  ],
+  "promoted_candidate_id": "sarif-backed-timeboxed-exception-review",
+  "rollback": {
+    "revert_plan": "withdraw the exception ticket; gates re-enforce at once",
+    "approval_required": [
+      "any change to AgentShield policy packs or org-policy gates"
+    ]
+  },
+  "decided_at": "2026-05-14T09:11:42Z"
+}

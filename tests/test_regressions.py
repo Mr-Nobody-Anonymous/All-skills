@@ -259,7 +259,11 @@ class TestFrontmatterParserMatchesYaml(unittest.TestCase):
                 return str(value).lower()
             return "" if value is None else str(value).strip()
 
-        files = sorted(_SKILLS_DIR.glob("*/*/SKILL.md")) + sorted((_ROOT / ".agents" / "skills").glob("*/SKILL.md"))
+        files = (
+            sorted(_SKILLS_DIR.glob("*/*/SKILL.md"))
+            + sorted(_SKILLS_DIR.glob("*/SKILL.md"))
+            + sorted((_ROOT / ".agents" / "skills").glob("*/SKILL.md"))
+        )
         self.assertGreater(len(files), 100)
         mismatches = []
         for path in files:

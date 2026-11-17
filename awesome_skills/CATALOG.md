@@ -1,6 +1,6 @@
 # 📚 Awesome Skills Catalog
 
-Complete categorized index of **15,146 Agent Skills** across **252 domain categories**.
+Complete categorized index of **15,142 Agent Skills** across **252 domain categories**.
 
 Every skill contains a standardized, load-on-demand `SKILL.md` instruction playbook with YAML frontmatter, compatible across Claude Code, Cursor, Codex CLI, Antigravity, and Gemini CLI.
 
@@ -90,7 +90,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 - [Documents](#documents) (2 skills)
 - [E Learning](#e-learning) (14 skills)
 - [Earth Science](#earth-science) (18 skills)
-- [Ecc](#ecc) (291 skills)
+- [Ecc](#ecc) (287 skills)
 - [Ecommerce](#ecommerce) (145 skills)
 - [Economics](#economics) (21 skills)
 - [Education](#education) (157 skills)
@@ -259,7 +259,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 - [Wellness](#wellness) (100 skills)
 - [Writing](#writing) (19 skills)
 
-*Total skills indexed: 15,146 across 252 categories*
+*Total skills indexed: 15,142 across 252 categories*
 
 ---
 
@@ -6765,7 +6765,7 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 
 ---
 
-## <a id="ecc"></a>📁 Ecc (291 skills)
+## <a id="ecc"></a>📁 Ecc (287 skills)
 
 | Skill ID | Name | Risk | Description |
 | :--- | :--- | :---: | :--- |
@@ -6907,10 +6907,6 @@ Every skill contains a standardized, load-on-demand `SKILL.md` instruction playb
 | [investor-outreach](ecc/investor-outreach/SKILL.md) | `investor-outreach` | `low` | Draft cold emails, warm intro blurbs, follow-ups, update emails, and investor communications for fundraising. Use when the user... |
 | [ios-icon-gen](ecc/ios-icon-gen/SKILL.md) | `ios-icon-gen` | `low` | Generate iOS app icons as PNG imagesets for Xcode asset catalogs from SF Symbols (5000+ Apple-native) or Iconify API (275k+ ope... |
 | [iterative-retrieval](ecc/iterative-retrieval/SKILL.md) | `iterative-retrieval` | `low` | Pattern for progressively refining context retrieval to solve the subagent context problem. Use when a subagent lacks the conte... |
-| [ito-baskets](ecc/ito-baskets/SKILL.md) | `ito-baskets` | `low` | Read-only Itô basket and prediction-market data skill. Index the live basket catalog, compare a basket against user-supplied re... |
-| [ito-compute](ecc/ito-compute/SKILL.md) | `ito-compute` | `low` | Query live GPU inventory, submit an authenticated Itô fixed-rate RFQ, inspect RFQ or procurement status, revoke device credenti... |
-| [ito-inference](ecc/ito-inference/SKILL.md) | `ito-inference` | `low` | Inspect the availability of model serving on a completed Itô compute booking and, when the canonical backend becomes available,... |
-| [ito-training](ecc/ito-training/SKILL.md) | `ito-training` | `low` | Inspect the availability of ML training on a completed Itô compute booking and, when the canonical backend becomes available, h... |
 | [java-coding-standards](ecc/java-coding-standards/SKILL.md) | `java-coding-standards` | `low` | Java coding standards for Spring Boot and Quarkus services: naming, immutability, Optional usage, streams, exceptions, generics... |
 | [jira-integration](ecc/jira-integration/SKILL.md) | `jira-integration` | `low` | Use this skill when retrieving Jira tickets, analyzing requirements, updating ticket status, adding comments, or transitioning ... |
 | [jpa-patterns](ecc/jpa-patterns/SKILL.md) | `jpa-patterns` | `low` | JPA/Hibernate patterns for entity design, relationships, query optimization, transactions, auditing, indexing, pagination, and ... |

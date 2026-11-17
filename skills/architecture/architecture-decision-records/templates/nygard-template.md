@@ -3,7 +3,7 @@
 Date: [YYYY-MM-DD]
 
 ## Status
-[Proposed | Accepted | Deprecated | Superseded by [NNNN](NNNN-title.md)]
+[Proposed | Accepted | Deprecated | Superseded by NNNN-title.md]
 
 ## Context
 [What is the context that we're seeing? What are the technological, business, or operational forces at play?]

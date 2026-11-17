@@ -1,0 +1,43 @@
+{
+  "schema_version": "ecc.evaluator-rag.verifier.v1",
+  "scenario_id": "ci-failure-diagnosis",
+  "read_only": true,
+  "candidates": [
+    {
+      "candidate_id": "log-backed-minimal-fix",
+      "decision": "accepted",
+      "score": 9.0,
+      "reasons": [
+        "names the failing job and step with a captured failing log excerpt",
+        "scopes the change to the three files the failing step actually checks",
+        "names a local regression command and confirms it passes",
+        "keeps required checks enforced instead of weakening them"
+      ],
+      "rollback_notes": [
+        "revert the single-commit fix; no tests are weakened and no checks are disabled"
+      ]
+    },
+    {
+      "candidate_id": "rerun-only-green-wait",
+      "decision": "rejected",
+      "score": 1.5,
+      "reasons": [
+        "proposes reruns without any failing log excerpt or root cause",
+        "does not compare changed-file context to the failing step",
+        "cannot name a regression command",
+        "normalizes red required checks before merge"
+      ],
+      "rollback_notes": [
+        "not applicable: candidate must not land; if the job is flaky, quarantine with evidence instead"
+      ]
+    }
+  ],
+  "promoted_candidate_id": "log-backed-minimal-fix",
+  "rollback": {
+    "revert_plan": "git revert the fix commit; re-enable the original step definition",
+    "approval_required": [
+      "merging while required checks are red"
+    ]
+  },
+  "decided_at": "2026-05-14T09:11:42Z"
+}

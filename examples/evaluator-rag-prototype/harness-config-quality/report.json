@@ -1,0 +1,25 @@
+{
+  "schema_version": "ecc.evaluator-rag.report.v1",
+  "scenario_id": "harness-config-quality",
+  "read_only": true,
+  "summary": "Only the adapter-matrix-backed recommendation survives verification; parity claims without matrix evidence are rejected.",
+  "scores": {
+    "evidence_coverage": 0.91,
+    "matrix_alignment": 1.0,
+    "config_preservation_risk": 0.1,
+    "recommended_confidence": 0.88
+  },
+  "evidence_coverage": {
+    "adapters_checked": 13,
+    "harnesses_covered": 12,
+    "blocking_gaps": [
+      "hook support is reference-only for two harnesses; docs must say so"
+    ]
+  },
+  "risks": [
+    "Silently overwriting user config would violate the preservation contract.",
+    "Native-support wording for reference-only harnesses overclaims the matrix."
+  ],
+  "recommended_next_action": "Publish the matrix-backed drift check notes with verification commands; keep reference-only harnesses labeled as such.",
+  "generated_at": "2026-05-14T09:11:42Z"
+}

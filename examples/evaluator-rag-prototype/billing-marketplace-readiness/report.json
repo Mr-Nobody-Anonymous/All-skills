@@ -1,0 +1,33 @@
+{
+  "schema_version": "ecc.evaluator-rag.report.v1",
+  "scenario_id": "billing-marketplace-readiness",
+  "read_only": true,
+  "summary": "Billing and Marketplace are not launch-ready from dry-run evidence alone; the audit-backed checklist is the only promotable playbook.",
+  "scores": {
+    "evidence_coverage": 0.88,
+    "audit_completeness": 0.83,
+    "claim_accuracy_risk": 0.9,
+    "recommended_confidence": 0.86
+  },
+  "evidence_coverage": {
+    "billing_domains_audited": [
+      "plans",
+      "seats",
+      "subscriptions",
+      "entitlements",
+      "overage",
+      "downgrade/cancel"
+    ],
+    "evidence_files": 6,
+    "blocking_gaps": [
+      "subscription state mapping for org seats not yet reconciled against the Marketplace listing"
+    ]
+  },
+  "risks": [
+    "Launch copy would overclaim live billing readiness.",
+    "Marketplace listing must not be edited or published from this read-only run.",
+    "Announcement sequencing depends on billing audit completion."
+  ],
+  "recommended_next_action": "Complete the billing audit reconciliation, then re-run the verifier; keep launch copy in draft with remove-before-publication notes until sign-off.",
+  "generated_at": "2026-05-14T09:11:42Z"
+}
